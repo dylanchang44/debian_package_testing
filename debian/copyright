@@ -1,0 +1,46 @@
+Format: http://dep.debian.net/deps/dep5
+Upstream-Name: apper
+Source: https://projects.kde.org/projects/playground/sysadmin/apper/
+
+Files: *
+Copyright: (c) 2008-2011 Daniel Nicoletti <dantti85-pk@yahoo.com.br>
+License: GPL-2+
+
+Files: libapper/CategorizedView.cpp
+ libapper/CategorizedView.h
+ libapper/CategoryDrawer.cpp
+ libapper/CategoryDrawer.h
+Copyright: 2009 by Rafael Fernãndez LÃ³pez <ereslibre@kde.org>
+License: GPL-2+
+
+Files: libapper/PkIcons.cpp
+ libapper/PkIcons.h
+ libapper/PackageModel.cpp
+Copyright: 2008 by Trever Fischer / 2009-2011 by Daniel Nicoletti
+License: GPL-2+
+
+Files: Sentinel/PkInstallPlasmaResources.cpp
+ Sentinel/PkInstallPlasmaResources.h
+Copyright: 2011 Kevin Kofler <kevin.kofler@chello.at> / 2009-2011 by Daniel Nicoletti
+License: GPL-2+
+
+Files: debian/*
+Copyright: 2010-2011 Matthias Klumpp <matthias@tenstral.net>
+License: GPL-2+
+
+License: GPL-2+
+ This package is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 2 of the License, or
+ (at your option) any later version.
+ .
+ This package is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License
+ along with this program. If not, see <http://www.gnu.org/licenses/>
+ .
+ On Debian systems, the complete text of the GNU General
+ Public License version 2 can be found in "/usr/share/common-licenses/GPL-2".
