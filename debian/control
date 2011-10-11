@@ -4,6 +4,7 @@ Priority: optional
 Maintainer: Matthias Klumpp <matthias@tenstral.net>
 Build-Depends: cmake,
                debhelper (>= 8.0.0),
+               docbook2x,
                kdelibs5-dev (>= 4:4.6.0),
                libdbus-1-dev,
                libdebconf-kde-dev,
@@ -34,7 +35,7 @@ Package: apper-dbg
 Section: debug
 Architecture: any
 Priority: extra
-Depends: ${misc:Depends}, apper (= ${binary:Version})
+Depends: apper (= ${binary:Version}), ${misc:Depends}
 Recommends: kdelibs5-dbg
 Description: Debugging symbols for Apper
  Apper ist a graphical package manager UI based on the PackageKit

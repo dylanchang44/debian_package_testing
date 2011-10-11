@@ -18,11 +18,15 @@ override_dh_auto_configure:
 	dh_auto_configure -Skde -- $(APPER_CONFIG_FLAGS)
 
 override_dh_auto_install:
+	docbook2x-man $(CURDIR)/debian/apper.1.docbook
 	dh_auto_install --destdir=$(INSTALLDIR)
 	mv $(INSTALLDIR)/usr/share/dbus-1/services/org.freedesktop.PackageKit.service $(INSTALLDIR)/usr/share/dbus-1/services/kde-org.freedesktop.PackageKit.service
 
 override_dh_install:
 	dh_install --list-missing
+
+override_dh_auto_clean:
+	rm -f apper.1
 
 fetch_translations:
 	mkdir -p po
