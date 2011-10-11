@@ -8,7 +8,7 @@ Build-Depends: cmake,
                kdelibs5-dev (>= 4:4.6.0),
                libdbus-1-dev,
                libdebconf-kde-dev,
-               libpackagekit-qt2-dev (>= 0.6.14),
+               libpackagekit-qt2-dev (>= 0.6.18),
                pkg-kde-tools (>= 0.9.2)
 Standards-Version: 3.9.2
 Homepage: http://kde-apps.org/content/show.php/Apper?content=84745
@@ -17,7 +17,7 @@ Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-packagekit/apper.git
 
 Package: apper
 Architecture: any
-Depends: packagekit (>= 0.6.14),
+Depends: packagekit (>= 0.6.18),
          update-manager-kde,
          ${misc:Depends},
          ${shlibs:Depends}
