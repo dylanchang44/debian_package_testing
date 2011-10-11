@@ -1,0 +1,22 @@
+A quick list of things that need to be done.
+
+- Find or create a Markdown Qt parser to HTML (update/package descriptions use Markdown)
+  (Daniel)
+
+- Ddd the "Uninstall" action to kickoff :D
+  (Daniel)
+
+- Push KPK into KDE.
+  (Daniel)
+
+- Documentation. And lots of it.
+  (Trever, Daniel)
+
+- Poke Richard (PackageKit) to:
+  - Don't emit restartRequired while simulating
+  - Don't emit message while simulating
+  - Emit trust needed when simulating install
+  - We need to emit packages(UNTRUSTED) so the user knows which ones
+
+- Add a DBus interface to KpkTransactions so that when the user
+  clicks on the systray we don't get duplicated windows

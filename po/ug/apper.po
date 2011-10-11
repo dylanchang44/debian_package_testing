@@ -1,0 +1,3607 @@
+# Uyghur translation for kpackagekit.
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+# Sahran <sahran.ug@gmail.com>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kpackagekit\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2011-10-10 04:10+0200\n"
+"PO-Revision-Date: 2011-05-09 19:00+0900\n"
+"Last-Translator: Sahran <sahran@live.com>\n"
+"Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: Apper/BackendDetails.cpp:31
+msgid "Backend Details"
+msgstr ""
+
+#: Apper/main.cpp:54 Sentinel/UpdateIcon.cpp:161 Sentinel/main.cpp:34
+msgid "Apper"
+msgstr ""
+
+#: Apper/main.cpp:56
+msgid "Apper is an Application to Get and Manage Software"
+msgstr ""
+
+#: Apper/main.cpp:58 ApperKCM/ApperKCM.cpp:82 Sentinel/main.cpp:38
+msgid "(C) 2008-2011 Daniel Nicoletti"
+msgstr ""
+
+#: Apper/main.cpp:60 Sentinel/main.cpp:40
+msgid "Daniel Nicoletti"
+msgstr ""
+
+#: Apper/main.cpp:61 Sentinel/main.cpp:43
+msgid "Adrien Bustany"
+msgstr ""
+
+#: Apper/main.cpp:61 Sentinel/main.cpp:43
+msgid "libpackagekit-qt and other stuff"
+msgstr ""
+
+#: Apper/main.cpp:66
+msgid "Show updates"
+msgstr "يېڭىلاشنى كۆرسىتىش"
+
+#: Apper/main.cpp:67
+msgid "Show settings"
+msgstr "تەڭشەك كۆرسەت"
+
+#: Apper/main.cpp:68
+msgid "Show backend details"
+msgstr ""
+
+#: Apper/main.cpp:69
+msgid "Mime type installer"
+msgstr "Mime تىپى ئورناتقۇچ"
+
+#: Apper/main.cpp:70
+msgid "Package name installer"
+msgstr ""
+
+#: Apper/main.cpp:71
+msgid "Single file installer"
+msgstr ""
+
+#: Apper/main.cpp:72
+msgid "Font resource installer"
+msgstr ""
+
+#: Apper/main.cpp:73
+msgid "Catalog installer"
+msgstr "كاتالوگ ئورناتقۇچ"
+
+#: Apper/main.cpp:74
+msgid "Single package remover"
+msgstr ""
+
+#: Apper/main.cpp:75
+msgid "Package file to install"
+msgstr ""
+
+#: ApperKCM/Settings/OriginModel.cpp:39 ApperKCM/Settings/OriginModel.cpp:52
+msgid "Origin of Packages"
+msgstr ""
+
+#: ApperKCM/Settings/Settings.cpp:65
+msgctxt "Hourly refresh the package cache"
+msgid "Hourly"
+msgstr "ھەر سائەتتە"
+
+#: ApperKCM/Settings/Settings.cpp:66
+msgctxt "Daily refresh the package cache"
+msgid "Daily"
+msgstr "كۈندە"
+
+#: ApperKCM/Settings/Settings.cpp:67
+msgctxt "Weekly refresh the package cache"
+msgid "Weekly"
+msgstr "ھەر ھەپتىدە"
+
+#: ApperKCM/Settings/Settings.cpp:68
+msgctxt "Monthly refresh the package cache"
+msgid "Monthly"
+msgstr "ھەر ئايدا"
+
+#: ApperKCM/Settings/Settings.cpp:69
+msgctxt "Never refresh package cache"
+msgid "Never"
+msgstr "ھەرگىز"
+
+#: ApperKCM/Settings/Settings.cpp:71
+msgid "Security only"
+msgstr ""
+
+#: ApperKCM/Settings/Settings.cpp:72
+msgid "All updates"
+msgstr "بارلىق يېڭىلانمىلار"
+
+#: ApperKCM/Settings/Settings.cpp:73
+msgctxt "No updates will be automatically installed"
+msgid "None"
+msgstr "يوق"
+
+#: ApperKCM/Settings/Settings.cpp:249 libapper/PkStrings.cpp:962
+msgid "You do not have the necessary privileges to perform this action."
+msgstr ""
+
+#: ApperKCM/Settings/Settings.cpp:250
+msgid "Failed to set origin data"
+msgstr ""
+
+#: ApperKCM/Updater/DistroUpgrade.cpp:39 Sentinel/DistroUpgrade.cpp:63
+msgid "Distribution upgrade available"
+msgstr ""
+
+#: ApperKCM/Updater/DistroUpgrade.cpp:48 ApperKCM/Updater/DistroUpgrade.cpp:49
+#, kde-format
+msgid "Upgrade to %1"
+msgstr ""
+
+#: ApperKCM/Updater/DistroUpgrade.cpp:50
+#, kde-format
+msgid "Click to upgrade to %1"
+msgstr ""
+
+#: ApperKCM/Updater/DistroUpgrade.cpp:64
+msgid ""
+"You are about to upgrade your distribution to the latest version. This is "
+"usually a very lengthy process and takes a lot longer than simply upgrading "
+"your packages."
+msgstr ""
+
+#: ApperKCM/Updater/DistroUpgrade.cpp:69
+msgid "It is recommended to plug in your computer before proceeding."
+msgstr ""
+
+#: ApperKCM/Updater/DistroUpgrade.cpp:71
+msgid ""
+"It is recommended that you keep your computer plugged in while the upgrade "
+"is being performed."
+msgstr ""
+
+#: ApperKCM/Updater/DistroUpgrade.cpp:98
+msgid "Distribution upgrade complete."
+msgstr ""
+
+#: ApperKCM/Updater/DistroUpgrade.cpp:100 Sentinel/DistroUpgrade.cpp:117
+#, kde-format
+msgid "Distribution upgrade process exited with code %1."
+msgstr ""
+
+#: ApperKCM/Updater/DistroUpgrade.cpp:115 Sentinel/DistroUpgrade.cpp:134
+msgid "The distribution upgrade process failed to start."
+msgstr ""
+
+#: ApperKCM/Updater/DistroUpgrade.cpp:119 Sentinel/DistroUpgrade.cpp:137
+msgid ""
+"The distribution upgrade process crashed some time after starting "
+"successfully."
+msgstr ""
+
+#: ApperKCM/Updater/DistroUpgrade.cpp:123 Sentinel/DistroUpgrade.cpp:140
+msgid "The distribution upgrade process failed with an unknown error."
+msgstr ""
+
+#: ApperKCM/Updater/UpdateDetails.cpp:176
+msgid "This update will add new features and expand functionality."
+msgstr ""
+
+#: ApperKCM/Updater/UpdateDetails.cpp:180
+msgid "This update will fix bugs and other non-critical problems."
+msgstr ""
+"بۇ يېڭىلانما يۇمشاق دېتالنىڭ كەمتۈك ۋە ئېغىر بولمىغان مەسىلىلەرنى ئوڭشايدۇ."
+
+#: ApperKCM/Updater/UpdateDetails.cpp:184
+msgid "This update is important as it may solve critical problems."
+msgstr "بۇ مۇھىم بولغان يېڭىلانما ،ئېغىر مەسىلىلەرنى ئوڭشايدۇ."
+
+#: ApperKCM/Updater/UpdateDetails.cpp:188
+msgid ""
+"This update is needed to fix a security vulnerability with this package."
+msgstr "بۇ يېڭىلانما ئارقىلىق  بۇ بوغچىنىڭ بىخەتەرلىك يوچۇقىنى ئوڭشايدۇ."
+
+#: ApperKCM/Updater/UpdateDetails.cpp:192
+msgid "This update is blocked."
+msgstr "بۇ يېڭىلانما چەكلەنگەن"
+
+#: ApperKCM/Updater/UpdateDetails.cpp:199
+#, kde-format
+msgid "This notification was issued on %1 and last updated on %2."
+msgstr ""
+
+#: ApperKCM/Updater/UpdateDetails.cpp:205
+#, kde-format
+msgid "This notification was issued on %1."
+msgstr ""
+
+#: ApperKCM/Updater/UpdateDetails.cpp:223
+msgid "For more information about this update please visit this website:"
+msgid_plural ""
+"For more information about this update please visit these websites:"
+msgstr[0] ""
+"بۇ يېڭىلانمىغا ئالاقىدار تېخىمۇ كۆپ ئۇچۇرلارغا ئېرىشىش ئۈچۈن ،تۆۋەندىكى تور "
+"بېكەتلەرنى زىيارەت قېلىڭ."
+
+#: ApperKCM/Updater/UpdateDetails.cpp:233
+msgid ""
+"For more information about bugs fixed by this update please visit this "
+"website:"
+msgid_plural ""
+"For more information about bugs fixed by this update please visit these "
+"websites:"
+msgstr[0] ""
+"بۇ يېڭىلانما تۈزىتىدىغان خاتالىققا ئالاقىدار تېخىمۇ كۆپ ئۇچۇرلارغا ئېرىشىش "
+"ئۈچۈن ،تۆۋەندىكى تور بېكەتلەرنى زىيارەت قېلىڭ."
+
+#: ApperKCM/Updater/UpdateDetails.cpp:243
+msgid ""
+"For more information about this security update please visit this website:"
+msgid_plural ""
+"For more information about this security update please visit these websites:"
+msgstr[0] ""
+"بۇ بىخەتەرلىك يېڭىلانمىسىغا ئالاقىدار تېخىمۇ كۆپ ئۇچۇرلارغا ئېرىشىش ئۈچۈن ،"
+"تۆۋەندىكى تور بېكەتلەرنى زىيارەت قېلىڭ."
+
+#: ApperKCM/Updater/UpdateDetails.cpp:253
+msgid ""
+"The computer will have to be restarted after the update for the changes to "
+"take effect."
+msgstr "كومپيۇتېرنى قايتا قوزغاتقاندىن كېيىن يېڭىلاشنىڭ ئۈنۈمى كۆرۈلىدۇ."
+
+#: ApperKCM/Updater/UpdateDetails.cpp:257
+msgid ""
+"You will need to log out and back in after the update for the changes to "
+"take effect."
+msgstr ""
+"يېڭىلاش تاماملانغاندىن كېيىن ،يېڭىلاشنىڭ ئۈنۈمىنى كۆرۈش ئۈچۈن ، تىزىمدىن "
+"چىقىپ قايتا تىزىمغا كىرىش كېرەك."
+
+#: ApperKCM/Updater/UpdateDetails.cpp:264
+msgid ""
+"The classification of this update is unstable which means it is not designed "
+"for production use."
+msgstr ""
+
+#: ApperKCM/Updater/UpdateDetails.cpp:268
+msgid ""
+"This is a test update, and is not designed for normal use. Please report any "
+"problems or regressions you encounter."
+msgstr ""
+"بۇ بىر سىناق يېڭىلانما،نورمال ئىشلىتىشكە قارىتا لايىھىلەنمىگەن.شۇڭا يولۇققان "
+"مەسىلىلەر ۋە نۇقسانلارنى دوكلات قېلىڭ ."
+
+#: ApperKCM/Updater/UpdateDetails.cpp:277
+msgid ""
+"The developer logs will be shown as no description is available for this "
+"update:"
+msgstr ""
+"بۇ يېڭىلانمىغا ئالاقىدار چۈشەندۈرۈش يوق، شۇڭا ئىجادىيەتچىنىڭ خاتىرىسىنى "
+"كۆرسىتىدۇ."
+
+#: ApperKCM/Updater/UpdateDetails.cpp:285
+msgid "Updates:"
+msgstr "يېڭىلانمىلار:"
+
+#: ApperKCM/Updater/UpdateDetails.cpp:295
+msgid "Obsoletes:"
+msgstr ""
+
+#: ApperKCM/Updater/UpdateDetails.cpp:305
+msgid "Repository:"
+msgstr "خەزىنە:"
+
+#: ApperKCM/Updater/UpdateDetails.cpp:337
+msgid "No update description was found."
+msgstr ""
+
+#: ApperKCM/Updater/Updater.cpp:107 ApperKCM/BrowseView.cpp:90
+msgid "Show Versions"
+msgstr ""
+
+#: ApperKCM/Updater/Updater.cpp:115 ApperKCM/BrowseView.cpp:98
+msgid "Show Architectures"
+msgstr ""
+
+#: ApperKCM/Updater/Updater.cpp:123 ApperKCM/BrowseView.cpp:106
+msgid "Show Sizes"
+msgstr ""
+
+#: ApperKCM/Updater/Updater.cpp:216
+#, kde-format
+msgid "Estimated download size: %1"
+msgstr ""
+
+#: ApperKCM/Updater/Updater.cpp:254
+msgid "Your system is up to date"
+msgstr ""
+
+#: ApperKCM/Updater/Updater.cpp:255 ApperKCM/Updater/Updater.cpp:259
+#, kde-format
+msgid "Verified %1 ago"
+msgstr ""
+
+#: ApperKCM/Updater/Updater.cpp:258
+msgid "You have no updates"
+msgstr ""
+
+#: ApperKCM/Updater/Updater.cpp:262
+msgid "Last check for updates was more than a month ago"
+msgstr ""
+
+#: ApperKCM/Updater/Updater.cpp:263
+msgid "It's strongly recommended that you check for new updates now"
+msgstr ""
+
+#. i18n: file: ApperKCM/ApperKCM.ui:230
+#. i18n: ectx: property (text), widget (QPushButton, checkUpdatesPB)
+#: ApperKCM/Updater/Updater.cpp:351 rc.cpp:194
+msgid "Check for new Updates"
+msgstr ""
+
+#: ApperKCM/FiltersMenu.cpp:37
+msgid "Collections"
+msgstr "توپلاملار"
+
+#: ApperKCM/FiltersMenu.cpp:44
+msgid "Only collections"
+msgstr ""
+
+#: ApperKCM/FiltersMenu.cpp:51
+msgid "Exclude collections"
+msgstr ""
+
+#. i18n: file: Apper/BackendDetails.ui:100
+#. i18n: ectx: property (text), widget (QCheckBox, installedCB)
+#: ApperKCM/FiltersMenu.cpp:60 libapper/PkStrings.cpp:362 rc.cpp:23
+msgid "Installed"
+msgstr "ئورنىتىلغان"
+
+#: ApperKCM/FiltersMenu.cpp:67
+msgid "Only installed"
+msgstr ""
+
+#: ApperKCM/FiltersMenu.cpp:74
+msgid "Only available"
+msgstr ""
+
+#: ApperKCM/FiltersMenu.cpp:81 ApperKCM/FiltersMenu.cpp:111
+#: ApperKCM/FiltersMenu.cpp:141 ApperKCM/FiltersMenu.cpp:171
+#: ApperKCM/FiltersMenu.cpp:202
+msgid "No filter"
+msgstr ""
+
+#. i18n: file: Apper/BackendDetails.ui:110
+#. i18n: ectx: property (text), widget (QCheckBox, developmentCB)
+#: ApperKCM/FiltersMenu.cpp:90 rc.cpp:26
+msgid "Development"
+msgstr "ئىجادىيەت"
+
+#: ApperKCM/FiltersMenu.cpp:97
+msgid "Only development"
+msgstr ""
+
+#: ApperKCM/FiltersMenu.cpp:104
+msgid "Only end user files"
+msgstr ""
+
+#: ApperKCM/FiltersMenu.cpp:120
+msgid "Graphical"
+msgstr ""
+
+#: ApperKCM/FiltersMenu.cpp:127
+msgid "Only graphical"
+msgstr ""
+
+#: ApperKCM/FiltersMenu.cpp:134
+msgid "Only text"
+msgstr ""
+
+#: ApperKCM/FiltersMenu.cpp:150
+msgctxt "Filter for free packages"
+msgid "Free"
+msgstr "بوش"
+
+#: ApperKCM/FiltersMenu.cpp:157
+msgid "Only free software"
+msgstr ""
+
+#: ApperKCM/FiltersMenu.cpp:164
+msgid "Only non-free software"
+msgstr ""
+
+#: ApperKCM/FiltersMenu.cpp:181
+msgctxt "Filter for source packages"
+msgid "Source"
+msgstr "مەنبە"
+
+#: ApperKCM/FiltersMenu.cpp:188
+msgid "Only sourcecode"
+msgstr ""
+
+#: ApperKCM/FiltersMenu.cpp:195
+msgid "Only non-sourcecode"
+msgstr ""
+
+#: ApperKCM/FiltersMenu.cpp:217
+msgid "Hide Subpackages"
+msgstr ""
+
+#: ApperKCM/FiltersMenu.cpp:219
+msgid "Only show one package, not subpackages"
+msgstr "بوغچىنىلا كۆرسىتىدۇ،تارماق بوغچىنى كۆرسەتمەيدۇ"
+
+#: ApperKCM/FiltersMenu.cpp:226
+msgid "Only Newest Packages"
+msgstr ""
+
+#: ApperKCM/FiltersMenu.cpp:231
+msgid "Only show the newest available package"
+msgstr "يېڭى ئىشلەتكىلى بولىدىغان بوغچىنىلا كۆرسىتىدۇ"
+
+#: ApperKCM/FiltersMenu.cpp:238
+msgid "Only Native Packages"
+msgstr ""
+
+#: ApperKCM/FiltersMenu.cpp:243
+msgid "Only show packages matching the machine architecture"
+msgstr "ماشىنىغا ماس كېلىدىغان بوغچىلارنىلا كۆرسىتىدۇ"
+
+#: ApperKCM/FiltersMenu.cpp:252
+msgid "Only Show Applications"
+msgstr ""
+
+#: ApperKCM/FiltersMenu.cpp:255
+msgid "Hide packages that are not applications"
+msgstr ""
+
+#: ApperKCM/ApperKCM.cpp:78
+msgid "Application Manager"
+msgstr ""
+
+#: ApperKCM/ApperKCM.cpp:80
+msgid "KDE interface for managing software"
+msgstr ""
+
+#: ApperKCM/ApperKCM.cpp:110 ApperKCM/ApperKCM.cpp:291
+msgid "Find"
+msgstr "ئىزدە"
+
+#: ApperKCM/ApperKCM.cpp:205
+msgid "History"
+msgstr "تارىخ"
+
+#. i18n: file: ApperKCM/Settings/Settings.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, Settings)
+#: ApperKCM/ApperKCM.cpp:211 rc.cpp:140
+msgid "Settings"
+msgstr "تەڭشەكلەر"
+
+#: ApperKCM/ApperKCM.cpp:268 ApperKCM/ApperKCM.cpp:269
+#: ApperKCM/ApperKCM.cpp:270 ApperKCM/ApperKCM.cpp:271
+msgid "&Cancel"
+msgstr "ۋاز كەچ(&C)"
+
+#. i18n: file: ApperKCM/ApperKCM.ui:291
+#. i18n: ectx: property (text), widget (QToolButton, backTB)
+#: ApperKCM/ApperKCM.cpp:278 rc.cpp:200
+msgid "Find by &name"
+msgstr ""
+
+#. i18n: file: ApperKCM/ApperKCM.ui:301
+#. i18n: ectx: property (text), widget (QToolButton, backTB)
+#: ApperKCM/ApperKCM.cpp:279 rc.cpp:206
+msgid "Find by f&ile name"
+msgstr ""
+
+#. i18n: file: ApperKCM/ApperKCM.ui:296
+#. i18n: ectx: property (text), widget (QToolButton, backTB)
+#: ApperKCM/ApperKCM.cpp:280 rc.cpp:203
+msgid "Find by &description"
+msgstr ""
+
+#: ApperKCM/ApperKCM.cpp:414
+msgid ""
+"The settings of the current module have changed.\n"
+"Do you want to apply the changes or discard them?"
+msgstr ""
+"نۆۋەتتىكى بۆلەكنىڭ تەڭشىكى ئۆزگەرتىلدى.\n"
+"ئۆزگەرتىشنى ساقلامسىز ياكى تاشلىۋېتەمسىز؟"
+
+#: ApperKCM/ApperKCM.cpp:416
+msgid "Apply Settings"
+msgstr "تەڭشەك قوللان"
+
+#: ApperKCM/ApperKCM.cpp:458
+msgid "General Settings"
+msgstr "ئادەتتىكى تەڭشەك"
+
+#: ApperKCM/ApperKCM.cpp:459
+msgid "Software Origins"
+msgstr ""
+
+#: ApperKCM/PackageDetails.cpp:73
+msgid "Display"
+msgstr "كۆرسەت"
+
+#: ApperKCM/PackageDetails.cpp:80
+msgid "Description"
+msgstr "چۈشەندۈرۈش"
+
+#: ApperKCM/PackageDetails.cpp:88
+msgid "Depends On"
+msgstr ""
+
+#: ApperKCM/PackageDetails.cpp:114
+msgid "Required By"
+msgstr ""
+
+#: ApperKCM/PackageDetails.cpp:140
+msgid "File List"
+msgstr ""
+
+#: ApperKCM/PackageDetails.cpp:482
+msgid "No files were found."
+msgstr ""
+
+#: ApperKCM/PackageDetails.cpp:529
+msgid "Could not fetch software details"
+msgstr ""
+
+#: ApperKCM/PackageDetails.cpp:571
+msgid "Applications"
+msgstr "پروگراممىلار"
+
+#: ApperKCM/CategoryModel.cpp:47
+msgid "Installed Software"
+msgstr "ئورنىتىلغان يۇمشاق دېتاللار"
+
+#: ApperKCM/CategoryModel.cpp:50 ApperKCM/CategoryModel.cpp:58
+msgid "Lists"
+msgstr "تىزىملار"
+
+#: ApperKCM/CategoryModel.cpp:55
+msgid "Updates"
+msgstr "يېڭىلانمىلار"
+
+#: ApperKCM/CategoryModel.cpp:155 ApperKCM/CategoryModel.cpp:339
+msgid "Categories"
+msgstr "كاتېگورىيە"
+
+#: ApperKCM/CategoryModel.cpp:208
+msgid "Groups"
+msgstr "گۇرۇپپىلار"
+
+#: ApperKCM/ScreenShotViewer.cpp:90
+msgid "Could not find screen shot."
+msgstr ""
+
+#: ApperKCM/TransactionHistory.cpp:66
+msgid "Refresh transactions list"
+msgstr ""
+
+#: ApperKCM/TransactionHistory.cpp:87
+#, kde-format
+msgid "Time since last cache refresh: %1"
+msgstr ""
+
+#: ApperKCM/TransactionModel.cpp:46
+msgid "Date"
+msgstr "چېسلا"
+
+#: ApperKCM/TransactionModel.cpp:47 libapper/PackageModel.cpp:186
+msgid "Action"
+msgstr "مەشغۇلات"
+
+#: ApperKCM/TransactionModel.cpp:48 Sentinel/TransactionWatcher.cpp:292
+msgid "Details"
+msgstr "تەپسىلاتى"
+
+#: ApperKCM/TransactionModel.cpp:49
+msgctxt "Machine user who issued the transaction"
+msgid "Username"
+msgstr "ئىشلەتكۈچى ئاتى"
+
+#: ApperKCM/TransactionModel.cpp:50
+msgid "Application"
+msgstr "پروگرامما"
+
+#: Sentinel/DistroUpgrade.cpp:69
+msgid "Start upgrade now"
+msgstr ""
+
+#: Sentinel/DistroUpgrade.cpp:114
+msgid "Distribution upgrade finished. "
+msgstr ""
+
+#: Sentinel/PkInstallProvideFiles.cpp:39
+msgid "Install Packages that Provides Files"
+msgstr ""
+
+#: Sentinel/PkInstallProvideFiles.cpp:49
+msgid "No files were provided"
+msgstr ""
+
+#: Sentinel/PkInstallProvideFiles.cpp:52
+msgid "Do you want to search for this now?"
+msgid_plural "Do you want to search for these now?"
+msgstr[0] "بۇنى ھازىرلا ئىزدەمسىز؟"
+
+#: Sentinel/PkInstallProvideFiles.cpp:62
+msgid "A program wants to install a file"
+msgid_plural "A program wants to install files"
+msgstr[0] "بۇ پروگرامما ھۆججەت ئورنىتىشقا ئېھتىياجلىق"
+
+#: Sentinel/PkInstallProvideFiles.cpp:66
+#, kde-format
+msgid "The application %2 is asking to install a file"
+msgid_plural "The application %2 is asking to install files"
+msgstr[0] ""
+
+#: Sentinel/PkInstallProvideFiles.cpp:88
+#: Sentinel/PkRemovePackageByFiles.cpp:128 Sentinel/PkSearchFile.cpp:54
+msgid "Failed to start search file transaction"
+msgstr ""
+
+#: Sentinel/PkInstallProvideFiles.cpp:101 libapper/PkTransaction.cpp:263
+msgid "Failed to install file"
+msgid_plural "Failed to install files"
+msgstr[0] "ھۆججەتنى ئورنىتىش مەغلۇپ بولدى"
+
+#: Sentinel/PkInstallProvideFiles.cpp:102
+#, kde-format
+msgid "The %1 package already provides this file"
+msgstr ""
+
+#: Sentinel/PkInstallProvideFiles.cpp:108
+msgid "Failed to find package"
+msgstr "بوغچىلارنى تېپىش مەغلۇپ بولدى"
+
+#: Sentinel/PkInstallProvideFiles.cpp:109
+msgid "The file could not be found in any packages"
+msgid_plural "The files could not be found in any packages"
+msgstr[0] "بۇ ھۆججەت ھېچقانداق يۇمشاق دېتال مەنبەسىدىن تېپىلمىدى."
+
+#: Sentinel/PkInstallPrinterDrivers.cpp:39
+msgid "Install Printer Drivers"
+msgstr ""
+
+#: Sentinel/PkInstallPrinterDrivers.cpp:74
+#: Sentinel/PkInstallPlasmaResources.cpp:101
+#: Sentinel/PkInstallMimeTypes.cpp:92
+#: Sentinel/PkInstallFontconfigResources.cpp:145
+#: Sentinel/PkInstallFontconfigResources.cpp:166
+#: Sentinel/PkInstallGStreamerResources.cpp:136
+msgid "Failed to search for provides"
+msgstr "provides ئىزدەش مەغلۇپ بولدى"
+
+#: Sentinel/PkInstallPrinterDrivers.cpp:87
+msgid "Failed to search for printer driver"
+msgstr ""
+
+#: Sentinel/PkInstallPrinterDrivers.cpp:88
+msgid "Could not find printer driver in any configured software source"
+msgstr ""
+
+#: Sentinel/UpdateIcon.cpp:163
+msgid "Review Updates"
+msgstr ""
+
+#: Sentinel/UpdateIcon.cpp:166
+msgid "Configure"
+msgstr "سەپلە"
+
+#. i18n: file: ApperKCM/PackageDetails.ui:359
+#. i18n: ectx: property (text), widget (QToolButton, hideTB)
+#. i18n: file: ApperKCM/Updater/UpdateDetails.ui:20
+#. i18n: ectx: property (text), widget (QToolButton, hideTB)
+#: Sentinel/UpdateIcon.cpp:170 libapper/PkTransactionDialog.cpp:86 rc.cpp:137
+#: rc.cpp:173
+msgid "Hide"
+msgstr "يوشۇر"
+
+#: Sentinel/UpdateIcon.cpp:180
+#, kde-format
+msgid "You have one update"
+msgid_plural "You have %1 updates"
+msgstr[0] ""
+
+#: Sentinel/UpdateIcon.cpp:233
+msgid "Updates are being automatically installed."
+msgstr ""
+
+#: Sentinel/UpdateIcon.cpp:254
+msgid "Security updates are being automatically installed."
+msgstr ""
+
+#: Sentinel/UpdateIcon.cpp:281
+msgid "System update was successful."
+msgstr ""
+
+#: Sentinel/UpdateIcon.cpp:290
+msgid "The automated software update failed."
+msgstr ""
+
+#: Sentinel/ReviewChanges.cpp:52
+msgid "The following package was found"
+msgid_plural "The following packages were found"
+msgstr[0] ""
+
+#: Sentinel/PkInstallPackageNames.cpp:41
+msgid "Install Packages by Name"
+msgstr ""
+
+#: Sentinel/PkInstallPackageNames.cpp:58
+msgid "No package names were provided"
+msgstr ""
+
+#: Sentinel/PkInstallPackageNames.cpp:61
+msgid "Do you want to search for and install this package now?"
+msgid_plural "Do you want to search for and install these packages now?"
+msgstr[0] "بۇ بوغچىنى ئىزدەپ ھەم ئۇنى ھازىرلا ئورنىتامسىز؟"
+
+#: Sentinel/PkInstallPackageNames.cpp:71 Sentinel/PkInstallPackageFiles.cpp:79
+msgid "An application wants to install a package"
+msgid_plural "An application wants to install packages"
+msgstr[0] ""
+
+#: Sentinel/PkInstallPackageNames.cpp:75 Sentinel/PkInstallPackageFiles.cpp:83
+#, kde-format
+msgid "The application <i>%2</i> wants to install a package"
+msgid_plural "The application <i>%2</i> wants to install packages"
+msgstr[0] ""
+
+#: Sentinel/PkInstallPackageNames.cpp:97 Sentinel/PkInstallCatalogs.cpp:278
+#: Sentinel/PkIsInstalled.cpp:46
+msgid "Failed to start resolve transaction"
+msgstr ""
+
+#: Sentinel/PkInstallPackageNames.cpp:109
+msgid "Failed to install packages"
+msgstr ""
+
+#: Sentinel/PkInstallPackageNames.cpp:110
+#, kde-format
+msgid "The package %2 is already installed"
+msgid_plural "The packages %2 are already installed"
+msgstr[0] ""
+
+#: Sentinel/PkInstallPackageNames.cpp:118
+#: Sentinel/PkRemovePackageByFiles.cpp:149 Sentinel/PkSearchFile.cpp:81
+#, kde-format
+msgid "Could not find %1"
+msgstr ""
+
+#: Sentinel/PkInstallPackageNames.cpp:119
+msgid "The package could not be found in any software source"
+msgid_plural "The packages could not be found in any software source"
+msgstr[0] "بۇ بوغچىلار ھېچقانداق يۇمشاق دېتال مەنبەسىدىن تېپىلمىدى."
+
+#: Sentinel/PkInstallCatalogs.cpp:46
+msgid "Install Packages Catalogs"
+msgstr ""
+
+#: Sentinel/PkInstallCatalogs.cpp:65
+msgid "You can drop more catalogs in here"
+msgstr ""
+
+#: Sentinel/PkInstallCatalogs.cpp:85
+msgid "No supported catalog was found"
+msgstr ""
+
+#: Sentinel/PkInstallCatalogs.cpp:87
+msgid "Do you want to install this catalog?"
+msgid_plural "Do you want to install these catalogs?"
+msgstr[0] "بۇ كاتالوگنى ئورنىتامسىز؟"
+
+#: Sentinel/PkInstallCatalogs.cpp:96
+msgid "An application wants to install a catalog"
+msgid_plural "An application wants to install catalogs"
+msgstr[0] ""
+
+#: Sentinel/PkInstallCatalogs.cpp:100
+#, kde-format
+msgid "The application <i>%2</i> wants to install a catalog"
+msgid_plural "The application <i>%2</i> wants to install catalogs"
+msgstr[0] ""
+
+#: Sentinel/PkInstallCatalogs.cpp:137
+msgid "Not supported"
+msgstr "قوللىمايدۇ"
+
+#: Sentinel/PkInstallCatalogs.cpp:138
+msgid ""
+"Your backend does not support any of the needed methods to install a catalog"
+msgstr ""
+
+#: Sentinel/PkInstallCatalogs.cpp:177
+msgid "Catalog not found"
+msgstr ""
+
+#: Sentinel/PkInstallCatalogs.cpp:178
+msgid "Could not find a catalog to install"
+msgstr ""
+
+#: Sentinel/PkInstallCatalogs.cpp:185
+#, kde-format
+msgid "Catalog %2 failed to open"
+msgid_plural "Catalogs %2 failed to open"
+msgstr[0] ""
+
+#: Sentinel/PkInstallCatalogs.cpp:189
+msgid "Failed to open"
+msgstr ""
+
+#: Sentinel/PkInstallCatalogs.cpp:195
+msgid "Catalog is Empty"
+msgstr ""
+
+#: Sentinel/PkInstallCatalogs.cpp:196
+msgid "Could not find any package to install in this catalog"
+msgstr ""
+
+#: Sentinel/SessionTask.cpp:66 libapper/Requirements.cpp:43
+msgid "Continue"
+msgstr "داۋاملاشتۇر"
+
+#: Sentinel/SessionTask.cpp:361
+msgid "There are no packages to Install or Remove"
+msgstr ""
+
+#: Sentinel/SessionTask.cpp:362
+msgid "This action should not happen"
+msgstr ""
+
+#: Sentinel/SessionTask.cpp:391
+msgid "Could not find"
+msgstr ""
+
+#: Sentinel/SessionTask.cpp:392 Sentinel/SessionTask.cpp:401
+msgid "No packages were found that meet the request"
+msgstr ""
+
+#: Sentinel/SessionTask.cpp:400
+msgid "Failed to find"
+msgstr ""
+
+#: Sentinel/SessionTask.cpp:422
+msgid "Transaction did not finish with success"
+msgstr ""
+
+#: Sentinel/SessionTask.cpp:428
+msgid "Task completed"
+msgstr ""
+
+#: Sentinel/SessionTask.cpp:428
+msgid "All operations were committed successfully"
+msgstr ""
+
+#: Sentinel/TransactionWatcher.cpp:64 Sentinel/TransactionWatcher.cpp:249
+msgid "Hide this icon"
+msgstr ""
+
+#: Sentinel/TransactionWatcher.cpp:166
+msgid "The system update has completed"
+msgstr "سىستېمىنى يېڭىلاش تاماملاندى"
+
+#: Sentinel/TransactionWatcher.cpp:172
+#, kde-format
+msgid "Packages: %1"
+msgstr ""
+
+#: Sentinel/TransactionWatcher.cpp:184
+#, kde-format
+msgid "Package: %2"
+msgid_plural "Packages: %2"
+msgstr[0] ""
+
+#: Sentinel/TransactionWatcher.cpp:231 Sentinel/TransactionWatcher.cpp:271
+msgid "Software Manager Messages"
+msgstr ""
+
+#: Sentinel/TransactionWatcher.cpp:232
+#, kde-format
+msgid "One message from the software manager"
+msgid_plural "%1 messages from the software manager"
+msgstr[0] ""
+
+#: Sentinel/TransactionWatcher.cpp:240
+msgid "Show messages"
+msgstr ""
+
+#: Sentinel/TransactionWatcher.cpp:292
+msgid "Ignore"
+msgstr "پەرۋا قىلما"
+
+#: Sentinel/PkIsInstalled.cpp:36
+msgid "Querying if a Package is Installed"
+msgstr ""
+
+#: Sentinel/PkIsInstalled.cpp:67
+msgid "User canceled the transaction"
+msgstr ""
+
+#: Sentinel/PkIsInstalled.cpp:69
+msgid "An unknown error happened"
+msgstr ""
+
+#: Sentinel/TransactionTrayIcon.cpp:45
+msgid "Transactions"
+msgstr "سودا"
+
+#: Sentinel/TransactionTrayIcon.cpp:90
+#, kde-format
+msgid "%1% - %2"
+msgstr ""
+
+#: Sentinel/TransactionTrayIcon.cpp:92
+#, kde-format
+msgid "%1"
+msgstr "%1"
+
+#: Sentinel/PkInstallPlasmaResources.cpp:40
+msgid "Install Plasma Resources"
+msgstr ""
+
+#: Sentinel/PkInstallPlasmaResources.cpp:53
+#, kde-format
+msgid "%1 data engine"
+msgstr ""
+
+#: Sentinel/PkInstallPlasmaResources.cpp:55
+#, kde-format
+msgid "%1 script engine"
+msgstr ""
+
+#: Sentinel/PkInstallPlasmaResources.cpp:67
+msgid "No supported resources were provided"
+msgstr ""
+
+#: Sentinel/PkInstallPlasmaResources.cpp:69
+msgid "The following service is required. Do you want to search for this now?"
+msgid_plural ""
+"The following services are required. Do you want to search for these now?"
+msgstr[0] ""
+
+#: Sentinel/PkInstallPlasmaResources.cpp:78
+msgid "Plasma requires an additional service for this operation"
+msgid_plural "Plasma requires additional services for this operation"
+msgstr[0] ""
+
+#: Sentinel/PkInstallPlasmaResources.cpp:112
+msgid "Failed to search for Plasma service"
+msgstr ""
+
+#: Sentinel/PkInstallPlasmaResources.cpp:115
+msgid "Could not find service in any configured software source"
+msgstr ""
+
+#: Sentinel/PkInstallMimeTypes.cpp:39
+msgid "Install Support for File Types"
+msgstr ""
+
+#: Sentinel/PkInstallMimeTypes.cpp:50
+msgid "Do you want to search for a program that can open this file type?"
+msgid_plural ""
+"Do you want to search for a program that can open these file types?"
+msgstr[0] ""
+
+#: Sentinel/PkInstallMimeTypes.cpp:55
+msgid "No valid file types were provided"
+msgstr ""
+
+#: Sentinel/PkInstallMimeTypes.cpp:62
+msgid "A program is requiring support to open this kind of files"
+msgid_plural "A program is requiring support to open these kinds of files"
+msgstr[0] ""
+
+#: Sentinel/PkInstallMimeTypes.cpp:66
+#, kde-format
+msgid "The application %2 is requiring support to open this kind of files"
+msgid_plural ""
+"The application %2 is requiring support to open these kinds of files"
+msgstr[0] ""
+
+#: Sentinel/PkInstallMimeTypes.cpp:101
+msgid "Could not find software"
+msgstr ""
+
+#: Sentinel/PkInstallMimeTypes.cpp:103
+msgid "No new applications can be found to handle this type of file"
+msgstr "بۇ تىپتىكى ھۆججەتنى بىر تەرەپ قىلىدىغان پروگرامما تېپىلمىدى"
+
+#: Sentinel/main.cpp:36
+msgid "Apper Sentinel"
+msgstr ""
+
+#: Sentinel/main.cpp:41
+msgid "Trever Fischer"
+msgstr "Trever Fischer"
+
+#: Sentinel/PkInstallPackageFiles.cpp:38
+msgid "Install Packages Files"
+msgstr ""
+
+#: Sentinel/PkInstallPackageFiles.cpp:42
+#: Sentinel/PkRemovePackageByFiles.cpp:43
+msgid "You can drop more files in here"
+msgstr ""
+
+#: Sentinel/PkInstallPackageFiles.cpp:52
+msgid "Not Supported"
+msgstr "قوللىمايدۇ"
+
+#: Sentinel/PkInstallPackageFiles.cpp:53
+msgid "Your current backend does not support installing files"
+msgstr ""
+
+#: Sentinel/PkInstallPackageFiles.cpp:68
+#: Sentinel/PkRemovePackageByFiles.cpp:64
+msgid "No supported files were provided"
+msgstr ""
+
+#: Sentinel/PkInstallPackageFiles.cpp:70
+msgid "Press <i>Continue</i> if you want to install this file"
+msgid_plural "Press <i>Continue</i> if you want to install these files"
+msgstr[0] ""
+
+#: Sentinel/PkInstallPackageFiles.cpp:105
+msgid "Installation Complete"
+msgstr "قاچىلاش تاماملاندى"
+
+#: Sentinel/PkInstallPackageFiles.cpp:106
+msgid "File was installed successfully"
+msgid_plural "Files were installed successfully"
+msgstr[0] ""
+
+#: Sentinel/PkInstallPackageFiles.cpp:117
+msgid "Failed to install files"
+msgstr "ھۆججەتنى ئورنىتىش مەغلۇپ بولدى"
+
+#: Sentinel/PkInstallPackageFiles.cpp:118
+#: Sentinel/PkInstallPackageFiles.cpp:120
+msgid "Could not install files"
+msgstr ""
+
+#: Sentinel/PkRemovePackageByFiles.cpp:40
+msgid "Remove Packages that Provides Files"
+msgstr ""
+
+#: Sentinel/PkRemovePackageByFiles.cpp:67
+msgid "Do you want to remove the following application?"
+msgid_plural "Do you want to remove the following applications?"
+msgstr[0] ""
+
+#: Sentinel/PkRemovePackageByFiles.cpp:71
+msgid "Do you want to search for a package providing this file?"
+msgid_plural "Do you want to search for a package providing these files?"
+msgstr[0] ""
+
+#: Sentinel/PkRemovePackageByFiles.cpp:82
+msgid "An application is asking to remove an application"
+msgid_plural "An application is asking to remove applications"
+msgstr[0] ""
+
+#: Sentinel/PkRemovePackageByFiles.cpp:86
+msgid "An application is asking to remove a file"
+msgid_plural "An application is asking to remove files"
+msgstr[0] ""
+
+#: Sentinel/PkRemovePackageByFiles.cpp:92
+#, kde-format
+msgid "The application <i>%2</i> is asking to remove an application"
+msgid_plural "The application <i>%2</i> is asking to remove applications"
+msgstr[0] ""
+
+#: Sentinel/PkRemovePackageByFiles.cpp:97
+#, kde-format
+msgid "The application <i>%2</i> is asking to remove a file"
+msgid_plural "The application <i>%2</i> is asking to remove files"
+msgstr[0] ""
+
+#: Sentinel/PkRemovePackageByFiles.cpp:103
+msgid "No application was found"
+msgstr ""
+
+#: Sentinel/PkRemovePackageByFiles.cpp:150
+msgid "The file could not be found in any installed package"
+msgid_plural "The files could not be found in any installed package"
+msgstr[0] ""
+
+#: Sentinel/PkSearchFile.cpp:37
+msgid "Search Packages that Provides Files"
+msgstr ""
+
+#: Sentinel/PkSearchFile.cpp:80
+msgid "The file name could not be found in any software source"
+msgstr ""
+
+#: Sentinel/PkInstallFontconfigResources.cpp:41
+msgid "Installs new Fonts"
+msgstr ""
+
+#: Sentinel/PkInstallFontconfigResources.cpp:73
+msgid "Could interpret request"
+msgstr ""
+
+#: Sentinel/PkInstallFontconfigResources.cpp:73
+msgid "Please verify if the request was valid"
+msgstr ""
+
+#: Sentinel/PkInstallFontconfigResources.cpp:107
+msgid ""
+"An additional font is required to view this document correctly.\n"
+"Do you want to search for a suitable package now?"
+msgid_plural ""
+"Additional fonts are required to view this document correctly.\n"
+"Do you want to search for suitable packages now?"
+msgstr[0] ""
+
+#: Sentinel/PkInstallFontconfigResources.cpp:117
+msgid "A program wants to install a font"
+msgid_plural "A program wants to install fonts"
+msgstr[0] "بۇ پروگرامما  خەت نۇسخا ئورنىتىشقا ئېھتىياجلىق"
+
+#: Sentinel/PkInstallFontconfigResources.cpp:121
+#, kde-format
+msgid "The application %2 wants to install a font"
+msgid_plural "The application %2 wants to install fonts"
+msgstr[0] ""
+
+#: Sentinel/PkInstallFontconfigResources.cpp:155
+#: Sentinel/PkInstallFontconfigResources.cpp:164
+msgid "Failed to find font"
+msgstr "خەت نۇسخىسىنى تېپىش مەغلۇپ بولدى"
+
+#: Sentinel/PkInstallFontconfigResources.cpp:157
+msgid "No new fonts could be found for this document"
+msgstr ""
+
+#: Sentinel/PkInstallGStreamerResources.cpp:39
+msgid "Install GStreamer Resources"
+msgstr ""
+
+#: Sentinel/PkInstallGStreamerResources.cpp:68
+msgid "The following plugin is required. Do you want to search for this now?"
+msgid_plural ""
+"The following plugins are required. Do you want to search for these now?"
+msgstr[0] ""
+
+#: Sentinel/PkInstallGStreamerResources.cpp:80
+msgid "A program requires an additional plugin to decode this file"
+msgid_plural "A program requires additional plugins to decode this file"
+msgstr[0] ""
+"پروگرامما بۇ ھۆججەتنى كودسىزلاش ئۈچۈن قوشۇمچە قىستۇرمىغا ئېھتىياجلىق"
+
+#: Sentinel/PkInstallGStreamerResources.cpp:85
+msgid "A program requires an additional plugin to encode this file"
+msgid_plural "A program requires additional plugins to encode this file"
+msgstr[0] "پروگرامما بۇ ھۆججەتنى كودلاش ئۈچۈن قوشۇمچە قىستۇرمىغا ئېھتىياجلىق"
+
+#: Sentinel/PkInstallGStreamerResources.cpp:90
+msgid "A program requires an additional plugin for this operation"
+msgid_plural "A program requires additional plugins for this operation"
+msgstr[0] "پروگرامما بۇ مەشغۇلاتنى قىلىش ئۈچۈن قوشۇمچە قىستۇرمىغا ئېھتىياجلىق"
+
+#: Sentinel/PkInstallGStreamerResources.cpp:97
+#, kde-format
+msgid "%2 requires an additional plugin to decode this file"
+msgid_plural "%2 requires additional plugins to decode this file"
+msgstr[0] "بۇ ھۆججەتنى كودسىزلاش ئۈچۈن %2 غا قوشۇمچە قىستۇرمىلار زۆرۈر"
+
+#: Sentinel/PkInstallGStreamerResources.cpp:103
+#, kde-format
+msgid "%2 requires an additional plugin to encode this file"
+msgid_plural "%2 requires additional plugins to encode this file"
+msgstr[0] "بۇ ھۆججەتنى كودلاش ئۈچۈن %2 غا قوشۇمچە قىستۇرمىلار زۆرۈر"
+
+#: Sentinel/PkInstallGStreamerResources.cpp:109
+#, kde-format
+msgid "%2 requires an additional plugin for this operation"
+msgid_plural "%2 requires additional plugins for this operation"
+msgstr[0] ""
+
+#: Sentinel/PkInstallGStreamerResources.cpp:147
+msgid "No results found"
+msgstr "نەتىجە يوق"
+
+#: Sentinel/PkInstallGStreamerResources.cpp:149
+msgid "Could not find plugin in any configured software source"
+msgstr "ھەرقانداق سەپلەنگەن يۇمشاق دېتال مەنبەسىدىن بۇ قىستۇرما تېپىلمىدى."
+
+#: libapper/ChangesDelegate.cpp:45
+msgid "Do not Install"
+msgstr ""
+
+#: libapper/ChangesDelegate.cpp:47
+msgid "Do not Remove"
+msgstr ""
+
+#: libapper/ChangesDelegate.cpp:49 libapper/ApplicationsDelegate.cpp:44
+msgid "Deselect"
+msgstr "ئەكسىچە تاللا"
+
+#: libapper/CustomProgressBar.cpp:38
+#, kde-format
+msgid "%1 remaining"
+msgstr ""
+
+#: libapper/PkStrings.cpp:32
+msgctxt "This is when the transaction status is not known"
+msgid "Unknown state"
+msgstr "نامەلۇم ھالەت"
+
+#: libapper/PkStrings.cpp:35
+msgctxt "transaction state, the daemon is in the process of starting"
+msgid "Waiting for service to start"
+msgstr "مۇلازىمەتنىڭ ئىجرا بولۇشىنى كۈتۈۋاتىدۇ"
+
+#: libapper/PkStrings.cpp:38
+msgctxt "transaction state, the transaction is waiting for another to complete"
+msgid "Waiting for other tasks"
+msgstr ""
+
+#: libapper/PkStrings.cpp:41
+msgctxt "transaction state, just started"
+msgid "Running task"
+msgstr "ۋەزىپىنى ئىجرا قىلىۋاتىدۇ"
+
+#: libapper/PkStrings.cpp:44
+msgctxt "transaction state, is querying data"
+msgid "Querying"
+msgstr "سۈرۈشتۈرۈۋاتىدۇ"
+
+#: libapper/PkStrings.cpp:47
+msgctxt "transaction state, getting data from a server"
+msgid "Getting information"
+msgstr "ئۇچۇرغا ئېرىشىۋاتىدۇ"
+
+#: libapper/PkStrings.cpp:50
+msgctxt "transaction state, removing packages"
+msgid "Removing packages"
+msgstr "بوغچىلارنى ئۆچۈرۈش"
+
+#: libapper/PkStrings.cpp:53
+msgctxt "transaction state, downloading package files"
+msgid "Downloading packages"
+msgstr "بوغچىلارنى چۈشۈرۈۋاتىدۇ"
+
+#: libapper/PkStrings.cpp:56
+msgctxt "transaction state, installing packages"
+msgid "Installing packages"
+msgstr "بوغچىلارنى ئورنىتىۋاتىدۇ"
+
+#: libapper/PkStrings.cpp:59
+msgctxt "transaction state, refreshing internal lists"
+msgid "Refreshing software list"
+msgstr "يۇمشاق دېتال تىزىمىنى يېڭىلاۋاتىدۇ"
+
+#: libapper/PkStrings.cpp:62
+msgctxt "transaction state, installing updates"
+msgid "Updating packages"
+msgstr "بوغچىلارنى يېڭىلاش"
+
+#: libapper/PkStrings.cpp:65
+msgctxt "transaction state, removing old packages, and cleaning config files"
+msgid "Cleaning up packages"
+msgstr "بوغچىلارنى تازىلاۋاتىدۇ"
+
+#: libapper/PkStrings.cpp:68
+msgctxt "transaction state, obsoleting old packages"
+msgid "Obsoleting packages"
+msgstr "Obsoleting packages"
+
+#: libapper/PkStrings.cpp:71
+msgctxt "transaction state, checking the transaction before we do it"
+msgid "Resolving dependencies"
+msgstr "بېقىندىلىق مۇناسىۋەتنى ھەل قىلىۋاتىدۇ"
+
+#: libapper/PkStrings.cpp:74
+msgctxt ""
+"transaction state, checking if we have all the security keys for the "
+"operation"
+msgid "Checking signatures"
+msgstr "ئىمزالارنى تەكشۈرۈۋاتىدۇ"
+
+#: libapper/PkStrings.cpp:77
+msgctxt "transaction state, when we return to a previous system state"
+msgid "Rolling back"
+msgstr "كەينىگە دومىلىتىۋاتىدۇ:"
+
+#: libapper/PkStrings.cpp:80
+msgctxt "transaction state, when we're doing a test transaction"
+msgid "Testing changes"
+msgstr "ئۆزگىرىشلەرنى سىناۋاتىدۇ"
+
+#: libapper/PkStrings.cpp:83
+msgctxt "transaction state, when we're writing to the system package database"
+msgid "Committing changes"
+msgstr "ئۆزگىرىشلەرنى تاپشۇرۇۋاتىدۇ"
+
+#: libapper/PkStrings.cpp:86
+msgctxt "transaction state, requesting data from a server"
+msgid "Requesting data"
+msgstr "سانلىق-مەلۇمات تەلەپ قىلىۋاتىدۇ"
+
+#: libapper/PkStrings.cpp:89
+msgctxt "transaction state, all done!"
+msgid "Finished"
+msgstr "تاماملاندى"
+
+#: libapper/PkStrings.cpp:92
+msgctxt "transaction state, in the process of cancelling"
+msgid "Cancelling"
+msgstr "ئەمەلدىن قالدۇرۇۋاتىدۇ"
+
+#: libapper/PkStrings.cpp:95
+msgctxt "transaction state, downloading metadata"
+msgid "Downloading repository information"
+msgstr "خەزىنە ئۇچۇرنى چۈشۈرۈۋاتىدۇ"
+
+#: libapper/PkStrings.cpp:98
+msgctxt "transaction state, downloading metadata"
+msgid "Downloading list of packages"
+msgstr "بوغچىلارنى تىزىمىنى چۈشۈرۈۋاتىدۇ"
+
+#: libapper/PkStrings.cpp:101
+msgctxt "transaction state, downloading metadata"
+msgid "Downloading file lists"
+msgstr "ھۆججەت تىزىمىنى چۈشۈرۈۋاتىدۇ"
+
+#: libapper/PkStrings.cpp:104
+msgctxt "transaction state, downloading metadata"
+msgid "Downloading lists of changes"
+msgstr "ئۆزگىرىشلەرنى چۈشۈرۈۋاتىدۇ"
+
+#: libapper/PkStrings.cpp:107
+msgctxt "transaction state, downloading metadata"
+msgid "Downloading groups"
+msgstr "گۇرۇپپىلارنى چۈشۈرۈۋاتىدۇ"
+
+#: libapper/PkStrings.cpp:110
+msgctxt "transaction state, downloading metadata"
+msgid "Downloading update information"
+msgstr "يېڭىلاش ئۇچۇرىنى چۈشۈرۈۋاتىدۇ"
+
+#: libapper/PkStrings.cpp:113
+msgctxt "transaction state, repackaging delta files"
+msgid "Repackaging files"
+msgstr "ھۆججەتلەر يېڭىدىن بوغچىلىنىۋاتىدۇ"
+
+#: libapper/PkStrings.cpp:116
+msgctxt "transaction state, loading databases"
+msgid "Loading cache"
+msgstr "غەملەك يۈكلەۋاتىدۇ"
+
+#: libapper/PkStrings.cpp:119
+msgctxt "transaction state, scanning for running processes"
+msgid "Scanning installed applications"
+msgstr "قاچىلانغان پروگراممىنى تەكشۈرۈۋاتىدۇ"
+
+#: libapper/PkStrings.cpp:122
+msgctxt ""
+"transaction state, generating a list of packages installed on the system"
+msgid "Generating package lists"
+msgstr "بوغچىلار تىزىمىنى ھاسىللاۋاتىدۇ"
+
+#: libapper/PkStrings.cpp:125
+msgctxt "transaction state, when we're waiting for the native tools to exit"
+msgid "Waiting for package manager lock"
+msgstr "يۇمشاق دېتال بوغچا باشقۇرغۇچنىڭ قۇلۇپلىنىشىنى ساقلاۋاتىدۇ"
+
+#: libapper/PkStrings.cpp:128
+msgctxt "waiting for user to type in a password"
+msgid "Waiting for authentication"
+msgstr "ئىسپاتلاشنى ساقلاۋاتىدۇ"
+
+#: libapper/PkStrings.cpp:131
+msgctxt "we are updating the list of processes"
+msgid "Updating the list of running applications"
+msgstr "ئىجرا بولۇۋاتقان پروگرامما تىزىمىنى يېڭىلاۋاتىدۇ"
+
+#: libapper/PkStrings.cpp:134
+msgctxt "we are checking executable files in use"
+msgid "Checking for applications currently in use"
+msgstr "نۆۋەتتە ئىشلىتىۋاتقان پروگراممىلارنى تەكشۈرۈۋاتىدۇ"
+
+#: libapper/PkStrings.cpp:137
+msgctxt "we are checking for libraries in use"
+msgid "Checking for libraries currently in use"
+msgstr "نۆۋەتتە ئىشلىتىۋاتقان ئامبارنى تەكشۈرۈۋاتىدۇ"
+
+#: libapper/PkStrings.cpp:140
+msgctxt "we are copying package files to prepare to install"
+msgid "Copying files"
+msgstr "ھۆججەتلەرنى كۆچۈرۈۋاتىدۇ"
+
+#: libapper/PkStrings.cpp:150
+msgctxt "The action of the package, in past tense"
+msgid "Downloaded"
+msgstr "چۈشۈرۈلدى"
+
+#: libapper/PkStrings.cpp:152
+msgctxt "The action of the package, in past tense"
+msgid "Updated"
+msgstr "يېڭىلاندى"
+
+#: libapper/PkStrings.cpp:154
+msgctxt "The action of the package, in past tense"
+msgid "Installed"
+msgstr "ئورنىتىلغان"
+
+#: libapper/PkStrings.cpp:156
+msgctxt "The action of the package, in past tense"
+msgid "Removed"
+msgstr "چىقىرىۋېتىلدى"
+
+#: libapper/PkStrings.cpp:158
+msgctxt "The action of the package, in past tense"
+msgid "Cleaned Up"
+msgstr ""
+
+#: libapper/PkStrings.cpp:160
+msgctxt "The action of the package, in past tense"
+msgid "Obsoleted"
+msgstr "ۋاقتى ئۆتكەن"
+
+#: libapper/PkStrings.cpp:171
+msgctxt "The role of the transaction, in present tense"
+msgid "Unknown role type"
+msgstr "نامەلۇم role تىپى"
+
+#: libapper/PkStrings.cpp:173
+msgctxt "The role of the transaction, in present tense"
+msgid "Getting dependencies"
+msgstr "بېقىنىش مۇناسىۋىتىگە ئېرىشىۋاتىدۇ"
+
+#: libapper/PkStrings.cpp:175
+msgctxt "The role of the transaction, in present tense"
+msgid "Getting update detail"
+msgstr "يېڭىلاش ئۇچۇرىغا ئېرىشىۋاتىدۇ"
+
+#: libapper/PkStrings.cpp:177
+msgctxt "The role of the transaction, in present tense"
+msgid "Getting details"
+msgstr "تەپسىلاتىغا ئېرىشىۋاتىدۇ:"
+
+#: libapper/PkStrings.cpp:179
+msgctxt "The role of the transaction, in present tense"
+msgid "Getting requires"
+msgstr "ئېھتىياج ئۇچۇرىغا ئېرىشىۋاتىدۇ:"
+
+#: libapper/PkStrings.cpp:181
+msgctxt "The role of the transaction, in present tense"
+msgid "Getting updates"
+msgstr "يېڭىلانمىلارغا ئېرىشىۋاتىدۇ:"
+
+#: libapper/PkStrings.cpp:183
+msgctxt "The role of the transaction, in present tense"
+msgid "Searching details"
+msgstr "تەپسىلاتىنى ئىزدەۋاتىدۇ"
+
+#: libapper/PkStrings.cpp:185
+msgctxt "The role of the transaction, in present tense"
+msgid "Searching for file"
+msgstr "ھۆججەت  ئىزدەۋاتىدۇ"
+
+#: libapper/PkStrings.cpp:187
+msgctxt "The role of the transaction, in present tense"
+msgid "Searching groups"
+msgstr "گۇرۇپپىلارنى  ئىزدەۋاتىدۇ"
+
+#: libapper/PkStrings.cpp:189
+msgctxt "The role of the transaction, in present tense"
+msgid "Searching by package name"
+msgstr ""
+
+#: libapper/PkStrings.cpp:191
+msgctxt "The role of the transaction, in present tense"
+msgid "Removing"
+msgstr "ئۆچۈرۈۋاتىدۇ..."
+
+#: libapper/PkStrings.cpp:193
+msgctxt "The role of the transaction, in present tense"
+msgid "Installing"
+msgstr "ئورنىتىۋاتىدۇ"
+
+#: libapper/PkStrings.cpp:195
+msgctxt "The role of the transaction, in present tense"
+msgid "Installing file"
+msgstr "ھۆججەت ئورنىتىۋاتىدۇ"
+
+#: libapper/PkStrings.cpp:197
+msgctxt "The role of the transaction, in present tense"
+msgid "Refreshing package cache"
+msgstr "بوغچا غەملىكىنى يېڭىلاۋاتىدۇ"
+
+#: libapper/PkStrings.cpp:199
+msgctxt "The role of the transaction, in present tense"
+msgid "Updating packages"
+msgstr "بوغچىلارنى يېڭىلاش"
+
+#: libapper/PkStrings.cpp:201
+msgctxt "The role of the transaction, in present tense"
+msgid "Updating system"
+msgstr "سىستېمىنى يېڭىلاۋاتىدۇ"
+
+#: libapper/PkStrings.cpp:203
+msgctxt "The role of the transaction, in present tense"
+msgid "Canceling"
+msgstr "ۋاز كېچىۋاتىدۇ"
+
+#: libapper/PkStrings.cpp:205
+msgctxt "The role of the transaction, in present tense"
+msgid "Rolling back"
+msgstr "كەينىگە دومىلىتىۋاتىدۇ:"
+
+#: libapper/PkStrings.cpp:207
+msgctxt "The role of the transaction, in present tense"
+msgid "Getting list of repositories"
+msgstr "خەزىنە تىزىمىغا ئېرىشىۋاتىدۇ"
+
+#: libapper/PkStrings.cpp:209
+msgctxt "The role of the transaction, in present tense"
+msgid "Enabling repository"
+msgstr "خەزىنىلەرنى قوزغىتىۋاتىدۇ"
+
+#: libapper/PkStrings.cpp:211
+msgctxt "The role of the transaction, in present tense"
+msgid "Setting repository data"
+msgstr "خەزىنە مەلۇماتىنى تەڭشەۋاتىدۇ"
+
+#: libapper/PkStrings.cpp:213
+msgctxt "The role of the transaction, in present tense"
+msgid "Resolving"
+msgstr "ھەل قىلىۋاتىدۇ"
+
+#: libapper/PkStrings.cpp:215
+msgctxt "The role of the transaction, in present tense"
+msgid "Getting file list"
+msgstr "ھۆججەت تىزىمىغا ئېرىشىۋاتىدۇ"
+
+#: libapper/PkStrings.cpp:217
+msgctxt "The role of the transaction, in present tense"
+msgid "Getting what provides"
+msgstr "تەمىنلىگەن ئۇچۇرغا ئېرىشىۋاتىدۇ"
+
+#: libapper/PkStrings.cpp:219
+msgctxt "The role of the transaction, in present tense"
+msgid "Installing signature"
+msgstr "ئىمزا ئورنىتىۋاتىدۇ"
+
+#: libapper/PkStrings.cpp:221
+msgctxt "The role of the transaction, in present tense"
+msgid "Getting package lists"
+msgstr "بوغچىلار تىزىمىغا ئېرىشىۋاتىدۇ"
+
+#: libapper/PkStrings.cpp:223
+msgctxt "The role of the transaction, in present tense"
+msgid "Accepting EULA"
+msgstr "EULAقوشۇلۇۋاتىدۇ"
+
+#: libapper/PkStrings.cpp:225
+msgctxt "The role of the transaction, in present tense"
+msgid "Downloading packages"
+msgstr "بوغچىلارنى چۈشۈرۈۋاتىدۇ"
+
+#: libapper/PkStrings.cpp:227
+msgctxt "The role of the transaction, in present tense"
+msgid "Getting distribution upgrade information"
+msgstr "تارقىتىلمىنىڭ يۈكسەلدۈرۈش ئۇچۇرىغا ئېرىشىۋاتىدۇ:"
+
+#: libapper/PkStrings.cpp:229
+msgctxt "The role of the transaction, in present tense"
+msgid "Getting categories"
+msgstr "كاتېگورىيىگە ئېرىشىۋاتىدۇ"
+
+#: libapper/PkStrings.cpp:231
+msgctxt "The role of the transaction, in present tense"
+msgid "Getting old transactions"
+msgstr "ئاۋۋالقى بىرتەرەپ قىلىش جەريان  ئۇچۇرىغا ئېرىشىۋاتىدۇ"
+
+#: libapper/PkStrings.cpp:233
+msgctxt "The role of the transaction, in present tense"
+msgid "Simulating the install of files"
+msgstr "ھۆججەت ئورنىتىش تەقلىدلىنىۋاتىدۇ"
+
+#: libapper/PkStrings.cpp:235
+msgctxt "The role of the transaction, in present tense"
+msgid "Simulating the install"
+msgstr "تەقلىدىي ئورنىتىلىۋاتىدۇ"
+
+#: libapper/PkStrings.cpp:237
+msgctxt "The role of the transaction, in present tense"
+msgid "Simulating the remove"
+msgstr "تەقلىدىي چىقىرىۋىتىلۋاتىدۇ"
+
+#: libapper/PkStrings.cpp:239
+msgctxt "The role of the transaction, in present tense"
+msgid "Simulating the update"
+msgstr "تەقلىدىي يېڭىلاۋاتىدۇ"
+
+#: libapper/PkStrings.cpp:241
+msgctxt "The role of the transaction, in present tense"
+msgid "Upgrading system"
+msgstr "سىستېمىنى يۈكسەلدۈرۈلۈۋاتىدۇ"
+
+#: libapper/PkStrings.cpp:251
+msgctxt "The role of the transaction, in past tense"
+msgid "Unknown role type"
+msgstr "نامەلۇم role تىپى"
+
+#: libapper/PkStrings.cpp:253
+msgctxt "The role of the transaction, in past tense"
+msgid "Got dependencies"
+msgstr "تايىنىش مۇناسىۋىتىگە ئېرىشتى"
+
+#: libapper/PkStrings.cpp:255
+msgctxt "The role of the transaction, in past tense"
+msgid "Got update detail"
+msgstr "يېڭىلاش ئۇچۇرىغا ئېرىشتى"
+
+#: libapper/PkStrings.cpp:257
+msgctxt "The role of the transaction, in past tense"
+msgid "Got details"
+msgstr "تەپسىلاتقا ئېرىشتى"
+
+#: libapper/PkStrings.cpp:259
+msgctxt "The role of the transaction, in past tense"
+msgid "Got requires"
+msgstr "ئېھتىياج ئۇچۇرىغا ئېرىشتى"
+
+#: libapper/PkStrings.cpp:261
+msgctxt "The role of the transaction, in past tense"
+msgid "Got updates"
+msgstr "يېڭىلانمىلارغا ئېرىشتى"
+
+#: libapper/PkStrings.cpp:263
+msgctxt "The role of the transaction, in past tense"
+msgid "Searched for package details"
+msgstr "بوغچا تەپسىلاتى ئىزدەلدى"
+
+#: libapper/PkStrings.cpp:265
+msgctxt "The role of the transaction, in past tense"
+msgid "Searched for file"
+msgstr "ھۆججەت  ئىزدەلدى"
+
+#: libapper/PkStrings.cpp:267
+msgctxt "The role of the transaction, in past tense"
+msgid "Searched groups"
+msgstr "گۇرۇپپىلار  ئىزدەلدى"
+
+#: libapper/PkStrings.cpp:269
+msgctxt "The role of the transaction, in past tense"
+msgid "Searched for package name"
+msgstr "بوغچا ئىسمى ئىزدەلدى"
+
+#: libapper/PkStrings.cpp:271
+msgctxt "The role of the transaction, in past tense"
+msgid "Removed packages"
+msgstr "ئۆچۈرۈلگەن بوغچىلار"
+
+#: libapper/PkStrings.cpp:273
+msgctxt "The role of the transaction, in past tense"
+msgid "Installed packages"
+msgstr "ئورنىتىلغان بوغچىلار"
+
+#: libapper/PkStrings.cpp:275
+msgctxt "The role of the transaction, in past tense"
+msgid "Installed local files"
+msgstr "يەرلىك ھۆججەت ئورنىتىلدى"
+
+#: libapper/PkStrings.cpp:277
+msgctxt "The role of the transaction, in past tense"
+msgid "Refreshed package cache"
+msgstr "يېڭىلانغان بوغچا غەملىكى"
+
+#: libapper/PkStrings.cpp:279
+msgctxt "The role of the transaction, in past tense"
+msgid "Updated packages"
+msgstr "يېڭىلانغان بوغچىلار"
+
+#: libapper/PkStrings.cpp:281
+msgctxt "The role of the transaction, in past tense"
+msgid "Updated system"
+msgstr "يېڭىلانغان سىستېما"
+
+#: libapper/PkStrings.cpp:283
+msgctxt "The role of the transaction, in past tense"
+msgid "Canceled"
+msgstr "ۋاز كەچتى"
+
+#: libapper/PkStrings.cpp:285
+msgctxt "The role of the transaction, in past tense"
+msgid "Rolled back"
+msgstr "كەينىگە دومىلىدى"
+
+#: libapper/PkStrings.cpp:287
+msgctxt "The role of the transaction, in past tense"
+msgid "Got list of repositories"
+msgstr "خەزىنە تىزىمىغا ئېرىشتى"
+
+#: libapper/PkStrings.cpp:289
+msgctxt "The role of the transaction, in past tense"
+msgid "Enabled repository"
+msgstr "قوزغىتىلغان خەزىنىلەر"
+
+#: libapper/PkStrings.cpp:291
+msgctxt "The role of the transaction, in past tense"
+msgid "Set repository data"
+msgstr "خەزىنە مەلۇماتىنى تەڭشە"
+
+#: libapper/PkStrings.cpp:293
+msgctxt "The role of the transaction, in past tense"
+msgid "Resolved"
+msgstr "ھەل قىلىندى"
+
+#: libapper/PkStrings.cpp:295
+msgctxt "The role of the transaction, in past tense"
+msgid "Got file list"
+msgstr "ھۆججەت تىزىمىغا ئېرىشتى"
+
+#: libapper/PkStrings.cpp:297
+msgctxt "The role of the transaction, in past tense"
+msgid "Got what provides"
+msgstr "تەمىنلىگەن ئۇچۇرغا ئېرىشتى"
+
+#: libapper/PkStrings.cpp:299
+msgctxt "The role of the transaction, in past tense"
+msgid "Installed signature"
+msgstr "ئىمزا ئورنىتىلدى"
+
+#: libapper/PkStrings.cpp:301
+msgctxt "The role of the transaction, in past tense"
+msgid "Got package lists"
+msgstr "بوغچىلار تىزىمىغا ئېرىشتى"
+
+#: libapper/PkStrings.cpp:303
+msgctxt "The role of the transaction, in past tense"
+msgid "Accepted EULA"
+msgstr "EULAقوشۇلغان"
+
+#: libapper/PkStrings.cpp:305
+msgctxt "The role of the transaction, in past tense"
+msgid "Downloaded packages"
+msgstr "چۈشۈرۈلگەن بوغچىلار"
+
+#: libapper/PkStrings.cpp:307
+msgctxt "The role of the transaction, in past tense"
+msgid "Got distribution upgrades"
+msgstr "تارقىتىلمىنىڭ يۈكسەلدۈرمىسىگە ئېرىشتى"
+
+#: libapper/PkStrings.cpp:309
+msgctxt "The role of the transaction, in past tense"
+msgid "Got categories"
+msgstr "كاتېگورىيىگە ئېرىشتى"
+
+#: libapper/PkStrings.cpp:311
+msgctxt "The role of the transaction, in past tense"
+msgid "Got old transactions"
+msgstr "ئاۋۋالقى بىرتەرەپ قىلىش جەريانىغا ئېرىشتى"
+
+#: libapper/PkStrings.cpp:313
+msgctxt "The role of the transaction, in past tense"
+msgid "Simulated the install of files"
+msgstr "ھۆججەت ئورنىتىش تەقلىدلەندى"
+
+#: libapper/PkStrings.cpp:315
+msgctxt "The role of the transaction, in past tense"
+msgid "Simulated the install"
+msgstr "تەقلىدىي ئورنىتىلدى"
+
+#: libapper/PkStrings.cpp:317
+msgctxt "The role of the transaction, in past tense"
+msgid "Simulated the remove"
+msgstr "تەقلىدىي چىقىرىۋېتىلدى"
+
+#: libapper/PkStrings.cpp:319
+msgctxt "The role of the transaction, in past tense"
+msgid "Simulated the update"
+msgstr "تەقلىدىي يېڭىلاندى"
+
+#: libapper/PkStrings.cpp:321
+msgctxt "The role of the transaction, in past tense"
+msgid "Upgraded system"
+msgstr "يۈكسەلدۈرۈلگەن سىستېما"
+
+#: libapper/PkStrings.cpp:331
+msgid "Downloading"
+msgstr "چۈشۈرۈۋاتىدۇ"
+
+#: libapper/PkStrings.cpp:333
+msgid "Updating"
+msgstr "يېڭىلاۋاتىدۇ"
+
+#: libapper/PkStrings.cpp:335
+msgid "Installing"
+msgstr "ئورنىتىۋاتىدۇ"
+
+#: libapper/PkStrings.cpp:337
+msgid "Removing"
+msgstr "ئۆچۈرۈۋاتىدۇ..."
+
+#: libapper/PkStrings.cpp:339
+msgid "Cleaning up"
+msgstr "تازىلاۋاتىدۇ"
+
+#: libapper/PkStrings.cpp:341
+msgid "Obsoleting"
+msgstr "Obsoleting"
+
+#: libapper/PkStrings.cpp:343
+msgid "Reinstalling"
+msgstr "قايتا ئورنىتىۋاتىدۇ"
+
+#: libapper/PkStrings.cpp:345
+msgid "Preparing"
+msgstr "تەييارلىق ھالەت"
+
+#: libapper/PkStrings.cpp:347
+msgid "Decompressing"
+msgstr "يېشىۋاتىدۇ"
+
+#: libapper/PkStrings.cpp:358
+msgid "Downloaded"
+msgstr "چۈشۈرۈلدى"
+
+#: libapper/PkStrings.cpp:360
+msgid "Updated"
+msgstr "يېڭىلاندى"
+
+#: libapper/PkStrings.cpp:364
+msgid "Removed"
+msgstr "چىقىرىۋېتىلدى"
+
+#: libapper/PkStrings.cpp:366
+msgid "Cleaned up"
+msgstr "تازىلاندى"
+
+#: libapper/PkStrings.cpp:368
+msgid "Obsoleted"
+msgstr "ۋاقتى ئۆتكەن"
+
+#: libapper/PkStrings.cpp:370
+msgid "Reinstalled"
+msgstr "قايتا ئورنىتىلدى"
+
+#: libapper/PkStrings.cpp:372
+msgid "Prepared"
+msgstr "تەييارلاندى"
+
+#: libapper/PkStrings.cpp:374
+msgid "Decompressed"
+msgstr "يېشىلگەن"
+
+#: libapper/PkStrings.cpp:385
+msgid "No network connection available"
+msgstr "تور باغلىنىشى يوق"
+
+#: libapper/PkStrings.cpp:387
+msgid "No package cache is available"
+msgstr ""
+
+#: libapper/PkStrings.cpp:389
+msgid "Out of memory"
+msgstr "ئەسلەك يېتىشمىدى"
+
+#: libapper/PkStrings.cpp:391
+msgid "Failed to create a thread"
+msgstr "جەريان قۇرۇش مەغلۇپ بولدى"
+
+#: libapper/PkStrings.cpp:393
+msgid "Not supported by this backend"
+msgstr "بۇ ئارقا ئۇچنى قوللىمايدىغان"
+
+#: libapper/PkStrings.cpp:395
+msgid "An internal system error has occurred"
+msgstr "ئىچكى سىستېما خاتالىقى يۈز بەردى"
+
+#: libapper/PkStrings.cpp:397
+msgid "A security trust relationship is not present"
+msgstr ""
+
+#: libapper/PkStrings.cpp:399
+msgid "The package is not installed"
+msgstr "بوغچىلار ئورنىتىلمىدى"
+
+#: libapper/PkStrings.cpp:401
+msgid "The package was not found"
+msgstr "بوغچىلار تېپىلمىدى."
+
+#: libapper/PkStrings.cpp:403
+msgid "The package is already installed"
+msgstr "بوغچا ئاللىقاچان ئورنىتىلغان"
+
+#: libapper/PkStrings.cpp:405
+msgid "The package download failed"
+msgstr "بوغچا يۈكلەش مەغلۇپ بولدى"
+
+#: libapper/PkStrings.cpp:407
+msgid "The group was not found"
+msgstr "بۇ گۇرۇپپا تېپىلمىدى."
+
+#: libapper/PkStrings.cpp:409
+msgid "The group list was invalid"
+msgstr "گۇرۇپپا تىزىمى ئىناۋەتسىز."
+
+#: libapper/PkStrings.cpp:411
+msgid "Dependency resolution failed"
+msgstr "Dependency resolution مەغلۇپ بولدى"
+
+#: libapper/PkStrings.cpp:413
+msgid "Search filter was invalid"
+msgstr "سۈزگۈچنى ئىزدەش ئىناۋەتسىز"
+
+#: libapper/PkStrings.cpp:415
+msgid "The package identifier was not well formed"
+msgstr "بوغچا كۆرسەتمە بەلگىسىدە مەسىلە بار."
+
+#: libapper/PkStrings.cpp:417
+msgid "Transaction error"
+msgstr "بىرتەرەپ قىلىشتىكى خاتالىق"
+
+#: libapper/PkStrings.cpp:419
+msgid "Repository name was not found"
+msgstr "خەزىنە ئاتى تېپىلمىدى"
+
+#: libapper/PkStrings.cpp:421
+msgid "Could not remove a protected system package"
+msgstr "قوغدىلىدىغان سىستېما بوغچىسىنى چىقىرىۋەتكىلى بولمىدى"
+
+#: libapper/PkStrings.cpp:423
+msgid "The task was canceled"
+msgstr ""
+
+#: libapper/PkStrings.cpp:425
+msgid "The task was forcibly canceled"
+msgstr ""
+
+#: libapper/PkStrings.cpp:427
+msgid "Reading the config file failed"
+msgstr ""
+
+#: libapper/PkStrings.cpp:429
+msgid "The task cannot be cancelled"
+msgstr ""
+
+#: libapper/PkStrings.cpp:431
+msgid "Source packages cannot be installed"
+msgstr "Sourceبوغچىلار ئورنىتىلمىدى"
+
+#: libapper/PkStrings.cpp:433
+msgid "The license agreement failed"
+msgstr "كېلىشىم ئىجازىتى مەغلۇپ بولدى"
+
+#: libapper/PkStrings.cpp:435
+msgid "Local file conflict between packages"
+msgstr "بوغچىلار ئارىسىدا يەرلىك ھۆججەت توقۇنۇشى مەۋجۇت"
+
+#: libapper/PkStrings.cpp:437
+msgid "Packages are not compatible"
+msgstr "بوغچىلار ماسلاشمايدۇ"
+
+#: libapper/PkStrings.cpp:439
+msgid "Problem connecting to a software origin"
+msgstr ""
+
+#: libapper/PkStrings.cpp:441
+msgid "Failed to initialize"
+msgstr "دەسلەپلەشتۈرۈش مەغلۇپ بولدى"
+
+#: libapper/PkStrings.cpp:443
+msgid "Failed to finalize"
+msgstr ""
+
+#: libapper/PkStrings.cpp:445
+msgid "Cannot get lock"
+msgstr "قۇلۇپقا ئېرىشكىلى بولمىدى"
+
+#: libapper/PkStrings.cpp:447
+msgid "No packages to update"
+msgstr "يېڭىلايدىغان بوغچىلار يوق"
+
+#: libapper/PkStrings.cpp:449
+msgid "Cannot write repository configuration"
+msgstr "خەزىنە سەپلىمىسىگە يازغىلى بولمىدى"
+
+#: libapper/PkStrings.cpp:451
+msgid "Local install failed"
+msgstr "يەرلىك ئورنىتىش مەغلۇپ بولدى"
+
+#: libapper/PkStrings.cpp:453
+msgid "Bad GPG signature"
+msgstr ""
+
+#: libapper/PkStrings.cpp:455
+msgid "Missing GPG signature"
+msgstr ""
+
+#: libapper/PkStrings.cpp:457
+msgid "Repository configuration invalid"
+msgstr "خەزىنە سەپلەش مەغلۇپ بولدى"
+
+#: libapper/PkStrings.cpp:459
+msgid "Invalid package file"
+msgstr "ئىناۋەتسىز بوغچا ھۆججىتى"
+
+#: libapper/PkStrings.cpp:461
+msgid "Package install blocked"
+msgstr "بوغچا ئورنىتىش توسۇلدى"
+
+#: libapper/PkStrings.cpp:463
+msgid "Package is corrupt"
+msgstr "بوغچا بۇزۇلغان"
+
+#: libapper/PkStrings.cpp:465
+msgid "All packages are already installed"
+msgstr "بارلىق بوغچىلار ئاللىقاچان ئورنىتىلىپتۇ"
+
+#: libapper/PkStrings.cpp:467
+msgid "The specified file could not be found"
+msgstr "بەلگىلەنگەن ھۆججەت  تېپىلمىدى"
+
+#: libapper/PkStrings.cpp:469
+msgid "No more mirrors are available"
+msgstr "تېخىمۇ كۆپ ئىشلەتكۈدەك  تەسۋىر  يوق"
+
+#: libapper/PkStrings.cpp:471
+msgid "No distribution upgrade data is available"
+msgstr "ئىشلەتكىلى بولىدىغان تارقىتىلما يۈكسەلدۈرۈش سانلىق-مەلۇماتى يوق"
+
+#: libapper/PkStrings.cpp:473
+msgid "Package is incompatible with this system"
+msgstr "بوغچا بۇ سىستېما بىلەن ماسلاشمايدۇ"
+
+#: libapper/PkStrings.cpp:475
+msgid "No space is left on the disk"
+msgstr "دىسكىدا بوشلۇق قالمىدى"
+
+#: libapper/PkStrings.cpp:477 libapper/PkTransaction.cpp:578
+msgid "A media change is required"
+msgstr "ۋاسىتە ئالماشتۇرۇشقا ئېھتىياجلىق"
+
+#: libapper/PkStrings.cpp:479
+msgid "Authorization failed"
+msgstr "دەلىللەش مەغلۇپ بولدى"
+
+#: libapper/PkStrings.cpp:481
+msgid "Update not found"
+msgstr "يېڭىلانما تېپىلمىدى"
+
+#: libapper/PkStrings.cpp:483
+msgid "Cannot install from untrusted origin"
+msgstr ""
+
+#: libapper/PkStrings.cpp:485
+msgid "Cannot update from untrusted origin"
+msgstr ""
+
+#: libapper/PkStrings.cpp:487
+msgid "Cannot get the file list"
+msgstr "ھۆججەت تىزىمغا ئېرىشكىلى بولمىدى"
+
+#: libapper/PkStrings.cpp:489
+msgid "Cannot get package requires"
+msgstr "بوغچا ئېھتىياجىغا ئېرىشكىلى بولمىدى"
+
+#: libapper/PkStrings.cpp:491
+msgid "Cannot disable origin"
+msgstr ""
+
+#: libapper/PkStrings.cpp:493
+msgid "The download failed"
+msgstr "يۈكلەش مەغلۇپ بولدى."
+
+#: libapper/PkStrings.cpp:495
+msgid "Package failed to configure"
+msgstr "بوغچىنى سەپلىيەلمىدى"
+
+#: libapper/PkStrings.cpp:497
+msgid "Package failed to build"
+msgstr "بوغچىنى قۇرالمىدى"
+
+#: libapper/PkStrings.cpp:499
+msgid "Package failed to install"
+msgstr "بوغچىنى ئورنىتالمىدى"
+
+#: libapper/PkStrings.cpp:501
+msgid "Package failed to be removed"
+msgstr "بوغچىنى چىقىرىۋېتەلمىدى"
+
+#: libapper/PkStrings.cpp:503
+msgid "Update failed due to running process"
+msgstr "ئىجرا ئىجرا بولۇۋاتقانلىقتىن ، يېڭىلاش مەغلۇپ بولدى"
+
+#: libapper/PkStrings.cpp:505
+msgid "The package database was changed"
+msgstr "بوغچا ساندىنى ئۆزگەرتىلدى"
+
+#: libapper/PkStrings.cpp:507
+msgid "Virtual provide type is not supported"
+msgstr "Virtual provide تىپىنى قوللىمايدۇ"
+
+#: libapper/PkStrings.cpp:509
+msgid "Install root is invalid"
+msgstr "يىلتىز ئورنىتىش ئىناۋەتسىز"
+
+#: libapper/PkStrings.cpp:511
+msgid "Cannot fetch install sources"
+msgstr ""
+
+#: libapper/PkStrings.cpp:513
+msgid "Rescheduled due to priority"
+msgstr ""
+
+#: libapper/PkStrings.cpp:515
+msgid "Unknown error"
+msgstr "نامەلۇم خاتالىق"
+
+#: libapper/PkStrings.cpp:525
+msgid ""
+"There is no network connection available.\n"
+"Please check your connection settings and try again"
+msgstr ""
+
+#: libapper/PkStrings.cpp:528
+msgid ""
+"The package list needs to be rebuilt.\n"
+"This should have been done by the backend automatically."
+msgstr ""
+"بوغچا تىزىمىنى قايتا قۇرۇش زۆرۈر.\n"
+"بۇ ۋەزىپە ئاخىرقى ئۇچتا ئۆزلۈكىدىن تامام بولىدۇ."
+
+#: libapper/PkStrings.cpp:531
+msgid ""
+"The service that is responsible for handling user requests is out of "
+"memory.\n"
+"Please close some programs or restart your computer."
+msgstr ""
+
+#: libapper/PkStrings.cpp:534
+msgid "A thread could not be created to service the user request."
+msgstr "ئىشلەتكۈچى ئىلتىماسىنى بىرتەرەپ قىلىش جەريانىنى قۇرالمىدى."
+
+#: libapper/PkStrings.cpp:536
+msgid ""
+"The action is not supported by this backend.\n"
+"Please report a bug as this should not have happened."
+msgstr ""
+
+#: libapper/PkStrings.cpp:539
+msgid ""
+"A problem that we were not expecting has occurred.\n"
+"Please report this bug with the error description."
+msgstr ""
+
+#: libapper/PkStrings.cpp:542
+msgid ""
+"A security trust relationship could not be made with the software origin.\n"
+"Please check your software signature settings."
+msgstr ""
+
+#: libapper/PkStrings.cpp:545
+msgid ""
+"The package that is trying to be removed or updated is not already installed."
+msgstr "يېڭىلىماقچى ياكى چىقىرىۋەتمەكچى بولغان بوغچا ئورنىتىلمىغان."
+
+#: libapper/PkStrings.cpp:547
+msgid ""
+"The package that is being modified was not found on your system or in any "
+"software origin."
+msgstr ""
+
+#: libapper/PkStrings.cpp:549
+msgid "The package that is trying to be installed is already installed."
+msgstr "ئورناتماقچى بولغان بوغچا ئورنىتىلىپ بولغان."
+
+#: libapper/PkStrings.cpp:551
+msgid ""
+"The package download failed.\n"
+"Please check your network connectivity."
+msgstr ""
+"بوغچا يۈكلەش مەغلۇپ بولدى.\n"
+"تور باغلىنىشىنى تەكشۈرۈپ بېقىڭ."
+
+#: libapper/PkStrings.cpp:554
+msgid ""
+"The group type was not found.\n"
+"Please check your group list and try again."
+msgstr ""
+"گۇرۇپپا تىپى تېپىلمىدى.\n"
+"گۇرۇپپا تىزىمىنى تەكشۈرۈپ قايتا سىناڭ."
+
+#: libapper/PkStrings.cpp:557
+msgid ""
+"The group list could not be loaded.\n"
+"Refreshing your cache may help, although this is normally a software origin "
+"error."
+msgstr ""
+
+#: libapper/PkStrings.cpp:561
+msgid ""
+"A package dependency could not be found.\n"
+"More information is available in the detailed report."
+msgstr ""
+
+#: libapper/PkStrings.cpp:564
+msgid "The search filter was not correctly formed."
+msgstr "ئىزدەش سۈزگۈچ فورماتى توغرا ئەمەس."
+
+#: libapper/PkStrings.cpp:566
+msgid ""
+"The package identifier was not well formed when sent to the system daemon.\n"
+"This normally indicates an internal bug and should be reported."
+msgstr ""
+
+#: libapper/PkStrings.cpp:569
+msgid ""
+"An error occurred while running the transaction.\n"
+"More information is available in the detailed report."
+msgstr ""
+
+#: libapper/PkStrings.cpp:572
+msgid ""
+"The remote software origin name was not found.\n"
+"You may need to enable an item in Software Origins."
+msgstr ""
+
+#: libapper/PkStrings.cpp:575
+msgid "Removing a protected system package is not allowed."
+msgstr "قوغدىلىدىغان سىستېما بوغچىسىنى چىقىرىۋېتىشكە بولمايدۇ."
+
+#: libapper/PkStrings.cpp:577
+msgid "The task was canceled successfully and no packages were changed."
+msgstr ""
+
+#: libapper/PkStrings.cpp:579
+msgid ""
+"The task was canceled successfully and no packages were changed.\n"
+"The backend did not exit cleanly."
+msgstr ""
+
+#: libapper/PkStrings.cpp:582
+msgid ""
+"The native package configuration file could not be opened.\n"
+"Please make sure your system's configuration is valid."
+msgstr ""
+
+#: libapper/PkStrings.cpp:585
+msgid "The task is not safe to be cancelled at this time."
+msgstr ""
+
+#: libapper/PkStrings.cpp:587
+msgid ""
+"Source packages are not normally installed this way.\n"
+"Check the extension of the file you are trying to install."
+msgstr ""
+"مەنبە بوغچىسى نورمال ئەھۋالدا بۇ خىل ئۇسۇل بىلەن ئورنىتىلمايدۇ.\n"
+"ئورناتماقچى بولغان ھۆججەتنىڭ كېڭەيتىلمە ئاتىنى تەكشۈرۈپ بېقىڭ."
+
+#: libapper/PkStrings.cpp:590
+msgid ""
+"The license agreement was not agreed to.\n"
+"To use this software you have to accept the license."
+msgstr ""
+"ئىجازەتنامە كېلىشىمىنى قوبۇل قىلىنمىدى.\n"
+"بۇ يۇمشاق دېتالنى ئىشلەتمەكچى بولسىڭىز ،چوقۇم ئىجازەتنامە كېلىشىمىنى قوبۇل "
+"قىلىشىڭىز زۆرۈر."
+
+#: libapper/PkStrings.cpp:593
+msgid ""
+"Two packages provide the same file.\n"
+"This is usually due to mixing packages for different software origins."
+msgstr ""
+
+#: libapper/PkStrings.cpp:596
+msgid ""
+"Multiple packages exist that are not compatible with each other.\n"
+"This is usually due to mixing packages from different software origins."
+msgstr ""
+
+#: libapper/PkStrings.cpp:599
+msgid ""
+"There was a (possibly temporary) problem connecting to a software origins.\n"
+"Please check the detailed error for further details."
+msgstr ""
+
+#: libapper/PkStrings.cpp:602
+msgid ""
+"Failed to initialize packaging backend.\n"
+"This may occur if other packaging tools are being used simultaneously."
+msgstr ""
+"بوغچا ئارقائۇچىنى دەسلەپلەشتۈرۈش مەغلۇپ بولدى.\n"
+"بۇ خىل ھادىسە بەلكىم بىرلا ۋاقىتتا باشقا بوغچا قورالىنىمۇ ئىشلەتكەنلىكتىن "
+"بولۇشى مۇمكىن."
+
+#: libapper/PkStrings.cpp:605
+msgid ""
+"Failed to close down the backend instance.\n"
+"This error can normally be ignored."
+msgstr ""
+"ئاخىرقى ئۇچ ئۈلگىسىنى يېپىش مەغلۇپ بولدى.\n"
+"بۇ خىل خاتالىققا ئادەتتە پەرۋا قىلمىساقمۇ بولىدۇ."
+
+#: libapper/PkStrings.cpp:608
+msgid ""
+"Cannot get the exclusive lock on the packaging backend.\n"
+"Please close any other legacy packaging tools that may be open."
+msgstr ""
+"بوغچىنىڭ ئارقائۇچ exclusive قۇلۇپىغا ئېرىشكىلى بولمىدى.\n"
+"ئوچۇق قېلىش ئېھتىماللىقى بولغان بوغچا باشقۇرۇش دېتالىنى يېپىۋېتىڭ."
+
+#: libapper/PkStrings.cpp:611
+msgid "None of the selected packages could be updated."
+msgstr "تاللانغان بوغچىلارنىڭ يېڭىلانمىسى يوق"
+
+#: libapper/PkStrings.cpp:613
+msgid "The repository configuration could not be modified."
+msgstr "خەزىنە سەپلىمىسىنى ئۆزگەرتكىلى بولمىدى."
+
+#: libapper/PkStrings.cpp:615
+msgid ""
+"Installing the local file failed.\n"
+"More information is available in the detailed report."
+msgstr ""
+"يەرلىك ھۆججەتنى ئورنىتىش مەغلۇپ بولدى.\n"
+"تېخىمۇ كۆپ ئۇچۇرلارغا تەپسىلات دوكلاتىدىن  ئېرىشكىلى بولىدۇ."
+
+#: libapper/PkStrings.cpp:618
+msgid "The package signature could not be verified."
+msgstr ""
+
+#: libapper/PkStrings.cpp:620
+msgid ""
+"The package signature was missing and this package is untrusted.\n"
+"This package was not signed with a GPG key when created."
+msgstr ""
+
+#: libapper/PkStrings.cpp:623
+msgid "Repository configuration was invalid and could not be read."
+msgstr "خەزىنە سەپلىمىسى ئىناۋەتسىز ھەمدە ئوقۇيالمىدى."
+
+#: libapper/PkStrings.cpp:625
+msgid ""
+"The package you are attempting to install is not valid.\n"
+"The package file could be corrupt, or not a proper package."
+msgstr ""
+"ئورناتماقچى بولغان بوغچا ئىناۋەتسىز.\n"
+"بوغچا ھۆججىتى بۇزۇلغان، ياكى توغرا بوغچا ئەمەس."
+
+#: libapper/PkStrings.cpp:628
+msgid ""
+"Installation of this package was prevented by your packaging system's "
+"configuration."
+msgstr ""
+
+#: libapper/PkStrings.cpp:630
+msgid ""
+"The package that was downloaded is corrupt and needs to be downloaded again."
+msgstr "چۈشۈرۈلگەن بوغچىلار  بۇزۇلۇپتۇ ،قايتىدىن چۈشۈرۈڭ."
+
+#: libapper/PkStrings.cpp:632
+msgid ""
+"All of the packages selected for install are already installed on the system."
+msgstr ""
+"ئورنىتىش ئۈچۈن تاللانغان بارلىق بوغچىلار ئاللىقاچان سىستېمىغا ئورنىتىلىپتۇ."
+
+#: libapper/PkStrings.cpp:634
+msgid ""
+"The specified file could not be found on the system.\n"
+"Check that the file still exists and has not been deleted."
+msgstr ""
+
+#: libapper/PkStrings.cpp:637
+msgid ""
+"Required data could not be found on any of the configured software origins.\n"
+"There were no more download mirrors that could be tried."
+msgstr ""
+
+#: libapper/PkStrings.cpp:640
+msgid ""
+"Required upgrade data could not be found in any of the configured software "
+"origins.\n"
+"The list of distribution upgrades will be unavailable."
+msgstr ""
+
+#: libapper/PkStrings.cpp:643
+msgid ""
+"The package that is trying to be installed is incompatible with this system."
+msgstr "ئورناتماقچى بولغان بوغچىلار بۇ سىستېما بىلەن ماسلاشمايدۇ."
+
+#: libapper/PkStrings.cpp:645
+msgid ""
+"There is insufficient space on the device.\n"
+"Free some space on the system disk to perform this operation."
+msgstr ""
+"قاتتىق دىسكىدا يېتەرلىك بوشلۇق يوقكەن.\n"
+"قاتتىق دىسكىنى تازىلاپ ،بۇ مەشغۇلاتنى ئىجرا قىلىپ بېقىڭ"
+
+#: libapper/PkStrings.cpp:648
+msgid "Additional media is required to complete the transaction."
+msgstr "قوشۇمچە ۋاسىتە قىستۇرۇپ بۇ جەرياننى بىر تەرەپ قىلىش كېرەك."
+
+#: libapper/PkStrings.cpp:650
+msgid ""
+"You have failed to provide correct authentication.\n"
+"Please check any passwords or account settings."
+msgstr ""
+"سىز توغرا بولغان دەلىللەش ئۇچۇرى بىلەن تەمىنلىمىدىڭىز.\n"
+"ئىمنى ياكى  ھېساب تەڭشەكلىرىنى تەكشۈرۈپ بېقىڭ."
+
+#: libapper/PkStrings.cpp:653
+msgid ""
+"The specified update could not be found.\n"
+"It could have already been installed or no longer available on the remote "
+"server."
+msgstr ""
+"بەلگىلەنگەن يېڭىلانمىنى تاپالمىدى.\n"
+"بۇ يېڭىلانما ئاللا بۇرۇن ئورنىتىلغان ياكى يىراقتىكى مۇلازىمېتىر قايتا "
+"ئىشلەتمىگەن ."
+
+#: libapper/PkStrings.cpp:656
+msgid "The package could not be installed from untrusted origin."
+msgstr ""
+
+#: libapper/PkStrings.cpp:658
+msgid "The package could not be updated from untrusted origin."
+msgstr ""
+
+#: libapper/PkStrings.cpp:660
+msgid "The file list is not available for this package."
+msgstr "بوغچىنىڭ ھۆججەت تىزىمى يوق."
+
+#: libapper/PkStrings.cpp:662
+msgid "The information about what requires this package could not be obtained."
+msgstr ""
+"يۇمشاق دېتال ئېھتىياجلىق بولغان بۇ بوغچىنىڭ ئۇچۇرىغا ئېرىشكىلى بولمىدى."
+
+#: libapper/PkStrings.cpp:664
+msgid "The specified software origin could not be disabled."
+msgstr ""
+
+#: libapper/PkStrings.cpp:666
+msgid ""
+"The download could not be done automatically and should be done manually.\n"
+"More information is available in the detailed report."
+msgstr ""
+"چۈشۈرۈش ئاپتوماتىك تاماملانمىدى،قولدا تاماملاڭ .\n"
+"تېخىمۇ كۆپ ئۇچۇرلارغا تەپسىلات دوكلاتىدىن پايدىلىنىپ ئېرىشكىلى بولىدۇ."
+
+#: libapper/PkStrings.cpp:669
+msgid ""
+"One of the selected packages failed to configure correctly.\n"
+"More information is available in the detailed report."
+msgstr ""
+"بەزى تاللانغان بوغچىلارنى توغرا سەپلىگىلى بولمىدى.\n"
+"تېخىمۇ كۆپ ئۇچۇرلارغا تەپسىلات دوكلاتىدىن پايدىلىنىپ ئېرىشكىلى بولىدۇ"
+
+#: libapper/PkStrings.cpp:672
+msgid ""
+"One of the selected packages failed to build correctly.\n"
+"More information is available in the detailed report."
+msgstr ""
+"بەزى تاللانغان بوغچىلارنى توغرا قۇرالمىدى .\n"
+"تېخىمۇ كۆپ ئۇچۇرلارغا تەپسىلات دوكلاتىدىن پايدىلىنىپ ئېرىشكىلى بولىدۇ."
+
+#: libapper/PkStrings.cpp:675
+msgid ""
+"One of the selected packages failed to install correctly.\n"
+"More information is available in the detailed report."
+msgstr ""
+"بەزى تاللانغان بوغچىلارنى توغرا ئورناتقىلى بولمىدى.\n"
+"تېخىمۇ كۆپ ئۇچۇرلارغا تەپسىلات دوكلاتىدىن پايدىلىنىپ ئېرىشكىلى بولىدۇ"
+
+#: libapper/PkStrings.cpp:678
+msgid ""
+"One of the selected packages failed to be removed correctly.\n"
+"More information is available in the detailed report."
+msgstr ""
+"بەزى تاللانغان بوغچىلارنى توغرا چىقىرىۋەتكىلى بولمىدى.\n"
+"تېخىمۇ كۆپ ئۇچۇرلارغا تەپسىلات دوكلاتىدىن پايدىلىنىپ ئېرىشكىلى بولىدۇ"
+
+#: libapper/PkStrings.cpp:681
+msgid ""
+"A program is running that has to be closed before the update can proceed.\n"
+"More information is available in the detailed report."
+msgstr ""
+"يېڭىلاش باشلىنىشتىن بۇرۇن بەزى ئىجرا بولۇۋاتقان پروگراممىنى  چوقۇم يېپىۋېتىش "
+"كېرەك .\n"
+"تېخىمۇ كۆپ ئۇچۇرلارغا تەپسىلات دوكلاتىدىن پايدىلىنىپ ئېرىشكىلى بولىدۇ."
+
+#: libapper/PkStrings.cpp:684
+msgid "The package database was changed while the request was running."
+msgstr "ئىلتىماس ئىجرا بولۇش جەريانىدا بوغچا ساندىنى ئۆزگەرتىلدى."
+
+#: libapper/PkStrings.cpp:686
+msgid "The virtual provide type is not supported by this system."
+msgstr "بۇ سىستېما تەمىنلەنگەن مەۋھۇم تىپنى قوللىمايدۇ ."
+
+#: libapper/PkStrings.cpp:688
+msgid "The install root is invalid. Please contact your administrator."
+msgstr ""
+"يىلتىز ئورنىتىش ئىناۋەتسىز.سىستېما باشقۇرغۇچى( administrator) بىلەن "
+"ئالاقىلىشىڭ."
+
+#: libapper/PkStrings.cpp:690
+msgid "The list of software could not be downloaded."
+msgstr ""
+
+#: libapper/PkStrings.cpp:692
+msgid ""
+"The transaction has been cancelled and will be retried when the system is "
+"idle."
+msgstr ""
+
+#: libapper/PkStrings.cpp:694
+msgid ""
+"Unknown error, please report a bug.\n"
+"More information is available in the detailed report."
+msgstr ""
+
+#: libapper/PkStrings.cpp:705
+msgctxt "The group type"
+msgid "Accessibility"
+msgstr "قوشۇمچە ئىقتىدار"
+
+#: libapper/PkStrings.cpp:707
+msgctxt "The group type"
+msgid "Accessories"
+msgstr "قوشۇمچە"
+
+#: libapper/PkStrings.cpp:709
+msgctxt "The group type"
+msgid "Education"
+msgstr "مائارىپ"
+
+#: libapper/PkStrings.cpp:711
+msgctxt "The group type"
+msgid "Games"
+msgstr "ئويۇنلار"
+
+#: libapper/PkStrings.cpp:713
+msgctxt "The group type"
+msgid "Graphics"
+msgstr "گرافىك"
+
+#: libapper/PkStrings.cpp:715
+msgctxt "The group type"
+msgid "Internet"
+msgstr "ئىنتېرنېت"
+
+#: libapper/PkStrings.cpp:717
+msgctxt "The group type"
+msgid "Office"
+msgstr "ئىشخانا"
+
+#: libapper/PkStrings.cpp:719
+msgctxt "The group type"
+msgid "Others"
+msgstr "باشقىلار"
+
+#: libapper/PkStrings.cpp:721
+msgctxt "The group type"
+msgid "Development"
+msgstr "ئىجادىيەت"
+
+#: libapper/PkStrings.cpp:723
+msgctxt "The group type"
+msgid "Multimedia"
+msgstr "كۆپ ۋاسىتە"
+
+#: libapper/PkStrings.cpp:725
+msgctxt "The group type"
+msgid "System"
+msgstr "سىستېما"
+
+#: libapper/PkStrings.cpp:727
+msgctxt "The group type"
+msgid "GNOME desktop"
+msgstr "GNOME ئۈستەلئۈستى"
+
+#: libapper/PkStrings.cpp:729
+msgctxt "The group type"
+msgid "KDE desktop"
+msgstr "KDE ئۈستەلئۈستى"
+
+#: libapper/PkStrings.cpp:731
+msgctxt "The group type"
+msgid "XFCE desktop"
+msgstr "XFCEئۈستەلئۈستى"
+
+#: libapper/PkStrings.cpp:733
+msgctxt "The group type"
+msgid "Other desktops"
+msgstr "باشقا ئۈستەلئۈستى"
+
+#: libapper/PkStrings.cpp:735
+msgctxt "The group type"
+msgid "Publishing"
+msgstr "نەشرىياتچىلىق"
+
+#: libapper/PkStrings.cpp:737
+msgctxt "The group type"
+msgid "Servers"
+msgstr "مۇلازىمېتىر"
+
+#: libapper/PkStrings.cpp:739
+msgctxt "The group type"
+msgid "Fonts"
+msgstr "خەت نۇسخا"
+
+#: libapper/PkStrings.cpp:741
+msgctxt "The group type"
+msgid "Admin tools"
+msgstr "باشقۇرغۇچى قوراللىرى"
+
+#: libapper/PkStrings.cpp:743
+msgctxt "The group type"
+msgid "Legacy"
+msgstr "كونا"
+
+#: libapper/PkStrings.cpp:745
+msgctxt "The group type"
+msgid "Localization"
+msgstr "يەرلىكلەشتۈرۈش"
+
+#: libapper/PkStrings.cpp:747
+msgctxt "The group type"
+msgid "Virtualization"
+msgstr "مەۋھۇملاشتۇرۇش"
+
+#: libapper/PkStrings.cpp:749
+msgctxt "The group type"
+msgid "Security"
+msgstr "بىخەتەرلىك"
+
+#: libapper/PkStrings.cpp:751
+msgctxt "The group type"
+msgid "Power management"
+msgstr "توك مەنبەسىنى باشقۇرۇش"
+
+#: libapper/PkStrings.cpp:753
+msgctxt "The group type"
+msgid "Communication"
+msgstr "ئالاقە"
+
+#: libapper/PkStrings.cpp:755
+msgctxt "The group type"
+msgid "Network"
+msgstr "تور"
+
+#: libapper/PkStrings.cpp:757
+msgctxt "The group type"
+msgid "Maps"
+msgstr "خەرىتە"
+
+#: libapper/PkStrings.cpp:759
+msgctxt "The group type"
+msgid "Software sources"
+msgstr "يۇمشاق دېتال مەنبەلىرى"
+
+#: libapper/PkStrings.cpp:761
+msgctxt "The group type"
+msgid "Science"
+msgstr "ئىلىم"
+
+#: libapper/PkStrings.cpp:763
+msgctxt "The group type"
+msgid "Documentation"
+msgstr "قوللانمىلار"
+
+#: libapper/PkStrings.cpp:765
+msgctxt "The group type"
+msgid "Electronics"
+msgstr "ئېلېكترونىكا"
+
+#: libapper/PkStrings.cpp:767
+msgctxt "The group type"
+msgid "Package collections"
+msgstr "بوغچا توپلىمى"
+
+#: libapper/PkStrings.cpp:769
+msgctxt "The group type"
+msgid "Vendor"
+msgstr "تارقاتقۇچى"
+
+#: libapper/PkStrings.cpp:771
+msgctxt "The group type"
+msgid "Newest packages"
+msgstr "ئەڭ يېڭى بوغچىلار"
+
+#: libapper/PkStrings.cpp:773
+msgctxt "The group type"
+msgid "Unknown group"
+msgstr "نامەلۇم گۇرۇپپا"
+
+#: libapper/PkStrings.cpp:783
+msgctxt "The type of update"
+msgid "Trivial update"
+msgstr "ئۇششاق يېڭىلانما"
+
+#: libapper/PkStrings.cpp:785
+msgctxt "The type of update"
+msgid "Normal update"
+msgstr "نورمال يېڭىلاش"
+
+#: libapper/PkStrings.cpp:787
+msgctxt "The type of update"
+msgid "Important update"
+msgstr "مۇھىم يېڭىلاشلار"
+
+#: libapper/PkStrings.cpp:789
+msgctxt "The type of update"
+msgid "Security update"
+msgstr "بىخەتەرلىك يېڭىلانمىسى"
+
+#: libapper/PkStrings.cpp:791
+msgctxt "The type of update"
+msgid "Bug fix update"
+msgstr "كەمتۈكنى تۈزەيدىغان يېڭىلانما"
+
+#: libapper/PkStrings.cpp:793
+msgctxt "The type of update"
+msgid "Enhancement update"
+msgstr "يېڭىلاشنى كۈچلەندۈرۈش"
+
+#: libapper/PkStrings.cpp:795
+msgctxt "The type of update"
+msgid "Blocked update"
+msgstr "يېڭىلاشقا بولمىدى"
+
+#: libapper/PkStrings.cpp:798
+msgctxt "The type of update"
+msgid "Installed"
+msgstr "ئورنىتىلغان"
+
+#: libapper/PkStrings.cpp:801
+msgctxt "The type of update"
+msgid "Available"
+msgstr "ئىشلىتىلىشچان"
+
+#: libapper/PkStrings.cpp:803
+msgctxt "The type of update"
+msgid "Unknown update"
+msgstr ""
+
+#: libapper/PkStrings.cpp:814
+msgid "No Updates Available"
+msgstr ""
+
+#: libapper/PkStrings.cpp:817
+#, kde-format
+msgctxt "Some updates were selected on the view"
+msgid "1 Update Selected"
+msgid_plural "%1 Updates Selected"
+msgstr[0] ""
+
+#: libapper/PkStrings.cpp:821
+#, kde-format
+msgctxt "Some updates are being shown on the screen"
+msgid "1 Update"
+msgid_plural "%1 Updates"
+msgstr[0] "%1 يېڭىلانما"
+
+#: libapper/PkStrings.cpp:825
+#, kde-format
+msgctxt "Part of: %1 Updates, %1 Selected"
+msgid "%1 Update"
+msgid_plural "%1 Updates"
+msgstr[0] "%1 يېڭىلانما"
+
+#: libapper/PkStrings.cpp:826
+#, kde-format
+msgctxt "Part of: %1 Updates, %1 Selected"
+msgid "%1 Selected"
+msgid_plural "%1 Selected"
+msgstr[0] "%1 تاللاندى"
+
+#: libapper/PkStrings.cpp:824
+#, kde-format
+msgctxt "Type of update, in the case it's just an update"
+msgid "%1, %2"
+msgstr "%1، %2"
+
+#: libapper/PkStrings.cpp:830
+msgid "No Packages"
+msgstr ""
+
+#: libapper/PkStrings.cpp:832
+#, kde-format
+msgid "1 Package"
+msgid_plural "%1 Packages"
+msgstr[0] "%1 بوغچا"
+
+#: libapper/PkStrings.cpp:840
+msgid "No restart is necessary"
+msgstr ""
+
+#: libapper/PkStrings.cpp:842
+msgid "You will be required to restart this application"
+msgstr ""
+
+#: libapper/PkStrings.cpp:844
+msgid "You will be required to log out and back in"
+msgstr ""
+
+#: libapper/PkStrings.cpp:846
+msgid "A restart will be required"
+msgstr ""
+
+#: libapper/PkStrings.cpp:848
+msgid "You will be required to log out and back in due to a security update."
+msgstr ""
+"بىخەتەرلىك يېڭىلانمىسى سەۋەبلىك سىز تىزىمدىن چىقىپ قايتا تىزىمغا كىرىشىڭىز "
+"كېرەك."
+
+#: libapper/PkStrings.cpp:850
+msgid "A restart will be required due to a security update."
+msgstr "بىخەتەرلىك يېڭىلانما سەۋەبلىك ، قايتا قوزغىتىش كېرەك."
+
+#: libapper/PkStrings.cpp:863
+msgid "No restart is required"
+msgstr ""
+
+#: libapper/PkStrings.cpp:865
+msgid "A restart is required"
+msgstr ""
+
+#: libapper/PkStrings.cpp:867
+msgid "You need to log out and log back in"
+msgstr ""
+
+#: libapper/PkStrings.cpp:869
+msgid "You need to restart the application"
+msgstr ""
+
+#: libapper/PkStrings.cpp:871
+msgid "You need to log out and log back in to remain secure."
+msgstr "بىخەتەرلىك ئۈچۈن تىزىمدىن چىقىپ قايتا تىزىمغا كىرىشىڭىز كېرەك."
+
+#: libapper/PkStrings.cpp:873
+msgid "A restart is required to remain secure."
+msgstr "قايتا قوزغىتىپ بىخەتەرلىكنى ساقلاڭ."
+
+#: libapper/PkStrings.cpp:886
+msgid "Stable"
+msgstr "مۇقىم"
+
+#: libapper/PkStrings.cpp:888
+msgid "Unstable"
+msgstr "مۇقىمسىز"
+
+#: libapper/PkStrings.cpp:890
+msgid "Testing"
+msgstr "سىناق"
+
+#: libapper/PkStrings.cpp:903
+#, kde-format
+msgid "Please insert the CD labeled '%1', and press continue."
+msgstr ""
+
+#: libapper/PkStrings.cpp:905
+#, kde-format
+msgid "Please insert the DVD labeled '%1', and press continue."
+msgstr ""
+
+#: libapper/PkStrings.cpp:907
+#, kde-format
+msgid "Please insert the disc labeled '%1', and press continue."
+msgstr ""
+
+#: libapper/PkStrings.cpp:909 libapper/PkStrings.cpp:912
+#, kde-format
+msgid "Please insert the medium labeled '%1', and press continue."
+msgstr ""
+
+#: libapper/PkStrings.cpp:919
+msgid "A mirror is possibly broken"
+msgstr "تەسۋىر بۇزۇلغان بولۇشى مۇمكىن"
+
+#: libapper/PkStrings.cpp:921
+msgid "The connection was refused"
+msgstr "باغلىنىش رەت قىلىندى"
+
+#: libapper/PkStrings.cpp:923
+msgid "The parameter was invalid"
+msgstr "پارامېتىر ئىناۋەتسىز."
+
+#: libapper/PkStrings.cpp:925
+msgid "The priority was invalid"
+msgstr "ئالدىنلىق دەرىجىسى ئىناۋەتسىز."
+
+#: libapper/PkStrings.cpp:927
+msgid "Backend warning"
+msgstr "ئارقائۇچ  ئاگاھلاندۇرۇشى"
+
+#: libapper/PkStrings.cpp:929
+msgid "Daemon warning"
+msgstr "Daemon ئاگاھلاندۇرۇشى"
+
+#: libapper/PkStrings.cpp:931
+msgid "The package list cache is being rebuilt"
+msgstr "بوغچا تىزىمى غەملىكىنى قايتا قۇرۇۋاتىدۇ."
+
+#: libapper/PkStrings.cpp:933
+msgid "An untrusted package was installed"
+msgstr "ئىشەنچسىز بوغچا ئورنىتىلدى"
+
+#: libapper/PkStrings.cpp:935
+msgid "A newer package exists"
+msgstr "يېڭى بىر بوغچا مەۋجۇت"
+
+#: libapper/PkStrings.cpp:937
+msgid "Could not find package"
+msgstr "بوغچا تاپالمىدى"
+
+#: libapper/PkStrings.cpp:939
+msgid "Configuration files were changed"
+msgstr "سەپلىمە ھۆججەتلەر ئۆزگەرتىلگەن"
+
+#: libapper/PkStrings.cpp:941
+msgid "Package is already installed"
+msgstr "بوغچا ئاللىقاچان ئورنىتىلغان"
+
+#: libapper/PkStrings.cpp:943
+msgid "Automatic cleanup is being ignored"
+msgstr "ئاپتوماتىك تازىلاش بىكار قىلىندى"
+
+#: libapper/PkStrings.cpp:945
+msgid "Software source download failed"
+msgstr "يۇمشاق دېتال مەنبەسىنى يۈكلەش مەغلۇپ بولدى"
+
+#: libapper/PkStrings.cpp:947
+msgid "This software source is for developers only"
+msgstr "بۇ يۇمشاق دېتال مەنبەسى ئىجادىيەتچىلەرنىڭ ئىشلىتىشىگىلا تەمىنلەنگەن."
+
+#: libapper/PkStrings.cpp:949
+msgid "Other updates have been held back"
+msgstr "ساقلانغان لېكىن يۈرگۈزۈلمىگەن باشقا يېڭىلانمىلار"
+
+#: libapper/PkStrings.cpp:964
+msgid "Could not get a transaction id from packagekitd."
+msgstr ""
+
+#: libapper/PkStrings.cpp:966
+msgid "Cannot connect to this transaction id."
+msgstr ""
+
+#: libapper/PkStrings.cpp:968
+msgid "This action is unknown."
+msgstr ""
+
+#: libapper/PkStrings.cpp:970
+msgid "The packagekitd service could not be started."
+msgstr "packagekitd نىڭ مۇلازىمىتىنى  قوزغىتالمىدى."
+
+#: libapper/PkStrings.cpp:972
+msgid "The query is not valid."
+msgstr "ئىزدەش ئىناۋەتسىز."
+
+#: libapper/PkStrings.cpp:974
+msgid "The file is not valid."
+msgstr "بۇ ھۆججەت  ئىناۋەتسىز."
+
+#: libapper/PkStrings.cpp:976
+msgid "This function is not yet supported."
+msgstr ""
+
+#: libapper/PkStrings.cpp:978
+msgid "Could not talk to packagekitd."
+msgstr ""
+
+#: libapper/PkStrings.cpp:982 libapper/PkStrings.cpp:985
+msgid "An unknown error happened."
+msgstr ""
+
+#: libapper/PkTransactionDialog.cpp:88
+msgid ""
+"Allows you to hide the window whilst keeping the transaction task running."
+msgstr ""
+
+#: libapper/SimulateModel.cpp:139
+msgid "Package"
+msgstr "بوغچا"
+
+#: libapper/SimulateModel.cpp:141 libapper/PackageModel.cpp:180
+msgid "Version"
+msgstr "نەشرى"
+
+#: libapper/Requirements.cpp:41
+msgid "Additional changes"
+msgstr ""
+
+#: libapper/Requirements.cpp:62
+#, kde-format
+msgid "1 package to remove"
+msgid_plural "%1 packages to remove"
+msgstr[0] ""
+
+#: libapper/Requirements.cpp:77
+#, kde-format
+msgid "1 package to downgrade"
+msgid_plural "%1 packages to downgrade"
+msgstr[0] ""
+
+#: libapper/Requirements.cpp:92
+#, kde-format
+msgid "1 package to reinstall"
+msgid_plural "%1 packages to reinstall"
+msgstr[0] ""
+
+#: libapper/Requirements.cpp:105
+#, kde-format
+msgid "1 package to install"
+msgid_plural "%1 packages to install"
+msgstr[0] ""
+
+#: libapper/Requirements.cpp:118
+#, kde-format
+msgid "1 package to update"
+msgid_plural "%1 packages to update"
+msgstr[0] ""
+
+#: libapper/LicenseAgreement.cpp:36
+msgid "Accept Agreement"
+msgstr ""
+
+#. i18n: file: libapper/LicenseAgreement.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, LicenseAgreement)
+#: libapper/LicenseAgreement.cpp:37 rc.cpp:236
+msgid "License Agreement Required"
+msgstr "ئىجازەت كېلىشىمىنى قوبۇللاشقا موھتاج"
+
+#: libapper/LicenseAgreement.cpp:38
+#, kde-format
+msgid "License required for %1 by %2"
+msgstr ""
+
+#: libapper/ApplicationLauncher.cpp:99
+msgid "The following application was just installed. Click on it to launch:"
+msgid_plural ""
+"The following applications were just installed. Click on them to launch:"
+msgstr[0] ""
+
+#: libapper/PkTransaction.cpp:122
+msgid "Failed to simulate file install"
+msgstr ""
+
+#: libapper/PkTransaction.cpp:129
+msgid "Current backend does not support installing files."
+msgstr ""
+
+#: libapper/PkTransaction.cpp:129 libapper/PkTransaction.cpp:153
+#: libapper/PkTransaction.cpp:179 libapper/PkTransaction.cpp:202
+msgid "Error"
+msgstr "خاتالىق"
+
+#: libapper/PkTransaction.cpp:146
+msgid "Failed to simulate package install"
+msgstr ""
+
+#: libapper/PkTransaction.cpp:153
+msgid "Current backend does not support installing packages."
+msgstr ""
+
+#: libapper/PkTransaction.cpp:171
+msgid "Failed to simulate package removal"
+msgstr ""
+
+#: libapper/PkTransaction.cpp:179
+msgid "The current backend does not support removing packages."
+msgstr ""
+
+#: libapper/PkTransaction.cpp:195
+msgid "Failed to simulate package update"
+msgstr ""
+
+#: libapper/PkTransaction.cpp:202
+msgid "The current backend does not support updating packages."
+msgstr ""
+
+#: libapper/PkTransaction.cpp:213
+msgid "Failed to refresh package cache"
+msgstr ""
+
+#: libapper/PkTransaction.cpp:251
+msgid "Failed to install package"
+msgstr "بوغچا ئورنىتىش مەغلۇپ بولدى"
+
+#: libapper/PkTransaction.cpp:276
+msgid "Failed to remove package"
+msgstr "بوغچىنى چىقىرىۋېتىش مەغلۇپ بولدى"
+
+#: libapper/PkTransaction.cpp:288
+msgid "Failed to update package"
+msgstr ""
+
+#: libapper/PkTransaction.cpp:459
+#, kde-format
+msgid "Downloading packages at %1/s"
+msgstr ""
+
+#: libapper/PkTransaction.cpp:507
+msgid ""
+"You are about to install unsigned packages that can compromise your system, "
+"as it is impossible to verify if the software came from a trusted source.\n"
+"\n"
+"Are you sure you want to proceed with the installation?"
+msgstr ""
+
+#: libapper/PkTransaction.cpp:510
+msgid "Installing unsigned software"
+msgstr ""
+
+#: libapper/PkTransaction.cpp:563 libapper/PkTransaction.cpp:616
+msgid "Failed to install signature"
+msgstr ""
+
+#: libapper/PackageModel.cpp:178
+msgid "Name"
+msgstr "ئاتى"
+
+#: libapper/PackageModel.cpp:182
+msgid "Arch"
+msgstr ""
+
+#: libapper/PackageModel.cpp:184
+msgid "Size"
+msgstr "چوڭلۇقى"
+
+#: libapper/PackageModel.cpp:272
+#, kde-format
+msgid ""
+"Version: %1\n"
+"Architecture: %2"
+msgstr ""
+
+#: libapper/PackageModel.cpp:315
+msgid "To be Removed"
+msgstr ""
+
+#: libapper/PackageModel.cpp:317
+msgid "To be Installed"
+msgstr ""
+
+#: libapper/ApplicationsDelegate.cpp:40
+msgid "Install"
+msgstr "ئورنات"
+
+#: libapper/ApplicationsDelegate.cpp:42
+msgid "Remove"
+msgstr "چىقىرىۋەت"
+
+#. i18n: file: libapper/RepoSig.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, RepoSig)
+#: libapper/RepoSig.cpp:40 rc.cpp:218
+msgid "Software signature is required"
+msgstr "يۇمشاق دېتال ئىمزاسى كېرەك"
+
+#: rc.cpp:1
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "ئابدۇقادىر ئابلىز, غەيرەت كەنجى"
+
+#: rc.cpp:2
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "sahran.ug@gmail.com,  gheyret@gmail.com"
+
+#. i18n: file: Apper/BackendDetails.ui:26
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: rc.cpp:5
+msgid "About Backend"
+msgstr "ئاخىرقى ئۇچ ھەققىدە"
+
+#. i18n: file: Apper/BackendDetails.ui:32
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:8
+msgid "Backend name:"
+msgstr ""
+
+#. i18n: file: Apper/BackendDetails.ui:46
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: rc.cpp:11
+msgid "Backend description:"
+msgstr ""
+
+#. i18n: file: Apper/BackendDetails.ui:60
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:14
+msgid "Backend author:"
+msgstr ""
+
+#. i18n: file: Apper/BackendDetails.ui:74
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: rc.cpp:17
+msgid "Distribution ID:"
+msgstr ""
+
+#. i18n: file: Apper/BackendDetails.ui:91
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#. i18n: file: ApperKCM/ApperKCM.ui:167
+#. i18n: ectx: property (text), widget (QToolButton, filtersTB)
+#: rc.cpp:20 rc.cpp:188
+msgid "Filters"
+msgstr "سۈزگۈچ"
+
+#. i18n: file: Apper/BackendDetails.ui:120
+#. i18n: ectx: property (text), widget (QCheckBox, visibleCB)
+#: rc.cpp:29
+msgid "Package is visible"
+msgstr ""
+
+#. i18n: file: Apper/BackendDetails.ui:130
+#. i18n: ectx: property (text), widget (QCheckBox, newestCB)
+#: rc.cpp:32
+msgid "Newest"
+msgstr "ئەڭ يېڭى"
+
+#. i18n: file: Apper/BackendDetails.ui:140
+#. i18n: ectx: property (text), widget (QCheckBox, guiCB)
+#: rc.cpp:35
+msgid "GUI"
+msgstr ""
+
+#. i18n: file: Apper/BackendDetails.ui:150
+#. i18n: ectx: property (text), widget (QCheckBox, freeCB)
+#: rc.cpp:38
+msgid "Free software"
+msgstr ""
+
+#. i18n: file: Apper/BackendDetails.ui:160
+#. i18n: ectx: property (text), widget (QCheckBox, supportedCB)
+#: rc.cpp:41
+msgid "Supported"
+msgstr ""
+
+#. i18n: file: Apper/BackendDetails.ui:173
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
+#: rc.cpp:44
+msgid "Methods"
+msgstr "فۇنكسىيىلەر(Methods)"
+
+#. i18n: file: Apper/BackendDetails.ui:182
+#. i18n: ectx: property (text), widget (QCheckBox, getUpdatesCB)
+#: rc.cpp:47
+msgid "Get Updates"
+msgstr ""
+
+#. i18n: file: Apper/BackendDetails.ui:192
+#. i18n: ectx: property (text), widget (QCheckBox, refreshCacheCB)
+#: rc.cpp:50
+msgid "Refresh Cache"
+msgstr ""
+
+#. i18n: file: Apper/BackendDetails.ui:202
+#. i18n: ectx: property (text), widget (QCheckBox, updateSystemCB)
+#: rc.cpp:53
+msgid "Update System"
+msgstr "سىستېما يېڭىلا"
+
+#. i18n: file: Apper/BackendDetails.ui:212
+#. i18n: ectx: property (text), widget (QCheckBox, searchNameCB)
+#: rc.cpp:56
+msgid "Search Name"
+msgstr ""
+
+#. i18n: file: Apper/BackendDetails.ui:222
+#. i18n: ectx: property (text), widget (QCheckBox, getDependsCB)
+#: rc.cpp:59
+msgid "Get Package Depends"
+msgstr ""
+
+#. i18n: file: Apper/BackendDetails.ui:232
+#. i18n: ectx: property (text), widget (QCheckBox, searchDetailsCB)
+#: rc.cpp:62
+msgid "Search Details"
+msgstr ""
+
+#. i18n: file: Apper/BackendDetails.ui:242
+#. i18n: ectx: property (text), widget (QCheckBox, getRequiresCB)
+#: rc.cpp:65
+msgid "Get Package Requires"
+msgstr ""
+
+#. i18n: file: Apper/BackendDetails.ui:252
+#. i18n: ectx: property (text), widget (QCheckBox, searchGroupCB)
+#: rc.cpp:68
+msgid "Search Group"
+msgstr ""
+
+#. i18n: file: Apper/BackendDetails.ui:262
+#. i18n: ectx: property (text), widget (QCheckBox, getUpdateDetailCB)
+#: rc.cpp:71
+msgid "Get Update Detail"
+msgstr ""
+
+#. i18n: file: Apper/BackendDetails.ui:272
+#. i18n: ectx: property (text), widget (QCheckBox, searchFileCB)
+#: rc.cpp:74
+msgid "Search File"
+msgstr ""
+
+#. i18n: file: Apper/BackendDetails.ui:282
+#. i18n: ectx: property (text), widget (QCheckBox, getDescriptionCB)
+#: rc.cpp:77
+msgid "Get Package Description"
+msgstr ""
+
+#. i18n: file: Apper/BackendDetails.ui:292
+#. i18n: ectx: property (text), widget (QCheckBox, getFilesCB)
+#: rc.cpp:80
+msgid "Get Package Files"
+msgstr ""
+
+#. i18n: file: Apper/BackendDetails.ui:302
+#. i18n: ectx: property (text), widget (QCheckBox, getDistroUpgradesCB)
+#: rc.cpp:83
+msgid "Get Distro Upgrades"
+msgstr ""
+
+#. i18n: file: Apper/BackendDetails.ui:312
+#. i18n: ectx: property (text), widget (QCheckBox, installPackageCB)
+#: rc.cpp:86
+msgid "Install Packages"
+msgstr ""
+
+#. i18n: file: Apper/BackendDetails.ui:322
+#. i18n: ectx: property (text), widget (QCheckBox, updatePackageCB)
+#: rc.cpp:89
+msgid "Update Packages"
+msgstr ""
+
+#. i18n: file: Apper/BackendDetails.ui:332
+#. i18n: ectx: property (text), widget (QCheckBox, removePackageCB)
+#: rc.cpp:92
+msgid "Remove Packages"
+msgstr ""
+
+#. i18n: file: Apper/BackendDetails.ui:342
+#. i18n: ectx: property (text), widget (QCheckBox, installFileCB)
+#: rc.cpp:95
+msgid "Install Files"
+msgstr ""
+
+#. i18n: file: Apper/BackendDetails.ui:352
+#. i18n: ectx: property (text), widget (QCheckBox, cancelCB)
+#: rc.cpp:98
+msgid "Cancel"
+msgstr "ۋاز كەچ"
+
+#. i18n: file: Apper/BackendDetails.ui:362
+#. i18n: ectx: property (text), widget (QCheckBox, resolveCB)
+#: rc.cpp:101
+msgid "Resolve"
+msgstr "تەھلىل"
+
+#. i18n: file: Apper/BackendDetails.ui:372
+#. i18n: ectx: property (text), widget (QCheckBox, getRepositoryListCB)
+#: rc.cpp:104
+msgid "Get Repository List"
+msgstr ""
+
+#. i18n: file: Apper/BackendDetails.ui:382
+#. i18n: ectx: property (text), widget (QCheckBox, repositoryEnableCB)
+#: rc.cpp:107
+msgid "Enable Repository"
+msgstr ""
+
+#. i18n: file: Apper/BackendDetails.ui:392
+#. i18n: ectx: property (text), widget (QCheckBox, repositorySetEnableCB)
+#: rc.cpp:110
+msgid "Set Repository Data"
+msgstr ""
+
+#. i18n: file: Apper/BackendDetails.ui:402
+#. i18n: ectx: property (text), widget (QCheckBox, whatProvidesCB)
+#: rc.cpp:113
+msgid "What Provides"
+msgstr ""
+
+#. i18n: file: Apper/BackendDetails.ui:412
+#. i18n: ectx: property (text), widget (QCheckBox, getPackagesCB)
+#: rc.cpp:116
+msgid "Get Packages"
+msgstr ""
+
+#. i18n: file: Apper/BackendDetails.ui:422
+#. i18n: ectx: property (text), widget (QCheckBox, simulateInstallFilesCB)
+#: rc.cpp:119
+msgid "Simulate Install Files"
+msgstr ""
+
+#. i18n: file: Apper/BackendDetails.ui:432
+#. i18n: ectx: property (text), widget (QCheckBox, simulateInstallPackagesCB)
+#: rc.cpp:122
+msgid "Simulate Install Packages"
+msgstr ""
+
+#. i18n: file: Apper/BackendDetails.ui:442
+#. i18n: ectx: property (text), widget (QCheckBox, simulateRemovePackagesCB)
+#: rc.cpp:125
+msgid "Simulate Remove Packages"
+msgstr ""
+
+#. i18n: file: Apper/BackendDetails.ui:452
+#. i18n: ectx: property (text), widget (QCheckBox, simulateUpdatePackagesCB)
+#: rc.cpp:128
+msgid "Simulate Update Packages"
+msgstr ""
+
+#. i18n: file: Apper/BackendDetails.ui:462
+#. i18n: ectx: property (text), widget (QCheckBox, upgradeSystemCB)
+#: rc.cpp:131
+msgid "Upgrade System"
+msgstr ""
+
+#. i18n: file: ApperKCM/PackageDetails.ui:146
+#. i18n: ectx: property (text), widget (QLabel, licenseL)
+#: rc.cpp:134
+msgid "License:"
+msgstr "ئىجازەتنامە:"
+
+#. i18n: file: ApperKCM/Settings/Settings.ui:67
+#. i18n: ectx: property (text), widget (QLabel, intervalL)
+#: rc.cpp:143
+msgid "Check for updates:"
+msgstr ""
+
+#. i18n: file: ApperKCM/Settings/Settings.ui:95
+#. i18n: ectx: property (text), widget (QCheckBox, checkUpdatesMobileCB)
+#. i18n: file: ApperKCM/Settings/Settings.ui:170
+#. i18n: ectx: property (text), widget (QCheckBox, installUpdatesMobileCB)
+#: rc.cpp:146 rc.cpp:158
+msgid "when on a mobile broadband network connection"
+msgstr ""
+
+#. i18n: file: ApperKCM/Settings/Settings.ui:102
+#. i18n: ectx: property (text), widget (QCheckBox, checkUpdatesBatteryCB)
+#. i18n: file: ApperKCM/Settings/Settings.ui:163
+#. i18n: ectx: property (text), widget (QCheckBox, installUpdatesBatteryCB)
+#: rc.cpp:149 rc.cpp:155
+msgid "when running on battery"
+msgstr ""
+
+#. i18n: file: ApperKCM/Settings/Settings.ui:114
+#. i18n: ectx: property (text), widget (QLabel, autoInsL)
+#: rc.cpp:152
+msgid "Automatically install:"
+msgstr ""
+
+#. i18n: file: ApperKCM/Settings/Settings.ui:179
+#. i18n: ectx: property (text), widget (QCheckBox, appLauncherCB)
+#: rc.cpp:161
+msgid "Show application launcher after installing new applications"
+msgstr ""
+
+#. i18n: file: ApperKCM/Settings/Settings.ui:186
+#. i18n: ectx: property (text), widget (QCheckBox, autoConfirmCB)
+#: rc.cpp:164
+msgid "Show confirmation dialog when installing or updating packages"
+msgstr ""
+
+#. i18n: file: ApperKCM/Settings/Settings.ui:234
+#. i18n: ectx: property (text), widget (QCheckBox, showOriginsCB)
+#: rc.cpp:167
+msgid "&Show origins of debug and development packages"
+msgstr ""
+
+#. i18n: file: ApperKCM/Settings/Settings.ui:254
+#. i18n: ectx: property (text), widget (QPushButton, editOriginsPB)
+#: rc.cpp:170
+msgid "Edit Origins"
+msgstr ""
+
+#. i18n: file: ApperKCM/BrowseView.ui:140
+#. i18n: ectx: property (text), widget (QPushButton, exportInstalledPB)
+#: rc.cpp:176
+msgid "Export Installed Package List..."
+msgstr ""
+
+#. i18n: file: ApperKCM/BrowseView.ui:150
+#. i18n: ectx: property (text), widget (QPushButton, importInstalledPB)
+#: rc.cpp:179
+msgid "Install Packages from List..."
+msgstr ""
+
+#. i18n: file: ApperKCM/ApperKCM.ui:20
+#. i18n: ectx: property (windowTitle), widget (QWidget, ApperKCM)
+#: rc.cpp:182
+msgid "Add and Remove Software"
+msgstr ""
+
+#. i18n: file: ApperKCM/ApperKCM.ui:127
+#. i18n: ectx: property (clickMessage), widget (KLineEdit, searchKLE)
+#: rc.cpp:185
+msgid "Search packages"
+msgstr ""
+
+#. i18n: file: ApperKCM/ApperKCM.ui:196
+#. i18n: ectx: property (text), widget (QPushButton, changesPB)
+#: rc.cpp:191
+msgid "Pending Changes"
+msgstr ""
+
+#. i18n: file: ApperKCM/ApperKCM.ui:281
+#. i18n: ectx: property (text), widget (QToolButton, backTB)
+#: rc.cpp:197
+msgid "Back"
+msgstr "كەينى"
+
+#. i18n: file: Sentinel/IntroDialog.ui:65
+#. i18n: ectx: property (text), widget (QLabel, descriptionL)
+#: rc.cpp:209
+msgid "TextLabel"
+msgstr "تېكىستلىك ئەن"
+
+#. i18n: file: libapper/Requirements.ui:31
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:212
+msgid "Additional changes are required to complete the task"
+msgstr ""
+
+#. i18n: file: libapper/Requirements.ui:87
+#. i18n: ectx: property (text), widget (QCheckBox, confirmCB)
+#: rc.cpp:215
+msgid "Do not confirm when installing or updating additional packages"
+msgstr ""
+
+#. i18n: file: libapper/RepoSig.ui:23
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:221
+msgid "Do you trust the origin of packages?"
+msgstr ""
+
+#. i18n: file: libapper/RepoSig.ui:47
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:224
+msgid "Repository name:"
+msgstr "ئامبار ئاتى:"
+
+#. i18n: file: libapper/RepoSig.ui:73
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: rc.cpp:227
+msgid "Signature URL:"
+msgstr "ئىمزاسى URL:"
+
+#. i18n: file: libapper/RepoSig.ui:99
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: rc.cpp:230
+msgid "Signature user identifier:"
+msgstr "ئىشلەتكۈچى ئىمزا بەلگىسى:"
+
+#. i18n: file: libapper/RepoSig.ui:125
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: rc.cpp:233
+msgid "Signature identifier:"
+msgstr "ئىمزاسى بەلگىسى"
+
+#. i18n: file: libapper/LicenseAgreement.ui:40
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:239
+msgid "Please read the following important information before continuing:"
+msgstr ""
+
+#. i18n: file: libapper/ApplicationLauncher.ui:72
+#. i18n: ectx: property (text), widget (QCheckBox, showCB)
+#: rc.cpp:242
+msgid "Do not show this dialog again"
+msgstr "بۇ سۆزلەشكۈنى ئەمدى كۆرسەتكۈچى بولما"
+
+#. i18n: file: libapper/PkTransaction.ui:38
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:245
+msgid "icon"
+msgstr "سىنبەلگە"
+
+#. i18n: file: libapper/PkTransaction.ui:64
+#. i18n: ectx: property (text), widget (QLabel, currentL)
+#: rc.cpp:248
+msgid "Downloading Packages"
+msgstr ""

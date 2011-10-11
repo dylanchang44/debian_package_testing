@@ -1,0 +1,4729 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Artem Sereda <overmind88@gmail.com>, 2009.
+# Alexander Potashev <aspotashev@gmail.com>, 2010.
+# Yuri Efremov <yur.arh@gmail.com>, 2010, 2011.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2011-10-10 04:10+0200\n"
+"PO-Revision-Date: 2011-09-07 18:12+0400\n"
+"Last-Translator: Yuri Efremov <yur.arh@gmail.com>\n"
+"Language-Team: Russian <kde-russian@lists.kde.ru>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n"
+"%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Lokalize 1.2\n"
+"X-Environment: kde\n"
+"X-Accelerator-Marker: &\n"
+"X-Text-Markup: kde4\n"
+
+#: Apper/BackendDetails.cpp:31
+msgid "Backend Details"
+msgstr "Сведения о модуле"
+
+#: Apper/main.cpp:54 Sentinel/UpdateIcon.cpp:161 Sentinel/main.cpp:34
+msgid "Apper"
+msgstr "Apper"
+
+#: Apper/main.cpp:56
+msgid "Apper is an Application to Get and Manage Software"
+msgstr ""
+"Apper — программа для загрузки и управления пакетами программного обеспечения"
+
+#: Apper/main.cpp:58 ApperKCM/ApperKCM.cpp:82 Sentinel/main.cpp:38
+msgid "(C) 2008-2011 Daniel Nicoletti"
+msgstr "© Daniel Nicoletti, 2008-2011"
+
+#: Apper/main.cpp:60 Sentinel/main.cpp:40
+msgid "Daniel Nicoletti"
+msgstr "Daniel Nicoletti"
+
+#: Apper/main.cpp:61 Sentinel/main.cpp:43
+msgid "Adrien Bustany"
+msgstr "Adrien Bustany"
+
+#: Apper/main.cpp:61 Sentinel/main.cpp:43
+msgid "libpackagekit-qt and other stuff"
+msgstr "libpackagekit-qt и др."
+
+#: Apper/main.cpp:66
+msgid "Show updates"
+msgstr "Показать обновления"
+
+#: Apper/main.cpp:67
+msgid "Show settings"
+msgstr "Показать параметры"
+
+#: Apper/main.cpp:68
+msgid "Show backend details"
+msgstr "Показать сведения о модуле"
+
+#: Apper/main.cpp:69
+msgid "Mime type installer"
+msgstr "Установка типов MIME"
+
+#: Apper/main.cpp:70
+msgid "Package name installer"
+msgstr "Установка пакета по имени"
+
+#: Apper/main.cpp:71
+msgid "Single file installer"
+msgstr "Установка одного файла"
+
+#: Apper/main.cpp:72
+msgid "Font resource installer"
+msgstr "Установка шрифтов"
+
+#: Apper/main.cpp:73
+msgid "Catalog installer"
+msgstr "Установка каталогов"
+
+#: Apper/main.cpp:74
+msgid "Single package remover"
+msgstr "Удаление одного пакета"
+
+#: Apper/main.cpp:75
+msgid "Package file to install"
+msgstr "Устанавливаемый файл пакета"
+
+#: ApperKCM/Settings/OriginModel.cpp:39 ApperKCM/Settings/OriginModel.cpp:52
+msgid "Origin of Packages"
+msgstr "Источники пакетов"
+
+#: ApperKCM/Settings/Settings.cpp:65
+msgctxt "Hourly refresh the package cache"
+msgid "Hourly"
+msgstr "Ежечасно"
+
+#: ApperKCM/Settings/Settings.cpp:66
+msgctxt "Daily refresh the package cache"
+msgid "Daily"
+msgstr "Ежедневно"
+
+#: ApperKCM/Settings/Settings.cpp:67
+msgctxt "Weekly refresh the package cache"
+msgid "Weekly"
+msgstr "Еженедельно"
+
+#: ApperKCM/Settings/Settings.cpp:68
+msgctxt "Monthly refresh the package cache"
+msgid "Monthly"
+msgstr "Ежемесячно"
+
+#: ApperKCM/Settings/Settings.cpp:69
+msgctxt "Never refresh package cache"
+msgid "Never"
+msgstr "Никогда"
+
+#: ApperKCM/Settings/Settings.cpp:71
+msgid "Security only"
+msgstr "Только обновления безопасности"
+
+#: ApperKCM/Settings/Settings.cpp:72
+msgid "All updates"
+msgstr "Все обновления"
+
+#: ApperKCM/Settings/Settings.cpp:73
+msgctxt "No updates will be automatically installed"
+msgid "None"
+msgstr "Ничего"
+
+#: ApperKCM/Settings/Settings.cpp:249 libapper/PkStrings.cpp:962
+msgid "You do not have the necessary privileges to perform this action."
+msgstr "У вас недостаточно прав для выполнения этого действия."
+
+#: ApperKCM/Settings/Settings.cpp:250
+msgid "Failed to set origin data"
+msgstr "Не удалось установить источник данных"
+
+#: ApperKCM/Updater/DistroUpgrade.cpp:39 Sentinel/DistroUpgrade.cpp:63
+msgid "Distribution upgrade available"
+msgstr "Доступно обновление дистрибутива"
+
+#: ApperKCM/Updater/DistroUpgrade.cpp:48 ApperKCM/Updater/DistroUpgrade.cpp:49
+#, kde-format
+msgid "Upgrade to %1"
+msgstr "Обновить до %1"
+
+#: ApperKCM/Updater/DistroUpgrade.cpp:50
+#, kde-format
+msgid "Click to upgrade to %1"
+msgstr "Нажмите, чтобы обновить до %1"
+
+#: ApperKCM/Updater/DistroUpgrade.cpp:64
+msgid ""
+"You are about to upgrade your distribution to the latest version. This is "
+"usually a very lengthy process and takes a lot longer than simply upgrading "
+"your packages."
+msgstr ""
+"Вы собираетесь обновить ваш дистрибутив до последней версии. Это, как "
+"правило, длительный процесс, и занимает намного больше времени, чем простое "
+"обновление пакетов."
+
+#: ApperKCM/Updater/DistroUpgrade.cpp:69
+msgid "It is recommended to plug in your computer before proceeding."
+msgstr "Перед продолжением рекомендуется подключить компьютер к сети."
+
+#: ApperKCM/Updater/DistroUpgrade.cpp:71
+msgid ""
+"It is recommended that you keep your computer plugged in while the upgrade "
+"is being performed."
+msgstr ""
+"Рекомендуется оставить компьютер подключённым к сети до окончания процесса "
+"обновления."
+
+#: ApperKCM/Updater/DistroUpgrade.cpp:98
+msgid "Distribution upgrade complete."
+msgstr "Обновление дистрибутива завершено."
+
+#: ApperKCM/Updater/DistroUpgrade.cpp:100 Sentinel/DistroUpgrade.cpp:117
+#, kde-format
+msgid "Distribution upgrade process exited with code %1."
+msgstr "Процесс обновления дистрибутива завершился с кодом %1."
+
+#: ApperKCM/Updater/DistroUpgrade.cpp:115 Sentinel/DistroUpgrade.cpp:134
+msgid "The distribution upgrade process failed to start."
+msgstr "Сбой запуска процесса обновления дистрибутива."
+
+#: ApperKCM/Updater/DistroUpgrade.cpp:119 Sentinel/DistroUpgrade.cpp:137
+msgid ""
+"The distribution upgrade process crashed some time after starting "
+"successfully."
+msgstr ""
+"Произошёл сбой процесса обновления дистрибутива через некоторое время после "
+"его успешного начала."
+
+#: ApperKCM/Updater/DistroUpgrade.cpp:123 Sentinel/DistroUpgrade.cpp:140
+msgid "The distribution upgrade process failed with an unknown error."
+msgstr ""
+"Процесс обновления дистрибутива завершился аварийно через некоторое время "
+"после его успешного начала."
+
+#: ApperKCM/Updater/UpdateDetails.cpp:176
+msgid "This update will add new features and expand functionality."
+msgstr "Это обновление добавит новые возможности и расширит функциональность."
+
+#: ApperKCM/Updater/UpdateDetails.cpp:180
+msgid "This update will fix bugs and other non-critical problems."
+msgstr "Это обновление исправляет ошибки и другие некритичные проблемы."
+
+#: ApperKCM/Updater/UpdateDetails.cpp:184
+msgid "This update is important as it may solve critical problems."
+msgstr ""
+"Это обновление является важным, поскольку может исправить критические ошибки."
+
+#: ApperKCM/Updater/UpdateDetails.cpp:188
+msgid ""
+"This update is needed to fix a security vulnerability with this package."
+msgstr ""
+"Это обновление необходимо для исправления уязвимостей, обнаруженных в этом "
+"пакете."
+
+#: ApperKCM/Updater/UpdateDetails.cpp:192
+msgid "This update is blocked."
+msgstr "Это обновление заблокировано."
+
+#: ApperKCM/Updater/UpdateDetails.cpp:199
+#, kde-format
+msgid "This notification was issued on %1 and last updated on %2."
+msgstr "Это уведомление было создано %1 и последний раз обновлено %2."
+
+#: ApperKCM/Updater/UpdateDetails.cpp:205
+#, kde-format
+msgid "This notification was issued on %1."
+msgstr "Это уведомление было создано %1."
+
+#: ApperKCM/Updater/UpdateDetails.cpp:223
+msgid "For more information about this update please visit this website:"
+msgid_plural ""
+"For more information about this update please visit these websites:"
+msgstr[0] ""
+"Для получения дополнительной информации об этом обновлении посетите эти "
+"сайты:"
+msgstr[1] ""
+"Для получения дополнительной информации об этом обновлении посетите эти "
+"сайты:"
+msgstr[2] ""
+"Для получения дополнительной информации об этом обновлении посетите эти "
+"сайты:"
+msgstr[3] ""
+"Для получения дополнительной информации об этом обновлении посетите этот "
+"сайт:"
+
+#: ApperKCM/Updater/UpdateDetails.cpp:233
+msgid ""
+"For more information about bugs fixed by this update please visit this "
+"website:"
+msgid_plural ""
+"For more information about bugs fixed by this update please visit these "
+"websites:"
+msgstr[0] ""
+"Для получения дополнительной информации об этих исправлениях посетите эти "
+"сайты:"
+msgstr[1] ""
+"Для получения дополнительной информации об этих исправлениях посетите эти "
+"сайты:"
+msgstr[2] ""
+"Для получения дополнительной информации об этих исправлениях посетите эти "
+"сайты:"
+msgstr[3] ""
+"Для получения дополнительной информации об этих исправлениях посетите этот "
+"сайт:"
+
+#: ApperKCM/Updater/UpdateDetails.cpp:243
+msgid ""
+"For more information about this security update please visit this website:"
+msgid_plural ""
+"For more information about this security update please visit these websites:"
+msgstr[0] ""
+"Для получения дополнительной информации об этом обновление безопасности "
+"посетите эти сайты:"
+msgstr[1] ""
+"Для получения дополнительной информации об этом обновление безопасности "
+"посетите эти сайты:"
+msgstr[2] ""
+"Для получения дополнительной информации об этом обновление безопасности "
+"посетите эти сайты:"
+msgstr[3] ""
+"Для получения дополнительной информации об этом обновление безопасности "
+"посетите этот сайт:"
+
+#: ApperKCM/Updater/UpdateDetails.cpp:253
+msgid ""
+"The computer will have to be restarted after the update for the changes to "
+"take effect."
+msgstr ""
+"Чтобы после обновления изменения вступили в силу, следует перезагрузить "
+"компьютер."
+
+#: ApperKCM/Updater/UpdateDetails.cpp:257
+msgid ""
+"You will need to log out and back in after the update for the changes to "
+"take effect."
+msgstr ""
+"Чтобы после обновления изменения вступили в силу, следует перезапустить "
+"сеанс."
+
+#: ApperKCM/Updater/UpdateDetails.cpp:264
+msgid ""
+"The classification of this update is unstable which means it is not designed "
+"for production use."
+msgstr ""
+"Это обновление относится к нестабильным, поэтому его не следует "
+"устанавливать на промышленные системы."
+
+#: ApperKCM/Updater/UpdateDetails.cpp:268
+msgid ""
+"This is a test update, and is not designed for normal use. Please report any "
+"problems or regressions you encounter."
+msgstr ""
+"Это тестовое обновление, не предназначенное для обычных пользователей. "
+"Пожалуйста, сообщайте о любых проблемах и ухудшениях работы, с которыми вы "
+"столкнётесь."
+
+#: ApperKCM/Updater/UpdateDetails.cpp:277
+msgid ""
+"The developer logs will be shown as no description is available for this "
+"update:"
+msgstr ""
+"Поскольку описания этого обновления не было обнаружено, будет показан журнал "
+"изменений, внесенных разработчиками:"
+
+#: ApperKCM/Updater/UpdateDetails.cpp:285
+msgid "Updates:"
+msgstr "Обновляет:"
+
+#: ApperKCM/Updater/UpdateDetails.cpp:295
+msgid "Obsoletes:"
+msgstr "Заменяет:"
+
+#: ApperKCM/Updater/UpdateDetails.cpp:305
+msgid "Repository:"
+msgstr "Репозиторий:"
+
+#: ApperKCM/Updater/UpdateDetails.cpp:337
+msgid "No update description was found."
+msgstr "Описание обновления недоступно."
+
+#: ApperKCM/Updater/Updater.cpp:107 ApperKCM/BrowseView.cpp:90
+msgid "Show Versions"
+msgstr "Показать версию"
+
+#: ApperKCM/Updater/Updater.cpp:115 ApperKCM/BrowseView.cpp:98
+msgid "Show Architectures"
+msgstr "Показать архитектуру"
+
+#: ApperKCM/Updater/Updater.cpp:123 ApperKCM/BrowseView.cpp:106
+msgid "Show Sizes"
+msgstr "Показать размер"
+
+#: ApperKCM/Updater/Updater.cpp:216
+#, kde-format
+msgid "Estimated download size: %1"
+msgstr "Предполагаемый размер загрузки: %1"
+
+#: ApperKCM/Updater/Updater.cpp:254
+msgid "Your system is up to date"
+msgstr "Ваша система находится в актуальном состоянии"
+
+#: ApperKCM/Updater/Updater.cpp:255 ApperKCM/Updater/Updater.cpp:259
+#, kde-format
+msgid "Verified %1 ago"
+msgstr ""
+
+#: ApperKCM/Updater/Updater.cpp:258
+msgid "You have no updates"
+msgstr "Нет обновлений"
+
+#: ApperKCM/Updater/Updater.cpp:262
+msgid "Last check for updates was more than a month ago"
+msgstr "Последняя проверка обновлений была больше месяца назад"
+
+#: ApperKCM/Updater/Updater.cpp:263
+msgid "It's strongly recommended that you check for new updates now"
+msgstr "Настоятельно рекомендуется проверить сейчас наличие новых обновлений"
+
+#. i18n: file: ApperKCM/ApperKCM.ui:230
+#. i18n: ectx: property (text), widget (QPushButton, checkUpdatesPB)
+#: ApperKCM/Updater/Updater.cpp:351 rc.cpp:194
+msgid "Check for new Updates"
+msgstr "Проверить наличие обновлений"
+
+#: ApperKCM/FiltersMenu.cpp:37
+msgid "Collections"
+msgstr "Коллекции"
+
+#: ApperKCM/FiltersMenu.cpp:44
+msgid "Only collections"
+msgstr "Только коллекции"
+
+#: ApperKCM/FiltersMenu.cpp:51
+msgid "Exclude collections"
+msgstr "Исключить коллекции"
+
+# Используется как название пункта в фильтре, и как текущее состояние пакета. Не знаю, как придумать общее слово.
+#. i18n: file: Apper/BackendDetails.ui:100
+#. i18n: ectx: property (text), widget (QCheckBox, installedCB)
+#: ApperKCM/FiltersMenu.cpp:60 libapper/PkStrings.cpp:362 rc.cpp:23
+#, fuzzy
+msgid "Installed"
+msgstr "Установлен"
+
+#: ApperKCM/FiltersMenu.cpp:67
+msgid "Only installed"
+msgstr "Только установленные"
+
+#: ApperKCM/FiltersMenu.cpp:74
+msgid "Only available"
+msgstr "Только доступные"
+
+#: ApperKCM/FiltersMenu.cpp:81 ApperKCM/FiltersMenu.cpp:111
+#: ApperKCM/FiltersMenu.cpp:141 ApperKCM/FiltersMenu.cpp:171
+#: ApperKCM/FiltersMenu.cpp:202
+msgid "No filter"
+msgstr "Без фильтра"
+
+#. i18n: file: Apper/BackendDetails.ui:110
+#. i18n: ectx: property (text), widget (QCheckBox, developmentCB)
+#: ApperKCM/FiltersMenu.cpp:90 rc.cpp:26
+msgid "Development"
+msgstr "Средства разработки"
+
+#: ApperKCM/FiltersMenu.cpp:97
+msgid "Only development"
+msgstr "Только пакеты разработки"
+
+#: ApperKCM/FiltersMenu.cpp:104
+msgid "Only end user files"
+msgstr "Только пользовательские пакеты"
+
+#: ApperKCM/FiltersMenu.cpp:120
+msgid "Graphical"
+msgstr "Графические программы"
+
+#: ApperKCM/FiltersMenu.cpp:127
+msgid "Only graphical"
+msgstr "Только графические"
+
+#: ApperKCM/FiltersMenu.cpp:134
+msgid "Only text"
+msgstr "Только текстовые"
+
+#: ApperKCM/FiltersMenu.cpp:150
+msgctxt "Filter for free packages"
+msgid "Free"
+msgstr "Свободные программы"
+
+#: ApperKCM/FiltersMenu.cpp:157
+msgid "Only free software"
+msgstr "Только свободные программы"
+
+#: ApperKCM/FiltersMenu.cpp:164
+msgid "Only non-free software"
+msgstr "Только несвободные программы"
+
+#: ApperKCM/FiltersMenu.cpp:181
+msgctxt "Filter for source packages"
+msgid "Source"
+msgstr "Исходный код"
+
+#: ApperKCM/FiltersMenu.cpp:188
+msgid "Only sourcecode"
+msgstr "Только исходный код"
+
+#: ApperKCM/FiltersMenu.cpp:195
+msgid "Only non-sourcecode"
+msgstr "Только бинарные"
+
+#: ApperKCM/FiltersMenu.cpp:217
+msgid "Hide Subpackages"
+msgstr "Скрыть субпакеты"
+
+#: ApperKCM/FiltersMenu.cpp:219
+msgid "Only show one package, not subpackages"
+msgstr "Показывать только один пакет, без субпакетов"
+
+#: ApperKCM/FiltersMenu.cpp:226
+msgid "Only Newest Packages"
+msgstr "Только новейшие пакеты"
+
+#: ApperKCM/FiltersMenu.cpp:231
+msgid "Only show the newest available package"
+msgstr "Показывать только новейшие доступные пакеты"
+
+#: ApperKCM/FiltersMenu.cpp:238
+msgid "Only Native Packages"
+msgstr "Только соответствующие архитектуре"
+
+#: ApperKCM/FiltersMenu.cpp:243
+msgid "Only show packages matching the machine architecture"
+msgstr "Показывать только пакеты, соответствующие архитектуре системы"
+
+#: ApperKCM/FiltersMenu.cpp:252
+msgid "Only Show Applications"
+msgstr "Показывать только приложения"
+
+#: ApperKCM/FiltersMenu.cpp:255
+msgid "Hide packages that are not applications"
+msgstr "Скрыть пакеты, которые не являются приложениями"
+
+#: ApperKCM/ApperKCM.cpp:78
+msgid "Application Manager"
+msgstr "Программа для управления приложениями"
+
+#: ApperKCM/ApperKCM.cpp:80
+msgid "KDE interface for managing software"
+msgstr "Интерфейс KDE для управления программным обеспечением"
+
+#: ApperKCM/ApperKCM.cpp:110 ApperKCM/ApperKCM.cpp:291
+msgid "Find"
+msgstr "Поиск"
+
+#: ApperKCM/ApperKCM.cpp:205
+msgid "History"
+msgstr "Журнал"
+
+#. i18n: file: ApperKCM/Settings/Settings.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, Settings)
+#: ApperKCM/ApperKCM.cpp:211 rc.cpp:140
+msgid "Settings"
+msgstr "Параметры"
+
+#: ApperKCM/ApperKCM.cpp:268 ApperKCM/ApperKCM.cpp:269
+#: ApperKCM/ApperKCM.cpp:270 ApperKCM/ApperKCM.cpp:271
+msgid "&Cancel"
+msgstr "О&тменить"
+
+#. i18n: file: ApperKCM/ApperKCM.ui:291
+#. i18n: ectx: property (text), widget (QToolButton, backTB)
+#: ApperKCM/ApperKCM.cpp:278 rc.cpp:200
+msgid "Find by &name"
+msgstr "Поиск по &имени"
+
+#. i18n: file: ApperKCM/ApperKCM.ui:301
+#. i18n: ectx: property (text), widget (QToolButton, backTB)
+#: ApperKCM/ApperKCM.cpp:279 rc.cpp:206
+msgid "Find by f&ile name"
+msgstr "Поиск по имени &файла"
+
+#. i18n: file: ApperKCM/ApperKCM.ui:296
+#. i18n: ectx: property (text), widget (QToolButton, backTB)
+#: ApperKCM/ApperKCM.cpp:280 rc.cpp:203
+msgid "Find by &description"
+msgstr "Поиск по &описанию"
+
+#: ApperKCM/ApperKCM.cpp:414
+msgid ""
+"The settings of the current module have changed.\n"
+"Do you want to apply the changes or discard them?"
+msgstr ""
+"Настройка текущего модуля была изменена.\n"
+"Применить изменения или отменить их?"
+
+#: ApperKCM/ApperKCM.cpp:416
+msgid "Apply Settings"
+msgstr "Применить параметры"
+
+#: ApperKCM/ApperKCM.cpp:458
+msgid "General Settings"
+msgstr "Основные параметры"
+
+#: ApperKCM/ApperKCM.cpp:459
+#, fuzzy
+#| msgctxt "The group type"
+#| msgid "Software sources"
+msgid "Software Origins"
+msgstr "Источники программ"
+
+#: ApperKCM/PackageDetails.cpp:73
+#, fuzzy
+#| msgctxt "Daily refresh the package cache"
+#| msgid "Daily"
+msgid "Display"
+msgstr "Ежедневно"
+
+#: ApperKCM/PackageDetails.cpp:80
+msgid "Description"
+msgstr "Описание"
+
+#: ApperKCM/PackageDetails.cpp:88
+msgid "Depends On"
+msgstr "Зависит от"
+
+#: ApperKCM/PackageDetails.cpp:114
+msgid "Required By"
+msgstr "Необходим для"
+
+#: ApperKCM/PackageDetails.cpp:140
+msgid "File List"
+msgstr "Список файлов"
+
+#: ApperKCM/PackageDetails.cpp:482
+msgid "No files were found."
+msgstr "Файлы не найдены."
+
+#: ApperKCM/PackageDetails.cpp:529
+msgid "Could not fetch software details"
+msgstr "Не удалось получить сведения о программном обеспечение"
+
+#: ApperKCM/PackageDetails.cpp:571
+msgid "Applications"
+msgstr "Приложения"
+
+#: ApperKCM/CategoryModel.cpp:47
+msgid "Installed Software"
+msgstr "Установленные программы"
+
+#: ApperKCM/CategoryModel.cpp:50 ApperKCM/CategoryModel.cpp:58
+msgid "Lists"
+msgstr "Списки"
+
+#: ApperKCM/CategoryModel.cpp:55
+msgid "Updates"
+msgstr "Обновления"
+
+#: ApperKCM/CategoryModel.cpp:155 ApperKCM/CategoryModel.cpp:339
+msgid "Categories"
+msgstr "Категории"
+
+#: ApperKCM/CategoryModel.cpp:208
+msgid "Groups"
+msgstr "Группы"
+
+#: ApperKCM/ScreenShotViewer.cpp:90
+msgid "Could not find screen shot."
+msgstr "Не удалось найти снимок."
+
+#: ApperKCM/TransactionHistory.cpp:66
+msgid "Refresh transactions list"
+msgstr "Обновить список транзакций"
+
+#: ApperKCM/TransactionHistory.cpp:87
+#, kde-format
+msgid "Time since last cache refresh: %1"
+msgstr "С последнего обновления кэша прошло: %1"
+
+#: ApperKCM/TransactionModel.cpp:46
+msgid "Date"
+msgstr "Дата"
+
+#: ApperKCM/TransactionModel.cpp:47 libapper/PackageModel.cpp:186
+msgid "Action"
+msgstr "Действие"
+
+#: ApperKCM/TransactionModel.cpp:48 Sentinel/TransactionWatcher.cpp:292
+msgid "Details"
+msgstr "Сведения"
+
+#: ApperKCM/TransactionModel.cpp:49
+msgctxt "Machine user who issued the transaction"
+msgid "Username"
+msgstr "Пользователь"
+
+#: ApperKCM/TransactionModel.cpp:50
+msgid "Application"
+msgstr "Приложение"
+
+#: Sentinel/DistroUpgrade.cpp:69
+msgid "Start upgrade now"
+msgstr "Начать обновление сейчас"
+
+#: Sentinel/DistroUpgrade.cpp:114
+msgid "Distribution upgrade finished. "
+msgstr "Обновление дистрибутива завершено. "
+
+#: Sentinel/PkInstallProvideFiles.cpp:39
+#, fuzzy
+#| msgid "Install Packages from List..."
+msgid "Install Packages that Provides Files"
+msgstr "Установить пакеты из списка..."
+
+#: Sentinel/PkInstallProvideFiles.cpp:49
+#, fuzzy
+#| msgid "No files were found."
+msgid "No files were provided"
+msgstr "Файлы не найдены."
+
+#: Sentinel/PkInstallProvideFiles.cpp:52
+msgid "Do you want to search for this now?"
+msgid_plural "Do you want to search for these now?"
+msgstr[0] "Произвести поиск сейчас?"
+msgstr[1] "Произвести поиск сейчас?"
+msgstr[2] "Произвести поиск сейчас?"
+msgstr[3] "Произвести поиск сейчас?"
+
+#: Sentinel/PkInstallProvideFiles.cpp:62
+msgid "A program wants to install a file"
+msgid_plural "A program wants to install files"
+msgstr[0] "Программа хочет установить файлы"
+msgstr[1] "Программа хочет установить файлы"
+msgstr[2] "Программа хочет установить файлы"
+msgstr[3] "Программа хочет установить файл"
+
+#: Sentinel/PkInstallProvideFiles.cpp:66
+#, fuzzy, kde-format
+#| msgid "%2 wants to install a package"
+#| msgid_plural "%2 wants to install packages"
+msgid "The application %2 is asking to install a file"
+msgid_plural "The application %2 is asking to install files"
+msgstr[0] "%2 хочет установить пакеты"
+msgstr[1] "%2 хочет установить пакеты"
+msgstr[2] "%2 хочет установить пакеты"
+msgstr[3] "%2 хочет установить пакет"
+
+#: Sentinel/PkInstallProvideFiles.cpp:88
+#: Sentinel/PkRemovePackageByFiles.cpp:128 Sentinel/PkSearchFile.cpp:54
+msgid "Failed to start search file transaction"
+msgstr "Сбой запуска транзакции поиска файлов"
+
+#: Sentinel/PkInstallProvideFiles.cpp:101 libapper/PkTransaction.cpp:263
+msgid "Failed to install file"
+msgid_plural "Failed to install files"
+msgstr[0] "Не удалось установить файлы"
+msgstr[1] "Не удалось установить файлы"
+msgstr[2] "Не удалось установить файлы"
+msgstr[3] "Не удалось установить файл"
+
+#: Sentinel/PkInstallProvideFiles.cpp:102
+#, kde-format
+msgid "The %1 package already provides this file"
+msgstr "Пакет %1 уже предоставляет этот файл"
+
+#: Sentinel/PkInstallProvideFiles.cpp:108
+msgid "Failed to find package"
+msgstr "Не удаётся найти пакет"
+
+#: Sentinel/PkInstallProvideFiles.cpp:109
+msgid "The file could not be found in any packages"
+msgid_plural "The files could not be found in any packages"
+msgstr[0] "Не удалось найти файлы ни в одном из пакетов"
+msgstr[1] "Не удалось найти файлы ни в одном из пакетов"
+msgstr[2] "Не удалось найти файлы ни в одном из пакетов"
+msgstr[3] "Не удалось найти файл ни в одном из пакетов"
+
+#: Sentinel/PkInstallPrinterDrivers.cpp:39
+#, fuzzy
+#| msgctxt "The role of the transaction, in present tense"
+#| msgid "Installing file"
+msgid "Install Printer Drivers"
+msgstr "Установка файла"
+
+#: Sentinel/PkInstallPrinterDrivers.cpp:74
+#: Sentinel/PkInstallPlasmaResources.cpp:101
+#: Sentinel/PkInstallMimeTypes.cpp:92
+#: Sentinel/PkInstallFontconfigResources.cpp:145
+#: Sentinel/PkInstallFontconfigResources.cpp:166
+#: Sentinel/PkInstallGStreamerResources.cpp:136
+msgid "Failed to search for provides"
+msgstr "Не удалось найти требуемые дополнения"
+
+#: Sentinel/PkInstallPrinterDrivers.cpp:87
+msgid "Failed to search for printer driver"
+msgstr "Не удалось найти драйвер для принтера"
+
+#: Sentinel/PkInstallPrinterDrivers.cpp:88
+msgid "Could not find printer driver in any configured software source"
+msgstr ""
+"Не удалось найти драйвер для принтера ни в одном из источников программ"
+
+#: Sentinel/UpdateIcon.cpp:163
+msgid "Review Updates"
+msgstr "Просмотр обновлений"
+
+#: Sentinel/UpdateIcon.cpp:166
+msgid "Configure"
+msgstr "Настроить"
+
+#. i18n: file: ApperKCM/PackageDetails.ui:359
+#. i18n: ectx: property (text), widget (QToolButton, hideTB)
+#. i18n: file: ApperKCM/Updater/UpdateDetails.ui:20
+#. i18n: ectx: property (text), widget (QToolButton, hideTB)
+#: Sentinel/UpdateIcon.cpp:170 libapper/PkTransactionDialog.cpp:86 rc.cpp:137
+#: rc.cpp:173
+msgid "Hide"
+msgstr "Скрыть"
+
+#: Sentinel/UpdateIcon.cpp:180
+#, kde-format
+msgid "You have one update"
+msgid_plural "You have %1 updates"
+msgstr[0] "Имеется %1 обновление"
+msgstr[1] "Имеется %1 обновления"
+msgstr[2] "Имеется %1 обновлений"
+msgstr[3] "Имеется 1 обновление"
+
+#: Sentinel/UpdateIcon.cpp:233
+msgid "Updates are being automatically installed."
+msgstr "Идёт автоматическая установка обновлений."
+
+#: Sentinel/UpdateIcon.cpp:254
+msgid "Security updates are being automatically installed."
+msgstr "Идёт автоматическая установка обновлений безопасности."
+
+#: Sentinel/UpdateIcon.cpp:281
+msgid "System update was successful."
+msgstr "Обновление системы прошло успешно."
+
+#: Sentinel/UpdateIcon.cpp:290
+msgid "The automated software update failed."
+msgstr "Автоматическое обновление завершилось неудачно."
+
+#: Sentinel/ReviewChanges.cpp:52
+msgid "The following package was found"
+msgid_plural "The following packages were found"
+msgstr[0] "Были найдены следующие пакеты"
+msgstr[1] "Были найдены следующие пакеты"
+msgstr[2] "Были найдены следующие пакеты"
+msgstr[3] "Был найден следующий пакет"
+
+#: Sentinel/PkInstallPackageNames.cpp:41
+#, fuzzy
+#| msgid "Install Packages"
+msgid "Install Packages by Name"
+msgstr "Установить пакеты"
+
+#: Sentinel/PkInstallPackageNames.cpp:58
+#, fuzzy
+#| msgid "No files were found."
+msgid "No package names were provided"
+msgstr "Файлы не найдены."
+
+#: Sentinel/PkInstallPackageNames.cpp:61
+msgid "Do you want to search for and install this package now?"
+msgid_plural "Do you want to search for and install these packages now?"
+msgstr[0] "Выполнить поиск и установку этого пакета?"
+msgstr[1] "Выполнить поиск и установку этих пакетов?"
+msgstr[2] "Выполнить поиск и установку этих пакетов?"
+msgstr[3] "Выполнить поиск и установку этого пакета?"
+
+#: Sentinel/PkInstallPackageNames.cpp:71 Sentinel/PkInstallPackageFiles.cpp:79
+msgid "An application wants to install a package"
+msgid_plural "An application wants to install packages"
+msgstr[0] "Приложение хочет установить пакеты"
+msgstr[1] "Приложение хочет установить пакеты"
+msgstr[2] "Приложение хочет установить пакеты"
+msgstr[3] "Приложение хочет установить пакет"
+
+#: Sentinel/PkInstallPackageNames.cpp:75 Sentinel/PkInstallPackageFiles.cpp:83
+#, kde-format
+msgid "The application <i>%2</i> wants to install a package"
+msgid_plural "The application <i>%2</i> wants to install packages"
+msgstr[0] "Приложение %2 хочет установить пакеты"
+msgstr[1] "Приложение %2 хочет установить пакеты"
+msgstr[2] "Приложение %2 хочет установить пакеты"
+msgstr[3] "Приложение %2 хочет установить пакет"
+
+#: Sentinel/PkInstallPackageNames.cpp:97 Sentinel/PkInstallCatalogs.cpp:278
+#: Sentinel/PkIsInstalled.cpp:46
+msgid "Failed to start resolve transaction"
+msgstr "Сбой запуска разрешения зависимостей"
+
+#: Sentinel/PkInstallPackageNames.cpp:109
+msgid "Failed to install packages"
+msgstr "Не удалось установить пакеты"
+
+#: Sentinel/PkInstallPackageNames.cpp:110
+#, kde-format
+msgid "The package %2 is already installed"
+msgid_plural "The packages %2 are already installed"
+msgstr[0] "Пакеты %2 уже установлены"
+msgstr[1] "Пакеты %2 уже установлены"
+msgstr[2] "Пакеты %2 уже установлены"
+msgstr[3] "Пакет %2 уже установлен"
+
+#: Sentinel/PkInstallPackageNames.cpp:118
+#: Sentinel/PkRemovePackageByFiles.cpp:149 Sentinel/PkSearchFile.cpp:81
+#, kde-format
+msgid "Could not find %1"
+msgstr "Не удаётся найти %1"
+
+#: Sentinel/PkInstallPackageNames.cpp:119
+msgid "The package could not be found in any software source"
+msgid_plural "The packages could not be found in any software source"
+msgstr[0] "Не удалось найти пакеты ни в одном из источников программ"
+msgstr[1] "Не удалось найти пакеты ни в одном из источников программ"
+msgstr[2] "Не удалось найти пакеты ни в одном из источников программ"
+msgstr[3] "Не удалось найти пакет ни в одном из источников программ"
+
+#: Sentinel/PkInstallCatalogs.cpp:46
+#, fuzzy
+#| msgid "Install Packages"
+msgid "Install Packages Catalogs"
+msgstr "Установить пакеты"
+
+#: Sentinel/PkInstallCatalogs.cpp:65
+msgid "You can drop more catalogs in here"
+msgstr ""
+
+#: Sentinel/PkInstallCatalogs.cpp:85
+#, fuzzy
+#| msgid "No update description was found."
+msgid "No supported catalog was found"
+msgstr "Описание обновления недоступно."
+
+#: Sentinel/PkInstallCatalogs.cpp:87
+#, fuzzy
+#| msgid "<h3>Do you want to install this catalog?</h3><ul><li>%2</li></ul>"
+#| msgid_plural ""
+#| "<h3>Do you want to install these catalogs?</h3><ul><li>%2</li></ul>"
+msgid "Do you want to install this catalog?"
+msgid_plural "Do you want to install these catalogs?"
+msgstr[0] "<h3>Установить эти каталоги?</h3><ul><li>%2</li></ul>"
+msgstr[1] "<h3>Установить эти каталоги?</h3><ul><li>%2</li></ul>"
+msgstr[2] "<h3>Установить эти каталоги?</h3><ul><li>%2</li></ul>"
+msgstr[3] "<h3>Установить этот каталог?</h3><ul><li>%2</li></ul>"
+
+#: Sentinel/PkInstallCatalogs.cpp:96
+#, fuzzy
+#| msgid "A program wants to install a package"
+#| msgid_plural "A program wants to install packages"
+msgid "An application wants to install a catalog"
+msgid_plural "An application wants to install catalogs"
+msgstr[0] "Программа хочет установить пакеты"
+msgstr[1] "Программа хочет установить пакеты"
+msgstr[2] "Программа хочет установить пакеты"
+msgstr[3] "Программа хочет установить пакет"
+
+#: Sentinel/PkInstallCatalogs.cpp:100
+#, fuzzy, kde-format
+#| msgid "%2 wants to install a package"
+#| msgid_plural "%2 wants to install packages"
+msgid "The application <i>%2</i> wants to install a catalog"
+msgid_plural "The application <i>%2</i> wants to install catalogs"
+msgstr[0] "%2 хочет установить пакеты"
+msgstr[1] "%2 хочет установить пакеты"
+msgstr[2] "%2 хочет установить пакеты"
+msgstr[3] "%2 хочет установить пакет"
+
+#: Sentinel/PkInstallCatalogs.cpp:137
+msgid "Not supported"
+msgstr "Не поддерживается"
+
+#: Sentinel/PkInstallCatalogs.cpp:138
+msgid ""
+"Your backend does not support any of the needed methods to install a catalog"
+msgstr ""
+"Ваш модуль не поддерживает ни одного из необходимых методов установки "
+"каталога"
+
+#: Sentinel/PkInstallCatalogs.cpp:177
+msgid "Catalog not found"
+msgstr "Каталог не найден"
+
+#: Sentinel/PkInstallCatalogs.cpp:178
+#, fuzzy
+#| msgid "Could not find package"
+msgid "Could not find a catalog to install"
+msgstr "Не удаётся найти пакет"
+
+#: Sentinel/PkInstallCatalogs.cpp:185
+#, kde-format
+msgid "Catalog %2 failed to open"
+msgid_plural "Catalogs %2 failed to open"
+msgstr[0] "Каталоги %2 не удалось открыть"
+msgstr[1] "Каталоги %2 не удалось открыть"
+msgstr[2] "Каталоги %2 не удалось открыть"
+msgstr[3] "Каталог %2 не удалось открыть"
+
+#: Sentinel/PkInstallCatalogs.cpp:189
+msgid "Failed to open"
+msgstr "Не удалось открыть"
+
+#: Sentinel/PkInstallCatalogs.cpp:195
+msgid "Catalog is Empty"
+msgstr "Каталог пуст"
+
+#: Sentinel/PkInstallCatalogs.cpp:196
+#, fuzzy
+#| msgid "<h3>Do you want to install this catalog?</h3><ul><li>%2</li></ul>"
+#| msgid_plural ""
+#| "<h3>Do you want to install these catalogs?</h3><ul><li>%2</li></ul>"
+msgid "Could not find any package to install in this catalog"
+msgstr "<h3>Установить эти каталоги?</h3><ul><li>%2</li></ul>"
+
+#: Sentinel/SessionTask.cpp:66 libapper/Requirements.cpp:43
+msgid "Continue"
+msgstr "Продолжить"
+
+#: Sentinel/SessionTask.cpp:361
+#, fuzzy
+#| msgid "The package is not installed"
+msgid "There are no packages to Install or Remove"
+msgstr "Пакет не установлен"
+
+#: Sentinel/SessionTask.cpp:362
+#, fuzzy
+#| msgid "This action is unknown."
+msgid "This action should not happen"
+msgstr "Неизвестное действие."
+
+#: Sentinel/SessionTask.cpp:391
+#, fuzzy
+#| msgid "Could not find %1"
+msgid "Could not find"
+msgstr "Не удаётся найти %1"
+
+#: Sentinel/SessionTask.cpp:392 Sentinel/SessionTask.cpp:401
+#, fuzzy
+#| msgid "No package was found to be installed"
+msgid "No packages were found that meet the request"
+msgstr "Не найдено пакета для установки"
+
+#: Sentinel/SessionTask.cpp:400
+#, fuzzy
+#| msgid "Failed to find font"
+msgid "Failed to find"
+msgstr "Не удалось найти шрифт"
+
+#: Sentinel/SessionTask.cpp:422
+msgid "Transaction did not finish with success"
+msgstr "Транзакция завершилась не успешно"
+
+#: Sentinel/SessionTask.cpp:428
+#, fuzzy
+#| msgid "Obsoleted"
+msgid "Task completed"
+msgstr "Заменён"
+
+#: Sentinel/SessionTask.cpp:428
+#, fuzzy
+#| msgid "File was installed successfully"
+#| msgid_plural "Files were installed successfully"
+msgid "All operations were committed successfully"
+msgstr "Файлы были успешно установлены"
+
+#: Sentinel/TransactionWatcher.cpp:64 Sentinel/TransactionWatcher.cpp:249
+msgid "Hide this icon"
+msgstr "Скрыть этот значок"
+
+#: Sentinel/TransactionWatcher.cpp:166
+msgid "The system update has completed"
+msgstr "Обновление системы завершено"
+
+#: Sentinel/TransactionWatcher.cpp:172
+#, kde-format
+msgid "Packages: %1"
+msgstr "Пакеты: %1"
+
+#: Sentinel/TransactionWatcher.cpp:184
+#, kde-format
+msgid "Package: %2"
+msgid_plural "Packages: %2"
+msgstr[0] "Пакеты: %2"
+msgstr[1] "Пакеты: %2"
+msgstr[2] "Пакеты: %2"
+msgstr[3] "Пакет: %2"
+
+#: Sentinel/TransactionWatcher.cpp:231 Sentinel/TransactionWatcher.cpp:271
+#, fuzzy
+#| msgid "Package Manager Messages"
+msgid "Software Manager Messages"
+msgstr "Сообщение менеджера пакетов"
+
+#: Sentinel/TransactionWatcher.cpp:232
+#, fuzzy, kde-format
+#| msgid "One message from the package manager"
+#| msgid_plural "%1 messages from the package manager"
+msgid "One message from the software manager"
+msgid_plural "%1 messages from the software manager"
+msgstr[0] "%1 сообщение от программы управления пакетами"
+msgstr[1] "%1 сообщения от программы управления пакетами"
+msgstr[2] "%1 сообщений от программы управления пакетами"
+msgstr[3] "Сообщение от программы управления пакетами"
+
+#: Sentinel/TransactionWatcher.cpp:240
+msgid "Show messages"
+msgstr "Показать сообщения"
+
+#: Sentinel/TransactionWatcher.cpp:292
+msgid "Ignore"
+msgstr "Игнорировать"
+
+#: Sentinel/PkIsInstalled.cpp:36
+#, fuzzy
+#| msgid "The package is not installed"
+msgid "Querying if a Package is Installed"
+msgstr "Пакет не установлен"
+
+#: Sentinel/PkIsInstalled.cpp:67
+msgid "User canceled the transaction"
+msgstr "Транзакция отменена пользователем"
+
+#: Sentinel/PkIsInstalled.cpp:69
+msgid "An unknown error happened"
+msgstr "Произошла неизвестная ошибка"
+
+#: Sentinel/TransactionTrayIcon.cpp:45
+msgid "Transactions"
+msgstr "Транзакции"
+
+#: Sentinel/TransactionTrayIcon.cpp:90
+#, kde-format
+msgid "%1% - %2"
+msgstr "%1% - %2"
+
+#: Sentinel/TransactionTrayIcon.cpp:92
+#, kde-format
+msgid "%1"
+msgstr "%1"
+
+#: Sentinel/PkInstallPlasmaResources.cpp:40
+#, fuzzy
+#| msgid "Install Packages"
+msgid "Install Plasma Resources"
+msgstr "Установить пакеты"
+
+#: Sentinel/PkInstallPlasmaResources.cpp:53
+#, fuzzy, kde-format
+#| msgctxt "Part of: %1 Updates, %1 Selected"
+#| msgid "%1 Update"
+#| msgid_plural "%1 Updates"
+msgid "%1 data engine"
+msgstr "%1 обновление"
+
+#: Sentinel/PkInstallPlasmaResources.cpp:55
+#, kde-format
+msgid "%1 script engine"
+msgstr ""
+
+#: Sentinel/PkInstallPlasmaResources.cpp:67
+#, fuzzy
+#| msgid "No files were found."
+msgid "No supported resources were provided"
+msgstr "Файлы не найдены."
+
+#: Sentinel/PkInstallPlasmaResources.cpp:69
+#, fuzzy
+#| msgid ""
+#| "The following plugin is required: <ul><li>%2</li></ul>Do you want to "
+#| "search for this now?"
+#| msgid_plural ""
+#| "The following plugins are required: <ul><li>%2</li></ul>Do you want to "
+#| "search for these now?"
+msgid "The following service is required. Do you want to search for this now?"
+msgid_plural ""
+"The following services are required. Do you want to search for these now?"
+msgstr[0] ""
+"Требуются следующие дополнения: <ul><li>%2</li></ul>Выполнить их поиск "
+"сейчас?"
+msgstr[1] ""
+"Требуются следующие дополнения: <ul><li>%2</li></ul>Выполнить их поиск "
+"сейчас?"
+msgstr[2] ""
+"Требуются следующие дополнения: <ul><li>%2</li></ul>Выполнить их поиск "
+"сейчас?"
+msgstr[3] ""
+"Требуется следующие дополнение: <ul><li>%2</li></ul>Выполнить его поиск "
+"сейчас?"
+
+#: Sentinel/PkInstallPlasmaResources.cpp:78
+#, fuzzy
+#| msgid "%2 requires an additional plugin for this operation"
+#| msgid_plural "%2 requires additional plugins for this operation"
+msgid "Plasma requires an additional service for this operation"
+msgid_plural "Plasma requires additional services for this operation"
+msgstr[0] "%2 требуются дополнения для выполнения этой операции"
+msgstr[1] "%2 требуются дополнения для выполнения этой операции"
+msgstr[2] "%2 требуются дополнения для выполнения этой операции"
+msgstr[3] "%2 требуется дополнение для выполнения этой операции"
+
+#: Sentinel/PkInstallPlasmaResources.cpp:112
+#, fuzzy
+#| msgid "Failed to search for provides"
+msgid "Failed to search for Plasma service"
+msgstr "Не удалось найти требуемые дополнения"
+
+#: Sentinel/PkInstallPlasmaResources.cpp:115
+#, fuzzy
+#| msgid "Could not find plugin in any configured software source"
+msgid "Could not find service in any configured software source"
+msgstr "Не удалось найти дополнение ни в одном из источников программ"
+
+#: Sentinel/PkInstallMimeTypes.cpp:39
+#, fuzzy
+#| msgid "Install Files"
+msgid "Install Support for File Types"
+msgstr "Установить файлы"
+
+#: Sentinel/PkInstallMimeTypes.cpp:50
+#, fuzzy
+#| msgid ""
+#| "Do you want to search for packages containing this file and remove it now?"
+#| msgid_plural ""
+#| "Do you want to search for packages containing these files and remove them "
+#| "now?"
+msgid "Do you want to search for a program that can open this file type?"
+msgid_plural ""
+"Do you want to search for a program that can open these file types?"
+msgstr[0] "Найти и удалить пакеты, содержащие эти файлы?"
+msgstr[1] "Найти и удалить пакеты, содержащие эти файлы?"
+msgstr[2] "Найти и удалить пакеты, содержащие эти файлы?"
+msgstr[3] "Найти и удалить пакеты, содержащие эти файлы?"
+
+#: Sentinel/PkInstallMimeTypes.cpp:55
+#, fuzzy
+#| msgid "No files were found."
+msgid "No valid file types were provided"
+msgstr "Файлы не найдены."
+
+#: Sentinel/PkInstallMimeTypes.cpp:62
+#, fuzzy
+#| msgid "A program requires an additional plugin to decode this file"
+#| msgid_plural "A program requires additional plugins to decode this file"
+msgid "A program is requiring support to open this kind of files"
+msgid_plural "A program is requiring support to open these kinds of files"
+msgstr[0] "Для декодирования этого файла требуются дополнения"
+msgstr[1] "Для декодирования этого файла требуются дополнения"
+msgstr[2] "Для декодирования этого файла требуются дополнения"
+msgstr[3] "Для декодирования этого файла требуется дополнение"
+
+#: Sentinel/PkInstallMimeTypes.cpp:66
+#, fuzzy, kde-format
+#| msgid "A program requires an additional plugin to decode this file"
+#| msgid_plural "A program requires additional plugins to decode this file"
+msgid "The application %2 is requiring support to open this kind of files"
+msgid_plural ""
+"The application %2 is requiring support to open these kinds of files"
+msgstr[0] "Для декодирования этого файла требуются дополнения"
+msgstr[1] "Для декодирования этого файла требуются дополнения"
+msgstr[2] "Для декодирования этого файла требуются дополнения"
+msgstr[3] "Для декодирования этого файла требуется дополнение"
+
+#: Sentinel/PkInstallMimeTypes.cpp:101
+#, fuzzy
+#| msgid "Failed to find software"
+msgid "Could not find software"
+msgstr "Не удаётся найти программы"
+
+#: Sentinel/PkInstallMimeTypes.cpp:103
+msgid "No new applications can be found to handle this type of file"
+msgstr "Нет новых приложений, которые могли бы работать с этим типом файла"
+
+#: Sentinel/main.cpp:36
+#, fuzzy
+#| msgid "Apply Settings"
+msgid "Apper Sentinel"
+msgstr "Применить параметры"
+
+#: Sentinel/main.cpp:41
+msgid "Trever Fischer"
+msgstr "Trever Fischer"
+
+#: Sentinel/PkInstallPackageFiles.cpp:38
+#, fuzzy
+#| msgid "Install Packages"
+msgid "Install Packages Files"
+msgstr "Установить пакеты"
+
+#: Sentinel/PkInstallPackageFiles.cpp:42
+#: Sentinel/PkRemovePackageByFiles.cpp:43
+msgid "You can drop more files in here"
+msgstr ""
+
+#: Sentinel/PkInstallPackageFiles.cpp:52
+#, fuzzy
+#| msgid "Not supported"
+msgid "Not Supported"
+msgstr "Не поддерживается"
+
+#: Sentinel/PkInstallPackageFiles.cpp:53
+#, fuzzy
+#| msgid "Current backend does not support installing packages."
+msgid "Your current backend does not support installing files"
+msgstr "Текущий модуль не поддерживает установку пакетов."
+
+#: Sentinel/PkInstallPackageFiles.cpp:68
+#: Sentinel/PkRemovePackageByFiles.cpp:64
+#, fuzzy
+#| msgid "No files were found."
+msgid "No supported files were provided"
+msgstr "Файлы не найдены."
+
+#: Sentinel/PkInstallPackageFiles.cpp:70
+#, fuzzy
+#| msgid "Do you want to install this file?"
+#| msgid_plural "Do you want to install these files?"
+msgid "Press <i>Continue</i> if you want to install this file"
+msgid_plural "Press <i>Continue</i> if you want to install these files"
+msgstr[0] "Установить эти файлы?"
+msgstr[1] "Установить эти файлы?"
+msgstr[2] "Установить эти файлы?"
+msgstr[3] "Установить этот файл?"
+
+#: Sentinel/PkInstallPackageFiles.cpp:105
+#, fuzzy
+#| msgctxt "The role of the transaction, in present tense"
+#| msgid "Installing file"
+msgid "Installation Complete"
+msgstr "Установка файла"
+
+#: Sentinel/PkInstallPackageFiles.cpp:106
+msgid "File was installed successfully"
+msgid_plural "Files were installed successfully"
+msgstr[0] "Файлы были успешно установлены"
+msgstr[1] "Файлы были успешно установлены"
+msgstr[2] "Файлы были успешно установлены"
+msgstr[3] "Файл был успешно установлен"
+
+#: Sentinel/PkInstallPackageFiles.cpp:117
+#, fuzzy
+#| msgid "Failed to install file"
+#| msgid_plural "Failed to install files"
+msgid "Failed to install files"
+msgstr "Не удалось установить файлы"
+
+#: Sentinel/PkInstallPackageFiles.cpp:118
+#: Sentinel/PkInstallPackageFiles.cpp:120
+#, fuzzy
+#| msgid "Failed to install file"
+#| msgid_plural "Failed to install files"
+msgid "Could not install files"
+msgstr "Не удалось установить файлы"
+
+#: Sentinel/PkRemovePackageByFiles.cpp:40
+#, fuzzy
+#| msgid "Remove Packages"
+msgid "Remove Packages that Provides Files"
+msgstr "Удалить пакеты"
+
+#: Sentinel/PkRemovePackageByFiles.cpp:67
+#, fuzzy
+#| msgid "You need to restart the application"
+msgid "Do you want to remove the following application?"
+msgid_plural "Do you want to remove the following applications?"
+msgstr[0] "Вам необходимо перезапустить приложение"
+msgstr[1] "Вам необходимо перезапустить приложение"
+msgstr[2] "Вам необходимо перезапустить приложение"
+msgstr[3] "Вам необходимо перезапустить приложение"
+
+#: Sentinel/PkRemovePackageByFiles.cpp:71
+#, fuzzy
+#| msgid ""
+#| "Do you want to search for packages containing this file and remove it now?"
+#| msgid_plural ""
+#| "Do you want to search for packages containing these files and remove them "
+#| "now?"
+msgid "Do you want to search for a package providing this file?"
+msgid_plural "Do you want to search for a package providing these files?"
+msgstr[0] "Найти и удалить пакеты, содержащие эти файлы?"
+msgstr[1] "Найти и удалить пакеты, содержащие эти файлы?"
+msgstr[2] "Найти и удалить пакеты, содержащие эти файлы?"
+msgstr[3] "Найти и удалить пакеты, содержащие эти файлы?"
+
+#: Sentinel/PkRemovePackageByFiles.cpp:82
+#, fuzzy
+#| msgid "%2 wants to install a package"
+#| msgid_plural "%2 wants to install packages"
+msgid "An application is asking to remove an application"
+msgid_plural "An application is asking to remove applications"
+msgstr[0] "%2 хочет установить пакеты"
+msgstr[1] "%2 хочет установить пакеты"
+msgstr[2] "%2 хочет установить пакеты"
+msgstr[3] "%2 хочет установить пакет"
+
+#: Sentinel/PkRemovePackageByFiles.cpp:86
+#, fuzzy
+#| msgid "%2 wants to install a package"
+#| msgid_plural "%2 wants to install packages"
+msgid "An application is asking to remove a file"
+msgid_plural "An application is asking to remove files"
+msgstr[0] "%2 хочет установить пакеты"
+msgstr[1] "%2 хочет установить пакеты"
+msgstr[2] "%2 хочет установить пакеты"
+msgstr[3] "%2 хочет установить пакет"
+
+#: Sentinel/PkRemovePackageByFiles.cpp:92
+#, fuzzy, kde-format
+#| msgid "%2 wants to install a package"
+#| msgid_plural "%2 wants to install packages"
+msgid "The application <i>%2</i> is asking to remove an application"
+msgid_plural "The application <i>%2</i> is asking to remove applications"
+msgstr[0] "%2 хочет установить пакеты"
+msgstr[1] "%2 хочет установить пакеты"
+msgstr[2] "%2 хочет установить пакеты"
+msgstr[3] "%2 хочет установить пакет"
+
+#: Sentinel/PkRemovePackageByFiles.cpp:97
+#, fuzzy, kde-format
+#| msgid "%2 wants to install a package"
+#| msgid_plural "%2 wants to install packages"
+msgid "The application <i>%2</i> is asking to remove a file"
+msgid_plural "The application <i>%2</i> is asking to remove files"
+msgstr[0] "%2 хочет установить пакеты"
+msgstr[1] "%2 хочет установить пакеты"
+msgstr[2] "%2 хочет установить пакеты"
+msgstr[3] "%2 хочет установить пакет"
+
+#: Sentinel/PkRemovePackageByFiles.cpp:103
+#, fuzzy
+#| msgid "No update description was found."
+msgid "No application was found"
+msgstr "Описание обновления недоступно."
+
+#: Sentinel/PkRemovePackageByFiles.cpp:150
+msgid "The file could not be found in any installed package"
+msgid_plural "The files could not be found in any installed package"
+msgstr[0] "Не удалось найти файлы ни в одном из установленных пакетов"
+msgstr[1] "Не удалось найти файлы ни в одном из установленных пакетов"
+msgstr[2] "Не удалось найти файлы ни в одном из установленных пакетов"
+msgstr[3] "Не удалось найти файл ни в одном из установленных пакетов"
+
+#: Sentinel/PkSearchFile.cpp:37
+#, fuzzy
+#| msgctxt "The role of the transaction, in past tense"
+#| msgid "Searched for package details"
+msgid "Search Packages that Provides Files"
+msgstr "Описание пакета найдено"
+
+#: Sentinel/PkSearchFile.cpp:80
+msgid "The file name could not be found in any software source"
+msgstr ""
+"Файл с соответствующим названием не удалось найти ни в одном из источников "
+"программного обеспечения"
+
+#: Sentinel/PkInstallFontconfigResources.cpp:41
+#, fuzzy
+#| msgid "Install Files"
+msgid "Installs new Fonts"
+msgstr "Установить файлы"
+
+#: Sentinel/PkInstallFontconfigResources.cpp:73
+msgid "Could interpret request"
+msgstr ""
+
+#: Sentinel/PkInstallFontconfigResources.cpp:73
+msgid "Please verify if the request was valid"
+msgstr ""
+
+#: Sentinel/PkInstallFontconfigResources.cpp:107
+#, fuzzy
+#| msgid ""
+#| "An additional font is required to view this document correctly. Do you "
+#| "want to search for a suitable package now?"
+#| msgid_plural ""
+#| "Additional fonts are required to view this document correctly. Do you "
+#| "want to search for suitable packages now?"
+msgid ""
+"An additional font is required to view this document correctly.\n"
+"Do you want to search for a suitable package now?"
+msgid_plural ""
+"Additional fonts are required to view this document correctly.\n"
+"Do you want to search for suitable packages now?"
+msgstr[0] ""
+"Для правильного просмотра этого документа необходимы дополнительные шрифты. "
+"Выполнить поиск подходящих пакетов сейчас?"
+msgstr[1] ""
+"Для правильного просмотра этого документа необходимы дополнительные шрифты. "
+"Выполнить поиск подходящих пакетов сейчас?"
+msgstr[2] ""
+"Для правильного просмотра этого документа необходимы дополнительные шрифты. "
+"Выполнить поиск подходящих пакетов сейчас?"
+msgstr[3] ""
+"Для правильного просмотра этого документа необходим дополнительный шрифт. "
+"Выполнить поиск подходящего пакета сейчас?"
+
+#: Sentinel/PkInstallFontconfigResources.cpp:117
+msgid "A program wants to install a font"
+msgid_plural "A program wants to install fonts"
+msgstr[0] "Программа хочет установить шрифты"
+msgstr[1] "Программа хочет установить шрифты"
+msgstr[2] "Программа хочет установить шрифты"
+msgstr[3] "Программа хочет установить шрифт"
+
+#: Sentinel/PkInstallFontconfigResources.cpp:121
+#, fuzzy, kde-format
+#| msgid "%2 wants to install a package"
+#| msgid_plural "%2 wants to install packages"
+msgid "The application %2 wants to install a font"
+msgid_plural "The application %2 wants to install fonts"
+msgstr[0] "%2 хочет установить пакеты"
+msgstr[1] "%2 хочет установить пакеты"
+msgstr[2] "%2 хочет установить пакеты"
+msgstr[3] "%2 хочет установить пакет"
+
+#: Sentinel/PkInstallFontconfigResources.cpp:155
+#: Sentinel/PkInstallFontconfigResources.cpp:164
+msgid "Failed to find font"
+msgstr "Не удалось найти шрифт"
+
+#: Sentinel/PkInstallFontconfigResources.cpp:157
+#, fuzzy
+#| msgid "No new fonts can be found for this document"
+msgid "No new fonts could be found for this document"
+msgstr "Новых шрифтов для этого документа не найдено"
+
+#: Sentinel/PkInstallGStreamerResources.cpp:39
+msgid "Install GStreamer Resources"
+msgstr ""
+
+#: Sentinel/PkInstallGStreamerResources.cpp:68
+#, fuzzy
+#| msgid ""
+#| "The following plugin is required: <ul><li>%2</li></ul>Do you want to "
+#| "search for this now?"
+#| msgid_plural ""
+#| "The following plugins are required: <ul><li>%2</li></ul>Do you want to "
+#| "search for these now?"
+msgid "The following plugin is required. Do you want to search for this now?"
+msgid_plural ""
+"The following plugins are required. Do you want to search for these now?"
+msgstr[0] ""
+"Требуются следующие дополнения: <ul><li>%2</li></ul>Выполнить их поиск "
+"сейчас?"
+msgstr[1] ""
+"Требуются следующие дополнения: <ul><li>%2</li></ul>Выполнить их поиск "
+"сейчас?"
+msgstr[2] ""
+"Требуются следующие дополнения: <ul><li>%2</li></ul>Выполнить их поиск "
+"сейчас?"
+msgstr[3] ""
+"Требуется следующие дополнение: <ul><li>%2</li></ul>Выполнить его поиск "
+"сейчас?"
+
+#: Sentinel/PkInstallGStreamerResources.cpp:80
+msgid "A program requires an additional plugin to decode this file"
+msgid_plural "A program requires additional plugins to decode this file"
+msgstr[0] "Для декодирования этого файла требуются дополнения"
+msgstr[1] "Для декодирования этого файла требуются дополнения"
+msgstr[2] "Для декодирования этого файла требуются дополнения"
+msgstr[3] "Для декодирования этого файла требуется дополнение"
+
+#: Sentinel/PkInstallGStreamerResources.cpp:85
+msgid "A program requires an additional plugin to encode this file"
+msgid_plural "A program requires additional plugins to encode this file"
+msgstr[0] "Для кодирования этого файла требуются дополнения"
+msgstr[1] "Для кодирования этого файла требуются дополнения"
+msgstr[2] "Для кодирования этого файла требуются дополнения"
+msgstr[3] "Для кодирования этого файла требуется дополнение"
+
+#: Sentinel/PkInstallGStreamerResources.cpp:90
+msgid "A program requires an additional plugin for this operation"
+msgid_plural "A program requires additional plugins for this operation"
+msgstr[0] "Для выполнения этой операции требуются дополнения"
+msgstr[1] "Для выполнения этой операции требуются дополнения"
+msgstr[2] "Для выполнения этой операции требуются дополнения"
+msgstr[3] "Для выполнения этой операции требуется дополнение"
+
+#: Sentinel/PkInstallGStreamerResources.cpp:97
+#, kde-format
+msgid "%2 requires an additional plugin to decode this file"
+msgid_plural "%2 requires additional plugins to decode this file"
+msgstr[0] "%2 требуются дополнения для декодирования этого файла"
+msgstr[1] "%2 требуются дополнения для декодирования этого файла"
+msgstr[2] "%2 требуются дополнения для декодирования этого файла"
+msgstr[3] "%2 требуется дополнение для декодирования этого файла"
+
+#: Sentinel/PkInstallGStreamerResources.cpp:103
+#, kde-format
+msgid "%2 requires an additional plugin to encode this file"
+msgid_plural "%2 requires additional plugins to encode this file"
+msgstr[0] "%2 требуются дополнения для кодирования этого файла"
+msgstr[1] "%2 требуются дополнения для кодирования этого файла"
+msgstr[2] "%2 требуются дополнения для кодирования этого файла"
+msgstr[3] "%2 требуется дополнение для кодирования этого файла"
+
+#: Sentinel/PkInstallGStreamerResources.cpp:109
+#, kde-format
+msgid "%2 requires an additional plugin for this operation"
+msgid_plural "%2 requires additional plugins for this operation"
+msgstr[0] "%2 требуются дополнения для выполнения этой операции"
+msgstr[1] "%2 требуются дополнения для выполнения этой операции"
+msgstr[2] "%2 требуются дополнения для выполнения этой операции"
+msgstr[3] "%2 требуется дополнение для выполнения этой операции"
+
+#: Sentinel/PkInstallGStreamerResources.cpp:147
+#, fuzzy
+#| msgid "No files were found."
+msgid "No results found"
+msgstr "Файлы не найдены."
+
+#: Sentinel/PkInstallGStreamerResources.cpp:149
+msgid "Could not find plugin in any configured software source"
+msgstr "Не удалось найти дополнение ни в одном из источников программ"
+
+#: libapper/ChangesDelegate.cpp:45
+#, fuzzy
+#| msgid "To be Installed"
+msgid "Do not Install"
+msgstr "Будет установлено"
+
+#: libapper/ChangesDelegate.cpp:47
+#, fuzzy
+#| msgid "To be Removed"
+msgid "Do not Remove"
+msgstr "Будет удалено"
+
+#: libapper/ChangesDelegate.cpp:49 libapper/ApplicationsDelegate.cpp:44
+msgid "Deselect"
+msgstr "Отменить"
+
+#: libapper/CustomProgressBar.cpp:38
+#, kde-format
+msgid "%1 remaining"
+msgstr "%1 осталось"
+
+#: libapper/PkStrings.cpp:32
+msgctxt "This is when the transaction status is not known"
+msgid "Unknown state"
+msgstr "Неизвестное состояние"
+
+#: libapper/PkStrings.cpp:35
+msgctxt "transaction state, the daemon is in the process of starting"
+msgid "Waiting for service to start"
+msgstr "Ожидание запуска службы"
+
+#: libapper/PkStrings.cpp:38
+msgctxt "transaction state, the transaction is waiting for another to complete"
+msgid "Waiting for other tasks"
+msgstr "Ожидание завершения других заданий"
+
+#: libapper/PkStrings.cpp:41
+msgctxt "transaction state, just started"
+msgid "Running task"
+msgstr "Выполняется задание"
+
+#: libapper/PkStrings.cpp:44
+msgctxt "transaction state, is querying data"
+msgid "Querying"
+msgstr "Выполнение запроса"
+
+#: libapper/PkStrings.cpp:47
+msgctxt "transaction state, getting data from a server"
+msgid "Getting information"
+msgstr "Получение информации"
+
+#: libapper/PkStrings.cpp:50
+msgctxt "transaction state, removing packages"
+msgid "Removing packages"
+msgstr "Удаление пакетов"
+
+#: libapper/PkStrings.cpp:53
+msgctxt "transaction state, downloading package files"
+msgid "Downloading packages"
+msgstr "Загрузка пакетов"
+
+#: libapper/PkStrings.cpp:56
+msgctxt "transaction state, installing packages"
+msgid "Installing packages"
+msgstr "Установка пакетов"
+
+#: libapper/PkStrings.cpp:59
+msgctxt "transaction state, refreshing internal lists"
+msgid "Refreshing software list"
+msgstr "Обновление списка пакетов"
+
+#: libapper/PkStrings.cpp:62
+msgctxt "transaction state, installing updates"
+msgid "Updating packages"
+msgstr "Обновление пакетов"
+
+#: libapper/PkStrings.cpp:65
+msgctxt "transaction state, removing old packages, and cleaning config files"
+msgid "Cleaning up packages"
+msgstr "Очистка пакетов"
+
+#: libapper/PkStrings.cpp:68
+msgctxt "transaction state, obsoleting old packages"
+msgid "Obsoleting packages"
+msgstr "Замена пакетов"
+
+#: libapper/PkStrings.cpp:71
+msgctxt "transaction state, checking the transaction before we do it"
+msgid "Resolving dependencies"
+msgstr "Разрешение зависимостей"
+
+#: libapper/PkStrings.cpp:74
+msgctxt ""
+"transaction state, checking if we have all the security keys for the "
+"operation"
+msgid "Checking signatures"
+msgstr "Проверка подписей"
+
+#: libapper/PkStrings.cpp:77
+msgctxt "transaction state, when we return to a previous system state"
+msgid "Rolling back"
+msgstr "Возврат к предыдущему"
+
+#: libapper/PkStrings.cpp:80
+msgctxt "transaction state, when we're doing a test transaction"
+msgid "Testing changes"
+msgstr "Проверка изменений"
+
+#: libapper/PkStrings.cpp:83
+msgctxt "transaction state, when we're writing to the system package database"
+msgid "Committing changes"
+msgstr "Сохранение изменений"
+
+#: libapper/PkStrings.cpp:86
+msgctxt "transaction state, requesting data from a server"
+msgid "Requesting data"
+msgstr "Запрос данных"
+
+#: libapper/PkStrings.cpp:89
+msgctxt "transaction state, all done!"
+msgid "Finished"
+msgstr "Завершено"
+
+#: libapper/PkStrings.cpp:92
+msgctxt "transaction state, in the process of cancelling"
+msgid "Cancelling"
+msgstr "Отмена"
+
+#: libapper/PkStrings.cpp:95
+msgctxt "transaction state, downloading metadata"
+msgid "Downloading repository information"
+msgstr "Загрузка сведений репозитория"
+
+#: libapper/PkStrings.cpp:98
+msgctxt "transaction state, downloading metadata"
+msgid "Downloading list of packages"
+msgstr "Загрузка списка пакетов"
+
+#: libapper/PkStrings.cpp:101
+msgctxt "transaction state, downloading metadata"
+msgid "Downloading file lists"
+msgstr "Загрузка списка файлов"
+
+#: libapper/PkStrings.cpp:104
+msgctxt "transaction state, downloading metadata"
+msgid "Downloading lists of changes"
+msgstr "Загрузка списка изменений"
+
+#: libapper/PkStrings.cpp:107
+msgctxt "transaction state, downloading metadata"
+msgid "Downloading groups"
+msgstr "Загрузка групп"
+
+#: libapper/PkStrings.cpp:110
+msgctxt "transaction state, downloading metadata"
+msgid "Downloading update information"
+msgstr "Загрузка информации об обновлениях"
+
+#: libapper/PkStrings.cpp:113
+msgctxt "transaction state, repackaging delta files"
+msgid "Repackaging files"
+msgstr "Переупаковка файлов"
+
+#: libapper/PkStrings.cpp:116
+msgctxt "transaction state, loading databases"
+msgid "Loading cache"
+msgstr "Загрузка кэша"
+
+#: libapper/PkStrings.cpp:119
+msgctxt "transaction state, scanning for running processes"
+msgid "Scanning installed applications"
+msgstr "Сканирование установленных приложений"
+
+#: libapper/PkStrings.cpp:122
+msgctxt ""
+"transaction state, generating a list of packages installed on the system"
+msgid "Generating package lists"
+msgstr "Создание списка пакетов"
+
+#: libapper/PkStrings.cpp:125
+msgctxt "transaction state, when we're waiting for the native tools to exit"
+msgid "Waiting for package manager lock"
+msgstr "Ожидание разблокировки менеджера пакетов"
+
+#: libapper/PkStrings.cpp:128
+msgctxt "waiting for user to type in a password"
+msgid "Waiting for authentication"
+msgstr "Ожидание завершения аутентификации"
+
+#: libapper/PkStrings.cpp:131
+msgctxt "we are updating the list of processes"
+msgid "Updating the list of running applications"
+msgstr "Обновление списка запущенных приложений"
+
+#: libapper/PkStrings.cpp:134
+msgctxt "we are checking executable files in use"
+msgid "Checking for applications currently in use"
+msgstr "Выявление используемых приложений"
+
+#: libapper/PkStrings.cpp:137
+msgctxt "we are checking for libraries in use"
+msgid "Checking for libraries currently in use"
+msgstr "Выявление используемых библиотек"
+
+#: libapper/PkStrings.cpp:140
+msgctxt "we are copying package files to prepare to install"
+msgid "Copying files"
+msgstr "Копирование файлов"
+
+#: libapper/PkStrings.cpp:150
+msgctxt "The action of the package, in past tense"
+msgid "Downloaded"
+msgstr "Загружен"
+
+#: libapper/PkStrings.cpp:152
+msgctxt "The action of the package, in past tense"
+msgid "Updated"
+msgstr "Обновлён"
+
+#: libapper/PkStrings.cpp:154
+msgctxt "The action of the package, in past tense"
+msgid "Installed"
+msgstr "Установлен"
+
+#: libapper/PkStrings.cpp:156
+msgctxt "The action of the package, in past tense"
+msgid "Removed"
+msgstr "Удалён"
+
+#: libapper/PkStrings.cpp:158
+msgctxt "The action of the package, in past tense"
+msgid "Cleaned Up"
+msgstr "Очищен"
+
+#: libapper/PkStrings.cpp:160
+msgctxt "The action of the package, in past tense"
+msgid "Obsoleted"
+msgstr "Заменён"
+
+#: libapper/PkStrings.cpp:171
+msgctxt "The role of the transaction, in present tense"
+msgid "Unknown role type"
+msgstr "Неизвестный ролевой тип"
+
+#: libapper/PkStrings.cpp:173
+msgctxt "The role of the transaction, in present tense"
+msgid "Getting dependencies"
+msgstr "Получение зависимостей"
+
+#: libapper/PkStrings.cpp:175
+msgctxt "The role of the transaction, in present tense"
+msgid "Getting update detail"
+msgstr "Получение сведений об обновлениях"
+
+#: libapper/PkStrings.cpp:177
+msgctxt "The role of the transaction, in present tense"
+msgid "Getting details"
+msgstr "Получение сведений"
+
+#: libapper/PkStrings.cpp:179
+msgctxt "The role of the transaction, in present tense"
+msgid "Getting requires"
+msgstr "Получение требований"
+
+#: libapper/PkStrings.cpp:181
+msgctxt "The role of the transaction, in present tense"
+msgid "Getting updates"
+msgstr "Получение обновлений"
+
+#: libapper/PkStrings.cpp:183
+msgctxt "The role of the transaction, in present tense"
+msgid "Searching details"
+msgstr "Поиск сведений"
+
+#: libapper/PkStrings.cpp:185
+msgctxt "The role of the transaction, in present tense"
+msgid "Searching for file"
+msgstr "Поиск файла"
+
+#: libapper/PkStrings.cpp:187
+msgctxt "The role of the transaction, in present tense"
+msgid "Searching groups"
+msgstr "Поиск групп"
+
+#: libapper/PkStrings.cpp:189
+msgctxt "The role of the transaction, in present tense"
+msgid "Searching by package name"
+msgstr "Поиск по имени пакета"
+
+#: libapper/PkStrings.cpp:191
+msgctxt "The role of the transaction, in present tense"
+msgid "Removing"
+msgstr "Удаление"
+
+#: libapper/PkStrings.cpp:193
+msgctxt "The role of the transaction, in present tense"
+msgid "Installing"
+msgstr "Установка"
+
+#: libapper/PkStrings.cpp:195
+msgctxt "The role of the transaction, in present tense"
+msgid "Installing file"
+msgstr "Установка файла"
+
+#: libapper/PkStrings.cpp:197
+msgctxt "The role of the transaction, in present tense"
+msgid "Refreshing package cache"
+msgstr "Обновление кэша пакетов"
+
+#: libapper/PkStrings.cpp:199
+msgctxt "The role of the transaction, in present tense"
+msgid "Updating packages"
+msgstr "Обновление пакетов"
+
+#: libapper/PkStrings.cpp:201
+msgctxt "The role of the transaction, in present tense"
+msgid "Updating system"
+msgstr "Обновление системы"
+
+#: libapper/PkStrings.cpp:203
+msgctxt "The role of the transaction, in present tense"
+msgid "Canceling"
+msgstr "Отмена"
+
+#: libapper/PkStrings.cpp:205
+msgctxt "The role of the transaction, in present tense"
+msgid "Rolling back"
+msgstr "Откат"
+
+#: libapper/PkStrings.cpp:207
+msgctxt "The role of the transaction, in present tense"
+msgid "Getting list of repositories"
+msgstr "Получение списка репозиториев"
+
+#: libapper/PkStrings.cpp:209
+msgctxt "The role of the transaction, in present tense"
+msgid "Enabling repository"
+msgstr "Включение репозитория"
+
+#: libapper/PkStrings.cpp:211
+msgctxt "The role of the transaction, in present tense"
+msgid "Setting repository data"
+msgstr "Восстановление данных репозитория"
+
+#: libapper/PkStrings.cpp:213
+msgctxt "The role of the transaction, in present tense"
+msgid "Resolving"
+msgstr "Разрешение зависимостей"
+
+#: libapper/PkStrings.cpp:215
+msgctxt "The role of the transaction, in present tense"
+msgid "Getting file list"
+msgstr "Получение списка файлов"
+
+#: libapper/PkStrings.cpp:217
+msgctxt "The role of the transaction, in present tense"
+msgid "Getting what provides"
+msgstr "Получение предоставлений"
+
+#: libapper/PkStrings.cpp:219
+msgctxt "The role of the transaction, in present tense"
+msgid "Installing signature"
+msgstr "Установка подписи"
+
+#: libapper/PkStrings.cpp:221
+msgctxt "The role of the transaction, in present tense"
+msgid "Getting package lists"
+msgstr "Получение списков пакетов"
+
+#: libapper/PkStrings.cpp:223
+msgctxt "The role of the transaction, in present tense"
+msgid "Accepting EULA"
+msgstr "Принятие лицензионного соглашения"
+
+#: libapper/PkStrings.cpp:225
+msgctxt "The role of the transaction, in present tense"
+msgid "Downloading packages"
+msgstr "Загрузка пакетов"
+
+#: libapper/PkStrings.cpp:227
+msgctxt "The role of the transaction, in present tense"
+msgid "Getting distribution upgrade information"
+msgstr "Получение информации об обновлении дистрибутива"
+
+#: libapper/PkStrings.cpp:229
+msgctxt "The role of the transaction, in present tense"
+msgid "Getting categories"
+msgstr "Получение категорий"
+
+#: libapper/PkStrings.cpp:231
+msgctxt "The role of the transaction, in present tense"
+msgid "Getting old transactions"
+msgstr "Получение старых транзакций"
+
+#: libapper/PkStrings.cpp:233
+msgctxt "The role of the transaction, in present tense"
+msgid "Simulating the install of files"
+msgstr "Имитирование установки файлов"
+
+#: libapper/PkStrings.cpp:235
+msgctxt "The role of the transaction, in present tense"
+msgid "Simulating the install"
+msgstr "Имитирование установки"
+
+#: libapper/PkStrings.cpp:237
+msgctxt "The role of the transaction, in present tense"
+msgid "Simulating the remove"
+msgstr "Имитирование удаления"
+
+#: libapper/PkStrings.cpp:239
+msgctxt "The role of the transaction, in present tense"
+msgid "Simulating the update"
+msgstr "Имитирование обновления"
+
+#: libapper/PkStrings.cpp:241
+#, fuzzy
+#| msgctxt "The role of the transaction, in present tense"
+#| msgid "Updating system"
+msgctxt "The role of the transaction, in present tense"
+msgid "Upgrading system"
+msgstr "Обновление системы"
+
+#: libapper/PkStrings.cpp:251
+msgctxt "The role of the transaction, in past tense"
+msgid "Unknown role type"
+msgstr "Неизвестный ролевой тип"
+
+#: libapper/PkStrings.cpp:253
+msgctxt "The role of the transaction, in past tense"
+msgid "Got dependencies"
+msgstr "Зависимости получены"
+
+#: libapper/PkStrings.cpp:255
+msgctxt "The role of the transaction, in past tense"
+msgid "Got update detail"
+msgstr "Сведения об обновлении получены"
+
+#: libapper/PkStrings.cpp:257
+msgctxt "The role of the transaction, in past tense"
+msgid "Got details"
+msgstr "Сведения получены"
+
+#: libapper/PkStrings.cpp:259
+msgctxt "The role of the transaction, in past tense"
+msgid "Got requires"
+msgstr "Зависимости получены"
+
+#: libapper/PkStrings.cpp:261
+msgctxt "The role of the transaction, in past tense"
+msgid "Got updates"
+msgstr "Обновления получены"
+
+#: libapper/PkStrings.cpp:263
+msgctxt "The role of the transaction, in past tense"
+msgid "Searched for package details"
+msgstr "Описание пакета найдено"
+
+#: libapper/PkStrings.cpp:265
+msgctxt "The role of the transaction, in past tense"
+msgid "Searched for file"
+msgstr "Поиск файла выполнен"
+
+#: libapper/PkStrings.cpp:267
+msgctxt "The role of the transaction, in past tense"
+msgid "Searched groups"
+msgstr "Поиск групп выполнен"
+
+#: libapper/PkStrings.cpp:269
+msgctxt "The role of the transaction, in past tense"
+msgid "Searched for package name"
+msgstr "Поиск имени пакета выполнен"
+
+#: libapper/PkStrings.cpp:271
+msgctxt "The role of the transaction, in past tense"
+msgid "Removed packages"
+msgstr "Пакеты удалены"
+
+#: libapper/PkStrings.cpp:273
+msgctxt "The role of the transaction, in past tense"
+msgid "Installed packages"
+msgstr "Пакеты установлены"
+
+#: libapper/PkStrings.cpp:275
+msgctxt "The role of the transaction, in past tense"
+msgid "Installed local files"
+msgstr "Локальные файлы установлены"
+
+#: libapper/PkStrings.cpp:277
+msgctxt "The role of the transaction, in past tense"
+msgid "Refreshed package cache"
+msgstr "Кэш пакетов обновлён"
+
+#: libapper/PkStrings.cpp:279
+msgctxt "The role of the transaction, in past tense"
+msgid "Updated packages"
+msgstr "Пакеты обновлены"
+
+#: libapper/PkStrings.cpp:281
+msgctxt "The role of the transaction, in past tense"
+msgid "Updated system"
+msgstr "Система обновлена"
+
+#: libapper/PkStrings.cpp:283
+msgctxt "The role of the transaction, in past tense"
+msgid "Canceled"
+msgstr "Отменено"
+
+#: libapper/PkStrings.cpp:285
+msgctxt "The role of the transaction, in past tense"
+msgid "Rolled back"
+msgstr "Откат выполнен"
+
+#: libapper/PkStrings.cpp:287
+msgctxt "The role of the transaction, in past tense"
+msgid "Got list of repositories"
+msgstr "Cписок репозиториев получен"
+
+#: libapper/PkStrings.cpp:289
+msgctxt "The role of the transaction, in past tense"
+msgid "Enabled repository"
+msgstr "Репозиторий подключён"
+
+#: libapper/PkStrings.cpp:291
+msgctxt "The role of the transaction, in past tense"
+msgid "Set repository data"
+msgstr "Данные репозитория установлены"
+
+#: libapper/PkStrings.cpp:293
+msgctxt "The role of the transaction, in past tense"
+msgid "Resolved"
+msgstr "Зависимости разрешены"
+
+#: libapper/PkStrings.cpp:295
+msgctxt "The role of the transaction, in past tense"
+msgid "Got file list"
+msgstr "Список файлов получен"
+
+#: libapper/PkStrings.cpp:297
+msgctxt "The role of the transaction, in past tense"
+msgid "Got what provides"
+msgstr "Предоставления получены"
+
+#: libapper/PkStrings.cpp:299
+msgctxt "The role of the transaction, in past tense"
+msgid "Installed signature"
+msgstr "Подпись установлена"
+
+#: libapper/PkStrings.cpp:301
+msgctxt "The role of the transaction, in past tense"
+msgid "Got package lists"
+msgstr "Список пакетов получен"
+
+#: libapper/PkStrings.cpp:303
+msgctxt "The role of the transaction, in past tense"
+msgid "Accepted EULA"
+msgstr "Лицензионное соглашение принято"
+
+#: libapper/PkStrings.cpp:305
+msgctxt "The role of the transaction, in past tense"
+msgid "Downloaded packages"
+msgstr "Пакеты загружены"
+
+#: libapper/PkStrings.cpp:307
+msgctxt "The role of the transaction, in past tense"
+msgid "Got distribution upgrades"
+msgstr "Обновления дистрибутива получены"
+
+#: libapper/PkStrings.cpp:309
+msgctxt "The role of the transaction, in past tense"
+msgid "Got categories"
+msgstr "Категории получены"
+
+#: libapper/PkStrings.cpp:311
+msgctxt "The role of the transaction, in past tense"
+msgid "Got old transactions"
+msgstr "Старые транзакции получены"
+
+#: libapper/PkStrings.cpp:313
+msgctxt "The role of the transaction, in past tense"
+msgid "Simulated the install of files"
+msgstr "Имитация установки файлов завершена"
+
+#: libapper/PkStrings.cpp:315
+msgctxt "The role of the transaction, in past tense"
+msgid "Simulated the install"
+msgstr "Имитация установки завершена"
+
+#: libapper/PkStrings.cpp:317
+msgctxt "The role of the transaction, in past tense"
+msgid "Simulated the remove"
+msgstr "Имитация удаления завершена"
+
+#: libapper/PkStrings.cpp:319
+msgctxt "The role of the transaction, in past tense"
+msgid "Simulated the update"
+msgstr "Имитация обновления завершена"
+
+#: libapper/PkStrings.cpp:321
+#, fuzzy
+#| msgctxt "The role of the transaction, in past tense"
+#| msgid "Updated system"
+msgctxt "The role of the transaction, in past tense"
+msgid "Upgraded system"
+msgstr "Система обновлена"
+
+#: libapper/PkStrings.cpp:331
+msgid "Downloading"
+msgstr "Загрузка"
+
+#: libapper/PkStrings.cpp:333
+msgid "Updating"
+msgstr "Обновление"
+
+#: libapper/PkStrings.cpp:335
+msgid "Installing"
+msgstr "Установка"
+
+#: libapper/PkStrings.cpp:337
+msgid "Removing"
+msgstr "Удаление"
+
+#: libapper/PkStrings.cpp:339
+msgid "Cleaning up"
+msgstr "Очистка"
+
+#: libapper/PkStrings.cpp:341
+msgid "Obsoleting"
+msgstr "Замена"
+
+#: libapper/PkStrings.cpp:343
+msgid "Reinstalling"
+msgstr "Переустановка"
+
+#: libapper/PkStrings.cpp:345
+msgid "Preparing"
+msgstr "Подготовка"
+
+#: libapper/PkStrings.cpp:347
+msgid "Decompressing"
+msgstr "Распаковка"
+
+#: libapper/PkStrings.cpp:358
+msgid "Downloaded"
+msgstr "Загружен"
+
+#: libapper/PkStrings.cpp:360
+msgid "Updated"
+msgstr "Обновлён"
+
+#: libapper/PkStrings.cpp:364
+msgid "Removed"
+msgstr "Удалён"
+
+#: libapper/PkStrings.cpp:366
+msgid "Cleaned up"
+msgstr "Очищен"
+
+#: libapper/PkStrings.cpp:368
+msgid "Obsoleted"
+msgstr "Заменён"
+
+#: libapper/PkStrings.cpp:370
+msgid "Reinstalled"
+msgstr "Переустановлен"
+
+#: libapper/PkStrings.cpp:372
+msgid "Prepared"
+msgstr "Подготовлен"
+
+#: libapper/PkStrings.cpp:374
+msgid "Decompressed"
+msgstr "Распакован"
+
+#: libapper/PkStrings.cpp:385
+msgid "No network connection available"
+msgstr "Нет доступного сетевого соединения"
+
+#: libapper/PkStrings.cpp:387
+msgid "No package cache is available"
+msgstr "Кэш пакетов недоступен"
+
+#: libapper/PkStrings.cpp:389
+msgid "Out of memory"
+msgstr "Недостаточно памяти"
+
+#: libapper/PkStrings.cpp:391
+msgid "Failed to create a thread"
+msgstr "Сбой создания потока"
+
+#: libapper/PkStrings.cpp:393
+msgid "Not supported by this backend"
+msgstr "Не поддерживается этим модулем"
+
+#: libapper/PkStrings.cpp:395
+msgid "An internal system error has occurred"
+msgstr "Произошла внутренняя ошибка системы"
+
+#: libapper/PkStrings.cpp:397
+msgid "A security trust relationship is not present"
+msgstr "Отсутствуют доверительные отношения в сфере безопасности"
+
+#: libapper/PkStrings.cpp:399
+msgid "The package is not installed"
+msgstr "Пакет не установлен"
+
+#: libapper/PkStrings.cpp:401
+msgid "The package was not found"
+msgstr "Пакет не найден"
+
+#: libapper/PkStrings.cpp:403
+msgid "The package is already installed"
+msgstr "Пакет уже установлен"
+
+#: libapper/PkStrings.cpp:405
+msgid "The package download failed"
+msgstr "Не удалось загрузить пакет"
+
+#: libapper/PkStrings.cpp:407
+msgid "The group was not found"
+msgstr "Группа не найдена"
+
+#: libapper/PkStrings.cpp:409
+msgid "The group list was invalid"
+msgstr "Неверный список групп"
+
+#: libapper/PkStrings.cpp:411
+msgid "Dependency resolution failed"
+msgstr "Не удалась разрешить зависимости"
+
+#: libapper/PkStrings.cpp:413
+msgid "Search filter was invalid"
+msgstr "Неверный фильтр поиска"
+
+#: libapper/PkStrings.cpp:415
+msgid "The package identifier was not well formed"
+msgstr "Идентификатор пакета сформирован неверно"
+
+#: libapper/PkStrings.cpp:417
+msgid "Transaction error"
+msgstr "Ошибка транзакции"
+
+#: libapper/PkStrings.cpp:419
+msgid "Repository name was not found"
+msgstr "Название репозитория не найдено"
+
+#: libapper/PkStrings.cpp:421
+msgid "Could not remove a protected system package"
+msgstr "Невозможно удалить защищённый системный пакет"
+
+#: libapper/PkStrings.cpp:423
+msgid "The task was canceled"
+msgstr "Задание было отменено"
+
+#: libapper/PkStrings.cpp:425
+msgid "The task was forcibly canceled"
+msgstr "Задание было принудительно отменено"
+
+#: libapper/PkStrings.cpp:427
+msgid "Reading the config file failed"
+msgstr "Сбой чтения файла конфигурации"
+
+#: libapper/PkStrings.cpp:429
+msgid "The task cannot be cancelled"
+msgstr "Задание не может быть отменено"
+
+#: libapper/PkStrings.cpp:431
+msgid "Source packages cannot be installed"
+msgstr "Пакеты с исходными текстами не могут быть установлены"
+
+#: libapper/PkStrings.cpp:433
+msgid "The license agreement failed"
+msgstr "Сбой принятия лицензионного соглашения"
+
+#: libapper/PkStrings.cpp:435
+msgid "Local file conflict between packages"
+msgstr "Локальный конфликт между пакетами"
+
+#: libapper/PkStrings.cpp:437
+msgid "Packages are not compatible"
+msgstr "Пакеты не совместимы"
+
+#: libapper/PkStrings.cpp:439
+msgid "Problem connecting to a software origin"
+msgstr "Ошибка соединения с источником программного обеспечения"
+
+#: libapper/PkStrings.cpp:441
+msgid "Failed to initialize"
+msgstr "Сбой инициализации"
+
+#: libapper/PkStrings.cpp:443
+msgid "Failed to finalize"
+msgstr "Сбой завершения"
+
+#: libapper/PkStrings.cpp:445
+msgid "Cannot get lock"
+msgstr "Не удалось получить блокировку"
+
+#: libapper/PkStrings.cpp:447
+msgid "No packages to update"
+msgstr "Нет пакетов для обновления"
+
+#: libapper/PkStrings.cpp:449
+msgid "Cannot write repository configuration"
+msgstr "Не удалось записать конфигурацию репозитория"
+
+#: libapper/PkStrings.cpp:451
+msgid "Local install failed"
+msgstr "Сбой локальной установки"
+
+#: libapper/PkStrings.cpp:453
+msgid "Bad GPG signature"
+msgstr "Неверная подпись GPG"
+
+#: libapper/PkStrings.cpp:455
+msgid "Missing GPG signature"
+msgstr "Отсутствует подпись GPG"
+
+#: libapper/PkStrings.cpp:457
+msgid "Repository configuration invalid"
+msgstr "Неверная конфигурация репозитория"
+
+#: libapper/PkStrings.cpp:459
+msgid "Invalid package file"
+msgstr "Неверный файл пакета"
+
+#: libapper/PkStrings.cpp:461
+msgid "Package install blocked"
+msgstr "Установка пакета заблокирована"
+
+#: libapper/PkStrings.cpp:463
+msgid "Package is corrupt"
+msgstr "Пакет повреждён"
+
+#: libapper/PkStrings.cpp:465
+msgid "All packages are already installed"
+msgstr "Все пакеты уже установлены"
+
+#: libapper/PkStrings.cpp:467
+msgid "The specified file could not be found"
+msgstr "Указанный файл не может быть найден"
+
+#: libapper/PkStrings.cpp:469
+msgid "No more mirrors are available"
+msgstr "Нет больше доступных зеркал"
+
+#: libapper/PkStrings.cpp:471
+msgid "No distribution upgrade data is available"
+msgstr "Данные обновления дистрибутива недоступны"
+
+#: libapper/PkStrings.cpp:473
+msgid "Package is incompatible with this system"
+msgstr "Пакет несовместим с этой системой"
+
+#: libapper/PkStrings.cpp:475
+msgid "No space is left on the disk"
+msgstr "На диске нет свободного места"
+
+#: libapper/PkStrings.cpp:477 libapper/PkTransaction.cpp:578
+msgid "A media change is required"
+msgstr "Требуется смена носителя"
+
+#: libapper/PkStrings.cpp:479
+msgid "Authorization failed"
+msgstr "Ошибка доступа"
+
+#: libapper/PkStrings.cpp:481
+msgid "Update not found"
+msgstr "Обновление не найдено"
+
+#: libapper/PkStrings.cpp:483
+msgid "Cannot install from untrusted origin"
+msgstr "Невозможно выполнить установку из ненадежных источников"
+
+#: libapper/PkStrings.cpp:485
+msgid "Cannot update from untrusted origin"
+msgstr "Невозможно выполнить обновление из ненадежных источников"
+
+#: libapper/PkStrings.cpp:487
+msgid "Cannot get the file list"
+msgstr "Не удалось получить список файлов"
+
+#: libapper/PkStrings.cpp:489
+msgid "Cannot get package requires"
+msgstr "Не удалось получить требуемые пакеты"
+
+#: libapper/PkStrings.cpp:491
+msgid "Cannot disable origin"
+msgstr "Не удалось отключить источник"
+
+#: libapper/PkStrings.cpp:493
+msgid "The download failed"
+msgstr "Сбой при загрузке"
+
+#: libapper/PkStrings.cpp:495
+msgid "Package failed to configure"
+msgstr "Сбой настройки пакета"
+
+#: libapper/PkStrings.cpp:497
+msgid "Package failed to build"
+msgstr "Сбой при сборке пакета"
+
+#: libapper/PkStrings.cpp:499
+msgid "Package failed to install"
+msgstr "Сбой при установке пакета"
+
+#: libapper/PkStrings.cpp:501
+msgid "Package failed to be removed"
+msgstr "Сбой при удаление пакета"
+
+#: libapper/PkStrings.cpp:503
+msgid "Update failed due to running process"
+msgstr "Сбой обновления из-за запущенного процесса"
+
+#: libapper/PkStrings.cpp:505
+msgid "The package database was changed"
+msgstr "База данных пакетов была изменена"
+
+#: libapper/PkStrings.cpp:507
+msgid "Virtual provide type is not supported"
+msgstr ""
+
+#: libapper/PkStrings.cpp:509
+msgid "Install root is invalid"
+msgstr ""
+
+#: libapper/PkStrings.cpp:511
+#, fuzzy
+#| msgid "Cannot get lock"
+msgid "Cannot fetch install sources"
+msgstr "Не удалось получить блокировку"
+
+#: libapper/PkStrings.cpp:513
+msgid "Rescheduled due to priority"
+msgstr ""
+
+#: libapper/PkStrings.cpp:515
+msgid "Unknown error"
+msgstr "Неизвестная ошибка"
+
+#: libapper/PkStrings.cpp:525
+msgid ""
+"There is no network connection available.\n"
+"Please check your connection settings and try again"
+msgstr ""
+"Нет доступного сетевого соединения.\n"
+"Проверьте сетевое соединение и попробуйте ещё раз"
+
+#: libapper/PkStrings.cpp:528
+msgid ""
+"The package list needs to be rebuilt.\n"
+"This should have been done by the backend automatically."
+msgstr ""
+"Необходимо перестроить список пакетов.\n"
+"Модуль должен выполнить эту процедуру автоматически."
+
+#: libapper/PkStrings.cpp:531
+msgid ""
+"The service that is responsible for handling user requests is out of "
+"memory.\n"
+"Please close some programs or restart your computer."
+msgstr ""
+"Недостаточно памяти для работы службы, отвечающей за обработку запросов "
+"пользователей.\n"
+"Необходимо закрыть некоторые программы или перезагрузить компьютер."
+
+#: libapper/PkStrings.cpp:534
+msgid "A thread could not be created to service the user request."
+msgstr "Для обработки этого запроса пользователя должен быть создан поток."
+
+#: libapper/PkStrings.cpp:536
+msgid ""
+"The action is not supported by this backend.\n"
+"Please report a bug as this should not have happened."
+msgstr ""
+"Действие не поддерживается этим модулем.\n"
+"Сообщите об ошибке в систему учёта ошибок вашего дистрибутива."
+
+#: libapper/PkStrings.cpp:539
+msgid ""
+"A problem that we were not expecting has occurred.\n"
+"Please report this bug with the error description."
+msgstr ""
+"Возникла неожиданная проблема.\n"
+"Сообщите об этой ошибке в систему учёта ошибок вашего дистрибутива."
+
+#: libapper/PkStrings.cpp:542
+msgid ""
+"A security trust relationship could not be made with the software origin.\n"
+"Please check your software signature settings."
+msgstr ""
+"Невозможно создать доверительные отношения в сфере безопасности с источником "
+"программ.\n"
+"Проверьте ваши параметры подписей пакетов."
+
+#: libapper/PkStrings.cpp:545
+msgid ""
+"The package that is trying to be removed or updated is not already installed."
+msgstr "Пакет, который вы пытаетесь установить или обновить, уже установлен."
+
+#: libapper/PkStrings.cpp:547
+msgid ""
+"The package that is being modified was not found on your system or in any "
+"software origin."
+msgstr "Изменяемый пакет, не обнаружен ни в системе, ни в источниках программ."
+
+#: libapper/PkStrings.cpp:549
+msgid "The package that is trying to be installed is already installed."
+msgstr "Пакет, который вы пытаетесь установить, уже установлен."
+
+#: libapper/PkStrings.cpp:551
+msgid ""
+"The package download failed.\n"
+"Please check your network connectivity."
+msgstr ""
+"Сбой загрузки пакета.\n"
+"Проверьте подключение к сети."
+
+#: libapper/PkStrings.cpp:554
+msgid ""
+"The group type was not found.\n"
+"Please check your group list and try again."
+msgstr ""
+"Тип группы не был найден.\n"
+"Проверьте список групп и попробуйте ещё раз."
+
+#: libapper/PkStrings.cpp:557
+msgid ""
+"The group list could not be loaded.\n"
+"Refreshing your cache may help, although this is normally a software origin "
+"error."
+msgstr ""
+"Не удалось загрузить список групп.\n"
+"Может помочь обновление кэша, но обычно это ошибка источника программного "
+"обеспечения."
+
+#: libapper/PkStrings.cpp:561
+msgid ""
+"A package dependency could not be found.\n"
+"More information is available in the detailed report."
+msgstr ""
+"Не удаётся найти зависимость пакета.\n"
+"Дополнительная информация доступна в детальном отчёте."
+
+#: libapper/PkStrings.cpp:564
+msgid "The search filter was not correctly formed."
+msgstr "Фильтр поиска сформирован некорректно."
+
+#: libapper/PkStrings.cpp:566
+msgid ""
+"The package identifier was not well formed when sent to the system daemon.\n"
+"This normally indicates an internal bug and should be reported."
+msgstr ""
+"Идентификатор пакета сформирован неверно при отправке на сервер.\n"
+"Это ошибка, о которой необходимо сообщить разработчикам."
+
+#: libapper/PkStrings.cpp:569
+msgid ""
+"An error occurred while running the transaction.\n"
+"More information is available in the detailed report."
+msgstr ""
+"Произошла ошибка при выполнении транзакции.\n"
+"Дополнительная информация доступна в подробном отчёте."
+
+#: libapper/PkStrings.cpp:572
+msgid ""
+"The remote software origin name was not found.\n"
+"You may need to enable an item in Software Origins."
+msgstr ""
+"Название удалённого источника программ не было найдено.\n"
+"Возможно, вам следует включить репозиторий в списке источников программ."
+
+#: libapper/PkStrings.cpp:575
+msgid "Removing a protected system package is not allowed."
+msgstr "Удаление защищённых системных пакетов не разрешается."
+
+#: libapper/PkStrings.cpp:577
+msgid "The task was canceled successfully and no packages were changed."
+msgstr "Задание было прервано, никаких изменений не было сделано."
+
+#: libapper/PkStrings.cpp:579
+msgid ""
+"The task was canceled successfully and no packages were changed.\n"
+"The backend did not exit cleanly."
+msgstr ""
+"Задание было прервано, никаких изменений не было сделано.\n"
+"Работа модуля завершилась с ошибкой."
+
+#: libapper/PkStrings.cpp:582
+msgid ""
+"The native package configuration file could not be opened.\n"
+"Please make sure your system's configuration is valid."
+msgstr ""
+"Родной файл конфигурации пакета не удалось открыть.\n"
+"Убедитесь в правильности настройки вашей системы."
+
+#: libapper/PkStrings.cpp:585
+msgid "The task is not safe to be cancelled at this time."
+msgstr "Небезопасно отменять это задание в текущий момент."
+
+#: libapper/PkStrings.cpp:587
+msgid ""
+"Source packages are not normally installed this way.\n"
+"Check the extension of the file you are trying to install."
+msgstr ""
+"Пакеты с исходными текстами, как правило, устанавливаются другим способом.\n"
+"Проверьте расширение файла, который вы пытаетесь установить."
+
+#: libapper/PkStrings.cpp:590
+msgid ""
+"The license agreement was not agreed to.\n"
+"To use this software you have to accept the license."
+msgstr ""
+"Не было принято лицензионное соглашение.\n"
+"Для использования этой программы вы должны принять лицензию."
+
+#: libapper/PkStrings.cpp:593
+msgid ""
+"Two packages provide the same file.\n"
+"This is usually due to mixing packages for different software origins."
+msgstr ""
+"Два пакета содержат одинаковый файл.\n"
+"Причиной этого, как правило, является использование сразу нескольких разных "
+"источников программ."
+
+#: libapper/PkStrings.cpp:596
+msgid ""
+"Multiple packages exist that are not compatible with each other.\n"
+"This is usually due to mixing packages from different software origins."
+msgstr ""
+"Существует несколько несовместимых между собой пакетов.\n"
+"Причиной этого, как правило, является использование сразу нескольких разных "
+"источников программ."
+
+#: libapper/PkStrings.cpp:599
+msgid ""
+"There was a (possibly temporary) problem connecting to a software origins.\n"
+"Please check the detailed error for further details."
+msgstr ""
+"Возникла (возможно, временная) проблема с подключением к источнику "
+"программ.\n"
+"Чтобы получить больше информации, смотрите подробности ошибки."
+
+#: libapper/PkStrings.cpp:602
+msgid ""
+"Failed to initialize packaging backend.\n"
+"This may occur if other packaging tools are being used simultaneously."
+msgstr ""
+"Не удаётся инициализировать модуль управления пакетами.\n"
+"Возможно, одновременно используется другое средство управления пакетами."
+
+#: libapper/PkStrings.cpp:605
+msgid ""
+"Failed to close down the backend instance.\n"
+"This error can normally be ignored."
+msgstr ""
+"Не удалось завершить работу экземпляра модуля.\n"
+"Эту ошибку можно проигнорировать."
+
+#: libapper/PkStrings.cpp:608
+msgid ""
+"Cannot get the exclusive lock on the packaging backend.\n"
+"Please close any other legacy packaging tools that may be open."
+msgstr ""
+"Не удалось получить исключительную блокировку модуля.\n"
+"Закройте все остальные утилиты управления пакетами."
+
+#: libapper/PkStrings.cpp:611
+msgid "None of the selected packages could be updated."
+msgstr "Ни один из выбранных пакетов не может быть обновлён."
+
+#: libapper/PkStrings.cpp:613
+msgid "The repository configuration could not be modified."
+msgstr "Конфигурация репозитория не может быть изменена."
+
+#: libapper/PkStrings.cpp:615
+msgid ""
+"Installing the local file failed.\n"
+"More information is available in the detailed report."
+msgstr ""
+"Сбой установки локального файла.\n"
+"Дополнительная информация доступна в подробном отчёте."
+
+#: libapper/PkStrings.cpp:618
+msgid "The package signature could not be verified."
+msgstr "Не удалось проверить подпись пакета."
+
+#: libapper/PkStrings.cpp:620
+msgid ""
+"The package signature was missing and this package is untrusted.\n"
+"This package was not signed with a GPG key when created."
+msgstr ""
+"Подпись пакета отсутствует, пакет ненадёжный.\n"
+"Этот пакет при создании не был подписан ключом GPG."
+
+#: libapper/PkStrings.cpp:623
+msgid "Repository configuration was invalid and could not be read."
+msgstr "Настройка репозитория неверна, он не может быть прочитан."
+
+#: libapper/PkStrings.cpp:625
+msgid ""
+"The package you are attempting to install is not valid.\n"
+"The package file could be corrupt, or not a proper package."
+msgstr ""
+"Пакет, который вы пытаетесь установить, недействителен.\n"
+"Файл пакета может быть повреждён, или вообще не является пакетом."
+
+#: libapper/PkStrings.cpp:628
+msgid ""
+"Installation of this package was prevented by your packaging system's "
+"configuration."
+msgstr "Установка этого пакета не допускается конфигурацией вашей системы."
+
+#: libapper/PkStrings.cpp:630
+msgid ""
+"The package that was downloaded is corrupt and needs to be downloaded again."
+msgstr "Загруженный пакет повреждён, необходимо загрузить его ещё раз."
+
+#: libapper/PkStrings.cpp:632
+msgid ""
+"All of the packages selected for install are already installed on the system."
+msgstr "Все пакеты, выделенные для установки, уже установлены в системе."
+
+#: libapper/PkStrings.cpp:634
+msgid ""
+"The specified file could not be found on the system.\n"
+"Check that the file still exists and has not been deleted."
+msgstr ""
+"Не удаётся найти указанный файл в системе.\n"
+"Убедитесь, что файл всё ещё существует и не был удалён."
+
+#: libapper/PkStrings.cpp:637
+msgid ""
+"Required data could not be found on any of the configured software origins.\n"
+"There were no more download mirrors that could be tried."
+msgstr ""
+
+#: libapper/PkStrings.cpp:640
+msgid ""
+"Required upgrade data could not be found in any of the configured software "
+"origins.\n"
+"The list of distribution upgrades will be unavailable."
+msgstr ""
+"Не удалось найти необходимые для обновления данные во всех настроенных "
+"источниках программ.\n"
+"Список обновлений дистрибутива будет недоступен."
+
+#: libapper/PkStrings.cpp:643
+msgid ""
+"The package that is trying to be installed is incompatible with this system."
+msgstr "Пакет, который вы пытаетесь установить, несовместим с этой системой."
+
+#: libapper/PkStrings.cpp:645
+msgid ""
+"There is insufficient space on the device.\n"
+"Free some space on the system disk to perform this operation."
+msgstr ""
+"На устройстве недостаточно места.\n"
+"Освободите место на диске для выполнения этой операции."
+
+#: libapper/PkStrings.cpp:648
+msgid "Additional media is required to complete the transaction."
+msgstr ""
+"Для воспроизведения содержимого этого файла требуется дополнительный кодек."
+
+#: libapper/PkStrings.cpp:650
+msgid ""
+"You have failed to provide correct authentication.\n"
+"Please check any passwords or account settings."
+msgstr ""
+"Вам не удалось пройти аутентификацию.\n"
+"Попробуйте другие пароли или проверьте параметры учетной записи."
+
+#: libapper/PkStrings.cpp:653
+msgid ""
+"The specified update could not be found.\n"
+"It could have already been installed or no longer available on the remote "
+"server."
+msgstr ""
+"Не удалось найти указанное обновление.\n"
+"Возможно, оно уже было установлено или не доступно на удалённом сервере."
+
+#: libapper/PkStrings.cpp:656
+msgid "The package could not be installed from untrusted origin."
+msgstr "Невозможно установить пакет из ненадежного источника."
+
+#: libapper/PkStrings.cpp:658
+msgid "The package could not be updated from untrusted origin."
+msgstr "Невозможно обновить пакет из ненадежного источника."
+
+#: libapper/PkStrings.cpp:660
+msgid "The file list is not available for this package."
+msgstr "Для этого пакета недоступен список файлов."
+
+#: libapper/PkStrings.cpp:662
+msgid "The information about what requires this package could not be obtained."
+msgstr "Сведения, о том что требует этот пакет, получить не удалось."
+
+#: libapper/PkStrings.cpp:664
+msgid "The specified software origin could not be disabled."
+msgstr "Указанный источник программного обеспечения не может быть отключен."
+
+#: libapper/PkStrings.cpp:666
+msgid ""
+"The download could not be done automatically and should be done manually.\n"
+"More information is available in the detailed report."
+msgstr ""
+"Загрузка не может быть сделана в автоматическом режиме, необходимо выполнить "
+"её вручную.\n"
+"Дополнительная информация доступна в подробном отчёте."
+
+#: libapper/PkStrings.cpp:669
+msgid ""
+"One of the selected packages failed to configure correctly.\n"
+"More information is available in the detailed report."
+msgstr ""
+"Один из выбранных пакетов не удалось правильно настроить.\n"
+"Дополнительная информация доступна в подробном отчёте."
+
+#: libapper/PkStrings.cpp:672
+msgid ""
+"One of the selected packages failed to build correctly.\n"
+"More information is available in the detailed report."
+msgstr ""
+"Один из выбранных пакетов не удалось правильно собрать.\n"
+"Дополнительная информация доступна в подробном отчёте."
+
+#: libapper/PkStrings.cpp:675
+msgid ""
+"One of the selected packages failed to install correctly.\n"
+"More information is available in the detailed report."
+msgstr ""
+"Один из выбранных пакетов не удалось правильно установить.\n"
+"Дополнительная информация доступна в подробном отчёте."
+
+#: libapper/PkStrings.cpp:678
+msgid ""
+"One of the selected packages failed to be removed correctly.\n"
+"More information is available in the detailed report."
+msgstr ""
+"Один из выбранных пакетов не удалось правильно удалить.\n"
+"Дополнительная информация доступна в подробном отчёте."
+
+#: libapper/PkStrings.cpp:681
+msgid ""
+"A program is running that has to be closed before the update can proceed.\n"
+"More information is available in the detailed report."
+msgstr ""
+"Для продолжения обновления, следует завершить работу программы.\n"
+"Дополнительная информация доступна в подробном отчёте."
+
+#: libapper/PkStrings.cpp:684
+msgid "The package database was changed while the request was running."
+msgstr "С момента отправки запроса, база данных пакетов была изменена."
+
+#: libapper/PkStrings.cpp:686
+msgid "The virtual provide type is not supported by this system."
+msgstr ""
+
+#: libapper/PkStrings.cpp:688
+msgid "The install root is invalid. Please contact your administrator."
+msgstr ""
+
+#: libapper/PkStrings.cpp:690
+#, fuzzy
+#| msgid "The specified software origin could not be disabled."
+msgid "The list of software could not be downloaded."
+msgstr "Указанный источник программного обеспечения не может быть отключен."
+
+#: libapper/PkStrings.cpp:692
+msgid ""
+"The transaction has been cancelled and will be retried when the system is "
+"idle."
+msgstr ""
+
+#: libapper/PkStrings.cpp:694
+msgid ""
+"Unknown error, please report a bug.\n"
+"More information is available in the detailed report."
+msgstr ""
+"Произошла неизвестная ошибка, пожалуйста, сообщите о ней.\n"
+"Дополнительная информация доступна в подробном отчёте."
+
+#: libapper/PkStrings.cpp:705
+msgctxt "The group type"
+msgid "Accessibility"
+msgstr "Специальные возможности"
+
+#: libapper/PkStrings.cpp:707
+msgctxt "The group type"
+msgid "Accessories"
+msgstr "Стандартные"
+
+#: libapper/PkStrings.cpp:709
+msgctxt "The group type"
+msgid "Education"
+msgstr "Образование"
+
+#: libapper/PkStrings.cpp:711
+msgctxt "The group type"
+msgid "Games"
+msgstr "Игры"
+
+#: libapper/PkStrings.cpp:713
+msgctxt "The group type"
+msgid "Graphics"
+msgstr "Графика"
+
+#: libapper/PkStrings.cpp:715
+msgctxt "The group type"
+msgid "Internet"
+msgstr "Интернет"
+
+#: libapper/PkStrings.cpp:717
+msgctxt "The group type"
+msgid "Office"
+msgstr "Офис"
+
+#: libapper/PkStrings.cpp:719
+msgctxt "The group type"
+msgid "Others"
+msgstr "Прочие"
+
+#: libapper/PkStrings.cpp:721
+msgctxt "The group type"
+msgid "Development"
+msgstr "Разработка"
+
+#: libapper/PkStrings.cpp:723
+msgctxt "The group type"
+msgid "Multimedia"
+msgstr "Мультимедиа"
+
+#: libapper/PkStrings.cpp:725
+msgctxt "The group type"
+msgid "System"
+msgstr "Система"
+
+#: libapper/PkStrings.cpp:727
+msgctxt "The group type"
+msgid "GNOME desktop"
+msgstr "Рабочая среда GNOME"
+
+#: libapper/PkStrings.cpp:729
+msgctxt "The group type"
+msgid "KDE desktop"
+msgstr "Рабочая среда KDE"
+
+#: libapper/PkStrings.cpp:731
+msgctxt "The group type"
+msgid "XFCE desktop"
+msgstr "Рабочая среда XFCE"
+
+#: libapper/PkStrings.cpp:733
+msgctxt "The group type"
+msgid "Other desktops"
+msgstr "Другие рабочие среды"
+
+#: libapper/PkStrings.cpp:735
+msgctxt "The group type"
+msgid "Publishing"
+msgstr "Публикация"
+
+#: libapper/PkStrings.cpp:737
+msgctxt "The group type"
+msgid "Servers"
+msgstr "Серверы"
+
+#: libapper/PkStrings.cpp:739
+msgctxt "The group type"
+msgid "Fonts"
+msgstr "Шрифты"
+
+#: libapper/PkStrings.cpp:741
+msgctxt "The group type"
+msgid "Admin tools"
+msgstr "Средства администрирования"
+
+#: libapper/PkStrings.cpp:743
+msgctxt "The group type"
+msgid "Legacy"
+msgstr "Устаревшие"
+
+#: libapper/PkStrings.cpp:745
+msgctxt "The group type"
+msgid "Localization"
+msgstr "Локализация"
+
+#: libapper/PkStrings.cpp:747
+msgctxt "The group type"
+msgid "Virtualization"
+msgstr "Виртуализация"
+
+#: libapper/PkStrings.cpp:749
+msgctxt "The group type"
+msgid "Security"
+msgstr "Безопасность"
+
+#: libapper/PkStrings.cpp:751
+msgctxt "The group type"
+msgid "Power management"
+msgstr "Управление питанием"
+
+#: libapper/PkStrings.cpp:753
+msgctxt "The group type"
+msgid "Communication"
+msgstr "Связь"
+
+#: libapper/PkStrings.cpp:755
+msgctxt "The group type"
+msgid "Network"
+msgstr "Сеть"
+
+#: libapper/PkStrings.cpp:757
+msgctxt "The group type"
+msgid "Maps"
+msgstr "Карты"
+
+#: libapper/PkStrings.cpp:759
+msgctxt "The group type"
+msgid "Software sources"
+msgstr "Источники программ"
+
+#: libapper/PkStrings.cpp:761
+msgctxt "The group type"
+msgid "Science"
+msgstr "Наука"
+
+#: libapper/PkStrings.cpp:763
+msgctxt "The group type"
+msgid "Documentation"
+msgstr "Документация"
+
+#: libapper/PkStrings.cpp:765
+msgctxt "The group type"
+msgid "Electronics"
+msgstr "Электроника"
+
+#: libapper/PkStrings.cpp:767
+msgctxt "The group type"
+msgid "Package collections"
+msgstr "Коллекции пакетов"
+
+#: libapper/PkStrings.cpp:769
+msgctxt "The group type"
+msgid "Vendor"
+msgstr "Производитель"
+
+#: libapper/PkStrings.cpp:771
+msgctxt "The group type"
+msgid "Newest packages"
+msgstr "Новейшие пакеты"
+
+#: libapper/PkStrings.cpp:773
+msgctxt "The group type"
+msgid "Unknown group"
+msgstr "Неизвестная группа"
+
+#: libapper/PkStrings.cpp:783
+msgctxt "The type of update"
+msgid "Trivial update"
+msgstr "Простое обновление"
+
+#: libapper/PkStrings.cpp:785
+msgctxt "The type of update"
+msgid "Normal update"
+msgstr "Обычное обновление"
+
+#: libapper/PkStrings.cpp:787
+msgctxt "The type of update"
+msgid "Important update"
+msgstr "Важное обновление"
+
+#: libapper/PkStrings.cpp:789
+msgctxt "The type of update"
+msgid "Security update"
+msgstr "Обновление безопасности"
+
+#: libapper/PkStrings.cpp:791
+msgctxt "The type of update"
+msgid "Bug fix update"
+msgstr "Исправление ошибки"
+
+#: libapper/PkStrings.cpp:793
+msgctxt "The type of update"
+msgid "Enhancement update"
+msgstr "Улучшающее обновление"
+
+#: libapper/PkStrings.cpp:795
+msgctxt "The type of update"
+msgid "Blocked update"
+msgstr "Заблокированное обновление"
+
+#: libapper/PkStrings.cpp:798
+msgctxt "The type of update"
+msgid "Installed"
+msgstr "Установлено"
+
+#: libapper/PkStrings.cpp:801
+msgctxt "The type of update"
+msgid "Available"
+msgstr "Доступно"
+
+#: libapper/PkStrings.cpp:803
+msgctxt "The type of update"
+msgid "Unknown update"
+msgstr "Неизвестное обновление"
+
+#: libapper/PkStrings.cpp:814
+msgid "No Updates Available"
+msgstr "Нет доступных обновлений"
+
+#: libapper/PkStrings.cpp:817
+#, kde-format
+msgctxt "Some updates were selected on the view"
+msgid "1 Update Selected"
+msgid_plural "%1 Updates Selected"
+msgstr[0] "Выбрано %1 обновление"
+msgstr[1] "Выбрано %1 обновления"
+msgstr[2] "Выбрано %1 обновлений"
+msgstr[3] "Выбрано одно обновление"
+
+#: libapper/PkStrings.cpp:821
+#, kde-format
+msgctxt "Some updates are being shown on the screen"
+msgid "1 Update"
+msgid_plural "%1 Updates"
+msgstr[0] "%1 обновление"
+msgstr[1] "%1 обновления"
+msgstr[2] "%1 обновлений"
+msgstr[3] "Одно обновление"
+
+#: libapper/PkStrings.cpp:825
+#, kde-format
+msgctxt "Part of: %1 Updates, %1 Selected"
+msgid "%1 Update"
+msgid_plural "%1 Updates"
+msgstr[0] "%1 обновление"
+msgstr[1] "%1 обновления"
+msgstr[2] "%1 обновлений"
+msgstr[3] "Одно обновление"
+
+#: libapper/PkStrings.cpp:826
+#, kde-format
+msgctxt "Part of: %1 Updates, %1 Selected"
+msgid "%1 Selected"
+msgid_plural "%1 Selected"
+msgstr[0] "Выбрано %1"
+msgstr[1] "Выбрано %1"
+msgstr[2] "Выбрано %1"
+msgstr[3] "Выбрано 1"
+
+#: libapper/PkStrings.cpp:824
+#, kde-format
+msgctxt "Type of update, in the case it's just an update"
+msgid "%1, %2"
+msgstr "%1, %2"
+
+#: libapper/PkStrings.cpp:830
+msgid "No Packages"
+msgstr "Нет пакетов"
+
+#: libapper/PkStrings.cpp:832
+#, kde-format
+msgid "1 Package"
+msgid_plural "%1 Packages"
+msgstr[0] "%1 пакет"
+msgstr[1] "%1 пакета"
+msgstr[2] "%1 пакетов"
+msgstr[3] "Один пакет"
+
+#: libapper/PkStrings.cpp:840
+msgid "No restart is necessary"
+msgstr "Перезагрузка не обязательна"
+
+#: libapper/PkStrings.cpp:842
+msgid "You will be required to restart this application"
+msgstr "Вам необходимо будет перезапустить это приложение"
+
+#: libapper/PkStrings.cpp:844
+msgid "You will be required to log out and back in"
+msgstr "Вам потребуется перезапустить сеанс."
+
+#: libapper/PkStrings.cpp:846
+msgid "A restart will be required"
+msgstr "Потребуется перезагрузка системы"
+
+#: libapper/PkStrings.cpp:848
+msgid "You will be required to log out and back in due to a security update."
+msgstr ""
+"Чтобы обновление безопасности вступило в силу потребуется перезапустить "
+"сеанс."
+
+#: libapper/PkStrings.cpp:850
+msgid "A restart will be required due to a security update."
+msgstr ""
+"Чтобы обновление безопасности вступило в силу потребуется перезагрузить "
+"систему."
+
+#: libapper/PkStrings.cpp:863
+msgid "No restart is required"
+msgstr "Перезапуск системы не требуется"
+
+#: libapper/PkStrings.cpp:865
+msgid "A restart is required"
+msgstr "Требуется перезагрузка"
+
+#: libapper/PkStrings.cpp:867
+msgid "You need to log out and log back in"
+msgstr "Вам следует перезапустить сеанс"
+
+#: libapper/PkStrings.cpp:869
+msgid "You need to restart the application"
+msgstr "Вам необходимо перезапустить приложение"
+
+#: libapper/PkStrings.cpp:871
+msgid "You need to log out and log back in to remain secure."
+msgstr "Чтобы обеспечить безопасность системы, требуется перезапустить сеанс."
+
+#: libapper/PkStrings.cpp:873
+msgid "A restart is required to remain secure."
+msgstr "Чтобы обеспечить безопасность системы, требуется перезагрузка."
+
+#: libapper/PkStrings.cpp:886
+msgid "Stable"
+msgstr "Стабильное"
+
+#: libapper/PkStrings.cpp:888
+msgid "Unstable"
+msgstr "Нестабильное"
+
+#: libapper/PkStrings.cpp:890
+msgid "Testing"
+msgstr "Тестируемое"
+
+#: libapper/PkStrings.cpp:903
+#, kde-format
+msgid "Please insert the CD labeled '%1', and press continue."
+msgstr "Вставьте CD с меткой «%1» и нажмите «Продолжить»."
+
+#: libapper/PkStrings.cpp:905
+#, kde-format
+msgid "Please insert the DVD labeled '%1', and press continue."
+msgstr "Вставьте DVD с меткой «%1» и нажмите «Продолжить»."
+
+#: libapper/PkStrings.cpp:907
+#, kde-format
+msgid "Please insert the disc labeled '%1', and press continue."
+msgstr "Вставьте диск с меткой «%1» и нажмите «Продолжить»."
+
+#: libapper/PkStrings.cpp:909 libapper/PkStrings.cpp:912
+#, kde-format
+msgid "Please insert the medium labeled '%1', and press continue."
+msgstr "Вставьте носитель с меткой «%1» и нажмите «Продолжить»."
+
+#: libapper/PkStrings.cpp:919
+msgid "A mirror is possibly broken"
+msgstr "Возможно, зеркало неполное"
+
+#: libapper/PkStrings.cpp:921
+msgid "The connection was refused"
+msgstr "Соединение было отклонено"
+
+#: libapper/PkStrings.cpp:923
+msgid "The parameter was invalid"
+msgstr "Неверный параметр"
+
+#: libapper/PkStrings.cpp:925
+msgid "The priority was invalid"
+msgstr "Неверный приоритет"
+
+#: libapper/PkStrings.cpp:927
+msgid "Backend warning"
+msgstr "Предупреждение модуля"
+
+#: libapper/PkStrings.cpp:929
+msgid "Daemon warning"
+msgstr "Предупреждение демона"
+
+#: libapper/PkStrings.cpp:931
+msgid "The package list cache is being rebuilt"
+msgstr "Восстановление кэша списка пакетов"
+
+#: libapper/PkStrings.cpp:933
+msgid "An untrusted package was installed"
+msgstr "Был установлен неподписанный пакет"
+
+#: libapper/PkStrings.cpp:935
+msgid "A newer package exists"
+msgstr "Существует более новый пакет"
+
+#: libapper/PkStrings.cpp:937
+msgid "Could not find package"
+msgstr "Не удаётся найти пакет"
+
+#: libapper/PkStrings.cpp:939
+msgid "Configuration files were changed"
+msgstr "Файлы конфигурации были изменены"
+
+#: libapper/PkStrings.cpp:941
+msgid "Package is already installed"
+msgstr "Пакет уже установлен"
+
+#: libapper/PkStrings.cpp:943
+msgid "Automatic cleanup is being ignored"
+msgstr "Автоматическая очистка проигнорирована"
+
+#: libapper/PkStrings.cpp:945
+msgid "Software source download failed"
+msgstr "Загрузка из источника пакетов не удалась"
+
+#: libapper/PkStrings.cpp:947
+msgid "This software source is for developers only"
+msgstr "Это программное обеспечение предназначено только для разработчиков"
+
+#: libapper/PkStrings.cpp:949
+msgid "Other updates have been held back"
+msgstr ""
+
+#: libapper/PkStrings.cpp:964
+msgid "Could not get a transaction id from packagekitd."
+msgstr "Не удалось получить идентификатор транзакции из packagekitd."
+
+#: libapper/PkStrings.cpp:966
+msgid "Cannot connect to this transaction id."
+msgstr "Невозможно подключиться к идентификаторам транзакции."
+
+#: libapper/PkStrings.cpp:968
+msgid "This action is unknown."
+msgstr "Неизвестное действие."
+
+#: libapper/PkStrings.cpp:970
+msgid "The packagekitd service could not be started."
+msgstr "Не удалось запустить службу packagekitd."
+
+#: libapper/PkStrings.cpp:972
+msgid "The query is not valid."
+msgstr "Неверный запрос."
+
+#: libapper/PkStrings.cpp:974
+msgid "The file is not valid."
+msgstr "Файл не является действительным."
+
+#: libapper/PkStrings.cpp:976
+msgid "This function is not yet supported."
+msgstr "Эта функция пока не поддерживается."
+
+#: libapper/PkStrings.cpp:978
+msgid "Could not talk to packagekitd."
+msgstr "Не удалось связаться с packagekitd."
+
+#: libapper/PkStrings.cpp:982 libapper/PkStrings.cpp:985
+msgid "An unknown error happened."
+msgstr "Произошла неизвестная ошибка."
+
+#: libapper/PkTransactionDialog.cpp:88
+msgid ""
+"Allows you to hide the window whilst keeping the transaction task running."
+msgstr ""
+"Позволяет скрыть это окно, в то время как задание продолжает выполняться."
+
+#: libapper/SimulateModel.cpp:139
+msgid "Package"
+msgstr "Пакет"
+
+#: libapper/SimulateModel.cpp:141 libapper/PackageModel.cpp:180
+msgid "Version"
+msgstr "Версия"
+
+#: libapper/Requirements.cpp:41
+msgid "Additional changes"
+msgstr "Дополнительные изменения"
+
+#: libapper/Requirements.cpp:62
+#, kde-format
+msgid "1 package to remove"
+msgid_plural "%1 packages to remove"
+msgstr[0] "%1 пакет для удаления"
+msgstr[1] "%1 пакета для удаления"
+msgstr[2] "%1 пакетов для удаления"
+msgstr[3] "1 пакет для удаления"
+
+#: libapper/Requirements.cpp:77
+#, kde-format
+msgid "1 package to downgrade"
+msgid_plural "%1 packages to downgrade"
+msgstr[0] "%1 пакет для снижения версии"
+msgstr[1] "%1 пакета для снижения версии"
+msgstr[2] "%1 пакетов для снижения версии"
+msgstr[3] "1 пакет для снижения версии"
+
+#: libapper/Requirements.cpp:92
+#, kde-format
+msgid "1 package to reinstall"
+msgid_plural "%1 packages to reinstall"
+msgstr[0] "%1 пакет для переустановки"
+msgstr[1] "%1 пакета для переустановки"
+msgstr[2] "%1 пакетов для переустановки"
+msgstr[3] "1 пакет для переустановки"
+
+#: libapper/Requirements.cpp:105
+#, kde-format
+msgid "1 package to install"
+msgid_plural "%1 packages to install"
+msgstr[0] "%1 пакет для установки"
+msgstr[1] "%1 пакета для установки"
+msgstr[2] "%1 пакетов для установки"
+msgstr[3] "1 пакет для установки"
+
+#: libapper/Requirements.cpp:118
+#, kde-format
+msgid "1 package to update"
+msgid_plural "%1 packages to update"
+msgstr[0] "%1 пакет для обновления"
+msgstr[1] "%1 пакета для обновления"
+msgstr[2] "%1 пакетов для обновления"
+msgstr[3] "1 пакет для обновления"
+
+#: libapper/LicenseAgreement.cpp:36
+msgid "Accept Agreement"
+msgstr "Принять соглашение"
+
+#. i18n: file: libapper/LicenseAgreement.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, LicenseAgreement)
+#: libapper/LicenseAgreement.cpp:37 rc.cpp:236
+msgid "License Agreement Required"
+msgstr "Требуется лицензионное соглашение"
+
+#: libapper/LicenseAgreement.cpp:38
+#, kde-format
+msgid "License required for %1 by %2"
+msgstr "Для %1 требуется лицензия от %2"
+
+#: libapper/ApplicationLauncher.cpp:99
+msgid "The following application was just installed. Click on it to launch:"
+msgid_plural ""
+"The following applications were just installed. Click on them to launch:"
+msgstr[0] "Были установлены следующие приложения. Для запуска нажмите на них:"
+msgstr[1] "Были установлены следующие приложения. Для запуска нажмите на них:"
+msgstr[2] "Были установлены следующие приложения. Для запуска нажмите на них:"
+msgstr[3] "Было установлено следующие приложение. Для запуска нажмите на него:"
+
+#: libapper/PkTransaction.cpp:122
+#, fuzzy
+#| msgid "Failed to simulate package install"
+msgid "Failed to simulate file install"
+msgstr "Не удалось выполнить имитацию установки пакета"
+
+#: libapper/PkTransaction.cpp:129
+#, fuzzy
+#| msgid "Current backend does not support installing packages."
+msgid "Current backend does not support installing files."
+msgstr "Текущий модуль не поддерживает установку пакетов."
+
+#: libapper/PkTransaction.cpp:129 libapper/PkTransaction.cpp:153
+#: libapper/PkTransaction.cpp:179 libapper/PkTransaction.cpp:202
+msgid "Error"
+msgstr "Ошибка"
+
+#: libapper/PkTransaction.cpp:146
+msgid "Failed to simulate package install"
+msgstr "Не удалось выполнить имитацию установки пакета"
+
+#: libapper/PkTransaction.cpp:153
+msgid "Current backend does not support installing packages."
+msgstr "Текущий модуль не поддерживает установку пакетов."
+
+#: libapper/PkTransaction.cpp:171
+msgid "Failed to simulate package removal"
+msgstr "Не удалось выполнить имитацию удаления пакета"
+
+#: libapper/PkTransaction.cpp:179
+msgid "The current backend does not support removing packages."
+msgstr "Текущий модуль не поддерживает удаление пакетов."
+
+#: libapper/PkTransaction.cpp:195
+msgid "Failed to simulate package update"
+msgstr "Не удалось выполнить имитацию обновления пакета"
+
+#: libapper/PkTransaction.cpp:202
+msgid "The current backend does not support updating packages."
+msgstr "Текущий модуль не поддерживает обновление пакетов."
+
+#: libapper/PkTransaction.cpp:213
+#, fuzzy
+#| msgid "Failed to remove package"
+msgid "Failed to refresh package cache"
+msgstr "Не удалось удалить пакет"
+
+#: libapper/PkTransaction.cpp:251
+msgid "Failed to install package"
+msgstr "Не удалось установить пакет"
+
+#: libapper/PkTransaction.cpp:276
+msgid "Failed to remove package"
+msgstr "Не удалось удалить пакет"
+
+#: libapper/PkTransaction.cpp:288
+msgid "Failed to update package"
+msgstr "Не удалось обновить пакет"
+
+#: libapper/PkTransaction.cpp:459
+#, kde-format
+msgid "Downloading packages at %1/s"
+msgstr "Загрузка пакетов со скоростью %1/с"
+
+#: libapper/PkTransaction.cpp:507
+msgid ""
+"You are about to install unsigned packages that can compromise your system, "
+"as it is impossible to verify if the software came from a trusted source.\n"
+"\n"
+"Are you sure you want to proceed with the installation?"
+msgstr ""
+"Вы собираетесь установить неподписанные пакеты, которые могут привести к "
+"снижению уровня безопасности вашей системы, поскольку невозможно проверить "
+"надежность источника.\n"
+"\n"
+"Хотите продолжить установку?"
+
+#: libapper/PkTransaction.cpp:510
+msgid "Installing unsigned software"
+msgstr "Установка неподписанных пакетов"
+
+#: libapper/PkTransaction.cpp:563 libapper/PkTransaction.cpp:616
+msgid "Failed to install signature"
+msgstr "Не удалось установить подпись"
+
+#: libapper/PackageModel.cpp:178
+#, fuzzy
+#| msgctxt "The group type"
+#| msgid "Games"
+msgid "Name"
+msgstr "Игры"
+
+#: libapper/PackageModel.cpp:182
+msgid "Arch"
+msgstr ""
+
+#: libapper/PackageModel.cpp:184
+msgid "Size"
+msgstr "Размер"
+
+#: libapper/PackageModel.cpp:272
+#, fuzzy, kde-format
+#| msgid "Show Architectures"
+msgid ""
+"Version: %1\n"
+"Architecture: %2"
+msgstr "Показать архитектуру"
+
+#: libapper/PackageModel.cpp:315
+msgid "To be Removed"
+msgstr "Будет удалено"
+
+#: libapper/PackageModel.cpp:317
+msgid "To be Installed"
+msgstr "Будет установлено"
+
+#: libapper/ApplicationsDelegate.cpp:40
+msgid "Install"
+msgstr "Установить"
+
+#: libapper/ApplicationsDelegate.cpp:42
+msgid "Remove"
+msgstr "Удалить"
+
+#. i18n: file: libapper/RepoSig.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, RepoSig)
+#: libapper/RepoSig.cpp:40 rc.cpp:218
+msgid "Software signature is required"
+msgstr "Программа должна быть подписана"
+
+#: rc.cpp:1
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Леонид Кантер,Юрий Ефремов"
+
+#: rc.cpp:2
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "leon@asplinux.ru,yur.arh@gmail.com"
+
+#. i18n: file: Apper/BackendDetails.ui:26
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: rc.cpp:5
+msgid "About Backend"
+msgstr "О модуле"
+
+#. i18n: file: Apper/BackendDetails.ui:32
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:8
+msgid "Backend name:"
+msgstr "Название модуля:"
+
+#. i18n: file: Apper/BackendDetails.ui:46
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: rc.cpp:11
+msgid "Backend description:"
+msgstr "Описание модуля:"
+
+#. i18n: file: Apper/BackendDetails.ui:60
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:14
+msgid "Backend author:"
+msgstr "Автор модуля:"
+
+#. i18n: file: Apper/BackendDetails.ui:74
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: rc.cpp:17
+msgid "Distribution ID:"
+msgstr "ID дистрибутива:"
+
+#. i18n: file: Apper/BackendDetails.ui:91
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#. i18n: file: ApperKCM/ApperKCM.ui:167
+#. i18n: ectx: property (text), widget (QToolButton, filtersTB)
+#: rc.cpp:20 rc.cpp:188
+msgid "Filters"
+msgstr "Фильтры"
+
+#. i18n: file: Apper/BackendDetails.ui:120
+#. i18n: ectx: property (text), widget (QCheckBox, visibleCB)
+#: rc.cpp:29
+msgid "Package is visible"
+msgstr ""
+
+#. i18n: file: Apper/BackendDetails.ui:130
+#. i18n: ectx: property (text), widget (QCheckBox, newestCB)
+#: rc.cpp:32
+msgid "Newest"
+msgstr "Новейшие"
+
+#. i18n: file: Apper/BackendDetails.ui:140
+#. i18n: ectx: property (text), widget (QCheckBox, guiCB)
+#: rc.cpp:35
+msgid "GUI"
+msgstr "Интерфейс"
+
+#. i18n: file: Apper/BackendDetails.ui:150
+#. i18n: ectx: property (text), widget (QCheckBox, freeCB)
+#: rc.cpp:38
+msgid "Free software"
+msgstr "Свободное ПО"
+
+#. i18n: file: Apper/BackendDetails.ui:160
+#. i18n: ectx: property (text), widget (QCheckBox, supportedCB)
+#: rc.cpp:41
+msgid "Supported"
+msgstr "Поддерживаемые"
+
+#. i18n: file: Apper/BackendDetails.ui:173
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
+#: rc.cpp:44
+msgid "Methods"
+msgstr "Методы"
+
+#. i18n: file: Apper/BackendDetails.ui:182
+#. i18n: ectx: property (text), widget (QCheckBox, getUpdatesCB)
+#: rc.cpp:47
+msgid "Get Updates"
+msgstr "Получить обновления"
+
+#. i18n: file: Apper/BackendDetails.ui:192
+#. i18n: ectx: property (text), widget (QCheckBox, refreshCacheCB)
+#: rc.cpp:50
+msgid "Refresh Cache"
+msgstr "Обновить кэш"
+
+#. i18n: file: Apper/BackendDetails.ui:202
+#. i18n: ectx: property (text), widget (QCheckBox, updateSystemCB)
+#: rc.cpp:53
+msgid "Update System"
+msgstr "Обновить систему"
+
+#. i18n: file: Apper/BackendDetails.ui:212
+#. i18n: ectx: property (text), widget (QCheckBox, searchNameCB)
+#: rc.cpp:56
+msgid "Search Name"
+msgstr "Поиск по названию"
+
+#. i18n: file: Apper/BackendDetails.ui:222
+#. i18n: ectx: property (text), widget (QCheckBox, getDependsCB)
+#: rc.cpp:59
+msgid "Get Package Depends"
+msgstr "Получить список зависимостей пакета"
+
+#. i18n: file: Apper/BackendDetails.ui:232
+#. i18n: ectx: property (text), widget (QCheckBox, searchDetailsCB)
+#: rc.cpp:62
+msgid "Search Details"
+msgstr "Поиск сведений"
+
+#. i18n: file: Apper/BackendDetails.ui:242
+#. i18n: ectx: property (text), widget (QCheckBox, getRequiresCB)
+#: rc.cpp:65
+msgid "Get Package Requires"
+msgstr "Получить список необходимых пакетов"
+
+#. i18n: file: Apper/BackendDetails.ui:252
+#. i18n: ectx: property (text), widget (QCheckBox, searchGroupCB)
+#: rc.cpp:68
+msgid "Search Group"
+msgstr "Поиск по группе"
+
+#. i18n: file: Apper/BackendDetails.ui:262
+#. i18n: ectx: property (text), widget (QCheckBox, getUpdateDetailCB)
+#: rc.cpp:71
+msgid "Get Update Detail"
+msgstr "Получить сведения об обновлении"
+
+#. i18n: file: Apper/BackendDetails.ui:272
+#. i18n: ectx: property (text), widget (QCheckBox, searchFileCB)
+#: rc.cpp:74
+msgid "Search File"
+msgstr "Поиск файла"
+
+#. i18n: file: Apper/BackendDetails.ui:282
+#. i18n: ectx: property (text), widget (QCheckBox, getDescriptionCB)
+#: rc.cpp:77
+msgid "Get Package Description"
+msgstr "Получить описание пакета"
+
+#. i18n: file: Apper/BackendDetails.ui:292
+#. i18n: ectx: property (text), widget (QCheckBox, getFilesCB)
+#: rc.cpp:80
+msgid "Get Package Files"
+msgstr "Получить файлы пакета"
+
+#. i18n: file: Apper/BackendDetails.ui:302
+#. i18n: ectx: property (text), widget (QCheckBox, getDistroUpgradesCB)
+#: rc.cpp:83
+msgid "Get Distro Upgrades"
+msgstr "Получить обновление дистрибутива"
+
+#. i18n: file: Apper/BackendDetails.ui:312
+#. i18n: ectx: property (text), widget (QCheckBox, installPackageCB)
+#: rc.cpp:86
+msgid "Install Packages"
+msgstr "Установить пакеты"
+
+#. i18n: file: Apper/BackendDetails.ui:322
+#. i18n: ectx: property (text), widget (QCheckBox, updatePackageCB)
+#: rc.cpp:89
+msgid "Update Packages"
+msgstr "Обновить пакеты"
+
+#. i18n: file: Apper/BackendDetails.ui:332
+#. i18n: ectx: property (text), widget (QCheckBox, removePackageCB)
+#: rc.cpp:92
+msgid "Remove Packages"
+msgstr "Удалить пакеты"
+
+#. i18n: file: Apper/BackendDetails.ui:342
+#. i18n: ectx: property (text), widget (QCheckBox, installFileCB)
+#: rc.cpp:95
+msgid "Install Files"
+msgstr "Установить файлы"
+
+#. i18n: file: Apper/BackendDetails.ui:352
+#. i18n: ectx: property (text), widget (QCheckBox, cancelCB)
+#: rc.cpp:98
+msgid "Cancel"
+msgstr "Отменить"
+
+#. i18n: file: Apper/BackendDetails.ui:362
+#. i18n: ectx: property (text), widget (QCheckBox, resolveCB)
+#: rc.cpp:101
+msgid "Resolve"
+msgstr "Разрешение"
+
+#. i18n: file: Apper/BackendDetails.ui:372
+#. i18n: ectx: property (text), widget (QCheckBox, getRepositoryListCB)
+#: rc.cpp:104
+msgid "Get Repository List"
+msgstr "Получить список репозиториев"
+
+#. i18n: file: Apper/BackendDetails.ui:382
+#. i18n: ectx: property (text), widget (QCheckBox, repositoryEnableCB)
+#: rc.cpp:107
+msgid "Enable Repository"
+msgstr "Подключить репозиторий"
+
+#. i18n: file: Apper/BackendDetails.ui:392
+#. i18n: ectx: property (text), widget (QCheckBox, repositorySetEnableCB)
+#: rc.cpp:110
+msgid "Set Repository Data"
+msgstr "Установить данные репозитория"
+
+#. i18n: file: Apper/BackendDetails.ui:402
+#. i18n: ectx: property (text), widget (QCheckBox, whatProvidesCB)
+#: rc.cpp:113
+msgid "What Provides"
+msgstr "Предоставления"
+
+#. i18n: file: Apper/BackendDetails.ui:412
+#. i18n: ectx: property (text), widget (QCheckBox, getPackagesCB)
+#: rc.cpp:116
+msgid "Get Packages"
+msgstr "Получить пакеты"
+
+#. i18n: file: Apper/BackendDetails.ui:422
+#. i18n: ectx: property (text), widget (QCheckBox, simulateInstallFilesCB)
+#: rc.cpp:119
+msgid "Simulate Install Files"
+msgstr "Имитация установки файлов"
+
+#. i18n: file: Apper/BackendDetails.ui:432
+#. i18n: ectx: property (text), widget (QCheckBox, simulateInstallPackagesCB)
+#: rc.cpp:122
+msgid "Simulate Install Packages"
+msgstr "Имитация установки пакетов"
+
+#. i18n: file: Apper/BackendDetails.ui:442
+#. i18n: ectx: property (text), widget (QCheckBox, simulateRemovePackagesCB)
+#: rc.cpp:125
+msgid "Simulate Remove Packages"
+msgstr "Имитация удаления пакетов"
+
+#. i18n: file: Apper/BackendDetails.ui:452
+#. i18n: ectx: property (text), widget (QCheckBox, simulateUpdatePackagesCB)
+#: rc.cpp:128
+msgid "Simulate Update Packages"
+msgstr "Имитация обновления пакетов"
+
+#. i18n: file: Apper/BackendDetails.ui:462
+#. i18n: ectx: property (text), widget (QCheckBox, upgradeSystemCB)
+#: rc.cpp:131
+#, fuzzy
+#| msgid "Update System"
+msgid "Upgrade System"
+msgstr "Обновить систему"
+
+#. i18n: file: ApperKCM/PackageDetails.ui:146
+#. i18n: ectx: property (text), widget (QLabel, licenseL)
+#: rc.cpp:134
+msgid "License:"
+msgstr "Лицензия:"
+
+#. i18n: file: ApperKCM/Settings/Settings.ui:67
+#. i18n: ectx: property (text), widget (QLabel, intervalL)
+#: rc.cpp:143
+msgid "Check for updates:"
+msgstr "Проверять обновления:"
+
+#. i18n: file: ApperKCM/Settings/Settings.ui:95
+#. i18n: ectx: property (text), widget (QCheckBox, checkUpdatesMobileCB)
+#. i18n: file: ApperKCM/Settings/Settings.ui:170
+#. i18n: ectx: property (text), widget (QCheckBox, installUpdatesMobileCB)
+#: rc.cpp:146 rc.cpp:158
+msgid "when on a mobile broadband network connection"
+msgstr ""
+
+#. i18n: file: ApperKCM/Settings/Settings.ui:102
+#. i18n: ectx: property (text), widget (QCheckBox, checkUpdatesBatteryCB)
+#. i18n: file: ApperKCM/Settings/Settings.ui:163
+#. i18n: ectx: property (text), widget (QCheckBox, installUpdatesBatteryCB)
+#: rc.cpp:149 rc.cpp:155
+msgid "when running on battery"
+msgstr ""
+
+#. i18n: file: ApperKCM/Settings/Settings.ui:114
+#. i18n: ectx: property (text), widget (QLabel, autoInsL)
+#: rc.cpp:152
+msgid "Automatically install:"
+msgstr "Автоматически устанавливать:"
+
+#. i18n: file: ApperKCM/Settings/Settings.ui:179
+#. i18n: ectx: property (text), widget (QCheckBox, appLauncherCB)
+#: rc.cpp:161
+msgid "Show application launcher after installing new applications"
+msgstr "Показывать окно запуска программ после установки новых приложений"
+
+#. i18n: file: ApperKCM/Settings/Settings.ui:186
+#. i18n: ectx: property (text), widget (QCheckBox, autoConfirmCB)
+#: rc.cpp:164
+msgid "Show confirmation dialog when installing or updating packages"
+msgstr ""
+"Показывать диалоговое окно подтверждения установки и обновления пакетов"
+
+#. i18n: file: ApperKCM/Settings/Settings.ui:234
+#. i18n: ectx: property (text), widget (QCheckBox, showOriginsCB)
+#: rc.cpp:167
+msgid "&Show origins of debug and development packages"
+msgstr "&Отображать источники пакетов для отладки и разработки программ"
+
+#. i18n: file: ApperKCM/Settings/Settings.ui:254
+#. i18n: ectx: property (text), widget (QPushButton, editOriginsPB)
+#: rc.cpp:170
+msgid "Edit Origins"
+msgstr "Изменить источники"
+
+#. i18n: file: ApperKCM/BrowseView.ui:140
+#. i18n: ectx: property (text), widget (QPushButton, exportInstalledPB)
+#: rc.cpp:176
+msgid "Export Installed Package List..."
+msgstr "Экспорт списка установленных пакетов..."
+
+#. i18n: file: ApperKCM/BrowseView.ui:150
+#. i18n: ectx: property (text), widget (QPushButton, importInstalledPB)
+#: rc.cpp:179
+msgid "Install Packages from List..."
+msgstr "Установить пакеты из списка..."
+
+#. i18n: file: ApperKCM/ApperKCM.ui:20
+#. i18n: ectx: property (windowTitle), widget (QWidget, ApperKCM)
+#: rc.cpp:182
+msgid "Add and Remove Software"
+msgstr "Установка и удаление программ"
+
+#. i18n: file: ApperKCM/ApperKCM.ui:127
+#. i18n: ectx: property (clickMessage), widget (KLineEdit, searchKLE)
+#: rc.cpp:185
+msgid "Search packages"
+msgstr "Поиск пакетов"
+
+#. i18n: file: ApperKCM/ApperKCM.ui:196
+#. i18n: ectx: property (text), widget (QPushButton, changesPB)
+#: rc.cpp:191
+msgid "Pending Changes"
+msgstr "Ожидающие задания"
+
+#. i18n: file: ApperKCM/ApperKCM.ui:281
+#. i18n: ectx: property (text), widget (QToolButton, backTB)
+#: rc.cpp:197
+msgid "Back"
+msgstr "Назад"
+
+#. i18n: file: Sentinel/IntroDialog.ui:65
+#. i18n: ectx: property (text), widget (QLabel, descriptionL)
+#: rc.cpp:209
+msgid "TextLabel"
+msgstr "TextLabel"
+
+#. i18n: file: libapper/Requirements.ui:31
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:212
+msgid "Additional changes are required to complete the task"
+msgstr "Для выполнения задания необходимы дополнительные изменения"
+
+#. i18n: file: libapper/Requirements.ui:87
+#. i18n: ectx: property (text), widget (QCheckBox, confirmCB)
+#: rc.cpp:215
+#, fuzzy
+#| msgid ""
+#| "Do not show this confirmation when installing or updating additional "
+#| "packages"
+msgid "Do not confirm when installing or updating additional packages"
+msgstr ""
+"Больше не показывать это подтверждение при установке или обновлении "
+"дополнительных пакетов"
+
+#. i18n: file: libapper/RepoSig.ui:23
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:221
+msgid "Do you trust the origin of packages?"
+msgstr "Доверяете ли вы источнику пакетов?"
+
+#. i18n: file: libapper/RepoSig.ui:47
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:224
+msgid "Repository name:"
+msgstr "Имя репозитория:"
+
+#. i18n: file: libapper/RepoSig.ui:73
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: rc.cpp:227
+msgid "Signature URL:"
+msgstr "URL подписи:"
+
+#. i18n: file: libapper/RepoSig.ui:99
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: rc.cpp:230
+msgid "Signature user identifier:"
+msgstr "Идентификатор пользователя подписи:"
+
+#. i18n: file: libapper/RepoSig.ui:125
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: rc.cpp:233
+msgid "Signature identifier:"
+msgstr "Идентификатор подписи:"
+
+#. i18n: file: libapper/LicenseAgreement.ui:40
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:239
+msgid "Please read the following important information before continuing:"
+msgstr "Прочитайте, перед тем, как продолжить, следующую важную информацию:"
+
+#. i18n: file: libapper/ApplicationLauncher.ui:72
+#. i18n: ectx: property (text), widget (QCheckBox, showCB)
+#: rc.cpp:242
+msgid "Do not show this dialog again"
+msgstr "Больше не показывать"
+
+#. i18n: file: libapper/PkTransaction.ui:38
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:245
+msgid "icon"
+msgstr "значок"
+
+#. i18n: file: libapper/PkTransaction.ui:64
+#. i18n: ectx: property (text), widget (QLabel, currentL)
+#: rc.cpp:248
+msgid "Downloading Packages"
+msgstr "Загрузка пакетов"
+
+
+
+
+
+
+
+#, fuzzy
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#, fuzzy
+
+
+
+
+
+#, fuzzy
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#, fuzzy
+
+
+
+
+
+
+
+
+
+#, fuzzy
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#, fuzzy
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#, fuzzy
+
+
+
+
+
+
+
+#, fuzzy
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#, fuzzy
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#, fuzzy
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#, fuzzy
+
+
+
+
+
+
+
+#, fuzzy
+
+
+
+
+
+
+
+#, fuzzy
+
+
+
+
+
+
+
+#, fuzzy
+
+
+
+
+
+
+
+#, fuzzy
+
+
+
+
+
+
+
+#, fuzzy
+
+
+
+
+
+
+
+#, fuzzy
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#, fuzzy
+
+
+
+
+#, fuzzy
+
+
+
+
+
+
+
+
+#, fuzzy
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#, fuzzy
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#, fuzzy
