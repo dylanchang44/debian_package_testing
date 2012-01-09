@@ -26,8 +26,15 @@ Copyright: 2011 Kevin Kofler <kevin.kofler@chello.at>
            2009-2011 by Daniel Nicoletti
 License: GPL-2+
 
+Files: po/*
+Copyright: (C) 2008-2011 The KDE Translation teams <kde-i18n-doc@kde.org>
+ Every language file is made by the respective translation team. You can find
+ a list of the translation teams and their contact email addresses at:
+ http://i18n.kde.org/teams-list.php
+License: GPL-2+
+
 Files: debian/*
-Copyright: 2010-2011 Matthias Klumpp <matthias@tenstral.net>
+Copyright: 2010-2012 Matthias Klumpp <matthias@tenstral.net>
 License: GPL-2+
 
 License: GPL-2+
