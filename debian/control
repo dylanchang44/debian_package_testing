@@ -2,15 +2,15 @@ Source: apper
 Section: kde
 Priority: optional
 Maintainer: Matthias Klumpp <matthias@tenstral.net>
-Build-Depends: cmake,
+Build-Depends: chrpath,
+               cmake,
                debhelper (>= 8.0.0),
                docbook2x,
                kdelibs5-dev (>= 4:4.6.0),
                libdbus-1-dev,
                libdebconf-kde-dev,
                libpackagekit-qt2-dev (>= 0.6.18),
-               pkg-kde-tools (>= 0.9.2),
-               chrpath
+               pkg-kde-tools (>= 0.9.2)
 Standards-Version: 3.9.2
 Homepage: http://kde-apps.org/content/show.php/Apper?content=84745
 Vcs-Git: git://anonscm.debian.org/pkg-packagekit/apper.git
@@ -21,7 +21,8 @@ Architecture: any
 Depends: packagekit (>= 0.6.18),
          ${misc:Depends},
          ${shlibs:Depends}
-Recommends: app-install-data, software-properties-kde
+Recommends: app-install-data,
+            software-properties-kde
 Suggests: debconf-kde-helper
 Replaces: kpackagekit
 Breaks: kpackagekit (<< 0.7.0~20111008-0ubuntu1~)
@@ -37,7 +38,8 @@ Package: apper-dbg
 Section: debug
 Architecture: any
 Priority: extra
-Depends: apper (= ${binary:Version}), ${misc:Depends}
+Depends: apper (= ${binary:Version}),
+         ${misc:Depends}
 Recommends: kdelibs5-dbg
 Description: Debugging symbols for Apper
  Apper ist a graphical package manager UI based on the PackageKit
