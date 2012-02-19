@@ -22,8 +22,9 @@ Depends: packagekit (>= 0.6.18),
          ${misc:Depends},
          ${shlibs:Depends}
 Recommends: app-install-data,
-            software-properties-kde
-Suggests: debconf-kde-helper
+            polkit-kde-1
+Suggests: debconf-kde-helper,
+          software-properties-kde
 Replaces: kpackagekit
 Breaks: kpackagekit (<< 0.7.0~20111008-0ubuntu1~)
 Description: KDE package management tool using PackageKit
