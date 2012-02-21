@@ -69,7 +69,9 @@ void ApplicationsDelegate::paint(QPainter *painter,
     // Button height
     int btHeight = m_buttonSize.height() + UNIVERSAL_PADDING;
     if (index.column() == PackageModel::VersionCol ||
+        index.column() == PackageModel::CurrentVersionCol ||
         index.column() == PackageModel::ArchCol ||
+        index.column() == PackageModel::OriginCol ||
         index.column() == PackageModel::SizeCol) {
         QStyleOptionViewItemV4 opt(option);
         if (opt.state & QStyle::State_HasFocus) {
@@ -106,6 +108,9 @@ void ApplicationsDelegate::paint(QPainter *painter,
         QPixmap pixmap(opt.rect.size());
         pixmap.fill(Qt::transparent);
         QPainter p(&pixmap);
+        if (!p.isActive()) {
+            return; // TODO test if this fixes warnigns
+        }
         p.translate(-opt.rect.topLeft());
 
         QStyle *style = opt.widget ? opt.widget->style() : QApplication::style();
@@ -117,10 +122,7 @@ void ApplicationsDelegate::paint(QPainter *painter,
         int left = opt.rect.left();
         int width = opt.rect.width();
 
-        Package::Info info;
-        info = static_cast<Package::Info>(index.data(PackageModel::InfoRole).toUInt());
         QString pkgSummary = index.data(PackageModel::SummaryRole).toString();
-
         if (!pkgSummary.isEmpty()) {
             if (leftToRight) {
                 pkgSummary.prepend("- ");

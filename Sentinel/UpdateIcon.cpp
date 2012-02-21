@@ -22,6 +22,8 @@
 
 #include "UpdateIcon.h"
 
+#include "StatusNotifierItem.h"
+
 #include <PkStrings.h>
 #include <PkIcons.h>
 #include <Macros.h>
@@ -59,7 +61,7 @@ UpdateIcon::~UpdateIcon()
 
 void UpdateIcon::showSettings()
 {
-    KToolInvocation::startServiceByDesktopName("Apper", QStringList() << "--settings");
+    KToolInvocation::startServiceByDesktopName("apper_settings");
 }
 
 void UpdateIcon::refresh(bool update)
@@ -150,12 +152,7 @@ void UpdateIcon::packageToUpdate(const Package &package)
 void UpdateIcon::updateStatusNotifierIcon(UpdateType type)
 {
     if (!m_statusNotifierItem) {
-        m_statusNotifierItem = new KStatusNotifierItem(this);
-        m_statusNotifierItem->setCategory(KStatusNotifierItem::SystemServices);
-        m_statusNotifierItem->setStatus(KStatusNotifierItem::Active);
-        // Remove the EXIT button
-        KActionCollection *actions = m_statusNotifierItem->actionCollection();
-        actions->removeAction(actions->action(KStandardAction::name(KStandardAction::Quit)));
+        m_statusNotifierItem = new StatusNotifierItem(this);
         // Setup a menu with some actions
         KMenu *menu = new KMenu;
         menu->addTitle(KIcon(UPDATES_ICON), i18n("Apper"));
@@ -294,7 +291,7 @@ void UpdateIcon::autoUpdatesFinished(PackageKit::Transaction::Exit status)
 
 void UpdateIcon::showUpdates()
 {
-    KToolInvocation::startServiceByDesktopName("Apper", QStringList() << "--updates");
+    KToolInvocation::startServiceByDesktopName("apper_updates");
 }
 
 void UpdateIcon::removeStatusNotifierItem()
@@ -324,12 +321,12 @@ bool UpdateIcon::systemIsReady(bool checkUpdates)
         ignoreBattery = checkUpdateGroup.readEntry("installUpdatesOnBattery", false);
     }
 
-    kDebug() << "conserve" <<  Solid::PowerManagement::appShouldConserveResources();
     // THIS IS NOT working on my computer
     // check how applications should behave (e.g. on battery power)
-//    if (!ignoreBattery && Solid::PowerManagement::appShouldConserveResources()) {
+    if (!ignoreBattery && Solid::PowerManagement::appShouldConserveResources()) {
 //        return false;
-//    }
+        kDebug() << "should conserve??";
+    }
     
     bool ignoreMobile;
     if (checkUpdates) {

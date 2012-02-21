@@ -221,7 +221,7 @@ void PkTransaction::setupTransaction(PackageKit::Transaction *transaction)
 
 #ifdef HAVE_DEBCONFKDE
     QString socket;
-    socket = QLatin1String("/tmp/debconf_") + transaction->tid().remove("/");
+    socket = QLatin1String("/tmp/debconf_") + transaction->tid().remove('/');
     QDBusMessage message;
     message = QDBusMessage::createMethodCall("org.kde.ApperSentinel",
                                              "/",
@@ -546,7 +546,7 @@ void PkTransaction::eulaRequired(PackageKit::Eula info)
     }
 
     LicenseAgreement *eula = new LicenseAgreement(info, this);
-    connect(eula, SIGNAL(accepted()), this, SLOT(installSignature()));
+    connect(eula, SIGNAL(yesClicked()), this, SLOT(acceptEula()));
     connect(eula, SIGNAL(rejected()), this, SLOT(reject()));
     showDialog(eula);
 }
@@ -556,6 +556,7 @@ void PkTransaction::acceptEula()
     LicenseAgreement *eula = qobject_cast<LicenseAgreement*>(sender());
 
     if (eula) {
+        kDebug() << "Accepting EULA" << eula->id();
         Transaction *trans = new Transaction(this);
         setTransaction(trans, Transaction::RoleAcceptEula);
         trans->acceptEula(eula->id());
@@ -564,7 +565,7 @@ void PkTransaction::acceptEula()
                       PkStrings::daemonError(trans->error()));
         }
     } else {
-        kWarning() << "something is broken";
+        kWarning() << "something is broken, slot is bound to LicenseAgreement but signalled from elsewhere.";
     }
 }
 
@@ -599,7 +600,7 @@ void PkTransaction::repoSignatureRequired(PackageKit::Signature info)
     }
 
     RepoSig *repoSig = new RepoSig(info, this);
-    connect(repoSig, SIGNAL(accepted()), this, SLOT(installSignature()));
+    connect(repoSig, SIGNAL(yesClicked()), this, SLOT(installSignature()));
     connect(repoSig, SIGNAL(rejected()), this, SLOT(reject()));
     showDialog(repoSig);
 }
@@ -609,6 +610,7 @@ void PkTransaction::installSignature()
     RepoSig *repoSig = qobject_cast<RepoSig*>(sender());
 
     if (repoSig)  {
+        kDebug() << "Installing Signature" << repoSig->signature().keyId;
         Transaction *trans = new Transaction(this);
         setTransaction(trans, Transaction::RoleInstallSignature);
         trans->installSignature(repoSig->signature());
@@ -617,7 +619,7 @@ void PkTransaction::installSignature()
                       PkStrings::daemonError(trans->error()));
         }
     } else {
-        kWarning() << "something is broken";
+        kWarning() << "something is broken, slot is bound to RepoSig but signalled from elsewhere.";
     }
 }
 
@@ -627,7 +629,7 @@ void PkTransaction::transactionFinished(Transaction::Exit status)
     Requirements *requires = 0;
     m_trans = 0;
 
-//     kDebug() << status;
+    kDebug() << status << trans->role();
     d->finished = true;
     switch(status) {
     case Transaction::ExitSuccess :
@@ -638,6 +640,7 @@ void PkTransaction::transactionFinished(Transaction::Exit status)
 
         // If the simulate model exists we were simulating
         if (d->simulateModel) {
+            kDebug() << "We have a simulate model";
             requires = new Requirements(d->simulateModel, this);
             connect(requires, SIGNAL(rejected()), this, SLOT(reject()));
             if (requires->shouldShow()) {
@@ -732,6 +735,7 @@ void PkTransaction::transactionFinished(Transaction::Exit status)
             return;
         } else if (role == Transaction::RoleAcceptEula ||
                    role == Transaction::RoleInstallSignature) {
+            kDebug() << "EULA or Signature accepted";
             d->finished = false;
             requeueTransaction();
             return;
@@ -762,6 +766,7 @@ void PkTransaction::transactionFinished(Transaction::Exit status)
         kDebug() << "finished KeyRequired or EulaRequired: " << status;
         ui->currentL->setText(PkStrings::status(Transaction::StatusSetup));
         if (!m_handlingActionRequired) {
+            kDebug() << "Not Handling Required Action";
             setExitStatus(Failed);
         }
         break;

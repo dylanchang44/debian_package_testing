@@ -32,6 +32,7 @@ ApplicationLauncher::ApplicationLauncher(QWidget *parent) :
     ui(new Ui::ApplicationLauncher)
 {
     ui->setupUi(mainWidget());
+    connect(ui->showCB, SIGNAL(toggled(bool)), this, SLOT(on_showCB_toggled(bool)));
     setObjectName("ApplicationLauncher");
 
     connect(ui->kdialogbuttonbox, SIGNAL(rejected()), this, SLOT(accept()));
@@ -43,11 +44,6 @@ ApplicationLauncher::ApplicationLauncher(QWidget *parent) :
 
 ApplicationLauncher::~ApplicationLauncher()
 {
-    if (ui->showCB->isChecked()) {
-        KConfig config("apper");
-        KConfigGroup transactionGroup(&config, "Transaction");
-        transactionGroup.writeEntry("ShowApplicationLauncher", false);
-    }
     delete ui;
 }
 
@@ -120,6 +116,14 @@ void ApplicationLauncher::itemClicked(const QModelIndex &index)
 {
 //     kDebug() << index.data(Qt::UserRole).toString();
     KToolInvocation::startServiceByDesktopPath(index.data(Qt::UserRole).toString());
+}
+
+void ApplicationLauncher::on_showCB_toggled(bool checked)
+{
+    KConfig config("apper");
+    KConfigGroup transactionGroup(&config, "Transaction");
+    transactionGroup.writeEntry("ShowApplicationLauncher", !checked);
+    config.sync();
 }
 
 #include "ApplicationLauncher.moc"

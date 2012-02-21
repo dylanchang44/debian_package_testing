@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: apper\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-10-10 04:10+0200\n"
-"PO-Revision-Date: 2011-09-28 11:54+0200\n"
+"POT-Creation-Date: 2012-02-18 05:06+0100\n"
+"PO-Revision-Date: 2011-12-15 00:24+0100\n"
 "Last-Translator: Joëlle Cornavin <jcorn@free.fr>\n"
 "Language-Team: French <kde-francophone@kde.org>\n"
 "Language: fr\n"
@@ -23,7 +23,7 @@ msgstr ""
 msgid "Backend Details"
 msgstr "Détails sur le programme principal"
 
-#: Apper/main.cpp:54 Sentinel/UpdateIcon.cpp:161 Sentinel/main.cpp:34
+#: Apper/main.cpp:54 Sentinel/UpdateIcon.cpp:158 Sentinel/main.cpp:34
 msgid "Apper"
 msgstr "Apper"
 
@@ -31,7 +31,7 @@ msgstr "Apper"
 msgid "Apper is an Application to Get and Manage Software"
 msgstr "Apper est une application destinée à obtenir et gérer des logiciels"
 
-#: Apper/main.cpp:58 ApperKCM/ApperKCM.cpp:82 Sentinel/main.cpp:38
+#: Apper/main.cpp:58 ApperKCM/ApperKCM.cpp:83 Sentinel/main.cpp:38
 msgid "(C) 2008-2011 Daniel Nicoletti"
 msgstr "(C) 2008-2011 Daniel Nicoletti"
 
@@ -129,18 +129,18 @@ msgctxt "No updates will be automatically installed"
 msgid "None"
 msgstr "Aucune"
 
-#: ApperKCM/Settings/Settings.cpp:249 libapper/PkStrings.cpp:962
+#: ApperKCM/Settings/Settings.cpp:250 libapper/PkStrings.cpp:962
 msgid "You do not have the necessary privileges to perform this action."
 msgstr ""
 "Vous ne disposez pas des privilèges nécessaires pour effectuer cette action."
 
-#: ApperKCM/Settings/Settings.cpp:250
+#: ApperKCM/Settings/Settings.cpp:251
 msgid "Failed to set origin data"
 msgstr "Impossible de définir les données d'origine"
 
 #: ApperKCM/Updater/DistroUpgrade.cpp:39 Sentinel/DistroUpgrade.cpp:63
 msgid "Distribution upgrade available"
-msgstr "Mise à niveau de la distribution disponible"
+msgstr "Mise à niveau disponible de la distribution"
 
 #: ApperKCM/Updater/DistroUpgrade.cpp:48 ApperKCM/Updater/DistroUpgrade.cpp:49
 #, kde-format
@@ -159,20 +159,20 @@ msgid ""
 "your packages."
 msgstr ""
 "Vous êtes sur le point de mettre à niveau votre distribution vers la toute "
-"dernière version. Ce processus est très d'ordinaire très lent et prend "
-"beaucoup plus de temps qu'une simple mise à niveau de vos paquetages."
+"dernière version. Ce processus est d'ordinaire très lent et prend beaucoup "
+"plus de temps qu'une simple mise à niveau de vos paquetages."
 
 #: ApperKCM/Updater/DistroUpgrade.cpp:69
 msgid "It is recommended to plug in your computer before proceeding."
-msgstr "Il est recommandé de brancher votre ordinateur avant de poursuivre."
+msgstr "Il est recommandé de connecter votre ordinateur avant de poursuivre."
 
 #: ApperKCM/Updater/DistroUpgrade.cpp:71
 msgid ""
 "It is recommended that you keep your computer plugged in while the upgrade "
 "is being performed."
 msgstr ""
-"Il est recommandé de maintenir votre 'ordinateur branché pendant l'exécution "
-"de la mise à niveau."
+"Il est recommandé de maintenir votre 'ordinateur connecté pendant "
+"l'exécution de la mise à niveau."
 
 #: ApperKCM/Updater/DistroUpgrade.cpp:98
 msgid "Distribution upgrade complete."
@@ -188,7 +188,7 @@ msgstr ""
 #: ApperKCM/Updater/DistroUpgrade.cpp:115 Sentinel/DistroUpgrade.cpp:134
 msgid "The distribution upgrade process failed to start."
 msgstr ""
-"Le processus de mise à jour de la distribution n'a pas réussi à démarrer."
+"Le processus de mise à niveau de la distribution n'a pas réussi à démarrer."
 
 #: ApperKCM/Updater/DistroUpgrade.cpp:119 Sentinel/DistroUpgrade.cpp:137
 msgid ""
@@ -207,13 +207,14 @@ msgstr ""
 #: ApperKCM/Updater/UpdateDetails.cpp:176
 msgid "This update will add new features and expand functionality."
 msgstr ""
-"Cette mise à jour ajoutera de nouvelles fonctions et étendra la "
+"Cette mise à jour ajoutera de nouvelles fonctions et élargira la "
 "fonctionnalité."
 
 #: ApperKCM/Updater/UpdateDetails.cpp:180
 msgid "This update will fix bugs and other non-critical problems."
 msgstr ""
-"Cette mise à jour corrigera les bogues et d'autres problèmes non critiques."
+"Cette mise à jour corrigera les bogues ainsi que d'autres problèmes non "
+"cruciaux."
 
 #: ApperKCM/Updater/UpdateDetails.cpp:184
 msgid "This update is important as it may solve critical problems."
@@ -226,7 +227,7 @@ msgid ""
 "This update is needed to fix a security vulnerability with this package."
 msgstr ""
 "Cette mise à jour est nécessaire pour corriger une vulnérabilité de sécurité "
-"avec ce paquetage."
+"concernant ce paquetage."
 
 #: ApperKCM/Updater/UpdateDetails.cpp:192
 msgid "This update is blocked."
@@ -244,7 +245,7 @@ msgstr ""
 msgid "This notification was issued on %1."
 msgstr "Cette notification a été émise le %1."
 
-#: ApperKCM/Updater/UpdateDetails.cpp:223
+#: ApperKCM/Updater/UpdateDetails.cpp:224
 msgid "For more information about this update please visit this website:"
 msgid_plural ""
 "For more information about this update please visit these websites:"
@@ -255,7 +256,7 @@ msgstr[1] ""
 "Pour plus d'informations à propos de cette mise à jour, veuillez consultez "
 "ces sites web :"
 
-#: ApperKCM/Updater/UpdateDetails.cpp:233
+#: ApperKCM/Updater/UpdateDetails.cpp:234
 msgid ""
 "For more information about bugs fixed by this update please visit this "
 "website:"
@@ -269,7 +270,7 @@ msgstr[1] ""
 "Pour plus d'informations à propos des bogues corrigés par cette mise à jour, "
 "veuillez visiter ces sites web :"
 
-#: ApperKCM/Updater/UpdateDetails.cpp:243
+#: ApperKCM/Updater/UpdateDetails.cpp:244
 msgid ""
 "For more information about this security update please visit this website:"
 msgid_plural ""
@@ -281,15 +282,15 @@ msgstr[1] ""
 "Pour plus d'informations à propos de cette mise à jour de sécurité, veuillez "
 "consulter ces sites web :"
 
-#: ApperKCM/Updater/UpdateDetails.cpp:253
+#: ApperKCM/Updater/UpdateDetails.cpp:254
 msgid ""
 "The computer will have to be restarted after the update for the changes to "
 "take effect."
 msgstr ""
-"Cet ordinateur doit être redémarré après la mise à jour pour que les "
+"Cet ordinateur nécessite un redémarrage après la mise à jour pour que les "
 "changements entrent en vigueur."
 
-#: ApperKCM/Updater/UpdateDetails.cpp:257
+#: ApperKCM/Updater/UpdateDetails.cpp:258
 msgid ""
 "You will need to log out and back in after the update for the changes to "
 "take effect."
@@ -297,7 +298,7 @@ msgstr ""
 "Vous allez devoir fermer la session et la redémarrer après la mise à jour "
 "pour que les changements entrent en vigueur."
 
-#: ApperKCM/Updater/UpdateDetails.cpp:264
+#: ApperKCM/Updater/UpdateDetails.cpp:265
 msgid ""
 "The classification of this update is unstable which means it is not designed "
 "for production use."
@@ -305,16 +306,16 @@ msgstr ""
 "La classification de cette mise à jour est instable, ce qui signifie qu'elle "
 "n'est pas conçue pour une utilisation en production."
 
-#: ApperKCM/Updater/UpdateDetails.cpp:268
+#: ApperKCM/Updater/UpdateDetails.cpp:269
 msgid ""
 "This is a test update, and is not designed for normal use. Please report any "
 "problems or regressions you encounter."
 msgstr ""
 "Il s'agit d'une mise à jour de test, et elle n'est pas conçue pour une "
-"utilisation normale. Veuillez signaler tout problème ou régression que vous "
-"rencontrez."
+"utilisation normale. Veuillez signaler tous problèmes ou régressions que "
+"vous rencontrez."
 
-#: ApperKCM/Updater/UpdateDetails.cpp:277
+#: ApperKCM/Updater/UpdateDetails.cpp:279
 msgid ""
 "The developer logs will be shown as no description is available for this "
 "update:"
@@ -322,57 +323,69 @@ msgstr ""
 "Les journaux des développeurs vont être affichés car aucune description "
 "n'est disponible pour cette mise à jour :"
 
-#: ApperKCM/Updater/UpdateDetails.cpp:285
+#: ApperKCM/Updater/UpdateDetails.cpp:287
 msgid "Updates:"
 msgstr "Mises à jour :"
 
-#: ApperKCM/Updater/UpdateDetails.cpp:295
+#: ApperKCM/Updater/UpdateDetails.cpp:297
 msgid "Obsoletes:"
 msgstr "Obsolètes :"
 
-#: ApperKCM/Updater/UpdateDetails.cpp:305
+#: ApperKCM/Updater/UpdateDetails.cpp:307
 msgid "Repository:"
 msgstr "Dépôt :"
 
-#: ApperKCM/Updater/UpdateDetails.cpp:337
+#: ApperKCM/Updater/UpdateDetails.cpp:339
 msgid "No update description was found."
 msgstr "Impossible de trouver une description de la mise à jour."
 
-#: ApperKCM/Updater/Updater.cpp:107 ApperKCM/BrowseView.cpp:90
+#: ApperKCM/Updater/Updater.cpp:110 ApperKCM/BrowseView.cpp:95
 msgid "Show Versions"
 msgstr "Afficher les versions"
 
-#: ApperKCM/Updater/Updater.cpp:115 ApperKCM/BrowseView.cpp:98
+#: ApperKCM/Updater/Updater.cpp:117
+#, fuzzy
+#| msgid "Show Versions"
+msgid "Show Current Versions"
+msgstr "Afficher les versions"
+
+#: ApperKCM/Updater/Updater.cpp:124 ApperKCM/BrowseView.cpp:102
 msgid "Show Architectures"
 msgstr "Afficher les architectures"
 
-#: ApperKCM/Updater/Updater.cpp:123 ApperKCM/BrowseView.cpp:106
+#: ApperKCM/Updater/Updater.cpp:131 ApperKCM/BrowseView.cpp:109
+#, fuzzy
+#| msgid "Software Origins"
+msgid "Show Origins"
+msgstr "Origines des logiciels"
+
+#: ApperKCM/Updater/Updater.cpp:138 ApperKCM/BrowseView.cpp:116
 msgid "Show Sizes"
 msgstr "Afficher les tailles"
 
-#: ApperKCM/Updater/Updater.cpp:216
+#: ApperKCM/Updater/Updater.cpp:255
 #, kde-format
 msgid "Estimated download size: %1"
 msgstr "Taille estimée du téléchargement : %1"
 
-#: ApperKCM/Updater/Updater.cpp:254
+#: ApperKCM/Updater/Updater.cpp:292
 msgid "Your system is up to date"
 msgstr "Votre système est à jour"
 
-#: ApperKCM/Updater/Updater.cpp:255 ApperKCM/Updater/Updater.cpp:259
+#: ApperKCM/Updater/Updater.cpp:293 ApperKCM/Updater/Updater.cpp:297
 #, kde-format
 msgid "Verified %1 ago"
 msgstr "Vérifié depuis %1"
 
-#: ApperKCM/Updater/Updater.cpp:258
+#: ApperKCM/Updater/Updater.cpp:296
 msgid "You have no updates"
 msgstr "Vous n'avez pas de mises à jour"
 
-#: ApperKCM/Updater/Updater.cpp:262
+#: ApperKCM/Updater/Updater.cpp:300
 msgid "Last check for updates was more than a month ago"
 msgstr "La dernière vérification des mises à jour remonte à plus d'un mois"
 
-#: ApperKCM/Updater/Updater.cpp:263
+#: ApperKCM/Updater/Updater.cpp:301
 msgid "It's strongly recommended that you check for new updates now"
 msgstr ""
 "Il est vivement recommandé de vérifier maintenant si vous avez de nouvelles "
@@ -380,7 +393,7 @@ msgstr ""
 
 #. i18n: file: ApperKCM/ApperKCM.ui:230
 #. i18n: ectx: property (text), widget (QPushButton, checkUpdatesPB)
-#: ApperKCM/Updater/Updater.cpp:351 rc.cpp:194
+#: ApperKCM/Updater/Updater.cpp:396 rc.cpp:194
 msgid "Check for new Updates"
 msgstr "Vérifier s'il existe de nouvelles mises à jour"
 
@@ -432,20 +445,20 @@ msgstr "Seulement les fichiers destinés à l'utilisateur final"
 
 #: ApperKCM/FiltersMenu.cpp:120
 msgid "Graphical"
-msgstr "Graphique"
+msgstr "Applications graphiques"
 
 #: ApperKCM/FiltersMenu.cpp:127
 msgid "Only graphical"
-msgstr "Seules les applications graphiques"
+msgstr "Seulement les applications graphiques"
 
 #: ApperKCM/FiltersMenu.cpp:134
 msgid "Only text"
-msgstr "Seulement du texte"
+msgstr "Seulement les applications de type texte"
 
 #: ApperKCM/FiltersMenu.cpp:150
 msgctxt "Filter for free packages"
 msgid "Free"
-msgstr "Libres"
+msgstr "Logiciel libre"
 
 #: ApperKCM/FiltersMenu.cpp:157
 msgid "Only free software"
@@ -466,11 +479,11 @@ msgstr "Seulement le code source"
 
 #: ApperKCM/FiltersMenu.cpp:195
 msgid "Only non-sourcecode"
-msgstr "Seulement le code non-source"
+msgstr "Seulement le code non source"
 
 #: ApperKCM/FiltersMenu.cpp:217
 msgid "Hide Subpackages"
-msgstr "Masquer les sous-paquetages"
+msgstr "Cacher les sous-paquetages"
 
 #: ApperKCM/FiltersMenu.cpp:219
 msgid "Only show one package, not subpackages"
@@ -499,76 +512,76 @@ msgstr "Afficher seulement les applications"
 
 #: ApperKCM/FiltersMenu.cpp:255
 msgid "Hide packages that are not applications"
-msgstr "Masquer les paquetages qui ne sont pas compatibles"
+msgstr "Cacher les paquetages qui ne sont pas des applications"
 
-#: ApperKCM/ApperKCM.cpp:78
+#: ApperKCM/ApperKCM.cpp:79
 msgid "Application Manager"
 msgstr "Gestionnaire d'applications"
 
-#: ApperKCM/ApperKCM.cpp:80
+#: ApperKCM/ApperKCM.cpp:81
 msgid "KDE interface for managing software"
 msgstr "Interface KDE pour la gestion de logiciels"
 
-#: ApperKCM/ApperKCM.cpp:110 ApperKCM/ApperKCM.cpp:291
+#: ApperKCM/ApperKCM.cpp:111 ApperKCM/ApperKCM.cpp:292
 msgid "Find"
 msgstr "Chercher"
 
-#: ApperKCM/ApperKCM.cpp:205
+#: ApperKCM/ApperKCM.cpp:206
 msgid "History"
 msgstr "Historique"
 
 #. i18n: file: ApperKCM/Settings/Settings.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, Settings)
-#: ApperKCM/ApperKCM.cpp:211 rc.cpp:140
+#: ApperKCM/ApperKCM.cpp:212 rc.cpp:140
 msgid "Settings"
 msgstr "Configuration"
 
-#: ApperKCM/ApperKCM.cpp:268 ApperKCM/ApperKCM.cpp:269
-#: ApperKCM/ApperKCM.cpp:270 ApperKCM/ApperKCM.cpp:271
+#: ApperKCM/ApperKCM.cpp:269 ApperKCM/ApperKCM.cpp:270
+#: ApperKCM/ApperKCM.cpp:271 ApperKCM/ApperKCM.cpp:272
 msgid "&Cancel"
 msgstr "&Annuler"
 
 #. i18n: file: ApperKCM/ApperKCM.ui:291
 #. i18n: ectx: property (text), widget (QToolButton, backTB)
-#: ApperKCM/ApperKCM.cpp:278 rc.cpp:200
+#: ApperKCM/ApperKCM.cpp:279 rc.cpp:200
 msgid "Find by &name"
 msgstr "Chercher par &nom"
 
 #. i18n: file: ApperKCM/ApperKCM.ui:301
 #. i18n: ectx: property (text), widget (QToolButton, backTB)
-#: ApperKCM/ApperKCM.cpp:279 rc.cpp:206
+#: ApperKCM/ApperKCM.cpp:280 rc.cpp:206
 msgid "Find by f&ile name"
 msgstr "Chercher par nom de f&ichier"
 
 #. i18n: file: ApperKCM/ApperKCM.ui:296
 #. i18n: ectx: property (text), widget (QToolButton, backTB)
-#: ApperKCM/ApperKCM.cpp:280 rc.cpp:203
+#: ApperKCM/ApperKCM.cpp:281 rc.cpp:203
 msgid "Find by &description"
 msgstr "Chercher par &description"
 
-#: ApperKCM/ApperKCM.cpp:414
+#: ApperKCM/ApperKCM.cpp:411
 msgid ""
 "The settings of the current module have changed.\n"
 "Do you want to apply the changes or discard them?"
 msgstr ""
 "Les paramètres du module actuel ont changé.\n"
-"Voulez-vous appliquer les changements ou les abandonner ?"
+"Voulez-vous appliquer les modifications ou les abandonner ?"
 
-#: ApperKCM/ApperKCM.cpp:416
+#: ApperKCM/ApperKCM.cpp:413
 msgid "Apply Settings"
-msgstr "Appliquer les paramètres"
+msgstr "Appliquer les réglages"
 
-#: ApperKCM/ApperKCM.cpp:458
+#: ApperKCM/ApperKCM.cpp:455
 msgid "General Settings"
-msgstr "Réglages généraux"
+msgstr "Paramètres généraux"
 
-#: ApperKCM/ApperKCM.cpp:459
+#: ApperKCM/ApperKCM.cpp:456
 msgid "Software Origins"
 msgstr "Origines des logiciels"
 
 #: ApperKCM/PackageDetails.cpp:73
 msgid "Display"
-msgstr "Afficher"
+msgstr "Affichage"
 
 #: ApperKCM/PackageDetails.cpp:80
 msgid "Description"
@@ -590,11 +603,11 @@ msgstr "Liste des fichiers"
 msgid "No files were found."
 msgstr "Aucun fichier n'a été trouvé."
 
-#: ApperKCM/PackageDetails.cpp:529
+#: ApperKCM/PackageDetails.cpp:530
 msgid "Could not fetch software details"
 msgstr "Impossible d'extraire les détails sur les logiciels"
 
-#: ApperKCM/PackageDetails.cpp:571
+#: ApperKCM/PackageDetails.cpp:572
 msgid "Applications"
 msgstr "Applications"
 
@@ -624,7 +637,7 @@ msgstr "Impossible de trouver une capture d'écran."
 
 #: ApperKCM/TransactionHistory.cpp:66
 msgid "Refresh transactions list"
-msgstr "Rafraîchir la liste de transactions"
+msgstr "Rafraîchir la liste des transactions"
 
 #: ApperKCM/TransactionHistory.cpp:87
 #, kde-format
@@ -635,11 +648,11 @@ msgstr "Temps écoulé depuis le dernier rafraîchissement du cache : %1"
 msgid "Date"
 msgstr "Date"
 
-#: ApperKCM/TransactionModel.cpp:47 libapper/PackageModel.cpp:186
+#: ApperKCM/TransactionModel.cpp:47 libapper/PackageModel.cpp:194
 msgid "Action"
 msgstr "Action"
 
-#: ApperKCM/TransactionModel.cpp:48 Sentinel/TransactionWatcher.cpp:292
+#: ApperKCM/TransactionModel.cpp:48 Sentinel/TransactionWatcher.cpp:308
 msgid "Details"
 msgstr "Détails"
 
@@ -684,8 +697,8 @@ msgstr[1] "Un programme veut installer des fichiers"
 #, kde-format
 msgid "The application %2 is asking to install a file"
 msgid_plural "The application %2 is asking to install files"
-msgstr[0] "L'application %2 veut installer un fichier"
-msgstr[1] "L'application %2 veut installer des fichiers"
+msgstr[0] "L'application %2 demande d'installer un fichier"
+msgstr[1] "L'application %2 demande d'installer des fichiers"
 
 #: Sentinel/PkInstallProvideFiles.cpp:88
 #: Sentinel/PkRemovePackageByFiles.cpp:128 Sentinel/PkSearchFile.cpp:54
@@ -710,8 +723,8 @@ msgstr "Impossible de trouver le paquetage"
 #: Sentinel/PkInstallProvideFiles.cpp:109
 msgid "The file could not be found in any packages"
 msgid_plural "The files could not be found in any packages"
-msgstr[0] "Impossible de trouver le fichier dans un paquetage"
-msgstr[1] "Impossible de trouver les fichiers dans un paquetage"
+msgstr[0] "Impossible de trouver le fichier dans un quelconque paquetage"
+msgstr[1] "Impossible de trouver les fichiers dans une quelconque paquetage"
 
 #: Sentinel/PkInstallPrinterDrivers.cpp:39
 msgid "Install Printer Drivers"
@@ -724,7 +737,7 @@ msgstr "Installer les pilotes d'imprimantes"
 #: Sentinel/PkInstallFontconfigResources.cpp:166
 #: Sentinel/PkInstallGStreamerResources.cpp:136
 msgid "Failed to search for provides"
-msgstr "Impossible de chercher « Fourni par »"
+msgstr "Impossible de chercher la liste « Fourni par »"
 
 #: Sentinel/PkInstallPrinterDrivers.cpp:87
 msgid "Failed to search for printer driver"
@@ -736,11 +749,11 @@ msgstr ""
 "Impossible de trouver un pilote d'imprimante dans une quelconque source de "
 "logiciels configurée"
 
-#: Sentinel/UpdateIcon.cpp:163
+#: Sentinel/UpdateIcon.cpp:160
 msgid "Review Updates"
 msgstr "Réviser les mises à jour"
 
-#: Sentinel/UpdateIcon.cpp:166
+#: Sentinel/UpdateIcon.cpp:163
 msgid "Configure"
 msgstr "Configurer"
 
@@ -748,31 +761,31 @@ msgstr "Configurer"
 #. i18n: ectx: property (text), widget (QToolButton, hideTB)
 #. i18n: file: ApperKCM/Updater/UpdateDetails.ui:20
 #. i18n: ectx: property (text), widget (QToolButton, hideTB)
-#: Sentinel/UpdateIcon.cpp:170 libapper/PkTransactionDialog.cpp:86 rc.cpp:137
-#: rc.cpp:173
+#: Sentinel/UpdateIcon.cpp:167 Sentinel/TransactionWatcher.cpp:186
+#: libapper/PkTransactionDialog.cpp:86 rc.cpp:137 rc.cpp:173
 msgid "Hide"
-msgstr "Masquer"
+msgstr "Cacher"
 
-#: Sentinel/UpdateIcon.cpp:180
+#: Sentinel/UpdateIcon.cpp:177
 #, kde-format
 msgid "You have one update"
 msgid_plural "You have %1 updates"
 msgstr[0] "Vous avez une mise à jour"
 msgstr[1] "Vous avez %1 mises à jour"
 
-#: Sentinel/UpdateIcon.cpp:233
+#: Sentinel/UpdateIcon.cpp:230
 msgid "Updates are being automatically installed."
 msgstr "Les mises à jour sont automatiquement installées."
 
-#: Sentinel/UpdateIcon.cpp:254
+#: Sentinel/UpdateIcon.cpp:251
 msgid "Security updates are being automatically installed."
 msgstr "Les mises à jour de sécurité sont automatiquement installées."
 
-#: Sentinel/UpdateIcon.cpp:281
+#: Sentinel/UpdateIcon.cpp:278
 msgid "System update was successful."
 msgstr "La mise à jour du système a réussi."
 
-#: Sentinel/UpdateIcon.cpp:290
+#: Sentinel/UpdateIcon.cpp:287
 msgid "The automated software update failed."
 msgstr "La mise à jour automatisée des logiciels a échoué."
 
@@ -834,8 +847,10 @@ msgstr "Impossible de trouver %1"
 #: Sentinel/PkInstallPackageNames.cpp:119
 msgid "The package could not be found in any software source"
 msgid_plural "The packages could not be found in any software source"
-msgstr[0] "Impossible de trouver le paquetage dans une source de logiciel"
-msgstr[1] "Impossible de trouver les paquetages dans une source de logiciels"
+msgstr[0] ""
+"Impossible de trouver le paquetage dans une quelconque source de logiciels"
+msgstr[1] ""
+"Impossible de trouver les paquetages dans une quelconque source de logiciels"
 
 #: Sentinel/PkInstallCatalogs.cpp:46
 msgid "Install Packages Catalogs"
@@ -876,8 +891,8 @@ msgstr "Non pris en charge"
 msgid ""
 "Your backend does not support any of the needed methods to install a catalog"
 msgstr ""
-"Votre moteur ne prend en charge l'une quelconque des méthodes nécessaires "
-"pour installer un catalogue"
+"Votre moteur ne prend en charge aucune des méthodes nécessaires pour "
+"installer un catalogue"
 
 #: Sentinel/PkInstallCatalogs.cpp:177
 msgid "Catalog not found"
@@ -907,78 +922,78 @@ msgid "Could not find any package to install in this catalog"
 msgstr ""
 "Impossible de trouver un quelconque paquetage à installer dans ce catalogue"
 
-#: Sentinel/SessionTask.cpp:66 libapper/Requirements.cpp:43
+#: Sentinel/SessionTask.cpp:66 libapper/Requirements.cpp:44
 msgid "Continue"
 msgstr "Continuer"
 
-#: Sentinel/SessionTask.cpp:361
+#: Sentinel/SessionTask.cpp:363
 msgid "There are no packages to Install or Remove"
 msgstr "Il n'existe pas de paquetages à installer ou supprimer"
 
-#: Sentinel/SessionTask.cpp:362
+#: Sentinel/SessionTask.cpp:364
 msgid "This action should not happen"
 msgstr "Cette action ne devrait pas avoir lieu"
 
-#: Sentinel/SessionTask.cpp:391
+#: Sentinel/SessionTask.cpp:393
 msgid "Could not find"
 msgstr "Introuvable"
 
-#: Sentinel/SessionTask.cpp:392 Sentinel/SessionTask.cpp:401
+#: Sentinel/SessionTask.cpp:394 Sentinel/SessionTask.cpp:403
 msgid "No packages were found that meet the request"
 msgstr "Aucun paquetage répondant à la requête n'a été trouvé"
 
-#: Sentinel/SessionTask.cpp:400
+#: Sentinel/SessionTask.cpp:402
 msgid "Failed to find"
 msgstr "Introuvable"
 
-#: Sentinel/SessionTask.cpp:422
+#: Sentinel/SessionTask.cpp:424
 msgid "Transaction did not finish with success"
-msgstr "La transaction ne s'est pas terminé avec succès"
+msgstr "La transaction ne s'est pas terminée avec succès"
 
-#: Sentinel/SessionTask.cpp:428
+#: Sentinel/SessionTask.cpp:430
 msgid "Task completed"
 msgstr "Tâche réalisée"
 
-#: Sentinel/SessionTask.cpp:428
+#: Sentinel/SessionTask.cpp:430
 msgid "All operations were committed successfully"
 msgstr "Toutes les opérations ont été validées avec succès"
 
-#: Sentinel/TransactionWatcher.cpp:64 Sentinel/TransactionWatcher.cpp:249
+#: Sentinel/TransactionWatcher.cpp:66 Sentinel/TransactionWatcher.cpp:265
 msgid "Hide this icon"
-msgstr "Masquer cette icône"
+msgstr "Cacher cette icône"
 
-#: Sentinel/TransactionWatcher.cpp:166
+#: Sentinel/TransactionWatcher.cpp:168
 msgid "The system update has completed"
 msgstr "La mise à jour du système est terminée"
 
-#: Sentinel/TransactionWatcher.cpp:172
+#: Sentinel/TransactionWatcher.cpp:174
 #, kde-format
 msgid "Packages: %1"
 msgstr "Paquetages : %1"
 
-#: Sentinel/TransactionWatcher.cpp:184
+#: Sentinel/TransactionWatcher.cpp:201
 #, kde-format
 msgid "Package: %2"
 msgid_plural "Packages: %2"
 msgstr[0] "Paquetage : %2"
 msgstr[1] "Paquetages : %2"
 
-#: Sentinel/TransactionWatcher.cpp:231 Sentinel/TransactionWatcher.cpp:271
+#: Sentinel/TransactionWatcher.cpp:247 Sentinel/TransactionWatcher.cpp:287
 msgid "Software Manager Messages"
 msgstr "Messages du gestionnaire de paquetages"
 
-#: Sentinel/TransactionWatcher.cpp:232
+#: Sentinel/TransactionWatcher.cpp:248
 #, kde-format
 msgid "One message from the software manager"
 msgid_plural "%1 messages from the software manager"
 msgstr[0] "Un message provenant du gestionnaire de paquetages"
 msgstr[1] "%1 messages provenant du gestionnaire de paquetages"
 
-#: Sentinel/TransactionWatcher.cpp:240
+#: Sentinel/TransactionWatcher.cpp:256
 msgid "Show messages"
 msgstr "Afficher les messages"
 
-#: Sentinel/TransactionWatcher.cpp:292
+#: Sentinel/TransactionWatcher.cpp:308
 msgid "Ignore"
 msgstr "Ignorer"
 
@@ -1038,8 +1053,8 @@ msgstr[1] ""
 #: Sentinel/PkInstallPlasmaResources.cpp:78
 msgid "Plasma requires an additional service for this operation"
 msgid_plural "Plasma requires additional services for this operation"
-msgstr[0] "Plasma nécessite un service supplémentaire pour cette opération"
-msgstr[1] "Plasma nécessite des services supplémentaires pour cette opération"
+msgstr[0] "Plasma requiert un service supplémentaire pour cette opération"
+msgstr[1] "Plasma requiert des services supplémentaires pour cette opération"
 
 #: Sentinel/PkInstallPlasmaResources.cpp:112
 msgid "Failed to search for Plasma service"
@@ -1066,7 +1081,7 @@ msgstr[1] ""
 
 #: Sentinel/PkInstallMimeTypes.cpp:55
 msgid "No valid file types were provided"
-msgstr "Aucun type de fichier valable n'a été trouvé"
+msgstr "Aucun type de fichier valable n'a été fourni"
 
 #: Sentinel/PkInstallMimeTypes.cpp:62
 msgid "A program is requiring support to open this kind of files"
@@ -1095,8 +1110,8 @@ msgstr "Impossible de trouver le ou les logiciels"
 #: Sentinel/PkInstallMimeTypes.cpp:103
 msgid "No new applications can be found to handle this type of file"
 msgstr ""
-"Impossible de trouver une quelconque application pour gérer ce type de "
-"fichier"
+"Impossible de trouver une quelconque nouvelle application pour gérer ce type "
+"de fichier"
 
 #: Sentinel/main.cpp:36
 msgid "Apper Sentinel"
@@ -1108,7 +1123,7 @@ msgstr "Trever Fischer"
 
 #: Sentinel/PkInstallPackageFiles.cpp:38
 msgid "Install Packages Files"
-msgstr "Installer des fichiers de paquetages"
+msgstr "Installer les fichiers des paquetages"
 
 #: Sentinel/PkInstallPackageFiles.cpp:42
 #: Sentinel/PkRemovePackageByFiles.cpp:43
@@ -1153,7 +1168,7 @@ msgstr "L'installation des fichiers a échoué"
 #: Sentinel/PkInstallPackageFiles.cpp:118
 #: Sentinel/PkInstallPackageFiles.cpp:120
 msgid "Could not install files"
-msgstr "Impossible d'installer des fichiers"
+msgstr "Impossible d'installer les fichiers"
 
 #: Sentinel/PkRemovePackageByFiles.cpp:40
 msgid "Remove Packages that Provides Files"
@@ -1174,28 +1189,28 @@ msgstr[1] "Voulez-vous chercher un paquetage fournissant ces fichiers ?"
 #: Sentinel/PkRemovePackageByFiles.cpp:82
 msgid "An application is asking to remove an application"
 msgid_plural "An application is asking to remove applications"
-msgstr[0] "Une application veut supprimer une application"
-msgstr[1] "Une application veut supprimer des applications"
+msgstr[0] "Une application demande de supprimer une application"
+msgstr[1] "Une application demande de supprimer des applications"
 
 #: Sentinel/PkRemovePackageByFiles.cpp:86
 msgid "An application is asking to remove a file"
 msgid_plural "An application is asking to remove files"
-msgstr[0] "Une application veut installer un fichier"
-msgstr[1] "Une application veut supprimer des fichiers"
+msgstr[0] "Une application demande de supprimer un fichier"
+msgstr[1] "Une application demande de supprimer des fichiers"
 
 #: Sentinel/PkRemovePackageByFiles.cpp:92
 #, kde-format
 msgid "The application <i>%2</i> is asking to remove an application"
 msgid_plural "The application <i>%2</i> is asking to remove applications"
-msgstr[0] "L'application <i>%2</i> veut supprimer des applications"
-msgstr[1] "L'application <i>%2</i> veut supprimer des applications"
+msgstr[0] "L'application <i>%2</i> demande de supprimer des applications"
+msgstr[1] "L'application <i>%2</i> demande de supprimer des applications"
 
 #: Sentinel/PkRemovePackageByFiles.cpp:97
 #, kde-format
 msgid "The application <i>%2</i> is asking to remove a file"
 msgid_plural "The application <i>%2</i> is asking to remove files"
-msgstr[0] "L'application <i>%2</i> veut supprimer un fichier"
-msgstr[1] "L'application <i>%2</i> veut installer des fichiers"
+msgstr[0] "L'application <i>%2</i> demande de supprimer un fichier"
+msgstr[1] "L'application <i>%2</i> demander de supprimer des fichiers"
 
 #: Sentinel/PkRemovePackageByFiles.cpp:103
 msgid "No application was found"
@@ -1204,8 +1219,10 @@ msgstr "Aucune application n'a été trouvée"
 #: Sentinel/PkRemovePackageByFiles.cpp:150
 msgid "The file could not be found in any installed package"
 msgid_plural "The files could not be found in any installed package"
-msgstr[0] "Impossible de trouver le fichier dans un paquetage installé"
-msgstr[1] "Impossible de trouver les fichiers dans un paquetage installé"
+msgstr[0] ""
+"Impossible de trouver le fichier dans un quelconque paquetage installé"
+msgstr[1] ""
+"Impossible de trouver les fichiers dans un quelconque paquetage installé"
 
 #: Sentinel/PkSearchFile.cpp:37
 msgid "Search Packages that Provides Files"
@@ -1213,7 +1230,9 @@ msgstr "Chercher des paquetages fournissant des fichiers"
 
 #: Sentinel/PkSearchFile.cpp:80
 msgid "The file name could not be found in any software source"
-msgstr "Impossible de trouver le nom du fichier dans une source de logiciel"
+msgstr ""
+"Impossible de trouver le nom du fichier dans une quelconque source de "
+"logiciels"
 
 #: Sentinel/PkInstallFontconfigResources.cpp:41
 msgid "Installs new Fonts"
@@ -1341,8 +1360,8 @@ msgstr "Aucun résultat n'a été trouvé"
 #: Sentinel/PkInstallGStreamerResources.cpp:149
 msgid "Could not find plugin in any configured software source"
 msgstr ""
-"Impossible de trouver un module externe dans une source de logiciels "
-"configurée"
+"Impossible de trouver un module externe dans une quelconque source de "
+"logiciels configurée"
 
 #: libapper/ChangesDelegate.cpp:45
 msgid "Do not Install"
@@ -1359,7 +1378,7 @@ msgstr "Désélectionner"
 #: libapper/CustomProgressBar.cpp:38
 #, kde-format
 msgid "%1 remaining"
-msgstr "%1 restant"
+msgstr "%1 restant(s)"
 
 #: libapper/PkStrings.cpp:32
 msgctxt "This is when the transaction status is not known"
@@ -1409,7 +1428,7 @@ msgstr "Installation des paquetages"
 #: libapper/PkStrings.cpp:59
 msgctxt "transaction state, refreshing internal lists"
 msgid "Refreshing software list"
-msgstr "Rafraîchissement de la liste de logiciels"
+msgstr "Rafraîchissement de la liste des logiciels"
 
 #: libapper/PkStrings.cpp:62
 msgctxt "transaction state, installing updates"
@@ -1481,7 +1500,7 @@ msgstr "Téléchargement de la liste de paquetages"
 #: libapper/PkStrings.cpp:101
 msgctxt "transaction state, downloading metadata"
 msgid "Downloading file lists"
-msgstr "Téléchargement des listes des fichiers"
+msgstr "Téléchargement des listes de fichiers"
 
 #: libapper/PkStrings.cpp:104
 msgctxt "transaction state, downloading metadata"
@@ -1577,7 +1596,7 @@ msgstr "Nettoyé"
 #: libapper/PkStrings.cpp:160
 msgctxt "The action of the package, in past tense"
 msgid "Obsoleted"
-msgstr "Obsolète"
+msgstr "Mis en obsolescence"
 
 #: libapper/PkStrings.cpp:171
 msgctxt "The role of the transaction, in present tense"
@@ -1642,7 +1661,7 @@ msgstr "Installation"
 #: libapper/PkStrings.cpp:195
 msgctxt "The role of the transaction, in present tense"
 msgid "Installing file"
-msgstr "Installation du fichier"
+msgstr "Installation de fichier(s)"
 
 #: libapper/PkStrings.cpp:197
 msgctxt "The role of the transaction, in present tense"
@@ -1672,7 +1691,7 @@ msgstr "Retour à l'état antérieur"
 #: libapper/PkStrings.cpp:207
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting list of repositories"
-msgstr "Obtention de la liste de dépôts"
+msgstr "Obtention de la liste des dépôts"
 
 #: libapper/PkStrings.cpp:209
 msgctxt "The role of the transaction, in present tense"
@@ -1697,7 +1716,7 @@ msgstr "Obtention de la liste des fichiers"
 #: libapper/PkStrings.cpp:217
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting what provides"
-msgstr "Obtention de « Fourni par »"
+msgstr "Obtention de la liste « Fourni par »"
 
 #: libapper/PkStrings.cpp:219
 msgctxt "The role of the transaction, in present tense"
@@ -1737,22 +1756,22 @@ msgstr "Obtention des anciennes transactions"
 #: libapper/PkStrings.cpp:233
 msgctxt "The role of the transaction, in present tense"
 msgid "Simulating the install of files"
-msgstr "Simuler l'installation des fichiers"
+msgstr "Simulation de l'installation des fichiers"
 
 #: libapper/PkStrings.cpp:235
 msgctxt "The role of the transaction, in present tense"
 msgid "Simulating the install"
-msgstr "Simuler l'installation"
+msgstr "Simulation de l'installation"
 
 #: libapper/PkStrings.cpp:237
 msgctxt "The role of the transaction, in present tense"
 msgid "Simulating the remove"
-msgstr "Simuler la suppression"
+msgstr "Simulation de la suppression"
 
 #: libapper/PkStrings.cpp:239
 msgctxt "The role of the transaction, in present tense"
 msgid "Simulating the update"
-msgstr "Simuler la mise à jour"
+msgstr "Simulation de la mise à jour"
 
 #: libapper/PkStrings.cpp:241
 msgctxt "The role of the transaction, in present tense"
@@ -1792,7 +1811,7 @@ msgstr "Mises à jour obtenues"
 #: libapper/PkStrings.cpp:263
 msgctxt "The role of the transaction, in past tense"
 msgid "Searched for package details"
-msgstr "Détails des paquetages recherchés"
+msgstr "Détails des paquetages cherchés"
 
 #: libapper/PkStrings.cpp:265
 msgctxt "The role of the transaction, in past tense"
@@ -1832,7 +1851,7 @@ msgstr "Cache de paquetages rafraîchi"
 #: libapper/PkStrings.cpp:279
 msgctxt "The role of the transaction, in past tense"
 msgid "Updated packages"
-msgstr "Paquetages mis à jour"
+msgstr " Paquetages mis à jour"
 
 #: libapper/PkStrings.cpp:281
 msgctxt "The role of the transaction, in past tense"
@@ -1877,7 +1896,7 @@ msgstr "Liste des fichiers obtenue"
 #: libapper/PkStrings.cpp:297
 msgctxt "The role of the transaction, in past tense"
 msgid "Got what provides"
-msgstr "« Fourni par » obtenu"
+msgstr "Liste « Fourni par » obtenue"
 
 #: libapper/PkStrings.cpp:299
 msgctxt "The role of the transaction, in past tense"
@@ -1941,39 +1960,39 @@ msgstr "Système mis à niveau"
 
 #: libapper/PkStrings.cpp:331
 msgid "Downloading"
-msgstr "Téléchargement"
+msgstr "Téléchargement en cours"
 
 #: libapper/PkStrings.cpp:333
 msgid "Updating"
-msgstr "Mise à jour"
+msgstr "Mise à jour en cours"
 
 #: libapper/PkStrings.cpp:335
 msgid "Installing"
-msgstr "Installation"
+msgstr "Installation en cours"
 
 #: libapper/PkStrings.cpp:337
 msgid "Removing"
-msgstr "Suppression"
+msgstr "Suppression en cours"
 
 #: libapper/PkStrings.cpp:339
 msgid "Cleaning up"
-msgstr "Nettoyage"
+msgstr "Nettoyage en cours"
 
 #: libapper/PkStrings.cpp:341
 msgid "Obsoleting"
-msgstr "Rendre obsolète"
+msgstr "Mise en obsolescence en cours"
 
 #: libapper/PkStrings.cpp:343
 msgid "Reinstalling"
-msgstr "Réinstallation"
+msgstr "Réinstallation en cours"
 
 #: libapper/PkStrings.cpp:345
 msgid "Preparing"
-msgstr "Préparation"
+msgstr "Préparation en cours"
 
 #: libapper/PkStrings.cpp:347
 msgid "Decompressing"
-msgstr "Décompression"
+msgstr "Décompression en cours"
 
 #: libapper/PkStrings.cpp:358
 msgid "Downloaded"
@@ -1993,7 +2012,7 @@ msgstr "Nettoyé"
 
 #: libapper/PkStrings.cpp:368
 msgid "Obsoleted"
-msgstr "Obsolète"
+msgstr "Mis en obsolescence"
 
 #: libapper/PkStrings.cpp:370
 msgid "Reinstalled"
@@ -2033,7 +2052,7 @@ msgstr "Une erreur système interne est survenue"
 
 #: libapper/PkStrings.cpp:397
 msgid "A security trust relationship is not present"
-msgstr "Une relation de sécurité fiable n'est pas présente"
+msgstr "Une relation de confiance liée à la sécurité n'est pas présente"
 
 #: libapper/PkStrings.cpp:399
 msgid "The package is not installed"
@@ -2073,7 +2092,7 @@ msgstr "L'identifiant de paquetage n'est pas bien formé"
 
 #: libapper/PkStrings.cpp:417
 msgid "Transaction error"
-msgstr "Erreur de transaction"
+msgstr "Problème lors de la transaction"
 
 #: libapper/PkStrings.cpp:419
 msgid "Repository name was not found"
@@ -2141,7 +2160,7 @@ msgstr "Impossible d'écrire la configuration du dépôt"
 
 #: libapper/PkStrings.cpp:451
 msgid "Local install failed"
-msgstr "Installation locale impossible"
+msgstr "L'installation locale a échoué"
 
 #: libapper/PkStrings.cpp:453
 msgid "Bad GPG signature"
@@ -2181,7 +2200,7 @@ msgstr "Pas d'autres miroirs disponibles"
 
 #: libapper/PkStrings.cpp:471
 msgid "No distribution upgrade data is available"
-msgstr "Pas de données de mise à niveau disponibles"
+msgstr "Pas de données de mise à niveau de la distribution disponibles"
 
 #: libapper/PkStrings.cpp:473
 msgid "Package is incompatible with this system"
@@ -2191,7 +2210,7 @@ msgstr "Le paquetage est incompatible avec le système"
 msgid "No space is left on the disk"
 msgstr "Il ne reste plus d'espace sur le disque"
 
-#: libapper/PkStrings.cpp:477 libapper/PkTransaction.cpp:578
+#: libapper/PkStrings.cpp:477 libapper/PkTransaction.cpp:579
 msgid "A media change is required"
 msgstr "Un changement de média est nécessaire"
 
@@ -2276,7 +2295,7 @@ msgid ""
 "There is no network connection available.\n"
 "Please check your connection settings and try again"
 msgstr ""
-"Il n'y a aucune connexion réseau disponible.\n"
+"Il n'existe aucune connexion réseau disponible.\n"
 "Veuillez vérifier vos paramètres de connexion et essayer à nouveau"
 
 #: libapper/PkStrings.cpp:528
@@ -2284,8 +2303,9 @@ msgid ""
 "The package list needs to be rebuilt.\n"
 "This should have been done by the backend automatically."
 msgstr ""
-"La liste de paquetages doit être reconstruite.\n"
-"Cette opération aurait dû être effectuée par le moteur automatiquement."
+"La liste des paquetages doit être reconstruite.\n"
+"Cette opération aurait dû être effectuée par le programme principal "
+"automatiquement."
 
 #: libapper/PkStrings.cpp:531
 msgid ""
@@ -2317,16 +2337,16 @@ msgid ""
 "Please report this bug with the error description."
 msgstr ""
 "Un problème inattendu est survenu.\n"
-"Veuillez envoyer un rapport à propos de ce bogue avec la description de "
-"l'erreur."
+"Veuillez envoyer un rapport à propos de ce bogue comportant la description "
+"de l'erreur."
 
 #: libapper/PkStrings.cpp:542
 msgid ""
 "A security trust relationship could not be made with the software origin.\n"
 "Please check your software signature settings."
 msgstr ""
-"Impossible d'établir une relation de sécurité fiable avec l'origine de "
-"logiciels.\n"
+"Impossible d'établir une relation de confiance liée à la sécurité avec "
+"l'origine des logiciels.\n"
 "Veuillez vérifier vos paramètres de signature de logiciels."
 
 #: libapper/PkStrings.cpp:545
@@ -2393,7 +2413,7 @@ msgid ""
 msgstr ""
 "L'identifiant de paquetage n'était pas bien formé lorsqu'il a été envoyé au "
 "démon système.\n"
-"Ce problème indique normalement un bogue interne et devrait être signalé."
+"Ce problème indique normalement un bogue interne et devra être signalé."
 
 #: libapper/PkStrings.cpp:569
 msgid ""
@@ -2426,14 +2446,14 @@ msgid ""
 "The backend did not exit cleanly."
 msgstr ""
 "La tâche a été annulée avec succès et aucun paquetage n'a été modifié.\n"
-"Le moteur ne s'est pas fermé proprement."
+"Le programme principal ne s'est pas fermé proprement."
 
 #: libapper/PkStrings.cpp:582
 msgid ""
 "The native package configuration file could not be opened.\n"
 "Please make sure your system's configuration is valid."
 msgstr ""
-"Impossible d'ouvrir le fichier de configuration natif du paquetage.\n"
+"Impossible d'ouvrir le fichier de configuration natif des paquetages.\n"
 "Veuillez vous assurer que la configuration de votre système est correcte."
 
 #: libapper/PkStrings.cpp:585
@@ -2462,8 +2482,8 @@ msgid ""
 "This is usually due to mixing packages for different software origins."
 msgstr ""
 "Deux paquetages fournissent le même fichier.\n"
-"Ce problème est habituellement dû à un mélange de paquetages pour "
-"différentes origines de logiciels."
+"Ce problème est habituellement dû à un mélange de paquetages pour des "
+"origines de logiciels différentes."
 
 #: libapper/PkStrings.cpp:596
 msgid ""
@@ -2471,17 +2491,17 @@ msgid ""
 "This is usually due to mixing packages from different software origins."
 msgstr ""
 "Plusieurs paquetages existent, qui ne sont pas compatibles entre eux.\n"
-"Ce problème est habituellement dû à un mélange de paquetages pour "
-"différentes origines de logiciels."
+"Ce problème est habituellement dû à un mélange de paquetages pour des "
+"origines de logiciels différentes."
 
 #: libapper/PkStrings.cpp:599
 msgid ""
 "There was a (possibly temporary) problem connecting to a software origins.\n"
 "Please check the detailed error for further details."
 msgstr ""
-"Il y a eu un problème (peut-être temporaire) en se connectant à une origine "
-"de logiciels.\n"
-"Veuillez vérifier l'erreur détaillée pour plus d'informations."
+"Un problème (peut-être temporaire) est survenue en se connectant à une "
+"origine de logiciels.\n"
+"Veuillez vérifier l'erreur détaillée pour obtenir plus d'informations."
 
 #: libapper/PkStrings.cpp:602
 msgid ""
@@ -2489,15 +2509,15 @@ msgid ""
 "This may occur if other packaging tools are being used simultaneously."
 msgstr ""
 "Impossible d'initialiser le moteur de conditionnement de paquetages.\n"
-"Ce problème peut survenir si d'autres outils de conditionnement sont "
-"utilisés simultanément."
+"Ce problème peut survenir si on utilise d'autres outils de conditionnement "
+"de paquetages simultanément."
 
 #: libapper/PkStrings.cpp:605
 msgid ""
 "Failed to close down the backend instance.\n"
 "This error can normally be ignored."
 msgstr ""
-"Impossible de fermer définitivement l'instance du moteur.\n"
+"Impossible de fermer définitivement l'instance du programme principal.\n"
 "Cette erreur peut normalement être ignorée."
 
 #: libapper/PkStrings.cpp:608
@@ -2507,8 +2527,8 @@ msgid ""
 msgstr ""
 "Impossible d'obtenir le verrou exclusif sur le moteur de conditionnement de "
 "paquetages.\n"
-"Veuillez fermer l'un quelconque des anciens autres outils de conditionnement "
-"susceptibles d'être ouverts."
+"Veuillez fermer tout autre ancien outil de conditionnement susceptible "
+"d'être ouvert."
 
 #: libapper/PkStrings.cpp:611
 msgid "None of the selected packages could be updated."
@@ -2536,8 +2556,8 @@ msgid ""
 "The package signature was missing and this package is untrusted.\n"
 "This package was not signed with a GPG key when created."
 msgstr ""
-"La signature des paquetages est absente et ce paquetage est douteux.\n"
-"Ce paquetage n'a pas été signé avec une clé GPG lors de sa création."
+"La signature du paquetage est absente et ce paquetage est douteux.\n"
+"Il n'a pas été signé avec une clé GPG lors de sa création."
 
 #: libapper/PkStrings.cpp:623
 msgid "Repository configuration was invalid and could not be read."
@@ -2550,8 +2570,7 @@ msgid ""
 "The package file could be corrupt, or not a proper package."
 msgstr ""
 "Le paquetage que vous tentez d'installer n'est pas valable.\n"
-"Il se peut que le paquetage soit corrompu ou que ce ne soit pas un paquetage "
-"approprié."
+"Il se peut qu'il soit corrompu ou que ce ne soit pas un paquetage approprié."
 
 #: libapper/PkStrings.cpp:628
 msgid ""
@@ -2599,7 +2618,7 @@ msgid ""
 msgstr ""
 "Impossible de trouver les données de mise à niveau requises dans l'une "
 "quelconque des origines de logiciels configurées.\n"
-"Le liste de mises à niveau de distribution sera indisponible."
+"Le liste des mises à niveau de distribution sera indisponible."
 
 #: libapper/PkStrings.cpp:643
 msgid ""
@@ -2624,7 +2643,7 @@ msgid ""
 "Please check any passwords or account settings."
 msgstr ""
 "Vous n'avez pas réussi à fournir une authentification correcte.\n"
-"Veuillez vérifier les mots de passe ou les paramètres de comptes."
+"Veuillez vérifier tout mot de passe ou paramètres de compte."
 
 #: libapper/PkStrings.cpp:653
 msgid ""
@@ -2662,8 +2681,8 @@ msgid ""
 "The download could not be done automatically and should be done manually.\n"
 "More information is available in the detailed report."
 msgstr ""
-"Impossible d'effectuer automatiquement le téléchargement, il devra être fait "
-"manuellement.\n"
+"Impossible d'effectuer le téléchargement automatiquement, il faudra le faire "
+"à la main.\n"
 "Des informations complémentaires sont disponibles dans le rapport détaillé."
 
 #: libapper/PkStrings.cpp:669
@@ -2671,7 +2690,7 @@ msgid ""
 "One of the selected packages failed to configure correctly.\n"
 "More information is available in the detailed report."
 msgstr ""
-"Impossible de configurer correctement un des paquetages sélectionnés.\n"
+"Impossible de configurer correctement l'un des paquetages sélectionnés.\n"
 "Des informations complémentaires sont disponibles dans le rapport détaillé."
 
 #: libapper/PkStrings.cpp:672
@@ -2679,7 +2698,7 @@ msgid ""
 "One of the selected packages failed to build correctly.\n"
 "More information is available in the detailed report."
 msgstr ""
-"Impossible de construire correctement un des paquetages sélectionnés.\n"
+"Impossible de construire correctement l'un des paquetages sélectionnés.\n"
 "Des informations complémentaires sont disponibles dans le rapport détaillé."
 
 #: libapper/PkStrings.cpp:675
@@ -2687,7 +2706,7 @@ msgid ""
 "One of the selected packages failed to install correctly.\n"
 "More information is available in the detailed report."
 msgstr ""
-"Impossible d'installer correctement un des paquetages sélectionnés.\n"
+"Impossible d'installer correctement l'un des paquetages sélectionnés.\n"
 "Des informations complémentaires sont disponibles dans le rapport détaillé."
 
 #: libapper/PkStrings.cpp:678
@@ -2695,7 +2714,7 @@ msgid ""
 "One of the selected packages failed to be removed correctly.\n"
 "More information is available in the detailed report."
 msgstr ""
-"Impossible de supprimer correctement un des paquetages sélectionnés.\n"
+"Impossible de supprimer correctement l'un des paquetages sélectionnés.\n"
 "Des informations complémentaires sont disponibles dans le rapport détaillé."
 
 #: libapper/PkStrings.cpp:681
@@ -2710,7 +2729,8 @@ msgstr ""
 #: libapper/PkStrings.cpp:684
 msgid "The package database was changed while the request was running."
 msgstr ""
-"La base de données de paquetages a changé pendant l'exécution de la requête."
+"La base de données de paquetages a été modifiée pendant l'exécution de la "
+"requête."
 
 #: libapper/PkStrings.cpp:686
 msgid "The virtual provide type is not supported by this system."
@@ -2941,7 +2961,7 @@ msgstr "Mise à jour de sécurité"
 #: libapper/PkStrings.cpp:791
 msgctxt "The type of update"
 msgid "Bug fix update"
-msgstr "Mise à jour corrective"
+msgstr "Mise à jour corrigeant un bogue"
 
 #: libapper/PkStrings.cpp:793
 msgctxt "The type of update"
@@ -2977,7 +2997,7 @@ msgstr "Pas de mises à jour disponibles"
 msgctxt "Some updates were selected on the view"
 msgid "1 Update Selected"
 msgid_plural "%1 Updates Selected"
-msgstr[0] "1 mise à jour sélectionnée"
+msgstr[0] "Une mise à jour sélectionnée"
 msgstr[1] "%1 mises à jour sélectionnées"
 
 #: libapper/PkStrings.cpp:821
@@ -2985,7 +3005,7 @@ msgstr[1] "%1 mises à jour sélectionnées"
 msgctxt "Some updates are being shown on the screen"
 msgid "1 Update"
 msgid_plural "%1 Updates"
-msgstr[0] "1 mise à jour"
+msgstr[0] "Une mise à jour"
 msgstr[1] "%1 mises à jour"
 
 #: libapper/PkStrings.cpp:825
@@ -3018,7 +3038,7 @@ msgstr "Pas de paquetages"
 #, kde-format
 msgid "1 Package"
 msgid_plural "%1 Packages"
-msgstr[0] "1 paquetage"
+msgstr[0] "Un paquetage"
 msgstr[1] "%1 paquetages"
 
 #: libapper/PkStrings.cpp:840
@@ -3035,7 +3055,7 @@ msgstr "Vous allez devoir fermer la session et la redémarrer"
 
 #: libapper/PkStrings.cpp:846
 msgid "A restart will be required"
-msgstr "Un redémarrage sera nécessaire"
+msgstr "Un redémarrage sera requis"
 
 #: libapper/PkStrings.cpp:848
 msgid "You will be required to log out and back in due to a security update."
@@ -3045,20 +3065,19 @@ msgstr ""
 
 #: libapper/PkStrings.cpp:850
 msgid "A restart will be required due to a security update."
-msgstr ""
-"Un redémarrage sera nécessaire en raison d'une mise à jour de sécurité."
+msgstr "Un redémarrage sera requis en raison d'une mise à jour de sécurité."
 
 #: libapper/PkStrings.cpp:863
 msgid "No restart is required"
-msgstr "Aucun redémarrage n'est nécessaire"
+msgstr "Aucun redémarrage n'est requis"
 
 #: libapper/PkStrings.cpp:865
 msgid "A restart is required"
-msgstr "Un redémarrage est nécessaire"
+msgstr "Un redémarrage est requis"
 
 #: libapper/PkStrings.cpp:867
 msgid "You need to log out and log back in"
-msgstr "Vous devez vous fermer la session et la redémarrer"
+msgstr "Vous devez fermer la session et la redémarrer"
 
 #: libapper/PkStrings.cpp:869
 msgid "You need to restart the application"
@@ -3066,11 +3085,11 @@ msgstr "Vous devez redémarrer l'application"
 
 #: libapper/PkStrings.cpp:871
 msgid "You need to log out and log back in to remain secure."
-msgstr "Vous devez fermer la session et la redémarrer pour rester protégé."
+msgstr "Vous devez fermer la session et la redémarrer pour rester en sécurité."
 
 #: libapper/PkStrings.cpp:873
 msgid "A restart is required to remain secure."
-msgstr "Un redémarrage est nécessaire pour rester protégé."
+msgstr "Un redémarrage est requis pour rester en sécurité."
 
 #: libapper/PkStrings.cpp:886
 msgid "Stable"
@@ -3106,7 +3125,7 @@ msgstr "Veuillez insérer le média étiqueté « %1 » et cliquer sur Continu
 
 #: libapper/PkStrings.cpp:919
 msgid "A mirror is possibly broken"
-msgstr "Un miroir est peut-être brisé"
+msgstr "Il se peut qu'un miroir soit défectueux"
 
 #: libapper/PkStrings.cpp:921
 msgid "The connection was refused"
@@ -3146,7 +3165,7 @@ msgstr "Impossible de trouver le paquetage"
 
 #: libapper/PkStrings.cpp:939
 msgid "Configuration files were changed"
-msgstr "Les fichiers de configurations ont changé"
+msgstr "Les fichiers de configuration ont été modifiés"
 
 #: libapper/PkStrings.cpp:941
 msgid "Package is already installed"
@@ -3215,52 +3234,24 @@ msgstr ""
 msgid "Package"
 msgstr "Paquetage"
 
-#: libapper/SimulateModel.cpp:141 libapper/PackageModel.cpp:180
+#: libapper/SimulateModel.cpp:141 libapper/PackageModel.cpp:184
 msgid "Version"
 msgstr "Version"
 
-#: libapper/Requirements.cpp:41
-msgid "Additional changes"
-msgstr "Changements supplémentaires"
-
-#: libapper/Requirements.cpp:62
-#, kde-format
-msgid "1 package to remove"
-msgid_plural "%1 packages to remove"
-msgstr[0] "1 paquetage à supprimer"
-msgstr[1] "%1 paquetages à supprimer"
-
-#: libapper/Requirements.cpp:77
-#, kde-format
-msgid "1 package to downgrade"
-msgid_plural "%1 packages to downgrade"
-msgstr[0] "1 paquetage à mettre à niveau"
-msgstr[1] "%1 paquetages à mettre à niveau"
-
-#: libapper/Requirements.cpp:92
-#, kde-format
-msgid "1 package to reinstall"
-msgid_plural "%1 packages to reinstall"
-msgstr[0] "1 paquetage à réinstaller"
-msgstr[1] "%1 paquetages à réinstaller"
-
-#: libapper/Requirements.cpp:105
-#, kde-format
-msgid "1 package to install"
-msgid_plural "%1 packages to install"
-msgstr[0] "1 paquetage à installer"
-msgstr[1] "%1 paquetages à installer"
-
-#: libapper/Requirements.cpp:118
-#, kde-format
-msgid "1 package to update"
-msgid_plural "%1 packages to update"
-msgstr[0] "1 paquetage à mettre à jour"
-msgstr[1] "%1 paquetages à mettre à jour"
+#: libapper/ApplicationLauncher.cpp:95
+msgid "The following application was just installed. Click on it to launch:"
+msgid_plural ""
+"The following applications were just installed. Click on them to launch:"
+msgstr[0] ""
+"L'application suivante vient d'être installée. Cliquez dessus pour la "
+"lancer :"
+msgstr[1] ""
+"Les applications suivantes viennent d'être installées. Cliquez dessus pour "
+"les lancer :"
 
 #: libapper/LicenseAgreement.cpp:36
 msgid "Accept Agreement"
-msgstr "Accepter l'accord"
+msgstr "Accepter l'accord de licence"
 
 #. i18n: file: libapper/LicenseAgreement.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, LicenseAgreement)
@@ -3273,16 +3264,86 @@ msgstr "Accord de licence requis"
 msgid "License required for %1 by %2"
 msgstr "Licence requise pour %1 par %2"
 
-#: libapper/ApplicationLauncher.cpp:99
-msgid "The following application was just installed. Click on it to launch:"
-msgid_plural ""
-"The following applications were just installed. Click on them to launch:"
-msgstr[0] ""
-"L'application suivante vient d'être installée. Cliquez dessus pour la "
-"lancer :"
-msgstr[1] ""
-"Les applications suivantes viennent d'être installées. Cliquez dessus pour "
-"les lancer :"
+#: libapper/PackageModel.cpp:182
+msgid "Name"
+msgstr "Nom"
+
+#: libapper/PackageModel.cpp:186
+#, fuzzy
+#| msgctxt "The role of the transaction, in past tense"
+#| msgid "Installed signature"
+msgid "Installed Version"
+msgstr "Signature installée"
+
+#: libapper/PackageModel.cpp:188
+msgid "Arch"
+msgstr "Arch"
+
+#: libapper/PackageModel.cpp:190
+#, fuzzy
+#| msgid "Edit Origins"
+msgid "Origin"
+msgstr "Modifier les origines"
+
+#: libapper/PackageModel.cpp:192
+msgid "Size"
+msgstr "Taille"
+
+#: libapper/PackageModel.cpp:283
+#, kde-format
+msgid ""
+"Version: %1\n"
+"Architecture: %2"
+msgstr ""
+"Version : %1\n"
+"Architecture : %2"
+
+#: libapper/PackageModel.cpp:329
+msgid "To be Removed"
+msgstr "À supprimer"
+
+#: libapper/PackageModel.cpp:331
+msgid "To be Installed"
+msgstr "À installer"
+
+#: libapper/Requirements.cpp:42
+msgid "Additional changes"
+msgstr "Changements supplémentaires"
+
+#: libapper/Requirements.cpp:63
+#, kde-format
+msgid "1 package to remove"
+msgid_plural "%1 packages to remove"
+msgstr[0] "Un paquetage à supprimer"
+msgstr[1] "%1 paquetages à supprimer"
+
+#: libapper/Requirements.cpp:78
+#, kde-format
+msgid "1 package to downgrade"
+msgid_plural "%1 packages to downgrade"
+msgstr[0] "Un paquetage à rétrograder"
+msgstr[1] "%1 paquetages à rétrograder"
+
+#: libapper/Requirements.cpp:93
+#, kde-format
+msgid "1 package to reinstall"
+msgid_plural "%1 packages to reinstall"
+msgstr[0] "Un paquetage à réinstaller"
+msgstr[1] "%1 paquetages à réinstaller"
+
+#: libapper/Requirements.cpp:106
+#, kde-format
+msgid "1 package to install"
+msgid_plural "%1 packages to install"
+msgstr[0] "Un paquetage à installer"
+msgstr[1] "%1 paquetages à installer"
+
+#: libapper/Requirements.cpp:119
+#, kde-format
+msgid "1 package to update"
+msgid_plural "%1 packages to update"
+msgstr[0] "Un paquetage à mettre à jour"
+msgstr[1] "%1 paquetages à mettre à jour"
 
 #: libapper/PkTransaction.cpp:122
 msgid "Failed to simulate file install"
@@ -3307,7 +3368,7 @@ msgstr "Le moteur actuel ne prend pas en charge l'installation de paquetages."
 
 #: libapper/PkTransaction.cpp:171
 msgid "Failed to simulate package removal"
-msgstr "Impossible de simuler la suppression du paquetage"
+msgstr "Impossible de simuler la suppression de paquetages"
 
 #: libapper/PkTransaction.cpp:179
 msgid "The current backend does not support removing packages."
@@ -3315,7 +3376,7 @@ msgstr "Le moteur actuel ne prend pas en charge la suppression de paquetages."
 
 #: libapper/PkTransaction.cpp:195
 msgid "Failed to simulate package update"
-msgstr "Impossible de simuler la mise à jour du paquetage"
+msgstr "Impossible de simuler la mise à jour de paquetages"
 
 #: libapper/PkTransaction.cpp:202
 msgid "The current backend does not support updating packages."
@@ -3349,7 +3410,7 @@ msgid ""
 "\n"
 "Are you sure you want to proceed with the installation?"
 msgstr ""
-"Vous êtes sur le point d'installer des paquetages non signés, ce qui peut "
+"Vous êtes sur le point d'installer des paquetages non signés qui risquent de "
 "compromettre votre système, car il est impossible de vérifier si les "
 "logiciels proviennent d'une source de confiance.\n"
 "\n"
@@ -3359,38 +3420,15 @@ msgstr ""
 msgid "Installing unsigned software"
 msgstr "Installer des logiciels non signés"
 
-#: libapper/PkTransaction.cpp:563 libapper/PkTransaction.cpp:616
+#: libapper/PkTransaction.cpp:564 libapper/PkTransaction.cpp:618
 msgid "Failed to install signature"
 msgstr "L'installation de la signature a échoué"
 
-#: libapper/PackageModel.cpp:178
-msgid "Name"
-msgstr "Nom"
-
-#: libapper/PackageModel.cpp:182
-msgid "Arch"
-msgstr "Arch"
-
-#: libapper/PackageModel.cpp:184
-msgid "Size"
-msgstr "Taille"
-
-#: libapper/PackageModel.cpp:272
-#, kde-format
-msgid ""
-"Version: %1\n"
-"Architecture: %2"
-msgstr ""
-"Version : %1\n"
-"Architecture : %2"
-
-#: libapper/PackageModel.cpp:315
-msgid "To be Removed"
-msgstr "À supprimer"
-
-#: libapper/PackageModel.cpp:317
-msgid "To be Installed"
-msgstr "À installer"
+#. i18n: file: libapper/RepoSig.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, RepoSig)
+#: libapper/RepoSig.cpp:40 rc.cpp:218
+msgid "Software signature is required"
+msgstr "La signature des logiciels est requise"
 
 #: libapper/ApplicationsDelegate.cpp:40
 msgid "Install"
@@ -3399,12 +3437,6 @@ msgstr "Installer"
 #: libapper/ApplicationsDelegate.cpp:42
 msgid "Remove"
 msgstr "Supprimer"
-
-#. i18n: file: libapper/RepoSig.ui:14
-#. i18n: ectx: property (windowTitle), widget (QWidget, RepoSig)
-#: libapper/RepoSig.cpp:40 rc.cpp:218
-msgid "Software signature is required"
-msgstr "La signature des logiciels est requise"
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
@@ -3542,7 +3574,7 @@ msgstr "Chercher un groupe"
 #. i18n: ectx: property (text), widget (QCheckBox, getUpdateDetailCB)
 #: rc.cpp:71
 msgid "Get Update Detail"
-msgstr "Obtenir les détails de la mise à jour"
+msgstr "Obtenir les détails des mises à jour"
 
 #. i18n: file: Apper/BackendDetails.ui:272
 #. i18n: ectx: property (text), widget (QCheckBox, searchFileCB)
@@ -3566,7 +3598,7 @@ msgstr "Obtenir les fichiers des paquetages"
 #. i18n: ectx: property (text), widget (QCheckBox, getDistroUpgradesCB)
 #: rc.cpp:83
 msgid "Get Distro Upgrades"
-msgstr "Obtenir les mises à niveau de la distribution"
+msgstr "Obtenir les mises à niveau des distributions"
 
 #. i18n: file: Apper/BackendDetails.ui:312
 #. i18n: ectx: property (text), widget (QCheckBox, installPackageCB)
@@ -3626,7 +3658,7 @@ msgstr "Définir les données d'un dépôt"
 #. i18n: ectx: property (text), widget (QCheckBox, whatProvidesCB)
 #: rc.cpp:113
 msgid "What Provides"
-msgstr "Fourni par"
+msgstr "Liste « Fourni par »"
 
 #. i18n: file: Apper/BackendDetails.ui:412
 #. i18n: ectx: property (text), widget (QCheckBox, getPackagesCB)
@@ -3674,7 +3706,7 @@ msgstr "Licence :"
 #. i18n: ectx: property (text), widget (QLabel, intervalL)
 #: rc.cpp:143
 msgid "Check for updates:"
-msgstr "Vérifier s'il y a de nouvelles mises à jour :"
+msgstr "Vérifier s'il existe de nouvelles mises à jour :"
 
 #. i18n: file: ApperKCM/Settings/Settings.ui:95
 #. i18n: ectx: property (text), widget (QCheckBox, checkUpdatesMobileCB)
@@ -3703,7 +3735,7 @@ msgstr "Installer automatiquement :"
 #: rc.cpp:161
 msgid "Show application launcher after installing new applications"
 msgstr ""
-"Afficher le lanceur d'application après avoir installé les nouvelles "
+"Afficher le lanceur d'applications après avoir installé les nouvelles "
 "applications"
 
 #. i18n: file: ApperKCM/Settings/Settings.ui:186
@@ -3718,7 +3750,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QCheckBox, showOriginsCB)
 #: rc.cpp:167
 msgid "&Show origins of debug and development packages"
-msgstr "&Afficher l'origine des paquetages de débogage et de développement"
+msgstr "&Afficher les origines des paquetages de débogage et de développement"
 
 #. i18n: file: ApperKCM/Settings/Settings.ui:254
 #. i18n: ectx: property (text), widget (QPushButton, editOriginsPB)
@@ -3730,7 +3762,7 @@ msgstr "Modifier les origines"
 #. i18n: ectx: property (text), widget (QPushButton, exportInstalledPB)
 #: rc.cpp:176
 msgid "Export Installed Package List..."
-msgstr "Exporter la liste de paquetages installés..."
+msgstr "Exporter la liste des paquetages installés..."
 
 #. i18n: file: ApperKCM/BrowseView.ui:150
 #. i18n: ectx: property (text), widget (QPushButton, importInstalledPB)
@@ -3773,7 +3805,7 @@ msgstr "TextLabel"
 #: rc.cpp:212
 msgid "Additional changes are required to complete the task"
 msgstr ""
-"Des modifications supplémentaires sont nécessaires pour mener la tâche à bien"
+"Des modifications supplémentaires sont requises pour mener à bien la tâche"
 
 #. i18n: file: libapper/Requirements.ui:87
 #. i18n: ectx: property (text), widget (QCheckBox, confirmCB)
@@ -3805,7 +3837,7 @@ msgstr "URL de la signature :"
 #. i18n: ectx: property (text), widget (QLabel, label_4)
 #: rc.cpp:230
 msgid "Signature user identifier:"
-msgstr "Identifiant de l'utilisateur de la signature :"
+msgstr "Identifiant utilisateur de la signature :"
 
 #. i18n: file: libapper/RepoSig.ui:125
 #. i18n: ectx: property (text), widget (QLabel, label_5)
