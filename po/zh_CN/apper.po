@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kpackagekit\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-10-10 04:10+0200\n"
+"POT-Creation-Date: 2012-02-18 05:06+0100\n"
 "PO-Revision-Date: 2011-09-04 17:02+0800\n"
 "Last-Translator: Feng Chao <rainofchaos@gmail.com>\n"
 "Language-Team: Chinese Simplified <kde-china@kde.org>\n"
@@ -23,7 +23,7 @@ msgstr ""
 msgid "Backend Details"
 msgstr "后端详情"
 
-#: Apper/main.cpp:54 Sentinel/UpdateIcon.cpp:161 Sentinel/main.cpp:34
+#: Apper/main.cpp:54 Sentinel/UpdateIcon.cpp:158 Sentinel/main.cpp:34
 msgid "Apper"
 msgstr "Apper"
 
@@ -31,7 +31,7 @@ msgstr "Apper"
 msgid "Apper is an Application to Get and Manage Software"
 msgstr "Apper 是一个获取和管理软件的应用程序"
 
-#: Apper/main.cpp:58 ApperKCM/ApperKCM.cpp:82 Sentinel/main.cpp:38
+#: Apper/main.cpp:58 ApperKCM/ApperKCM.cpp:83 Sentinel/main.cpp:38
 msgid "(C) 2008-2011 Daniel Nicoletti"
 msgstr "(C) 2008-2011 Daniel Nicoletti"
 
@@ -129,11 +129,11 @@ msgctxt "No updates will be automatically installed"
 msgid "None"
 msgstr "无"
 
-#: ApperKCM/Settings/Settings.cpp:249 libapper/PkStrings.cpp:962
+#: ApperKCM/Settings/Settings.cpp:250 libapper/PkStrings.cpp:962
 msgid "You do not have the necessary privileges to perform this action."
 msgstr "您没有进行此操作的必需的权限。"
 
-#: ApperKCM/Settings/Settings.cpp:250
+#: ApperKCM/Settings/Settings.cpp:251
 msgid "Failed to set origin data"
 msgstr "设定原始数据失败"
 
@@ -224,13 +224,13 @@ msgstr ""
 msgid "This notification was issued on %1."
 msgstr ""
 
-#: ApperKCM/Updater/UpdateDetails.cpp:223
+#: ApperKCM/Updater/UpdateDetails.cpp:224
 msgid "For more information about this update please visit this website:"
 msgid_plural ""
 "For more information about this update please visit these websites:"
 msgstr[0] ""
 
-#: ApperKCM/Updater/UpdateDetails.cpp:233
+#: ApperKCM/Updater/UpdateDetails.cpp:234
 msgid ""
 "For more information about bugs fixed by this update please visit this "
 "website:"
@@ -239,100 +239,112 @@ msgid_plural ""
 "websites:"
 msgstr[0] ""
 
-#: ApperKCM/Updater/UpdateDetails.cpp:243
+#: ApperKCM/Updater/UpdateDetails.cpp:244
 msgid ""
 "For more information about this security update please visit this website:"
 msgid_plural ""
 "For more information about this security update please visit these websites:"
 msgstr[0] ""
 
-#: ApperKCM/Updater/UpdateDetails.cpp:253
+#: ApperKCM/Updater/UpdateDetails.cpp:254
 msgid ""
 "The computer will have to be restarted after the update for the changes to "
 "take effect."
 msgstr ""
 
-#: ApperKCM/Updater/UpdateDetails.cpp:257
+#: ApperKCM/Updater/UpdateDetails.cpp:258
 msgid ""
 "You will need to log out and back in after the update for the changes to "
 "take effect."
 msgstr "注销并再次登录后修改才会生效。"
 
-#: ApperKCM/Updater/UpdateDetails.cpp:264
+#: ApperKCM/Updater/UpdateDetails.cpp:265
 msgid ""
 "The classification of this update is unstable which means it is not designed "
 "for production use."
 msgstr ""
 
-#: ApperKCM/Updater/UpdateDetails.cpp:268
+#: ApperKCM/Updater/UpdateDetails.cpp:269
 msgid ""
 "This is a test update, and is not designed for normal use. Please report any "
 "problems or regressions you encounter."
 msgstr ""
 
-#: ApperKCM/Updater/UpdateDetails.cpp:277
+#: ApperKCM/Updater/UpdateDetails.cpp:279
 msgid ""
 "The developer logs will be shown as no description is available for this "
 "update:"
 msgstr "更新无可用描述，将使用开发者的日志。"
 
-#: ApperKCM/Updater/UpdateDetails.cpp:285
+#: ApperKCM/Updater/UpdateDetails.cpp:287
 msgid "Updates:"
 msgstr "更新："
 
-#: ApperKCM/Updater/UpdateDetails.cpp:295
+#: ApperKCM/Updater/UpdateDetails.cpp:297
 msgid "Obsoletes:"
 msgstr "废弃："
 
-#: ApperKCM/Updater/UpdateDetails.cpp:305
+#: ApperKCM/Updater/UpdateDetails.cpp:307
 msgid "Repository:"
 msgstr "仓库："
 
-#: ApperKCM/Updater/UpdateDetails.cpp:337
+#: ApperKCM/Updater/UpdateDetails.cpp:339
 msgid "No update description was found."
 msgstr "未找到更新描述。"
 
-#: ApperKCM/Updater/Updater.cpp:107 ApperKCM/BrowseView.cpp:90
+#: ApperKCM/Updater/Updater.cpp:110 ApperKCM/BrowseView.cpp:95
 msgid "Show Versions"
 msgstr "显示版本"
 
-#: ApperKCM/Updater/Updater.cpp:115 ApperKCM/BrowseView.cpp:98
+#: ApperKCM/Updater/Updater.cpp:117
+#, fuzzy
+#| msgid "Show Versions"
+msgid "Show Current Versions"
+msgstr "显示版本"
+
+#: ApperKCM/Updater/Updater.cpp:124 ApperKCM/BrowseView.cpp:102
 msgid "Show Architectures"
 msgstr "显示构架"
 
-#: ApperKCM/Updater/Updater.cpp:123 ApperKCM/BrowseView.cpp:106
+#: ApperKCM/Updater/Updater.cpp:131 ApperKCM/BrowseView.cpp:109
+#, fuzzy
+#| msgid "Software Origins"
+msgid "Show Origins"
+msgstr "软件来源"
+
+#: ApperKCM/Updater/Updater.cpp:138 ApperKCM/BrowseView.cpp:116
 msgid "Show Sizes"
 msgstr "显示大小"
 
-#: ApperKCM/Updater/Updater.cpp:216
+#: ApperKCM/Updater/Updater.cpp:255
 #, kde-format
 msgid "Estimated download size: %1"
 msgstr ""
 
-#: ApperKCM/Updater/Updater.cpp:254
+#: ApperKCM/Updater/Updater.cpp:292
 msgid "Your system is up to date"
 msgstr "系统已为最新"
 
-#: ApperKCM/Updater/Updater.cpp:255 ApperKCM/Updater/Updater.cpp:259
+#: ApperKCM/Updater/Updater.cpp:293 ApperKCM/Updater/Updater.cpp:297
 #, kde-format
 msgid "Verified %1 ago"
 msgstr ""
 
-#: ApperKCM/Updater/Updater.cpp:258
+#: ApperKCM/Updater/Updater.cpp:296
 msgid "You have no updates"
 msgstr "无升级"
 
-#: ApperKCM/Updater/Updater.cpp:262
+#: ApperKCM/Updater/Updater.cpp:300
 msgid "Last check for updates was more than a month ago"
 msgstr ""
 
-#: ApperKCM/Updater/Updater.cpp:263
+#: ApperKCM/Updater/Updater.cpp:301
 msgid "It's strongly recommended that you check for new updates now"
 msgstr ""
 
 #. i18n: file: ApperKCM/ApperKCM.ui:230
 #. i18n: ectx: property (text), widget (QPushButton, checkUpdatesPB)
-#: ApperKCM/Updater/Updater.cpp:351 rc.cpp:194
+#: ApperKCM/Updater/Updater.cpp:396 rc.cpp:194
 msgid "Check for new Updates"
 msgstr "检查更新"
 
@@ -452,66 +464,66 @@ msgstr "仅显示应用程序"
 msgid "Hide packages that are not applications"
 msgstr "隐藏不是应用程序的软件包"
 
-#: ApperKCM/ApperKCM.cpp:78
+#: ApperKCM/ApperKCM.cpp:79
 msgid "Application Manager"
 msgstr "应用程序管理器"
 
-#: ApperKCM/ApperKCM.cpp:80
+#: ApperKCM/ApperKCM.cpp:81
 msgid "KDE interface for managing software"
 msgstr "管理软件的 KDE 界面"
 
-#: ApperKCM/ApperKCM.cpp:110 ApperKCM/ApperKCM.cpp:291
+#: ApperKCM/ApperKCM.cpp:111 ApperKCM/ApperKCM.cpp:292
 msgid "Find"
 msgstr "查找"
 
-#: ApperKCM/ApperKCM.cpp:205
+#: ApperKCM/ApperKCM.cpp:206
 msgid "History"
 msgstr "历史"
 
 #. i18n: file: ApperKCM/Settings/Settings.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, Settings)
-#: ApperKCM/ApperKCM.cpp:211 rc.cpp:140
+#: ApperKCM/ApperKCM.cpp:212 rc.cpp:140
 msgid "Settings"
 msgstr "设置"
 
-#: ApperKCM/ApperKCM.cpp:268 ApperKCM/ApperKCM.cpp:269
-#: ApperKCM/ApperKCM.cpp:270 ApperKCM/ApperKCM.cpp:271
+#: ApperKCM/ApperKCM.cpp:269 ApperKCM/ApperKCM.cpp:270
+#: ApperKCM/ApperKCM.cpp:271 ApperKCM/ApperKCM.cpp:272
 msgid "&Cancel"
 msgstr "取消(&C)"
 
 #. i18n: file: ApperKCM/ApperKCM.ui:291
 #. i18n: ectx: property (text), widget (QToolButton, backTB)
-#: ApperKCM/ApperKCM.cpp:278 rc.cpp:200
+#: ApperKCM/ApperKCM.cpp:279 rc.cpp:200
 msgid "Find by &name"
 msgstr "按名称查找(&N)"
 
 #. i18n: file: ApperKCM/ApperKCM.ui:301
 #. i18n: ectx: property (text), widget (QToolButton, backTB)
-#: ApperKCM/ApperKCM.cpp:279 rc.cpp:206
+#: ApperKCM/ApperKCM.cpp:280 rc.cpp:206
 msgid "Find by f&ile name"
 msgstr "按文件名查找(&I)"
 
 #. i18n: file: ApperKCM/ApperKCM.ui:296
 #. i18n: ectx: property (text), widget (QToolButton, backTB)
-#: ApperKCM/ApperKCM.cpp:280 rc.cpp:203
+#: ApperKCM/ApperKCM.cpp:281 rc.cpp:203
 msgid "Find by &description"
 msgstr "按描述查找(&D)"
 
-#: ApperKCM/ApperKCM.cpp:414
+#: ApperKCM/ApperKCM.cpp:411
 msgid ""
 "The settings of the current module have changed.\n"
 "Do you want to apply the changes or discard them?"
 msgstr ""
 
-#: ApperKCM/ApperKCM.cpp:416
+#: ApperKCM/ApperKCM.cpp:413
 msgid "Apply Settings"
 msgstr "应用设置"
 
-#: ApperKCM/ApperKCM.cpp:458
+#: ApperKCM/ApperKCM.cpp:455
 msgid "General Settings"
 msgstr "常规设置"
 
-#: ApperKCM/ApperKCM.cpp:459
+#: ApperKCM/ApperKCM.cpp:456
 msgid "Software Origins"
 msgstr "软件来源"
 
@@ -539,11 +551,11 @@ msgstr "文件列表"
 msgid "No files were found."
 msgstr "未找到文件。"
 
-#: ApperKCM/PackageDetails.cpp:529
+#: ApperKCM/PackageDetails.cpp:530
 msgid "Could not fetch software details"
 msgstr ""
 
-#: ApperKCM/PackageDetails.cpp:571
+#: ApperKCM/PackageDetails.cpp:572
 msgid "Applications"
 msgstr "应用程序"
 
@@ -584,11 +596,11 @@ msgstr "自上次缓存刷新时间：%1"
 msgid "Date"
 msgstr "日期"
 
-#: ApperKCM/TransactionModel.cpp:47 libapper/PackageModel.cpp:186
+#: ApperKCM/TransactionModel.cpp:47 libapper/PackageModel.cpp:194
 msgid "Action"
 msgstr "动作"
 
-#: ApperKCM/TransactionModel.cpp:48 Sentinel/TransactionWatcher.cpp:292
+#: ApperKCM/TransactionModel.cpp:48 Sentinel/TransactionWatcher.cpp:308
 msgid "Details"
 msgstr "详情"
 
@@ -678,11 +690,11 @@ msgstr "无法找到打印驱动"
 msgid "Could not find printer driver in any configured software source"
 msgstr "未在任何软件源中找到打印驱动"
 
-#: Sentinel/UpdateIcon.cpp:163
+#: Sentinel/UpdateIcon.cpp:160
 msgid "Review Updates"
 msgstr "复查更新"
 
-#: Sentinel/UpdateIcon.cpp:166
+#: Sentinel/UpdateIcon.cpp:163
 msgid "Configure"
 msgstr "配置"
 
@@ -690,30 +702,30 @@ msgstr "配置"
 #. i18n: ectx: property (text), widget (QToolButton, hideTB)
 #. i18n: file: ApperKCM/Updater/UpdateDetails.ui:20
 #. i18n: ectx: property (text), widget (QToolButton, hideTB)
-#: Sentinel/UpdateIcon.cpp:170 libapper/PkTransactionDialog.cpp:86 rc.cpp:137
-#: rc.cpp:173
+#: Sentinel/UpdateIcon.cpp:167 Sentinel/TransactionWatcher.cpp:186
+#: libapper/PkTransactionDialog.cpp:86 rc.cpp:137 rc.cpp:173
 msgid "Hide"
 msgstr "隐藏"
 
-#: Sentinel/UpdateIcon.cpp:180
+#: Sentinel/UpdateIcon.cpp:177
 #, kde-format
 msgid "You have one update"
 msgid_plural "You have %1 updates"
 msgstr[0] "您有 %1 个可用更新"
 
-#: Sentinel/UpdateIcon.cpp:233
+#: Sentinel/UpdateIcon.cpp:230
 msgid "Updates are being automatically installed."
 msgstr "正在自动安装更新。"
 
-#: Sentinel/UpdateIcon.cpp:254
+#: Sentinel/UpdateIcon.cpp:251
 msgid "Security updates are being automatically installed."
 msgstr "正在自动安装安全更新。"
 
-#: Sentinel/UpdateIcon.cpp:281
+#: Sentinel/UpdateIcon.cpp:278
 msgid "System update was successful."
 msgstr "系统已成功更新。"
 
-#: Sentinel/UpdateIcon.cpp:290
+#: Sentinel/UpdateIcon.cpp:287
 msgid "The automated software update failed."
 msgstr "软件自动更新失败。"
 
@@ -835,76 +847,76 @@ msgstr "分类为空"
 msgid "Could not find any package to install in this catalog"
 msgstr "无法在此分类中找到任何软件包"
 
-#: Sentinel/SessionTask.cpp:66 libapper/Requirements.cpp:43
+#: Sentinel/SessionTask.cpp:66 libapper/Requirements.cpp:44
 msgid "Continue"
 msgstr "继续"
 
-#: Sentinel/SessionTask.cpp:361
+#: Sentinel/SessionTask.cpp:363
 msgid "There are no packages to Install or Remove"
 msgstr "无需要安装或删除的软件包"
 
-#: Sentinel/SessionTask.cpp:362
+#: Sentinel/SessionTask.cpp:364
 msgid "This action should not happen"
 msgstr "不应该执行此动作"
 
-#: Sentinel/SessionTask.cpp:391
+#: Sentinel/SessionTask.cpp:393
 msgid "Could not find"
 msgstr "无法找到"
 
-#: Sentinel/SessionTask.cpp:392 Sentinel/SessionTask.cpp:401
+#: Sentinel/SessionTask.cpp:394 Sentinel/SessionTask.cpp:403
 msgid "No packages were found that meet the request"
 msgstr "未找到要满足要求的软件包"
 
-#: Sentinel/SessionTask.cpp:400
+#: Sentinel/SessionTask.cpp:402
 msgid "Failed to find"
 msgstr "查找失败"
 
-#: Sentinel/SessionTask.cpp:422
+#: Sentinel/SessionTask.cpp:424
 msgid "Transaction did not finish with success"
 msgstr "交易未成功完成"
 
-#: Sentinel/SessionTask.cpp:428
+#: Sentinel/SessionTask.cpp:430
 msgid "Task completed"
 msgstr "任务完成"
 
-#: Sentinel/SessionTask.cpp:428
+#: Sentinel/SessionTask.cpp:430
 msgid "All operations were committed successfully"
 msgstr "全部操作成功执行"
 
-#: Sentinel/TransactionWatcher.cpp:64 Sentinel/TransactionWatcher.cpp:249
+#: Sentinel/TransactionWatcher.cpp:66 Sentinel/TransactionWatcher.cpp:265
 msgid "Hide this icon"
 msgstr "隐藏此图标"
 
-#: Sentinel/TransactionWatcher.cpp:166
+#: Sentinel/TransactionWatcher.cpp:168
 msgid "The system update has completed"
 msgstr "系统更新已完成"
 
-#: Sentinel/TransactionWatcher.cpp:172
+#: Sentinel/TransactionWatcher.cpp:174
 #, kde-format
 msgid "Packages: %1"
 msgstr "软件包：%1"
 
-#: Sentinel/TransactionWatcher.cpp:184
+#: Sentinel/TransactionWatcher.cpp:201
 #, kde-format
 msgid "Package: %2"
 msgid_plural "Packages: %2"
 msgstr[0] "软件包：%2"
 
-#: Sentinel/TransactionWatcher.cpp:231 Sentinel/TransactionWatcher.cpp:271
+#: Sentinel/TransactionWatcher.cpp:247 Sentinel/TransactionWatcher.cpp:287
 msgid "Software Manager Messages"
 msgstr "软件管理器消息"
 
-#: Sentinel/TransactionWatcher.cpp:232
+#: Sentinel/TransactionWatcher.cpp:248
 #, kde-format
 msgid "One message from the software manager"
 msgid_plural "%1 messages from the software manager"
 msgstr[0] "软件管理器发出 %1 条消息"
 
-#: Sentinel/TransactionWatcher.cpp:240
+#: Sentinel/TransactionWatcher.cpp:256
 msgid "Show messages"
 msgstr "显示消息"
 
-#: Sentinel/TransactionWatcher.cpp:292
+#: Sentinel/TransactionWatcher.cpp:308
 msgid "Ignore"
 msgstr "忽略"
 
@@ -2115,7 +2127,7 @@ msgstr "软件包与本系统不兼容"
 msgid "No space is left on the disk"
 msgstr "磁盘没有剩余空间"
 
-#: libapper/PkStrings.cpp:477 libapper/PkTransaction.cpp:578
+#: libapper/PkStrings.cpp:477 libapper/PkTransaction.cpp:579
 msgid "A media change is required"
 msgstr "需要更改媒体"
 
@@ -3046,43 +3058,15 @@ msgstr "允许您隐藏窗口而保持运行变更交易任务。"
 msgid "Package"
 msgstr "软件包"
 
-#: libapper/SimulateModel.cpp:141 libapper/PackageModel.cpp:180
+#: libapper/SimulateModel.cpp:141 libapper/PackageModel.cpp:184
 msgid "Version"
 msgstr "版本"
 
-#: libapper/Requirements.cpp:41
-msgid "Additional changes"
-msgstr "附加更改"
-
-#: libapper/Requirements.cpp:62
-#, kde-format
-msgid "1 package to remove"
-msgid_plural "%1 packages to remove"
-msgstr[0] "要删除 %1 个软件包"
-
-#: libapper/Requirements.cpp:77
-#, kde-format
-msgid "1 package to downgrade"
-msgid_plural "%1 packages to downgrade"
-msgstr[0] "要降级 %1 个软件包"
-
-#: libapper/Requirements.cpp:92
-#, kde-format
-msgid "1 package to reinstall"
-msgid_plural "%1 packages to reinstall"
-msgstr[0] "要重新安装 %1 个软件包"
-
-#: libapper/Requirements.cpp:105
-#, kde-format
-msgid "1 package to install"
-msgid_plural "%1 packages to install"
-msgstr[0] "要安装 %1 个软件包"
-
-#: libapper/Requirements.cpp:118
-#, kde-format
-msgid "1 package to update"
-msgid_plural "%1 packages to update"
-msgstr[0] "要升级 %1 个软件包"
+#: libapper/ApplicationLauncher.cpp:95
+msgid "The following application was just installed. Click on it to launch:"
+msgid_plural ""
+"The following applications were just installed. Click on them to launch:"
+msgstr[0] ""
 
 #: libapper/LicenseAgreement.cpp:36
 msgid "Accept Agreement"
@@ -3099,11 +3083,86 @@ msgstr "需要同意许可证协议"
 msgid "License required for %1 by %2"
 msgstr "%1 需要 %2 的许可证"
 
-#: libapper/ApplicationLauncher.cpp:99
-msgid "The following application was just installed. Click on it to launch:"
-msgid_plural ""
-"The following applications were just installed. Click on them to launch:"
-msgstr[0] ""
+#: libapper/PackageModel.cpp:182
+msgid "Name"
+msgstr "名称"
+
+#: libapper/PackageModel.cpp:186
+#, fuzzy
+#| msgctxt "The role of the transaction, in past tense"
+#| msgid "Installed signature"
+msgid "Installed Version"
+msgstr "已安装签名"
+
+#: libapper/PackageModel.cpp:188
+msgid "Arch"
+msgstr "架构"
+
+#: libapper/PackageModel.cpp:190
+#, fuzzy
+#| msgid "Edit Origins"
+msgid "Origin"
+msgstr "编辑来源"
+
+#: libapper/PackageModel.cpp:192
+msgid "Size"
+msgstr "大小"
+
+#: libapper/PackageModel.cpp:283
+#, kde-format
+msgid ""
+"Version: %1\n"
+"Architecture: %2"
+msgstr ""
+"版本：%1\n"
+"架构：%2"
+
+#: libapper/PackageModel.cpp:329
+#, fuzzy
+#| msgctxt "The action of the package, in past tense"
+#| msgid "Removed"
+msgid "To be Removed"
+msgstr "已删除"
+
+#: libapper/PackageModel.cpp:331
+#, fuzzy
+#| msgid "Installed"
+msgid "To be Installed"
+msgstr "已安装"
+
+#: libapper/Requirements.cpp:42
+msgid "Additional changes"
+msgstr "附加更改"
+
+#: libapper/Requirements.cpp:63
+#, kde-format
+msgid "1 package to remove"
+msgid_plural "%1 packages to remove"
+msgstr[0] "要删除 %1 个软件包"
+
+#: libapper/Requirements.cpp:78
+#, kde-format
+msgid "1 package to downgrade"
+msgid_plural "%1 packages to downgrade"
+msgstr[0] "要降级 %1 个软件包"
+
+#: libapper/Requirements.cpp:93
+#, kde-format
+msgid "1 package to reinstall"
+msgid_plural "%1 packages to reinstall"
+msgstr[0] "要重新安装 %1 个软件包"
+
+#: libapper/Requirements.cpp:106
+#, kde-format
+msgid "1 package to install"
+msgid_plural "%1 packages to install"
+msgstr[0] "要安装 %1 个软件包"
+
+#: libapper/Requirements.cpp:119
+#, kde-format
+msgid "1 package to update"
+msgid_plural "%1 packages to update"
+msgstr[0] "要升级 %1 个软件包"
 
 #: libapper/PkTransaction.cpp:122
 #, fuzzy
@@ -3189,46 +3248,18 @@ msgstr ""
 msgid "Installing unsigned software"
 msgstr "正在安装未签名的软件"
 
-#: libapper/PkTransaction.cpp:563 libapper/PkTransaction.cpp:616
+#: libapper/PkTransaction.cpp:564 libapper/PkTransaction.cpp:618
 #, fuzzy
 #| msgid "Failed to install file"
 #| msgid_plural "Failed to install files"
 msgid "Failed to install signature"
 msgstr "安装文件失败"
 
-#: libapper/PackageModel.cpp:178
-msgid "Name"
-msgstr "名称"
-
-#: libapper/PackageModel.cpp:182
-msgid "Arch"
-msgstr "架构"
-
-#: libapper/PackageModel.cpp:184
-msgid "Size"
-msgstr "大小"
-
-#: libapper/PackageModel.cpp:272
-#, kde-format
-msgid ""
-"Version: %1\n"
-"Architecture: %2"
-msgstr ""
-"版本：%1\n"
-"架构：%2"
-
-#: libapper/PackageModel.cpp:315
-#, fuzzy
-#| msgctxt "The action of the package, in past tense"
-#| msgid "Removed"
-msgid "To be Removed"
-msgstr "已删除"
-
-#: libapper/PackageModel.cpp:317
-#, fuzzy
-#| msgid "Installed"
-msgid "To be Installed"
-msgstr "已安装"
+#. i18n: file: libapper/RepoSig.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, RepoSig)
+#: libapper/RepoSig.cpp:40 rc.cpp:218
+msgid "Software signature is required"
+msgstr "需要软件签名"
 
 #: libapper/ApplicationsDelegate.cpp:40
 msgid "Install"
@@ -3237,12 +3268,6 @@ msgstr "安装"
 #: libapper/ApplicationsDelegate.cpp:42
 msgid "Remove"
 msgstr "删除"
-
-#. i18n: file: libapper/RepoSig.ui:14
-#. i18n: ectx: property (windowTitle), widget (QWidget, RepoSig)
-#: libapper/RepoSig.cpp:40 rc.cpp:218
-msgid "Software signature is required"
-msgstr "需要软件签名"
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"

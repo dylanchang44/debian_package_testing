@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-10-10 04:10+0200\n"
-"PO-Revision-Date: 2011-09-07 18:12+0400\n"
+"POT-Creation-Date: 2012-02-18 05:06+0100\n"
+"PO-Revision-Date: 2011-10-13 20:13+0400\n"
 "Last-Translator: Yuri Efremov <yur.arh@gmail.com>\n"
 "Language-Team: Russian <kde-russian@lists.kde.ru>\n"
 "Language: ru\n"
@@ -27,7 +27,7 @@ msgstr ""
 msgid "Backend Details"
 msgstr "Сведения о модуле"
 
-#: Apper/main.cpp:54 Sentinel/UpdateIcon.cpp:161 Sentinel/main.cpp:34
+#: Apper/main.cpp:54 Sentinel/UpdateIcon.cpp:158 Sentinel/main.cpp:34
 msgid "Apper"
 msgstr "Apper"
 
@@ -36,7 +36,7 @@ msgid "Apper is an Application to Get and Manage Software"
 msgstr ""
 "Apper — программа для загрузки и управления пакетами программного обеспечения"
 
-#: Apper/main.cpp:58 ApperKCM/ApperKCM.cpp:82 Sentinel/main.cpp:38
+#: Apper/main.cpp:58 ApperKCM/ApperKCM.cpp:83 Sentinel/main.cpp:38
 msgid "(C) 2008-2011 Daniel Nicoletti"
 msgstr "© Daniel Nicoletti, 2008-2011"
 
@@ -134,11 +134,11 @@ msgctxt "No updates will be automatically installed"
 msgid "None"
 msgstr "Ничего"
 
-#: ApperKCM/Settings/Settings.cpp:249 libapper/PkStrings.cpp:962
+#: ApperKCM/Settings/Settings.cpp:250 libapper/PkStrings.cpp:962
 msgid "You do not have the necessary privileges to perform this action."
 msgstr "У вас недостаточно прав для выполнения этого действия."
 
-#: ApperKCM/Settings/Settings.cpp:250
+#: ApperKCM/Settings/Settings.cpp:251
 msgid "Failed to set origin data"
 msgstr "Не удалось установить источник данных"
 
@@ -222,8 +222,8 @@ msgstr ""
 msgid ""
 "This update is needed to fix a security vulnerability with this package."
 msgstr ""
-"Это обновление необходимо для исправления уязвимостей, обнаруженных в этом "
-"пакете."
+"Это обновление необходимо для исправления ошибок безопасности, обнаруженных "
+"в этом пакете."
 
 #: ApperKCM/Updater/UpdateDetails.cpp:192
 msgid "This update is blocked."
@@ -239,7 +239,7 @@ msgstr "Это уведомление было создано %1 и послед
 msgid "This notification was issued on %1."
 msgstr "Это уведомление было создано %1."
 
-#: ApperKCM/Updater/UpdateDetails.cpp:223
+#: ApperKCM/Updater/UpdateDetails.cpp:224
 msgid "For more information about this update please visit this website:"
 msgid_plural ""
 "For more information about this update please visit these websites:"
@@ -256,7 +256,7 @@ msgstr[3] ""
 "Для получения дополнительной информации об этом обновлении посетите этот "
 "сайт:"
 
-#: ApperKCM/Updater/UpdateDetails.cpp:233
+#: ApperKCM/Updater/UpdateDetails.cpp:234
 msgid ""
 "For more information about bugs fixed by this update please visit this "
 "website:"
@@ -276,7 +276,7 @@ msgstr[3] ""
 "Для получения дополнительной информации об этих исправлениях посетите этот "
 "сайт:"
 
-#: ApperKCM/Updater/UpdateDetails.cpp:243
+#: ApperKCM/Updater/UpdateDetails.cpp:244
 msgid ""
 "For more information about this security update please visit this website:"
 msgid_plural ""
@@ -294,7 +294,7 @@ msgstr[3] ""
 "Для получения дополнительной информации об этом обновление безопасности "
 "посетите этот сайт:"
 
-#: ApperKCM/Updater/UpdateDetails.cpp:253
+#: ApperKCM/Updater/UpdateDetails.cpp:254
 msgid ""
 "The computer will have to be restarted after the update for the changes to "
 "take effect."
@@ -302,7 +302,7 @@ msgstr ""
 "Чтобы после обновления изменения вступили в силу, следует перезагрузить "
 "компьютер."
 
-#: ApperKCM/Updater/UpdateDetails.cpp:257
+#: ApperKCM/Updater/UpdateDetails.cpp:258
 msgid ""
 "You will need to log out and back in after the update for the changes to "
 "take effect."
@@ -310,7 +310,7 @@ msgstr ""
 "Чтобы после обновления изменения вступили в силу, следует перезапустить "
 "сеанс."
 
-#: ApperKCM/Updater/UpdateDetails.cpp:264
+#: ApperKCM/Updater/UpdateDetails.cpp:265
 msgid ""
 "The classification of this update is unstable which means it is not designed "
 "for production use."
@@ -318,7 +318,7 @@ msgstr ""
 "Это обновление относится к нестабильным, поэтому его не следует "
 "устанавливать на промышленные системы."
 
-#: ApperKCM/Updater/UpdateDetails.cpp:268
+#: ApperKCM/Updater/UpdateDetails.cpp:269
 msgid ""
 "This is a test update, and is not designed for normal use. Please report any "
 "problems or regressions you encounter."
@@ -327,7 +327,7 @@ msgstr ""
 "Пожалуйста, сообщайте о любых проблемах и ухудшениях работы, с которыми вы "
 "столкнётесь."
 
-#: ApperKCM/Updater/UpdateDetails.cpp:277
+#: ApperKCM/Updater/UpdateDetails.cpp:279
 msgid ""
 "The developer logs will be shown as no description is available for this "
 "update:"
@@ -335,63 +335,75 @@ msgstr ""
 "Поскольку описания этого обновления не было обнаружено, будет показан журнал "
 "изменений, внесенных разработчиками:"
 
-#: ApperKCM/Updater/UpdateDetails.cpp:285
+#: ApperKCM/Updater/UpdateDetails.cpp:287
 msgid "Updates:"
 msgstr "Обновляет:"
 
-#: ApperKCM/Updater/UpdateDetails.cpp:295
+#: ApperKCM/Updater/UpdateDetails.cpp:297
 msgid "Obsoletes:"
 msgstr "Заменяет:"
 
-#: ApperKCM/Updater/UpdateDetails.cpp:305
+#: ApperKCM/Updater/UpdateDetails.cpp:307
 msgid "Repository:"
 msgstr "Репозиторий:"
 
-#: ApperKCM/Updater/UpdateDetails.cpp:337
+#: ApperKCM/Updater/UpdateDetails.cpp:339
 msgid "No update description was found."
 msgstr "Описание обновления недоступно."
 
-#: ApperKCM/Updater/Updater.cpp:107 ApperKCM/BrowseView.cpp:90
+#: ApperKCM/Updater/Updater.cpp:110 ApperKCM/BrowseView.cpp:95
 msgid "Show Versions"
 msgstr "Показать версию"
 
-#: ApperKCM/Updater/Updater.cpp:115 ApperKCM/BrowseView.cpp:98
+#: ApperKCM/Updater/Updater.cpp:117
+#, fuzzy
+#| msgid "Show Versions"
+msgid "Show Current Versions"
+msgstr "Показать версию"
+
+#: ApperKCM/Updater/Updater.cpp:124 ApperKCM/BrowseView.cpp:102
 msgid "Show Architectures"
 msgstr "Показать архитектуру"
 
-#: ApperKCM/Updater/Updater.cpp:123 ApperKCM/BrowseView.cpp:106
+#: ApperKCM/Updater/Updater.cpp:131 ApperKCM/BrowseView.cpp:109
+#, fuzzy
+#| msgid "Software Origins"
+msgid "Show Origins"
+msgstr "Источники программ"
+
+#: ApperKCM/Updater/Updater.cpp:138 ApperKCM/BrowseView.cpp:116
 msgid "Show Sizes"
 msgstr "Показать размер"
 
-#: ApperKCM/Updater/Updater.cpp:216
+#: ApperKCM/Updater/Updater.cpp:255
 #, kde-format
 msgid "Estimated download size: %1"
 msgstr "Предполагаемый размер загрузки: %1"
 
-#: ApperKCM/Updater/Updater.cpp:254
+#: ApperKCM/Updater/Updater.cpp:292
 msgid "Your system is up to date"
 msgstr "Ваша система находится в актуальном состоянии"
 
-#: ApperKCM/Updater/Updater.cpp:255 ApperKCM/Updater/Updater.cpp:259
+#: ApperKCM/Updater/Updater.cpp:293 ApperKCM/Updater/Updater.cpp:297
 #, kde-format
 msgid "Verified %1 ago"
-msgstr ""
+msgstr "Проверено %1 назад"
 
-#: ApperKCM/Updater/Updater.cpp:258
+#: ApperKCM/Updater/Updater.cpp:296
 msgid "You have no updates"
 msgstr "Нет обновлений"
 
-#: ApperKCM/Updater/Updater.cpp:262
+#: ApperKCM/Updater/Updater.cpp:300
 msgid "Last check for updates was more than a month ago"
 msgstr "Последняя проверка обновлений была больше месяца назад"
 
-#: ApperKCM/Updater/Updater.cpp:263
+#: ApperKCM/Updater/Updater.cpp:301
 msgid "It's strongly recommended that you check for new updates now"
-msgstr "Настоятельно рекомендуется проверить сейчас наличие новых обновлений"
+msgstr "Настоятельно рекомендуется проверить наличие новых обновлений"
 
 #. i18n: file: ApperKCM/ApperKCM.ui:230
 #. i18n: ectx: property (text), widget (QPushButton, checkUpdatesPB)
-#: ApperKCM/Updater/Updater.cpp:351 rc.cpp:194
+#: ApperKCM/Updater/Updater.cpp:396 rc.cpp:194
 msgid "Check for new Updates"
 msgstr "Проверить наличие обновлений"
 
@@ -407,13 +419,11 @@ msgstr "Только коллекции"
 msgid "Exclude collections"
 msgstr "Исключить коллекции"
 
-# Используется как название пункта в фильтре, и как текущее состояние пакета. Не знаю, как придумать общее слово.
 #. i18n: file: Apper/BackendDetails.ui:100
 #. i18n: ectx: property (text), widget (QCheckBox, installedCB)
 #: ApperKCM/FiltersMenu.cpp:60 libapper/PkStrings.cpp:362 rc.cpp:23
-#, fuzzy
 msgid "Installed"
-msgstr "Установлен"
+msgstr "Установлено"
 
 #: ApperKCM/FiltersMenu.cpp:67
 msgid "Only installed"
@@ -513,52 +523,52 @@ msgstr "Показывать только приложения"
 msgid "Hide packages that are not applications"
 msgstr "Скрыть пакеты, которые не являются приложениями"
 
-#: ApperKCM/ApperKCM.cpp:78
+#: ApperKCM/ApperKCM.cpp:79
 msgid "Application Manager"
-msgstr "Программа для управления приложениями"
+msgstr "Менеджер программ"
 
-#: ApperKCM/ApperKCM.cpp:80
+#: ApperKCM/ApperKCM.cpp:81
 msgid "KDE interface for managing software"
 msgstr "Интерфейс KDE для управления программным обеспечением"
 
-#: ApperKCM/ApperKCM.cpp:110 ApperKCM/ApperKCM.cpp:291
+#: ApperKCM/ApperKCM.cpp:111 ApperKCM/ApperKCM.cpp:292
 msgid "Find"
 msgstr "Поиск"
 
-#: ApperKCM/ApperKCM.cpp:205
+#: ApperKCM/ApperKCM.cpp:206
 msgid "History"
 msgstr "Журнал"
 
 #. i18n: file: ApperKCM/Settings/Settings.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, Settings)
-#: ApperKCM/ApperKCM.cpp:211 rc.cpp:140
+#: ApperKCM/ApperKCM.cpp:212 rc.cpp:140
 msgid "Settings"
 msgstr "Параметры"
 
-#: ApperKCM/ApperKCM.cpp:268 ApperKCM/ApperKCM.cpp:269
-#: ApperKCM/ApperKCM.cpp:270 ApperKCM/ApperKCM.cpp:271
+#: ApperKCM/ApperKCM.cpp:269 ApperKCM/ApperKCM.cpp:270
+#: ApperKCM/ApperKCM.cpp:271 ApperKCM/ApperKCM.cpp:272
 msgid "&Cancel"
 msgstr "О&тменить"
 
 #. i18n: file: ApperKCM/ApperKCM.ui:291
 #. i18n: ectx: property (text), widget (QToolButton, backTB)
-#: ApperKCM/ApperKCM.cpp:278 rc.cpp:200
+#: ApperKCM/ApperKCM.cpp:279 rc.cpp:200
 msgid "Find by &name"
-msgstr "Поиск по &имени"
+msgstr "Поиск по &названию"
 
 #. i18n: file: ApperKCM/ApperKCM.ui:301
 #. i18n: ectx: property (text), widget (QToolButton, backTB)
-#: ApperKCM/ApperKCM.cpp:279 rc.cpp:206
+#: ApperKCM/ApperKCM.cpp:280 rc.cpp:206
 msgid "Find by f&ile name"
 msgstr "Поиск по имени &файла"
 
 #. i18n: file: ApperKCM/ApperKCM.ui:296
 #. i18n: ectx: property (text), widget (QToolButton, backTB)
-#: ApperKCM/ApperKCM.cpp:280 rc.cpp:203
+#: ApperKCM/ApperKCM.cpp:281 rc.cpp:203
 msgid "Find by &description"
 msgstr "Поиск по &описанию"
 
-#: ApperKCM/ApperKCM.cpp:414
+#: ApperKCM/ApperKCM.cpp:411
 msgid ""
 "The settings of the current module have changed.\n"
 "Do you want to apply the changes or discard them?"
@@ -566,27 +576,21 @@ msgstr ""
 "Настройка текущего модуля была изменена.\n"
 "Применить изменения или отменить их?"
 
-#: ApperKCM/ApperKCM.cpp:416
+#: ApperKCM/ApperKCM.cpp:413
 msgid "Apply Settings"
 msgstr "Применить параметры"
 
-#: ApperKCM/ApperKCM.cpp:458
+#: ApperKCM/ApperKCM.cpp:455
 msgid "General Settings"
 msgstr "Основные параметры"
 
-#: ApperKCM/ApperKCM.cpp:459
-#, fuzzy
-#| msgctxt "The group type"
-#| msgid "Software sources"
+#: ApperKCM/ApperKCM.cpp:456
 msgid "Software Origins"
 msgstr "Источники программ"
 
 #: ApperKCM/PackageDetails.cpp:73
-#, fuzzy
-#| msgctxt "Daily refresh the package cache"
-#| msgid "Daily"
 msgid "Display"
-msgstr "Ежедневно"
+msgstr "Показ"
 
 #: ApperKCM/PackageDetails.cpp:80
 msgid "Description"
@@ -608,11 +612,11 @@ msgstr "Список файлов"
 msgid "No files were found."
 msgstr "Файлы не найдены."
 
-#: ApperKCM/PackageDetails.cpp:529
+#: ApperKCM/PackageDetails.cpp:530
 msgid "Could not fetch software details"
 msgstr "Не удалось получить сведения о программном обеспечение"
 
-#: ApperKCM/PackageDetails.cpp:571
+#: ApperKCM/PackageDetails.cpp:572
 msgid "Applications"
 msgstr "Приложения"
 
@@ -642,7 +646,7 @@ msgstr "Не удалось найти снимок."
 
 #: ApperKCM/TransactionHistory.cpp:66
 msgid "Refresh transactions list"
-msgstr "Обновить список транзакций"
+msgstr "Обновить список операций"
 
 #: ApperKCM/TransactionHistory.cpp:87
 #, kde-format
@@ -653,11 +657,11 @@ msgstr "С последнего обновления кэша прошло: %1"
 msgid "Date"
 msgstr "Дата"
 
-#: ApperKCM/TransactionModel.cpp:47 libapper/PackageModel.cpp:186
+#: ApperKCM/TransactionModel.cpp:47 libapper/PackageModel.cpp:194
 msgid "Action"
 msgstr "Действие"
 
-#: ApperKCM/TransactionModel.cpp:48 Sentinel/TransactionWatcher.cpp:292
+#: ApperKCM/TransactionModel.cpp:48 Sentinel/TransactionWatcher.cpp:308
 msgid "Details"
 msgstr "Сведения"
 
@@ -679,16 +683,12 @@ msgid "Distribution upgrade finished. "
 msgstr "Обновление дистрибутива завершено. "
 
 #: Sentinel/PkInstallProvideFiles.cpp:39
-#, fuzzy
-#| msgid "Install Packages from List..."
 msgid "Install Packages that Provides Files"
-msgstr "Установить пакеты из списка..."
+msgstr "Установка пакетов с предоставляемыми файлами"
 
 #: Sentinel/PkInstallProvideFiles.cpp:49
-#, fuzzy
-#| msgid "No files were found."
 msgid "No files were provided"
-msgstr "Файлы не найдены."
+msgstr "Не обнаружено предоставляемых файлов"
 
 #: Sentinel/PkInstallProvideFiles.cpp:52
 msgid "Do you want to search for this now?"
@@ -701,26 +701,24 @@ msgstr[3] "Произвести поиск сейчас?"
 #: Sentinel/PkInstallProvideFiles.cpp:62
 msgid "A program wants to install a file"
 msgid_plural "A program wants to install files"
-msgstr[0] "Программа хочет установить файлы"
-msgstr[1] "Программа хочет установить файлы"
-msgstr[2] "Программа хочет установить файлы"
-msgstr[3] "Программа хочет установить файл"
+msgstr[0] "Программе требуется установить файлы"
+msgstr[1] "Программе требуется установить файлы"
+msgstr[2] "Программе требуется установить файлы"
+msgstr[3] "Программе требуется установить файл"
 
 #: Sentinel/PkInstallProvideFiles.cpp:66
-#, fuzzy, kde-format
-#| msgid "%2 wants to install a package"
-#| msgid_plural "%2 wants to install packages"
+#, kde-format
 msgid "The application %2 is asking to install a file"
 msgid_plural "The application %2 is asking to install files"
-msgstr[0] "%2 хочет установить пакеты"
-msgstr[1] "%2 хочет установить пакеты"
-msgstr[2] "%2 хочет установить пакеты"
-msgstr[3] "%2 хочет установить пакет"
+msgstr[0] "Программа %2 посылает запрос об установке файлов"
+msgstr[1] "Программа %2 посылает запрос об установке файлов"
+msgstr[2] "Программа %2 посылает запрос об установке файлов"
+msgstr[3] "Программа %2 посылает запрос об установке файла"
 
 #: Sentinel/PkInstallProvideFiles.cpp:88
 #: Sentinel/PkRemovePackageByFiles.cpp:128 Sentinel/PkSearchFile.cpp:54
 msgid "Failed to start search file transaction"
-msgstr "Сбой запуска транзакции поиска файлов"
+msgstr "Сбой запуска операции поиска файлов"
 
 #: Sentinel/PkInstallProvideFiles.cpp:101 libapper/PkTransaction.cpp:263
 msgid "Failed to install file"
@@ -748,11 +746,8 @@ msgstr[2] "Не удалось найти файлы ни в одном из п�
 msgstr[3] "Не удалось найти файл ни в одном из пакетов"
 
 #: Sentinel/PkInstallPrinterDrivers.cpp:39
-#, fuzzy
-#| msgctxt "The role of the transaction, in present tense"
-#| msgid "Installing file"
 msgid "Install Printer Drivers"
-msgstr "Установка файла"
+msgstr "Установка драйверов принтера"
 
 #: Sentinel/PkInstallPrinterDrivers.cpp:74
 #: Sentinel/PkInstallPlasmaResources.cpp:101
@@ -761,7 +756,7 @@ msgstr "Установка файла"
 #: Sentinel/PkInstallFontconfigResources.cpp:166
 #: Sentinel/PkInstallGStreamerResources.cpp:136
 msgid "Failed to search for provides"
-msgstr "Не удалось найти требуемые дополнения"
+msgstr "Не удалось найти предоставления"
 
 #: Sentinel/PkInstallPrinterDrivers.cpp:87
 msgid "Failed to search for printer driver"
@@ -772,11 +767,11 @@ msgid "Could not find printer driver in any configured software source"
 msgstr ""
 "Не удалось найти драйвер для принтера ни в одном из источников программ"
 
-#: Sentinel/UpdateIcon.cpp:163
+#: Sentinel/UpdateIcon.cpp:160
 msgid "Review Updates"
 msgstr "Просмотр обновлений"
 
-#: Sentinel/UpdateIcon.cpp:166
+#: Sentinel/UpdateIcon.cpp:163
 msgid "Configure"
 msgstr "Настроить"
 
@@ -784,12 +779,12 @@ msgstr "Настроить"
 #. i18n: ectx: property (text), widget (QToolButton, hideTB)
 #. i18n: file: ApperKCM/Updater/UpdateDetails.ui:20
 #. i18n: ectx: property (text), widget (QToolButton, hideTB)
-#: Sentinel/UpdateIcon.cpp:170 libapper/PkTransactionDialog.cpp:86 rc.cpp:137
-#: rc.cpp:173
+#: Sentinel/UpdateIcon.cpp:167 Sentinel/TransactionWatcher.cpp:186
+#: libapper/PkTransactionDialog.cpp:86 rc.cpp:137 rc.cpp:173
 msgid "Hide"
 msgstr "Скрыть"
 
-#: Sentinel/UpdateIcon.cpp:180
+#: Sentinel/UpdateIcon.cpp:177
 #, kde-format
 msgid "You have one update"
 msgid_plural "You have %1 updates"
@@ -798,19 +793,19 @@ msgstr[1] "Имеется %1 обновления"
 msgstr[2] "Имеется %1 обновлений"
 msgstr[3] "Имеется 1 обновление"
 
-#: Sentinel/UpdateIcon.cpp:233
+#: Sentinel/UpdateIcon.cpp:230
 msgid "Updates are being automatically installed."
 msgstr "Идёт автоматическая установка обновлений."
 
-#: Sentinel/UpdateIcon.cpp:254
+#: Sentinel/UpdateIcon.cpp:251
 msgid "Security updates are being automatically installed."
 msgstr "Идёт автоматическая установка обновлений безопасности."
 
-#: Sentinel/UpdateIcon.cpp:281
+#: Sentinel/UpdateIcon.cpp:278
 msgid "System update was successful."
 msgstr "Обновление системы прошло успешно."
 
-#: Sentinel/UpdateIcon.cpp:290
+#: Sentinel/UpdateIcon.cpp:287
 msgid "The automated software update failed."
 msgstr "Автоматическое обновление завершилось неудачно."
 
@@ -823,16 +818,12 @@ msgstr[2] "Были найдены следующие пакеты"
 msgstr[3] "Был найден следующий пакет"
 
 #: Sentinel/PkInstallPackageNames.cpp:41
-#, fuzzy
-#| msgid "Install Packages"
 msgid "Install Packages by Name"
-msgstr "Установить пакеты"
+msgstr "Установка пакетов по названию"
 
 #: Sentinel/PkInstallPackageNames.cpp:58
-#, fuzzy
-#| msgid "No files were found."
 msgid "No package names were provided"
-msgstr "Файлы не найдены."
+msgstr "Имена пакетов не указаны"
 
 #: Sentinel/PkInstallPackageNames.cpp:61
 msgid "Do you want to search for and install this package now?"
@@ -845,19 +836,19 @@ msgstr[3] "Выполнить поиск и установку этого пак
 #: Sentinel/PkInstallPackageNames.cpp:71 Sentinel/PkInstallPackageFiles.cpp:79
 msgid "An application wants to install a package"
 msgid_plural "An application wants to install packages"
-msgstr[0] "Приложение хочет установить пакеты"
-msgstr[1] "Приложение хочет установить пакеты"
-msgstr[2] "Приложение хочет установить пакеты"
-msgstr[3] "Приложение хочет установить пакет"
+msgstr[0] "Программе требуется установить пакеты"
+msgstr[1] "Программе требуется установить пакеты"
+msgstr[2] "Программе требуется установить пакеты"
+msgstr[3] "Программе требуется установить пакет"
 
 #: Sentinel/PkInstallPackageNames.cpp:75 Sentinel/PkInstallPackageFiles.cpp:83
 #, kde-format
 msgid "The application <i>%2</i> wants to install a package"
 msgid_plural "The application <i>%2</i> wants to install packages"
-msgstr[0] "Приложение %2 хочет установить пакеты"
-msgstr[1] "Приложение %2 хочет установить пакеты"
-msgstr[2] "Приложение %2 хочет установить пакеты"
-msgstr[3] "Приложение %2 хочет установить пакет"
+msgstr[0] "Программе <i>%2</i> требуется установить пакеты"
+msgstr[1] "Программе <i>%2</i> требуется установить пакеты"
+msgstr[2] "Программе <i>%2</i> требуется установить пакеты"
+msgstr[3] "Программе <i>%2</i> требуется установить пакет"
 
 #: Sentinel/PkInstallPackageNames.cpp:97 Sentinel/PkInstallCatalogs.cpp:278
 #: Sentinel/PkIsInstalled.cpp:46
@@ -892,54 +883,41 @@ msgstr[2] "Не удалось найти пакеты ни в одном из �
 msgstr[3] "Не удалось найти пакет ни в одном из источников программ"
 
 #: Sentinel/PkInstallCatalogs.cpp:46
-#, fuzzy
-#| msgid "Install Packages"
 msgid "Install Packages Catalogs"
-msgstr "Установить пакеты"
+msgstr "Установка каталогов пакетов"
 
 #: Sentinel/PkInstallCatalogs.cpp:65
 msgid "You can drop more catalogs in here"
-msgstr ""
+msgstr "Сюда можно переместить дополнительные каталоги"
 
 #: Sentinel/PkInstallCatalogs.cpp:85
-#, fuzzy
-#| msgid "No update description was found."
 msgid "No supported catalog was found"
-msgstr "Описание обновления недоступно."
+msgstr "Не найдено ни одного поддерживаемого каталога"
 
 #: Sentinel/PkInstallCatalogs.cpp:87
-#, fuzzy
-#| msgid "<h3>Do you want to install this catalog?</h3><ul><li>%2</li></ul>"
-#| msgid_plural ""
-#| "<h3>Do you want to install these catalogs?</h3><ul><li>%2</li></ul>"
 msgid "Do you want to install this catalog?"
 msgid_plural "Do you want to install these catalogs?"
-msgstr[0] "<h3>Установить эти каталоги?</h3><ul><li>%2</li></ul>"
-msgstr[1] "<h3>Установить эти каталоги?</h3><ul><li>%2</li></ul>"
-msgstr[2] "<h3>Установить эти каталоги?</h3><ul><li>%2</li></ul>"
-msgstr[3] "<h3>Установить этот каталог?</h3><ul><li>%2</li></ul>"
+msgstr[0] "Установить эти каталоги?"
+msgstr[1] "Установить эти каталоги?"
+msgstr[2] "Установить эти каталоги?"
+msgstr[3] "Установить этот каталог?"
 
 #: Sentinel/PkInstallCatalogs.cpp:96
-#, fuzzy
-#| msgid "A program wants to install a package"
-#| msgid_plural "A program wants to install packages"
 msgid "An application wants to install a catalog"
 msgid_plural "An application wants to install catalogs"
-msgstr[0] "Программа хочет установить пакеты"
-msgstr[1] "Программа хочет установить пакеты"
-msgstr[2] "Программа хочет установить пакеты"
-msgstr[3] "Программа хочет установить пакет"
+msgstr[0] "Программе требуется установить каталоги"
+msgstr[1] "Программе требуется установить каталоги"
+msgstr[2] "Программе требуется установить каталоги"
+msgstr[3] "Программе требуется установить каталог"
 
 #: Sentinel/PkInstallCatalogs.cpp:100
-#, fuzzy, kde-format
-#| msgid "%2 wants to install a package"
-#| msgid_plural "%2 wants to install packages"
+#, kde-format
 msgid "The application <i>%2</i> wants to install a catalog"
 msgid_plural "The application <i>%2</i> wants to install catalogs"
-msgstr[0] "%2 хочет установить пакеты"
-msgstr[1] "%2 хочет установить пакеты"
-msgstr[2] "%2 хочет установить пакеты"
-msgstr[3] "%2 хочет установить пакет"
+msgstr[0] "Программе <i>%2</i> требуется установить каталоги"
+msgstr[1] "Программе <i>%2</i> требуется установить каталоги"
+msgstr[2] "Программе <i>%2</i> требуется установить каталоги"
+msgstr[3] "Программе <i>%2</i> требуется установить каталог"
 
 #: Sentinel/PkInstallCatalogs.cpp:137
 msgid "Not supported"
@@ -957,10 +935,8 @@ msgid "Catalog not found"
 msgstr "Каталог не найден"
 
 #: Sentinel/PkInstallCatalogs.cpp:178
-#, fuzzy
-#| msgid "Could not find package"
 msgid "Could not find a catalog to install"
-msgstr "Не удаётся найти пакет"
+msgstr "Не удаётся найти каталог для установки"
 
 #: Sentinel/PkInstallCatalogs.cpp:185
 #, kde-format
@@ -980,78 +956,59 @@ msgid "Catalog is Empty"
 msgstr "Каталог пуст"
 
 #: Sentinel/PkInstallCatalogs.cpp:196
-#, fuzzy
-#| msgid "<h3>Do you want to install this catalog?</h3><ul><li>%2</li></ul>"
-#| msgid_plural ""
-#| "<h3>Do you want to install these catalogs?</h3><ul><li>%2</li></ul>"
 msgid "Could not find any package to install in this catalog"
-msgstr "<h3>Установить эти каталоги?</h3><ul><li>%2</li></ul>"
+msgstr "Не удалось найти пакет для установки в этом каталоге"
 
-#: Sentinel/SessionTask.cpp:66 libapper/Requirements.cpp:43
+#: Sentinel/SessionTask.cpp:66 libapper/Requirements.cpp:44
 msgid "Continue"
 msgstr "Продолжить"
 
-#: Sentinel/SessionTask.cpp:361
-#, fuzzy
-#| msgid "The package is not installed"
+#: Sentinel/SessionTask.cpp:363
 msgid "There are no packages to Install or Remove"
-msgstr "Пакет не установлен"
+msgstr "Отсутствуют пакеты для установки или удаления"
 
-#: Sentinel/SessionTask.cpp:362
-#, fuzzy
-#| msgid "This action is unknown."
+#: Sentinel/SessionTask.cpp:364
 msgid "This action should not happen"
-msgstr "Неизвестное действие."
+msgstr "Это действие не должно было выполняться"
 
-#: Sentinel/SessionTask.cpp:391
-#, fuzzy
-#| msgid "Could not find %1"
+#: Sentinel/SessionTask.cpp:393
 msgid "Could not find"
-msgstr "Не удаётся найти %1"
+msgstr "Не удаётся найти"
 
-#: Sentinel/SessionTask.cpp:392 Sentinel/SessionTask.cpp:401
-#, fuzzy
-#| msgid "No package was found to be installed"
+#: Sentinel/SessionTask.cpp:394 Sentinel/SessionTask.cpp:403
 msgid "No packages were found that meet the request"
-msgstr "Не найдено пакета для установки"
+msgstr "Не найдено пакетов, соответствующих запросу"
 
-#: Sentinel/SessionTask.cpp:400
-#, fuzzy
-#| msgid "Failed to find font"
+#: Sentinel/SessionTask.cpp:402
 msgid "Failed to find"
-msgstr "Не удалось найти шрифт"
+msgstr "Сбой поиска"
 
-#: Sentinel/SessionTask.cpp:422
+#: Sentinel/SessionTask.cpp:424
 msgid "Transaction did not finish with success"
-msgstr "Транзакция завершилась не успешно"
+msgstr "Сбой завершения операции"
 
-#: Sentinel/SessionTask.cpp:428
-#, fuzzy
-#| msgid "Obsoleted"
+#: Sentinel/SessionTask.cpp:430
 msgid "Task completed"
-msgstr "Заменён"
+msgstr "Задача выполнена"
 
-#: Sentinel/SessionTask.cpp:428
-#, fuzzy
-#| msgid "File was installed successfully"
-#| msgid_plural "Files were installed successfully"
+#: Sentinel/SessionTask.cpp:430
 msgid "All operations were committed successfully"
-msgstr "Файлы были успешно установлены"
+msgstr "Все операции успешно выполнены"
 
-#: Sentinel/TransactionWatcher.cpp:64 Sentinel/TransactionWatcher.cpp:249
+#: Sentinel/TransactionWatcher.cpp:66 Sentinel/TransactionWatcher.cpp:265
 msgid "Hide this icon"
 msgstr "Скрыть этот значок"
 
-#: Sentinel/TransactionWatcher.cpp:166
+#: Sentinel/TransactionWatcher.cpp:168
 msgid "The system update has completed"
 msgstr "Обновление системы завершено"
 
-#: Sentinel/TransactionWatcher.cpp:172
+#: Sentinel/TransactionWatcher.cpp:174
 #, kde-format
 msgid "Packages: %1"
 msgstr "Пакеты: %1"
 
-#: Sentinel/TransactionWatcher.cpp:184
+#: Sentinel/TransactionWatcher.cpp:201
 #, kde-format
 msgid "Package: %2"
 msgid_plural "Packages: %2"
@@ -1060,40 +1017,34 @@ msgstr[1] "Пакеты: %2"
 msgstr[2] "Пакеты: %2"
 msgstr[3] "Пакет: %2"
 
-#: Sentinel/TransactionWatcher.cpp:231 Sentinel/TransactionWatcher.cpp:271
-#, fuzzy
-#| msgid "Package Manager Messages"
+#: Sentinel/TransactionWatcher.cpp:247 Sentinel/TransactionWatcher.cpp:287
 msgid "Software Manager Messages"
-msgstr "Сообщение менеджера пакетов"
+msgstr "Сообщение менеджера программ"
 
-#: Sentinel/TransactionWatcher.cpp:232
-#, fuzzy, kde-format
-#| msgid "One message from the package manager"
-#| msgid_plural "%1 messages from the package manager"
+#: Sentinel/TransactionWatcher.cpp:248
+#, kde-format
 msgid "One message from the software manager"
 msgid_plural "%1 messages from the software manager"
-msgstr[0] "%1 сообщение от программы управления пакетами"
-msgstr[1] "%1 сообщения от программы управления пакетами"
-msgstr[2] "%1 сообщений от программы управления пакетами"
-msgstr[3] "Сообщение от программы управления пакетами"
+msgstr[0] "%1 сообщение от менеджера программ"
+msgstr[1] "%1 сообщения от менеджера программ"
+msgstr[2] "%1 сообщений от менеджера программ"
+msgstr[3] "Сообщение от менеджера программ"
 
-#: Sentinel/TransactionWatcher.cpp:240
+#: Sentinel/TransactionWatcher.cpp:256
 msgid "Show messages"
 msgstr "Показать сообщения"
 
-#: Sentinel/TransactionWatcher.cpp:292
+#: Sentinel/TransactionWatcher.cpp:308
 msgid "Ignore"
 msgstr "Игнорировать"
 
 #: Sentinel/PkIsInstalled.cpp:36
-#, fuzzy
-#| msgid "The package is not installed"
 msgid "Querying if a Package is Installed"
-msgstr "Пакет не установлен"
+msgstr "Сделать запрос, если пакет установлен"
 
 #: Sentinel/PkIsInstalled.cpp:67
 msgid "User canceled the transaction"
-msgstr "Транзакция отменена пользователем"
+msgstr "Операция отменена пользователем"
 
 #: Sentinel/PkIsInstalled.cpp:69
 msgid "An unknown error happened"
@@ -1101,12 +1052,12 @@ msgstr "Произошла неизвестная ошибка"
 
 #: Sentinel/TransactionTrayIcon.cpp:45
 msgid "Transactions"
-msgstr "Транзакции"
+msgstr "Операции"
 
 #: Sentinel/TransactionTrayIcon.cpp:90
 #, kde-format
 msgid "%1% - %2"
-msgstr "%1% - %2"
+msgstr "%1% — %2"
 
 #: Sentinel/TransactionTrayIcon.cpp:92
 #, kde-format
@@ -1114,194 +1065,132 @@ msgid "%1"
 msgstr "%1"
 
 #: Sentinel/PkInstallPlasmaResources.cpp:40
-#, fuzzy
-#| msgid "Install Packages"
 msgid "Install Plasma Resources"
-msgstr "Установить пакеты"
+msgstr "Установка ресурсов Plasma"
 
 #: Sentinel/PkInstallPlasmaResources.cpp:53
-#, fuzzy, kde-format
-#| msgctxt "Part of: %1 Updates, %1 Selected"
-#| msgid "%1 Update"
-#| msgid_plural "%1 Updates"
+#, kde-format
 msgid "%1 data engine"
-msgstr "%1 обновление"
+msgstr "Источник данных %1"
 
 #: Sentinel/PkInstallPlasmaResources.cpp:55
 #, kde-format
 msgid "%1 script engine"
-msgstr ""
+msgstr "Источник сценариев %1"
 
 #: Sentinel/PkInstallPlasmaResources.cpp:67
-#, fuzzy
-#| msgid "No files were found."
 msgid "No supported resources were provided"
-msgstr "Файлы не найдены."
+msgstr "Не обнаружено поддерживаемых ресурсов"
 
 #: Sentinel/PkInstallPlasmaResources.cpp:69
-#, fuzzy
-#| msgid ""
-#| "The following plugin is required: <ul><li>%2</li></ul>Do you want to "
-#| "search for this now?"
-#| msgid_plural ""
-#| "The following plugins are required: <ul><li>%2</li></ul>Do you want to "
-#| "search for these now?"
 msgid "The following service is required. Do you want to search for this now?"
 msgid_plural ""
 "The following services are required. Do you want to search for these now?"
-msgstr[0] ""
-"Требуются следующие дополнения: <ul><li>%2</li></ul>Выполнить их поиск "
-"сейчас?"
-msgstr[1] ""
-"Требуются следующие дополнения: <ul><li>%2</li></ul>Выполнить их поиск "
-"сейчас?"
-msgstr[2] ""
-"Требуются следующие дополнения: <ul><li>%2</li></ul>Выполнить их поиск "
-"сейчас?"
-msgstr[3] ""
-"Требуется следующие дополнение: <ul><li>%2</li></ul>Выполнить его поиск "
-"сейчас?"
+msgstr[0] "Требуются следующие службы. Выполнить их поиск сейчас?"
+msgstr[1] "Требуются следующие службы. Выполнить их поиск сейчас?"
+msgstr[2] "Требуются следующие службы. Выполнить их поиск сейчас?"
+msgstr[3] "Требуется следующая служба. Выполнить её поиск сейчас?"
 
 #: Sentinel/PkInstallPlasmaResources.cpp:78
-#, fuzzy
-#| msgid "%2 requires an additional plugin for this operation"
-#| msgid_plural "%2 requires additional plugins for this operation"
 msgid "Plasma requires an additional service for this operation"
 msgid_plural "Plasma requires additional services for this operation"
-msgstr[0] "%2 требуются дополнения для выполнения этой операции"
-msgstr[1] "%2 требуются дополнения для выполнения этой операции"
-msgstr[2] "%2 требуются дополнения для выполнения этой операции"
-msgstr[3] "%2 требуется дополнение для выполнения этой операции"
+msgstr[0] "Plasma требуются дополнительные службы для выполнения этой операции"
+msgstr[1] "Plasma требуются дополнительные службы для выполнения этой операции"
+msgstr[2] "Plasma требуются дополнительные службы для выполнения этой операции"
+msgstr[3] "Plasma требуется дополнительная служба для выполнения этой операции"
 
 #: Sentinel/PkInstallPlasmaResources.cpp:112
-#, fuzzy
-#| msgid "Failed to search for provides"
 msgid "Failed to search for Plasma service"
-msgstr "Не удалось найти требуемые дополнения"
+msgstr "Сбой поиска служб Plasma"
 
 #: Sentinel/PkInstallPlasmaResources.cpp:115
-#, fuzzy
-#| msgid "Could not find plugin in any configured software source"
 msgid "Could not find service in any configured software source"
-msgstr "Не удалось найти дополнение ни в одном из источников программ"
+msgstr "Не удалось найти службы ни в одном из источников программ"
 
 #: Sentinel/PkInstallMimeTypes.cpp:39
-#, fuzzy
-#| msgid "Install Files"
 msgid "Install Support for File Types"
-msgstr "Установить файлы"
+msgstr "Установка поддержки типов файлов"
 
 #: Sentinel/PkInstallMimeTypes.cpp:50
-#, fuzzy
-#| msgid ""
-#| "Do you want to search for packages containing this file and remove it now?"
-#| msgid_plural ""
-#| "Do you want to search for packages containing these files and remove them "
-#| "now?"
 msgid "Do you want to search for a program that can open this file type?"
 msgid_plural ""
 "Do you want to search for a program that can open these file types?"
-msgstr[0] "Найти и удалить пакеты, содержащие эти файлы?"
-msgstr[1] "Найти и удалить пакеты, содержащие эти файлы?"
-msgstr[2] "Найти и удалить пакеты, содержащие эти файлы?"
-msgstr[3] "Найти и удалить пакеты, содержащие эти файлы?"
+msgstr[0] "Найти программу, которая может открывать эти типы файлов?"
+msgstr[1] "Найти программу, которая может открывать эти типы файлов?"
+msgstr[2] "Найти программу, которая может открывать эти типы файлов?"
+msgstr[3] "Найти программу, которая может открывать этот тип файла?"
 
 #: Sentinel/PkInstallMimeTypes.cpp:55
-#, fuzzy
-#| msgid "No files were found."
 msgid "No valid file types were provided"
-msgstr "Файлы не найдены."
+msgstr "Были предоставлены недопустимые типы файлов"
 
 #: Sentinel/PkInstallMimeTypes.cpp:62
-#, fuzzy
-#| msgid "A program requires an additional plugin to decode this file"
-#| msgid_plural "A program requires additional plugins to decode this file"
 msgid "A program is requiring support to open this kind of files"
 msgid_plural "A program is requiring support to open these kinds of files"
-msgstr[0] "Для декодирования этого файла требуются дополнения"
-msgstr[1] "Для декодирования этого файла требуются дополнения"
-msgstr[2] "Для декодирования этого файла требуются дополнения"
-msgstr[3] "Для декодирования этого файла требуется дополнение"
+msgstr[0] "Программе требуются дополнения для открытия файлов этих типов"
+msgstr[1] "Программе требуются дополнения для открытия файлов этих типов"
+msgstr[2] "Программе требуются дополнения для открытия файлов этих типов"
+msgstr[3] "Программе требуются дополнения для открытия файла этого типа"
 
 #: Sentinel/PkInstallMimeTypes.cpp:66
-#, fuzzy, kde-format
-#| msgid "A program requires an additional plugin to decode this file"
-#| msgid_plural "A program requires additional plugins to decode this file"
+#, kde-format
 msgid "The application %2 is requiring support to open this kind of files"
 msgid_plural ""
 "The application %2 is requiring support to open these kinds of files"
-msgstr[0] "Для декодирования этого файла требуются дополнения"
-msgstr[1] "Для декодирования этого файла требуются дополнения"
-msgstr[2] "Для декодирования этого файла требуются дополнения"
-msgstr[3] "Для декодирования этого файла требуется дополнение"
+msgstr[0] "Программе %2 требуются дополнения для открытия файлов этих типов"
+msgstr[1] "Программе %2 требуются дополнения для открытия файлов этих типов"
+msgstr[2] "Программе %2 требуются дополнения для открытия файлов этих типов"
+msgstr[3] "Программе %2 требуются дополнения для открытия файла этого типа"
 
 #: Sentinel/PkInstallMimeTypes.cpp:101
-#, fuzzy
-#| msgid "Failed to find software"
 msgid "Could not find software"
-msgstr "Не удаётся найти программы"
+msgstr "Не удалось найти программу"
 
 #: Sentinel/PkInstallMimeTypes.cpp:103
 msgid "No new applications can be found to handle this type of file"
 msgstr "Нет новых приложений, которые могли бы работать с этим типом файла"
 
 #: Sentinel/main.cpp:36
-#, fuzzy
-#| msgid "Apply Settings"
 msgid "Apper Sentinel"
-msgstr "Применить параметры"
+msgstr "Устройство защиты Apper"
 
 #: Sentinel/main.cpp:41
 msgid "Trever Fischer"
 msgstr "Trever Fischer"
 
 #: Sentinel/PkInstallPackageFiles.cpp:38
-#, fuzzy
-#| msgid "Install Packages"
 msgid "Install Packages Files"
-msgstr "Установить пакеты"
+msgstr "Установка пакетов с файлами"
 
 #: Sentinel/PkInstallPackageFiles.cpp:42
 #: Sentinel/PkRemovePackageByFiles.cpp:43
 msgid "You can drop more files in here"
-msgstr ""
+msgstr "Сюда можно переместить дополнительные файлы"
 
 #: Sentinel/PkInstallPackageFiles.cpp:52
-#, fuzzy
-#| msgid "Not supported"
 msgid "Not Supported"
 msgstr "Не поддерживается"
 
 #: Sentinel/PkInstallPackageFiles.cpp:53
-#, fuzzy
-#| msgid "Current backend does not support installing packages."
 msgid "Your current backend does not support installing files"
-msgstr "Текущий модуль не поддерживает установку пакетов."
+msgstr "Текущий модуль не поддерживает установку файлов"
 
 #: Sentinel/PkInstallPackageFiles.cpp:68
 #: Sentinel/PkRemovePackageByFiles.cpp:64
-#, fuzzy
-#| msgid "No files were found."
 msgid "No supported files were provided"
-msgstr "Файлы не найдены."
+msgstr "Не обнаружено поддерживаемых файлов"
 
 #: Sentinel/PkInstallPackageFiles.cpp:70
-#, fuzzy
-#| msgid "Do you want to install this file?"
-#| msgid_plural "Do you want to install these files?"
 msgid "Press <i>Continue</i> if you want to install this file"
 msgid_plural "Press <i>Continue</i> if you want to install these files"
-msgstr[0] "Установить эти файлы?"
-msgstr[1] "Установить эти файлы?"
-msgstr[2] "Установить эти файлы?"
-msgstr[3] "Установить этот файл?"
+msgstr[0] "Нажмите <i>Продолжить</i>, если хотите установить эти файлы"
+msgstr[1] "Нажмите <i>Продолжить</i>, если хотите установить эти файлы"
+msgstr[2] "Нажмите <i>Продолжить</i>, если хотите установить эти файлы"
+msgstr[3] "Нажмите <i>Продолжить</i>, если хотите установить этот файл"
 
 #: Sentinel/PkInstallPackageFiles.cpp:105
-#, fuzzy
-#| msgctxt "The role of the transaction, in present tense"
-#| msgid "Installing file"
 msgid "Installation Complete"
-msgstr "Установка файла"
+msgstr "Установка завершена"
 
 #: Sentinel/PkInstallPackageFiles.cpp:106
 msgid "File was installed successfully"
@@ -1312,99 +1201,71 @@ msgstr[2] "Файлы были успешно установлены"
 msgstr[3] "Файл был успешно установлен"
 
 #: Sentinel/PkInstallPackageFiles.cpp:117
-#, fuzzy
-#| msgid "Failed to install file"
-#| msgid_plural "Failed to install files"
 msgid "Failed to install files"
-msgstr "Не удалось установить файлы"
+msgstr "Сбой установки файлы"
 
 #: Sentinel/PkInstallPackageFiles.cpp:118
 #: Sentinel/PkInstallPackageFiles.cpp:120
-#, fuzzy
-#| msgid "Failed to install file"
-#| msgid_plural "Failed to install files"
 msgid "Could not install files"
 msgstr "Не удалось установить файлы"
 
 #: Sentinel/PkRemovePackageByFiles.cpp:40
-#, fuzzy
-#| msgid "Remove Packages"
 msgid "Remove Packages that Provides Files"
-msgstr "Удалить пакеты"
+msgstr "Удаление пакетов с предоставляемыми файлами"
 
 #: Sentinel/PkRemovePackageByFiles.cpp:67
-#, fuzzy
-#| msgid "You need to restart the application"
 msgid "Do you want to remove the following application?"
 msgid_plural "Do you want to remove the following applications?"
-msgstr[0] "Вам необходимо перезапустить приложение"
-msgstr[1] "Вам необходимо перезапустить приложение"
-msgstr[2] "Вам необходимо перезапустить приложение"
-msgstr[3] "Вам необходимо перезапустить приложение"
+msgstr[0] "Удалить следующие приложения?"
+msgstr[1] "Удалить следующие приложения?"
+msgstr[2] "Удалить следующие приложения?"
+msgstr[3] "Удалить следующие приложения?"
 
 #: Sentinel/PkRemovePackageByFiles.cpp:71
-#, fuzzy
-#| msgid ""
-#| "Do you want to search for packages containing this file and remove it now?"
-#| msgid_plural ""
-#| "Do you want to search for packages containing these files and remove them "
-#| "now?"
 msgid "Do you want to search for a package providing this file?"
 msgid_plural "Do you want to search for a package providing these files?"
-msgstr[0] "Найти и удалить пакеты, содержащие эти файлы?"
-msgstr[1] "Найти и удалить пакеты, содержащие эти файлы?"
-msgstr[2] "Найти и удалить пакеты, содержащие эти файлы?"
-msgstr[3] "Найти и удалить пакеты, содержащие эти файлы?"
+msgstr[0] "Найти пакет, предоставляющий эти файлы?"
+msgstr[1] "Найти пакет, предоставляющий эти файлы?"
+msgstr[2] "Найти пакет, предоставляющий эти файлы?"
+msgstr[3] "Найти пакет, предоставляющий этот файл?"
 
 #: Sentinel/PkRemovePackageByFiles.cpp:82
-#, fuzzy
-#| msgid "%2 wants to install a package"
-#| msgid_plural "%2 wants to install packages"
 msgid "An application is asking to remove an application"
 msgid_plural "An application is asking to remove applications"
-msgstr[0] "%2 хочет установить пакеты"
-msgstr[1] "%2 хочет установить пакеты"
-msgstr[2] "%2 хочет установить пакеты"
-msgstr[3] "%2 хочет установить пакет"
+msgstr[0] "Программа посылает запрос об удалении приложений"
+msgstr[1] "Программа посылает запрос об удалении приложений"
+msgstr[2] "Программа посылает запрос об удалении приложений"
+msgstr[3] "Программа посылает запрос об удалении приложения"
 
 #: Sentinel/PkRemovePackageByFiles.cpp:86
-#, fuzzy
-#| msgid "%2 wants to install a package"
-#| msgid_plural "%2 wants to install packages"
 msgid "An application is asking to remove a file"
 msgid_plural "An application is asking to remove files"
-msgstr[0] "%2 хочет установить пакеты"
-msgstr[1] "%2 хочет установить пакеты"
-msgstr[2] "%2 хочет установить пакеты"
-msgstr[3] "%2 хочет установить пакет"
+msgstr[0] "Программа посылает запрос об удалении файлов"
+msgstr[1] "Программа посылает запрос об удалении файлов"
+msgstr[2] "Программа посылает запрос об удалении файлов"
+msgstr[3] "Программа посылает запрос об удалении файла"
 
 #: Sentinel/PkRemovePackageByFiles.cpp:92
-#, fuzzy, kde-format
-#| msgid "%2 wants to install a package"
-#| msgid_plural "%2 wants to install packages"
+#, kde-format
 msgid "The application <i>%2</i> is asking to remove an application"
 msgid_plural "The application <i>%2</i> is asking to remove applications"
-msgstr[0] "%2 хочет установить пакеты"
-msgstr[1] "%2 хочет установить пакеты"
-msgstr[2] "%2 хочет установить пакеты"
-msgstr[3] "%2 хочет установить пакет"
+msgstr[0] "Программа <i>%2</i> посылает запрос об удалении приложений"
+msgstr[1] "Программа <i>%2</i> посылает запрос об удалении приложений"
+msgstr[2] "Программа <i>%2</i> посылает запрос об удалении приложений"
+msgstr[3] "Программа <i>%2</i> посылает запрос об удалении приложения"
 
 #: Sentinel/PkRemovePackageByFiles.cpp:97
-#, fuzzy, kde-format
-#| msgid "%2 wants to install a package"
-#| msgid_plural "%2 wants to install packages"
+#, kde-format
 msgid "The application <i>%2</i> is asking to remove a file"
 msgid_plural "The application <i>%2</i> is asking to remove files"
-msgstr[0] "%2 хочет установить пакеты"
-msgstr[1] "%2 хочет установить пакеты"
-msgstr[2] "%2 хочет установить пакеты"
-msgstr[3] "%2 хочет установить пакет"
+msgstr[0] "Программа <i>%2</i> посылает запрос об удалении файлов"
+msgstr[1] "Программа <i>%2</i> посылает запрос об удалении файлов"
+msgstr[2] "Программа <i>%2</i> посылает запрос об удалении файлов"
+msgstr[3] "Программа <i>%2</i> посылает запрос об удалении файла"
 
 #: Sentinel/PkRemovePackageByFiles.cpp:103
-#, fuzzy
-#| msgid "No update description was found."
 msgid "No application was found"
-msgstr "Описание обновления недоступно."
+msgstr "Приложение не найдено"
 
 #: Sentinel/PkRemovePackageByFiles.cpp:150
 msgid "The file could not be found in any installed package"
@@ -1415,11 +1276,8 @@ msgstr[2] "Не удалось найти файлы ни в одном из у�
 msgstr[3] "Не удалось найти файл ни в одном из установленных пакетов"
 
 #: Sentinel/PkSearchFile.cpp:37
-#, fuzzy
-#| msgctxt "The role of the transaction, in past tense"
-#| msgid "Searched for package details"
 msgid "Search Packages that Provides Files"
-msgstr "Описание пакета найдено"
+msgstr "Поиск пакетов с предоставляемыми файлами"
 
 #: Sentinel/PkSearchFile.cpp:80
 msgid "The file name could not be found in any software source"
@@ -1428,27 +1286,18 @@ msgstr ""
 "программного обеспечения"
 
 #: Sentinel/PkInstallFontconfigResources.cpp:41
-#, fuzzy
-#| msgid "Install Files"
 msgid "Installs new Fonts"
-msgstr "Установить файлы"
+msgstr "Установка новых шрифтов"
 
 #: Sentinel/PkInstallFontconfigResources.cpp:73
 msgid "Could interpret request"
-msgstr ""
+msgstr "Не удалось обработать запрос"
 
 #: Sentinel/PkInstallFontconfigResources.cpp:73
 msgid "Please verify if the request was valid"
-msgstr ""
+msgstr "Убедитесь, что запрос был составлен корректно"
 
 #: Sentinel/PkInstallFontconfigResources.cpp:107
-#, fuzzy
-#| msgid ""
-#| "An additional font is required to view this document correctly. Do you "
-#| "want to search for a suitable package now?"
-#| msgid_plural ""
-#| "Additional fonts are required to view this document correctly. Do you "
-#| "want to search for suitable packages now?"
 msgid ""
 "An additional font is required to view this document correctly.\n"
 "Do you want to search for a suitable package now?"
@@ -1456,36 +1305,34 @@ msgid_plural ""
 "Additional fonts are required to view this document correctly.\n"
 "Do you want to search for suitable packages now?"
 msgstr[0] ""
-"Для правильного просмотра этого документа необходимы дополнительные шрифты. "
+"Для правильного просмотра этого документа необходимы дополнительные шрифты.\n"
 "Выполнить поиск подходящих пакетов сейчас?"
 msgstr[1] ""
-"Для правильного просмотра этого документа необходимы дополнительные шрифты. "
+"Для правильного просмотра этого документа необходимы дополнительные шрифты.\n"
 "Выполнить поиск подходящих пакетов сейчас?"
 msgstr[2] ""
-"Для правильного просмотра этого документа необходимы дополнительные шрифты. "
+"Для правильного просмотра этого документа необходимы дополнительные шрифты.\n"
 "Выполнить поиск подходящих пакетов сейчас?"
 msgstr[3] ""
-"Для правильного просмотра этого документа необходим дополнительный шрифт. "
+"Для правильного просмотра этого документа необходим дополнительный шрифт.\n"
 "Выполнить поиск подходящего пакета сейчас?"
 
 #: Sentinel/PkInstallFontconfigResources.cpp:117
 msgid "A program wants to install a font"
 msgid_plural "A program wants to install fonts"
-msgstr[0] "Программа хочет установить шрифты"
-msgstr[1] "Программа хочет установить шрифты"
-msgstr[2] "Программа хочет установить шрифты"
-msgstr[3] "Программа хочет установить шрифт"
+msgstr[0] "Программе требуется установить шрифты"
+msgstr[1] "Программе требуется установить шрифты"
+msgstr[2] "Программе требуется установить шрифты"
+msgstr[3] "Программе требуется установить шрифт"
 
 #: Sentinel/PkInstallFontconfigResources.cpp:121
-#, fuzzy, kde-format
-#| msgid "%2 wants to install a package"
-#| msgid_plural "%2 wants to install packages"
+#, kde-format
 msgid "The application %2 wants to install a font"
 msgid_plural "The application %2 wants to install fonts"
-msgstr[0] "%2 хочет установить пакеты"
-msgstr[1] "%2 хочет установить пакеты"
-msgstr[2] "%2 хочет установить пакеты"
-msgstr[3] "%2 хочет установить пакет"
+msgstr[0] "Программе %2 требуется установить шрифты"
+msgstr[1] "Программе %2 требуется установить шрифты"
+msgstr[2] "Программе %2 требуется установить шрифты"
+msgstr[3] "Программе %2 требуется установить шрифт"
 
 #: Sentinel/PkInstallFontconfigResources.cpp:155
 #: Sentinel/PkInstallFontconfigResources.cpp:164
@@ -1493,38 +1340,21 @@ msgid "Failed to find font"
 msgstr "Не удалось найти шрифт"
 
 #: Sentinel/PkInstallFontconfigResources.cpp:157
-#, fuzzy
-#| msgid "No new fonts can be found for this document"
 msgid "No new fonts could be found for this document"
 msgstr "Новых шрифтов для этого документа не найдено"
 
 #: Sentinel/PkInstallGStreamerResources.cpp:39
 msgid "Install GStreamer Resources"
-msgstr ""
+msgstr "Установка ресурсов GStreamer"
 
 #: Sentinel/PkInstallGStreamerResources.cpp:68
-#, fuzzy
-#| msgid ""
-#| "The following plugin is required: <ul><li>%2</li></ul>Do you want to "
-#| "search for this now?"
-#| msgid_plural ""
-#| "The following plugins are required: <ul><li>%2</li></ul>Do you want to "
-#| "search for these now?"
 msgid "The following plugin is required. Do you want to search for this now?"
 msgid_plural ""
 "The following plugins are required. Do you want to search for these now?"
-msgstr[0] ""
-"Требуются следующие дополнения: <ul><li>%2</li></ul>Выполнить их поиск "
-"сейчас?"
-msgstr[1] ""
-"Требуются следующие дополнения: <ul><li>%2</li></ul>Выполнить их поиск "
-"сейчас?"
-msgstr[2] ""
-"Требуются следующие дополнения: <ul><li>%2</li></ul>Выполнить их поиск "
-"сейчас?"
-msgstr[3] ""
-"Требуется следующие дополнение: <ul><li>%2</li></ul>Выполнить его поиск "
-"сейчас?"
+msgstr[0] "Требуются следующие дополнения. Выполнить их поиск сейчас?"
+msgstr[1] "Требуются следующие дополнения. Выполнить их поиск сейчас?"
+msgstr[2] "Требуются следующие дополнения. Выполнить их поиск сейчас?"
+msgstr[3] "Требуется следующие дополнение. Выполнить его поиск сейчас?"
 
 #: Sentinel/PkInstallGStreamerResources.cpp:80
 msgid "A program requires an additional plugin to decode this file"
@@ -1578,26 +1408,20 @@ msgstr[2] "%2 требуются дополнения для выполнени�
 msgstr[3] "%2 требуется дополнение для выполнения этой операции"
 
 #: Sentinel/PkInstallGStreamerResources.cpp:147
-#, fuzzy
-#| msgid "No files were found."
 msgid "No results found"
-msgstr "Файлы не найдены."
+msgstr "Ничего не найдено"
 
 #: Sentinel/PkInstallGStreamerResources.cpp:149
 msgid "Could not find plugin in any configured software source"
 msgstr "Не удалось найти дополнение ни в одном из источников программ"
 
 #: libapper/ChangesDelegate.cpp:45
-#, fuzzy
-#| msgid "To be Installed"
 msgid "Do not Install"
-msgstr "Будет установлено"
+msgstr "Не устанавливать"
 
 #: libapper/ChangesDelegate.cpp:47
-#, fuzzy
-#| msgid "To be Removed"
 msgid "Do not Remove"
-msgstr "Будет удалено"
+msgstr "Не удалять"
 
 #: libapper/ChangesDelegate.cpp:49 libapper/ApplicationsDelegate.cpp:44
 msgid "Deselect"
@@ -1979,7 +1803,7 @@ msgstr "Получение категорий"
 #: libapper/PkStrings.cpp:231
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting old transactions"
-msgstr "Получение старых транзакций"
+msgstr "Получение старых операций"
 
 #: libapper/PkStrings.cpp:233
 msgctxt "The role of the transaction, in present tense"
@@ -2002,9 +1826,6 @@ msgid "Simulating the update"
 msgstr "Имитирование обновления"
 
 #: libapper/PkStrings.cpp:241
-#, fuzzy
-#| msgctxt "The role of the transaction, in present tense"
-#| msgid "Updating system"
 msgctxt "The role of the transaction, in present tense"
 msgid "Upgrading system"
 msgstr "Обновление системы"
@@ -2102,7 +1923,7 @@ msgstr "Откат выполнен"
 #: libapper/PkStrings.cpp:287
 msgctxt "The role of the transaction, in past tense"
 msgid "Got list of repositories"
-msgstr "Cписок репозиториев получен"
+msgstr "Список репозиториев получен"
 
 #: libapper/PkStrings.cpp:289
 msgctxt "The role of the transaction, in past tense"
@@ -2162,7 +1983,7 @@ msgstr "Категории получены"
 #: libapper/PkStrings.cpp:311
 msgctxt "The role of the transaction, in past tense"
 msgid "Got old transactions"
-msgstr "Старые транзакции получены"
+msgstr "Старые операции получены"
 
 #: libapper/PkStrings.cpp:313
 msgctxt "The role of the transaction, in past tense"
@@ -2185,9 +2006,6 @@ msgid "Simulated the update"
 msgstr "Имитация обновления завершена"
 
 #: libapper/PkStrings.cpp:321
-#, fuzzy
-#| msgctxt "The role of the transaction, in past tense"
-#| msgid "Updated system"
 msgctxt "The role of the transaction, in past tense"
 msgid "Upgraded system"
 msgstr "Система обновлена"
@@ -2230,35 +2048,35 @@ msgstr "Распаковка"
 
 #: libapper/PkStrings.cpp:358
 msgid "Downloaded"
-msgstr "Загружен"
+msgstr "Загружено"
 
 #: libapper/PkStrings.cpp:360
 msgid "Updated"
-msgstr "Обновлён"
+msgstr "Обновлено"
 
 #: libapper/PkStrings.cpp:364
 msgid "Removed"
-msgstr "Удалён"
+msgstr "Удалено"
 
 #: libapper/PkStrings.cpp:366
 msgid "Cleaned up"
-msgstr "Очищен"
+msgstr "Очищено"
 
 #: libapper/PkStrings.cpp:368
 msgid "Obsoleted"
-msgstr "Заменён"
+msgstr "Заменено"
 
 #: libapper/PkStrings.cpp:370
 msgid "Reinstalled"
-msgstr "Переустановлен"
+msgstr "Переустановлено"
 
 #: libapper/PkStrings.cpp:372
 msgid "Prepared"
-msgstr "Подготовлен"
+msgstr "Подготовлено"
 
 #: libapper/PkStrings.cpp:374
 msgid "Decompressed"
-msgstr "Распакован"
+msgstr "Распаковано"
 
 #: libapper/PkStrings.cpp:385
 msgid "No network connection available"
@@ -2326,7 +2144,7 @@ msgstr "Идентификатор пакета сформирован неве�
 
 #: libapper/PkStrings.cpp:417
 msgid "Transaction error"
-msgstr "Ошибка транзакции"
+msgstr "Ошибка операции"
 
 #: libapper/PkStrings.cpp:419
 msgid "Repository name was not found"
@@ -2444,7 +2262,7 @@ msgstr "Пакет несовместим с этой системой"
 msgid "No space is left on the disk"
 msgstr "На диске нет свободного места"
 
-#: libapper/PkStrings.cpp:477 libapper/PkTransaction.cpp:578
+#: libapper/PkStrings.cpp:477 libapper/PkTransaction.cpp:579
 msgid "A media change is required"
 msgstr "Требуется смена носителя"
 
@@ -2494,7 +2312,7 @@ msgstr "Сбой при установке пакета"
 
 #: libapper/PkStrings.cpp:501
 msgid "Package failed to be removed"
-msgstr "Сбой при удаление пакета"
+msgstr "Сбой при удалении пакета"
 
 #: libapper/PkStrings.cpp:503
 msgid "Update failed due to running process"
@@ -2506,21 +2324,19 @@ msgstr "База данных пакетов была изменена"
 
 #: libapper/PkStrings.cpp:507
 msgid "Virtual provide type is not supported"
-msgstr ""
+msgstr "Тип виртуального предоставления не поддерживается"
 
 #: libapper/PkStrings.cpp:509
 msgid "Install root is invalid"
-msgstr ""
+msgstr "Установка с правами администратора (root) недопустима"
 
 #: libapper/PkStrings.cpp:511
-#, fuzzy
-#| msgid "Cannot get lock"
 msgid "Cannot fetch install sources"
-msgstr "Не удалось получить блокировку"
+msgstr "Не удалось получить источник данных для установки"
 
 #: libapper/PkStrings.cpp:513
 msgid "Rescheduled due to priority"
-msgstr ""
+msgstr "Список упорядочен по приоритету"
 
 #: libapper/PkStrings.cpp:515
 msgid "Unknown error"
@@ -2647,7 +2463,7 @@ msgid ""
 "An error occurred while running the transaction.\n"
 "More information is available in the detailed report."
 msgstr ""
-"Произошла ошибка при выполнении транзакции.\n"
+"Произошла ошибка при выполнении операции.\n"
 "Дополнительная информация доступна в подробном отчёте."
 
 #: libapper/PkStrings.cpp:572
@@ -2707,7 +2523,7 @@ msgid ""
 "Two packages provide the same file.\n"
 "This is usually due to mixing packages for different software origins."
 msgstr ""
-"Два пакета содержат одинаковый файл.\n"
+"Два пакета предоставляют одинаковый файл.\n"
 "Причиной этого, как правило, является использование сразу нескольких разных "
 "источников программ."
 
@@ -2822,6 +2638,8 @@ msgid ""
 "Required data could not be found on any of the configured software origins.\n"
 "There were no more download mirrors that could be tried."
 msgstr ""
+"Необходимые данные не удалось найти в настроенных источниках программ.\n"
+"Загрузка всех возможных зеркал завершена."
 
 #: libapper/PkStrings.cpp:640
 msgid ""
@@ -2848,8 +2666,7 @@ msgstr ""
 
 #: libapper/PkStrings.cpp:648
 msgid "Additional media is required to complete the transaction."
-msgstr ""
-"Для воспроизведения содержимого этого файла требуется дополнительный кодек."
+msgstr "Для завершения действия требуется дополнительный пакет."
 
 #: libapper/PkStrings.cpp:650
 msgid ""
@@ -2857,7 +2674,7 @@ msgid ""
 "Please check any passwords or account settings."
 msgstr ""
 "Вам не удалось пройти аутентификацию.\n"
-"Попробуйте другие пароли или проверьте параметры учетной записи."
+"Попробуйте другие пароли или проверьте параметры учётной записи."
 
 #: libapper/PkStrings.cpp:653
 msgid ""
@@ -2886,7 +2703,7 @@ msgstr "Сведения, о том что требует этот пакет, �
 
 #: libapper/PkStrings.cpp:664
 msgid "The specified software origin could not be disabled."
-msgstr "Указанный источник программного обеспечения не может быть отключен."
+msgstr "Указанный источник программного обеспечения не может быть отключён."
 
 #: libapper/PkStrings.cpp:666
 msgid ""
@@ -2943,23 +2760,25 @@ msgstr "С момента отправки запроса, база данных
 
 #: libapper/PkStrings.cpp:686
 msgid "The virtual provide type is not supported by this system."
-msgstr ""
+msgstr "Тип виртуального предоставления не поддерживается этот системой"
 
 #: libapper/PkStrings.cpp:688
 msgid "The install root is invalid. Please contact your administrator."
 msgstr ""
+"Установка с правами администратора (root) недопустима. Свяжитесь с вашим "
+"системным администратором."
 
 #: libapper/PkStrings.cpp:690
-#, fuzzy
-#| msgid "The specified software origin could not be disabled."
 msgid "The list of software could not be downloaded."
-msgstr "Указанный источник программного обеспечения не может быть отключен."
+msgstr "Не удалось загрузить список пакетов программного обеспечения"
 
 #: libapper/PkStrings.cpp:692
 msgid ""
 "The transaction has been cancelled and will be retried when the system is "
 "idle."
 msgstr ""
+"Операция была отменена. Повторная попытка будет произведена, когда система "
+"будет находиться в состоянии бездействия."
 
 #: libapper/PkStrings.cpp:694
 msgid ""
@@ -3403,15 +3222,15 @@ msgstr "Это программное обеспечение предназна�
 
 #: libapper/PkStrings.cpp:949
 msgid "Other updates have been held back"
-msgstr ""
+msgstr "Другие обновления были удержаны"
 
 #: libapper/PkStrings.cpp:964
 msgid "Could not get a transaction id from packagekitd."
-msgstr "Не удалось получить идентификатор транзакции из packagekitd."
+msgstr "Не удалось получить идентификатор операции из packagekitd."
 
 #: libapper/PkStrings.cpp:966
 msgid "Cannot connect to this transaction id."
-msgstr "Невозможно подключиться к идентификаторам транзакции."
+msgstr "Невозможно подключиться к идентификаторам операции."
 
 #: libapper/PkStrings.cpp:968
 msgid "This action is unknown."
@@ -3451,58 +3270,18 @@ msgstr ""
 msgid "Package"
 msgstr "Пакет"
 
-#: libapper/SimulateModel.cpp:141 libapper/PackageModel.cpp:180
+#: libapper/SimulateModel.cpp:141 libapper/PackageModel.cpp:184
 msgid "Version"
 msgstr "Версия"
 
-#: libapper/Requirements.cpp:41
-msgid "Additional changes"
-msgstr "Дополнительные изменения"
-
-#: libapper/Requirements.cpp:62
-#, kde-format
-msgid "1 package to remove"
-msgid_plural "%1 packages to remove"
-msgstr[0] "%1 пакет для удаления"
-msgstr[1] "%1 пакета для удаления"
-msgstr[2] "%1 пакетов для удаления"
-msgstr[3] "1 пакет для удаления"
-
-#: libapper/Requirements.cpp:77
-#, kde-format
-msgid "1 package to downgrade"
-msgid_plural "%1 packages to downgrade"
-msgstr[0] "%1 пакет для снижения версии"
-msgstr[1] "%1 пакета для снижения версии"
-msgstr[2] "%1 пакетов для снижения версии"
-msgstr[3] "1 пакет для снижения версии"
-
-#: libapper/Requirements.cpp:92
-#, kde-format
-msgid "1 package to reinstall"
-msgid_plural "%1 packages to reinstall"
-msgstr[0] "%1 пакет для переустановки"
-msgstr[1] "%1 пакета для переустановки"
-msgstr[2] "%1 пакетов для переустановки"
-msgstr[3] "1 пакет для переустановки"
-
-#: libapper/Requirements.cpp:105
-#, kde-format
-msgid "1 package to install"
-msgid_plural "%1 packages to install"
-msgstr[0] "%1 пакет для установки"
-msgstr[1] "%1 пакета для установки"
-msgstr[2] "%1 пакетов для установки"
-msgstr[3] "1 пакет для установки"
-
-#: libapper/Requirements.cpp:118
-#, kde-format
-msgid "1 package to update"
-msgid_plural "%1 packages to update"
-msgstr[0] "%1 пакет для обновления"
-msgstr[1] "%1 пакета для обновления"
-msgstr[2] "%1 пакетов для обновления"
-msgstr[3] "1 пакет для обновления"
+#: libapper/ApplicationLauncher.cpp:95
+msgid "The following application was just installed. Click on it to launch:"
+msgid_plural ""
+"The following applications were just installed. Click on them to launch:"
+msgstr[0] "Были установлены следующие приложения. Для запуска нажмите на них:"
+msgstr[1] "Были установлены следующие приложения. Для запуска нажмите на них:"
+msgstr[2] "Были установлены следующие приложения. Для запуска нажмите на них:"
+msgstr[3] "Было установлено следующие приложение. Для запуска нажмите на него:"
 
 #: libapper/LicenseAgreement.cpp:36
 msgid "Accept Agreement"
@@ -3519,26 +3298,104 @@ msgstr "Требуется лицензионное соглашение"
 msgid "License required for %1 by %2"
 msgstr "Для %1 требуется лицензия от %2"
 
-#: libapper/ApplicationLauncher.cpp:99
-msgid "The following application was just installed. Click on it to launch:"
-msgid_plural ""
-"The following applications were just installed. Click on them to launch:"
-msgstr[0] "Были установлены следующие приложения. Для запуска нажмите на них:"
-msgstr[1] "Были установлены следующие приложения. Для запуска нажмите на них:"
-msgstr[2] "Были установлены следующие приложения. Для запуска нажмите на них:"
-msgstr[3] "Было установлено следующие приложение. Для запуска нажмите на него:"
+#: libapper/PackageModel.cpp:182
+msgid "Name"
+msgstr "Название"
+
+#: libapper/PackageModel.cpp:186
+#, fuzzy
+#| msgctxt "The role of the transaction, in past tense"
+#| msgid "Installed signature"
+msgid "Installed Version"
+msgstr "Подпись установлена"
+
+#: libapper/PackageModel.cpp:188
+msgid "Arch"
+msgstr "Арх."
+
+#: libapper/PackageModel.cpp:190
+#, fuzzy
+#| msgid "Edit Origins"
+msgid "Origin"
+msgstr "Изменить источники"
+
+#: libapper/PackageModel.cpp:192
+msgid "Size"
+msgstr "Размер"
+
+#: libapper/PackageModel.cpp:283
+#, kde-format
+msgid ""
+"Version: %1\n"
+"Architecture: %2"
+msgstr ""
+"Версия: %1\n"
+"Архитектура: %2"
+
+#: libapper/PackageModel.cpp:329
+msgid "To be Removed"
+msgstr "Будет удалено"
+
+#: libapper/PackageModel.cpp:331
+msgid "To be Installed"
+msgstr "Будет установлено"
+
+#: libapper/Requirements.cpp:42
+msgid "Additional changes"
+msgstr "Дополнительные изменения"
+
+#: libapper/Requirements.cpp:63
+#, kde-format
+msgid "1 package to remove"
+msgid_plural "%1 packages to remove"
+msgstr[0] "%1 пакет для удаления"
+msgstr[1] "%1 пакета для удаления"
+msgstr[2] "%1 пакетов для удаления"
+msgstr[3] "1 пакет для удаления"
+
+#: libapper/Requirements.cpp:78
+#, kde-format
+msgid "1 package to downgrade"
+msgid_plural "%1 packages to downgrade"
+msgstr[0] "%1 пакет для снижения версии"
+msgstr[1] "%1 пакета для снижения версии"
+msgstr[2] "%1 пакетов для снижения версии"
+msgstr[3] "1 пакет для снижения версии"
+
+#: libapper/Requirements.cpp:93
+#, kde-format
+msgid "1 package to reinstall"
+msgid_plural "%1 packages to reinstall"
+msgstr[0] "%1 пакет для переустановки"
+msgstr[1] "%1 пакета для переустановки"
+msgstr[2] "%1 пакетов для переустановки"
+msgstr[3] "1 пакет для переустановки"
+
+#: libapper/Requirements.cpp:106
+#, kde-format
+msgid "1 package to install"
+msgid_plural "%1 packages to install"
+msgstr[0] "%1 пакет для установки"
+msgstr[1] "%1 пакета для установки"
+msgstr[2] "%1 пакетов для установки"
+msgstr[3] "1 пакет для установки"
+
+#: libapper/Requirements.cpp:119
+#, kde-format
+msgid "1 package to update"
+msgid_plural "%1 packages to update"
+msgstr[0] "%1 пакет для обновления"
+msgstr[1] "%1 пакета для обновления"
+msgstr[2] "%1 пакетов для обновления"
+msgstr[3] "1 пакет для обновления"
 
 #: libapper/PkTransaction.cpp:122
-#, fuzzy
-#| msgid "Failed to simulate package install"
 msgid "Failed to simulate file install"
-msgstr "Не удалось выполнить имитацию установки пакета"
+msgstr "Не удалось выполнить имитацию установки файла"
 
 #: libapper/PkTransaction.cpp:129
-#, fuzzy
-#| msgid "Current backend does not support installing packages."
 msgid "Current backend does not support installing files."
-msgstr "Текущий модуль не поддерживает установку пакетов."
+msgstr "Текущий модуль не поддерживает установку файлов."
 
 #: libapper/PkTransaction.cpp:129 libapper/PkTransaction.cpp:153
 #: libapper/PkTransaction.cpp:179 libapper/PkTransaction.cpp:202
@@ -3570,10 +3427,8 @@ msgid "The current backend does not support updating packages."
 msgstr "Текущий модуль не поддерживает обновление пакетов."
 
 #: libapper/PkTransaction.cpp:213
-#, fuzzy
-#| msgid "Failed to remove package"
 msgid "Failed to refresh package cache"
-msgstr "Не удалось удалить пакет"
+msgstr "Не удалось обновить кэш пакетов"
 
 #: libapper/PkTransaction.cpp:251
 msgid "Failed to install package"
@@ -3609,40 +3464,15 @@ msgstr ""
 msgid "Installing unsigned software"
 msgstr "Установка неподписанных пакетов"
 
-#: libapper/PkTransaction.cpp:563 libapper/PkTransaction.cpp:616
+#: libapper/PkTransaction.cpp:564 libapper/PkTransaction.cpp:618
 msgid "Failed to install signature"
 msgstr "Не удалось установить подпись"
 
-#: libapper/PackageModel.cpp:178
-#, fuzzy
-#| msgctxt "The group type"
-#| msgid "Games"
-msgid "Name"
-msgstr "Игры"
-
-#: libapper/PackageModel.cpp:182
-msgid "Arch"
-msgstr ""
-
-#: libapper/PackageModel.cpp:184
-msgid "Size"
-msgstr "Размер"
-
-#: libapper/PackageModel.cpp:272
-#, fuzzy, kde-format
-#| msgid "Show Architectures"
-msgid ""
-"Version: %1\n"
-"Architecture: %2"
-msgstr "Показать архитектуру"
-
-#: libapper/PackageModel.cpp:315
-msgid "To be Removed"
-msgstr "Будет удалено"
-
-#: libapper/PackageModel.cpp:317
-msgid "To be Installed"
-msgstr "Будет установлено"
+#. i18n: file: libapper/RepoSig.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, RepoSig)
+#: libapper/RepoSig.cpp:40 rc.cpp:218
+msgid "Software signature is required"
+msgstr "Программа должна быть подписана"
 
 #: libapper/ApplicationsDelegate.cpp:40
 msgid "Install"
@@ -3651,12 +3481,6 @@ msgstr "Установить"
 #: libapper/ApplicationsDelegate.cpp:42
 msgid "Remove"
 msgstr "Удалить"
-
-#. i18n: file: libapper/RepoSig.ui:14
-#. i18n: ectx: property (windowTitle), widget (QWidget, RepoSig)
-#: libapper/RepoSig.cpp:40 rc.cpp:218
-msgid "Software signature is required"
-msgstr "Программа должна быть подписана"
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
@@ -3710,7 +3534,7 @@ msgstr "Фильтры"
 #. i18n: ectx: property (text), widget (QCheckBox, visibleCB)
 #: rc.cpp:29
 msgid "Package is visible"
-msgstr ""
+msgstr "Пакет видим"
 
 #. i18n: file: Apper/BackendDetails.ui:130
 #. i18n: ectx: property (text), widget (QCheckBox, newestCB)
@@ -3913,8 +3737,6 @@ msgstr "Имитация обновления пакетов"
 #. i18n: file: Apper/BackendDetails.ui:462
 #. i18n: ectx: property (text), widget (QCheckBox, upgradeSystemCB)
 #: rc.cpp:131
-#, fuzzy
-#| msgid "Update System"
 msgid "Upgrade System"
 msgstr "Обновить систему"
 
@@ -3936,7 +3758,7 @@ msgstr "Проверять обновления:"
 #. i18n: ectx: property (text), widget (QCheckBox, installUpdatesMobileCB)
 #: rc.cpp:146 rc.cpp:158
 msgid "when on a mobile broadband network connection"
-msgstr ""
+msgstr "при использовании мобильного широкополосного соединения"
 
 #. i18n: file: ApperKCM/Settings/Settings.ui:102
 #. i18n: ectx: property (text), widget (QCheckBox, checkUpdatesBatteryCB)
@@ -3944,7 +3766,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QCheckBox, installUpdatesBatteryCB)
 #: rc.cpp:149 rc.cpp:155
 msgid "when running on battery"
-msgstr ""
+msgstr "при работе от аккумулятора"
 
 #. i18n: file: ApperKCM/Settings/Settings.ui:114
 #. i18n: ectx: property (text), widget (QLabel, autoInsL)
@@ -4028,14 +3850,8 @@ msgstr "Для выполнения задания необходимы допо
 #. i18n: file: libapper/Requirements.ui:87
 #. i18n: ectx: property (text), widget (QCheckBox, confirmCB)
 #: rc.cpp:215
-#, fuzzy
-#| msgid ""
-#| "Do not show this confirmation when installing or updating additional "
-#| "packages"
 msgid "Do not confirm when installing or updating additional packages"
-msgstr ""
-"Больше не показывать это подтверждение при установке или обновлении "
-"дополнительных пакетов"
+msgstr "Не подтверждать установку или обновление дополнительных пакетов"
 
 #. i18n: file: libapper/RepoSig.ui:23
 #. i18n: ectx: property (text), widget (QLabel, label)

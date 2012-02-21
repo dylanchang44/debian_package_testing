@@ -1,29 +1,29 @@
 # Traditional Chinese translation for KPackageKit
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
-# Cheng-Chia Tseng <pswo10680@gmail.com>, 2010
 #
+# Cheng-Chia Tseng <pswo10680@gmail.com>, 2010.
+# Max Lin <max7442@gmail.com>, 2011.
 msgid ""
 msgstr ""
 "Project-Id-Version: kpackagekit.pot\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-10-10 04:10+0200\n"
-"PO-Revision-Date: 2011-02-20 14:23+0800\n"
-"Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
-"Language-Team: Chinese (traditional) <zh-l10n@linux.org.tw>\n"
+"POT-Creation-Date: 2012-02-18 05:06+0100\n"
+"PO-Revision-Date: 2011-10-13 00:11+0800\n"
+"Last-Translator: Max Lin <max7442@gmail.com>\n"
+"Language-Team: Chinese Traditional <zh-l10n@linux.org.tw>\n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Lokalize 1.2\n"
 
 #: Apper/BackendDetails.cpp:31
-#, fuzzy
-#| msgid "Show backend details"
 msgid "Backend Details"
-msgstr "顯示後端程式細節"
+msgstr "後端程式細節"
 
-#: Apper/main.cpp:54 Sentinel/UpdateIcon.cpp:161 Sentinel/main.cpp:34
+#: Apper/main.cpp:54 Sentinel/UpdateIcon.cpp:158 Sentinel/main.cpp:34
 msgid "Apper"
 msgstr "Apper"
 
@@ -31,7 +31,7 @@ msgstr "Apper"
 msgid "Apper is an Application to Get and Manage Software"
 msgstr "Apper 是一套取得與管理軟體的應用程式"
 
-#: Apper/main.cpp:58 ApperKCM/ApperKCM.cpp:82 Sentinel/main.cpp:38
+#: Apper/main.cpp:58 ApperKCM/ApperKCM.cpp:83 Sentinel/main.cpp:38
 msgid "(C) 2008-2011 Daniel Nicoletti"
 msgstr "(C) 2008-2011 Daniel Nicoletti"
 
@@ -61,7 +61,7 @@ msgstr "顯示後端程式細節"
 
 #: Apper/main.cpp:69
 msgid "Mime type installer"
-msgstr "Mime 類型安裝器"
+msgstr "Mime 類型安裝程式"
 
 #: Apper/main.cpp:70
 msgid "Package name installer"
@@ -72,10 +72,8 @@ msgid "Single file installer"
 msgstr "單一檔案安裝程式"
 
 #: Apper/main.cpp:72
-#, fuzzy
-#| msgid "Catalog installer"
 msgid "Font resource installer"
-msgstr "型錄安裝程式"
+msgstr "字型資源安裝程式"
 
 #: Apper/main.cpp:73
 msgid "Catalog installer"
@@ -131,11 +129,11 @@ msgctxt "No updates will be automatically installed"
 msgid "None"
 msgstr "無"
 
-#: ApperKCM/Settings/Settings.cpp:249 libapper/PkStrings.cpp:962
+#: ApperKCM/Settings/Settings.cpp:250 libapper/PkStrings.cpp:962
 msgid "You do not have the necessary privileges to perform this action."
 msgstr "您沒有執行此動作的必要特權。"
 
-#: ApperKCM/Settings/Settings.cpp:250
+#: ApperKCM/Settings/Settings.cpp:251
 msgid "Failed to set origin data"
 msgstr "設定原始資料失敗"
 
@@ -226,13 +224,13 @@ msgstr "此通知於 %1 發布，且上次於 %2 更新。"
 msgid "This notification was issued on %1."
 msgstr "此通知於 %1 發布。"
 
-#: ApperKCM/Updater/UpdateDetails.cpp:223
+#: ApperKCM/Updater/UpdateDetails.cpp:224
 msgid "For more information about this update please visit this website:"
 msgid_plural ""
 "For more information about this update please visit these websites:"
 msgstr[0] "若要取得更多有關此更新的資訊，請參訪下列網站："
 
-#: ApperKCM/Updater/UpdateDetails.cpp:233
+#: ApperKCM/Updater/UpdateDetails.cpp:234
 msgid ""
 "For more information about bugs fixed by this update please visit this "
 "website:"
@@ -241,107 +239,113 @@ msgid_plural ""
 "websites:"
 msgstr[0] "若要取得更多有關此更新所修正錯誤的資訊，請參訪下列網站："
 
-#: ApperKCM/Updater/UpdateDetails.cpp:243
+#: ApperKCM/Updater/UpdateDetails.cpp:244
 msgid ""
 "For more information about this security update please visit this website:"
 msgid_plural ""
 "For more information about this security update please visit these websites:"
 msgstr[0] "若要取得更多有關此安全性更新的資訊，請參訪下列網站："
 
-#: ApperKCM/Updater/UpdateDetails.cpp:253
+#: ApperKCM/Updater/UpdateDetails.cpp:254
 msgid ""
 "The computer will have to be restarted after the update for the changes to "
 "take effect."
 msgstr "這臺電腦在更新之後需要重新啟動來讓所做的變更發揮功效。"
 
-#: ApperKCM/Updater/UpdateDetails.cpp:257
+#: ApperKCM/Updater/UpdateDetails.cpp:258
 msgid ""
 "You will need to log out and back in after the update for the changes to "
 "take effect."
 msgstr "在更新之後您需要先登出再重新登入，才能讓變更發揮功效。"
 
-#: ApperKCM/Updater/UpdateDetails.cpp:264
+#: ApperKCM/Updater/UpdateDetails.cpp:265
 msgid ""
 "The classification of this update is unstable which means it is not designed "
 "for production use."
 msgstr "此更新的分級為「不穩定」，這代表它不是針對工作生產用途所設計的。"
 
-#: ApperKCM/Updater/UpdateDetails.cpp:268
+#: ApperKCM/Updater/UpdateDetails.cpp:269
 msgid ""
 "This is a test update, and is not designed for normal use. Please report any "
 "problems or regressions you encounter."
 msgstr ""
-"這是個測試性更新，並不是針對一般用途所設計的。請回報任何您所遭遇到的問題或是"
-"降級。"
+"這是個測試性更新，並不是針對一般用途所設計的。請回報任何您所遭遇到的問題。"
 
-#: ApperKCM/Updater/UpdateDetails.cpp:277
+#: ApperKCM/Updater/UpdateDetails.cpp:279
 msgid ""
 "The developer logs will be shown as no description is available for this "
 "update:"
 msgstr "開發者紀錄會在這個更新沒有資訊可用時顯示："
 
-#: ApperKCM/Updater/UpdateDetails.cpp:285
+#: ApperKCM/Updater/UpdateDetails.cpp:287
 msgid "Updates:"
 msgstr "更新："
 
-#: ApperKCM/Updater/UpdateDetails.cpp:295
+#: ApperKCM/Updater/UpdateDetails.cpp:297
 msgid "Obsoletes:"
 msgstr "廢棄："
 
-#: ApperKCM/Updater/UpdateDetails.cpp:305
+#: ApperKCM/Updater/UpdateDetails.cpp:307
 msgid "Repository:"
 msgstr "套件庫："
 
-#: ApperKCM/Updater/UpdateDetails.cpp:337
+#: ApperKCM/Updater/UpdateDetails.cpp:339
 msgid "No update description was found."
 msgstr "找不到更新描述。"
 
-#: ApperKCM/Updater/Updater.cpp:107 ApperKCM/BrowseView.cpp:90
+#: ApperKCM/Updater/Updater.cpp:110 ApperKCM/BrowseView.cpp:95
 msgid "Show Versions"
 msgstr "顯示版本"
 
-#: ApperKCM/Updater/Updater.cpp:115 ApperKCM/BrowseView.cpp:98
+#: ApperKCM/Updater/Updater.cpp:117
+#, fuzzy
+#| msgid "Show Versions"
+msgid "Show Current Versions"
+msgstr "顯示版本"
+
+#: ApperKCM/Updater/Updater.cpp:124 ApperKCM/BrowseView.cpp:102
 msgid "Show Architectures"
 msgstr "顯示架構"
 
-#: ApperKCM/Updater/Updater.cpp:123 ApperKCM/BrowseView.cpp:106
+#: ApperKCM/Updater/Updater.cpp:131 ApperKCM/BrowseView.cpp:109
 #, fuzzy
-#| msgid "Show updates"
-msgid "Show Sizes"
-msgstr "顯示更新"
+#| msgid "Software Origins"
+msgid "Show Origins"
+msgstr "軟體來源"
 
-#: ApperKCM/Updater/Updater.cpp:216
+#: ApperKCM/Updater/Updater.cpp:138 ApperKCM/BrowseView.cpp:116
+msgid "Show Sizes"
+msgstr "顯示大小"
+
+#: ApperKCM/Updater/Updater.cpp:255
 #, kde-format
 msgid "Estimated download size: %1"
-msgstr ""
+msgstr "估計下載大小： %1"
 
-#: ApperKCM/Updater/Updater.cpp:254
+#: ApperKCM/Updater/Updater.cpp:292
 msgid "Your system is up to date"
-msgstr ""
+msgstr "系統已更新"
 
-#: ApperKCM/Updater/Updater.cpp:255 ApperKCM/Updater/Updater.cpp:259
+#: ApperKCM/Updater/Updater.cpp:293 ApperKCM/Updater/Updater.cpp:297
 #, kde-format
 msgid "Verified %1 ago"
-msgstr ""
+msgstr "檢查於 %1 之前"
 
-#: ApperKCM/Updater/Updater.cpp:258
-#, fuzzy
-#| msgid "You have one update"
-#| msgid_plural "You have %1 updates"
+#: ApperKCM/Updater/Updater.cpp:296
 msgid "You have no updates"
-msgstr "您有 %1 個更新"
+msgstr "沒有可用的更新"
 
-#: ApperKCM/Updater/Updater.cpp:262
+#: ApperKCM/Updater/Updater.cpp:300
 msgid "Last check for updates was more than a month ago"
-msgstr ""
+msgstr "最後一次檢查更新是在一個月或更久以前"
 
-#: ApperKCM/Updater/Updater.cpp:263
+#: ApperKCM/Updater/Updater.cpp:301
 msgid "It's strongly recommended that you check for new updates now"
-msgstr ""
+msgstr "強烈建議您現在檢查是否有可用的更新"
 
 #. i18n: file: ApperKCM/ApperKCM.ui:230
 #. i18n: ectx: property (text), widget (QPushButton, checkUpdatesPB)
-#: ApperKCM/Updater/Updater.cpp:351 rc.cpp:194
+#: ApperKCM/Updater/Updater.cpp:396 rc.cpp:194
 msgid "Check for new Updates"
 msgstr "檢查是否有更新"
 
@@ -393,7 +397,7 @@ msgstr "只有終端使用者檔案"
 
 #: ApperKCM/FiltersMenu.cpp:120
 msgid "Graphical"
-msgstr "圖像"
+msgstr "圖形"
 
 #: ApperKCM/FiltersMenu.cpp:127
 msgid "Only graphical"
@@ -451,7 +455,7 @@ msgstr "只有原生套件"
 
 #: ApperKCM/FiltersMenu.cpp:243
 msgid "Only show packages matching the machine architecture"
-msgstr "只顯示符合機器架構的套件"
+msgstr "只顯示符合系統架構的套件"
 
 #: ApperKCM/FiltersMenu.cpp:252
 msgid "Only Show Applications"
@@ -461,52 +465,52 @@ msgstr "只顯示應用程式"
 msgid "Hide packages that are not applications"
 msgstr "隱藏非應用程式的套件"
 
-#: ApperKCM/ApperKCM.cpp:78
+#: ApperKCM/ApperKCM.cpp:79
 msgid "Application Manager"
 msgstr "應用程式管理員"
 
-#: ApperKCM/ApperKCM.cpp:80
+#: ApperKCM/ApperKCM.cpp:81
 msgid "KDE interface for managing software"
 msgstr "用來管理軟體的 KDE 介面"
 
-#: ApperKCM/ApperKCM.cpp:110 ApperKCM/ApperKCM.cpp:291
+#: ApperKCM/ApperKCM.cpp:111 ApperKCM/ApperKCM.cpp:292
 msgid "Find"
 msgstr "尋找"
 
-#: ApperKCM/ApperKCM.cpp:205
+#: ApperKCM/ApperKCM.cpp:206
 msgid "History"
 msgstr "歷史"
 
 #. i18n: file: ApperKCM/Settings/Settings.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, Settings)
-#: ApperKCM/ApperKCM.cpp:211 rc.cpp:140
+#: ApperKCM/ApperKCM.cpp:212 rc.cpp:140
 msgid "Settings"
 msgstr "設定"
 
-#: ApperKCM/ApperKCM.cpp:268 ApperKCM/ApperKCM.cpp:269
-#: ApperKCM/ApperKCM.cpp:270 ApperKCM/ApperKCM.cpp:271
+#: ApperKCM/ApperKCM.cpp:269 ApperKCM/ApperKCM.cpp:270
+#: ApperKCM/ApperKCM.cpp:271 ApperKCM/ApperKCM.cpp:272
 msgid "&Cancel"
 msgstr "取消(&C)"
 
 #. i18n: file: ApperKCM/ApperKCM.ui:291
 #. i18n: ectx: property (text), widget (QToolButton, backTB)
-#: ApperKCM/ApperKCM.cpp:278 rc.cpp:200
+#: ApperKCM/ApperKCM.cpp:279 rc.cpp:200
 msgid "Find by &name"
 msgstr "依名稱來尋找(&n)"
 
 #. i18n: file: ApperKCM/ApperKCM.ui:301
 #. i18n: ectx: property (text), widget (QToolButton, backTB)
-#: ApperKCM/ApperKCM.cpp:279 rc.cpp:206
+#: ApperKCM/ApperKCM.cpp:280 rc.cpp:206
 msgid "Find by f&ile name"
 msgstr "依檔案名稱來尋找(&I)"
 
 #. i18n: file: ApperKCM/ApperKCM.ui:296
 #. i18n: ectx: property (text), widget (QToolButton, backTB)
-#: ApperKCM/ApperKCM.cpp:280 rc.cpp:203
+#: ApperKCM/ApperKCM.cpp:281 rc.cpp:203
 msgid "Find by &description"
 msgstr "依描述來尋找(&D)"
 
-#: ApperKCM/ApperKCM.cpp:414
+#: ApperKCM/ApperKCM.cpp:411
 msgid ""
 "The settings of the current module have changed.\n"
 "Do you want to apply the changes or discard them?"
@@ -514,22 +518,17 @@ msgstr ""
 "目前模組的設定值已經變更。\n"
 "您想要套用這些變更或是丟棄它們？"
 
-#: ApperKCM/ApperKCM.cpp:416
+#: ApperKCM/ApperKCM.cpp:413
 msgid "Apply Settings"
 msgstr "套用設定值"
 
-#: ApperKCM/ApperKCM.cpp:458
-#, fuzzy
-#| msgid "Apply Settings"
+#: ApperKCM/ApperKCM.cpp:455
 msgid "General Settings"
-msgstr "套用設定值"
+msgstr "一般設定"
 
-#: ApperKCM/ApperKCM.cpp:459
-#, fuzzy
-#| msgctxt "The group type"
-#| msgid "Software sources"
+#: ApperKCM/ApperKCM.cpp:456
 msgid "Software Origins"
-msgstr "軟體源碼"
+msgstr "軟體來源"
 
 #: ApperKCM/PackageDetails.cpp:73
 msgid "Display"
@@ -555,11 +554,11 @@ msgstr "檔案清單"
 msgid "No files were found."
 msgstr "找不到檔案。"
 
-#: ApperKCM/PackageDetails.cpp:529
+#: ApperKCM/PackageDetails.cpp:530
 msgid "Could not fetch software details"
 msgstr "無法擷取軟體細節"
 
-#: ApperKCM/PackageDetails.cpp:571
+#: ApperKCM/PackageDetails.cpp:572
 msgid "Applications"
 msgstr "應用程式"
 
@@ -600,11 +599,11 @@ msgstr "離上次重新載入快取的時間：%1"
 msgid "Date"
 msgstr "日期"
 
-#: ApperKCM/TransactionModel.cpp:47 libapper/PackageModel.cpp:186
+#: ApperKCM/TransactionModel.cpp:47 libapper/PackageModel.cpp:194
 msgid "Action"
 msgstr "動作"
 
-#: ApperKCM/TransactionModel.cpp:48 Sentinel/TransactionWatcher.cpp:292
+#: ApperKCM/TransactionModel.cpp:48 Sentinel/TransactionWatcher.cpp:308
 msgid "Details"
 msgstr "細節"
 
@@ -626,27 +625,17 @@ msgid "Distribution upgrade finished. "
 msgstr "發行版升級完成。"
 
 #: Sentinel/PkInstallProvideFiles.cpp:39
-#, fuzzy
-#| msgid "Install Packages from List..."
 msgid "Install Packages that Provides Files"
-msgstr "從清單安裝套件..."
+msgstr "安裝提供這些檔案的套件"
 
 #: Sentinel/PkInstallProvideFiles.cpp:49
-#, fuzzy
-#| msgid "No files were found."
 msgid "No files were provided"
-msgstr "找不到檔案。"
+msgstr "未提供的檔案"
 
 #: Sentinel/PkInstallProvideFiles.cpp:52
-#, fuzzy
-#| msgid ""
-#| "Do you want to search for packages containing this file and remove it now?"
-#| msgid_plural ""
-#| "Do you want to search for packages containing these files and remove them "
-#| "now?"
 msgid "Do you want to search for this now?"
 msgid_plural "Do you want to search for these now?"
-msgstr[0] "您現在想要搜尋包含這些檔案的套件並移除它們嗎？"
+msgstr[0] "您現在想要搜尋這些嗎？"
 
 #: Sentinel/PkInstallProvideFiles.cpp:62
 msgid "A program wants to install a file"
@@ -654,12 +643,10 @@ msgid_plural "A program wants to install files"
 msgstr[0] "某程式想要安裝檔案"
 
 #: Sentinel/PkInstallProvideFiles.cpp:66
-#, fuzzy, kde-format
-#| msgid "%2 wants to install a package"
-#| msgid_plural "%2 wants to install packages"
+#, kde-format
 msgid "The application %2 is asking to install a file"
 msgid_plural "The application %2 is asking to install files"
-msgstr[0] "%2 想要安裝套件"
+msgstr[0] "應用程式 %2 要求安裝這些檔案"
 
 #: Sentinel/PkInstallProvideFiles.cpp:88
 #: Sentinel/PkRemovePackageByFiles.cpp:128 Sentinel/PkSearchFile.cpp:54
@@ -686,11 +673,8 @@ msgid_plural "The files could not be found in any packages"
 msgstr[0] "在任何套件內都找不到這些檔案"
 
 #: Sentinel/PkInstallPrinterDrivers.cpp:39
-#, fuzzy
-#| msgctxt "The role of the transaction, in present tense"
-#| msgid "Installing file"
 msgid "Install Printer Drivers"
-msgstr "安裝檔案中"
+msgstr "安裝印表機驅動程式"
 
 #: Sentinel/PkInstallPrinterDrivers.cpp:74
 #: Sentinel/PkInstallPlasmaResources.cpp:101
@@ -709,11 +693,11 @@ msgstr "搜尋印表機驅動程式失敗"
 msgid "Could not find printer driver in any configured software source"
 msgstr "在任何設定好的軟體來源內都找不到印表機驅動程式"
 
-#: Sentinel/UpdateIcon.cpp:163
+#: Sentinel/UpdateIcon.cpp:160
 msgid "Review Updates"
-msgstr "檢閱安裝"
+msgstr "重新檢視安裝"
 
-#: Sentinel/UpdateIcon.cpp:166
+#: Sentinel/UpdateIcon.cpp:163
 msgid "Configure"
 msgstr "設定"
 
@@ -721,30 +705,30 @@ msgstr "設定"
 #. i18n: ectx: property (text), widget (QToolButton, hideTB)
 #. i18n: file: ApperKCM/Updater/UpdateDetails.ui:20
 #. i18n: ectx: property (text), widget (QToolButton, hideTB)
-#: Sentinel/UpdateIcon.cpp:170 libapper/PkTransactionDialog.cpp:86 rc.cpp:137
-#: rc.cpp:173
+#: Sentinel/UpdateIcon.cpp:167 Sentinel/TransactionWatcher.cpp:186
+#: libapper/PkTransactionDialog.cpp:86 rc.cpp:137 rc.cpp:173
 msgid "Hide"
 msgstr "隱藏"
 
-#: Sentinel/UpdateIcon.cpp:180
+#: Sentinel/UpdateIcon.cpp:177
 #, kde-format
 msgid "You have one update"
 msgid_plural "You have %1 updates"
 msgstr[0] "您有 %1 個更新"
 
-#: Sentinel/UpdateIcon.cpp:233
+#: Sentinel/UpdateIcon.cpp:230
 msgid "Updates are being automatically installed."
 msgstr "正自動化安裝更新中。"
 
-#: Sentinel/UpdateIcon.cpp:254
+#: Sentinel/UpdateIcon.cpp:251
 msgid "Security updates are being automatically installed."
 msgstr "安全更新正自動化安裝中。"
 
-#: Sentinel/UpdateIcon.cpp:281
+#: Sentinel/UpdateIcon.cpp:278
 msgid "System update was successful."
 msgstr "系統更新成功。"
 
-#: Sentinel/UpdateIcon.cpp:290
+#: Sentinel/UpdateIcon.cpp:287
 msgid "The automated software update failed."
 msgstr "軟體自動更新失敗。"
 
@@ -754,43 +738,28 @@ msgid_plural "The following packages were found"
 msgstr[0] "找到下列套件"
 
 #: Sentinel/PkInstallPackageNames.cpp:41
-#, fuzzy
-#| msgid "Install Packages"
 msgid "Install Packages by Name"
-msgstr "安裝套件"
+msgstr "依據名稱安裝套件"
 
 #: Sentinel/PkInstallPackageNames.cpp:58
-#, fuzzy
-#| msgid "No files were found."
 msgid "No package names were provided"
-msgstr "找不到檔案。"
+msgstr "未提供的套件名稱"
 
 #: Sentinel/PkInstallPackageNames.cpp:61
-#, fuzzy
-#| msgid ""
-#| "Do you want to search for packages containing this file and remove it now?"
-#| msgid_plural ""
-#| "Do you want to search for packages containing these files and remove them "
-#| "now?"
 msgid "Do you want to search for and install this package now?"
 msgid_plural "Do you want to search for and install these packages now?"
-msgstr[0] "您現在想要搜尋包含這些檔案的套件並移除它們嗎？"
+msgstr[0] "您現在想要搜尋這些套件並安裝它們嗎？"
 
 #: Sentinel/PkInstallPackageNames.cpp:71 Sentinel/PkInstallPackageFiles.cpp:79
-#, fuzzy
-#| msgid "A program wants to install a package"
-#| msgid_plural "A program wants to install packages"
 msgid "An application wants to install a package"
 msgid_plural "An application wants to install packages"
-msgstr[0] "某程式想要安裝套件"
+msgstr[0] "某應用程式想要安裝套件"
 
 #: Sentinel/PkInstallPackageNames.cpp:75 Sentinel/PkInstallPackageFiles.cpp:83
-#, fuzzy, kde-format
-#| msgid "%2 wants to install a package"
-#| msgid_plural "%2 wants to install packages"
+#, kde-format
 msgid "The application <i>%2</i> wants to install a package"
 msgid_plural "The application <i>%2</i> wants to install packages"
-msgstr[0] "%2 想要安裝套件"
+msgstr[0] "應用程式 <i>%2</i> 想要安裝套件"
 
 #: Sentinel/PkInstallPackageNames.cpp:97 Sentinel/PkInstallCatalogs.cpp:278
 #: Sentinel/PkIsInstalled.cpp:46
@@ -819,45 +788,32 @@ msgid_plural "The packages could not be found in any software source"
 msgstr[0] "在任何軟體來源內都找不到這些套件"
 
 #: Sentinel/PkInstallCatalogs.cpp:46
-#, fuzzy
-#| msgid "Install Packages"
 msgid "Install Packages Catalogs"
-msgstr "安裝套件"
+msgstr "安裝套件型錄"
 
 #: Sentinel/PkInstallCatalogs.cpp:65
 msgid "You can drop more catalogs in here"
-msgstr ""
+msgstr "您可以在此加入更多型錄"
 
 #: Sentinel/PkInstallCatalogs.cpp:85
-#, fuzzy
-#| msgid "No update description was found."
 msgid "No supported catalog was found"
-msgstr "找不到更新描述。"
+msgstr "找不到支援的型錄"
 
 #: Sentinel/PkInstallCatalogs.cpp:87
-#, fuzzy
-#| msgid "<h3>Do you want to install this catalog?</h3><ul><li>%2</li></ul>"
-#| msgid_plural ""
-#| "<h3>Do you want to install these catalogs?</h3><ul><li>%2</li></ul>"
 msgid "Do you want to install this catalog?"
 msgid_plural "Do you want to install these catalogs?"
-msgstr[0] "<h3>您想要安裝這些型錄嗎</h3><ul><li>%2</li></ul>"
+msgstr[0] "您想要安裝這些型錄嗎？"
 
 #: Sentinel/PkInstallCatalogs.cpp:96
-#, fuzzy
-#| msgid "A program wants to install a package"
-#| msgid_plural "A program wants to install packages"
 msgid "An application wants to install a catalog"
 msgid_plural "An application wants to install catalogs"
-msgstr[0] "某程式想要安裝套件"
+msgstr[0] "某應用程式想要安裝型錄"
 
 #: Sentinel/PkInstallCatalogs.cpp:100
-#, fuzzy, kde-format
-#| msgid "%2 wants to install a package"
-#| msgid_plural "%2 wants to install packages"
+#, kde-format
 msgid "The application <i>%2</i> wants to install a catalog"
 msgid_plural "The application <i>%2</i> wants to install catalogs"
-msgstr[0] "%2 想要安裝套件"
+msgstr[0] "應用程式 <i>%2</i> 想要安裝型錄"
 
 #: Sentinel/PkInstallCatalogs.cpp:137
 msgid "Not supported"
@@ -869,16 +825,12 @@ msgid ""
 msgstr "您的後端程式不支援任何要安裝型錄的必需方式"
 
 #: Sentinel/PkInstallCatalogs.cpp:177
-#, fuzzy
-#| msgid "Update not found"
 msgid "Catalog not found"
-msgstr "找不到更新"
+msgstr "找不到型錄"
 
 #: Sentinel/PkInstallCatalogs.cpp:178
-#, fuzzy
-#| msgid "Could not find package"
 msgid "Could not find a catalog to install"
-msgstr "找不到套件"
+msgstr "找不到要安裝的型錄"
 
 #: Sentinel/PkInstallCatalogs.cpp:185
 #, kde-format
@@ -891,118 +843,89 @@ msgid "Failed to open"
 msgstr "開啟失敗"
 
 #: Sentinel/PkInstallCatalogs.cpp:195
-#, fuzzy
-#| msgid "Catalog installer"
 msgid "Catalog is Empty"
-msgstr "型錄安裝程式"
+msgstr "型錄是空的"
 
 #: Sentinel/PkInstallCatalogs.cpp:196
-#, fuzzy
-#| msgid "<h3>Do you want to install this catalog?</h3><ul><li>%2</li></ul>"
-#| msgid_plural ""
-#| "<h3>Do you want to install these catalogs?</h3><ul><li>%2</li></ul>"
 msgid "Could not find any package to install in this catalog"
-msgstr "<h3>您想要安裝這些型錄嗎</h3><ul><li>%2</li></ul>"
+msgstr "找不到任何套件以安裝這個型錄"
 
-#: Sentinel/SessionTask.cpp:66 libapper/Requirements.cpp:43
+#: Sentinel/SessionTask.cpp:66 libapper/Requirements.cpp:44
 msgid "Continue"
 msgstr "繼續"
 
-#: Sentinel/SessionTask.cpp:361
-#, fuzzy
-#| msgid "The package is not installed"
+#: Sentinel/SessionTask.cpp:363
 msgid "There are no packages to Install or Remove"
-msgstr "未安裝此套件"
+msgstr "沒有套件要安裝或移除"
 
-#: Sentinel/SessionTask.cpp:362
-#, fuzzy
-#| msgid "This action is unknown."
+#: Sentinel/SessionTask.cpp:364
 msgid "This action should not happen"
-msgstr "此動作不明。"
+msgstr "此動作不應該發生"
 
-#: Sentinel/SessionTask.cpp:391
-#, fuzzy
-#| msgid "Could not find %1"
+#: Sentinel/SessionTask.cpp:393
 msgid "Could not find"
-msgstr "找不到 %1"
+msgstr "找不到 "
 
-#: Sentinel/SessionTask.cpp:392 Sentinel/SessionTask.cpp:401
-#, fuzzy
-#| msgid "No package was found to be installed"
+#: Sentinel/SessionTask.cpp:394 Sentinel/SessionTask.cpp:403
 msgid "No packages were found that meet the request"
-msgstr "找不到要安裝的套件"
+msgstr "找不到符合請求的套件"
 
-#: Sentinel/SessionTask.cpp:400
-#, fuzzy
-#| msgid "Failed to find font"
+#: Sentinel/SessionTask.cpp:402
 msgid "Failed to find"
-msgstr "尋找字型失敗"
+msgstr "尋找失敗"
 
-#: Sentinel/SessionTask.cpp:422
+#: Sentinel/SessionTask.cpp:424
 msgid "Transaction did not finish with success"
 msgstr "處理事項未成功完成"
 
-#: Sentinel/SessionTask.cpp:428
-#, fuzzy
-#| msgid "Obsoleted"
+#: Sentinel/SessionTask.cpp:430
 msgid "Task completed"
-msgstr "已廢棄"
+msgstr "處理事項完成"
 
-#: Sentinel/SessionTask.cpp:428
-#, fuzzy
-#| msgid "File was installed successfully"
-#| msgid_plural "Files were installed successfully"
+#: Sentinel/SessionTask.cpp:430
 msgid "All operations were committed successfully"
-msgstr "檔案已成功安裝"
+msgstr "所有的運作都已提交成功"
 
-#: Sentinel/TransactionWatcher.cpp:64 Sentinel/TransactionWatcher.cpp:249
+#: Sentinel/TransactionWatcher.cpp:66 Sentinel/TransactionWatcher.cpp:265
 msgid "Hide this icon"
 msgstr "隱藏此圖示"
 
-#: Sentinel/TransactionWatcher.cpp:166
+#: Sentinel/TransactionWatcher.cpp:168
 msgid "The system update has completed"
 msgstr "系統更新已完成"
 
-#: Sentinel/TransactionWatcher.cpp:172
-#, fuzzy, kde-format
-#| msgid "Package: %2"
-#| msgid_plural "Packages: %2"
+#: Sentinel/TransactionWatcher.cpp:174
+#, kde-format
 msgid "Packages: %1"
-msgstr "套件：%2"
+msgstr "套件：%1"
 
-#: Sentinel/TransactionWatcher.cpp:184
+#: Sentinel/TransactionWatcher.cpp:201
 #, kde-format
 msgid "Package: %2"
 msgid_plural "Packages: %2"
 msgstr[0] "套件：%2"
 
-#: Sentinel/TransactionWatcher.cpp:231 Sentinel/TransactionWatcher.cpp:271
-#, fuzzy
-#| msgid "Package Manager Messages"
+#: Sentinel/TransactionWatcher.cpp:247 Sentinel/TransactionWatcher.cpp:287
 msgid "Software Manager Messages"
-msgstr "套件管理程式訊息"
+msgstr "軟體管理程式訊息"
 
-#: Sentinel/TransactionWatcher.cpp:232
-#, fuzzy, kde-format
-#| msgid "One message from the package manager"
-#| msgid_plural "%1 messages from the package manager"
+#: Sentinel/TransactionWatcher.cpp:248
+#, kde-format
 msgid "One message from the software manager"
 msgid_plural "%1 messages from the software manager"
-msgstr[0] "來自套件管理程式的 %1 個訊息"
+msgstr[0] "來自軟體管理程式的 %1 個訊息"
 
-#: Sentinel/TransactionWatcher.cpp:240
+#: Sentinel/TransactionWatcher.cpp:256
 msgid "Show messages"
 msgstr "顯示訊息"
 
-#: Sentinel/TransactionWatcher.cpp:292
+#: Sentinel/TransactionWatcher.cpp:308
 msgid "Ignore"
 msgstr "忽略"
 
 #: Sentinel/PkIsInstalled.cpp:36
-#, fuzzy
-#| msgid "The package is not installed"
 msgid "Querying if a Package is Installed"
-msgstr "未安裝此套件"
+msgstr "查詢是否已安裝此套件"
 
 #: Sentinel/PkIsInstalled.cpp:67
 msgid "User canceled the transaction"
@@ -1027,107 +950,69 @@ msgid "%1"
 msgstr "%1"
 
 #: Sentinel/PkInstallPlasmaResources.cpp:40
-#, fuzzy
-#| msgid "Install Packages"
 msgid "Install Plasma Resources"
-msgstr "安裝套件"
+msgstr "安裝 Plasma 資源"
 
 #: Sentinel/PkInstallPlasmaResources.cpp:53
-#, fuzzy, kde-format
-#| msgctxt "Part of: %1 Updates, %1 Selected"
-#| msgid "%1 Update"
-#| msgid_plural "%1 Updates"
+#, kde-format
 msgid "%1 data engine"
-msgstr "%1 個更新"
+msgstr "%1 資料引擎"
 
 #: Sentinel/PkInstallPlasmaResources.cpp:55
 #, kde-format
 msgid "%1 script engine"
-msgstr ""
+msgstr "%1 腳本引擎"
 
 #: Sentinel/PkInstallPlasmaResources.cpp:67
-#, fuzzy
-#| msgid "No files were found."
 msgid "No supported resources were provided"
-msgstr "找不到檔案。"
+msgstr "未提供的支援資源"
 
 #: Sentinel/PkInstallPlasmaResources.cpp:69
-#, fuzzy
-#| msgid ""
-#| "The following plugin is required: <ul><li>%2</li></ul>Do you want to "
-#| "search for this now?"
-#| msgid_plural ""
-#| "The following plugins are required: <ul><li>%2</li></ul>Do you want to "
-#| "search for these now?"
 msgid "The following service is required. Do you want to search for this now?"
 msgid_plural ""
 "The following services are required. Do you want to search for these now?"
-msgstr[0] "需要下列外掛程式：<ul><li>%2</li></ul>您想要現在搜尋這些嗎？"
+msgstr[0] "需要下列服務。您想要現在搜尋這些嗎？"
 
 #: Sentinel/PkInstallPlasmaResources.cpp:78
-#, fuzzy
-#| msgid "%2 requires an additional plugin for this operation"
-#| msgid_plural "%2 requires additional plugins for this operation"
 msgid "Plasma requires an additional service for this operation"
 msgid_plural "Plasma requires additional services for this operation"
-msgstr[0] "%2 需要額外的外掛程式來進行此操作"
+msgstr[0] "Plasma 需要額外的服務來進行此操作"
 
 #: Sentinel/PkInstallPlasmaResources.cpp:112
-#, fuzzy
-#| msgid "Failed to search for provides"
 msgid "Failed to search for Plasma service"
-msgstr "搜尋提供者失敗"
+msgstr "搜尋 Plasma 服務失敗"
 
 #: Sentinel/PkInstallPlasmaResources.cpp:115
-#, fuzzy
-#| msgid "Could not find plugin in any configured software source"
 msgid "Could not find service in any configured software source"
-msgstr "在任何軟體來源內都找不到外掛程式"
+msgstr "在任何已設定的軟體來源內都找不到服務"
 
 #: Sentinel/PkInstallMimeTypes.cpp:39
-#, fuzzy
-#| msgid "Install Files"
 msgid "Install Support for File Types"
-msgstr "安裝檔案"
+msgstr "安裝檔案類型支援"
 
 #: Sentinel/PkInstallMimeTypes.cpp:50
-#, fuzzy
-#| msgid ""
-#| "Do you want to search for packages containing this file and remove it now?"
-#| msgid_plural ""
-#| "Do you want to search for packages containing these files and remove them "
-#| "now?"
 msgid "Do you want to search for a program that can open this file type?"
 msgid_plural ""
 "Do you want to search for a program that can open these file types?"
-msgstr[0] "您現在想要搜尋包含這些檔案的套件並移除它們嗎？"
+msgstr[0] "您現在想要搜尋可以開啟這些檔案類型的程式嗎？"
 
 #: Sentinel/PkInstallMimeTypes.cpp:55
-#, fuzzy
-#| msgid "No files were found."
 msgid "No valid file types were provided"
-msgstr "找不到檔案。"
+msgstr "未提供有效的檔案類型"
 
 #: Sentinel/PkInstallMimeTypes.cpp:62
-#, fuzzy
-#| msgid "A program requires an additional plugin to decode this file"
-#| msgid_plural "A program requires additional plugins to decode this file"
 msgid "A program is requiring support to open this kind of files"
 msgid_plural "A program is requiring support to open these kinds of files"
-msgstr[0] "某程式需要額外的外掛程式來解碼此檔案"
+msgstr[0] "某程式需要額外的服務來開啟此類型的檔案"
 
 #: Sentinel/PkInstallMimeTypes.cpp:66
-#, fuzzy, kde-format
-#| msgid "A program requires an additional plugin to decode this file"
-#| msgid_plural "A program requires additional plugins to decode this file"
+#, kde-format
 msgid "The application %2 is requiring support to open this kind of files"
 msgid_plural ""
 "The application %2 is requiring support to open these kinds of files"
-msgstr[0] "某程式需要額外的外掛程式來解碼此檔案"
+msgstr[0] "應用程式 %2 需要額外的服務來開啟此類型的檔案"
 
 #: Sentinel/PkInstallMimeTypes.cpp:101
-#, fuzzy
-#| msgid "Failed to find software"
 msgid "Could not find software"
 msgstr "找不到軟體"
 
@@ -1136,59 +1021,43 @@ msgid "No new applications can be found to handle this type of file"
 msgstr "找不到新的應用程式來處理這個類型的檔案"
 
 #: Sentinel/main.cpp:36
-#, fuzzy
-#| msgid "Apply Settings"
 msgid "Apper Sentinel"
-msgstr "套用設定值"
+msgstr "Apper Sentinel"
 
 #: Sentinel/main.cpp:41
 msgid "Trever Fischer"
 msgstr "Trever Fischer"
 
 #: Sentinel/PkInstallPackageFiles.cpp:38
-#, fuzzy
-#| msgid "Install Packages"
 msgid "Install Packages Files"
-msgstr "安裝套件"
+msgstr "安裝套件檔案"
 
 #: Sentinel/PkInstallPackageFiles.cpp:42
 #: Sentinel/PkRemovePackageByFiles.cpp:43
 msgid "You can drop more files in here"
-msgstr ""
+msgstr "您可以在此加入更多檔案"
 
 #: Sentinel/PkInstallPackageFiles.cpp:52
-#, fuzzy
-#| msgid "Not supported"
 msgid "Not Supported"
-msgstr "未支援"
+msgstr "不支援"
 
 #: Sentinel/PkInstallPackageFiles.cpp:53
-#, fuzzy
-#| msgid "Current backend does not support installing packages."
 msgid "Your current backend does not support installing files"
-msgstr "現在的後端程式不支援安裝套件。"
+msgstr "現在的後端程式不支援安裝檔案"
 
 #: Sentinel/PkInstallPackageFiles.cpp:68
 #: Sentinel/PkRemovePackageByFiles.cpp:64
-#, fuzzy
-#| msgid "No files were found."
 msgid "No supported files were provided"
-msgstr "找不到檔案。"
+msgstr "未提供支援的檔案"
 
 #: Sentinel/PkInstallPackageFiles.cpp:70
-#, fuzzy
-#| msgid "Do you want to install this file?"
-#| msgid_plural "Do you want to install these files?"
 msgid "Press <i>Continue</i> if you want to install this file"
 msgid_plural "Press <i>Continue</i> if you want to install these files"
-msgstr[0] "您想要安裝這些檔案嗎？"
+msgstr[0] "您想要安裝這些檔案請按下「<i>繼續</i>」"
 
 #: Sentinel/PkInstallPackageFiles.cpp:105
-#, fuzzy
-#| msgctxt "The role of the transaction, in present tense"
-#| msgid "Installing file"
 msgid "Installation Complete"
-msgstr "安裝檔案中"
+msgstr "安裝完成"
 
 #: Sentinel/PkInstallPackageFiles.cpp:106
 msgid "File was installed successfully"
@@ -1196,81 +1065,53 @@ msgid_plural "Files were installed successfully"
 msgstr[0] "檔案已成功安裝"
 
 #: Sentinel/PkInstallPackageFiles.cpp:117
-#, fuzzy
-#| msgid "Failed to install file"
-#| msgid_plural "Failed to install files"
 msgid "Failed to install files"
 msgstr "安裝檔案失敗"
 
 #: Sentinel/PkInstallPackageFiles.cpp:118
 #: Sentinel/PkInstallPackageFiles.cpp:120
-#, fuzzy
-#| msgid "Failed to install file"
-#| msgid_plural "Failed to install files"
 msgid "Could not install files"
-msgstr "安裝檔案失敗"
+msgstr "無法安裝檔案"
 
 #: Sentinel/PkRemovePackageByFiles.cpp:40
-#, fuzzy
-#| msgid "Remove Packages"
 msgid "Remove Packages that Provides Files"
-msgstr "移除套件"
+msgstr "移除套件所提供的檔案"
 
 #: Sentinel/PkRemovePackageByFiles.cpp:67
-#, fuzzy
-#| msgid "You need to restart the application"
 msgid "Do you want to remove the following application?"
 msgid_plural "Do you want to remove the following applications?"
-msgstr[0] "您需要重新啟動這個應用程式"
+msgstr[0] "您想要移除下列的應用程式嗎？"
 
 #: Sentinel/PkRemovePackageByFiles.cpp:71
-#, fuzzy
-#| msgid ""
-#| "Do you want to search for packages containing this file and remove it now?"
-#| msgid_plural ""
-#| "Do you want to search for packages containing these files and remove them "
-#| "now?"
 msgid "Do you want to search for a package providing this file?"
 msgid_plural "Do you want to search for a package providing these files?"
-msgstr[0] "您現在想要搜尋包含這些檔案的套件並移除它們嗎？"
+msgstr[0] "您現在想要搜尋提供這些檔案的套件嗎？"
 
 #: Sentinel/PkRemovePackageByFiles.cpp:82
-#, fuzzy
-#| msgid "%2 wants to install a package"
-#| msgid_plural "%2 wants to install packages"
 msgid "An application is asking to remove an application"
 msgid_plural "An application is asking to remove applications"
-msgstr[0] "%2 想要安裝套件"
+msgstr[0] "某應用程式要求移除某些應用程式"
 
 #: Sentinel/PkRemovePackageByFiles.cpp:86
-#, fuzzy
-#| msgid "%2 wants to install a package"
-#| msgid_plural "%2 wants to install packages"
 msgid "An application is asking to remove a file"
 msgid_plural "An application is asking to remove files"
-msgstr[0] "%2 想要安裝套件"
+msgstr[0] "某應用程式要求移除某些檔案"
 
 #: Sentinel/PkRemovePackageByFiles.cpp:92
-#, fuzzy, kde-format
-#| msgid "%2 wants to install a package"
-#| msgid_plural "%2 wants to install packages"
+#, kde-format
 msgid "The application <i>%2</i> is asking to remove an application"
 msgid_plural "The application <i>%2</i> is asking to remove applications"
-msgstr[0] "%2 想要安裝套件"
+msgstr[0] "應用程式 <i>%2</i> 要求移除某些應用程式"
 
 #: Sentinel/PkRemovePackageByFiles.cpp:97
-#, fuzzy, kde-format
-#| msgid "%2 wants to install a package"
-#| msgid_plural "%2 wants to install packages"
+#, kde-format
 msgid "The application <i>%2</i> is asking to remove a file"
 msgid_plural "The application <i>%2</i> is asking to remove files"
-msgstr[0] "%2 想要安裝套件"
+msgstr[0] "應用程式 <i>%2</i> 要求移除某些檔案"
 
 #: Sentinel/PkRemovePackageByFiles.cpp:103
-#, fuzzy
-#| msgid "No update description was found."
 msgid "No application was found"
-msgstr "找不到更新描述。"
+msgstr "找不到應用程式"
 
 #: Sentinel/PkRemovePackageByFiles.cpp:150
 msgid "The file could not be found in any installed package"
@@ -1278,45 +1119,35 @@ msgid_plural "The files could not be found in any installed package"
 msgstr[0] "在任何已安裝的套件內都找不到這些檔案"
 
 #: Sentinel/PkSearchFile.cpp:37
-#, fuzzy
-#| msgctxt "The role of the transaction, in past tense"
-#| msgid "Searched for package details"
 msgid "Search Packages that Provides Files"
-msgstr "已搜尋套件細節"
+msgstr "搜尋提供這些檔案的套件"
 
 #: Sentinel/PkSearchFile.cpp:80
 msgid "The file name could not be found in any software source"
 msgstr "在任何軟體來源內都找不到這個套件名稱"
 
 #: Sentinel/PkInstallFontconfigResources.cpp:41
-#, fuzzy
-#| msgid "Install Files"
 msgid "Installs new Fonts"
-msgstr "安裝檔案"
+msgstr "安裝新字型"
 
 #: Sentinel/PkInstallFontconfigResources.cpp:73
 msgid "Could interpret request"
-msgstr ""
+msgstr "可以解讀請求"
 
 #: Sentinel/PkInstallFontconfigResources.cpp:73
 msgid "Please verify if the request was valid"
-msgstr ""
+msgstr "請察核請求是否有效"
 
 #: Sentinel/PkInstallFontconfigResources.cpp:107
-#, fuzzy
-#| msgid ""
-#| "An additional font is required to view this document correctly. Do you "
-#| "want to search for a suitable package now?"
-#| msgid_plural ""
-#| "Additional fonts are required to view this document correctly. Do you "
-#| "want to search for suitable packages now?"
 msgid ""
 "An additional font is required to view this document correctly.\n"
 "Do you want to search for a suitable package now?"
 msgid_plural ""
 "Additional fonts are required to view this document correctly.\n"
 "Do you want to search for suitable packages now?"
-msgstr[0] "要正確檢視此文件需要額外字型：您想要現在搜尋合適的套件嗎？"
+msgstr[0] ""
+"要正確檢視此文件需要額外字型。\n"
+"您想要現在搜尋合適的套件嗎？"
 
 #: Sentinel/PkInstallFontconfigResources.cpp:117
 msgid "A program wants to install a font"
@@ -1324,12 +1155,10 @@ msgid_plural "A program wants to install fonts"
 msgstr[0] "某程式想要安裝字型"
 
 #: Sentinel/PkInstallFontconfigResources.cpp:121
-#, fuzzy, kde-format
-#| msgid "%2 wants to install a package"
-#| msgid_plural "%2 wants to install packages"
+#, kde-format
 msgid "The application %2 wants to install a font"
 msgid_plural "The application %2 wants to install fonts"
-msgstr[0] "%2 想要安裝套件"
+msgstr[0] "應用程式 %2 想要安裝字型"
 
 #: Sentinel/PkInstallFontconfigResources.cpp:155
 #: Sentinel/PkInstallFontconfigResources.cpp:164
@@ -1337,27 +1166,18 @@ msgid "Failed to find font"
 msgstr "尋找字型失敗"
 
 #: Sentinel/PkInstallFontconfigResources.cpp:157
-#, fuzzy
-#| msgid "No new fonts can be found for this document"
 msgid "No new fonts could be found for this document"
 msgstr "找不到新字型供此文件使用"
 
 #: Sentinel/PkInstallGStreamerResources.cpp:39
 msgid "Install GStreamer Resources"
-msgstr ""
+msgstr "安裝 GStreamer 資源"
 
 #: Sentinel/PkInstallGStreamerResources.cpp:68
-#, fuzzy
-#| msgid ""
-#| "The following plugin is required: <ul><li>%2</li></ul>Do you want to "
-#| "search for this now?"
-#| msgid_plural ""
-#| "The following plugins are required: <ul><li>%2</li></ul>Do you want to "
-#| "search for these now?"
 msgid "The following plugin is required. Do you want to search for this now?"
 msgid_plural ""
 "The following plugins are required. Do you want to search for these now?"
-msgstr[0] "需要下列外掛程式：<ul><li>%2</li></ul>您想要現在搜尋這些嗎？"
+msgstr[0] "需要下列外掛程式。 您想要現在搜尋這些嗎？"
 
 #: Sentinel/PkInstallGStreamerResources.cpp:80
 msgid "A program requires an additional plugin to decode this file"
@@ -1372,7 +1192,7 @@ msgstr[0] "某程式需要額外的外掛程式來編碼此檔案"
 #: Sentinel/PkInstallGStreamerResources.cpp:90
 msgid "A program requires an additional plugin for this operation"
 msgid_plural "A program requires additional plugins for this operation"
-msgstr[0] "某程式需要新的 mime 類型以進行此操作"
+msgstr[0] "某程式需要額外的外掛程式以進行此操作"
 
 #: Sentinel/PkInstallGStreamerResources.cpp:97
 #, kde-format
@@ -1384,7 +1204,7 @@ msgstr[0] "%2 需要額外的外掛程式來解碼此檔案"
 #, kde-format
 msgid "%2 requires an additional plugin to encode this file"
 msgid_plural "%2 requires additional plugins to encode this file"
-msgstr[0] "%2 需要額外的外掛程式來解碼此檔案"
+msgstr[0] "%2 需要額外的外掛程式來編碼此檔案"
 
 #: Sentinel/PkInstallGStreamerResources.cpp:109
 #, kde-format
@@ -1393,26 +1213,20 @@ msgid_plural "%2 requires additional plugins for this operation"
 msgstr[0] "%2 需要額外的外掛程式來進行此操作"
 
 #: Sentinel/PkInstallGStreamerResources.cpp:147
-#, fuzzy
-#| msgid "No files were found."
 msgid "No results found"
-msgstr "找不到檔案。"
+msgstr "沒有結果"
 
 #: Sentinel/PkInstallGStreamerResources.cpp:149
 msgid "Could not find plugin in any configured software source"
 msgstr "在任何軟體來源內都找不到外掛程式"
 
 #: libapper/ChangesDelegate.cpp:45
-#, fuzzy
-#| msgid "To be Installed"
 msgid "Do not Install"
-msgstr "要安裝"
+msgstr "不要安裝"
 
 #: libapper/ChangesDelegate.cpp:47
-#, fuzzy
-#| msgid "To be Removed"
 msgid "Do not Remove"
-msgstr "要移除"
+msgstr "不要移除"
 
 #: libapper/ChangesDelegate.cpp:49 libapper/ApplicationsDelegate.cpp:44
 msgid "Deselect"
@@ -1584,7 +1398,7 @@ msgstr "正在產生套件清單"
 #: libapper/PkStrings.cpp:125
 msgctxt "transaction state, when we're waiting for the native tools to exit"
 msgid "Waiting for package manager lock"
-msgstr "正在等候套件管理程式解鎖"
+msgstr "正在等候套件管理程式鎖定"
 
 #: libapper/PkStrings.cpp:128
 msgctxt "waiting for user to type in a password"
@@ -1817,9 +1631,6 @@ msgid "Simulating the update"
 msgstr "正在模擬更新"
 
 #: libapper/PkStrings.cpp:241
-#, fuzzy
-#| msgctxt "The role of the transaction, in present tense"
-#| msgid "Updating system"
 msgctxt "The role of the transaction, in present tense"
 msgid "Upgrading system"
 msgstr "更新系統中"
@@ -2000,9 +1811,6 @@ msgid "Simulated the update"
 msgstr "已模擬更新"
 
 #: libapper/PkStrings.cpp:321
-#, fuzzy
-#| msgctxt "The role of the transaction, in past tense"
-#| msgid "Updated system"
 msgctxt "The role of the transaction, in past tense"
 msgid "Upgraded system"
 msgstr "已更新系統"
@@ -2197,7 +2005,7 @@ msgstr "無法結束"
 
 #: libapper/PkStrings.cpp:445
 msgid "Cannot get lock"
-msgstr "無法取鎖"
+msgstr "無法取得鎖"
 
 #: libapper/PkStrings.cpp:447
 msgid "No packages to update"
@@ -2259,7 +2067,7 @@ msgstr "套件與本系統不相容"
 msgid "No space is left on the disk"
 msgstr "磁碟空間不足"
 
-#: libapper/PkStrings.cpp:477 libapper/PkTransaction.cpp:578
+#: libapper/PkStrings.cpp:477 libapper/PkTransaction.cpp:579
 msgid "A media change is required"
 msgstr "需要更換媒體"
 
@@ -2321,21 +2129,19 @@ msgstr "套件資料庫已變更"
 
 #: libapper/PkStrings.cpp:507
 msgid "Virtual provide type is not supported"
-msgstr ""
+msgstr "不支援此虛擬提供的類型"
 
 #: libapper/PkStrings.cpp:509
 msgid "Install root is invalid"
-msgstr ""
+msgstr "安裝目錄不合法"
 
 #: libapper/PkStrings.cpp:511
-#, fuzzy
-#| msgid "Cannot get lock"
 msgid "Cannot fetch install sources"
-msgstr "無法取鎖"
+msgstr "無法取得安裝來源"
 
 #: libapper/PkStrings.cpp:513
 msgid "Rescheduled due to priority"
-msgstr ""
+msgstr "由於優先權關係而重新排程"
 
 #: libapper/PkStrings.cpp:515
 msgid "Unknown error"
@@ -2751,23 +2557,21 @@ msgstr "當正在執行請求的同時，套件資料庫已經變更。"
 
 #: libapper/PkStrings.cpp:686
 msgid "The virtual provide type is not supported by this system."
-msgstr ""
+msgstr "此系統不支援虛擬提供的類型"
 
 #: libapper/PkStrings.cpp:688
 msgid "The install root is invalid. Please contact your administrator."
-msgstr ""
+msgstr "安裝目錄不合法。請聯繫您的系統管理員。"
 
 #: libapper/PkStrings.cpp:690
-#, fuzzy
-#| msgid "The specified software origin could not be disabled."
 msgid "The list of software could not be downloaded."
-msgstr "無法停用指定的軟體來源。"
+msgstr "無法下載列出的軟體"
 
 #: libapper/PkStrings.cpp:692
 msgid ""
 "The transaction has been cancelled and will be retried when the system is "
 "idle."
-msgstr ""
+msgstr "處理事項已取消且在系統閒置時將重新嘗試"
 
 #: libapper/PkStrings.cpp:694
 msgid ""
@@ -3192,7 +2996,7 @@ msgstr "此軟體來源僅適合開發者"
 
 #: libapper/PkStrings.cpp:949
 msgid "Other updates have been held back"
-msgstr ""
+msgstr "其他的更新已保留"
 
 #: libapper/PkStrings.cpp:964
 msgid "Could not get a transaction id from packagekitd."
@@ -3239,43 +3043,15 @@ msgstr "允許您正當執行處理事項工作項目的同時隱藏住此視窗
 msgid "Package"
 msgstr "套件"
 
-#: libapper/SimulateModel.cpp:141 libapper/PackageModel.cpp:180
+#: libapper/SimulateModel.cpp:141 libapper/PackageModel.cpp:184
 msgid "Version"
 msgstr "版本"
 
-#: libapper/Requirements.cpp:41
-msgid "Additional changes"
-msgstr "額外變更"
-
-#: libapper/Requirements.cpp:62
-#, kde-format
-msgid "1 package to remove"
-msgid_plural "%1 packages to remove"
-msgstr[0] "%1 個套件要移除"
-
-#: libapper/Requirements.cpp:77
-#, kde-format
-msgid "1 package to downgrade"
-msgid_plural "%1 packages to downgrade"
-msgstr[0] "%1 個套件要降級"
-
-#: libapper/Requirements.cpp:92
-#, kde-format
-msgid "1 package to reinstall"
-msgid_plural "%1 packages to reinstall"
-msgstr[0] "%1 個套件要重新安裝"
-
-#: libapper/Requirements.cpp:105
-#, kde-format
-msgid "1 package to install"
-msgid_plural "%1 packages to install"
-msgstr[0] "%1 個套件要安裝"
-
-#: libapper/Requirements.cpp:118
-#, kde-format
-msgid "1 package to update"
-msgid_plural "%1 packages to update"
-msgstr[0] "%1 個套件要更新"
+#: libapper/ApplicationLauncher.cpp:95
+msgid "The following application was just installed. Click on it to launch:"
+msgid_plural ""
+"The following applications were just installed. Click on them to launch:"
+msgstr[0] "下列應用程式剛安裝完成。請點擊以啟動："
 
 #: libapper/LicenseAgreement.cpp:36
 msgid "Accept Agreement"
@@ -3292,23 +3068,89 @@ msgstr "需要接受授權條款"
 msgid "License required for %1 by %2"
 msgstr "%2 需要 %1 的授權條款"
 
-#: libapper/ApplicationLauncher.cpp:99
-msgid "The following application was just installed. Click on it to launch:"
-msgid_plural ""
-"The following applications were just installed. Click on them to launch:"
-msgstr[0] "下列應用程式剛安裝完成。請點擊以啟動："
+#: libapper/PackageModel.cpp:182
+msgid "Name"
+msgstr "名稱"
+
+#: libapper/PackageModel.cpp:186
+#, fuzzy
+#| msgctxt "The role of the transaction, in past tense"
+#| msgid "Installed signature"
+msgid "Installed Version"
+msgstr "已安裝簽章"
+
+#: libapper/PackageModel.cpp:188
+msgid "Arch"
+msgstr "架構"
+
+#: libapper/PackageModel.cpp:190
+#, fuzzy
+#| msgid "Edit Origins"
+msgid "Origin"
+msgstr "編輯來源"
+
+#: libapper/PackageModel.cpp:192
+msgid "Size"
+msgstr "大小"
+
+#: libapper/PackageModel.cpp:283
+#, kde-format
+msgid ""
+"Version: %1\n"
+"Architecture: %2"
+msgstr ""
+"版本： %1\n"
+"架構： %2"
+
+#: libapper/PackageModel.cpp:329
+msgid "To be Removed"
+msgstr "要移除"
+
+#: libapper/PackageModel.cpp:331
+msgid "To be Installed"
+msgstr "要安裝"
+
+#: libapper/Requirements.cpp:42
+msgid "Additional changes"
+msgstr "額外變更"
+
+#: libapper/Requirements.cpp:63
+#, kde-format
+msgid "1 package to remove"
+msgid_plural "%1 packages to remove"
+msgstr[0] "%1 個套件要移除"
+
+#: libapper/Requirements.cpp:78
+#, kde-format
+msgid "1 package to downgrade"
+msgid_plural "%1 packages to downgrade"
+msgstr[0] "%1 個套件要降級"
+
+#: libapper/Requirements.cpp:93
+#, kde-format
+msgid "1 package to reinstall"
+msgid_plural "%1 packages to reinstall"
+msgstr[0] "%1 個套件要重新安裝"
+
+#: libapper/Requirements.cpp:106
+#, kde-format
+msgid "1 package to install"
+msgid_plural "%1 packages to install"
+msgstr[0] "%1 個套件要安裝"
+
+#: libapper/Requirements.cpp:119
+#, kde-format
+msgid "1 package to update"
+msgid_plural "%1 packages to update"
+msgstr[0] "%1 個套件要更新"
 
 #: libapper/PkTransaction.cpp:122
-#, fuzzy
-#| msgid "Failed to simulate package install"
 msgid "Failed to simulate file install"
-msgstr "模擬套件安裝失敗"
+msgstr "模擬檔案安裝失敗"
 
 #: libapper/PkTransaction.cpp:129
-#, fuzzy
-#| msgid "Current backend does not support installing packages."
 msgid "Current backend does not support installing files."
-msgstr "現在的後端程式不支援安裝套件。"
+msgstr "現在的後端程式不支援安裝檔案。"
 
 #: libapper/PkTransaction.cpp:129 libapper/PkTransaction.cpp:153
 #: libapper/PkTransaction.cpp:179 libapper/PkTransaction.cpp:202
@@ -3340,10 +3182,8 @@ msgid "The current backend does not support updating packages."
 msgstr "現在使用的後端程式不支援更新套件。"
 
 #: libapper/PkTransaction.cpp:213
-#, fuzzy
-#| msgid "Failed to remove package"
 msgid "Failed to refresh package cache"
-msgstr "移除套件失敗"
+msgstr "更新套件快取失敗"
 
 #: libapper/PkTransaction.cpp:251
 msgid "Failed to install package"
@@ -3378,40 +3218,15 @@ msgstr ""
 msgid "Installing unsigned software"
 msgstr "安裝未簽署的軟體"
 
-#: libapper/PkTransaction.cpp:563 libapper/PkTransaction.cpp:616
+#: libapper/PkTransaction.cpp:564 libapper/PkTransaction.cpp:618
 msgid "Failed to install signature"
 msgstr "安裝簽章失敗"
 
-#: libapper/PackageModel.cpp:178
-#, fuzzy
-#| msgctxt "The group type"
-#| msgid "Games"
-msgid "Name"
-msgstr "遊戲"
-
-#: libapper/PackageModel.cpp:182
-msgid "Arch"
-msgstr ""
-
-#: libapper/PackageModel.cpp:184
-msgid "Size"
-msgstr ""
-
-#: libapper/PackageModel.cpp:272
-#, fuzzy, kde-format
-#| msgid "Show Architectures"
-msgid ""
-"Version: %1\n"
-"Architecture: %2"
-msgstr "顯示架構"
-
-#: libapper/PackageModel.cpp:315
-msgid "To be Removed"
-msgstr "要移除"
-
-#: libapper/PackageModel.cpp:317
-msgid "To be Installed"
-msgstr "要安裝"
+#. i18n: file: libapper/RepoSig.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, RepoSig)
+#: libapper/RepoSig.cpp:40 rc.cpp:218
+msgid "Software signature is required"
+msgstr "需要軟體簽章"
 
 #: libapper/ApplicationsDelegate.cpp:40
 msgid "Install"
@@ -3421,21 +3236,15 @@ msgstr "安裝"
 msgid "Remove"
 msgstr "移除"
 
-#. i18n: file: libapper/RepoSig.ui:14
-#. i18n: ectx: property (windowTitle), widget (QWidget, RepoSig)
-#: libapper/RepoSig.cpp:40 rc.cpp:218
-msgid "Software signature is required"
-msgstr "需要軟體簽章"
-
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Cheng-Chia Tseng"
+msgstr "Max Lin"
 
 #: rc.cpp:2
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "pswo10680@gmail.com"
+msgstr "max7442@gmail.com"
 
 #. i18n: file: Apper/BackendDetails.ui:26
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
@@ -3682,8 +3491,6 @@ msgstr "模擬套件更新"
 #. i18n: file: Apper/BackendDetails.ui:462
 #. i18n: ectx: property (text), widget (QCheckBox, upgradeSystemCB)
 #: rc.cpp:131
-#, fuzzy
-#| msgid "Update System"
 msgid "Upgrade System"
 msgstr "更新系統"
 
@@ -3796,12 +3603,8 @@ msgstr "需要額外變更才能完成這個工作事項"
 #. i18n: file: libapper/Requirements.ui:87
 #. i18n: ectx: property (text), widget (QCheckBox, confirmCB)
 #: rc.cpp:215
-#, fuzzy
-#| msgid ""
-#| "Do not show this confirmation when installing or updating additional "
-#| "packages"
 msgid "Do not confirm when installing or updating additional packages"
-msgstr "當安裝套件或更新額外套件時不要顯示此確認對話窗"
+msgstr "當安裝或更新額外套件時不要顯示此確認對話窗"
 
 #. i18n: file: libapper/RepoSig.ui:23
 #. i18n: ectx: property (text), widget (QLabel, label)

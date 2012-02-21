@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-10-10 04:10+0200\n"
+"POT-Creation-Date: 2012-02-18 05:06+0100\n"
 "PO-Revision-Date: 2010-09-15 10:43+0100\n"
 "Last-Translator: Andrew Coles <andrew_coles@yahoo.co.uk>\n"
 "Language-Team: British English <kde-i18n-doc@kde.org>\n"
@@ -23,7 +23,7 @@ msgstr ""
 msgid "Backend Details"
 msgstr "Show backend details"
 
-#: Apper/main.cpp:54 Sentinel/UpdateIcon.cpp:161 Sentinel/main.cpp:34
+#: Apper/main.cpp:54 Sentinel/UpdateIcon.cpp:158 Sentinel/main.cpp:34
 #, fuzzy
 #| msgid "AppGet"
 msgid "Apper"
@@ -35,7 +35,7 @@ msgstr "AppGet"
 msgid "Apper is an Application to Get and Manage Software"
 msgstr "AppGet is an application to get and manage software"
 
-#: Apper/main.cpp:58 ApperKCM/ApperKCM.cpp:82 Sentinel/main.cpp:38
+#: Apper/main.cpp:58 ApperKCM/ApperKCM.cpp:83 Sentinel/main.cpp:38
 #, fuzzy
 #| msgid "(C) 2008-2010 Daniel Nicoletti"
 msgid "(C) 2008-2011 Daniel Nicoletti"
@@ -140,11 +140,11 @@ msgctxt "No updates will be automatically installed"
 msgid "None"
 msgstr "None"
 
-#: ApperKCM/Settings/Settings.cpp:249 libapper/PkStrings.cpp:962
+#: ApperKCM/Settings/Settings.cpp:250 libapper/PkStrings.cpp:962
 msgid "You do not have the necessary privileges to perform this action."
 msgstr "You do not have the necessary privileges to perform this action."
 
-#: ApperKCM/Settings/Settings.cpp:250
+#: ApperKCM/Settings/Settings.cpp:251
 msgid "Failed to set origin data"
 msgstr "Failed to set origin data"
 
@@ -241,14 +241,14 @@ msgstr "This notification was issued on %1 and last updated on %2."
 msgid "This notification was issued on %1."
 msgstr "This notification was issued on %1."
 
-#: ApperKCM/Updater/UpdateDetails.cpp:223
+#: ApperKCM/Updater/UpdateDetails.cpp:224
 msgid "For more information about this update please visit this website:"
 msgid_plural ""
 "For more information about this update please visit these websites:"
 msgstr[0] "For more information about this update please visit this website:"
 msgstr[1] "For more information about this update please visit these websites:"
 
-#: ApperKCM/Updater/UpdateDetails.cpp:233
+#: ApperKCM/Updater/UpdateDetails.cpp:234
 msgid ""
 "For more information about bugs fixed by this update please visit this "
 "website:"
@@ -262,7 +262,7 @@ msgstr[1] ""
 "For more information about bugs fixed by this update please visit these "
 "websites:"
 
-#: ApperKCM/Updater/UpdateDetails.cpp:243
+#: ApperKCM/Updater/UpdateDetails.cpp:244
 msgid ""
 "For more information about this security update please visit this website:"
 msgid_plural ""
@@ -272,7 +272,7 @@ msgstr[0] ""
 msgstr[1] ""
 "For more information about this security update please visit these websites:"
 
-#: ApperKCM/Updater/UpdateDetails.cpp:253
+#: ApperKCM/Updater/UpdateDetails.cpp:254
 msgid ""
 "The computer will have to be restarted after the update for the changes to "
 "take effect."
@@ -280,7 +280,7 @@ msgstr ""
 "The computer will have to be restarted after the update for the changes to "
 "take effect."
 
-#: ApperKCM/Updater/UpdateDetails.cpp:257
+#: ApperKCM/Updater/UpdateDetails.cpp:258
 msgid ""
 "You will need to log out and back in after the update for the changes to "
 "take effect."
@@ -288,7 +288,7 @@ msgstr ""
 "You will need to log out and back in after the update for the changes to "
 "take effect."
 
-#: ApperKCM/Updater/UpdateDetails.cpp:264
+#: ApperKCM/Updater/UpdateDetails.cpp:265
 msgid ""
 "The classification of this update is unstable which means it is not designed "
 "for production use."
@@ -296,7 +296,7 @@ msgstr ""
 "The classification of this update is unstable which means it is not designed "
 "for production use."
 
-#: ApperKCM/Updater/UpdateDetails.cpp:268
+#: ApperKCM/Updater/UpdateDetails.cpp:269
 msgid ""
 "This is a test update, and is not designed for normal use. Please report any "
 "problems or regressions you encounter."
@@ -304,7 +304,7 @@ msgstr ""
 "This is a test update, and is not designed for normal use. Please report any "
 "problems or regressions you encounter."
 
-#: ApperKCM/Updater/UpdateDetails.cpp:277
+#: ApperKCM/Updater/UpdateDetails.cpp:279
 msgid ""
 "The developer logs will be shown as no description is available for this "
 "update:"
@@ -312,70 +312,83 @@ msgstr ""
 "The developer logs will be shown as no description is available for this "
 "update:"
 
-#: ApperKCM/Updater/UpdateDetails.cpp:285
+#: ApperKCM/Updater/UpdateDetails.cpp:287
 msgid "Updates:"
 msgstr "Updates:"
 
-#: ApperKCM/Updater/UpdateDetails.cpp:295
+#: ApperKCM/Updater/UpdateDetails.cpp:297
 msgid "Obsoletes:"
 msgstr "Obsoletes:"
 
-#: ApperKCM/Updater/UpdateDetails.cpp:305
+#: ApperKCM/Updater/UpdateDetails.cpp:307
 msgid "Repository:"
 msgstr "Repository:"
 
-#: ApperKCM/Updater/UpdateDetails.cpp:337
+#: ApperKCM/Updater/UpdateDetails.cpp:339
 msgid "No update description was found."
 msgstr "No update description was found."
 
-#: ApperKCM/Updater/Updater.cpp:107 ApperKCM/BrowseView.cpp:90
+#: ApperKCM/Updater/Updater.cpp:110 ApperKCM/BrowseView.cpp:95
 msgid "Show Versions"
 msgstr "Show Versions"
 
-#: ApperKCM/Updater/Updater.cpp:115 ApperKCM/BrowseView.cpp:98
+#: ApperKCM/Updater/Updater.cpp:117
+#, fuzzy
+#| msgid "Show Versions"
+msgid "Show Current Versions"
+msgstr "Show Versions"
+
+#: ApperKCM/Updater/Updater.cpp:124 ApperKCM/BrowseView.cpp:102
 #, fuzzy
 #| msgid "Architectures"
 msgid "Show Architectures"
 msgstr "Architectures"
 
-#: ApperKCM/Updater/Updater.cpp:123 ApperKCM/BrowseView.cpp:106
+#: ApperKCM/Updater/Updater.cpp:131 ApperKCM/BrowseView.cpp:109
+#, fuzzy
+#| msgctxt "The group type"
+#| msgid "Software sources"
+msgid "Show Origins"
+msgstr "Software sources"
+
+#: ApperKCM/Updater/Updater.cpp:138 ApperKCM/BrowseView.cpp:116
 #, fuzzy
 #| msgid "Show updates"
 msgid "Show Sizes"
 msgstr "Show updates"
 
-#: ApperKCM/Updater/Updater.cpp:216
+#: ApperKCM/Updater/Updater.cpp:255
 #, kde-format
 msgid "Estimated download size: %1"
 msgstr ""
 
-#: ApperKCM/Updater/Updater.cpp:254
+#: ApperKCM/Updater/Updater.cpp:292
 msgid "Your system is up to date"
 msgstr ""
 
-#: ApperKCM/Updater/Updater.cpp:255 ApperKCM/Updater/Updater.cpp:259
+#: ApperKCM/Updater/Updater.cpp:293 ApperKCM/Updater/Updater.cpp:297
 #, kde-format
 msgid "Verified %1 ago"
 msgstr ""
 
-#: ApperKCM/Updater/Updater.cpp:258
+#: ApperKCM/Updater/Updater.cpp:296
 #, fuzzy
 #| msgid "You have one update"
 #| msgid_plural "You have %1 updates"
 msgid "You have no updates"
 msgstr "You have one update"
 
-#: ApperKCM/Updater/Updater.cpp:262
+#: ApperKCM/Updater/Updater.cpp:300
 msgid "Last check for updates was more than a month ago"
 msgstr ""
 
-#: ApperKCM/Updater/Updater.cpp:263
+#: ApperKCM/Updater/Updater.cpp:301
 msgid "It's strongly recommended that you check for new updates now"
 msgstr ""
 
 #. i18n: file: ApperKCM/ApperKCM.ui:230
 #. i18n: ectx: property (text), widget (QPushButton, checkUpdatesPB)
-#: ApperKCM/Updater/Updater.cpp:351 rc.cpp:194
+#: ApperKCM/Updater/Updater.cpp:396 rc.cpp:194
 msgid "Check for new Updates"
 msgstr "Check for new Updates"
 
@@ -505,54 +518,54 @@ msgstr "Only show applications"
 msgid "Hide packages that are not applications"
 msgstr "Packages are not compatible"
 
-#: ApperKCM/ApperKCM.cpp:78
+#: ApperKCM/ApperKCM.cpp:79
 #, fuzzy
 #| msgid "Application"
 msgid "Application Manager"
 msgstr "Application"
 
-#: ApperKCM/ApperKCM.cpp:80
+#: ApperKCM/ApperKCM.cpp:81
 msgid "KDE interface for managing software"
 msgstr "KDE interface for managing software"
 
-#: ApperKCM/ApperKCM.cpp:110 ApperKCM/ApperKCM.cpp:291
+#: ApperKCM/ApperKCM.cpp:111 ApperKCM/ApperKCM.cpp:292
 msgid "Find"
 msgstr "Find"
 
-#: ApperKCM/ApperKCM.cpp:205
+#: ApperKCM/ApperKCM.cpp:206
 msgid "History"
 msgstr "History"
 
 #. i18n: file: ApperKCM/Settings/Settings.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, Settings)
-#: ApperKCM/ApperKCM.cpp:211 rc.cpp:140
+#: ApperKCM/ApperKCM.cpp:212 rc.cpp:140
 msgid "Settings"
 msgstr "Settings"
 
-#: ApperKCM/ApperKCM.cpp:268 ApperKCM/ApperKCM.cpp:269
-#: ApperKCM/ApperKCM.cpp:270 ApperKCM/ApperKCM.cpp:271
+#: ApperKCM/ApperKCM.cpp:269 ApperKCM/ApperKCM.cpp:270
+#: ApperKCM/ApperKCM.cpp:271 ApperKCM/ApperKCM.cpp:272
 msgid "&Cancel"
 msgstr "&Cancel"
 
 #. i18n: file: ApperKCM/ApperKCM.ui:291
 #. i18n: ectx: property (text), widget (QToolButton, backTB)
-#: ApperKCM/ApperKCM.cpp:278 rc.cpp:200
+#: ApperKCM/ApperKCM.cpp:279 rc.cpp:200
 msgid "Find by &name"
 msgstr "Find by &name"
 
 #. i18n: file: ApperKCM/ApperKCM.ui:301
 #. i18n: ectx: property (text), widget (QToolButton, backTB)
-#: ApperKCM/ApperKCM.cpp:279 rc.cpp:206
+#: ApperKCM/ApperKCM.cpp:280 rc.cpp:206
 msgid "Find by f&ile name"
 msgstr "Find by f&ile name"
 
 #. i18n: file: ApperKCM/ApperKCM.ui:296
 #. i18n: ectx: property (text), widget (QToolButton, backTB)
-#: ApperKCM/ApperKCM.cpp:280 rc.cpp:203
+#: ApperKCM/ApperKCM.cpp:281 rc.cpp:203
 msgid "Find by &description"
 msgstr "Find by &description"
 
-#: ApperKCM/ApperKCM.cpp:414
+#: ApperKCM/ApperKCM.cpp:411
 msgid ""
 "The settings of the current module have changed.\n"
 "Do you want to apply the changes or discard them?"
@@ -560,19 +573,19 @@ msgstr ""
 "The settings of the current module have changed.\n"
 "Do you want to apply the changes or discard them?"
 
-#: ApperKCM/ApperKCM.cpp:416
+#: ApperKCM/ApperKCM.cpp:413
 #, fuzzy
 #| msgid "Apply Settings"
 msgid "Apply Settings"
 msgstr "Apply Settings"
 
-#: ApperKCM/ApperKCM.cpp:458
+#: ApperKCM/ApperKCM.cpp:455
 #, fuzzy
 #| msgid "Apply Settings"
 msgid "General Settings"
 msgstr "Apply Settings"
 
-#: ApperKCM/ApperKCM.cpp:459
+#: ApperKCM/ApperKCM.cpp:456
 #, fuzzy
 #| msgctxt "The group type"
 #| msgid "Software sources"
@@ -603,11 +616,11 @@ msgstr "File List"
 msgid "No files were found."
 msgstr "No files were found."
 
-#: ApperKCM/PackageDetails.cpp:529
+#: ApperKCM/PackageDetails.cpp:530
 msgid "Could not fetch software details"
 msgstr ""
 
-#: ApperKCM/PackageDetails.cpp:571
+#: ApperKCM/PackageDetails.cpp:572
 msgid "Applications"
 msgstr "Applications"
 
@@ -652,11 +665,11 @@ msgstr "Time since last cache refresh: %1"
 msgid "Date"
 msgstr "Date"
 
-#: ApperKCM/TransactionModel.cpp:47 libapper/PackageModel.cpp:186
+#: ApperKCM/TransactionModel.cpp:47 libapper/PackageModel.cpp:194
 msgid "Action"
 msgstr "Action"
 
-#: ApperKCM/TransactionModel.cpp:48 Sentinel/TransactionWatcher.cpp:292
+#: ApperKCM/TransactionModel.cpp:48 Sentinel/TransactionWatcher.cpp:308
 msgid "Details"
 msgstr "Details"
 
@@ -764,11 +777,11 @@ msgstr "Failed to search for provides"
 msgid "Could not find printer driver in any configured software source"
 msgstr "Could not find plugin in any configured software source"
 
-#: Sentinel/UpdateIcon.cpp:163
+#: Sentinel/UpdateIcon.cpp:160
 msgid "Review Updates"
 msgstr "Review Updates"
 
-#: Sentinel/UpdateIcon.cpp:166
+#: Sentinel/UpdateIcon.cpp:163
 msgid "Configure"
 msgstr "Configure"
 
@@ -776,31 +789,31 @@ msgstr "Configure"
 #. i18n: ectx: property (text), widget (QToolButton, hideTB)
 #. i18n: file: ApperKCM/Updater/UpdateDetails.ui:20
 #. i18n: ectx: property (text), widget (QToolButton, hideTB)
-#: Sentinel/UpdateIcon.cpp:170 libapper/PkTransactionDialog.cpp:86 rc.cpp:137
-#: rc.cpp:173
+#: Sentinel/UpdateIcon.cpp:167 Sentinel/TransactionWatcher.cpp:186
+#: libapper/PkTransactionDialog.cpp:86 rc.cpp:137 rc.cpp:173
 msgid "Hide"
 msgstr "Hide"
 
-#: Sentinel/UpdateIcon.cpp:180
+#: Sentinel/UpdateIcon.cpp:177
 #, kde-format
 msgid "You have one update"
 msgid_plural "You have %1 updates"
 msgstr[0] "You have one update"
 msgstr[1] "You have %1 updates"
 
-#: Sentinel/UpdateIcon.cpp:233
+#: Sentinel/UpdateIcon.cpp:230
 msgid "Updates are being automatically installed."
 msgstr "Updates are being automatically installed."
 
-#: Sentinel/UpdateIcon.cpp:254
+#: Sentinel/UpdateIcon.cpp:251
 msgid "Security updates are being automatically installed."
 msgstr "Security updates are being automatically installed."
 
-#: Sentinel/UpdateIcon.cpp:281
+#: Sentinel/UpdateIcon.cpp:278
 msgid "System update was successful."
 msgstr "System update was successful."
 
-#: Sentinel/UpdateIcon.cpp:290
+#: Sentinel/UpdateIcon.cpp:287
 msgid "The automated software update failed."
 msgstr "The automated software update failed."
 
@@ -967,86 +980,86 @@ msgstr "Catalogue installer"
 msgid "Could not find any package to install in this catalog"
 msgstr "<h3>Do you want to install this catalogue?</h3><ul><li>%2</li></ul>"
 
-#: Sentinel/SessionTask.cpp:66 libapper/Requirements.cpp:43
+#: Sentinel/SessionTask.cpp:66 libapper/Requirements.cpp:44
 msgid "Continue"
 msgstr "Continue"
 
-#: Sentinel/SessionTask.cpp:361
+#: Sentinel/SessionTask.cpp:363
 #, fuzzy
 #| msgid "The package is not installed"
 msgid "There are no packages to Install or Remove"
 msgstr "The package is not installed"
 
-#: Sentinel/SessionTask.cpp:362
+#: Sentinel/SessionTask.cpp:364
 #, fuzzy
 #| msgid "This action is unknown."
 msgid "This action should not happen"
 msgstr "This action is unknown."
 
-#: Sentinel/SessionTask.cpp:391
+#: Sentinel/SessionTask.cpp:393
 #, fuzzy
 #| msgid "Could not find %1"
 msgid "Could not find"
 msgstr "Could not find %1"
 
-#: Sentinel/SessionTask.cpp:392 Sentinel/SessionTask.cpp:401
+#: Sentinel/SessionTask.cpp:394 Sentinel/SessionTask.cpp:403
 #, fuzzy
 #| msgid "No package was found to be installed"
 msgid "No packages were found that meet the request"
 msgstr "No package was found to be installed"
 
-#: Sentinel/SessionTask.cpp:400
+#: Sentinel/SessionTask.cpp:402
 #, fuzzy
 #| msgid "Failed to find font"
 msgid "Failed to find"
 msgstr "Failed to find font"
 
-#: Sentinel/SessionTask.cpp:422
+#: Sentinel/SessionTask.cpp:424
 msgid "Transaction did not finish with success"
 msgstr "Transaction did not finish with success"
 
-#: Sentinel/SessionTask.cpp:428
+#: Sentinel/SessionTask.cpp:430
 #, fuzzy
 #| msgid "Obsoleted"
 msgid "Task completed"
 msgstr "Obsoleted"
 
-#: Sentinel/SessionTask.cpp:428
+#: Sentinel/SessionTask.cpp:430
 #, fuzzy
 #| msgid "File was installed successfully"
 #| msgid_plural "Files were installed successfully"
 msgid "All operations were committed successfully"
 msgstr "File was installed successfully"
 
-#: Sentinel/TransactionWatcher.cpp:64 Sentinel/TransactionWatcher.cpp:249
+#: Sentinel/TransactionWatcher.cpp:66 Sentinel/TransactionWatcher.cpp:265
 msgid "Hide this icon"
 msgstr "Hide this icon"
 
-#: Sentinel/TransactionWatcher.cpp:166
+#: Sentinel/TransactionWatcher.cpp:168
 msgid "The system update has completed"
 msgstr "The system update has completed"
 
-#: Sentinel/TransactionWatcher.cpp:172
+#: Sentinel/TransactionWatcher.cpp:174
 #, fuzzy, kde-format
 #| msgid "Package: %2"
 #| msgid_plural "Packages: %2"
 msgid "Packages: %1"
 msgstr "Package: %2"
 
-#: Sentinel/TransactionWatcher.cpp:184
+#: Sentinel/TransactionWatcher.cpp:201
 #, kde-format
 msgid "Package: %2"
 msgid_plural "Packages: %2"
 msgstr[0] "Package: %2"
 msgstr[1] "Packages: %2"
 
-#: Sentinel/TransactionWatcher.cpp:231 Sentinel/TransactionWatcher.cpp:271
+#: Sentinel/TransactionWatcher.cpp:247 Sentinel/TransactionWatcher.cpp:287
 #, fuzzy
 #| msgid "Package Manager Messages"
 msgid "Software Manager Messages"
 msgstr "Package Manager Messages"
 
-#: Sentinel/TransactionWatcher.cpp:232
+#: Sentinel/TransactionWatcher.cpp:248
 #, fuzzy, kde-format
 #| msgid "One message from the package manager"
 #| msgid_plural "%1 messages from the package manager"
@@ -1055,11 +1068,11 @@ msgid_plural "%1 messages from the software manager"
 msgstr[0] "One message from the package manager"
 msgstr[1] "%1 messages from the package manager"
 
-#: Sentinel/TransactionWatcher.cpp:240
+#: Sentinel/TransactionWatcher.cpp:256
 msgid "Show messages"
 msgstr "Show messages"
 
-#: Sentinel/TransactionWatcher.cpp:292
+#: Sentinel/TransactionWatcher.cpp:308
 msgid "Ignore"
 msgstr "Ignore"
 
@@ -2364,7 +2377,7 @@ msgstr "Package is incompatible with this system"
 msgid "No space is left on the disk"
 msgstr "No space is left on the disk"
 
-#: libapper/PkStrings.cpp:477 libapper/PkTransaction.cpp:578
+#: libapper/PkStrings.cpp:477 libapper/PkTransaction.cpp:579
 msgid "A media change is required"
 msgstr "A media change is required"
 
@@ -3370,48 +3383,16 @@ msgstr ""
 msgid "Package"
 msgstr "Package"
 
-#: libapper/SimulateModel.cpp:141 libapper/PackageModel.cpp:180
+#: libapper/SimulateModel.cpp:141 libapper/PackageModel.cpp:184
 msgid "Version"
 msgstr "Version"
 
-#: libapper/Requirements.cpp:41
-msgid "Additional changes"
-msgstr "Additional changes"
-
-#: libapper/Requirements.cpp:62
-#, kde-format
-msgid "1 package to remove"
-msgid_plural "%1 packages to remove"
-msgstr[0] "1 package to remove"
-msgstr[1] "%1 packages to remove"
-
-#: libapper/Requirements.cpp:77
-#, kde-format
-msgid "1 package to downgrade"
-msgid_plural "%1 packages to downgrade"
-msgstr[0] "1 package to downgrade"
-msgstr[1] "%1 packages to downgrade"
-
-#: libapper/Requirements.cpp:92
-#, kde-format
-msgid "1 package to reinstall"
-msgid_plural "%1 packages to reinstall"
-msgstr[0] "1 package to reinstall"
-msgstr[1] "%1 packages to reinstall"
-
-#: libapper/Requirements.cpp:105
-#, kde-format
-msgid "1 package to install"
-msgid_plural "%1 packages to install"
-msgstr[0] "1 package to install"
-msgstr[1] "%1 packages to install"
-
-#: libapper/Requirements.cpp:118
-#, kde-format
-msgid "1 package to update"
-msgid_plural "%1 packages to update"
-msgstr[0] "1 package to update"
-msgstr[1] "%1 packages to update"
+#: libapper/ApplicationLauncher.cpp:95
+msgid "The following application was just installed. Click on it to launch:"
+msgid_plural ""
+"The following applications were just installed. Click on them to launch:"
+msgstr[0] ""
+msgstr[1] ""
 
 #: libapper/LicenseAgreement.cpp:36
 msgid "Accept Agreement"
@@ -3428,12 +3409,87 @@ msgstr "Licence Agreement Required"
 msgid "License required for %1 by %2"
 msgstr "Licence required for %1 by %2"
 
-#: libapper/ApplicationLauncher.cpp:99
-msgid "The following application was just installed. Click on it to launch:"
-msgid_plural ""
-"The following applications were just installed. Click on them to launch:"
-msgstr[0] ""
-msgstr[1] ""
+#: libapper/PackageModel.cpp:182
+#, fuzzy
+#| msgid "name"
+msgid "Name"
+msgstr "name"
+
+#: libapper/PackageModel.cpp:186
+#, fuzzy
+#| msgctxt "The role of the transaction, in past tense"
+#| msgid "Installed signature"
+msgid "Installed Version"
+msgstr "Installed signature"
+
+#: libapper/PackageModel.cpp:188
+msgid "Arch"
+msgstr ""
+
+#: libapper/PackageModel.cpp:190
+#, fuzzy
+#| msgid "Edit Origins"
+msgid "Origin"
+msgstr "Edit Origins"
+
+#: libapper/PackageModel.cpp:192
+msgid "Size"
+msgstr " "
+
+#: libapper/PackageModel.cpp:283
+#, fuzzy, kde-format
+#| msgid "Architectures"
+msgid ""
+"Version: %1\n"
+"Architecture: %2"
+msgstr "Architectures"
+
+#: libapper/PackageModel.cpp:329
+msgid "To be Removed"
+msgstr "To be Removed"
+
+#: libapper/PackageModel.cpp:331
+msgid "To be Installed"
+msgstr "To be Installed"
+
+#: libapper/Requirements.cpp:42
+msgid "Additional changes"
+msgstr "Additional changes"
+
+#: libapper/Requirements.cpp:63
+#, kde-format
+msgid "1 package to remove"
+msgid_plural "%1 packages to remove"
+msgstr[0] "1 package to remove"
+msgstr[1] "%1 packages to remove"
+
+#: libapper/Requirements.cpp:78
+#, kde-format
+msgid "1 package to downgrade"
+msgid_plural "%1 packages to downgrade"
+msgstr[0] "1 package to downgrade"
+msgstr[1] "%1 packages to downgrade"
+
+#: libapper/Requirements.cpp:93
+#, kde-format
+msgid "1 package to reinstall"
+msgid_plural "%1 packages to reinstall"
+msgstr[0] "1 package to reinstall"
+msgstr[1] "%1 packages to reinstall"
+
+#: libapper/Requirements.cpp:106
+#, kde-format
+msgid "1 package to install"
+msgid_plural "%1 packages to install"
+msgstr[0] "1 package to install"
+msgstr[1] "%1 packages to install"
+
+#: libapper/Requirements.cpp:119
+#, kde-format
+msgid "1 package to update"
+msgid_plural "%1 packages to update"
+msgstr[0] "1 package to update"
+msgstr[1] "%1 packages to update"
 
 #: libapper/PkTransaction.cpp:122
 #, fuzzy
@@ -3525,39 +3581,15 @@ msgstr ""
 msgid "Installing unsigned software"
 msgstr "Installing unsigned software"
 
-#: libapper/PkTransaction.cpp:563 libapper/PkTransaction.cpp:616
+#: libapper/PkTransaction.cpp:564 libapper/PkTransaction.cpp:618
 msgid "Failed to install signature"
 msgstr "Failed to install signature"
 
-#: libapper/PackageModel.cpp:178
-#, fuzzy
-#| msgid "name"
-msgid "Name"
-msgstr "name"
-
-#: libapper/PackageModel.cpp:182
-msgid "Arch"
-msgstr ""
-
-#: libapper/PackageModel.cpp:184
-msgid "Size"
-msgstr " "
-
-#: libapper/PackageModel.cpp:272
-#, fuzzy, kde-format
-#| msgid "Architectures"
-msgid ""
-"Version: %1\n"
-"Architecture: %2"
-msgstr "Architectures"
-
-#: libapper/PackageModel.cpp:315
-msgid "To be Removed"
-msgstr "To be Removed"
-
-#: libapper/PackageModel.cpp:317
-msgid "To be Installed"
-msgstr "To be Installed"
+#. i18n: file: libapper/RepoSig.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, RepoSig)
+#: libapper/RepoSig.cpp:40 rc.cpp:218
+msgid "Software signature is required"
+msgstr "Software signature is required"
 
 #: libapper/ApplicationsDelegate.cpp:40
 msgid "Install"
@@ -3566,12 +3598,6 @@ msgstr "Install"
 #: libapper/ApplicationsDelegate.cpp:42
 msgid "Remove"
 msgstr "Remove"
-
-#. i18n: file: libapper/RepoSig.ui:14
-#. i18n: ectx: property (windowTitle), widget (QWidget, RepoSig)
-#: libapper/RepoSig.cpp:40 rc.cpp:218
-msgid "Software signature is required"
-msgstr "Software signature is required"
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
