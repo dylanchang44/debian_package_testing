@@ -22,7 +22,7 @@ override_dh_auto_install:
 	dh_auto_install --destdir=$(INSTALLDIR)
 	# Fix file conflict between GPK and Apper
 	mv $(INSTALLDIR)/usr/share/dbus-1/services/org.freedesktop.PackageKit.service $(INSTALLDIR)/usr/share/dbus-1/services/kde-org.freedesktop.PackageKit.service
-	# Hack around cmake rpath bug
+	# Stupid hack to work around cmake rpath bug
 	chrpath --list $(INSTALLDIR)/usr/bin/apper
 	chrpath --replace /usr/lib/apper $(INSTALLDIR)/usr/bin/apper
 
