@@ -1,0 +1,3 @@
+version=3
+http://launchpad.net/apper/+download \
+http://launchpad.net/apper/.*/apper-(.*)\.tar\.bz2
