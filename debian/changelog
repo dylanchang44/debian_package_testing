@@ -4,8 +4,9 @@ apper (0.7.1-1) experimental; urgency=low
   * Depend on a PolKit agent (Closes: #658934)
   * New upstream bugfix release: 0.7.1
   * Added debian/watch file
+  * Bump standards version to 3.9.3 (no change required)
 
- -- Matthias Klumpp <matthias@tenstral.net>  Tue, 21 Feb 2012 14:46:14 +0100
+ -- Matthias Klumpp <matthias@tenstral.net>  Fri, 24 Feb 2012 14:46:14 +0100
 
 apper (0.7.0-1) unstable; urgency=low
 
