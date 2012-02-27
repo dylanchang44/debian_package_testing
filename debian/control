@@ -12,7 +12,7 @@ Build-Depends: chrpath,
                libdebconf-kde-dev,
                libpackagekit-qt2-dev (>= 0.6.18),
                pkg-kde-tools (>= 0.9.2)
-Standards-Version: 3.9.2
+Standards-Version: 3.9.3
 Homepage: http://kde-apps.org/content/show.php/Apper?content=84745
 Vcs-Git: git://anonscm.debian.org/pkg-packagekit/apper.git
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-packagekit/apper.git
