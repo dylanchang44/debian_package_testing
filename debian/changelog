@@ -5,6 +5,7 @@ apper (0.7.1-1) experimental; urgency=low
   * New upstream bugfix release: 0.7.1
   * Added debian/watch file
   * Bump standards version to 3.9.3 (no change required)
+  * Allow using aptd instead of PK
 
  -- Matthias Klumpp <matthias@tenstral.net>  Fri, 24 Feb 2012 14:46:14 +0100
 
