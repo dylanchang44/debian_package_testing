@@ -1,4 +1,4 @@
-apper (0.7.1-1) experimental; urgency=low
+apper (0.7.1-1) unstable; urgency=low
 
   * Break the old kpackagekit package on Ubuntu
   * Depend on a PolKit agent (Closes: #658934)
