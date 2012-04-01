@@ -19,7 +19,7 @@ Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-packagekit/apper.git
 
 Package: apper
 Architecture: any
-Depends: packagekit (>= 0.6.18) | python-aptdaemon.pkcompat,
+Depends: packagekit (>= 0.6.18),
          polkit-kde-1 | policykit-1-gnome,
          ${misc:Depends},
          ${shlibs:Depends}
