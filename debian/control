@@ -4,7 +4,7 @@ Priority: optional
 Maintainer: Matthias Klumpp <matthias@tenstral.net>
 Build-Depends: chrpath,
                cmake,
-               debhelper (>= 8.0.0),
+               debhelper (>= 9.0.0),
                docbook2x,
                kde-workspace-dev (>= 4:4.6),
                kdelibs5-dev (>= 4:4.6),
