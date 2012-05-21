@@ -2,6 +2,4 @@ usr/bin/apper
 usr/lib/*
 usr/share/applications/*
 usr/share/dbus-1/services/*
-usr/share/kde4/*
-usr/share/locale
 usr/share/man/man1/apper.1

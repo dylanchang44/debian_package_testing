@@ -19,8 +19,9 @@ Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-packagekit/apper.git
 
 Package: apper
 Architecture: any
-Depends: packagekit (>= 0.6.18),
+Depends: packagekit (>= 0.7.4),
          polkit-kde-1 | policykit-1-gnome,
+         apper-data (>= ${source:Version}),
          ${misc:Depends},
          ${shlibs:Depends}
 Recommends: app-install-data
@@ -35,6 +36,16 @@ Description: KDE package management tool using PackageKit
  .
  This package provides a KDE package manager based on PackageKit,
  as well as package management support for the KDE desktop.
+
+Package: apper-data
+Architecture: all
+Description: KDE package management tool using PackageKit (data files)
+ PackageKit allows performing simple software management tasks over a DBus
+ interface  e.g. refreshing the cache, updating, installing and removing
+ software packages or searching for multimedia codecs and file handlers.
+ .
+ This package provides provides the data files for Apper, the
+ KDE package manager based on PackageKit,
 
 Package: apper-dbg
 Section: debug
