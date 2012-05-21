@@ -28,8 +28,6 @@ Recommends: app-install-data,
             apper-appsetup
 Suggests: debconf-kde-helper,
           software-properties-kde
-Replaces: kpackagekit
-Breaks: kpackagekit (<< 0.7.0~20111008-0ubuntu1~)
 Description: KDE package management tool using PackageKit
  PackageKit allows performing simple software management tasks over a DBus
  interface  e.g. refreshing the cache, updating, installing and removing
