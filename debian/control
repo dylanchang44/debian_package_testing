@@ -19,12 +19,13 @@ Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-packagekit/apper.git
 
 Package: apper
 Architecture: any
-Depends: packagekit (>= 0.7.4),
+Depends: apper-data (>= ${source:Version}),
+         packagekit (>= 0.7.4),
          polkit-kde-1 | policykit-1-gnome,
-         apper-data (>= ${source:Version}),
          ${misc:Depends},
          ${shlibs:Depends}
-Recommends: app-install-data
+Recommends: app-install-data,
+            apper-appsetup
 Suggests: debconf-kde-helper,
           software-properties-kde
 Replaces: kpackagekit
@@ -37,6 +38,21 @@ Description: KDE package management tool using PackageKit
  This package provides a KDE package manager based on PackageKit,
  as well as package management support for the KDE desktop.
 
+Package: apper-appsetup
+Architecture: any
+Depends: apper (>= ${source:Version}),
+         listaller (>= 0.5.4),
+         ${misc:Depends},
+         ${shlibs:Depends}
+Description: KDE package management tool using PackageKit
+ PackageKit allows performing simple software management tasks over a DBus
+ interface  e.g. refreshing the cache, updating, installing and removing
+ software packages or searching for multimedia codecs and file handlers.
+ .
+ Apper is a KDE package manager based on PackageKit.
+ This package extends Apper with extra-support for Listaller, a
+ distro-agnostic application installer with close integration into PackageKit.
+
 Package: apper-data
 Architecture: all
 Description: KDE package management tool using PackageKit (data files)
@@ -44,8 +60,8 @@ Description: KDE package management tool using PackageKit (data files)
  interface  e.g. refreshing the cache, updating, installing and removing
  software packages or searching for multimedia codecs and file handlers.
  .
- This package provides provides the data files for Apper, the
- KDE package manager based on PackageKit,
+ This package provides data files for Apper, the
+ KDE package manager based on PackageKit.
 
 Package: apper-dbg
 Section: debug
