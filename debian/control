@@ -44,17 +44,19 @@ Depends: apper (>= ${source:Version}),
          listaller (>= 0.5.4),
          ${misc:Depends},
          ${shlibs:Depends}
-Description: KDE package management tool using PackageKit
+Description: Extended Listaller support for Apper
  PackageKit allows performing simple software management tasks over a DBus
  interface  e.g. refreshing the cache, updating, installing and removing
  software packages or searching for multimedia codecs and file handlers.
  .
  Apper is a KDE package manager based on PackageKit.
- This package extends Apper with extra-support for Listaller, a
- distro-agnostic application installer with close integration into PackageKit.
+ This package adds support for some advanced Listaller features to Apper.
+ Listaller is a distro-agnostic application installer with close
+ integration into PackageKit.
 
 Package: apper-data
 Architecture: all
+Depends: ${misc:Depends}
 Description: KDE package management tool using PackageKit (data files)
  PackageKit allows performing simple software management tasks over a DBus
  interface  e.g. refreshing the cache, updating, installing and removing
