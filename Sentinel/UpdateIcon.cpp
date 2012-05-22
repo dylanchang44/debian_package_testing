@@ -36,13 +36,12 @@
 #include <KMenu>
 #include <KToolInvocation>
 
-#include <Solid/PowerManagement>
-
 #include <KDebug>
 
 #include <Daemon>
 
 #define UPDATES_ICON "system-software-update"
+#define SYSTEM_READY "system_ready"
 
 using namespace PackageKit;
 
@@ -51,12 +50,10 @@ UpdateIcon::UpdateIcon(QObject* parent)
       m_getUpdatesT(0),
       m_statusNotifierItem(0)
 {
-    connect(Daemon::global(), SIGNAL(updatesChanged()), this, SLOT(update()));
 }
 
 UpdateIcon::~UpdateIcon()
 {
-    removeStatusNotifierItem();
 }
 
 void UpdateIcon::showSettings()
@@ -64,52 +61,10 @@ void UpdateIcon::showSettings()
     KToolInvocation::startServiceByDesktopName("apper_settings");
 }
 
-void UpdateIcon::refresh(bool update)
-{
-    if (!systemIsReady(true)) {
-        kDebug() << "Not checking for updates, as we might be on battery or mobile connection";
-        return;
-    }
-
-    if (!isRunning()) {
-        SET_PROXY
-        increaseRunning();
-        Transaction *t = new Transaction(this);
-        // ignore if there is an error
-        // Be silent! don't bother the user if the cache couldn't be refreshed
-        if (update) {
-            connect(t, SIGNAL(finished(PackageKit::Transaction::Exit, uint)),
-                    this, SLOT(update()));
-        }
-        connect(t, SIGNAL(finished(PackageKit::Transaction::Exit, uint)),
-                this, SLOT(decreaseRunning()));
-        t->refreshCache(true);
-        if (t->error()) {
-            KNotification *notify = new KNotification("TransactionError", 0);
-            notify->setText(PkStrings::daemonError(t->error()));
-            notify->setPixmap(KIcon("dialog-error").pixmap(KPK_ICON_SIZE, KPK_ICON_SIZE));
-            notify->sendEvent();
-        }
-    }
-}
-    
-// refresh the cache and try to update,
-// if it can't automatically update show
-// a notification about updates available
-void UpdateIcon::refreshAndUpdate(bool doRefresh)
+void UpdateIcon::checkForUpdates(bool system_ready)
 {
     // This is really necessary to don't bother the user with
     // tons of popups
-    if (doRefresh) {
-        // Force an update after refresh cache
-        refresh(true);
-    } else {
-        update();
-    }
-}
-
-void UpdateIcon::update()
-{
     if (m_getUpdatesT) {
         return;
     }
@@ -124,9 +79,10 @@ void UpdateIcon::update()
     if (interval != Enum::Never || updateType == Enum::All || updateType == Enum::Security) {
         m_updateList.clear();
         m_getUpdatesT = new Transaction(this);
+        m_getUpdatesT->setProperty(SYSTEM_READY, system_ready);
         connect(m_getUpdatesT, SIGNAL(package(PackageKit::Package)),
                 this, SLOT(packageToUpdate(PackageKit::Package)));
-        connect(m_getUpdatesT, SIGNAL(finished(PackageKit::Transaction::Exit, uint)),
+        connect(m_getUpdatesT, SIGNAL(finished(PackageKit::Transaction::Exit,uint)),
                 this, SLOT(getUpdateFinished()));
         m_getUpdatesT->getUpdates();
         if (m_getUpdatesT->error()) {
@@ -169,7 +125,7 @@ void UpdateIcon::updateStatusNotifierIcon(UpdateType type)
                 this, SLOT(removeStatusNotifierItem()));
         m_statusNotifierItem->setContextMenu(menu);
         // Show updates on the left click
-        connect(m_statusNotifierItem, SIGNAL(activateRequested(bool, QPoint)),
+        connect(m_statusNotifierItem, SIGNAL(activateRequested(bool,QPoint)),
                 this, SLOT(showUpdates()));
     }
 
@@ -207,10 +163,12 @@ void UpdateIcon::getUpdateFinished()
             }
         }
 
+        uint updateType;
+        bool systemReady;
         KConfig config("apper");
         KConfigGroup checkUpdateGroup(&config, "CheckUpdate");
-        uint updateType = static_cast<uint>(checkUpdateGroup.readEntry("autoUpdate", Enum::AutoUpdateDefault));
-        bool systemReady = systemIsReady(true);
+        updateType = static_cast<uint>(checkUpdateGroup.readEntry("autoUpdate", Enum::AutoUpdateDefault));
+        systemReady = sender()->property(SYSTEM_READY).toBool();
         if (!systemReady && (updateType == Enum::All || (updateType == Enum::Security && !securityUpdateList.isEmpty()))) {
             kDebug() << "Not auto updating packages updates, as we might be on battery or mobile connection";
         }
@@ -219,8 +177,9 @@ void UpdateIcon::getUpdateFinished()
             // update all
             SET_PROXY
             Transaction *t = new Transaction(this);
-            connect(t, SIGNAL(finished(PackageKit::Transaction::Exit, uint)),
+            connect(t, SIGNAL(finished(PackageKit::Transaction::Exit,uint)),
                     this, SLOT(autoUpdatesFinished(PackageKit::Transaction::Exit)));
+            t->setProperty(SYSTEM_READY, systemReady);
             t->updatePackages(m_updateList, true);
             if (!t->error()) {
                 // don't be interactive to not upset an idle user
@@ -240,8 +199,9 @@ void UpdateIcon::getUpdateFinished()
             // Defaults to security
             SET_PROXY
             Transaction *t = new Transaction(this);
-            connect(t, SIGNAL(finished(PackageKit::Transaction::Exit, uint)),
+            connect(t, SIGNAL(finished(PackageKit::Transaction::Exit,uint)),
                     this, SLOT(autoUpdatesFinished(PackageKit::Transaction::Exit)));
+            t->setProperty(SYSTEM_READY, systemReady);
             t->updatePackages(securityUpdateList, true);
             if (!t->error()) {
                 // don't be interactive to not upset an idle user
@@ -279,7 +239,7 @@ void UpdateIcon::autoUpdatesFinished(PackageKit::Transaction::Exit status)
         notify->sendEvent();
         
         // run get-updates again so that non auto-installed updates can be displayed
-        update();
+        checkForUpdates(sender()->property(SYSTEM_READY).toBool());
     } else {
         KIcon icon("dialog-cancel");
         // use of QSize does the right thing
@@ -300,45 +260,4 @@ void UpdateIcon::removeStatusNotifierItem()
         m_statusNotifierItem->deleteLater();
         m_statusNotifierItem = 0;
     }
-}
-
-bool UpdateIcon::systemIsReady(bool checkUpdates)
-{
-    Daemon::Network networkState = Daemon::networkState();
-
-    // test whether network is connected
-    if (networkState == Daemon::NetworkOffline || networkState == Daemon::UnknownNetwork) {
-        kDebug() << "nerwork state" << networkState;
-        return false;
-    }
-
-    KConfig config("apper");
-    KConfigGroup checkUpdateGroup(&config, "CheckUpdate");
-    bool ignoreBattery;
-    if (checkUpdates) {
-        ignoreBattery = checkUpdateGroup.readEntry("checkUpdatesOnBattery", false);
-    } else {
-        ignoreBattery = checkUpdateGroup.readEntry("installUpdatesOnBattery", false);
-    }
-
-    // THIS IS NOT working on my computer
-    // check how applications should behave (e.g. on battery power)
-    if (!ignoreBattery && Solid::PowerManagement::appShouldConserveResources()) {
-//        return false;
-        kDebug() << "should conserve??";
-    }
-    
-    bool ignoreMobile;
-    if (checkUpdates) {
-        ignoreMobile = checkUpdateGroup.readEntry("checkUpdatesOnMobile", false);
-    } else {
-        ignoreMobile = checkUpdateGroup.readEntry("installUpdatesOnMobile", false);
-    }
-
-    // check how applications should behave (e.g. on battery power)
-    if (!ignoreMobile && networkState == Daemon::NetworkMobile) {
-        return false;
-    } 
-
-    return true;
 }

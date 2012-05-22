@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kpackagekit\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-02-18 05:06+0100\n"
+"POT-Creation-Date: 2012-05-20 05:58+0200\n"
 "PO-Revision-Date: 2009-09-20 20:04+0300\n"
 "Last-Translator: Sergiu Bivol <sergiu@ase.md>\n"
 "Language-Team: Română <kde-i18n-ro@kde.org>\n"
@@ -24,7 +24,7 @@ msgstr ""
 msgid "Backend Details"
 msgstr "Arată detalii despre platformă"
 
-#: Apper/main.cpp:54 Sentinel/UpdateIcon.cpp:158 Sentinel/main.cpp:34
+#: Apper/main.cpp:54 Sentinel/UpdateIcon.cpp:113 Sentinel/main.cpp:34
 msgid "Apper"
 msgstr ""
 
@@ -34,7 +34,7 @@ msgstr ""
 msgid "Apper is an Application to Get and Manage Software"
 msgstr "KPackageKit este o unealtă pentru gestiunea programelor"
 
-#: Apper/main.cpp:58 ApperKCM/ApperKCM.cpp:83 Sentinel/main.cpp:38
+#: Apper/main.cpp:58 ApperKCM/ApperKCM.cpp:84 Sentinel/main.cpp:38
 #, fuzzy
 #| msgid "(C) 2008-2009 Daniel Nicoletti"
 msgid "(C) 2008-2011 Daniel Nicoletti"
@@ -95,6 +95,151 @@ msgstr "eliminator de pachete singulare"
 #: Apper/main.cpp:75
 msgid "Package file to install"
 msgstr "Fișierul cu pachet de instalat"
+
+#: ApperKCM/FiltersMenu.cpp:37
+msgid "Collections"
+msgstr "Colecții"
+
+#: ApperKCM/FiltersMenu.cpp:44
+msgid "Only collections"
+msgstr "Numai colecții"
+
+#: ApperKCM/FiltersMenu.cpp:51
+msgid "Exclude collections"
+msgstr "Exclude colecțiile"
+
+#. i18n: file: Apper/BackendDetails.ui:100
+#. i18n: ectx: property (text), widget (QCheckBox, installedCB)
+#: ApperKCM/FiltersMenu.cpp:60 libapper/PkStrings.cpp:362 rc.cpp:23
+msgid "Installed"
+msgstr "Instalate"
+
+#: ApperKCM/FiltersMenu.cpp:67
+msgid "Only installed"
+msgstr "Numai instalate"
+
+#: ApperKCM/FiltersMenu.cpp:74
+msgid "Only available"
+msgstr "Numai disponibile"
+
+#: ApperKCM/FiltersMenu.cpp:81 ApperKCM/FiltersMenu.cpp:111
+#: ApperKCM/FiltersMenu.cpp:141 ApperKCM/FiltersMenu.cpp:171
+#: ApperKCM/FiltersMenu.cpp:202 ApperKCM/FiltersMenu.cpp:233
+msgid "No filter"
+msgstr "Niciun filtru"
+
+#. i18n: file: Apper/BackendDetails.ui:110
+#. i18n: ectx: property (text), widget (QCheckBox, developmentCB)
+#: ApperKCM/FiltersMenu.cpp:90 rc.cpp:26
+msgid "Development"
+msgstr "Dezvoltare"
+
+#: ApperKCM/FiltersMenu.cpp:97
+msgid "Only development"
+msgstr "Numai dezvoltare"
+
+#: ApperKCM/FiltersMenu.cpp:104
+msgid "Only end user files"
+msgstr ""
+
+#: ApperKCM/FiltersMenu.cpp:120
+msgid "Graphical"
+msgstr "Grafic"
+
+#: ApperKCM/FiltersMenu.cpp:127
+msgid "Only graphical"
+msgstr "Numai grafic"
+
+#: ApperKCM/FiltersMenu.cpp:134
+msgid "Only text"
+msgstr "Numai textual"
+
+#: ApperKCM/FiltersMenu.cpp:150
+msgctxt "Filter for free packages"
+msgid "Free"
+msgstr "Liber"
+
+#: ApperKCM/FiltersMenu.cpp:157
+msgid "Only free software"
+msgstr "Numai programe libere"
+
+#: ApperKCM/FiltersMenu.cpp:164
+msgid "Only non-free software"
+msgstr "Numai programe non-libere"
+
+#: ApperKCM/FiltersMenu.cpp:181
+#, fuzzy
+#| msgid "Not supported by this backend"
+msgctxt "Filter for supported packages"
+msgid "Supported"
+msgstr "Nesusținut de această platformă"
+
+#: ApperKCM/FiltersMenu.cpp:188
+#, fuzzy
+#| msgid "Only free software"
+msgid "Only supported software"
+msgstr "Numai programe libere"
+
+#: ApperKCM/FiltersMenu.cpp:195
+#, fuzzy
+#| msgid "Only non-free software"
+msgid "Only non-supported software"
+msgstr "Numai programe non-libere"
+
+#: ApperKCM/FiltersMenu.cpp:212
+msgctxt "Filter for source packages"
+msgid "Source"
+msgstr "Sursă"
+
+#: ApperKCM/FiltersMenu.cpp:219
+msgid "Only sourcecode"
+msgstr "Numai cod-sursă"
+
+#: ApperKCM/FiltersMenu.cpp:226
+msgid "Only non-sourcecode"
+msgstr "Numai non-cod sursă"
+
+#: ApperKCM/FiltersMenu.cpp:248
+#, fuzzy
+#| msgid "Hide subpackages"
+msgid "Hide Subpackages"
+msgstr "Ascunde subpachete"
+
+#: ApperKCM/FiltersMenu.cpp:250
+msgid "Only show one package, not subpackages"
+msgstr "Arată numai un pachet, nu subpachete"
+
+#: ApperKCM/FiltersMenu.cpp:257
+#, fuzzy
+#| msgid "Only newest packages"
+msgid "Only Newest Packages"
+msgstr "Numai cele mai noi pachete"
+
+#: ApperKCM/FiltersMenu.cpp:262
+msgid "Only show the newest available package"
+msgstr "Arată numai cel mai nou pachet disponibil"
+
+#: ApperKCM/FiltersMenu.cpp:269
+#, fuzzy
+#| msgid "Only newest packages"
+msgid "Only Native Packages"
+msgstr "Numai cele mai noi pachete"
+
+#: ApperKCM/FiltersMenu.cpp:274
+msgid "Only show packages matching the machine architecture"
+msgstr ""
+
+#: ApperKCM/FiltersMenu.cpp:283
+#, fuzzy
+#| msgid "Only collections"
+msgid "Only Show Applications"
+msgstr "Numai colecții"
+
+#: ApperKCM/FiltersMenu.cpp:286
+#, fuzzy
+#| msgid "Packages are not compatible"
+msgid "Hide packages that are not applications"
+msgstr "Pachetele nu sînt compatibile"
 
 #: ApperKCM/Settings/OriginModel.cpp:39 ApperKCM/Settings/OriginModel.cpp:52
 #, fuzzy
@@ -401,203 +546,41 @@ msgstr ""
 msgid "Check for new Updates"
 msgstr "Verifică pentru actualizări:"
 
-#: ApperKCM/FiltersMenu.cpp:37
-msgid "Collections"
-msgstr "Colecții"
+#: ApperKCM/ScreenShotViewer.cpp:90
+#, fuzzy
+#| msgid "Could not find package"
+msgid "Could not find screen shot."
+msgstr "Pachetul nu a putut fi găsit"
 
-#: ApperKCM/FiltersMenu.cpp:44
-msgid "Only collections"
-msgstr "Numai colecții"
+#: ApperKCM/CategoryModel.cpp:47
+#, fuzzy
+#| msgid "Installing unsigned software"
+msgid "Installed Software"
+msgstr "Instalare programe nesemnate"
 
-#: ApperKCM/FiltersMenu.cpp:51
-msgid "Exclude collections"
-msgstr "Exclude colecțiile"
-
-#. i18n: file: Apper/BackendDetails.ui:100
-#. i18n: ectx: property (text), widget (QCheckBox, installedCB)
-#: ApperKCM/FiltersMenu.cpp:60 libapper/PkStrings.cpp:362 rc.cpp:23
-msgid "Installed"
-msgstr "Instalate"
-
-#: ApperKCM/FiltersMenu.cpp:67
-msgid "Only installed"
-msgstr "Numai instalate"
-
-#: ApperKCM/FiltersMenu.cpp:74
-msgid "Only available"
-msgstr "Numai disponibile"
-
-#: ApperKCM/FiltersMenu.cpp:81 ApperKCM/FiltersMenu.cpp:111
-#: ApperKCM/FiltersMenu.cpp:141 ApperKCM/FiltersMenu.cpp:171
-#: ApperKCM/FiltersMenu.cpp:202
-msgid "No filter"
-msgstr "Niciun filtru"
-
-#. i18n: file: Apper/BackendDetails.ui:110
-#. i18n: ectx: property (text), widget (QCheckBox, developmentCB)
-#: ApperKCM/FiltersMenu.cpp:90 rc.cpp:26
-msgid "Development"
-msgstr "Dezvoltare"
-
-#: ApperKCM/FiltersMenu.cpp:97
-msgid "Only development"
-msgstr "Numai dezvoltare"
-
-#: ApperKCM/FiltersMenu.cpp:104
-msgid "Only end user files"
+#: ApperKCM/CategoryModel.cpp:50 ApperKCM/CategoryModel.cpp:58
+msgid "Lists"
 msgstr ""
 
-#: ApperKCM/FiltersMenu.cpp:120
-msgid "Graphical"
-msgstr "Grafic"
-
-#: ApperKCM/FiltersMenu.cpp:127
-msgid "Only graphical"
-msgstr "Numai grafic"
-
-#: ApperKCM/FiltersMenu.cpp:134
-msgid "Only text"
-msgstr "Numai textual"
-
-#: ApperKCM/FiltersMenu.cpp:150
-msgctxt "Filter for free packages"
-msgid "Free"
-msgstr "Liber"
-
-#: ApperKCM/FiltersMenu.cpp:157
-msgid "Only free software"
-msgstr "Numai programe libere"
-
-#: ApperKCM/FiltersMenu.cpp:164
-msgid "Only non-free software"
-msgstr "Numai programe non-libere"
-
-#: ApperKCM/FiltersMenu.cpp:181
-msgctxt "Filter for source packages"
-msgid "Source"
-msgstr "Sursă"
-
-#: ApperKCM/FiltersMenu.cpp:188
-msgid "Only sourcecode"
-msgstr "Numai cod-sursă"
-
-#: ApperKCM/FiltersMenu.cpp:195
-msgid "Only non-sourcecode"
-msgstr "Numai non-cod sursă"
-
-#: ApperKCM/FiltersMenu.cpp:217
+#: ApperKCM/CategoryModel.cpp:55
 #, fuzzy
-#| msgid "Hide subpackages"
-msgid "Hide Subpackages"
-msgstr "Ascunde subpachete"
+#| msgid "Updates"
+msgid "Updates"
+msgstr "Actualizări"
 
-#: ApperKCM/FiltersMenu.cpp:219
-msgid "Only show one package, not subpackages"
-msgstr "Arată numai un pachet, nu subpachete"
-
-#: ApperKCM/FiltersMenu.cpp:226
+#: ApperKCM/CategoryModel.cpp:155 ApperKCM/CategoryModel.cpp:339
 #, fuzzy
-#| msgid "Only newest packages"
-msgid "Only Newest Packages"
-msgstr "Numai cele mai noi pachete"
+#| msgctxt "The role of the transaction, in past tense"
+#| msgid "Got categories"
+msgid "Categories"
+msgstr "Obținut categorii"
 
-#: ApperKCM/FiltersMenu.cpp:231
-msgid "Only show the newest available package"
-msgstr "Arată numai cel mai nou pachet disponibil"
-
-#: ApperKCM/FiltersMenu.cpp:238
+#: ApperKCM/CategoryModel.cpp:208
 #, fuzzy
-#| msgid "Only newest packages"
-msgid "Only Native Packages"
-msgstr "Numai cele mai noi pachete"
-
-#: ApperKCM/FiltersMenu.cpp:243
-msgid "Only show packages matching the machine architecture"
-msgstr ""
-
-#: ApperKCM/FiltersMenu.cpp:252
-#, fuzzy
-#| msgid "Only collections"
-msgid "Only Show Applications"
-msgstr "Numai colecții"
-
-#: ApperKCM/FiltersMenu.cpp:255
-#, fuzzy
-#| msgid "Packages are not compatible"
-msgid "Hide packages that are not applications"
-msgstr "Pachetele nu sînt compatibile"
-
-#: ApperKCM/ApperKCM.cpp:79
-#, fuzzy
-#| msgid "Application"
-msgid "Application Manager"
-msgstr "Aplicație"
-
-#: ApperKCM/ApperKCM.cpp:81
-msgid "KDE interface for managing software"
-msgstr "Interfață KDE pentru gestiunea programelor"
-
-#: ApperKCM/ApperKCM.cpp:111 ApperKCM/ApperKCM.cpp:292
-msgid "Find"
-msgstr "Caută"
-
-#: ApperKCM/ApperKCM.cpp:206
-msgid "History"
-msgstr "Istoric"
-
-#. i18n: file: ApperKCM/Settings/Settings.ui:14
-#. i18n: ectx: property (windowTitle), widget (QWidget, Settings)
-#: ApperKCM/ApperKCM.cpp:212 rc.cpp:140
-msgid "Settings"
-msgstr "Configurări"
-
-#: ApperKCM/ApperKCM.cpp:269 ApperKCM/ApperKCM.cpp:270
-#: ApperKCM/ApperKCM.cpp:271 ApperKCM/ApperKCM.cpp:272
-msgid "&Cancel"
-msgstr "&Renunță"
-
-#. i18n: file: ApperKCM/ApperKCM.ui:291
-#. i18n: ectx: property (text), widget (QToolButton, backTB)
-#: ApperKCM/ApperKCM.cpp:279 rc.cpp:200
-msgid "Find by &name"
-msgstr "Caută după de&numire"
-
-#. i18n: file: ApperKCM/ApperKCM.ui:301
-#. i18n: ectx: property (text), widget (QToolButton, backTB)
-#: ApperKCM/ApperKCM.cpp:280 rc.cpp:206
-msgid "Find by f&ile name"
-msgstr "Găsește după denum&ire"
-
-#. i18n: file: ApperKCM/ApperKCM.ui:296
-#. i18n: ectx: property (text), widget (QToolButton, backTB)
-#: ApperKCM/ApperKCM.cpp:281 rc.cpp:203
-msgid "Find by &description"
-msgstr "Găsește după &descriere"
-
-#: ApperKCM/ApperKCM.cpp:411
-msgid ""
-"The settings of the current module have changed.\n"
-"Do you want to apply the changes or discard them?"
-msgstr ""
-
-#: ApperKCM/ApperKCM.cpp:413
-#, fuzzy
-#| msgid "Settings"
-msgid "Apply Settings"
-msgstr "Configurări"
-
-#: ApperKCM/ApperKCM.cpp:455
-#, fuzzy
-#| msgid "Settings"
-msgid "General Settings"
-msgstr "Configurări"
-
-#: ApperKCM/ApperKCM.cpp:456
-#, fuzzy
-#| msgctxt "The group type"
-#| msgid "Software sources"
-msgid "Software Origins"
-msgstr "Surse software"
+#| msgctxt "Group of the package"
+#| msgid "Group"
+msgid "Groups"
+msgstr "Grup"
 
 #: ApperKCM/PackageDetails.cpp:73
 #, fuzzy
@@ -606,7 +589,7 @@ msgstr "Surse software"
 msgid "Display"
 msgstr "Zilnic"
 
-#: ApperKCM/PackageDetails.cpp:80
+#: ApperKCM/PackageDetails.cpp:80 AppSetup/SetupWizard.cpp:243
 msgid "Description"
 msgstr "Descriere"
 
@@ -640,42 +623,6 @@ msgstr ""
 msgid "Applications"
 msgstr "Aplicație"
 
-#: ApperKCM/CategoryModel.cpp:47
-#, fuzzy
-#| msgid "Installing unsigned software"
-msgid "Installed Software"
-msgstr "Instalare programe nesemnate"
-
-#: ApperKCM/CategoryModel.cpp:50 ApperKCM/CategoryModel.cpp:58
-msgid "Lists"
-msgstr ""
-
-#: ApperKCM/CategoryModel.cpp:55
-#, fuzzy
-#| msgid "Updates"
-msgid "Updates"
-msgstr "Actualizări"
-
-#: ApperKCM/CategoryModel.cpp:155 ApperKCM/CategoryModel.cpp:339
-#, fuzzy
-#| msgctxt "The role of the transaction, in past tense"
-#| msgid "Got categories"
-msgid "Categories"
-msgstr "Obținut categorii"
-
-#: ApperKCM/CategoryModel.cpp:208
-#, fuzzy
-#| msgctxt "Group of the package"
-#| msgid "Group"
-msgid "Groups"
-msgstr "Grup"
-
-#: ApperKCM/ScreenShotViewer.cpp:90
-#, fuzzy
-#| msgid "Could not find package"
-msgid "Could not find screen shot."
-msgstr "Pachetul nu a putut fi găsit"
-
 #: ApperKCM/TransactionHistory.cpp:66
 msgid "Refresh transactions list"
 msgstr "Înnoiește lista cu tranzacții"
@@ -694,6 +641,7 @@ msgid "Action"
 msgstr "Acțiune"
 
 #: ApperKCM/TransactionModel.cpp:48 Sentinel/TransactionWatcher.cpp:308
+#: AppSetup/SetupWizard.cpp:207
 msgid "Details"
 msgstr "Detalii"
 
@@ -706,13 +654,77 @@ msgstr "Utilizator"
 msgid "Application"
 msgstr "Aplicație"
 
-#: Sentinel/DistroUpgrade.cpp:69
-msgid "Start upgrade now"
-msgstr "Începe actualizarea acum"
+#: ApperKCM/ApperKCM.cpp:80
+#, fuzzy
+#| msgid "Application"
+msgid "Application Manager"
+msgstr "Aplicație"
 
-#: Sentinel/DistroUpgrade.cpp:114
-msgid "Distribution upgrade finished. "
-msgstr "Actualizarea distribuției s-a sfîrșit. "
+#: ApperKCM/ApperKCM.cpp:82
+msgid "KDE interface for managing software"
+msgstr "Interfață KDE pentru gestiunea programelor"
+
+#: ApperKCM/ApperKCM.cpp:112 ApperKCM/ApperKCM.cpp:293
+msgid "Find"
+msgstr "Caută"
+
+#: ApperKCM/ApperKCM.cpp:207
+msgid "History"
+msgstr "Istoric"
+
+#. i18n: file: ApperKCM/Settings/Settings.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, Settings)
+#: ApperKCM/ApperKCM.cpp:213 rc.cpp:140
+msgid "Settings"
+msgstr "Configurări"
+
+#: ApperKCM/ApperKCM.cpp:270 ApperKCM/ApperKCM.cpp:271
+#: ApperKCM/ApperKCM.cpp:272 ApperKCM/ApperKCM.cpp:273
+msgid "&Cancel"
+msgstr "&Renunță"
+
+#. i18n: file: ApperKCM/ApperKCM.ui:291
+#. i18n: ectx: property (text), widget (QToolButton, backTB)
+#: ApperKCM/ApperKCM.cpp:280 rc.cpp:200
+msgid "Find by &name"
+msgstr "Caută după de&numire"
+
+#. i18n: file: ApperKCM/ApperKCM.ui:301
+#. i18n: ectx: property (text), widget (QToolButton, backTB)
+#: ApperKCM/ApperKCM.cpp:281 rc.cpp:206
+msgid "Find by f&ile name"
+msgstr "Găsește după denum&ire"
+
+#. i18n: file: ApperKCM/ApperKCM.ui:296
+#. i18n: ectx: property (text), widget (QToolButton, backTB)
+#: ApperKCM/ApperKCM.cpp:282 rc.cpp:203
+msgid "Find by &description"
+msgstr "Găsește după &descriere"
+
+#: ApperKCM/ApperKCM.cpp:412
+msgid ""
+"The settings of the current module have changed.\n"
+"Do you want to apply the changes or discard them?"
+msgstr ""
+
+#: ApperKCM/ApperKCM.cpp:414
+#, fuzzy
+#| msgid "Settings"
+msgid "Apply Settings"
+msgstr "Configurări"
+
+#: ApperKCM/ApperKCM.cpp:456
+#, fuzzy
+#| msgid "Settings"
+msgid "General Settings"
+msgstr "Configurări"
+
+#: ApperKCM/ApperKCM.cpp:457
+#, fuzzy
+#| msgctxt "The group type"
+#| msgid "Software sources"
+msgid "Software Origins"
+msgstr "Surse software"
 
 #: Sentinel/PkInstallProvideFiles.cpp:39
 #, fuzzy
@@ -759,7 +771,7 @@ msgstr[2] "%1 dorește să instaleze pachete"
 msgid "Failed to start search file transaction"
 msgstr "Pornirea tranzacției de căutare a fișierelor a eșuat"
 
-#: Sentinel/PkInstallProvideFiles.cpp:101 libapper/PkTransaction.cpp:263
+#: Sentinel/PkInstallProvideFiles.cpp:101 libapper/PkTransaction.cpp:268
 msgid "Failed to install file"
 msgid_plural "Failed to install files"
 msgstr[0] "Eșec la instalarea fișierului"
@@ -812,54 +824,6 @@ msgstr "Eșec la inițializare"
 #| msgid_plural "The packages could not be found in any software source"
 msgid "Could not find printer driver in any configured software source"
 msgstr "Pachetul nu a putut fi găsit în nicio sursă software"
-
-#: Sentinel/UpdateIcon.cpp:160
-#, fuzzy
-#| msgid "Review and update"
-msgid "Review Updates"
-msgstr "Revizuiește și actualizează"
-
-#: Sentinel/UpdateIcon.cpp:163
-#, fuzzy
-#| msgid "Confirm"
-msgid "Configure"
-msgstr "Confirmă"
-
-#. i18n: file: ApperKCM/PackageDetails.ui:359
-#. i18n: ectx: property (text), widget (QToolButton, hideTB)
-#. i18n: file: ApperKCM/Updater/UpdateDetails.ui:20
-#. i18n: ectx: property (text), widget (QToolButton, hideTB)
-#: Sentinel/UpdateIcon.cpp:167 Sentinel/TransactionWatcher.cpp:186
-#: libapper/PkTransactionDialog.cpp:86 rc.cpp:137 rc.cpp:173
-msgid "Hide"
-msgstr "Ascunde"
-
-#: Sentinel/UpdateIcon.cpp:177
-#, fuzzy, kde-format
-#| msgid "No packages to update"
-msgid "You have one update"
-msgid_plural "You have %1 updates"
-msgstr[0] "Niciun pachet de actualizat"
-msgstr[1] "Niciun pachet de actualizat"
-msgstr[2] "Niciun pachet de actualizat"
-
-#: Sentinel/UpdateIcon.cpp:230
-msgid "Updates are being automatically installed."
-msgstr "Actualizările se instalează automat."
-
-#: Sentinel/UpdateIcon.cpp:251
-msgid "Security updates are being automatically installed."
-msgstr "Actualizările de securitate sînt instalate automat."
-
-#: Sentinel/UpdateIcon.cpp:278
-msgid "System update was successful."
-msgstr "Actualizarea sistemului a reușit."
-
-#: Sentinel/UpdateIcon.cpp:287
-#, fuzzy
-#| msgid "The software update failed."
-msgid "The automated software update failed."
-msgstr "Actualizarea programului a eșuat."
 
 #: Sentinel/ReviewChanges.cpp:52
 #, fuzzy
@@ -1044,7 +1008,78 @@ msgstr "Instalator de denumiri de pachete"
 msgid "Could not find any package to install in this catalog"
 msgstr "Doriți să instalați acest fișier?"
 
+#: Sentinel/PkInstallPackageFiles.cpp:38
+#, fuzzy
+#| msgctxt "The role of the transaction, in past tense"
+#| msgid "Installed packages"
+msgid "Install Packages Files"
+msgstr "Instalat pachete"
+
+#: Sentinel/PkInstallPackageFiles.cpp:42
+#: Sentinel/PkRemovePackageByFiles.cpp:43
+msgid "You can drop more files in here"
+msgstr ""
+
+#: Sentinel/PkInstallPackageFiles.cpp:52
+#, fuzzy
+#| msgid "Not supported by this backend"
+msgid "Not Supported"
+msgstr "Nesusținut de această platformă"
+
+#: Sentinel/PkInstallPackageFiles.cpp:53
+#, fuzzy
+#| msgid "Current backend does not support installing packages."
+msgid "Your current backend does not support installing files"
+msgstr "Platforma curentă nu susține instalarea pachetelor."
+
+#: Sentinel/PkInstallPackageFiles.cpp:68
+#: Sentinel/PkRemovePackageByFiles.cpp:64
+#, fuzzy
+#| msgid "No files were found."
+msgid "No supported files were provided"
+msgstr "Niciun fișier găsit."
+
+#: Sentinel/PkInstallPackageFiles.cpp:70
+#, fuzzy
+#| msgid "Do you want to install this file?"
+#| msgid_plural "Do you want to install these files?"
+msgid "Press <i>Continue</i> if you want to install this file"
+msgid_plural "Press <i>Continue</i> if you want to install these files"
+msgstr[0] "Doriți să instalați acest fișier?"
+msgstr[1] "Doriți să instalați aceste fișiere?"
+msgstr[2] "Doriți să instalați aceste fișiere?"
+
+#: Sentinel/PkInstallPackageFiles.cpp:105
+#, fuzzy
+#| msgctxt "The role of the transaction, in present tense"
+#| msgid "Installing file"
+msgid "Installation Complete"
+msgstr "Instalare fișier"
+
+#: Sentinel/PkInstallPackageFiles.cpp:106
+msgid "File was installed successfully"
+msgid_plural "Files were installed successfully"
+msgstr[0] "Fișierul a fost instalat cu succes"
+msgstr[1] "Fișierele au fost instalate cu succes"
+msgstr[2] "Fișierele au fost instalate cu succes"
+
+#: Sentinel/PkInstallPackageFiles.cpp:117
+#, fuzzy
+#| msgid "Failed to install file"
+#| msgid_plural "Failed to install files"
+msgid "Failed to install files"
+msgstr "Eșec la instalarea fișierului"
+
+#: Sentinel/PkInstallPackageFiles.cpp:118
+#: Sentinel/PkInstallPackageFiles.cpp:120
+#, fuzzy
+#| msgid "Failed to install file"
+#| msgid_plural "Failed to install files"
+msgid "Could not install files"
+msgstr "Eșec la instalarea fișierului"
+
 #: Sentinel/SessionTask.cpp:66 libapper/Requirements.cpp:44
+#: AppSetup/SetupWizard.cpp:139
 msgid "Continue"
 msgstr "Continuă"
 
@@ -1094,6 +1129,87 @@ msgstr "Învechit"
 msgid "All operations were committed successfully"
 msgstr "Fișierul a fost instalat cu succes"
 
+#: Sentinel/UpdateIcon.cpp:115
+#, fuzzy
+#| msgid "Review and update"
+msgid "Review Updates"
+msgstr "Revizuiește și actualizează"
+
+#: Sentinel/UpdateIcon.cpp:118
+#, fuzzy
+#| msgid "Confirm"
+msgid "Configure"
+msgstr "Confirmă"
+
+#. i18n: file: ApperKCM/PackageDetails.ui:359
+#. i18n: ectx: property (text), widget (QToolButton, hideTB)
+#. i18n: file: ApperKCM/Updater/UpdateDetails.ui:20
+#. i18n: ectx: property (text), widget (QToolButton, hideTB)
+#: Sentinel/UpdateIcon.cpp:122 Sentinel/TransactionWatcher.cpp:186
+#: libapper/PkTransactionDialog.cpp:86 rc.cpp:137 rc.cpp:173
+msgid "Hide"
+msgstr "Ascunde"
+
+#: Sentinel/UpdateIcon.cpp:132
+#, fuzzy, kde-format
+#| msgid "No packages to update"
+msgid "You have one update"
+msgid_plural "You have %1 updates"
+msgstr[0] "Niciun pachet de actualizat"
+msgstr[1] "Niciun pachet de actualizat"
+msgstr[2] "Niciun pachet de actualizat"
+
+#: Sentinel/UpdateIcon.cpp:192
+msgid "Updates are being automatically installed."
+msgstr "Actualizările se instalează automat."
+
+#: Sentinel/UpdateIcon.cpp:213
+msgid "Security updates are being automatically installed."
+msgstr "Actualizările de securitate sînt instalate automat."
+
+#: Sentinel/UpdateIcon.cpp:240
+msgid "System update was successful."
+msgstr "Actualizarea sistemului a reușit."
+
+#: Sentinel/UpdateIcon.cpp:249
+#, fuzzy
+#| msgid "The software update failed."
+msgid "The automated software update failed."
+msgstr "Actualizarea programului a eșuat."
+
+#: Sentinel/PkIsInstalled.cpp:36
+#, fuzzy
+#| msgid "The package is not installed"
+msgid "Querying if a Package is Installed"
+msgstr "Pachetul nu este instalat"
+
+#: Sentinel/PkIsInstalled.cpp:67
+#, fuzzy
+#| msgctxt "The role of the transaction, in past tense"
+#| msgid "Got old transactions"
+msgid "User canceled the transaction"
+msgstr "Obținut tranzacții vechi"
+
+#: Sentinel/PkIsInstalled.cpp:69
+#, fuzzy
+#| msgid "Unknown error"
+msgid "An unknown error happened"
+msgstr "Eroare necunoscută"
+
+#: Sentinel/TransactionTrayIcon.cpp:45
+msgid "Transactions"
+msgstr "Tranzacții"
+
+#: Sentinel/TransactionTrayIcon.cpp:90
+#, kde-format
+msgid "%1% - %2"
+msgstr "%1% - %2"
+
+#: Sentinel/TransactionTrayIcon.cpp:92
+#, kde-format
+msgid "%1"
+msgstr "%1"
+
 #: Sentinel/TransactionWatcher.cpp:66 Sentinel/TransactionWatcher.cpp:265
 msgid "Hide this icon"
 msgstr "Ascunde această pictogramă"
@@ -1142,39 +1258,6 @@ msgstr "Arată mesaje"
 #: Sentinel/TransactionWatcher.cpp:308
 msgid "Ignore"
 msgstr "Ignoră"
-
-#: Sentinel/PkIsInstalled.cpp:36
-#, fuzzy
-#| msgid "The package is not installed"
-msgid "Querying if a Package is Installed"
-msgstr "Pachetul nu este instalat"
-
-#: Sentinel/PkIsInstalled.cpp:67
-#, fuzzy
-#| msgctxt "The role of the transaction, in past tense"
-#| msgid "Got old transactions"
-msgid "User canceled the transaction"
-msgstr "Obținut tranzacții vechi"
-
-#: Sentinel/PkIsInstalled.cpp:69
-#, fuzzy
-#| msgid "Unknown error"
-msgid "An unknown error happened"
-msgstr "Eroare necunoscută"
-
-#: Sentinel/TransactionTrayIcon.cpp:45
-msgid "Transactions"
-msgstr "Tranzacții"
-
-#: Sentinel/TransactionTrayIcon.cpp:90
-#, kde-format
-msgid "%1% - %2"
-msgstr "%1% - %2"
-
-#: Sentinel/TransactionTrayIcon.cpp:92
-#, kde-format
-msgid "%1"
-msgstr "%1"
 
 #: Sentinel/PkInstallPlasmaResources.cpp:40
 #, fuzzy
@@ -1306,76 +1389,6 @@ msgstr "Configurări"
 msgid "Trever Fischer"
 msgstr "Trever Fischer"
 
-#: Sentinel/PkInstallPackageFiles.cpp:38
-#, fuzzy
-#| msgctxt "The role of the transaction, in past tense"
-#| msgid "Installed packages"
-msgid "Install Packages Files"
-msgstr "Instalat pachete"
-
-#: Sentinel/PkInstallPackageFiles.cpp:42
-#: Sentinel/PkRemovePackageByFiles.cpp:43
-msgid "You can drop more files in here"
-msgstr ""
-
-#: Sentinel/PkInstallPackageFiles.cpp:52
-#, fuzzy
-#| msgid "Not supported by this backend"
-msgid "Not Supported"
-msgstr "Nesusținut de această platformă"
-
-#: Sentinel/PkInstallPackageFiles.cpp:53
-#, fuzzy
-#| msgid "Current backend does not support installing packages."
-msgid "Your current backend does not support installing files"
-msgstr "Platforma curentă nu susține instalarea pachetelor."
-
-#: Sentinel/PkInstallPackageFiles.cpp:68
-#: Sentinel/PkRemovePackageByFiles.cpp:64
-#, fuzzy
-#| msgid "No files were found."
-msgid "No supported files were provided"
-msgstr "Niciun fișier găsit."
-
-#: Sentinel/PkInstallPackageFiles.cpp:70
-#, fuzzy
-#| msgid "Do you want to install this file?"
-#| msgid_plural "Do you want to install these files?"
-msgid "Press <i>Continue</i> if you want to install this file"
-msgid_plural "Press <i>Continue</i> if you want to install these files"
-msgstr[0] "Doriți să instalați acest fișier?"
-msgstr[1] "Doriți să instalați aceste fișiere?"
-msgstr[2] "Doriți să instalați aceste fișiere?"
-
-#: Sentinel/PkInstallPackageFiles.cpp:105
-#, fuzzy
-#| msgctxt "The role of the transaction, in present tense"
-#| msgid "Installing file"
-msgid "Installation Complete"
-msgstr "Instalare fișier"
-
-#: Sentinel/PkInstallPackageFiles.cpp:106
-msgid "File was installed successfully"
-msgid_plural "Files were installed successfully"
-msgstr[0] "Fișierul a fost instalat cu succes"
-msgstr[1] "Fișierele au fost instalate cu succes"
-msgstr[2] "Fișierele au fost instalate cu succes"
-
-#: Sentinel/PkInstallPackageFiles.cpp:117
-#, fuzzy
-#| msgid "Failed to install file"
-#| msgid_plural "Failed to install files"
-msgid "Failed to install files"
-msgstr "Eșec la instalarea fișierului"
-
-#: Sentinel/PkInstallPackageFiles.cpp:118
-#: Sentinel/PkInstallPackageFiles.cpp:120
-#, fuzzy
-#| msgid "Failed to install file"
-#| msgid_plural "Failed to install files"
-msgid "Could not install files"
-msgstr "Eșec la instalarea fișierului"
-
 #: Sentinel/PkRemovePackageByFiles.cpp:40
 #, fuzzy
 #| msgid "RemovePackage"
@@ -1473,6 +1486,14 @@ msgstr "Căutat detalii pachet"
 #| msgid_plural "The packages could not be found in any software source"
 msgid "The file name could not be found in any software source"
 msgstr "Pachetul nu a putut fi găsit în nicio sursă software"
+
+#: Sentinel/DistroUpgrade.cpp:69
+msgid "Start upgrade now"
+msgstr "Începe actualizarea acum"
+
+#: Sentinel/DistroUpgrade.cpp:114
+msgid "Distribution upgrade finished. "
+msgstr "Actualizarea distribuției s-a sfîrșit. "
 
 #: Sentinel/PkInstallFontconfigResources.cpp:41
 #, fuzzy
@@ -1626,6 +1647,57 @@ msgstr "Niciun fișier găsit."
 #| msgid_plural "The packages could not be found in any software source"
 msgid "Could not find plugin in any configured software source"
 msgstr "Pachetul nu a putut fi găsit în nicio sursă software"
+
+#: libapper/PackageModel.cpp:182
+#, fuzzy
+#| msgctxt "Machine user who issued the transaction"
+#| msgid "Username"
+msgid "Name"
+msgstr "Utilizator"
+
+#: libapper/PackageModel.cpp:184 libapper/SimulateModel.cpp:141
+msgid "Version"
+msgstr "Versiune"
+
+#: libapper/PackageModel.cpp:186
+#, fuzzy
+#| msgctxt "The role of the transaction, in past tense"
+#| msgid "Installed signature"
+msgid "Installed Version"
+msgstr "Instalat semnătură"
+
+#: libapper/PackageModel.cpp:188
+msgid "Arch"
+msgstr ""
+
+#: libapper/PackageModel.cpp:190
+msgid "Origin"
+msgstr ""
+
+#: libapper/PackageModel.cpp:192
+msgid "Size"
+msgstr "Dimensiune"
+
+#: libapper/PackageModel.cpp:283
+#, fuzzy, kde-format
+#| msgid "Architectures"
+msgid ""
+"Version: %1\n"
+"Architecture: %2"
+msgstr "Arhitecturi"
+
+#: libapper/PackageModel.cpp:329
+#, fuzzy
+#| msgctxt "The action of the package, in past tense"
+#| msgid "Removed"
+msgid "To be Removed"
+msgstr "Eliminat"
+
+#: libapper/PackageModel.cpp:331
+#, fuzzy
+#| msgid "Installed"
+msgid "To be Installed"
+msgstr "Instalate"
 
 #: libapper/ChangesDelegate.cpp:45
 #, fuzzy
@@ -2630,7 +2702,7 @@ msgstr "Pachetul este incompatibil cu acest sistem"
 msgid "No space is left on the disk"
 msgstr "Nu a mai rămas spațiu pe disc"
 
-#: libapper/PkStrings.cpp:477 libapper/PkTransaction.cpp:579
+#: libapper/PkStrings.cpp:477 libapper/PkTransaction.cpp:581
 msgid "A media change is required"
 msgstr "Este necesară o schimbare a mediului"
 
@@ -3732,6 +3804,110 @@ msgstr "Pachetul nu a putut fi găsit"
 msgid "An unknown error happened."
 msgstr "Eroare necunoscută"
 
+#: libapper/PkTransaction.cpp:123
+#, fuzzy
+#| msgid "Failed to update package lists"
+msgid "Failed to simulate file install"
+msgstr "Eșec la actualizarea listelor de pachete"
+
+#: libapper/PkTransaction.cpp:130
+#, fuzzy
+#| msgid "Current backend does not support installing packages."
+msgid "Current backend does not support installing files."
+msgstr "Platforma curentă nu susține instalarea pachetelor."
+
+#: libapper/PkTransaction.cpp:130 libapper/PkTransaction.cpp:154
+#: libapper/PkTransaction.cpp:180 libapper/PkTransaction.cpp:203
+#: AppSetup/SetupWizard.cpp:107
+msgid "Error"
+msgstr ""
+
+#: libapper/PkTransaction.cpp:147
+#, fuzzy
+#| msgid "Failed to update package lists"
+msgid "Failed to simulate package install"
+msgstr "Eșec la actualizarea listelor de pachete"
+
+#: libapper/PkTransaction.cpp:154
+msgid "Current backend does not support installing packages."
+msgstr "Platforma curentă nu susține instalarea pachetelor."
+
+#: libapper/PkTransaction.cpp:172
+#, fuzzy
+#| msgid "Failed to update package lists"
+msgid "Failed to simulate package removal"
+msgstr "Eșec la actualizarea listelor de pachete"
+
+#: libapper/PkTransaction.cpp:180
+msgid "The current backend does not support removing packages."
+msgstr "Platforma curentă nu susține eliminarea pachetelor."
+
+#: libapper/PkTransaction.cpp:196
+#, fuzzy
+#| msgid "Failed to update package lists"
+msgid "Failed to simulate package update"
+msgstr "Eșec la actualizarea listelor de pachete"
+
+#: libapper/PkTransaction.cpp:203
+#, fuzzy
+#| msgid "The current backend does not support removing packages."
+msgid "The current backend does not support updating packages."
+msgstr "Platforma curentă nu susține eliminarea pachetelor."
+
+#: libapper/PkTransaction.cpp:214
+#, fuzzy
+#| msgid "Failed to refresh package lists"
+msgid "Failed to refresh package cache"
+msgstr "Eșec la înnoirea listelor de pachete"
+
+#: libapper/PkTransaction.cpp:256
+msgid "Failed to install package"
+msgstr "Eșec la instalarea pachetului"
+
+#: libapper/PkTransaction.cpp:281
+msgid "Failed to remove package"
+msgstr "Eșec la eliminarea pachetului"
+
+#: libapper/PkTransaction.cpp:293
+#, fuzzy
+#| msgid "Failed to find package"
+msgid "Failed to update package"
+msgstr "Eșec la găsirea pachetului"
+
+#: libapper/PkTransaction.cpp:461
+#, fuzzy, kde-format
+#| msgctxt "The transaction state"
+#| msgid "Downloading packages"
+msgid "Downloading packages at %1/s"
+msgstr "Descărcare pachete"
+
+#: libapper/PkTransaction.cpp:509
+#, fuzzy
+#| msgid ""
+#| "<br />Installing unsigned packages can compromise your system, as it is "
+#| "impossible to verify if the software came from a trusted source. Are you "
+#| "sure you want to continue installation?"
+msgid ""
+"You are about to install unsigned packages that can compromise your system, "
+"as it is impossible to verify if the software came from a trusted source.\n"
+"\n"
+"Are you sure you want to proceed with the installation?"
+msgstr ""
+"<br />Instalarea pachetelor nesemnate vă poate compromite sistemul, întrucît "
+"este imposibil de verificat dacă programele provin dintr-o sursă de "
+"încredere. Sigur doriți să continuați instalarea?"
+
+#: libapper/PkTransaction.cpp:512
+msgid "Installing unsigned software"
+msgstr "Instalare programe nesemnate"
+
+#: libapper/PkTransaction.cpp:566 libapper/PkTransaction.cpp:620
+#, fuzzy
+#| msgid "Failed to install file"
+#| msgid_plural "Failed to install files"
+msgid "Failed to install signature"
+msgstr "Eșec la instalarea fișierului"
+
 #: libapper/PkTransactionDialog.cpp:88
 msgid ""
 "Allows you to hide the window whilst keeping the transaction task running."
@@ -3741,10 +3917,6 @@ msgstr ""
 #: libapper/SimulateModel.cpp:139
 msgid "Package"
 msgstr "Pachet"
-
-#: libapper/SimulateModel.cpp:141 libapper/PackageModel.cpp:184
-msgid "Version"
-msgstr "Versiune"
 
 #: libapper/ApplicationLauncher.cpp:95
 msgid "The following application was just installed. Click on it to launch:"
@@ -3768,53 +3940,6 @@ msgstr "Acord de licență necesar"
 #, kde-format
 msgid "License required for %1 by %2"
 msgstr "Licență cerută pentru %1 de către %2"
-
-#: libapper/PackageModel.cpp:182
-#, fuzzy
-#| msgctxt "Machine user who issued the transaction"
-#| msgid "Username"
-msgid "Name"
-msgstr "Utilizator"
-
-#: libapper/PackageModel.cpp:186
-#, fuzzy
-#| msgctxt "The role of the transaction, in past tense"
-#| msgid "Installed signature"
-msgid "Installed Version"
-msgstr "Instalat semnătură"
-
-#: libapper/PackageModel.cpp:188
-msgid "Arch"
-msgstr ""
-
-#: libapper/PackageModel.cpp:190
-msgid "Origin"
-msgstr ""
-
-#: libapper/PackageModel.cpp:192
-msgid "Size"
-msgstr "Dimensiune"
-
-#: libapper/PackageModel.cpp:283
-#, fuzzy, kde-format
-#| msgid "Architectures"
-msgid ""
-"Version: %1\n"
-"Architecture: %2"
-msgstr "Arhitecturi"
-
-#: libapper/PackageModel.cpp:329
-#, fuzzy
-#| msgctxt "The action of the package, in past tense"
-#| msgid "Removed"
-msgid "To be Removed"
-msgstr "Eliminat"
-
-#: libapper/PackageModel.cpp:331
-#, fuzzy
-#| msgid "Installed"
-msgid "To be Installed"
-msgstr "Instalate"
 
 #: libapper/Requirements.cpp:42
 msgid "Additional changes"
@@ -3862,109 +3987,6 @@ msgstr[0] "1 pachet de actualizat"
 msgstr[1] "%1 pachete de actualizat"
 msgstr[2] "%1 de pachete de actualizat"
 
-#: libapper/PkTransaction.cpp:122
-#, fuzzy
-#| msgid "Failed to update package lists"
-msgid "Failed to simulate file install"
-msgstr "Eșec la actualizarea listelor de pachete"
-
-#: libapper/PkTransaction.cpp:129
-#, fuzzy
-#| msgid "Current backend does not support installing packages."
-msgid "Current backend does not support installing files."
-msgstr "Platforma curentă nu susține instalarea pachetelor."
-
-#: libapper/PkTransaction.cpp:129 libapper/PkTransaction.cpp:153
-#: libapper/PkTransaction.cpp:179 libapper/PkTransaction.cpp:202
-msgid "Error"
-msgstr ""
-
-#: libapper/PkTransaction.cpp:146
-#, fuzzy
-#| msgid "Failed to update package lists"
-msgid "Failed to simulate package install"
-msgstr "Eșec la actualizarea listelor de pachete"
-
-#: libapper/PkTransaction.cpp:153
-msgid "Current backend does not support installing packages."
-msgstr "Platforma curentă nu susține instalarea pachetelor."
-
-#: libapper/PkTransaction.cpp:171
-#, fuzzy
-#| msgid "Failed to update package lists"
-msgid "Failed to simulate package removal"
-msgstr "Eșec la actualizarea listelor de pachete"
-
-#: libapper/PkTransaction.cpp:179
-msgid "The current backend does not support removing packages."
-msgstr "Platforma curentă nu susține eliminarea pachetelor."
-
-#: libapper/PkTransaction.cpp:195
-#, fuzzy
-#| msgid "Failed to update package lists"
-msgid "Failed to simulate package update"
-msgstr "Eșec la actualizarea listelor de pachete"
-
-#: libapper/PkTransaction.cpp:202
-#, fuzzy
-#| msgid "The current backend does not support removing packages."
-msgid "The current backend does not support updating packages."
-msgstr "Platforma curentă nu susține eliminarea pachetelor."
-
-#: libapper/PkTransaction.cpp:213
-#, fuzzy
-#| msgid "Failed to refresh package lists"
-msgid "Failed to refresh package cache"
-msgstr "Eșec la înnoirea listelor de pachete"
-
-#: libapper/PkTransaction.cpp:251
-msgid "Failed to install package"
-msgstr "Eșec la instalarea pachetului"
-
-#: libapper/PkTransaction.cpp:276
-msgid "Failed to remove package"
-msgstr "Eșec la eliminarea pachetului"
-
-#: libapper/PkTransaction.cpp:288
-#, fuzzy
-#| msgid "Failed to find package"
-msgid "Failed to update package"
-msgstr "Eșec la găsirea pachetului"
-
-#: libapper/PkTransaction.cpp:459
-#, fuzzy, kde-format
-#| msgctxt "The transaction state"
-#| msgid "Downloading packages"
-msgid "Downloading packages at %1/s"
-msgstr "Descărcare pachete"
-
-#: libapper/PkTransaction.cpp:507
-#, fuzzy
-#| msgid ""
-#| "<br />Installing unsigned packages can compromise your system, as it is "
-#| "impossible to verify if the software came from a trusted source. Are you "
-#| "sure you want to continue installation?"
-msgid ""
-"You are about to install unsigned packages that can compromise your system, "
-"as it is impossible to verify if the software came from a trusted source.\n"
-"\n"
-"Are you sure you want to proceed with the installation?"
-msgstr ""
-"<br />Instalarea pachetelor nesemnate vă poate compromite sistemul, întrucît "
-"este imposibil de verificat dacă programele provin dintr-o sursă de "
-"încredere. Sigur doriți să continuați instalarea?"
-
-#: libapper/PkTransaction.cpp:510
-msgid "Installing unsigned software"
-msgstr "Instalare programe nesemnate"
-
-#: libapper/PkTransaction.cpp:564 libapper/PkTransaction.cpp:618
-#, fuzzy
-#| msgid "Failed to install file"
-#| msgid_plural "Failed to install files"
-msgid "Failed to install signature"
-msgstr "Eșec la instalarea fișierului"
-
 #. i18n: file: libapper/RepoSig.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, RepoSig)
 #: libapper/RepoSig.cpp:40 rc.cpp:218
@@ -3981,6 +4003,170 @@ msgstr "Instalează"
 #| msgid "Removed"
 msgid "Remove"
 msgstr "Eliminat"
+
+#: AppSetup/main.cpp:34 AppSetup/main.cpp:35
+#, fuzzy
+#| msgid "Application"
+msgid "KDE Application Installer"
+msgstr "Aplicație"
+
+#: AppSetup/main.cpp:36
+msgid "(C) 2012, Matthias Klumpp"
+msgstr ""
+
+#: AppSetup/main.cpp:38
+#, fuzzy
+#| msgid "Daniel Nicoletti"
+msgctxt "@info:credit"
+msgid "Daniel Nicoletti"
+msgstr "Daniel Nicoletti"
+
+#: AppSetup/main.cpp:38 AppSetup/main.cpp:40
+#, fuzzy
+#| msgid "Development"
+msgid "Developer"
+msgstr "Dezvoltare"
+
+#: AppSetup/main.cpp:40
+msgctxt "@info:credit"
+msgid "Matthias Klumpp"
+msgstr ""
+
+#: AppSetup/main.cpp:47
+#, fuzzy
+#| msgctxt "The transaction state"
+#| msgid "Getting information"
+msgid "Show verbose information"
+msgstr "Obținere informații"
+
+#: AppSetup/main.cpp:48
+#, fuzzy
+#| msgid "Invalid package file"
+msgid "IPK package filename"
+msgstr "Fișier-pachet nevalid"
+
+#: AppSetup/main.cpp:75
+msgid "Sorry, we didn't get an existing IPK package as parameter."
+msgstr ""
+
+#: AppSetup/main.cpp:76
+#, fuzzy
+#| msgid "The package was not found"
+msgid "Package not found!"
+msgstr "Pachetul nu a fost găsit"
+
+#: AppSetup/SetupWizard.cpp:92
+#, fuzzy
+#| msgctxt "The role of the transaction, in present tense"
+#| msgid "Installing file"
+msgid "Installation finished!"
+msgstr "Instalare fișier"
+
+#: AppSetup/SetupWizard.cpp:93
+#, fuzzy, kde-format
+#| msgid "File was installed successfully"
+#| msgid_plural "Files were installed successfully"
+msgid "%1 has been installed successfully!"
+msgstr "Fișierul a fost instalat cu succes"
+
+#: AppSetup/SetupWizard.cpp:108
+#, fuzzy
+#| msgid "An error occurred."
+msgid "An error occurred"
+msgstr "A intervenit o eroare."
+
+#. i18n: file: ApperKCM/ApperKCM.ui:281
+#. i18n: ectx: property (text), widget (QToolButton, backTB)
+#: AppSetup/SetupWizard.cpp:141 rc.cpp:197
+msgid "Back"
+msgstr ""
+
+#: AppSetup/SetupWizard.cpp:196
+msgid "Welcome!"
+msgstr ""
+
+#: AppSetup/SetupWizard.cpp:197
+#, fuzzy, kde-format
+#| msgctxt "The role of the transaction, in past tense"
+#| msgid "Got old transactions"
+msgid "Welcome to the installation of %1!"
+msgstr "Obținut tranzacții vechi"
+
+#: AppSetup/SetupWizard.cpp:198
+msgid ""
+"Please be careful while installing 3rd-party applications.<br>They may "
+"eventually <b>damage</b> your system or have <b>malicious behaviour</b>, "
+"like spying out your passwords.<br>Please do only install this software if "
+"you <b>trust the publisher and the author</b> of it."
+msgstr ""
+
+#: AppSetup/SetupWizard.cpp:208
+#, fuzzy
+#| msgctxt "The role of the transaction, in past tense"
+#| msgid "Got old transactions"
+msgid "Details about this installation"
+msgstr "Obținut tranzacții vechi"
+
+#: AppSetup/SetupWizard.cpp:235
+msgid "Install for all users (as root)"
+msgstr ""
+
+#: AppSetup/SetupWizard.cpp:242
+#, fuzzy
+#| msgid "Application"
+msgid "Application description"
+msgstr "Aplicație"
+
+#: AppSetup/SetupWizard.cpp:251
+#, fuzzy
+#| msgctxt "The group type"
+#| msgid "Software sources"
+msgid "Software license"
+msgstr "Surse software"
+
+#: AppSetup/SetupWizard.cpp:252
+#, fuzzy
+#| msgid "Please read the following important information before continuing:"
+msgid "Please read the following terms and conditions carefully!"
+msgstr "Citiți următoarea informație importantă înainte de a continua:"
+
+#: AppSetup/SetupWizard.cpp:259
+#, fuzzy
+#| msgctxt "The transaction state"
+#| msgid "Scanning installed applications"
+msgid "Running installation"
+msgstr "Căutare aplicații instalate"
+
+#: AppSetup/SetupWizard.cpp:260
+#, fuzzy, kde-format
+#| msgctxt "The role of the transaction, in present tense"
+#| msgid "Installing"
+msgid "Installing %1..."
+msgstr "Instalare"
+
+#: AppSetup/SetupWizard.cpp:297
+msgid ""
+"Installing this package will make the following native packages obsolete. "
+"You might consider removing them manually."
+msgstr ""
+
+#: AppSetup/SetupWizard.cpp:298
+#, fuzzy
+#| msgid "UpdatePackage"
+msgid "Similar native packages found"
+msgstr "Actualizează pachete"
+
+#: AppSetup/SetupWizard.cpp:364
+msgid ""
+"You want to install this application as root!\n"
+"This can damage your system or install malicious software for all users.\n"
+"Please only proceed, if you really know what you're doing!\n"
+"Continue?"
+msgstr ""
+
+#: AppSetup/SetupWizard.cpp:367
+msgid "Really install as superuser?"
+msgstr ""
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
@@ -4414,12 +4600,6 @@ msgstr "Caută pachete"
 msgid "Pending Changes"
 msgstr "Testare modificări"
 
-#. i18n: file: ApperKCM/ApperKCM.ui:281
-#. i18n: ectx: property (text), widget (QToolButton, backTB)
-#: rc.cpp:197
-msgid "Back"
-msgstr ""
-
 #. i18n: file: Sentinel/IntroDialog.ui:65
 #. i18n: ectx: property (text), widget (QLabel, descriptionL)
 #: rc.cpp:209
@@ -4498,60 +4678,19 @@ msgstr "Acțiune"
 msgid "Downloading Packages"
 msgstr "Descărcare pachete"
 
-#, fuzzy
+#. i18n: file: AppSetup/LicensePage.ui:98
+#. i18n: ectx: property (text), widget (QRadioButton, acceptedRB)
+#: rc.cpp:251
+msgid "I agree to the above terms and conditions"
+msgstr ""
 
-
-
-
-
-
-
-#, fuzzy
-
-
-
-
-#, fuzzy
-
-
-
+#. i18n: file: AppSetup/LicensePage.ui:111
+#. i18n: ectx: property (text), widget (QRadioButton, rejectedRB)
+#: rc.cpp:254
+msgid "I don't agree"
+msgstr ""
 
 #, fuzzy
-
-
-
-
-#, fuzzy
-
-
-
-
-
-
-
-#, fuzzy
-
-
-
-
-
-#, fuzzy
-
-
-
-
-
-
-
-
-#, fuzzy
-
-
-
-
-
-
-
 
 
 
@@ -4569,46 +4708,7 @@ msgstr "Descărcare pachete"
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 #, fuzzy
-
-
-
-
-
-
-
-
-
-
-
-
-#, fuzzy
-
-
-
-
-
-
-
-
-#, fuzzy
-
-
-
-
 
 
 
@@ -4636,24 +4736,7 @@ msgstr "Descărcare pachete"
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 #, fuzzy
-
-
-
-
 
 
 
@@ -4673,19 +4756,7 @@ msgstr "Descărcare pachete"
 
 
 
-
-
-
 #, fuzzy
-
-
-
-
-
-
-
-#, fuzzy
-
 
 
 
@@ -4721,34 +4792,11 @@ msgstr "Descărcare pachete"
 
 
 
-#, fuzzy
-
-
 
 
 
 
 #, fuzzy
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -4765,72 +4813,13 @@ msgstr "Descărcare pachete"
 
 
 
-
-
-
-
-
-
-
-#, fuzzy
-
-
-
-
-#, fuzzy
-
-
-
-
-#, fuzzy
-
-
-
-
 #, fuzzy
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 #, fuzzy
-
-
-
-
-
-
-
-
-
-
-#, fuzzy
-
-
-
-
-
-
-
-
-
-
-#, fuzzy
-
-
-
-
 
 
 
@@ -4871,6 +4860,23 @@ msgstr "Descărcare pachete"
 
 
 
+#, fuzzy
+
+
+
+
+
+
+
+#, fuzzy
+
+
+
+
+
+
+
+#, fuzzy
 
 
 
@@ -4881,6 +4887,40 @@ msgstr "Descărcare pachete"
 
 
 
+
+
+
+
+
+
+
+
+#, fuzzy
+
+
+
+
+
+
+
+
+
+
+
+
+#, fuzzy
+
+
+
+
+#, fuzzy
+
+
+
+
+
+
+#, fuzzy
 
 
 
@@ -4920,7 +4960,6 @@ msgstr "Descărcare pachete"
 
 
 
-#, fuzzy
 
 
 
@@ -4931,6 +4970,75 @@ msgstr "Descărcare pachete"
 
 
 #, fuzzy
+
+
+
+
+#, fuzzy
+
+
+
+
+#, fuzzy
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#, fuzzy
+
+
+
+
+
+
+
+
+
+
+#, fuzzy
+
+
+
+
+
+
+
+
+
+
+#, fuzzy
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -4993,6 +5101,87 @@ msgstr "Descărcare pachete"
 
 
 
+#, fuzzy
+
+
+
+
+
+
+
+
+
+
+#, fuzzy
+
+
+
+
+#, fuzzy
+
+
+
+
+#, fuzzy
+
+
+
+
+
+#, fuzzy
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -5188,12 +5377,6 @@ msgstr "Descărcare pachete"
 
 
 
-
-
-
-
-
-#, fuzzy
 
 
 

@@ -20,7 +20,11 @@
 
 #include "AbstractIsRunning.h"
 
+#include <Daemon>
+
 #include <KDebug>
+
+using namespace PackageKit;
 
 AbstractIsRunning::AbstractIsRunning(QObject *parent) :
     QObject(parent),
@@ -52,5 +56,3 @@ bool AbstractIsRunning::isRunning() const
 {
     return m_running > 0;
 }
-
-#include "AbstractIsRunning.moc"

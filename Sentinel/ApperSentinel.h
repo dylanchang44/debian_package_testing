@@ -24,6 +24,7 @@
 #include <KUniqueApplication>
 #include <QTimer>
 
+class RefreshCacheTask;
 class UpdateIcon;
 class DistroUpgrade;
 class TransactionWatcher;
@@ -47,6 +48,7 @@ private:
     QTimer *m_closeT;
 
     TransactionWatcher *m_trayIcon;
+    RefreshCacheTask *m_refreshCache;
     UpdateIcon *m_updateIcon;
     DistroUpgrade *m_distroUpgrade;
 

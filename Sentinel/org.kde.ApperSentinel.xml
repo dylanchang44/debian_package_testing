@@ -3,11 +3,11 @@
    <interface name="org.kde.ApperSentinel">
        <method name="RefreshCache" >
        </method>
-       <method name="Update" >
-       </method>
-       <method name="RefreshAndUpdate" >
+       <method name="CheckForUpdates" >
+           <arg type="b" name="system_ready" direction="in" />
        </method>
        <method name="SetupDebconfDialog" >
+           <arg type="s" name="tid" direction="in" />
            <arg type="s" name="socket_path" direction="in" />
            <arg type="u" name="xid_parent" direction="in" />
        </method>

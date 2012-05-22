@@ -46,11 +46,9 @@ signals:
     void watchTransaction(const QString &tid, bool interactive);
 
 public slots:
-    void refreshAndUpdate(bool doRefresh);
-    void refresh(bool update = false);
+    void checkForUpdates(bool system_ready);
 
 private slots:
-    void update();
     void packageToUpdate(const PackageKit::Package &package);
     void getUpdateFinished();
     void autoUpdatesFinished(PackageKit::Transaction::Exit exit);
@@ -60,13 +58,11 @@ private slots:
     void removeStatusNotifierItem();
 
 private:
-    bool systemIsReady(bool checkUpdates);
+    void updateStatusNotifierIcon(UpdateType type);
 
     Transaction *m_getUpdatesT;
     StatusNotifierItem *m_statusNotifierItem;
     QList<Package> m_updateList;
-
-    void updateStatusNotifierIcon(UpdateType type);
 };
 
 #endif

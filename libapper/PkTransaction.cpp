@@ -32,6 +32,7 @@
 
 #include <KDebug>
 
+#include <QStringBuilder>
 #include <QPropertyAnimation>
 #include <QtDBus/QDBusMessage>
 #include <QtDBus/QDBusConnection>
@@ -203,12 +204,12 @@ void PkTransaction::updatePackages(const QList<Package> &packages)
     }
 }
 
-void PkTransaction::refreshCache()
+void PkTransaction::refreshCache(bool force)
 {
     SET_PROXY
     Transaction *trans = new Transaction(this);
     setTransaction(trans, Transaction::RoleRefreshCache);
-    trans->refreshCache(true);
+    trans->refreshCache(force);
     if (trans->error()) {
         showSorry(i18n("Failed to refresh package cache"),
                   PkStrings::daemonError(trans->error()));
@@ -220,14 +221,18 @@ void PkTransaction::setupTransaction(PackageKit::Transaction *transaction)
     SET_PROXY;
 
 #ifdef HAVE_DEBCONFKDE
+    QString tid;
     QString socket;
-    socket = QLatin1String("/tmp/debconf_") + transaction->tid().remove('/');
+    tid = transaction->tid();
+    // Build a socket path like /tmp/1761_edeceabd_data_debconf
+    socket = QLatin1String("/tmp") % tid % QLatin1String("_debconf");
     QDBusMessage message;
-    message = QDBusMessage::createMethodCall("org.kde.ApperSentinel",
-                                             "/",
-                                             "org.kde.ApperSentinel",
+    message = QDBusMessage::createMethodCall(QLatin1String("org.kde.ApperSentinel"),
+                                             QLatin1String("/"),
+                                             QLatin1String("org.kde.ApperSentinel"),
                                              QLatin1String("SetupDebconfDialog"));
     // Use our own cached tid to avoid crashes
+    message << qVariantFromValue(tid);
     message << qVariantFromValue(socket);
     message << qVariantFromValue(static_cast<uint>(effectiveWinId()));
     QDBusMessage reply = QDBusConnection::sessionBus().call(message);
@@ -235,7 +240,7 @@ void PkTransaction::setupTransaction(PackageKit::Transaction *transaction)
         kWarning() << "Message did not receive a reply";
     }
 
-    transaction->setHints("frontend-socket=" + socket);
+    transaction->setHints(QLatin1String("frontend-socket=") % socket);
 #else
      Q_UNUSED(transaction)
 #endif //HAVE_DEBCONFKDE
@@ -283,7 +288,7 @@ void PkTransaction::updatePackages()
     Transaction *trans = new Transaction(this);
     setupTransaction(trans);
     setTransaction(trans, Transaction::RoleUpdatePackages);
-    trans->updatePackages(d->packages, true);
+    trans->updatePackages(d->packages, d->onlyTrusted);
     if (trans->error()) {
         showSorry(i18n("Failed to update package"),
                   PkStrings::daemonError(trans->error()));
@@ -299,10 +304,7 @@ void PkTransaction::cancel()
 
 void PkTransaction::setTransaction(Transaction *trans, Transaction::Role role)
 {
-    if (!trans) {
-        // 0 pointer passed
-        return;
-    }
+    Q_ASSERT(trans);
 
     m_trans = trans;
     d->role = role;
@@ -326,12 +328,12 @@ void PkTransaction::setTransaction(Transaction *trans, Transaction::Role role)
         role == Transaction::RoleRefreshCache) {
         // DISCONNECT THIS SIGNAL BEFORE SETTING A NEW ONE
         if (role == Transaction::RoleRefreshCache) {
-            connect(m_trans, SIGNAL(repoDetail(const QString &, const QString &, bool)),
-                    ui->progressView, SLOT(currentRepo(const QString &, const QString &)));
+            connect(m_trans, SIGNAL(repoDetail(QString,QString,bool)),
+                    ui->progressView, SLOT(currentRepo(QString,QString,bool)));
             ui->progressView->handleRepo(true);
         } else {
-            connect(m_trans, SIGNAL(package(const PackageKit::Package &)),
-                ui->progressView, SLOT(currentPackage(const PackageKit::Package &)));
+            connect(m_trans, SIGNAL(package(PackageKit::Package)),
+                ui->progressView, SLOT(currentPackage(PackageKit::Package)));
             ui->progressView->handleRepo(false);
         }
 
@@ -363,16 +365,16 @@ void PkTransaction::setTransaction(Transaction *trans, Transaction::Role role)
     updateUi();
 
     // DISCONNECT ALL THESE SIGNALS BEFORE SETTING A NEW ONE
-    connect(m_trans, SIGNAL(finished(PackageKit::Transaction::Exit, uint)),
+    connect(m_trans, SIGNAL(finished(PackageKit::Transaction::Exit,uint)),
             this, SLOT(transactionFinished(PackageKit::Transaction::Exit)));
-    connect(m_trans, SIGNAL(errorCode(PackageKit::Transaction::Error, QString)),
-            this, SLOT(errorCode(PackageKit::Transaction::Error, QString)));
+    connect(m_trans, SIGNAL(errorCode(PackageKit::Transaction::Error,QString)),
+            this, SLOT(errorCode(PackageKit::Transaction::Error,QString)));
     connect(m_trans, SIGNAL(changed()),
             this, SLOT(updateUi()));
     connect(m_trans, SIGNAL(eulaRequired(PackageKit::Eula)),
             this, SLOT(eulaRequired(PackageKit::Eula)));
-    connect(m_trans, SIGNAL(mediaChangeRequired(PackageKit::Transaction::MediaType, QString, QString)),
-            this, SLOT(mediaChangeRequired(PackageKit::Transaction::MediaType, QString, QString)));
+    connect(m_trans, SIGNAL(mediaChangeRequired(PackageKit::Transaction::MediaType,QString,QString)),
+            this, SLOT(mediaChangeRequired(PackageKit::Transaction::MediaType,QString,QString)));
     connect(m_trans, SIGNAL(repoSignatureRequired(PackageKit::Signature)),
             this, SLOT(repoSignatureRequired(PackageKit::Signature)));
     // DISCONNECT ALL THESE SIGNALS BEFORE SETTING A NEW ONE
@@ -386,16 +388,16 @@ void PkTransaction::unsetTransaction()
 
     disconnect(m_trans, SIGNAL(package(PackageKit::Package)),
                d->simulateModel, SLOT(addPackage(PackageKit::Package)));
-    disconnect(m_trans, SIGNAL(finished(PackageKit::Transaction::Exit, uint)),
+    disconnect(m_trans, SIGNAL(finished(PackageKit::Transaction::Exit,uint)),
                this, SLOT(transactionFinished(PackageKit::Transaction::Exit)));
-    disconnect(m_trans, SIGNAL(errorCode(PackageKit::Transaction::Error, QString)),
-               this, SLOT(errorCode(PackageKit::Transaction::Error, QString)));
+    disconnect(m_trans, SIGNAL(errorCode(PackageKit::Transaction::Error,QString)),
+               this, SLOT(errorCode(PackageKit::Transaction::Error,QString)));
     disconnect(m_trans, SIGNAL(changed()),
                this, SLOT(updateUi()));
     disconnect(m_trans, SIGNAL(eulaRequired(PackageKit::Eula)),
                this, SLOT(eulaRequired(PackageKit::Eula)));
-    disconnect(m_trans, SIGNAL(mediaChangeRequired(PackageKit::Transaction::MediaType, QString, QString)),
-               this, SLOT(mediaChangeRequired(PackageKit::Transaction::MediaType, QString, QString)));
+    disconnect(m_trans, SIGNAL(mediaChangeRequired(PackageKit::Transaction::MediaType,QString,QString)),
+               this, SLOT(mediaChangeRequired(PackageKit::Transaction::MediaType,QString,QString)));
     disconnect(m_trans, SIGNAL(repoSignatureRequired(PackageKit::Signature)),
                this, SLOT(repoSignatureRequired(PackageKit::Signature)));
 }
@@ -717,7 +719,7 @@ void PkTransaction::transactionFinished(Transaction::Exit status)
                    d->originalRole != Transaction::UnknownRole) {
             // Let's try to find some desktop files
             Transaction *transaction = new Transaction(this);
-            connect(transaction, SIGNAL(files(PackageKit::Package, QStringList)),
+            connect(transaction, SIGNAL(files(PackageKit::Package,QStringList)),
                     d->launcher, SLOT(files(PackageKit::Package,QStringList)));
             setTransaction(transaction, Transaction::RoleGetFiles);
             transaction->getFiles(d->launcher->packages());

@@ -18,56 +18,32 @@
  *   Boston, MA 02110-1301, USA.                                           *
  ***************************************************************************/
 
-#include "InfoWidget.h"
-#include "ui_InfoWidget.h"
+#ifndef INFO_WIDGET_H
+#define INFO_WIDGET_H
 
-#include <QGroupBox>
+#include <QWidget>
+#include <QAbstractItemModel>
+#include <KIcon>
 
-#include <KTextBrowser>
-#include <KDebug>
-
-InfoWidget::InfoWidget(QWidget *parent) :
-    QWidget(parent),
-    ui(new Ui::InfoWidget)
-{
-    ui->setupUi(this);
-    ui->iconL->setPixmap(KIcon("dialog-warning").pixmap(128, 128));
+namespace Ui {
+    class InfoWidget;
 }
 
-InfoWidget::~InfoWidget()
+class KDE_EXPORT InfoWidget : public QWidget
 {
-    delete ui;
-}
+    Q_OBJECT
+public:
+    InfoWidget(QWidget *parent = 0);
+    ~InfoWidget();
 
-void InfoWidget::setIcon(const KIcon &icon)
-{
-    ui->iconL->setPixmap(icon.pixmap(128, 128));
-}
+    void setDescription(const QString &description);
+    void setIcon(const KIcon &icon);
+    void setDetails(const QString &details);
+    void addWidget(QWidget *widget);
+    void reset();
 
-void InfoWidget::setDescription(const QString &description)
-{
-    ui->descriptionL->setText(description);
-}
+private:
+    Ui::InfoWidget *ui;
+};
 
-void InfoWidget::setDetails(const QString &details)
-{
-    if (!details.isEmpty()) {
-        KTextBrowser *browser = new KTextBrowser(this);
-        browser->setFrameShape(QFrame::NoFrame);
-        browser->setFrameShadow(QFrame::Plain);
-        browser->setStyleSheet("QTextEdit {\nbackground-color: transparent;\n};");
-        browser->setText(details);
-        ui->descriptionLayout->addWidget(browser);
-        ui->descriptionLayout->insertSpacing(0, 20);
-    }
-}
-
-void InfoWidget::addWidget(QWidget *widget)
-{
-    if (widget) {
-        ui->descriptionLayout->insertSpacing(0, 20);
-        ui->descriptionLayout->addWidget(widget);
-    }
-}
-
-#include "InfoWidget.moc"
+#endif

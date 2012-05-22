@@ -28,6 +28,8 @@
 #ifdef HAVE_DEBCONFKDE
 #include <KDialog>
 #include <KWindowSystem>
+#include <Transaction>
+using namespace PackageKit;
 #endif
 
 #include <KDebug>
@@ -50,40 +52,38 @@ DBusInterface::DBusInterface(QObject *parent)
 
 DBusInterface::~DBusInterface()
 {
-    kDebug();
-#ifdef HAVE_DEBCONFKDE
-    foreach (const DebconfGui *gui, m_debconfGuis.values()) {
-        delete gui;
-    }
-#endif //HAVE_DEBCONFKDE
 }
 
 void DBusInterface::RefreshCache()
 {
-    emit refresh();
+    emit refreshCache();
 }
 
-void DBusInterface::Update()
+void DBusInterface::CheckForUpdates(bool system_ready)
 {
-    // This is to show updates when the session
-    // starts and it's not time to refresh the cache
-    emit refreshAndUpdate(false);
+    emit checkForUpdates(system_ready);
 }
 
-void DBusInterface::RefreshAndUpdate()
-{
-    // This is to show updates and refresh the cache
-    emit refreshAndUpdate(true);
-}
-
-void DBusInterface::SetupDebconfDialog(const QString &socketPath, uint xidParent)
+void DBusInterface::SetupDebconfDialog(const QString &tid, const QString &socketPath, uint xidParent)
 {
 #ifdef HAVE_DEBCONFKDE
-    kDebug() << socketPath << xidParent;
+    kDebug() << tid << socketPath << xidParent;
     DebconfGui *gui;
     if (m_debconfGuis.contains(socketPath)) {
         gui = m_debconfGuis[socketPath];
     } else {
+        // Create the Transaction object to delete
+        // the DebconfGui class when the transaction finishes
+        Transaction *transaction = new Transaction(tid);
+        if (transaction->error()) {
+            transaction->deleteLater();
+            return;
+        }
+        transaction->setProperty("socketPath", socketPath);
+        connect(transaction, SIGNAL(finished(PackageKit::Transaction::Exit,uint)),
+                this, SLOT(transactionFinished()));
+
+        // Setup the Debconf dialog
         gui = new DebconfGui(socketPath);
         gui->setWindowModality(Qt::WindowModal);
         gui->setWindowFlags(Qt::Dialog);
@@ -109,6 +109,17 @@ void DBusInterface::debconfActivate()
     KWindowSystem::setMainWindow(gui, xidParent);
     gui->show();
 #endif
+}
+
+void DBusInterface::transactionFinished()
+{
+#ifdef HAVE_DEBCONFKDE
+    QString socketPath = sender()->property("socketPath").toString();
+    if (m_debconfGuis.contains(socketPath)) {
+        // remove the gui from the list and also delete it
+        m_debconfGuis.take(socketPath)->deleteLater();
+    }
+#endif // HAVE_DEBCONFKDE
 }
 
 #include "DBusInterface.moc"

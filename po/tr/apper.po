@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kpackagekit\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-02-18 05:06+0100\n"
+"POT-Creation-Date: 2012-05-20 05:58+0200\n"
 "PO-Revision-Date: 2010-10-14 23:45+0300\n"
 "Last-Translator: Serdar SOYTETİR <tulliana@gmail.com>\n"
 "Language-Team: Turkish <kde-i18n-doc@kde.org>\n"
@@ -27,7 +27,7 @@ msgstr ""
 msgid "Backend Details"
 msgstr "Arka uç ayrıntıları"
 
-#: Apper/main.cpp:54 Sentinel/UpdateIcon.cpp:158 Sentinel/main.cpp:34
+#: Apper/main.cpp:54 Sentinel/UpdateIcon.cpp:113 Sentinel/main.cpp:34
 msgid "Apper"
 msgstr ""
 
@@ -38,7 +38,7 @@ msgid "Apper is an Application to Get and Manage Software"
 msgstr ""
 "KPackageKit yazılımları indirmek ve yönetmek için kullanılan bir uygulamadır"
 
-#: Apper/main.cpp:58 ApperKCM/ApperKCM.cpp:83 Sentinel/main.cpp:38
+#: Apper/main.cpp:58 ApperKCM/ApperKCM.cpp:84 Sentinel/main.cpp:38
 #, fuzzy
 #| msgid "(C) 2008-2010 Daniel Nicoletti"
 msgid "(C) 2008-2011 Daniel Nicoletti"
@@ -97,6 +97,151 @@ msgstr "Tek paket kaldırıcı"
 #: Apper/main.cpp:75
 msgid "Package file to install"
 msgstr "Yüklenecek paket dosyası"
+
+#: ApperKCM/FiltersMenu.cpp:37
+msgid "Collections"
+msgstr "Koleksiyonlar"
+
+#: ApperKCM/FiltersMenu.cpp:44
+msgid "Only collections"
+msgstr "Sadece koleksiyonlar"
+
+#: ApperKCM/FiltersMenu.cpp:51
+msgid "Exclude collections"
+msgstr "Koleksiyonları hariç tut"
+
+#. i18n: file: Apper/BackendDetails.ui:100
+#. i18n: ectx: property (text), widget (QCheckBox, installedCB)
+#: ApperKCM/FiltersMenu.cpp:60 libapper/PkStrings.cpp:362 rc.cpp:23
+msgid "Installed"
+msgstr "Yüklü"
+
+#: ApperKCM/FiltersMenu.cpp:67
+msgid "Only installed"
+msgstr "Sadece kurulu"
+
+#: ApperKCM/FiltersMenu.cpp:74
+msgid "Only available"
+msgstr "Sadece kullanılabilir olanlar"
+
+#: ApperKCM/FiltersMenu.cpp:81 ApperKCM/FiltersMenu.cpp:111
+#: ApperKCM/FiltersMenu.cpp:141 ApperKCM/FiltersMenu.cpp:171
+#: ApperKCM/FiltersMenu.cpp:202 ApperKCM/FiltersMenu.cpp:233
+msgid "No filter"
+msgstr "Filtre yok"
+
+#. i18n: file: Apper/BackendDetails.ui:110
+#. i18n: ectx: property (text), widget (QCheckBox, developmentCB)
+#: ApperKCM/FiltersMenu.cpp:90 rc.cpp:26
+msgid "Development"
+msgstr "Geliştirme"
+
+#: ApperKCM/FiltersMenu.cpp:97
+msgid "Only development"
+msgstr "Sadece geliştirme"
+
+#: ApperKCM/FiltersMenu.cpp:104
+msgid "Only end user files"
+msgstr "Sadece son kullanıcı dosyaları"
+
+#: ApperKCM/FiltersMenu.cpp:120
+msgid "Graphical"
+msgstr "Grafiksel"
+
+#: ApperKCM/FiltersMenu.cpp:127
+msgid "Only graphical"
+msgstr "Sadece grafiksel"
+
+#: ApperKCM/FiltersMenu.cpp:134
+msgid "Only text"
+msgstr "Sadece metin"
+
+#: ApperKCM/FiltersMenu.cpp:150
+msgctxt "Filter for free packages"
+msgid "Free"
+msgstr "Özgür"
+
+#: ApperKCM/FiltersMenu.cpp:157
+msgid "Only free software"
+msgstr "Sadece özgür yazılım"
+
+#: ApperKCM/FiltersMenu.cpp:164
+msgid "Only non-free software"
+msgstr "Sadece özgür olmayan yazılım"
+
+#: ApperKCM/FiltersMenu.cpp:181
+#, fuzzy
+#| msgid "Supported"
+msgctxt "Filter for supported packages"
+msgid "Supported"
+msgstr "Desteklenen"
+
+#: ApperKCM/FiltersMenu.cpp:188
+#, fuzzy
+#| msgid "Only free software"
+msgid "Only supported software"
+msgstr "Sadece özgür yazılım"
+
+#: ApperKCM/FiltersMenu.cpp:195
+#, fuzzy
+#| msgid "Only non-free software"
+msgid "Only non-supported software"
+msgstr "Sadece özgür olmayan yazılım"
+
+#: ApperKCM/FiltersMenu.cpp:212
+msgctxt "Filter for source packages"
+msgid "Source"
+msgstr "Kaynak"
+
+#: ApperKCM/FiltersMenu.cpp:219
+msgid "Only sourcecode"
+msgstr "Sadece kaynak kod"
+
+#: ApperKCM/FiltersMenu.cpp:226
+msgid "Only non-sourcecode"
+msgstr "Sadece kaynak kod olmayan"
+
+#: ApperKCM/FiltersMenu.cpp:248
+#, fuzzy
+#| msgid "Hide subpackages"
+msgid "Hide Subpackages"
+msgstr "Alt paketleri gizle"
+
+#: ApperKCM/FiltersMenu.cpp:250
+msgid "Only show one package, not subpackages"
+msgstr "Sadece bir paket göster, alt paketleri gösterme"
+
+#: ApperKCM/FiltersMenu.cpp:257
+#, fuzzy
+#| msgid "Only newest packages"
+msgid "Only Newest Packages"
+msgstr "Sadece en yeni paketler"
+
+#: ApperKCM/FiltersMenu.cpp:262
+msgid "Only show the newest available package"
+msgstr "Sadece en yeni kullanılabilir paketleri göster"
+
+#: ApperKCM/FiltersMenu.cpp:269
+#, fuzzy
+#| msgid "Only newest packages"
+msgid "Only Native Packages"
+msgstr "Sadece en yeni paketler"
+
+#: ApperKCM/FiltersMenu.cpp:274
+msgid "Only show packages matching the machine architecture"
+msgstr ""
+
+#: ApperKCM/FiltersMenu.cpp:283
+#, fuzzy
+#| msgid "Only show applications"
+msgid "Only Show Applications"
+msgstr "Sadece uygulamaları göster"
+
+#: ApperKCM/FiltersMenu.cpp:286
+#, fuzzy
+#| msgid "Packages are not compatible"
+msgid "Hide packages that are not applications"
+msgstr "Paketler uyumlu değil"
 
 #: ApperKCM/Settings/OriginModel.cpp:39 ApperKCM/Settings/OriginModel.cpp:52
 msgid "Origin of Packages"
@@ -374,211 +519,37 @@ msgstr ""
 msgid "Check for new Updates"
 msgstr "Yeni Güncellemeleri Kontrol Et"
 
-#: ApperKCM/FiltersMenu.cpp:37
-msgid "Collections"
-msgstr "Koleksiyonlar"
+#: ApperKCM/ScreenShotViewer.cpp:90
+msgid "Could not find screen shot."
+msgstr "Ekran görüntüsü bulunamadı."
 
-#: ApperKCM/FiltersMenu.cpp:44
-msgid "Only collections"
-msgstr "Sadece koleksiyonlar"
+#: ApperKCM/CategoryModel.cpp:47
+msgid "Installed Software"
+msgstr "Kurulu Yazılımlar"
 
-#: ApperKCM/FiltersMenu.cpp:51
-msgid "Exclude collections"
-msgstr "Koleksiyonları hariç tut"
+#: ApperKCM/CategoryModel.cpp:50 ApperKCM/CategoryModel.cpp:58
+msgid "Lists"
+msgstr "Listeler"
 
-#. i18n: file: Apper/BackendDetails.ui:100
-#. i18n: ectx: property (text), widget (QCheckBox, installedCB)
-#: ApperKCM/FiltersMenu.cpp:60 libapper/PkStrings.cpp:362 rc.cpp:23
-msgid "Installed"
-msgstr "Yüklü"
-
-#: ApperKCM/FiltersMenu.cpp:67
-msgid "Only installed"
-msgstr "Sadece kurulu"
-
-#: ApperKCM/FiltersMenu.cpp:74
-msgid "Only available"
-msgstr "Sadece kullanılabilir olanlar"
-
-#: ApperKCM/FiltersMenu.cpp:81 ApperKCM/FiltersMenu.cpp:111
-#: ApperKCM/FiltersMenu.cpp:141 ApperKCM/FiltersMenu.cpp:171
-#: ApperKCM/FiltersMenu.cpp:202
-msgid "No filter"
-msgstr "Filtre yok"
-
-#. i18n: file: Apper/BackendDetails.ui:110
-#. i18n: ectx: property (text), widget (QCheckBox, developmentCB)
-#: ApperKCM/FiltersMenu.cpp:90 rc.cpp:26
-msgid "Development"
-msgstr "Geliştirme"
-
-#: ApperKCM/FiltersMenu.cpp:97
-msgid "Only development"
-msgstr "Sadece geliştirme"
-
-#: ApperKCM/FiltersMenu.cpp:104
-msgid "Only end user files"
-msgstr "Sadece son kullanıcı dosyaları"
-
-#: ApperKCM/FiltersMenu.cpp:120
-msgid "Graphical"
-msgstr "Grafiksel"
-
-#: ApperKCM/FiltersMenu.cpp:127
-msgid "Only graphical"
-msgstr "Sadece grafiksel"
-
-#: ApperKCM/FiltersMenu.cpp:134
-msgid "Only text"
-msgstr "Sadece metin"
-
-#: ApperKCM/FiltersMenu.cpp:150
-msgctxt "Filter for free packages"
-msgid "Free"
-msgstr "Özgür"
-
-#: ApperKCM/FiltersMenu.cpp:157
-msgid "Only free software"
-msgstr "Sadece özgür yazılım"
-
-#: ApperKCM/FiltersMenu.cpp:164
-msgid "Only non-free software"
-msgstr "Sadece özgür olmayan yazılım"
-
-#: ApperKCM/FiltersMenu.cpp:181
-msgctxt "Filter for source packages"
-msgid "Source"
-msgstr "Kaynak"
-
-#: ApperKCM/FiltersMenu.cpp:188
-msgid "Only sourcecode"
-msgstr "Sadece kaynak kod"
-
-#: ApperKCM/FiltersMenu.cpp:195
-msgid "Only non-sourcecode"
-msgstr "Sadece kaynak kod olmayan"
-
-#: ApperKCM/FiltersMenu.cpp:217
+#: ApperKCM/CategoryModel.cpp:55
 #, fuzzy
-#| msgid "Hide subpackages"
-msgid "Hide Subpackages"
-msgstr "Alt paketleri gizle"
+#| msgid "Updates:"
+msgid "Updates"
+msgstr "Güncellemeler:"
 
-#: ApperKCM/FiltersMenu.cpp:219
-msgid "Only show one package, not subpackages"
-msgstr "Sadece bir paket göster, alt paketleri gösterme"
+#: ApperKCM/CategoryModel.cpp:155 ApperKCM/CategoryModel.cpp:339
+msgid "Categories"
+msgstr "Kategoriler"
 
-#: ApperKCM/FiltersMenu.cpp:226
-#, fuzzy
-#| msgid "Only newest packages"
-msgid "Only Newest Packages"
-msgstr "Sadece en yeni paketler"
-
-#: ApperKCM/FiltersMenu.cpp:231
-msgid "Only show the newest available package"
-msgstr "Sadece en yeni kullanılabilir paketleri göster"
-
-#: ApperKCM/FiltersMenu.cpp:238
-#, fuzzy
-#| msgid "Only newest packages"
-msgid "Only Native Packages"
-msgstr "Sadece en yeni paketler"
-
-#: ApperKCM/FiltersMenu.cpp:243
-msgid "Only show packages matching the machine architecture"
-msgstr ""
-
-#: ApperKCM/FiltersMenu.cpp:252
-#, fuzzy
-#| msgid "Only show applications"
-msgid "Only Show Applications"
-msgstr "Sadece uygulamaları göster"
-
-#: ApperKCM/FiltersMenu.cpp:255
-#, fuzzy
-#| msgid "Packages are not compatible"
-msgid "Hide packages that are not applications"
-msgstr "Paketler uyumlu değil"
-
-#: ApperKCM/ApperKCM.cpp:79
-#, fuzzy
-#| msgid "Application"
-msgid "Application Manager"
-msgstr "Uygulama"
-
-#: ApperKCM/ApperKCM.cpp:81
-msgid "KDE interface for managing software"
-msgstr "Yazılımları yönetmek için KDE arayüzü"
-
-#: ApperKCM/ApperKCM.cpp:111 ApperKCM/ApperKCM.cpp:292
-msgid "Find"
-msgstr "Bul"
-
-#: ApperKCM/ApperKCM.cpp:206
-msgid "History"
-msgstr "Geçmiş"
-
-#. i18n: file: ApperKCM/Settings/Settings.ui:14
-#. i18n: ectx: property (windowTitle), widget (QWidget, Settings)
-#: ApperKCM/ApperKCM.cpp:212 rc.cpp:140
-msgid "Settings"
-msgstr "Ayarlar"
-
-#: ApperKCM/ApperKCM.cpp:269 ApperKCM/ApperKCM.cpp:270
-#: ApperKCM/ApperKCM.cpp:271 ApperKCM/ApperKCM.cpp:272
-msgid "&Cancel"
-msgstr "&İptal"
-
-#. i18n: file: ApperKCM/ApperKCM.ui:291
-#. i18n: ectx: property (text), widget (QToolButton, backTB)
-#: ApperKCM/ApperKCM.cpp:279 rc.cpp:200
-msgid "Find by &name"
-msgstr "&İsme göre bul"
-
-#. i18n: file: ApperKCM/ApperKCM.ui:301
-#. i18n: ectx: property (text), widget (QToolButton, backTB)
-#: ApperKCM/ApperKCM.cpp:280 rc.cpp:206
-msgid "Find by f&ile name"
-msgstr "D&osya adına göre bul"
-
-#. i18n: file: ApperKCM/ApperKCM.ui:296
-#. i18n: ectx: property (text), widget (QToolButton, backTB)
-#: ApperKCM/ApperKCM.cpp:281 rc.cpp:203
-msgid "Find by &description"
-msgstr "Açıklamaya göre &bul"
-
-#: ApperKCM/ApperKCM.cpp:411
-msgid ""
-"The settings of the current module have changed.\n"
-"Do you want to apply the changes or discard them?"
-msgstr ""
-"Etkin modülde kaydedilmemiş değişiklikler var.\n"
-"Değişiklikleri kaydetmek mi yok saymak mı istiyorsunuz?"
-
-#: ApperKCM/ApperKCM.cpp:413
-#, fuzzy
-#| msgid "Settings"
-msgid "Apply Settings"
-msgstr "Ayarlar"
-
-#: ApperKCM/ApperKCM.cpp:455
-#, fuzzy
-#| msgid "Settings"
-msgid "General Settings"
-msgstr "Ayarlar"
-
-#: ApperKCM/ApperKCM.cpp:456
-#, fuzzy
-#| msgctxt "The group type"
-#| msgid "Software sources"
-msgid "Software Origins"
-msgstr "Yazılım kaynakları"
+#: ApperKCM/CategoryModel.cpp:208
+msgid "Groups"
+msgstr "Gruplar"
 
 #: ApperKCM/PackageDetails.cpp:73
 msgid "Display"
 msgstr "Göster"
 
-#: ApperKCM/PackageDetails.cpp:80
+#: ApperKCM/PackageDetails.cpp:80 AppSetup/SetupWizard.cpp:243
 msgid "Description"
 msgstr "Açıklama"
 
@@ -606,32 +577,6 @@ msgstr ""
 msgid "Applications"
 msgstr "Uygulamalar"
 
-#: ApperKCM/CategoryModel.cpp:47
-msgid "Installed Software"
-msgstr "Kurulu Yazılımlar"
-
-#: ApperKCM/CategoryModel.cpp:50 ApperKCM/CategoryModel.cpp:58
-msgid "Lists"
-msgstr "Listeler"
-
-#: ApperKCM/CategoryModel.cpp:55
-#, fuzzy
-#| msgid "Updates:"
-msgid "Updates"
-msgstr "Güncellemeler:"
-
-#: ApperKCM/CategoryModel.cpp:155 ApperKCM/CategoryModel.cpp:339
-msgid "Categories"
-msgstr "Kategoriler"
-
-#: ApperKCM/CategoryModel.cpp:208
-msgid "Groups"
-msgstr "Gruplar"
-
-#: ApperKCM/ScreenShotViewer.cpp:90
-msgid "Could not find screen shot."
-msgstr "Ekran görüntüsü bulunamadı."
-
 #: ApperKCM/TransactionHistory.cpp:66
 msgid "Refresh transactions list"
 msgstr "Aktarım listesini yenile"
@@ -650,6 +595,7 @@ msgid "Action"
 msgstr "Eylem"
 
 #: ApperKCM/TransactionModel.cpp:48 Sentinel/TransactionWatcher.cpp:308
+#: AppSetup/SetupWizard.cpp:207
 msgid "Details"
 msgstr "Ayrıntılar"
 
@@ -662,13 +608,79 @@ msgstr "Kullanıcı adı"
 msgid "Application"
 msgstr "Uygulama"
 
-#: Sentinel/DistroUpgrade.cpp:69
-msgid "Start upgrade now"
-msgstr "Güncellemeyi şimdi başlatın"
+#: ApperKCM/ApperKCM.cpp:80
+#, fuzzy
+#| msgid "Application"
+msgid "Application Manager"
+msgstr "Uygulama"
 
-#: Sentinel/DistroUpgrade.cpp:114
-msgid "Distribution upgrade finished. "
-msgstr "Dağıtım yükseltme bitti."
+#: ApperKCM/ApperKCM.cpp:82
+msgid "KDE interface for managing software"
+msgstr "Yazılımları yönetmek için KDE arayüzü"
+
+#: ApperKCM/ApperKCM.cpp:112 ApperKCM/ApperKCM.cpp:293
+msgid "Find"
+msgstr "Bul"
+
+#: ApperKCM/ApperKCM.cpp:207
+msgid "History"
+msgstr "Geçmiş"
+
+#. i18n: file: ApperKCM/Settings/Settings.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, Settings)
+#: ApperKCM/ApperKCM.cpp:213 rc.cpp:140
+msgid "Settings"
+msgstr "Ayarlar"
+
+#: ApperKCM/ApperKCM.cpp:270 ApperKCM/ApperKCM.cpp:271
+#: ApperKCM/ApperKCM.cpp:272 ApperKCM/ApperKCM.cpp:273
+msgid "&Cancel"
+msgstr "&İptal"
+
+#. i18n: file: ApperKCM/ApperKCM.ui:291
+#. i18n: ectx: property (text), widget (QToolButton, backTB)
+#: ApperKCM/ApperKCM.cpp:280 rc.cpp:200
+msgid "Find by &name"
+msgstr "&İsme göre bul"
+
+#. i18n: file: ApperKCM/ApperKCM.ui:301
+#. i18n: ectx: property (text), widget (QToolButton, backTB)
+#: ApperKCM/ApperKCM.cpp:281 rc.cpp:206
+msgid "Find by f&ile name"
+msgstr "D&osya adına göre bul"
+
+#. i18n: file: ApperKCM/ApperKCM.ui:296
+#. i18n: ectx: property (text), widget (QToolButton, backTB)
+#: ApperKCM/ApperKCM.cpp:282 rc.cpp:203
+msgid "Find by &description"
+msgstr "Açıklamaya göre &bul"
+
+#: ApperKCM/ApperKCM.cpp:412
+msgid ""
+"The settings of the current module have changed.\n"
+"Do you want to apply the changes or discard them?"
+msgstr ""
+"Etkin modülde kaydedilmemiş değişiklikler var.\n"
+"Değişiklikleri kaydetmek mi yok saymak mı istiyorsunuz?"
+
+#: ApperKCM/ApperKCM.cpp:414
+#, fuzzy
+#| msgid "Settings"
+msgid "Apply Settings"
+msgstr "Ayarlar"
+
+#: ApperKCM/ApperKCM.cpp:456
+#, fuzzy
+#| msgid "Settings"
+msgid "General Settings"
+msgstr "Ayarlar"
+
+#: ApperKCM/ApperKCM.cpp:457
+#, fuzzy
+#| msgctxt "The group type"
+#| msgid "Software sources"
+msgid "Software Origins"
+msgstr "Yazılım kaynakları"
 
 #: Sentinel/PkInstallProvideFiles.cpp:39
 #, fuzzy
@@ -705,7 +717,7 @@ msgstr[0] "%2 paket kurmak istiyor"
 msgid "Failed to start search file transaction"
 msgstr "Dosya aktarımı başlatılamadı"
 
-#: Sentinel/PkInstallProvideFiles.cpp:101 libapper/PkTransaction.cpp:263
+#: Sentinel/PkInstallProvideFiles.cpp:101 libapper/PkTransaction.cpp:268
 msgid "Failed to install file"
 msgid_plural "Failed to install files"
 msgstr[0] "Dosyalar yüklenemedi"
@@ -751,45 +763,6 @@ msgstr "Sağlayıcılar aranamadı"
 #| msgid "Could not find plugin in any configured software source"
 msgid "Could not find printer driver in any configured software source"
 msgstr "Eklenti herhangi bir yazılım kaynağında bulunamadı"
-
-#: Sentinel/UpdateIcon.cpp:160
-msgid "Review Updates"
-msgstr "Güncellemeleri Gözden Geçir"
-
-#: Sentinel/UpdateIcon.cpp:163
-msgid "Configure"
-msgstr "Yapılandır"
-
-#. i18n: file: ApperKCM/PackageDetails.ui:359
-#. i18n: ectx: property (text), widget (QToolButton, hideTB)
-#. i18n: file: ApperKCM/Updater/UpdateDetails.ui:20
-#. i18n: ectx: property (text), widget (QToolButton, hideTB)
-#: Sentinel/UpdateIcon.cpp:167 Sentinel/TransactionWatcher.cpp:186
-#: libapper/PkTransactionDialog.cpp:86 rc.cpp:137 rc.cpp:173
-msgid "Hide"
-msgstr "Gizle"
-
-#: Sentinel/UpdateIcon.cpp:177
-#, kde-format
-msgid "You have one update"
-msgid_plural "You have %1 updates"
-msgstr[0] "%1 güncellemeniz var"
-
-#: Sentinel/UpdateIcon.cpp:230
-msgid "Updates are being automatically installed."
-msgstr "Güncellemeler otomatik olarak yükleniyor."
-
-#: Sentinel/UpdateIcon.cpp:251
-msgid "Security updates are being automatically installed."
-msgstr "Güvenlik güncellemeleri otomatik olarak yükleniyor."
-
-#: Sentinel/UpdateIcon.cpp:278
-msgid "System update was successful."
-msgstr "Sistem güncellemesi başarılı oldu."
-
-#: Sentinel/UpdateIcon.cpp:287
-msgid "The automated software update failed."
-msgstr "Otomatik yazılım güncellemesi başarısız oldu."
 
 #: Sentinel/ReviewChanges.cpp:52
 msgid "The following package was found"
@@ -944,7 +917,73 @@ msgstr "Katalog yükleyici"
 msgid "Could not find any package to install in this catalog"
 msgstr "<h3>Bu katalogları yüklemek istiyor musunuz?</h3><ul><li>%2</li></ul>"
 
+#: Sentinel/PkInstallPackageFiles.cpp:38
+#, fuzzy
+#| msgid "Install Packages"
+msgid "Install Packages Files"
+msgstr "Paketleri Kur"
+
+#: Sentinel/PkInstallPackageFiles.cpp:42
+#: Sentinel/PkRemovePackageByFiles.cpp:43
+msgid "You can drop more files in here"
+msgstr ""
+
+#: Sentinel/PkInstallPackageFiles.cpp:52
+#, fuzzy
+#| msgid "Not supported"
+msgid "Not Supported"
+msgstr "Desteklenmeyen"
+
+#: Sentinel/PkInstallPackageFiles.cpp:53
+#, fuzzy
+#| msgid "Current backend does not support installing packages."
+msgid "Your current backend does not support installing files"
+msgstr "Geçerli arka uç paket yüklemeyi desteklemiyor."
+
+#: Sentinel/PkInstallPackageFiles.cpp:68
+#: Sentinel/PkRemovePackageByFiles.cpp:64
+#, fuzzy
+#| msgid "No files were found."
+msgid "No supported files were provided"
+msgstr "Hiç dosya bulunamadı."
+
+#: Sentinel/PkInstallPackageFiles.cpp:70
+#, fuzzy
+#| msgid "Do you want to install this file?"
+#| msgid_plural "Do you want to install these files?"
+msgid "Press <i>Continue</i> if you want to install this file"
+msgid_plural "Press <i>Continue</i> if you want to install these files"
+msgstr[0] "Bu %1 dosyayı yüklemek istiyor musunuz?"
+
+#: Sentinel/PkInstallPackageFiles.cpp:105
+#, fuzzy
+#| msgctxt "The role of the transaction, in present tense"
+#| msgid "Installing file"
+msgid "Installation Complete"
+msgstr "Dosya yükleniyor"
+
+#: Sentinel/PkInstallPackageFiles.cpp:106
+msgid "File was installed successfully"
+msgid_plural "Files were installed successfully"
+msgstr[0] "Dosyalar başarılı bir şekilde yüklendi"
+
+#: Sentinel/PkInstallPackageFiles.cpp:117
+#, fuzzy
+#| msgid "Failed to install file"
+#| msgid_plural "Failed to install files"
+msgid "Failed to install files"
+msgstr "Dosyalar yüklenemedi"
+
+#: Sentinel/PkInstallPackageFiles.cpp:118
+#: Sentinel/PkInstallPackageFiles.cpp:120
+#, fuzzy
+#| msgid "Failed to install file"
+#| msgid_plural "Failed to install files"
+msgid "Could not install files"
+msgstr "Dosyalar yüklenemedi"
+
 #: Sentinel/SessionTask.cpp:66 libapper/Requirements.cpp:44
+#: AppSetup/SetupWizard.cpp:139
 msgid "Continue"
 msgstr "Devam Et"
 
@@ -995,6 +1034,73 @@ msgstr "Gereksiz Olarak İşaretlendi"
 msgid "All operations were committed successfully"
 msgstr "Dosyalar başarılı bir şekilde yüklendi"
 
+#: Sentinel/UpdateIcon.cpp:115
+msgid "Review Updates"
+msgstr "Güncellemeleri Gözden Geçir"
+
+#: Sentinel/UpdateIcon.cpp:118
+msgid "Configure"
+msgstr "Yapılandır"
+
+#. i18n: file: ApperKCM/PackageDetails.ui:359
+#. i18n: ectx: property (text), widget (QToolButton, hideTB)
+#. i18n: file: ApperKCM/Updater/UpdateDetails.ui:20
+#. i18n: ectx: property (text), widget (QToolButton, hideTB)
+#: Sentinel/UpdateIcon.cpp:122 Sentinel/TransactionWatcher.cpp:186
+#: libapper/PkTransactionDialog.cpp:86 rc.cpp:137 rc.cpp:173
+msgid "Hide"
+msgstr "Gizle"
+
+#: Sentinel/UpdateIcon.cpp:132
+#, kde-format
+msgid "You have one update"
+msgid_plural "You have %1 updates"
+msgstr[0] "%1 güncellemeniz var"
+
+#: Sentinel/UpdateIcon.cpp:192
+msgid "Updates are being automatically installed."
+msgstr "Güncellemeler otomatik olarak yükleniyor."
+
+#: Sentinel/UpdateIcon.cpp:213
+msgid "Security updates are being automatically installed."
+msgstr "Güvenlik güncellemeleri otomatik olarak yükleniyor."
+
+#: Sentinel/UpdateIcon.cpp:240
+msgid "System update was successful."
+msgstr "Sistem güncellemesi başarılı oldu."
+
+#: Sentinel/UpdateIcon.cpp:249
+msgid "The automated software update failed."
+msgstr "Otomatik yazılım güncellemesi başarısız oldu."
+
+#: Sentinel/PkIsInstalled.cpp:36
+#, fuzzy
+#| msgid "The package is not installed"
+msgid "Querying if a Package is Installed"
+msgstr "Paket kurulu değil"
+
+#: Sentinel/PkIsInstalled.cpp:67
+msgid "User canceled the transaction"
+msgstr "Kullanıcı aktarımı iptal etti"
+
+#: Sentinel/PkIsInstalled.cpp:69
+msgid "An unknown error happened"
+msgstr "Bilinmeyen bir hata oluştu"
+
+#: Sentinel/TransactionTrayIcon.cpp:45
+msgid "Transactions"
+msgstr "Aktarımlar"
+
+#: Sentinel/TransactionTrayIcon.cpp:90
+#, kde-format
+msgid "%1% - %2"
+msgstr "%1% - %2"
+
+#: Sentinel/TransactionTrayIcon.cpp:92
+#, kde-format
+msgid "%1"
+msgstr "%1"
+
 #: Sentinel/TransactionWatcher.cpp:66 Sentinel/TransactionWatcher.cpp:265
 msgid "Hide this icon"
 msgstr "Bu simgeyi gizle"
@@ -1037,34 +1143,6 @@ msgstr "İletileri göster"
 #: Sentinel/TransactionWatcher.cpp:308
 msgid "Ignore"
 msgstr "Yoksay"
-
-#: Sentinel/PkIsInstalled.cpp:36
-#, fuzzy
-#| msgid "The package is not installed"
-msgid "Querying if a Package is Installed"
-msgstr "Paket kurulu değil"
-
-#: Sentinel/PkIsInstalled.cpp:67
-msgid "User canceled the transaction"
-msgstr "Kullanıcı aktarımı iptal etti"
-
-#: Sentinel/PkIsInstalled.cpp:69
-msgid "An unknown error happened"
-msgstr "Bilinmeyen bir hata oluştu"
-
-#: Sentinel/TransactionTrayIcon.cpp:45
-msgid "Transactions"
-msgstr "Aktarımlar"
-
-#: Sentinel/TransactionTrayIcon.cpp:90
-#, kde-format
-msgid "%1% - %2"
-msgstr "%1% - %2"
-
-#: Sentinel/TransactionTrayIcon.cpp:92
-#, kde-format
-msgid "%1"
-msgstr "%1"
 
 #: Sentinel/PkInstallPlasmaResources.cpp:40
 #, fuzzy
@@ -1186,71 +1264,6 @@ msgstr "Ayarlar"
 msgid "Trever Fischer"
 msgstr "Trever Fisher"
 
-#: Sentinel/PkInstallPackageFiles.cpp:38
-#, fuzzy
-#| msgid "Install Packages"
-msgid "Install Packages Files"
-msgstr "Paketleri Kur"
-
-#: Sentinel/PkInstallPackageFiles.cpp:42
-#: Sentinel/PkRemovePackageByFiles.cpp:43
-msgid "You can drop more files in here"
-msgstr ""
-
-#: Sentinel/PkInstallPackageFiles.cpp:52
-#, fuzzy
-#| msgid "Not supported"
-msgid "Not Supported"
-msgstr "Desteklenmeyen"
-
-#: Sentinel/PkInstallPackageFiles.cpp:53
-#, fuzzy
-#| msgid "Current backend does not support installing packages."
-msgid "Your current backend does not support installing files"
-msgstr "Geçerli arka uç paket yüklemeyi desteklemiyor."
-
-#: Sentinel/PkInstallPackageFiles.cpp:68
-#: Sentinel/PkRemovePackageByFiles.cpp:64
-#, fuzzy
-#| msgid "No files were found."
-msgid "No supported files were provided"
-msgstr "Hiç dosya bulunamadı."
-
-#: Sentinel/PkInstallPackageFiles.cpp:70
-#, fuzzy
-#| msgid "Do you want to install this file?"
-#| msgid_plural "Do you want to install these files?"
-msgid "Press <i>Continue</i> if you want to install this file"
-msgid_plural "Press <i>Continue</i> if you want to install these files"
-msgstr[0] "Bu %1 dosyayı yüklemek istiyor musunuz?"
-
-#: Sentinel/PkInstallPackageFiles.cpp:105
-#, fuzzy
-#| msgctxt "The role of the transaction, in present tense"
-#| msgid "Installing file"
-msgid "Installation Complete"
-msgstr "Dosya yükleniyor"
-
-#: Sentinel/PkInstallPackageFiles.cpp:106
-msgid "File was installed successfully"
-msgid_plural "Files were installed successfully"
-msgstr[0] "Dosyalar başarılı bir şekilde yüklendi"
-
-#: Sentinel/PkInstallPackageFiles.cpp:117
-#, fuzzy
-#| msgid "Failed to install file"
-#| msgid_plural "Failed to install files"
-msgid "Failed to install files"
-msgstr "Dosyalar yüklenemedi"
-
-#: Sentinel/PkInstallPackageFiles.cpp:118
-#: Sentinel/PkInstallPackageFiles.cpp:120
-#, fuzzy
-#| msgid "Failed to install file"
-#| msgid_plural "Failed to install files"
-msgid "Could not install files"
-msgstr "Dosyalar yüklenemedi"
-
 #: Sentinel/PkRemovePackageByFiles.cpp:40
 #, fuzzy
 #| msgid "Remove Packages"
@@ -1325,6 +1338,14 @@ msgstr "Paketlerin ayrıntılarında ara"
 #: Sentinel/PkSearchFile.cpp:80
 msgid "The file name could not be found in any software source"
 msgstr "Dosya adı herhangi bir yazılım kaynağında bulunamadı"
+
+#: Sentinel/DistroUpgrade.cpp:69
+msgid "Start upgrade now"
+msgstr "Güncellemeyi şimdi başlatın"
+
+#: Sentinel/DistroUpgrade.cpp:114
+msgid "Distribution upgrade finished. "
+msgstr "Dağıtım yükseltme bitti."
 
 #: Sentinel/PkInstallFontconfigResources.cpp:41
 #, fuzzy
@@ -1445,6 +1466,53 @@ msgstr "Hiç dosya bulunamadı."
 #: Sentinel/PkInstallGStreamerResources.cpp:149
 msgid "Could not find plugin in any configured software source"
 msgstr "Eklenti herhangi bir yazılım kaynağında bulunamadı"
+
+#: libapper/PackageModel.cpp:182
+#, fuzzy
+#| msgid "name"
+msgid "Name"
+msgstr "isim"
+
+#: libapper/PackageModel.cpp:184 libapper/SimulateModel.cpp:141
+msgid "Version"
+msgstr "Sürüm"
+
+#: libapper/PackageModel.cpp:186
+#, fuzzy
+#| msgctxt "The role of the transaction, in past tense"
+#| msgid "Installed signature"
+msgid "Installed Version"
+msgstr "Yüklenmiş imza"
+
+#: libapper/PackageModel.cpp:188
+msgid "Arch"
+msgstr ""
+
+#: libapper/PackageModel.cpp:190
+#, fuzzy
+#| msgid "Edit Origins"
+msgid "Origin"
+msgstr "Kaynakları Düzenle"
+
+#: libapper/PackageModel.cpp:192
+msgid "Size"
+msgstr "Boyut"
+
+#: libapper/PackageModel.cpp:283
+#, fuzzy, kde-format
+#| msgid "Architectures"
+msgid ""
+"Version: %1\n"
+"Architecture: %2"
+msgstr "Mimarlık"
+
+#: libapper/PackageModel.cpp:329
+msgid "To be Removed"
+msgstr "Kaldırılacak"
+
+#: libapper/PackageModel.cpp:331
+msgid "To be Installed"
+msgstr "Kurulacak"
 
 #: libapper/ChangesDelegate.cpp:45
 #, fuzzy
@@ -2303,7 +2371,7 @@ msgstr "Paket bu sistem ile uyumsuz"
 msgid "No space is left on the disk"
 msgstr "Disk üzerinde boş alan yok"
 
-#: libapper/PkStrings.cpp:477 libapper/PkTransaction.cpp:579
+#: libapper/PkStrings.cpp:477 libapper/PkTransaction.cpp:581
 msgid "A media change is required"
 msgstr "Ortam değiştirmeniz gerekiyor"
 
@@ -3287,6 +3355,97 @@ msgstr "Packagekitd servisi ile iletişim kurulamadı."
 msgid "An unknown error happened."
 msgstr "Bilinmeyen bir hata oluştu."
 
+#: libapper/PkTransaction.cpp:123
+#, fuzzy
+#| msgid "Failed to simulate package install"
+msgid "Failed to simulate file install"
+msgstr "Paket kurma benzetimi yapılamadı"
+
+#: libapper/PkTransaction.cpp:130
+#, fuzzy
+#| msgid "Current backend does not support installing packages."
+msgid "Current backend does not support installing files."
+msgstr "Geçerli arka uç paket yüklemeyi desteklemiyor."
+
+#: libapper/PkTransaction.cpp:130 libapper/PkTransaction.cpp:154
+#: libapper/PkTransaction.cpp:180 libapper/PkTransaction.cpp:203
+#: AppSetup/SetupWizard.cpp:107
+msgid "Error"
+msgstr ""
+
+#: libapper/PkTransaction.cpp:147
+msgid "Failed to simulate package install"
+msgstr "Paket kurma benzetimi yapılamadı"
+
+#: libapper/PkTransaction.cpp:154
+msgid "Current backend does not support installing packages."
+msgstr "Geçerli arka uç paket yüklemeyi desteklemiyor."
+
+#: libapper/PkTransaction.cpp:172
+msgid "Failed to simulate package removal"
+msgstr "Paket kaldırma benzetimi yapılamadı"
+
+#: libapper/PkTransaction.cpp:180
+msgid "The current backend does not support removing packages."
+msgstr "Geçerli arka uç paketlerin kaldırılmasını desteklemiyor."
+
+#: libapper/PkTransaction.cpp:196
+#, fuzzy
+#| msgid "Failed to simulate package removal"
+msgid "Failed to simulate package update"
+msgstr "Paket kaldırma benzetimi yapılamadı"
+
+#: libapper/PkTransaction.cpp:203
+#, fuzzy
+#| msgid "The current backend does not support removing packages."
+msgid "The current backend does not support updating packages."
+msgstr "Geçerli arka uç paketlerin kaldırılmasını desteklemiyor."
+
+#: libapper/PkTransaction.cpp:214
+#, fuzzy
+#| msgid "Failed to refresh package lists"
+msgid "Failed to refresh package cache"
+msgstr "Paket listeleri yenilenemedi"
+
+#: libapper/PkTransaction.cpp:256
+msgid "Failed to install package"
+msgstr "Paket kurulamadı"
+
+#: libapper/PkTransaction.cpp:281
+msgid "Failed to remove package"
+msgstr "Paket kaldırılamadı"
+
+#: libapper/PkTransaction.cpp:293
+#, fuzzy
+#| msgid "Failed to find package"
+msgid "Failed to update package"
+msgstr "Paket bulunamadı"
+
+#: libapper/PkTransaction.cpp:461
+#, kde-format
+msgid "Downloading packages at %1/s"
+msgstr "Paketler %1/s hızıyla indiriliyor"
+
+#: libapper/PkTransaction.cpp:509
+msgid ""
+"You are about to install unsigned packages that can compromise your system, "
+"as it is impossible to verify if the software came from a trusted source.\n"
+"\n"
+"Are you sure you want to proceed with the installation?"
+msgstr ""
+"İmzalanmamış paketlerin kurulması, yazılımın güvenli bir kaynaktan gelip "
+"gelmediğini doğrulamanın imkansız olmasından dolayı sisteminizi tehlikeye "
+"atabilir.\n"
+"Kuruluma devam etmek istediğinizden emin misiniz?"
+
+#: libapper/PkTransaction.cpp:512
+msgid "Installing unsigned software"
+msgstr "İmzalanmamış yazılım yükleniyor"
+
+#: libapper/PkTransaction.cpp:566 libapper/PkTransaction.cpp:620
+msgid "Failed to install signature"
+msgstr "İmza yüklenemedi"
+
 #: libapper/PkTransactionDialog.cpp:88
 msgid ""
 "Allows you to hide the window whilst keeping the transaction task running."
@@ -3297,10 +3456,6 @@ msgstr ""
 #: libapper/SimulateModel.cpp:139
 msgid "Package"
 msgstr "Paket"
-
-#: libapper/SimulateModel.cpp:141 libapper/PackageModel.cpp:184
-msgid "Version"
-msgstr "Sürüm"
 
 #: libapper/ApplicationLauncher.cpp:95
 #, fuzzy
@@ -3326,49 +3481,6 @@ msgstr "Lisans Sözleşmesi Gerekli"
 #, kde-format
 msgid "License required for %1 by %2"
 msgstr "%2 tarafından %1 için lisans gerekli"
-
-#: libapper/PackageModel.cpp:182
-#, fuzzy
-#| msgid "name"
-msgid "Name"
-msgstr "isim"
-
-#: libapper/PackageModel.cpp:186
-#, fuzzy
-#| msgctxt "The role of the transaction, in past tense"
-#| msgid "Installed signature"
-msgid "Installed Version"
-msgstr "Yüklenmiş imza"
-
-#: libapper/PackageModel.cpp:188
-msgid "Arch"
-msgstr ""
-
-#: libapper/PackageModel.cpp:190
-#, fuzzy
-#| msgid "Edit Origins"
-msgid "Origin"
-msgstr "Kaynakları Düzenle"
-
-#: libapper/PackageModel.cpp:192
-msgid "Size"
-msgstr "Boyut"
-
-#: libapper/PackageModel.cpp:283
-#, fuzzy, kde-format
-#| msgid "Architectures"
-msgid ""
-"Version: %1\n"
-"Architecture: %2"
-msgstr "Mimarlık"
-
-#: libapper/PackageModel.cpp:329
-msgid "To be Removed"
-msgstr "Kaldırılacak"
-
-#: libapper/PackageModel.cpp:331
-msgid "To be Installed"
-msgstr "Kurulacak"
 
 #: libapper/Requirements.cpp:42
 msgid "Additional changes"
@@ -3404,96 +3516,6 @@ msgid "1 package to update"
 msgid_plural "%1 packages to update"
 msgstr[0] "%1 paket güncellenecek"
 
-#: libapper/PkTransaction.cpp:122
-#, fuzzy
-#| msgid "Failed to simulate package install"
-msgid "Failed to simulate file install"
-msgstr "Paket kurma benzetimi yapılamadı"
-
-#: libapper/PkTransaction.cpp:129
-#, fuzzy
-#| msgid "Current backend does not support installing packages."
-msgid "Current backend does not support installing files."
-msgstr "Geçerli arka uç paket yüklemeyi desteklemiyor."
-
-#: libapper/PkTransaction.cpp:129 libapper/PkTransaction.cpp:153
-#: libapper/PkTransaction.cpp:179 libapper/PkTransaction.cpp:202
-msgid "Error"
-msgstr ""
-
-#: libapper/PkTransaction.cpp:146
-msgid "Failed to simulate package install"
-msgstr "Paket kurma benzetimi yapılamadı"
-
-#: libapper/PkTransaction.cpp:153
-msgid "Current backend does not support installing packages."
-msgstr "Geçerli arka uç paket yüklemeyi desteklemiyor."
-
-#: libapper/PkTransaction.cpp:171
-msgid "Failed to simulate package removal"
-msgstr "Paket kaldırma benzetimi yapılamadı"
-
-#: libapper/PkTransaction.cpp:179
-msgid "The current backend does not support removing packages."
-msgstr "Geçerli arka uç paketlerin kaldırılmasını desteklemiyor."
-
-#: libapper/PkTransaction.cpp:195
-#, fuzzy
-#| msgid "Failed to simulate package removal"
-msgid "Failed to simulate package update"
-msgstr "Paket kaldırma benzetimi yapılamadı"
-
-#: libapper/PkTransaction.cpp:202
-#, fuzzy
-#| msgid "The current backend does not support removing packages."
-msgid "The current backend does not support updating packages."
-msgstr "Geçerli arka uç paketlerin kaldırılmasını desteklemiyor."
-
-#: libapper/PkTransaction.cpp:213
-#, fuzzy
-#| msgid "Failed to refresh package lists"
-msgid "Failed to refresh package cache"
-msgstr "Paket listeleri yenilenemedi"
-
-#: libapper/PkTransaction.cpp:251
-msgid "Failed to install package"
-msgstr "Paket kurulamadı"
-
-#: libapper/PkTransaction.cpp:276
-msgid "Failed to remove package"
-msgstr "Paket kaldırılamadı"
-
-#: libapper/PkTransaction.cpp:288
-#, fuzzy
-#| msgid "Failed to find package"
-msgid "Failed to update package"
-msgstr "Paket bulunamadı"
-
-#: libapper/PkTransaction.cpp:459
-#, kde-format
-msgid "Downloading packages at %1/s"
-msgstr "Paketler %1/s hızıyla indiriliyor"
-
-#: libapper/PkTransaction.cpp:507
-msgid ""
-"You are about to install unsigned packages that can compromise your system, "
-"as it is impossible to verify if the software came from a trusted source.\n"
-"\n"
-"Are you sure you want to proceed with the installation?"
-msgstr ""
-"İmzalanmamış paketlerin kurulması, yazılımın güvenli bir kaynaktan gelip "
-"gelmediğini doğrulamanın imkansız olmasından dolayı sisteminizi tehlikeye "
-"atabilir.\n"
-"Kuruluma devam etmek istediğinizden emin misiniz?"
-
-#: libapper/PkTransaction.cpp:510
-msgid "Installing unsigned software"
-msgstr "İmzalanmamış yazılım yükleniyor"
-
-#: libapper/PkTransaction.cpp:564 libapper/PkTransaction.cpp:618
-msgid "Failed to install signature"
-msgstr "İmza yüklenemedi"
-
 #. i18n: file: libapper/RepoSig.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, RepoSig)
 #: libapper/RepoSig.cpp:40 rc.cpp:218
@@ -3507,6 +3529,169 @@ msgstr "Yükle"
 #: libapper/ApplicationsDelegate.cpp:42
 msgid "Remove"
 msgstr "Kaldır"
+
+#: AppSetup/main.cpp:34 AppSetup/main.cpp:35
+#, fuzzy
+#| msgid "Application"
+msgid "KDE Application Installer"
+msgstr "Uygulama"
+
+#: AppSetup/main.cpp:36
+msgid "(C) 2012, Matthias Klumpp"
+msgstr ""
+
+#: AppSetup/main.cpp:38
+#, fuzzy
+#| msgid "Daniel Nicoletti"
+msgctxt "@info:credit"
+msgid "Daniel Nicoletti"
+msgstr "Daniel Nicoletti"
+
+#: AppSetup/main.cpp:38 AppSetup/main.cpp:40
+#, fuzzy
+#| msgid "Development"
+msgid "Developer"
+msgstr "Geliştirme"
+
+#: AppSetup/main.cpp:40
+msgctxt "@info:credit"
+msgid "Matthias Klumpp"
+msgstr ""
+
+#: AppSetup/main.cpp:47
+#, fuzzy
+#| msgctxt "transaction state, getting data from a server"
+#| msgid "Getting information"
+msgid "Show verbose information"
+msgstr "Bilgi alınıyor"
+
+#: AppSetup/main.cpp:48
+#, fuzzy
+#| msgid "Invalid package file"
+msgid "IPK package filename"
+msgstr "Geçersiz paket dosyası"
+
+#: AppSetup/main.cpp:75
+msgid "Sorry, we didn't get an existing IPK package as parameter."
+msgstr ""
+
+#: AppSetup/main.cpp:76
+#, fuzzy
+#| msgid "The package was not found"
+msgid "Package not found!"
+msgstr "Paket bulunamadı"
+
+#: AppSetup/SetupWizard.cpp:92
+#, fuzzy
+#| msgctxt "The role of the transaction, in present tense"
+#| msgid "Installing file"
+msgid "Installation finished!"
+msgstr "Dosya yükleniyor"
+
+#: AppSetup/SetupWizard.cpp:93
+#, fuzzy, kde-format
+#| msgid "File was installed successfully"
+#| msgid_plural "Files were installed successfully"
+msgid "%1 has been installed successfully!"
+msgstr "Dosyalar başarılı bir şekilde yüklendi"
+
+#: AppSetup/SetupWizard.cpp:108
+#, fuzzy
+#| msgid "An error occurred."
+msgid "An error occurred"
+msgstr "Bir hata oluştu."
+
+#. i18n: file: ApperKCM/ApperKCM.ui:281
+#. i18n: ectx: property (text), widget (QToolButton, backTB)
+#: AppSetup/SetupWizard.cpp:141 rc.cpp:197
+msgid "Back"
+msgstr "Geri"
+
+#: AppSetup/SetupWizard.cpp:196
+msgid "Welcome!"
+msgstr ""
+
+#: AppSetup/SetupWizard.cpp:197
+#, fuzzy, kde-format
+#| msgctxt "The role of the transaction, in past tense"
+#| msgid "Got old transactions"
+msgid "Welcome to the installation of %1!"
+msgstr "Önceki aktarımlar alındı"
+
+#: AppSetup/SetupWizard.cpp:198
+msgid ""
+"Please be careful while installing 3rd-party applications.<br>They may "
+"eventually <b>damage</b> your system or have <b>malicious behaviour</b>, "
+"like spying out your passwords.<br>Please do only install this software if "
+"you <b>trust the publisher and the author</b> of it."
+msgstr ""
+
+#: AppSetup/SetupWizard.cpp:208
+#, fuzzy
+#| msgctxt "The role of the transaction, in past tense"
+#| msgid "Got old transactions"
+msgid "Details about this installation"
+msgstr "Önceki aktarımlar alındı"
+
+#: AppSetup/SetupWizard.cpp:235
+msgid "Install for all users (as root)"
+msgstr ""
+
+#: AppSetup/SetupWizard.cpp:242
+#, fuzzy
+#| msgid "Applications"
+msgid "Application description"
+msgstr "Uygulamalar"
+
+#: AppSetup/SetupWizard.cpp:251
+#, fuzzy
+#| msgctxt "The group type"
+#| msgid "Software sources"
+msgid "Software license"
+msgstr "Yazılım kaynakları"
+
+#: AppSetup/SetupWizard.cpp:252
+#, fuzzy
+#| msgid "Please read the following important information before continuing:"
+msgid "Please read the following terms and conditions carefully!"
+msgstr "Lütfen devam etmeden önce aşağıdaki önemli bilgiyi okuyun:"
+
+#: AppSetup/SetupWizard.cpp:259
+#, fuzzy
+#| msgctxt "transaction state, scanning for running processes"
+#| msgid "Scanning installed applications"
+msgid "Running installation"
+msgstr "Kurulu uygulamalar taranıyor"
+
+#: AppSetup/SetupWizard.cpp:260
+#, fuzzy, kde-format
+#| msgid "Installing"
+msgid "Installing %1..."
+msgstr "Kuruluyor"
+
+#: AppSetup/SetupWizard.cpp:297
+msgid ""
+"Installing this package will make the following native packages obsolete. "
+"You might consider removing them manually."
+msgstr ""
+
+#: AppSetup/SetupWizard.cpp:298
+#, fuzzy
+#| msgid "Simulate Update Packages"
+msgid "Similar native packages found"
+msgstr "Paket Güncelleme İşleminin Benzetimini Yap"
+
+#: AppSetup/SetupWizard.cpp:364
+msgid ""
+"You want to install this application as root!\n"
+"This can damage your system or install malicious software for all users.\n"
+"Please only proceed, if you really know what you're doing!\n"
+"Continue?"
+msgstr ""
+
+#: AppSetup/SetupWizard.cpp:367
+msgid "Really install as superuser?"
+msgstr ""
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
@@ -3856,12 +4041,6 @@ msgstr "Paket ara"
 msgid "Pending Changes"
 msgstr "Bekleyen Değişiklikler"
 
-#. i18n: file: ApperKCM/ApperKCM.ui:281
-#. i18n: ectx: property (text), widget (QToolButton, backTB)
-#: rc.cpp:197
-msgid "Back"
-msgstr "Geri"
-
 #. i18n: file: Sentinel/IntroDialog.ui:65
 #. i18n: ectx: property (text), widget (QLabel, descriptionL)
 #: rc.cpp:209
@@ -3938,22 +4117,17 @@ msgstr "simge"
 msgid "Downloading Packages"
 msgstr "Paketler İndiriliyor"
 
+#. i18n: file: AppSetup/LicensePage.ui:98
+#. i18n: ectx: property (text), widget (QRadioButton, acceptedRB)
+#: rc.cpp:251
+msgid "I agree to the above terms and conditions"
+msgstr ""
 
-
-
-
-
-
-#, fuzzy
-
-
-
-
-
-
-
-
-
+#. i18n: file: AppSetup/LicensePage.ui:111
+#. i18n: ectx: property (text), widget (QRadioButton, rejectedRB)
+#: rc.cpp:254
+msgid "I don't agree"
+msgstr ""
 
 
 
@@ -3962,32 +4136,6 @@ msgstr "Paketler İndiriliyor"
 
 
 #, fuzzy
-
-
-
-
-
-#, fuzzy
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -4010,27 +4158,7 @@ msgstr "Paketler İndiriliyor"
 
 
 
-
 #, fuzzy
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -4074,32 +4202,6 @@ msgstr "Paketler İndiriliyor"
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #, fuzzy
 
 
@@ -4112,110 +4214,6 @@ msgstr "Paketler İndiriliyor"
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-#, fuzzy
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#, fuzzy
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#, fuzzy
-
-
-
-
-
-
-
-
-
-
-#, fuzzy
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#, fuzzy
 
 
 
@@ -4293,6 +4291,196 @@ msgstr "Paketler İndiriliyor"
 
 
 
+#, fuzzy
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#, fuzzy
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#, fuzzy
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#, fuzzy
+
+
+
+
+
+
+
+
+
+
+#, fuzzy
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#, fuzzy
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#, fuzzy
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -4463,12 +4651,6 @@ msgstr "Paketler İndiriliyor"
 
 
 
-
-
-
-
-
-#, fuzzy
 
 
 

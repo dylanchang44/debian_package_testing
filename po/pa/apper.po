@@ -2,13 +2,13 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
 #
-# A S Alam <aalam@users.sf.net>, 2008, 2009, 2010, 2011.
+# A S Alam <aalam@users.sf.net>, 2008, 2009, 2010, 2011, 2012.
 msgid ""
 msgstr ""
 "Project-Id-Version: kpackagekit\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-02-18 05:06+0100\n"
-"PO-Revision-Date: 2011-09-11 23:02+0530\n"
+"POT-Creation-Date: 2012-05-20 05:58+0200\n"
+"PO-Revision-Date: 2012-04-30 22:14+0530\n"
 "Last-Translator: A S Alam <aalam@users.sf.net>\n"
 "Language-Team: Punjabi/Panjabi <punjabi-users@lists.sf.net>\n"
 "Language: pa\n"
@@ -16,13 +16,13 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 1.2\n"
+"X-Generator: Lokalize 1.4\n"
 
 #: Apper/BackendDetails.cpp:31
 msgid "Backend Details"
 msgstr "ਬੈਕਐਂਡ ਵੇਰਵਾ"
 
-#: Apper/main.cpp:54 Sentinel/UpdateIcon.cpp:158 Sentinel/main.cpp:34
+#: Apper/main.cpp:54 Sentinel/UpdateIcon.cpp:113 Sentinel/main.cpp:34
 msgid "Apper"
 msgstr "ਅੱਪਰ"
 
@@ -30,7 +30,7 @@ msgstr "ਅੱਪਰ"
 msgid "Apper is an Application to Get and Manage Software"
 msgstr "ਅੱਪਰ ਐਪਲੀਕੇਸ਼ਨ ਹੈ, ਜੋ ਸਾਫਟਵੇਅਰ ਲੈਣ ਤੇ ਉਨ੍ਹਾਂ ਦੇ ਪਰਬੰਧ ਲਈ ਹੈ"
 
-#: Apper/main.cpp:58 ApperKCM/ApperKCM.cpp:83 Sentinel/main.cpp:38
+#: Apper/main.cpp:58 ApperKCM/ApperKCM.cpp:84 Sentinel/main.cpp:38
 msgid "(C) 2008-2011 Daniel Nicoletti"
 msgstr "(C) ੨੦੦੮-੨੦੧੧ Daniel Nicoletti"
 
@@ -85,6 +85,135 @@ msgstr "ਇੱਕ ਪੈਕੇਜ ਹਟਾਉਣ ਵਾਲਾ"
 #: Apper/main.cpp:75
 msgid "Package file to install"
 msgstr "ਇੰਸਟਾਲ ਕਰਨ ਲਈ ਪੈਕੇਜ ਫਾਇਲ"
+
+#: ApperKCM/FiltersMenu.cpp:37
+msgid "Collections"
+msgstr "ਭੰਡਾਰ"
+
+#: ApperKCM/FiltersMenu.cpp:44
+msgid "Only collections"
+msgstr "ਕੇਵਲ ਭੰਡਾਰ"
+
+#: ApperKCM/FiltersMenu.cpp:51
+msgid "Exclude collections"
+msgstr "ਭੰਡਾਰ ਤੋਂ ਬਗੈਰ"
+
+#. i18n: file: Apper/BackendDetails.ui:100
+#. i18n: ectx: property (text), widget (QCheckBox, installedCB)
+#: ApperKCM/FiltersMenu.cpp:60 libapper/PkStrings.cpp:362 rc.cpp:23
+msgid "Installed"
+msgstr "ਇੰਸਟਾਲ ਕੀਤਾ"
+
+#: ApperKCM/FiltersMenu.cpp:67
+msgid "Only installed"
+msgstr "ਕੇਵਲ ਇੰਸਟਾਲ ਹੋਏ ਹੀ"
+
+#: ApperKCM/FiltersMenu.cpp:74
+msgid "Only available"
+msgstr "ਕੇਵਲ ਉਪਲੱਬਧ"
+
+#: ApperKCM/FiltersMenu.cpp:81 ApperKCM/FiltersMenu.cpp:111
+#: ApperKCM/FiltersMenu.cpp:141 ApperKCM/FiltersMenu.cpp:171
+#: ApperKCM/FiltersMenu.cpp:202 ApperKCM/FiltersMenu.cpp:233
+msgid "No filter"
+msgstr "ਫਿਲਟਰ ਨਹੀਂ"
+
+#. i18n: file: Apper/BackendDetails.ui:110
+#. i18n: ectx: property (text), widget (QCheckBox, developmentCB)
+#: ApperKCM/FiltersMenu.cpp:90 rc.cpp:26
+msgid "Development"
+msgstr "ਡਿਵੈਲਪਮੈਂਟ"
+
+#: ApperKCM/FiltersMenu.cpp:97
+msgid "Only development"
+msgstr "ਕੇਵਲ ਡਿਵੈਲਪਮੈਂਟ"
+
+#: ApperKCM/FiltersMenu.cpp:104
+msgid "Only end user files"
+msgstr "ਕੇਵਲ ਅੰਤ ਯੂਜ਼ਰ ਫਾਇਲਾਂ ਹੀ"
+
+#: ApperKCM/FiltersMenu.cpp:120
+msgid "Graphical"
+msgstr "ਗਰਾਫਿਕਲ"
+
+#: ApperKCM/FiltersMenu.cpp:127
+msgid "Only graphical"
+msgstr "ਕੇਵਲ ਗਰਾਫਿਕਲ"
+
+#: ApperKCM/FiltersMenu.cpp:134
+msgid "Only text"
+msgstr "ਕੇਵਲ ਟੈਕਸਟ"
+
+#: ApperKCM/FiltersMenu.cpp:150
+msgctxt "Filter for free packages"
+msgid "Free"
+msgstr "ਮੁਕਤ"
+
+#: ApperKCM/FiltersMenu.cpp:157
+msgid "Only free software"
+msgstr "ਕੇਵਲ ਮੁਕਤ ਸਾਫਟਵੇਅਰ"
+
+#: ApperKCM/FiltersMenu.cpp:164
+msgid "Only non-free software"
+msgstr "ਕੇਵਲ ਗ਼ੈਰ-ਮੁਕਤ ਸਾਫਟਵੇਅਰ"
+
+#: ApperKCM/FiltersMenu.cpp:181
+msgctxt "Filter for supported packages"
+msgid "Supported"
+msgstr "ਸਹਾਇਤਾ ਪ੍ਰਾਪਤ"
+
+#: ApperKCM/FiltersMenu.cpp:188
+msgid "Only supported software"
+msgstr "ਕੇਵਲ ਸਹਾਇਤਾ ਪ੍ਰਾਪਤ ਸਾਫਟਵੇਅਰ"
+
+#: ApperKCM/FiltersMenu.cpp:195
+msgid "Only non-supported software"
+msgstr "ਕੇਵਲ ਗ਼ੈਰ-ਸਹਾਇਤਾ ਪ੍ਰਾਪਤ ਸਾਫਟਵੇਅਰ"
+
+#: ApperKCM/FiltersMenu.cpp:212
+msgctxt "Filter for source packages"
+msgid "Source"
+msgstr "ਸਰੋਤ"
+
+#: ApperKCM/FiltersMenu.cpp:219
+msgid "Only sourcecode"
+msgstr "ਕੇਵਲ ਸਰੋਤ-ਕੋਡ ਹੀ"
+
+#: ApperKCM/FiltersMenu.cpp:226
+msgid "Only non-sourcecode"
+msgstr "ਕੇਵਲ ਗ਼ੈਰ-ਸਰੋਤ ਕੋਡ"
+
+#: ApperKCM/FiltersMenu.cpp:248
+msgid "Hide Subpackages"
+msgstr "ਸਬ-ਪੈਕੇਜ ਓਹਲੇ"
+
+#: ApperKCM/FiltersMenu.cpp:250
+msgid "Only show one package, not subpackages"
+msgstr "ਕੇਵਲ ਇੱਕ ਪੈਕੇਜ ਵੇਖੋ, ਸਬ-ਪੈਕੇਜ ਨਹੀਂ"
+
+#: ApperKCM/FiltersMenu.cpp:257
+msgid "Only Newest Packages"
+msgstr "ਕੇਵਲ ਸਭ ਤੋਂ ਨਵੇਂ ਪੈਕੇਜ ਹੀ"
+
+#: ApperKCM/FiltersMenu.cpp:262
+msgid "Only show the newest available package"
+msgstr "ਕੇਵਲ ਨਵੇਂ ਉਪਲੱਬਧ ਹੋਏ ਪੈਕੇਜ ਹੀ ਵੇਖੋ"
+
+#: ApperKCM/FiltersMenu.cpp:269
+msgid "Only Native Packages"
+msgstr "ਕੇਵਲ ਨੇਟਿਵ ਪੈਕੇਜ ਹੀ"
+
+#: ApperKCM/FiltersMenu.cpp:274
+msgid "Only show packages matching the machine architecture"
+msgstr "ਮਸ਼ੀਨ ਦੇ ਢਾਂਚੇ (ਆਰਚੀਟੈਕਚਰ) ਨਾਲ ਮਿਲਦੇ ਪੈਕੇਜ ਹੀ ਵੇਖਾਓ"
+
+#: ApperKCM/FiltersMenu.cpp:283
+msgid "Only Show Applications"
+msgstr "ਕੇਵਲ ਐਪਲੀਕੇਸ਼ਨ ਵੇਖੋ"
+
+#: ApperKCM/FiltersMenu.cpp:286
+msgid "Hide packages that are not applications"
+msgstr "ਪੈਕੇਜ ਓਹਲੇ ਕਰੋ, ਜੋ ਕਿ ਐਪਲੀਕੇਸ਼ਨ ਨਹੀਂ ਹਨ"
 
 #: ApperKCM/Settings/OriginModel.cpp:39 ApperKCM/Settings/OriginModel.cpp:52
 msgid "Origin of Packages"
@@ -302,20 +431,16 @@ msgid "Show Versions"
 msgstr "ਵਰਜਨ ਵੇਖੋ"
 
 #: ApperKCM/Updater/Updater.cpp:117
-#, fuzzy
-#| msgid "Show Versions"
 msgid "Show Current Versions"
-msgstr "ਵਰਜਨ ਵੇਖੋ"
+msgstr "ਮੌਜੂਦਾ ਵਰਜਨ ਵੇਖੋ"
 
 #: ApperKCM/Updater/Updater.cpp:124 ApperKCM/BrowseView.cpp:102
 msgid "Show Architectures"
 msgstr "ਆਰਚੀਟੈਕਚਰ ਵੇਖੋ"
 
 #: ApperKCM/Updater/Updater.cpp:131 ApperKCM/BrowseView.cpp:109
-#, fuzzy
-#| msgid "Software Origins"
 msgid "Show Origins"
-msgstr "ਸਾਫਟਵੇਅਰ ਮੁੱਢ"
+msgstr "ਮੁੱਢ ਵੇਖੋ"
 
 #: ApperKCM/Updater/Updater.cpp:138 ApperKCM/BrowseView.cpp:116
 msgid "Show Sizes"
@@ -353,192 +478,35 @@ msgstr "ਇਹ ਜ਼ੋਰਦਾਰ ਸਿਫਾਰਸ਼ ਕੀਤੀ ਜਾ�
 msgid "Check for new Updates"
 msgstr "ਨਵੇਂ ਅੱਪਡੇਟ ਲਈ ਚੈੱਕ ਕਰੋ"
 
-#: ApperKCM/FiltersMenu.cpp:37
-msgid "Collections"
-msgstr "ਭੰਡਾਰ"
+#: ApperKCM/ScreenShotViewer.cpp:90
+msgid "Could not find screen shot."
+msgstr "ਸਕਰੀਨਸ਼ਾਟ ਲੱਭਿਆ ਨਹੀਂ ਜਾ ਸਕਿਆ।"
 
-#: ApperKCM/FiltersMenu.cpp:44
-msgid "Only collections"
-msgstr "ਕੇਵਲ ਭੰਡਾਰ"
+#: ApperKCM/CategoryModel.cpp:47
+msgid "Installed Software"
+msgstr "ਇੰਸਟਾਲ ਹੋਏ ਸਾਫਟਵੇਅਰ"
 
-#: ApperKCM/FiltersMenu.cpp:51
-msgid "Exclude collections"
-msgstr "ਭੰਡਾਰ ਤੋਂ ਬਗੈਰ"
+#: ApperKCM/CategoryModel.cpp:50 ApperKCM/CategoryModel.cpp:58
+msgid "Lists"
+msgstr "ਲਿਸਟ"
 
-#. i18n: file: Apper/BackendDetails.ui:100
-#. i18n: ectx: property (text), widget (QCheckBox, installedCB)
-#: ApperKCM/FiltersMenu.cpp:60 libapper/PkStrings.cpp:362 rc.cpp:23
-msgid "Installed"
-msgstr "ਇੰਸਟਾਲ ਕੀਤਾ"
+#: ApperKCM/CategoryModel.cpp:55
+msgid "Updates"
+msgstr "ਅੱਪਡੇਟ"
 
-#: ApperKCM/FiltersMenu.cpp:67
-msgid "Only installed"
-msgstr "ਕੇਵਲ ਇੰਸਟਾਲ ਹੋਏ ਹੀ"
+#: ApperKCM/CategoryModel.cpp:155 ApperKCM/CategoryModel.cpp:339
+msgid "Categories"
+msgstr "ਕੈਟਾਗਰੀ"
 
-#: ApperKCM/FiltersMenu.cpp:74
-msgid "Only available"
-msgstr "ਕੇਵਲ ਉਪਲੱਬਧ"
-
-#: ApperKCM/FiltersMenu.cpp:81 ApperKCM/FiltersMenu.cpp:111
-#: ApperKCM/FiltersMenu.cpp:141 ApperKCM/FiltersMenu.cpp:171
-#: ApperKCM/FiltersMenu.cpp:202
-msgid "No filter"
-msgstr "ਫਿਲਟਰ ਨਹੀਂ"
-
-#. i18n: file: Apper/BackendDetails.ui:110
-#. i18n: ectx: property (text), widget (QCheckBox, developmentCB)
-#: ApperKCM/FiltersMenu.cpp:90 rc.cpp:26
-msgid "Development"
-msgstr "ਡਿਵੈਲਪਮੈਂਟ"
-
-#: ApperKCM/FiltersMenu.cpp:97
-msgid "Only development"
-msgstr "ਕੇਵਲ ਡਿਵੈਲਪਮੈਂਟ"
-
-#: ApperKCM/FiltersMenu.cpp:104
-msgid "Only end user files"
-msgstr "ਕੇਵਲ ਅੰਤ ਯੂਜ਼ਰ ਫਾਇਲਾਂ ਹੀ"
-
-#: ApperKCM/FiltersMenu.cpp:120
-msgid "Graphical"
-msgstr "ਗਰਾਫਿਕਲ"
-
-#: ApperKCM/FiltersMenu.cpp:127
-msgid "Only graphical"
-msgstr "ਕੇਵਲ ਗਰਾਫਿਕਲ"
-
-#: ApperKCM/FiltersMenu.cpp:134
-msgid "Only text"
-msgstr "ਕੇਵਲ ਟੈਕਸਟ"
-
-#: ApperKCM/FiltersMenu.cpp:150
-msgctxt "Filter for free packages"
-msgid "Free"
-msgstr "ਮੁਕਤ"
-
-#: ApperKCM/FiltersMenu.cpp:157
-msgid "Only free software"
-msgstr "ਕੇਵਲ ਮੁਕਤ ਸਾਫਟਵੇਅਰ"
-
-#: ApperKCM/FiltersMenu.cpp:164
-msgid "Only non-free software"
-msgstr "ਕੇਵਲ ਗ਼ੈਰ-ਮੁਕਤ ਸਾਫਟਵੇਅਰ"
-
-#: ApperKCM/FiltersMenu.cpp:181
-msgctxt "Filter for source packages"
-msgid "Source"
-msgstr "ਸਰੋਤ"
-
-#: ApperKCM/FiltersMenu.cpp:188
-msgid "Only sourcecode"
-msgstr "ਕੇਵਲ ਸਰੋਤ-ਕੋਡ ਹੀ"
-
-#: ApperKCM/FiltersMenu.cpp:195
-msgid "Only non-sourcecode"
-msgstr "ਕੇਵਲ ਗ਼ੈਰ-ਸਰੋਤ ਕੋਡ"
-
-#: ApperKCM/FiltersMenu.cpp:217
-msgid "Hide Subpackages"
-msgstr "ਸਬ-ਪੈਕੇਜ ਓਹਲੇ"
-
-#: ApperKCM/FiltersMenu.cpp:219
-msgid "Only show one package, not subpackages"
-msgstr "ਕੇਵਲ ਇੱਕ ਪੈਕੇਜ ਵੇਖੋ, ਸਬ-ਪੈਕੇਜ ਨਹੀਂ"
-
-#: ApperKCM/FiltersMenu.cpp:226
-msgid "Only Newest Packages"
-msgstr "ਕੇਵਲ ਸਭ ਤੋਂ ਨਵੇਂ ਪੈਕੇਜ ਹੀ"
-
-#: ApperKCM/FiltersMenu.cpp:231
-msgid "Only show the newest available package"
-msgstr "ਕੇਵਲ ਨਵੇਂ ਉਪਲੱਬਧ ਹੋਏ ਪੈਕੇਜ ਹੀ ਵੇਖੋ"
-
-#: ApperKCM/FiltersMenu.cpp:238
-msgid "Only Native Packages"
-msgstr "ਕੇਵਲ ਨੇਟਿਵ ਪੈਕੇਜ ਹੀ"
-
-#: ApperKCM/FiltersMenu.cpp:243
-msgid "Only show packages matching the machine architecture"
-msgstr "ਮਸ਼ੀਨ ਦੇ ਢਾਂਚੇ (ਆਰਚੀਟੈਕਚਰ) ਨਾਲ ਮਿਲਦੇ ਪੈਕੇਜ ਹੀ ਵੇਖਾਓ"
-
-#: ApperKCM/FiltersMenu.cpp:252
-msgid "Only Show Applications"
-msgstr "ਕੇਵਲ ਐਪਲੀਕੇਸ਼ਨ ਵੇਖੋ"
-
-#: ApperKCM/FiltersMenu.cpp:255
-msgid "Hide packages that are not applications"
-msgstr "ਪੈਕੇਜ ਓਹਲੇ ਕਰੋ, ਜੋ ਕਿ ਐਪਲੀਕੇਸ਼ਨ ਨਹੀਂ ਹਨ"
-
-#: ApperKCM/ApperKCM.cpp:79
-msgid "Application Manager"
-msgstr "ਐਪਲੀਕੇਸ਼ਨ ਮੈਨੇਜਰ"
-
-#: ApperKCM/ApperKCM.cpp:81
-msgid "KDE interface for managing software"
-msgstr "ਸਾਫਟਵੇਅਰ ਪਰਬੰਧ ਲਈ ਕੇ ਡੀ ਈ ਇੰਟਰਫੇਸ"
-
-#: ApperKCM/ApperKCM.cpp:111 ApperKCM/ApperKCM.cpp:292
-msgid "Find"
-msgstr "ਲੱਭੋ"
-
-#: ApperKCM/ApperKCM.cpp:206
-msgid "History"
-msgstr "ਅਤੀਤ"
-
-#. i18n: file: ApperKCM/Settings/Settings.ui:14
-#. i18n: ectx: property (windowTitle), widget (QWidget, Settings)
-#: ApperKCM/ApperKCM.cpp:212 rc.cpp:140
-msgid "Settings"
-msgstr "ਸੈਟਿੰਗ"
-
-#: ApperKCM/ApperKCM.cpp:269 ApperKCM/ApperKCM.cpp:270
-#: ApperKCM/ApperKCM.cpp:271 ApperKCM/ApperKCM.cpp:272
-msgid "&Cancel"
-msgstr "ਰੱਦ ਕਰੋ(&C)"
-
-#. i18n: file: ApperKCM/ApperKCM.ui:291
-#. i18n: ectx: property (text), widget (QToolButton, backTB)
-#: ApperKCM/ApperKCM.cpp:279 rc.cpp:200
-msgid "Find by &name"
-msgstr "ਨਾਂ ਨਾਲ ਲੱਭੋ(&N)"
-
-#. i18n: file: ApperKCM/ApperKCM.ui:301
-#. i18n: ectx: property (text), widget (QToolButton, backTB)
-#: ApperKCM/ApperKCM.cpp:280 rc.cpp:206
-msgid "Find by f&ile name"
-msgstr "ਫਾਇਲ ਨਾਂ ਨਾਲ ਲੱਭੋ(&i)"
-
-#. i18n: file: ApperKCM/ApperKCM.ui:296
-#. i18n: ectx: property (text), widget (QToolButton, backTB)
-#: ApperKCM/ApperKCM.cpp:281 rc.cpp:203
-msgid "Find by &description"
-msgstr "ਵੇਰਵਾ ਨਾਲ ਲੱਭੋ(&d)"
-
-#: ApperKCM/ApperKCM.cpp:411
-msgid ""
-"The settings of the current module have changed.\n"
-"Do you want to apply the changes or discard them?"
-msgstr ""
-"ਮੌਜੂਦਾ ਮੋਡੀਊਲ ਦੀ ਸੈਟਿੰਗ ਬਦਲੀ ਗਈ ਹੈ।\n"
-"ਕੀ ਤੁਸੀਂ ਬਦਲਾਅ ਲਾਗੂ ਕਰਨੇ ਚਾਹੁੰਦੇ ਹੋ ਜਾਂ ਅਣਡਿੱਠੇ?"
-
-#: ApperKCM/ApperKCM.cpp:413
-msgid "Apply Settings"
-msgstr "ਸੈਟਿੰਗ ਲਾਗੂ ਕਰੋ"
-
-#: ApperKCM/ApperKCM.cpp:455
-msgid "General Settings"
-msgstr "ਆਮ ਸੈਟਿੰਗ"
-
-#: ApperKCM/ApperKCM.cpp:456
-msgid "Software Origins"
-msgstr "ਸਾਫਟਵੇਅਰ ਮੁੱਢ"
+#: ApperKCM/CategoryModel.cpp:208
+msgid "Groups"
+msgstr "ਗਰੁੱਪ"
 
 #: ApperKCM/PackageDetails.cpp:73
 msgid "Display"
 msgstr "ਵੇਖੋ"
 
-#: ApperKCM/PackageDetails.cpp:80
+#: ApperKCM/PackageDetails.cpp:80 AppSetup/SetupWizard.cpp:243
 msgid "Description"
 msgstr "ਵੇਰਵਾ"
 
@@ -566,30 +534,6 @@ msgstr "ਸਾਫਟਵੇਅਰ ਵੇਰਵਾ ਨਹੀਂ ਲਿਆ ਜਾ �
 msgid "Applications"
 msgstr "ਐਪਲੀਕੇਸ਼ਨ"
 
-#: ApperKCM/CategoryModel.cpp:47
-msgid "Installed Software"
-msgstr "ਇੰਸਟਾਲ ਹੋਏ ਸਾਫਟਵੇਅਰ"
-
-#: ApperKCM/CategoryModel.cpp:50 ApperKCM/CategoryModel.cpp:58
-msgid "Lists"
-msgstr "ਲਿਸਟ"
-
-#: ApperKCM/CategoryModel.cpp:55
-msgid "Updates"
-msgstr "ਅੱਪਡੇਟ"
-
-#: ApperKCM/CategoryModel.cpp:155 ApperKCM/CategoryModel.cpp:339
-msgid "Categories"
-msgstr "ਕੈਟਾਗਰੀ"
-
-#: ApperKCM/CategoryModel.cpp:208
-msgid "Groups"
-msgstr "ਗਰੁੱਪ"
-
-#: ApperKCM/ScreenShotViewer.cpp:90
-msgid "Could not find screen shot."
-msgstr "ਸਕਰੀਨਸ਼ਾਟ ਲੱਭਿਆ ਨਹੀਂ ਜਾ ਸਕਿਆ।"
-
 #: ApperKCM/TransactionHistory.cpp:66
 msgid "Refresh transactions list"
 msgstr "ਟਰਾਂਸੈਕਸ਼ਨ ਲਿਸਟ ਤਾਜ਼ਾ ਕਰੋ"
@@ -608,6 +552,7 @@ msgid "Action"
 msgstr "ਐਕਸ਼ਨ"
 
 #: ApperKCM/TransactionModel.cpp:48 Sentinel/TransactionWatcher.cpp:308
+#: AppSetup/SetupWizard.cpp:207
 msgid "Details"
 msgstr "ਵੇਰਵਾ"
 
@@ -620,13 +565,70 @@ msgstr "ਯੂਜ਼ਰ-ਨਾਂ"
 msgid "Application"
 msgstr "ਐਪਲੀਕੇਸ਼ਨ"
 
-#: Sentinel/DistroUpgrade.cpp:69
-msgid "Start upgrade now"
-msgstr "ਹੁਣੇ ਅੱਪਗਰੇਡ ਸ਼ੁਰੂ ਕਰੋ"
+#: ApperKCM/ApperKCM.cpp:80
+msgid "Application Manager"
+msgstr "ਐਪਲੀਕੇਸ਼ਨ ਮੈਨੇਜਰ"
 
-#: Sentinel/DistroUpgrade.cpp:114
-msgid "Distribution upgrade finished. "
-msgstr "ਡਿਸਟਰੀਬਿਊਸ਼ਨ ਅੱਪਗਰੇਡ ਮੁਕੰਮਲ ਹੋਇਆ। "
+#: ApperKCM/ApperKCM.cpp:82
+msgid "KDE interface for managing software"
+msgstr "ਸਾਫਟਵੇਅਰ ਪਰਬੰਧ ਲਈ ਕੇ ਡੀ ਈ ਇੰਟਰਫੇਸ"
+
+#: ApperKCM/ApperKCM.cpp:112 ApperKCM/ApperKCM.cpp:293
+msgid "Find"
+msgstr "ਲੱਭੋ"
+
+#: ApperKCM/ApperKCM.cpp:207
+msgid "History"
+msgstr "ਅਤੀਤ"
+
+#. i18n: file: ApperKCM/Settings/Settings.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, Settings)
+#: ApperKCM/ApperKCM.cpp:213 rc.cpp:140
+msgid "Settings"
+msgstr "ਸੈਟਿੰਗ"
+
+#: ApperKCM/ApperKCM.cpp:270 ApperKCM/ApperKCM.cpp:271
+#: ApperKCM/ApperKCM.cpp:272 ApperKCM/ApperKCM.cpp:273
+msgid "&Cancel"
+msgstr "ਰੱਦ ਕਰੋ(&C)"
+
+#. i18n: file: ApperKCM/ApperKCM.ui:291
+#. i18n: ectx: property (text), widget (QToolButton, backTB)
+#: ApperKCM/ApperKCM.cpp:280 rc.cpp:200
+msgid "Find by &name"
+msgstr "ਨਾਂ ਨਾਲ ਲੱਭੋ(&N)"
+
+#. i18n: file: ApperKCM/ApperKCM.ui:301
+#. i18n: ectx: property (text), widget (QToolButton, backTB)
+#: ApperKCM/ApperKCM.cpp:281 rc.cpp:206
+msgid "Find by f&ile name"
+msgstr "ਫਾਇਲ ਨਾਂ ਨਾਲ ਲੱਭੋ(&i)"
+
+#. i18n: file: ApperKCM/ApperKCM.ui:296
+#. i18n: ectx: property (text), widget (QToolButton, backTB)
+#: ApperKCM/ApperKCM.cpp:282 rc.cpp:203
+msgid "Find by &description"
+msgstr "ਵੇਰਵਾ ਨਾਲ ਲੱਭੋ(&d)"
+
+#: ApperKCM/ApperKCM.cpp:412
+msgid ""
+"The settings of the current module have changed.\n"
+"Do you want to apply the changes or discard them?"
+msgstr ""
+"ਮੌਜੂਦਾ ਮੋਡੀਊਲ ਦੀ ਸੈਟਿੰਗ ਬਦਲੀ ਗਈ ਹੈ।\n"
+"ਕੀ ਤੁਸੀਂ ਬਦਲਾਅ ਲਾਗੂ ਕਰਨੇ ਚਾਹੁੰਦੇ ਹੋ ਜਾਂ ਅਣਡਿੱਠੇ?"
+
+#: ApperKCM/ApperKCM.cpp:414
+msgid "Apply Settings"
+msgstr "ਸੈਟਿੰਗ ਲਾਗੂ ਕਰੋ"
+
+#: ApperKCM/ApperKCM.cpp:456
+msgid "General Settings"
+msgstr "ਆਮ ਸੈਟਿੰਗ"
+
+#: ApperKCM/ApperKCM.cpp:457
+msgid "Software Origins"
+msgstr "ਸਾਫਟਵੇਅਰ ਮੁੱਢ"
 
 #: Sentinel/PkInstallProvideFiles.cpp:39
 msgid "Install Packages that Provides Files"
@@ -660,7 +662,7 @@ msgstr[1] "%2 ਐਪਲੀਕੇਸ਼ਨ ਫਾਇਲਾਂ ਇੰਸਟਾਲ 
 msgid "Failed to start search file transaction"
 msgstr "ਫਾਇਲ ਟਰਾਂਸੈਕਸ਼ਨ ਖੋਜ ਸ਼ੁਰੂ ਕਰਨ ਲਈ ਫੇਲ੍ਹ ਹੈ"
 
-#: Sentinel/PkInstallProvideFiles.cpp:101 libapper/PkTransaction.cpp:263
+#: Sentinel/PkInstallProvideFiles.cpp:101 libapper/PkTransaction.cpp:268
 msgid "Failed to install file"
 msgid_plural "Failed to install files"
 msgstr[0] "ਫਾਇਲ ਇੰਸਟਾਲ ਕਰਨ ਲਈ ਫੇਲ੍ਹ"
@@ -701,46 +703,6 @@ msgstr "ਪਰਿੰਟਰ ਡਰਾਇਵਰ ਲੱਭਣ ਲਈ ਫੇਲ੍�
 #: Sentinel/PkInstallPrinterDrivers.cpp:88
 msgid "Could not find printer driver in any configured software source"
 msgstr "ਸੰਰਚਿਤ ਸਾਫਟਵੇਅਰ ਸਰੋਤ ਤੋਂ ਕੋਈ ਪਰਿੰਟਰ ਡਰਾਇਵਰ ਨਹੀਂ ਲੱਭਿਆ ਜਾ ਸਕਿਆ"
-
-#: Sentinel/UpdateIcon.cpp:160
-msgid "Review Updates"
-msgstr "ਅੱਪਡੇਟ ਪੜਤਾਲ"
-
-#: Sentinel/UpdateIcon.cpp:163
-msgid "Configure"
-msgstr "ਸੰਰਚਨਾ"
-
-#. i18n: file: ApperKCM/PackageDetails.ui:359
-#. i18n: ectx: property (text), widget (QToolButton, hideTB)
-#. i18n: file: ApperKCM/Updater/UpdateDetails.ui:20
-#. i18n: ectx: property (text), widget (QToolButton, hideTB)
-#: Sentinel/UpdateIcon.cpp:167 Sentinel/TransactionWatcher.cpp:186
-#: libapper/PkTransactionDialog.cpp:86 rc.cpp:137 rc.cpp:173
-msgid "Hide"
-msgstr "ਓਹਲੇ"
-
-#: Sentinel/UpdateIcon.cpp:177
-#, kde-format
-msgid "You have one update"
-msgid_plural "You have %1 updates"
-msgstr[0] "ਤੁਹਾਡੇ ਲਈ ਇੱਕ ਅੱਪਡੇਟ ਹੈ"
-msgstr[1] "ਤੁਹਾਡੇ ਲਈ %1 ਅੱਪਡੇਟ ਹਨ"
-
-#: Sentinel/UpdateIcon.cpp:230
-msgid "Updates are being automatically installed."
-msgstr "ਅੱਪਡੇਟ ਆਟੋਮੈਟਿਕ ਹੀ ਇੰਸਟਾਲ ਕੀਤੇ ਜਾ ਰਹੇ ਹਨ।"
-
-#: Sentinel/UpdateIcon.cpp:251
-msgid "Security updates are being automatically installed."
-msgstr "ਸੁਰੱਖਿਆ ਅੱਪਡੇਟ ਆਟੋਮੈਟਿਕ ਹੀ ਇੰਸਟਾਲ ਕੀਤੇ ਜਾ ਰਹੇ ਹਨ।"
-
-#: Sentinel/UpdateIcon.cpp:278
-msgid "System update was successful."
-msgstr "ਸਿਸਟਮ ਠੀਕ ਤਰ੍ਹਾਂ ਅੱਪਡੇਟ ਹੋ ਗਿਆ।"
-
-#: Sentinel/UpdateIcon.cpp:287
-msgid "The automated software update failed."
-msgstr "ਆਟੋਮੈਟਿਕ ਸਾਫਟਵੇਅਰ ਅੱਪਡੇਟ ਫੇਲ੍ਹ ਹੋਇਆ।"
 
 #: Sentinel/ReviewChanges.cpp:52
 msgid "The following package was found"
@@ -870,7 +832,55 @@ msgstr "ਕੈਟਾਲਾਗ ਖਾਲੀ ਹੈ"
 msgid "Could not find any package to install in this catalog"
 msgstr "ਇਸ ਕੈਟਾਲਾਗ ਵਿੱਚ ਇੰਸਟਾਲ ਕਰਨ ਲਈ ਕੋਈ ਪੈਕੇਜ ਨਹੀਂ ਲੱਭਿਆ ਜਾ ਸਕਿਆ"
 
+#: Sentinel/PkInstallPackageFiles.cpp:38
+msgid "Install Packages Files"
+msgstr "ਪੈਕੇਜ ਫਾਇਲਾਂ ਇੰਸਟਾਲ ਕਰੋ"
+
+#: Sentinel/PkInstallPackageFiles.cpp:42
+#: Sentinel/PkRemovePackageByFiles.cpp:43
+msgid "You can drop more files in here"
+msgstr "ਤੁਸੀਂ ਹੋਰ ਫਾਇਲਾਂ ਇੱਥੇ ਸੁੱਟ ਸਕਦੇ ਹੋ"
+
+#: Sentinel/PkInstallPackageFiles.cpp:52
+msgid "Not Supported"
+msgstr "ਸਹਾਇਕ ਨਹੀਂ ਹੈ"
+
+#: Sentinel/PkInstallPackageFiles.cpp:53
+msgid "Your current backend does not support installing files"
+msgstr "ਤੁਹਾਡਾ ਮੌਜੂਦਾ ਬੈਕਐਂਡ ਫਾਇਲਾਂ ਇੰਸਟਾਲ ਕਰਨ ਲਈ ਸਹਾਇਕ ਨਹੀਂ ਹੈ"
+
+#: Sentinel/PkInstallPackageFiles.cpp:68
+#: Sentinel/PkRemovePackageByFiles.cpp:64
+msgid "No supported files were provided"
+msgstr "ਕੋਈ ਸਹਾਇਕ ਫਾਇਲਾਂ ਨਹੀਂ ਦਿੱਤੀਆਂ ਗਈਆਂ ਹਨ"
+
+#: Sentinel/PkInstallPackageFiles.cpp:70
+msgid "Press <i>Continue</i> if you want to install this file"
+msgid_plural "Press <i>Continue</i> if you want to install these files"
+msgstr[0] "ਕੀ ਤੁਸੀਂ ਇਹ ਫਾਇਲ ਇੰਸਟਾਲ ਕਰਨੀ ਚਾਹੁੰਦੇ ਹੋ ਤਾਂ <i>ਜਾਰੀ ਰੱਖੋ</i> ਦੱਬੋ"
+msgstr[1] "ਕੀ ਤੁਸੀਂ ਇਹ ਫਾਇਲਾਂ ਇੰਸਟਾਲ ਕਰਨੀਆਂ ਚਾਹੁੰਦੇ ਹੋ ਤਾਂ <i>ਜਾਰੀ ਰੱਖੋ</i> ਨੂੰ ਦੱਬੋ"
+
+#: Sentinel/PkInstallPackageFiles.cpp:105
+msgid "Installation Complete"
+msgstr "ਇੰਸਟਾਲੇਸ਼ਨ ਪੂਰੀ ਹੋਈ"
+
+#: Sentinel/PkInstallPackageFiles.cpp:106
+msgid "File was installed successfully"
+msgid_plural "Files were installed successfully"
+msgstr[0] "ਫਾਇਲ ਠੀਕ ਤਰ੍ਹਾਂ ਇੰਸਟਾਲ ਕੀਤੀ ਗਈ"
+msgstr[1] "ਫਾਇਲਾਂ ਠੀਕ ਤਰ੍ਹਾਂ ਇੰਸਟਾਲ ਕੀਤੀਆਂ ਗਈਆਂ ਹਨ"
+
+#: Sentinel/PkInstallPackageFiles.cpp:117
+msgid "Failed to install files"
+msgstr "ਫਾਇਲਾਂ ਇੰਸਟਾਲ ਕਰਨ ਲਈ ਫੇਲ੍ਹ ਹੈ"
+
+#: Sentinel/PkInstallPackageFiles.cpp:118
+#: Sentinel/PkInstallPackageFiles.cpp:120
+msgid "Could not install files"
+msgstr "ਫਾਇਲਾਂ ਇੰਸਟਾਲ ਨਹੀਂ ਕੀਤੀਆਂ ਜਾ ਸਕੀਆਂ"
+
 #: Sentinel/SessionTask.cpp:66 libapper/Requirements.cpp:44
+#: AppSetup/SetupWizard.cpp:139
 msgid "Continue"
 msgstr "ਜਾਰੀ ਰੱਖੋ"
 
@@ -905,6 +915,72 @@ msgstr "ਕੰਮ ਪੂਰਾ ਹੋਇਆ"
 #: Sentinel/SessionTask.cpp:430
 msgid "All operations were committed successfully"
 msgstr "ਸਭ ਕਾਰਵਾਈਆਂ ਠੀਕ ਤਰ੍ਹਾਂ ਪੂਰੀਆਂ ਕੀਤੀਆਂ ਗਈਆਂ ਹਨ"
+
+#: Sentinel/UpdateIcon.cpp:115
+msgid "Review Updates"
+msgstr "ਅੱਪਡੇਟ ਪੜਤਾਲ"
+
+#: Sentinel/UpdateIcon.cpp:118
+msgid "Configure"
+msgstr "ਸੰਰਚਨਾ"
+
+#. i18n: file: ApperKCM/PackageDetails.ui:359
+#. i18n: ectx: property (text), widget (QToolButton, hideTB)
+#. i18n: file: ApperKCM/Updater/UpdateDetails.ui:20
+#. i18n: ectx: property (text), widget (QToolButton, hideTB)
+#: Sentinel/UpdateIcon.cpp:122 Sentinel/TransactionWatcher.cpp:186
+#: libapper/PkTransactionDialog.cpp:86 rc.cpp:137 rc.cpp:173
+msgid "Hide"
+msgstr "ਓਹਲੇ"
+
+#: Sentinel/UpdateIcon.cpp:132
+#, kde-format
+msgid "You have one update"
+msgid_plural "You have %1 updates"
+msgstr[0] "ਤੁਹਾਡੇ ਲਈ ਇੱਕ ਅੱਪਡੇਟ ਹੈ"
+msgstr[1] "ਤੁਹਾਡੇ ਲਈ %1 ਅੱਪਡੇਟ ਹਨ"
+
+#: Sentinel/UpdateIcon.cpp:192
+msgid "Updates are being automatically installed."
+msgstr "ਅੱਪਡੇਟ ਆਟੋਮੈਟਿਕ ਹੀ ਇੰਸਟਾਲ ਕੀਤੇ ਜਾ ਰਹੇ ਹਨ।"
+
+#: Sentinel/UpdateIcon.cpp:213
+msgid "Security updates are being automatically installed."
+msgstr "ਸੁਰੱਖਿਆ ਅੱਪਡੇਟ ਆਟੋਮੈਟਿਕ ਹੀ ਇੰਸਟਾਲ ਕੀਤੇ ਜਾ ਰਹੇ ਹਨ।"
+
+#: Sentinel/UpdateIcon.cpp:240
+msgid "System update was successful."
+msgstr "ਸਿਸਟਮ ਠੀਕ ਤਰ੍ਹਾਂ ਅੱਪਡੇਟ ਹੋ ਗਿਆ।"
+
+#: Sentinel/UpdateIcon.cpp:249
+msgid "The automated software update failed."
+msgstr "ਆਟੋਮੈਟਿਕ ਸਾਫਟਵੇਅਰ ਅੱਪਡੇਟ ਫੇਲ੍ਹ ਹੋਇਆ।"
+
+#: Sentinel/PkIsInstalled.cpp:36
+msgid "Querying if a Package is Installed"
+msgstr "ਕਿਊਰੀ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ, ਜੇ ਇੱਕ ਪੈਕੇਜ ਇੰਸਟਾਲ ਹੈ"
+
+#: Sentinel/PkIsInstalled.cpp:67
+msgid "User canceled the transaction"
+msgstr "ਯੂਜ਼ਰ ਨੇ ਟਰਾਂਸੈਕਸ਼ਨ ਰੱਦ ਕੀਤੀ"
+
+#: Sentinel/PkIsInstalled.cpp:69
+msgid "An unknown error happened"
+msgstr "ਅਣਜਾਣ ਗਲਤੀ ਆਈ"
+
+#: Sentinel/TransactionTrayIcon.cpp:45
+msgid "Transactions"
+msgstr "ਟਰਾਂਸੈਕਸ਼ਨ"
+
+#: Sentinel/TransactionTrayIcon.cpp:90
+#, kde-format
+msgid "%1% - %2"
+msgstr "%1% - %2"
+
+#: Sentinel/TransactionTrayIcon.cpp:92
+#, kde-format
+msgid "%1"
+msgstr "%1"
 
 #: Sentinel/TransactionWatcher.cpp:66 Sentinel/TransactionWatcher.cpp:265
 msgid "Hide this icon"
@@ -944,32 +1020,6 @@ msgstr "ਸੁਨੇਹੇ ਵੇਖੋ"
 #: Sentinel/TransactionWatcher.cpp:308
 msgid "Ignore"
 msgstr "ਅਣਡਿੱਠਾ"
-
-#: Sentinel/PkIsInstalled.cpp:36
-msgid "Querying if a Package is Installed"
-msgstr "ਕਿਊਰੀ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ, ਜੇ ਇੱਕ ਪੈਕੇਜ ਇੰਸਟਾਲ ਹੈ"
-
-#: Sentinel/PkIsInstalled.cpp:67
-msgid "User canceled the transaction"
-msgstr "ਯੂਜ਼ਰ ਨੇ ਟਰਾਂਸੈਕਸ਼ਨ ਰੱਦ ਕੀਤੀ"
-
-#: Sentinel/PkIsInstalled.cpp:69
-msgid "An unknown error happened"
-msgstr "ਅਣਜਾਣ ਗਲਤੀ ਆਈ"
-
-#: Sentinel/TransactionTrayIcon.cpp:45
-msgid "Transactions"
-msgstr "ਟਰਾਂਸੈਕਸ਼ਨ"
-
-#: Sentinel/TransactionTrayIcon.cpp:90
-#, kde-format
-msgid "%1% - %2"
-msgstr "%1% - %2"
-
-#: Sentinel/TransactionTrayIcon.cpp:92
-#, kde-format
-msgid "%1"
-msgstr "%1"
 
 #: Sentinel/PkInstallPlasmaResources.cpp:40
 msgid "Install Plasma Resources"
@@ -1055,53 +1105,6 @@ msgstr "ਅੱਪਰ ਸੇਂਟੀਨਲ"
 msgid "Trever Fischer"
 msgstr "Trever Fischer"
 
-#: Sentinel/PkInstallPackageFiles.cpp:38
-msgid "Install Packages Files"
-msgstr "ਪੈਕੇਜ ਫਾਇਲਾਂ ਇੰਸਟਾਲ ਕਰੋ"
-
-#: Sentinel/PkInstallPackageFiles.cpp:42
-#: Sentinel/PkRemovePackageByFiles.cpp:43
-msgid "You can drop more files in here"
-msgstr "ਤੁਸੀਂ ਹੋਰ ਫਾਇਲਾਂ ਇੱਥੇ ਸੁੱਟ ਸਕਦੇ ਹੋ"
-
-#: Sentinel/PkInstallPackageFiles.cpp:52
-msgid "Not Supported"
-msgstr "ਸਹਾਇਕ ਨਹੀਂ ਹੈ"
-
-#: Sentinel/PkInstallPackageFiles.cpp:53
-msgid "Your current backend does not support installing files"
-msgstr "ਤੁਹਾਡਾ ਮੌਜੂਦਾ ਬੈਕਐਂਡ ਫਾਇਲਾਂ ਇੰਸਟਾਲ ਕਰਨ ਲਈ ਸਹਾਇਕ ਨਹੀਂ ਹੈ"
-
-#: Sentinel/PkInstallPackageFiles.cpp:68
-#: Sentinel/PkRemovePackageByFiles.cpp:64
-msgid "No supported files were provided"
-msgstr "ਕੋਈ ਸਹਾਇਕ ਫਾਇਲਾਂ ਨਹੀਂ ਦਿੱਤੀਆਂ ਗਈਆਂ ਹਨ"
-
-#: Sentinel/PkInstallPackageFiles.cpp:70
-msgid "Press <i>Continue</i> if you want to install this file"
-msgid_plural "Press <i>Continue</i> if you want to install these files"
-msgstr[0] "ਕੀ ਤੁਸੀਂ ਇਹ ਫਾਇਲ ਇੰਸਟਾਲ ਕਰਨੀ ਚਾਹੁੰਦੇ ਹੋ ਤਾਂ <i>ਜਾਰੀ ਰੱਖੋ</i> ਦੱਬੋ"
-msgstr[1] "ਕੀ ਤੁਸੀਂ ਇਹ ਫਾਇਲਾਂ ਇੰਸਟਾਲ ਕਰਨੀਆਂ ਚਾਹੁੰਦੇ ਹੋ ਤਾਂ <i>ਜਾਰੀ ਰੱਖੋ</i> ਨੂੰ ਦੱਬੋ"
-
-#: Sentinel/PkInstallPackageFiles.cpp:105
-msgid "Installation Complete"
-msgstr "ਇੰਸਟਾਲੇਸ਼ਨ ਪੂਰੀ ਹੋਈ"
-
-#: Sentinel/PkInstallPackageFiles.cpp:106
-msgid "File was installed successfully"
-msgid_plural "Files were installed successfully"
-msgstr[0] "ਫਾਇਲ ਠੀਕ ਤਰ੍ਹਾਂ ਇੰਸਟਾਲ ਕੀਤੀ ਗਈ"
-msgstr[1] "ਫਾਇਲਾਂ ਠੀਕ ਤਰ੍ਹਾਂ ਇੰਸਟਾਲ ਕੀਤੀਆਂ ਗਈਆਂ ਹਨ"
-
-#: Sentinel/PkInstallPackageFiles.cpp:117
-msgid "Failed to install files"
-msgstr "ਫਾਇਲਾਂ ਇੰਸਟਾਲ ਕਰਨ ਲਈ ਫੇਲ੍ਹ ਹੈ"
-
-#: Sentinel/PkInstallPackageFiles.cpp:118
-#: Sentinel/PkInstallPackageFiles.cpp:120
-msgid "Could not install files"
-msgstr "ਫਾਇਲਾਂ ਇੰਸਟਾਲ ਨਹੀਂ ਕੀਤੀਆਂ ਜਾ ਸਕੀਆਂ"
-
 #: Sentinel/PkRemovePackageByFiles.cpp:40
 msgid "Remove Packages that Provides Files"
 msgstr "ਪੈਕੇਜ ਹਟਾਓ, ਜੋ ਫਾਇਲਾਂ ਦਿੰਦਾ ਹੈ"
@@ -1161,6 +1164,14 @@ msgstr "ਫਾਇਲਾਂ ਦੇਣ ਵਾਲੇ ਪੈਕੇਜ ਲੱਭੋ"
 #: Sentinel/PkSearchFile.cpp:80
 msgid "The file name could not be found in any software source"
 msgstr "ਫਾਇਲ ਨਾਂ ਕਿਸੇ ਸਾਫਟਵੇਅਰ ਸਰੋਤ ਉੱਤੇ ਨਹੀਂ ਲੱਭਿਆ।"
+
+#: Sentinel/DistroUpgrade.cpp:69
+msgid "Start upgrade now"
+msgstr "ਹੁਣੇ ਅੱਪਗਰੇਡ ਸ਼ੁਰੂ ਕਰੋ"
+
+#: Sentinel/DistroUpgrade.cpp:114
+msgid "Distribution upgrade finished. "
+msgstr "ਡਿਸਟਰੀਬਿਊਸ਼ਨ ਅੱਪਗਰੇਡ ਮੁਕੰਮਲ ਹੋਇਆ। "
 
 #: Sentinel/PkInstallFontconfigResources.cpp:41
 msgid "Installs new Fonts"
@@ -1267,6 +1278,47 @@ msgstr "ਕੋਈ ਨਤੀਜਾ ਨਹੀਂ ਲੱਭਿਆ"
 #: Sentinel/PkInstallGStreamerResources.cpp:149
 msgid "Could not find plugin in any configured software source"
 msgstr "ਸੰਰਚਿਤ ਸਾਫਟਵੇਅਰ ਸਰੋਤ ਉੱਤੇ ਕੋਈ ਪਲੱਗਇਨ ਨਹੀਂ ਲੱਭੀ"
+
+#: libapper/PackageModel.cpp:182
+msgid "Name"
+msgstr "ਨਾਂ"
+
+#: libapper/PackageModel.cpp:184 libapper/SimulateModel.cpp:141
+msgid "Version"
+msgstr "ਵਰਜਨ"
+
+#: libapper/PackageModel.cpp:186
+msgid "Installed Version"
+msgstr "ਇੰਸਟਾਲ ਕੀਤਾ ਵਰਜਨ"
+
+#: libapper/PackageModel.cpp:188
+msgid "Arch"
+msgstr "ਆਰਚ"
+
+#: libapper/PackageModel.cpp:190
+msgid "Origin"
+msgstr "ਸਰੋਤ"
+
+#: libapper/PackageModel.cpp:192
+msgid "Size"
+msgstr "ਸਾਈਜ਼"
+
+#: libapper/PackageModel.cpp:283
+#, kde-format
+msgid ""
+"Version: %1\n"
+"Architecture: %2"
+msgstr ""
+"ਵਰਜਨ: %1\n"
+"ਆਰਚੀਟੈਕਚਰ: %2"
+
+#: libapper/PackageModel.cpp:329
+msgid "To be Removed"
+msgstr "ਹਟਾਉਣ ਲਈ"
+
+#: libapper/PackageModel.cpp:331
+msgid "To be Installed"
+msgstr "ਇੰਸਟਾਲ ਕਰਨ ਲਈ"
 
 #: libapper/ChangesDelegate.cpp:45
 msgid "Do not Install"
@@ -2115,7 +2167,7 @@ msgstr "ਪੈਕੇਜ ਇਹ ਸਿਸਟਮ ਲਈ ਅਢੁੱਕਵਾਂ �
 msgid "No space is left on the disk"
 msgstr "ਡਿਸਕ ਉੱਤੇ ਕੋਈ ਥਾਂ ਨਹੀਂ ਬਚੀ ਹੈ"
 
-#: libapper/PkStrings.cpp:477 libapper/PkTransaction.cpp:579
+#: libapper/PkStrings.cpp:477 libapper/PkTransaction.cpp:581
 msgid "A media change is required"
 msgstr "ਮੀਡਿਆ ਬਦਲਣ ਦੀ ਲੋੜ ਹੈ"
 
@@ -3088,6 +3140,85 @@ msgstr "packagekitd ਨਾਲ ਗੱਲ ਨਹੀਂ ਕੀਤੀ ਜਾ ਸਕ�
 msgid "An unknown error happened."
 msgstr "ਅਣਜਾਣ ਗਲਤੀ ਆਈ ਹੈ।"
 
+#: libapper/PkTransaction.cpp:123
+msgid "Failed to simulate file install"
+msgstr "ਫਾਇਲ ਇੰਸਟਾਲ ਦੀ ਨਕਲ ਕਰਨ ਲਈ ਫੇਲ੍ਹ"
+
+#: libapper/PkTransaction.cpp:130
+msgid "Current backend does not support installing files."
+msgstr "ਮੌਜੂਦਾ ਬੈਕਐਂਡ ਫਾਇਲਾਂ ਇੰਸਟਾਲ ਕਰਨ ਲਈ ਸਹਾਇਕ ਨਹੀਂ ਹੈ।"
+
+#: libapper/PkTransaction.cpp:130 libapper/PkTransaction.cpp:154
+#: libapper/PkTransaction.cpp:180 libapper/PkTransaction.cpp:203
+#: AppSetup/SetupWizard.cpp:107
+msgid "Error"
+msgstr "ਗਲਤੀ"
+
+#: libapper/PkTransaction.cpp:147
+msgid "Failed to simulate package install"
+msgstr "ਪੈਕੇਜ ਇੰਸਟਾਲ ਦੀ ਨਕਲ ਕਰਨ ਲਈ ਫੇਲ੍ਹ"
+
+#: libapper/PkTransaction.cpp:154
+msgid "Current backend does not support installing packages."
+msgstr "ਮੌਜੂਦਾ ਬੈਕਐਂਡ ਪੈਕੇਜ ਇੰਸਟਾਲ ਕਰਨ ਲਈ ਸਹਾਇਕ ਨਹੀਂ ਹੈ।"
+
+#: libapper/PkTransaction.cpp:172
+msgid "Failed to simulate package removal"
+msgstr "ਪੈਕੇਜ ਹਟਾਉਣ ਦੀ ਨਕਲ ਕਰਨ ਲਈ ਫੇਲ੍ਹ"
+
+#: libapper/PkTransaction.cpp:180
+msgid "The current backend does not support removing packages."
+msgstr "ਮੌਜੂਦਾ ਬੈਕਐਡ ਪੈਕੇਜ ਹਟਾਉਣ ਲਈ ਸਹਾਇਕ ਨਹੀਂ ਹੈ।"
+
+#: libapper/PkTransaction.cpp:196
+msgid "Failed to simulate package update"
+msgstr "ਪੈਕੇਜ ਅੱਪਡੇਟ ਕਰਨ ਦੀ ਨਕਲ ਕਰਨ ਲਈ ਫੇਲ੍ਹ"
+
+#: libapper/PkTransaction.cpp:203
+msgid "The current backend does not support updating packages."
+msgstr "ਮੌਜੂਦਾ ਬੈਕਐਡ ਪੈਕੇਜ ਅੱਪਡੇਟ ਕਰਨ ਲਈ ਸਹਾਇਕ ਨਹੀਂ ਹੈ।"
+
+#: libapper/PkTransaction.cpp:214
+msgid "Failed to refresh package cache"
+msgstr "ਪੈਕੇਜ ਕੈਸ਼ ਤਾਜ਼ਾ ਕਰਨ ਲਈ ਫੇਲ੍ਹ ਹੈ"
+
+#: libapper/PkTransaction.cpp:256
+msgid "Failed to install package"
+msgstr "ਪੈਕੇਜ ਇੰਸਟਾਲ ਕਰਨ ਲਈ ਫੇਲ੍ਹ"
+
+#: libapper/PkTransaction.cpp:281
+msgid "Failed to remove package"
+msgstr "ਪੈਕੇਜ ਹਟਾਉਣ ਲਈ ਫੇਲ੍ਹ ਹੈ"
+
+#: libapper/PkTransaction.cpp:293
+msgid "Failed to update package"
+msgstr "ਪੈਕੇਜ ਅੱਪਡੇਟ ਕਰਨ ਲਈ ਫੇਲ੍ਹ"
+
+#: libapper/PkTransaction.cpp:461
+#, kde-format
+msgid "Downloading packages at %1/s"
+msgstr "%1/s ਨਾਲ ਪੈਕੇਜ ਡਾਊਨਲੋਡ ਕੀਤੇ ਜਾ ਰਹੇ ਹਨ"
+
+#: libapper/PkTransaction.cpp:509
+msgid ""
+"You are about to install unsigned packages that can compromise your system, "
+"as it is impossible to verify if the software came from a trusted source.\n"
+"\n"
+"Are you sure you want to proceed with the installation?"
+msgstr ""
+"ਬਿਨਾਂ-ਸਾਈਨ ਕੀਤੇ ਪੈਕੇਜ ਇੰਸਟਾਲ ਕਰਨ ਨਾਲ ਤੁਹਾਡੇ ਸਿਸਟਮ ਉੱਤੇ ਹਮਲਾ ਹੋ ਸਕਦਾ ਹੈ, ਕਿਉਂਕਿ ਇਹ ਜਾਂਚ "
+"ਕਰਨੀ ਅਸੰਭਵ ਹੋ ਜਾਂਦੀ ਹੈ ਕਿ ਕੀ ਸਾਫਟਵੇਅਰ ਕਿਸੇ ਭਰੋਸੇਯੋਗ ਸਰੋਤ ਤੋਂ ਆਇਆ ਹੈ।\n"
+"\n"
+"ਕੀ ਤੁਸੀਂ ਇੰਸਟਾਲੇਸ਼ਨ ਜਾਰੀ ਰੱਖਣੀ ਚਾਹੁੰਦੇ ਹੋ?"
+
+#: libapper/PkTransaction.cpp:512
+msgid "Installing unsigned software"
+msgstr "ਅਣ-ਸਾਈਨ ਕੀਤਾ ਸਾਫਟਵੇਅਰ ਇੰਸਟਾਲ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ"
+
+#: libapper/PkTransaction.cpp:566 libapper/PkTransaction.cpp:620
+msgid "Failed to install signature"
+msgstr "ਦਸਤਖਤ ਇੰਸਟਾਲ ਕਰਨ ਲਈ ਫੇਲ੍ਹ ਹੈ"
+
 #: libapper/PkTransactionDialog.cpp:88
 msgid ""
 "Allows you to hide the window whilst keeping the transaction task running."
@@ -3096,10 +3227,6 @@ msgstr "ਤੁਹਾਨੂੰ ਵਿੰਡੋ ਓਹਲੇ ਕਰਨ ਲਈ ਸ�
 #: libapper/SimulateModel.cpp:139
 msgid "Package"
 msgstr "ਪੈਕੇਜ"
-
-#: libapper/SimulateModel.cpp:141 libapper/PackageModel.cpp:184
-msgid "Version"
-msgstr "ਵਰਜਨ"
 
 #: libapper/ApplicationLauncher.cpp:95
 msgid "The following application was just installed. Click on it to launch:"
@@ -3123,48 +3250,6 @@ msgstr "ਲਾਈਸੈਂਸ ਇਕਰਾਰਨਾਮਾ ਲੋੜੀਦਾ ਹ
 #, kde-format
 msgid "License required for %1 by %2"
 msgstr "%1 ਲਈ %2 ਵਲੋਂ ਲਾਈਸੈਂਸ ਚਾਹੀਦਾ ਹੈ"
-
-#: libapper/PackageModel.cpp:182
-msgid "Name"
-msgstr "ਨਾਂ"
-
-#: libapper/PackageModel.cpp:186
-#, fuzzy
-#| msgctxt "The role of the transaction, in past tense"
-#| msgid "Installed signature"
-msgid "Installed Version"
-msgstr "ਦਸਤਖਤ ਇੰਸਟਾਲ ਕੀਤੇ"
-
-#: libapper/PackageModel.cpp:188
-msgid "Arch"
-msgstr "ਆਰਚ"
-
-#: libapper/PackageModel.cpp:190
-#, fuzzy
-#| msgid "Edit Origins"
-msgid "Origin"
-msgstr "ਸਰੋਤ ਸੋਧ"
-
-#: libapper/PackageModel.cpp:192
-msgid "Size"
-msgstr "ਸਾਈਜ਼"
-
-#: libapper/PackageModel.cpp:283
-#, kde-format
-msgid ""
-"Version: %1\n"
-"Architecture: %2"
-msgstr ""
-"ਵਰਜਨ: %1\n"
-"ਆਰਚੀਟੈਕਚਰ: %2"
-
-#: libapper/PackageModel.cpp:329
-msgid "To be Removed"
-msgstr "ਹਟਾਉਣ ਲਈ"
-
-#: libapper/PackageModel.cpp:331
-msgid "To be Installed"
-msgstr "ਇੰਸਟਾਲ ਕਰਨ ਲਈ"
 
 #: libapper/Requirements.cpp:42
 msgid "Additional changes"
@@ -3205,84 +3290,6 @@ msgid_plural "%1 packages to update"
 msgstr[0] "ਅੱਪਡੇਟ ਕਰਨ ਲਈ ੧ ਪੈਕੇਜ"
 msgstr[1] "ਅੱਪਡੇਟ ਕਰਨ ਲਈ %1 ਪੈਕੇਜ"
 
-#: libapper/PkTransaction.cpp:122
-msgid "Failed to simulate file install"
-msgstr "ਫਾਇਲ ਇੰਸਟਾਲ ਦੀ ਨਕਲ ਕਰਨ ਲਈ ਫੇਲ੍ਹ"
-
-#: libapper/PkTransaction.cpp:129
-msgid "Current backend does not support installing files."
-msgstr "ਮੌਜੂਦਾ ਬੈਕਐਂਡ ਫਾਇਲਾਂ ਇੰਸਟਾਲ ਕਰਨ ਲਈ ਸਹਾਇਕ ਨਹੀਂ ਹੈ।"
-
-#: libapper/PkTransaction.cpp:129 libapper/PkTransaction.cpp:153
-#: libapper/PkTransaction.cpp:179 libapper/PkTransaction.cpp:202
-msgid "Error"
-msgstr "ਗਲਤੀ"
-
-#: libapper/PkTransaction.cpp:146
-msgid "Failed to simulate package install"
-msgstr "ਪੈਕੇਜ ਇੰਸਟਾਲ ਦੀ ਨਕਲ ਕਰਨ ਲਈ ਫੇਲ੍ਹ"
-
-#: libapper/PkTransaction.cpp:153
-msgid "Current backend does not support installing packages."
-msgstr "ਮੌਜੂਦਾ ਬੈਕਐਂਡ ਪੈਕੇਜ ਇੰਸਟਾਲ ਕਰਨ ਲਈ ਸਹਾਇਕ ਨਹੀਂ ਹੈ।"
-
-#: libapper/PkTransaction.cpp:171
-msgid "Failed to simulate package removal"
-msgstr "ਪੈਕੇਜ ਹਟਾਉਣ ਦੀ ਨਕਲ ਕਰਨ ਲਈ ਫੇਲ੍ਹ"
-
-#: libapper/PkTransaction.cpp:179
-msgid "The current backend does not support removing packages."
-msgstr "ਮੌਜੂਦਾ ਬੈਕਐਡ ਪੈਕੇਜ ਹਟਾਉਣ ਲਈ ਸਹਾਇਕ ਨਹੀਂ ਹੈ।"
-
-#: libapper/PkTransaction.cpp:195
-msgid "Failed to simulate package update"
-msgstr "ਪੈਕੇਜ ਅੱਪਡੇਟ ਕਰਨ ਦੀ ਨਕਲ ਕਰਨ ਲਈ ਫੇਲ੍ਹ"
-
-#: libapper/PkTransaction.cpp:202
-msgid "The current backend does not support updating packages."
-msgstr "ਮੌਜੂਦਾ ਬੈਕਐਡ ਪੈਕੇਜ ਅੱਪਡੇਟ ਕਰਨ ਲਈ ਸਹਾਇਕ ਨਹੀਂ ਹੈ।"
-
-#: libapper/PkTransaction.cpp:213
-msgid "Failed to refresh package cache"
-msgstr "ਪੈਕੇਜ ਕੈਸ਼ ਤਾਜ਼ਾ ਕਰਨ ਲਈ ਫੇਲ੍ਹ ਹੈ"
-
-#: libapper/PkTransaction.cpp:251
-msgid "Failed to install package"
-msgstr "ਪੈਕੇਜ ਇੰਸਟਾਲ ਕਰਨ ਲਈ ਫੇਲ੍ਹ"
-
-#: libapper/PkTransaction.cpp:276
-msgid "Failed to remove package"
-msgstr "ਪੈਕੇਜ ਹਟਾਉਣ ਲਈ ਫੇਲ੍ਹ ਹੈ"
-
-#: libapper/PkTransaction.cpp:288
-msgid "Failed to update package"
-msgstr "ਪੈਕੇਜ ਅੱਪਡੇਟ ਕਰਨ ਲਈ ਫੇਲ੍ਹ"
-
-#: libapper/PkTransaction.cpp:459
-#, kde-format
-msgid "Downloading packages at %1/s"
-msgstr "%1/s ਨਾਲ ਪੈਕੇਜ ਡਾਊਨਲੋਡ ਕੀਤੇ ਜਾ ਰਹੇ ਹਨ"
-
-#: libapper/PkTransaction.cpp:507
-msgid ""
-"You are about to install unsigned packages that can compromise your system, "
-"as it is impossible to verify if the software came from a trusted source.\n"
-"\n"
-"Are you sure you want to proceed with the installation?"
-msgstr ""
-"ਬਿਨਾਂ-ਸਾਈਨ ਕੀਤੇ ਪੈਕੇਜ ਇੰਸਟਾਲ ਕਰਨ ਨਾਲ ਤੁਹਾਡੇ ਸਿਸਟਮ ਉੱਤੇ ਹਮਲਾ ਹੋ ਸਕਦਾ ਹੈ, ਕਿਉਂਕਿ ਇਹ ਜਾਂਚ "
-"ਕਰਨੀ ਅਸੰਭਵ ਹੋ ਜਾਂਦੀ ਹੈ ਕਿ ਕੀ ਸਾਫਟਵੇਅਰ ਕਿਸੇ ਭਰੋਸੇਯੋਗ ਸਰੋਤ ਤੋਂ ਆਇਆ ਹੈ।\n"
-"\n"
-"ਕੀ ਤੁਸੀਂ ਇੰਸਟਾਲੇਸ਼ਨ ਜਾਰੀ ਰੱਖਣੀ ਚਾਹੁੰਦੇ ਹੋ?"
-
-#: libapper/PkTransaction.cpp:510
-msgid "Installing unsigned software"
-msgstr "ਅਣ-ਸਾਈਨ ਕੀਤਾ ਸਾਫਟਵੇਅਰ ਇੰਸਟਾਲ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ"
-
-#: libapper/PkTransaction.cpp:564 libapper/PkTransaction.cpp:618
-msgid "Failed to install signature"
-msgstr "ਦਸਤਖਤ ਇੰਸਟਾਲ ਕਰਨ ਲਈ ਫੇਲ੍ਹ ਹੈ"
-
 #. i18n: file: libapper/RepoSig.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, RepoSig)
 #: libapper/RepoSig.cpp:40 rc.cpp:218
@@ -3296,6 +3303,136 @@ msgstr "ਇੰਸਟਾਲ"
 #: libapper/ApplicationsDelegate.cpp:42
 msgid "Remove"
 msgstr "ਹਟਾਓ"
+
+#: AppSetup/main.cpp:34 AppSetup/main.cpp:35
+msgid "KDE Application Installer"
+msgstr "KDE ਐਪਲੀਕੇਸ਼ਨ ਇੰਸਟਾਲਰ"
+
+#: AppSetup/main.cpp:36
+msgid "(C) 2012, Matthias Klumpp"
+msgstr "(C) 2012, Matthias Klumpp"
+
+#: AppSetup/main.cpp:38
+msgctxt "@info:credit"
+msgid "Daniel Nicoletti"
+msgstr "Daniel Nicoletti"
+
+#: AppSetup/main.cpp:38 AppSetup/main.cpp:40
+msgid "Developer"
+msgstr "ਡਿਵੈਲਪਰ"
+
+#: AppSetup/main.cpp:40
+msgctxt "@info:credit"
+msgid "Matthias Klumpp"
+msgstr ""
+
+#: AppSetup/main.cpp:47
+msgid "Show verbose information"
+msgstr "ਵੱਧ ਜਾਣਕਾਰੀ ਵੇਖਾਓ"
+
+#: AppSetup/main.cpp:48
+msgid "IPK package filename"
+msgstr "IPK ਪੈਕੇਜ ਫਾਇਲ-ਨਾਂ"
+
+#: AppSetup/main.cpp:75
+msgid "Sorry, we didn't get an existing IPK package as parameter."
+msgstr ""
+
+#: AppSetup/main.cpp:76
+msgid "Package not found!"
+msgstr "ਪੈਕੇਜ ਨਹੀਂ ਲੱਭਿਆ!"
+
+#: AppSetup/SetupWizard.cpp:92
+msgid "Installation finished!"
+msgstr "ਇੰਸਟਾਲੇਸ਼ਨ ਪੂਰੀ ਹੋਈ!"
+
+#: AppSetup/SetupWizard.cpp:93
+#, kde-format
+msgid "%1 has been installed successfully!"
+msgstr "%1 ਨੂੰ ਠੀਕ ਤਰ੍ਹਾਂ ਇੰਸਟਾਲ ਕੀਤਾ ਗਿਆ ਹੈ!"
+
+#: AppSetup/SetupWizard.cpp:108
+msgid "An error occurred"
+msgstr "ਗਲਤੀ ਆਈ ਹੈ"
+
+#. i18n: file: ApperKCM/ApperKCM.ui:281
+#. i18n: ectx: property (text), widget (QToolButton, backTB)
+#: AppSetup/SetupWizard.cpp:141 rc.cpp:197
+msgid "Back"
+msgstr "ਪਿੱਛੇ"
+
+#: AppSetup/SetupWizard.cpp:196
+msgid "Welcome!"
+msgstr "ਜੀ ਆਇਆ ਨੂੰ!"
+
+#: AppSetup/SetupWizard.cpp:197
+#, kde-format
+msgid "Welcome to the installation of %1!"
+msgstr "%1 ਦੀ ਇੰਸਟਾਲੇਸ਼ਨ ਲਈ ਜੀ ਆਇਆਂ ਨੂੰ!"
+
+#: AppSetup/SetupWizard.cpp:198
+msgid ""
+"Please be careful while installing 3rd-party applications.<br>They may "
+"eventually <b>damage</b> your system or have <b>malicious behaviour</b>, "
+"like spying out your passwords.<br>Please do only install this software if "
+"you <b>trust the publisher and the author</b> of it."
+msgstr ""
+
+#: AppSetup/SetupWizard.cpp:208
+msgid "Details about this installation"
+msgstr "ਇਹ ਇੰਸਟਾਲੇਸ਼ਨ ਬਾਰੇ ਵੇਰਵਾ"
+
+#: AppSetup/SetupWizard.cpp:235
+msgid "Install for all users (as root)"
+msgstr "ਸਭ ਯੂਜ਼ਰ ਲਈ ਇੰਸਟਾਲ ਕਰੋ (ਰੂਟ ਵਜੋਂ)"
+
+#: AppSetup/SetupWizard.cpp:242
+msgid "Application description"
+msgstr "ਐਪਲੀਕੇਸ਼ਨ ਵੇਰਵਾ"
+
+#: AppSetup/SetupWizard.cpp:251
+msgid "Software license"
+msgstr "ਸਾਫਟਵੇਅਰ ਲਾਈਸੈਂਸ"
+
+#: AppSetup/SetupWizard.cpp:252
+msgid "Please read the following terms and conditions carefully!"
+msgstr "ਜਾਰੀ ਰੱਖਣ ਤੋਂ ਪਹਿਲਾਂ ਅੱਗੇ ਦਿੱਤੀਆਂ ਸ਼ਰਤਾਂ ਨੂੰ ਧਿਆਨ ਨਾਲ ਪੜ੍ਹ ਲਵੋ ਜੀ!"
+
+#: AppSetup/SetupWizard.cpp:259
+msgid "Running installation"
+msgstr "ਇੰਸਟਾਲੇਸ਼ਨ ਚੱਲ ਰਹੀ ਹੈ"
+
+#: AppSetup/SetupWizard.cpp:260
+#, kde-format
+msgid "Installing %1..."
+msgstr "%1 ਇੰਸਟਾਲ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ..."
+
+#: AppSetup/SetupWizard.cpp:297
+msgid ""
+"Installing this package will make the following native packages obsolete. "
+"You might consider removing them manually."
+msgstr ""
+
+#: AppSetup/SetupWizard.cpp:298
+msgid "Similar native packages found"
+msgstr "ਰਲਦੇ ਨੇਟਿਵ ਪੈਕੇਜ ਲੱਭੇ"
+
+#: AppSetup/SetupWizard.cpp:364
+msgid ""
+"You want to install this application as root!\n"
+"This can damage your system or install malicious software for all users.\n"
+"Please only proceed, if you really know what you're doing!\n"
+"Continue?"
+msgstr ""
+"ਤੁਸੀਂ ਇਹ ਐਪਲੀਕੇਸ਼ਨ ਨੂੰ ਰੂਟ ਵਜੋਂ ਇੰਸਟਾਲ ਕਰਨੀ ਚਾਹੁੰਦੇ ਹੋ!\n"
+"ਇਹ ਤੁਹਾਡੇ ਸਿਸਟਮ ਨੂੰ ਖਰਾਬ ਕਰ ਸਕਦੀ ਹੈ ਜਾਂ ਤੁਸੀਂ ਸਭ ਯੂਜ਼ਰ ਲਈ ਖਰਾਬ ਸਾਫਟਵੇਅਰ ਇੰਸਟਾਲ ਕਰ ਸਕਦੇ "
+"ਹੋ।\n"
+"ਕੇਵਲ ਤਾਂ ਹੀ ਅੱਗੇ ਵਧੋ, ਜੇ ਤੁਸੀਂ ਜਾਣਦੇ ਹੋ ਕਿ ਤੁਸੀਂ ਕੀ ਕਰਨਾ ਜਾ ਰਹੇ ਹੋ!\n"
+"ਜਾਰੀ ਰੱਖਣਾ ਹੈ?"
+
+#: AppSetup/SetupWizard.cpp:367
+msgid "Really install as superuser?"
+msgstr "ਕੀ ਸੁਪਰ-ਯੂਜ਼ਰ ਵਜੋਂ ਇੰਸਟਾਲ ਕਰਨਾ ਹੈ?"
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
@@ -3643,12 +3780,6 @@ msgstr "ਪੈਕੇਜ ਖੋਜ"
 msgid "Pending Changes"
 msgstr "ਬਾਕੀ ਰਹਿੰਦੇ ਬਦਲਾਅ"
 
-#. i18n: file: ApperKCM/ApperKCM.ui:281
-#. i18n: ectx: property (text), widget (QToolButton, backTB)
-#: rc.cpp:197
-msgid "Back"
-msgstr "ਪਿੱਛੇ"
-
 #. i18n: file: Sentinel/IntroDialog.ui:65
 #. i18n: ectx: property (text), widget (QLabel, descriptionL)
 #: rc.cpp:209
@@ -3721,6 +3852,18 @@ msgstr "ਆਈਕਾਨ"
 msgid "Downloading Packages"
 msgstr "ਪੈਕੇਜ ਡਾਊਨਲੋਡ ਕੀਤੇ ਜਾ ਰਹੇ ਹਨ"
 
+#. i18n: file: AppSetup/LicensePage.ui:98
+#. i18n: ectx: property (text), widget (QRadioButton, acceptedRB)
+#: rc.cpp:251
+msgid "I agree to the above terms and conditions"
+msgstr "ਮੈਂ ਉੱਤੇ ਦਿੱਤੀਆਂ ਸ਼ਰਤਾਂ ਨਾਲ ਸਹਿਮਤ ਹਾਂ"
+
+#. i18n: file: AppSetup/LicensePage.ui:111
+#. i18n: ectx: property (text), widget (QRadioButton, rejectedRB)
+#: rc.cpp:254
+msgid "I don't agree"
+msgstr "ਮੈਂ ਸਹਿਮਤ ਨਹੀਂ ਹਾਂ"
+
 
 
 
@@ -4298,14 +4441,6 @@ msgstr "ਪੈਕੇਜ ਡਾਊਨਲੋਡ ਕੀਤੇ ਜਾ ਰਹੇ ਹ�
 
 
 
-
-
-
-
-
-
-
-#, fuzzy
 
 
 

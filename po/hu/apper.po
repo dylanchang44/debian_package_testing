@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-02-18 05:06+0100\n"
-"PO-Revision-Date: 2012-01-04 23:42+0100\n"
+"POT-Creation-Date: 2012-05-20 05:58+0200\n"
+"PO-Revision-Date: 2012-04-16 09:21+0200\n"
 "Last-Translator: Kristóf Kiszel <ulysses@kubuntu.org>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
 "Language: hu\n"
@@ -22,7 +22,7 @@ msgstr ""
 msgid "Backend Details"
 msgstr "A háttérprogram részletei"
 
-#: Apper/main.cpp:54 Sentinel/UpdateIcon.cpp:158 Sentinel/main.cpp:34
+#: Apper/main.cpp:54 Sentinel/UpdateIcon.cpp:113 Sentinel/main.cpp:34
 msgid "Apper"
 msgstr "Apper"
 
@@ -30,7 +30,7 @@ msgstr "Apper"
 msgid "Apper is an Application to Get and Manage Software"
 msgstr "Az Apper egy alkalmazás szoftverek beszerzéséhez és kezeléséhez"
 
-#: Apper/main.cpp:58 ApperKCM/ApperKCM.cpp:83 Sentinel/main.cpp:38
+#: Apper/main.cpp:58 ApperKCM/ApperKCM.cpp:84 Sentinel/main.cpp:38
 msgid "(C) 2008-2011 Daniel Nicoletti"
 msgstr "(C) Daniel Nicoletti, 2008-2011."
 
@@ -85,6 +85,135 @@ msgstr "Egyszerű csomageltávolító"
 #: Apper/main.cpp:75
 msgid "Package file to install"
 msgstr "Telepítendő csomagfájl"
+
+#: ApperKCM/FiltersMenu.cpp:37
+msgid "Collections"
+msgstr "Gyűjtemények"
+
+#: ApperKCM/FiltersMenu.cpp:44
+msgid "Only collections"
+msgstr "Csak gyűjtemények"
+
+#: ApperKCM/FiltersMenu.cpp:51
+msgid "Exclude collections"
+msgstr "Gyűjtemények kizárása"
+
+#. i18n: file: Apper/BackendDetails.ui:100
+#. i18n: ectx: property (text), widget (QCheckBox, installedCB)
+#: ApperKCM/FiltersMenu.cpp:60 libapper/PkStrings.cpp:362 rc.cpp:23
+msgid "Installed"
+msgstr "Telepítve"
+
+#: ApperKCM/FiltersMenu.cpp:67
+msgid "Only installed"
+msgstr "Csak a telepítettek"
+
+#: ApperKCM/FiltersMenu.cpp:74
+msgid "Only available"
+msgstr "Csak az elérhetők"
+
+#: ApperKCM/FiltersMenu.cpp:81 ApperKCM/FiltersMenu.cpp:111
+#: ApperKCM/FiltersMenu.cpp:141 ApperKCM/FiltersMenu.cpp:171
+#: ApperKCM/FiltersMenu.cpp:202 ApperKCM/FiltersMenu.cpp:233
+msgid "No filter"
+msgstr "Nincs szűrő"
+
+#. i18n: file: Apper/BackendDetails.ui:110
+#. i18n: ectx: property (text), widget (QCheckBox, developmentCB)
+#: ApperKCM/FiltersMenu.cpp:90 rc.cpp:26
+msgid "Development"
+msgstr "Fejlesztőeszközök"
+
+#: ApperKCM/FiltersMenu.cpp:97
+msgid "Only development"
+msgstr "Csak fejlesztői"
+
+#: ApperKCM/FiltersMenu.cpp:104
+msgid "Only end user files"
+msgstr "Csak végfelhasználói"
+
+#: ApperKCM/FiltersMenu.cpp:120
+msgid "Graphical"
+msgstr "Grafikus"
+
+#: ApperKCM/FiltersMenu.cpp:127
+msgid "Only graphical"
+msgstr "Csak grafikus"
+
+#: ApperKCM/FiltersMenu.cpp:134
+msgid "Only text"
+msgstr "Csak szöveges"
+
+#: ApperKCM/FiltersMenu.cpp:150
+msgctxt "Filter for free packages"
+msgid "Free"
+msgstr "Szabad"
+
+#: ApperKCM/FiltersMenu.cpp:157
+msgid "Only free software"
+msgstr "Csak szabad szoftver"
+
+#: ApperKCM/FiltersMenu.cpp:164
+msgid "Only non-free software"
+msgstr "Csak nem szabad szoftver"
+
+#: ApperKCM/FiltersMenu.cpp:181
+msgctxt "Filter for supported packages"
+msgid "Supported"
+msgstr "Támogatott"
+
+#: ApperKCM/FiltersMenu.cpp:188
+msgid "Only supported software"
+msgstr "Csak támogatott szoftver"
+
+#: ApperKCM/FiltersMenu.cpp:195
+msgid "Only non-supported software"
+msgstr "Csak nem támogatott szoftver"
+
+#: ApperKCM/FiltersMenu.cpp:212
+msgctxt "Filter for source packages"
+msgid "Source"
+msgstr "Forrás"
+
+#: ApperKCM/FiltersMenu.cpp:219
+msgid "Only sourcecode"
+msgstr "Csak forráskód"
+
+#: ApperKCM/FiltersMenu.cpp:226
+msgid "Only non-sourcecode"
+msgstr "Csak a nem forráskódok"
+
+#: ApperKCM/FiltersMenu.cpp:248
+msgid "Hide Subpackages"
+msgstr "Alcsomagok elrejtése"
+
+#: ApperKCM/FiltersMenu.cpp:250
+msgid "Only show one package, not subpackages"
+msgstr "Csak egy csomag megjelenítése, részcsomagok nélkül"
+
+#: ApperKCM/FiltersMenu.cpp:257
+msgid "Only Newest Packages"
+msgstr "Csak a legújabb csomagok"
+
+#: ApperKCM/FiltersMenu.cpp:262
+msgid "Only show the newest available package"
+msgstr "Csak a legújabb elérhető csomag megjelenítése"
+
+#: ApperKCM/FiltersMenu.cpp:269
+msgid "Only Native Packages"
+msgstr "Csak a natív csomagok"
+
+#: ApperKCM/FiltersMenu.cpp:274
+msgid "Only show packages matching the machine architecture"
+msgstr "Csak a számítógép architektúrájához illeszkedő csomagok megjelenítése"
+
+#: ApperKCM/FiltersMenu.cpp:283
+msgid "Only Show Applications"
+msgstr "Csak alkalmazások megjelenítése"
+
+#: ApperKCM/FiltersMenu.cpp:286
+msgid "Hide packages that are not applications"
+msgstr "Azon csomagok elrejtése, amelyek nem alkalmazások"
 
 #: ApperKCM/Settings/OriginModel.cpp:39 ApperKCM/Settings/OriginModel.cpp:52
 msgid "Origin of Packages"
@@ -318,20 +447,16 @@ msgid "Show Versions"
 msgstr "Verziók megjelenítése"
 
 #: ApperKCM/Updater/Updater.cpp:117
-#, fuzzy
-#| msgid "Show Versions"
 msgid "Show Current Versions"
-msgstr "Verziók megjelenítése"
+msgstr "Jelenlegi verziók megjelenítése"
 
 #: ApperKCM/Updater/Updater.cpp:124 ApperKCM/BrowseView.cpp:102
 msgid "Show Architectures"
 msgstr "Architektúrák megjelenítése"
 
 #: ApperKCM/Updater/Updater.cpp:131 ApperKCM/BrowseView.cpp:109
-#, fuzzy
-#| msgid "Software Origins"
 msgid "Show Origins"
-msgstr "Szoftverforrások"
+msgstr "Eredetek megjelenítése"
 
 #: ApperKCM/Updater/Updater.cpp:138 ApperKCM/BrowseView.cpp:116
 msgid "Show Sizes"
@@ -369,192 +494,35 @@ msgstr "Erősen ajánlott a frissítések azonnali keresése"
 msgid "Check for new Updates"
 msgstr "Új frissítések keresése"
 
-#: ApperKCM/FiltersMenu.cpp:37
-msgid "Collections"
-msgstr "Gyűjtemények"
+#: ApperKCM/ScreenShotViewer.cpp:90
+msgid "Could not find screen shot."
+msgstr "Nem található képernyőkép."
 
-#: ApperKCM/FiltersMenu.cpp:44
-msgid "Only collections"
-msgstr "Csak gyűjtemények"
+#: ApperKCM/CategoryModel.cpp:47
+msgid "Installed Software"
+msgstr "Telepített szoftverek"
 
-#: ApperKCM/FiltersMenu.cpp:51
-msgid "Exclude collections"
-msgstr "Gyűjtemények kizárása"
+#: ApperKCM/CategoryModel.cpp:50 ApperKCM/CategoryModel.cpp:58
+msgid "Lists"
+msgstr "Listák"
 
-#. i18n: file: Apper/BackendDetails.ui:100
-#. i18n: ectx: property (text), widget (QCheckBox, installedCB)
-#: ApperKCM/FiltersMenu.cpp:60 libapper/PkStrings.cpp:362 rc.cpp:23
-msgid "Installed"
-msgstr "Telepítve"
+#: ApperKCM/CategoryModel.cpp:55
+msgid "Updates"
+msgstr "Frissítések"
 
-#: ApperKCM/FiltersMenu.cpp:67
-msgid "Only installed"
-msgstr "Csak a telepítettek"
+#: ApperKCM/CategoryModel.cpp:155 ApperKCM/CategoryModel.cpp:339
+msgid "Categories"
+msgstr "Kategóriák"
 
-#: ApperKCM/FiltersMenu.cpp:74
-msgid "Only available"
-msgstr "Csak az elérhetők"
-
-#: ApperKCM/FiltersMenu.cpp:81 ApperKCM/FiltersMenu.cpp:111
-#: ApperKCM/FiltersMenu.cpp:141 ApperKCM/FiltersMenu.cpp:171
-#: ApperKCM/FiltersMenu.cpp:202
-msgid "No filter"
-msgstr "Nincs szűrő"
-
-#. i18n: file: Apper/BackendDetails.ui:110
-#. i18n: ectx: property (text), widget (QCheckBox, developmentCB)
-#: ApperKCM/FiltersMenu.cpp:90 rc.cpp:26
-msgid "Development"
-msgstr "Fejlesztőeszközök"
-
-#: ApperKCM/FiltersMenu.cpp:97
-msgid "Only development"
-msgstr "Csak fejlesztői"
-
-#: ApperKCM/FiltersMenu.cpp:104
-msgid "Only end user files"
-msgstr "Csak végfelhasználói"
-
-#: ApperKCM/FiltersMenu.cpp:120
-msgid "Graphical"
-msgstr "Grafikus"
-
-#: ApperKCM/FiltersMenu.cpp:127
-msgid "Only graphical"
-msgstr "Csak grafikus"
-
-#: ApperKCM/FiltersMenu.cpp:134
-msgid "Only text"
-msgstr "Csak szöveges"
-
-#: ApperKCM/FiltersMenu.cpp:150
-msgctxt "Filter for free packages"
-msgid "Free"
-msgstr "Szabad"
-
-#: ApperKCM/FiltersMenu.cpp:157
-msgid "Only free software"
-msgstr "Csak szabad szoftver"
-
-#: ApperKCM/FiltersMenu.cpp:164
-msgid "Only non-free software"
-msgstr "Csak nem szabad szoftver"
-
-#: ApperKCM/FiltersMenu.cpp:181
-msgctxt "Filter for source packages"
-msgid "Source"
-msgstr "Forrás"
-
-#: ApperKCM/FiltersMenu.cpp:188
-msgid "Only sourcecode"
-msgstr "Csak forráskód"
-
-#: ApperKCM/FiltersMenu.cpp:195
-msgid "Only non-sourcecode"
-msgstr "Csak a nem forráskódok"
-
-#: ApperKCM/FiltersMenu.cpp:217
-msgid "Hide Subpackages"
-msgstr "Alcsomagok elrejtése"
-
-#: ApperKCM/FiltersMenu.cpp:219
-msgid "Only show one package, not subpackages"
-msgstr "Csak egy csomag megjelenítése, részcsomagok nélkül"
-
-#: ApperKCM/FiltersMenu.cpp:226
-msgid "Only Newest Packages"
-msgstr "Csak a legújabb csomagok"
-
-#: ApperKCM/FiltersMenu.cpp:231
-msgid "Only show the newest available package"
-msgstr "Csak a legújabb elérhető csomag megjelenítése"
-
-#: ApperKCM/FiltersMenu.cpp:238
-msgid "Only Native Packages"
-msgstr "Csak a natív csomagok"
-
-#: ApperKCM/FiltersMenu.cpp:243
-msgid "Only show packages matching the machine architecture"
-msgstr "Csak a számítógép architektúrájához illeszkedő csomagok megjelenítése"
-
-#: ApperKCM/FiltersMenu.cpp:252
-msgid "Only Show Applications"
-msgstr "Csak alkalmazások megjelenítése"
-
-#: ApperKCM/FiltersMenu.cpp:255
-msgid "Hide packages that are not applications"
-msgstr "Azon csomagok elrejtése, amelyek nem alkalmazások"
-
-#: ApperKCM/ApperKCM.cpp:79
-msgid "Application Manager"
-msgstr "Alkalmazáskezelő"
-
-#: ApperKCM/ApperKCM.cpp:81
-msgid "KDE interface for managing software"
-msgstr "KDE felület szoftverek kezeléséhez"
-
-#: ApperKCM/ApperKCM.cpp:111 ApperKCM/ApperKCM.cpp:292
-msgid "Find"
-msgstr "Keresés"
-
-#: ApperKCM/ApperKCM.cpp:206
-msgid "History"
-msgstr "Előzmények"
-
-#. i18n: file: ApperKCM/Settings/Settings.ui:14
-#. i18n: ectx: property (windowTitle), widget (QWidget, Settings)
-#: ApperKCM/ApperKCM.cpp:212 rc.cpp:140
-msgid "Settings"
-msgstr "Beállítások"
-
-#: ApperKCM/ApperKCM.cpp:269 ApperKCM/ApperKCM.cpp:270
-#: ApperKCM/ApperKCM.cpp:271 ApperKCM/ApperKCM.cpp:272
-msgid "&Cancel"
-msgstr "&Mégsem"
-
-#. i18n: file: ApperKCM/ApperKCM.ui:291
-#. i18n: ectx: property (text), widget (QToolButton, backTB)
-#: ApperKCM/ApperKCM.cpp:279 rc.cpp:200
-msgid "Find by &name"
-msgstr "Keresés &név alapján"
-
-#. i18n: file: ApperKCM/ApperKCM.ui:301
-#. i18n: ectx: property (text), widget (QToolButton, backTB)
-#: ApperKCM/ApperKCM.cpp:280 rc.cpp:206
-msgid "Find by f&ile name"
-msgstr "Keresés &fájlnév alapján"
-
-#. i18n: file: ApperKCM/ApperKCM.ui:296
-#. i18n: ectx: property (text), widget (QToolButton, backTB)
-#: ApperKCM/ApperKCM.cpp:281 rc.cpp:203
-msgid "Find by &description"
-msgstr "Keresés &leírás alapján"
-
-#: ApperKCM/ApperKCM.cpp:411
-msgid ""
-"The settings of the current module have changed.\n"
-"Do you want to apply the changes or discard them?"
-msgstr ""
-"Nem mentett módosítások vannak az aktív beállítómodulban.\n"
-"Elmenti vagy eldobja a módosításokat?"
-
-#: ApperKCM/ApperKCM.cpp:413
-msgid "Apply Settings"
-msgstr "Beállítások alkalmazása"
-
-#: ApperKCM/ApperKCM.cpp:455
-msgid "General Settings"
-msgstr "Általános beállítások"
-
-#: ApperKCM/ApperKCM.cpp:456
-msgid "Software Origins"
-msgstr "Szoftverforrások"
+#: ApperKCM/CategoryModel.cpp:208
+msgid "Groups"
+msgstr "Csoportok"
 
 #: ApperKCM/PackageDetails.cpp:73
 msgid "Display"
 msgstr "Megjelenítés"
 
-#: ApperKCM/PackageDetails.cpp:80
+#: ApperKCM/PackageDetails.cpp:80 AppSetup/SetupWizard.cpp:243
 msgid "Description"
 msgstr "Leírás"
 
@@ -582,30 +550,6 @@ msgstr "Nem sikerült a szoftverek részleteinek letöltése"
 msgid "Applications"
 msgstr "Alkalmazások"
 
-#: ApperKCM/CategoryModel.cpp:47
-msgid "Installed Software"
-msgstr "Telepített szoftverek"
-
-#: ApperKCM/CategoryModel.cpp:50 ApperKCM/CategoryModel.cpp:58
-msgid "Lists"
-msgstr "Listák"
-
-#: ApperKCM/CategoryModel.cpp:55
-msgid "Updates"
-msgstr "Frissítések"
-
-#: ApperKCM/CategoryModel.cpp:155 ApperKCM/CategoryModel.cpp:339
-msgid "Categories"
-msgstr "Kategóriák"
-
-#: ApperKCM/CategoryModel.cpp:208
-msgid "Groups"
-msgstr "Csoportok"
-
-#: ApperKCM/ScreenShotViewer.cpp:90
-msgid "Could not find screen shot."
-msgstr "Nem található képernyőkép."
-
 #: ApperKCM/TransactionHistory.cpp:66
 msgid "Refresh transactions list"
 msgstr "Tranzakciólista frissítése"
@@ -624,6 +568,7 @@ msgid "Action"
 msgstr "Művelet"
 
 #: ApperKCM/TransactionModel.cpp:48 Sentinel/TransactionWatcher.cpp:308
+#: AppSetup/SetupWizard.cpp:207
 msgid "Details"
 msgstr "Részletek"
 
@@ -636,13 +581,70 @@ msgstr "Felhasználónév"
 msgid "Application"
 msgstr "Alkalmazás"
 
-#: Sentinel/DistroUpgrade.cpp:69
-msgid "Start upgrade now"
-msgstr "Frissítés indítása"
+#: ApperKCM/ApperKCM.cpp:80
+msgid "Application Manager"
+msgstr "Alkalmazáskezelő"
 
-#: Sentinel/DistroUpgrade.cpp:114
-msgid "Distribution upgrade finished. "
-msgstr "A disztribúciófrissítés befejeződött. "
+#: ApperKCM/ApperKCM.cpp:82
+msgid "KDE interface for managing software"
+msgstr "KDE felület szoftverek kezeléséhez"
+
+#: ApperKCM/ApperKCM.cpp:112 ApperKCM/ApperKCM.cpp:293
+msgid "Find"
+msgstr "Keresés"
+
+#: ApperKCM/ApperKCM.cpp:207
+msgid "History"
+msgstr "Előzmények"
+
+#. i18n: file: ApperKCM/Settings/Settings.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, Settings)
+#: ApperKCM/ApperKCM.cpp:213 rc.cpp:140
+msgid "Settings"
+msgstr "Beállítások"
+
+#: ApperKCM/ApperKCM.cpp:270 ApperKCM/ApperKCM.cpp:271
+#: ApperKCM/ApperKCM.cpp:272 ApperKCM/ApperKCM.cpp:273
+msgid "&Cancel"
+msgstr "&Mégsem"
+
+#. i18n: file: ApperKCM/ApperKCM.ui:291
+#. i18n: ectx: property (text), widget (QToolButton, backTB)
+#: ApperKCM/ApperKCM.cpp:280 rc.cpp:200
+msgid "Find by &name"
+msgstr "Keresés &név alapján"
+
+#. i18n: file: ApperKCM/ApperKCM.ui:301
+#. i18n: ectx: property (text), widget (QToolButton, backTB)
+#: ApperKCM/ApperKCM.cpp:281 rc.cpp:206
+msgid "Find by f&ile name"
+msgstr "Keresés &fájlnév alapján"
+
+#. i18n: file: ApperKCM/ApperKCM.ui:296
+#. i18n: ectx: property (text), widget (QToolButton, backTB)
+#: ApperKCM/ApperKCM.cpp:282 rc.cpp:203
+msgid "Find by &description"
+msgstr "Keresés &leírás alapján"
+
+#: ApperKCM/ApperKCM.cpp:412
+msgid ""
+"The settings of the current module have changed.\n"
+"Do you want to apply the changes or discard them?"
+msgstr ""
+"Nem mentett módosítások vannak az aktív beállítómodulban.\n"
+"Elmenti vagy eldobja a módosításokat?"
+
+#: ApperKCM/ApperKCM.cpp:414
+msgid "Apply Settings"
+msgstr "Beállítások alkalmazása"
+
+#: ApperKCM/ApperKCM.cpp:456
+msgid "General Settings"
+msgstr "Általános beállítások"
+
+#: ApperKCM/ApperKCM.cpp:457
+msgid "Software Origins"
+msgstr "Szoftverforrások"
 
 #: Sentinel/PkInstallProvideFiles.cpp:39
 msgid "Install Packages that Provides Files"
@@ -676,7 +678,7 @@ msgstr[1] "A(z) %2 alkalmazás fájlok telepítését kéri"
 msgid "Failed to start search file transaction"
 msgstr "Nem sikerült elindítani a fájlkeresési tranzakciót"
 
-#: Sentinel/PkInstallProvideFiles.cpp:101 libapper/PkTransaction.cpp:263
+#: Sentinel/PkInstallProvideFiles.cpp:101 libapper/PkTransaction.cpp:268
 msgid "Failed to install file"
 msgid_plural "Failed to install files"
 msgstr[0] "A fájl telepítése meghiúsult"
@@ -717,46 +719,6 @@ msgstr "A nyomtatóillesztő keresése meghiúsult"
 #: Sentinel/PkInstallPrinterDrivers.cpp:88
 msgid "Could not find printer driver in any configured software source"
 msgstr "Nem található nyomtatóillesztő a beállított szoftverforrásokban"
-
-#: Sentinel/UpdateIcon.cpp:160
-msgid "Review Updates"
-msgstr "Frissítések áttekintése"
-
-#: Sentinel/UpdateIcon.cpp:163
-msgid "Configure"
-msgstr "Beállítás"
-
-#. i18n: file: ApperKCM/PackageDetails.ui:359
-#. i18n: ectx: property (text), widget (QToolButton, hideTB)
-#. i18n: file: ApperKCM/Updater/UpdateDetails.ui:20
-#. i18n: ectx: property (text), widget (QToolButton, hideTB)
-#: Sentinel/UpdateIcon.cpp:167 Sentinel/TransactionWatcher.cpp:186
-#: libapper/PkTransactionDialog.cpp:86 rc.cpp:137 rc.cpp:173
-msgid "Hide"
-msgstr "Elrejtés"
-
-#: Sentinel/UpdateIcon.cpp:177
-#, kde-format
-msgid "You have one update"
-msgid_plural "You have %1 updates"
-msgstr[0] "Egy frissítés érhető el"
-msgstr[1] "%1 frissítés érhető el"
-
-#: Sentinel/UpdateIcon.cpp:230
-msgid "Updates are being automatically installed."
-msgstr "A frissítések automatikus telepítése."
-
-#: Sentinel/UpdateIcon.cpp:251
-msgid "Security updates are being automatically installed."
-msgstr "A biztonsági frissítések automatikus telepítése."
-
-#: Sentinel/UpdateIcon.cpp:278
-msgid "System update was successful."
-msgstr "A rendszerfrissítés sikeres volt."
-
-#: Sentinel/UpdateIcon.cpp:287
-msgid "The automated software update failed."
-msgstr "Az automatikus szoftverfrissítés meghiúsult."
 
 #: Sentinel/ReviewChanges.cpp:52
 msgid "The following package was found"
@@ -888,7 +850,57 @@ msgstr "A katalógus üres"
 msgid "Could not find any package to install in this catalog"
 msgstr "Nem található telepítendő csomag ebben a katalógusban"
 
+#: Sentinel/PkInstallPackageFiles.cpp:38
+msgid "Install Packages Files"
+msgstr "Csomagfájlok telepítése"
+
+#: Sentinel/PkInstallPackageFiles.cpp:42
+#: Sentinel/PkRemovePackageByFiles.cpp:43
+msgid "You can drop more files in here"
+msgstr "Több fájlt is ejthet ide"
+
+#: Sentinel/PkInstallPackageFiles.cpp:52
+msgid "Not Supported"
+msgstr "Nem támogatott"
+
+#: Sentinel/PkInstallPackageFiles.cpp:53
+msgid "Your current backend does not support installing files"
+msgstr "A jelenlegi háttérprogram nem támogatja fájlok telepítését"
+
+#: Sentinel/PkInstallPackageFiles.cpp:68
+#: Sentinel/PkRemovePackageByFiles.cpp:64
+msgid "No supported files were provided"
+msgstr "Nincsenek megadva támogatott fájlok"
+
+#: Sentinel/PkInstallPackageFiles.cpp:70
+msgid "Press <i>Continue</i> if you want to install this file"
+msgid_plural "Press <i>Continue</i> if you want to install these files"
+msgstr[0] ""
+"Nyomja meg a <i>Folytatás</i> gombot ha szeretné telepíteni ezt a fájlt"
+msgstr[1] ""
+"Nyomja meg a <i>Folytatás</i> gombot ha szeretné telepíteni ezeket a fájlokat"
+
+#: Sentinel/PkInstallPackageFiles.cpp:105
+msgid "Installation Complete"
+msgstr "A telepítés befejeződött"
+
+#: Sentinel/PkInstallPackageFiles.cpp:106
+msgid "File was installed successfully"
+msgid_plural "Files were installed successfully"
+msgstr[0] "A fájl sikeresen telepítve"
+msgstr[1] "A fájlok sikeresen telepítve"
+
+#: Sentinel/PkInstallPackageFiles.cpp:117
+msgid "Failed to install files"
+msgstr "A fájlok telepítése meghiúsult"
+
+#: Sentinel/PkInstallPackageFiles.cpp:118
+#: Sentinel/PkInstallPackageFiles.cpp:120
+msgid "Could not install files"
+msgstr "Nem lehet telepíteni a fájlokat"
+
 #: Sentinel/SessionTask.cpp:66 libapper/Requirements.cpp:44
+#: AppSetup/SetupWizard.cpp:139
 msgid "Continue"
 msgstr "Folytatás"
 
@@ -923,6 +935,72 @@ msgstr "A feladat befejezve"
 #: Sentinel/SessionTask.cpp:430
 msgid "All operations were committed successfully"
 msgstr "Az összes művelet sikeresen befejeződött"
+
+#: Sentinel/UpdateIcon.cpp:115
+msgid "Review Updates"
+msgstr "Frissítések áttekintése"
+
+#: Sentinel/UpdateIcon.cpp:118
+msgid "Configure"
+msgstr "Beállítás"
+
+#. i18n: file: ApperKCM/PackageDetails.ui:359
+#. i18n: ectx: property (text), widget (QToolButton, hideTB)
+#. i18n: file: ApperKCM/Updater/UpdateDetails.ui:20
+#. i18n: ectx: property (text), widget (QToolButton, hideTB)
+#: Sentinel/UpdateIcon.cpp:122 Sentinel/TransactionWatcher.cpp:186
+#: libapper/PkTransactionDialog.cpp:86 rc.cpp:137 rc.cpp:173
+msgid "Hide"
+msgstr "Elrejtés"
+
+#: Sentinel/UpdateIcon.cpp:132
+#, kde-format
+msgid "You have one update"
+msgid_plural "You have %1 updates"
+msgstr[0] "Egy frissítés érhető el"
+msgstr[1] "%1 frissítés érhető el"
+
+#: Sentinel/UpdateIcon.cpp:192
+msgid "Updates are being automatically installed."
+msgstr "A frissítések automatikus telepítése."
+
+#: Sentinel/UpdateIcon.cpp:213
+msgid "Security updates are being automatically installed."
+msgstr "A biztonsági frissítések automatikus telepítése."
+
+#: Sentinel/UpdateIcon.cpp:240
+msgid "System update was successful."
+msgstr "A rendszerfrissítés sikeres volt."
+
+#: Sentinel/UpdateIcon.cpp:249
+msgid "The automated software update failed."
+msgstr "Az automatikus szoftverfrissítés meghiúsult."
+
+#: Sentinel/PkIsInstalled.cpp:36
+msgid "Querying if a Package is Installed"
+msgstr "Lekérdezés, ha egy csomag telepítve van"
+
+#: Sentinel/PkIsInstalled.cpp:67
+msgid "User canceled the transaction"
+msgstr "A felhasználó megszakította a tranzakciót"
+
+#: Sentinel/PkIsInstalled.cpp:69
+msgid "An unknown error happened"
+msgstr "Ismeretlen hiba történt"
+
+#: Sentinel/TransactionTrayIcon.cpp:45
+msgid "Transactions"
+msgstr "Tranzakciók"
+
+#: Sentinel/TransactionTrayIcon.cpp:90
+#, kde-format
+msgid "%1% - %2"
+msgstr "%1 % – %2"
+
+#: Sentinel/TransactionTrayIcon.cpp:92
+#, kde-format
+msgid "%1"
+msgstr "%1"
 
 #: Sentinel/TransactionWatcher.cpp:66 Sentinel/TransactionWatcher.cpp:265
 msgid "Hide this icon"
@@ -962,32 +1040,6 @@ msgstr "Üzenetek megjelenítése"
 #: Sentinel/TransactionWatcher.cpp:308
 msgid "Ignore"
 msgstr "Mellőzés"
-
-#: Sentinel/PkIsInstalled.cpp:36
-msgid "Querying if a Package is Installed"
-msgstr "Lekérdezés, ha egy csomag telepítve van"
-
-#: Sentinel/PkIsInstalled.cpp:67
-msgid "User canceled the transaction"
-msgstr "A felhasználó megszakította a tranzakciót"
-
-#: Sentinel/PkIsInstalled.cpp:69
-msgid "An unknown error happened"
-msgstr "Ismeretlen hiba történt"
-
-#: Sentinel/TransactionTrayIcon.cpp:45
-msgid "Transactions"
-msgstr "Tranzakciók"
-
-#: Sentinel/TransactionTrayIcon.cpp:90
-#, kde-format
-msgid "%1% - %2"
-msgstr "%1 % – %2"
-
-#: Sentinel/TransactionTrayIcon.cpp:92
-#, kde-format
-msgid "%1"
-msgstr "%1"
 
 #: Sentinel/PkInstallPlasmaResources.cpp:40
 msgid "Install Plasma Resources"
@@ -1077,55 +1129,6 @@ msgstr "Apper Sentinel"
 msgid "Trever Fischer"
 msgstr "Trever Fischer"
 
-#: Sentinel/PkInstallPackageFiles.cpp:38
-msgid "Install Packages Files"
-msgstr "Csomagfájlok telepítése"
-
-#: Sentinel/PkInstallPackageFiles.cpp:42
-#: Sentinel/PkRemovePackageByFiles.cpp:43
-msgid "You can drop more files in here"
-msgstr "Több fájlt is ejthet ide"
-
-#: Sentinel/PkInstallPackageFiles.cpp:52
-msgid "Not Supported"
-msgstr "Nem támogatott"
-
-#: Sentinel/PkInstallPackageFiles.cpp:53
-msgid "Your current backend does not support installing files"
-msgstr "A jelenlegi háttérprogram nem támogatja fájlok telepítését"
-
-#: Sentinel/PkInstallPackageFiles.cpp:68
-#: Sentinel/PkRemovePackageByFiles.cpp:64
-msgid "No supported files were provided"
-msgstr "Nincsenek megadva támogatott fájlok"
-
-#: Sentinel/PkInstallPackageFiles.cpp:70
-msgid "Press <i>Continue</i> if you want to install this file"
-msgid_plural "Press <i>Continue</i> if you want to install these files"
-msgstr[0] ""
-"Nyomja meg a <i>Folytatás</i> gombot ha szeretné telepíteni ezt a fájlt"
-msgstr[1] ""
-"Nyomja meg a <i>Folytatás</i> gombot ha szeretné telepíteni ezeket a fájlokat"
-
-#: Sentinel/PkInstallPackageFiles.cpp:105
-msgid "Installation Complete"
-msgstr "A telepítés befejeződött"
-
-#: Sentinel/PkInstallPackageFiles.cpp:106
-msgid "File was installed successfully"
-msgid_plural "Files were installed successfully"
-msgstr[0] "A fájl sikeresen telepítve"
-msgstr[1] "A fájlok sikeresen telepítve"
-
-#: Sentinel/PkInstallPackageFiles.cpp:117
-msgid "Failed to install files"
-msgstr "A fájlok telepítése meghiúsult"
-
-#: Sentinel/PkInstallPackageFiles.cpp:118
-#: Sentinel/PkInstallPackageFiles.cpp:120
-msgid "Could not install files"
-msgstr "Nem lehet telepíteni a fájlokat"
-
 #: Sentinel/PkRemovePackageByFiles.cpp:40
 msgid "Remove Packages that Provides Files"
 msgstr "Fájlokat biztosító csomagok eltávolítása"
@@ -1185,6 +1188,14 @@ msgstr "Fájlokat biztosító csomagok keresése"
 #: Sentinel/PkSearchFile.cpp:80
 msgid "The file name could not be found in any software source"
 msgstr "A fájlnév egyetlen szoftverforrásban sem található"
+
+#: Sentinel/DistroUpgrade.cpp:69
+msgid "Start upgrade now"
+msgstr "Frissítés indítása"
+
+#: Sentinel/DistroUpgrade.cpp:114
+msgid "Distribution upgrade finished. "
+msgstr "A disztribúciófrissítés befejeződött. "
 
 #: Sentinel/PkInstallFontconfigResources.cpp:41
 msgid "Installs new Fonts"
@@ -1305,6 +1316,47 @@ msgstr "Nincs találat"
 #: Sentinel/PkInstallGStreamerResources.cpp:149
 msgid "Could not find plugin in any configured software source"
 msgstr "Nem találhatók bővítmények a beállított szoftverforrásokban"
+
+#: libapper/PackageModel.cpp:182
+msgid "Name"
+msgstr "Név"
+
+#: libapper/PackageModel.cpp:184 libapper/SimulateModel.cpp:141
+msgid "Version"
+msgstr "Verzió"
+
+#: libapper/PackageModel.cpp:186
+msgid "Installed Version"
+msgstr "Telepített verzió"
+
+#: libapper/PackageModel.cpp:188
+msgid "Arch"
+msgstr "Architektúra"
+
+#: libapper/PackageModel.cpp:190
+msgid "Origin"
+msgstr "Eredet"
+
+#: libapper/PackageModel.cpp:192
+msgid "Size"
+msgstr "Méret"
+
+#: libapper/PackageModel.cpp:283
+#, kde-format
+msgid ""
+"Version: %1\n"
+"Architecture: %2"
+msgstr ""
+"Verzió: %1\n"
+"Architektúra: %2"
+
+#: libapper/PackageModel.cpp:329
+msgid "To be Removed"
+msgstr "Eltávolítandó"
+
+#: libapper/PackageModel.cpp:331
+msgid "To be Installed"
+msgstr "Telepítendő"
 
 #: libapper/ChangesDelegate.cpp:45
 msgid "Do not Install"
@@ -2153,7 +2205,7 @@ msgstr "A csomag nem kompatibilis ezzel a rendszerrel"
 msgid "No space is left on the disk"
 msgstr "Nincs több hely a lemezen"
 
-#: libapper/PkStrings.cpp:477 libapper/PkTransaction.cpp:579
+#: libapper/PkStrings.cpp:477 libapper/PkTransaction.cpp:581
 msgid "A media change is required"
 msgstr "Adathordozó-csere szükséges"
 
@@ -3140,6 +3192,86 @@ msgstr "Nem lehet kommunikálni a packagekitd-vel."
 msgid "An unknown error happened."
 msgstr "Ismeretlen hiba történt."
 
+#: libapper/PkTransaction.cpp:123
+msgid "Failed to simulate file install"
+msgstr "Nem sikerült szimulálni a fájltelepítést"
+
+#: libapper/PkTransaction.cpp:130
+msgid "Current backend does not support installing files."
+msgstr "A jelenlegi háttérprogram nem támogatja fájlok telepítését."
+
+#: libapper/PkTransaction.cpp:130 libapper/PkTransaction.cpp:154
+#: libapper/PkTransaction.cpp:180 libapper/PkTransaction.cpp:203
+#: AppSetup/SetupWizard.cpp:107
+msgid "Error"
+msgstr "Hiba"
+
+#: libapper/PkTransaction.cpp:147
+msgid "Failed to simulate package install"
+msgstr "Nem sikerült szimulálni a csomagtelepítést"
+
+#: libapper/PkTransaction.cpp:154
+msgid "Current backend does not support installing packages."
+msgstr "A jelenlegi háttérprogram nem támogatja csomagok telepítését"
+
+#: libapper/PkTransaction.cpp:172
+msgid "Failed to simulate package removal"
+msgstr "Nem sikerült szimulálni a csomageltávolítást"
+
+#: libapper/PkTransaction.cpp:180
+msgid "The current backend does not support removing packages."
+msgstr "A jelenlegi háttérprogram nem támogatja csomagok eltávolítását"
+
+#: libapper/PkTransaction.cpp:196
+msgid "Failed to simulate package update"
+msgstr "Nem sikerült szimulálni a csomagfrissítést"
+
+#: libapper/PkTransaction.cpp:203
+msgid "The current backend does not support updating packages."
+msgstr "A jelenlegi háttérprogram nem támogatja csomagok frissítését."
+
+#: libapper/PkTransaction.cpp:214
+msgid "Failed to refresh package cache"
+msgstr "A csomaggyorsítótár frissítése meghiúsult"
+
+#: libapper/PkTransaction.cpp:256
+msgid "Failed to install package"
+msgstr "A csomag telepítése meghiúsult"
+
+#: libapper/PkTransaction.cpp:281
+msgid "Failed to remove package"
+msgstr "A csomag eltávolítása meghiúsult"
+
+#: libapper/PkTransaction.cpp:293
+msgid "Failed to update package"
+msgstr "A csomag frissítése meghiúsult"
+
+#: libapper/PkTransaction.cpp:461
+#, kde-format
+msgid "Downloading packages at %1/s"
+msgstr "Csomagok letöltése - %1/s"
+
+#: libapper/PkTransaction.cpp:509
+msgid ""
+"You are about to install unsigned packages that can compromise your system, "
+"as it is impossible to verify if the software came from a trusted source.\n"
+"\n"
+"Are you sure you want to proceed with the installation?"
+msgstr ""
+"Nem aláírt csomagokat készül telepíteni, amelyek sérthetik a rendszer "
+"biztonságát, mivel lehetetlen ellenőrizni a nem megbízható forrásból "
+"származó szoftvereket.\n"
+"\n"
+"Biztosan folytatja a telepítést?"
+
+#: libapper/PkTransaction.cpp:512
+msgid "Installing unsigned software"
+msgstr "Aláíratlan szoftverek telepítése"
+
+#: libapper/PkTransaction.cpp:566 libapper/PkTransaction.cpp:620
+msgid "Failed to install signature"
+msgstr "Az aláírás telepítése nem sikerült"
+
 #: libapper/PkTransactionDialog.cpp:88
 msgid ""
 "Allows you to hide the window whilst keeping the transaction task running."
@@ -3148,10 +3280,6 @@ msgstr "Elrejti az ablakot, a tranzakció továbbra is futni fog a háttérben."
 #: libapper/SimulateModel.cpp:139
 msgid "Package"
 msgstr "Csomag"
-
-#: libapper/SimulateModel.cpp:141 libapper/PackageModel.cpp:184
-msgid "Version"
-msgstr "Verzió"
 
 #: libapper/ApplicationLauncher.cpp:95
 msgid "The following application was just installed. Click on it to launch:"
@@ -3177,48 +3305,6 @@ msgstr "Licencegyezmény szükséges"
 #, kde-format
 msgid "License required for %1 by %2"
 msgstr "Licenc szükséges: %1 ettől: %2"
-
-#: libapper/PackageModel.cpp:182
-msgid "Name"
-msgstr "Név"
-
-#: libapper/PackageModel.cpp:186
-#, fuzzy
-#| msgctxt "The role of the transaction, in past tense"
-#| msgid "Installed signature"
-msgid "Installed Version"
-msgstr "Aláírás telepítve"
-
-#: libapper/PackageModel.cpp:188
-msgid "Arch"
-msgstr "Architektúra"
-
-#: libapper/PackageModel.cpp:190
-#, fuzzy
-#| msgid "Edit Origins"
-msgid "Origin"
-msgstr "Szoftverforrások szerkesztése"
-
-#: libapper/PackageModel.cpp:192
-msgid "Size"
-msgstr "Méret"
-
-#: libapper/PackageModel.cpp:283
-#, kde-format
-msgid ""
-"Version: %1\n"
-"Architecture: %2"
-msgstr ""
-"Verzió: %1\n"
-"Architektúra: %2"
-
-#: libapper/PackageModel.cpp:329
-msgid "To be Removed"
-msgstr "Eltávolítandó"
-
-#: libapper/PackageModel.cpp:331
-msgid "To be Installed"
-msgstr "Telepítendő"
 
 #: libapper/Requirements.cpp:42
 msgid "Additional changes"
@@ -3259,85 +3345,6 @@ msgid_plural "%1 packages to update"
 msgstr[0] "Egy csomag frissítendő"
 msgstr[1] "%1 csomag frissítendő"
 
-#: libapper/PkTransaction.cpp:122
-msgid "Failed to simulate file install"
-msgstr "Nem sikerült szimulálni a fájltelepítést"
-
-#: libapper/PkTransaction.cpp:129
-msgid "Current backend does not support installing files."
-msgstr "A jelenlegi háttérprogram nem támogatja fájlok telepítését."
-
-#: libapper/PkTransaction.cpp:129 libapper/PkTransaction.cpp:153
-#: libapper/PkTransaction.cpp:179 libapper/PkTransaction.cpp:202
-msgid "Error"
-msgstr "Hiba"
-
-#: libapper/PkTransaction.cpp:146
-msgid "Failed to simulate package install"
-msgstr "Nem sikerült szimulálni a csomagtelepítést"
-
-#: libapper/PkTransaction.cpp:153
-msgid "Current backend does not support installing packages."
-msgstr "A jelenlegi háttérprogram nem támogatja csomagok telepítését"
-
-#: libapper/PkTransaction.cpp:171
-msgid "Failed to simulate package removal"
-msgstr "Nem sikerült szimulálni a csomageltávolítást"
-
-#: libapper/PkTransaction.cpp:179
-msgid "The current backend does not support removing packages."
-msgstr "A jelenlegi háttérprogram nem támogatja csomagok eltávolítását"
-
-#: libapper/PkTransaction.cpp:195
-msgid "Failed to simulate package update"
-msgstr "Nem sikerült szimulálni a csomagfrissítést"
-
-#: libapper/PkTransaction.cpp:202
-msgid "The current backend does not support updating packages."
-msgstr "A jelenlegi háttérprogram nem támogatja csomagok frissítését."
-
-#: libapper/PkTransaction.cpp:213
-msgid "Failed to refresh package cache"
-msgstr "A csomaggyorsítótár frissítése meghiúsult"
-
-#: libapper/PkTransaction.cpp:251
-msgid "Failed to install package"
-msgstr "A csomag telepítése meghiúsult"
-
-#: libapper/PkTransaction.cpp:276
-msgid "Failed to remove package"
-msgstr "A csomag eltávolítása meghiúsult"
-
-#: libapper/PkTransaction.cpp:288
-msgid "Failed to update package"
-msgstr "A csomag frissítése meghiúsult"
-
-#: libapper/PkTransaction.cpp:459
-#, kde-format
-msgid "Downloading packages at %1/s"
-msgstr "Csomagok letöltése - %1/s"
-
-#: libapper/PkTransaction.cpp:507
-msgid ""
-"You are about to install unsigned packages that can compromise your system, "
-"as it is impossible to verify if the software came from a trusted source.\n"
-"\n"
-"Are you sure you want to proceed with the installation?"
-msgstr ""
-"Nem aláírt csomagokat készül telepíteni, amelyek sérthetik a rendszer "
-"biztonságát, mivel lehetetlen ellenőrizni a nem megbízható forrásból "
-"származó szoftvereket.\n"
-"\n"
-"Biztosan folytatja a telepítést?"
-
-#: libapper/PkTransaction.cpp:510
-msgid "Installing unsigned software"
-msgstr "Aláíratlan szoftverek telepítése"
-
-#: libapper/PkTransaction.cpp:564 libapper/PkTransaction.cpp:618
-msgid "Failed to install signature"
-msgstr "Az aláírás telepítése nem sikerült"
-
 #. i18n: file: libapper/RepoSig.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, RepoSig)
 #: libapper/RepoSig.cpp:40 rc.cpp:218
@@ -3351,6 +3358,139 @@ msgstr "Telepítés"
 #: libapper/ApplicationsDelegate.cpp:42
 msgid "Remove"
 msgstr "Eltávolítás"
+
+#: AppSetup/main.cpp:34 AppSetup/main.cpp:35
+msgid "KDE Application Installer"
+msgstr "KDE alkalmazástelepítő"
+
+#: AppSetup/main.cpp:36
+msgid "(C) 2012, Matthias Klumpp"
+msgstr "© Matthias Klumpp, 2012."
+
+#: AppSetup/main.cpp:38
+msgctxt "@info:credit"
+msgid "Daniel Nicoletti"
+msgstr "Daniel Nicoletti"
+
+#: AppSetup/main.cpp:38 AppSetup/main.cpp:40
+msgid "Developer"
+msgstr "Fejlesztő"
+
+#: AppSetup/main.cpp:40
+msgctxt "@info:credit"
+msgid "Matthias Klumpp"
+msgstr "Matthias Klumpp"
+
+#: AppSetup/main.cpp:47
+msgid "Show verbose information"
+msgstr "Részletes információk megjelenítése"
+
+#: AppSetup/main.cpp:48
+#, fuzzy
+#| msgid "Invalid package file"
+msgid "IPK package filename"
+msgstr "Érvénytelen csomagfájl"
+
+#: AppSetup/main.cpp:75
+msgid "Sorry, we didn't get an existing IPK package as parameter."
+msgstr ""
+
+#: AppSetup/main.cpp:76
+msgid "Package not found!"
+msgstr "A csomag nem található."
+
+#: AppSetup/SetupWizard.cpp:92
+msgid "Installation finished!"
+msgstr "A telepítés befejeződött."
+
+#: AppSetup/SetupWizard.cpp:93
+#, kde-format
+msgid "%1 has been installed successfully!"
+msgstr "%1 sikeresen telepítve."
+
+#: AppSetup/SetupWizard.cpp:108
+msgid "An error occurred"
+msgstr "Hiba történt"
+
+#. i18n: file: ApperKCM/ApperKCM.ui:281
+#. i18n: ectx: property (text), widget (QToolButton, backTB)
+#: AppSetup/SetupWizard.cpp:141 rc.cpp:197
+msgid "Back"
+msgstr "Vissza"
+
+#: AppSetup/SetupWizard.cpp:196
+msgid "Welcome!"
+msgstr ""
+
+#: AppSetup/SetupWizard.cpp:197
+#, kde-format
+msgid "Welcome to the installation of %1!"
+msgstr ""
+
+#: AppSetup/SetupWizard.cpp:198
+msgid ""
+"Please be careful while installing 3rd-party applications.<br>They may "
+"eventually <b>damage</b> your system or have <b>malicious behaviour</b>, "
+"like spying out your passwords.<br>Please do only install this software if "
+"you <b>trust the publisher and the author</b> of it."
+msgstr ""
+
+#: AppSetup/SetupWizard.cpp:208
+msgid "Details about this installation"
+msgstr ""
+
+#: AppSetup/SetupWizard.cpp:235
+msgid "Install for all users (as root)"
+msgstr ""
+
+#: AppSetup/SetupWizard.cpp:242
+#, fuzzy
+#| msgid "Applications"
+msgid "Application description"
+msgstr "Alkalmazások"
+
+#: AppSetup/SetupWizard.cpp:251
+msgid "Software license"
+msgstr "Szoftverlicenc"
+
+#: AppSetup/SetupWizard.cpp:252
+#, fuzzy
+#| msgid "Please read the following important information before continuing:"
+msgid "Please read the following terms and conditions carefully!"
+msgstr "Kérem, a folytatás előtt olvassa el az alábbi fontos információt:"
+
+#: AppSetup/SetupWizard.cpp:259
+msgid "Running installation"
+msgstr "Telepítés futtatása"
+
+#: AppSetup/SetupWizard.cpp:260
+#, kde-format
+msgid "Installing %1..."
+msgstr "%1 telepítése…"
+
+#: AppSetup/SetupWizard.cpp:297
+msgid ""
+"Installing this package will make the following native packages obsolete. "
+"You might consider removing them manually."
+msgstr ""
+
+#: AppSetup/SetupWizard.cpp:298
+#, fuzzy
+#| msgid "Simulate Update Packages"
+msgid "Similar native packages found"
+msgstr "Csomagok frissítésének szimulálása"
+
+#: AppSetup/SetupWizard.cpp:364
+msgid ""
+"You want to install this application as root!\n"
+"This can damage your system or install malicious software for all users.\n"
+"Please only proceed, if you really know what you're doing!\n"
+"Continue?"
+msgstr ""
+
+#: AppSetup/SetupWizard.cpp:367
+msgid "Really install as superuser?"
+msgstr ""
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
@@ -3700,12 +3840,6 @@ msgstr "Csomagok keresése"
 msgid "Pending Changes"
 msgstr "Folyamatban lévő módosítások"
 
-#. i18n: file: ApperKCM/ApperKCM.ui:281
-#. i18n: ectx: property (text), widget (QToolButton, backTB)
-#: rc.cpp:197
-msgid "Back"
-msgstr "Vissza"
-
 #. i18n: file: Sentinel/IntroDialog.ui:65
 #. i18n: ectx: property (text), widget (QLabel, descriptionL)
 #: rc.cpp:209
@@ -3778,6 +3912,18 @@ msgstr "ikon"
 #: rc.cpp:248
 msgid "Downloading Packages"
 msgstr "Csomagok letöltése"
+
+#. i18n: file: AppSetup/LicensePage.ui:98
+#. i18n: ectx: property (text), widget (QRadioButton, acceptedRB)
+#: rc.cpp:251
+msgid "I agree to the above terms and conditions"
+msgstr "Elfogadom a felhasználási feltételeket"
+
+#. i18n: file: AppSetup/LicensePage.ui:111
+#. i18n: ectx: property (text), widget (QRadioButton, rejectedRB)
+#: rc.cpp:254
+msgid "I don't agree"
+msgstr "Nem fogadom el"
 
 
 

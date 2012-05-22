@@ -1,6 +1,5 @@
 /***************************************************************************
- *   Copyright (C) 2011 by Daniel Nicoletti                                *
- *   dantti12@gmail.com                                                    *
+ *   Copyright (C) 2012 by Daniel Nicoletti <dantti12@gmail.com>           *
  *                                                                         *
  *   This program is free software; you can redistribute it and/or modify  *
  *   it under the terms of the GNU General Public License as published by  *
@@ -18,32 +17,46 @@
  *   Boston, MA 02110-1301, USA.                                           *
  ***************************************************************************/
 
-#ifndef INFO_WIDGET_H
-#define INFO_WIDGET_H
+#ifndef APPERDTHREAD_H
+#define APPERDTHREAD_H
 
-#include <QWidget>
-#include <QAbstractItemModel>
-#include <KIcon>
+#include <QThread>
 
-namespace Ui {
-    class InfoWidget;
-}
+#include <QTimer>
+#include <QDBusConnection>
+#include <QDateTime>
 
-class FilesModel;
-class InfoWidget : public QWidget
+class ApperdThread : public QObject
 {
     Q_OBJECT
 public:
-    InfoWidget(QWidget *parent = 0);
-    ~InfoWidget();
+    explicit ApperdThread(QObject *parent = 0);
+    ~ApperdThread();
 
-    void setDescription(const QString &description);
-    void setIcon(const KIcon &icon);
-    void setDetails(const QString &details);
-    void addWidget(QWidget *widget);
+private slots:
+    void init();
+    void poll();
+    void configFileChanged();
+
+    void transactionListChanged(const QStringList &tids);
+    void updatesChanged();
+    void serviceOwnerChanged(const QString &serviceName, const QString &oldOwner, const QString &newOwner);
 
 private:
-    Ui::InfoWidget *ui;
+    void callApperSentinel(const QString &method,
+                           const QList<QVariant> &arguments = QList<QVariant>());
+    QDateTime getTimeSinceRefreshCache() const;
+    QString networkState() const;
+    bool nameHasOwner(const QString &name, const QDBusConnection &connection) const;
+    bool isSystemReady(bool ignoreBattery, bool ignoreMobile) const;
+
+    bool m_actRefreshCacheChecked;
+    bool m_canRefreshCache;
+    bool m_sentinelIsRunning;
+    QDateTime m_lastRefreshCache;
+    uint m_refreshCacheInterval;
+    QTimer *m_qtimer;
+    QThread *m_thread;
 };
 
-#endif
+#endif // APPERDTHREAD_H

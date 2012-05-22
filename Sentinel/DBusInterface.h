@@ -38,16 +38,16 @@ public:
     ~DBusInterface();
 
     void RefreshCache();
-    void RefreshAndUpdate();
-    void Update();
-    void SetupDebconfDialog(const QString &socket_path, uint xid_parent);
+    void CheckForUpdates(bool system_ready);
+    void SetupDebconfDialog(const QString &tid, const QString &socketPath, uint xidParent);
 
 signals:
-    void refreshAndUpdate(bool refresh);
-    void refresh();
+    void checkForUpdates(bool system_ready);
+    void refreshCache();
 
 private slots:
     void debconfActivate();
+    void transactionFinished();
 
 #ifdef HAVE_DEBCONFKDE
 private:

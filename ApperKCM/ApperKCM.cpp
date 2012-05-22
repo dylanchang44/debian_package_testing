@@ -70,6 +70,7 @@ ApperKCM::ApperKCM(QWidget *parent, const QVariantList &args) :
     m_searchTransaction(0),
     m_findIcon("edit-find"),
     m_cancelIcon("dialog-cancel"),
+    m_forceRefreshCache(false),
     m_history(0),
     m_searchRole(Transaction::UnknownRole)
 {
@@ -83,7 +84,7 @@ ApperKCM::ApperKCM(QWidget *parent, const QVariantList &args) :
                                ki18n("(C) 2008-2011 Daniel Nicoletti"));
     setAboutData(aboutData);
     setButtons(Apply);
-    KGlobal::locale()->insertCatalog("apper");
+    KGlobal::insertCatalog(QLatin1String("apper"));
 
     // store the actions supported by the backend
     m_roles = Daemon::actions();
@@ -571,18 +572,18 @@ void ApperKCM::disconnectTransaction()
         // Disconnect everything so that the model don't store
         // wrong data
         m_searchTransaction->cancel();
-        disconnect(m_searchTransaction, SIGNAL(finished(PackageKit::Transaction::Exit, uint)),
+        disconnect(m_searchTransaction, SIGNAL(finished(PackageKit::Transaction::Exit,uint)),
                    browseView->busyCursor(), SLOT(stop()));
-        disconnect(m_searchTransaction, SIGNAL(finished(PackageKit::Transaction::Exit, uint)),
+        disconnect(m_searchTransaction, SIGNAL(finished(PackageKit::Transaction::Exit,uint)),
                    this, SLOT(finished()));
-        disconnect(m_searchTransaction, SIGNAL(finished(PackageKit::Transaction::Exit, uint)),
+        disconnect(m_searchTransaction, SIGNAL(finished(PackageKit::Transaction::Exit,uint)),
                    m_browseModel, SLOT(finished()));
         disconnect(m_searchTransaction, SIGNAL(finished(PackageKit::Transaction::Exit,uint)),
                    m_browseModel, SLOT(fetchSizes()));
         disconnect(m_searchTransaction, SIGNAL(package(PackageKit::Package)),
                    m_browseModel, SLOT(addPackage(PackageKit::Package)));
-        disconnect(m_searchTransaction, SIGNAL(errorCode(PackageKit::Transaction::Error, QString)),
-                   this, SLOT(errorCode(PackageKit::Transaction::Error, QString)));
+        disconnect(m_searchTransaction, SIGNAL(errorCode(PackageKit::Transaction::Error,QString)),
+                   this, SLOT(errorCode(PackageKit::Transaction::Error,QString)));
     }
 }
 
@@ -594,11 +595,11 @@ void ApperKCM::search()
 
     // search
     m_searchTransaction = new Transaction(this);
-    connect(m_searchTransaction, SIGNAL(finished(PackageKit::Transaction::Exit, uint)),
+    connect(m_searchTransaction, SIGNAL(finished(PackageKit::Transaction::Exit,uint)),
             browseView->busyCursor(), SLOT(stop()));
-    connect(m_searchTransaction, SIGNAL(finished(PackageKit::Transaction::Exit, uint)),
+    connect(m_searchTransaction, SIGNAL(finished(PackageKit::Transaction::Exit,uint)),
             this, SLOT(finished()));
-    connect(m_searchTransaction, SIGNAL(finished(PackageKit::Transaction::Exit, uint)),
+    connect(m_searchTransaction, SIGNAL(finished(PackageKit::Transaction::Exit,uint)),
             m_browseModel, SLOT(finished()));
     if (browseView->isShowingSizes()) {
         connect(m_searchTransaction, SIGNAL(finished(PackageKit::Transaction::Exit,uint)),
@@ -606,8 +607,8 @@ void ApperKCM::search()
     }
     connect(m_searchTransaction, SIGNAL(package(PackageKit::Package)),
             m_browseModel, SLOT(addPackage(PackageKit::Package)));
-    connect(m_searchTransaction, SIGNAL(errorCode(PackageKit::Transaction::Error, QString)),
-            this, SLOT(errorCode(PackageKit::Transaction::Error, QString)));
+    connect(m_searchTransaction, SIGNAL(errorCode(PackageKit::Transaction::Error,QString)),
+            this, SLOT(errorCode(PackageKit::Transaction::Error,QString)));
     switch (m_searchRole) {
     case Transaction::RoleSearchName:
         m_searchTransaction->searchNames(m_searchString, m_filtersMenu->filters());
@@ -635,7 +636,7 @@ void ApperKCM::search()
     case Transaction::RoleGetPackages:
         // we want all the installed ones
         browseView->disableExportInstalledPB();
-        connect(m_searchTransaction, SIGNAL(finished(PackageKit::Transaction::Exit, uint)),
+        connect(m_searchTransaction, SIGNAL(finished(PackageKit::Transaction::Exit,uint)),
                 browseView, SLOT(enableExportInstalledPB()));
         m_searchTransaction->getPackages(Transaction::FilterInstalled | m_filtersMenu->filters());
         break;
@@ -702,7 +703,7 @@ void ApperKCM::refreshCache()
 
     QEventLoop loop;
     connect(transaction, SIGNAL(finished(PkTransaction::ExitStatus)), &loop, SLOT(quit()));
-    transaction->refreshCache();
+    transaction->refreshCache(m_forceRefreshCache);
 
     // wait for the end of transaction
     if (!transaction->isFinished()) {
@@ -711,6 +712,9 @@ void ApperKCM::refreshCache()
             // Avoid crashing
             return;
         }
+
+        // If the refresh failed force next refresh Cache call
+        m_forceRefreshCache = transaction->exitStatus() == PkTransaction::Failed;
     }
 
     // Finished setup old stuff
