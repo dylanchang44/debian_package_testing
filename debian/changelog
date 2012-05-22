@@ -1,3 +1,23 @@
+apper (0.7.2-1) UNRELEASED; urgency=low
+
+  * New upstream release: 0.7.2
+    - Automatic Refresh Cache properly fixed
+    - Initial Listaller support (optional)
+    - Supported filter added (depends on the backend)
+    - KDED plugin runs on a separate thread to avoid
+       desktop freezes
+    - Fixed updating packages that were on untrusted repos
+    - Fresh manual pages (thanks to Matthias)
+    - Many other bug- and Krazy fixes
+  * Updated debian/copyright
+  * Switch to compat-level 9
+  * Updated watch file
+  * Split out separate apper-data package
+  * Add apper-appsetup package for Listaller modules
+  * Remove old replacement for KPackageKit: No longer required
+
+ -- Matthias Klumpp <matthias@tenstral.net>  Tue, 22 May 2012 10:45:24 +0200
+
 apper (0.7.1-1) unstable; urgency=low
 
   * Break the old kpackagekit package on Ubuntu
