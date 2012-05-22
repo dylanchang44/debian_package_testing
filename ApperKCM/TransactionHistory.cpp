@@ -65,7 +65,7 @@ void TransactionHistory::on_treeView_customContextMenuRequested(const QPoint &po
     QAction *action;
     action = menu->addAction(i18n("Refresh transactions list"));
     connect(action, SIGNAL(triggered(bool)), this, SLOT(refreshList()));
-    menu->exec(treeView->mapToGlobal(pos));
+    menu->exec(treeView->viewport()->mapToGlobal(pos));
     delete menu;
 }
 
@@ -74,8 +74,8 @@ void TransactionHistory::refreshList()
     // Refresh transaction list
     m_transactionModel->clear();
     Transaction *transaction = new Transaction(this);
-    connect(transaction, SIGNAL(transaction(PackageKit::Transaction *)),
-            m_transactionModel, SLOT(addTransaction(PackageKit::Transaction *)));
+    connect(transaction, SIGNAL(transaction(PackageKit::Transaction*)),
+            m_transactionModel, SLOT(addTransaction(PackageKit::Transaction*)));
     transaction->getOldTransactions(0);
     if (transaction->error()) {
         KMessageBox::sorry(this, PkStrings::daemonError(transaction->error()));

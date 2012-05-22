@@ -1,15 +1,15 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# Vít Pelčák <vit@pelcak.org>, 2010, 2011.
-# Lukáš Tinkl <ltinkl@redhat.com>, 2010, 2011, 2012.
+# Vít Pelčák <vit@pelcak.org>, 2010, 2011, 2012.
+# Lukáš Tinkl <lukas@kde.org>, 2010, 2011, 2012.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: kpackagekit\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-02-18 05:06+0100\n"
-"PO-Revision-Date: 2012-02-17 10:53+0100\n"
-"Last-Translator: Vit Pelcak\n"
+"POT-Creation-Date: 2012-05-20 05:58+0200\n"
+"PO-Revision-Date: 2012-04-16 13:48+0200\n"
+"Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
@@ -22,7 +22,7 @@ msgstr ""
 msgid "Backend Details"
 msgstr "Podrobnosti podpůrné vrstvy"
 
-#: Apper/main.cpp:54 Sentinel/UpdateIcon.cpp:158 Sentinel/main.cpp:34
+#: Apper/main.cpp:54 Sentinel/UpdateIcon.cpp:113 Sentinel/main.cpp:34
 msgid "Apper"
 msgstr "Apper"
 
@@ -30,7 +30,7 @@ msgstr "Apper"
 msgid "Apper is an Application to Get and Manage Software"
 msgstr "Apper je nástroj pro správu software"
 
-#: Apper/main.cpp:58 ApperKCM/ApperKCM.cpp:83 Sentinel/main.cpp:38
+#: Apper/main.cpp:58 ApperKCM/ApperKCM.cpp:84 Sentinel/main.cpp:38
 msgid "(C) 2008-2011 Daniel Nicoletti"
 msgstr "(C) 2008-2011 Daniel Nicoletti"
 
@@ -85,6 +85,135 @@ msgstr "Odstranění jednoho balíčku"
 #: Apper/main.cpp:75
 msgid "Package file to install"
 msgstr "Soubor s balíčkem k instalaci"
+
+#: ApperKCM/FiltersMenu.cpp:37
+msgid "Collections"
+msgstr "Kolekce"
+
+#: ApperKCM/FiltersMenu.cpp:44
+msgid "Only collections"
+msgstr "Pouze kolekce"
+
+#: ApperKCM/FiltersMenu.cpp:51
+msgid "Exclude collections"
+msgstr "Vyřadit kolekce"
+
+#. i18n: file: Apper/BackendDetails.ui:100
+#. i18n: ectx: property (text), widget (QCheckBox, installedCB)
+#: ApperKCM/FiltersMenu.cpp:60 libapper/PkStrings.cpp:362 rc.cpp:23
+msgid "Installed"
+msgstr "Nainstalované"
+
+#: ApperKCM/FiltersMenu.cpp:67
+msgid "Only installed"
+msgstr "Pouze nainstalované"
+
+#: ApperKCM/FiltersMenu.cpp:74
+msgid "Only available"
+msgstr "Pouze dostupné"
+
+#: ApperKCM/FiltersMenu.cpp:81 ApperKCM/FiltersMenu.cpp:111
+#: ApperKCM/FiltersMenu.cpp:141 ApperKCM/FiltersMenu.cpp:171
+#: ApperKCM/FiltersMenu.cpp:202 ApperKCM/FiltersMenu.cpp:233
+msgid "No filter"
+msgstr "Žádný filtr"
+
+#. i18n: file: Apper/BackendDetails.ui:110
+#. i18n: ectx: property (text), widget (QCheckBox, developmentCB)
+#: ApperKCM/FiltersMenu.cpp:90 rc.cpp:26
+msgid "Development"
+msgstr "Vývoj"
+
+#: ApperKCM/FiltersMenu.cpp:97
+msgid "Only development"
+msgstr "Pouze vývojové"
+
+#: ApperKCM/FiltersMenu.cpp:104
+msgid "Only end user files"
+msgstr "Pouze soubory pro koncové uživatele"
+
+#: ApperKCM/FiltersMenu.cpp:120
+msgid "Graphical"
+msgstr "Grafické"
+
+#: ApperKCM/FiltersMenu.cpp:127
+msgid "Only graphical"
+msgstr "Pouze grafické"
+
+#: ApperKCM/FiltersMenu.cpp:134
+msgid "Only text"
+msgstr "Pouze text"
+
+#: ApperKCM/FiltersMenu.cpp:150
+msgctxt "Filter for free packages"
+msgid "Free"
+msgstr "Svobodné"
+
+#: ApperKCM/FiltersMenu.cpp:157
+msgid "Only free software"
+msgstr "Pouze svobodný software"
+
+#: ApperKCM/FiltersMenu.cpp:164
+msgid "Only non-free software"
+msgstr "Pouze nesvobodný software"
+
+#: ApperKCM/FiltersMenu.cpp:181
+msgctxt "Filter for supported packages"
+msgid "Supported"
+msgstr "Podporováno"
+
+#: ApperKCM/FiltersMenu.cpp:188
+msgid "Only supported software"
+msgstr "Pouze podporovaný software"
+
+#: ApperKCM/FiltersMenu.cpp:195
+msgid "Only non-supported software"
+msgstr "Pouze nepodporovaný software"
+
+#: ApperKCM/FiltersMenu.cpp:212
+msgctxt "Filter for source packages"
+msgid "Source"
+msgstr "Zdroj"
+
+#: ApperKCM/FiltersMenu.cpp:219
+msgid "Only sourcecode"
+msgstr "Pouze zdrojové soubory"
+
+#: ApperKCM/FiltersMenu.cpp:226
+msgid "Only non-sourcecode"
+msgstr "Pouze ne-zdrojové kódy"
+
+#: ApperKCM/FiltersMenu.cpp:248
+msgid "Hide Subpackages"
+msgstr "Skrýt podbalíčky"
+
+#: ApperKCM/FiltersMenu.cpp:250
+msgid "Only show one package, not subpackages"
+msgstr "Zobrazit pouze jeden balíček, ne podbalíčky"
+
+#: ApperKCM/FiltersMenu.cpp:257
+msgid "Only Newest Packages"
+msgstr "Pouze nejnovější balíčky"
+
+#: ApperKCM/FiltersMenu.cpp:262
+msgid "Only show the newest available package"
+msgstr "Zobrazit pouze nejnovější dostupný balíček"
+
+#: ApperKCM/FiltersMenu.cpp:269
+msgid "Only Native Packages"
+msgstr "Pouze nativní balíčky"
+
+#: ApperKCM/FiltersMenu.cpp:274
+msgid "Only show packages matching the machine architecture"
+msgstr "Zobrazit pouze balíčky odpovídající architektuře počítače"
+
+#: ApperKCM/FiltersMenu.cpp:283
+msgid "Only Show Applications"
+msgstr "Zobrazit pouze aplikace"
+
+#: ApperKCM/FiltersMenu.cpp:286
+msgid "Hide packages that are not applications"
+msgstr "Skrýt balíčky, které nejsou aplikace"
 
 #: ApperKCM/Settings/OriginModel.cpp:39 ApperKCM/Settings/OriginModel.cpp:52
 msgid "Origin of Packages"
@@ -374,192 +503,35 @@ msgstr "Je silně doporučováno vyhledat aktualizace nyní"
 msgid "Check for new Updates"
 msgstr "Zkontrolovat nové aktualizace"
 
-#: ApperKCM/FiltersMenu.cpp:37
-msgid "Collections"
-msgstr "Kolekce"
+#: ApperKCM/ScreenShotViewer.cpp:90
+msgid "Could not find screen shot."
+msgstr "Nelze najít snímek obrazovky."
 
-#: ApperKCM/FiltersMenu.cpp:44
-msgid "Only collections"
-msgstr "Pouze kolekce"
+#: ApperKCM/CategoryModel.cpp:47
+msgid "Installed Software"
+msgstr "Nainstalovaný software"
 
-#: ApperKCM/FiltersMenu.cpp:51
-msgid "Exclude collections"
-msgstr "Vyřadit kolekce"
+#: ApperKCM/CategoryModel.cpp:50 ApperKCM/CategoryModel.cpp:58
+msgid "Lists"
+msgstr "Seznamy"
 
-#. i18n: file: Apper/BackendDetails.ui:100
-#. i18n: ectx: property (text), widget (QCheckBox, installedCB)
-#: ApperKCM/FiltersMenu.cpp:60 libapper/PkStrings.cpp:362 rc.cpp:23
-msgid "Installed"
-msgstr "Nainstalované"
+#: ApperKCM/CategoryModel.cpp:55
+msgid "Updates"
+msgstr "Aktualizace"
 
-#: ApperKCM/FiltersMenu.cpp:67
-msgid "Only installed"
-msgstr "Pouze nainstalované"
+#: ApperKCM/CategoryModel.cpp:155 ApperKCM/CategoryModel.cpp:339
+msgid "Categories"
+msgstr "Kategorie"
 
-#: ApperKCM/FiltersMenu.cpp:74
-msgid "Only available"
-msgstr "Pouze dostupné"
-
-#: ApperKCM/FiltersMenu.cpp:81 ApperKCM/FiltersMenu.cpp:111
-#: ApperKCM/FiltersMenu.cpp:141 ApperKCM/FiltersMenu.cpp:171
-#: ApperKCM/FiltersMenu.cpp:202
-msgid "No filter"
-msgstr "Žádný filtr"
-
-#. i18n: file: Apper/BackendDetails.ui:110
-#. i18n: ectx: property (text), widget (QCheckBox, developmentCB)
-#: ApperKCM/FiltersMenu.cpp:90 rc.cpp:26
-msgid "Development"
-msgstr "Vývoj"
-
-#: ApperKCM/FiltersMenu.cpp:97
-msgid "Only development"
-msgstr "Pouze vývojové"
-
-#: ApperKCM/FiltersMenu.cpp:104
-msgid "Only end user files"
-msgstr "Pouze soubory pro koncové uživatele"
-
-#: ApperKCM/FiltersMenu.cpp:120
-msgid "Graphical"
-msgstr "Grafické"
-
-#: ApperKCM/FiltersMenu.cpp:127
-msgid "Only graphical"
-msgstr "Pouze grafické"
-
-#: ApperKCM/FiltersMenu.cpp:134
-msgid "Only text"
-msgstr "Pouze text"
-
-#: ApperKCM/FiltersMenu.cpp:150
-msgctxt "Filter for free packages"
-msgid "Free"
-msgstr "Svobodné"
-
-#: ApperKCM/FiltersMenu.cpp:157
-msgid "Only free software"
-msgstr "Pouze svobodný software"
-
-#: ApperKCM/FiltersMenu.cpp:164
-msgid "Only non-free software"
-msgstr "Pouze nesvobodný software"
-
-#: ApperKCM/FiltersMenu.cpp:181
-msgctxt "Filter for source packages"
-msgid "Source"
-msgstr "Zdroj"
-
-#: ApperKCM/FiltersMenu.cpp:188
-msgid "Only sourcecode"
-msgstr "Pouze zdrojové soubory"
-
-#: ApperKCM/FiltersMenu.cpp:195
-msgid "Only non-sourcecode"
-msgstr "Pouze ne-zdrojové kódy"
-
-#: ApperKCM/FiltersMenu.cpp:217
-msgid "Hide Subpackages"
-msgstr "Skrýt podbalíčky"
-
-#: ApperKCM/FiltersMenu.cpp:219
-msgid "Only show one package, not subpackages"
-msgstr "Zobrazit pouze jeden balíček, ne podbalíčky"
-
-#: ApperKCM/FiltersMenu.cpp:226
-msgid "Only Newest Packages"
-msgstr "Pouze nejnovější balíčky"
-
-#: ApperKCM/FiltersMenu.cpp:231
-msgid "Only show the newest available package"
-msgstr "Zobrazit pouze nejnovější dostupný balíček"
-
-#: ApperKCM/FiltersMenu.cpp:238
-msgid "Only Native Packages"
-msgstr "Pouze nativní balíčky"
-
-#: ApperKCM/FiltersMenu.cpp:243
-msgid "Only show packages matching the machine architecture"
-msgstr "Zobrazit pouze balíčky odpovídající architektuře počítače"
-
-#: ApperKCM/FiltersMenu.cpp:252
-msgid "Only Show Applications"
-msgstr "Zobrazit pouze aplikace"
-
-#: ApperKCM/FiltersMenu.cpp:255
-msgid "Hide packages that are not applications"
-msgstr "Skrýt balíčky, které nejsou aplikace"
-
-#: ApperKCM/ApperKCM.cpp:79
-msgid "Application Manager"
-msgstr "Správce aplikací"
-
-#: ApperKCM/ApperKCM.cpp:81
-msgid "KDE interface for managing software"
-msgstr "KDE rozhraní pro správu softwaru"
-
-#: ApperKCM/ApperKCM.cpp:111 ApperKCM/ApperKCM.cpp:292
-msgid "Find"
-msgstr "Najít"
-
-#: ApperKCM/ApperKCM.cpp:206
-msgid "History"
-msgstr "Historie"
-
-#. i18n: file: ApperKCM/Settings/Settings.ui:14
-#. i18n: ectx: property (windowTitle), widget (QWidget, Settings)
-#: ApperKCM/ApperKCM.cpp:212 rc.cpp:140
-msgid "Settings"
-msgstr "Nastavení"
-
-#: ApperKCM/ApperKCM.cpp:269 ApperKCM/ApperKCM.cpp:270
-#: ApperKCM/ApperKCM.cpp:271 ApperKCM/ApperKCM.cpp:272
-msgid "&Cancel"
-msgstr "Z&rušit"
-
-#. i18n: file: ApperKCM/ApperKCM.ui:291
-#. i18n: ectx: property (text), widget (QToolButton, backTB)
-#: ApperKCM/ApperKCM.cpp:279 rc.cpp:200
-msgid "Find by &name"
-msgstr "Najít podle &názvu:"
-
-#. i18n: file: ApperKCM/ApperKCM.ui:301
-#. i18n: ectx: property (text), widget (QToolButton, backTB)
-#: ApperKCM/ApperKCM.cpp:280 rc.cpp:206
-msgid "Find by f&ile name"
-msgstr "Na&jít podle názvu souboru:"
-
-#. i18n: file: ApperKCM/ApperKCM.ui:296
-#. i18n: ectx: property (text), widget (QToolButton, backTB)
-#: ApperKCM/ApperKCM.cpp:281 rc.cpp:203
-msgid "Find by &description"
-msgstr "Najít po&dle popisu:"
-
-#: ApperKCM/ApperKCM.cpp:411
-msgid ""
-"The settings of the current module have changed.\n"
-"Do you want to apply the changes or discard them?"
-msgstr ""
-"V aktivním modulu jsou neuložené změny.\n"
-"Přejete si změny aplikovat nebo zahodit?"
-
-#: ApperKCM/ApperKCM.cpp:413
-msgid "Apply Settings"
-msgstr "Provést nastavení"
-
-#: ApperKCM/ApperKCM.cpp:455
-msgid "General Settings"
-msgstr "Obecná nastavení"
-
-#: ApperKCM/ApperKCM.cpp:456
-msgid "Software Origins"
-msgstr "Původy softwaru"
+#: ApperKCM/CategoryModel.cpp:208
+msgid "Groups"
+msgstr "Skupiny"
 
 #: ApperKCM/PackageDetails.cpp:73
 msgid "Display"
 msgstr "Zobrazit"
 
-#: ApperKCM/PackageDetails.cpp:80
+#: ApperKCM/PackageDetails.cpp:80 AppSetup/SetupWizard.cpp:243
 msgid "Description"
 msgstr "Popis"
 
@@ -587,30 +559,6 @@ msgstr "Nelze stáhnout podrobnosti softwaru"
 msgid "Applications"
 msgstr "Aplikace"
 
-#: ApperKCM/CategoryModel.cpp:47
-msgid "Installed Software"
-msgstr "Nainstalovaný software"
-
-#: ApperKCM/CategoryModel.cpp:50 ApperKCM/CategoryModel.cpp:58
-msgid "Lists"
-msgstr "Seznamy"
-
-#: ApperKCM/CategoryModel.cpp:55
-msgid "Updates"
-msgstr "Aktualizace"
-
-#: ApperKCM/CategoryModel.cpp:155 ApperKCM/CategoryModel.cpp:339
-msgid "Categories"
-msgstr "Kategorie"
-
-#: ApperKCM/CategoryModel.cpp:208
-msgid "Groups"
-msgstr "Skupiny"
-
-#: ApperKCM/ScreenShotViewer.cpp:90
-msgid "Could not find screen shot."
-msgstr "Nelze najít snímek obrazovky."
-
 #: ApperKCM/TransactionHistory.cpp:66
 msgid "Refresh transactions list"
 msgstr "Obnovit seznam transakcí"
@@ -629,6 +577,7 @@ msgid "Action"
 msgstr "Činnost"
 
 #: ApperKCM/TransactionModel.cpp:48 Sentinel/TransactionWatcher.cpp:308
+#: AppSetup/SetupWizard.cpp:207
 msgid "Details"
 msgstr "Podrobnosti"
 
@@ -641,13 +590,70 @@ msgstr "Uživatelské jméno"
 msgid "Application"
 msgstr "Aplikace"
 
-#: Sentinel/DistroUpgrade.cpp:69
-msgid "Start upgrade now"
-msgstr "Spustit upgrade"
+#: ApperKCM/ApperKCM.cpp:80
+msgid "Application Manager"
+msgstr "Správce aplikací"
 
-#: Sentinel/DistroUpgrade.cpp:114
-msgid "Distribution upgrade finished. "
-msgstr "Aktualizace distribuce dokončena."
+#: ApperKCM/ApperKCM.cpp:82
+msgid "KDE interface for managing software"
+msgstr "KDE rozhraní pro správu softwaru"
+
+#: ApperKCM/ApperKCM.cpp:112 ApperKCM/ApperKCM.cpp:293
+msgid "Find"
+msgstr "Najít"
+
+#: ApperKCM/ApperKCM.cpp:207
+msgid "History"
+msgstr "Historie"
+
+#. i18n: file: ApperKCM/Settings/Settings.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, Settings)
+#: ApperKCM/ApperKCM.cpp:213 rc.cpp:140
+msgid "Settings"
+msgstr "Nastavení"
+
+#: ApperKCM/ApperKCM.cpp:270 ApperKCM/ApperKCM.cpp:271
+#: ApperKCM/ApperKCM.cpp:272 ApperKCM/ApperKCM.cpp:273
+msgid "&Cancel"
+msgstr "Z&rušit"
+
+#. i18n: file: ApperKCM/ApperKCM.ui:291
+#. i18n: ectx: property (text), widget (QToolButton, backTB)
+#: ApperKCM/ApperKCM.cpp:280 rc.cpp:200
+msgid "Find by &name"
+msgstr "Najít podle &názvu:"
+
+#. i18n: file: ApperKCM/ApperKCM.ui:301
+#. i18n: ectx: property (text), widget (QToolButton, backTB)
+#: ApperKCM/ApperKCM.cpp:281 rc.cpp:206
+msgid "Find by f&ile name"
+msgstr "Na&jít podle názvu souboru:"
+
+#. i18n: file: ApperKCM/ApperKCM.ui:296
+#. i18n: ectx: property (text), widget (QToolButton, backTB)
+#: ApperKCM/ApperKCM.cpp:282 rc.cpp:203
+msgid "Find by &description"
+msgstr "Najít po&dle popisu:"
+
+#: ApperKCM/ApperKCM.cpp:412
+msgid ""
+"The settings of the current module have changed.\n"
+"Do you want to apply the changes or discard them?"
+msgstr ""
+"V aktivním modulu jsou neuložené změny.\n"
+"Přejete si změny aplikovat nebo zahodit?"
+
+#: ApperKCM/ApperKCM.cpp:414
+msgid "Apply Settings"
+msgstr "Provést nastavení"
+
+#: ApperKCM/ApperKCM.cpp:456
+msgid "General Settings"
+msgstr "Obecná nastavení"
+
+#: ApperKCM/ApperKCM.cpp:457
+msgid "Software Origins"
+msgstr "Původy softwaru"
 
 #: Sentinel/PkInstallProvideFiles.cpp:39
 msgid "Install Packages that Provides Files"
@@ -687,7 +693,7 @@ msgstr[2] "%2 chce nainstalovat balíčky"
 msgid "Failed to start search file transaction"
 msgstr "Selhalo zahájení transakce hledání souboru"
 
-#: Sentinel/PkInstallProvideFiles.cpp:101 libapper/PkTransaction.cpp:263
+#: Sentinel/PkInstallProvideFiles.cpp:101 libapper/PkTransaction.cpp:268
 msgid "Failed to install file"
 msgid_plural "Failed to install files"
 msgstr[0] "Instalace souboru selhala"
@@ -730,47 +736,6 @@ msgstr "Vyhledání ovladače tiskárny selhalo"
 #: Sentinel/PkInstallPrinterDrivers.cpp:88
 msgid "Could not find printer driver in any configured software source"
 msgstr "Nelze najít ovladač tiskárny v žádném z nastavených zdrojů softwaru"
-
-#: Sentinel/UpdateIcon.cpp:160
-msgid "Review Updates"
-msgstr "Prohlédnout aktualizace"
-
-#: Sentinel/UpdateIcon.cpp:163
-msgid "Configure"
-msgstr "Nastavit"
-
-#. i18n: file: ApperKCM/PackageDetails.ui:359
-#. i18n: ectx: property (text), widget (QToolButton, hideTB)
-#. i18n: file: ApperKCM/Updater/UpdateDetails.ui:20
-#. i18n: ectx: property (text), widget (QToolButton, hideTB)
-#: Sentinel/UpdateIcon.cpp:167 Sentinel/TransactionWatcher.cpp:186
-#: libapper/PkTransactionDialog.cpp:86 rc.cpp:137 rc.cpp:173
-msgid "Hide"
-msgstr "Skrýt"
-
-#: Sentinel/UpdateIcon.cpp:177
-#, kde-format
-msgid "You have one update"
-msgid_plural "You have %1 updates"
-msgstr[0] "Máte jednu aktualizaci"
-msgstr[1] "Máte %1 aktualizace"
-msgstr[2] "Máte %1 aktualizací"
-
-#: Sentinel/UpdateIcon.cpp:230
-msgid "Updates are being automatically installed."
-msgstr "Aktualizace jsou automaticky instalovány."
-
-#: Sentinel/UpdateIcon.cpp:251
-msgid "Security updates are being automatically installed."
-msgstr "Bezpečnostní aktualizace jsou automaticky instalovány."
-
-#: Sentinel/UpdateIcon.cpp:278
-msgid "System update was successful."
-msgstr "Aktualizace systému byla úspěšná."
-
-#: Sentinel/UpdateIcon.cpp:287
-msgid "The automated software update failed."
-msgstr "Automatická aktualizace software selhala."
 
 #: Sentinel/ReviewChanges.cpp:52
 msgid "The following package was found"
@@ -918,7 +883,60 @@ msgstr "Katalog je prázdný"
 msgid "Could not find any package to install in this catalog"
 msgstr "V tomto katalogu nelze najít žádný balíček k instalaci"
 
+#: Sentinel/PkInstallPackageFiles.cpp:38
+msgid "Install Packages Files"
+msgstr "Instalovat soubory balíčků"
+
+#: Sentinel/PkInstallPackageFiles.cpp:42
+#: Sentinel/PkRemovePackageByFiles.cpp:43
+msgid "You can drop more files in here"
+msgstr "Sem můžete upustit další soubory"
+
+#: Sentinel/PkInstallPackageFiles.cpp:52
+msgid "Not Supported"
+msgstr "Nepodporováno"
+
+#: Sentinel/PkInstallPackageFiles.cpp:53
+msgid "Your current backend does not support installing files"
+msgstr "Aktuální backend nepodporuje instalaci souborů"
+
+#: Sentinel/PkInstallPackageFiles.cpp:68
+#: Sentinel/PkRemovePackageByFiles.cpp:64
+msgid "No supported files were provided"
+msgstr "Nebyly poskytnuty žádné podporované soubory"
+
+#: Sentinel/PkInstallPackageFiles.cpp:70
+#, fuzzy
+#| msgid "Do you want to install this file?"
+#| msgid_plural "Do you want to install these files?"
+msgid "Press <i>Continue</i> if you want to install this file"
+msgid_plural "Press <i>Continue</i> if you want to install these files"
+msgstr[0] "Chcete nainstalovat tento soubor?"
+msgstr[1] "Chcete nainstalovat tyto soubory?"
+msgstr[2] "Chcete nainstalovat tyto soubory?"
+
+#: Sentinel/PkInstallPackageFiles.cpp:105
+msgid "Installation Complete"
+msgstr "Instalace dokončena"
+
+#: Sentinel/PkInstallPackageFiles.cpp:106
+msgid "File was installed successfully"
+msgid_plural "Files were installed successfully"
+msgstr[0] "Soubor byl úspěšně nainstalován"
+msgstr[1] "Soubory byly úspěšně nainstalovány"
+msgstr[2] "Soubory byly úspěšně nainstalovány"
+
+#: Sentinel/PkInstallPackageFiles.cpp:117
+msgid "Failed to install files"
+msgstr "Instalace souborů selhala"
+
+#: Sentinel/PkInstallPackageFiles.cpp:118
+#: Sentinel/PkInstallPackageFiles.cpp:120
+msgid "Could not install files"
+msgstr "Nelze nainstalovat soubory"
+
 #: Sentinel/SessionTask.cpp:66 libapper/Requirements.cpp:44
+#: AppSetup/SetupWizard.cpp:139
 msgid "Continue"
 msgstr "Pokračovat"
 
@@ -953,6 +971,73 @@ msgstr "Úloha dokončena"
 #: Sentinel/SessionTask.cpp:430
 msgid "All operations were committed successfully"
 msgstr "Všechny operace byly úspěšně dokončeny"
+
+#: Sentinel/UpdateIcon.cpp:115
+msgid "Review Updates"
+msgstr "Prohlédnout aktualizace"
+
+#: Sentinel/UpdateIcon.cpp:118
+msgid "Configure"
+msgstr "Nastavit"
+
+#. i18n: file: ApperKCM/PackageDetails.ui:359
+#. i18n: ectx: property (text), widget (QToolButton, hideTB)
+#. i18n: file: ApperKCM/Updater/UpdateDetails.ui:20
+#. i18n: ectx: property (text), widget (QToolButton, hideTB)
+#: Sentinel/UpdateIcon.cpp:122 Sentinel/TransactionWatcher.cpp:186
+#: libapper/PkTransactionDialog.cpp:86 rc.cpp:137 rc.cpp:173
+msgid "Hide"
+msgstr "Skrýt"
+
+#: Sentinel/UpdateIcon.cpp:132
+#, kde-format
+msgid "You have one update"
+msgid_plural "You have %1 updates"
+msgstr[0] "Máte jednu aktualizaci"
+msgstr[1] "Máte %1 aktualizace"
+msgstr[2] "Máte %1 aktualizací"
+
+#: Sentinel/UpdateIcon.cpp:192
+msgid "Updates are being automatically installed."
+msgstr "Aktualizace jsou automaticky instalovány."
+
+#: Sentinel/UpdateIcon.cpp:213
+msgid "Security updates are being automatically installed."
+msgstr "Bezpečnostní aktualizace jsou automaticky instalovány."
+
+#: Sentinel/UpdateIcon.cpp:240
+msgid "System update was successful."
+msgstr "Aktualizace systému byla úspěšná."
+
+#: Sentinel/UpdateIcon.cpp:249
+msgid "The automated software update failed."
+msgstr "Automatická aktualizace software selhala."
+
+#: Sentinel/PkIsInstalled.cpp:36
+msgid "Querying if a Package is Installed"
+msgstr "Dotazování, zda je balíček nainstalován"
+
+#: Sentinel/PkIsInstalled.cpp:67
+msgid "User canceled the transaction"
+msgstr "Uživatel přerušil přenos"
+
+#: Sentinel/PkIsInstalled.cpp:69
+msgid "An unknown error happened"
+msgstr "Nastala neznámá chyba"
+
+#: Sentinel/TransactionTrayIcon.cpp:45
+msgid "Transactions"
+msgstr "Přenosy"
+
+#: Sentinel/TransactionTrayIcon.cpp:90
+#, kde-format
+msgid "%1% - %2"
+msgstr "%1% - %2"
+
+#: Sentinel/TransactionTrayIcon.cpp:92
+#, kde-format
+msgid "%1"
+msgstr "%1"
 
 #: Sentinel/TransactionWatcher.cpp:66 Sentinel/TransactionWatcher.cpp:265
 msgid "Hide this icon"
@@ -995,32 +1080,6 @@ msgstr "Zobrazit zprávy"
 msgid "Ignore"
 msgstr "Ignorovat"
 
-#: Sentinel/PkIsInstalled.cpp:36
-msgid "Querying if a Package is Installed"
-msgstr "Dotazování, zda je balíček nainstalován"
-
-#: Sentinel/PkIsInstalled.cpp:67
-msgid "User canceled the transaction"
-msgstr "Uživatel přerušil přenos"
-
-#: Sentinel/PkIsInstalled.cpp:69
-msgid "An unknown error happened"
-msgstr "Nastala neznámá chyba"
-
-#: Sentinel/TransactionTrayIcon.cpp:45
-msgid "Transactions"
-msgstr "Přenosy"
-
-#: Sentinel/TransactionTrayIcon.cpp:90
-#, kde-format
-msgid "%1% - %2"
-msgstr "%1% - %2"
-
-#: Sentinel/TransactionTrayIcon.cpp:92
-#, kde-format
-msgid "%1"
-msgstr "%1"
-
 #: Sentinel/PkInstallPlasmaResources.cpp:40
 msgid "Install Plasma Resources"
 msgstr "Instalovat zdroje Plasmy"
@@ -1058,17 +1117,12 @@ msgstr[1] ""
 msgstr[2] ""
 
 #: Sentinel/PkInstallPlasmaResources.cpp:112
-#, fuzzy
-#| msgid "Failed to search for provides"
 msgid "Failed to search for Plasma service"
-msgstr "Vyhledání poskytovaných selhalo"
+msgstr "Vyhledání služby Plasma selhalo"
 
 #: Sentinel/PkInstallPlasmaResources.cpp:115
-#, fuzzy
-#| msgid "The package could not be found in any software source"
-#| msgid_plural "The packages could not be found in any software source"
 msgid "Could not find service in any configured software source"
-msgstr "Balíček nebyl nalezen v žádném zdroji software."
+msgstr "Nelze najít službu pro žádný nastavení zdroj softwaru"
 
 #: Sentinel/PkInstallMimeTypes.cpp:39
 msgid "Install Support for File Types"
@@ -1123,58 +1177,6 @@ msgstr "Apper Sentinel"
 #: Sentinel/main.cpp:41
 msgid "Trever Fischer"
 msgstr "Trever Fischer"
-
-#: Sentinel/PkInstallPackageFiles.cpp:38
-msgid "Install Packages Files"
-msgstr "Instalovat soubory balíčků"
-
-#: Sentinel/PkInstallPackageFiles.cpp:42
-#: Sentinel/PkRemovePackageByFiles.cpp:43
-msgid "You can drop more files in here"
-msgstr "Sem můžete upustit další soubory"
-
-#: Sentinel/PkInstallPackageFiles.cpp:52
-msgid "Not Supported"
-msgstr "Nepodporováno"
-
-#: Sentinel/PkInstallPackageFiles.cpp:53
-msgid "Your current backend does not support installing files"
-msgstr "Aktuální backend nepodporuje instalaci souborů"
-
-#: Sentinel/PkInstallPackageFiles.cpp:68
-#: Sentinel/PkRemovePackageByFiles.cpp:64
-msgid "No supported files were provided"
-msgstr "Nebyly poskytnuty žádné podporované soubory"
-
-#: Sentinel/PkInstallPackageFiles.cpp:70
-#, fuzzy
-#| msgid "Do you want to install this file?"
-#| msgid_plural "Do you want to install these files?"
-msgid "Press <i>Continue</i> if you want to install this file"
-msgid_plural "Press <i>Continue</i> if you want to install these files"
-msgstr[0] "Chcete nainstalovat tento soubor?"
-msgstr[1] "Chcete nainstalovat tyto soubory?"
-msgstr[2] "Chcete nainstalovat tyto soubory?"
-
-#: Sentinel/PkInstallPackageFiles.cpp:105
-msgid "Installation Complete"
-msgstr "Instalace dokončena"
-
-#: Sentinel/PkInstallPackageFiles.cpp:106
-msgid "File was installed successfully"
-msgid_plural "Files were installed successfully"
-msgstr[0] "Soubor byl úspěšně nainstalován"
-msgstr[1] "Soubory byly úspěšně nainstalovány"
-msgstr[2] "Soubory byly úspěšně nainstalovány"
-
-#: Sentinel/PkInstallPackageFiles.cpp:117
-msgid "Failed to install files"
-msgstr "Instalace souborů selhala"
-
-#: Sentinel/PkInstallPackageFiles.cpp:118
-#: Sentinel/PkInstallPackageFiles.cpp:120
-msgid "Could not install files"
-msgstr "Nelze nainstalovat soubory"
 
 #: Sentinel/PkRemovePackageByFiles.cpp:40
 msgid "Remove Packages that Provides Files"
@@ -1247,6 +1249,14 @@ msgstr "Hledat balíčky, které poskytují soubory"
 #: Sentinel/PkSearchFile.cpp:80
 msgid "The file name could not be found in any software source"
 msgstr "Název souboru nebyl nalezen v žádném zdroji software."
+
+#: Sentinel/DistroUpgrade.cpp:69
+msgid "Start upgrade now"
+msgstr "Spustit upgrade"
+
+#: Sentinel/DistroUpgrade.cpp:114
+msgid "Distribution upgrade finished. "
+msgstr "Aktualizace distribuce dokončena."
 
 #: Sentinel/PkInstallFontconfigResources.cpp:41
 msgid "Installs new Fonts"
@@ -1383,6 +1393,47 @@ msgstr "Nenalezeny žádné výsledky"
 #: Sentinel/PkInstallGStreamerResources.cpp:149
 msgid "Could not find plugin in any configured software source"
 msgstr "Modul nemohl být nalezen v žádném nastaveném zdroji softwaru"
+
+#: libapper/PackageModel.cpp:182
+msgid "Name"
+msgstr "Název"
+
+#: libapper/PackageModel.cpp:184 libapper/SimulateModel.cpp:141
+msgid "Version"
+msgstr "Verze"
+
+#: libapper/PackageModel.cpp:186
+msgid "Installed Version"
+msgstr "Nainstalovaná verze"
+
+#: libapper/PackageModel.cpp:188
+msgid "Arch"
+msgstr "Architektura"
+
+#: libapper/PackageModel.cpp:190
+msgid "Origin"
+msgstr "Původ"
+
+#: libapper/PackageModel.cpp:192
+msgid "Size"
+msgstr "Velikost"
+
+#: libapper/PackageModel.cpp:283
+#, kde-format
+msgid ""
+"Version: %1\n"
+"Architecture: %2"
+msgstr ""
+"Verze: %1\n"
+"Architektura: %2"
+
+#: libapper/PackageModel.cpp:329
+msgid "To be Removed"
+msgstr "K odstranění"
+
+#: libapper/PackageModel.cpp:331
+msgid "To be Installed"
+msgstr "K instalaci"
 
 #: libapper/ChangesDelegate.cpp:45
 msgid "Do not Install"
@@ -2231,7 +2282,7 @@ msgstr "Balíček je nekompatibilní s tímto systémem."
 msgid "No space is left on the disk"
 msgstr "Na disku není žádné volné místo"
 
-#: libapper/PkStrings.cpp:477 libapper/PkTransaction.cpp:579
+#: libapper/PkStrings.cpp:477 libapper/PkTransaction.cpp:581
 msgid "A media change is required"
 msgstr "Je vyžadována změna média"
 
@@ -3218,6 +3269,85 @@ msgstr "Nelze komunikovat s packagekitd."
 msgid "An unknown error happened."
 msgstr "Nastala neznámá chyba."
 
+#: libapper/PkTransaction.cpp:123
+msgid "Failed to simulate file install"
+msgstr "Simulace instalace souboru selhala"
+
+#: libapper/PkTransaction.cpp:130
+msgid "Current backend does not support installing files."
+msgstr "Aktuální backend nepodporuje instalaci souborů."
+
+#: libapper/PkTransaction.cpp:130 libapper/PkTransaction.cpp:154
+#: libapper/PkTransaction.cpp:180 libapper/PkTransaction.cpp:203
+#: AppSetup/SetupWizard.cpp:107
+msgid "Error"
+msgstr "Chyba"
+
+#: libapper/PkTransaction.cpp:147
+msgid "Failed to simulate package install"
+msgstr "Nepovedla se simulace instalace balíčku"
+
+#: libapper/PkTransaction.cpp:154
+msgid "Current backend does not support installing packages."
+msgstr "Bohužel, Vaše podpůrná vrstva nepodporuje instalaci balíčků."
+
+#: libapper/PkTransaction.cpp:172
+msgid "Failed to simulate package removal"
+msgstr "Nepovedla se simulace odstranění balíčku"
+
+#: libapper/PkTransaction.cpp:180
+msgid "The current backend does not support removing packages."
+msgstr "Bohužel, Vaše podpůrná vrstva nepodporuje odstranění balíčků."
+
+#: libapper/PkTransaction.cpp:196
+msgid "Failed to simulate package update"
+msgstr "Nepovedla se simulace aktualizace balíčku"
+
+#: libapper/PkTransaction.cpp:203
+msgid "The current backend does not support updating packages."
+msgstr "Bohužel, Vaše podpůrná vrstva nepodporuje aktualizaci balíčků."
+
+#: libapper/PkTransaction.cpp:214
+msgid "Failed to refresh package cache"
+msgstr "Obnovení keše balíčků selhalo"
+
+#: libapper/PkTransaction.cpp:256
+msgid "Failed to install package"
+msgstr "Instalace balíčku selhala"
+
+#: libapper/PkTransaction.cpp:281
+msgid "Failed to remove package"
+msgstr "Nepovedlo se odstranit balíček"
+
+#: libapper/PkTransaction.cpp:293
+msgid "Failed to update package"
+msgstr "Aktualizace balíčku selhala"
+
+#: libapper/PkTransaction.cpp:461
+#, kde-format
+msgid "Downloading packages at %1/s"
+msgstr "Stahují se balíčky %1/s"
+
+#: libapper/PkTransaction.cpp:509
+msgid ""
+"You are about to install unsigned packages that can compromise your system, "
+"as it is impossible to verify if the software came from a trusted source.\n"
+"\n"
+"Are you sure you want to proceed with the installation?"
+msgstr ""
+"Chystáte se nainstalovat nepodepsané balíčky, které mohou ohrozit bezpečnost "
+"vašeho systému, protože nelze ověřit, zda pochází z důvěryhodného zdroje.\n"
+"\n"
+"Opravdu chcete pokračovat v instalaci?"
+
+#: libapper/PkTransaction.cpp:512
+msgid "Installing unsigned software"
+msgstr "Instaluje se nepodepsaný software"
+
+#: libapper/PkTransaction.cpp:566 libapper/PkTransaction.cpp:620
+msgid "Failed to install signature"
+msgstr "Selhala instalace podpisu"
+
 #: libapper/PkTransactionDialog.cpp:88
 msgid ""
 "Allows you to hide the window whilst keeping the transaction task running."
@@ -3226,10 +3356,6 @@ msgstr "Umožní skrýt okno, ale nepřeruší běh úlohy"
 #: libapper/SimulateModel.cpp:139
 msgid "Package"
 msgstr "Balíček"
-
-#: libapper/SimulateModel.cpp:141 libapper/PackageModel.cpp:184
-msgid "Version"
-msgstr "Verze"
 
 #: libapper/ApplicationLauncher.cpp:95
 msgid "The following application was just installed. Click on it to launch:"
@@ -3256,43 +3382,6 @@ msgstr "Je vyžadováno licenční ujednání"
 #, kde-format
 msgid "License required for %1 by %2"
 msgstr "Vyžadována licence pro %1 balíčkem %2"
-
-#: libapper/PackageModel.cpp:182
-msgid "Name"
-msgstr "Název"
-
-#: libapper/PackageModel.cpp:186
-msgid "Installed Version"
-msgstr "Nainstalovaná verze"
-
-#: libapper/PackageModel.cpp:188
-msgid "Arch"
-msgstr "Architektura"
-
-#: libapper/PackageModel.cpp:190
-msgid "Origin"
-msgstr "Původ"
-
-#: libapper/PackageModel.cpp:192
-msgid "Size"
-msgstr "Velikost"
-
-#: libapper/PackageModel.cpp:283
-#, kde-format
-msgid ""
-"Version: %1\n"
-"Architecture: %2"
-msgstr ""
-"Verze: %1\n"
-"Architektura: %2"
-
-#: libapper/PackageModel.cpp:329
-msgid "To be Removed"
-msgstr "K odstranění"
-
-#: libapper/PackageModel.cpp:331
-msgid "To be Installed"
-msgstr "K instalaci"
 
 #: libapper/Requirements.cpp:42
 msgid "Additional changes"
@@ -3338,84 +3427,6 @@ msgstr[0] "1 balíček k aktualizaci"
 msgstr[1] "%1 balíčky k aktualizaci"
 msgstr[2] "%1 balíčků k aktualizaci"
 
-#: libapper/PkTransaction.cpp:122
-msgid "Failed to simulate file install"
-msgstr "Simulace instalace souboru selhala"
-
-#: libapper/PkTransaction.cpp:129
-msgid "Current backend does not support installing files."
-msgstr "Aktuální backend nepodporuje instalaci souborů."
-
-#: libapper/PkTransaction.cpp:129 libapper/PkTransaction.cpp:153
-#: libapper/PkTransaction.cpp:179 libapper/PkTransaction.cpp:202
-msgid "Error"
-msgstr "Chyba"
-
-#: libapper/PkTransaction.cpp:146
-msgid "Failed to simulate package install"
-msgstr "Nepovedla se simulace instalace balíčku"
-
-#: libapper/PkTransaction.cpp:153
-msgid "Current backend does not support installing packages."
-msgstr "Bohužel, Vaše podpůrná vrstva nepodporuje instalaci balíčků."
-
-#: libapper/PkTransaction.cpp:171
-msgid "Failed to simulate package removal"
-msgstr "Nepovedla se simulace odstranění balíčku"
-
-#: libapper/PkTransaction.cpp:179
-msgid "The current backend does not support removing packages."
-msgstr "Bohužel, Vaše podpůrná vrstva nepodporuje odstranění balíčků."
-
-#: libapper/PkTransaction.cpp:195
-msgid "Failed to simulate package update"
-msgstr "Nepovedla se simulace aktualizace balíčku"
-
-#: libapper/PkTransaction.cpp:202
-msgid "The current backend does not support updating packages."
-msgstr "Bohužel, Vaše podpůrná vrstva nepodporuje aktualizaci balíčků."
-
-#: libapper/PkTransaction.cpp:213
-msgid "Failed to refresh package cache"
-msgstr "Obnovení keše balíčků selhalo"
-
-#: libapper/PkTransaction.cpp:251
-msgid "Failed to install package"
-msgstr "Instalace balíčku selhala"
-
-#: libapper/PkTransaction.cpp:276
-msgid "Failed to remove package"
-msgstr "Nepovedlo se odstranit balíček"
-
-#: libapper/PkTransaction.cpp:288
-msgid "Failed to update package"
-msgstr "Aktualizace balíčku selhala"
-
-#: libapper/PkTransaction.cpp:459
-#, kde-format
-msgid "Downloading packages at %1/s"
-msgstr "Stahují se balíčky %1/s"
-
-#: libapper/PkTransaction.cpp:507
-msgid ""
-"You are about to install unsigned packages that can compromise your system, "
-"as it is impossible to verify if the software came from a trusted source.\n"
-"\n"
-"Are you sure you want to proceed with the installation?"
-msgstr ""
-"Chystáte se nainstalovat nepodepsané balíčky, které mohou ohrozit bezpečnost "
-"vašeho systému, protože nelze ověřit, zda pochází z důvěryhodného zdroje.\n"
-"\n"
-"Opravdu chcete pokračovat v instalaci?"
-
-#: libapper/PkTransaction.cpp:510
-msgid "Installing unsigned software"
-msgstr "Instaluje se nepodepsaný software"
-
-#: libapper/PkTransaction.cpp:564 libapper/PkTransaction.cpp:618
-msgid "Failed to install signature"
-msgstr "Selhala instalace podpisu"
-
 #. i18n: file: libapper/RepoSig.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, RepoSig)
 #: libapper/RepoSig.cpp:40 rc.cpp:218
@@ -3430,15 +3441,140 @@ msgstr "Instalovat"
 msgid "Remove"
 msgstr "Odstranit"
 
+#: AppSetup/main.cpp:34 AppSetup/main.cpp:35
+msgid "KDE Application Installer"
+msgstr "Instalátor aplikací KDE"
+
+#: AppSetup/main.cpp:36
+msgid "(C) 2012, Matthias Klumpp"
+msgstr "(C) 2012, Matthias Klumpp"
+
+#: AppSetup/main.cpp:38
+msgctxt "@info:credit"
+msgid "Daniel Nicoletti"
+msgstr "Daniel Nicoletti"
+
+#: AppSetup/main.cpp:38 AppSetup/main.cpp:40
+msgid "Developer"
+msgstr "Vývojář"
+
+#: AppSetup/main.cpp:40
+msgctxt "@info:credit"
+msgid "Matthias Klumpp"
+msgstr "Matthias Klumpp"
+
+#: AppSetup/main.cpp:47
+msgid "Show verbose information"
+msgstr "Zobrazit podrobné informace"
+
+#: AppSetup/main.cpp:48
+msgid "IPK package filename"
+msgstr "Název balíčku IPK"
+
+#: AppSetup/main.cpp:75
+msgid "Sorry, we didn't get an existing IPK package as parameter."
+msgstr ""
+
+#: AppSetup/main.cpp:76
+msgid "Package not found!"
+msgstr "Balíček nebyl nalezen."
+
+#: AppSetup/SetupWizard.cpp:92
+msgid "Installation finished!"
+msgstr "Instalace byla dokončena."
+
+#: AppSetup/SetupWizard.cpp:93
+#, kde-format
+msgid "%1 has been installed successfully!"
+msgstr "Program %1 byl úspěšně nainstalován."
+
+#: AppSetup/SetupWizard.cpp:108
+msgid "An error occurred"
+msgstr "Vyskytla se chyba"
+
+#. i18n: file: ApperKCM/ApperKCM.ui:281
+#. i18n: ectx: property (text), widget (QToolButton, backTB)
+#: AppSetup/SetupWizard.cpp:141 rc.cpp:197
+msgid "Back"
+msgstr "Zpět"
+
+#: AppSetup/SetupWizard.cpp:196
+msgid "Welcome!"
+msgstr "Vítejte!"
+
+#: AppSetup/SetupWizard.cpp:197
+#, kde-format
+msgid "Welcome to the installation of %1!"
+msgstr "Vítejte v instalaci programu %1!"
+
+#: AppSetup/SetupWizard.cpp:198
+msgid ""
+"Please be careful while installing 3rd-party applications.<br>They may "
+"eventually <b>damage</b> your system or have <b>malicious behaviour</b>, "
+"like spying out your passwords.<br>Please do only install this software if "
+"you <b>trust the publisher and the author</b> of it."
+msgstr ""
+
+#: AppSetup/SetupWizard.cpp:208
+msgid "Details about this installation"
+msgstr "Detaily instalace"
+
+#: AppSetup/SetupWizard.cpp:235
+msgid "Install for all users (as root)"
+msgstr "Instalovat pro všechny uživatele (jako root)"
+
+#: AppSetup/SetupWizard.cpp:242
+msgid "Application description"
+msgstr "Popis aplikace"
+
+#: AppSetup/SetupWizard.cpp:251
+msgid "Software license"
+msgstr "Softwarová licence"
+
+#: AppSetup/SetupWizard.cpp:252
+msgid "Please read the following terms and conditions carefully!"
+msgstr "Prosím, pečlivě si přečtěte následující podmínky."
+
+#: AppSetup/SetupWizard.cpp:259
+msgid "Running installation"
+msgstr "Probíhá instalace"
+
+#: AppSetup/SetupWizard.cpp:260
+#, kde-format
+msgid "Installing %1..."
+msgstr "Instaluje se %1..."
+
+#: AppSetup/SetupWizard.cpp:297
+msgid ""
+"Installing this package will make the following native packages obsolete. "
+"You might consider removing them manually."
+msgstr ""
+
+#: AppSetup/SetupWizard.cpp:298
+msgid "Similar native packages found"
+msgstr "Nalezené podobné vlastní balíčky"
+
+#: AppSetup/SetupWizard.cpp:364
+msgid ""
+"You want to install this application as root!\n"
+"This can damage your system or install malicious software for all users.\n"
+"Please only proceed, if you really know what you're doing!\n"
+"Continue?"
+msgstr ""
+
+#: AppSetup/SetupWizard.cpp:367
+msgid "Really install as superuser?"
+msgstr "Opravdu instalovat jako superuživatel?"
+
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Lukáš Tinkl"
+msgstr "Lukáš Tinkl,Vít Pelčák"
 
 #: rc.cpp:2
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "ltinkl@redhat.com"
+msgstr "ltinkl@redhat.com,vit@pelcak.org"
 
 #. i18n: file: Apper/BackendDetails.ui:26
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
@@ -3776,12 +3912,6 @@ msgstr "Hledat balíčky"
 msgid "Pending Changes"
 msgstr "Čekající změny"
 
-#. i18n: file: ApperKCM/ApperKCM.ui:281
-#. i18n: ectx: property (text), widget (QToolButton, backTB)
-#: rc.cpp:197
-msgid "Back"
-msgstr "Zpět"
-
 #. i18n: file: Sentinel/IntroDialog.ui:65
 #. i18n: ectx: property (text), widget (QLabel, descriptionL)
 #: rc.cpp:209
@@ -3854,6 +3984,18 @@ msgstr "ikona"
 msgid "Downloading Packages"
 msgstr "Stahují se balíčky"
 
+#. i18n: file: AppSetup/LicensePage.ui:98
+#. i18n: ectx: property (text), widget (QRadioButton, acceptedRB)
+#: rc.cpp:251
+msgid "I agree to the above terms and conditions"
+msgstr "Souhlasím s těmito podmínkami"
+
+#. i18n: file: AppSetup/LicensePage.ui:111
+#. i18n: ectx: property (text), widget (QRadioButton, rejectedRB)
+#: rc.cpp:254
+msgid "I don't agree"
+msgstr "Nesouhlasím"
+
 
 
 
@@ -4443,9 +4585,6 @@ msgstr "Stahují se balíčky"
 
 
 
-
-
-
 #, fuzzy
 
 
@@ -4453,20 +4592,6 @@ msgstr "Stahují se balíčky"
 
 #, fuzzy
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-#, fuzzy
 
 
 

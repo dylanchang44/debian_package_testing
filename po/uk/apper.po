@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kpackagekit\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-02-18 05:06+0100\n"
-"PO-Revision-Date: 2012-02-17 07:29+0200\n"
+"POT-Creation-Date: 2012-05-20 05:58+0200\n"
+"PO-Revision-Date: 2012-04-16 09:18+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
 "Language: uk\n"
@@ -17,13 +17,13 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n"
 "%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Lokalize 1.2\n"
+"X-Generator: Lokalize 1.5\n"
 
 #: Apper/BackendDetails.cpp:31
 msgid "Backend Details"
 msgstr "Дані щодо модуля обробки"
 
-#: Apper/main.cpp:54 Sentinel/UpdateIcon.cpp:158 Sentinel/main.cpp:34
+#: Apper/main.cpp:54 Sentinel/UpdateIcon.cpp:113 Sentinel/main.cpp:34
 msgid "Apper"
 msgstr "Apper"
 
@@ -33,7 +33,7 @@ msgstr ""
 "Apper — програма для звантаження і керування пакунками програмного "
 "забезпечення"
 
-#: Apper/main.cpp:58 ApperKCM/ApperKCM.cpp:83 Sentinel/main.cpp:38
+#: Apper/main.cpp:58 ApperKCM/ApperKCM.cpp:84 Sentinel/main.cpp:38
 msgid "(C) 2008-2011 Daniel Nicoletti"
 msgstr "© Daniel Nicoletti, 2008–2011"
 
@@ -88,6 +88,135 @@ msgstr "Інструмент вилучення окремих пакунків"
 #: Apper/main.cpp:75
 msgid "Package file to install"
 msgstr "Файл пакунка, який слід встановити"
+
+#: ApperKCM/FiltersMenu.cpp:37
+msgid "Collections"
+msgstr "Збірки"
+
+#: ApperKCM/FiltersMenu.cpp:44
+msgid "Only collections"
+msgstr "Лише збірки"
+
+#: ApperKCM/FiltersMenu.cpp:51
+msgid "Exclude collections"
+msgstr "Виключити збірки"
+
+#. i18n: file: Apper/BackendDetails.ui:100
+#. i18n: ectx: property (text), widget (QCheckBox, installedCB)
+#: ApperKCM/FiltersMenu.cpp:60 libapper/PkStrings.cpp:362 rc.cpp:23
+msgid "Installed"
+msgstr "Встановлене"
+
+#: ApperKCM/FiltersMenu.cpp:67
+msgid "Only installed"
+msgstr "Лише встановлені"
+
+#: ApperKCM/FiltersMenu.cpp:74
+msgid "Only available"
+msgstr "Лише доступні"
+
+#: ApperKCM/FiltersMenu.cpp:81 ApperKCM/FiltersMenu.cpp:111
+#: ApperKCM/FiltersMenu.cpp:141 ApperKCM/FiltersMenu.cpp:171
+#: ApperKCM/FiltersMenu.cpp:202 ApperKCM/FiltersMenu.cpp:233
+msgid "No filter"
+msgstr "Без фільтра"
+
+#. i18n: file: Apper/BackendDetails.ui:110
+#. i18n: ectx: property (text), widget (QCheckBox, developmentCB)
+#: ApperKCM/FiltersMenu.cpp:90 rc.cpp:26
+msgid "Development"
+msgstr "Розробка"
+
+#: ApperKCM/FiltersMenu.cpp:97
+msgid "Only development"
+msgstr "Лише для розробки"
+
+#: ApperKCM/FiltersMenu.cpp:104
+msgid "Only end user files"
+msgstr "Лише файли для кінцевого користувача"
+
+#: ApperKCM/FiltersMenu.cpp:120
+msgid "Graphical"
+msgstr "Графічні"
+
+#: ApperKCM/FiltersMenu.cpp:127
+msgid "Only graphical"
+msgstr "Лише графіка"
+
+#: ApperKCM/FiltersMenu.cpp:134
+msgid "Only text"
+msgstr "Лише текст"
+
+#: ApperKCM/FiltersMenu.cpp:150
+msgctxt "Filter for free packages"
+msgid "Free"
+msgstr "Вільні"
+
+#: ApperKCM/FiltersMenu.cpp:157
+msgid "Only free software"
+msgstr "Лише вільні програми"
+
+#: ApperKCM/FiltersMenu.cpp:164
+msgid "Only non-free software"
+msgstr "Лише не вільні програми"
+
+#: ApperKCM/FiltersMenu.cpp:181
+msgctxt "Filter for supported packages"
+msgid "Supported"
+msgstr "Підтримувані"
+
+#: ApperKCM/FiltersMenu.cpp:188
+msgid "Only supported software"
+msgstr "Лише підтримувані програми"
+
+#: ApperKCM/FiltersMenu.cpp:195
+msgid "Only non-supported software"
+msgstr "Лише непідтримувані програми"
+
+#: ApperKCM/FiltersMenu.cpp:212
+msgctxt "Filter for source packages"
+msgid "Source"
+msgstr "Джерело"
+
+#: ApperKCM/FiltersMenu.cpp:219
+msgid "Only sourcecode"
+msgstr "Лише пакунки з початковими кодами"
+
+#: ApperKCM/FiltersMenu.cpp:226
+msgid "Only non-sourcecode"
+msgstr "Лише пакунки без початкових кодів"
+
+#: ApperKCM/FiltersMenu.cpp:248
+msgid "Hide Subpackages"
+msgstr "Сховати підпакунки"
+
+#: ApperKCM/FiltersMenu.cpp:250
+msgid "Only show one package, not subpackages"
+msgstr "Показувати лише один пакунок, а не підпакунки"
+
+#: ApperKCM/FiltersMenu.cpp:257
+msgid "Only Newest Packages"
+msgstr "Лише найновіші пакунки"
+
+#: ApperKCM/FiltersMenu.cpp:262
+msgid "Only show the newest available package"
+msgstr "Показувати лише найновіший з доступних пакунків"
+
+#: ApperKCM/FiltersMenu.cpp:269
+msgid "Only Native Packages"
+msgstr "Лише рідні пакунки"
+
+#: ApperKCM/FiltersMenu.cpp:274
+msgid "Only show packages matching the machine architecture"
+msgstr "Показувати лише пакунки, що відповідають архітектурі системи"
+
+#: ApperKCM/FiltersMenu.cpp:283
+msgid "Only Show Applications"
+msgstr "Показувати лише програми"
+
+#: ApperKCM/FiltersMenu.cpp:286
+msgid "Hide packages that are not applications"
+msgstr "Приховати пакунки, які не є пакунками програм"
 
 #: ApperKCM/Settings/OriginModel.cpp:39 ApperKCM/Settings/OriginModel.cpp:52
 msgid "Origin of Packages"
@@ -395,192 +524,35 @@ msgstr "Наполегливо рекомендуємо вам виконати 
 msgid "Check for new Updates"
 msgstr "Знайти оновлення"
 
-#: ApperKCM/FiltersMenu.cpp:37
-msgid "Collections"
-msgstr "Збірки"
+#: ApperKCM/ScreenShotViewer.cpp:90
+msgid "Could not find screen shot."
+msgstr "Не вдалося знайти знімок вікна."
 
-#: ApperKCM/FiltersMenu.cpp:44
-msgid "Only collections"
-msgstr "Лише збірки"
+#: ApperKCM/CategoryModel.cpp:47
+msgid "Installed Software"
+msgstr "Встановлене програмне забезпечення"
 
-#: ApperKCM/FiltersMenu.cpp:51
-msgid "Exclude collections"
-msgstr "Виключити збірки"
+#: ApperKCM/CategoryModel.cpp:50 ApperKCM/CategoryModel.cpp:58
+msgid "Lists"
+msgstr "Списки"
 
-#. i18n: file: Apper/BackendDetails.ui:100
-#. i18n: ectx: property (text), widget (QCheckBox, installedCB)
-#: ApperKCM/FiltersMenu.cpp:60 libapper/PkStrings.cpp:362 rc.cpp:23
-msgid "Installed"
-msgstr "Встановлене"
+#: ApperKCM/CategoryModel.cpp:55
+msgid "Updates"
+msgstr "Оновлення"
 
-#: ApperKCM/FiltersMenu.cpp:67
-msgid "Only installed"
-msgstr "Лише встановлені"
+#: ApperKCM/CategoryModel.cpp:155 ApperKCM/CategoryModel.cpp:339
+msgid "Categories"
+msgstr "Категорії"
 
-#: ApperKCM/FiltersMenu.cpp:74
-msgid "Only available"
-msgstr "Лише доступні"
-
-#: ApperKCM/FiltersMenu.cpp:81 ApperKCM/FiltersMenu.cpp:111
-#: ApperKCM/FiltersMenu.cpp:141 ApperKCM/FiltersMenu.cpp:171
-#: ApperKCM/FiltersMenu.cpp:202
-msgid "No filter"
-msgstr "Без фільтра"
-
-#. i18n: file: Apper/BackendDetails.ui:110
-#. i18n: ectx: property (text), widget (QCheckBox, developmentCB)
-#: ApperKCM/FiltersMenu.cpp:90 rc.cpp:26
-msgid "Development"
-msgstr "Розробка"
-
-#: ApperKCM/FiltersMenu.cpp:97
-msgid "Only development"
-msgstr "Лише для розробки"
-
-#: ApperKCM/FiltersMenu.cpp:104
-msgid "Only end user files"
-msgstr "Лише файли для кінцевого користувача"
-
-#: ApperKCM/FiltersMenu.cpp:120
-msgid "Graphical"
-msgstr "Графічні"
-
-#: ApperKCM/FiltersMenu.cpp:127
-msgid "Only graphical"
-msgstr "Лише графіка"
-
-#: ApperKCM/FiltersMenu.cpp:134
-msgid "Only text"
-msgstr "Лише текст"
-
-#: ApperKCM/FiltersMenu.cpp:150
-msgctxt "Filter for free packages"
-msgid "Free"
-msgstr "Вільні"
-
-#: ApperKCM/FiltersMenu.cpp:157
-msgid "Only free software"
-msgstr "Лише вільні програми"
-
-#: ApperKCM/FiltersMenu.cpp:164
-msgid "Only non-free software"
-msgstr "Лише не вільні програми"
-
-#: ApperKCM/FiltersMenu.cpp:181
-msgctxt "Filter for source packages"
-msgid "Source"
-msgstr "Джерело"
-
-#: ApperKCM/FiltersMenu.cpp:188
-msgid "Only sourcecode"
-msgstr "Лише пакунки з початковими кодами"
-
-#: ApperKCM/FiltersMenu.cpp:195
-msgid "Only non-sourcecode"
-msgstr "Лише пакунки без початкових кодів"
-
-#: ApperKCM/FiltersMenu.cpp:217
-msgid "Hide Subpackages"
-msgstr "Сховати підпакунки"
-
-#: ApperKCM/FiltersMenu.cpp:219
-msgid "Only show one package, not subpackages"
-msgstr "Показувати лише один пакунок, а не підпакунки"
-
-#: ApperKCM/FiltersMenu.cpp:226
-msgid "Only Newest Packages"
-msgstr "Лише найновіші пакунки"
-
-#: ApperKCM/FiltersMenu.cpp:231
-msgid "Only show the newest available package"
-msgstr "Показувати лише найновіший з доступних пакунків"
-
-#: ApperKCM/FiltersMenu.cpp:238
-msgid "Only Native Packages"
-msgstr "Лише рідні пакунки"
-
-#: ApperKCM/FiltersMenu.cpp:243
-msgid "Only show packages matching the machine architecture"
-msgstr "Показувати лише пакунки, що відповідають архітектурі системи"
-
-#: ApperKCM/FiltersMenu.cpp:252
-msgid "Only Show Applications"
-msgstr "Показувати лише програми"
-
-#: ApperKCM/FiltersMenu.cpp:255
-msgid "Hide packages that are not applications"
-msgstr "Приховати пакунки, які не є пакунками програм"
-
-#: ApperKCM/ApperKCM.cpp:79
-msgid "Application Manager"
-msgstr "Програма для керування програмами"
-
-#: ApperKCM/ApperKCM.cpp:81
-msgid "KDE interface for managing software"
-msgstr "Інтерфейс KDE для керування програмним забезпеченням"
-
-#: ApperKCM/ApperKCM.cpp:111 ApperKCM/ApperKCM.cpp:292
-msgid "Find"
-msgstr "Знайти"
-
-#: ApperKCM/ApperKCM.cpp:206
-msgid "History"
-msgstr "Історія"
-
-#. i18n: file: ApperKCM/Settings/Settings.ui:14
-#. i18n: ectx: property (windowTitle), widget (QWidget, Settings)
-#: ApperKCM/ApperKCM.cpp:212 rc.cpp:140
-msgid "Settings"
-msgstr "Параметри"
-
-#: ApperKCM/ApperKCM.cpp:269 ApperKCM/ApperKCM.cpp:270
-#: ApperKCM/ApperKCM.cpp:271 ApperKCM/ApperKCM.cpp:272
-msgid "&Cancel"
-msgstr "&Скасувати"
-
-#. i18n: file: ApperKCM/ApperKCM.ui:291
-#. i18n: ectx: property (text), widget (QToolButton, backTB)
-#: ApperKCM/ApperKCM.cpp:279 rc.cpp:200
-msgid "Find by &name"
-msgstr "Знайти за &назвою"
-
-#. i18n: file: ApperKCM/ApperKCM.ui:301
-#. i18n: ectx: property (text), widget (QToolButton, backTB)
-#: ApperKCM/ApperKCM.cpp:280 rc.cpp:206
-msgid "Find by f&ile name"
-msgstr "Знайти за н&азвою файла"
-
-#. i18n: file: ApperKCM/ApperKCM.ui:296
-#. i18n: ectx: property (text), widget (QToolButton, backTB)
-#: ApperKCM/ApperKCM.cpp:281 rc.cpp:203
-msgid "Find by &description"
-msgstr "Знайти за &описом"
-
-#: ApperKCM/ApperKCM.cpp:411
-msgid ""
-"The settings of the current module have changed.\n"
-"Do you want to apply the changes or discard them?"
-msgstr ""
-"Параметри активного модуля було змінено.\n"
-"Застосувати зміни чи відкинути їх?"
-
-#: ApperKCM/ApperKCM.cpp:413
-msgid "Apply Settings"
-msgstr "Застосувати параметри"
-
-#: ApperKCM/ApperKCM.cpp:455
-msgid "General Settings"
-msgstr "Загальні параметри"
-
-#: ApperKCM/ApperKCM.cpp:456
-msgid "Software Origins"
-msgstr "Джерела програм"
+#: ApperKCM/CategoryModel.cpp:208
+msgid "Groups"
+msgstr "Групи"
 
 #: ApperKCM/PackageDetails.cpp:73
 msgid "Display"
 msgstr "Показ"
 
-#: ApperKCM/PackageDetails.cpp:80
+#: ApperKCM/PackageDetails.cpp:80 AppSetup/SetupWizard.cpp:243
 msgid "Description"
 msgstr "Опис"
 
@@ -608,30 +580,6 @@ msgstr "Не вдалося отримати дані щодо програмн�
 msgid "Applications"
 msgstr "Програми"
 
-#: ApperKCM/CategoryModel.cpp:47
-msgid "Installed Software"
-msgstr "Встановлене програмне забезпечення"
-
-#: ApperKCM/CategoryModel.cpp:50 ApperKCM/CategoryModel.cpp:58
-msgid "Lists"
-msgstr "Списки"
-
-#: ApperKCM/CategoryModel.cpp:55
-msgid "Updates"
-msgstr "Оновлення"
-
-#: ApperKCM/CategoryModel.cpp:155 ApperKCM/CategoryModel.cpp:339
-msgid "Categories"
-msgstr "Категорії"
-
-#: ApperKCM/CategoryModel.cpp:208
-msgid "Groups"
-msgstr "Групи"
-
-#: ApperKCM/ScreenShotViewer.cpp:90
-msgid "Could not find screen shot."
-msgstr "Не вдалося знайти знімок вікна."
-
 #: ApperKCM/TransactionHistory.cpp:66
 msgid "Refresh transactions list"
 msgstr "Освіжити список транзакцій"
@@ -650,6 +598,7 @@ msgid "Action"
 msgstr "Дія"
 
 #: ApperKCM/TransactionModel.cpp:48 Sentinel/TransactionWatcher.cpp:308
+#: AppSetup/SetupWizard.cpp:207
 msgid "Details"
 msgstr "Подробиці"
 
@@ -662,13 +611,70 @@ msgstr "Користувач"
 msgid "Application"
 msgstr "Програма"
 
-#: Sentinel/DistroUpgrade.cpp:69
-msgid "Start upgrade now"
-msgstr "Почати оновлення"
+#: ApperKCM/ApperKCM.cpp:80
+msgid "Application Manager"
+msgstr "Програма для керування програмами"
 
-#: Sentinel/DistroUpgrade.cpp:114
-msgid "Distribution upgrade finished. "
-msgstr "Оновлення дистрибутива завершено."
+#: ApperKCM/ApperKCM.cpp:82
+msgid "KDE interface for managing software"
+msgstr "Інтерфейс KDE для керування програмним забезпеченням"
+
+#: ApperKCM/ApperKCM.cpp:112 ApperKCM/ApperKCM.cpp:293
+msgid "Find"
+msgstr "Знайти"
+
+#: ApperKCM/ApperKCM.cpp:207
+msgid "History"
+msgstr "Історія"
+
+#. i18n: file: ApperKCM/Settings/Settings.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, Settings)
+#: ApperKCM/ApperKCM.cpp:213 rc.cpp:140
+msgid "Settings"
+msgstr "Параметри"
+
+#: ApperKCM/ApperKCM.cpp:270 ApperKCM/ApperKCM.cpp:271
+#: ApperKCM/ApperKCM.cpp:272 ApperKCM/ApperKCM.cpp:273
+msgid "&Cancel"
+msgstr "&Скасувати"
+
+#. i18n: file: ApperKCM/ApperKCM.ui:291
+#. i18n: ectx: property (text), widget (QToolButton, backTB)
+#: ApperKCM/ApperKCM.cpp:280 rc.cpp:200
+msgid "Find by &name"
+msgstr "Знайти за &назвою"
+
+#. i18n: file: ApperKCM/ApperKCM.ui:301
+#. i18n: ectx: property (text), widget (QToolButton, backTB)
+#: ApperKCM/ApperKCM.cpp:281 rc.cpp:206
+msgid "Find by f&ile name"
+msgstr "Знайти за н&азвою файла"
+
+#. i18n: file: ApperKCM/ApperKCM.ui:296
+#. i18n: ectx: property (text), widget (QToolButton, backTB)
+#: ApperKCM/ApperKCM.cpp:282 rc.cpp:203
+msgid "Find by &description"
+msgstr "Знайти за &описом"
+
+#: ApperKCM/ApperKCM.cpp:412
+msgid ""
+"The settings of the current module have changed.\n"
+"Do you want to apply the changes or discard them?"
+msgstr ""
+"Параметри активного модуля було змінено.\n"
+"Застосувати зміни чи відкинути їх?"
+
+#: ApperKCM/ApperKCM.cpp:414
+msgid "Apply Settings"
+msgstr "Застосувати параметри"
+
+#: ApperKCM/ApperKCM.cpp:456
+msgid "General Settings"
+msgstr "Загальні параметри"
+
+#: ApperKCM/ApperKCM.cpp:457
+msgid "Software Origins"
+msgstr "Джерела програм"
 
 #: Sentinel/PkInstallProvideFiles.cpp:39
 msgid "Install Packages that Provides Files"
@@ -708,7 +714,7 @@ msgstr[3] "Програма %2 надсилає запит щодо встано
 msgid "Failed to start search file transaction"
 msgstr "Не вдалося почати дію з пошуку файла"
 
-#: Sentinel/PkInstallProvideFiles.cpp:101 libapper/PkTransaction.cpp:263
+#: Sentinel/PkInstallProvideFiles.cpp:101 libapper/PkTransaction.cpp:268
 msgid "Failed to install file"
 msgid_plural "Failed to install files"
 msgstr[0] "Не вдалося встановити файли"
@@ -755,50 +761,6 @@ msgid "Could not find printer driver in any configured software source"
 msgstr ""
 "Не вдалося знайти драйвер принтера у жодному з вказаних вами джерел "
 "програмного забезпечення"
-
-#: Sentinel/UpdateIcon.cpp:160
-msgid "Review Updates"
-msgstr "Перегляд оновлень"
-
-#: Sentinel/UpdateIcon.cpp:163
-msgid "Configure"
-msgstr "Налаштувати"
-
-#. i18n: file: ApperKCM/PackageDetails.ui:359
-#. i18n: ectx: property (text), widget (QToolButton, hideTB)
-#. i18n: file: ApperKCM/Updater/UpdateDetails.ui:20
-#. i18n: ectx: property (text), widget (QToolButton, hideTB)
-#: Sentinel/UpdateIcon.cpp:167 Sentinel/TransactionWatcher.cpp:186
-#: libapper/PkTransactionDialog.cpp:86 rc.cpp:137 rc.cpp:173
-msgid "Hide"
-msgstr "Сховати"
-
-#: Sentinel/UpdateIcon.cpp:177
-#, kde-format
-msgid "You have one update"
-msgid_plural "You have %1 updates"
-msgstr[0] "%1 оновлення"
-msgstr[1] "%1 оновлення"
-msgstr[2] "%1 оновлень"
-msgstr[3] "%1 оновлення"
-
-#: Sentinel/UpdateIcon.cpp:230
-msgid "Updates are being automatically installed."
-msgstr "Оновлення було автоматично встановлено."
-
-#: Sentinel/UpdateIcon.cpp:251
-msgid "Security updates are being automatically installed."
-msgstr "Оновлення безпеки було успішно встановлено."
-
-#: Sentinel/UpdateIcon.cpp:278
-msgid "System update was successful."
-msgstr "Оновлення системи успішно завершено."
-
-#: Sentinel/UpdateIcon.cpp:287
-msgid "The automated software update failed."
-msgstr ""
-"Спроба оновлення програмного забезпечення у автоматичному режимі завершилася "
-"невдало."
 
 #: Sentinel/ReviewChanges.cpp:52
 msgid "The following package was found"
@@ -954,7 +916,60 @@ msgstr "Каталог є порожнім"
 msgid "Could not find any package to install in this catalog"
 msgstr "У цьому каталозі не вдалося знайти жодного пакунка для встановлення"
 
+#: Sentinel/PkInstallPackageFiles.cpp:38
+msgid "Install Packages Files"
+msgstr "Встановлення пакунків за файлами"
+
+#: Sentinel/PkInstallPackageFiles.cpp:42
+#: Sentinel/PkRemovePackageByFiles.cpp:43
+msgid "You can drop more files in here"
+msgstr "Сюди можна скинути додаткові файли"
+
+#: Sentinel/PkInstallPackageFiles.cpp:52
+msgid "Not Supported"
+msgstr "Не підтримується"
+
+#: Sentinel/PkInstallPackageFiles.cpp:53
+msgid "Your current backend does not support installing files"
+msgstr ""
+"Вашим поточним модулем обробки не передбачено можливості встановлення файлів"
+
+#: Sentinel/PkInstallPackageFiles.cpp:68
+#: Sentinel/PkRemovePackageByFiles.cpp:64
+msgid "No supported files were provided"
+msgstr "Не знайдено жодних підтримуваних файлів"
+
+#: Sentinel/PkInstallPackageFiles.cpp:70
+msgid "Press <i>Continue</i> if you want to install this file"
+msgid_plural "Press <i>Continue</i> if you want to install these files"
+msgstr[0] "Натисніть <i>Продовжити</i>, якщо бажаєте встановити ці файли"
+msgstr[1] "Натисніть <i>Продовжити</i>, якщо бажаєте встановити ці файли"
+msgstr[2] "Натисніть <i>Продовжити</i>, якщо бажаєте встановити ці файли"
+msgstr[3] "Натисніть <i>Продовжити</i>, якщо бажаєте встановити цей файл"
+
+#: Sentinel/PkInstallPackageFiles.cpp:105
+msgid "Installation Complete"
+msgstr "Встановлення завершено"
+
+#: Sentinel/PkInstallPackageFiles.cpp:106
+msgid "File was installed successfully"
+msgid_plural "Files were installed successfully"
+msgstr[0] "Файли було успішно встановлено"
+msgstr[1] "Файли було успішно встановлено"
+msgstr[2] "Файли було успішно встановлено"
+msgstr[3] "Файл було успішно встановлено"
+
+#: Sentinel/PkInstallPackageFiles.cpp:117
+msgid "Failed to install files"
+msgstr "Помилка під час встановлення файлів"
+
+#: Sentinel/PkInstallPackageFiles.cpp:118
+#: Sentinel/PkInstallPackageFiles.cpp:120
+msgid "Could not install files"
+msgstr "Не вдалося встановити файли"
+
 #: Sentinel/SessionTask.cpp:66 libapper/Requirements.cpp:44
+#: AppSetup/SetupWizard.cpp:139
 msgid "Continue"
 msgstr "Продовжити"
 
@@ -989,6 +1004,76 @@ msgstr "Завдання завершено"
 #: Sentinel/SessionTask.cpp:430
 msgid "All operations were committed successfully"
 msgstr "Всі дії успішно виконано"
+
+#: Sentinel/UpdateIcon.cpp:115
+msgid "Review Updates"
+msgstr "Перегляд оновлень"
+
+#: Sentinel/UpdateIcon.cpp:118
+msgid "Configure"
+msgstr "Налаштувати"
+
+#. i18n: file: ApperKCM/PackageDetails.ui:359
+#. i18n: ectx: property (text), widget (QToolButton, hideTB)
+#. i18n: file: ApperKCM/Updater/UpdateDetails.ui:20
+#. i18n: ectx: property (text), widget (QToolButton, hideTB)
+#: Sentinel/UpdateIcon.cpp:122 Sentinel/TransactionWatcher.cpp:186
+#: libapper/PkTransactionDialog.cpp:86 rc.cpp:137 rc.cpp:173
+msgid "Hide"
+msgstr "Сховати"
+
+#: Sentinel/UpdateIcon.cpp:132
+#, kde-format
+msgid "You have one update"
+msgid_plural "You have %1 updates"
+msgstr[0] "%1 оновлення"
+msgstr[1] "%1 оновлення"
+msgstr[2] "%1 оновлень"
+msgstr[3] "%1 оновлення"
+
+#: Sentinel/UpdateIcon.cpp:192
+msgid "Updates are being automatically installed."
+msgstr "Оновлення було автоматично встановлено."
+
+#: Sentinel/UpdateIcon.cpp:213
+msgid "Security updates are being automatically installed."
+msgstr "Оновлення безпеки було успішно встановлено."
+
+#: Sentinel/UpdateIcon.cpp:240
+msgid "System update was successful."
+msgstr "Оновлення системи успішно завершено."
+
+#: Sentinel/UpdateIcon.cpp:249
+msgid "The automated software update failed."
+msgstr ""
+"Спроба оновлення програмного забезпечення у автоматичному режимі завершилася "
+"невдало."
+
+#: Sentinel/PkIsInstalled.cpp:36
+msgid "Querying if a Package is Installed"
+msgstr "Визначення того, чи встановлено пакунок"
+
+#: Sentinel/PkIsInstalled.cpp:67
+msgid "User canceled the transaction"
+msgstr "Операцій скасовано користувачем"
+
+#: Sentinel/PkIsInstalled.cpp:69
+msgid "An unknown error happened"
+msgstr "Сталася невідома помилка"
+
+#: Sentinel/TransactionTrayIcon.cpp:45
+msgid "Transactions"
+msgstr "Операції"
+
+#: Sentinel/TransactionTrayIcon.cpp:90
+#, kde-format
+msgid "%1% - %2"
+msgstr "%1% - %2"
+
+#: Sentinel/TransactionTrayIcon.cpp:92
+#, kde-format
+msgid "%1"
+msgstr "%1"
 
 #: Sentinel/TransactionWatcher.cpp:66 Sentinel/TransactionWatcher.cpp:265
 msgid "Hide this icon"
@@ -1032,32 +1117,6 @@ msgstr "Показати повідомлення"
 #: Sentinel/TransactionWatcher.cpp:308
 msgid "Ignore"
 msgstr "Ігнорувати"
-
-#: Sentinel/PkIsInstalled.cpp:36
-msgid "Querying if a Package is Installed"
-msgstr "Визначення того, чи встановлено пакунок"
-
-#: Sentinel/PkIsInstalled.cpp:67
-msgid "User canceled the transaction"
-msgstr "Операцій скасовано користувачем"
-
-#: Sentinel/PkIsInstalled.cpp:69
-msgid "An unknown error happened"
-msgstr "Сталася невідома помилка"
-
-#: Sentinel/TransactionTrayIcon.cpp:45
-msgid "Transactions"
-msgstr "Операції"
-
-#: Sentinel/TransactionTrayIcon.cpp:90
-#, kde-format
-msgid "%1% - %2"
-msgstr "%1% - %2"
-
-#: Sentinel/TransactionTrayIcon.cpp:92
-#, kde-format
-msgid "%1"
-msgstr "%1"
 
 #: Sentinel/PkInstallPlasmaResources.cpp:40
 msgid "Install Plasma Resources"
@@ -1163,58 +1222,6 @@ msgstr "Вартовий Apper"
 msgid "Trever Fischer"
 msgstr "Trever Fischer"
 
-#: Sentinel/PkInstallPackageFiles.cpp:38
-msgid "Install Packages Files"
-msgstr "Встановлення пакунків за файлами"
-
-#: Sentinel/PkInstallPackageFiles.cpp:42
-#: Sentinel/PkRemovePackageByFiles.cpp:43
-msgid "You can drop more files in here"
-msgstr "Сюди можна скинути додаткові файли"
-
-#: Sentinel/PkInstallPackageFiles.cpp:52
-msgid "Not Supported"
-msgstr "Не підтримується"
-
-#: Sentinel/PkInstallPackageFiles.cpp:53
-msgid "Your current backend does not support installing files"
-msgstr ""
-"Вашим поточним модулем обробки не передбачено можливості встановлення файлів"
-
-#: Sentinel/PkInstallPackageFiles.cpp:68
-#: Sentinel/PkRemovePackageByFiles.cpp:64
-msgid "No supported files were provided"
-msgstr "Не знайдено жодних підтримуваних файлів"
-
-#: Sentinel/PkInstallPackageFiles.cpp:70
-msgid "Press <i>Continue</i> if you want to install this file"
-msgid_plural "Press <i>Continue</i> if you want to install these files"
-msgstr[0] "Натисніть <i>Продовжити</i>, якщо бажаєте встановити ці файли"
-msgstr[1] "Натисніть <i>Продовжити</i>, якщо бажаєте встановити ці файли"
-msgstr[2] "Натисніть <i>Продовжити</i>, якщо бажаєте встановити ці файли"
-msgstr[3] "Натисніть <i>Продовжити</i>, якщо бажаєте встановити цей файл"
-
-#: Sentinel/PkInstallPackageFiles.cpp:105
-msgid "Installation Complete"
-msgstr "Встановлення завершено"
-
-#: Sentinel/PkInstallPackageFiles.cpp:106
-msgid "File was installed successfully"
-msgid_plural "Files were installed successfully"
-msgstr[0] "Файли було успішно встановлено"
-msgstr[1] "Файли було успішно встановлено"
-msgstr[2] "Файли було успішно встановлено"
-msgstr[3] "Файл було успішно встановлено"
-
-#: Sentinel/PkInstallPackageFiles.cpp:117
-msgid "Failed to install files"
-msgstr "Помилка під час встановлення файлів"
-
-#: Sentinel/PkInstallPackageFiles.cpp:118
-#: Sentinel/PkInstallPackageFiles.cpp:120
-msgid "Could not install files"
-msgstr "Не вдалося встановити файли"
-
 #: Sentinel/PkRemovePackageByFiles.cpp:40
 msgid "Remove Packages that Provides Files"
 msgstr "Вилучення пакунків, які містять певні файли"
@@ -1290,6 +1297,14 @@ msgid "The file name could not be found in any software source"
 msgstr ""
 "Файл з відповідною назвою не вдалося знайти у жодному з джерел програмного "
 "забезпечення"
+
+#: Sentinel/DistroUpgrade.cpp:69
+msgid "Start upgrade now"
+msgstr "Почати оновлення"
+
+#: Sentinel/DistroUpgrade.cpp:114
+msgid "Distribution upgrade finished. "
+msgstr "Оновлення дистрибутива завершено."
 
 #: Sentinel/PkInstallFontconfigResources.cpp:41
 msgid "Installs new Fonts"
@@ -1430,6 +1445,47 @@ msgid "Could not find plugin in any configured software source"
 msgstr ""
 "Не вдалося знайти додаток у жодному з вказаних вами джерел програмного "
 "забезпечення"
+
+#: libapper/PackageModel.cpp:182
+msgid "Name"
+msgstr "Назва"
+
+#: libapper/PackageModel.cpp:184 libapper/SimulateModel.cpp:141
+msgid "Version"
+msgstr "Версія"
+
+#: libapper/PackageModel.cpp:186
+msgid "Installed Version"
+msgstr "Встановлена версія"
+
+#: libapper/PackageModel.cpp:188
+msgid "Arch"
+msgstr "Арх."
+
+#: libapper/PackageModel.cpp:190
+msgid "Origin"
+msgstr "Джерело"
+
+#: libapper/PackageModel.cpp:192
+msgid "Size"
+msgstr "Розмір"
+
+#: libapper/PackageModel.cpp:283
+#, kde-format
+msgid ""
+"Version: %1\n"
+"Architecture: %2"
+msgstr ""
+"Версія: %1\n"
+"Архітектура: %2"
+
+#: libapper/PackageModel.cpp:329
+msgid "To be Removed"
+msgstr "Буде вилучено"
+
+#: libapper/PackageModel.cpp:331
+msgid "To be Installed"
+msgstr "Буде встановлене"
 
 #: libapper/ChangesDelegate.cpp:45
 msgid "Do not Install"
@@ -2278,7 +2334,7 @@ msgstr "Пакунок є несумісним з цією системою"
 msgid "No space is left on the disk"
 msgstr "На диску не залишилося місця"
 
-#: libapper/PkStrings.cpp:477 libapper/PkTransaction.cpp:579
+#: libapper/PkStrings.cpp:477 libapper/PkTransaction.cpp:581
 msgid "A media change is required"
 msgstr "Потрібно змінити носій"
 
@@ -3297,6 +3353,89 @@ msgstr "Не вдалося обмінятися даними з packagekitd."
 msgid "An unknown error happened."
 msgstr "Сталася невідома помилка."
 
+#: libapper/PkTransaction.cpp:123
+msgid "Failed to simulate file install"
+msgstr "Не вдалося зімітувати встановлення файла"
+
+#: libapper/PkTransaction.cpp:130
+msgid "Current backend does not support installing files."
+msgstr ""
+"Вибачте, поточним модулем обробки не передбачено можливості встановлення "
+"файлів."
+
+#: libapper/PkTransaction.cpp:130 libapper/PkTransaction.cpp:154
+#: libapper/PkTransaction.cpp:180 libapper/PkTransaction.cpp:203
+#: AppSetup/SetupWizard.cpp:107
+msgid "Error"
+msgstr "Помилка"
+
+#: libapper/PkTransaction.cpp:147
+msgid "Failed to simulate package install"
+msgstr "Не вдалося зімітувати встановлення пакунка"
+
+#: libapper/PkTransaction.cpp:154
+msgid "Current backend does not support installing packages."
+msgstr ""
+"Вибачте, поточним модулем обробки не підтримується встановлення пакунків."
+
+#: libapper/PkTransaction.cpp:172
+msgid "Failed to simulate package removal"
+msgstr "Не вдалося зімітувати вилучення пакунка"
+
+#: libapper/PkTransaction.cpp:180
+msgid "The current backend does not support removing packages."
+msgstr "Вибачте, модуль обробки вашої системи не підтримує вилучення пакунків."
+
+#: libapper/PkTransaction.cpp:196
+msgid "Failed to simulate package update"
+msgstr "Не вдалося зімітувати оновлення пакунка"
+
+#: libapper/PkTransaction.cpp:203
+msgid "The current backend does not support updating packages."
+msgstr "Вибачте, модуль обробки вашої системи не підтримує оновлення пакунків."
+
+#: libapper/PkTransaction.cpp:214
+msgid "Failed to refresh package cache"
+msgstr "Не вдалося освіжити кеш пакунків"
+
+#: libapper/PkTransaction.cpp:256
+msgid "Failed to install package"
+msgstr "Не вдалося встановити пакунок"
+
+#: libapper/PkTransaction.cpp:281
+msgid "Failed to remove package"
+msgstr "Не вдалося вилучити пакунок"
+
+#: libapper/PkTransaction.cpp:293
+msgid "Failed to update package"
+msgstr "Не вдалося оновити пакунок"
+
+#: libapper/PkTransaction.cpp:461
+#, kde-format
+msgid "Downloading packages at %1/s"
+msgstr "Звантаження пакунків зі швидкістю %1/с"
+
+#: libapper/PkTransaction.cpp:509
+msgid ""
+"You are about to install unsigned packages that can compromise your system, "
+"as it is impossible to verify if the software came from a trusted source.\n"
+"\n"
+"Are you sure you want to proceed with the installation?"
+msgstr ""
+"Ваш намір встановити непідписані пакунки може призвести до зниження рівня "
+"безпеки вашої системи, оскільки неможливо перевірити, чи отримано програмне "
+"забезпечення з надійного джерела.\n"
+"\n"
+"Ви справді бажаєте продовжити встановлення?"
+
+#: libapper/PkTransaction.cpp:512
+msgid "Installing unsigned software"
+msgstr "Встановлення непідписаних програм"
+
+#: libapper/PkTransaction.cpp:566 libapper/PkTransaction.cpp:620
+msgid "Failed to install signature"
+msgstr "Не вдалося встановити підпис"
+
 #: libapper/PkTransactionDialog.cpp:88
 msgid ""
 "Allows you to hide the window whilst keeping the transaction task running."
@@ -3306,10 +3445,6 @@ msgstr ""
 #: libapper/SimulateModel.cpp:139
 msgid "Package"
 msgstr "Пакунок"
-
-#: libapper/SimulateModel.cpp:141 libapper/PackageModel.cpp:184
-msgid "Version"
-msgstr "Версія"
 
 #: libapper/ApplicationLauncher.cpp:95
 msgid "The following application was just installed. Click on it to launch:"
@@ -3341,43 +3476,6 @@ msgstr "Потрібна ліцензійна угода"
 #, kde-format
 msgid "License required for %1 by %2"
 msgstr "Слід прийняти ліцензійну угоду %1 від %2"
-
-#: libapper/PackageModel.cpp:182
-msgid "Name"
-msgstr "Назва"
-
-#: libapper/PackageModel.cpp:186
-msgid "Installed Version"
-msgstr "Встановлена версія"
-
-#: libapper/PackageModel.cpp:188
-msgid "Arch"
-msgstr "Арх."
-
-#: libapper/PackageModel.cpp:190
-msgid "Origin"
-msgstr "Джерело"
-
-#: libapper/PackageModel.cpp:192
-msgid "Size"
-msgstr "Розмір"
-
-#: libapper/PackageModel.cpp:283
-#, kde-format
-msgid ""
-"Version: %1\n"
-"Architecture: %2"
-msgstr ""
-"Версія: %1\n"
-"Архітектура: %2"
-
-#: libapper/PackageModel.cpp:329
-msgid "To be Removed"
-msgstr "Буде вилучено"
-
-#: libapper/PackageModel.cpp:331
-msgid "To be Installed"
-msgstr "Буде встановлене"
 
 #: libapper/Requirements.cpp:42
 msgid "Additional changes"
@@ -3428,88 +3526,6 @@ msgstr[1] "%1 пакунки для оновлення"
 msgstr[2] "%1 пакунків для оновлення"
 msgstr[3] "%1 пакунок для оновлення"
 
-#: libapper/PkTransaction.cpp:122
-msgid "Failed to simulate file install"
-msgstr "Не вдалося зімітувати встановлення файла"
-
-#: libapper/PkTransaction.cpp:129
-msgid "Current backend does not support installing files."
-msgstr ""
-"Вибачте, поточним модулем обробки не передбачено можливості встановлення "
-"файлів."
-
-#: libapper/PkTransaction.cpp:129 libapper/PkTransaction.cpp:153
-#: libapper/PkTransaction.cpp:179 libapper/PkTransaction.cpp:202
-msgid "Error"
-msgstr "Помилка"
-
-#: libapper/PkTransaction.cpp:146
-msgid "Failed to simulate package install"
-msgstr "Не вдалося зімітувати встановлення пакунка"
-
-#: libapper/PkTransaction.cpp:153
-msgid "Current backend does not support installing packages."
-msgstr ""
-"Вибачте, поточним модулем обробки не підтримується встановлення пакунків."
-
-#: libapper/PkTransaction.cpp:171
-msgid "Failed to simulate package removal"
-msgstr "Не вдалося зімітувати вилучення пакунка"
-
-#: libapper/PkTransaction.cpp:179
-msgid "The current backend does not support removing packages."
-msgstr "Вибачте, модуль обробки вашої системи не підтримує вилучення пакунків."
-
-#: libapper/PkTransaction.cpp:195
-msgid "Failed to simulate package update"
-msgstr "Не вдалося зімітувати оновлення пакунка"
-
-#: libapper/PkTransaction.cpp:202
-msgid "The current backend does not support updating packages."
-msgstr "Вибачте, модуль обробки вашої системи не підтримує оновлення пакунків."
-
-#: libapper/PkTransaction.cpp:213
-msgid "Failed to refresh package cache"
-msgstr "Не вдалося освіжити кеш пакунків"
-
-#: libapper/PkTransaction.cpp:251
-msgid "Failed to install package"
-msgstr "Не вдалося встановити пакунок"
-
-#: libapper/PkTransaction.cpp:276
-msgid "Failed to remove package"
-msgstr "Не вдалося вилучити пакунок"
-
-#: libapper/PkTransaction.cpp:288
-msgid "Failed to update package"
-msgstr "Не вдалося оновити пакунок"
-
-#: libapper/PkTransaction.cpp:459
-#, kde-format
-msgid "Downloading packages at %1/s"
-msgstr "Звантаження пакунків зі швидкістю %1/с"
-
-#: libapper/PkTransaction.cpp:507
-msgid ""
-"You are about to install unsigned packages that can compromise your system, "
-"as it is impossible to verify if the software came from a trusted source.\n"
-"\n"
-"Are you sure you want to proceed with the installation?"
-msgstr ""
-"Ваш намір встановити непідписані пакунки може призвести до зниження рівня "
-"безпеки вашої системи, оскільки неможливо перевірити, чи отримано програмне "
-"забезпечення з надійного джерела.\n"
-"\n"
-"Ви справді бажаєте продовжити встановлення?"
-
-#: libapper/PkTransaction.cpp:510
-msgid "Installing unsigned software"
-msgstr "Встановлення непідписаних програм"
-
-#: libapper/PkTransaction.cpp:564 libapper/PkTransaction.cpp:618
-msgid "Failed to install signature"
-msgstr "Не вдалося встановити підпис"
-
 #. i18n: file: libapper/RepoSig.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, RepoSig)
 #: libapper/RepoSig.cpp:40 rc.cpp:218
@@ -3523,6 +3539,146 @@ msgstr "Встановити"
 #: libapper/ApplicationsDelegate.cpp:42
 msgid "Remove"
 msgstr "Вилучити"
+
+#: AppSetup/main.cpp:34 AppSetup/main.cpp:35
+msgid "KDE Application Installer"
+msgstr "Програма KDE для керування програмами"
+
+#: AppSetup/main.cpp:36
+msgid "(C) 2012, Matthias Klumpp"
+msgstr "© Matthias Klumpp, 2012"
+
+#: AppSetup/main.cpp:38
+msgctxt "@info:credit"
+msgid "Daniel Nicoletti"
+msgstr "Daniel Nicoletti"
+
+#: AppSetup/main.cpp:38 AppSetup/main.cpp:40
+msgid "Developer"
+msgstr "Розробник"
+
+#: AppSetup/main.cpp:40
+msgctxt "@info:credit"
+msgid "Matthias Klumpp"
+msgstr "Matthias Klumpp"
+
+#: AppSetup/main.cpp:47
+msgid "Show verbose information"
+msgstr "Показати докладні дані"
+
+#: AppSetup/main.cpp:48
+msgid "IPK package filename"
+msgstr "Назва файла пакунка IPK"
+
+#: AppSetup/main.cpp:75
+msgid "Sorry, we didn't get an existing IPK package as parameter."
+msgstr "Вибачте, у параметрах не було передано жодних пакунків IPK."
+
+#: AppSetup/main.cpp:76
+msgid "Package not found!"
+msgstr "Пакунок не знайдено!"
+
+#: AppSetup/SetupWizard.cpp:92
+msgid "Installation finished!"
+msgstr "Встановлення завершено!"
+
+#: AppSetup/SetupWizard.cpp:93
+#, kde-format
+msgid "%1 has been installed successfully!"
+msgstr "%1 успішно встановлено!"
+
+#: AppSetup/SetupWizard.cpp:108
+msgid "An error occurred"
+msgstr "Сталася помилка"
+
+#. i18n: file: ApperKCM/ApperKCM.ui:281
+#. i18n: ectx: property (text), widget (QToolButton, backTB)
+#: AppSetup/SetupWizard.cpp:141 rc.cpp:197
+msgid "Back"
+msgstr "Назад"
+
+#: AppSetup/SetupWizard.cpp:196
+msgid "Welcome!"
+msgstr "Вітаємо!"
+
+#: AppSetup/SetupWizard.cpp:197
+#, kde-format
+msgid "Welcome to the installation of %1!"
+msgstr "Вітаємо у майстрі встановлення %1!"
+
+#: AppSetup/SetupWizard.cpp:198
+msgid ""
+"Please be careful while installing 3rd-party applications.<br>They may "
+"eventually <b>damage</b> your system or have <b>malicious behaviour</b>, "
+"like spying out your passwords.<br>Please do only install this software if "
+"you <b>trust the publisher and the author</b> of it."
+msgstr ""
+"Будь ласка, будьте обережні зі встановленням стороннього програмного "
+"забезпечення.<br>Встановлення цього програмного забезпечення може <b>завдати "
+"шкоди</b> вашій системі або <b>призвести до розповсюдження конфіденційних "
+"даних</b>, зокрема ваших паролів.<br>Будь ласка, встановлюйте стороннє "
+"програмне забезпечення, лише якщо <b>ви довіряєте розповсюджувачам або "
+"розробникам</b> цього програмного забезпечення."
+
+#: AppSetup/SetupWizard.cpp:208
+msgid "Details about this installation"
+msgstr "Параметри цього встановлення"
+
+#: AppSetup/SetupWizard.cpp:235
+msgid "Install for all users (as root)"
+msgstr "Встановити для всіх користувачів (від імені root)"
+
+#: AppSetup/SetupWizard.cpp:242
+msgid "Application description"
+msgstr "Опис програми"
+
+#: AppSetup/SetupWizard.cpp:251
+msgid "Software license"
+msgstr "Умови ліцензування програми"
+
+#: AppSetup/SetupWizard.cpp:252
+msgid "Please read the following terms and conditions carefully!"
+msgstr ""
+"Будь ласка, уважно ознайомтеся з викладеними нижче умовами користування!"
+
+#: AppSetup/SetupWizard.cpp:259
+msgid "Running installation"
+msgstr "Виконується встановлення"
+
+#: AppSetup/SetupWizard.cpp:260
+#, kde-format
+msgid "Installing %1..."
+msgstr "Встановлення %1…"
+
+#: AppSetup/SetupWizard.cpp:297
+msgid ""
+"Installing this package will make the following native packages obsolete. "
+"You might consider removing them manually."
+msgstr ""
+"Встановлення цього пакунка зробить вказані нижче пакунки системи "
+"застарілими. Вам варто вилучити застарілі пакунки вручну."
+
+#: AppSetup/SetupWizard.cpp:298
+msgid "Similar native packages found"
+msgstr "Знайдено подібні пакунки системи"
+
+#: AppSetup/SetupWizard.cpp:364
+msgid ""
+"You want to install this application as root!\n"
+"This can damage your system or install malicious software for all users.\n"
+"Please only proceed, if you really know what you're doing!\n"
+"Continue?"
+msgstr ""
+"Ви наказали програмі встановити пакунок від імені адміністратора!\n"
+"Такі дії можуть завдати шкоди вашій системі або призвести до встановлення\n"
+"шпигунського програмного забезпечення для всіх користувачів.\n"
+"Встановлення слід продовжувати, лише якщо ви повністю усвідомлюєте "
+"наслідки!\n"
+"Продовжувати?"
+
+#: AppSetup/SetupWizard.cpp:367
+msgid "Really install as superuser?"
+msgstr "Встановити від імені адміністратора?"
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
@@ -3871,12 +4027,6 @@ msgstr "Шукати пакунки"
 msgid "Pending Changes"
 msgstr "Додавання змін у чергу"
 
-#. i18n: file: ApperKCM/ApperKCM.ui:281
-#. i18n: ectx: property (text), widget (QToolButton, backTB)
-#: rc.cpp:197
-msgid "Back"
-msgstr "Назад"
-
 #. i18n: file: Sentinel/IntroDialog.ui:65
 #. i18n: ectx: property (text), widget (QLabel, descriptionL)
 #: rc.cpp:209
@@ -3948,3 +4098,15 @@ msgstr "піктограма"
 #: rc.cpp:248
 msgid "Downloading Packages"
 msgstr "Звантаження пакунків"
+
+#. i18n: file: AppSetup/LicensePage.ui:98
+#. i18n: ectx: property (text), widget (QRadioButton, acceptedRB)
+#: rc.cpp:251
+msgid "I agree to the above terms and conditions"
+msgstr "Погоджуюся з викладеними вище умовами користування"
+
+#. i18n: file: AppSetup/LicensePage.ui:111
+#. i18n: ectx: property (text), widget (QRadioButton, rejectedRB)
+#: rc.cpp:254
+msgid "I don't agree"
+msgstr "Не погоджуюся"

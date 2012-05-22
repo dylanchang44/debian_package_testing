@@ -25,6 +25,7 @@
 #include <Enum.h>
 
 #include <QTimer>
+#include <QSortFilterProxyModel>
 
 #include <KMessageBox>
 #include <KPixmapSequence>
@@ -50,8 +51,14 @@ Settings::Settings(Transaction::Roles roles, QWidget *parent) :
     }
 
     m_originModel = new OriginModel(this);
-    originTV->setModel(m_originModel);
+    QSortFilterProxyModel *proxy = new QSortFilterProxyModel(this);
+    proxy->setDynamicSortFilter(true);
+    proxy->setSourceModel(m_originModel);
+    originTV->setModel(proxy);
     originTV->header()->setDefaultAlignment(Qt::AlignCenter);
+    // This is needed to keep the oring right
+    originTV->header()->setSortIndicator(0, Qt::AscendingOrder);
+    proxy->sort(0);
     if (m_roles & Transaction::RoleGetRepoList) {
         // The data will be loaded when Load is called
         connect(m_originModel, SIGNAL(dataChanged(QModelIndex,QModelIndex)),
@@ -109,11 +116,11 @@ void Settings::on_showOriginsCB_stateChanged(int state)
     Transaction *transaction = new Transaction(this);
     connect(transaction, SIGNAL(repoDetail(QString,QString,bool)),
             m_originModel, SLOT(addOriginItem(QString,QString,bool)));
-    connect(transaction, SIGNAL(finished(PackageKit::Transaction::Exit, uint)),
+    connect(transaction, SIGNAL(finished(PackageKit::Transaction::Exit,uint)),
             m_originModel, SLOT(finished()));
-    connect(transaction, SIGNAL(finished(PackageKit::Transaction::Exit, uint)),
+    connect(transaction, SIGNAL(finished(PackageKit::Transaction::Exit,uint)),
             m_busySeq, SLOT(stop()));
-    connect(transaction, SIGNAL(finished(PackageKit::Transaction::Exit, uint)),
+    connect(transaction, SIGNAL(finished(PackageKit::Transaction::Exit,uint)),
             this, SLOT(checkChanges()));
 
     if (state == Qt::Checked) {
@@ -133,7 +140,6 @@ bool Settings::hasChanges() const
 
     KConfigGroup requirementsDialog(&config, "requirementsDialog");
     KConfigGroup transaction(&config, "Transaction");
-    KConfigGroup notifyGroup(&config, "Notify");
     KConfigGroup checkUpdateGroup(&config, "CheckUpdate");
     if (intervalCB->itemData(intervalCB->currentIndex()).toUInt() !=
         static_cast<uint>(checkUpdateGroup.readEntry("interval", Enum::TimeIntervalDefault))

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: playground-sysadmin/kpackagekit.po\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-02-18 05:06+0100\n"
+"POT-Creation-Date: 2012-05-20 05:58+0200\n"
 "PO-Revision-Date: 2009-01-20 10:11-0500\n"
 "Last-Translator: Kevin Scannell <kscanne@gmail.com>\n"
 "Language-Team: Irish <gaeilge-gnulinux@lists.sourceforge.net>\n"
@@ -23,7 +23,7 @@ msgstr ""
 msgid "Backend Details"
 msgstr "Taispeáin mionsonraithe an innill"
 
-#: Apper/main.cpp:54 Sentinel/UpdateIcon.cpp:158 Sentinel/main.cpp:34
+#: Apper/main.cpp:54 Sentinel/UpdateIcon.cpp:113 Sentinel/main.cpp:34
 #, fuzzy
 #| msgid "AppGet"
 msgid "Apper"
@@ -33,7 +33,7 @@ msgstr "AppGet"
 msgid "Apper is an Application to Get and Manage Software"
 msgstr ""
 
-#: Apper/main.cpp:58 ApperKCM/ApperKCM.cpp:83 Sentinel/main.cpp:38
+#: Apper/main.cpp:58 ApperKCM/ApperKCM.cpp:84 Sentinel/main.cpp:38
 #, fuzzy
 #| msgid "(C) 2008-2010 Daniel Nicoletti"
 msgid "(C) 2008-2011 Daniel Nicoletti"
@@ -90,6 +90,151 @@ msgstr ""
 #: Apper/main.cpp:75
 msgid "Package file to install"
 msgstr "Comhad pacáiste le suiteáil"
+
+#: ApperKCM/FiltersMenu.cpp:37
+msgid "Collections"
+msgstr "Bailiúcháin"
+
+#: ApperKCM/FiltersMenu.cpp:44
+msgid "Only collections"
+msgstr ""
+
+#: ApperKCM/FiltersMenu.cpp:51
+msgid "Exclude collections"
+msgstr ""
+
+#. i18n: file: Apper/BackendDetails.ui:100
+#. i18n: ectx: property (text), widget (QCheckBox, installedCB)
+#: ApperKCM/FiltersMenu.cpp:60 libapper/PkStrings.cpp:362 rc.cpp:23
+msgid "Installed"
+msgstr "Suiteáilte"
+
+#: ApperKCM/FiltersMenu.cpp:67
+msgid "Only installed"
+msgstr ""
+
+#: ApperKCM/FiltersMenu.cpp:74
+msgid "Only available"
+msgstr ""
+
+#: ApperKCM/FiltersMenu.cpp:81 ApperKCM/FiltersMenu.cpp:111
+#: ApperKCM/FiltersMenu.cpp:141 ApperKCM/FiltersMenu.cpp:171
+#: ApperKCM/FiltersMenu.cpp:202 ApperKCM/FiltersMenu.cpp:233
+msgid "No filter"
+msgstr "Gan scagaire"
+
+#. i18n: file: Apper/BackendDetails.ui:110
+#. i18n: ectx: property (text), widget (QCheckBox, developmentCB)
+#: ApperKCM/FiltersMenu.cpp:90 rc.cpp:26
+msgid "Development"
+msgstr "Forbairt"
+
+#: ApperKCM/FiltersMenu.cpp:97
+msgid "Only development"
+msgstr ""
+
+#: ApperKCM/FiltersMenu.cpp:104
+msgid "Only end user files"
+msgstr ""
+
+#: ApperKCM/FiltersMenu.cpp:120
+msgid "Graphical"
+msgstr "Grafach"
+
+#: ApperKCM/FiltersMenu.cpp:127
+msgid "Only graphical"
+msgstr "Grafach amháin"
+
+#: ApperKCM/FiltersMenu.cpp:134
+msgid "Only text"
+msgstr "Téacs amháin"
+
+#: ApperKCM/FiltersMenu.cpp:150
+msgctxt "Filter for free packages"
+msgid "Free"
+msgstr "Saor"
+
+#: ApperKCM/FiltersMenu.cpp:157
+msgid "Only free software"
+msgstr ""
+
+#: ApperKCM/FiltersMenu.cpp:164
+msgid "Only non-free software"
+msgstr ""
+
+#: ApperKCM/FiltersMenu.cpp:181
+#, fuzzy
+#| msgid "Not supported"
+msgctxt "Filter for supported packages"
+msgid "Supported"
+msgstr "Gan tacaíocht"
+
+#: ApperKCM/FiltersMenu.cpp:188
+#, fuzzy
+#| msgid "Installed Software"
+msgid "Only supported software"
+msgstr "Bogearraí Suiteáilte"
+
+#: ApperKCM/FiltersMenu.cpp:195
+#, fuzzy
+#| msgid "Could not find package"
+msgid "Only non-supported software"
+msgstr "Pacáiste gan aimsiú"
+
+#: ApperKCM/FiltersMenu.cpp:212
+msgctxt "Filter for source packages"
+msgid "Source"
+msgstr "Foinse"
+
+#: ApperKCM/FiltersMenu.cpp:219
+msgid "Only sourcecode"
+msgstr ""
+
+#: ApperKCM/FiltersMenu.cpp:226
+msgid "Only non-sourcecode"
+msgstr ""
+
+#: ApperKCM/FiltersMenu.cpp:248
+#, fuzzy
+#| msgctxt "The role of the transaction, in past tense"
+#| msgid "Updated packages"
+msgid "Hide Subpackages"
+msgstr "Nuashonraíodh pacáistí"
+
+#: ApperKCM/FiltersMenu.cpp:250
+msgid "Only show one package, not subpackages"
+msgstr ""
+
+#: ApperKCM/FiltersMenu.cpp:257
+#, fuzzy
+#| msgctxt "The group type"
+#| msgid "Newest packages"
+msgid "Only Newest Packages"
+msgstr "Pacáistí is nuaí"
+
+#: ApperKCM/FiltersMenu.cpp:262
+msgid "Only show the newest available package"
+msgstr ""
+
+#: ApperKCM/FiltersMenu.cpp:269
+#, fuzzy
+#| msgid "Update Packages"
+msgid "Only Native Packages"
+msgstr "Nuashonraigh Pacáistí"
+
+#: ApperKCM/FiltersMenu.cpp:274
+msgid "Only show packages matching the machine architecture"
+msgstr ""
+
+#: ApperKCM/FiltersMenu.cpp:283
+#, fuzzy
+#| msgid "Application"
+msgid "Only Show Applications"
+msgstr "Feidhmchlár"
+
+#: ApperKCM/FiltersMenu.cpp:286
+msgid "Hide packages that are not applications"
+msgstr ""
 
 #: ApperKCM/Settings/OriginModel.cpp:39 ApperKCM/Settings/OriginModel.cpp:52
 msgid "Origin of Packages"
@@ -372,208 +517,42 @@ msgstr ""
 msgid "Check for new Updates"
 msgstr "Lorg Nuashonruithe"
 
-#: ApperKCM/FiltersMenu.cpp:37
-msgid "Collections"
-msgstr "Bailiúcháin"
-
-#: ApperKCM/FiltersMenu.cpp:44
-msgid "Only collections"
-msgstr ""
-
-#: ApperKCM/FiltersMenu.cpp:51
-msgid "Exclude collections"
-msgstr ""
-
-#. i18n: file: Apper/BackendDetails.ui:100
-#. i18n: ectx: property (text), widget (QCheckBox, installedCB)
-#: ApperKCM/FiltersMenu.cpp:60 libapper/PkStrings.cpp:362 rc.cpp:23
-msgid "Installed"
-msgstr "Suiteáilte"
-
-#: ApperKCM/FiltersMenu.cpp:67
-msgid "Only installed"
-msgstr ""
-
-#: ApperKCM/FiltersMenu.cpp:74
-msgid "Only available"
-msgstr ""
-
-#: ApperKCM/FiltersMenu.cpp:81 ApperKCM/FiltersMenu.cpp:111
-#: ApperKCM/FiltersMenu.cpp:141 ApperKCM/FiltersMenu.cpp:171
-#: ApperKCM/FiltersMenu.cpp:202
-msgid "No filter"
-msgstr "Gan scagaire"
-
-#. i18n: file: Apper/BackendDetails.ui:110
-#. i18n: ectx: property (text), widget (QCheckBox, developmentCB)
-#: ApperKCM/FiltersMenu.cpp:90 rc.cpp:26
-msgid "Development"
-msgstr "Forbairt"
-
-#: ApperKCM/FiltersMenu.cpp:97
-msgid "Only development"
-msgstr ""
-
-#: ApperKCM/FiltersMenu.cpp:104
-msgid "Only end user files"
-msgstr ""
-
-#: ApperKCM/FiltersMenu.cpp:120
-msgid "Graphical"
-msgstr "Grafach"
-
-#: ApperKCM/FiltersMenu.cpp:127
-msgid "Only graphical"
-msgstr "Grafach amháin"
-
-#: ApperKCM/FiltersMenu.cpp:134
-msgid "Only text"
-msgstr "Téacs amháin"
-
-#: ApperKCM/FiltersMenu.cpp:150
-msgctxt "Filter for free packages"
-msgid "Free"
-msgstr "Saor"
-
-#: ApperKCM/FiltersMenu.cpp:157
-msgid "Only free software"
-msgstr ""
-
-#: ApperKCM/FiltersMenu.cpp:164
-msgid "Only non-free software"
-msgstr ""
-
-#: ApperKCM/FiltersMenu.cpp:181
-msgctxt "Filter for source packages"
-msgid "Source"
-msgstr "Foinse"
-
-#: ApperKCM/FiltersMenu.cpp:188
-msgid "Only sourcecode"
-msgstr ""
-
-#: ApperKCM/FiltersMenu.cpp:195
-msgid "Only non-sourcecode"
-msgstr ""
-
-#: ApperKCM/FiltersMenu.cpp:217
+#: ApperKCM/ScreenShotViewer.cpp:90
 #, fuzzy
-#| msgctxt "The role of the transaction, in past tense"
-#| msgid "Updated packages"
-msgid "Hide Subpackages"
-msgstr "Nuashonraíodh pacáistí"
+#| msgid "Could not find package"
+msgid "Could not find screen shot."
+msgstr "Pacáiste gan aimsiú"
 
-#: ApperKCM/FiltersMenu.cpp:219
-msgid "Only show one package, not subpackages"
-msgstr ""
+#: ApperKCM/CategoryModel.cpp:47
+msgid "Installed Software"
+msgstr "Bogearraí Suiteáilte"
 
-#: ApperKCM/FiltersMenu.cpp:226
+#: ApperKCM/CategoryModel.cpp:50 ApperKCM/CategoryModel.cpp:58
+msgid "Lists"
+msgstr "Liostaí"
+
+#: ApperKCM/CategoryModel.cpp:55
 #, fuzzy
-#| msgctxt "The group type"
-#| msgid "Newest packages"
-msgid "Only Newest Packages"
-msgstr "Pacáistí is nuaí"
+#| msgid "Updates:"
+msgid "Updates"
+msgstr "Nuashonraithe:"
 
-#: ApperKCM/FiltersMenu.cpp:231
-msgid "Only show the newest available package"
-msgstr ""
-
-#: ApperKCM/FiltersMenu.cpp:238
+#: ApperKCM/CategoryModel.cpp:155 ApperKCM/CategoryModel.cpp:339
 #, fuzzy
-#| msgid "Update Packages"
-msgid "Only Native Packages"
-msgstr "Nuashonraigh Pacáistí"
+#| msgctxt "The role of the transaction, in present tense"
+#| msgid "Getting categories"
+msgid "Categories"
+msgstr "Catagóirí á bhfáil"
 
-#: ApperKCM/FiltersMenu.cpp:243
-msgid "Only show packages matching the machine architecture"
-msgstr ""
-
-#: ApperKCM/FiltersMenu.cpp:252
-#, fuzzy
-#| msgid "Application"
-msgid "Only Show Applications"
-msgstr "Feidhmchlár"
-
-#: ApperKCM/FiltersMenu.cpp:255
-msgid "Hide packages that are not applications"
-msgstr ""
-
-#: ApperKCM/ApperKCM.cpp:79
-#, fuzzy
-#| msgid "Application"
-msgid "Application Manager"
-msgstr "Feidhmchlár"
-
-#: ApperKCM/ApperKCM.cpp:81
-msgid "KDE interface for managing software"
-msgstr ""
-
-#: ApperKCM/ApperKCM.cpp:111 ApperKCM/ApperKCM.cpp:292
-msgid "Find"
-msgstr "Aimsigh"
-
-#: ApperKCM/ApperKCM.cpp:206
-msgid "History"
-msgstr "Stair"
-
-#. i18n: file: ApperKCM/Settings/Settings.ui:14
-#. i18n: ectx: property (windowTitle), widget (QWidget, Settings)
-#: ApperKCM/ApperKCM.cpp:212 rc.cpp:140
-msgid "Settings"
-msgstr "Socruithe"
-
-#: ApperKCM/ApperKCM.cpp:269 ApperKCM/ApperKCM.cpp:270
-#: ApperKCM/ApperKCM.cpp:271 ApperKCM/ApperKCM.cpp:272
-msgid "&Cancel"
-msgstr "&Cealaigh"
-
-#. i18n: file: ApperKCM/ApperKCM.ui:291
-#. i18n: ectx: property (text), widget (QToolButton, backTB)
-#: ApperKCM/ApperKCM.cpp:279 rc.cpp:200
-msgid "Find by &name"
-msgstr ""
-
-#. i18n: file: ApperKCM/ApperKCM.ui:301
-#. i18n: ectx: property (text), widget (QToolButton, backTB)
-#: ApperKCM/ApperKCM.cpp:280 rc.cpp:206
-msgid "Find by f&ile name"
-msgstr ""
-
-#. i18n: file: ApperKCM/ApperKCM.ui:296
-#. i18n: ectx: property (text), widget (QToolButton, backTB)
-#: ApperKCM/ApperKCM.cpp:281 rc.cpp:203
-msgid "Find by &description"
-msgstr ""
-
-#: ApperKCM/ApperKCM.cpp:411
-msgid ""
-"The settings of the current module have changed.\n"
-"Do you want to apply the changes or discard them?"
-msgstr ""
-"Athraíodh socruithe an mhodúil reatha.\n"
-"An bhfuil fonn ort na hathruithe a chur i bhfeidhm?"
-
-#: ApperKCM/ApperKCM.cpp:413
-#, fuzzy
-#| msgid "Apply Settings"
-msgid "Apply Settings"
-msgstr "Cuir Socruithe i bhFeidhm"
-
-#: ApperKCM/ApperKCM.cpp:455
-#, fuzzy
-#| msgid "Apply Settings"
-msgid "General Settings"
-msgstr "Cuir Socruithe i bhFeidhm"
-
-#: ApperKCM/ApperKCM.cpp:456
-msgid "Software Origins"
-msgstr ""
+#: ApperKCM/CategoryModel.cpp:208
+msgid "Groups"
+msgstr "Grúpaí"
 
 #: ApperKCM/PackageDetails.cpp:73
 msgid "Display"
 msgstr "Taispeáin"
 
-#: ApperKCM/PackageDetails.cpp:80
+#: ApperKCM/PackageDetails.cpp:80 AppSetup/SetupWizard.cpp:243
 msgid "Description"
 msgstr "Cur Síos"
 
@@ -603,37 +582,6 @@ msgstr ""
 msgid "Applications"
 msgstr "Feidhmchlár"
 
-#: ApperKCM/CategoryModel.cpp:47
-msgid "Installed Software"
-msgstr "Bogearraí Suiteáilte"
-
-#: ApperKCM/CategoryModel.cpp:50 ApperKCM/CategoryModel.cpp:58
-msgid "Lists"
-msgstr "Liostaí"
-
-#: ApperKCM/CategoryModel.cpp:55
-#, fuzzy
-#| msgid "Updates:"
-msgid "Updates"
-msgstr "Nuashonraithe:"
-
-#: ApperKCM/CategoryModel.cpp:155 ApperKCM/CategoryModel.cpp:339
-#, fuzzy
-#| msgctxt "The role of the transaction, in present tense"
-#| msgid "Getting categories"
-msgid "Categories"
-msgstr "Catagóirí á bhfáil"
-
-#: ApperKCM/CategoryModel.cpp:208
-msgid "Groups"
-msgstr "Grúpaí"
-
-#: ApperKCM/ScreenShotViewer.cpp:90
-#, fuzzy
-#| msgid "Could not find package"
-msgid "Could not find screen shot."
-msgstr "Pacáiste gan aimsiú"
-
 #: ApperKCM/TransactionHistory.cpp:66
 msgid "Refresh transactions list"
 msgstr "Athnuaigh liosta na n-idirbheart"
@@ -652,6 +600,7 @@ msgid "Action"
 msgstr "Gníomh"
 
 #: ApperKCM/TransactionModel.cpp:48 Sentinel/TransactionWatcher.cpp:308
+#: AppSetup/SetupWizard.cpp:207
 msgid "Details"
 msgstr "Mionsonraí"
 
@@ -664,12 +613,75 @@ msgstr "Ainm úsáideora"
 msgid "Application"
 msgstr "Feidhmchlár"
 
-#: Sentinel/DistroUpgrade.cpp:69
-msgid "Start upgrade now"
+#: ApperKCM/ApperKCM.cpp:80
+#, fuzzy
+#| msgid "Application"
+msgid "Application Manager"
+msgstr "Feidhmchlár"
+
+#: ApperKCM/ApperKCM.cpp:82
+msgid "KDE interface for managing software"
 msgstr ""
 
-#: Sentinel/DistroUpgrade.cpp:114
-msgid "Distribution upgrade finished. "
+#: ApperKCM/ApperKCM.cpp:112 ApperKCM/ApperKCM.cpp:293
+msgid "Find"
+msgstr "Aimsigh"
+
+#: ApperKCM/ApperKCM.cpp:207
+msgid "History"
+msgstr "Stair"
+
+#. i18n: file: ApperKCM/Settings/Settings.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, Settings)
+#: ApperKCM/ApperKCM.cpp:213 rc.cpp:140
+msgid "Settings"
+msgstr "Socruithe"
+
+#: ApperKCM/ApperKCM.cpp:270 ApperKCM/ApperKCM.cpp:271
+#: ApperKCM/ApperKCM.cpp:272 ApperKCM/ApperKCM.cpp:273
+msgid "&Cancel"
+msgstr "&Cealaigh"
+
+#. i18n: file: ApperKCM/ApperKCM.ui:291
+#. i18n: ectx: property (text), widget (QToolButton, backTB)
+#: ApperKCM/ApperKCM.cpp:280 rc.cpp:200
+msgid "Find by &name"
+msgstr ""
+
+#. i18n: file: ApperKCM/ApperKCM.ui:301
+#. i18n: ectx: property (text), widget (QToolButton, backTB)
+#: ApperKCM/ApperKCM.cpp:281 rc.cpp:206
+msgid "Find by f&ile name"
+msgstr ""
+
+#. i18n: file: ApperKCM/ApperKCM.ui:296
+#. i18n: ectx: property (text), widget (QToolButton, backTB)
+#: ApperKCM/ApperKCM.cpp:282 rc.cpp:203
+msgid "Find by &description"
+msgstr ""
+
+#: ApperKCM/ApperKCM.cpp:412
+msgid ""
+"The settings of the current module have changed.\n"
+"Do you want to apply the changes or discard them?"
+msgstr ""
+"Athraíodh socruithe an mhodúil reatha.\n"
+"An bhfuil fonn ort na hathruithe a chur i bhfeidhm?"
+
+#: ApperKCM/ApperKCM.cpp:414
+#, fuzzy
+#| msgid "Apply Settings"
+msgid "Apply Settings"
+msgstr "Cuir Socruithe i bhFeidhm"
+
+#: ApperKCM/ApperKCM.cpp:456
+#, fuzzy
+#| msgid "Apply Settings"
+msgid "General Settings"
+msgstr "Cuir Socruithe i bhFeidhm"
+
+#: ApperKCM/ApperKCM.cpp:457
+msgid "Software Origins"
 msgstr ""
 
 #: Sentinel/PkInstallProvideFiles.cpp:39
@@ -720,7 +732,7 @@ msgstr[4] "Tá %2 ag iarraidh pacáistí a shuiteáil"
 msgid "Failed to start search file transaction"
 msgstr ""
 
-#: Sentinel/PkInstallProvideFiles.cpp:101 libapper/PkTransaction.cpp:263
+#: Sentinel/PkInstallProvideFiles.cpp:101 libapper/PkTransaction.cpp:268
 msgid "Failed to install file"
 msgid_plural "Failed to install files"
 msgstr[0] "Níorbh fhéidir comhad a shuiteáil"
@@ -773,49 +785,6 @@ msgstr ""
 #| msgid_plural "The packages could not be found in any software source"
 msgid "Could not find printer driver in any configured software source"
 msgstr "Níor aimsíodh an pacáiste in aon fhoinse bogearraí"
-
-#: Sentinel/UpdateIcon.cpp:160
-msgid "Review Updates"
-msgstr "Athbhreithnigh Nuashonruithe"
-
-#: Sentinel/UpdateIcon.cpp:163
-msgid "Configure"
-msgstr "Cumraigh"
-
-#. i18n: file: ApperKCM/PackageDetails.ui:359
-#. i18n: ectx: property (text), widget (QToolButton, hideTB)
-#. i18n: file: ApperKCM/Updater/UpdateDetails.ui:20
-#. i18n: ectx: property (text), widget (QToolButton, hideTB)
-#: Sentinel/UpdateIcon.cpp:167 Sentinel/TransactionWatcher.cpp:186
-#: libapper/PkTransactionDialog.cpp:86 rc.cpp:137 rc.cpp:173
-msgid "Hide"
-msgstr "Folaigh"
-
-#: Sentinel/UpdateIcon.cpp:177
-#, kde-format
-msgid "You have one update"
-msgid_plural "You have %1 updates"
-msgstr[0] "Tá nuashonrú amháin agat"
-msgstr[1] "Tá %1 nuashonrú agat"
-msgstr[2] "Tá %1 nuashonrú agat"
-msgstr[3] "Tá %1 nuashonrú agat"
-msgstr[4] "Tá %1 nuashonrú agat"
-
-#: Sentinel/UpdateIcon.cpp:230
-msgid "Updates are being automatically installed."
-msgstr ""
-
-#: Sentinel/UpdateIcon.cpp:251
-msgid "Security updates are being automatically installed."
-msgstr ""
-
-#: Sentinel/UpdateIcon.cpp:278
-msgid "System update was successful."
-msgstr ""
-
-#: Sentinel/UpdateIcon.cpp:287
-msgid "The automated software update failed."
-msgstr ""
 
 #: Sentinel/ReviewChanges.cpp:52
 msgid "The following package was found"
@@ -1015,7 +984,77 @@ msgid "Could not find any package to install in this catalog"
 msgstr ""
 "<h3>An bhfuil fonn ort an chatalóg seo a shuiteáil?</h3><ul><li>%2</li></ul>"
 
+#: Sentinel/PkInstallPackageFiles.cpp:38
+#, fuzzy
+#| msgid "Install Packages"
+msgid "Install Packages Files"
+msgstr "Suiteáil Pacáistí"
+
+#: Sentinel/PkInstallPackageFiles.cpp:42
+#: Sentinel/PkRemovePackageByFiles.cpp:43
+msgid "You can drop more files in here"
+msgstr ""
+
+#: Sentinel/PkInstallPackageFiles.cpp:52
+#, fuzzy
+#| msgid "Not supported"
+msgid "Not Supported"
+msgstr "Gan tacaíocht"
+
+#: Sentinel/PkInstallPackageFiles.cpp:53
+msgid "Your current backend does not support installing files"
+msgstr ""
+
+#: Sentinel/PkInstallPackageFiles.cpp:68
+#: Sentinel/PkRemovePackageByFiles.cpp:64
+msgid "No supported files were provided"
+msgstr ""
+
+#: Sentinel/PkInstallPackageFiles.cpp:70
+#, fuzzy
+#| msgid "Do you want to install this file?"
+#| msgid_plural "Do you want to install these files?"
+msgid "Press <i>Continue</i> if you want to install this file"
+msgid_plural "Press <i>Continue</i> if you want to install these files"
+msgstr[0] "An bhfuil fonn ort an comhad seo a shuiteáil?"
+msgstr[1] "An bhfuil fonn ort na comhaid seo a shuiteáil?"
+msgstr[2] "An bhfuil fonn ort na comhaid seo a shuiteáil?"
+msgstr[3] "An bhfuil fonn ort na comhaid seo a shuiteáil?"
+msgstr[4] "An bhfuil fonn ort na comhaid seo a shuiteáil?"
+
+#: Sentinel/PkInstallPackageFiles.cpp:105
+#, fuzzy
+#| msgctxt "The role of the transaction, in present tense"
+#| msgid "Installing file"
+msgid "Installation Complete"
+msgstr "Comhad á shuiteáil"
+
+#: Sentinel/PkInstallPackageFiles.cpp:106
+msgid "File was installed successfully"
+msgid_plural "Files were installed successfully"
+msgstr[0] "D'éirigh le suiteáil an chomhaid"
+msgstr[1] "D'éirigh le suiteáil na gcomhad"
+msgstr[2] "D'éirigh le suiteáil na gcomhad"
+msgstr[3] "D'éirigh le suiteáil na gcomhad"
+msgstr[4] "D'éirigh le suiteáil na gcomhad"
+
+#: Sentinel/PkInstallPackageFiles.cpp:117
+#, fuzzy
+#| msgid "Failed to install file"
+#| msgid_plural "Failed to install files"
+msgid "Failed to install files"
+msgstr "Níorbh fhéidir comhad a shuiteáil"
+
+#: Sentinel/PkInstallPackageFiles.cpp:118
+#: Sentinel/PkInstallPackageFiles.cpp:120
+#, fuzzy
+#| msgid "Failed to install file"
+#| msgid_plural "Failed to install files"
+msgid "Could not install files"
+msgstr "Níorbh fhéidir comhad a shuiteáil"
+
 #: Sentinel/SessionTask.cpp:66 libapper/Requirements.cpp:44
+#: AppSetup/SetupWizard.cpp:139
 msgid "Continue"
 msgstr "Lean ar aghaidh"
 
@@ -1059,6 +1098,77 @@ msgstr "Curtha i léig"
 #| msgid_plural "Files were installed successfully"
 msgid "All operations were committed successfully"
 msgstr "D'éirigh le suiteáil an chomhaid"
+
+#: Sentinel/UpdateIcon.cpp:115
+msgid "Review Updates"
+msgstr "Athbhreithnigh Nuashonruithe"
+
+#: Sentinel/UpdateIcon.cpp:118
+msgid "Configure"
+msgstr "Cumraigh"
+
+#. i18n: file: ApperKCM/PackageDetails.ui:359
+#. i18n: ectx: property (text), widget (QToolButton, hideTB)
+#. i18n: file: ApperKCM/Updater/UpdateDetails.ui:20
+#. i18n: ectx: property (text), widget (QToolButton, hideTB)
+#: Sentinel/UpdateIcon.cpp:122 Sentinel/TransactionWatcher.cpp:186
+#: libapper/PkTransactionDialog.cpp:86 rc.cpp:137 rc.cpp:173
+msgid "Hide"
+msgstr "Folaigh"
+
+#: Sentinel/UpdateIcon.cpp:132
+#, kde-format
+msgid "You have one update"
+msgid_plural "You have %1 updates"
+msgstr[0] "Tá nuashonrú amháin agat"
+msgstr[1] "Tá %1 nuashonrú agat"
+msgstr[2] "Tá %1 nuashonrú agat"
+msgstr[3] "Tá %1 nuashonrú agat"
+msgstr[4] "Tá %1 nuashonrú agat"
+
+#: Sentinel/UpdateIcon.cpp:192
+msgid "Updates are being automatically installed."
+msgstr ""
+
+#: Sentinel/UpdateIcon.cpp:213
+msgid "Security updates are being automatically installed."
+msgstr ""
+
+#: Sentinel/UpdateIcon.cpp:240
+msgid "System update was successful."
+msgstr ""
+
+#: Sentinel/UpdateIcon.cpp:249
+msgid "The automated software update failed."
+msgstr ""
+
+#: Sentinel/PkIsInstalled.cpp:36
+#, fuzzy
+#| msgid "Package is already installed"
+msgid "Querying if a Package is Installed"
+msgstr "Tá an pacáiste suiteáilte cheana"
+
+#: Sentinel/PkIsInstalled.cpp:67
+msgid "User canceled the transaction"
+msgstr ""
+
+#: Sentinel/PkIsInstalled.cpp:69
+msgid "An unknown error happened"
+msgstr "Tharla earráid anaithnid"
+
+#: Sentinel/TransactionTrayIcon.cpp:45
+msgid "Transactions"
+msgstr "Transactions"
+
+#: Sentinel/TransactionTrayIcon.cpp:90
+#, kde-format
+msgid "%1% - %2"
+msgstr "%1% - %2"
+
+#: Sentinel/TransactionTrayIcon.cpp:92
+#, kde-format
+msgid "%1"
+msgstr "%1"
 
 #: Sentinel/TransactionWatcher.cpp:66 Sentinel/TransactionWatcher.cpp:265
 msgid "Hide this icon"
@@ -1108,34 +1218,6 @@ msgstr "Taispeáin teachtaireachtaí"
 #: Sentinel/TransactionWatcher.cpp:308
 msgid "Ignore"
 msgstr "Déan neamhaird de"
-
-#: Sentinel/PkIsInstalled.cpp:36
-#, fuzzy
-#| msgid "Package is already installed"
-msgid "Querying if a Package is Installed"
-msgstr "Tá an pacáiste suiteáilte cheana"
-
-#: Sentinel/PkIsInstalled.cpp:67
-msgid "User canceled the transaction"
-msgstr ""
-
-#: Sentinel/PkIsInstalled.cpp:69
-msgid "An unknown error happened"
-msgstr "Tharla earráid anaithnid"
-
-#: Sentinel/TransactionTrayIcon.cpp:45
-msgid "Transactions"
-msgstr "Transactions"
-
-#: Sentinel/TransactionTrayIcon.cpp:90
-#, kde-format
-msgid "%1% - %2"
-msgstr "%1% - %2"
-
-#: Sentinel/TransactionTrayIcon.cpp:92
-#, kde-format
-msgid "%1"
-msgstr "%1"
 
 #: Sentinel/PkInstallPlasmaResources.cpp:40
 #, fuzzy
@@ -1272,75 +1354,6 @@ msgstr "Cuir Socruithe i bhFeidhm"
 msgid "Trever Fischer"
 msgstr "Trever Fischer"
 
-#: Sentinel/PkInstallPackageFiles.cpp:38
-#, fuzzy
-#| msgid "Install Packages"
-msgid "Install Packages Files"
-msgstr "Suiteáil Pacáistí"
-
-#: Sentinel/PkInstallPackageFiles.cpp:42
-#: Sentinel/PkRemovePackageByFiles.cpp:43
-msgid "You can drop more files in here"
-msgstr ""
-
-#: Sentinel/PkInstallPackageFiles.cpp:52
-#, fuzzy
-#| msgid "Not supported"
-msgid "Not Supported"
-msgstr "Gan tacaíocht"
-
-#: Sentinel/PkInstallPackageFiles.cpp:53
-msgid "Your current backend does not support installing files"
-msgstr ""
-
-#: Sentinel/PkInstallPackageFiles.cpp:68
-#: Sentinel/PkRemovePackageByFiles.cpp:64
-msgid "No supported files were provided"
-msgstr ""
-
-#: Sentinel/PkInstallPackageFiles.cpp:70
-#, fuzzy
-#| msgid "Do you want to install this file?"
-#| msgid_plural "Do you want to install these files?"
-msgid "Press <i>Continue</i> if you want to install this file"
-msgid_plural "Press <i>Continue</i> if you want to install these files"
-msgstr[0] "An bhfuil fonn ort an comhad seo a shuiteáil?"
-msgstr[1] "An bhfuil fonn ort na comhaid seo a shuiteáil?"
-msgstr[2] "An bhfuil fonn ort na comhaid seo a shuiteáil?"
-msgstr[3] "An bhfuil fonn ort na comhaid seo a shuiteáil?"
-msgstr[4] "An bhfuil fonn ort na comhaid seo a shuiteáil?"
-
-#: Sentinel/PkInstallPackageFiles.cpp:105
-#, fuzzy
-#| msgctxt "The role of the transaction, in present tense"
-#| msgid "Installing file"
-msgid "Installation Complete"
-msgstr "Comhad á shuiteáil"
-
-#: Sentinel/PkInstallPackageFiles.cpp:106
-msgid "File was installed successfully"
-msgid_plural "Files were installed successfully"
-msgstr[0] "D'éirigh le suiteáil an chomhaid"
-msgstr[1] "D'éirigh le suiteáil na gcomhad"
-msgstr[2] "D'éirigh le suiteáil na gcomhad"
-msgstr[3] "D'éirigh le suiteáil na gcomhad"
-msgstr[4] "D'éirigh le suiteáil na gcomhad"
-
-#: Sentinel/PkInstallPackageFiles.cpp:117
-#, fuzzy
-#| msgid "Failed to install file"
-#| msgid_plural "Failed to install files"
-msgid "Failed to install files"
-msgstr "Níorbh fhéidir comhad a shuiteáil"
-
-#: Sentinel/PkInstallPackageFiles.cpp:118
-#: Sentinel/PkInstallPackageFiles.cpp:120
-#, fuzzy
-#| msgid "Failed to install file"
-#| msgid_plural "Failed to install files"
-msgid "Could not install files"
-msgstr "Níorbh fhéidir comhad a shuiteáil"
-
 #: Sentinel/PkRemovePackageByFiles.cpp:40
 #, fuzzy
 #| msgid "Remove Packages"
@@ -1440,6 +1453,14 @@ msgstr ""
 
 #: Sentinel/PkSearchFile.cpp:80
 msgid "The file name could not be found in any software source"
+msgstr ""
+
+#: Sentinel/DistroUpgrade.cpp:69
+msgid "Start upgrade now"
+msgstr ""
+
+#: Sentinel/DistroUpgrade.cpp:114
+msgid "Distribution upgrade finished. "
 msgstr ""
 
 #: Sentinel/PkInstallFontconfigResources.cpp:41
@@ -1613,6 +1634,51 @@ msgstr "Níor aimsíodh aon chur síos ar an nuashonrú."
 #: Sentinel/PkInstallGStreamerResources.cpp:149
 msgid "Could not find plugin in any configured software source"
 msgstr ""
+
+#: libapper/PackageModel.cpp:182
+#, fuzzy
+#| msgctxt "The group type"
+#| msgid "Games"
+msgid "Name"
+msgstr "Cluichí"
+
+#: libapper/PackageModel.cpp:184 libapper/SimulateModel.cpp:141
+msgid "Version"
+msgstr "Leagan"
+
+#: libapper/PackageModel.cpp:186
+#, fuzzy
+#| msgctxt "The role of the transaction, in past tense"
+#| msgid "Installed signature"
+msgid "Installed Version"
+msgstr "Suiteáladh síniú"
+
+#: libapper/PackageModel.cpp:188
+msgid "Arch"
+msgstr ""
+
+#: libapper/PackageModel.cpp:190
+msgid "Origin"
+msgstr ""
+
+#: libapper/PackageModel.cpp:192
+msgid "Size"
+msgstr "Méid"
+
+#: libapper/PackageModel.cpp:283
+#, kde-format
+msgid ""
+"Version: %1\n"
+"Architecture: %2"
+msgstr ""
+
+#: libapper/PackageModel.cpp:329
+msgid "To be Removed"
+msgstr "Le baint"
+
+#: libapper/PackageModel.cpp:331
+msgid "To be Installed"
+msgstr "Le suiteáil"
 
 #: libapper/ChangesDelegate.cpp:45
 #, fuzzy
@@ -2471,7 +2537,7 @@ msgstr ""
 msgid "No space is left on the disk"
 msgstr ""
 
-#: libapper/PkStrings.cpp:477 libapper/PkTransaction.cpp:579
+#: libapper/PkStrings.cpp:477 libapper/PkTransaction.cpp:581
 msgid "A media change is required"
 msgstr ""
 
@@ -3387,6 +3453,90 @@ msgstr "Níorbh fhéidir dul i dteagmháil le packagekitd."
 msgid "An unknown error happened."
 msgstr "Tharla earráid anaithnid."
 
+#: libapper/PkTransaction.cpp:123
+#, fuzzy
+#| msgid "Failed to find package"
+msgid "Failed to simulate file install"
+msgstr "Pacáiste gan aimsiú"
+
+#: libapper/PkTransaction.cpp:130
+msgid "Current backend does not support installing files."
+msgstr ""
+
+#: libapper/PkTransaction.cpp:130 libapper/PkTransaction.cpp:154
+#: libapper/PkTransaction.cpp:180 libapper/PkTransaction.cpp:203
+#: AppSetup/SetupWizard.cpp:107
+msgid "Error"
+msgstr "Earráid"
+
+#: libapper/PkTransaction.cpp:147
+msgid "Failed to simulate package install"
+msgstr ""
+
+#: libapper/PkTransaction.cpp:154
+msgid "Current backend does not support installing packages."
+msgstr ""
+
+#: libapper/PkTransaction.cpp:172
+msgid "Failed to simulate package removal"
+msgstr ""
+
+#: libapper/PkTransaction.cpp:180
+msgid "The current backend does not support removing packages."
+msgstr ""
+
+#: libapper/PkTransaction.cpp:196
+#, fuzzy
+#| msgid "Failed to find package"
+msgid "Failed to simulate package update"
+msgstr "Pacáiste gan aimsiú"
+
+#: libapper/PkTransaction.cpp:203
+msgid "The current backend does not support updating packages."
+msgstr ""
+
+#: libapper/PkTransaction.cpp:214
+#, fuzzy
+#| msgctxt "The role of the transaction, in present tense"
+#| msgid "Refreshing package cache"
+msgid "Failed to refresh package cache"
+msgstr "Taisce pacáistí á athnuachan"
+
+#: libapper/PkTransaction.cpp:256
+msgid "Failed to install package"
+msgstr ""
+
+#: libapper/PkTransaction.cpp:281
+msgid "Failed to remove package"
+msgstr ""
+
+#: libapper/PkTransaction.cpp:293
+#, fuzzy
+#| msgid "Failed to find package"
+msgid "Failed to update package"
+msgstr "Pacáiste gan aimsiú"
+
+#: libapper/PkTransaction.cpp:461
+#, kde-format
+msgid "Downloading packages at %1/s"
+msgstr "Pacáistí á n-íosluchtú ag %1/s"
+
+#: libapper/PkTransaction.cpp:509
+msgid ""
+"You are about to install unsigned packages that can compromise your system, "
+"as it is impossible to verify if the software came from a trusted source.\n"
+"\n"
+"Are you sure you want to proceed with the installation?"
+msgstr ""
+
+#: libapper/PkTransaction.cpp:512
+msgid "Installing unsigned software"
+msgstr ""
+
+#: libapper/PkTransaction.cpp:566 libapper/PkTransaction.cpp:620
+msgid "Failed to install signature"
+msgstr ""
+
 #: libapper/PkTransactionDialog.cpp:88
 msgid ""
 "Allows you to hide the window whilst keeping the transaction task running."
@@ -3395,10 +3545,6 @@ msgstr ""
 #: libapper/SimulateModel.cpp:139
 msgid "Package"
 msgstr "Pacáiste"
-
-#: libapper/SimulateModel.cpp:141 libapper/PackageModel.cpp:184
-msgid "Version"
-msgstr "Leagan"
 
 #: libapper/ApplicationLauncher.cpp:95
 msgid "The following application was just installed. Click on it to launch:"
@@ -3424,47 +3570,6 @@ msgstr ""
 #, kde-format
 msgid "License required for %1 by %2"
 msgstr ""
-
-#: libapper/PackageModel.cpp:182
-#, fuzzy
-#| msgctxt "The group type"
-#| msgid "Games"
-msgid "Name"
-msgstr "Cluichí"
-
-#: libapper/PackageModel.cpp:186
-#, fuzzy
-#| msgctxt "The role of the transaction, in past tense"
-#| msgid "Installed signature"
-msgid "Installed Version"
-msgstr "Suiteáladh síniú"
-
-#: libapper/PackageModel.cpp:188
-msgid "Arch"
-msgstr ""
-
-#: libapper/PackageModel.cpp:190
-msgid "Origin"
-msgstr ""
-
-#: libapper/PackageModel.cpp:192
-msgid "Size"
-msgstr "Méid"
-
-#: libapper/PackageModel.cpp:283
-#, kde-format
-msgid ""
-"Version: %1\n"
-"Architecture: %2"
-msgstr ""
-
-#: libapper/PackageModel.cpp:329
-msgid "To be Removed"
-msgstr "Le baint"
-
-#: libapper/PackageModel.cpp:331
-msgid "To be Installed"
-msgstr "Le suiteáil"
 
 #: libapper/Requirements.cpp:42
 msgid "Additional changes"
@@ -3520,89 +3625,6 @@ msgstr[2] "%1 phacáiste le nuashonrú"
 msgstr[3] "%1 bpacáiste le nuashonrú"
 msgstr[4] "%1 pacáiste le nuashonrú"
 
-#: libapper/PkTransaction.cpp:122
-#, fuzzy
-#| msgid "Failed to find package"
-msgid "Failed to simulate file install"
-msgstr "Pacáiste gan aimsiú"
-
-#: libapper/PkTransaction.cpp:129
-msgid "Current backend does not support installing files."
-msgstr ""
-
-#: libapper/PkTransaction.cpp:129 libapper/PkTransaction.cpp:153
-#: libapper/PkTransaction.cpp:179 libapper/PkTransaction.cpp:202
-msgid "Error"
-msgstr "Earráid"
-
-#: libapper/PkTransaction.cpp:146
-msgid "Failed to simulate package install"
-msgstr ""
-
-#: libapper/PkTransaction.cpp:153
-msgid "Current backend does not support installing packages."
-msgstr ""
-
-#: libapper/PkTransaction.cpp:171
-msgid "Failed to simulate package removal"
-msgstr ""
-
-#: libapper/PkTransaction.cpp:179
-msgid "The current backend does not support removing packages."
-msgstr ""
-
-#: libapper/PkTransaction.cpp:195
-#, fuzzy
-#| msgid "Failed to find package"
-msgid "Failed to simulate package update"
-msgstr "Pacáiste gan aimsiú"
-
-#: libapper/PkTransaction.cpp:202
-msgid "The current backend does not support updating packages."
-msgstr ""
-
-#: libapper/PkTransaction.cpp:213
-#, fuzzy
-#| msgctxt "The role of the transaction, in present tense"
-#| msgid "Refreshing package cache"
-msgid "Failed to refresh package cache"
-msgstr "Taisce pacáistí á athnuachan"
-
-#: libapper/PkTransaction.cpp:251
-msgid "Failed to install package"
-msgstr ""
-
-#: libapper/PkTransaction.cpp:276
-msgid "Failed to remove package"
-msgstr ""
-
-#: libapper/PkTransaction.cpp:288
-#, fuzzy
-#| msgid "Failed to find package"
-msgid "Failed to update package"
-msgstr "Pacáiste gan aimsiú"
-
-#: libapper/PkTransaction.cpp:459
-#, kde-format
-msgid "Downloading packages at %1/s"
-msgstr "Pacáistí á n-íosluchtú ag %1/s"
-
-#: libapper/PkTransaction.cpp:507
-msgid ""
-"You are about to install unsigned packages that can compromise your system, "
-"as it is impossible to verify if the software came from a trusted source.\n"
-"\n"
-"Are you sure you want to proceed with the installation?"
-msgstr ""
-
-#: libapper/PkTransaction.cpp:510
-msgid "Installing unsigned software"
-msgstr ""
-
-#: libapper/PkTransaction.cpp:564 libapper/PkTransaction.cpp:618
-msgid "Failed to install signature"
-msgstr ""
-
 #. i18n: file: libapper/RepoSig.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, RepoSig)
 #: libapper/RepoSig.cpp:40 rc.cpp:218
@@ -3616,6 +3638,161 @@ msgstr "Suiteáil"
 #: libapper/ApplicationsDelegate.cpp:42
 msgid "Remove"
 msgstr "Bain"
+
+#: AppSetup/main.cpp:34 AppSetup/main.cpp:35
+#, fuzzy
+#| msgid "Application"
+msgid "KDE Application Installer"
+msgstr "Feidhmchlár"
+
+#: AppSetup/main.cpp:36
+msgid "(C) 2012, Matthias Klumpp"
+msgstr ""
+
+#: AppSetup/main.cpp:38
+#, fuzzy
+#| msgid "Daniel Nicoletti"
+msgctxt "@info:credit"
+msgid "Daniel Nicoletti"
+msgstr "Daniel Nicoletti"
+
+#: AppSetup/main.cpp:38 AppSetup/main.cpp:40
+#, fuzzy
+#| msgid "Development"
+msgid "Developer"
+msgstr "Forbairt"
+
+#: AppSetup/main.cpp:40
+msgctxt "@info:credit"
+msgid "Matthias Klumpp"
+msgstr ""
+
+#: AppSetup/main.cpp:47
+#, fuzzy
+#| msgctxt "transaction state, getting data from a server"
+#| msgid "Getting information"
+msgid "Show verbose information"
+msgstr "Eolas á fháil"
+
+#: AppSetup/main.cpp:48
+#, fuzzy
+#| msgid "Package file to install"
+msgid "IPK package filename"
+msgstr "Comhad pacáiste le suiteáil"
+
+#: AppSetup/main.cpp:75
+msgid "Sorry, we didn't get an existing IPK package as parameter."
+msgstr ""
+
+#: AppSetup/main.cpp:76
+#, fuzzy
+#| msgid "Update not found"
+msgid "Package not found!"
+msgstr "Nuashonrú gan aimsiú"
+
+#: AppSetup/SetupWizard.cpp:92
+#, fuzzy
+#| msgctxt "The role of the transaction, in present tense"
+#| msgid "Installing file"
+msgid "Installation finished!"
+msgstr "Comhad á shuiteáil"
+
+#: AppSetup/SetupWizard.cpp:93
+#, fuzzy, kde-format
+#| msgid "File was installed successfully"
+#| msgid_plural "Files were installed successfully"
+msgid "%1 has been installed successfully!"
+msgstr "D'éirigh le suiteáil an chomhaid"
+
+#: AppSetup/SetupWizard.cpp:108
+#, fuzzy
+#| msgid "An error occurred."
+msgid "An error occurred"
+msgstr "Tharla earráid."
+
+#. i18n: file: ApperKCM/ApperKCM.ui:281
+#. i18n: ectx: property (text), widget (QToolButton, backTB)
+#: AppSetup/SetupWizard.cpp:141 rc.cpp:197
+msgid "Back"
+msgstr "Siar"
+
+#: AppSetup/SetupWizard.cpp:196
+msgid "Welcome!"
+msgstr ""
+
+#: AppSetup/SetupWizard.cpp:197
+#, kde-format
+msgid "Welcome to the installation of %1!"
+msgstr ""
+
+#: AppSetup/SetupWizard.cpp:198
+msgid ""
+"Please be careful while installing 3rd-party applications.<br>They may "
+"eventually <b>damage</b> your system or have <b>malicious behaviour</b>, "
+"like spying out your passwords.<br>Please do only install this software if "
+"you <b>trust the publisher and the author</b> of it."
+msgstr ""
+
+#: AppSetup/SetupWizard.cpp:208
+msgid "Details about this installation"
+msgstr ""
+
+#: AppSetup/SetupWizard.cpp:235
+msgid "Install for all users (as root)"
+msgstr ""
+
+#: AppSetup/SetupWizard.cpp:242
+#, fuzzy
+#| msgid "Application"
+msgid "Application description"
+msgstr "Feidhmchlár"
+
+#: AppSetup/SetupWizard.cpp:251
+#, fuzzy
+#| msgid "Software update"
+msgid "Software license"
+msgstr "Nuashonrú bogearra"
+
+#: AppSetup/SetupWizard.cpp:252
+msgid "Please read the following terms and conditions carefully!"
+msgstr ""
+
+#: AppSetup/SetupWizard.cpp:259
+#, fuzzy
+#| msgctxt "transaction state, scanning for running processes"
+#| msgid "Scanning installed applications"
+msgid "Running installation"
+msgstr "Feidhmchláir shuiteáilte á scanadh"
+
+#: AppSetup/SetupWizard.cpp:260
+#, fuzzy, kde-format
+#| msgid "Installing"
+msgid "Installing %1..."
+msgstr "Á Shuiteáil"
+
+#: AppSetup/SetupWizard.cpp:297
+msgid ""
+"Installing this package will make the following native packages obsolete. "
+"You might consider removing them manually."
+msgstr ""
+
+#: AppSetup/SetupWizard.cpp:298
+#, fuzzy
+#| msgid "Update Packages"
+msgid "Similar native packages found"
+msgstr "Nuashonraigh Pacáistí"
+
+#: AppSetup/SetupWizard.cpp:364
+msgid ""
+"You want to install this application as root!\n"
+"This can damage your system or install malicious software for all users.\n"
+"Please only proceed, if you really know what you're doing!\n"
+"Continue?"
+msgstr ""
+
+#: AppSetup/SetupWizard.cpp:367
+msgid "Really install as superuser?"
+msgstr ""
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
@@ -3970,12 +4147,6 @@ msgstr "Cuardaigh pacáistí"
 msgid "Pending Changes"
 msgstr "Athruithe á dtástáil"
 
-#. i18n: file: ApperKCM/ApperKCM.ui:281
-#. i18n: ectx: property (text), widget (QToolButton, backTB)
-#: rc.cpp:197
-msgid "Back"
-msgstr "Siar"
-
 #. i18n: file: Sentinel/IntroDialog.ui:65
 #. i18n: ectx: property (text), widget (QLabel, descriptionL)
 #: rc.cpp:209
@@ -4047,3 +4218,15 @@ msgstr "deilbhín"
 #: rc.cpp:248
 msgid "Downloading Packages"
 msgstr "Pacáistí á nÍosluchtú"
+
+#. i18n: file: AppSetup/LicensePage.ui:98
+#. i18n: ectx: property (text), widget (QRadioButton, acceptedRB)
+#: rc.cpp:251
+msgid "I agree to the above terms and conditions"
+msgstr ""
+
+#. i18n: file: AppSetup/LicensePage.ui:111
+#. i18n: ectx: property (text), widget (QRadioButton, rejectedRB)
+#: rc.cpp:254
+msgid "I don't agree"
+msgstr ""

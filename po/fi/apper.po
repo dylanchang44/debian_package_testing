@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kpackagekit\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-02-18 05:06+0100\n"
+"POT-Creation-Date: 2012-05-20 05:58+0200\n"
 "PO-Revision-Date: 2010-04-28 08:12+0000\n"
 "Last-Translator: Jiri Grönroos <Unknown>\n"
 "Language-Team: Finnish <fi@li.org>\n"
@@ -23,7 +23,7 @@ msgstr ""
 msgid "Backend Details"
 msgstr "Näytä taustaosan yksityiskohdat"
 
-#: Apper/main.cpp:54 Sentinel/UpdateIcon.cpp:158 Sentinel/main.cpp:34
+#: Apper/main.cpp:54 Sentinel/UpdateIcon.cpp:113 Sentinel/main.cpp:34
 msgid "Apper"
 msgstr ""
 
@@ -33,7 +33,7 @@ msgstr ""
 msgid "Apper is an Application to Get and Manage Software"
 msgstr "KPackageKit on ohjelmanhallintatyökalu"
 
-#: Apper/main.cpp:58 ApperKCM/ApperKCM.cpp:83 Sentinel/main.cpp:38
+#: Apper/main.cpp:58 ApperKCM/ApperKCM.cpp:84 Sentinel/main.cpp:38
 #, fuzzy
 #| msgid "(C) 2008-2009 Daniel Nicoletti"
 msgid "(C) 2008-2011 Daniel Nicoletti"
@@ -94,6 +94,151 @@ msgstr ""
 #: Apper/main.cpp:75
 msgid "Package file to install"
 msgstr "Asennettava pakettitiedosto"
+
+#: ApperKCM/FiltersMenu.cpp:37
+msgid "Collections"
+msgstr "Kokoelmat"
+
+#: ApperKCM/FiltersMenu.cpp:44
+msgid "Only collections"
+msgstr "Vain kokoelmat"
+
+#: ApperKCM/FiltersMenu.cpp:51
+msgid "Exclude collections"
+msgstr "Sulje pois kokoelmat"
+
+#. i18n: file: Apper/BackendDetails.ui:100
+#. i18n: ectx: property (text), widget (QCheckBox, installedCB)
+#: ApperKCM/FiltersMenu.cpp:60 libapper/PkStrings.cpp:362 rc.cpp:23
+msgid "Installed"
+msgstr "Asennetut"
+
+#: ApperKCM/FiltersMenu.cpp:67
+msgid "Only installed"
+msgstr "Vain asennetut"
+
+#: ApperKCM/FiltersMenu.cpp:74
+msgid "Only available"
+msgstr "Vain saatavilla olevat"
+
+#: ApperKCM/FiltersMenu.cpp:81 ApperKCM/FiltersMenu.cpp:111
+#: ApperKCM/FiltersMenu.cpp:141 ApperKCM/FiltersMenu.cpp:171
+#: ApperKCM/FiltersMenu.cpp:202 ApperKCM/FiltersMenu.cpp:233
+msgid "No filter"
+msgstr "Ei suodinta"
+
+#. i18n: file: Apper/BackendDetails.ui:110
+#. i18n: ectx: property (text), widget (QCheckBox, developmentCB)
+#: ApperKCM/FiltersMenu.cpp:90 rc.cpp:26
+msgid "Development"
+msgstr "Kehitystyökalut"
+
+#: ApperKCM/FiltersMenu.cpp:97
+msgid "Only development"
+msgstr "Vain kehitysversiot"
+
+#: ApperKCM/FiltersMenu.cpp:104
+msgid "Only end user files"
+msgstr "Vain loppukäyttäjän tiedostot"
+
+#: ApperKCM/FiltersMenu.cpp:120
+msgid "Graphical"
+msgstr "Graafiset"
+
+#: ApperKCM/FiltersMenu.cpp:127
+msgid "Only graphical"
+msgstr "Vain graafiset"
+
+#: ApperKCM/FiltersMenu.cpp:134
+msgid "Only text"
+msgstr "Vain tekstitilan ohjelmat"
+
+#: ApperKCM/FiltersMenu.cpp:150
+msgctxt "Filter for free packages"
+msgid "Free"
+msgstr "Vapaat"
+
+#: ApperKCM/FiltersMenu.cpp:157
+msgid "Only free software"
+msgstr "Vain vapaat ohjelmat"
+
+#: ApperKCM/FiltersMenu.cpp:164
+msgid "Only non-free software"
+msgstr "Vain ei-vapaat ohjelmat"
+
+#: ApperKCM/FiltersMenu.cpp:181
+#, fuzzy
+#| msgid "Supported"
+msgctxt "Filter for supported packages"
+msgid "Supported"
+msgstr "Tuetut"
+
+#: ApperKCM/FiltersMenu.cpp:188
+#, fuzzy
+#| msgid "Only free software"
+msgid "Only supported software"
+msgstr "Vain vapaat ohjelmat"
+
+#: ApperKCM/FiltersMenu.cpp:195
+#, fuzzy
+#| msgid "Only non-free software"
+msgid "Only non-supported software"
+msgstr "Vain ei-vapaat ohjelmat"
+
+#: ApperKCM/FiltersMenu.cpp:212
+msgctxt "Filter for source packages"
+msgid "Source"
+msgstr "Lähdekoodi"
+
+#: ApperKCM/FiltersMenu.cpp:219
+msgid "Only sourcecode"
+msgstr "Vain lähdekoodi"
+
+#: ApperKCM/FiltersMenu.cpp:226
+msgid "Only non-sourcecode"
+msgstr "Vain ei-lähdekoodi"
+
+#: ApperKCM/FiltersMenu.cpp:248
+#, fuzzy
+#| msgid "Hide subpackages"
+msgid "Hide Subpackages"
+msgstr "Piilota alipaketit"
+
+#: ApperKCM/FiltersMenu.cpp:250
+msgid "Only show one package, not subpackages"
+msgstr "Näytä vain yksi paketti, ei alipaketteja"
+
+#: ApperKCM/FiltersMenu.cpp:257
+#, fuzzy
+#| msgid "Only newest packages"
+msgid "Only Newest Packages"
+msgstr "Vain uusimmat paketit"
+
+#: ApperKCM/FiltersMenu.cpp:262
+msgid "Only show the newest available package"
+msgstr "Näytä vain uusin saatavilla oleva paketti"
+
+#: ApperKCM/FiltersMenu.cpp:269
+#, fuzzy
+#| msgid "Only newest packages"
+msgid "Only Native Packages"
+msgstr "Vain uusimmat paketit"
+
+#: ApperKCM/FiltersMenu.cpp:274
+msgid "Only show packages matching the machine architecture"
+msgstr ""
+
+#: ApperKCM/FiltersMenu.cpp:283
+#, fuzzy
+#| msgid "Only collections"
+msgid "Only Show Applications"
+msgstr "Vain kokoelmat"
+
+#: ApperKCM/FiltersMenu.cpp:286
+#, fuzzy
+#| msgid "Packages are not compatible"
+msgid "Hide packages that are not applications"
+msgstr "Paketit eivät ole yhteensopivia"
 
 #: ApperKCM/Settings/OriginModel.cpp:39 ApperKCM/Settings/OriginModel.cpp:52
 #, fuzzy
@@ -384,200 +529,41 @@ msgstr ""
 msgid "Check for new Updates"
 msgstr "Tarkista päivitykset:"
 
-#: ApperKCM/FiltersMenu.cpp:37
-msgid "Collections"
-msgstr "Kokoelmat"
-
-#: ApperKCM/FiltersMenu.cpp:44
-msgid "Only collections"
-msgstr "Vain kokoelmat"
-
-#: ApperKCM/FiltersMenu.cpp:51
-msgid "Exclude collections"
-msgstr "Sulje pois kokoelmat"
-
-#. i18n: file: Apper/BackendDetails.ui:100
-#. i18n: ectx: property (text), widget (QCheckBox, installedCB)
-#: ApperKCM/FiltersMenu.cpp:60 libapper/PkStrings.cpp:362 rc.cpp:23
-msgid "Installed"
-msgstr "Asennetut"
-
-#: ApperKCM/FiltersMenu.cpp:67
-msgid "Only installed"
-msgstr "Vain asennetut"
-
-#: ApperKCM/FiltersMenu.cpp:74
-msgid "Only available"
-msgstr "Vain saatavilla olevat"
-
-#: ApperKCM/FiltersMenu.cpp:81 ApperKCM/FiltersMenu.cpp:111
-#: ApperKCM/FiltersMenu.cpp:141 ApperKCM/FiltersMenu.cpp:171
-#: ApperKCM/FiltersMenu.cpp:202
-msgid "No filter"
-msgstr "Ei suodinta"
-
-#. i18n: file: Apper/BackendDetails.ui:110
-#. i18n: ectx: property (text), widget (QCheckBox, developmentCB)
-#: ApperKCM/FiltersMenu.cpp:90 rc.cpp:26
-msgid "Development"
-msgstr "Kehitystyökalut"
-
-#: ApperKCM/FiltersMenu.cpp:97
-msgid "Only development"
-msgstr "Vain kehitysversiot"
-
-#: ApperKCM/FiltersMenu.cpp:104
-msgid "Only end user files"
-msgstr "Vain loppukäyttäjän tiedostot"
-
-#: ApperKCM/FiltersMenu.cpp:120
-msgid "Graphical"
-msgstr "Graafiset"
-
-#: ApperKCM/FiltersMenu.cpp:127
-msgid "Only graphical"
-msgstr "Vain graafiset"
-
-#: ApperKCM/FiltersMenu.cpp:134
-msgid "Only text"
-msgstr "Vain tekstitilan ohjelmat"
-
-#: ApperKCM/FiltersMenu.cpp:150
-msgctxt "Filter for free packages"
-msgid "Free"
-msgstr "Vapaat"
-
-#: ApperKCM/FiltersMenu.cpp:157
-msgid "Only free software"
-msgstr "Vain vapaat ohjelmat"
-
-#: ApperKCM/FiltersMenu.cpp:164
-msgid "Only non-free software"
-msgstr "Vain ei-vapaat ohjelmat"
-
-#: ApperKCM/FiltersMenu.cpp:181
-msgctxt "Filter for source packages"
-msgid "Source"
-msgstr "Lähdekoodi"
-
-#: ApperKCM/FiltersMenu.cpp:188
-msgid "Only sourcecode"
-msgstr "Vain lähdekoodi"
-
-#: ApperKCM/FiltersMenu.cpp:195
-msgid "Only non-sourcecode"
-msgstr "Vain ei-lähdekoodi"
-
-#: ApperKCM/FiltersMenu.cpp:217
+#: ApperKCM/ScreenShotViewer.cpp:90
 #, fuzzy
-#| msgid "Hide subpackages"
-msgid "Hide Subpackages"
-msgstr "Piilota alipaketit"
+#| msgid "Could not find package"
+msgid "Could not find screen shot."
+msgstr "Pakettia ei löytynyt"
 
-#: ApperKCM/FiltersMenu.cpp:219
-msgid "Only show one package, not subpackages"
-msgstr "Näytä vain yksi paketti, ei alipaketteja"
-
-#: ApperKCM/FiltersMenu.cpp:226
+#: ApperKCM/CategoryModel.cpp:47
 #, fuzzy
-#| msgid "Only newest packages"
-msgid "Only Newest Packages"
-msgstr "Vain uusimmat paketit"
+#| msgid "Installing unsigned software"
+msgid "Installed Software"
+msgstr "Asenna allekirjoittamaton ohjelma"
 
-#: ApperKCM/FiltersMenu.cpp:231
-msgid "Only show the newest available package"
-msgstr "Näytä vain uusin saatavilla oleva paketti"
-
-#: ApperKCM/FiltersMenu.cpp:238
-#, fuzzy
-#| msgid "Only newest packages"
-msgid "Only Native Packages"
-msgstr "Vain uusimmat paketit"
-
-#: ApperKCM/FiltersMenu.cpp:243
-msgid "Only show packages matching the machine architecture"
+#: ApperKCM/CategoryModel.cpp:50 ApperKCM/CategoryModel.cpp:58
+msgid "Lists"
 msgstr ""
 
-#: ApperKCM/FiltersMenu.cpp:252
+#: ApperKCM/CategoryModel.cpp:55
 #, fuzzy
-#| msgid "Only collections"
-msgid "Only Show Applications"
-msgstr "Vain kokoelmat"
+#| msgid "Updates"
+msgid "Updates"
+msgstr "Päivitykset"
 
-#: ApperKCM/FiltersMenu.cpp:255
+#: ApperKCM/CategoryModel.cpp:155 ApperKCM/CategoryModel.cpp:339
 #, fuzzy
-#| msgid "Packages are not compatible"
-msgid "Hide packages that are not applications"
-msgstr "Paketit eivät ole yhteensopivia"
+#| msgctxt "The role of the transaction, in past tense"
+#| msgid "Got categories"
+msgid "Categories"
+msgstr "Saatiin luokat"
 
-#: ApperKCM/ApperKCM.cpp:79
+#: ApperKCM/CategoryModel.cpp:208
 #, fuzzy
-#| msgid "Application"
-msgid "Application Manager"
-msgstr "Sovellus"
-
-#: ApperKCM/ApperKCM.cpp:81
-msgid "KDE interface for managing software"
-msgstr "Ohjelmistonhallinnan KDE-liittymä"
-
-#: ApperKCM/ApperKCM.cpp:111 ApperKCM/ApperKCM.cpp:292
-msgid "Find"
-msgstr "Etsi"
-
-#: ApperKCM/ApperKCM.cpp:206
-msgid "History"
-msgstr "Historia"
-
-#. i18n: file: ApperKCM/Settings/Settings.ui:14
-#. i18n: ectx: property (windowTitle), widget (QWidget, Settings)
-#: ApperKCM/ApperKCM.cpp:212 rc.cpp:140
-msgid "Settings"
-msgstr "Asetukset"
-
-#: ApperKCM/ApperKCM.cpp:269 ApperKCM/ApperKCM.cpp:270
-#: ApperKCM/ApperKCM.cpp:271 ApperKCM/ApperKCM.cpp:272
-msgid "&Cancel"
-msgstr "&Peru"
-
-#. i18n: file: ApperKCM/ApperKCM.ui:291
-#. i18n: ectx: property (text), widget (QToolButton, backTB)
-#: ApperKCM/ApperKCM.cpp:279 rc.cpp:200
-msgid "Find by &name"
-msgstr "Etsi &nimellä"
-
-#. i18n: file: ApperKCM/ApperKCM.ui:301
-#. i18n: ectx: property (text), widget (QToolButton, backTB)
-#: ApperKCM/ApperKCM.cpp:280 rc.cpp:206
-msgid "Find by f&ile name"
-msgstr "Etsi t&iedoston nimellä"
-
-#. i18n: file: ApperKCM/ApperKCM.ui:296
-#. i18n: ectx: property (text), widget (QToolButton, backTB)
-#: ApperKCM/ApperKCM.cpp:281 rc.cpp:203
-msgid "Find by &description"
-msgstr "Etsi &kuvauksella"
-
-#: ApperKCM/ApperKCM.cpp:411
-msgid ""
-"The settings of the current module have changed.\n"
-"Do you want to apply the changes or discard them?"
-msgstr ""
-
-#: ApperKCM/ApperKCM.cpp:413
-#, fuzzy
-#| msgid "Settings"
-msgid "Apply Settings"
-msgstr "Asetukset"
-
-#: ApperKCM/ApperKCM.cpp:455
-#, fuzzy
-#| msgid "Settings"
-msgid "General Settings"
-msgstr "Asetukset"
-
-#: ApperKCM/ApperKCM.cpp:456
-msgid "Software Origins"
-msgstr ""
+#| msgctxt "Group of the package"
+#| msgid "Group"
+msgid "Groups"
+msgstr "Ryhmä"
 
 #: ApperKCM/PackageDetails.cpp:73
 #, fuzzy
@@ -586,7 +572,7 @@ msgstr ""
 msgid "Display"
 msgstr "Päivittäin"
 
-#: ApperKCM/PackageDetails.cpp:80
+#: ApperKCM/PackageDetails.cpp:80 AppSetup/SetupWizard.cpp:243
 msgid "Description"
 msgstr "Kuvaus"
 
@@ -620,42 +606,6 @@ msgstr ""
 msgid "Applications"
 msgstr "Sovellus"
 
-#: ApperKCM/CategoryModel.cpp:47
-#, fuzzy
-#| msgid "Installing unsigned software"
-msgid "Installed Software"
-msgstr "Asenna allekirjoittamaton ohjelma"
-
-#: ApperKCM/CategoryModel.cpp:50 ApperKCM/CategoryModel.cpp:58
-msgid "Lists"
-msgstr ""
-
-#: ApperKCM/CategoryModel.cpp:55
-#, fuzzy
-#| msgid "Updates"
-msgid "Updates"
-msgstr "Päivitykset"
-
-#: ApperKCM/CategoryModel.cpp:155 ApperKCM/CategoryModel.cpp:339
-#, fuzzy
-#| msgctxt "The role of the transaction, in past tense"
-#| msgid "Got categories"
-msgid "Categories"
-msgstr "Saatiin luokat"
-
-#: ApperKCM/CategoryModel.cpp:208
-#, fuzzy
-#| msgctxt "Group of the package"
-#| msgid "Group"
-msgid "Groups"
-msgstr "Ryhmä"
-
-#: ApperKCM/ScreenShotViewer.cpp:90
-#, fuzzy
-#| msgid "Could not find package"
-msgid "Could not find screen shot."
-msgstr "Pakettia ei löytynyt"
-
 #: ApperKCM/TransactionHistory.cpp:66
 msgid "Refresh transactions list"
 msgstr "Verestä toimenpideluettelo"
@@ -674,6 +624,7 @@ msgid "Action"
 msgstr "Toiminto"
 
 #: ApperKCM/TransactionModel.cpp:48 Sentinel/TransactionWatcher.cpp:308
+#: AppSetup/SetupWizard.cpp:207
 msgid "Details"
 msgstr "Yksityiskohdat"
 
@@ -686,13 +637,74 @@ msgstr "Käyttäjänimi"
 msgid "Application"
 msgstr "Sovellus"
 
-#: Sentinel/DistroUpgrade.cpp:69
-msgid "Start upgrade now"
-msgstr "Käynnistä päivitys nyt"
+#: ApperKCM/ApperKCM.cpp:80
+#, fuzzy
+#| msgid "Application"
+msgid "Application Manager"
+msgstr "Sovellus"
 
-#: Sentinel/DistroUpgrade.cpp:114
-msgid "Distribution upgrade finished. "
-msgstr "Jakelupäivitys valmis. "
+#: ApperKCM/ApperKCM.cpp:82
+msgid "KDE interface for managing software"
+msgstr "Ohjelmistonhallinnan KDE-liittymä"
+
+#: ApperKCM/ApperKCM.cpp:112 ApperKCM/ApperKCM.cpp:293
+msgid "Find"
+msgstr "Etsi"
+
+#: ApperKCM/ApperKCM.cpp:207
+msgid "History"
+msgstr "Historia"
+
+#. i18n: file: ApperKCM/Settings/Settings.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, Settings)
+#: ApperKCM/ApperKCM.cpp:213 rc.cpp:140
+msgid "Settings"
+msgstr "Asetukset"
+
+#: ApperKCM/ApperKCM.cpp:270 ApperKCM/ApperKCM.cpp:271
+#: ApperKCM/ApperKCM.cpp:272 ApperKCM/ApperKCM.cpp:273
+msgid "&Cancel"
+msgstr "&Peru"
+
+#. i18n: file: ApperKCM/ApperKCM.ui:291
+#. i18n: ectx: property (text), widget (QToolButton, backTB)
+#: ApperKCM/ApperKCM.cpp:280 rc.cpp:200
+msgid "Find by &name"
+msgstr "Etsi &nimellä"
+
+#. i18n: file: ApperKCM/ApperKCM.ui:301
+#. i18n: ectx: property (text), widget (QToolButton, backTB)
+#: ApperKCM/ApperKCM.cpp:281 rc.cpp:206
+msgid "Find by f&ile name"
+msgstr "Etsi t&iedoston nimellä"
+
+#. i18n: file: ApperKCM/ApperKCM.ui:296
+#. i18n: ectx: property (text), widget (QToolButton, backTB)
+#: ApperKCM/ApperKCM.cpp:282 rc.cpp:203
+msgid "Find by &description"
+msgstr "Etsi &kuvauksella"
+
+#: ApperKCM/ApperKCM.cpp:412
+msgid ""
+"The settings of the current module have changed.\n"
+"Do you want to apply the changes or discard them?"
+msgstr ""
+
+#: ApperKCM/ApperKCM.cpp:414
+#, fuzzy
+#| msgid "Settings"
+msgid "Apply Settings"
+msgstr "Asetukset"
+
+#: ApperKCM/ApperKCM.cpp:456
+#, fuzzy
+#| msgid "Settings"
+msgid "General Settings"
+msgstr "Asetukset"
+
+#: ApperKCM/ApperKCM.cpp:457
+msgid "Software Origins"
+msgstr ""
 
 #: Sentinel/PkInstallProvideFiles.cpp:39
 #, fuzzy
@@ -733,7 +745,7 @@ msgstr[1] "%2 haluaa asentaa paketit"
 msgid "Failed to start search file transaction"
 msgstr ""
 
-#: Sentinel/PkInstallProvideFiles.cpp:101 libapper/PkTransaction.cpp:263
+#: Sentinel/PkInstallProvideFiles.cpp:101 libapper/PkTransaction.cpp:268
 msgid "Failed to install file"
 msgid_plural "Failed to install files"
 msgstr[0] "Tiedoston asennus epäonnistui"
@@ -782,51 +794,6 @@ msgstr "Alkuperätietoa ei onnistuttu asettamaan"
 #| msgid_plural "The packages could not be found in any software source"
 msgid "Could not find printer driver in any configured software source"
 msgstr "Pakettia ei löytynyt yhdestäkään ohjelmistolähteestä"
-
-#: Sentinel/UpdateIcon.cpp:160
-#, fuzzy
-#| msgid "Review and update"
-msgid "Review Updates"
-msgstr "Tarkista ja päivitä"
-
-#: Sentinel/UpdateIcon.cpp:163
-#, fuzzy
-#| msgid "Continue"
-msgid "Configure"
-msgstr "Jatka"
-
-#. i18n: file: ApperKCM/PackageDetails.ui:359
-#. i18n: ectx: property (text), widget (QToolButton, hideTB)
-#. i18n: file: ApperKCM/Updater/UpdateDetails.ui:20
-#. i18n: ectx: property (text), widget (QToolButton, hideTB)
-#: Sentinel/UpdateIcon.cpp:167 Sentinel/TransactionWatcher.cpp:186
-#: libapper/PkTransactionDialog.cpp:86 rc.cpp:137 rc.cpp:173
-msgid "Hide"
-msgstr "Piilota"
-
-#: Sentinel/UpdateIcon.cpp:177
-#, fuzzy, kde-format
-msgid "You have one update"
-msgid_plural "You have %1 updates"
-msgstr[0] "Ei päivitettäviä paketteja"
-msgstr[1] "Ei päivitettäviä paketteja"
-
-#: Sentinel/UpdateIcon.cpp:230
-msgid "Updates are being automatically installed."
-msgstr "Päivityksiä asennetaan automaattisesti."
-
-#: Sentinel/UpdateIcon.cpp:251
-msgid "Security updates are being automatically installed."
-msgstr "Turvallisuuspäivityksiä asennetaan automaattisesti."
-
-#: Sentinel/UpdateIcon.cpp:278
-msgid "System update was successful."
-msgstr "Järjestelmän päivitys onnistui."
-
-#: Sentinel/UpdateIcon.cpp:287
-#, fuzzy
-msgid "The automated software update failed."
-msgstr "Ohjelmistopäivitys epäonnistui."
 
 #: Sentinel/ReviewChanges.cpp:52
 #, fuzzy
@@ -995,7 +962,76 @@ msgstr "Vain asennetut"
 msgid "Could not find any package to install in this catalog"
 msgstr "Haluatko etsiä kyseisen tiedoston nyt?"
 
+#: Sentinel/PkInstallPackageFiles.cpp:38
+#, fuzzy
+#| msgctxt "The role of the transaction, in past tense"
+#| msgid "Installed packages"
+msgid "Install Packages Files"
+msgstr "Asennetut paketit"
+
+#: Sentinel/PkInstallPackageFiles.cpp:42
+#: Sentinel/PkRemovePackageByFiles.cpp:43
+msgid "You can drop more files in here"
+msgstr ""
+
+#: Sentinel/PkInstallPackageFiles.cpp:52
+#, fuzzy
+#| msgid "Not supported"
+msgid "Not Supported"
+msgstr "Ei tuettu"
+
+#: Sentinel/PkInstallPackageFiles.cpp:53
+#, fuzzy
+#| msgid "Current backend does not support installing packages."
+msgid "Your current backend does not support installing files"
+msgstr "Nykyinen taustaosa ei tue pakettien asentamista."
+
+#: Sentinel/PkInstallPackageFiles.cpp:68
+#: Sentinel/PkRemovePackageByFiles.cpp:64
+#, fuzzy
+#| msgid "No files were found."
+msgid "No supported files were provided"
+msgstr "Tiedostoja ei löytynyt."
+
+#: Sentinel/PkInstallPackageFiles.cpp:70
+#, fuzzy
+#| msgid "Do you want to install this file?"
+#| msgid_plural "Do you want to install these files?"
+msgid "Press <i>Continue</i> if you want to install this file"
+msgid_plural "Press <i>Continue</i> if you want to install these files"
+msgstr[0] "Haluatko asentaa tämän tiedoston?"
+msgstr[1] "Haluatko asentaa nämä tiedostot?"
+
+#: Sentinel/PkInstallPackageFiles.cpp:105
+#, fuzzy
+#| msgctxt "The role of the transaction, in present tense"
+#| msgid "Installing file"
+msgid "Installation Complete"
+msgstr "Asennetaan tiedostoa"
+
+#: Sentinel/PkInstallPackageFiles.cpp:106
+msgid "File was installed successfully"
+msgid_plural "Files were installed successfully"
+msgstr[0] "Tiedosto asennettiin onnistuneesti"
+msgstr[1] "Tiedostot asennettiin onnistuneesti"
+
+#: Sentinel/PkInstallPackageFiles.cpp:117
+#, fuzzy
+#| msgid "Failed to install file"
+#| msgid_plural "Failed to install files"
+msgid "Failed to install files"
+msgstr "Tiedoston asennus epäonnistui"
+
+#: Sentinel/PkInstallPackageFiles.cpp:118
+#: Sentinel/PkInstallPackageFiles.cpp:120
+#, fuzzy
+#| msgid "Failed to install file"
+#| msgid_plural "Failed to install files"
+msgid "Could not install files"
+msgstr "Tiedoston asennus epäonnistui"
+
 #: Sentinel/SessionTask.cpp:66 libapper/Requirements.cpp:44
+#: AppSetup/SetupWizard.cpp:139
 msgid "Continue"
 msgstr "Jatka"
 
@@ -1047,6 +1083,79 @@ msgstr "Vanhennettu"
 msgid "All operations were committed successfully"
 msgstr "Tiedosto asennettiin onnistuneesti"
 
+#: Sentinel/UpdateIcon.cpp:115
+#, fuzzy
+#| msgid "Review and update"
+msgid "Review Updates"
+msgstr "Tarkista ja päivitä"
+
+#: Sentinel/UpdateIcon.cpp:118
+#, fuzzy
+#| msgid "Continue"
+msgid "Configure"
+msgstr "Jatka"
+
+#. i18n: file: ApperKCM/PackageDetails.ui:359
+#. i18n: ectx: property (text), widget (QToolButton, hideTB)
+#. i18n: file: ApperKCM/Updater/UpdateDetails.ui:20
+#. i18n: ectx: property (text), widget (QToolButton, hideTB)
+#: Sentinel/UpdateIcon.cpp:122 Sentinel/TransactionWatcher.cpp:186
+#: libapper/PkTransactionDialog.cpp:86 rc.cpp:137 rc.cpp:173
+msgid "Hide"
+msgstr "Piilota"
+
+#: Sentinel/UpdateIcon.cpp:132
+#, fuzzy, kde-format
+msgid "You have one update"
+msgid_plural "You have %1 updates"
+msgstr[0] "Ei päivitettäviä paketteja"
+msgstr[1] "Ei päivitettäviä paketteja"
+
+#: Sentinel/UpdateIcon.cpp:192
+msgid "Updates are being automatically installed."
+msgstr "Päivityksiä asennetaan automaattisesti."
+
+#: Sentinel/UpdateIcon.cpp:213
+msgid "Security updates are being automatically installed."
+msgstr "Turvallisuuspäivityksiä asennetaan automaattisesti."
+
+#: Sentinel/UpdateIcon.cpp:240
+msgid "System update was successful."
+msgstr "Järjestelmän päivitys onnistui."
+
+#: Sentinel/UpdateIcon.cpp:249
+#, fuzzy
+msgid "The automated software update failed."
+msgstr "Ohjelmistopäivitys epäonnistui."
+
+#: Sentinel/PkIsInstalled.cpp:36
+#, fuzzy
+#| msgid "The package is not installed"
+msgid "Querying if a Package is Installed"
+msgstr "Pakettia ei ole asennettu"
+
+#: Sentinel/PkIsInstalled.cpp:67
+msgid "User canceled the transaction"
+msgstr ""
+
+#: Sentinel/PkIsInstalled.cpp:69
+msgid "An unknown error happened"
+msgstr "Tapahtui tuntematon virhe"
+
+#: Sentinel/TransactionTrayIcon.cpp:45
+msgid "Transactions"
+msgstr "Tapahtumat"
+
+#: Sentinel/TransactionTrayIcon.cpp:90
+#, kde-format
+msgid "%1% - %2"
+msgstr "%1% - %2"
+
+#: Sentinel/TransactionTrayIcon.cpp:92
+#, kde-format
+msgid "%1"
+msgstr "%1"
+
 #: Sentinel/TransactionWatcher.cpp:66 Sentinel/TransactionWatcher.cpp:265
 msgid "Hide this icon"
 msgstr "Piilota tämä kuvake"
@@ -1091,34 +1200,6 @@ msgstr "Näytä viestit"
 #: Sentinel/TransactionWatcher.cpp:308
 msgid "Ignore"
 msgstr "Ohita"
-
-#: Sentinel/PkIsInstalled.cpp:36
-#, fuzzy
-#| msgid "The package is not installed"
-msgid "Querying if a Package is Installed"
-msgstr "Pakettia ei ole asennettu"
-
-#: Sentinel/PkIsInstalled.cpp:67
-msgid "User canceled the transaction"
-msgstr ""
-
-#: Sentinel/PkIsInstalled.cpp:69
-msgid "An unknown error happened"
-msgstr "Tapahtui tuntematon virhe"
-
-#: Sentinel/TransactionTrayIcon.cpp:45
-msgid "Transactions"
-msgstr "Tapahtumat"
-
-#: Sentinel/TransactionTrayIcon.cpp:90
-#, kde-format
-msgid "%1% - %2"
-msgstr "%1% - %2"
-
-#: Sentinel/TransactionTrayIcon.cpp:92
-#, kde-format
-msgid "%1"
-msgstr "%1"
 
 #: Sentinel/PkInstallPlasmaResources.cpp:40
 #, fuzzy
@@ -1247,74 +1328,6 @@ msgstr "Asetukset"
 msgid "Trever Fischer"
 msgstr "Trever Fischer"
 
-#: Sentinel/PkInstallPackageFiles.cpp:38
-#, fuzzy
-#| msgctxt "The role of the transaction, in past tense"
-#| msgid "Installed packages"
-msgid "Install Packages Files"
-msgstr "Asennetut paketit"
-
-#: Sentinel/PkInstallPackageFiles.cpp:42
-#: Sentinel/PkRemovePackageByFiles.cpp:43
-msgid "You can drop more files in here"
-msgstr ""
-
-#: Sentinel/PkInstallPackageFiles.cpp:52
-#, fuzzy
-#| msgid "Not supported"
-msgid "Not Supported"
-msgstr "Ei tuettu"
-
-#: Sentinel/PkInstallPackageFiles.cpp:53
-#, fuzzy
-#| msgid "Current backend does not support installing packages."
-msgid "Your current backend does not support installing files"
-msgstr "Nykyinen taustaosa ei tue pakettien asentamista."
-
-#: Sentinel/PkInstallPackageFiles.cpp:68
-#: Sentinel/PkRemovePackageByFiles.cpp:64
-#, fuzzy
-#| msgid "No files were found."
-msgid "No supported files were provided"
-msgstr "Tiedostoja ei löytynyt."
-
-#: Sentinel/PkInstallPackageFiles.cpp:70
-#, fuzzy
-#| msgid "Do you want to install this file?"
-#| msgid_plural "Do you want to install these files?"
-msgid "Press <i>Continue</i> if you want to install this file"
-msgid_plural "Press <i>Continue</i> if you want to install these files"
-msgstr[0] "Haluatko asentaa tämän tiedoston?"
-msgstr[1] "Haluatko asentaa nämä tiedostot?"
-
-#: Sentinel/PkInstallPackageFiles.cpp:105
-#, fuzzy
-#| msgctxt "The role of the transaction, in present tense"
-#| msgid "Installing file"
-msgid "Installation Complete"
-msgstr "Asennetaan tiedostoa"
-
-#: Sentinel/PkInstallPackageFiles.cpp:106
-msgid "File was installed successfully"
-msgid_plural "Files were installed successfully"
-msgstr[0] "Tiedosto asennettiin onnistuneesti"
-msgstr[1] "Tiedostot asennettiin onnistuneesti"
-
-#: Sentinel/PkInstallPackageFiles.cpp:117
-#, fuzzy
-#| msgid "Failed to install file"
-#| msgid_plural "Failed to install files"
-msgid "Failed to install files"
-msgstr "Tiedoston asennus epäonnistui"
-
-#: Sentinel/PkInstallPackageFiles.cpp:118
-#: Sentinel/PkInstallPackageFiles.cpp:120
-#, fuzzy
-#| msgid "Failed to install file"
-#| msgid_plural "Failed to install files"
-msgid "Could not install files"
-msgstr "Tiedoston asennus epäonnistui"
-
 #: Sentinel/PkRemovePackageByFiles.cpp:40
 #, fuzzy
 #| msgctxt "The role of the transaction, in past tense"
@@ -1397,6 +1410,14 @@ msgstr "Etsittiin pakettien yksityiskohtia"
 #: Sentinel/PkSearchFile.cpp:80
 msgid "The file name could not be found in any software source"
 msgstr ""
+
+#: Sentinel/DistroUpgrade.cpp:69
+msgid "Start upgrade now"
+msgstr "Käynnistä päivitys nyt"
+
+#: Sentinel/DistroUpgrade.cpp:114
+msgid "Distribution upgrade finished. "
+msgstr "Jakelupäivitys valmis. "
 
 #: Sentinel/PkInstallFontconfigResources.cpp:41
 #, fuzzy
@@ -1527,6 +1548,57 @@ msgstr "Tiedostoja ei löytynyt."
 #: Sentinel/PkInstallGStreamerResources.cpp:149
 msgid "Could not find plugin in any configured software source"
 msgstr ""
+
+#: libapper/PackageModel.cpp:182
+#, fuzzy
+#| msgctxt "The group type"
+#| msgid "Games"
+msgid "Name"
+msgstr "Pelit"
+
+#: libapper/PackageModel.cpp:184 libapper/SimulateModel.cpp:141
+msgid "Version"
+msgstr "Versio"
+
+#: libapper/PackageModel.cpp:186
+#, fuzzy
+#| msgctxt "The role of the transaction, in past tense"
+#| msgid "Installed signature"
+msgid "Installed Version"
+msgstr "Asennettiin allekirjotus"
+
+#: libapper/PackageModel.cpp:188
+msgid "Arch"
+msgstr ""
+
+#: libapper/PackageModel.cpp:190
+msgid "Origin"
+msgstr ""
+
+#: libapper/PackageModel.cpp:192
+msgid "Size"
+msgstr "Koko"
+
+#: libapper/PackageModel.cpp:283
+#, fuzzy, kde-format
+#| msgid "Architectures"
+msgid ""
+"Version: %1\n"
+"Architecture: %2"
+msgstr "Arkkitehtuurit"
+
+#: libapper/PackageModel.cpp:329
+#, fuzzy
+#| msgctxt "The action of the package, in past tense"
+#| msgid "Removed"
+msgid "To be Removed"
+msgstr "Poistettu"
+
+#: libapper/PackageModel.cpp:331
+#, fuzzy
+#| msgid "Installed"
+msgid "To be Installed"
+msgstr "Asennetut"
 
 #: libapper/ChangesDelegate.cpp:45
 #, fuzzy
@@ -2422,7 +2494,7 @@ msgstr "Paketti ei ole yhteensopiva järjestelmän kanssa"
 msgid "No space is left on the disk"
 msgstr "Kiintolevyllä ei ole riittävästi tilaa"
 
-#: libapper/PkStrings.cpp:477 libapper/PkTransaction.cpp:579
+#: libapper/PkStrings.cpp:477 libapper/PkTransaction.cpp:581
 msgid "A media change is required"
 msgstr ""
 
@@ -3109,10 +3181,8 @@ msgid "Unknown update"
 msgstr "Tuntematon päivitys"
 
 #: libapper/PkStrings.cpp:814
-#, fuzzy
-#| msgid "Notify when updates are available"
 msgid "No Updates Available"
-msgstr "Huomauta, kun päivityksiä on saatavilla"
+msgstr "Päivityksiä ei saatavilla"
 
 #: libapper/PkStrings.cpp:817
 #, fuzzy, kde-format
@@ -3359,6 +3429,107 @@ msgstr "Tiedonvälitys packagekitd:n kanssa epäonnistui."
 msgid "An unknown error happened."
 msgstr "Tapahtui tuntematon virhe."
 
+#: libapper/PkTransaction.cpp:123
+#, fuzzy
+#| msgid "Failed to simulate package install"
+msgid "Failed to simulate file install"
+msgstr "Pakettien asennusta ei onnistuttu simuloimaan"
+
+#: libapper/PkTransaction.cpp:130
+#, fuzzy
+#| msgid "Current backend does not support installing packages."
+msgid "Current backend does not support installing files."
+msgstr "Nykyinen taustaosa ei tue pakettien asentamista."
+
+#: libapper/PkTransaction.cpp:130 libapper/PkTransaction.cpp:154
+#: libapper/PkTransaction.cpp:180 libapper/PkTransaction.cpp:203
+#: AppSetup/SetupWizard.cpp:107
+msgid "Error"
+msgstr ""
+
+#: libapper/PkTransaction.cpp:147
+msgid "Failed to simulate package install"
+msgstr "Pakettien asennusta ei onnistuttu simuloimaan"
+
+#: libapper/PkTransaction.cpp:154
+msgid "Current backend does not support installing packages."
+msgstr "Nykyinen taustaosa ei tue pakettien asentamista."
+
+#: libapper/PkTransaction.cpp:172
+msgid "Failed to simulate package removal"
+msgstr "Pakettien poistoa ei onnistuttu simuloimaan"
+
+#: libapper/PkTransaction.cpp:180
+msgid "The current backend does not support removing packages."
+msgstr "Nykyinen taustaosa ei tue pakettien poistamista."
+
+#: libapper/PkTransaction.cpp:196
+#, fuzzy
+#| msgid "Failed to simulate package removal"
+msgid "Failed to simulate package update"
+msgstr "Pakettien poistoa ei onnistuttu simuloimaan"
+
+#: libapper/PkTransaction.cpp:203
+#, fuzzy
+#| msgid "The current backend does not support removing packages."
+msgid "The current backend does not support updating packages."
+msgstr "Nykyinen taustaosa ei tue pakettien poistamista."
+
+#: libapper/PkTransaction.cpp:214
+#, fuzzy
+#| msgid "Failed to remove package"
+msgid "Failed to refresh package cache"
+msgstr "Paketin poisto epäonnistui"
+
+#: libapper/PkTransaction.cpp:256
+msgid "Failed to install package"
+msgstr "Paketin asennus epäonnistui"
+
+#: libapper/PkTransaction.cpp:281
+msgid "Failed to remove package"
+msgstr "Paketin poisto epäonnistui"
+
+#: libapper/PkTransaction.cpp:293
+#, fuzzy
+#| msgid "Failed to find package"
+msgid "Failed to update package"
+msgstr "Pakettia ei löytynyt"
+
+#: libapper/PkTransaction.cpp:461
+#, fuzzy, kde-format
+#| msgctxt "transaction state, downloading package files"
+#| msgid "Downloading packages"
+msgid "Downloading packages at %1/s"
+msgstr "Ladataan paketteja"
+
+#: libapper/PkTransaction.cpp:509
+#, fuzzy
+#| msgid ""
+#| "You are about to install unsigned packages can compromise your system, as "
+#| "it is impossible to verify if the software came from a trusted source.\n"
+#| " Are you sure you want to continue installation?"
+msgid ""
+"You are about to install unsigned packages that can compromise your system, "
+"as it is impossible to verify if the software came from a trusted source.\n"
+"\n"
+"Are you sure you want to proceed with the installation?"
+msgstr ""
+"Olet asentamassa allekirjoittamattomia paketteja, jotka vaarantavat "
+"järjestelmän, koska on mahdotonta tarkistaa, tuleeko ohjelma luotetusta "
+"lähteestä.\n"
+" Haluatko varmasti jatkaa asennusta?"
+
+#: libapper/PkTransaction.cpp:512
+msgid "Installing unsigned software"
+msgstr "Asenna allekirjoittamaton ohjelma"
+
+#: libapper/PkTransaction.cpp:566 libapper/PkTransaction.cpp:620
+#, fuzzy
+#| msgid "Failed to install file"
+#| msgid_plural "Failed to install files"
+msgid "Failed to install signature"
+msgstr "Tiedoston asennus epäonnistui"
+
 #: libapper/PkTransactionDialog.cpp:88
 msgid ""
 "Allows you to hide the window whilst keeping the transaction task running."
@@ -3367,10 +3538,6 @@ msgstr "Sallii sinun piilottaa ikkunan toimenpiteiden ollessa käynnissä."
 #: libapper/SimulateModel.cpp:139
 msgid "Package"
 msgstr "Paketti"
-
-#: libapper/SimulateModel.cpp:141 libapper/PackageModel.cpp:184
-msgid "Version"
-msgstr "Versio"
 
 #: libapper/ApplicationLauncher.cpp:95
 msgid "The following application was just installed. Click on it to launch:"
@@ -3393,53 +3560,6 @@ msgstr "Lisenssi on hyväksyttävä"
 #, kde-format
 msgid "License required for %1 by %2"
 msgstr ""
-
-#: libapper/PackageModel.cpp:182
-#, fuzzy
-#| msgctxt "The group type"
-#| msgid "Games"
-msgid "Name"
-msgstr "Pelit"
-
-#: libapper/PackageModel.cpp:186
-#, fuzzy
-#| msgctxt "The role of the transaction, in past tense"
-#| msgid "Installed signature"
-msgid "Installed Version"
-msgstr "Asennettiin allekirjotus"
-
-#: libapper/PackageModel.cpp:188
-msgid "Arch"
-msgstr ""
-
-#: libapper/PackageModel.cpp:190
-msgid "Origin"
-msgstr ""
-
-#: libapper/PackageModel.cpp:192
-msgid "Size"
-msgstr "Koko"
-
-#: libapper/PackageModel.cpp:283
-#, fuzzy, kde-format
-#| msgid "Architectures"
-msgid ""
-"Version: %1\n"
-"Architecture: %2"
-msgstr "Arkkitehtuurit"
-
-#: libapper/PackageModel.cpp:329
-#, fuzzy
-#| msgctxt "The action of the package, in past tense"
-#| msgid "Removed"
-msgid "To be Removed"
-msgstr "Poistettu"
-
-#: libapper/PackageModel.cpp:331
-#, fuzzy
-#| msgid "Installed"
-msgid "To be Installed"
-msgstr "Asennetut"
 
 #: libapper/Requirements.cpp:42
 msgid "Additional changes"
@@ -3480,106 +3600,6 @@ msgid_plural "%1 packages to update"
 msgstr[0] "1 paketti päivitetään"
 msgstr[1] "%1 pakettia päivitetään"
 
-#: libapper/PkTransaction.cpp:122
-#, fuzzy
-#| msgid "Failed to simulate package install"
-msgid "Failed to simulate file install"
-msgstr "Pakettien asennusta ei onnistuttu simuloimaan"
-
-#: libapper/PkTransaction.cpp:129
-#, fuzzy
-#| msgid "Current backend does not support installing packages."
-msgid "Current backend does not support installing files."
-msgstr "Nykyinen taustaosa ei tue pakettien asentamista."
-
-#: libapper/PkTransaction.cpp:129 libapper/PkTransaction.cpp:153
-#: libapper/PkTransaction.cpp:179 libapper/PkTransaction.cpp:202
-msgid "Error"
-msgstr ""
-
-#: libapper/PkTransaction.cpp:146
-msgid "Failed to simulate package install"
-msgstr "Pakettien asennusta ei onnistuttu simuloimaan"
-
-#: libapper/PkTransaction.cpp:153
-msgid "Current backend does not support installing packages."
-msgstr "Nykyinen taustaosa ei tue pakettien asentamista."
-
-#: libapper/PkTransaction.cpp:171
-msgid "Failed to simulate package removal"
-msgstr "Pakettien poistoa ei onnistuttu simuloimaan"
-
-#: libapper/PkTransaction.cpp:179
-msgid "The current backend does not support removing packages."
-msgstr "Nykyinen taustaosa ei tue pakettien poistamista."
-
-#: libapper/PkTransaction.cpp:195
-#, fuzzy
-#| msgid "Failed to simulate package removal"
-msgid "Failed to simulate package update"
-msgstr "Pakettien poistoa ei onnistuttu simuloimaan"
-
-#: libapper/PkTransaction.cpp:202
-#, fuzzy
-#| msgid "The current backend does not support removing packages."
-msgid "The current backend does not support updating packages."
-msgstr "Nykyinen taustaosa ei tue pakettien poistamista."
-
-#: libapper/PkTransaction.cpp:213
-#, fuzzy
-#| msgid "Failed to remove package"
-msgid "Failed to refresh package cache"
-msgstr "Paketin poisto epäonnistui"
-
-#: libapper/PkTransaction.cpp:251
-msgid "Failed to install package"
-msgstr "Paketin asennus epäonnistui"
-
-#: libapper/PkTransaction.cpp:276
-msgid "Failed to remove package"
-msgstr "Paketin poisto epäonnistui"
-
-#: libapper/PkTransaction.cpp:288
-#, fuzzy
-#| msgid "Failed to find package"
-msgid "Failed to update package"
-msgstr "Pakettia ei löytynyt"
-
-#: libapper/PkTransaction.cpp:459
-#, fuzzy, kde-format
-#| msgctxt "transaction state, downloading package files"
-#| msgid "Downloading packages"
-msgid "Downloading packages at %1/s"
-msgstr "Ladataan paketteja"
-
-#: libapper/PkTransaction.cpp:507
-#, fuzzy
-#| msgid ""
-#| "You are about to install unsigned packages can compromise your system, as "
-#| "it is impossible to verify if the software came from a trusted source.\n"
-#| " Are you sure you want to continue installation?"
-msgid ""
-"You are about to install unsigned packages that can compromise your system, "
-"as it is impossible to verify if the software came from a trusted source.\n"
-"\n"
-"Are you sure you want to proceed with the installation?"
-msgstr ""
-"Olet asentamassa allekirjoittamattomia paketteja, jotka vaarantavat "
-"järjestelmän, koska on mahdotonta tarkistaa, tuleeko ohjelma luotetusta "
-"lähteestä.\n"
-" Haluatko varmasti jatkaa asennusta?"
-
-#: libapper/PkTransaction.cpp:510
-msgid "Installing unsigned software"
-msgstr "Asenna allekirjoittamaton ohjelma"
-
-#: libapper/PkTransaction.cpp:564 libapper/PkTransaction.cpp:618
-#, fuzzy
-#| msgid "Failed to install file"
-#| msgid_plural "Failed to install files"
-msgid "Failed to install signature"
-msgstr "Tiedoston asennus epäonnistui"
-
 #. i18n: file: libapper/RepoSig.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, RepoSig)
 #: libapper/RepoSig.cpp:40 rc.cpp:218
@@ -3596,6 +3616,165 @@ msgstr "Asenna"
 #| msgid "Removed"
 msgid "Remove"
 msgstr "Poistettu"
+
+#: AppSetup/main.cpp:34 AppSetup/main.cpp:35
+#, fuzzy
+#| msgid "Application"
+msgid "KDE Application Installer"
+msgstr "Sovellus"
+
+#: AppSetup/main.cpp:36
+msgid "(C) 2012, Matthias Klumpp"
+msgstr ""
+
+#: AppSetup/main.cpp:38
+#, fuzzy
+#| msgid "Daniel Nicoletti"
+msgctxt "@info:credit"
+msgid "Daniel Nicoletti"
+msgstr "Daniel Nicoletti"
+
+#: AppSetup/main.cpp:38 AppSetup/main.cpp:40
+#, fuzzy
+#| msgid "Development"
+msgid "Developer"
+msgstr "Kehitystyökalut"
+
+#: AppSetup/main.cpp:40
+msgctxt "@info:credit"
+msgid "Matthias Klumpp"
+msgstr ""
+
+#: AppSetup/main.cpp:47
+#, fuzzy
+#| msgctxt "transaction state, getting data from a server"
+#| msgid "Getting information"
+msgid "Show verbose information"
+msgstr "Noudetaan tietoa"
+
+#: AppSetup/main.cpp:48
+#, fuzzy
+#| msgid "Package file to install"
+msgid "IPK package filename"
+msgstr "Asennettava pakettitiedosto"
+
+#: AppSetup/main.cpp:75
+msgid "Sorry, we didn't get an existing IPK package as parameter."
+msgstr ""
+
+#: AppSetup/main.cpp:76
+#, fuzzy
+#| msgid "The package was not found"
+msgid "Package not found!"
+msgstr "Pakettia ei löytynyt"
+
+#: AppSetup/SetupWizard.cpp:92
+#, fuzzy
+#| msgctxt "The role of the transaction, in present tense"
+#| msgid "Installing file"
+msgid "Installation finished!"
+msgstr "Asennetaan tiedostoa"
+
+#: AppSetup/SetupWizard.cpp:93
+#, fuzzy, kde-format
+#| msgid "File was installed successfully"
+#| msgid_plural "Files were installed successfully"
+msgid "%1 has been installed successfully!"
+msgstr "Tiedosto asennettiin onnistuneesti"
+
+#: AppSetup/SetupWizard.cpp:108
+#, fuzzy
+#| msgid "An error occurred."
+msgid "An error occurred"
+msgstr "Tapahtui virhe."
+
+#. i18n: file: ApperKCM/ApperKCM.ui:281
+#. i18n: ectx: property (text), widget (QToolButton, backTB)
+#: AppSetup/SetupWizard.cpp:141 rc.cpp:197
+msgid "Back"
+msgstr ""
+
+#: AppSetup/SetupWizard.cpp:196
+msgid "Welcome!"
+msgstr ""
+
+#: AppSetup/SetupWizard.cpp:197
+#, kde-format
+msgid "Welcome to the installation of %1!"
+msgstr ""
+
+#: AppSetup/SetupWizard.cpp:198
+msgid ""
+"Please be careful while installing 3rd-party applications.<br>They may "
+"eventually <b>damage</b> your system or have <b>malicious behaviour</b>, "
+"like spying out your passwords.<br>Please do only install this software if "
+"you <b>trust the publisher and the author</b> of it."
+msgstr ""
+
+#: AppSetup/SetupWizard.cpp:208
+msgid "Details about this installation"
+msgstr ""
+
+#: AppSetup/SetupWizard.cpp:235
+msgid "Install for all users (as root)"
+msgstr ""
+
+#: AppSetup/SetupWizard.cpp:242
+#, fuzzy
+#| msgid "Application"
+msgid "Application description"
+msgstr "Sovellus"
+
+#: AppSetup/SetupWizard.cpp:251
+#, fuzzy
+#| msgid "Software update"
+msgid "Software license"
+msgstr "Ohjelmistopäivitys"
+
+#: AppSetup/SetupWizard.cpp:252
+#, fuzzy
+#| msgid "Please read the following important information before continuing:"
+msgid "Please read the following terms and conditions carefully!"
+msgstr "Lue tarkasti seuraava teksti, ennen kuin jatkat:"
+
+#: AppSetup/SetupWizard.cpp:259
+#, fuzzy
+#| msgctxt "transaction state, scanning for running processes"
+#| msgid "Scanning installed applications"
+msgid "Running installation"
+msgstr "Etsitään asennettuja sovelluksia"
+
+#: AppSetup/SetupWizard.cpp:260
+#, fuzzy, kde-format
+#| msgctxt "The role of the transaction, in present tense"
+#| msgid "Installing"
+msgid "Installing %1..."
+msgstr "Asennetaan"
+
+#: AppSetup/SetupWizard.cpp:297
+msgid ""
+"Installing this package will make the following native packages obsolete. "
+"You might consider removing them manually."
+msgstr ""
+
+#: AppSetup/SetupWizard.cpp:298
+#, fuzzy
+#| msgctxt "The role of the transaction, in past tense"
+#| msgid "Updated packages"
+msgid "Similar native packages found"
+msgstr "Päivitetyt paketit"
+
+#: AppSetup/SetupWizard.cpp:364
+msgid ""
+"You want to install this application as root!\n"
+"This can damage your system or install malicious software for all users.\n"
+"Please only proceed, if you really know what you're doing!\n"
+"Continue?"
+msgstr ""
+
+#: AppSetup/SetupWizard.cpp:367
+msgid "Really install as superuser?"
+msgstr ""
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
@@ -4028,12 +4207,6 @@ msgstr "Etsi paketteja"
 msgid "Pending Changes"
 msgstr "Testataan muutoksia"
 
-#. i18n: file: ApperKCM/ApperKCM.ui:281
-#. i18n: ectx: property (text), widget (QToolButton, backTB)
-#: rc.cpp:197
-msgid "Back"
-msgstr ""
-
 #. i18n: file: Sentinel/IntroDialog.ui:65
 #. i18n: ectx: property (text), widget (QLabel, descriptionL)
 #: rc.cpp:209
@@ -4108,6 +4281,37 @@ msgstr "kuvake"
 msgid "Downloading Packages"
 msgstr "Ladataan paketteja"
 
+#. i18n: file: AppSetup/LicensePage.ui:98
+#. i18n: ectx: property (text), widget (QRadioButton, acceptedRB)
+#: rc.cpp:251
+msgid "I agree to the above terms and conditions"
+msgstr ""
+
+#. i18n: file: AppSetup/LicensePage.ui:111
+#. i18n: ectx: property (text), widget (QRadioButton, rejectedRB)
+#: rc.cpp:254
+msgid "I don't agree"
+msgstr ""
+
+#, fuzzy
+
+
+
+
+#, fuzzy
+
+
+
+
+
+#, fuzzy
+
+
+
+
+
+
+
 #, fuzzy
 
 
@@ -4130,28 +4334,6 @@ msgstr "Ladataan paketteja"
 
 
 
-#, fuzzy
-
-
-
-
-
-
-
-#, fuzzy
-
-
-
-
-
-#, fuzzy
-
-
-
-
-
-
-
 
 
 
@@ -4198,30 +4380,6 @@ msgstr "Ladataan paketteja"
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#, fuzzy
 
 
 
@@ -4262,6 +4420,30 @@ msgstr "Ladataan paketteja"
 
 
 
+
+
+
+
+
+
+
+#, fuzzy
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #, fuzzy
 
 
@@ -4349,16 +4531,7 @@ msgstr "Ladataan paketteja"
 
 
 
-
-
-
 #, fuzzy
-
-
-
-
-
-
 
 
 

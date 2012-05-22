@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-02-18 05:06+0100\n"
+"POT-Creation-Date: 2012-05-20 05:58+0200\n"
 "PO-Revision-Date: 2010-09-29 22:44+0200\n"
 "Last-Translator: Jure Repinc <jlp@holodeck1.com>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
@@ -24,7 +24,7 @@ msgstr ""
 msgid "Backend Details"
 msgstr "Prikaži podrobnosti o hrbtenici"
 
-#: Apper/main.cpp:54 Sentinel/UpdateIcon.cpp:158 Sentinel/main.cpp:34
+#: Apper/main.cpp:54 Sentinel/UpdateIcon.cpp:113 Sentinel/main.cpp:34
 #, fuzzy
 #| msgid "AppGet"
 msgid "Apper"
@@ -36,7 +36,7 @@ msgstr "AppGet"
 msgid "Apper is an Application to Get and Manage Software"
 msgstr "KPackageKit je program za pridobivanje in upravljanje programov"
 
-#: Apper/main.cpp:58 ApperKCM/ApperKCM.cpp:83 Sentinel/main.cpp:38
+#: Apper/main.cpp:58 ApperKCM/ApperKCM.cpp:84 Sentinel/main.cpp:38
 #, fuzzy
 #| msgid "(C) 2008-2010 Daniel Nicoletti"
 msgid "(C) 2008-2011 Daniel Nicoletti"
@@ -95,6 +95,151 @@ msgstr "Odstranjevalnik posameznih paketov"
 #: Apper/main.cpp:75
 msgid "Package file to install"
 msgstr "Paket za namestiti"
+
+#: ApperKCM/FiltersMenu.cpp:37
+msgid "Collections"
+msgstr "Zbirke"
+
+#: ApperKCM/FiltersMenu.cpp:44
+msgid "Only collections"
+msgstr "Samo zbirke"
+
+#: ApperKCM/FiltersMenu.cpp:51
+msgid "Exclude collections"
+msgstr "Izvzemi zbirke"
+
+#. i18n: file: Apper/BackendDetails.ui:100
+#. i18n: ectx: property (text), widget (QCheckBox, installedCB)
+#: ApperKCM/FiltersMenu.cpp:60 libapper/PkStrings.cpp:362 rc.cpp:23
+msgid "Installed"
+msgstr "Nameščeno"
+
+#: ApperKCM/FiltersMenu.cpp:67
+msgid "Only installed"
+msgstr "Samo nameščeno"
+
+#: ApperKCM/FiltersMenu.cpp:74
+msgid "Only available"
+msgstr "Samo razpoložljivo"
+
+#: ApperKCM/FiltersMenu.cpp:81 ApperKCM/FiltersMenu.cpp:111
+#: ApperKCM/FiltersMenu.cpp:141 ApperKCM/FiltersMenu.cpp:171
+#: ApperKCM/FiltersMenu.cpp:202 ApperKCM/FiltersMenu.cpp:233
+msgid "No filter"
+msgstr "Brez filtra"
+
+#. i18n: file: Apper/BackendDetails.ui:110
+#. i18n: ectx: property (text), widget (QCheckBox, developmentCB)
+#: ApperKCM/FiltersMenu.cpp:90 rc.cpp:26
+msgid "Development"
+msgstr "Razvojno"
+
+#: ApperKCM/FiltersMenu.cpp:97
+msgid "Only development"
+msgstr "Samo razvojno"
+
+#: ApperKCM/FiltersMenu.cpp:104
+msgid "Only end user files"
+msgstr "Samo za končnega uporabnika"
+
+#: ApperKCM/FiltersMenu.cpp:120
+msgid "Graphical"
+msgstr "Grafično"
+
+#: ApperKCM/FiltersMenu.cpp:127
+msgid "Only graphical"
+msgstr "Samo grafično"
+
+#: ApperKCM/FiltersMenu.cpp:134
+msgid "Only text"
+msgstr "Samo besedilno"
+
+#: ApperKCM/FiltersMenu.cpp:150
+msgctxt "Filter for free packages"
+msgid "Free"
+msgstr "Prosto"
+
+#: ApperKCM/FiltersMenu.cpp:157
+msgid "Only free software"
+msgstr "Samo prosti programi"
+
+#: ApperKCM/FiltersMenu.cpp:164
+msgid "Only non-free software"
+msgstr "Samo ne-prosti programi"
+
+#: ApperKCM/FiltersMenu.cpp:181
+#, fuzzy
+#| msgid "Supported"
+msgctxt "Filter for supported packages"
+msgid "Supported"
+msgstr "Podprto"
+
+#: ApperKCM/FiltersMenu.cpp:188
+#, fuzzy
+#| msgid "Only free software"
+msgid "Only supported software"
+msgstr "Samo prosti programi"
+
+#: ApperKCM/FiltersMenu.cpp:195
+#, fuzzy
+#| msgid "Only non-free software"
+msgid "Only non-supported software"
+msgstr "Samo ne-prosti programi"
+
+#: ApperKCM/FiltersMenu.cpp:212
+msgctxt "Filter for source packages"
+msgid "Source"
+msgstr "Izvorna koda"
+
+#: ApperKCM/FiltersMenu.cpp:219
+msgid "Only sourcecode"
+msgstr "Samo izvorna koda"
+
+#: ApperKCM/FiltersMenu.cpp:226
+msgid "Only non-sourcecode"
+msgstr "Samo ne-izvorna koda"
+
+#: ApperKCM/FiltersMenu.cpp:248
+#, fuzzy
+#| msgid "Hide subpackages"
+msgid "Hide Subpackages"
+msgstr "Skrij podpakete"
+
+#: ApperKCM/FiltersMenu.cpp:250
+msgid "Only show one package, not subpackages"
+msgstr "Prikaži samo en paket, brez podpaketov"
+
+#: ApperKCM/FiltersMenu.cpp:257
+#, fuzzy
+#| msgid "Only newest packages"
+msgid "Only Newest Packages"
+msgstr "Samo najnovejši paketi"
+
+#: ApperKCM/FiltersMenu.cpp:262
+msgid "Only show the newest available package"
+msgstr "Prikaži samo najnovejše razpoložljive pakete"
+
+#: ApperKCM/FiltersMenu.cpp:269
+#, fuzzy
+#| msgid "Only newest packages"
+msgid "Only Native Packages"
+msgstr "Samo najnovejši paketi"
+
+#: ApperKCM/FiltersMenu.cpp:274
+msgid "Only show packages matching the machine architecture"
+msgstr ""
+
+#: ApperKCM/FiltersMenu.cpp:283
+#, fuzzy
+#| msgid "Only show applications"
+msgid "Only Show Applications"
+msgstr "Prikaži samo programe"
+
+#: ApperKCM/FiltersMenu.cpp:286
+#, fuzzy
+#| msgid "Packages are not compatible"
+msgid "Hide packages that are not applications"
+msgstr "Paketa nista združljiva"
 
 #: ApperKCM/Settings/OriginModel.cpp:39 ApperKCM/Settings/OriginModel.cpp:52
 msgid "Origin of Packages"
@@ -398,211 +543,37 @@ msgstr ""
 msgid "Check for new Updates"
 msgstr "Preveri za nove posodobitve"
 
-#: ApperKCM/FiltersMenu.cpp:37
-msgid "Collections"
-msgstr "Zbirke"
+#: ApperKCM/ScreenShotViewer.cpp:90
+msgid "Could not find screen shot."
+msgstr "Zaslonskega posnetka ni bilo moč najti."
 
-#: ApperKCM/FiltersMenu.cpp:44
-msgid "Only collections"
-msgstr "Samo zbirke"
+#: ApperKCM/CategoryModel.cpp:47
+msgid "Installed Software"
+msgstr "Nameščeni programi"
 
-#: ApperKCM/FiltersMenu.cpp:51
-msgid "Exclude collections"
-msgstr "Izvzemi zbirke"
+#: ApperKCM/CategoryModel.cpp:50 ApperKCM/CategoryModel.cpp:58
+msgid "Lists"
+msgstr "Seznami"
 
-#. i18n: file: Apper/BackendDetails.ui:100
-#. i18n: ectx: property (text), widget (QCheckBox, installedCB)
-#: ApperKCM/FiltersMenu.cpp:60 libapper/PkStrings.cpp:362 rc.cpp:23
-msgid "Installed"
-msgstr "Nameščeno"
-
-#: ApperKCM/FiltersMenu.cpp:67
-msgid "Only installed"
-msgstr "Samo nameščeno"
-
-#: ApperKCM/FiltersMenu.cpp:74
-msgid "Only available"
-msgstr "Samo razpoložljivo"
-
-#: ApperKCM/FiltersMenu.cpp:81 ApperKCM/FiltersMenu.cpp:111
-#: ApperKCM/FiltersMenu.cpp:141 ApperKCM/FiltersMenu.cpp:171
-#: ApperKCM/FiltersMenu.cpp:202
-msgid "No filter"
-msgstr "Brez filtra"
-
-#. i18n: file: Apper/BackendDetails.ui:110
-#. i18n: ectx: property (text), widget (QCheckBox, developmentCB)
-#: ApperKCM/FiltersMenu.cpp:90 rc.cpp:26
-msgid "Development"
-msgstr "Razvojno"
-
-#: ApperKCM/FiltersMenu.cpp:97
-msgid "Only development"
-msgstr "Samo razvojno"
-
-#: ApperKCM/FiltersMenu.cpp:104
-msgid "Only end user files"
-msgstr "Samo za končnega uporabnika"
-
-#: ApperKCM/FiltersMenu.cpp:120
-msgid "Graphical"
-msgstr "Grafično"
-
-#: ApperKCM/FiltersMenu.cpp:127
-msgid "Only graphical"
-msgstr "Samo grafično"
-
-#: ApperKCM/FiltersMenu.cpp:134
-msgid "Only text"
-msgstr "Samo besedilno"
-
-#: ApperKCM/FiltersMenu.cpp:150
-msgctxt "Filter for free packages"
-msgid "Free"
-msgstr "Prosto"
-
-#: ApperKCM/FiltersMenu.cpp:157
-msgid "Only free software"
-msgstr "Samo prosti programi"
-
-#: ApperKCM/FiltersMenu.cpp:164
-msgid "Only non-free software"
-msgstr "Samo ne-prosti programi"
-
-#: ApperKCM/FiltersMenu.cpp:181
-msgctxt "Filter for source packages"
-msgid "Source"
-msgstr "Izvorna koda"
-
-#: ApperKCM/FiltersMenu.cpp:188
-msgid "Only sourcecode"
-msgstr "Samo izvorna koda"
-
-#: ApperKCM/FiltersMenu.cpp:195
-msgid "Only non-sourcecode"
-msgstr "Samo ne-izvorna koda"
-
-#: ApperKCM/FiltersMenu.cpp:217
+#: ApperKCM/CategoryModel.cpp:55
 #, fuzzy
-#| msgid "Hide subpackages"
-msgid "Hide Subpackages"
-msgstr "Skrij podpakete"
+#| msgid "Updates:"
+msgid "Updates"
+msgstr "Posodobitve"
 
-#: ApperKCM/FiltersMenu.cpp:219
-msgid "Only show one package, not subpackages"
-msgstr "Prikaži samo en paket, brez podpaketov"
+#: ApperKCM/CategoryModel.cpp:155 ApperKCM/CategoryModel.cpp:339
+msgid "Categories"
+msgstr "Kategorije"
 
-#: ApperKCM/FiltersMenu.cpp:226
-#, fuzzy
-#| msgid "Only newest packages"
-msgid "Only Newest Packages"
-msgstr "Samo najnovejši paketi"
-
-#: ApperKCM/FiltersMenu.cpp:231
-msgid "Only show the newest available package"
-msgstr "Prikaži samo najnovejše razpoložljive pakete"
-
-#: ApperKCM/FiltersMenu.cpp:238
-#, fuzzy
-#| msgid "Only newest packages"
-msgid "Only Native Packages"
-msgstr "Samo najnovejši paketi"
-
-#: ApperKCM/FiltersMenu.cpp:243
-msgid "Only show packages matching the machine architecture"
-msgstr ""
-
-#: ApperKCM/FiltersMenu.cpp:252
-#, fuzzy
-#| msgid "Only show applications"
-msgid "Only Show Applications"
-msgstr "Prikaži samo programe"
-
-#: ApperKCM/FiltersMenu.cpp:255
-#, fuzzy
-#| msgid "Packages are not compatible"
-msgid "Hide packages that are not applications"
-msgstr "Paketa nista združljiva"
-
-#: ApperKCM/ApperKCM.cpp:79
-#, fuzzy
-#| msgid "Application"
-msgid "Application Manager"
-msgstr "Program"
-
-#: ApperKCM/ApperKCM.cpp:81
-msgid "KDE interface for managing software"
-msgstr "KDE-jev vmesnik za upravljanje programov"
-
-#: ApperKCM/ApperKCM.cpp:111 ApperKCM/ApperKCM.cpp:292
-msgid "Find"
-msgstr "Najdi"
-
-#: ApperKCM/ApperKCM.cpp:206
-msgid "History"
-msgstr "Zgodovina"
-
-#. i18n: file: ApperKCM/Settings/Settings.ui:14
-#. i18n: ectx: property (windowTitle), widget (QWidget, Settings)
-#: ApperKCM/ApperKCM.cpp:212 rc.cpp:140
-msgid "Settings"
-msgstr "Nastavitve"
-
-#: ApperKCM/ApperKCM.cpp:269 ApperKCM/ApperKCM.cpp:270
-#: ApperKCM/ApperKCM.cpp:271 ApperKCM/ApperKCM.cpp:272
-msgid "&Cancel"
-msgstr "&Prekliči"
-
-#. i18n: file: ApperKCM/ApperKCM.ui:291
-#. i18n: ectx: property (text), widget (QToolButton, backTB)
-#: ApperKCM/ApperKCM.cpp:279 rc.cpp:200
-msgid "Find by &name"
-msgstr "Najdi po &imenu"
-
-#. i18n: file: ApperKCM/ApperKCM.ui:301
-#. i18n: ectx: property (text), widget (QToolButton, backTB)
-#: ApperKCM/ApperKCM.cpp:280 rc.cpp:206
-msgid "Find by f&ile name"
-msgstr "Najdi po imenu &datoteke"
-
-#. i18n: file: ApperKCM/ApperKCM.ui:296
-#. i18n: ectx: property (text), widget (QToolButton, backTB)
-#: ApperKCM/ApperKCM.cpp:281 rc.cpp:203
-msgid "Find by &description"
-msgstr "Najdi po &opisu"
-
-#: ApperKCM/ApperKCM.cpp:411
-msgid ""
-"The settings of the current module have changed.\n"
-"Do you want to apply the changes or discard them?"
-msgstr ""
-"Nastavitve v trenutnem modulu so se spremenile.\n"
-"Ali želite spremembe uveljaviti ali zavreči?"
-
-#: ApperKCM/ApperKCM.cpp:413
-#, fuzzy
-#| msgid "Apply Settings"
-msgid "Apply Settings"
-msgstr "Uveljavi nastavitve"
-
-#: ApperKCM/ApperKCM.cpp:455
-#, fuzzy
-#| msgid "Apply Settings"
-msgid "General Settings"
-msgstr "Uveljavi nastavitve"
-
-#: ApperKCM/ApperKCM.cpp:456
-#, fuzzy
-#| msgctxt "The group type"
-#| msgid "Software sources"
-msgid "Software Origins"
-msgstr "Izvorna koda"
+#: ApperKCM/CategoryModel.cpp:208
+msgid "Groups"
+msgstr "Skupine"
 
 #: ApperKCM/PackageDetails.cpp:73
 msgid "Display"
 msgstr "Prikaži"
 
-#: ApperKCM/PackageDetails.cpp:80
+#: ApperKCM/PackageDetails.cpp:80 AppSetup/SetupWizard.cpp:243
 msgid "Description"
 msgstr "Opis"
 
@@ -630,32 +601,6 @@ msgstr ""
 msgid "Applications"
 msgstr "Programi"
 
-#: ApperKCM/CategoryModel.cpp:47
-msgid "Installed Software"
-msgstr "Nameščeni programi"
-
-#: ApperKCM/CategoryModel.cpp:50 ApperKCM/CategoryModel.cpp:58
-msgid "Lists"
-msgstr "Seznami"
-
-#: ApperKCM/CategoryModel.cpp:55
-#, fuzzy
-#| msgid "Updates:"
-msgid "Updates"
-msgstr "Posodobitve"
-
-#: ApperKCM/CategoryModel.cpp:155 ApperKCM/CategoryModel.cpp:339
-msgid "Categories"
-msgstr "Kategorije"
-
-#: ApperKCM/CategoryModel.cpp:208
-msgid "Groups"
-msgstr "Skupine"
-
-#: ApperKCM/ScreenShotViewer.cpp:90
-msgid "Could not find screen shot."
-msgstr "Zaslonskega posnetka ni bilo moč najti."
-
 #: ApperKCM/TransactionHistory.cpp:66
 msgid "Refresh transactions list"
 msgstr "Osveži seznam prenosov"
@@ -674,6 +619,7 @@ msgid "Action"
 msgstr "Dejanje"
 
 #: ApperKCM/TransactionModel.cpp:48 Sentinel/TransactionWatcher.cpp:308
+#: AppSetup/SetupWizard.cpp:207
 msgid "Details"
 msgstr "Podrobnosti"
 
@@ -686,13 +632,79 @@ msgstr "Uporabniško ime"
 msgid "Application"
 msgstr "Program"
 
-#: Sentinel/DistroUpgrade.cpp:69
-msgid "Start upgrade now"
-msgstr "Nadgradi sedaj"
+#: ApperKCM/ApperKCM.cpp:80
+#, fuzzy
+#| msgid "Application"
+msgid "Application Manager"
+msgstr "Program"
 
-#: Sentinel/DistroUpgrade.cpp:114
-msgid "Distribution upgrade finished. "
-msgstr "Nadgradnja distribucije je zaključena. "
+#: ApperKCM/ApperKCM.cpp:82
+msgid "KDE interface for managing software"
+msgstr "KDE-jev vmesnik za upravljanje programov"
+
+#: ApperKCM/ApperKCM.cpp:112 ApperKCM/ApperKCM.cpp:293
+msgid "Find"
+msgstr "Najdi"
+
+#: ApperKCM/ApperKCM.cpp:207
+msgid "History"
+msgstr "Zgodovina"
+
+#. i18n: file: ApperKCM/Settings/Settings.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, Settings)
+#: ApperKCM/ApperKCM.cpp:213 rc.cpp:140
+msgid "Settings"
+msgstr "Nastavitve"
+
+#: ApperKCM/ApperKCM.cpp:270 ApperKCM/ApperKCM.cpp:271
+#: ApperKCM/ApperKCM.cpp:272 ApperKCM/ApperKCM.cpp:273
+msgid "&Cancel"
+msgstr "&Prekliči"
+
+#. i18n: file: ApperKCM/ApperKCM.ui:291
+#. i18n: ectx: property (text), widget (QToolButton, backTB)
+#: ApperKCM/ApperKCM.cpp:280 rc.cpp:200
+msgid "Find by &name"
+msgstr "Najdi po &imenu"
+
+#. i18n: file: ApperKCM/ApperKCM.ui:301
+#. i18n: ectx: property (text), widget (QToolButton, backTB)
+#: ApperKCM/ApperKCM.cpp:281 rc.cpp:206
+msgid "Find by f&ile name"
+msgstr "Najdi po imenu &datoteke"
+
+#. i18n: file: ApperKCM/ApperKCM.ui:296
+#. i18n: ectx: property (text), widget (QToolButton, backTB)
+#: ApperKCM/ApperKCM.cpp:282 rc.cpp:203
+msgid "Find by &description"
+msgstr "Najdi po &opisu"
+
+#: ApperKCM/ApperKCM.cpp:412
+msgid ""
+"The settings of the current module have changed.\n"
+"Do you want to apply the changes or discard them?"
+msgstr ""
+"Nastavitve v trenutnem modulu so se spremenile.\n"
+"Ali želite spremembe uveljaviti ali zavreči?"
+
+#: ApperKCM/ApperKCM.cpp:414
+#, fuzzy
+#| msgid "Apply Settings"
+msgid "Apply Settings"
+msgstr "Uveljavi nastavitve"
+
+#: ApperKCM/ApperKCM.cpp:456
+#, fuzzy
+#| msgid "Apply Settings"
+msgid "General Settings"
+msgstr "Uveljavi nastavitve"
+
+#: ApperKCM/ApperKCM.cpp:457
+#, fuzzy
+#| msgctxt "The group type"
+#| msgid "Software sources"
+msgid "Software Origins"
+msgstr "Izvorna koda"
 
 #: Sentinel/PkInstallProvideFiles.cpp:39
 #, fuzzy
@@ -750,7 +762,7 @@ msgstr[3] "%2 želi namestiti pakete"
 msgid "Failed to start search file transaction"
 msgstr "Prenos iskalne datoteke ni uspel"
 
-#: Sentinel/PkInstallProvideFiles.cpp:101 libapper/PkTransaction.cpp:263
+#: Sentinel/PkInstallProvideFiles.cpp:101 libapper/PkTransaction.cpp:268
 msgid "Failed to install file"
 msgid_plural "Failed to install files"
 msgstr[0] "Datotek ni bilo moč namestiti"
@@ -803,48 +815,6 @@ msgstr "Iskanje ponudnikov ni uspelo"
 msgid "Could not find printer driver in any configured software source"
 msgstr ""
 "Vstavka ni bilo moč najti v nobenem nastavljenem viru programske opreme"
-
-#: Sentinel/UpdateIcon.cpp:160
-msgid "Review Updates"
-msgstr "Pregled posodobitev"
-
-#: Sentinel/UpdateIcon.cpp:163
-msgid "Configure"
-msgstr "Nastavi"
-
-#. i18n: file: ApperKCM/PackageDetails.ui:359
-#. i18n: ectx: property (text), widget (QToolButton, hideTB)
-#. i18n: file: ApperKCM/Updater/UpdateDetails.ui:20
-#. i18n: ectx: property (text), widget (QToolButton, hideTB)
-#: Sentinel/UpdateIcon.cpp:167 Sentinel/TransactionWatcher.cpp:186
-#: libapper/PkTransactionDialog.cpp:86 rc.cpp:137 rc.cpp:173
-msgid "Hide"
-msgstr "Skrij"
-
-#: Sentinel/UpdateIcon.cpp:177
-#, kde-format
-msgid "You have one update"
-msgid_plural "You have %1 updates"
-msgstr[0] "Na voljo je %1 posodobitev"
-msgstr[1] "Na voljo je %1 posodobitev"
-msgstr[2] "Na voljo sta %1 posodobitvi"
-msgstr[3] "Na voljo so %1 posodobitve"
-
-#: Sentinel/UpdateIcon.cpp:230
-msgid "Updates are being automatically installed."
-msgstr "Posodobitve se samodejno nameščajo"
-
-#: Sentinel/UpdateIcon.cpp:251
-msgid "Security updates are being automatically installed."
-msgstr "Varnostne posodobitve se samodejno nameščajo"
-
-#: Sentinel/UpdateIcon.cpp:278
-msgid "System update was successful."
-msgstr "Posodobitev sistema je bila uspešna."
-
-#: Sentinel/UpdateIcon.cpp:287
-msgid "The automated software update failed."
-msgstr "Samodejna posodobitev programov ni uspela."
 
 #: Sentinel/ReviewChanges.cpp:52
 msgid "The following package was found"
@@ -1038,7 +1008,79 @@ msgstr "Namestilnik katalogov"
 msgid "Could not find any package to install in this catalog"
 msgstr "<h3>Ali želite namestiti te kataloge?</h3><ul><li>%2</li></ul>"
 
+#: Sentinel/PkInstallPackageFiles.cpp:38
+#, fuzzy
+#| msgid "Install Packages"
+msgid "Install Packages Files"
+msgstr "Namesti pakete"
+
+#: Sentinel/PkInstallPackageFiles.cpp:42
+#: Sentinel/PkRemovePackageByFiles.cpp:43
+msgid "You can drop more files in here"
+msgstr ""
+
+#: Sentinel/PkInstallPackageFiles.cpp:52
+#, fuzzy
+#| msgid "Not supported"
+msgid "Not Supported"
+msgstr "Ni podprto"
+
+#: Sentinel/PkInstallPackageFiles.cpp:53
+#, fuzzy
+#| msgid "Current backend does not support installing packages."
+msgid "Your current backend does not support installing files"
+msgstr "Trenutna hrbtenica ne podpira nameščanja paketov."
+
+#: Sentinel/PkInstallPackageFiles.cpp:68
+#: Sentinel/PkRemovePackageByFiles.cpp:64
+#, fuzzy
+#| msgid "No files were found."
+msgid "No supported files were provided"
+msgstr "Najdene ne bilo nobene datoteke."
+
+#: Sentinel/PkInstallPackageFiles.cpp:70
+#, fuzzy
+#| msgid "Do you want to install this file?"
+#| msgid_plural "Do you want to install these files?"
+msgid "Press <i>Continue</i> if you want to install this file"
+msgid_plural "Press <i>Continue</i> if you want to install these files"
+msgstr[0] "Ali želite namestiti te datoteke?"
+msgstr[1] "Ali želite namestiti to datoteko?"
+msgstr[2] "Ali želite namestiti ti datoteki?"
+msgstr[3] "Ali želite namestiti te datoteke?"
+
+#: Sentinel/PkInstallPackageFiles.cpp:105
+#, fuzzy
+#| msgctxt "The role of the transaction, in present tense"
+#| msgid "Installing file"
+msgid "Installation Complete"
+msgstr "Nameščanje datoteke"
+
+#: Sentinel/PkInstallPackageFiles.cpp:106
+msgid "File was installed successfully"
+msgid_plural "Files were installed successfully"
+msgstr[0] "Datoteke so bile uspešno nameščene"
+msgstr[1] "Datoteka je bila uspešno nameščena"
+msgstr[2] "Datoteki sta bili uspešno nameščeni"
+msgstr[3] "Datoteke so bile uspešno nameščene"
+
+#: Sentinel/PkInstallPackageFiles.cpp:117
+#, fuzzy
+#| msgid "Failed to install file"
+#| msgid_plural "Failed to install files"
+msgid "Failed to install files"
+msgstr "Datotek ni bilo moč namestiti"
+
+#: Sentinel/PkInstallPackageFiles.cpp:118
+#: Sentinel/PkInstallPackageFiles.cpp:120
+#, fuzzy
+#| msgid "Failed to install file"
+#| msgid_plural "Failed to install files"
+msgid "Could not install files"
+msgstr "Datotek ni bilo moč namestiti"
+
 #: Sentinel/SessionTask.cpp:66 libapper/Requirements.cpp:44
+#: AppSetup/SetupWizard.cpp:139
 msgid "Continue"
 msgstr "Nadaljuj"
 
@@ -1089,6 +1131,76 @@ msgstr "Nadomeščeno"
 msgid "All operations were committed successfully"
 msgstr "Datoteke so bile uspešno nameščene"
 
+#: Sentinel/UpdateIcon.cpp:115
+msgid "Review Updates"
+msgstr "Pregled posodobitev"
+
+#: Sentinel/UpdateIcon.cpp:118
+msgid "Configure"
+msgstr "Nastavi"
+
+#. i18n: file: ApperKCM/PackageDetails.ui:359
+#. i18n: ectx: property (text), widget (QToolButton, hideTB)
+#. i18n: file: ApperKCM/Updater/UpdateDetails.ui:20
+#. i18n: ectx: property (text), widget (QToolButton, hideTB)
+#: Sentinel/UpdateIcon.cpp:122 Sentinel/TransactionWatcher.cpp:186
+#: libapper/PkTransactionDialog.cpp:86 rc.cpp:137 rc.cpp:173
+msgid "Hide"
+msgstr "Skrij"
+
+#: Sentinel/UpdateIcon.cpp:132
+#, kde-format
+msgid "You have one update"
+msgid_plural "You have %1 updates"
+msgstr[0] "Na voljo je %1 posodobitev"
+msgstr[1] "Na voljo je %1 posodobitev"
+msgstr[2] "Na voljo sta %1 posodobitvi"
+msgstr[3] "Na voljo so %1 posodobitve"
+
+#: Sentinel/UpdateIcon.cpp:192
+msgid "Updates are being automatically installed."
+msgstr "Posodobitve se samodejno nameščajo"
+
+#: Sentinel/UpdateIcon.cpp:213
+msgid "Security updates are being automatically installed."
+msgstr "Varnostne posodobitve se samodejno nameščajo"
+
+#: Sentinel/UpdateIcon.cpp:240
+msgid "System update was successful."
+msgstr "Posodobitev sistema je bila uspešna."
+
+#: Sentinel/UpdateIcon.cpp:249
+msgid "The automated software update failed."
+msgstr "Samodejna posodobitev programov ni uspela."
+
+#: Sentinel/PkIsInstalled.cpp:36
+#, fuzzy
+#| msgid "The package is not installed"
+msgid "Querying if a Package is Installed"
+msgstr "Paket ni nameščen"
+
+#: Sentinel/PkIsInstalled.cpp:67
+msgid "User canceled the transaction"
+msgstr "Uporabnik je preklical prenos"
+
+#: Sentinel/PkIsInstalled.cpp:69
+msgid "An unknown error happened"
+msgstr "Prišlo je do neznane napake"
+
+#: Sentinel/TransactionTrayIcon.cpp:45
+msgid "Transactions"
+msgstr "Prenosi"
+
+#: Sentinel/TransactionTrayIcon.cpp:90
+#, kde-format
+msgid "%1% - %2"
+msgstr "%1 % – %2"
+
+#: Sentinel/TransactionTrayIcon.cpp:92
+#, kde-format
+msgid "%1"
+msgstr "%1"
+
 #: Sentinel/TransactionWatcher.cpp:66 Sentinel/TransactionWatcher.cpp:265
 msgid "Hide this icon"
 msgstr "Skrij to ikono"
@@ -1137,34 +1249,6 @@ msgstr "Prikaži sporočila"
 #: Sentinel/TransactionWatcher.cpp:308
 msgid "Ignore"
 msgstr "Prezri"
-
-#: Sentinel/PkIsInstalled.cpp:36
-#, fuzzy
-#| msgid "The package is not installed"
-msgid "Querying if a Package is Installed"
-msgstr "Paket ni nameščen"
-
-#: Sentinel/PkIsInstalled.cpp:67
-msgid "User canceled the transaction"
-msgstr "Uporabnik je preklical prenos"
-
-#: Sentinel/PkIsInstalled.cpp:69
-msgid "An unknown error happened"
-msgstr "Prišlo je do neznane napake"
-
-#: Sentinel/TransactionTrayIcon.cpp:45
-msgid "Transactions"
-msgstr "Prenosi"
-
-#: Sentinel/TransactionTrayIcon.cpp:90
-#, kde-format
-msgid "%1% - %2"
-msgstr "%1 % – %2"
-
-#: Sentinel/TransactionTrayIcon.cpp:92
-#, kde-format
-msgid "%1"
-msgstr "%1"
 
 #: Sentinel/PkInstallPlasmaResources.cpp:40
 #, fuzzy
@@ -1317,77 +1401,6 @@ msgstr "Uveljavi nastavitve"
 msgid "Trever Fischer"
 msgstr "Trever Fischer"
 
-#: Sentinel/PkInstallPackageFiles.cpp:38
-#, fuzzy
-#| msgid "Install Packages"
-msgid "Install Packages Files"
-msgstr "Namesti pakete"
-
-#: Sentinel/PkInstallPackageFiles.cpp:42
-#: Sentinel/PkRemovePackageByFiles.cpp:43
-msgid "You can drop more files in here"
-msgstr ""
-
-#: Sentinel/PkInstallPackageFiles.cpp:52
-#, fuzzy
-#| msgid "Not supported"
-msgid "Not Supported"
-msgstr "Ni podprto"
-
-#: Sentinel/PkInstallPackageFiles.cpp:53
-#, fuzzy
-#| msgid "Current backend does not support installing packages."
-msgid "Your current backend does not support installing files"
-msgstr "Trenutna hrbtenica ne podpira nameščanja paketov."
-
-#: Sentinel/PkInstallPackageFiles.cpp:68
-#: Sentinel/PkRemovePackageByFiles.cpp:64
-#, fuzzy
-#| msgid "No files were found."
-msgid "No supported files were provided"
-msgstr "Najdene ne bilo nobene datoteke."
-
-#: Sentinel/PkInstallPackageFiles.cpp:70
-#, fuzzy
-#| msgid "Do you want to install this file?"
-#| msgid_plural "Do you want to install these files?"
-msgid "Press <i>Continue</i> if you want to install this file"
-msgid_plural "Press <i>Continue</i> if you want to install these files"
-msgstr[0] "Ali želite namestiti te datoteke?"
-msgstr[1] "Ali želite namestiti to datoteko?"
-msgstr[2] "Ali želite namestiti ti datoteki?"
-msgstr[3] "Ali želite namestiti te datoteke?"
-
-#: Sentinel/PkInstallPackageFiles.cpp:105
-#, fuzzy
-#| msgctxt "The role of the transaction, in present tense"
-#| msgid "Installing file"
-msgid "Installation Complete"
-msgstr "Nameščanje datoteke"
-
-#: Sentinel/PkInstallPackageFiles.cpp:106
-msgid "File was installed successfully"
-msgid_plural "Files were installed successfully"
-msgstr[0] "Datoteke so bile uspešno nameščene"
-msgstr[1] "Datoteka je bila uspešno nameščena"
-msgstr[2] "Datoteki sta bili uspešno nameščeni"
-msgstr[3] "Datoteke so bile uspešno nameščene"
-
-#: Sentinel/PkInstallPackageFiles.cpp:117
-#, fuzzy
-#| msgid "Failed to install file"
-#| msgid_plural "Failed to install files"
-msgid "Failed to install files"
-msgstr "Datotek ni bilo moč namestiti"
-
-#: Sentinel/PkInstallPackageFiles.cpp:118
-#: Sentinel/PkInstallPackageFiles.cpp:120
-#, fuzzy
-#| msgid "Failed to install file"
-#| msgid_plural "Failed to install files"
-msgid "Could not install files"
-msgstr "Datotek ni bilo moč namestiti"
-
 #: Sentinel/PkRemovePackageByFiles.cpp:40
 #, fuzzy
 #| msgid "Remove Packages"
@@ -1494,6 +1507,14 @@ msgstr "Iskal podrobnosti paketa"
 #: Sentinel/PkSearchFile.cpp:80
 msgid "The file name could not be found in any software source"
 msgstr "Datoteke ni bilo moč najti v nobenem viru programske opreme"
+
+#: Sentinel/DistroUpgrade.cpp:69
+msgid "Start upgrade now"
+msgstr "Nadgradi sedaj"
+
+#: Sentinel/DistroUpgrade.cpp:114
+msgid "Distribution upgrade finished. "
+msgstr "Nadgradnja distribucije je zaključena. "
 
 #: Sentinel/PkInstallFontconfigResources.cpp:41
 #, fuzzy
@@ -1655,6 +1676,54 @@ msgstr "Najdene ne bilo nobene datoteke."
 msgid "Could not find plugin in any configured software source"
 msgstr ""
 "Vstavka ni bilo moč najti v nobenem nastavljenem viru programske opreme"
+
+#: libapper/PackageModel.cpp:182
+#, fuzzy
+#| msgctxt "The group type"
+#| msgid "Games"
+msgid "Name"
+msgstr "Igre"
+
+#: libapper/PackageModel.cpp:184 libapper/SimulateModel.cpp:141
+msgid "Version"
+msgstr "Različica"
+
+#: libapper/PackageModel.cpp:186
+#, fuzzy
+#| msgctxt "The role of the transaction, in past tense"
+#| msgid "Installed signature"
+msgid "Installed Version"
+msgstr "Namestil podpis"
+
+#: libapper/PackageModel.cpp:188
+msgid "Arch"
+msgstr ""
+
+#: libapper/PackageModel.cpp:190
+#, fuzzy
+#| msgid "Edit Origins"
+msgid "Origin"
+msgstr "Urejanje virov"
+
+#: libapper/PackageModel.cpp:192
+msgid "Size"
+msgstr ""
+
+#: libapper/PackageModel.cpp:283
+#, fuzzy, kde-format
+#| msgid "Architectures"
+msgid ""
+"Version: %1\n"
+"Architecture: %2"
+msgstr "Arhitekture"
+
+#: libapper/PackageModel.cpp:329
+msgid "To be Removed"
+msgstr "Za odstraniti"
+
+#: libapper/PackageModel.cpp:331
+msgid "To be Installed"
+msgstr "Za namestiti"
 
 #: libapper/ChangesDelegate.cpp:45
 #, fuzzy
@@ -2513,7 +2582,7 @@ msgstr "Paket ni združljiv s sistemom"
 msgid "No space is left on the disk"
 msgstr "Na disku je zmanjkalo prostora"
 
-#: libapper/PkStrings.cpp:477 libapper/PkTransaction.cpp:579
+#: libapper/PkStrings.cpp:477 libapper/PkTransaction.cpp:581
 msgid "A media change is required"
 msgstr "Potrebna je zamenjava nosilca"
 
@@ -3513,6 +3582,97 @@ msgstr "Ni moč komunicirati s packagekitd."
 msgid "An unknown error happened."
 msgstr "Prišlo je do neznane napake."
 
+#: libapper/PkTransaction.cpp:123
+#, fuzzy
+#| msgid "Failed to simulate package install"
+msgid "Failed to simulate file install"
+msgstr "Simulacija nameščanja paketov ni uspela"
+
+#: libapper/PkTransaction.cpp:130
+#, fuzzy
+#| msgid "Current backend does not support installing packages."
+msgid "Current backend does not support installing files."
+msgstr "Trenutna hrbtenica ne podpira nameščanja paketov."
+
+#: libapper/PkTransaction.cpp:130 libapper/PkTransaction.cpp:154
+#: libapper/PkTransaction.cpp:180 libapper/PkTransaction.cpp:203
+#: AppSetup/SetupWizard.cpp:107
+msgid "Error"
+msgstr ""
+
+#: libapper/PkTransaction.cpp:147
+msgid "Failed to simulate package install"
+msgstr "Simulacija nameščanja paketov ni uspela"
+
+#: libapper/PkTransaction.cpp:154
+msgid "Current backend does not support installing packages."
+msgstr "Trenutna hrbtenica ne podpira nameščanja paketov."
+
+#: libapper/PkTransaction.cpp:172
+msgid "Failed to simulate package removal"
+msgstr "Simulacija odstranjevanja paketov ni uspela"
+
+#: libapper/PkTransaction.cpp:180
+msgid "The current backend does not support removing packages."
+msgstr "Trenutna hrbtenica ne podpira odstranjevanja paketov."
+
+#: libapper/PkTransaction.cpp:196
+#, fuzzy
+#| msgid "Failed to simulate package removal"
+msgid "Failed to simulate package update"
+msgstr "Simulacija odstranjevanja paketov ni uspela"
+
+#: libapper/PkTransaction.cpp:203
+#, fuzzy
+#| msgid "The current backend does not support removing packages."
+msgid "The current backend does not support updating packages."
+msgstr "Trenutna hrbtenica ne podpira odstranjevanja paketov."
+
+#: libapper/PkTransaction.cpp:214
+#, fuzzy
+#| msgid "Failed to remove package"
+msgid "Failed to refresh package cache"
+msgstr "Paketa ni bilo moč odstraniti"
+
+#: libapper/PkTransaction.cpp:256
+msgid "Failed to install package"
+msgstr "Paketa ni bilo moč namestiti"
+
+#: libapper/PkTransaction.cpp:281
+msgid "Failed to remove package"
+msgstr "Paketa ni bilo moč odstraniti"
+
+#: libapper/PkTransaction.cpp:293
+#, fuzzy
+#| msgid "Failed to find package"
+msgid "Failed to update package"
+msgstr "Paketa ni bilo moč najti"
+
+#: libapper/PkTransaction.cpp:461
+#, kde-format
+msgid "Downloading packages at %1/s"
+msgstr "Prejemanje paketov z %1/s"
+
+#: libapper/PkTransaction.cpp:509
+msgid ""
+"You are about to install unsigned packages that can compromise your system, "
+"as it is impossible to verify if the software came from a trusted source.\n"
+"\n"
+"Are you sure you want to proceed with the installation?"
+msgstr ""
+"Ste pred namestitvijo nepodpisanih paketov, ki lahko ogrozijo vaš sistem, "
+"ker je nemogoče preveriti, ali program prihaja iz zaupanja vrednega vira.\n"
+"\n"
+"Ali res želite nadaljevati z nameščanjem?"
+
+#: libapper/PkTransaction.cpp:512
+msgid "Installing unsigned software"
+msgstr "Nameščanje nepodpisanih programov"
+
+#: libapper/PkTransaction.cpp:566 libapper/PkTransaction.cpp:620
+msgid "Failed to install signature"
+msgstr "Nameščanje podpisa ni uspelo"
+
 #: libapper/PkTransactionDialog.cpp:88
 msgid ""
 "Allows you to hide the window whilst keeping the transaction task running."
@@ -3521,10 +3681,6 @@ msgstr "Vam omogoča skriti okno, medtem ko prenos teče dalje."
 #: libapper/SimulateModel.cpp:139
 msgid "Package"
 msgstr "Paket"
-
-#: libapper/SimulateModel.cpp:141 libapper/PackageModel.cpp:184
-msgid "Version"
-msgstr "Različica"
 
 #: libapper/ApplicationLauncher.cpp:95
 #, fuzzy
@@ -3553,50 +3709,6 @@ msgstr "Potrebno sprejetje licence"
 #, kde-format
 msgid "License required for %1 by %2"
 msgstr "Licenca je potrebna za %1 od %2"
-
-#: libapper/PackageModel.cpp:182
-#, fuzzy
-#| msgctxt "The group type"
-#| msgid "Games"
-msgid "Name"
-msgstr "Igre"
-
-#: libapper/PackageModel.cpp:186
-#, fuzzy
-#| msgctxt "The role of the transaction, in past tense"
-#| msgid "Installed signature"
-msgid "Installed Version"
-msgstr "Namestil podpis"
-
-#: libapper/PackageModel.cpp:188
-msgid "Arch"
-msgstr ""
-
-#: libapper/PackageModel.cpp:190
-#, fuzzy
-#| msgid "Edit Origins"
-msgid "Origin"
-msgstr "Urejanje virov"
-
-#: libapper/PackageModel.cpp:192
-msgid "Size"
-msgstr ""
-
-#: libapper/PackageModel.cpp:283
-#, fuzzy, kde-format
-#| msgid "Architectures"
-msgid ""
-"Version: %1\n"
-"Architecture: %2"
-msgstr "Arhitekture"
-
-#: libapper/PackageModel.cpp:329
-msgid "To be Removed"
-msgstr "Za odstraniti"
-
-#: libapper/PackageModel.cpp:331
-msgid "To be Installed"
-msgstr "Za namestiti"
 
 #: libapper/Requirements.cpp:42
 msgid "Additional changes"
@@ -3647,96 +3759,6 @@ msgstr[1] "%1 paket za posodobiti"
 msgstr[2] "%1 paketa za posodobiti"
 msgstr[3] "%1 paketi za posodobiti"
 
-#: libapper/PkTransaction.cpp:122
-#, fuzzy
-#| msgid "Failed to simulate package install"
-msgid "Failed to simulate file install"
-msgstr "Simulacija nameščanja paketov ni uspela"
-
-#: libapper/PkTransaction.cpp:129
-#, fuzzy
-#| msgid "Current backend does not support installing packages."
-msgid "Current backend does not support installing files."
-msgstr "Trenutna hrbtenica ne podpira nameščanja paketov."
-
-#: libapper/PkTransaction.cpp:129 libapper/PkTransaction.cpp:153
-#: libapper/PkTransaction.cpp:179 libapper/PkTransaction.cpp:202
-msgid "Error"
-msgstr ""
-
-#: libapper/PkTransaction.cpp:146
-msgid "Failed to simulate package install"
-msgstr "Simulacija nameščanja paketov ni uspela"
-
-#: libapper/PkTransaction.cpp:153
-msgid "Current backend does not support installing packages."
-msgstr "Trenutna hrbtenica ne podpira nameščanja paketov."
-
-#: libapper/PkTransaction.cpp:171
-msgid "Failed to simulate package removal"
-msgstr "Simulacija odstranjevanja paketov ni uspela"
-
-#: libapper/PkTransaction.cpp:179
-msgid "The current backend does not support removing packages."
-msgstr "Trenutna hrbtenica ne podpira odstranjevanja paketov."
-
-#: libapper/PkTransaction.cpp:195
-#, fuzzy
-#| msgid "Failed to simulate package removal"
-msgid "Failed to simulate package update"
-msgstr "Simulacija odstranjevanja paketov ni uspela"
-
-#: libapper/PkTransaction.cpp:202
-#, fuzzy
-#| msgid "The current backend does not support removing packages."
-msgid "The current backend does not support updating packages."
-msgstr "Trenutna hrbtenica ne podpira odstranjevanja paketov."
-
-#: libapper/PkTransaction.cpp:213
-#, fuzzy
-#| msgid "Failed to remove package"
-msgid "Failed to refresh package cache"
-msgstr "Paketa ni bilo moč odstraniti"
-
-#: libapper/PkTransaction.cpp:251
-msgid "Failed to install package"
-msgstr "Paketa ni bilo moč namestiti"
-
-#: libapper/PkTransaction.cpp:276
-msgid "Failed to remove package"
-msgstr "Paketa ni bilo moč odstraniti"
-
-#: libapper/PkTransaction.cpp:288
-#, fuzzy
-#| msgid "Failed to find package"
-msgid "Failed to update package"
-msgstr "Paketa ni bilo moč najti"
-
-#: libapper/PkTransaction.cpp:459
-#, kde-format
-msgid "Downloading packages at %1/s"
-msgstr "Prejemanje paketov z %1/s"
-
-#: libapper/PkTransaction.cpp:507
-msgid ""
-"You are about to install unsigned packages that can compromise your system, "
-"as it is impossible to verify if the software came from a trusted source.\n"
-"\n"
-"Are you sure you want to proceed with the installation?"
-msgstr ""
-"Ste pred namestitvijo nepodpisanih paketov, ki lahko ogrozijo vaš sistem, "
-"ker je nemogoče preveriti, ali program prihaja iz zaupanja vrednega vira.\n"
-"\n"
-"Ali res želite nadaljevati z nameščanjem?"
-
-#: libapper/PkTransaction.cpp:510
-msgid "Installing unsigned software"
-msgstr "Nameščanje nepodpisanih programov"
-
-#: libapper/PkTransaction.cpp:564 libapper/PkTransaction.cpp:618
-msgid "Failed to install signature"
-msgstr "Nameščanje podpisa ni uspelo"
-
 #. i18n: file: libapper/RepoSig.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, RepoSig)
 #: libapper/RepoSig.cpp:40 rc.cpp:218
@@ -3750,6 +3772,164 @@ msgstr "Namesti"
 #: libapper/ApplicationsDelegate.cpp:42
 msgid "Remove"
 msgstr "Odstrani"
+
+#: AppSetup/main.cpp:34 AppSetup/main.cpp:35
+#, fuzzy
+#| msgid "Application"
+msgid "KDE Application Installer"
+msgstr "Program"
+
+#: AppSetup/main.cpp:36
+msgid "(C) 2012, Matthias Klumpp"
+msgstr ""
+
+#: AppSetup/main.cpp:38
+#, fuzzy
+#| msgid "Daniel Nicoletti"
+msgctxt "@info:credit"
+msgid "Daniel Nicoletti"
+msgstr "Daniel Nicoletti"
+
+#: AppSetup/main.cpp:38 AppSetup/main.cpp:40
+#, fuzzy
+#| msgid "Development"
+msgid "Developer"
+msgstr "Razvojno"
+
+#: AppSetup/main.cpp:40
+msgctxt "@info:credit"
+msgid "Matthias Klumpp"
+msgstr ""
+
+#: AppSetup/main.cpp:47
+#, fuzzy
+#| msgctxt "transaction state, getting data from a server"
+#| msgid "Getting information"
+msgid "Show verbose information"
+msgstr "Pridobivanje podatkov"
+
+#: AppSetup/main.cpp:48
+#, fuzzy
+#| msgid "Invalid package file"
+msgid "IPK package filename"
+msgstr "Neveljavna datoteka paketa"
+
+#: AppSetup/main.cpp:75
+msgid "Sorry, we didn't get an existing IPK package as parameter."
+msgstr ""
+
+#: AppSetup/main.cpp:76
+#, fuzzy
+#| msgid "The package was not found"
+msgid "Package not found!"
+msgstr "Paketa ni bilo moč najti"
+
+#: AppSetup/SetupWizard.cpp:92
+#, fuzzy
+#| msgctxt "The role of the transaction, in present tense"
+#| msgid "Installing file"
+msgid "Installation finished!"
+msgstr "Nameščanje datoteke"
+
+#: AppSetup/SetupWizard.cpp:93
+#, fuzzy, kde-format
+#| msgid "File was installed successfully"
+#| msgid_plural "Files were installed successfully"
+msgid "%1 has been installed successfully!"
+msgstr "Datoteke so bile uspešno nameščene"
+
+#: AppSetup/SetupWizard.cpp:108
+#, fuzzy
+#| msgid "An internal system error has occurred"
+msgid "An error occurred"
+msgstr "Prišlo je do notranje sistemske napake"
+
+#. i18n: file: ApperKCM/ApperKCM.ui:281
+#. i18n: ectx: property (text), widget (QToolButton, backTB)
+#: AppSetup/SetupWizard.cpp:141 rc.cpp:197
+msgid "Back"
+msgstr "Nazaj"
+
+#: AppSetup/SetupWizard.cpp:196
+msgid "Welcome!"
+msgstr ""
+
+#: AppSetup/SetupWizard.cpp:197
+#, kde-format
+msgid "Welcome to the installation of %1!"
+msgstr ""
+
+#: AppSetup/SetupWizard.cpp:198
+msgid ""
+"Please be careful while installing 3rd-party applications.<br>They may "
+"eventually <b>damage</b> your system or have <b>malicious behaviour</b>, "
+"like spying out your passwords.<br>Please do only install this software if "
+"you <b>trust the publisher and the author</b> of it."
+msgstr ""
+
+#: AppSetup/SetupWizard.cpp:208
+msgid "Details about this installation"
+msgstr ""
+
+#: AppSetup/SetupWizard.cpp:235
+msgid "Install for all users (as root)"
+msgstr ""
+
+#: AppSetup/SetupWizard.cpp:242
+#, fuzzy
+#| msgid "Applications"
+msgid "Application description"
+msgstr "Programi"
+
+#: AppSetup/SetupWizard.cpp:251
+#, fuzzy
+#| msgctxt "The group type"
+#| msgid "Software sources"
+msgid "Software license"
+msgstr "Izvorna koda"
+
+#: AppSetup/SetupWizard.cpp:252
+#, fuzzy
+#| msgid "Please read the following important information before continuing:"
+msgid "Please read the following terms and conditions carefully!"
+msgstr "Pred nadaljevanjem si preberite naslednje pomembne informacije:"
+
+#: AppSetup/SetupWizard.cpp:259
+#, fuzzy
+#| msgctxt "transaction state, scanning for running processes"
+#| msgid "Scanning installed applications"
+msgid "Running installation"
+msgstr "Pregledovanje nameščenih programov"
+
+#: AppSetup/SetupWizard.cpp:260
+#, fuzzy, kde-format
+#| msgid "Installing"
+msgid "Installing %1..."
+msgstr "Nameščanje"
+
+#: AppSetup/SetupWizard.cpp:297
+msgid ""
+"Installing this package will make the following native packages obsolete. "
+"You might consider removing them manually."
+msgstr ""
+
+#: AppSetup/SetupWizard.cpp:298
+#, fuzzy
+#| msgid "Simulate Update Packages"
+msgid "Similar native packages found"
+msgstr "Simuliraj posodabljanje paketov"
+
+#: AppSetup/SetupWizard.cpp:364
+msgid ""
+"You want to install this application as root!\n"
+"This can damage your system or install malicious software for all users.\n"
+"Please only proceed, if you really know what you're doing!\n"
+"Continue?"
+msgstr ""
+
+#: AppSetup/SetupWizard.cpp:367
+msgid "Really install as superuser?"
+msgstr ""
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
@@ -4099,12 +4279,6 @@ msgstr "Iskanje paketov"
 msgid "Pending Changes"
 msgstr "Čakajoče spremembe"
 
-#. i18n: file: ApperKCM/ApperKCM.ui:281
-#. i18n: ectx: property (text), widget (QToolButton, backTB)
-#: rc.cpp:197
-msgid "Back"
-msgstr "Nazaj"
-
 #. i18n: file: Sentinel/IntroDialog.ui:65
 #. i18n: ectx: property (text), widget (QLabel, descriptionL)
 #: rc.cpp:209
@@ -4182,6 +4356,18 @@ msgstr "ikona"
 #: rc.cpp:248
 msgid "Downloading Packages"
 msgstr "Prejemanje paketov"
+
+#. i18n: file: AppSetup/LicensePage.ui:98
+#. i18n: ectx: property (text), widget (QRadioButton, acceptedRB)
+#: rc.cpp:251
+msgid "I agree to the above terms and conditions"
+msgstr ""
+
+#. i18n: file: AppSetup/LicensePage.ui:111
+#. i18n: ectx: property (text), widget (QRadioButton, rejectedRB)
+#: rc.cpp:254
+msgid "I don't agree"
+msgstr ""
 
 
 

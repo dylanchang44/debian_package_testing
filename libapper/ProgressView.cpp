@@ -52,8 +52,8 @@ ProgressView::ProgressView(QWidget *parent)
             this, SLOT(followBottom(int)));
     connect(m_scrollBar, SIGNAL(valueChanged(int)),
             this, SLOT(followBottom(int)));
-    connect(m_scrollBar, SIGNAL(rangeChanged(int, int)),
-            this, SLOT(rangeChanged(int, int)));
+    connect(m_scrollBar, SIGNAL(rangeChanged(int,int)),
+            this, SLOT(rangeChanged(int,int)));
 
     KConfig config("apper");
     KConfigGroup transactionDialog(&config, "TransactionDialog");
@@ -100,9 +100,10 @@ void ProgressView::handleRepo(bool handle) {
     }
 }
 
-void ProgressView::currentRepo(const QString &repoId, const QString &description)
+void ProgressView::currentRepo(const QString &repoId, const QString &description, bool enabled)
 {
     Q_UNUSED(repoId)
+    Q_UNUSED(enabled)
     QStandardItem *item = new QStandardItem(description);
     m_model->appendRow(item);
 }
