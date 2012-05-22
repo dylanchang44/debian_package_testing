@@ -5,6 +5,7 @@
 #export DH_VERBOSE=1
 
 APPER_CONFIG_FLAGS = -DDEBCONF_SUPPORT=true \
+		-DLISTALLER=ON \
 		-DEDIT_ORIGNS_DESKTOP_NAME=software-properties-kde
 
 INSTALLDIR = $(CURDIR)/debian/tmp
@@ -18,8 +19,8 @@ override_dh_auto_configure:
 	dh_auto_configure -Skde -- $(APPER_CONFIG_FLAGS)
 
 override_dh_auto_install:
-	docbook2x-man $(CURDIR)/debian/apper.1.docbook
 	dh_auto_install --destdir=$(INSTALLDIR)
+
 	# Fix file conflict between GPK and Apper
 	mv $(INSTALLDIR)/usr/share/dbus-1/services/org.freedesktop.PackageKit.service $(INSTALLDIR)/usr/share/dbus-1/services/kde-org.freedesktop.PackageKit.service
 	# Stupid hack to work around cmake rpath bug
