@@ -1,0 +1,3 @@
+# This is a false-positive for animations.
+# Bug reported as bug #673862
+apper-data binary: icon-size-and-directory-name-mismatch
