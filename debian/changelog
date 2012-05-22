@@ -1,4 +1,4 @@
-apper (0.7.2-1) UNRELEASED; urgency=low
+apper (0.7.2-1) unstable; urgency=low
 
   * New upstream release: 0.7.2
     - Automatic Refresh Cache properly fixed
@@ -12,9 +12,11 @@ apper (0.7.2-1) UNRELEASED; urgency=low
   * Updated debian/copyright
   * Switch to compat-level 9
   * Updated watch file
-  * Split out separate apper-data package
+  * Split out arch-indep apper-data package
   * Add apper-appsetup package for Listaller modules
   * Remove old replacement for KPackageKit: No longer required
+  * Removed manpages: Pages are upstream now
+  * Override lintian false-positive about icon-sizes
 
  -- Matthias Klumpp <matthias@tenstral.net>  Tue, 22 May 2012 10:45:24 +0200
 

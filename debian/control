@@ -41,7 +41,7 @@ Description: KDE package management tool using PackageKit
 
 Package: apper-appsetup
 Architecture: any
-Depends: apper (>= ${source:Version}),
+Depends: apper (= ${binary:Version}),
          listaller (>= 0.5.4),
          ${misc:Depends},
          ${shlibs:Depends}
