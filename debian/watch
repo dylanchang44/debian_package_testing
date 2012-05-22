@@ -1,3 +1,5 @@
 version=3
-https://launchpad.net/apper/+download \
- http://launchpad\.net/apper/.+/.+/\+download/apper-(.+)\.tar\.gz
+
+opts=pasv \
+  ftp://ftp.kde.org/pub/kde/stable/apper/([\d\.]+)/src/apper-([\d\.]+)\.tar\.bz2 \
+  debian git-import-orig
