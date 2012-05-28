@@ -17,6 +17,7 @@ apper (0.7.2-1) unstable; urgency=low
   * Remove old replacement for KPackageKit: No longer required
   * Removed manpages: Pages are upstream now
   * Override lintian false-positive about icon-sizes
+  * Allow DM upload
 
  -- Matthias Klumpp <matthias@tenstral.net>  Tue, 22 May 2012 10:45:24 +0200
 
