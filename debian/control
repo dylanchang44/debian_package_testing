@@ -56,6 +56,8 @@ Description: Extended Listaller support for Apper
 
 Package: apper-data
 Architecture: all
+Replaces: apper (<< 0.7.1-1)
+Breaks: apper (<< 0.7.1-1)
 Depends: ${misc:Depends}
 Description: KDE package management tool using PackageKit (data files)
  PackageKit allows performing simple software management tasks over a DBus

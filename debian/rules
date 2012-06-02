@@ -30,9 +30,6 @@ override_dh_auto_install:
 override_dh_install:
 	dh_install --list-missing
 
-override_dh_auto_clean:
-	rm -f apper.1
-
 fetch_translations:
 	mkdir -p po
 	cd po; svn export svn://anonsvn.kde.org/home/kde/trunk/l10n-kde4/subdirs
