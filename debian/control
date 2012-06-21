@@ -26,9 +26,9 @@ Depends: apper-data (>= ${source:Version}),
          polkit-kde-1 | policykit-1-gnome,
          ${misc:Depends},
          ${shlibs:Depends}
-Recommends: app-install-data,
-            apper-appsetup
-Suggests: debconf-kde-helper,
+Recommends: app-install-data
+Suggests: apper-appsetup,
+          debconf-kde-helper,
           software-properties-kde
 Description: KDE package management tool using PackageKit
  PackageKit allows performing simple software management tasks over a DBus
