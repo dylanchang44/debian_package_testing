@@ -1,3 +1,9 @@
+apper (0.7.2-5) unstable; urgency=low
+
+  * Make Apper listen to restart-requests of other Apt tools too
+
+ -- Matthias Klumpp <matthias@tenstral.net>  Wed, 07 Nov 2012 16:31:13 +0100
+
 apper (0.7.2-4) unstable; urgency=low
 
   * Suggest appsetup-support, it's only a tech-preview for Wheezy
