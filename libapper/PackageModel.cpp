@@ -23,11 +23,10 @@
 #include <config.h>
 
 #include "PackageModel.h"
-
-#include <AppInstall.h>
 #include <PkStrings.h>
 
 #include <QPainter>
+#include <QStringBuilder>
 
 #include <KIconLoader>
 #include <KDebug>
@@ -35,15 +34,14 @@
 #include <KLocale>
 #include <KCategorizedSortFilterProxyModel>
 
-#ifndef HAVE_APPINSTALL
+#ifdef HAVE_APPSTREAM
+#include <AppStream/AppStreamDb.h>
+#endif
+
+#ifndef HAVE_APPSTREAM
 #include <QSqlDatabase>
 #include <QSqlQuery>
 #endif
-
-#define APP_NAME    0
-#define APP_SUMMARY 1
-#define APP_ICON    2
-#define APP_ID      3
 
 #define ICON_SIZE 22
 #define OVERLAY_SIZE 16
@@ -52,44 +50,76 @@ using namespace PackageKit;
 
 PackageModel::PackageModel(QObject *parent)
 : QAbstractItemModel(parent),
-  m_packageCount(0),
+  m_finished(false),
   m_checkable(false),
   m_fetchSizesTransaction(0),
   m_fetchInstalledVersionsTransaction(0)
 {
     m_installedEmblem = PkIcons::getIcon("dialog-ok-apply", QString()).pixmap(16, 16);
+
+    QHash<int, QByteArray> roles = roleNames();
+    roles[SortRole] = "rSort";
+    roles[NameRole] = "rName";
+    roles[SummaryRole] = "rSummary";
+    roles[VersionRole] = "rVersion";
+    roles[ArchRole] = "rArch";
+    roles[IconRole] = "rIcon";
+    roles[IdRole] = "rId";
+    roles[CheckStateRole] = "rChecked";
+    roles[InfoRole] = "rInfo";
+    roles[ApplicationId] = "rApplicationId";
+    roles[IsPackageRole] = "rIsPackageRole";
+    roles[PackageName] = "rPackageName";
+    roles[InfoIconRole] = "rInfoIcon";
+    setRoleNames(roles);
 }
 
-void PackageModel::addPackage(const PackageKit::Package &package, bool selected)
+void PackageModel::addSelectedPackagesFromModel(PackageModel *model)
 {
-    if (package.info() == Package::InfoBlocked) {
+    QList<InternalPackage> packages = model->internalSelectedPackages();
+    foreach (const InternalPackage &package, packages) {
+        addPackage(package.info, package.packageID, package.summary, true);
+    }
+    finished();
+}
+
+void PackageModel::addPackage(Transaction::Info info, const QString &packageID, const QString &summary, bool selected)
+{
+    switch(info) {
+    case Transaction::InfoBlocked:
+    case Transaction::InfoFinished:
+    case Transaction::InfoCleanup:
         return;
+    default:
+        break;
     }
 
-#ifdef HAVE_APPINSTALL
-    QList<QStringList> data;
+#ifdef HAVE_APPSTREAM
+    QList<AppStreamDb::Application> applications;
     if (!m_checkable) {
-        data = AppInstall::instance()->applications(package.name());
+        applications = AppStreamDb::instance()->applications(Transaction::packageName(packageID));
 
-        foreach (const QStringList &list, data) {
+        foreach (const AppStreamDb::Application &app, applications) {
             InternalPackage iPackage;
-            iPackage.isPackage   = false;
-            iPackage.name        = list.at(AppInstall::AppName);
-            if (iPackage.name.isEmpty()) {
-                iPackage.name = package.name();
+            iPackage.info = info;
+            iPackage.packageID = packageID;
+            iPackage.version = Transaction::packageVersion(packageID);
+            iPackage.arch = Transaction::packageArch(packageID);
+            iPackage.repo = Transaction::packageData(packageID);
+            iPackage.isPackage = false;
+            if (app.name.isEmpty()) {
+                iPackage.displayName = Transaction::packageName(packageID);
+            } else {
+                iPackage.displayName = app.name;
             }
-            iPackage.summary     = list.at(AppInstall::AppSummary);
-            if (iPackage.summary.isEmpty()) {
-                iPackage.summary = package.summary();
+            if (app.summary.isEmpty()) {
+                iPackage.summary = summary;
+            } else {
+                iPackage.summary = app.summary;
             }
-            iPackage.icon        = list.at(AppInstall::AppIcon);
-            iPackage.version     = package.version();
-            iPackage.arch        = package.arch();
-            iPackage.repo        = package.data();
-            iPackage.id          = package.id();
-            iPackage.appId       = list.at(AppInstall::AppId);
-            iPackage.info        = package.info();
-            iPackage.size        = 0;
+            iPackage.icon  = app.icon;
+            iPackage.appId = app.id;
+            iPackage.size  = 0;
 
             if (selected) {
                 checkPackage(iPackage, false);
@@ -98,25 +128,25 @@ void PackageModel::addPackage(const PackageKit::Package &package, bool selected)
         }
     }
 
-    if (data.isEmpty()) {
-#endif //HAVE_APPINSTALL
+    if (applications.isEmpty()) {
+#endif //HAVE_APPSTREAM
 
         InternalPackage iPackage;
-        iPackage.name    = package.name();
-        iPackage.summary = package.summary();
-        iPackage.version = package.version();
-        iPackage.arch    = package.arch();
-        iPackage.repo    = package.data();
-        iPackage.id      = package.id();
-        iPackage.info    = package.info();
-        iPackage.size    = 0;
+        iPackage.info = info;
+        iPackage.packageID = packageID;
+        iPackage.displayName = Transaction::packageName(packageID);
+        iPackage.version = Transaction::packageVersion(packageID);
+        iPackage.arch = Transaction::packageArch(packageID);
+        iPackage.repo = Transaction::packageData(packageID);
+        iPackage.summary = summary;
+        iPackage.size = 0;
 
-#ifdef HAVE_APPINSTALL
-        iPackage.icon = AppInstall::instance()->genericIcon(package.name());
+#ifdef HAVE_APPSTREAM
+        iPackage.icon = AppStreamDb::instance()->genericIcon(Transaction::packageName(packageID));
         if (m_checkable) {
             // in case of updates model only check if it's an app
-            data = AppInstall::instance()->applications(package.name());
-            if (!data.isEmpty() || !package.iconPath().isEmpty()) {
+            applications = AppStreamDb::instance()->applications(Transaction::packageName(packageID));
+            if (!applications.isEmpty() || !Transaction::packageIcon(packageID).isEmpty()) {
                 iPackage.isPackage = false;
             } else {
                 iPackage.isPackage = true;
@@ -125,7 +155,7 @@ void PackageModel::addPackage(const PackageKit::Package &package, bool selected)
             iPackage.isPackage = true;
         }
 #else
-        iPackage.icon = package.iconPath();
+        iPackage.icon = Transaction::packageIcon(packageID);
         if (iPackage.icon.isEmpty()) {
             iPackage.isPackage = true;
         } else {
@@ -133,7 +163,7 @@ void PackageModel::addPackage(const PackageKit::Package &package, bool selected)
             QSqlDatabase db = QSqlDatabase::database();
             QSqlQuery query(db);
             query.prepare("SELECT filename FROM cache WHERE package = :name");
-            query.bindValue(":name", iPackage.name);
+            query.bindValue(":name", Transaction::packageName(packageID));
             if (query.exec()) {
                 if (query.next()) {
                     QString filename = query.value(0).toString();
@@ -142,74 +172,73 @@ void PackageModel::addPackage(const PackageKit::Package &package, bool selected)
                 }
             }
         }
-#endif //HAVE_APPINSTALL
+#endif // HAVE_APPSTREAM
 
         if (selected) {
             checkPackage(iPackage, false);
         }
         m_packages.append(iPackage);
 
-#ifdef HAVE_APPINSTALL
+#ifdef HAVE_APPSTREAM
     }
-#endif //HAVE_APPINSTALL
+#endif // HAVE_APPSTREAM
 }
 
-void PackageModel::addPackages(const QList<Package> &packages,
-                                  bool selected)
+void PackageModel::addSelectedPackage(Transaction::Info info, const QString &packageID, const QString &summary)
 {
-    foreach(const Package &package, packages) {
-        addPackage(package, selected);
-    }
-    finished();
-}
-
-void PackageModel::addSelectedPackage(const PackageKit::Package &package)
-{
-    addPackage(package, true);
+    addPackage(info, packageID, summary, true);
 }
 
 QVariant PackageModel::headerData(int section, Qt::Orientation orientation, int role) const
 {
-    Q_UNUSED(orientation);
-
-    if (/*m_packageCount && */role == Qt::DisplayRole) {
-        if (section == NameCol) {
+    QVariant ret;
+    if (orientation == Qt::Horizontal && role == Qt::DisplayRole) {
+        switch (section) {
+        case NameCol:
             if (m_checkable) {
-                return PkStrings::packageQuantity(true,
-                                                   m_packages.size(),
-                                                   m_checkedPackages.size());
+                ret = PkStrings::packageQuantity(true,
+                                                 m_packages.size(),
+                                                 m_checkedPackages.size());
+            } else {
+                ret = i18n("Name");
             }
-            return i18n("Name");
-        } else if (section == VersionCol) {
-            return i18n("Version");
-        } else if (section == CurrentVersionCol) {
-            return i18n("Installed Version");
-        } else if (section == ArchCol) {
-            return i18n("Arch");
-        } else if (section == OriginCol) {
-            return i18n("Origin");
-        } else if (section == SizeCol) {
-            return i18n("Size");
-        } else if (section == ActionCol) {
-            return i18n("Action");
+            break;
+        case VersionCol:
+            ret = i18n("Version");
+            break;
+        case CurrentVersionCol:
+            ret = i18n("Installed Version");
+            break;
+        case ArchCol:
+            ret = i18n("Arch");
+            break;
+        case OriginCol:
+            ret = i18n("Origin");
+            break;
+        case SizeCol:
+            ret = i18n("Size");
+            break;
+        case ActionCol:
+            ret = i18n("Action");
+            break;
         }
     }
-    return QVariant();
+    return ret;
 }
 
 int PackageModel::rowCount(const QModelIndex &parent) const
 {
-    if (parent.isValid()) {
+    if (parent.isValid() || !m_finished) {
         return 0;
     }
-    return m_packageCount;
+    return m_packages.size();
 }
 
 QModelIndex PackageModel::index(int row, int column, const QModelIndex &parent) const
 {
 //   kDebug() << parent.isValid() << m_packageCount << row << column;
     // Check to see if the index isn't out of list
-    if (!parent.isValid() && m_packageCount > row) {
+    if (!parent.isValid() && m_packages.size() > row) {
         return createIndex(row, column);
     }
     return QModelIndex();
@@ -236,29 +265,34 @@ QVariant PackageModel::data(const QModelIndex &index, int role) const
                 return QVariant();
             }
         case CheckStateRole:
-            if (containsChecked(package.id)) {
+            if (containsChecked(package.packageID)) {
                 return Qt::Checked;
             }
             return Qt::Unchecked;
-        case ApplicationFilterRole:
-            // if we are an application return 'a', if package 'p'
-            return package.isPackage ? QString('p') : QString('a');
+        case IsPackageRole:
+            return package.isPackage;
         case Qt::DisplayRole:
-            return package.name;
+            return package.displayName;
         case Qt::DecorationRole:
         {
             QPixmap icon = QPixmap(44, ICON_SIZE);
             icon.fill(Qt::transparent);
-            if (!package.icon.isEmpty()) {
-                QPixmap pixmap = PkIcons::getIcon(package.icon, QString()).pixmap(ICON_SIZE, ICON_SIZE);
+            if (!package.icon.isNull()) {
+                QPixmap pixmap = KIconLoader::global()->loadIcon(package.icon,
+                                                                 KIconLoader::NoGroup,
+                                                                 ICON_SIZE,
+                                                                 KIconLoader::DefaultState,
+                                                                 QStringList(),
+                                                                 0L,
+                                                                 true);
                 if (!pixmap.isNull()) {
                     QPainter painter(&icon);
                     painter.drawPixmap(QPoint(2, 0), pixmap);
                 }
             }
 
-            if (package.info == Package::InfoInstalled ||
-                package.info == Package::InfoCollectionInstalled) {
+            if (package.info == Transaction::InfoInstalled ||
+                package.info == Transaction::InfoCollectionInstalled) {
                 QPainter painter(&icon);
                 QPoint startPoint;
                 // bottom right corner
@@ -275,7 +309,7 @@ QVariant PackageModel::data(const QModelIndex &index, int role) const
             return icon;
         }
         case PackageName:
-            return package.id.split(';')[0];
+            return Transaction::packageName(package.packageID);
         case Qt::ToolTipRole:
             if (m_checkable) {
                 return PkStrings::info(package.info);
@@ -303,16 +337,16 @@ QVariant PackageModel::data(const QModelIndex &index, int role) const
     case IconRole:
         return package.icon;
     case SortRole:
-        return package.name + ' ' + package.version + ' ' + package.arch;
+        return QString(package.displayName % QLatin1Char(' ') % package.version % QLatin1Char(' ') % package.arch);
     case CheckStateRole:
-        if (containsChecked(package.id)) {
+        if (containsChecked(package.packageID)) {
             return Qt::Checked;
         }
         return Qt::Unchecked;
     case IdRole:
-        return package.id;
+        return package.packageID;
     case NameRole:
-        return package.name;
+        return package.displayName;
     case SummaryRole:
         return package.summary;
     case VersionRole:
@@ -322,10 +356,10 @@ QVariant PackageModel::data(const QModelIndex &index, int role) const
     case OriginCol:
         return package.repo;
     case InfoRole:
-        return package.info;
+        return qVariantFromValue(package.info);
     case KCategorizedSortFilterProxyModel::CategoryDisplayRole:
-        if (package.info == Package::InfoInstalled ||
-            package.info == Package::InfoCollectionInstalled) {
+        if (package.info == Transaction::InfoInstalled ||
+            package.info == Transaction::InfoCollectionInstalled) {
             return i18n("To be Removed");
         } else {
             return i18n("To be Installed");
@@ -335,6 +369,8 @@ QVariant PackageModel::data(const QModelIndex &index, int role) const
         return package.isPackage ? 1 : 0; // Packages comes after applications
     case ApplicationId:
         return package.appId;
+    case InfoIconRole:
+        return PkIcons::packageIcon(package.info);
     default:
         return QVariant();
     }
@@ -344,11 +380,11 @@ QVariant PackageModel::data(const QModelIndex &index, int role) const
 
 bool PackageModel::setData(const QModelIndex &index, const QVariant &value, int role)
 {
-    if (role == Qt::CheckStateRole && m_packageCount > index.row()) {
+    if (role == Qt::CheckStateRole && m_packages.size() > index.row()) {
         if (value.toBool()) {
-            checkPackage(m_packages.at(index.row()));
+            checkPackage(m_packages[index.row()]);
         } else {
-            uncheckPackage(m_packages.at(index.row()));
+            uncheckPackage(m_packages[index.row()].packageID);
         }
 
         emit changed(!m_checkedPackages.isEmpty());
@@ -377,24 +413,29 @@ int PackageModel::columnCount(const QModelIndex &parent) const
     }
 }
 
-void PackageModel::rmSelectedPackage(const PackageModel::InternalPackage &package)
+void PackageModel::removePackage(const QString &packageID)
 {
-    QString pkgId = package.id;
-    for (int i = 0; i < m_packages.size(); i++) {
-        if (m_packages.at(i).id == pkgId) {
+    int i = 0;
+    while (i < m_packages.size()) {
+        InternalPackage iPackage = m_packages[i];
+        if (iPackage.packageID == packageID &&
+                iPackage.info != Transaction::InfoUntrusted) {
             beginRemoveRows(QModelIndex(), i, i);
             m_packages.remove(i);
             endRemoveRows();
-            i--; // we have to decrease the pointer otherwise
-                 // we will miss some packages
+
+            // since we removed one entry we don't
+            // need to increase the counter
+            continue;
         }
+        ++i;
     }
 }
 
 void PackageModel::clear()
 {
-    beginRemoveRows(QModelIndex(), 0, m_packageCount);
-    m_packageCount = 0;
+    beginRemoveRows(QModelIndex(), 0, m_packages.size());
+    m_finished = false;
     m_packages.clear();
     m_fetchSizesTransaction = 0;
     m_fetchInstalledVersionsTransaction = 0;
@@ -403,33 +444,33 @@ void PackageModel::clear()
 
 void PackageModel::clearSelectedNotPresent()
 {
-    QVector<InternalPackage> uncheckPackages;
     foreach (const InternalPackage &package, m_checkedPackages) {
-        bool found = false;
-        QString pkgId = package.id;
-        for (int i = 0; i < m_packages.size(); ++i) {
-            if (m_packages.at(i).id == pkgId) {
-                found = true;
-                // TODO with applications we probably can't break
+        bool notFound = true;
+        foreach (const InternalPackage &iPackage, m_packages) {
+            if (iPackage.packageID == package.packageID) {
+                notFound = false;
                 break;
             }
         }
-        if (!found) {
-            uncheckPackages << package;
+
+        if (notFound) {
+            // Uncheck the package If it's not in the model
+            uncheckPackage(package.packageID);
         }
     }
+}
 
-    for (int i = 0; i < uncheckPackages.size(); ++i) {
-        uncheckPackage(uncheckPackages.at(i));
-    }
+bool PackageModel::checkable() const
+{
+    return m_checkable;
 }
 
 void PackageModel::uncheckInstalledPackages()
 {
     foreach (const InternalPackage &package, m_checkedPackages) {
-        if (package.info == Package::InfoInstalled ||
-            package.info == Package::InfoCollectionInstalled) {
-            uncheckPackage(package, true);
+        if (package.info == Transaction::InfoInstalled ||
+                package.info == Transaction::InfoCollectionInstalled) {
+            uncheckPackage(package.packageID, true);
         }
     }
 }
@@ -437,9 +478,9 @@ void PackageModel::uncheckInstalledPackages()
 void PackageModel::uncheckAvailablePackages()
 {
     foreach (const InternalPackage &package, m_checkedPackages) {
-        if (package.info == Package::InfoAvailable ||
-            package.info == Package::InfoCollectionAvailable) {
-            uncheckPackage(package, true);
+        if (package.info == Transaction::InfoAvailable ||
+                package.info == Transaction::InfoCollectionAvailable) {
+            uncheckPackage(package.packageID, true);
         }
     }
 }
@@ -455,7 +496,7 @@ void PackageModel::finished()
 
     // The whole structure is about to change
     beginInsertRows(QModelIndex(), 0, m_packages.size() - 1);
-    m_packageCount = m_packages.size();
+    m_finished = true;
     endInsertRows();
 
     emit changed(!m_checkedPackages.isEmpty());
@@ -468,15 +509,14 @@ void PackageModel::fetchSizes()
     }
 
     // get package size
-    QList<Package> pkgs;
+    QStringList pkgs;
     foreach (const InternalPackage &p, m_packages) {
-        pkgs << Package(p.id);
+        pkgs << p.packageID;
     }
-
     if (!pkgs.isEmpty()) {
         m_fetchSizesTransaction = new Transaction(this);
-        connect(m_fetchSizesTransaction, SIGNAL(package(PackageKit::Package)),
-                this, SLOT(updateSize(PackageKit::Package)));
+        connect(m_fetchSizesTransaction, SIGNAL(details(QString,QString,PackageKit::Transaction::Group,QString,QString,qulonglong)),
+                this, SLOT(updateSize(QString,QString,PackageKit::Transaction::Group,QString,QString,qulonglong)));
         connect(m_fetchSizesTransaction, SIGNAL(finished(PackageKit::Transaction::Exit,uint)),
                 this, SLOT(fetchSizesFinished()));
         m_fetchSizesTransaction->getDetails(pkgs);
@@ -491,28 +531,51 @@ void PackageModel::fetchSizesFinished()
         // pk-qt2 bug..
         trans->disconnect(this, SLOT(fetchSizesFinished()));
     }
-    // emit this after all is changed other =wise on large models it will
+    // emit this after all is changed otherwise on large models it will
     // be hell slow...
-    emit dataChanged(createIndex(0, SizeCol), createIndex(m_packageCount, SizeCol));
+    emit dataChanged(createIndex(0, SizeCol), createIndex(m_packages.size(), SizeCol));
     emit changed(!m_checkedPackages.isEmpty());
 }
 
-void PackageModel::updateSize(const PackageKit::Package &package)
+void PackageModel::updateSize(const QString &packageID,
+                              const QString &license,
+                              PackageKit::Transaction::Group group,
+                              const QString &detail,
+                              const QString &url,
+                              qulonglong size)
 {
+    Q_UNUSED(license)
+    Q_UNUSED(group)
+    Q_UNUSED(detail)
+    Q_UNUSED(url)
+
     // if size is 0 don't waste time looking for the package
-    if (package.size()) {
-        for (int i = 0; i < m_packages.size(); ++i) {
-            if (package.id() == m_packages[i].id) {
-                m_packages[i].size = package.size();
-                if (m_checkable) {
-                    // updates the checked packages as well
-                    if (m_checkedPackages.contains(package.id())) {
-                        // Avoid checking packages that aren't checked
-                        m_checkedPackages[package.id()].size = package.size();
-                    }
-                    break;
+    if (size == 0) {
+        return;
+    }
+
+    for (int i = 0; i < m_packages.size(); ++i) {
+        if (packageID == m_packages[i].packageID) {
+            m_packages[i].size = size;
+            if (m_checkable) {
+                // updates the checked packages as well
+                if (m_checkedPackages.contains(packageID)) {
+                    // Avoid checking packages that aren't checked
+                    m_checkedPackages[packageID].size = size;
                 }
+                break;
             }
+
+#ifdef HAVE_APPSTREAM
+            if (m_checkable) {
+                // checkable models don't have duplicated package ids
+                // so don't waste time scanning all list
+                break;
+            }
+#else
+            // Without AppStream we don't have duplicated package ids
+            break;
+#endif // HAVE_APPSTREAM
         }
     }
 }
@@ -526,13 +589,13 @@ void PackageModel::fetchCurrentVersions()
     // get package current version
     QStringList pkgs;
     foreach (const InternalPackage &p, m_packages) {
-        pkgs << p.name;
+        pkgs << Transaction::packageName(p.packageID);
     }
 
     if (!pkgs.isEmpty()) {
         m_fetchInstalledVersionsTransaction = new Transaction(this);
-        connect(m_fetchInstalledVersionsTransaction, SIGNAL(package(PackageKit::Package)),
-                this, SLOT(updateCurrentVersion(PackageKit::Package)));
+        connect(m_fetchInstalledVersionsTransaction, SIGNAL(package(PackageKit::Transaction::Info,QString,QString)),
+                this, SLOT(updateCurrentVersion(PackageKit::Transaction::Info,QString,QString)));
         connect(m_fetchInstalledVersionsTransaction, SIGNAL(finished(PackageKit::Transaction::Exit,uint)),
                 this, SLOT(fetchCurrentVersionsFinished()));
         m_fetchInstalledVersionsTransaction->resolve(pkgs, Transaction::FilterInstalled);
@@ -549,23 +612,25 @@ void PackageModel::fetchCurrentVersionsFinished()
     }
     // emit this after all is changed otherwise on large models it will
     // be hell slow...
-    emit dataChanged(createIndex(0, CurrentVersionCol), createIndex(m_packageCount, CurrentVersionCol));
+    emit dataChanged(createIndex(0, CurrentVersionCol), createIndex(m_packages.size(), CurrentVersionCol));
     emit changed(!m_checkedPackages.isEmpty());
 }
 
-void PackageModel::updateCurrentVersion(const PackageKit::Package &package)
+void PackageModel::updateCurrentVersion(Transaction::Info info, const QString &packageID, const QString &summary)
 {
+    Q_UNUSED(info)
+    Q_UNUSED(summary)
     // if current version is empty don't waste time looking
-    if (!package.version().isEmpty()) {
+    if (!Transaction::packageVersion(packageID).isEmpty()) {
         for (int i = 0; i < m_packages.size(); ++i) {
-            if (package.name() == m_packages[i].name &&
-                package.arch() == m_packages[i].arch) {
-                m_packages[i].currentVersion = package.version();
+            if (Transaction::packageName(packageID) == Transaction::packageName(m_packages[i].packageID) &&
+                Transaction::packageArch(packageID) == m_packages[i].arch) {
+                m_packages[i].currentVersion = Transaction::packageVersion(packageID);
                 if (m_checkable) {
                     // updates the checked packages as well
-                    if (m_checkedPackages.contains(m_packages[i].id)) {
+                    if (m_checkedPackages.contains(m_packages[i].packageID)) {
                         // Avoid checking packages that aren't checked
-                        m_checkedPackages[m_packages[i].id].currentVersion = package.version();
+                        m_checkedPackages[m_packages[i].packageID].currentVersion = Transaction::packageVersion(packageID);
                     }
                     break;
                 }
@@ -574,69 +639,146 @@ void PackageModel::updateCurrentVersion(const PackageKit::Package &package)
     }
 }
 
+void PackageModel::getUpdates(bool fetchCurrentVersions, bool selected)
+{
+    clear();
+    Transaction *transaction = new Transaction(this);
+    if (selected) {
+        connect(transaction, SIGNAL(package(PackageKit::Transaction::Info,QString,QString)),
+                this, SLOT(addSelectedPackage(PackageKit::Transaction::Info,QString,QString)));
+    } else {
+        connect(transaction, SIGNAL(package(PackageKit::Transaction::Info,QString,QString)),
+                this, SLOT(addPackage(PackageKit::Transaction::Info,QString,QString)));
+    }
+    connect(transaction, SIGNAL(errorCode(PackageKit::Transaction::Error,QString)),
+            this, SLOT(errorCode(PackageKit::Transaction::Error,QString)));
+//    connect(transaction, SIGNAL(finished(PackageKit::Transaction::Exit,uint)),
+//            m_busySeq, SLOT(stop()));
+    connect(transaction, SIGNAL(finished(PackageKit::Transaction::Exit,uint)),
+            this, SLOT(finished()));
+    // This is required to estimate download size
+    connect(transaction, SIGNAL(finished(PackageKit::Transaction::Exit,uint)),
+            this, SLOT(fetchSizes()));
+    if (fetchCurrentVersions) {
+        connect(transaction, SIGNAL(finished(PackageKit::Transaction::Exit,uint)),
+                this, SLOT(fetchCurrentVersions()));
+    }
+//    connect(transaction, SIGNAL(finished(PackageKit::Transaction::Exit,uint)),
+//            this, SLOT(getUpdatesFinished()));
+    // get all updates
+    transaction->getUpdates();
+
+    Transaction::InternalError error = transaction->error();
+    if (error) {
+        transaction->deleteLater();
+//        KMessageBox::sorry(this, PkStrings::daemonError(error));
+    } else {
+//        m_busySeq->start();
+    }
+}
+
+void PackageModel::toggleSelection(const QString &packageID)
+{
+    if (containsChecked(packageID)) {
+        uncheckPackage(packageID, true);
+    } else {
+        foreach (const InternalPackage &package, m_packages) {
+            if (package.packageID == packageID) {
+                checkPackage(package);
+                break;
+            }
+        }
+    }
+}
+
+QString PackageModel::selectionStateText() const
+{
+    return headerData(NameCol, Qt::Horizontal).toString();
+}
+
 bool PackageModel::hasChanges() const
 {
     return !m_checkedPackages.isEmpty();
 }
 
+int PackageModel::countInfo(PackageKit::Transaction::Info info) const
+{
+    int ret = 0;
+    foreach (const InternalPackage &package, m_packages) {
+        if (package.info == info) {
+            ++ret;
+        }
+    }
+    return ret;
+}
+
 void PackageModel::checkPackage(const InternalPackage &package, bool emitDataChanged)
 {
-    QString pkgId = package.id;
+    QString pkgId = package.packageID;
     if (!containsChecked(pkgId)) {
         m_checkedPackages[pkgId] = package;
 
         // A checkable model does not have duplicated entries
-        if (emitDataChanged && m_packageCount && !m_checkable) {
+        if (emitDataChanged || !m_checkable || !m_packages.isEmpty()) {
             // This is a slow operation so in case the user
             // is unchecking all of the packages there is
             // no need to emit data changed for every item
             for (int i = 0; i < m_packages.size(); ++i) {
-                if (m_packages.at(i).id == pkgId) {
+                if (m_packages[i].packageID == pkgId) {
                     QModelIndex index = createIndex(i, 0);
                     emit dataChanged(index, index);
                 }
             }
 
             // The model might not be displayed yet
-            if (m_packageCount) {
+            if (m_finished) {
                 emit changed(!m_checkedPackages.isEmpty());
             }
         }
     }
 }
 
-void PackageModel::uncheckPackage(const InternalPackage &package,
+void PackageModel::uncheckPackage(const QString &packageID,
                                   bool forceEmitUnchecked,
                                   bool emitDataChanged)
 {
-    QString pkgId = package.id;
-    if (containsChecked(pkgId)) {
-        m_checkedPackages.remove(pkgId);
+    if (containsChecked(packageID)) {
+        m_checkedPackages.remove(packageID);
         if (forceEmitUnchecked || sender() == 0) {
             // The package might be removed by rmSelectedPackage
             // If we don't copy it the browse model won't uncheck there
             // right package
-            InternalPackage iPackage = package;
-            emit packageUnchecked(iPackage);
+            emit packageUnchecked(packageID);
         }
 
-        if (emitDataChanged && !m_checkable) {
+        if (emitDataChanged || !m_checkable) {
             // This is a slow operation so in case the user
             // is unchecking all of the packages there is
             // no need to emit data changed for every item
             for (int i = 0; i < m_packages.size(); ++i) {
-                if (m_packages.at(i).id == pkgId) {
+                if (m_packages[i].packageID == packageID) {
                     QModelIndex index = createIndex(i, 0);
                     emit dataChanged(index, index);
                 }
             }
 
             // The model might not be displayed yet
-            if (m_packageCount) {
+            if (m_finished) {
                 emit changed(!m_checkedPackages.isEmpty());
             }
         }
     }
+}
+
+QList<PackageModel::InternalPackage> PackageModel::internalSelectedPackages() const
+{
+    QList<InternalPackage> ret;
+    QHash<QString, InternalPackage>::const_iterator i = m_checkedPackages.constBegin();
+    while (i != m_checkedPackages.constEnd()) {
+        ret << i.value();
+        ++i;
+    }
+    return ret;
 }
 
 bool PackageModel::containsChecked(const QString &pid) const
@@ -651,8 +793,7 @@ void PackageModel::setAllChecked(bool checked)
 {
     if (checked) {
         m_checkedPackages.clear();
-        for (int i = 0; i < m_packages.size(); i++) {
-            InternalPackage package = m_packages.at(i);
+        foreach (const InternalPackage &package, m_packages) {
             checkPackage(package, false);
         }
         emit dataChanged(createIndex(0, 0),
@@ -660,7 +801,7 @@ void PackageModel::setAllChecked(bool checked)
     } else {
         // This is a very slow operation, which in here we try to optimize
         foreach (const InternalPackage &package, m_checkedPackages) {
-            uncheckPackage(package, true, false);
+            uncheckPackage(package.packageID, true, false);
         }
         emit dataChanged(createIndex(0, 0),
                          createIndex(m_packages.size(), 0));
@@ -668,11 +809,49 @@ void PackageModel::setAllChecked(bool checked)
     emit changed(!m_checkedPackages.isEmpty());
 }
 
-QList<Package> PackageModel::selectedPackages() const
+QStringList PackageModel::selectedPackagesToInstall() const
 {
-    QList<Package> list;
+    QStringList list;
     foreach (const InternalPackage &package, m_checkedPackages) {
-        list.append(Package(package.id, package.info, package.summary));
+        if (package.info != Transaction::InfoInstalled &&
+                package.info != Transaction::InfoCollectionInstalled) {
+            // append the packages are not installed
+            list << package.packageID;
+        }
+    }
+    return list;
+}
+
+QStringList PackageModel::selectedPackagesToRemove() const
+{
+    QStringList list;
+    foreach (const InternalPackage &package, m_checkedPackages) {
+        if (package.info == Transaction::InfoInstalled ||
+                package.info == Transaction::InfoCollectionInstalled) {
+            // check what packages are installed and marked to be removed
+            list << package.packageID;
+        }
+    }
+    return list;
+}
+
+QStringList PackageModel::packagesWithInfo(Transaction::Info info) const
+{
+    QStringList list;
+    foreach (const InternalPackage &package, m_packages) {
+        if (package.info == info) {
+            // Append to the list if the package matches the info value
+            list << package.packageID;
+        }
+    }
+    return list;
+}
+
+QStringList PackageModel::packageIDs() const
+{
+    QStringList list;
+    foreach (const InternalPackage &package, m_packages) {
+        list << package.packageID;
     }
     return list;
 }
@@ -689,7 +868,7 @@ unsigned long PackageModel::downloadSize() const
 bool PackageModel::allSelected() const
 {
     foreach (const InternalPackage &package, m_packages) {
-        if (!containsChecked(package.id)) {
+        if (!containsChecked(package.packageID)) {
             return false;
         }
     }

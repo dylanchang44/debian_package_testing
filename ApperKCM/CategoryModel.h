@@ -21,13 +21,13 @@
 #ifndef CATEGORY_MODEL_H
 #define CATEGORY_MODEL_H
 
+#include <QObject>
 #include <QStandardItemModel>
 #include <QXmlStreamReader>
 
 #include <Transaction>
-#include <Package>
 
-using namespace PackageKit;
+#include <AppStream/CategoryMatcher.h>
 
 class CategoryModel : public QStandardItemModel
 {
@@ -39,7 +39,7 @@ public:
         GroupRole,
         CategoryRole
     } Roles;
-    explicit CategoryModel(Transaction::Roles roles, QObject *parent = 0);
+    explicit CategoryModel(PackageKit::Transaction::Roles roles, QObject *parent = 0);
     ~CategoryModel();
 
     QModelIndex index(int row, int column, const QModelIndex &parent = QModelIndex()) const;
@@ -63,12 +63,13 @@ private:
     void fillWithServiceGroups();
     QStandardItem* findCategory(const QString &categoryId, const QModelIndex &parent = QModelIndex()) const;
     void parseMenu(QXmlStreamReader &xml, const QString &parentIcon, QStandardItem *parent = 0);
-    QString parseCategories(QXmlStreamReader &xml, QStandardItem *item, const QString &join = QString());
-    template<class T> static int enumFromString(const QString& str, const char* enumName, const QString& prefix = QString());
+    QList<CategoryMatcher> parseCategories(QXmlStreamReader &xml);
 
-    Transaction::Roles  m_roles;
-    Package::Groups m_groups;
+    PackageKit::Transaction::Roles  m_roles;
+    PackageKit::Transaction::Groups m_groups;
     QModelIndex  m_rootIndex;
 };
+
+Q_DECLARE_METATYPE(PackageKit::Transaction::Group)
 
 #endif

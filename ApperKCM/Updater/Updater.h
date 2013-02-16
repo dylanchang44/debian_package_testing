@@ -21,18 +21,23 @@
 #ifndef UPDATER_H
 #define UPDATER_H
 
-#include "ui_Updater.h"
+#include <QWidget>
+#include <QModelIndex>
 
-#include <PkTransactionDialog.h>
+#include <KPixmapSequenceOverlayPainter>
 
 #include <Transaction>
 
 using namespace PackageKit;
 
+namespace Ui {
+    class Updater;
+}
+
 class PackageModel;
 class ApplicationsDelegate;
 class CheckableHeader;
-class Updater : public QWidget, Ui::Updater
+class Updater : public QWidget
 {
     Q_OBJECT
 public:
@@ -40,8 +45,7 @@ public:
     ~Updater();
 
     bool hasChanges() const;
-    void setSelected(bool selected);
-    QList<Package> packagesToUpdate() const;
+    QStringList packagesToUpdate() const;
 
 signals:
     void changed(bool);
@@ -73,6 +77,7 @@ private slots:
     void updatePallete();
 
 private:
+    Ui::Updater          *ui;
     Transaction::Roles    m_roles;
     bool                  m_selected;
     PackageModel         *m_updatesModel;
@@ -83,7 +88,6 @@ private:
     QAction              *m_showPackageArch;
     QAction              *m_showPackageOrigin;
     QAction              *m_showPackageSize;
-    PkTransactionDialog  *m_transDialog;
     Transaction          *m_updatesT;
     KPixmapSequenceOverlayPainter *m_busySeq;
 };

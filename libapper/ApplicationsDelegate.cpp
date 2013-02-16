@@ -24,13 +24,13 @@
 #include <KIconLoader>
 #include <KLocale>
 
-#include <Package>
-
 #include "PackageModel.h"
 #include "PkIcons.h"
 
 #define UNIVERSAL_PADDING 4
 #define FADE_LENGTH 16
+
+using namespace PackageKit;
 
 ApplicationsDelegate::ApplicationsDelegate(QAbstractItemView *parent)
   : QStyledItemDelegate(parent),
@@ -126,9 +126,9 @@ void ApplicationsDelegate::paint(QPainter *painter,
         QString pkgSummary = index.data(PackageModel::SummaryRole).toString();
         if (!pkgSummary.isEmpty()) {
             if (leftToRight) {
-                pkgSummary.prepend("- ");
+                pkgSummary.prepend(QLatin1String("- "));
             } else {
-                pkgSummary.append(" -");
+                pkgSummary.append(QLatin1String(" -"));
             }
         }
 
@@ -210,10 +210,10 @@ void ApplicationsDelegate::paint(QPainter *painter,
         QStyleOptionButton optBt;
         optBt.rect = option.rect;
 
-        Package::Info info;
-        info = static_cast<Package::Info>(index.data(PackageModel::InfoRole).toUInt());
-        bool    pkgInstalled  = (info == Package::InfoInstalled ||
-                                 info == Package::InfoCollectionInstalled);
+        Transaction::Info info;
+        info = index.data(PackageModel::InfoRole).value<Transaction::Info>();
+        bool    pkgInstalled  = (info == Transaction::InfoInstalled ||
+                                 info == Transaction::InfoCollectionInstalled);
 
         // Calculate the top of the button which is the item height - the button height size divided by 2
         // this give us a little value which is the top and bottom margin

@@ -18,6 +18,8 @@
  *   Boston, MA 02110-1301, USA.                                           *
  ***************************************************************************/
 
+#include "ui_Settings.h"
+
 #include "Settings.h"
 
 #include "OriginModel.h"
@@ -32,6 +34,7 @@
 #include <KToolInvocation>
 
 #include <Solid/Device>
+#include <Solid/Battery>
 
 #include <config.h>
 
@@ -41,23 +44,28 @@ using namespace PackageKit;
 
 Settings::Settings(Transaction::Roles roles, QWidget *parent) :
     QWidget(parent),
+    ui(new Ui::Settings),
     m_roles(roles)
 {
-    setupUi(this);
+    ui->setupUi(this);
 
     if (!(m_roles & Transaction::RoleRefreshCache)) {
-        intervalL->setEnabled(false);
-        intervalCB->setEnabled(false);
+        ui->intervalL->setEnabled(false);
+        ui->intervalCB->setEnabled(false);
+    }
+
+    if (!(m_roles & Transaction::RoleGetDistroUpgrades)) {
+        ui->distroIntervalCB->setEnabled(false);
     }
 
     m_originModel = new OriginModel(this);
     QSortFilterProxyModel *proxy = new QSortFilterProxyModel(this);
     proxy->setDynamicSortFilter(true);
     proxy->setSourceModel(m_originModel);
-    originTV->setModel(proxy);
-    originTV->header()->setDefaultAlignment(Qt::AlignCenter);
+    ui->originTV->setModel(proxy);
+    ui->originTV->header()->setDefaultAlignment(Qt::AlignCenter);
     // This is needed to keep the oring right
-    originTV->header()->setSortIndicator(0, Qt::AscendingOrder);
+    ui->originTV->header()->setSortIndicator(0, Qt::AscendingOrder);
     proxy->sort(0);
     if (m_roles & Transaction::RoleGetRepoList) {
         // The data will be loaded when Load is called
@@ -65,42 +73,58 @@ Settings::Settings(Transaction::Roles roles, QWidget *parent) :
                 this, SLOT(checkChanges()));
     } else {
         // Disables the group box
-        originTV->setEnabled(false);
-        showOriginsCB->setEnabled(false);
+        ui->originTV->setEnabled(false);
+        ui->showOriginsCB->setEnabled(false);
     }
 
-    intervalCB->addItem(i18nc("Hourly refresh the package cache", "Hourly"),  Enum::Hourly);
-    intervalCB->addItem(i18nc("Daily refresh the package cache", "Daily"),   Enum::Daily);
-    intervalCB->addItem(i18nc("Weekly refresh the package cache", "Weekly"),  Enum::Weekly);
-    intervalCB->addItem(i18nc("Monthly refresh the package cache", "Monthly"), Enum::Monthly);
-    intervalCB->addItem(i18nc("Never refresh package cache", "Never"), Enum::Never);
+    ui->distroIntervalCB->addItem(i18nc("Inform about distribution upgrades",
+                                        "Never"),
+                                  Enum::DistroNever);
+    ui->distroIntervalCB->addItem(i18nc("Inform about distribution upgrades",
+                                        "Only stable"),
+                                  Enum::DistroStable);
+    // Ignore unstable distros upgrades for now
+#ifndef false
+    ui->distroIntervalCB->addItem(i18nc("Inform about distribution upgrades",
+                                        "Stable and development"),
+                                  Enum::DistroDevelopment);
+#endif
 
-    autoCB->addItem(i18n("Security only"), Enum::Security);
-    autoCB->addItem(i18n("All updates"),   Enum::All);
-    autoCB->addItem(i18nc("No updates will be automatically installed", "None"),          Enum::None);
+    ui->intervalCB->addItem(i18nc("Hourly refresh the package cache", "Hourly"), Enum::Hourly);
+    ui->intervalCB->addItem(i18nc("Daily refresh the package cache", "Daily"), Enum::Daily);
+    ui->intervalCB->addItem(i18nc("Weekly refresh the package cache", "Weekly"), Enum::Weekly);
+    ui->intervalCB->addItem(i18nc("Monthly refresh the package cache", "Monthly"), Enum::Monthly);
+    ui->intervalCB->addItem(i18nc("Never refresh package cache", "Never"), Enum::Never);
 
-    connect(autoConfirmCB, SIGNAL(stateChanged(int)), this, SLOT(checkChanges()));
-    connect(appLauncherCB, SIGNAL(stateChanged(int)), this, SLOT(checkChanges()));
-    connect(intervalCB, SIGNAL(currentIndexChanged(int)), this, SLOT(checkChanges()));
-    connect(checkUpdatesBatteryCB, SIGNAL(stateChanged(int)), this, SLOT(checkChanges()));
-    connect(checkUpdatesMobileCB, SIGNAL(stateChanged(int)), this, SLOT(checkChanges()));
-    connect(autoCB, SIGNAL(currentIndexChanged(int)), this, SLOT(checkChanges()));
-    connect(installUpdatesBatteryCB, SIGNAL(stateChanged(int)), this, SLOT(checkChanges()));
-    connect(installUpdatesMobileCB, SIGNAL(stateChanged(int)), this, SLOT(checkChanges()));
+    ui->autoCB->addItem(i18nc("No updates will be automatically installed", "None"), Enum::None);
+    ui->autoCB->addItem(i18n("Download only"), Enum::DownloadOnly);
+    ui->autoCB->addItem(i18n("Security only"), Enum::Security);
+    ui->autoCB->addItem(i18n("All updates"), Enum::All);
+
+    connect(ui->autoConfirmCB, SIGNAL(stateChanged(int)), this, SLOT(checkChanges()));
+    connect(ui->appLauncherCB, SIGNAL(stateChanged(int)), this, SLOT(checkChanges()));
+    connect(ui->distroIntervalCB, SIGNAL(currentIndexChanged(int)), this, SLOT(checkChanges()));
+    connect(ui->intervalCB, SIGNAL(currentIndexChanged(int)), this, SLOT(checkChanges()));
+    connect(ui->checkUpdatesBatteryCB, SIGNAL(stateChanged(int)), this, SLOT(checkChanges()));
+    connect(ui->checkUpdatesMobileCB, SIGNAL(stateChanged(int)), this, SLOT(checkChanges()));
+    connect(ui->autoCB, SIGNAL(currentIndexChanged(int)), this, SLOT(checkChanges()));
+    connect(ui->installUpdatesBatteryCB, SIGNAL(stateChanged(int)), this, SLOT(checkChanges()));
+    connect(ui->installUpdatesMobileCB, SIGNAL(stateChanged(int)), this, SLOT(checkChanges()));
 
     // Setup the busy cursor
     m_busySeq = new KPixmapSequenceOverlayPainter(this);
     m_busySeq->setSequence(KPixmapSequence("process-working", KIconLoader::SizeSmallMedium));
     m_busySeq->setAlignment(Qt::AlignHCenter | Qt::AlignVCenter);
-    m_busySeq->setWidget(originTV->viewport());
+    m_busySeq->setWidget(ui->originTV->viewport());
 
 #ifndef EDIT_ORIGNS_DESKTOP_NAME
-    editOriginsPB->hide();
+    ui->editOriginsPB->hide();
 #endif //EDIT_ORIGNS_DESKTOP_NAME
 }
 
 Settings::~Settings()
 {
+    delete ui;
 }
 
 void Settings::on_editOriginsPB_clicked()
@@ -132,6 +156,13 @@ void Settings::on_showOriginsCB_stateChanged(int state)
     if (!transaction->error()) {
         m_busySeq->start();
     }
+
+    KConfig config("apper");
+    KConfigGroup originsDialog(&config, "originsDialog");
+    bool showDevel = originsDialog.readEntry("showDevel", false);
+    if (showDevel != ui->showOriginsCB->isChecked()) {
+        originsDialog.writeEntry("showDevel", ui->showOriginsCB->isChecked());
+    }
 }
 
 bool Settings::hasChanges() const
@@ -141,25 +172,28 @@ bool Settings::hasChanges() const
     KConfigGroup requirementsDialog(&config, "requirementsDialog");
     KConfigGroup transaction(&config, "Transaction");
     KConfigGroup checkUpdateGroup(&config, "CheckUpdate");
-    if (intervalCB->itemData(intervalCB->currentIndex()).toUInt() !=
-        static_cast<uint>(checkUpdateGroup.readEntry("interval", Enum::TimeIntervalDefault))
+    if (ui->distroIntervalCB->itemData(ui->distroIntervalCB->currentIndex()).toUInt() !=
+            static_cast<uint>(checkUpdateGroup.readEntry(CFG_DISTRO_UPGRADE, Enum::DistroUpgradeDefault))
         ||
-        checkUpdatesBatteryCB->isChecked() != checkUpdateGroup.readEntry("checkUpdatesOnBattery", false)
+            ui->intervalCB->itemData(ui->intervalCB->currentIndex()).toUInt() !=
+            static_cast<uint>(checkUpdateGroup.readEntry(CFG_INTERVAL, Enum::TimeIntervalDefault))
         ||
-        checkUpdatesMobileCB->isChecked() != checkUpdateGroup.readEntry("checkUpdatesOnMobile", false)
-        ||    
-        autoCB->itemData(autoCB->currentIndex()).toUInt() !=
-        static_cast<uint>(checkUpdateGroup.readEntry("autoUpdate", Enum::AutoUpdateDefault))
+        ui->checkUpdatesBatteryCB->isChecked() != checkUpdateGroup.readEntry(CFG_CHECK_UP_BATTERY, DEFAULT_CHECK_UP_BATTERY)
         ||
-        installUpdatesBatteryCB->isChecked()  != checkUpdateGroup.readEntry("installUpdatesOnBattery", false)
+        ui->checkUpdatesMobileCB->isChecked() != checkUpdateGroup.readEntry(CFG_CHECK_UP_MOBILE, DEFAULT_CHECK_UP_MOBILE)
         ||
-        installUpdatesMobileCB->isChecked() != checkUpdateGroup.readEntry("installUpdatesOnMobile", false)
+        ui->autoCB->itemData(ui->autoCB->currentIndex()).toUInt() !=
+        static_cast<uint>(checkUpdateGroup.readEntry(CFG_AUTO_UP, Enum::AutoUpdateDefault))
+        ||
+        ui->installUpdatesBatteryCB->isChecked()  != checkUpdateGroup.readEntry(CFG_INSTALL_UP_BATTERY, DEFAULT_INSTALL_UP_BATTERY)
+        ||
+        ui->installUpdatesMobileCB->isChecked() != checkUpdateGroup.readEntry(CFG_INSTALL_UP_MOBILE, DEFAULT_INSTALL_UP_MOBILE)
         ||
         ((m_roles & Transaction::RoleGetRepoList) ? m_originModel->changed() : false)
         ||
-        autoConfirmCB->isChecked() != !requirementsDialog.readEntry("autoConfirm", false)
+        ui->autoConfirmCB->isChecked() != !requirementsDialog.readEntry("autoConfirm", false)
         ||
-        appLauncherCB->isChecked() != transaction.readEntry("ShowApplicationLauncher", true)) {
+        ui->appLauncherCB->isChecked() != transaction.readEntry("ShowApplicationLauncher", true)) {
         return true;
     }
     return false;
@@ -170,17 +204,17 @@ void Settings::checkChanges()
     emit changed(hasChanges());
 
     // Check if interval update is never
-    bool enabled = intervalCB->itemData(intervalCB->currentIndex()).toUInt() != Enum::Never;
-    checkUpdatesBatteryCB->setEnabled(enabled);
-    checkUpdatesMobileCB->setEnabled(enabled);
+    bool enabled = ui->intervalCB->itemData(ui->intervalCB->currentIndex()).toUInt() != Enum::Never;
+    ui->checkUpdatesBatteryCB->setEnabled(enabled);
+    ui->checkUpdatesMobileCB->setEnabled(enabled);
 
-    autoInsL->setEnabled(enabled);
-    autoCB->setEnabled(enabled);
+    ui->autoInsL->setEnabled(enabled);
+    ui->autoCB->setEnabled(enabled);
     if (enabled) {
-        enabled = autoCB->itemData(autoCB->currentIndex()).toUInt() != Enum::None;
+        enabled = ui->autoCB->itemData(ui->autoCB->currentIndex()).toUInt() != Enum::None;
     }
-    installUpdatesMobileCB->setEnabled(enabled);
-    installUpdatesBatteryCB->setEnabled(enabled);
+    ui->installUpdatesMobileCB->setEnabled(enabled);
+    ui->installUpdatesBatteryCB->setEnabled(enabled);
 }
 
 void Settings::load()
@@ -188,45 +222,68 @@ void Settings::load()
     KConfig config("apper");
 
     KConfigGroup requirementsDialog(&config, "requirementsDialog");
-    autoConfirmCB->setChecked(!requirementsDialog.readEntry("autoConfirm", false));
+    ui->autoConfirmCB->setChecked(!requirementsDialog.readEntry("autoConfirm", false));
 
     KConfigGroup transaction(&config, "Transaction");
-    appLauncherCB->setChecked(transaction.readEntry("ShowApplicationLauncher", true));
+    ui->appLauncherCB->setChecked(transaction.readEntry("ShowApplicationLauncher", true));
 
     KConfigGroup checkUpdateGroup(&config, "CheckUpdate");
-    uint interval = checkUpdateGroup.readEntry("interval", Enum::TimeIntervalDefault);
-    int ret = intervalCB->findData(interval);
+    uint distroUpgrade = checkUpdateGroup.readEntry(CFG_DISTRO_UPGRADE, Enum::DistroUpgradeDefault);
+    int ret = ui->distroIntervalCB->findData(distroUpgrade);
     if (ret == -1) {
-        // this is if someone change the file by hand...
-        intervalCB->addItem(KGlobal::locale()->prettyFormatDuration(interval * 1000), interval);
-        intervalCB->setCurrentIndex(intervalCB->count() - 1);
+        ui->distroIntervalCB->setCurrentIndex(ui->distroIntervalCB->findData(Enum::DistroUpgradeDefault));
     } else {
-        intervalCB->setCurrentIndex(ret);
+        ui->distroIntervalCB->setCurrentIndex(ret);
     }
-    checkUpdatesBatteryCB->setChecked(checkUpdateGroup.readEntry("checkUpdatesOnBattery", false));
-    checkUpdatesMobileCB->setChecked(checkUpdateGroup.readEntry("checkUpdatesOnMobile", false));
 
-    uint autoUpdate = checkUpdateGroup.readEntry("autoUpdate", Enum::AutoUpdateDefault);
-    ret = autoCB->findData(autoUpdate);
+    uint interval = checkUpdateGroup.readEntry(CFG_INTERVAL, Enum::TimeIntervalDefault);
+    ret = ui->intervalCB->findData(interval);
     if (ret == -1) {
         // this is if someone change the file by hand...
-        autoCB->setCurrentIndex( autoCB->findData(Enum::AutoUpdateDefault) );
+        ui->intervalCB->addItem(KGlobal::locale()->prettyFormatDuration(interval * 1000), interval);
+        ui->intervalCB->setCurrentIndex(ui->intervalCB->count() - 1);
     } else {
-        autoCB->setCurrentIndex(ret);
+        ui->intervalCB->setCurrentIndex(ret);
     }
-    installUpdatesBatteryCB->setChecked(checkUpdateGroup.readEntry("installUpdatesOnBattery", false));
-    installUpdatesMobileCB->setChecked(checkUpdateGroup.readEntry("installUpdatesOnMobile", false));
+    ui->checkUpdatesBatteryCB->setChecked(checkUpdateGroup.readEntry(CFG_CHECK_UP_BATTERY, DEFAULT_CHECK_UP_BATTERY));
+    ui->checkUpdatesMobileCB->setChecked(checkUpdateGroup.readEntry(CFG_CHECK_UP_MOBILE, DEFAULT_CHECK_UP_MOBILE));
+
+    uint autoUpdate = checkUpdateGroup.readEntry(CFG_AUTO_UP, Enum::AutoUpdateDefault);
+    ret = ui->autoCB->findData(autoUpdate);
+    if (ret == -1) {
+        // this is if someone change the file by hand...
+        ui->autoCB->setCurrentIndex(ui->autoCB->findData(Enum::AutoUpdateDefault));
+    } else {
+        ui->autoCB->setCurrentIndex(ret);
+    }
+    ui->installUpdatesBatteryCB->setChecked(checkUpdateGroup.readEntry(CFG_INSTALL_UP_BATTERY, DEFAULT_INSTALL_UP_BATTERY));
+    ui->installUpdatesMobileCB->setChecked(checkUpdateGroup.readEntry(CFG_INSTALL_UP_MOBILE, DEFAULT_INSTALL_UP_MOBILE));
 
     // Load origns list
     if (m_roles & Transaction::RoleGetRepoList) {
-        on_showOriginsCB_stateChanged(Qt::Unchecked);
+        KConfigGroup originsDialog(&config, "originsDialog");
+        bool showDevel = originsDialog.readEntry("showDevel", false);
+        ui->showOriginsCB->setChecked(showDevel);
+        on_showOriginsCB_stateChanged(ui->showOriginsCB->checkState());
+        ui->originTV->setEnabled(true);
+    } else {
+        ui->originTV->setEnabled(false);
     }
 
     // hide battery options if we are on a desktop computer
     const QList<Solid::Device> listBattery = Solid::Device::listFromType(Solid::DeviceInterface::Battery, QString());
-    if (listBattery.isEmpty()) {
-        checkUpdatesBatteryCB->hide();
-        installUpdatesBatteryCB->hide();
+    bool notFound = true;
+    foreach (const Solid::Device &device, listBattery) {
+        const Solid::Battery *battery = device.as<Solid::Battery>();
+        if (battery && battery->type() == Solid::Battery::PrimaryBattery) {
+            notFound = false;
+            break;
+        }
+    }
+
+    if (notFound) {
+        ui->checkUpdatesBatteryCB->hide();
+        ui->installUpdatesBatteryCB->hide();
     }
 }
 
@@ -235,22 +292,23 @@ void Settings::save()
     KConfig config("apper");
 
     KConfigGroup requirementsDialog(&config, "requirementsDialog");
-    requirementsDialog.writeEntry("autoConfirm", !autoConfirmCB->isChecked());
+    requirementsDialog.writeEntry("autoConfirm", !ui->autoConfirmCB->isChecked());
 
     KConfigGroup transaction(&config, "Transaction");
-    transaction.writeEntry("ShowApplicationLauncher", appLauncherCB->isChecked());
+    transaction.writeEntry("ShowApplicationLauncher", ui->appLauncherCB->isChecked());
 
     KConfigGroup checkUpdateGroup(&config, "CheckUpdate");
-    checkUpdateGroup.writeEntry("interval", intervalCB->itemData(intervalCB->currentIndex()).toUInt());
-    checkUpdateGroup.writeEntry("checkUpdatesOnBattery", checkUpdatesBatteryCB->isChecked());
-    checkUpdateGroup.writeEntry("checkUpdatesOnMobile", checkUpdatesMobileCB->isChecked());
+    checkUpdateGroup.writeEntry("distroUpgrade", ui->distroIntervalCB->itemData(ui->distroIntervalCB->currentIndex()).toUInt());
+    checkUpdateGroup.writeEntry("interval", ui->intervalCB->itemData(ui->intervalCB->currentIndex()).toUInt());
+    checkUpdateGroup.writeEntry("checkUpdatesOnBattery", ui->checkUpdatesBatteryCB->isChecked());
+    checkUpdateGroup.writeEntry("checkUpdatesOnMobile", ui->checkUpdatesMobileCB->isChecked());
 
-    checkUpdateGroup.writeEntry("autoUpdate", autoCB->itemData(autoCB->currentIndex()).toUInt());
-    checkUpdateGroup.writeEntry("installUpdatesOnBattery", installUpdatesBatteryCB->isChecked());
-    checkUpdateGroup.writeEntry("installUpdatesOnMobile", installUpdatesMobileCB->isChecked());
+    checkUpdateGroup.writeEntry("autoUpdate", ui->autoCB->itemData(ui->autoCB->currentIndex()).toUInt());
+    checkUpdateGroup.writeEntry("installUpdatesOnBattery", ui->installUpdatesBatteryCB->isChecked());
+    checkUpdateGroup.writeEntry("installUpdatesOnMobile", ui->installUpdatesMobileCB->isChecked());
     // check to see if the backend support this
     if (m_roles & Transaction::RoleGetRepoList) {
-        on_showOriginsCB_stateChanged(showOriginsCB->checkState());
+        on_showOriginsCB_stateChanged(ui->showOriginsCB->checkState());
         if (!m_originModel->save()) {
             KMessageBox::sorry(this,
                                i18n("You do not have the necessary privileges to perform this action."),
@@ -261,17 +319,23 @@ void Settings::save()
 
 void Settings::defaults()
 {
-    autoConfirmCB->setChecked(true);
-    appLauncherCB->setChecked(true);
-    intervalCB->setCurrentIndex(intervalCB->findData(Enum::TimeIntervalDefault));
-    autoCB->setCurrentIndex(autoCB->findData(Enum::AutoUpdateDefault) );
+    ui->autoConfirmCB->setChecked(true);
+    ui->appLauncherCB->setChecked(true);
+    ui->distroIntervalCB->setCurrentIndex(ui->distroIntervalCB->findData(Enum::DistroUpgradeDefault));
+    ui->intervalCB->setCurrentIndex(ui->intervalCB->findData(Enum::TimeIntervalDefault));
+    ui->autoCB->setCurrentIndex(ui->autoCB->findData(Enum::AutoUpdateDefault) );
     m_originModel->clearChanges();
     checkChanges();
 }
 
-void Settings::changeCurrentPage(int page)
+void Settings::showGeneralSettings()
 {
-    stackedWidget->setCurrentIndex(page);
+    ui->stackedWidget->setCurrentIndex(0);
+}
+
+void Settings::showRepoSettings()
+{
+    ui->stackedWidget->setCurrentIndex(1);
 }
 
 #include "Settings.moc"

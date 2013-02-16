@@ -21,20 +21,16 @@
 #ifndef UPDATE_DETAILS_H
 #define UPDATE_DETAILS_H
 
-#include <Package>
-
 #include <KPixmapSequenceOverlayPainter>
 
 #include <QPropertyAnimation>
 #include <QParallelAnimationGroup>
 
+#include <Transaction>
+
 #include "ui_UpdateDetails.h"
 
 using namespace PackageKit;
-
-namespace PackageKit {
-    class Transaction;
-}
 
 class UpdateDetails : public QWidget, Ui::UpdateDetails
 {
@@ -43,24 +39,35 @@ public:
     explicit UpdateDetails(QWidget *parent = 0);
     ~UpdateDetails();
 
-    void setPackage(const QString &packageId, Package::Info updateInfo);
+    void setPackage(const QString &packageId, Transaction::Info updateInfo);
 
 public slots:
     void hide();
 
 private slots:
-    void updateDetail(const PackageKit::Package &package);
+    void updateDetail(const QString &packageID,
+                      const QStringList &updates,
+                      const QStringList &obsoletes,
+                      const QStringList &vendorUrls,
+                      const QStringList &bugzillaUrls,
+                      const QStringList &cveUrls,
+                      PackageKit::Transaction::Restart restart,
+                      const QString &updateText,
+                      const QString &changelog,
+                      PackageKit::Transaction::UpdateState state,
+                      const QDateTime &issued,
+                      const QDateTime &updated);
     void updateDetailFinished();
     void display();
 
 private:
-    QString getLinkList(const QString &links) const;
+    QString getLinkList(const QStringList &urls) const;
 
     bool m_show;
     QString m_packageId;
     Transaction *m_transaction;
     QString m_currentDescription;
-    Package::Info m_updateInfo;
+    Transaction::Info m_updateInfo;
     KPixmapSequenceOverlayPainter *m_busySeq;
     QPropertyAnimation *m_fadeDetails;
     QParallelAnimationGroup *m_expandPanel;

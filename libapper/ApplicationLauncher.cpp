@@ -37,6 +37,7 @@ ApplicationLauncher::ApplicationLauncher(QWidget *parent) :
 
     connect(ui->kdialogbuttonbox, SIGNAL(rejected()), this, SLOT(accept()));
     setButtons(KDialog::None);
+    setWindowIcon(KIcon("task-complete"));
 
     connect(ui->applicationsView, SIGNAL(clicked(QModelIndex)),
             this, SLOT(itemClicked(QModelIndex)));
@@ -60,7 +61,7 @@ void ApplicationLauncher::setEmbedded(bool embedded)
     kDebug() << embedded;
 }
 
-QList<PackageKit::Package> ApplicationLauncher::packages() const
+QStringList ApplicationLauncher::packages() const
 {
     return m_packages;
 }
@@ -92,6 +93,9 @@ bool ApplicationLauncher::hasApplications()
         }
     }
 
+    setWindowTitle(i18np("New application available",
+                         "New applications available",
+                         model->rowCount()));
     ui->label->setText(i18np("The following application was just installed. Click on it to launch:",
                              "The following applications were just installed. Click on them to launch:",
                              model->rowCount()));
@@ -99,16 +103,18 @@ bool ApplicationLauncher::hasApplications()
     return model->rowCount();
 }
 
-void ApplicationLauncher::addPackage(const PackageKit::Package &package)
+void ApplicationLauncher::addPackage(PackageKit::Transaction::Info info, const QString &packageID, const QString &summary)
 {
-    if (!m_packages.contains(package)) {
-        m_packages.append(package);
+    Q_UNUSED(info)
+    Q_UNUSED(summary)
+    if (!m_packages.contains(packageID)) {
+        m_packages << packageID;
     }
 }
 
-void ApplicationLauncher::files(const PackageKit::Package &package, const QStringList &files)
+void ApplicationLauncher::files(const QString &packageID, const QStringList &files)
 {
-    Q_UNUSED(package)
+    Q_UNUSED(packageID)
     m_files.append(files.filter(".desktop"));
 }
 

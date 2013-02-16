@@ -48,6 +48,7 @@ private slots:
     void currentPageChanged(int index);
     void licenseAccepted(bool accepted);
     void sharedInstallCbToggled(bool shared);
+    void securityInfoBtnClicked();
     void updatePallete();
 
 private:
@@ -57,6 +58,7 @@ private:
 
     SetupWizardPrivate *const d;
     Ui::SetupWizard *ui;
+    QString m_ipkFName;
 };
 
 #endif // SetupWizard_H

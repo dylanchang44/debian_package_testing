@@ -1,7 +1,5 @@
-
-find_package(KDE4Internal REQUIRED)
 find_package(GLIB2 REQUIRED)
-pkg_check_modules(LISTALLER REQUIRED listaller-glib>=0.5.4)
+pkg_check_modules(LISTALLER REQUIRED listaller-glib>=0.5.6)
 pkg_check_modules(GEE REQUIRED gee-1.0>=0.6)
 
 include_directories(${CMAKE_CURRENT_BINARY_DIR}
@@ -33,6 +31,5 @@ target_link_libraries(apper-appsetup
 		      apper
 )
 
-kde4_create_manpage(man-apper-appsetup.1.docbook 1 INSTALL_DESTINATION ${MAN_INSTALL_DIR})
-
 install(TARGETS apper-appsetup RUNTIME DESTINATION ${BIN_INSTALL_DIR})
+install(FILES apper_appsetup.desktop DESTINATION ${XDG_APPS_INSTALL_DIR})

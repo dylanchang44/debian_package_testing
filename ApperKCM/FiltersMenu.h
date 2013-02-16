@@ -34,14 +34,11 @@ public:
     ~FiltersMenu();
 
     Transaction::Filters filters() const;
-    QString filterApplications() const;
+    bool filterApplications() const;
 
 signals:
     void filtersChanged();
-    void filterApplications(const QString &filter);
-
-private slots:
-    void filterAppTriggered(bool checked);
+    void filterApplications(bool checked);
 
 private:
     QAction *m_applications;

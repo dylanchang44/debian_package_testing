@@ -22,21 +22,21 @@
 
 #include <KDebug>
 
-int PackageImportance::restartImportance(Package::Restart type)
+int PackageImportance::restartImportance(Transaction::Restart type)
 {
     switch (type) {
-    case Package::UnknownRestart :
-    case Package::RestartNone :
+    case Transaction::RestartUnknown:
+    case Transaction::RestartNone:
         return 0;
-    case Package::RestartApplication :
+    case Transaction::RestartApplication:
         return 1;
-    case Package::RestartSession :
+    case Transaction::RestartSession:
         return 2;
-    case Package::RestartSecuritySession :
+    case Transaction::RestartSecuritySession:
         return 3;
-    case Package::RestartSystem :
+    case Transaction::RestartSystem:
         return 4;
-    case Package::RestartSecuritySystem :
+    case Transaction::RestartSecuritySystem:
         return 5;
     }
     kWarning() << "restart type unrecognised: " << type;

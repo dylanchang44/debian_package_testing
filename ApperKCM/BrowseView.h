@@ -21,12 +21,11 @@
 #ifndef BROWSE_VIEW_H
 #define BROWSE_VIEW_H
 
-#include <KCategorizedSortFilterProxyModel>
-
 #include "ui_BrowseView.h"
 
 class PackageModel;
 
+class ApplicationSortFilterModel;
 class KpkSearchableTreeView;
 class BrowseView : public QWidget, Ui::BrowseView
 {
@@ -35,13 +34,13 @@ public:
     BrowseView(QWidget *parent = 0);
     ~BrowseView();
 
-    void init(Transaction::Roles roles);
+    void init(PackageKit::Transaction::Roles roles);
 
     void showInstalledPanel(bool visible);
     void setCategoryModel(QAbstractItemModel *model);
     void setParentCategory(const QModelIndex &index);
     PackageModel*                  model() const;
-    KCategorizedSortFilterProxyModel* proxy() const;
+    ApplicationSortFilterModel* proxy() const;
     KPixmapSequenceOverlayPainter*    busyCursor() const;
 
     void disableExportInstalledPB();
@@ -72,14 +71,14 @@ private slots:
 private:
     bool showPageHeader() const;
 
-    QAction                          *m_showPackageVersion;
-    QAction                          *m_showPackageArch;
-    QAction                          *m_showPackageOrigin;
-    QAction                          *m_showPackageSizes;
+    QAction                       *m_showPackageVersion;
+    QAction                       *m_showPackageArch;
+    QAction                       *m_showPackageOrigin;
+    QAction                       *m_showPackageSizes;
     PackageModel                  *m_model;
-    KCategorizedSortFilterProxyModel *m_proxy;
-    KpkSearchableTreeView            *m_packageView;
-    KPixmapSequenceOverlayPainter    *m_busySeq;
+    ApplicationSortFilterModel    *m_proxy;
+    KpkSearchableTreeView         *m_packageView;
+    KPixmapSequenceOverlayPainter *m_busySeq;
 };
 
 #endif

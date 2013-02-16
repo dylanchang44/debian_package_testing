@@ -1,5 +1,5 @@
 /***************************************************************************
- *   Copyright (C) 2008-2011 by Daniel Nicoletti                           *
+ *   Copyright (C) 2008-2012 by Daniel Nicoletti                           *
  *   dantti12@gmail.com                                                    *
  *                                                                         *
  *   This program is free software; you can redistribute it and/or modify  *
@@ -25,28 +25,30 @@
 
 #include <Transaction>
 
-using namespace PackageKit;
-
-namespace PkStrings
+class KDE_EXPORT PkStrings : public QObject
 {
-    KDE_EXPORT QString finished(Transaction::Exit status);
-    KDE_EXPORT QString infoPresent(Package::Info info);
-    KDE_EXPORT QString infoPast(Package::Info info);
-    KDE_EXPORT QString error(Transaction::Error error);
-    KDE_EXPORT QString errorMessage(Transaction::Error error);
-    KDE_EXPORT QString message(Transaction::Message type);
-    KDE_EXPORT QString status(Transaction::Status status);
-    KDE_EXPORT QString statusPast(Transaction::Status status);
-    KDE_EXPORT QString groups(Package::Group group);
-    KDE_EXPORT QString info(Package::Info state);
-    KDE_EXPORT QString packageQuantity(bool updates, int packages, int selected);
-    KDE_EXPORT QString updateState(Package::UpdateState value);
-    KDE_EXPORT QString restartType(Package::Restart value);
-    KDE_EXPORT QString restartTypeFuture(Package::Restart value);
-    KDE_EXPORT QString action(Transaction::Role action);
-    KDE_EXPORT QString actionPast(Transaction::Role action);
-    KDE_EXPORT QString mediaMessage(Transaction::MediaType value, const QString &text);
-    KDE_EXPORT QString daemonError(Transaction::InternalError value);
+    Q_OBJECT
+public slots:
+    static QString infoPresent(PackageKit::Transaction::Info info);
+    static QString infoPast(PackageKit::Transaction::Info info);
+    static QString error(PackageKit::Transaction::Error error);
+    static QString errorMessage(PackageKit::Transaction::Error error);
+    static QString message(PackageKit::Transaction::Message type);
+    static QString status(int status, uint speed = 0, qulonglong downloadRemaining = 0);
+    static QString statusPast(PackageKit::Transaction::Status status);
+    static QString groups(PackageKit::Transaction::Group group);
+    static QString info(int state);
+    static QString packageQuantity(bool updates, int packages, int selected);
+    static QString updateState(PackageKit::Transaction::UpdateState value);
+    static QString restartType(PackageKit::Transaction::Restart value);
+    static QString restartTypeFuture(PackageKit::Transaction::Restart value);
+    static QString action(int role);
+    static QString actionPast(PackageKit::Transaction::Role action);
+    static QString mediaMessage(PackageKit::Transaction::MediaType value, const QString &text);
+    static QString daemonError(PackageKit::Transaction::InternalError value);
+    static QString prettyFormatDuration(unsigned long mSec);
+    static QString lastCacheRefreshTitle(uint lastTime);
+    static QString lastCacheRefreshSubTitle(uint lastTime);
 };
 
 #endif

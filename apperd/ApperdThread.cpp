@@ -19,19 +19,27 @@
 
 #include "ApperdThread.h"
 
+#include "RefreshCacheTask.h"
+#include "Updater.h"
+#include "DistroUpgrade.h"
+#include "TransactionWatcher.h"
+#include "DBusInterface.h"
+
 #include <Enum.h>
+#include <Daemon>
 
 #include <KStandardDirs>
 #include <KConfig>
 #include <KConfigGroup>
 #include <KDirWatch>
-
+#include <KProtocolManager>
+#include <KLocale>
 #include <Solid/PowerManagement>
 
+#include <QStringBuilder>
 #include <QtDBus/QDBusConnection>
 #include <QtDBus/QDBusReply>
-#include <QtDBus/QDBusServiceWatcher>
-#include <QtDBus/QDBusInterface>
+#include <QDBusServiceWatcher>
 
 #include <limits.h>
 
@@ -48,33 +56,23 @@
  * - Start Sentinel to keep an eye on running transactions
  */
 
+using namespace PackageKit;
+using namespace Solid;
+
 ApperdThread::ApperdThread(QObject *parent) :
     QObject(parent),
-    m_actRefreshCacheChecked(false),
-    m_refreshCacheInterval(Enum::TimeIntervalDefault)
+    m_proxyChanged(true)
 {
-    // Make all our init code run on the thread since
-    // the DBus calls were made blocking
-    QTimer::singleShot(0, this, SLOT(init()));
-
-    m_thread = new QThread(this);
-    moveToThread(m_thread);
-    m_thread->start();
 }
 
 ApperdThread::~ApperdThread()
 {
-    m_thread->quit();
-    m_thread->wait();
-    delete m_thread;
 }
 
 void ApperdThread::init()
 {
-    // This will prevent the user seeing updates again,
-    // PackageKit emits UpdatesChanges when we should display
-    // that information again
-    QTimer::singleShot(FIVE_MIN, this, SLOT(updatesChanged()));
+    connect(PowerManagement::notifier(), SIGNAL(appShouldConserveResourcesChanged(bool)),
+            this, SLOT(appShouldConserveResourcesChanged()));
 
     // This timer keeps polling to see if it has
     // to refresh the cache
@@ -82,22 +80,6 @@ void ApperdThread::init()
     m_qtimer->setInterval(FIVE_MIN);
     connect(m_qtimer, SIGNAL(timeout()), this, SLOT(poll()));
     m_qtimer->start();
-
-    // Watch for TransactionListChanged so we start sentinel
-    QDBusConnection::systemBus().connect(QLatin1String(""),
-                                         QLatin1String(""),
-                                         QLatin1String("org.freedesktop.PackageKit"),
-                                         QLatin1String("TransactionListChanged"),
-                                         this,
-                                         SLOT(transactionListChanged(QStringList)));
-
-    // Watch for UpdatesChanged so we display new updates
-    QDBusConnection::systemBus().connect(QLatin1String(""),
-                                         QLatin1String(""),
-                                         QLatin1String("org.freedesktop.PackageKit"),
-                                         QLatin1String("UpdatesChanged"),
-                                         this,
-                                         SLOT(updatesChanged()));
 
     //check if any changes to the file occour
     //this also prevents from reading when a checkUpdate happens
@@ -108,33 +90,67 @@ void ApperdThread::init()
     connect(confWatch, SIGNAL(deleted(QString)), this, SLOT(configFileChanged()));
     confWatch->startScan();
 
-    // Make sure we know is Sentinel is running
-    QDBusServiceWatcher *watcher;
-    watcher = new QDBusServiceWatcher(QLatin1String("org.kde.ApperSentinel"),
-                                      QDBusConnection::sessionBus(),
-                                      QDBusServiceWatcher::WatchForOwnerChange,
-                                      this);
-    connect(watcher, SIGNAL(serviceOwnerChanged(QString,QString,QString)),
-            this, SLOT(serviceOwnerChanged(QString,QString,QString)));
+    // Watch for changes in the KDE proxy settings
+    KDirWatch *proxyWatch = new KDirWatch(this);
+    proxyWatch->addFile(KStandardDirs::locateLocal("config", "kioslaverc"));
+    connect(proxyWatch, SIGNAL(dirty(QString)), this, SLOT(proxyChanged()));
+    connect(proxyWatch, SIGNAL(created(QString)), this, SLOT(proxyChanged()));
+    connect(proxyWatch, SIGNAL(deleted(QString)), this, SLOT(proxyChanged()));
+    proxyWatch->startScan();
 
-    // Check if Sentinel is running
-    m_sentinelIsRunning = nameHasOwner(QLatin1String("org.kde.ApperSentinel"),
-                                       QDBusConnection::sessionBus());
+    QString locale(KGlobal::locale()->language() % QLatin1Char('.') % KGlobal::locale()->encoding());
+    Daemon::global()->setHints(QLatin1String("locale=") % locale);
 
-    // if PackageKit is running check to see if there are running transactons already
-    if (!m_sentinelIsRunning && nameHasOwner(QLatin1String("org.freedesktop.PackageKit"),
-                                             QDBusConnection::systemBus())) {
-        QDBusMessage message;
-        message = QDBusMessage::createMethodCall(QLatin1String("org.freedesktop.PackageKit"),
-                                                 QLatin1String("/org/freedesktop/PackageKit"),
-                                                 QLatin1String("org.freedesktop.PackageKit"),
-                                                 QLatin1String("GetTransactionList"));
-        QDBusReply<QStringList> reply = QDBusConnection::systemBus().call(message);
-        transactionListChanged(reply.value()); // In case of a running transaction fire up sentinel
-    }
+    // Watch for TransactionListChanged so we start sentinel
+    connect(Daemon::global(), SIGNAL(transactionListChanged(QStringList)),
+            this, SLOT(transactionListChanged(QStringList)));
+
+    // Watch for UpdatesChanged so we display new updates
+    connect(Daemon::global(), SIGNAL(updatesChanged()),
+            this, SLOT(updatesChanged()));
+
+    m_interface = new DBusInterface(this);
+
+    m_refreshCache = new RefreshCacheTask(this);
+    connect(m_interface, SIGNAL(refreshCache()),
+            m_refreshCache, SLOT(refreshCache()));
+
+    m_updater = new Updater(this);
+
+    m_distroUpgrade = new DistroUpgrade(this);
 
     // read the current settings
     configFileChanged();
+
+    // In case PackageKit is not running watch for it's registration to configure proxy
+    QDBusServiceWatcher *watcher;
+    watcher = new QDBusServiceWatcher(QLatin1String("org.freedesktop.PackageKit"),
+                                      QDBusConnection::systemBus(),
+                                      QDBusServiceWatcher::WatchForRegistration,
+                                      this);
+    connect(watcher, SIGNAL(serviceRegistered(QString)),
+            this, SLOT(setProxy()));
+
+    // if PackageKit is running check to see if there are running transactons already
+    bool packagekitIsRunning = nameHasOwner(QLatin1String("org.freedesktop.PackageKit"),
+                                            QDBusConnection::systemBus());
+
+    m_transactionWatcher = new TransactionWatcher(packagekitIsRunning, this);
+    // connect the watch transaction coming from the updater icon to our watcher
+    connect(m_interface, SIGNAL(watchTransaction(QDBusObjectPath)),
+            m_transactionWatcher, SLOT(watchTransaction(QDBusObjectPath)));
+
+    if (packagekitIsRunning) {
+        // PackageKit is running set the session Proxy
+        setProxy();
+
+        // If packagekit is already running go check
+        // for updates
+        updatesChanged();
+    } else {
+        // Initial check for updates
+        QTimer::singleShot(ONE_MIN, this, SLOT(updatesChanged()));
+    }
 }
 
 // This is called every 5 minutes
@@ -147,21 +163,17 @@ void ApperdThread::poll()
     }
 
     // If check for updates is active
-    if (m_refreshCacheInterval != Enum::Never) {
+    if (m_configs[CFG_INTERVAL].value<uint>() != Enum::Never) {
         // Find out how many seconds passed since last refresh cache
         uint secsSinceLastRefresh;
         secsSinceLastRefresh = QDateTime::currentDateTime().toTime_t() - m_lastRefreshCache.toTime_t();
 
         // If lastRefreshCache is null it means that the cache was never refreshed
-        if (m_lastRefreshCache.isNull() || secsSinceLastRefresh > m_refreshCacheInterval) {
-            KConfig config("apper");
-            KConfigGroup checkUpdateGroup(&config, "CheckUpdate");
-            bool ignoreBattery;
-            bool ignoreMobile;
-            ignoreBattery = checkUpdateGroup.readEntry("checkUpdatesOnBattery", false);
-            ignoreMobile = checkUpdateGroup.readEntry("checkUpdatesOnMobile", false);
+        if (m_lastRefreshCache.isNull() || secsSinceLastRefresh > m_configs[CFG_INTERVAL].value<uint>()) {
+            bool ignoreBattery = m_configs[CFG_CHECK_UP_BATTERY].value<bool>();
+            bool ignoreMobile = m_configs[CFG_CHECK_UP_MOBILE].value<bool>();
             if (isSystemReady(ignoreBattery, ignoreMobile)) {
-                callApperSentinel(QLatin1String("RefreshCache"));
+                m_refreshCache->refreshCache();
             }
 
             // Invalidate the last time the cache was refreshed
@@ -174,29 +186,73 @@ void ApperdThread::configFileChanged()
 {
     KConfig config("apper");
     KConfigGroup checkUpdateGroup(&config, "CheckUpdate");
-    uint refreshCacheInterval;
-    refreshCacheInterval = checkUpdateGroup.readEntry("interval", Enum::TimeIntervalDefault);
-    // Check if the refresh cache interval was changed
-    if (m_refreshCacheInterval != refreshCacheInterval) {
-        m_refreshCacheInterval = refreshCacheInterval;
-        kDebug() << "New refresh cache interval" << m_refreshCacheInterval;
+    m_configs[CFG_CHECK_UP_BATTERY] = checkUpdateGroup.readEntry(CFG_CHECK_UP_BATTERY, DEFAULT_CHECK_UP_BATTERY);
+    m_configs[CFG_CHECK_UP_MOBILE] = checkUpdateGroup.readEntry(CFG_CHECK_UP_MOBILE, DEFAULT_CHECK_UP_MOBILE);
+    m_configs[CFG_INSTALL_UP_BATTERY] = checkUpdateGroup.readEntry(CFG_INSTALL_UP_BATTERY, DEFAULT_INSTALL_UP_BATTERY);
+    m_configs[CFG_INSTALL_UP_MOBILE] = checkUpdateGroup.readEntry(CFG_INSTALL_UP_MOBILE, DEFAULT_INSTALL_UP_MOBILE);
+    m_configs[CFG_AUTO_UP] = checkUpdateGroup.readEntry(CFG_AUTO_UP, Enum::AutoUpdateDefault);
+    m_configs[CFG_INTERVAL] = checkUpdateGroup.readEntry(CFG_INTERVAL, Enum::TimeIntervalDefault);
+    m_configs[CFG_DISTRO_UPGRADE] = checkUpdateGroup.readEntry(CFG_DISTRO_UPGRADE, Enum::DistroUpgradeDefault);
+    m_updater->setConfig(m_configs);
+    m_distroUpgrade->setConfig(m_configs);
+
+    KDirWatch *confWatch = qobject_cast<KDirWatch*>(sender());
+    if (confWatch) {
+        // Check for updates again since the config changed
+        updatesChanged();
+    }
+}
+
+void ApperdThread::proxyChanged()
+{
+    // We must reparse the configuration since the values are all cached
+    KProtocolManager::reparseConfiguration();
+
+    QHash<QString, QString> proxyConfig;
+    if (KProtocolManager::proxyType() == KProtocolManager::ManualProxy) {
+        proxyConfig["http"] = KProtocolManager::proxyFor("http");
+        proxyConfig["https"] = KProtocolManager::proxyFor("https");
+        proxyConfig["ftp"] = KProtocolManager::proxyFor("ftp");
+        proxyConfig["socks"] = KProtocolManager::proxyFor("socks");
+    }
+
+    // Check if the proxy settings really changed to avoid setting them twice
+    if (proxyConfig != m_proxyConfig) {
+        m_proxyConfig = proxyConfig;
+        m_proxyChanged = true;
+        setProxy();
+    }
+}
+
+void ApperdThread::setProxy()
+{
+    if (!m_proxyChanged) {
+        return;
+    }
+
+    // If we were called by the watcher it is because PackageKit is running
+    bool packagekitIsRunning = true;
+    QDBusServiceWatcher *watcher = qobject_cast<QDBusServiceWatcher*>(sender());
+    if (!watcher) {
+        packagekitIsRunning = nameHasOwner(QLatin1String("org.freedesktop.PackageKit"),
+                                           QDBusConnection::systemBus());
+    }
+
+    if (packagekitIsRunning) {
+        // Apply the proxy changes only if packagekit is running
+        // use value() to not insert items on the hash
+        Daemon::global()->setProxy(m_proxyConfig.value("http"),
+                                   m_proxyConfig.value("https"),
+                                   m_proxyConfig.value("ftp"),
+                                   m_proxyConfig.value("socks"),
+                                   QString(),
+                                   QString());
+        m_proxyChanged = false;
     }
 }
 
 void ApperdThread::transactionListChanged(const QStringList &tids)
 {
-    kDebug() << "tids.size()" << tids.size();
-    if (!m_sentinelIsRunning && !tids.isEmpty()) {
-        QDBusMessage message;
-        message = QDBusMessage::createMethodCall(QLatin1String("org.freedesktop.DBus"),
-                                                 QLatin1String("/"),
-                                                 QLatin1String("org.freedesktop.DBus"),
-                                                 QLatin1String("StartServiceByName"));
-        message << QLatin1String("org.kde.ApperSentinel");
-        message << static_cast<uint>(0);
-        QDBusConnection::sessionBus().call(message);
-    }
-
     if (tids.isEmpty()) {
         // update the last time the cache was refreshed
         QDateTime lastCacheRefresh;
@@ -210,82 +266,39 @@ void ApperdThread::transactionListChanged(const QStringList &tids)
 // This is called when the list of updates changes
 void ApperdThread::updatesChanged()
 {
-    KConfig config("apper");
-    KConfigGroup checkUpdateGroup(&config, "CheckUpdate");
-    bool ignoreBattery;
-    bool ignoreMobile;
-    ignoreBattery = checkUpdateGroup.readEntry("installUpdatesOnBattery", false);
-    ignoreMobile = checkUpdateGroup.readEntry("installUpdatesOnMobile", false);
-
-    // Append the system_ready argument
-    QList<QVariant> arguments;
-    arguments << isSystemReady(ignoreBattery, ignoreMobile);
+    bool ignoreBattery = m_configs[CFG_INSTALL_UP_BATTERY].value<bool>();
+    bool ignoreMobile = m_configs[CFG_INSTALL_UP_MOBILE].value<bool>();
 
     // Make sure the user sees the updates
-    callApperSentinel(QLatin1String("CheckForUpdates"), arguments);
+    m_updater->checkForUpdates(isSystemReady(ignoreBattery, ignoreMobile));
+    m_distroUpgrade->checkDistroUpgrades();
 }
 
-void ApperdThread::serviceOwnerChanged(const QString &serviceName, const QString &oldOwner, const QString &newOwner)
+void ApperdThread::appShouldConserveResourcesChanged()
 {
-    Q_UNUSED(serviceName)
-    kDebug() << serviceName << oldOwner << newOwner;
-    if (newOwner.isEmpty()) {
-        // Sentinel has closed
-        m_sentinelIsRunning = false;
-    } else {
-        m_sentinelIsRunning = true;
+    bool ignoreBattery = m_configs[CFG_INSTALL_UP_BATTERY].value<bool>();
+    bool ignoreMobile = m_configs[CFG_INSTALL_UP_MOBILE].value<bool>();
+
+    if (isSystemReady(ignoreBattery, ignoreMobile)) {
+        m_updater->setSystemReady();
     }
-}
-
-void ApperdThread::callApperSentinel(const QString &method, const QList<QVariant> &arguments)
-{
-    kDebug() << method;
-    QDBusMessage message;
-    message = QDBusMessage::createMethodCall(QLatin1String("org.kde.ApperSentinel"),
-                                             QLatin1String("/"),
-                                             QLatin1String("org.kde.ApperSentinel"),
-                                             method);
-    message.setArguments(arguments);
-    QDBusConnection::sessionBus().call(message);
 }
 
 QDateTime ApperdThread::getTimeSinceRefreshCache() const
 {
-    QDBusMessage message;
-    message = QDBusMessage::createMethodCall(QLatin1String("org.freedesktop.PackageKit"),
-                                             QLatin1String("/org/freedesktop/PackageKit"),
-                                             QLatin1String("org.freedesktop.PackageKit"),
-                                             QLatin1String("GetTimeSinceAction"));
-    message << QLatin1String("refresh-cache");
-    QDBusReply<uint> reply = QDBusConnection::systemBus().call(message);
+    uint value = Daemon::global()->getTimeSinceAction(Transaction::RoleRefreshCache);
 
     // When the refresh cache value was not yet defined UINT_MAX is returned
-    kDebug() << reply.value();
-    if (reply.value() == UINT_MAX) {
+    if (value == UINT_MAX) {
         return QDateTime();
     } else {
         // Calculate the last time the cache was refreshed by
         // subtracting the seconds from the current time
-        return QDateTime::currentDateTime().addSecs(reply.value() * -1);
+        return QDateTime::currentDateTime().addSecs(value * -1);
     }
 }
 
-QString ApperdThread::networkState() const
-{
-    QString ret;
-    QDBusInterface packagekitInterface(QLatin1String("org.freedesktop.PackageKit"),
-                                       QLatin1String("/org/freedesktop/PackageKit"),
-                                       QLatin1String("org.freedesktop.PackageKit"),
-                                       QDBusConnection::systemBus());
-    if (!packagekitInterface.isValid()) {
-        return ret;
-    }
-
-    ret = packagekitInterface.property("NetworkState").toString();
-    return ret;
-}
-
-bool ApperdThread::nameHasOwner(const QString &name, const QDBusConnection &connection) const
+bool ApperdThread::nameHasOwner(const QString &name, const QDBusConnection &connection)
 {
     QDBusMessage message;
     message = QDBusMessage::createMethodCall(QLatin1String("org.freedesktop.DBus"),
@@ -303,22 +316,22 @@ bool ApperdThread::isSystemReady(bool ignoreBattery, bool ignoreMobile) const
     // check how applications should behave (e.g. on battery power)
     if (!ignoreBattery && Solid::PowerManagement::appShouldConserveResources()) {
         kDebug() << "System is not ready, application should conserve resources";
-        // FIXME this always return true even on AC
-//        return false;
+        // This was fixed for KDElibs 4.8.5
+        return false;
     }
 
     // TODO it would be nice is Solid provided this
     // so we wouldn't be waking up PackageKit for this Solid task.
-    QString netState = networkState();
+    Daemon::Network network = Daemon::global()->networkState();
     // test whether network is connected
-    if (netState == QLatin1String("offline") || netState == QLatin1String("unknown")) {
-        kDebug() << "System is not ready, network state" << netState;
+    if (network == Daemon::NetworkOffline || network == Daemon::NetworkUnknown) {
+        kDebug() << "System is not ready, network state" << network;
         return false;
     }
 
     // check how applications should behave (e.g. on battery power)
-    if (!ignoreMobile && netState == QLatin1String("mobile")) {
-        kDebug() << "System is not ready, network state" << netState;
+    if (!ignoreMobile && network == Daemon::NetworkMobile) {
+        kDebug() << "System is not ready, network state" << network;
         return false;
     }
 

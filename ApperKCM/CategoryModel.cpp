@@ -23,6 +23,7 @@
 #include <QMetaEnum>
 #include <QFile>
 #include <QTimer>
+#include <QStringBuilder>
 
 #include <PkStrings.h>
 #include <PkIcons.h>
@@ -39,7 +40,9 @@
 
 #include <config.h>
 
-CategoryModel::CategoryModel(Transaction::Roles roles, QObject *parent) :
+using namespace PackageKit;
+
+CategoryModel::CategoryModel(PackageKit::Transaction::Roles roles, QObject *parent) :
     QStandardItemModel(parent),
     m_roles(roles)
 {
@@ -60,10 +63,13 @@ CategoryModel::CategoryModel(Transaction::Roles roles, QObject *parent) :
     item->setIcon(KIcon("system-software-update"));
     appendRow(item);
 
-#ifdef HAVE_APPINSTALL
+#ifdef HAVE_APPSTREAM
     // Get the groups
-    m_groups = Daemon::groups();
+#ifdef AS_CATEGORIES_PATH
     fillWithServiceGroups();
+#else
+    fillWithStandardGroups();
+#endif // AS_CATEGORIES_PATH
 //         category("",
 //                              "servers",
 //                              "Servers",
@@ -81,7 +87,7 @@ CategoryModel::CategoryModel(Transaction::Roles roles, QObject *parent) :
 //                              "dialog-cancel");
 #else
     if (m_roles & Transaction::RoleGetCategories
-        && Daemon::getTransactions().isEmpty()) {
+        && Daemon::global()->getTransactionList().isEmpty()) {
         Transaction *trans = new Transaction(this);
         connect(trans, SIGNAL(category(QString,QString,QString,QString,QString)),
                 this, SLOT(category(QString,QString,QString,QString,QString)));
@@ -94,7 +100,7 @@ CategoryModel::CategoryModel(Transaction::Roles roles, QObject *parent) :
     } else {
         fillWithStandardGroups();
     }
-#endif //HAVE_APPINSTALL
+#endif //HAVE_APPSTREAM
     QTimer::singleShot(0, this, SIGNAL(finished()));
 }
 
@@ -197,21 +203,26 @@ QStandardItem* CategoryModel::findCategory(const QString &categoryId, const QMod
 void CategoryModel::fillWithStandardGroups()
 {
     // Get the groups
-    m_groups = Daemon::groups();
+    m_groups = Daemon::global()->groups();
+    kDebug();
     QStandardItem *item;
-    foreach (const Package::Group &group, m_groups) {
-        if (group != Package::UnknownGroup) {
-            item = new QStandardItem(PkStrings::groups(group));
-            item->setDragEnabled(false);
-            item->setData(Transaction::RoleSearchGroup, SearchRole);
-            item->setData(group, GroupRole);
-            item->setData(i18n("Groups"), KCategorizedSortFilterProxyModel::CategoryDisplayRole);
-            item->setData(1, KCategorizedSortFilterProxyModel::CategorySortRole);
-            item->setIcon(PkIcons::groupsIcon(group));
-            if (!(m_roles & Transaction::RoleSearchGroup)) {
-                item->setSelectable(false);
+    for (int i = 1; i < 64; ++i) {
+        if (m_groups & i) {
+            Transaction::Group group;
+            group = static_cast<Transaction::Group>(i);
+            if (group != Transaction::GroupUnknown) {
+                item = new QStandardItem(PkStrings::groups(group));
+                item->setDragEnabled(false);
+                item->setData(Transaction::RoleSearchGroup, SearchRole);
+                item->setData(group, GroupRole);
+                item->setData(i18n("Groups"), KCategorizedSortFilterProxyModel::CategoryDisplayRole);
+                item->setData(1, KCategorizedSortFilterProxyModel::CategorySortRole);
+                item->setIcon(PkIcons::groupsIcon(group));
+                if (!(m_roles & Transaction::RoleSearchGroup)) {
+                    item->setSelectable(false);
+                }
+                appendRow(item);
             }
-            appendRow(item);
         }
     }
 
@@ -220,11 +231,12 @@ void CategoryModel::fillWithStandardGroups()
 
 void CategoryModel::fillWithServiceGroups()
 {
-#ifdef AI_CATEGORIES_PATH
+#ifdef AS_CATEGORIES_PATH
     KGlobal::locale()->insertCatalog("gnome-menus");
-    QFile file(QString(AI_CATEGORIES_PATH) + "/categories.xml");
+    QFile file(QString(AS_CATEGORIES_PATH) + "/categories.xml");
      if (!file.open(QIODevice::ReadOnly)) {
          kDebug() << "Failed to open file";
+         fillWithStandardGroups();
          return;
     }
     QXmlStreamReader xml(&file);
@@ -240,7 +252,7 @@ void CategoryModel::fillWithServiceGroups()
             parseMenu(xml, QString());
         }
     }
-#endif //AI_CATEGORIES_PATH
+#endif //AS_CATEGORIES_PATH
 }
 
 void CategoryModel::parseMenu(QXmlStreamReader &xml, const QString &parentIcon, QStandardItem *parent)
@@ -250,14 +262,14 @@ void CategoryModel::parseMenu(QXmlStreamReader &xml, const QString &parentIcon, 
     QStandardItem *item = 0;
     while(!xml.atEnd() &&
           !(xml.tokenType() == QXmlStreamReader::EndElement &&
-            xml.name() == "Menu")) {
+            xml.name() == QLatin1String("Menu"))) {
 
         if(xml.tokenType() == QXmlStreamReader::StartElement) {
-            if (xml.name() == "Menu") {
+            if (xml.name() == QLatin1String("Menu")) {
                 xml.readNext();
 //                 kDebug() << "Found Menu";
                 parseMenu(xml, icon, item);
-            } else if (xml.name() == "Name") {
+            } else if (xml.name() == QLatin1String("Name")) {
                 QString name = xml.readElementText();
                 if (!item) {
                     item = new QStandardItem(i18n(name.toUtf8()));
@@ -265,7 +277,7 @@ void CategoryModel::parseMenu(QXmlStreamReader &xml, const QString &parentIcon, 
                 } else if (item->text().isEmpty()) {
                     item->setText(i18n(name.toUtf8()));
                 }
-            } else if (xml.name() == "Icon") {
+            } else if (xml.name() == QLatin1String("Icon")) {
                 if (!item) {
                     item = new QStandardItem;
                     item->setDragEnabled(false);
@@ -278,19 +290,27 @@ void CategoryModel::parseMenu(QXmlStreamReader &xml, const QString &parentIcon, 
                     item->setIcon(PkIcons::getIcon(_icon, icon));
                     icon = _icon;
                 }
-            } else if (xml.name() == "Categories") {
-                if (!item) {
-                    item = new QStandardItem;
-                    item->setDragEnabled(false);
-                }
-                xml.readNext();
+            } else if (xml.name() == QLatin1String("Categories")) {
 //                 kDebug() << "Found Categories           ";
-                QString categories;
-                categories = parseCategories(xml, item);
-//                 kDebug() << categories;
-                item->setData(categories, CategoryRole);
-                item->setData(Transaction::RoleResolve, SearchRole);
-            } else if (xml.name() == "Directory") {
+                QList<CategoryMatcher> categories;
+                categories = parseCategories(xml);
+                if (!categories.isEmpty()) {
+                    if (!item) {
+                        item = new QStandardItem;
+                        item->setDragEnabled(false);
+                    }
+
+                    // If we only have one category inside get the first item
+                    if (categories.size() == 1) {
+                        item->setData(qVariantFromValue(categories.first()), CategoryRole);
+                    } else {
+                        CategoryMatcher parser(CategoryMatcher::And);
+                        parser.setChild(categories);
+                        item->setData(qVariantFromValue(parser), CategoryRole);
+                    }
+                    item->setData(Transaction::RoleResolve, SearchRole);
+                }
+            } else if (xml.name() == QLatin1String("Directory")) {
                 if (!item) {
                     item = new QStandardItem;
                     item->setDragEnabled(false);
@@ -308,16 +328,16 @@ void CategoryModel::parseMenu(QXmlStreamReader &xml, const QString &parentIcon, 
                 if (!_name.isEmpty()) {
                     item->setText(_name);
                 }
-            } else if (xml.name() == "PkGroups") {
+            } else if (xml.name() == QLatin1String("PkGroups")) {
                 if (!item) {
                     item = new QStandardItem;
                     item->setDragEnabled(false);
                 }
                 QString group = xml.readElementText();
-                Package::Group groupEnum = static_cast<Package::Group>(enumFromString<Package>(group, "Group", "Group"));
-
-                if (groupEnum != Package::UnknownGroup &&
-                    (m_groups.contains(groupEnum))) {
+                Transaction::Group groupEnum;
+                int groupInt = Daemon::enumFromString<Transaction>(group, "Group");
+                groupEnum = static_cast<Transaction::Group>(groupInt);
+                if (groupEnum != Transaction::GroupUnknown && m_groups & groupEnum) {
                     item->setData(Transaction::RoleSearchGroup, SearchRole);
                     item->setData(groupEnum, GroupRole);
                 }
@@ -332,8 +352,8 @@ void CategoryModel::parseMenu(QXmlStreamReader &xml, const QString &parentIcon, 
         (!item->data(GroupRole).isNull() || !item->data(CategoryRole).isNull())) {
         if (item->data(CategoryRole).isNull()) {
             // Set the group name to get it translated
-            Package::Group group;
-            group = static_cast<Package::Group>(item->data(GroupRole).toUInt());
+            Transaction::Group group;
+            group = item->data(GroupRole).value<Transaction::Group>();
             item->setText(PkStrings::groups(group));
         }
         item->setData(i18n("Categories"), KCategorizedSortFilterProxyModel::CategoryDisplayRole);
@@ -346,128 +366,51 @@ void CategoryModel::parseMenu(QXmlStreamReader &xml, const QString &parentIcon, 
     }
 }
 
-QString CategoryModel::parseCategories(QXmlStreamReader &xml, QStandardItem *item, const QString &join)
+QList<CategoryMatcher> CategoryModel::parseCategories(QXmlStreamReader &xml)
 {
-    QString endElement = join;
-    // When the join element is empty means that it was started by
-    // 'Categories' keyword
-    if (endElement.isEmpty()) {
-        endElement = "Categories";
-    }
-//     kDebug() << "endElement" << endElement;
+    QString token = xml.name().toString();
 
-    QStringList ret;
-    while(!xml.atEnd() &&
-          !(xml.tokenType() == QXmlStreamReader::EndElement &&
-            xml.name() == endElement)) {
+    QList<CategoryMatcher> ret;
+    while(!xml.atEnd() && !(xml.readNext() == QXmlStreamReader::EndElement && xml.name() == token)) {
         if(xml.tokenType() == QXmlStreamReader::StartElement) {
-            // Where the categories where AND or OR
-            if (xml.name() == "And" || xml.name() == "Or") {
-//                 kDebug() << "Found:" << xml.name();
-                QString _endElement = xml.name().toString();
-                xml.readNext();
-                QString andOr;
-                andOr = parseCategories(xml, item, _endElement);
-                if (!andOr.isEmpty()) {
-                    // The result should be so that we make sure the
-                    // precedence is right "( andOr )"
-                    andOr.prepend("( ");
-                    andOr.append(" )");
-                    ret << andOr;
+            // Where the categories where AND
+            if (xml.name() == QLatin1String("And")) {
+                // We are going to read the next element to save the token name
+                QList<CategoryMatcher> parsers;
+                parsers = parseCategories(xml);
+                if (!parsers.isEmpty()) {
+                    CategoryMatcher opAND(CategoryMatcher::And);
+                    opAND.setChild(parsers);
+                    ret << opAND;
                 }
-            }
-
-            // USED to negate the categories inside it
-            if(xml.name() == "Not") {
-//                 kDebug() << "Found:" << xml.name();
-                xml.readNext();
-                QString _ret;
-                _ret = parseCategories(xml, item, "Not");
-                if (!_ret.isEmpty()) {
-                    ret << _ret;
+            } else if (xml.name() == QLatin1String("Or")) {
+                // Where the categories where OR
+                QList<CategoryMatcher> parsers;
+                parsers = parseCategories(xml);
+                if (!parsers.isEmpty()) {
+                    CategoryMatcher opOR(CategoryMatcher::Or);
+                    opOR.setChild(parsers);
+                    ret << opOR;
                 }
-            }
-
-            // Found the real category, if the join was not means
-            // that applications in this category should NOT be displayed
-            if(xml.name() == "Category") {
-                QString name;
-                name = xml.readElementText();
+            } else if (xml.name() == QLatin1String("Not")) {
+                // USED to negate the categories inside it
+                QList<CategoryMatcher> parsers;
+                parsers = parseCategories(xml);
+                if (!parsers.isEmpty()) {
+                    CategoryMatcher opNot(CategoryMatcher::Not);
+                    opNot.setChild(parsers);
+                    ret << opNot;
+                }
+            } else if (xml.name() == QLatin1String("Category")) {
+                // Found the real category, if the join was not means
+                // that applications in this category should NOT be displayed
+                QString name = xml.readElementText();
                 if (!name.isEmpty()){
-                    if (join == "Not") {
-                        ret << QString("categories != '%1' AND "
-                                       "categories NOT GLOB '*;%1' AND "
-                                       "categories NOT GLOB '*;%1;*' AND "
-                                       "categories NOT GLOB '%1;*'").arg(name);
-                    } else {
-                        ret << QString("categories = '%1' OR "
-                                       "categories GLOB '*;%1' OR "
-                                       "categories GLOB '*;%1;*' OR "
-                                       "categories GLOB '%1;*'").arg(name);
-                    }
+                    ret << CategoryMatcher(CategoryMatcher::Term, name);
                 }
             }
         }
-
-        xml.readNext();
     }
 
-    if (ret.isEmpty()) {
-        return QString();
-    }
-    return ret.join(' ' + join + ' ');
+    return ret;
 }
-
-template<class T> int CategoryModel::enumFromString(const QString& str, const char* enumName, const QString& prefix)
-{
-    QString realName;
-    bool lastWasDash = false;
-    QChar buf;
-
-    for(int i = 0 ; i < str.length() ; ++i) {
-        buf = str[i].toLower();
-        if(i == 0 || lastWasDash) {
-            buf = buf.toUpper();
-        }
-
-        lastWasDash = false;
-        if(buf.toAscii() == '-') {
-            lastWasDash = true;
-        } else if(buf.toAscii() == '~') {
-            lastWasDash = true;
-            realName += "Not";
-        } else {
-            realName += buf;
-        }
-    };
-
-    if(!prefix.isNull())
-        realName = prefix + realName;
-
-    // Filter quirk
-    if(enumName == QString("Filter")) {
-        if(realName == QString("FilterNone"))
-            realName = "NoFilter";
-
-        if(realName == QString("FilterDevel") || realName == QString("FilterNotDevel"))
-            realName += "opment";
-    }
-
-    // Action quirk
-    if(enumName == QString("Action") && realName == QString("ActionUpdatePackage"))
-        realName = "ActionUpdatePackages";
-
-
-    int id = T::staticMetaObject.indexOfEnumerator(enumName);
-    QMetaEnum e = T::staticMetaObject.enumerator(id);
-    int enumValue = e.keyToValue(realName.toAscii().data());
-
-    if(enumValue == -1) {
-        enumValue = e.keyToValue(QString("Unknown").append(enumName).toAscii().data());
-        qDebug() << "enumFromString (" << enumName << ") : converted" << str << "to" << QString("Unknown").append(enumName) << ", enum value" << enumValue;
-    }
-    return enumValue;
-}
-
-
-#include "CategoryModel.moc"

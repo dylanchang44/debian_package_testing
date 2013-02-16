@@ -21,20 +21,18 @@
 #ifndef PK_TRANSACTION_H
 #define PK_TRANSACTION_H
 
-#include <QWidget>
-#include <KDialog>
+#include <QObject>
 #include <kdemacros.h>
+#include <KDialog>
 
 #include <Transaction>
 
 using namespace PackageKit;
 
-namespace Ui {
-    class PkTransaction;
-}
-
+class PackageModel;
 class PkTransactionPrivate;
-class KDE_EXPORT PkTransaction : public QWidget
+class PkTransactionProgressModel;
+class KDE_EXPORT PkTransaction : public Transaction
 {
     Q_OBJECT
     Q_ENUMS(ExitStatus)
@@ -44,37 +42,41 @@ public:
         Failed,
         Cancelled
     } ExitStatus;
-    explicit PkTransaction(QWidget *parent = 0);
+    explicit PkTransaction(QObject *parent = 0);
     ~PkTransaction();
 
-    void setTransaction(Transaction *trans, Transaction::Role role);
-    void hideCancelButton();
-
-    void installPackages(const QList<Package> &packages);
-    void installFiles(const QStringList &files);
-    void removePackages(const QList<Package> &packages);
-    void updatePackages(const QList<Package> &packages);
-    void refreshCache(bool force = false);
+    Q_INVOKABLE void installPackages(const QStringList &packages);
+    Q_INVOKABLE void installFiles(const QStringList &files);
+    Q_INVOKABLE void removePackages(const QStringList &packages);
+    Q_INVOKABLE void updatePackages(const QStringList &packages, bool downloadOnly = false);
 
     QString title() const;
-    Transaction::Role role() const;
+    Transaction::TransactionFlags flags() const;
+    Q_INVOKABLE PkTransactionProgressModel* progressModel() const;
+    Q_INVOKABLE void enableJobWatcher(bool enable);
 
     PkTransaction::ExitStatus exitStatus() const;
     bool isFinished() const;
 
-signals:
-    void finished(PkTransaction::ExitStatus status);
-    void allowCancel(bool enable);
-    void titleChanged(const QString &title);
-    void dialog(KDialog *widget);
-    void sorry(const QString &title, const QString &text, const QString &details);
-    void error(const QString &title, const QString &text, const QString &details);
+    PackageModel* simulateModel() const;
 
 public slots:
-    void cancel();
+    void setTrusted(bool trusted);
+    /**
+     * When mediaChangeRequired(), eulaRequired() or repoSignatureRequired()
+     * and the action is performed this method should be called
+     */
+    void requeueTransaction();
+
+signals:
+    void finished(PkTransaction::ExitStatus status);
+    void titleChanged(const QString &title);
+    void sorry(const QString &title, const QString &text, const QString &details);
+    void errorMessage(const QString &title, const QString &text, const QString &details);
+    void dialog(KDialog *widget);
 
 private slots:
-    void setupTransaction(PackageKit::Transaction *transaction);
+    void setupTransaction();
     void installPackages();
     void installFiles();
     void removePackages();
@@ -83,12 +85,19 @@ private slots:
     void installSignature();
     void acceptEula();
 
-    void transactionFinished(PackageKit::Transaction::Exit status);
-    void errorCode(PackageKit::Transaction::Error error, const QString &details);
-    void updateUi();
-    void eulaRequired(PackageKit::Eula info);
-    void mediaChangeRequired(PackageKit::Transaction::MediaType type, const QString &id, const QString &text);
-    void repoSignatureRequired(PackageKit::Signature info);
+    void slotChanged();
+    void slotFinished(PackageKit::Transaction::Exit status);
+    void slotErrorCode(PackageKit::Transaction::Error error, const QString &details);
+    void slotEulaRequired(const QString &eulaID, const QString &packageID, const QString &vendor, const QString &licenseAgreement);
+    void slotMediaChangeRequired(PackageKit::Transaction::MediaType type, const QString &id, const QString &text);
+    void slotRepoSignature(const QString &packageID,
+                           const QString &repoName,
+                           const QString &keyUrl,
+                           const QString &keyUserid,
+                           const QString &keyId,
+                           const QString &keyFingerprint,
+                           const QString &keyTimestamp,
+                           PackageKit::Transaction::SigType type);
 
     void setExitStatus(PkTransaction::ExitStatus status = PkTransaction::Success);
     void reject();
@@ -97,15 +106,11 @@ private:
     void showDialog(KDialog *dialog);
     void showError(const QString &title, const QString &description, const QString &details = QString());
     void showSorry(const QString &title, const QString &description, const QString &details = QString());
-    void unsetTransaction();
-    void requeueTransaction();
 
-    Transaction *m_trans;
     bool m_handlingActionRequired;
     bool m_showingError; //This might replace the above
     ExitStatus m_exitStatus;
     Transaction::Status m_status;
-    Ui::PkTransaction *ui;
     PkTransactionPrivate *d;
 };
 
