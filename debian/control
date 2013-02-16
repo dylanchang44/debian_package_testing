@@ -6,7 +6,7 @@ DM-Upload-Allowed: yes
 Build-Depends: chrpath,
                cmake (>= 2.8.4),
                debhelper (>= 9.0.0),
-               docbook2x,
+               docbook (>= 4.5),
                kde-workspace-dev (>= 4:4.8),
                kdelibs5-dev (>= 4:4.8),
                libdbus-1-dev,
