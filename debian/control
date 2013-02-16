@@ -24,11 +24,13 @@ Architecture: any
 Depends: apper-data (>= ${source:Version}),
          packagekit (>= 0.7.4),
          polkit-kde-1 | policykit-1-gnome,
+         listaller (>= 0.5.4),
          ${misc:Depends},
          ${shlibs:Depends}
-Recommends: app-install-data
-Suggests: apper-appsetup,
-          debconf-kde-helper,
+Replaces: apper-appsetup (<< 0.7.2)
+Breaks: apper-appsetup (<< 0.7.2)
+Recommends: appstream-index
+Suggests: debconf-kde-helper,
           software-properties-kde
 Description: KDE package management tool using PackageKit
  PackageKit allows performing simple software management tasks over a DBus
@@ -37,22 +39,6 @@ Description: KDE package management tool using PackageKit
  .
  This package provides a KDE package manager based on PackageKit,
  as well as package management support for the KDE desktop.
-
-Package: apper-appsetup
-Architecture: any
-Depends: apper (= ${binary:Version}),
-         listaller (>= 0.5.4),
-         ${misc:Depends},
-         ${shlibs:Depends}
-Description: Extended Listaller support for Apper
- PackageKit allows performing simple software management tasks over a DBus
- interface  e.g. refreshing the cache, updating, installing and removing
- software packages or searching for multimedia codecs and file handlers.
- .
- Apper is a KDE package manager based on PackageKit.
- This package adds support for some advanced Listaller features to Apper.
- Listaller is a distro-agnostic application installer with close
- integration into PackageKit.
 
 Package: apper-data
 Architecture: all

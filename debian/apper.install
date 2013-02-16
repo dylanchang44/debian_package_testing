@@ -2,4 +2,5 @@ usr/bin/apper
 usr/lib/*
 usr/share/applications/*
 usr/share/dbus-1/services/*
-usr/share/man/man1/apper.1
+usr/bin/apper-appsetup
+usr/share/man/man1/*
