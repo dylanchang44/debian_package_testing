@@ -20,12 +20,15 @@
 #ifndef APPERDTHREAD_H
 #define APPERDTHREAD_H
 
-#include <QThread>
-
 #include <QTimer>
 #include <QDBusConnection>
 #include <QDateTime>
 
+class DBusInterface;
+class DistroUpgrade;
+class RefreshCacheTask;
+class TransactionWatcher;
+class Updater;
 class ApperdThread : public QObject
 {
     Q_OBJECT
@@ -33,30 +36,34 @@ public:
     explicit ApperdThread(QObject *parent = 0);
     ~ApperdThread();
 
+    static bool nameHasOwner(const QString &name, const QDBusConnection &connection);
+
 private slots:
     void init();
     void poll();
     void configFileChanged();
+    void proxyChanged();
+    void setProxy();
 
     void transactionListChanged(const QStringList &tids);
     void updatesChanged();
-    void serviceOwnerChanged(const QString &serviceName, const QString &oldOwner, const QString &newOwner);
+    void appShouldConserveResourcesChanged();
 
 private:
-    void callApperSentinel(const QString &method,
-                           const QList<QVariant> &arguments = QList<QVariant>());
     QDateTime getTimeSinceRefreshCache() const;
-    QString networkState() const;
-    bool nameHasOwner(const QString &name, const QDBusConnection &connection) const;
     bool isSystemReady(bool ignoreBattery, bool ignoreMobile) const;
 
-    bool m_actRefreshCacheChecked;
-    bool m_canRefreshCache;
-    bool m_sentinelIsRunning;
+    bool m_proxyChanged;
+    QVariantHash m_configs;
+    QHash<QString, QString> m_proxyConfig;
     QDateTime m_lastRefreshCache;
-    uint m_refreshCacheInterval;
     QTimer *m_qtimer;
-    QThread *m_thread;
+
+    DBusInterface *m_interface;
+    DistroUpgrade *m_distroUpgrade;
+    RefreshCacheTask *m_refreshCache;
+    TransactionWatcher *m_transactionWatcher;
+    Updater *m_updater;
 };
 
 #endif // APPERDTHREAD_H

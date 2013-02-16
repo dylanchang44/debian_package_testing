@@ -23,33 +23,43 @@
 
 #include <KDialog>
 
+#include <QToolButton>
+
 namespace Ui {
     class Requirements;
 }
 
-class SimulateModel;
+class PackageModel;
 class Requirements : public KDialog
 {
     Q_OBJECT
     Q_PROPERTY(bool embedded READ embedded WRITE setEmbedded USER true)
 public:
-    explicit Requirements(SimulateModel *model, QWidget *parent = 0);
+    explicit Requirements(PackageModel *model, QWidget *parent = 0);
     ~Requirements();
 
     bool embedded() const;
     void setEmbedded(bool embedded);
+    bool trusted() const;
 
 public slots:
     bool shouldShow() const;
+
+protected slots:
+     virtual void slotButtonClicked(int button);
 
 private slots:
     void on_confirmCB_Toggled(bool checked);
     void actionClicked(int type);
 
 private:
+    void showUntrustedButton();
+
     bool m_embed;
     bool m_shouldShow;
     bool m_hideAutoConfirm;
+    QToolButton *m_untrustedButton;
+    QButtonGroup *m_buttonGroup;
     Ui::Requirements *ui;
 };
 

@@ -19,7 +19,7 @@
  ***************************************************************************/
 
 #include "Apper.h"
-#include <version.h>
+#include <config.h>
 
 #include <QDBusMessage>
 #include <QDBusConnection>
@@ -33,9 +33,9 @@
 int invoke(const QString &method_name, const QStringList &args)
 {
     QDBusMessage message;
-    message = QDBusMessage::createMethodCall("org.freedesktop.PackageKit",
-                                             "/org/freedesktop/PackageKit",
-                                             "org.freedesktop.PackageKit.Modify",
+    message = QDBusMessage::createMethodCall(QLatin1String("org.freedesktop.PackageKit"),
+                                             QLatin1String("/org/freedesktop/PackageKit"),
+                                             QLatin1String("org.freedesktop.PackageKit.Modify"),
                                              method_name);
     message << (uint) 0;
     message << args;
@@ -74,6 +74,7 @@ int main(int argc, char **argv)
     options.add("remove-package-by-file <filename>", ki18n("Single package remover"));
     options.add("+[package]", ki18n("Package file to install"));
     KCmdLineArgs::addCmdLineOptions(options);
+    Apper::addCmdLineOptions();
 
     KCmdLineArgs *args = KCmdLineArgs::parsedArgs();
 
@@ -122,8 +123,6 @@ int main(int argc, char **argv)
     if (args->isSet("remove-package-by-file")) {
         return invoke("RemovePackageByFiles", args->getOptionList("remove-package-by-file"));
     }
-
-    Apper::addCmdLineOptions();
 
     if (!Apper::start())
     {

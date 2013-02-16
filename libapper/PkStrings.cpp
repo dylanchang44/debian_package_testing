@@ -21,19 +21,23 @@
 #include "PkStrings.h"
 
 #include <KLocale>
+#include <KGlobal>
 
 #include <KDebug>
 
-QString PkStrings::status(Transaction::Status status)
+using namespace PackageKit;
+
+QString PkStrings::status(int status, uint speed, qulonglong downloadRemaining)
 {
-    switch (status) {
-    case Transaction::UnknownStatus :
+    Transaction::Status statusEnum = static_cast<Transaction::Status>(status);
+    switch (statusEnum) {
+    case Transaction::StatusUnknown:
         return i18nc("This is when the transaction status is not known",
                      "Unknown state");
-    case Transaction::StatusSetup :
+    case Transaction::StatusSetup:
         return i18nc("transaction state, the daemon is in the process of starting",
                      "Waiting for service to start");
-    case Transaction::StatusWait :
+    case Transaction::StatusWait:
         return i18nc("transaction state, the transaction is waiting for another to complete",
                      "Waiting for other tasks");
     case Transaction::StatusRunning :
@@ -48,9 +52,24 @@ QString PkStrings::status(Transaction::Status status)
     case Transaction::StatusRemove :
         return i18nc("transaction state, removing packages",
                      "Removing packages");
-    case Transaction::StatusDownload :
-        return i18nc("transaction state, downloading package files",
-                     "Downloading packages");
+    case Transaction::StatusDownload:
+        if (speed != 0 && downloadRemaining != 0) {
+            return i18nc("transaction state, downloading package files",
+                         "Downloading at %1/s, %2 remaining",
+                         KGlobal::locale()->formatByteSize(speed),
+                         KGlobal::locale()->formatByteSize(downloadRemaining));
+        } else if (speed != 0 && downloadRemaining == 0) {
+            return i18nc("transaction state, downloading package files",
+                         "Downloading at %1/s",
+                         KGlobal::locale()->formatByteSize(speed));
+        } else if (speed == 0 && downloadRemaining != 0) {
+            return i18nc("transaction state, downloading package files",
+                         "Downloading, %1 remaining",
+                         KGlobal::locale()->formatByteSize(downloadRemaining));
+        } else {
+            return i18nc("transaction state, downloading package files",
+                         "Downloading");
+        }
     case Transaction::StatusInstall :
         return i18nc("transaction state, installing packages",
                      "Installing packages");
@@ -72,9 +91,6 @@ QString PkStrings::status(Transaction::Status status)
     case Transaction::StatusSigCheck :
         return i18nc("transaction state, checking if we have all the security keys for the operation",
                      "Checking signatures");
-    case Transaction::StatusRollback :
-        return i18nc("transaction state, when we return to a previous system state",
-                     "Rolling back");
     case Transaction::StatusTestCommit :
         return i18nc("transaction state, when we're doing a test transaction",
                      "Testing changes");
@@ -139,7 +155,7 @@ QString PkStrings::status(Transaction::Status status)
         return i18nc("we are copying package files to prepare to install",
                      "Copying files");
     }
-    kWarning() << "status unrecognised: " << status;
+    kWarning() << "status unrecognised: " << statusEnum;
     return QString();
 }
 
@@ -164,10 +180,11 @@ QString PkStrings::statusPast(Transaction::Status status)
     }
 }
 
-QString PkStrings::action(Transaction::Role action)
+QString PkStrings::action(int role)
 {
-    switch (action) {
-    case Transaction::UnknownRole :
+    Transaction::Role roleEnum = static_cast<Transaction::Role>(role);
+    switch (roleEnum) {
+    case Transaction::RoleUnknown :
         return i18nc("The role of the transaction, in present tense", "Unknown role type");
     case Transaction::RoleGetDepends :
         return i18nc("The role of the transaction, in present tense", "Getting dependencies");
@@ -197,12 +214,8 @@ QString PkStrings::action(Transaction::Role action)
         return i18nc("The role of the transaction, in present tense", "Refreshing package cache");
     case Transaction::RoleUpdatePackages :
         return i18nc("The role of the transaction, in present tense", "Updating packages");
-    case Transaction::RoleUpdateSystem :
-        return i18nc("The role of the transaction, in present tense", "Updating system");
     case Transaction::RoleCancel :
         return i18nc("The role of the transaction, in present tense", "Canceling");
-    case Transaction::RoleRollback :
-        return i18nc("The role of the transaction, in present tense", "Rolling back");
     case Transaction::RoleGetRepoList :
         return i18nc("The role of the transaction, in present tense", "Getting list of repositories");
     case Transaction::RoleRepoEnable :
@@ -229,25 +242,19 @@ QString PkStrings::action(Transaction::Role action)
         return i18nc("The role of the transaction, in present tense", "Getting categories");
     case Transaction::RoleGetOldTransactions :
         return i18nc("The role of the transaction, in present tense", "Getting old transactions");
-    case Transaction::RoleSimulateInstallFiles :
-        return i18nc("The role of the transaction, in present tense", "Simulating the install of files");
-    case Transaction::RoleSimulateInstallPackages :
-        return i18nc("The role of the transaction, in present tense", "Simulating the install");
-    case Transaction::RoleSimulateRemovePackages :
-        return i18nc("The role of the transaction, in present tense", "Simulating the remove");
-    case Transaction::RoleSimulateUpdatePackages :
-        return i18nc("The role of the transaction, in present tense", "Simulating the update");
     case Transaction::RoleUpgradeSystem :
         return i18nc("The role of the transaction, in present tense", "Upgrading system");
+    case Transaction::RoleRepairSystem :
+        return i18nc("The role of the transaction, in present tense", "Repairing system");
     }
-    kWarning() << "action unrecognised: " << action;
+    kWarning() << "action unrecognised: " << role;
     return QString();
 }
 
 QString PkStrings::actionPast(Transaction::Role action)
 {
     switch (action) {
-    case Transaction::UnknownRole :
+    case Transaction::RoleUnknown:
         return i18nc("The role of the transaction, in past tense", "Unknown role type");
     case Transaction::RoleGetDepends :
         return i18nc("The role of the transaction, in past tense", "Got dependencies");
@@ -277,12 +284,8 @@ QString PkStrings::actionPast(Transaction::Role action)
         return i18nc("The role of the transaction, in past tense", "Refreshed package cache");
     case Transaction::RoleUpdatePackages :
         return i18nc("The role of the transaction, in past tense", "Updated packages");
-    case Transaction::RoleUpdateSystem :
-        return i18nc("The role of the transaction, in past tense", "Updated system");
     case Transaction::RoleCancel :
         return i18nc("The role of the transaction, in past tense", "Canceled");
-    case Transaction::RoleRollback :
-        return i18nc("The role of the transaction, in past tense", "Rolled back");
     case Transaction::RoleGetRepoList :
         return i18nc("The role of the transaction, in past tense", "Got list of repositories");
     case Transaction::RoleRepoEnable :
@@ -309,41 +312,35 @@ QString PkStrings::actionPast(Transaction::Role action)
         return i18nc("The role of the transaction, in past tense", "Got categories");
     case Transaction::RoleGetOldTransactions :
         return i18nc("The role of the transaction, in past tense", "Got old transactions");
-    case Transaction::RoleSimulateInstallFiles :
-        return i18nc("The role of the transaction, in past tense", "Simulated the install of files");
-    case Transaction::RoleSimulateInstallPackages :
-        return i18nc("The role of the transaction, in past tense", "Simulated the install");
-    case Transaction::RoleSimulateRemovePackages :
-        return i18nc("The role of the transaction, in past tense", "Simulated the remove");
-    case Transaction::RoleSimulateUpdatePackages :
-        return i18nc("The role of the transaction, in past tense", "Simulated the update");
     case Transaction::RoleUpgradeSystem :
         return i18nc("The role of the transaction, in past tense", "Upgraded system");
+    case Transaction::RoleRepairSystem:
+        return i18nc("The role of the transaction, in past tense", "Repaired system");
     }
     kWarning() << "action unrecognised: " << action;
     return QString();
 }
 
-QString PkStrings::infoPresent(Package::Info info)
+QString PkStrings::infoPresent(Transaction::Info info)
 {
     switch (info) {
-    case Package::InfoDownloading :
+    case Transaction::InfoDownloading :
         return i18n("Downloading");
-    case Package::InfoUpdating :
+    case Transaction::InfoUpdating :
         return i18n("Updating");
-    case Package::InfoInstalling :
+    case Transaction::InfoInstalling :
         return i18n("Installing");
-    case Package::InfoRemoving :
+    case Transaction::InfoRemoving :
         return i18n("Removing");
-    case Package::InfoCleanup :
+    case Transaction::InfoCleanup :
         return i18n("Cleaning up");
-    case Package::InfoObsoleting :
+    case Transaction::InfoObsoleting :
         return i18n("Obsoleting");
-    case Package::InfoReinstalling :
+    case Transaction::InfoReinstalling :
         return i18n("Reinstalling");
-    case Package::InfoPreparing :
+    case Transaction::InfoPreparing :
         return i18n("Preparing");
-    case Package::InfoDecompressing :
+    case Transaction::InfoDecompressing :
         return i18n("Decompressing");
     default :
         kWarning() << "info unrecognised: " << info;
@@ -351,26 +348,26 @@ QString PkStrings::infoPresent(Package::Info info)
     }
 }
 
-QString PkStrings::infoPast(Package::Info info)
+QString PkStrings::infoPast(Transaction::Info info)
 {
     switch (info) {
-    case Package::InfoDownloading :
+    case Transaction::InfoDownloading :
         return i18n("Downloaded");
-    case Package::InfoUpdating :
+    case Transaction::InfoUpdating :
         return i18n("Updated");
-    case Package::InfoInstalling :
+    case Transaction::InfoInstalling :
         return i18n("Installed");
-    case Package::InfoRemoving :
+    case Transaction::InfoRemoving :
         return i18n("Removed");
-    case Package::InfoCleanup :
+    case Transaction::InfoCleanup :
         return i18n("Cleaned up");
-    case Package::InfoObsoleting :
+    case Transaction::InfoObsoleting :
         return i18n("Obsoleted");
-    case Package::InfoReinstalling :
+    case Transaction::InfoReinstalling :
         return i18n("Reinstalled");
-    case Package::InfoPreparing :
+    case Transaction::InfoPreparing :
         return i18n("Prepared");
-    case Package::InfoDecompressing :
+    case Transaction::InfoDecompressing :
         return i18n("Decompressed");
     default :
         kWarning() << "info unrecognised: " << info;
@@ -511,7 +508,11 @@ QString PkStrings::error(Transaction::Error error)
         return i18n("Cannot fetch install sources");
     case Transaction::ErrorCancelledPriority :
         return i18n("Rescheduled due to priority");
-    case Transaction::UnknownError :
+    case Transaction::ErrorUnfinishedTransaction:
+        return i18n("Unfinished transaction");
+    case Transaction::ErrorLockRequired:
+        return i18n("Lock required");
+    case Transaction::ErrorUnknown:
         return i18n("Unknown error");
     }
     kWarning() << "error unrecognised: " << error;
@@ -690,7 +691,11 @@ QString PkStrings::errorMessage(Transaction::Error error)
         return i18n("The list of software could not be downloaded.");
     case Transaction::ErrorCancelledPriority :
         return i18n("The transaction has been cancelled and will be retried when the system is idle.");
-    case Transaction::UnknownError :
+    case Transaction::ErrorUnfinishedTransaction :
+        return i18n("A previous package management transaction was interrupted.");
+    case Transaction::ErrorLockRequired :
+        return i18n("A package manager lock is required.");
+    case Transaction::ErrorUnknown:
         return i18n("Unknown error, please report a bug.\n"
                     "More information is available in the detailed report.");
     }
@@ -698,108 +703,109 @@ QString PkStrings::errorMessage(Transaction::Error error)
     return QString();
 }
 
-QString PkStrings::groups(Package::Group group)
+QString PkStrings::groups(Transaction::Group group)
 {
     switch (group) {
-    case Package::GroupAccessibility :
+    case Transaction::GroupAccessibility :
         return i18nc("The group type", "Accessibility");
-    case Package::GroupAccessories :
+    case Transaction::GroupAccessories :
         return i18nc("The group type", "Accessories");
-    case Package::GroupEducation :
+    case Transaction::GroupEducation :
         return i18nc("The group type", "Education");
-    case Package::GroupGames :
+    case Transaction::GroupGames :
         return i18nc("The group type", "Games");
-    case Package::GroupGraphics :
+    case Transaction::GroupGraphics :
         return i18nc("The group type", "Graphics");
-    case Package::GroupInternet :
+    case Transaction::GroupInternet :
         return i18nc("The group type", "Internet");
-    case Package::GroupOffice :
+    case Transaction::GroupOffice :
         return i18nc("The group type", "Office");
-    case Package::GroupOther :
+    case Transaction::GroupOther :
         return i18nc("The group type", "Others");
-    case Package::GroupProgramming :
+    case Transaction::GroupProgramming :
         return i18nc("The group type", "Development");
-    case Package::GroupMultimedia :
+    case Transaction::GroupMultimedia :
         return i18nc("The group type", "Multimedia");
-    case Package::GroupSystem :
+    case Transaction::GroupSystem :
         return i18nc("The group type", "System");
-    case Package::GroupDesktopGnome :
+    case Transaction::GroupDesktopGnome :
         return i18nc("The group type", "GNOME desktop");
-    case Package::GroupDesktopKde :
+    case Transaction::GroupDesktopKde :
         return i18nc("The group type", "KDE desktop");
-    case Package::GroupDesktopXfce :
+    case Transaction::GroupDesktopXfce :
         return i18nc("The group type", "XFCE desktop");
-    case Package::GroupDesktopOther :
+    case Transaction::GroupDesktopOther :
         return i18nc("The group type", "Other desktops");
-    case Package::GroupPublishing :
+    case Transaction::GroupPublishing :
         return i18nc("The group type", "Publishing");
-    case Package::GroupServers :
+    case Transaction::GroupServers :
         return i18nc("The group type", "Servers");
-    case Package::GroupFonts :
+    case Transaction::GroupFonts :
         return i18nc("The group type", "Fonts");
-    case Package::GroupAdminTools :
+    case Transaction::GroupAdminTools :
         return i18nc("The group type", "Admin tools");
-    case Package::GroupLegacy :
+    case Transaction::GroupLegacy :
         return i18nc("The group type", "Legacy");
-    case Package::GroupLocalization :
+    case Transaction::GroupLocalization :
         return i18nc("The group type", "Localization");
-    case Package::GroupVirtualization :
+    case Transaction::GroupVirtualization :
         return i18nc("The group type", "Virtualization");
-    case Package::GroupSecurity :
+    case Transaction::GroupSecurity :
         return i18nc("The group type", "Security");
-    case Package::GroupPowerManagement :
+    case Transaction::GroupPowerManagement :
         return i18nc("The group type", "Power management");
-    case Package::GroupCommunication :
+    case Transaction::GroupCommunication :
         return i18nc("The group type", "Communication");
-    case Package::GroupNetwork :
+    case Transaction::GroupNetwork :
         return i18nc("The group type", "Network");
-    case Package::GroupMaps :
+    case Transaction::GroupMaps :
         return i18nc("The group type", "Maps");
-    case Package::GroupRepos :
+    case Transaction::GroupRepos :
         return i18nc("The group type", "Software sources");
-    case Package::GroupScience :
+    case Transaction::GroupScience :
         return i18nc("The group type", "Science");
-    case Package::GroupDocumentation :
+    case Transaction::GroupDocumentation :
         return i18nc("The group type", "Documentation");
-    case Package::GroupElectronics :
+    case Transaction::GroupElectronics :
         return i18nc("The group type", "Electronics");
-    case Package::GroupCollections ://TODO check this one
+    case Transaction::GroupCollections ://TODO check this one
         return i18nc("The group type", "Package collections");
-    case Package::GroupVendor :
+    case Transaction::GroupVendor :
         return i18nc("The group type", "Vendor");
-    case Package::GroupNewest :
+    case Transaction::GroupNewest :
         return i18nc("The group type", "Newest packages");
-    case Package::UnknownGroup :
+    case Transaction::GroupUnknown:
         return i18nc("The group type", "Unknown group");
     }
     kWarning() << "group unrecognised: " << group;
     return QString();
 }
 
-QString PkStrings::info(Package::Info state)
+QString PkStrings::info(int state)
 {
-    switch (state) {
-    case Package::InfoLow :
+    Transaction::Info stateEnum = static_cast<Transaction::Info>(state);
+    switch (stateEnum) {
+    case Transaction::InfoLow :
         return i18nc("The type of update", "Trivial update");
-    case Package::InfoNormal :
+    case Transaction::InfoNormal :
         return i18nc("The type of update", "Normal update");
-    case Package::InfoImportant :
+    case Transaction::InfoImportant :
         return i18nc("The type of update", "Important update");
-    case Package::InfoSecurity :
+    case Transaction::InfoSecurity :
         return i18nc("The type of update", "Security update");
-    case Package::InfoBugfix :
+    case Transaction::InfoBugfix :
         return i18nc("The type of update", "Bug fix update");
-    case Package::InfoEnhancement :
+    case Transaction::InfoEnhancement :
         return i18nc("The type of update", "Enhancement update");
-    case Package::InfoBlocked :
+    case Transaction::InfoBlocked :
         return i18nc("The type of update", "Blocked update");
-    case Package::InfoInstalled :
-    case Package::InfoCollectionInstalled :
+    case Transaction::InfoInstalled :
+    case Transaction::InfoCollectionInstalled :
         return i18nc("The type of update", "Installed");
-    case Package::InfoAvailable :
-    case Package::InfoCollectionAvailable :
+    case Transaction::InfoAvailable :
+    case Transaction::InfoCollectionAvailable :
         return i18nc("The type of update", "Available");
-    case Package::UnknownInfo :
+    case Transaction::InfoUnknown:
         return i18nc("The type of update", "Unknown update");
     default : // In this case we don't want to map all enums
         kWarning() << "info unrecognised: " << state;
@@ -833,63 +839,63 @@ QString PkStrings::packageQuantity(bool updates, int packages, int selected)
     }
 }
 
-QString PkStrings::restartTypeFuture(Package::Restart value)
+QString PkStrings::restartTypeFuture(Transaction::Restart value)
 {
     switch (value) {
-    case Package::RestartNone :
+    case Transaction::RestartNone:
         return i18n("No restart is necessary");
-    case Package::RestartApplication :
+    case Transaction::RestartApplication:
         return i18n("You will be required to restart this application");
-    case Package::RestartSession :
+    case Transaction::RestartSession:
         return i18n("You will be required to log out and back in");
-    case Package::RestartSystem :
+    case Transaction::RestartSystem:
         return i18n("A restart will be required");
-    case Package::RestartSecuritySession :
+    case Transaction::RestartSecuritySession:
         return i18n("You will be required to log out and back in due to a security update.");
-    case Package::RestartSecuritySystem :
+    case Transaction::RestartSecuritySystem:
         return i18n("A restart will be required due to a security update.");
-    case Package::UnknownRestart :
-        kWarning() << "restartTypeFuture(Package::UnknownRestartType)";
+    case Transaction::RestartUnknown:
+        kWarning() << "restartTypeFuture(Transaction::RestartUnknown)";
         return QString();
     }
     kWarning() << "restart unrecognised: " << value;
     return QString();
 }
 
-QString PkStrings::restartType(Package::Restart value)
+QString PkStrings::restartType(Transaction::Restart value)
 {
     switch (value) {
-    case Package::RestartNone :
+    case Transaction::RestartNone:
         return i18n("No restart is required");
-    case Package::RestartSystem :
+    case Transaction::RestartSystem:
         return i18n("A restart is required");
-    case Package::RestartSession :
+    case Transaction::RestartSession:
         return i18n("You need to log out and log back in");
-    case Package::RestartApplication :
+    case Transaction::RestartApplication:
         return i18n("You need to restart the application");
-    case Package::RestartSecuritySession :
+    case Transaction::RestartSecuritySession:
         return i18n("You need to log out and log back in to remain secure.");
-    case Package::RestartSecuritySystem :
+    case Transaction::RestartSecuritySystem:
         return i18n("A restart is required to remain secure.");
-    case Package::UnknownRestart :
-        kWarning() << "restartType(Package::UnknownRestartType)";
+    case Transaction::RestartUnknown:
+        kWarning() << "restartType(Transaction::RestartUnknown)";
         return QString();
     }
     kWarning() << "restart unrecognised: " << value;
     return QString();
 }
 
-QString PkStrings::updateState(Package::UpdateState value)
+QString PkStrings::updateState(Transaction::UpdateState value)
 {
     switch (value) {
-    case Package::UpdateStateStable :
+    case Transaction::UpdateStateStable:
         return i18n("Stable");
-    case Package::UpdateStateUnstable :
+    case Transaction::UpdateStateUnstable:
         return i18n("Unstable");
-    case Package::UpdateStateTesting :
+    case Transaction::UpdateStateTesting:
         return i18n("Testing");
-    case Package::UnknownUpdateState :
-        kWarning() << "updateState(Package::UnknownUpdateState)";
+    case Transaction::UpdateStateUnknown:
+        kWarning() << "updateState(Transaction::UnknownUpdateState)";
         return QString();
     }
     kWarning() << "value unrecognised: " << value;
@@ -905,7 +911,7 @@ QString PkStrings::mediaMessage(Transaction::MediaType value, const QString &tex
         return i18n("Please insert the DVD labeled '%1', and press continue.", text);
     case Transaction::MediaTypeDisc :
         return i18n("Please insert the disc labeled '%1', and press continue.", text);
-    case Transaction::UnknownMediaType :
+    case Transaction::MediaTypeUnknown:
         return i18n("Please insert the medium labeled '%1', and press continue.", text);
     }
     kWarning() << "value unrecognised: " << value;
@@ -947,7 +953,7 @@ QString PkStrings::message(Transaction::Message value)
         return i18n("This software source is for developers only");
     case Transaction::MessageOtherUpdatesHeldBack :
         return i18n("Other updates have been held back");
-    case Transaction::UnknownMessage :
+    case Transaction::MessageUnknown:
         kWarning() << "message(Enum::UnknownMessageType)";
         return QString();
     }
@@ -976,11 +982,39 @@ QString PkStrings::daemonError(Transaction::InternalError value)
         return i18n("This function is not yet supported.");
     case Transaction::InternalErrorDaemonUnreachable :
         return i18n("Could not talk to packagekitd.");
-    case Transaction::NoInternalError :
+    case Transaction::InternalErrorNone:
     case Transaction::InternalErrorFailed :
-    case Transaction::UnkownInternalError :
+    case Transaction::InternalErrorUnkown :
         return i18n("An unknown error happened.");
     }
     kWarning() << "value unrecognised: " << value;
     return i18n("An unknown error happened.");
+}
+
+QString PkStrings::prettyFormatDuration(unsigned long mSec)
+{
+    return KGlobal::locale()->prettyFormatDuration(mSec);
+}
+
+QString PkStrings::lastCacheRefreshTitle(uint lastTime)
+{
+    unsigned long fifteen = 60 * 60 * 24 * 15;
+    unsigned long tirty = 60 * 60 * 24 * 30;
+
+    if (lastTime != UINT_MAX && lastTime < fifteen) {
+        return i18n("Your system is up to date");
+    } else if (lastTime != UINT_MAX && lastTime > fifteen && lastTime < tirty) {
+        return i18n("You have no updates");
+    }
+    return i18n("Last check for updates was more than a month ago");
+}
+
+QString PkStrings::lastCacheRefreshSubTitle(uint lastTime)
+{
+    unsigned long tirty = 60 * 60 * 24 * 30;
+
+    if (lastTime != UINT_MAX && lastTime < tirty) {
+        return i18n("Verified %1 ago", PkStrings::prettyFormatDuration(lastTime * 1000));
+    }
+    return i18n("It's strongly recommended that you check for new updates now");
 }

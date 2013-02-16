@@ -278,7 +278,7 @@ FiltersMenu::FiltersMenu(Transaction::Filters filters, QWidget *parent)
         m_actions << native;
     }
 
-#ifdef HAVE_APPINSTALL
+#ifdef HAVE_APPSTREAM
     addSeparator();
     m_applications = new QAction(i18n("Only Show Applications"), this);
     m_applications->setCheckable(true);
@@ -286,8 +286,8 @@ FiltersMenu::FiltersMenu(Transaction::Filters filters, QWidget *parent)
     m_applications->setToolTip(i18n("Hide packages that are not applications"));
     addAction(m_applications);
     connect(m_applications, SIGNAL(triggered(bool)),
-            this, SLOT(filterAppTriggered(bool)));
-#endif //HAVE_APPINSTALL
+            this, SIGNAL(filterApplications(bool)));
+#endif // HAVE_APPSTREAM
 }
 
 FiltersMenu::~FiltersMenu()
@@ -308,23 +308,18 @@ FiltersMenu::~FiltersMenu()
     // This entry does not depend on the backend it's ok to call this pointer
     filterMenuGroup.writeEntry("FilterNative",
                                static_cast<bool>(filters() & Transaction::FilterArch));
-#ifdef HAVE_APPINSTALL
+#ifdef HAVE_APPSTREAM
     filterMenuGroup.writeEntry("HidePackages", m_applications->isChecked());
-#endif //HAVE_APPINSTALL
+#endif // HAVE_APPSTREAM
 }
 
-QString FiltersMenu::filterApplications() const
+bool FiltersMenu::filterApplications() const
 {
-#ifdef HAVE_APPINSTALL
-    return m_applications->isChecked() ? "a" : QString();
+#ifdef HAVE_APPSTREAM
+    return m_applications->isChecked();
 #else
-    return QString();
-#endif //HAVE_APPINSTALL
-}
-
-void FiltersMenu::filterAppTriggered(bool checked)
-{
-    emit filterApplications(checked ? "a" : QString());
+    return false;
+#endif // HAVE_APPSTREAM
 }
 
 Transaction::Filters FiltersMenu::filters() const

@@ -7,16 +7,16 @@
 // Define if your backend have autoremove feature.
 #cmakedefine HAVE_AUTOREMOVE
 
-// Define if app-install data is available.
-#cmakedefine HAVE_APPINSTALL
+// Define if AppStream data is available.
+#cmakedefine HAVE_APPSTREAM
 
-// Define the app-install database path.
-#cmakedefine AI_DB_PATH "@AI_DB_PATH@"
-
-// Define the app-install categories path.
-#cmakedefine AI_CATEGORIES_PATH "@AI_CATEGORIES_PATH@"
+// Define the AppStream categories path.
+#cmakedefine AS_CATEGORIES_PATH "@AS_CATEGORIES_PATH@"
 
 // Define the edit origins command.
 #cmakedefine EDIT_ORIGNS_DESKTOP_NAME "@EDIT_ORIGNS_DESKTOP_NAME@"
+
+// Define the Apper version.
+#cmakedefine APP_VERSION "@APP_VERSION@"
 
 #endif //CONFIG_H

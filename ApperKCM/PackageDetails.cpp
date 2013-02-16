@@ -19,13 +19,13 @@
  ***************************************************************************/
 
 #include "PackageDetails.h"
+#include "ui_PackageDetails.h"
 
 #include "ScreenShotViewer.h"
 
 #include <PackageModel.h>
 #include <PkStrings.h>
 #include <PkIcons.h>
-#include <AppInstall.h>
 
 #include <KMessageBox>
 
@@ -39,6 +39,7 @@
 #include <QScrollBar>
 #include <QPainter>
 #include <QAbstractAnimation>
+#include <QStringBuilder>
 
 #include <KIO/Job>
 #include <KMenu>
@@ -46,16 +47,26 @@
 #include <KDebug>
 
 #include <Daemon>
+#include <Transaction>
+
+#include <config.h>
+
+#ifdef HAVE_APPSTREAM
+#include <AppStream/AppStreamDb.h>
+#endif
 
 #include "GraphicsOpacityDropShadowEffect.h"
 
 #define BLUR_RADIUS 15
 #define FINAL_HEIGHT 210
 
+using namespace PackageKit;
+
 Q_DECLARE_METATYPE(KPixmapSequenceOverlayPainter**)
 
 PackageDetails::PackageDetails(QWidget *parent)
  : QWidget(parent),
+   ui(new Ui::PackageDetails),
    m_busySeq(0),
    m_display(false),
    m_hideVersion(false),
@@ -64,33 +75,34 @@ PackageDetails::PackageDetails(QWidget *parent)
    m_hasDetails(false),
    m_hasFileList(false)
 {
-    setupUi(this);
-    connect(hideTB, SIGNAL(clicked()), this, SLOT(hide()));
+    ui->setupUi(this);
+    connect(ui->hideTB, SIGNAL(clicked()), this, SLOT(hide()));
 }
 
-void PackageDetails::init(Transaction::Roles roles)
+void PackageDetails::init(PackageKit::Transaction::Roles roles)
 {
+    kDebug();
     KMenu *menu = new KMenu(i18n("Display"), this);
     m_actionGroup = new QActionGroup(this);
     QAction *action = 0;
 
     // we check to see which roles are supported by the backend
     // if so we ask for information and create the containers
-    if (roles & Transaction::RoleGetDetails) {
+    if (roles & PackageKit::Transaction::RoleGetDetails) {
         action = menu->addAction(i18n("Description"));
         action->setCheckable(true);
-        action->setData(Transaction::RoleGetDetails);
+        action->setData(PackageKit::Transaction::RoleGetDetails);
         m_actionGroup->addAction(action);
-        descriptionW->setWidgetResizable(true);
+        ui->descriptionW->setWidgetResizable(true);
     }
 
-    if (roles & Transaction::RoleGetDepends) {
+    if (roles & PackageKit::Transaction::RoleGetDepends) {
         action = menu->addAction(i18n("Depends On"));
         action->setCheckable(true);
-        action->setData(Transaction::RoleGetDepends);
+        action->setData(PackageKit::Transaction::RoleGetDepends);
         m_actionGroup->addAction(action);
         // Sets a transparent background
-        QWidget *actionsViewport = dependsOnLV->viewport();
+        QWidget *actionsViewport = ui->dependsOnLV->viewport();
         QPalette palette = actionsViewport->palette();
         palette.setColor(actionsViewport->backgroundRole(), Qt::transparent);
         palette.setColor(actionsViewport->foregroundRole(), palette.color(QPalette::WindowText));
@@ -101,22 +113,25 @@ void PackageDetails::init(Transaction::Roles roles)
         m_dependsProxy->setDynamicSortFilter(true);
         m_dependsProxy->setSortRole(PackageModel::SortRole);
         m_dependsProxy->setSourceModel(m_dependsModel);
-        dependsOnLV->setModel(m_dependsProxy);
-        dependsOnLV->sortByColumn(0, Qt::AscendingOrder);
-        dependsOnLV->header()->setDefaultAlignment(Qt::AlignCenter);
-        dependsOnLV->header()->setResizeMode(0, QHeaderView::ResizeToContents);
-        dependsOnLV->header()->setResizeMode(1, QHeaderView::ResizeToContents);
-        dependsOnLV->header()->setResizeMode(2, QHeaderView::ResizeToContents);
-        dependsOnLV->header()->hideSection(4);
+        ui->dependsOnLV->setModel(m_dependsProxy);
+        ui->dependsOnLV->sortByColumn(0, Qt::AscendingOrder);
+        ui->dependsOnLV->header()->setDefaultAlignment(Qt::AlignCenter);
+        ui->dependsOnLV->header()->setResizeMode(PackageModel::NameCol, QHeaderView::ResizeToContents);
+        ui->dependsOnLV->header()->setResizeMode(PackageModel::VersionCol, QHeaderView::ResizeToContents);
+        ui->dependsOnLV->header()->setResizeMode(PackageModel::ArchCol, QHeaderView::Stretch);
+        ui->dependsOnLV->header()->hideSection(PackageModel::ActionCol);
+        ui->dependsOnLV->header()->hideSection(PackageModel::CurrentVersionCol);
+        ui->dependsOnLV->header()->hideSection(PackageModel::OriginCol);
+        ui->dependsOnLV->header()->hideSection(PackageModel::SizeCol);
     }
 
-    if (roles & Transaction::RoleGetRequires) {
+    if (roles & PackageKit::Transaction::RoleGetRequires) {
         action = menu->addAction(i18n("Required By"));
         action->setCheckable(true);
-        action->setData(Transaction::RoleGetRequires);
+        action->setData(PackageKit::Transaction::RoleGetRequires);
         m_actionGroup->addAction(action);
         // Sets a transparent background
-        QWidget *actionsViewport = requiredByLV->viewport();
+        QWidget *actionsViewport = ui->requiredByLV->viewport();
         QPalette palette = actionsViewport->palette();
         palette.setColor(actionsViewport->backgroundRole(), Qt::transparent);
         palette.setColor(actionsViewport->foregroundRole(), palette.color(QPalette::WindowText));
@@ -127,22 +142,25 @@ void PackageDetails::init(Transaction::Roles roles)
         m_requiresProxy->setDynamicSortFilter(true);
         m_requiresProxy->setSortRole(PackageModel::SortRole);
         m_requiresProxy->setSourceModel(m_requiresModel);
-        requiredByLV->setModel(m_requiresProxy);
-        requiredByLV->sortByColumn(0, Qt::AscendingOrder);
-        requiredByLV->header()->setDefaultAlignment(Qt::AlignCenter);
-        requiredByLV->header()->setResizeMode(0, QHeaderView::ResizeToContents);
-        requiredByLV->header()->setResizeMode(1, QHeaderView::ResizeToContents);
-        requiredByLV->header()->setResizeMode(2, QHeaderView::ResizeToContents);
-        requiredByLV->header()->hideSection(4);
+        ui->requiredByLV->setModel(m_requiresProxy);
+        ui->requiredByLV->sortByColumn(0, Qt::AscendingOrder);
+        ui->requiredByLV->header()->setDefaultAlignment(Qt::AlignCenter);
+        ui->requiredByLV->header()->setResizeMode(PackageModel::NameCol, QHeaderView::ResizeToContents);
+        ui->requiredByLV->header()->setResizeMode(PackageModel::VersionCol, QHeaderView::ResizeToContents);
+        ui->requiredByLV->header()->setResizeMode(PackageModel::ArchCol, QHeaderView::Stretch);
+        ui->requiredByLV->header()->hideSection(PackageModel::ActionCol);
+        ui->requiredByLV->header()->hideSection(PackageModel::CurrentVersionCol);
+        ui->requiredByLV->header()->hideSection(PackageModel::OriginCol);
+        ui->requiredByLV->header()->hideSection(PackageModel::SizeCol);
     }
 
-    if (roles & Transaction::RoleGetFiles) {
+    if (roles & PackageKit::Transaction::RoleGetFiles) {
         action = menu->addAction(i18n("File List"));
         action->setCheckable(true);
-        action->setData(Transaction::RoleGetFiles);
+        action->setData(PackageKit::Transaction::RoleGetFiles);
         m_actionGroup->addAction(action);
         // Sets a transparent background
-        QWidget *actionsViewport = filesPTE->viewport();
+        QWidget *actionsViewport = ui->filesPTE->viewport();
         QPalette palette = actionsViewport->palette();
         palette.setColor(actionsViewport->backgroundRole(), Qt::transparent);
         palette.setColor(actionsViewport->foregroundRole(), palette.color(QPalette::WindowText));
@@ -151,29 +169,29 @@ void PackageDetails::init(Transaction::Roles roles)
 
     // Check to se if we have any action
     if (m_actionGroup->actions().isEmpty()) {
-        menuTB->hide();
+        ui->menuTB->hide();
     } else {
         action = m_actionGroup->actions().first();
         action->setChecked(true);
         connect(m_actionGroup, SIGNAL(triggered(QAction*)),
                 this, SLOT(actionActivated(QAction*)));
         // Set the menu
-        menuTB->setMenu(menu);
-        menuTB->setIcon(KIcon("help-about"));
+        ui->menuTB->setMenu(menu);
+        ui->menuTB->setIcon(KIcon("help-about"));
     }
 
     m_busySeq = new KPixmapSequenceOverlayPainter(this);
     m_busySeq->setSequence(KPixmapSequence("process-working", KIconLoader::SizeSmallMedium));
     m_busySeq->setAlignment(Qt::AlignHCenter | Qt::AlignVCenter);
-    m_busySeq->setWidget(stackedWidget);
+    m_busySeq->setWidget(ui->stackedWidget);
 
     // Setup the opacit effect that makes the descriptio transparent
     // after finished it checks in display() to see if it shouldn't show
     // up again. The property animation is always the same, the only different thing
     // is the the Forward or Backward property
-    QGraphicsOpacityEffect *effect = new QGraphicsOpacityEffect(stackedWidget);
+    QGraphicsOpacityEffect *effect = new QGraphicsOpacityEffect(ui->stackedWidget);
     effect->setOpacity(0);
-    stackedWidget->setGraphicsEffect(effect);
+    ui->stackedWidget->setGraphicsEffect(effect);
     m_fadeStacked = new QPropertyAnimation(effect, "opacity", this);
     m_fadeStacked->setDuration(500);
     m_fadeStacked->setStartValue(qreal(0));
@@ -183,12 +201,12 @@ void PackageDetails::init(Transaction::Roles roles)
     // It's is impossible due to some limitation in Qt to set two effects on the same
     // Widget
     m_fadeScreenshot = new QPropertyAnimation(effect, "opacity", this);
-    GraphicsOpacityDropShadowEffect *shadow = new GraphicsOpacityDropShadowEffect(screenshotL);
+    GraphicsOpacityDropShadowEffect *shadow = new GraphicsOpacityDropShadowEffect(ui->screenshotL);
     shadow->setOpacity(0);
     shadow->setBlurRadius(BLUR_RADIUS);
     shadow->setOffset(2);
     shadow->setColor(QApplication::palette().dark().color());
-    screenshotL->setGraphicsEffect(shadow);
+    ui->screenshotL->setGraphicsEffect(shadow);
 
     m_fadeScreenshot = new QPropertyAnimation(shadow, "opacity", this);
     m_fadeScreenshot->setDuration(500);
@@ -220,11 +238,12 @@ PackageDetails::~PackageDetails()
 
 void PackageDetails::setPackage(const QModelIndex &index)
 {
-    QString pkgId = index.data(PackageModel::IdRole).toString();
+    kDebug() << index;
     QString appId = index.data(PackageModel::ApplicationId).toString();
+    QString packageID = index.data(PackageModel::IdRole).toString();
 
     // if it's the same package and the same application, return
-    if (pkgId == m_packageId && appId == m_appId) {
+    if (packageID == m_packageID && appId == m_appId) {
         return;
     } else if (maximumSize().height() == 0) {
         // Expand the panel
@@ -236,22 +255,23 @@ void PackageDetails::setPackage(const QModelIndex &index)
         fadeOut(PackageDetails::FadeScreenshot | PackageDetails::FadeStacked);
     }
 
-    m_index     = index;
-    m_packageId = pkgId;
-    m_appId     = appId;
-    Package::Info info = static_cast<Package::Info>(index.data(PackageModel::InfoRole).toUInt());
-
-    m_package       = Package(m_packageId, info, QString());
-    m_hasDetails    = false;
-    m_hasFileList   = false;
-    m_hasRequires   = false;
-    m_hasDepends    = false;
+    m_index       = index;
+    m_appId       = appId;
+    m_packageID   = packageID;
+    m_hasDetails  = false;
+    m_hasFileList = false;
+    m_hasRequires = false;
+    m_hasDepends  = false;
+    kDebug() << "appId" << appId << "m_package" << m_packageID;
 
     QString pkgIconPath = index.data(PackageModel::IconRole).toString();
     m_currentIcon       = PkIcons::getIcon(pkgIconPath, QString()).pixmap(64, 64);
     m_appName           = index.data(PackageModel::NameRole).toString();
 
-    m_currentScreenshot = AppInstall::instance()->thumbnail(m_package.name());
+#ifdef HAVE_APPSTREAM
+    m_currentScreenshot = AppStreamDb::instance()->thumbnail(Transaction::packageName(m_packageID));
+    kDebug() << "current screenshot" << m_currentScreenshot;
+#endif
     if (!m_currentScreenshot.isEmpty()) {
         if (m_screenshotPath.contains(m_currentScreenshot)) {
             display();
@@ -276,14 +296,21 @@ void PackageDetails::setPackage(const QModelIndex &index)
 
 void PackageDetails::on_screenshotL_clicked()
 {
+    kDebug();
+#ifndef HAVE_APPSTREAM
+    return;
+#else
     QString screenshot;
-    screenshot = AppInstall::instance()->screenshot(m_package.name());
+
+    screenshot = AppStreamDb::instance()->screenshot(Transaction::packageName(m_packageID));
     if (screenshot.isEmpty()) {
         return;
     }
+
     ScreenShotViewer *view = new ScreenShotViewer(screenshot);
     view->setWindowTitle(m_appName);
     view->show();
+#endif
 }
 
 void PackageDetails::hidePackageVersion(bool hide)
@@ -301,18 +328,19 @@ void PackageDetails::actionActivated(QAction *action)
     // don't fade the screenshot
     // if the package changed setPackage() fades both
     fadeOut(FadeStacked);
+    kDebug();
 
     // disconnect the transaction
     // so that we don't get old data
     if (m_transaction) {
-        disconnect(m_transaction, SIGNAL(package(PackageKit::Package)),
-                   this, SLOT(description(PackageKit::Package)));
-        disconnect(m_transaction, SIGNAL(package(PackageKit::Package)),
-                   m_dependsModel, SLOT(addPackage(PackageKit::Package)));
-        disconnect(m_transaction, SIGNAL(package(PackageKit::Package)),
-                   m_requiresModel, SLOT(addPackage(PackageKit::Package)));
-        disconnect(m_transaction, SIGNAL(files(PackageKit::Package,QStringList)),
-                   this, SLOT(files(PackageKit::Package,QStringList)));
+        disconnect(m_transaction, SIGNAL(details(QString,QString,PackageKit::Transaction::Group,QString,QString,qulonglong)),
+                   this, SLOT(description(QString,QString,PackageKit::Transaction::Group,QString,QString,qulonglong)));
+        disconnect(m_transaction, SIGNAL(package(PackageKit::Transaction::Info,QString,QString)),
+                   m_dependsModel, SLOT(addPackage(PackageKit::Transaction::Info,QString,QString)));
+        disconnect(m_transaction, SIGNAL(package(PackageKit::Transaction::Info,QString,QString)),
+                   m_requiresModel, SLOT(addPackage(PackageKit::Transaction::Info,QString,QString)));
+        disconnect(m_transaction, SIGNAL(files(QString,QStringList)),
+                   this, SLOT(files(QString,QStringList)));
         disconnect(m_transaction, SIGNAL(finished(PackageKit::Transaction::Exit,uint)),
                    this, SLOT(finished()));
         m_transaction = 0;
@@ -321,26 +349,31 @@ void PackageDetails::actionActivated(QAction *action)
     // Check to see if we don't already have the required data
     uint role = action->data().toUInt();
     switch (role) {
-    case Transaction::RoleGetDetails:
+    case PackageKit::Transaction::RoleGetDetails:
         if (m_hasDetails) {
-            description(m_package);
+            description(m_detailsPackageID,
+                        m_detailsLicense,
+                        m_detailsGroup,
+                        m_detailsDetail,
+                        m_detailsUrl,
+                        m_detailsSize);
             display();
             return;
         }
         break;
-    case Transaction::RoleGetDepends:
+    case PackageKit::Transaction::RoleGetDepends:
         if (m_hasDepends) {
             display();
             return;
         }
         break;
-    case Transaction::RoleGetRequires:
+    case PackageKit::Transaction::RoleGetRequires:
         if (m_hasRequires) {
             display();
             return;
         }
         break;
-    case Transaction::RoleGetFiles:
+    case PackageKit::Transaction::RoleGetFiles:
         if (m_hasFileList) {
             display();
             return;
@@ -349,44 +382,47 @@ void PackageDetails::actionActivated(QAction *action)
     }
 
     // we don't have the data
-    m_transaction = new Transaction(this);
+    m_transaction = new PackageKit::Transaction(this);
+    kDebug() << "New transaction";
     connect(m_transaction, SIGNAL(finished(PackageKit::Transaction::Exit,uint)),
             this, SLOT(finished()));
     switch (role) {
-    case Transaction::RoleGetDetails:
-        connect(m_transaction, SIGNAL(package(PackageKit::Package)),
-                this, SLOT(description(PackageKit::Package)));
-        m_transaction->getDetails(m_package);
+    case PackageKit::Transaction::RoleGetDetails:
+        connect(m_transaction, SIGNAL(details(QString,QString,PackageKit::Transaction::Group,QString,QString,qulonglong)),
+                this, SLOT(description(QString,QString,PackageKit::Transaction::Group,QString,QString,qulonglong)));
+        m_transaction->getDetails(m_packageID);
         break;
-    case Transaction::RoleGetDepends:
+    case PackageKit::Transaction::RoleGetDepends:
         m_dependsModel->clear();
-        connect(m_transaction, SIGNAL(package(PackageKit::Package)),
-                m_dependsModel, SLOT(addPackage(PackageKit::Package)));
+        connect(m_transaction, SIGNAL(package(PackageKit::Transaction::Info,QString,QString)),
+                m_dependsModel, SLOT(addPackage(PackageKit::Transaction::Info,QString,QString)));
         connect(m_transaction, SIGNAL(finished(PackageKit::Transaction::Exit,uint)),
                 m_dependsModel, SLOT(finished()));
-        m_transaction->getDepends(m_package, Transaction::FilterNone, false);
+        m_transaction->getDepends(m_packageID, PackageKit::Transaction::FilterNone, false);
         break;
-    case Transaction::RoleGetRequires:
+    case PackageKit::Transaction::RoleGetRequires:
         m_requiresModel->clear();
-        connect(m_transaction, SIGNAL(package(PackageKit::Package)),
-                m_requiresModel, SLOT(addPackage(PackageKit::Package)));
+        connect(m_transaction, SIGNAL(package(PackageKit::Transaction::Info,QString,QString)),
+                m_requiresModel, SLOT(addPackage(PackageKit::Transaction::Info,QString,QString)));
         connect(m_transaction, SIGNAL(finished(PackageKit::Transaction::Exit,uint)),
                 m_requiresModel, SLOT(finished()));
-        m_transaction->getRequires(m_package, Transaction::FilterNone, false);
+        m_transaction->getRequires(m_packageID, PackageKit::Transaction::FilterNone, false);
         break;
-    case Transaction::RoleGetFiles:
+    case PackageKit::Transaction::RoleGetFiles:
         m_currentFileList.clear();
-        connect(m_transaction, SIGNAL(files(PackageKit::Package,QStringList)),
-                this, SLOT(files(PackageKit::Package, QStringList)));
-        m_transaction->getFiles(m_package);
+        connect(m_transaction, SIGNAL(files(QString,QStringList)),
+                this, SLOT(files(QString,QStringList)));
+        m_transaction->getFiles(m_packageID);
         break;
     }
+    kDebug() <<"transaction running";
 
-    Transaction::InternalError error = m_transaction->error();
+    PackageKit::Transaction::InternalError error = m_transaction->error();
     if (error) {
         disconnect(m_transaction, SIGNAL(finished(PackageKit::Transaction::Exit,uint)),
                    this, SLOT(finished()));
         m_transaction = 0;
+        kDebug() << "transaction running" << error << PkStrings::daemonError(error);
         KMessageBox::sorry(this, PkStrings::daemonError(error));
     } else {
         m_busySeq->start();
@@ -407,7 +443,7 @@ void PackageDetails::hide()
     m_display = false;
     // Clean the old description otherwise if the user selects the same
     // package the pannel won't expand
-    m_packageId.clear();
+    m_packageID.clear();
     m_appId.clear();
 
     if (maximumSize().height() == FINAL_HEIGHT) {
@@ -433,7 +469,7 @@ void PackageDetails::fadeOut(FadeWidgets widgets)
 
     // Fade out the screenshot only if needed
     if ((widgets & FadeScreenshot) && m_fadeScreenshot->currentValue().toReal() != 0) {
-        screenshotL->unsetCursor();
+        ui->screenshotL->unsetCursor();
         m_fadeScreenshot->setDirection(QAbstractAnimation::Backward);
         m_fadeScreenshot->start();
     }
@@ -453,42 +489,42 @@ void PackageDetails::display()
         {
             bool fadeIn = false;
             switch (m_actionGroup->checkedAction()->data().toUInt()) {
-            case Transaction::RoleGetDetails:
+            case PackageKit::Transaction::RoleGetDetails:
                 if (m_hasDetails) {
                     setupDescription();
                     fadeIn = true;
                 }
                 break;
-            case Transaction::RoleGetDepends:
+            case PackageKit::Transaction::RoleGetDepends:
                 if (m_hasDepends) {
-                    if (stackedWidget->currentWidget() != pageDepends) {
-                        stackedWidget->setCurrentWidget(pageDepends);
+                    if (ui->stackedWidget->currentWidget() != ui->pageDepends) {
+                        ui->stackedWidget->setCurrentWidget(ui->pageDepends);
                     }
                     fadeIn = true;
                 }
                 break;
-            case Transaction::RoleGetRequires:
+            case PackageKit::Transaction::RoleGetRequires:
                 if (m_hasRequires) {
-                    if (stackedWidget->currentWidget() != pageRequired) {
-                        stackedWidget->setCurrentWidget(pageRequired);
+                    if (ui->stackedWidget->currentWidget() != ui->pageRequired) {
+                        ui->stackedWidget->setCurrentWidget(ui->pageRequired);
                     }
                     fadeIn = true;
                 }
                 break;
-            case Transaction::RoleGetFiles:
+            case PackageKit::Transaction::RoleGetFiles:
                 if (m_hasFileList) {
-                    filesPTE->clear();
+                    ui->filesPTE->clear();
                     if (m_currentFileList.isEmpty()) {
-                        filesPTE->insertPlainText(i18n("No files were found."));
+                        ui->filesPTE->insertPlainText(i18n("No files were found."));
                     } else {
                         m_currentFileList.sort();
-                        filesPTE->insertPlainText(m_currentFileList.join("\n"));
+                        ui->filesPTE->insertPlainText(m_currentFileList.join("\n"));
                     }
 
-                    if (stackedWidget->currentWidget() != pageFiles) {
-                        stackedWidget->setCurrentWidget(pageFiles);
+                    if (ui->stackedWidget->currentWidget() != ui->pageFiles) {
+                        ui->stackedWidget->setCurrentWidget(ui->pageFiles);
                     }
-                    filesPTE->verticalScrollBar()->setValue(0);
+                    ui->filesPTE->verticalScrollBar()->setValue(0);
                     fadeIn = true;
                 }
                 break;
@@ -510,8 +546,8 @@ void PackageDetails::display()
             QPixmap pixmap;
             pixmap = QPixmap(m_screenshotPath[m_currentScreenshot])
                              .scaled(160,120, Qt::KeepAspectRatio, Qt::SmoothTransformation);
-            screenshotL->setPixmap(pixmap);
-            screenshotL->setCursor(Qt::PointingHandCursor);
+            ui->screenshotL->setPixmap(pixmap);
+            ui->screenshotL->setCursor(Qt::PointingHandCursor);
             // Fade In
             m_fadeScreenshot->setDirection(QAbstractAnimation::Forward);
             m_fadeScreenshot->start();
@@ -521,36 +557,36 @@ void PackageDetails::display()
 
 void PackageDetails::setupDescription()
 {
-    if (stackedWidget->currentWidget() != pageDescription) {
-        stackedWidget->setCurrentWidget(pageDescription);
+    if (ui->stackedWidget->currentWidget() != ui->pageDescription) {
+        ui->stackedWidget->setCurrentWidget(ui->pageDescription);
     }
 
-    if (!m_package.hasDetails()) {
+    if (!m_hasDetails) {
         // Oops we don't have any details
-        descriptionL->setText(i18n("Could not fetch software details"));
-        descriptionL->show();
+        ui->descriptionL->setText(i18n("Could not fetch software details"));
+        ui->descriptionL->show();
 
         // Hide stuff so we don't display outdated data
-        homepageL->hide();
-        pathL->hide();
-        licenseL->hide();
-        sizeL->hide();
-        iconL->clear();
+        ui->homepageL->hide();
+        ui->pathL->hide();
+        ui->licenseL->hide();
+        ui->sizeL->hide();
+        ui->iconL->clear();
     }
 
-    if (!m_package.description().isEmpty()) {
-        descriptionL->setText(m_package.description().replace('\n', "<br>"));
-        descriptionL->show();
+    if (!m_detailsDetail.isEmpty()) {
+        ui->descriptionL->setText(m_detailsDetail.replace('\n', "<br>"));
+        ui->descriptionL->show();
     } else {
-        descriptionL->clear();
+        ui->descriptionL->clear();
     }
 
-    if (!m_package.url().isEmpty()) {
-        homepageL->setText("<a href=\"" + m_package.url() + "\">" +
-                           m_package.url() + "</a>");
-        homepageL->show();
+    if (!m_detailsUrl.isEmpty()) {
+        ui->homepageL->setText("<a href=\"" + m_detailsUrl + "\">" +
+                               m_detailsUrl + "</a>");
+        ui->homepageL->show();
     } else {
-        homepageL->hide();
+        ui->homepageL->hide();
     }
 
     // Let's try to find the application's path in human user
@@ -561,7 +597,7 @@ void PackageDetails::setupDescription()
         ret = locateApplication(QString(), service->menuId());
     }
     if (ret.isEmpty()) {
-        pathL->hide();
+        ui->pathL->hide();
     } else {
         QString path;
         path.append(QString("<img width=\"16\" heigh=\"16\"src=\"%1\"/>")
@@ -576,8 +612,8 @@ void PackageDetails::setupDescription()
                         .arg(KIconLoader::global()->iconPath(ret.at(i).second, KIconLoader::Small))
                         .arg(ret.at(i).first));
         }
-        pathL->setText(path);
-        pathL->show();
+        ui->pathL->setText(path);
+        ui->pathL->show();
     }
 
 //     if (details->group() != Package::UnknownGroup) {
@@ -586,39 +622,39 @@ void PackageDetails::setupDescription()
 // //                     + "</td></tr>";
 //     }
 
-    if (!m_package.license().isEmpty() && m_package.license() != "unknown") {
+    if (!m_detailsLicense.isEmpty() && m_detailsLicense != "unknown") {
         // We have a license, check if we have and should show show package version
-        if (!m_hideVersion && !m_package.version().isEmpty()) {
-            licenseL->setText(m_package.version() + " - " + m_package.license());
+        if (!m_hideVersion && !Transaction::packageVersion(m_detailsPackageID).isEmpty()) {
+            ui->licenseL->setText(Transaction::packageVersion(m_detailsPackageID) + " - " + m_detailsLicense);
         } else {
-            licenseL->setText(m_package.license());
+            ui->licenseL->setText(m_detailsLicense);
         }
-        licenseL->show();
+        ui->licenseL->show();
     } else if (!m_hideVersion) {
-        licenseL->setText(m_package.version());
-        licenseL->show();
+        ui->licenseL->setText(Transaction::packageVersion(m_detailsPackageID));
+        ui->licenseL->show();
     } else {
-        licenseL->hide();
+        ui->licenseL->hide();
     }
 
-    if (m_package.size() > 0) {
-        QString size = KGlobal::locale()->formatByteSize(m_package.size());
-        if (!m_hideArch && !m_package.arch().isEmpty()) {
-            sizeL->setText(size + " (" + m_package.arch() + ')');
+    if (m_detailsSize > 0) {
+        QString size = KGlobal::locale()->formatByteSize(m_detailsSize);
+        if (!m_hideArch && !Transaction::packageArch(m_detailsPackageID).isEmpty()) {
+            ui->sizeL->setText(size % QLatin1String(" (") % Transaction::packageArch(m_detailsPackageID) % QLatin1Char(')'));
         } else {
-            sizeL->setText(size);
+            ui->sizeL->setText(size);
         }
-        sizeL->show();
-    } else if (!m_hideArch && !m_package.arch().isEmpty()) {
-        sizeL->setText(m_package.arch());
+        ui->sizeL->show();
+    } else if (!m_hideArch && !Transaction::packageArch(m_detailsPackageID).isEmpty()) {
+        ui->sizeL->setText(Transaction::packageArch(m_detailsPackageID));
     } else {
-        sizeL->hide();
+        ui->sizeL->hide();
     }
 
     if (m_currentIcon.isNull()) {
-        iconL->clear();
+        ui->iconL->clear();
     } else {
-        iconL->setPixmap(m_currentIcon);
+        ui->iconL->setPixmap(m_currentIcon);
     }
 }
 
@@ -680,9 +716,21 @@ QVector<QPair<QString, QString> > PackageDetails::locateApplication(const QStrin
     return ret;
 }
 
-void PackageDetails::description(const PackageKit::Package &package)
+void PackageDetails::description(const QString &packageID,
+                                 const QString &license,
+                                 PackageKit::Transaction::Group group,
+                                 const QString &detail,
+                                 const QString &url,
+                                 qulonglong size)
 {
-    m_package = package;
+    kDebug() << packageID;
+    m_detailsPackageID = packageID;
+    m_detailsLicense = license;
+    m_detailsGroup = group;
+    m_detailsDetail = detail;
+    m_detailsUrl = url;
+    m_detailsSize = size;
+    m_hasDetails = true;
 }
 
 void PackageDetails::finished()
@@ -692,15 +740,18 @@ void PackageDetails::finished()
     }
     m_transaction = 0;
 
-    Transaction *transaction = qobject_cast<Transaction*>(sender());
+    PackageKit::Transaction *transaction;
+    transaction = qobject_cast<PackageKit::Transaction*>(sender());
+    kDebug();
     if (transaction) {
-        if (transaction->role() == Transaction::RoleGetDetails) {
-            m_hasDetails  = true;
-        } else if (transaction->role() == Transaction::RoleGetFiles) {
+        kDebug() << transaction->role() << PackageKit::Transaction::RoleGetDetails;
+        if (transaction->role() == PackageKit::Transaction::RoleGetDetails) {
+            m_hasDetails = true;
+        } else if (transaction->role() == PackageKit::Transaction::RoleGetFiles) {
             m_hasFileList = true;
-        } else if (transaction->role() == Transaction::RoleGetRequires) {
+        } else if (transaction->role() == PackageKit::Transaction::RoleGetRequires) {
             m_hasRequires = true;
-        } else if (transaction->role() == Transaction::RoleGetDepends) {
+        } else if (transaction->role() == PackageKit::Transaction::RoleGetDepends) {
             m_hasDepends  = true;
         } else {
             return;
@@ -710,12 +761,10 @@ void PackageDetails::finished()
     }
 }
 
-void PackageDetails::files(const PackageKit::Package &package, const QStringList &files)
+void PackageDetails::files(const QString &packageID, const QStringList &files)
 {
-    Q_UNUSED(package)
-
+    Q_UNUSED(packageID)
     m_currentFileList = files;
 }
-
 
 #include "PackageDetails.moc"

@@ -9,31 +9,38 @@ ELSE(CMAKE_SIZEOF_VOID_P EQUAL 4)
 ENDIF(CMAKE_SIZEOF_VOID_P EQUAL 4)
 
 set(libapper_SRCS
-    AppInstall.cpp
+    AppStream/CategoryMatcher.cpp
     PkIcons.cpp
     PkStrings.cpp
     ApplicationLauncher.cpp
     ApplicationsDelegate.cpp
+    ApplicationSortFilterModel.cpp
     CategoryDrawer.cpp
     ChangesDelegate.cpp
     TransactionDelegate.cpp
-    ProgressView.cpp
     PkTransaction.cpp
-    PkTransactionDialog.cpp
+    PkTransactionWidget.cpp
+    PkTransactionProgressModel.cpp
     RepoSig.cpp
     LicenseAgreement.cpp
     PackageModel.cpp
     CustomProgressBar.cpp
     Requirements.cpp
     PackageImportance.cpp
-    SimulateModel.cpp
     CategorizedView.cpp
     InfoWidget.cpp
 )
 
+if(APPSTREAM)
+    find_package(Xapian 1.2 REQUIRED)
+    add_definitions("-fexceptions")
+
+    set(libapper_SRCS ${libapper_SRCS} AppStream/AppStreamDb.cpp)
+endif()
+
 kde4_add_ui_files(libapper_SRCS
     ApplicationLauncher.ui
-    PkTransaction.ui
+    PkTransactionWidget.ui
     RepoSig.ui
     LicenseAgreement.ui
     Requirements.ui
@@ -46,6 +53,7 @@ target_link_libraries(apper
     ${KDE4_KDEUI_LIBS}
     ${KDE4_KIO_LIBS}
     ${QPACKAGEKIT2_LIBRARIES}
+    ${XAPIAN_LIBRARIES}
 )
 
 install(TARGETS apper DESTINATION ${LIB_INSTALL_DIR}/apper)

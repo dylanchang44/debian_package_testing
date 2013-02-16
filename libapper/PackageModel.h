@@ -23,16 +23,16 @@
 
 #include <QAbstractItemModel>
 #include <QAbstractItemView>
+#include <QMetaObject>
 #include <KIcon>
 
-#include <Package>
 #include <Transaction>
-
-using namespace PackageKit;
 
 class KDE_EXPORT PackageModel : public QAbstractItemModel
 {
     Q_OBJECT
+    Q_PROPERTY(bool checkable READ checkable WRITE setCheckable NOTIFY changed)
+    Q_PROPERTY(QString selectionStateText READ selectionStateText NOTIFY changed)
 public:
     enum {
         NameCol = 0,
@@ -54,62 +54,66 @@ public:
         CheckStateRole,
         InfoRole,
         ApplicationId,
-        ApplicationFilterRole,
-        PackageName
+        IsPackageRole,
+        PackageName,
+        InfoIconRole
     };
     typedef struct {
-        QString    name;
+        QString    displayName;
         QString    version;
-        QString    currentVersion;
-        QString    icon;
-        QString    summary;
         QString    arch;
         QString    repo;
-        QString    id;
+        QString    packageID;
+        QString    summary;
+        PackageKit::Transaction::Info info;
+        QString    icon;
         QString    appId;
+        QString    currentVersion;
         bool       isPackage;
-        Package::Info info;
         double     size;
     } InternalPackage;
 
     explicit PackageModel(QObject *parent = 0);
 
-    int rowCount(const QModelIndex &parent = QModelIndex()) const;
+    Q_INVOKABLE int rowCount(const QModelIndex &parent = QModelIndex()) const;
     int columnCount(const QModelIndex &parent = QModelIndex()) const;
     QVariant data(const QModelIndex &index, int role = Qt::DisplayRole) const;
     bool setData(const QModelIndex &index, const QVariant &value, int role = Qt::EditRole);
     Qt::ItemFlags flags(const QModelIndex &index) const;
     QVariant headerData(int section, Qt::Orientation orientation, int role = Qt::DisplayRole) const;
 
-    bool allSelected() const;
-    QList<Package> selectedPackages() const;
+    Q_INVOKABLE bool allSelected() const;
+    Q_INVOKABLE QStringList selectedPackagesToInstall() const;
+    Q_INVOKABLE QStringList selectedPackagesToRemove() const;
+    Q_INVOKABLE QStringList packagesWithInfo(PackageKit::Transaction::Info info) const;
+    Q_INVOKABLE QStringList packageIDs() const;
     unsigned long downloadSize() const;
-    void clear();
+    Q_INVOKABLE void clear();
     /**
      * This removes all selected packages that are not in the model
      */
-    void clearSelectedNotPresent();
+    Q_INVOKABLE void clearSelectedNotPresent();
 
+    bool checkable() const;
     void setCheckable(bool checkable);
 
     QModelIndex index(int row, int column, const QModelIndex &parent = QModelIndex()) const;
     QModelIndex parent(const QModelIndex &index) const;
 
 public slots:
-    void addPackage(const PackageKit::Package &package,
-                    bool selected = false);
-    void addPackages(const QList<Package> &packages,
-                     bool selected = false);
-    void addSelectedPackage(const PackageKit::Package &package);
-    void rmSelectedPackage(const PackageModel::InternalPackage &package);
+    void addSelectedPackagesFromModel(PackageModel *model);
+    void addPackage(PackageKit::Transaction::Info info, const QString &packageID, const QString &summary, bool selected = false);
+    void addSelectedPackage(PackageKit::Transaction::Info info, const QString &packageID, const QString &summary);
+    void removePackage(const QString &packageID);
 
     void setAllChecked(bool checked);
     void checkPackage(const PackageModel::InternalPackage &package,
                       bool emitDataChanged = true);
-    void uncheckPackage(const PackageModel::InternalPackage &package,
+    void uncheckPackage(const QString &packageID,
                         bool forceEmitUnchecked = false,
                         bool emitDataChanged = true);
     bool hasChanges() const;
+    int countInfo(PackageKit::Transaction::Info info) const;
 
     void uncheckInstalledPackages();
     void uncheckAvailablePackages();
@@ -118,27 +122,36 @@ public slots:
 
     void fetchSizes();
     void fetchSizesFinished();
-    void updateSize(const PackageKit::Package &package);
+    void updateSize(const QString &packageID,
+                    const QString &license,
+                    PackageKit::Transaction::Group group,
+                    const QString &detail,
+                    const QString &url,
+                    qulonglong size);
 
     void fetchCurrentVersions();
     void fetchCurrentVersionsFinished();
-    void updateCurrentVersion(const PackageKit::Package &package);
+    void updateCurrentVersion(PackageKit::Transaction::Info info, const QString &packageID, const QString &summary);
+
+    void getUpdates(bool fetchCurrentVersions, bool selected);
+    void toggleSelection(const QString &packageID);
+    QString selectionStateText() const;
 
 signals:
     void changed(bool value);
-    void packageChecked(const PackageModel::InternalPackage &package);
-    void packageUnchecked(const PackageModel::InternalPackage &package);
+    void packageUnchecked(const QString &packageID);
 
 private:
+    QList<InternalPackage> internalSelectedPackages() const;
     bool containsChecked(const QString &pid) const;
 
-    int m_packageCount;
+    bool                            m_finished;
     bool                            m_checkable;
     QPixmap                         m_installedEmblem;
     QVector<InternalPackage>        m_packages;
     QHash<QString, InternalPackage> m_checkedPackages;
-    Transaction *m_fetchSizesTransaction;
-    Transaction *m_fetchInstalledVersionsTransaction;
+    PackageKit::Transaction *m_fetchSizesTransaction;
+    PackageKit::Transaction *m_fetchInstalledVersionsTransaction;
 };
 
 #endif

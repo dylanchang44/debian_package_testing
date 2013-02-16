@@ -24,10 +24,10 @@
 #include <KIconLoader>
 #include <KLocale>
 
-#include <Package>
-
 #include "PackageModel.h"
 #include "PkIcons.h"
+
+#include <Transaction>
 
 #define FAV_ICON_SIZE 24
 #define EMBLEM_ICON_SIZE 8
@@ -35,8 +35,10 @@
 #define FADE_LENGTH 16
 #define MAIN_ICON_SIZE 32
 
-ChangesDelegate::ChangesDelegate(QAbstractItemView *parent)
-  : KExtendableItemDelegate(parent),
+using namespace PackageKit;
+
+ChangesDelegate::ChangesDelegate(QAbstractItemView *parent) :
+    KExtendableItemDelegate(parent),
     m_viewport(parent->viewport()),
     // loads it here to be faster when displaying items
     m_packageIcon("package"),
@@ -95,13 +97,13 @@ void ChangesDelegate::paint(QPainter *painter,
 //     QString pkgIconPath   = index.data(PackageModel::IconPathRole).toString();
     bool    pkgChecked    = index.data(PackageModel::CheckStateRole).toBool();
     bool    pkgCheckable  = !index.data(Qt::CheckStateRole).isNull();
-    Package::Info info;
-    info = static_cast<Package::Info>(index.data(PackageModel::InfoRole).toUInt());
-    bool    pkgInstalled  = (info == Package::InfoInstalled ||
-                             info == Package::InfoCollectionInstalled);
+    Transaction::Info info;
+    info = index.data(PackageModel::InfoRole).value<Transaction::Info>();
+    bool    pkgInstalled  = (info == Transaction::InfoInstalled ||
+                             info == Transaction::InfoCollectionInstalled);
 
-    bool    pkgCollection = (info == Package::InfoCollectionInstalled ||
-                             info == Package::InfoCollectionAvailable);
+    bool    pkgCollection = (info == Transaction::InfoCollectionInstalled ||
+                             info == Transaction::InfoCollectionAvailable);
 
     QIcon emblemIcon;
     if (pkgCheckable) {

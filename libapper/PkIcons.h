@@ -1,7 +1,7 @@
 /***************************************************************************
  *   Copyright (C) 2008 by Trever Fischer                                  *
  *   wm161@wm161.net                                                       *
- *   Copyright (C) 2010-2011 by Daniel Nicoletti                           *
+ *   Copyright (C) 2010-2012 by Daniel Nicoletti                           *
  *   dantti12@gmail.com                                                    *
  *                                                                         *
  *   This program is free software; you can redistribute it and/or modify  *
@@ -23,34 +23,36 @@
 #ifndef PK_ICONS_H
 #define PK_ICONS_H
 
-#include <Package>
+#include <QObject>
+
 #include <Transaction>
 #include <KIcon>
 
 #define KPK_ICON_SIZE 64
 
-using namespace PackageKit;
+class KDE_EXPORT PkIcons : public QObject
+{
+    Q_OBJECT
+public slots:
+    static KIcon   groupsIcon(PackageKit::Transaction::Group group);
+    static QString statusIconName(PackageKit::Transaction::Status status);
+    static KIcon   statusIcon(PackageKit::Transaction::Status status);
+    static QString statusAnimation(PackageKit::Transaction::Status status);
+    static QString actionIconName(PackageKit::Transaction::Role role);
+    static KIcon   actionIcon(PackageKit::Transaction::Role role);
+    static KIcon   packageIcon(PackageKit::Transaction::Info state);
+    static QString restartIconName(PackageKit::Transaction::Restart type);
+    static KIcon   restartIcon(PackageKit::Transaction::Restart type);
+    static KIcon   getIcon(const QString &name);
+    static KIcon   getIcon(const QString &name, const QString &defaultName);
+    static QIcon   getPreloadedIcon(const QString &name);
+    static QString lastCacheRefreshIconName(uint lastTime);
 
-class KDE_EXPORT PkIcons {
-    public:
-        static KIcon   groupsIcon(Package::Group group);
-        static QString statusIconName(Transaction::Status status);
-        static KIcon   statusIcon(Transaction::Status status);
-        static QString statusAnimation(Transaction::Status status);
-        static QString actionIconName(Transaction::Role role);
-        static KIcon   actionIcon(Transaction::Role role);
-        static KIcon   packageIcon(Package::Info state);
-        static QString restartIconName(Package::Restart type);
-        static KIcon   restartIcon(Package::Restart type);
-        static KIcon   getIcon(const QString &name);
-        static KIcon   getIcon(const QString &name, const QString &defaultName);
-        static QIcon   getPreloadedIcon(const QString &name);
+private:
+    static void configure();
 
-    private:
-        static void configure();
-
-        static QHash<QString, KIcon> cache;
-        static bool init;
+    static QHash<QString, KIcon> cache;
+    static bool init;
 };
 
 #endif

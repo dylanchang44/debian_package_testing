@@ -29,23 +29,44 @@
 #define AUTOREMOVE false
 #endif // HAVE_AUTOREMOVE
 
+#define CFG_CHECK_UP_BATTERY   "checkUpdatesOnBattery"
+#define CFG_CHECK_UP_MOBILE    "checkUpdatesOnMobile"
+#define CFG_INSTALL_UP_BATTERY "installUpdatesOnBattery"
+#define CFG_INSTALL_UP_MOBILE  "installUpdatesOnMobile"
+#define CFG_AUTO_UP            "autoUpdate"
+#define CFG_INTERVAL           "interval"
+#define CFG_DISTRO_UPGRADE     "distroUpgrade"
+
+#define DEFAULT_CHECK_UP_BATTERY   false
+#define DEFAULT_CHECK_UP_MOBILE    false
+#define DEFAULT_INSTALL_UP_BATTERY false
+#define DEFAULT_INSTALL_UP_MOBILE  false
+
 namespace Enum {
 
-    typedef enum {
-            None,
-            Security,
-            All
-    } AutoUpdate;
-    const int AutoUpdateDefault = None;
+typedef enum {
+    DistroNever,
+    DistroDevelopment,
+    DistroStable
+} DistroUpdate;
+const int DistroUpgradeDefault = DistroStable;
 
-    typedef enum {
-            Never   =       0,
-            Hourly  =    3600,
-            Daily   =   86400,
-            Weekly  =  604800,
-            Monthly = 2592000 // 30 days
-    } TimeInterval;
-    const int TimeIntervalDefault = Daily;
+typedef enum {
+    None,
+    Security,
+    All,
+    DownloadOnly
+} AutoUpdate;
+const int AutoUpdateDefault = None;
+
+typedef enum {
+    Never   =       0,
+    Hourly  =    3600,
+    Daily   =   86400,
+    Weekly  =  604800,
+    Monthly = 2592000 // 30 days
+} TimeInterval;
+const int TimeIntervalDefault = Daily;
 
 }
 

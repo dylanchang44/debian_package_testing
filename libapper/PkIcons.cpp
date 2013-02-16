@@ -29,6 +29,8 @@
 
 #include <KDebug>
 
+using namespace PackageKit;
+
 bool PkIcons::init = false;
 QHash<QString, KIcon> PkIcons::cache = QHash<QString, KIcon>();
 
@@ -77,7 +79,7 @@ QString PkIcons::statusIconName(Transaction::Status status)
         PkIcons::configure();
     }
     switch (status) {
-    case Transaction::UnknownStatus              : return "help-browser";
+    case Transaction::StatusUnknown              : return "help-browser";
     case Transaction::StatusCancel               :
     case Transaction::StatusCleanup              : return "package-clean-up";
     case Transaction::StatusCommit               : return "package-working";//TODO needs a better icon
@@ -102,7 +104,6 @@ QString PkIcons::statusIconName(Transaction::Status status)
     case Transaction::StatusRemove               : return "package-removed";
     case Transaction::StatusRepackaging          : return "package-clean-up";
     case Transaction::StatusRequest              : return "search-package";
-    case Transaction::StatusRollback             : return "package-rollback";
     case Transaction::StatusRunning              : return "package-working";
     case Transaction::StatusScanApplications     : return "search-package";
     case Transaction::StatusSetup                : return "package-working";
@@ -130,7 +131,7 @@ QString PkIcons::statusAnimation(Transaction::Status status)
         PkIcons::configure();
     }
     switch (status) {
-    case Transaction::UnknownStatus             : return "help-browser";
+    case Transaction::StatusUnknown             : return "help-browser";
     case Transaction::StatusCancel              :
     case Transaction::StatusCleanup             : return "pk-cleaning-up";
     case Transaction::StatusCommit              :
@@ -154,7 +155,6 @@ QString PkIcons::statusAnimation(Transaction::Status status)
     case Transaction::StatusRemove              : return "package-removed";//TODO do the animation
     case Transaction::StatusRepackaging         : return "pk-searching";
     case Transaction::StatusRequest             : return "process-working";
-    case Transaction::StatusRollback            : return "package-removed";
     case Transaction::StatusRunning             : return "pk-testing";
     case Transaction::StatusScanApplications    : return "pk-searching";
     case Transaction::StatusSetup               : return "pk-searching";
@@ -175,7 +175,7 @@ QString PkIcons::actionIconName(Transaction::Role role)
         PkIcons::configure();
     }
     switch (role) {
-    case Transaction::UnknownRole                 : return "applications-other";
+    case Transaction::RoleUnknown                 : return "applications-other";
     case Transaction::RoleAcceptEula              : return "package-info";
     case Transaction::RoleCancel                  : return "process-stop";
     case Transaction::RoleDownloadPackages        : return "package-download";
@@ -198,19 +198,14 @@ QString PkIcons::actionIconName(Transaction::Role role)
     case Transaction::RoleRepoEnable              : return "package-orign";
     case Transaction::RoleRepoSetData             : return "package-orign";
     case Transaction::RoleResolve                 : return "search-package";
-    case Transaction::RoleRollback                : return "package-rollback";
     case Transaction::RoleSearchDetails           : return "search-package";
     case Transaction::RoleSearchFile              : return "search-package";
     case Transaction::RoleSearchGroup             : return "search-package";
     case Transaction::RoleSearchName              : return "search-package";
     case Transaction::RoleUpdatePackages          : return "package-update";
-    case Transaction::RoleUpdateSystem            : return "distro-upgrade";//TODO
     case Transaction::RoleUpgradeSystem           : return "distro-upgrade";//TODO
     case Transaction::RoleWhatProvides            : return "search-package";
-    case Transaction::RoleSimulateInstallFiles    : return "package-installed";
-    case Transaction::RoleSimulateInstallPackages : return "package-installed";
-    case Transaction::RoleSimulateRemovePackages  : return "package-removed";
-    case Transaction::RoleSimulateUpdatePackages  : return "package-update'";
+    case Transaction::RoleRepairSystem            : return "package-rollback";
     }
     kDebug() << "action unrecognised: " << role;
     return "applications-other";
@@ -221,72 +216,72 @@ KIcon PkIcons::actionIcon(Transaction::Role role)
     return KIcon(actionIconName(role));
 }
 
-KIcon PkIcons::groupsIcon(Package::Group group)
+KIcon PkIcons::groupsIcon(Transaction::Group group)
 {
     if (!PkIcons::init) {
         PkIcons::configure();
     }
     switch (group) {
-    case Package::UnknownGroup         : return KIcon("unknown");
-    case Package::GroupAccessibility   : return KIcon("preferences-desktop-accessibility");
-    case Package::GroupAccessories     : return KIcon("applications-accessories");
-    case Package::GroupAdminTools      : return KIcon("dialog-password");
-    case Package::GroupCommunication   : return KIcon("network-workgroup");//FIXME
-    case Package::GroupDesktopGnome    : return KIcon("kpk-desktop-gnome");
-    case Package::GroupDesktopKde      : return KIcon("kde");
-    case Package::GroupDesktopOther    : return KIcon("user-desktop");
-    case Package::GroupDesktopXfce     : return KIcon("kpk-desktop-xfce");
-    case Package::GroupDocumentation   : return KIcon("accessories-dictionary");//FIXME
-    case Package::GroupEducation       : return KIcon("applications-education");
-    case Package::GroupElectronics     : return KIcon("media-flash");
-    case Package::GroupFonts           : return KIcon("preferences-desktop-font");
-    case Package::GroupGames           : return KIcon("applications-games");
-    case Package::GroupGraphics        : return KIcon("applications-graphics");
-    case Package::GroupInternet        : return KIcon("applications-internet");
-    case Package::GroupLegacy          : return KIcon("media-floppy");
-    case Package::GroupLocalization    : return KIcon("applications-education-language");
-    case Package::GroupMaps            : return KIcon("Maps");//FIXME
-    case Package::GroupCollections     : return KIcon("package-orign");
-    case Package::GroupMultimedia      : return KIcon("applications-multimedia");
-    case Package::GroupNetwork         : return KIcon("network-wired");
-    case Package::GroupOffice          : return KIcon("applications-office");
-    case Package::GroupOther           : return KIcon("applications-other");
-    case Package::GroupPowerManagement : return KIcon("battery");
-    case Package::GroupProgramming     : return KIcon("applications-development");
-    case Package::GroupPublishing      : return KIcon("accessories-text-editor");
-    case Package::GroupRepos           : return KIcon("application-x-compressed-tar");
-    case Package::GroupScience         : return KIcon("applications-science");
-    case Package::GroupSecurity        : return KIcon("security-high");
-    case Package::GroupServers         : return KIcon("network-server");
-    case Package::GroupSystem          : return KIcon("applications-system");
-    case Package::GroupVirtualization  : return KIcon("cpu");
-    case Package::GroupVendor          : return KIcon("application-certificate");
-    case Package::GroupNewest          : return KIcon("dialog-information");
+    case Transaction::GroupUnknown         : return KIcon("unknown");
+    case Transaction::GroupAccessibility   : return KIcon("preferences-desktop-accessibility");
+    case Transaction::GroupAccessories     : return KIcon("applications-accessories");
+    case Transaction::GroupAdminTools      : return KIcon("dialog-password");
+    case Transaction::GroupCommunication   : return KIcon("network-workgroup");//FIXME
+    case Transaction::GroupDesktopGnome    : return KIcon("kpk-desktop-gnome");
+    case Transaction::GroupDesktopKde      : return KIcon("kde");
+    case Transaction::GroupDesktopOther    : return KIcon("user-desktop");
+    case Transaction::GroupDesktopXfce     : return KIcon("kpk-desktop-xfce");
+    case Transaction::GroupDocumentation   : return KIcon("accessories-dictionary");//FIXME
+    case Transaction::GroupEducation       : return KIcon("applications-education");
+    case Transaction::GroupElectronics     : return KIcon("media-flash");
+    case Transaction::GroupFonts           : return KIcon("preferences-desktop-font");
+    case Transaction::GroupGames           : return KIcon("applications-games");
+    case Transaction::GroupGraphics        : return KIcon("applications-graphics");
+    case Transaction::GroupInternet        : return KIcon("applications-internet");
+    case Transaction::GroupLegacy          : return KIcon("media-floppy");
+    case Transaction::GroupLocalization    : return KIcon("applications-education-language");
+    case Transaction::GroupMaps            : return KIcon("Maps");//FIXME
+    case Transaction::GroupCollections     : return KIcon("package-orign");
+    case Transaction::GroupMultimedia      : return KIcon("applications-multimedia");
+    case Transaction::GroupNetwork         : return KIcon("network-wired");
+    case Transaction::GroupOffice          : return KIcon("applications-office");
+    case Transaction::GroupOther           : return KIcon("applications-other");
+    case Transaction::GroupPowerManagement : return KIcon("battery");
+    case Transaction::GroupProgramming     : return KIcon("applications-development");
+    case Transaction::GroupPublishing      : return KIcon("accessories-text-editor");
+    case Transaction::GroupRepos           : return KIcon("application-x-compressed-tar");
+    case Transaction::GroupScience         : return KIcon("applications-science");
+    case Transaction::GroupSecurity        : return KIcon("security-high");
+    case Transaction::GroupServers         : return KIcon("network-server");
+    case Transaction::GroupSystem          : return KIcon("applications-system");
+    case Transaction::GroupVirtualization  : return KIcon("cpu");
+    case Transaction::GroupVendor          : return KIcon("application-certificate");
+    case Transaction::GroupNewest          : return KIcon("dialog-information");
     }
     kDebug() << "group unrecognised: " << group;
     return KIcon("unknown");
 }
 
-KIcon PkIcons::packageIcon(Package::Info info)
+KIcon PkIcons::packageIcon(Transaction::Info info)
 {
     if (!PkIcons::init) {
         PkIcons::configure();
     }
     switch (info) {
-    case Package::InfoBugfix      : return KIcon("script-error");
-    case Package::InfoEnhancement : return KIcon("ktip");
-    case Package::InfoImportant   : return KIcon("security-low");
-    case Package::InfoLow         : return KIcon("security-high");
-    case Package::InfoSecurity    : return KIcon("security-medium");
-    case Package::InfoNormal      : return KIcon("emblem-new");
-    case Package::InfoBlocked     : return KIcon("dialog-cancel");
-    case Package::InfoAvailable   : return KIcon("package-download");
-    case Package::InfoInstalled   : return KIcon("package-installed");
+    case Transaction::InfoBugfix      : return KIcon("script-error");
+    case Transaction::InfoEnhancement : return KIcon("ktip");
+    case Transaction::InfoImportant   : return KIcon("security-medium");
+    case Transaction::InfoLow         : return KIcon("security-high");
+    case Transaction::InfoSecurity    : return KIcon("security-low");
+    case Transaction::InfoNormal      : return KIcon("emblem-new");
+    case Transaction::InfoBlocked     : return KIcon("dialog-cancel");
+    case Transaction::InfoAvailable   : return KIcon("package-download");
+    case Transaction::InfoInstalled   : return KIcon("package-installed");
     default                    : return KIcon("package");
     }
 }
 
-QString PkIcons::restartIconName(Package::Restart type)
+QString PkIcons::restartIconName(Transaction::Restart type)
 {
     if (!PkIcons::init) {
         PkIcons::configure();
@@ -294,18 +289,18 @@ QString PkIcons::restartIconName(Package::Restart type)
     // These names MUST be standard icons, otherwise KStatusNotifierItem
     // will not be able to load them
     switch (type) {
-    case Package::RestartSecuritySystem  :
-    case Package::RestartSystem          : return "system-reboot";
-    case Package::RestartSecuritySession :
-    case Package::RestartSession         : return "system-log-out";
-    case Package::RestartApplication     : return "process-stop";
-    case Package::RestartNone            :
-    case Package::UnknownRestart         : break;
+    case Transaction::RestartSecuritySystem  :
+    case Transaction::RestartSystem          : return "system-reboot";
+    case Transaction::RestartSecuritySession :
+    case Transaction::RestartSession         : return "system-log-out";
+    case Transaction::RestartApplication     : return "process-stop";
+    case Transaction::RestartNone            :
+    case Transaction::RestartUnknown         : break;
     }
     return "";
 }
 
-KIcon PkIcons::restartIcon(Package::Restart type)
+KIcon PkIcons::restartIcon(Transaction::Restart type)
 {
     return PkIcons::getIcon(restartIconName(type));
 }
@@ -320,5 +315,18 @@ QIcon PkIcons::getPreloadedIcon(const QString &name)
     QIcon icon;
     icon.addPixmap(KIcon(name).pixmap(48, 48));
     return icon;
+}
+
+QString PkIcons::lastCacheRefreshIconName(uint lastTime)
+{
+    unsigned long fifteen = 60 * 60 * 24 * 15;
+    unsigned long tirty = 60 * 60 * 24 * 30;
+
+    if (lastTime != UINT_MAX && lastTime < fifteen) {
+        return QLatin1String("security-high");
+    } else if (lastTime != UINT_MAX && lastTime > fifteen && lastTime < tirty) {
+        return QLatin1String("security-medium");
+    }
+    return QLatin1String("security-low");
 }
 

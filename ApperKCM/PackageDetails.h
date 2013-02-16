@@ -30,13 +30,14 @@
 #include <QSortFilterProxyModel>
 #include <QPropertyAnimation>
 #include <QParallelAnimationGroup>
+#include <QActionGroup>
 
-#include "ui_PackageDetails.h"
-
-using namespace PackageKit;
+namespace Ui {
+    class PackageDetails;
+}
 
 class PackageModel;
-class PackageDetails : public QWidget, Ui::PackageDetails
+class PackageDetails : public QWidget
 {
 Q_OBJECT
 public:
@@ -49,7 +50,7 @@ public:
     PackageDetails(QWidget *parent = 0);
     ~PackageDetails();
 
-    void init(Transaction::Roles roles);
+    void init(PackageKit::Transaction::Roles roles);
 
     void setPackage(const QModelIndex &index);
     void hidePackageVersion(bool hide);
@@ -64,8 +65,13 @@ signals:
 private slots:
     void on_screenshotL_clicked();
     void actionActivated(QAction *action);
-    void description(const PackageKit::Package &package);
-    void files(const PackageKit::Package &package, const QStringList &files);
+    void description(const QString &packageID,
+                     const QString &license,
+                     PackageKit::Transaction::Group group,
+                     const QString &detail,
+                     const QString &url,
+                     qulonglong size);
+    void files(const QString &packageID, const QStringList &files);
     void finished();
     void resultJob(KJob *);
 
@@ -76,9 +82,17 @@ private:
     void setupDescription();
     QVector<QPair<QString, QString> > locateApplication(const QString &_relPath, const QString &menuId) const;
 
+    Ui::PackageDetails *ui;
     QActionGroup *m_actionGroup;
     QModelIndex   m_index;
-    Package       m_package;
+    QString m_packageID;
+    QString m_detailsPackageID;
+    QString m_detailsLicense;
+    PackageKit::Transaction::Group m_detailsGroup;
+    QString m_detailsDetail;
+    QString m_detailsUrl;
+    qulonglong m_detailsSize;
+
     QString       m_appName;
 
     QParallelAnimationGroup       *m_expandPanel;
@@ -94,12 +108,11 @@ private:
     // we have, so that we update only when we are
     // totaly transparent this way the user
     // does not see the ui flicker
-    Transaction *m_transaction;
+    PackageKit::Transaction *m_transaction;
     bool         m_hasDetails;
     QString      m_currentText;
     QPixmap      m_currentIcon;
     QString      m_appId;
-    QString      m_packageId;
 
     // file list buffer
     bool         m_hasFileList;
