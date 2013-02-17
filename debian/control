@@ -39,6 +39,9 @@ Description: KDE package management tool using PackageKit
  .
  This package provides a KDE package manager based on PackageKit,
  as well as package management support for the KDE desktop.
+ It implements the PackageKit session API for KDE, which allows
+ applications to easily install additional software (e.g. extensions),
+ uninstall files and perform simple software status queries.
 
 Package: apper-data
 Architecture: all
