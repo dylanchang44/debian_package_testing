@@ -1,8 +1,7 @@
 Source: apper
 Section: kde
 Priority: optional
-Maintainer: Matthias Klumpp <matthias@tenstral.net>
-DM-Upload-Allowed: yes
+Maintainer: Matthias Klumpp <mak@debian.org>
 Build-Depends: chrpath,
                cmake (>= 2.8.4),
                debhelper (>= 9.0.0),
