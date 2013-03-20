@@ -1,12 +1,12 @@
-apper (0.8.0-1~1.01) UNRELEASED; urgency=low
+apper (0.8.0-1) UNRELEASED; urgency=low
 
-  ** SNAPSHOT build **
-
-  * trivial: Fix docbook dependency
-  * Imported Upstream version 0.8.0
+  * New upstream release: 0.8.0
   * Merge apper-appsetup package with main package
+  * Update package description
+  * Change mail to my Debian address
+  * Update dependency on PackageKit
 
- -- Matthias Klumpp <matthias@tenstral.net>  Sun, 17 Feb 2013 00:46:46 +0100
+ -- Matthias Klumpp <mak@debian.org>  Mon, 18 Feb 2013 14:46:46 +0100
 
 apper (0.7.2-5) unstable; urgency=low
 
