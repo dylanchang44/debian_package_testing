@@ -1,6 +1,6 @@
 usr/bin/apper
+usr/bin/apper-appsetup
 usr/lib/*
 usr/share/applications/*
 usr/share/dbus-1/services/*
-usr/bin/apper-appsetup
 usr/share/man/man1/*
