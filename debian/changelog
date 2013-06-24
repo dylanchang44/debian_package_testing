@@ -1,3 +1,10 @@
+apper (0.8.0-2) unstable; urgency=low
+
+  * Upload to unstable (Closes: #696585, #697996, #708090)
+  * Add patch to compile against new QPK API
+
+ -- Matthias Klumpp <mak@debian.org>  Mon, 24 Jun 2013 14:32:36 +0200
+
 apper (0.8.0-1) experimental; urgency=low
 
   * New upstream release: 0.8.0
