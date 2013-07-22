@@ -25,13 +25,13 @@ Depends: apper-data (>= ${source:Version}),
          listaller (>= 0.5.4),
          packagekit (>= 0.8.6),
          polkit-kde-1 | policykit-1-gnome,
+         software-properties-kde,
          ${misc:Depends},
          ${shlibs:Depends}
 Replaces: apper-appsetup (<< 0.7.2)
 Breaks: apper-appsetup (<< 0.7.2)
 Recommends: appstream-index
-Suggests: debconf-kde-helper,
-          software-properties-kde
+Suggests: debconf-kde-helper
 Description: KDE package management tool using PackageKit
  PackageKit allows performing simple software management tasks over a DBus
  interface  e.g. refreshing the cache, updating, installing and removing
