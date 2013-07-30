@@ -51,8 +51,10 @@ public slots:
 
 signals:
     void changed(bool state);
+    void refreshCache();
 
 private slots:
+    void refreshRepoModel();
     void on_showOriginsCB_stateChanged(int state);
     void on_editOriginsPB_clicked();
     void checkChanges();

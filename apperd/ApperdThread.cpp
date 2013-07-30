@@ -24,6 +24,7 @@
 #include "DistroUpgrade.h"
 #include "TransactionWatcher.h"
 #include "DBusInterface.h"
+#include "RebootListener.h"
 
 #include <Enum.h>
 #include <Daemon>
@@ -61,7 +62,8 @@ using namespace Solid;
 
 ApperdThread::ApperdThread(QObject *parent) :
     QObject(parent),
-    m_proxyChanged(true)
+    m_proxyChanged(true),
+    m_AptRebootListener(new AptRebootListener(this))
 {
 }
 
@@ -101,13 +103,8 @@ void ApperdThread::init()
     QString locale(KGlobal::locale()->language() % QLatin1Char('.') % KGlobal::locale()->encoding());
     Daemon::global()->setHints(QLatin1String("locale=") % locale);
 
-    // Watch for TransactionListChanged so we start sentinel
-    connect(Daemon::global(), SIGNAL(transactionListChanged(QStringList)),
-            this, SLOT(transactionListChanged(QStringList)));
-
-    // Watch for UpdatesChanged so we display new updates
     connect(Daemon::global(), SIGNAL(updatesChanged()),
-            this, SLOT(updatesChanged()));
+            SLOT(updatesChanged()));
 
     m_interface = new DBusInterface(this);
 
@@ -128,17 +125,21 @@ void ApperdThread::init()
                                       QDBusConnection::systemBus(),
                                       QDBusServiceWatcher::WatchForRegistration,
                                       this);
-    connect(watcher, SIGNAL(serviceRegistered(QString)),
-            this, SLOT(setProxy()));
+    connect(watcher, SIGNAL(serviceRegistered(QString)), SLOT(setProxy()));
 
     // if PackageKit is running check to see if there are running transactons already
     bool packagekitIsRunning = nameHasOwner(QLatin1String("org.freedesktop.PackageKit"),
                                             QDBusConnection::systemBus());
 
     m_transactionWatcher = new TransactionWatcher(packagekitIsRunning, this);
+
     // connect the watch transaction coming from the updater icon to our watcher
     connect(m_interface, SIGNAL(watchTransaction(QDBusObjectPath)),
             m_transactionWatcher, SLOT(watchTransaction(QDBusObjectPath)));
+
+     // listen to Debian/Apt reboot signals from other sources (apt)
+    connect(m_AptRebootListener, SIGNAL(requestReboot()), m_transactionWatcher, SLOT(showRebootNotificationApt()));
+    QTimer::singleShot(2 /*minutes*/ * 60 /*seconds*/ * 1000 /*msec*/, m_AptRebootListener, SLOT(checkForReboot()));
 
     if (packagekitIsRunning) {
         // PackageKit is running set the session Proxy
@@ -251,21 +252,15 @@ void ApperdThread::setProxy()
     }
 }
 
-void ApperdThread::transactionListChanged(const QStringList &tids)
-{
-    if (tids.isEmpty()) {
-        // update the last time the cache was refreshed
-        QDateTime lastCacheRefresh;
-        lastCacheRefresh = getTimeSinceRefreshCache();
-        if (lastCacheRefresh != m_lastRefreshCache) {
-            m_lastRefreshCache = lastCacheRefresh;
-        }
-    }
-}
-
-// This is called when the list of updates changes
 void ApperdThread::updatesChanged()
 {
+    // update the last time the cache was refreshed
+    QDateTime lastCacheRefresh;
+    lastCacheRefresh = getTimeSinceRefreshCache();
+    if (lastCacheRefresh != m_lastRefreshCache) {
+        m_lastRefreshCache = lastCacheRefresh;
+    }
+
     bool ignoreBattery = m_configs[CFG_INSTALL_UP_BATTERY].value<bool>();
     bool ignoreMobile = m_configs[CFG_INSTALL_UP_MOBILE].value<bool>();
 

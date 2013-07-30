@@ -1,5 +1,6 @@
 /*
  * Copyright 2012  Luís Gabriel Lima <lampih@gmail.com>
+ * Copyright 2012-2013 Daniel Nicoletti <dantti12@gmail.com>
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License as
@@ -18,12 +19,12 @@
 import QtQuick 1.1
 import org.kde.plasma.core 0.1 as PlasmaCore
 import org.kde.plasma.components 0.1 as PlasmaComponents
-import org.packagekit 0.1 as PackageKit
+import org.kde.apper 0.1 as Apper
 
 FocusScope {
     id: root
 
-    state: "BUSY"
+    state: ""
 
     property int minimumHeight: 320
     property int minimumWidth: 370
@@ -35,6 +36,13 @@ FocusScope {
     property int implicitWidth: 0
 
     property bool checkedForUpdates: false
+    property string tooltipText: i18n("Software Updates")
+    property string tooltipIcon: "kpackagekit-updates"
+
+    property Component compactRepresentation: CompactRepresentation {
+        text: tooltipText
+        icon: tooltipIcon
+    }
 
     anchors.fill: parent
     clip: true
@@ -45,17 +53,39 @@ FocusScope {
 
     Component.onCompleted: {
         getUpdatesTransaction.package.connect(updatesModel.addSelectedPackage);
+        getUpdatesTransaction.errorCode.connect(errorCode);
         getUpdatesTransaction.finished.connect(getUpdatesFinished);
 
         Daemon.updatesChanged.connect(updatesChanged);
-        UpdaterPlasmoid.getUpdates.connect(getUpdates);
-        UpdaterPlasmoid.checkForNewUpdates.connect(checkForNewUpdates);
-        UpdaterPlasmoid.reviewUpdates.connect(reviewUpdates);
+
+        // This allows the plasmoid to shrink when the layout changes
+        plasmoid.status = "PassiveStatus"
+        plasmoid.aspectRatioMode = IgnoreAspectRatio
+        plasmoid.popupEvent.connect(popupEventSlot)
+        plasmoid.setAction('checkForNewUpdates', i18n("Check for new updates"), 'view-refresh')
+        dbusInterface.registerService()
+        dbusInterface.reviewUpdates.connect(reviewUpdates)
+        dbusInterface.reviewUpdates.connect(plasmoid.showPopup)
     }
 
-    function checkForNewUpdates() {
+    function popupEventSlot(popped) {
+        if (popped) {
+            root.forceActiveFocus()
+            getUpdates()
+        }
+    }
+
+    function action_checkForNewUpdates() {
         transactionView.refreshCache();
-        root.state = "TRANSACTION";
+        var error = transactionView.transaction.internalError;
+        if (error) {
+            statusView.title = PkStrings.daemonError(error);
+            statusView.subTitle = transactionView.transaction.internalErrorMessage;
+            statusView.iconName = "dialog-error";
+            root.state = "MESSAGE";
+        } else {
+            root.state = "TRANSACTION";
+        }
     }
 
     function reviewUpdates() {
@@ -82,29 +112,45 @@ FocusScope {
             getUpdatesTransaction.reset();
             updatesModel.clear();
             getUpdatesTransaction.getUpdates();
-            checkedForUpdates = true;
+            var error = getUpdatesTransaction.internalError;
+            if (error) {
+                statusView.title = PkStrings.daemonError(error);
+                statusView.subTitle = getUpdatesTransaction.internalErrorMessage;
+                statusView.iconName = "dialog-error";
+                state = "MESSAGE";
+            } else {
+                checkedForUpdates = true;
+            }
         }
+    }
+
+    function errorCode() {
+        statusView.title = i18n("Failed to get updates");
+        statusView.subTitle = PkStrings.daemonError(error);
+        statusView.iconName = "dialog-error";
+        state = "MESSAGE";
+        plasmoid.status = "PassiveStatus"
     }
 
     function getUpdatesFinished() {
         updatesModel.finished();
         updatesView.sortModel.sortNow();
         updatesModel.clearSelectedNotPresent();
-        UpdaterPlasmoid.updateIcon();
+        updateIcon();
         decideState(false);
     }
 
     function decideState(force) {
         if (force || state !== "TRANSACTION") {
             if (updatesModel.rowCount() === 0) {
-                var lastTime = UpdaterPlasmoid.getTimeSinceLastRefresh();
+                var lastTime = DaemonHelper.getTimeSinceLastRefresh();
                 statusView.title = PkStrings.lastCacheRefreshTitle(lastTime);
                 statusView.subTitle = PkStrings.lastCacheRefreshSubTitle(lastTime);
                 statusView.iconName = PkIcons.lastCacheRefreshIconName(lastTime);
-                state = "UPTODATE";
-                UpdaterPlasmoid.setActive(false);
+                state = "MESSAGE";
+                plasmoid.status = "PassiveStatus"
             } else {
-                UpdaterPlasmoid.setActive(true);
+                plasmoid.status = "ActiveStatus"
                 root.state = "SELECTION";
             }
         }
@@ -115,10 +161,45 @@ FocusScope {
         getUpdates();
     }
 
-    PackageKit.Transaction {
+    function updateIcon() {
+        if (updatesModel.rowCount()) {
+            if (updatesModel.countInfo(Apper.Transaction.InfoSecurity)) {
+                tooltipIcon = "kpackagekit-security"
+            } else if (updatesModel.countInfo(Apper.Transaction.InfoImportant)) {
+                tooltipIcon = "kpackagekit-important"
+            } else {
+                tooltipIcon = "kpackagekit-updates"
+            }
+            tooltipText = i18np("You have one update",
+                                "You have %1 updates",
+                                updatesModel.rowCount())
+        } else {
+            tooltipIcon = "kpackagekit-updates"
+            tooltipText = i18n("Your system is up to date")
+        }
+    }
+
+    Apper.PackageModel {
+        id: updatesModel
+        checkable: true
+    }
+
+    Apper.DBusUpdaterInterface {
+        id: dbusInterface
+    }
+
+    Timer {
+        // Grab updates in five minutes
+        interval: 360000
+        running: true
+        repeat: false
+        onTriggered: getUpdates()
+    }
+
+    Apper.Transaction {
         id: getUpdatesTransaction
         onChanged: {
-            busyView.title = PkStrings.action(role);
+            busyView.title = PkStrings.action(role, transactionFlags);
             busyView.subTitle = PkStrings.status(status);
         }
     }
@@ -127,6 +208,7 @@ FocusScope {
         id: busyView
         opacity: 0
         anchors.fill: parent
+        anchors.margins: 4
         state: "BUSY"
     }
 
@@ -138,7 +220,7 @@ FocusScope {
         anchors.margins: 4
         StatusView {
             id: statusView
-            height: parent.height - refreshBT.height - parent.anchors.margins
+            height: parent.height - refreshBT.height - parent.anchors.margins - parent.spacing
             width: parent.width
         }
         PlasmaComponents.Button {
@@ -146,7 +228,7 @@ FocusScope {
             anchors.right: parent.right
             text:  i18n("Check for new updates")
             iconSource: "system-software-update"
-            onClicked: checkForNewUpdates()
+            onClicked: action_checkForNewUpdates()
         }
     }
 
@@ -154,6 +236,7 @@ FocusScope {
         id: updatesView
         opacity: 0
         anchors.fill: parent
+        anchors.margins: 4
         onUpdateClicked: installUpdates()
     }
 
@@ -161,6 +244,7 @@ FocusScope {
         id: transactionView
         opacity: 0
         anchors.fill: parent
+        anchors.margins: 4
         onFinished: {
             if (success) {
                 if (root.state !== "BUSY") {
@@ -189,7 +273,7 @@ FocusScope {
             PropertyChanges { target: busyView; opacity: 1 }
         },
         State {
-            name: "UPTODATE"
+            name: "MESSAGE"
             PropertyChanges { target: statusColumn; opacity: 1 }
             PropertyChanges { target: refreshBT; focus: true }
         }

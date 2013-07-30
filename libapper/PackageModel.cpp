@@ -35,7 +35,7 @@
 #include <KCategorizedSortFilterProxyModel>
 
 #ifdef HAVE_APPSTREAM
-#include <AppStream/AppStreamDb.h>
+#include <AppStream.h>
 #endif
 
 #ifndef HAVE_APPSTREAM
@@ -95,11 +95,11 @@ void PackageModel::addPackage(Transaction::Info info, const QString &packageID, 
     }
 
 #ifdef HAVE_APPSTREAM
-    QList<AppStreamDb::Application> applications;
+    QList<AppStream::Application> applications;
     if (!m_checkable) {
-        applications = AppStreamDb::instance()->applications(Transaction::packageName(packageID));
+        applications = AppStream::instance()->applications(Transaction::packageName(packageID));
 
-        foreach (const AppStreamDb::Application &app, applications) {
+        foreach (const AppStream::Application &app, applications) {
             InternalPackage iPackage;
             iPackage.info = info;
             iPackage.packageID = packageID;
@@ -142,10 +142,12 @@ void PackageModel::addPackage(Transaction::Info info, const QString &packageID, 
         iPackage.size = 0;
 
 #ifdef HAVE_APPSTREAM
-        iPackage.icon = AppStreamDb::instance()->genericIcon(Transaction::packageName(packageID));
+        iPackage.icon = AppStream::instance()->genericIcon(Transaction::packageName(packageID));
+        if (iPackage.icon.isEmpty())
+            iPackage.icon = Transaction::packageIcon(packageID);
         if (m_checkable) {
             // in case of updates model only check if it's an app
-            applications = AppStreamDb::instance()->applications(Transaction::packageName(packageID));
+            applications = AppStream::instance()->applications(Transaction::packageName(packageID));
             if (!applications.isEmpty() || !Transaction::packageIcon(packageID).isEmpty()) {
                 iPackage.isPackage = false;
             } else {
@@ -668,7 +670,7 @@ void PackageModel::getUpdates(bool fetchCurrentVersions, bool selected)
     // get all updates
     transaction->getUpdates();
 
-    Transaction::InternalError error = transaction->error();
+    Transaction::InternalError error = transaction->internalError();
     if (error) {
         transaction->deleteLater();
 //        KMessageBox::sorry(this, PkStrings::daemonError(error));

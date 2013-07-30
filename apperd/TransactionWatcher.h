@@ -41,6 +41,7 @@ public:
 
 public slots:
     void watchTransaction(const QDBusObjectPath &tid, bool interactive = true);
+    void showRebootNotificationApt();
 
 private slots:
     void transactionListChanged(const QStringList &tids);
@@ -66,7 +67,5 @@ private:
     int           m_inhibitCookie;
     KUiServerJobTracker *m_tracker;
 };
-
-Q_DECLARE_METATYPE(PackageKit::Transaction::Restart)
 
 #endif

@@ -40,8 +40,6 @@
 
 #include <Daemon>
 
-Q_DECLARE_METATYPE(Transaction::Error)
-
 TransactionWatcher::TransactionWatcher(bool packagekitIsRunning, QObject *parent) :
     QObject(parent),
     m_inhibitCookie(-1)
@@ -72,27 +70,13 @@ TransactionWatcher::~TransactionWatcher()
 
 void TransactionWatcher::transactionListChanged(const QStringList &tids)
 {
-    kDebug() << tids.size();
-    if (!tids.isEmpty()) {
+    if (tids.isEmpty()) {
+        // release any cookie that we might have
+        suppressSleep(false, m_inhibitCookie);
+    } else {
         foreach (const QString &tid, tids) {
             watchTransaction(QDBusObjectPath(tid), false);
         }
-    } else {
-        // There is no current transaction, delete the jobs
-        foreach (TransactionJob *job, m_transactionJob) {
-            job->transactionDestroyed();
-            job->deleteLater();
-        }
-
-        // Avoid leaks delete the jobs
-        foreach (Transaction *transaction, m_transactions) {
-            transaction->deleteLater();
-        }
-        m_transactions.clear();
-        m_transactionJob.clear();
-
-        // release any cookie that we might have
-        suppressSleep(false, m_inhibitCookie);
     }
 }
 
@@ -102,7 +86,7 @@ void TransactionWatcher::watchTransaction(const QDBusObjectPath &tid, bool inter
     if (!m_transactions.contains(tid)) {
         // Check if the current transaction is still the same
         transaction = new Transaction(tid, this);
-        if (transaction->error()) {
+        if (transaction->internalError()) {
             qWarning() << "Could not create a transaction for the path:" << tid.path();
             delete transaction;
             return;
@@ -112,11 +96,13 @@ void TransactionWatcher::watchTransaction(const QDBusObjectPath &tid, bool inter
         m_transactions[tid] = transaction;
 
         Transaction::Role role = transaction->role();
-        if (role == Transaction::RoleInstallPackages ||
-                role == Transaction::RoleInstallFiles    ||
-                role == Transaction::RoleRemovePackages  ||
-                role == Transaction::RoleUpdatePackages  ||
-                role == Transaction::RoleUpgradeSystem) {
+        Transaction::TransactionFlags flags = transaction->transactionFlags();
+        if (!(flags & Transaction::TransactionFlagOnlyDownload || flags & Transaction::TransactionFlagSimulate) &&
+                (role == Transaction::RoleInstallPackages ||
+                 role == Transaction::RoleInstallFiles    ||
+                 role == Transaction::RoleRemovePackages  ||
+                 role == Transaction::RoleUpdatePackages  ||
+                 role == Transaction::RoleUpgradeSystem)) {
             // AVOID showing messages and restart requires when
             // the user was just simulating an instalation
             // TODO fix yum backend
@@ -126,7 +112,7 @@ void TransactionWatcher::watchTransaction(const QDBusObjectPath &tid, bool inter
                     this, SLOT(requireRestart(PackageKit::Transaction::Restart,QString)));
 
             // Don't let the system sleep while doing some sensible actions
-            suppressSleep(true, m_inhibitCookie, PkStrings::action(role));
+            suppressSleep(true, m_inhibitCookie, PkStrings::action(role, flags));
         }
         connect(transaction, SIGNAL(changed()), this, SLOT(transactionChanged()));
         connect(transaction, SIGNAL(finished(PackageKit::Transaction::Exit,uint)),
@@ -137,6 +123,25 @@ void TransactionWatcher::watchTransaction(const QDBusObjectPath &tid, bool inter
 
     // force the first changed or create a TransactionJob
     transactionChanged(transaction, interactive);
+}
+
+void TransactionWatcher::showRebootNotificationApt() {
+    // Create the notification about this transaction
+    KNotification *notify = new KNotification("RestartRequired", 0, KNotification::Persistent);
+    connect(notify, SIGNAL(activated(uint)), this, SLOT(logout()));
+    notify->setComponentData(KComponentData("apperd"));
+
+    QString text("<b>" + i18n("The system update has completed") + "</b>");
+    text.append("<br/>" + PkStrings::restartType(Transaction::RestartSystem));
+    notify->setPixmap(PkIcons::restartIcon(Transaction::RestartSystem).pixmap(KPK_ICON_SIZE, KPK_ICON_SIZE));
+    notify->setText(text);
+
+    // TODO RestartApplication should be handled differently
+    QStringList actions;
+    actions << i18n("Restart");
+    notify->setActions(actions);
+
+    notify->sendEvent();
 }
 
 void TransactionWatcher::finished(PackageKit::Transaction::Exit exit)

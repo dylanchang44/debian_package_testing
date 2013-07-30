@@ -1,0 +1,63 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Andrej Mernik <andrejm@ubuntu.si>, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2013-06-25 01:31+0000\n"
+"PO-Revision-Date: 2013-06-28 17:18+0200\n"
+"Last-Translator: Andrej Mernik <andrejm@ubuntu.si>\n"
+"Language-Team: Slovenian <lugos-slo@lugos.si>\n"
+"Language: sl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
+"%100==4 ? 3 : 0);\n"
+"X-Generator: Lokalize 1.5\n"
+
+#: package/contents/ui/ChangelogView.qml:31
+msgid "Failed to get update details"
+msgstr "Ni bilo mogoče podrobnosti posodobitev"
+
+#: package/contents/ui/ChangelogView.qml:94
+msgid "Version: %1"
+msgstr "Različica: %1"
+
+#: package/contents/ui/ChangelogView.qml:100
+msgid "Updates: %1"
+msgstr "Posodobitve: %1"
+
+#: package/contents/ui/main.qml:39
+msgid "Software Updates"
+msgstr "Posodobitve programske opreme"
+
+#: package/contents/ui/main.qml:65 package/contents/ui/main.qml:229
+msgid "Check for new updates"
+msgstr "Preveri za novimi posodobitvami"
+
+#: package/contents/ui/main.qml:128
+msgid "Failed to get updates"
+msgstr "Ni bilo mogoče dobiti posodobitev"
+
+#: package/contents/ui/main.qml:173
+msgid "You have one update"
+msgid_plural "You have %1 updates"
+msgstr[0] "Na voljo je %1 posodobitev"
+msgstr[1] "Na voljo je %1 posodobitev"
+msgstr[2] "Na voljo sta %1 posodobitvi"
+msgstr[3] "Na voljo so %1 posodobitve"
+
+#: package/contents/ui/main.qml:178
+msgid "Your system is up to date"
+msgstr "Vaš sistem je posodobljen"
+
+#: package/contents/ui/Transaction.qml:76
+msgid "Cancel"
+msgstr "Prekliči"
+
+#: package/contents/ui/Updates.qml:79
+msgid "Install"
+msgstr "Namesti"

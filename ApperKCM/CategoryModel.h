@@ -27,7 +27,7 @@
 
 #include <Transaction>
 
-#include <AppStream/CategoryMatcher.h>
+#include <CategoryMatcher.h>
 
 class CategoryModel : public QStandardItemModel
 {
@@ -69,7 +69,5 @@ private:
     PackageKit::Transaction::Groups m_groups;
     QModelIndex  m_rootIndex;
 };
-
-Q_DECLARE_METATYPE(PackageKit::Transaction::Group)
 
 #endif

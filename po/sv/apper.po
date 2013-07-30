@@ -3,13 +3,13 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Stefan Asserhäll <stefan.asserhall@comhem.se>, 2008, 2009, 2010.
-# Stefan Asserhall <stefan.asserhall@comhem.se>, 2010, 2011, 2012.
+# Stefan Asserhall <stefan.asserhall@comhem.se>, 2010, 2011, 2012, 2013.
 msgid ""
 msgstr ""
 "Project-Id-Version: kpackagekit\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-01-08 12:21+0100\n"
-"PO-Revision-Date: 2012-12-29 17:06+0100\n"
+"POT-Creation-Date: 2013-07-07 01:35+0000\n"
+"PO-Revision-Date: 2013-03-23 08:23+0100\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@comhem.se>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
 "Language: sv\n"
@@ -27,162 +27,162 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "stefan.asserhall@comhem.se"
 
-#: Apper/BackendDetails.cpp:31
+#: Apper/BackendDetails.cpp:34
 msgid "Backend Details"
 msgstr "Information om bakgrundsprogram"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: Apper/BackendDetails.ui:26
+#: Apper/BackendDetails.ui:39
 msgid "About Backend"
 msgstr "Om bakgrundsprogrammet"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: Apper/BackendDetails.ui:32
+#: Apper/BackendDetails.ui:45
 msgid "Backend name:"
 msgstr "Bakgrundsprogrammets namn:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: Apper/BackendDetails.ui:46
+#: Apper/BackendDetails.ui:59
 msgid "Backend description:"
 msgstr "Beskrivning av bakgrundsprogram"
 
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: Apper/BackendDetails.ui:60
+#: Apper/BackendDetails.ui:73
 msgid "Backend author:"
 msgstr "Bakgrundsprogrammets upphovsman:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: Apper/BackendDetails.ui:74
+#: Apper/BackendDetails.ui:87
 msgid "Distribution ID:"
 msgstr "Distributionsidentifierare:"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
-#: Apper/BackendDetails.ui:94
+#: Apper/BackendDetails.ui:107
 msgid "Methods"
 msgstr "Metoder"
 
 #. i18n: ectx: property (text), widget (QCheckBox, getUpdatesCB)
-#: Apper/BackendDetails.ui:103
+#: Apper/BackendDetails.ui:116
 msgid "Get Updates"
 msgstr "Hämta uppdateringar"
 
 #. i18n: ectx: property (text), widget (QCheckBox, refreshCacheCB)
-#: Apper/BackendDetails.ui:113
+#: Apper/BackendDetails.ui:126 ApperKCM/Settings/Settings.cpp:52
 msgid "Refresh Cache"
 msgstr "Uppdatera cache"
 
 #. i18n: ectx: property (text), widget (QCheckBox, searchNameCB)
-#: Apper/BackendDetails.ui:123
+#: Apper/BackendDetails.ui:136
 msgid "Search Name"
 msgstr "Söknamn"
 
 #. i18n: ectx: property (text), widget (QCheckBox, getDependsCB)
-#: Apper/BackendDetails.ui:133
+#: Apper/BackendDetails.ui:146
 msgid "Get Package Depends"
 msgstr "Hämta paketberoenden"
 
 #. i18n: ectx: property (text), widget (QCheckBox, searchDetailsCB)
-#: Apper/BackendDetails.ui:143
+#: Apper/BackendDetails.ui:156
 msgid "Search Details"
 msgstr "Sök detaljinformation"
 
 #. i18n: ectx: property (text), widget (QCheckBox, getRequiresCB)
-#: Apper/BackendDetails.ui:153
+#: Apper/BackendDetails.ui:166
 msgid "Get Package Requires"
 msgstr "Hämta vad paketet kräver"
 
 #. i18n: ectx: property (text), widget (QCheckBox, searchGroupCB)
-#: Apper/BackendDetails.ui:163
+#: Apper/BackendDetails.ui:176
 msgid "Search Group"
 msgstr "Sök grupp"
 
 #. i18n: ectx: property (text), widget (QCheckBox, getUpdateDetailCB)
-#: Apper/BackendDetails.ui:173
+#: Apper/BackendDetails.ui:186
 msgid "Get Update Detail"
 msgstr "Hämta uppdateringsinformation"
 
 #. i18n: ectx: property (text), widget (QCheckBox, searchFileCB)
-#: Apper/BackendDetails.ui:183
+#: Apper/BackendDetails.ui:196
 msgid "Search File"
 msgstr "Sök fil"
 
 #. i18n: ectx: property (text), widget (QCheckBox, getDescriptionCB)
-#: Apper/BackendDetails.ui:193
+#: Apper/BackendDetails.ui:206
 msgid "Get Package Description"
 msgstr "Hämta paketbeskrivning"
 
 #. i18n: ectx: property (text), widget (QCheckBox, getFilesCB)
-#: Apper/BackendDetails.ui:203
+#: Apper/BackendDetails.ui:216
 msgid "Get Package Files"
 msgstr "Hämta paketfiler"
 
 #. i18n: ectx: property (text), widget (QCheckBox, getDistroUpgradesCB)
-#: Apper/BackendDetails.ui:213
+#: Apper/BackendDetails.ui:226
 msgid "Get Distro Upgrades"
 msgstr "Hämtade uppgraderingar av distributionen"
 
 #. i18n: ectx: property (text), widget (QCheckBox, installPackageCB)
-#: Apper/BackendDetails.ui:223
+#: Apper/BackendDetails.ui:236
 msgid "Install Packages"
 msgstr "Installera paket"
 
 #. i18n: ectx: property (text), widget (QCheckBox, updatePackageCB)
-#: Apper/BackendDetails.ui:233
+#: Apper/BackendDetails.ui:246
 msgid "Update Packages"
 msgstr "Uppdatera paket"
 
 #. i18n: ectx: property (text), widget (QCheckBox, removePackageCB)
-#: Apper/BackendDetails.ui:243
+#: Apper/BackendDetails.ui:256
 msgid "Remove Packages"
 msgstr "Ta bort paket"
 
 #. i18n: ectx: property (text), widget (QCheckBox, installFileCB)
-#: Apper/BackendDetails.ui:253
+#: Apper/BackendDetails.ui:266
 msgid "Install Files"
 msgstr "Installera filer"
 
 #. i18n: ectx: property (text), widget (QCheckBox, resolveCB)
-#: Apper/BackendDetails.ui:263
+#: Apper/BackendDetails.ui:276
 msgid "Resolve"
 msgstr "Lös upp"
 
 #. i18n: ectx: property (text), widget (QCheckBox, cancelCB)
-#: Apper/BackendDetails.ui:273
+#: Apper/BackendDetails.ui:286
 msgid "Cancel"
 msgstr "Avbryt"
 
 #. i18n: ectx: property (text), widget (QCheckBox, repairSystemCB)
-#: Apper/BackendDetails.ui:283
+#: Apper/BackendDetails.ui:296
 msgid "Repair System"
 msgstr "Reparera system"
 
 #. i18n: ectx: property (text), widget (QCheckBox, upgradeSystemCB)
-#: Apper/BackendDetails.ui:293
+#: Apper/BackendDetails.ui:306
 msgid "Upgrade System"
 msgstr "Uppgradera system"
 
 #. i18n: ectx: property (text), widget (QCheckBox, getPackagesCB)
-#: Apper/BackendDetails.ui:303
+#: Apper/BackendDetails.ui:316
 msgid "Get Packages"
 msgstr "Hämta paket"
 
 #. i18n: ectx: property (text), widget (QCheckBox, whatProvidesCB)
-#: Apper/BackendDetails.ui:313
+#: Apper/BackendDetails.ui:326
 msgid "What Provides"
 msgstr "Vad som tillhandahåller"
 
 #. i18n: ectx: property (text), widget (QCheckBox, repositorySetEnableCB)
-#: Apper/BackendDetails.ui:323
+#: Apper/BackendDetails.ui:336
 msgid "Set Repository Data"
 msgstr "Ställ in arkivdata"
 
 #. i18n: ectx: property (text), widget (QCheckBox, repositoryEnableCB)
-#: Apper/BackendDetails.ui:333
+#: Apper/BackendDetails.ui:346
 msgid "Enable Repository"
 msgstr "Aktiverade arkiv"
 
 #. i18n: ectx: property (text), widget (QCheckBox, getRepositoryListCB)
-#: Apper/BackendDetails.ui:343
+#: Apper/BackendDetails.ui:356
 msgid "Get Repository List"
 msgstr "Hämta arkivlista"
 
@@ -194,7 +194,7 @@ msgstr "Filter"
 
 #. i18n: ectx: property (text), widget (QCheckBox, installedCB)
 #: Apper/BackendDetails.ui:375 ApperKCM/FiltersMenu.cpp:60
-#: libapper/PkStrings.cpp:359
+#: libapper/PkStrings.cpp:379
 msgid "Installed"
 msgstr "Installerat"
 
@@ -233,6 +233,16 @@ msgstr "Stöds"
 msgid "Only native"
 msgstr "Bara för plattformen"
 
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_4)
+#: Apper/BackendDetails.ui:455
+msgid "PackageKit"
+msgstr "PackageKit"
+
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: Apper/BackendDetails.ui:461
+msgid "Version:"
+msgstr "Version:"
+
 #: Apper/main.cpp:54 PkSession/main.cpp:34
 msgid "Apper"
 msgstr "Apper"
@@ -241,9 +251,9 @@ msgstr "Apper"
 msgid "Apper is an Application to Get and Manage Software"
 msgstr "Apper är ett verktyg för att hämta och hantera programvara"
 
-#: Apper/main.cpp:58 ApperKCM/ApperKCM.cpp:86
-msgid "(C) 2008-2011 Daniel Nicoletti"
-msgstr "© 2008-2011 Daniel Nicoletti"
+#: Apper/main.cpp:58 ApperKCM/ApperKCM.cpp:90 PkSession/main.cpp:38
+msgid "(C) 2008-2013 Daniel Nicoletti"
+msgstr "© 2008-2013 Daniel Nicoletti"
 
 #: Apper/main.cpp:60 PkSession/main.cpp:40
 msgid "Daniel Nicoletti"
@@ -257,43 +267,43 @@ msgstr "Adrien Bustany"
 msgid "libpackagekit-qt and other stuff"
 msgstr "libpackagekit-qt och andra saker"
 
-#: Apper/main.cpp:66
+#: Apper/main.cpp:67
 msgid "Show updates"
 msgstr "Visa uppdateringar"
 
-#: Apper/main.cpp:67
+#: Apper/main.cpp:68
 msgid "Show settings"
 msgstr "Visa inställningar"
 
-#: Apper/main.cpp:68
+#: Apper/main.cpp:69
 msgid "Show backend details"
 msgstr "Visa information om bakgrundsprogram"
 
-#: Apper/main.cpp:69
+#: Apper/main.cpp:70
 msgid "Mime type installer"
 msgstr "Installation av Mime-typer"
 
-#: Apper/main.cpp:70
+#: Apper/main.cpp:71
 msgid "Package name installer"
 msgstr "Installation av paketnamn"
 
-#: Apper/main.cpp:71
+#: Apper/main.cpp:72
 msgid "Single file installer"
 msgstr "Installation av enstaka fil"
 
-#: Apper/main.cpp:72
+#: Apper/main.cpp:73
 msgid "Font resource installer"
 msgstr "Installation av teckensnittsresurs"
 
-#: Apper/main.cpp:73
+#: Apper/main.cpp:74
 msgid "Catalog installer"
 msgstr "Installation av katalog"
 
-#: Apper/main.cpp:74
+#: Apper/main.cpp:75
 msgid "Single package remover"
 msgstr "Borttagning av enstaka paket"
 
-#: Apper/main.cpp:75
+#: Apper/main.cpp:76
 msgid "Package file to install"
 msgstr "Paketfil att installera"
 
@@ -309,16 +319,16 @@ msgstr "Starta uppgradering nu"
 msgid "Distribution upgrade finished. "
 msgstr "Uppgradering av distributionen klar. "
 
-#: apperd/DistroUpgrade.cpp:149 ApperKCM/Updater/DistroUpgrade.cpp:89
+#: apperd/DistroUpgrade.cpp:149 ApperKCM/Updater/DistroUpgrade.cpp:93
 #, kde-format
 msgid "Distribution upgrade process exited with code %1."
 msgstr "Uppgraderingen av distributionen avslutades med koden %1."
 
-#: apperd/DistroUpgrade.cpp:167 ApperKCM/Updater/DistroUpgrade.cpp:101
+#: apperd/DistroUpgrade.cpp:167 ApperKCM/Updater/DistroUpgrade.cpp:105
 msgid "The distribution upgrade process failed to start."
 msgstr "Uppgraderingsprocessen för distribution misslyckades starta."
 
-#: apperd/DistroUpgrade.cpp:170 ApperKCM/Updater/DistroUpgrade.cpp:105
+#: apperd/DistroUpgrade.cpp:170 ApperKCM/Updater/DistroUpgrade.cpp:109
 msgid ""
 "The distribution upgrade process crashed some time after starting "
 "successfully."
@@ -326,24 +336,28 @@ msgstr ""
 "Uppgraderingsprocessen för distribution kraschade en tid efter att ha "
 "startat normalt."
 
-#: apperd/DistroUpgrade.cpp:173 ApperKCM/Updater/DistroUpgrade.cpp:109
+#: apperd/DistroUpgrade.cpp:173 ApperKCM/Updater/DistroUpgrade.cpp:113
 msgid "The distribution upgrade process failed with an unknown error."
 msgstr ""
 "Uppgraderingsprocessen för distribution misslyckades med ett okänt fel."
 
-#: apperd/TransactionWatcher.cpp:169
+#: apperd/TransactionWatcher.cpp:134
+msgid "The system update has completed"
+msgstr "Uppdateringen av systemet är klar"
+
+#: apperd/TransactionWatcher.cpp:141 apperd/TransactionWatcher.cpp:183
+msgid "Restart"
+msgstr "Starta om"
+
+#: apperd/TransactionWatcher.cpp:174
 #, kde-format
 msgid "Package: %2"
 msgid_plural "Packages: %2"
 msgstr[0] "Paket: %2"
 msgstr[1] "Paket: %2"
 
-#: apperd/TransactionWatcher.cpp:178
-msgid "Restart"
-msgstr "Starta om"
-
-#: apperd/TransactionWatcher.cpp:231 ApperKCM/TransactionModel.cpp:48
-#: AppSetup/SetupWizard.cpp:199
+#: apperd/TransactionWatcher.cpp:236 ApperKCM/TransactionModel.cpp:48
+#: AppSetup/SetupWizard.cpp:202
 msgid "Details"
 msgstr "Information"
 
@@ -378,52 +392,54 @@ msgstr[1] "Det finns %1 nya uppdateringar"
 msgid "Review"
 msgstr "Granska"
 
-#: apperd/Updater.cpp:292 libapper/ApplicationsDelegate.cpp:40
+#: apperd/Updater.cpp:292 AppSetup/SetupWizard.cpp:337
+#: libapper/ApplicationsDelegate.cpp:40
 msgid "Install"
 msgstr "Installera"
 
-#: ApperKCM/ApperKCM.cpp:82
+#: ApperKCM/ApperKCM.cpp:86
 msgid "Application Manager"
 msgstr "Programhanterare"
 
-#: ApperKCM/ApperKCM.cpp:84
+#: ApperKCM/ApperKCM.cpp:88
 msgid "KDE interface for managing software"
 msgstr "KDE-gränssnitt för att hantera programvara"
 
-#: ApperKCM/ApperKCM.cpp:114 ApperKCM/ApperKCM.cpp:298
+#: ApperKCM/ApperKCM.cpp:117 ApperKCM/ApperKCM.cpp:308
 msgid "Find"
 msgstr "Sök"
 
-#: ApperKCM/ApperKCM.cpp:209
+#: ApperKCM/ApperKCM.cpp:212 ApperKCM/ApperKCM.cpp:553
 msgid "History"
 msgstr "Historik"
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, Settings)
-#: ApperKCM/ApperKCM.cpp:215 ApperKCM/Settings/Settings.ui:14
+#: ApperKCM/ApperKCM.cpp:218 ApperKCM/ApperKCM.cpp:509
+#: ApperKCM/Settings/Settings.ui:14
 msgid "Settings"
 msgstr "Inställningar"
 
-#: ApperKCM/ApperKCM.cpp:275 ApperKCM/ApperKCM.cpp:276
-#: ApperKCM/ApperKCM.cpp:277 ApperKCM/ApperKCM.cpp:278
+#: ApperKCM/ApperKCM.cpp:285 ApperKCM/ApperKCM.cpp:286
+#: ApperKCM/ApperKCM.cpp:287 ApperKCM/ApperKCM.cpp:288
 msgid "&Cancel"
 msgstr "&Avbryt"
 
 #. i18n: ectx: property (text), widget (CategorizedView, changesView)
-#: ApperKCM/ApperKCM.cpp:285 ApperKCM/ApperKCM.ui:346
+#: ApperKCM/ApperKCM.cpp:295 ApperKCM/ApperKCM.ui:346
 msgid "Find by &name"
 msgstr "Sök enligt &namn"
 
 #. i18n: ectx: property (text), widget (CategorizedView, changesView)
-#: ApperKCM/ApperKCM.cpp:286 ApperKCM/ApperKCM.ui:356
+#: ApperKCM/ApperKCM.cpp:296 ApperKCM/ApperKCM.ui:356
 msgid "Find by f&ile name"
 msgstr "Sök enligt f&ilnamn"
 
 #. i18n: ectx: property (text), widget (CategorizedView, changesView)
-#: ApperKCM/ApperKCM.cpp:287 ApperKCM/ApperKCM.ui:351
+#: ApperKCM/ApperKCM.cpp:297 ApperKCM/ApperKCM.ui:351
 msgid "Find by &description"
 msgstr "Sök enligt &beskrivning"
 
-#: ApperKCM/ApperKCM.cpp:431
+#: ApperKCM/ApperKCM.cpp:447
 msgid ""
 "The settings of the current module have changed.\n"
 "Do you want to apply the changes or discard them?"
@@ -431,11 +447,24 @@ msgstr ""
 "Inställningarna i nuvarande modul har ändrats.\n"
 "Vill du verkställa ändringarna eller kasta dem?"
 
-#: ApperKCM/ApperKCM.cpp:433
+#: ApperKCM/ApperKCM.cpp:449
 msgid "Apply Settings"
 msgstr "Verkställ inställningar"
 
-#: ApperKCM/ApperKCM.cpp:670
+#: ApperKCM/ApperKCM.cpp:536 ApperKCM/CategoryModel.cpp:58
+msgid "Updates"
+msgstr "Uppdateringar"
+
+#. i18n: ectx: property (text), widget (QPushButton, changesPB)
+#: ApperKCM/ApperKCM.cpp:607 ApperKCM/ApperKCM.ui:127
+msgid "Pending Changes"
+msgstr "Väntande ändringar"
+
+#: ApperKCM/ApperKCM.cpp:692 ApperKCM/CategoryModel.cpp:50
+msgid "Installed Software"
+msgstr "Installerad programvara"
+
+#: ApperKCM/ApperKCM.cpp:704
 msgid "Could not find an application that matched this category"
 msgstr "Kunde inte hitta ett program som motsvarar den här kategorin"
 
@@ -448,11 +477,6 @@ msgstr "Lägg till och ta bort programvara"
 #: ApperKCM/ApperKCM.ui:58
 msgid "Search packages"
 msgstr "Sök paket"
-
-#. i18n: ectx: property (text), widget (QPushButton, changesPB)
-#: ApperKCM/ApperKCM.ui:127
-msgid "Pending Changes"
-msgstr "Väntande ändringar"
 
 #. i18n: ectx: property (text), widget (QPushButton, checkUpdatesPB)
 #: ApperKCM/ApperKCM.ui:161
@@ -500,17 +524,9 @@ msgstr "Exportera lista med installerade paket..."
 msgid "Install Packages from List..."
 msgstr "Installera paket från en lista..."
 
-#: ApperKCM/CategoryModel.cpp:50
-msgid "Installed Software"
-msgstr "Installerad programvara"
-
 #: ApperKCM/CategoryModel.cpp:53 ApperKCM/CategoryModel.cpp:61
 msgid "Lists"
 msgstr "Listor"
-
-#: ApperKCM/CategoryModel.cpp:58
-msgid "Updates"
-msgstr "Uppdateringar"
 
 #: ApperKCM/CategoryModel.cpp:161 ApperKCM/CategoryModel.cpp:359
 msgid "Categories"
@@ -637,35 +653,35 @@ msgstr "Visa bara program"
 msgid "Hide packages that are not applications"
 msgstr "Dölj paket som inte är program"
 
-#: ApperKCM/PackageDetails.cpp:85
+#: ApperKCM/PackageDetails.cpp:86
 msgid "Display"
 msgstr "Visning"
 
-#: ApperKCM/PackageDetails.cpp:92 AppSetup/SetupWizard.cpp:254
+#: ApperKCM/PackageDetails.cpp:93 AppSetup/SetupWizard.cpp:259
 msgid "Description"
 msgstr "Beskrivning"
 
-#: ApperKCM/PackageDetails.cpp:100
+#: ApperKCM/PackageDetails.cpp:101
 msgid "Depends On"
 msgstr "Beror på"
 
-#: ApperKCM/PackageDetails.cpp:129
+#: ApperKCM/PackageDetails.cpp:130
 msgid "Required By"
 msgstr "Krävs av"
 
-#: ApperKCM/PackageDetails.cpp:158
+#: ApperKCM/PackageDetails.cpp:159
 msgid "File List"
 msgstr "Fillista"
 
-#: ApperKCM/PackageDetails.cpp:518
+#: ApperKCM/PackageDetails.cpp:509
 msgid "No files were found."
 msgstr "Några filer hittades inte."
 
-#: ApperKCM/PackageDetails.cpp:566
+#: ApperKCM/PackageDetails.cpp:557
 msgid "Could not fetch software details"
 msgstr "Kunde inte hämta information om programvaran"
 
-#: ApperKCM/PackageDetails.cpp:608
+#: ApperKCM/PackageDetails.cpp:599
 msgid "Applications"
 msgstr "Program"
 
@@ -683,119 +699,115 @@ msgstr "Dölj"
 msgid "Could not find screen shot."
 msgstr "Kunde inte hitta skärmbild."
 
-#: ApperKCM/Settings/OriginModel.cpp:39
+#: ApperKCM/Settings/OriginModel.cpp:36
 msgid "Origin of Packages"
 msgstr "Paketens ursprung"
 
-#: ApperKCM/Settings/Settings.cpp:81
+#: ApperKCM/Settings/Settings.cpp:56
+msgid "A repository was changed, it's highly recommended to refresh the cache"
+msgstr "Ett arkiv har ändrats. Det rekommenderas starkt att uppdatera cachen."
+
+#: ApperKCM/Settings/Settings.cpp:88
 msgctxt "Inform about distribution upgrades"
 msgid "Never"
 msgstr "Aldrig"
 
-#: ApperKCM/Settings/Settings.cpp:84
+#: ApperKCM/Settings/Settings.cpp:91
 msgctxt "Inform about distribution upgrades"
 msgid "Only stable"
 msgstr "Bara stabila"
 
-#: ApperKCM/Settings/Settings.cpp:89
+#: ApperKCM/Settings/Settings.cpp:96
 msgctxt "Inform about distribution upgrades"
 msgid "Stable and development"
 msgstr "Stabila och utveckling"
 
-#: ApperKCM/Settings/Settings.cpp:93
+#: ApperKCM/Settings/Settings.cpp:100
 msgctxt "Hourly refresh the package cache"
 msgid "Hourly"
 msgstr "Varje timma"
 
-#: ApperKCM/Settings/Settings.cpp:94
+#: ApperKCM/Settings/Settings.cpp:101
 msgctxt "Daily refresh the package cache"
 msgid "Daily"
 msgstr "Dagligen"
 
-#: ApperKCM/Settings/Settings.cpp:95
+#: ApperKCM/Settings/Settings.cpp:102
 msgctxt "Weekly refresh the package cache"
 msgid "Weekly"
 msgstr "Veckovis"
 
-#: ApperKCM/Settings/Settings.cpp:96
+#: ApperKCM/Settings/Settings.cpp:103
 msgctxt "Monthly refresh the package cache"
 msgid "Monthly"
 msgstr "Månadsvis"
 
-#: ApperKCM/Settings/Settings.cpp:97
+#: ApperKCM/Settings/Settings.cpp:104
 msgctxt "Never refresh package cache"
 msgid "Never"
 msgstr "Aldrig"
 
-#: ApperKCM/Settings/Settings.cpp:99
+#: ApperKCM/Settings/Settings.cpp:106
 msgctxt "No updates will be automatically installed"
 msgid "None"
 msgstr "Inga"
 
-#: ApperKCM/Settings/Settings.cpp:100
+#: ApperKCM/Settings/Settings.cpp:107
 msgid "Download only"
 msgstr "Ladda endast ner"
 
-#: ApperKCM/Settings/Settings.cpp:101
+#: ApperKCM/Settings/Settings.cpp:108
 msgid "Security only"
 msgstr "Bara säkerhetsuppdateringar"
 
-#: ApperKCM/Settings/Settings.cpp:102
+#: ApperKCM/Settings/Settings.cpp:109
 msgid "All updates"
 msgstr "Alla uppdateringar"
 
-#: ApperKCM/Settings/Settings.cpp:314 libapper/PkStrings.cpp:968
-msgid "You do not have the necessary privileges to perform this action."
-msgstr "Du har inte de nödvändiga rättigheterna för att utföra åtgärden."
-
-#: ApperKCM/Settings/Settings.cpp:315
-msgid "Failed to set origin data"
-msgstr "Misslyckades ange ursprungsinformation"
-
 #. i18n: ectx: property (text), widget (QLabel, intervalL)
-#: ApperKCM/Settings/Settings.ui:50
+#: ApperKCM/Settings/Settings.ui:53
 msgid "Check for new updates:"
 msgstr "Leta efter nya uppdateringar:"
 
 #. i18n: ectx: property (text), widget (QCheckBox, checkUpdatesMobileCB)
 #. i18n: ectx: property (text), widget (QCheckBox, installUpdatesMobileCB)
-#: ApperKCM/Settings/Settings.ui:91 ApperKCM/Settings/Settings.ui:159
+#: ApperKCM/Settings/Settings.ui:94 ApperKCM/Settings/Settings.ui:162
 msgid "when on a mobile broadband network connection"
 msgstr "när ansluten till mobilt bredband"
 
 #. i18n: ectx: property (text), widget (QCheckBox, checkUpdatesBatteryCB)
 #. i18n: ectx: property (text), widget (QCheckBox, installUpdatesBatteryCB)
-#: ApperKCM/Settings/Settings.ui:98 ApperKCM/Settings/Settings.ui:152
+#: ApperKCM/Settings/Settings.ui:101 ApperKCM/Settings/Settings.ui:155
 msgid "when running on battery"
 msgstr "när batteri används"
 
 #. i18n: ectx: property (text), widget (QLabel, autoInsL)
-#: ApperKCM/Settings/Settings.ui:117
+#: ApperKCM/Settings/Settings.ui:120
 msgid "Automatically update:"
 msgstr "Uppdatera automatiskt:"
 
 #. i18n: ectx: property (text), widget (QCheckBox, appLauncherCB)
-#: ApperKCM/Settings/Settings.ui:175
+#: ApperKCM/Settings/Settings.ui:178
 msgid "Show application launcher after installing new applications"
 msgstr "Visa startprogram efter att nya program har installerats"
 
 #. i18n: ectx: property (text), widget (QCheckBox, autoConfirmCB)
-#: ApperKCM/Settings/Settings.ui:182
+#: ApperKCM/Settings/Settings.ui:185
 msgid "Show confirmation dialog when installing or updating packages"
 msgstr "Visa bekräftelsedialogruta när paket installeras eller uppdateras"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: ApperKCM/Settings/Settings.ui:189
+#: ApperKCM/Settings/Settings.ui:192
 msgid "Check for distribution upgrades:"
 msgstr "Leta efter uppgraderingar av distributionen:"
 
 #. i18n: ectx: property (text), widget (QCheckBox, showOriginsCB)
-#: ApperKCM/Settings/Settings.ui:227
+#: ApperKCM/Settings/Settings.ui:233
 msgid "&Show origins of debug and development packages"
 msgstr "Vi&sa ursprung för felsöknings- och utvecklingspaket"
 
 #. i18n: ectx: property (text), widget (QPushButton, editOriginsPB)
-#: ApperKCM/Settings/Settings.ui:247
+#: ApperKCM/Settings/Settings.ui:253
 msgid "Edit Origins"
 msgstr "Redigera ursprung"
 
@@ -812,7 +824,7 @@ msgstr "Tid sedan cachen senast förnyades: %1"
 msgid "Date"
 msgstr "Datum"
 
-#: ApperKCM/TransactionModel.cpp:47 libapper/PackageModel.cpp:222
+#: ApperKCM/TransactionModel.cpp:47 libapper/PackageModel.cpp:224
 msgid "Action"
 msgstr "Åtgärd"
 
@@ -829,12 +841,12 @@ msgstr "Program"
 msgid "Upgrade"
 msgstr "Uppgradera"
 
-#: ApperKCM/Updater/DistroUpgrade.cpp:47
+#: ApperKCM/Updater/DistroUpgrade.cpp:51
 #, kde-format
 msgid "Distribution upgrade available: %1"
 msgstr "Uppgradering av distributionen tillgänglig: %1"
 
-#: ApperKCM/Updater/DistroUpgrade.cpp:61
+#: ApperKCM/Updater/DistroUpgrade.cpp:65
 msgid ""
 "You are about to upgrade your distribution to the latest version. This is "
 "usually a very lengthy process and takes a lot longer than simply upgrading "
@@ -844,12 +856,12 @@ msgstr ""
 "är ofta en mycket omfattande process, och tar mycket längre än att bara "
 "uppgradera paket."
 
-#: ApperKCM/Updater/DistroUpgrade.cpp:66
+#: ApperKCM/Updater/DistroUpgrade.cpp:70
 msgid "It is recommended to plug in your computer before proceeding."
 msgstr ""
 "Du rekommenderas att ansluta datorn till ett vägguttag innan du fortsätter."
 
-#: ApperKCM/Updater/DistroUpgrade.cpp:68
+#: ApperKCM/Updater/DistroUpgrade.cpp:72
 msgid ""
 "It is recommended that you keep your computer plugged in while the upgrade "
 "is being performed."
@@ -857,50 +869,50 @@ msgstr ""
 "Du rekommenderas att behålla datorn inkopplad till vägguttaget medan "
 "uppgraderingen utförs."
 
-#: ApperKCM/Updater/DistroUpgrade.cpp:87
+#: ApperKCM/Updater/DistroUpgrade.cpp:91
 msgid "Distribution upgrade complete."
 msgstr "Uppgraderingen av distributionen klar."
 
-#: ApperKCM/Updater/UpdateDetails.cpp:187
+#: ApperKCM/Updater/UpdateDetails.cpp:191
 msgid "This update will add new features and expand functionality."
 msgstr ""
 "Uppdateringen kommer att lägga till nya funktioner och utöka funktionen."
 
-#: ApperKCM/Updater/UpdateDetails.cpp:191
+#: ApperKCM/Updater/UpdateDetails.cpp:195
 msgid "This update will fix bugs and other non-critical problems."
 msgstr "Uppdateringen kommer att rätta fel och andra okritiska problem."
 
-#: ApperKCM/Updater/UpdateDetails.cpp:195
+#: ApperKCM/Updater/UpdateDetails.cpp:199
 msgid "This update is important as it may solve critical problems."
 msgstr "Uppdateringen är viktig eftersom den kan lösa kritiska problem."
 
-#: ApperKCM/Updater/UpdateDetails.cpp:199
+#: ApperKCM/Updater/UpdateDetails.cpp:203
 msgid ""
 "This update is needed to fix a security vulnerability with this package."
 msgstr "Uppdateringen behövs för att rätta en säkerhetssvaghet med paketet."
 
-#: ApperKCM/Updater/UpdateDetails.cpp:203
+#: ApperKCM/Updater/UpdateDetails.cpp:207
 msgid "This update is blocked."
 msgstr "Uppdateringen är blockerad."
 
-#: ApperKCM/Updater/UpdateDetails.cpp:210
+#: ApperKCM/Updater/UpdateDetails.cpp:214
 #, kde-format
 msgid "This notification was issued on %1 and last updated on %2."
 msgstr "Underrättelsen visades först %1 och uppdaterades senast %2."
 
-#: ApperKCM/Updater/UpdateDetails.cpp:216
+#: ApperKCM/Updater/UpdateDetails.cpp:220
 #, kde-format
 msgid "This notification was issued on %1."
 msgstr "Underrättelsen visades först %1."
 
-#: ApperKCM/Updater/UpdateDetails.cpp:235
+#: ApperKCM/Updater/UpdateDetails.cpp:239
 msgid "For more information about this update please visit this website:"
 msgid_plural ""
 "For more information about this update please visit these websites:"
 msgstr[0] "Besök följande webbplats för mer information om uppdateringen:"
 msgstr[1] "Besök följande webbplatser för mer information om uppdateringen:"
 
-#: ApperKCM/Updater/UpdateDetails.cpp:245
+#: ApperKCM/Updater/UpdateDetails.cpp:249
 msgid ""
 "For more information about bugs fixed by this update please visit this "
 "website:"
@@ -913,7 +925,7 @@ msgstr[1] ""
 "Besök följande webbplatser för mer information om fel rättade av "
 "uppdateringen:"
 
-#: ApperKCM/Updater/UpdateDetails.cpp:255
+#: ApperKCM/Updater/UpdateDetails.cpp:259
 msgid ""
 "For more information about this security update please visit this website:"
 msgid_plural ""
@@ -923,7 +935,7 @@ msgstr[0] ""
 msgstr[1] ""
 "Besök följande webbplatser för mer information om säkerhetsuppdateringen:"
 
-#: ApperKCM/Updater/UpdateDetails.cpp:265
+#: ApperKCM/Updater/UpdateDetails.cpp:269
 msgid ""
 "The computer will have to be restarted after the update for the changes to "
 "take effect."
@@ -931,7 +943,7 @@ msgstr ""
 "Datorn måste startas om efter uppdateringen för att ändringarna ska få någon "
 "effekt."
 
-#: ApperKCM/Updater/UpdateDetails.cpp:269
+#: ApperKCM/Updater/UpdateDetails.cpp:273
 msgid ""
 "You will need to log out and back in after the update for the changes to "
 "take effect."
@@ -939,7 +951,7 @@ msgstr ""
 "Du kommer att vara tvungen att logga ut och in igen efter uppdateringen för "
 "att ändringarna ska få någon effekt."
 
-#: ApperKCM/Updater/UpdateDetails.cpp:276
+#: ApperKCM/Updater/UpdateDetails.cpp:280
 msgid ""
 "The classification of this update is unstable which means it is not designed "
 "for production use."
@@ -947,7 +959,7 @@ msgstr ""
 "Uppdateringens klassificering är instabil (unstable), vilket betyder att den "
 "inte är avsedd för produktionsanvändning."
 
-#: ApperKCM/Updater/UpdateDetails.cpp:280
+#: ApperKCM/Updater/UpdateDetails.cpp:284
 msgid ""
 "This is a test update, and is not designed for normal use. Please report any "
 "problems or regressions you encounter."
@@ -955,7 +967,7 @@ msgstr ""
 "Det här är en provuppdatering, och är inte avsedd för normal användning. "
 "Rapportera eventuella problem eller regressioner du stöter på."
 
-#: ApperKCM/Updater/UpdateDetails.cpp:290
+#: ApperKCM/Updater/UpdateDetails.cpp:294
 msgid ""
 "The developer logs will be shown as no description is available for this "
 "update:"
@@ -963,20 +975,20 @@ msgstr ""
 "Utvecklingsloggarna kommer att visas, eftersom ingen beskrivning är "
 "tillgänglig för uppdateringen:"
 
-#: ApperKCM/Updater/UpdateDetails.cpp:298
+#: ApperKCM/Updater/UpdateDetails.cpp:302
 msgid "Updates:"
 msgstr "Uppdateringar"
 
-#: ApperKCM/Updater/UpdateDetails.cpp:308
+#: ApperKCM/Updater/UpdateDetails.cpp:312
 msgid "Obsoletes:"
 msgstr "Föråldrade:"
 
-#: ApperKCM/Updater/UpdateDetails.cpp:318
+#: ApperKCM/Updater/UpdateDetails.cpp:322
 #, kde-format
 msgid "Repository: %1"
 msgstr "Arkiv: %1"
 
-#: ApperKCM/Updater/UpdateDetails.cpp:340
+#: ApperKCM/Updater/UpdateDetails.cpp:344
 msgid "No update description was found."
 msgstr "Ingen uppdateringsbeskrivning hittades."
 
@@ -989,7 +1001,7 @@ msgstr "Visa aktuella versioner"
 msgid "Estimated download size: %1"
 msgstr "Uppskattad nerladdningsstorlek: %1"
 
-#: ApperKCM/Updater/Updater.cpp:358 plasmoid/updaterapplet.cpp:57
+#: ApperKCM/Updater/Updater.cpp:358
 msgid "Check for new updates"
 msgstr "Leta efter nya uppdateringar"
 
@@ -1033,11 +1045,11 @@ msgstr "Visa detaljerad information"
 msgid "IPK package filename"
 msgstr "IPK-paketfilnamn"
 
-#: AppSetup/main.cpp:75
+#: AppSetup/main.cpp:72
 msgid "Sorry, we didn't get an existing IPK package as parameter."
 msgstr "Tyvärr angavs inte ett befintligt IPK-paket som parameter."
 
-#: AppSetup/main.cpp:76
+#: AppSetup/main.cpp:73
 msgid "Package not found!"
 msgstr "Paketet hittades inte."
 
@@ -1050,9 +1062,9 @@ msgstr "Installation klar."
 msgid "%1 has been installed successfully!"
 msgstr "%1 installerades med lyckat resultat."
 
-#: AppSetup/SetupWizard.cpp:102 libapper/PkTransaction.cpp:133
-#: libapper/PkTransaction.cpp:151 libapper/PkTransaction.cpp:170
-#: libapper/PkTransaction.cpp:193
+#: AppSetup/SetupWizard.cpp:102 libapper/PkTransaction.cpp:143
+#: libapper/PkTransaction.cpp:161 libapper/PkTransaction.cpp:180
+#: libapper/PkTransaction.cpp:203
 msgid "Error"
 msgstr "Fel"
 
@@ -1060,21 +1072,21 @@ msgstr "Fel"
 msgid "An error occurred"
 msgstr "Ett fel uppstod"
 
-#: AppSetup/SetupWizard.cpp:150 libapper/Requirements.cpp:58
+#: AppSetup/SetupWizard.cpp:150 libapper/Requirements.cpp:59
 #: PkSession/SessionTask.cpp:71
 msgid "Continue"
 msgstr "Fortsätt"
 
-#: AppSetup/SetupWizard.cpp:188
+#: AppSetup/SetupWizard.cpp:190
 msgid "Welcome!"
 msgstr "Välkommen!"
 
-#: AppSetup/SetupWizard.cpp:189
+#: AppSetup/SetupWizard.cpp:191
 #, kde-format
 msgid "Welcome to the installation of %1!"
 msgstr "Välkommen till installation av %1."
 
-#: AppSetup/SetupWizard.cpp:190
+#: AppSetup/SetupWizard.cpp:192
 msgid ""
 "Please be careful while installing 3rd-party applications.<br>They may "
 "eventually <b>damage</b> your system or have <b>malicious behaviour</b>, "
@@ -1086,36 +1098,36 @@ msgstr ""
 "som att spionera på lösenord.<br>Installera bara programvaran om du <b>litar "
 "på dess utgivare och upphovsman</b>."
 
-#: AppSetup/SetupWizard.cpp:200
+#: AppSetup/SetupWizard.cpp:203
 msgid "Details about this installation"
 msgstr "Information om installationen"
 
-#: AppSetup/SetupWizard.cpp:236
+#: AppSetup/SetupWizard.cpp:240
 msgid "Install for all users"
 msgstr "Installera för alla användare"
 
-#: AppSetup/SetupWizard.cpp:253
+#: AppSetup/SetupWizard.cpp:258
 msgid "Application description"
 msgstr "Programbeskrivning"
 
-#: AppSetup/SetupWizard.cpp:262
+#: AppSetup/SetupWizard.cpp:270
 msgid "Software license"
 msgstr "Programvarulicens"
 
-#: AppSetup/SetupWizard.cpp:263
+#: AppSetup/SetupWizard.cpp:271
 msgid "Please read the following terms and conditions carefully!"
 msgstr "Läs följande bestämmelser och villkor noggrannt."
 
-#: AppSetup/SetupWizard.cpp:270
+#: AppSetup/SetupWizard.cpp:280
 msgid "Running installation"
 msgstr "Utför installation"
 
-#: AppSetup/SetupWizard.cpp:271
+#: AppSetup/SetupWizard.cpp:281
 #, kde-format
 msgid "Installing %1..."
 msgstr "Installerar %1..."
 
-#: AppSetup/SetupWizard.cpp:306
+#: AppSetup/SetupWizard.cpp:316
 msgid ""
 "Installing this package will make the following native packages obsolete. "
 "You might consider removing them manually."
@@ -1123,11 +1135,11 @@ msgstr ""
 "Installeras paketet blir följande originalpaket föråldrade. Fundera på om de "
 "ska tas bort för hand."
 
-#: AppSetup/SetupWizard.cpp:307
+#: AppSetup/SetupWizard.cpp:317
 msgid "Similar native packages found"
 msgstr "Liknande originalpaket hittades"
 
-#: AppSetup/SetupWizard.cpp:402
+#: AppSetup/SetupWizard.cpp:417
 msgid ""
 "You want to install this application as root!\n"
 "This can damage your system or install malicious software for all users.\n"
@@ -1140,22 +1152,22 @@ msgstr ""
 "Fortsätt bara om du verkligen vet vad du gör.\n"
 "Fortsätt?"
 
-#: AppSetup/SetupWizard.cpp:405
+#: AppSetup/SetupWizard.cpp:420
 msgid "Really install as superuser?"
 msgstr "Verkligen installera som systemadministratör?"
 
-#: AppSetup/SetupWizard.cpp:422
+#: AppSetup/SetupWizard.cpp:438
 #, kde-format
 msgid "This package has the following security level: <b>%1</b>"
 msgstr "Paketet har följande säkerhetsnivå: <b>%1</b>"
 
-#: AppSetup/SetupWizard.cpp:424
+#: AppSetup/SetupWizard.cpp:440
 #, kde-format
 msgid "It was signed with a key belonging to these user-ids: %1"
 msgstr ""
 "Det är signerat med en nyckel som hör till dessa användaridentiteter: %1"
 
-#: AppSetup/SetupWizard.cpp:428
+#: AppSetup/SetupWizard.cpp:444
 msgid "Security hints"
 msgstr "Säkerhetstips"
 
@@ -1219,31 +1231,31 @@ msgstr "Licens krävs för %1 av %2"
 msgid "Please read the following important information before continuing:"
 msgstr "Läs följande viktiga information innan du fortsätter:"
 
-#: libapper/PackageModel.cpp:203
+#: libapper/PackageModel.cpp:205
 msgid "Name"
 msgstr "Namn"
 
-#: libapper/PackageModel.cpp:207
+#: libapper/PackageModel.cpp:209
 msgid "Version"
 msgstr "Version"
 
-#: libapper/PackageModel.cpp:210
+#: libapper/PackageModel.cpp:212
 msgid "Installed Version"
 msgstr "Installerad version"
 
-#: libapper/PackageModel.cpp:213
+#: libapper/PackageModel.cpp:215
 msgid "Arch"
 msgstr "Arkitektur"
 
-#: libapper/PackageModel.cpp:216
+#: libapper/PackageModel.cpp:218
 msgid "Origin"
 msgstr "Ursprung"
 
-#: libapper/PackageModel.cpp:219
+#: libapper/PackageModel.cpp:221
 msgid "Size"
 msgstr "Storlek"
 
-#: libapper/PackageModel.cpp:317
+#: libapper/PackageModel.cpp:319
 #, kde-format
 msgid ""
 "Version: %1\n"
@@ -1252,11 +1264,11 @@ msgstr ""
 "Version: %1\n"
 "Arkitektur: %2"
 
-#: libapper/PackageModel.cpp:363
+#: libapper/PackageModel.cpp:365
 msgid "To be Removed"
 msgstr "Att tas bort"
 
-#: libapper/PackageModel.cpp:365
+#: libapper/PackageModel.cpp:367
 msgid "To be Installed"
 msgstr "Att installeras"
 
@@ -1541,607 +1553,638 @@ msgctxt "The role of the transaction, in present tense"
 msgid "Searching by package name"
 msgstr "Söker enligt paketnamn"
 
-#: libapper/PkStrings.cpp:208
+#: libapper/PkStrings.cpp:209
 msgctxt "The role of the transaction, in present tense"
-msgid "Removing"
-msgstr "Tar bort"
+msgid "Simulating removal"
+msgstr "Simulerar borttagning"
 
-#: libapper/PkStrings.cpp:210
-msgctxt "The role of the transaction, in present tense"
-msgid "Installing"
-msgstr "Installerar"
-
-#: libapper/PkStrings.cpp:212
-msgctxt "The role of the transaction, in present tense"
-msgid "Installing file"
-msgstr "Installerar fil"
-
-#: libapper/PkStrings.cpp:214
-msgctxt "The role of the transaction, in present tense"
-msgid "Refreshing package cache"
-msgstr "Förnyar paketcache"
-
-#: libapper/PkStrings.cpp:216
-msgctxt "The role of the transaction, in present tense"
-msgid "Updating packages"
-msgstr "Uppdaterar paket"
-
-#: libapper/PkStrings.cpp:218
-msgctxt "The role of the transaction, in present tense"
-msgid "Canceling"
-msgstr "Avbryter"
-
-#: libapper/PkStrings.cpp:220
-msgctxt "The role of the transaction, in present tense"
-msgid "Getting list of repositories"
-msgstr "Hämtar arkivlista"
-
-#: libapper/PkStrings.cpp:222
-msgctxt "The role of the transaction, in present tense"
-msgid "Enabling repository"
-msgstr "Aktiverar arkiv"
-
-#: libapper/PkStrings.cpp:224
-msgctxt "The role of the transaction, in present tense"
-msgid "Setting repository data"
-msgstr "Ställer in arkivdata"
-
-#: libapper/PkStrings.cpp:226
-msgctxt "The role of the transaction, in present tense"
-msgid "Resolving"
-msgstr "Löser upp"
-
-#: libapper/PkStrings.cpp:228
-msgctxt "The role of the transaction, in present tense"
-msgid "Getting file list"
-msgstr "Hämtar fillista"
-
-#: libapper/PkStrings.cpp:230
-msgctxt "The role of the transaction, in present tense"
-msgid "Getting what provides"
-msgstr "Hämtar vad som tillhandahåller"
-
-#: libapper/PkStrings.cpp:232
-msgctxt "The role of the transaction, in present tense"
-msgid "Installing signature"
-msgstr "Installerar signatur"
-
-#: libapper/PkStrings.cpp:234
-msgctxt "The role of the transaction, in present tense"
-msgid "Getting package lists"
-msgstr "Hämtar paketlistor"
-
-#: libapper/PkStrings.cpp:236
-msgctxt "The role of the transaction, in present tense"
-msgid "Accepting EULA"
-msgstr "Accepterar licensavtal för slutanvändare"
-
-#: libapper/PkStrings.cpp:238
+#: libapper/PkStrings.cpp:211 libapper/PkStrings.cpp:218
+#: libapper/PkStrings.cpp:258
 msgctxt "The role of the transaction, in present tense"
 msgid "Downloading packages"
 msgstr "Laddar ner paket"
 
+#: libapper/PkStrings.cpp:213
+msgctxt "The role of the transaction, in present tense"
+msgid "Removing"
+msgstr "Tar bort"
+
+#: libapper/PkStrings.cpp:216
+msgctxt "The role of the transaction, in present tense"
+msgid "Simulating install"
+msgstr "Simulerar installation"
+
+#: libapper/PkStrings.cpp:220
+msgctxt "The role of the transaction, in present tense"
+msgid "Installing"
+msgstr "Installerar"
+
+#: libapper/PkStrings.cpp:223
+msgctxt "The role of the transaction, in present tense"
+msgid "Simulating file install"
+msgstr "Simulerar filinstallation"
+
+#: libapper/PkStrings.cpp:225
+msgctxt "The role of the transaction, in present tense"
+msgid "Downloading required packages"
+msgstr "Laddar ner nödvändiga paket"
+
+#: libapper/PkStrings.cpp:227
+msgctxt "The role of the transaction, in present tense"
+msgid "Installing file"
+msgstr "Installerar fil"
+
+#: libapper/PkStrings.cpp:229
+msgctxt "The role of the transaction, in present tense"
+msgid "Refreshing package cache"
+msgstr "Förnyar paketcache"
+
+#: libapper/PkStrings.cpp:232
+msgctxt "The role of the transaction, in present tense"
+msgid "Simulating update"
+msgstr "Simulerar uppdatering"
+
+#: libapper/PkStrings.cpp:234
+msgctxt "The role of the transaction, in present tense"
+msgid "Downloading updates"
+msgstr "Laddar ner uppdateringar"
+
+#: libapper/PkStrings.cpp:236
+msgctxt "The role of the transaction, in present tense"
+msgid "Updating packages"
+msgstr "Uppdaterar paket"
+
+#: libapper/PkStrings.cpp:238
+msgctxt "The role of the transaction, in present tense"
+msgid "Canceling"
+msgstr "Avbryter"
+
 #: libapper/PkStrings.cpp:240
+msgctxt "The role of the transaction, in present tense"
+msgid "Getting list of repositories"
+msgstr "Hämtar arkivlista"
+
+#: libapper/PkStrings.cpp:242
+msgctxt "The role of the transaction, in present tense"
+msgid "Enabling repository"
+msgstr "Aktiverar arkiv"
+
+#: libapper/PkStrings.cpp:244
+msgctxt "The role of the transaction, in present tense"
+msgid "Setting repository data"
+msgstr "Ställer in arkivdata"
+
+#: libapper/PkStrings.cpp:246
+msgctxt "The role of the transaction, in present tense"
+msgid "Resolving"
+msgstr "Löser upp"
+
+#: libapper/PkStrings.cpp:248
+msgctxt "The role of the transaction, in present tense"
+msgid "Getting file list"
+msgstr "Hämtar fillista"
+
+#: libapper/PkStrings.cpp:250
+msgctxt "The role of the transaction, in present tense"
+msgid "Getting what provides"
+msgstr "Hämtar vad som tillhandahåller"
+
+#: libapper/PkStrings.cpp:252
+msgctxt "The role of the transaction, in present tense"
+msgid "Installing signature"
+msgstr "Installerar signatur"
+
+#: libapper/PkStrings.cpp:254
+msgctxt "The role of the transaction, in present tense"
+msgid "Getting package lists"
+msgstr "Hämtar paketlistor"
+
+#: libapper/PkStrings.cpp:256
+msgctxt "The role of the transaction, in present tense"
+msgid "Accepting EULA"
+msgstr "Accepterar licensavtal för slutanvändare"
+
+#: libapper/PkStrings.cpp:260
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting distribution upgrade information"
 msgstr "Hämtar uppgraderingsinformation för distribution"
 
-#: libapper/PkStrings.cpp:242
+#: libapper/PkStrings.cpp:262
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting categories"
 msgstr "Hämtar kategorier"
 
-#: libapper/PkStrings.cpp:244
+#: libapper/PkStrings.cpp:264
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting old transactions"
 msgstr "Hämtar gamla transaktioner"
 
-#: libapper/PkStrings.cpp:246
+#: libapper/PkStrings.cpp:266
 msgctxt "The role of the transaction, in present tense"
 msgid "Upgrading system"
 msgstr "Uppgraderar system"
 
-#: libapper/PkStrings.cpp:248
+#: libapper/PkStrings.cpp:268
 msgctxt "The role of the transaction, in present tense"
 msgid "Repairing system"
 msgstr "Reparerar system"
 
-#: libapper/PkStrings.cpp:258
+#: libapper/PkStrings.cpp:278
 msgctxt "The role of the transaction, in past tense"
 msgid "Unknown role type"
 msgstr "Okänd rolltyp"
 
-#: libapper/PkStrings.cpp:260
+#: libapper/PkStrings.cpp:280
 msgctxt "The role of the transaction, in past tense"
 msgid "Got dependencies"
 msgstr "Hämtade beroenden"
 
-#: libapper/PkStrings.cpp:262
+#: libapper/PkStrings.cpp:282
 msgctxt "The role of the transaction, in past tense"
 msgid "Got update detail"
 msgstr "Hämtade uppdateringsinformation"
 
-#: libapper/PkStrings.cpp:264
+#: libapper/PkStrings.cpp:284
 msgctxt "The role of the transaction, in past tense"
 msgid "Got details"
 msgstr "Hämtade detaljinformation"
 
-#: libapper/PkStrings.cpp:266
+#: libapper/PkStrings.cpp:286
 msgctxt "The role of the transaction, in past tense"
 msgid "Got requires"
 msgstr "Hämtade vad som krävs"
 
-#: libapper/PkStrings.cpp:268
+#: libapper/PkStrings.cpp:288
 msgctxt "The role of the transaction, in past tense"
 msgid "Got updates"
 msgstr "Hämtade uppdateringar"
 
-#: libapper/PkStrings.cpp:270
+#: libapper/PkStrings.cpp:290
 msgctxt "The role of the transaction, in past tense"
 msgid "Searched for package details"
 msgstr "Sökte efter paketinformation"
 
-#: libapper/PkStrings.cpp:272
+#: libapper/PkStrings.cpp:292
 msgctxt "The role of the transaction, in past tense"
 msgid "Searched for file"
 msgstr "Sökte efter fil"
 
-#: libapper/PkStrings.cpp:274
+#: libapper/PkStrings.cpp:294
 msgctxt "The role of the transaction, in past tense"
 msgid "Searched groups"
 msgstr "Sökte grupper"
 
-#: libapper/PkStrings.cpp:276
+#: libapper/PkStrings.cpp:296
 msgctxt "The role of the transaction, in past tense"
 msgid "Searched for package name"
 msgstr "Sökte efter paketnamn"
 
-#: libapper/PkStrings.cpp:278
+#: libapper/PkStrings.cpp:298
 msgctxt "The role of the transaction, in past tense"
 msgid "Removed packages"
 msgstr "Tog bort paket"
 
-#: libapper/PkStrings.cpp:280
+#: libapper/PkStrings.cpp:300
 msgctxt "The role of the transaction, in past tense"
 msgid "Installed packages"
 msgstr "Installerade paket"
 
-#: libapper/PkStrings.cpp:282
+#: libapper/PkStrings.cpp:302
 msgctxt "The role of the transaction, in past tense"
 msgid "Installed local files"
 msgstr "Installerade lokala filer"
 
-#: libapper/PkStrings.cpp:284
+#: libapper/PkStrings.cpp:304
 msgctxt "The role of the transaction, in past tense"
 msgid "Refreshed package cache"
 msgstr "Förnyade paketcache"
 
-#: libapper/PkStrings.cpp:286
+#: libapper/PkStrings.cpp:306
 msgctxt "The role of the transaction, in past tense"
 msgid "Updated packages"
 msgstr "Uppdaterade paket"
 
-#: libapper/PkStrings.cpp:288
+#: libapper/PkStrings.cpp:308
 msgctxt "The role of the transaction, in past tense"
 msgid "Canceled"
 msgstr "Avbröt"
 
-#: libapper/PkStrings.cpp:290
+#: libapper/PkStrings.cpp:310
 msgctxt "The role of the transaction, in past tense"
 msgid "Got list of repositories"
 msgstr "Hämtade arkivlista"
 
-#: libapper/PkStrings.cpp:292
+#: libapper/PkStrings.cpp:312
 msgctxt "The role of the transaction, in past tense"
 msgid "Enabled repository"
 msgstr "Aktiverade arkiv"
 
-#: libapper/PkStrings.cpp:294
+#: libapper/PkStrings.cpp:314
 msgctxt "The role of the transaction, in past tense"
 msgid "Set repository data"
 msgstr "Ställde in arkivdata"
 
-#: libapper/PkStrings.cpp:296
+#: libapper/PkStrings.cpp:316
 msgctxt "The role of the transaction, in past tense"
 msgid "Resolved"
 msgstr "Upplöste"
 
-#: libapper/PkStrings.cpp:298
+#: libapper/PkStrings.cpp:318
 msgctxt "The role of the transaction, in past tense"
 msgid "Got file list"
 msgstr "Hämtade fillista"
 
-#: libapper/PkStrings.cpp:300
+#: libapper/PkStrings.cpp:320
 msgctxt "The role of the transaction, in past tense"
 msgid "Got what provides"
 msgstr "Hämtade vad som tillhandahåller"
 
-#: libapper/PkStrings.cpp:302
+#: libapper/PkStrings.cpp:322
 msgctxt "The role of the transaction, in past tense"
 msgid "Installed signature"
 msgstr "Installerade signatur"
 
-#: libapper/PkStrings.cpp:304
+#: libapper/PkStrings.cpp:324
 msgctxt "The role of the transaction, in past tense"
 msgid "Got package lists"
 msgstr "Hämtade paketlistor"
 
-#: libapper/PkStrings.cpp:306
+#: libapper/PkStrings.cpp:326
 msgctxt "The role of the transaction, in past tense"
 msgid "Accepted EULA"
 msgstr "Accepterade licensavtal för slutanvändare"
 
-#: libapper/PkStrings.cpp:308
+#: libapper/PkStrings.cpp:328
 msgctxt "The role of the transaction, in past tense"
 msgid "Downloaded packages"
 msgstr "Laddade ner paket"
 
-#: libapper/PkStrings.cpp:310
+#: libapper/PkStrings.cpp:330
 msgctxt "The role of the transaction, in past tense"
 msgid "Got distribution upgrades"
 msgstr "Hämtade uppgraderingar av distributionen"
 
-#: libapper/PkStrings.cpp:312
+#: libapper/PkStrings.cpp:332
 msgctxt "The role of the transaction, in past tense"
 msgid "Got categories"
 msgstr "Hämtade kategorier"
 
-#: libapper/PkStrings.cpp:314
+#: libapper/PkStrings.cpp:334
 msgctxt "The role of the transaction, in past tense"
 msgid "Got old transactions"
 msgstr "Hämtade gamla transaktioner"
 
-#: libapper/PkStrings.cpp:316
+#: libapper/PkStrings.cpp:336
 msgctxt "The role of the transaction, in past tense"
 msgid "Upgraded system"
 msgstr "Uppgraderade system"
 
-#: libapper/PkStrings.cpp:318
+#: libapper/PkStrings.cpp:338
 msgctxt "The role of the transaction, in past tense"
 msgid "Repaired system"
 msgstr "Reparerade system"
 
-#: libapper/PkStrings.cpp:328
+#: libapper/PkStrings.cpp:348
 msgid "Downloading"
 msgstr "Laddar ner"
 
-#: libapper/PkStrings.cpp:330
+#: libapper/PkStrings.cpp:350
 msgid "Updating"
 msgstr "Uppdaterar"
 
-#: libapper/PkStrings.cpp:332
+#: libapper/PkStrings.cpp:352
 msgid "Installing"
 msgstr "Installerar"
 
-#: libapper/PkStrings.cpp:334
+#: libapper/PkStrings.cpp:354
 msgid "Removing"
 msgstr "Tar bort"
 
-#: libapper/PkStrings.cpp:336
+#: libapper/PkStrings.cpp:356
 msgid "Cleaning up"
 msgstr "Städar upp"
 
-#: libapper/PkStrings.cpp:338
+#: libapper/PkStrings.cpp:358
 msgid "Obsoleting"
 msgstr "Markerar som föråldrade"
 
-#: libapper/PkStrings.cpp:340
+#: libapper/PkStrings.cpp:360
 msgid "Reinstalling"
 msgstr "Ominstallerar"
 
-#: libapper/PkStrings.cpp:342
+#: libapper/PkStrings.cpp:362
 msgid "Preparing"
 msgstr "Förbereder"
 
-#: libapper/PkStrings.cpp:344
+#: libapper/PkStrings.cpp:364
 msgid "Decompressing"
 msgstr "Avkodar"
 
-#: libapper/PkStrings.cpp:355
+#: libapper/PkStrings.cpp:375
 msgid "Downloaded"
 msgstr "Nerladdade"
 
-#: libapper/PkStrings.cpp:357
+#: libapper/PkStrings.cpp:377
 msgid "Updated"
 msgstr "Uppdaterad"
 
-#: libapper/PkStrings.cpp:361
+#: libapper/PkStrings.cpp:381
 msgid "Removed"
 msgstr "Borttagna"
 
-#: libapper/PkStrings.cpp:363
+#: libapper/PkStrings.cpp:383
 msgid "Cleaned up"
 msgstr "Uppstädade"
 
-#: libapper/PkStrings.cpp:365
+#: libapper/PkStrings.cpp:385
 msgid "Obsoleted"
 msgstr "Föråldrade"
 
-#: libapper/PkStrings.cpp:367
+#: libapper/PkStrings.cpp:387
 msgid "Reinstalled"
 msgstr "Ominstallerade"
 
-#: libapper/PkStrings.cpp:369
+#: libapper/PkStrings.cpp:389
 msgid "Prepared"
 msgstr "Förberedda"
 
-#: libapper/PkStrings.cpp:371
+#: libapper/PkStrings.cpp:391
 msgid "Decompressed"
 msgstr "Avkodade"
 
-#: libapper/PkStrings.cpp:382
+#: libapper/PkStrings.cpp:402
 msgid "No network connection available"
 msgstr "Ingen nätverksanslutning tillgänglig"
 
-#: libapper/PkStrings.cpp:384
+#: libapper/PkStrings.cpp:404
 msgid "No package cache is available"
 msgstr "Ingen paketcache tillgänglig"
 
-#: libapper/PkStrings.cpp:386
+#: libapper/PkStrings.cpp:406
 msgid "Out of memory"
 msgstr "Slut på minne"
 
-#: libapper/PkStrings.cpp:388
+#: libapper/PkStrings.cpp:408
 msgid "Failed to create a thread"
 msgstr "Misslyckades skapa en tråd"
 
-#: libapper/PkStrings.cpp:390
+#: libapper/PkStrings.cpp:410
 msgid "Not supported by this backend"
 msgstr "Stöds inte av bakgrundsprogram"
 
-#: libapper/PkStrings.cpp:392
+#: libapper/PkStrings.cpp:412
 msgid "An internal system error has occurred"
 msgstr "Ett internt systemfel har uppstått"
 
-#: libapper/PkStrings.cpp:394
+#: libapper/PkStrings.cpp:414
 msgid "A security trust relationship is not present"
 msgstr "Någon säkerhetsmässig förtroenderelation finns inte"
 
-#: libapper/PkStrings.cpp:396
+#: libapper/PkStrings.cpp:416
 msgid "The package is not installed"
 msgstr "Paketet är inte installerat"
 
-#: libapper/PkStrings.cpp:398
+#: libapper/PkStrings.cpp:418
 msgid "The package was not found"
 msgstr "Paketet hittades inte"
 
-#: libapper/PkStrings.cpp:400
+#: libapper/PkStrings.cpp:420
 msgid "The package is already installed"
 msgstr "Paketet är redan installerat"
 
-#: libapper/PkStrings.cpp:402
+#: libapper/PkStrings.cpp:422
 msgid "The package download failed"
 msgstr "Nerladdning av paketet misslyckades"
 
-#: libapper/PkStrings.cpp:404
+#: libapper/PkStrings.cpp:424
 msgid "The group was not found"
 msgstr "Gruppen hittades inte"
 
-#: libapper/PkStrings.cpp:406
+#: libapper/PkStrings.cpp:426
 msgid "The group list was invalid"
 msgstr "Grupplistan var ogiltig"
 
-#: libapper/PkStrings.cpp:408
+#: libapper/PkStrings.cpp:428
 msgid "Dependency resolution failed"
 msgstr "Upplösning av beroende misslyckades"
 
-#: libapper/PkStrings.cpp:410
+#: libapper/PkStrings.cpp:430
 msgid "Search filter was invalid"
 msgstr "Sökfiltret var ogiltigt"
 
-#: libapper/PkStrings.cpp:412
+#: libapper/PkStrings.cpp:432
 msgid "The package identifier was not well formed"
 msgstr "Paketidentifieraren var inte riktigt formaterad"
 
-#: libapper/PkStrings.cpp:414
+#: libapper/PkStrings.cpp:434
 msgid "Transaction error"
 msgstr "Transaktionsfel"
 
-#: libapper/PkStrings.cpp:416
+#: libapper/PkStrings.cpp:436
 msgid "Repository name was not found"
 msgstr "Arkivnamn hittades inte"
 
-#: libapper/PkStrings.cpp:418
+#: libapper/PkStrings.cpp:438
 msgid "Could not remove a protected system package"
 msgstr "Kunde inte ta bort ett skyddat systempaket"
 
-#: libapper/PkStrings.cpp:420
+#: libapper/PkStrings.cpp:440
 msgid "The task was canceled"
 msgstr "Aktiviteten avbröts"
 
-#: libapper/PkStrings.cpp:422
+#: libapper/PkStrings.cpp:442
 msgid "The task was forcibly canceled"
 msgstr "Aktiviteten tvingades att avbrytas"
 
-#: libapper/PkStrings.cpp:424
+#: libapper/PkStrings.cpp:444
 msgid "Reading the config file failed"
 msgstr "Läsning av inställningsfilen misslyckades"
 
-#: libapper/PkStrings.cpp:426
+#: libapper/PkStrings.cpp:446
 msgid "The task cannot be cancelled"
 msgstr "Aktiviteten kan inte avbrytas"
 
-#: libapper/PkStrings.cpp:428
+#: libapper/PkStrings.cpp:448
 msgid "Source packages cannot be installed"
 msgstr "Källkodspaket kan inte installeras"
 
-#: libapper/PkStrings.cpp:430
+#: libapper/PkStrings.cpp:450
 msgid "The license agreement failed"
 msgstr "Licensavtal misslyckades"
 
-#: libapper/PkStrings.cpp:432
+#: libapper/PkStrings.cpp:452
 msgid "Local file conflict between packages"
 msgstr "Lokal filkonfligt mellan paket"
 
-#: libapper/PkStrings.cpp:434
+#: libapper/PkStrings.cpp:454
 msgid "Packages are not compatible"
 msgstr "Paketen fungerar inte tillsammans"
 
-#: libapper/PkStrings.cpp:436
+#: libapper/PkStrings.cpp:456
 msgid "Problem connecting to a software origin"
 msgstr "Problem att ansluta till en programvarukälla"
 
-#: libapper/PkStrings.cpp:438
+#: libapper/PkStrings.cpp:458
 msgid "Failed to initialize"
 msgstr "Misslyckades initiera"
 
-#: libapper/PkStrings.cpp:440
+#: libapper/PkStrings.cpp:460
 msgid "Failed to finalize"
 msgstr "Misslyckades avsluta"
 
-#: libapper/PkStrings.cpp:442
+#: libapper/PkStrings.cpp:462
 msgid "Cannot get lock"
 msgstr "Kan inte låsa"
 
-#: libapper/PkStrings.cpp:444
+#: libapper/PkStrings.cpp:464
 msgid "No packages to update"
 msgstr "Inga paket att uppdatera"
 
-#: libapper/PkStrings.cpp:446
+#: libapper/PkStrings.cpp:466
 msgid "Cannot write repository configuration"
 msgstr "Kan inte skriva arkivinställning"
 
-#: libapper/PkStrings.cpp:448
+#: libapper/PkStrings.cpp:468
 msgid "Local install failed"
 msgstr "Lokal installation misslyckades"
 
-#: libapper/PkStrings.cpp:450
+#: libapper/PkStrings.cpp:470
 msgid "Bad GPG signature"
 msgstr "Felaktig GPG-signatur"
 
-#: libapper/PkStrings.cpp:452
+#: libapper/PkStrings.cpp:472
 msgid "Missing GPG signature"
 msgstr "Saknar GPG-signatur"
 
-#: libapper/PkStrings.cpp:454
+#: libapper/PkStrings.cpp:474
 msgid "Repository configuration invalid"
 msgstr "Ogiltig arkivinställning"
 
-#: libapper/PkStrings.cpp:456
+#: libapper/PkStrings.cpp:476
 msgid "Invalid package file"
 msgstr "Ogiltig paketfil"
 
-#: libapper/PkStrings.cpp:458
+#: libapper/PkStrings.cpp:478
 msgid "Package install blocked"
 msgstr "Installation av paket blockerad"
 
-#: libapper/PkStrings.cpp:460
+#: libapper/PkStrings.cpp:480
 msgid "Package is corrupt"
 msgstr "Paketet är förstört"
 
-#: libapper/PkStrings.cpp:462
+#: libapper/PkStrings.cpp:482
 msgid "All packages are already installed"
 msgstr "Alla paket är redan installerade"
 
-#: libapper/PkStrings.cpp:464
+#: libapper/PkStrings.cpp:484
 msgid "The specified file could not be found"
 msgstr "Den angivna filen kunde inte hittas"
 
-#: libapper/PkStrings.cpp:466
+#: libapper/PkStrings.cpp:486
 msgid "No more mirrors are available"
 msgstr "Inga fler spegelplatser tillgängliga"
 
-#: libapper/PkStrings.cpp:468
+#: libapper/PkStrings.cpp:488
 msgid "No distribution upgrade data is available"
 msgstr "Ingen uppgraderingsdata är tillgänglig för distributionen"
 
-#: libapper/PkStrings.cpp:470
+#: libapper/PkStrings.cpp:490
 msgid "Package is incompatible with this system"
 msgstr "Paketet är inte kompatibelt med systemet"
 
-#: libapper/PkStrings.cpp:472
+#: libapper/PkStrings.cpp:492
 msgid "No space is left on the disk"
 msgstr "Inget utrymme kvar på disken"
 
-#: libapper/PkStrings.cpp:474 libapper/PkTransaction.cpp:418
+#: libapper/PkStrings.cpp:494 libapper/PkTransaction.cpp:441
 msgid "A media change is required"
 msgstr "Media behöver bytas"
 
-#: libapper/PkStrings.cpp:476
+#: libapper/PkStrings.cpp:496
 msgid "Authorization failed"
 msgstr "Behörighetskontroll misslyckades"
 
-#: libapper/PkStrings.cpp:478
+#: libapper/PkStrings.cpp:498
 msgid "Update not found"
 msgstr "Uppdatering hittades inte"
 
-#: libapper/PkStrings.cpp:480
+#: libapper/PkStrings.cpp:500
 msgid "Cannot install from untrusted origin"
 msgstr "Kan inte installera från opålitlig källa"
 
-#: libapper/PkStrings.cpp:482
+#: libapper/PkStrings.cpp:502
 msgid "Cannot update from untrusted origin"
 msgstr "Kan inte uppdatera från opålitlig källa"
 
-#: libapper/PkStrings.cpp:484
+#: libapper/PkStrings.cpp:504
 msgid "Cannot get the file list"
 msgstr "Kan inte hämta fillista"
 
-#: libapper/PkStrings.cpp:486
+#: libapper/PkStrings.cpp:506
 msgid "Cannot get package requires"
 msgstr "Kan inte hämta vad paketet kräver"
 
-#: libapper/PkStrings.cpp:488
+#: libapper/PkStrings.cpp:508
 msgid "Cannot disable origin"
 msgstr "Kan inte inaktivera källa"
 
-#: libapper/PkStrings.cpp:490
+#: libapper/PkStrings.cpp:510
 msgid "The download failed"
 msgstr "Nerladdningen misslyckades"
 
-#: libapper/PkStrings.cpp:492
+#: libapper/PkStrings.cpp:512
 msgid "Package failed to configure"
 msgstr "Konfiguration av paketet misslyckades"
 
-#: libapper/PkStrings.cpp:494
+#: libapper/PkStrings.cpp:514
 msgid "Package failed to build"
 msgstr "Byggning av paketet misslyckades"
 
-#: libapper/PkStrings.cpp:496
+#: libapper/PkStrings.cpp:516
 msgid "Package failed to install"
 msgstr "Installation av paketet misslyckades"
 
-#: libapper/PkStrings.cpp:498
+#: libapper/PkStrings.cpp:518
 msgid "Package failed to be removed"
 msgstr "Borttagning av paketet misslyckades"
 
-#: libapper/PkStrings.cpp:500
+#: libapper/PkStrings.cpp:520
 msgid "Update failed due to running process"
 msgstr "Uppdatering misslyckades på grund av körande process"
 
-#: libapper/PkStrings.cpp:502
+#: libapper/PkStrings.cpp:522
 msgid "The package database was changed"
 msgstr "Paketdatabasen ändrades"
 
-#: libapper/PkStrings.cpp:504
+#: libapper/PkStrings.cpp:524
 msgid "Virtual provide type is not supported"
 msgstr "Virtuell leverantörstyp stöds inte"
 
-#: libapper/PkStrings.cpp:506
+#: libapper/PkStrings.cpp:526
 msgid "Install root is invalid"
 msgstr "Installeringsrot är ogiltig"
 
-#: libapper/PkStrings.cpp:508
+#: libapper/PkStrings.cpp:528
 msgid "Cannot fetch install sources"
 msgstr "Kan inte hämta installationskällor"
 
-#: libapper/PkStrings.cpp:510
+#: libapper/PkStrings.cpp:530
 msgid "Rescheduled due to priority"
 msgstr "Schemaläggning ändrad på grund av prioritet"
 
-#: libapper/PkStrings.cpp:512
+#: libapper/PkStrings.cpp:532
 msgid "Unfinished transaction"
 msgstr "Ofullständig transaktion"
 
-#: libapper/PkStrings.cpp:514
+#: libapper/PkStrings.cpp:534
 msgid "Lock required"
 msgstr "Lås krävs"
 
-#: libapper/PkStrings.cpp:516
+#: libapper/PkStrings.cpp:536
 msgid "Unknown error"
 msgstr "Okänt fel"
 
-#: libapper/PkStrings.cpp:526
+#: libapper/PkStrings.cpp:546
 msgid ""
 "There is no network connection available.\n"
 "Please check your connection settings and try again"
@@ -2149,7 +2192,7 @@ msgstr ""
 "Det finns inte någon nätverksanslutning tillgänglig.\n"
 "Kontrollera anslutningsinställningar och försök igen"
 
-#: libapper/PkStrings.cpp:529
+#: libapper/PkStrings.cpp:549
 msgid ""
 "The package list needs to be rebuilt.\n"
 "This should have been done by the backend automatically."
@@ -2157,7 +2200,7 @@ msgstr ""
 "Paketlistan måste byggas om.\n"
 "Det skulle ha gjorts automatiskt av bakgrundsprogrammet."
 
-#: libapper/PkStrings.cpp:532
+#: libapper/PkStrings.cpp:552
 msgid ""
 "The service that is responsible for handling user requests is out of "
 "memory.\n"
@@ -2167,11 +2210,11 @@ msgstr ""
 "minne.\n"
 "Stäng några program eller starta om datorn."
 
-#: libapper/PkStrings.cpp:535
+#: libapper/PkStrings.cpp:555
 msgid "A thread could not be created to service the user request."
 msgstr "En tråd kunde inte skapas för att utföra användarens begäran."
 
-#: libapper/PkStrings.cpp:537
+#: libapper/PkStrings.cpp:557
 msgid ""
 "The action is not supported by this backend.\n"
 "Please report a bug as this should not have happened."
@@ -2179,7 +2222,7 @@ msgstr ""
 "Åtgärden stöds inte av detta bakgrundsprogram.\n"
 "Rapportera gärna felet, eftersom detta inte skulle kunna inträffa."
 
-#: libapper/PkStrings.cpp:540
+#: libapper/PkStrings.cpp:560
 msgid ""
 "A problem that we were not expecting has occurred.\n"
 "Please report this bug with the error description."
@@ -2187,7 +2230,7 @@ msgstr ""
 "Ett oväntat problem har inträffat.\n"
 "Rapportera gärna felet tillsammans med en felbeskrivning."
 
-#: libapper/PkStrings.cpp:543
+#: libapper/PkStrings.cpp:563
 msgid ""
 "A security trust relationship could not be made with the software origin.\n"
 "Please check your software signature settings."
@@ -2196,14 +2239,14 @@ msgstr ""
 "programvarukällan.\n"
 "Kontrollera signaturinställningarna i programvaran."
 
-#: libapper/PkStrings.cpp:546
+#: libapper/PkStrings.cpp:566
 msgid ""
 "The package that is trying to be removed or updated is not already installed."
 msgstr ""
 "Paketet som håller på att tas bort eller uppdateras är inte redan "
 "installerat."
 
-#: libapper/PkStrings.cpp:548
+#: libapper/PkStrings.cpp:568
 msgid ""
 "The package that is being modified was not found on your system or in any "
 "software origin."
@@ -2211,11 +2254,11 @@ msgstr ""
 "Paketet som håller på att ändras hittades inte på systemet eller på någon "
 "annan programvarukälla."
 
-#: libapper/PkStrings.cpp:550
+#: libapper/PkStrings.cpp:570
 msgid "The package that is trying to be installed is already installed."
 msgstr "Paketet som håller på att installeras är redan installerat."
 
-#: libapper/PkStrings.cpp:552
+#: libapper/PkStrings.cpp:572
 msgid ""
 "The package download failed.\n"
 "Please check your network connectivity."
@@ -2223,7 +2266,7 @@ msgstr ""
 "Nerladdning av paketet misslyckades.\n"
 "Kontrollera anslutning till nätverket."
 
-#: libapper/PkStrings.cpp:555
+#: libapper/PkStrings.cpp:575
 msgid ""
 "The group type was not found.\n"
 "Please check your group list and try again."
@@ -2231,7 +2274,7 @@ msgstr ""
 "Grupptypen hittades inte.\n"
 "Kontrollera grupplistan och försök igen."
 
-#: libapper/PkStrings.cpp:558
+#: libapper/PkStrings.cpp:578
 msgid ""
 "The group list could not be loaded.\n"
 "Refreshing your cache may help, although this is normally a software origin "
@@ -2241,7 +2284,7 @@ msgstr ""
 "Att förnya cachen kan hjälpa, även om detta oftast är ett fel i "
 "programvarukällan."
 
-#: libapper/PkStrings.cpp:562
+#: libapper/PkStrings.cpp:582
 msgid ""
 "A package dependency could not be found.\n"
 "More information is available in the detailed report."
@@ -2249,11 +2292,11 @@ msgstr ""
 "Ett paketberoende kunde inte hittas.\n"
 "Mer information är tillgänglig i detaljrapporten."
 
-#: libapper/PkStrings.cpp:565
+#: libapper/PkStrings.cpp:585
 msgid "The search filter was not correctly formed."
 msgstr "Sökfiltret var inte riktigt formaterat."
 
-#: libapper/PkStrings.cpp:567
+#: libapper/PkStrings.cpp:587
 msgid ""
 "The package identifier was not well formed when sent to the system daemon.\n"
 "This normally indicates an internal bug and should be reported."
@@ -2262,7 +2305,7 @@ msgstr ""
 "systemdemonen.\n"
 "Det tyder normalt på ett internt fel och bör rapporteras."
 
-#: libapper/PkStrings.cpp:570
+#: libapper/PkStrings.cpp:590
 msgid ""
 "An error occurred while running the transaction.\n"
 "More information is available in the detailed report."
@@ -2270,7 +2313,7 @@ msgstr ""
 "Ett fel inträffade när transaktionen kördes.\n"
 "Mer information är tillgänglig i detaljrapporten."
 
-#: libapper/PkStrings.cpp:573
+#: libapper/PkStrings.cpp:593
 msgid ""
 "The remote software origin name was not found.\n"
 "You may need to enable an item in Software Origins."
@@ -2278,15 +2321,15 @@ msgstr ""
 "Fjärrprogramvarans källkodsnamn hittades inte.\n"
 "Du kanske behöver aktivera ett objekt i programvarukällor."
 
-#: libapper/PkStrings.cpp:576
+#: libapper/PkStrings.cpp:596
 msgid "Removing a protected system package is not allowed."
 msgstr "Det är inte tillåtet att ta bort ett skyddat systempaket."
 
-#: libapper/PkStrings.cpp:578
+#: libapper/PkStrings.cpp:598
 msgid "The task was canceled successfully and no packages were changed."
 msgstr "Aktiviteten avbröts med lyckat resultat och inga paket ändrades."
 
-#: libapper/PkStrings.cpp:580
+#: libapper/PkStrings.cpp:600
 msgid ""
 "The task was canceled successfully and no packages were changed.\n"
 "The backend did not exit cleanly."
@@ -2294,7 +2337,7 @@ msgstr ""
 "Aktiviteten avbröts med lyckat resultat och inga paket ändrades.\n"
 "Bakgrundsprogrammet avslutades inte normalt."
 
-#: libapper/PkStrings.cpp:583
+#: libapper/PkStrings.cpp:603
 msgid ""
 "The native package configuration file could not be opened.\n"
 "Please make sure your system's configuration is valid."
@@ -2302,11 +2345,11 @@ msgstr ""
 "Originalpaketets inställningsfil kunde inte öppnas.\n"
 "Försäkra dig om att systemets inställning är giltig."
 
-#: libapper/PkStrings.cpp:586
+#: libapper/PkStrings.cpp:606
 msgid "The task is not safe to be cancelled at this time."
 msgstr "Det är inte säkert att avbryta aktiviteten för närvarande."
 
-#: libapper/PkStrings.cpp:588
+#: libapper/PkStrings.cpp:608
 msgid ""
 "Source packages are not normally installed this way.\n"
 "Check the extension of the file you are trying to install."
@@ -2314,7 +2357,7 @@ msgstr ""
 "Källkodspaket installeras inte normalt på det här sättet.\n"
 "Kontrollera ändelsen på filen du försöker installera."
 
-#: libapper/PkStrings.cpp:591
+#: libapper/PkStrings.cpp:611
 msgid ""
 "The license agreement was not agreed to.\n"
 "To use this software you have to accept the license."
@@ -2322,7 +2365,7 @@ msgstr ""
 "Licensavtalet godkändes inte.\n"
 "Du måste godkänna avtalet för att använda programvaran."
 
-#: libapper/PkStrings.cpp:594
+#: libapper/PkStrings.cpp:614
 msgid ""
 "Two packages provide the same file.\n"
 "This is usually due to mixing packages for different software origins."
@@ -2330,7 +2373,7 @@ msgstr ""
 "Två paket tillhandahåller samma fil.\n"
 "Det orsakas oftast av att paket för olika programvarukällor blandas."
 
-#: libapper/PkStrings.cpp:597
+#: libapper/PkStrings.cpp:617
 msgid ""
 "Multiple packages exist that are not compatible with each other.\n"
 "This is usually due to mixing packages from different software origins."
@@ -2338,7 +2381,7 @@ msgstr ""
 "Flera paket finns som inte fungerar tillsammans.\n"
 "Det orsakas oftast av att paket för olika programvarukällor blandas."
 
-#: libapper/PkStrings.cpp:600
+#: libapper/PkStrings.cpp:620
 msgid ""
 "There was a (possibly temporary) problem connecting to a software origins.\n"
 "Please check the detailed error for further details."
@@ -2347,7 +2390,7 @@ msgstr ""
 "programvarukälla.\n"
 "Kontrollera det detaljerade felet för ytterligare information."
 
-#: libapper/PkStrings.cpp:603
+#: libapper/PkStrings.cpp:623
 msgid ""
 "Failed to initialize packaging backend.\n"
 "This may occur if other packaging tools are being used simultaneously."
@@ -2355,7 +2398,7 @@ msgstr ""
 "Misslyckades initiera bakgrundsprogrammet för pakethantering.\n"
 "Det kan inträffa om andra verktyg för pakethantering används samtidigt."
 
-#: libapper/PkStrings.cpp:606
+#: libapper/PkStrings.cpp:626
 msgid ""
 "Failed to close down the backend instance.\n"
 "This error can normally be ignored."
@@ -2363,7 +2406,7 @@ msgstr ""
 "Misslyckades stänga bakgrundsinstansen.\n"
 "Felet kan normalt ignoreras."
 
-#: libapper/PkStrings.cpp:609
+#: libapper/PkStrings.cpp:629
 msgid ""
 "Cannot get the exclusive lock on the packaging backend.\n"
 "Please close any other legacy packaging tools that may be open."
@@ -2371,15 +2414,15 @@ msgstr ""
 "Kan inte ensam låsa bakgrundsprogrammet för pakethantering.\n"
 "Stäng alla andra gamla verktyg för pakethantering som kan vara öppna."
 
-#: libapper/PkStrings.cpp:612
+#: libapper/PkStrings.cpp:632
 msgid "None of the selected packages could be updated."
 msgstr "Inga av de valda paketen kunde uppdateras."
 
-#: libapper/PkStrings.cpp:614
+#: libapper/PkStrings.cpp:634
 msgid "The repository configuration could not be modified."
 msgstr "Arkivinställningen kunde inte ändras."
 
-#: libapper/PkStrings.cpp:616
+#: libapper/PkStrings.cpp:636
 msgid ""
 "Installing the local file failed.\n"
 "More information is available in the detailed report."
@@ -2387,11 +2430,11 @@ msgstr ""
 "Installation av den lokala filen misslyckades.\n"
 "Mer information är tillgänglig i detaljrapporten."
 
-#: libapper/PkStrings.cpp:619
+#: libapper/PkStrings.cpp:639
 msgid "The package signature could not be verified."
 msgstr "Paketsignaturen kunde inte verifieras."
 
-#: libapper/PkStrings.cpp:621
+#: libapper/PkStrings.cpp:641
 msgid ""
 "The package signature was missing and this package is untrusted.\n"
 "This package was not signed with a GPG key when created."
@@ -2399,11 +2442,11 @@ msgstr ""
 "Paketsignaturen saknas och paketet är inte pålitligt.\n"
 "Paketet signerades inte med en GPG-nyckel när det skapades."
 
-#: libapper/PkStrings.cpp:624
+#: libapper/PkStrings.cpp:644
 msgid "Repository configuration was invalid and could not be read."
 msgstr "Arkivinställningen är ogiltig och kunde inte läsas."
 
-#: libapper/PkStrings.cpp:626
+#: libapper/PkStrings.cpp:646
 msgid ""
 "The package you are attempting to install is not valid.\n"
 "The package file could be corrupt, or not a proper package."
@@ -2411,23 +2454,23 @@ msgstr ""
 "Paketet du försöker installera är inte giltigt.\n"
 "Paketfilen kan vara skadad, eller är inte ett riktigt paket."
 
-#: libapper/PkStrings.cpp:629
+#: libapper/PkStrings.cpp:649
 msgid ""
 "Installation of this package was prevented by your packaging system's "
 "configuration."
 msgstr "Installation av paketet förhindrades av paketsystemets inställning."
 
-#: libapper/PkStrings.cpp:631
+#: libapper/PkStrings.cpp:651
 msgid ""
 "The package that was downloaded is corrupt and needs to be downloaded again."
 msgstr "Paketet som laddades ner är skadat och måste laddas ner igen."
 
-#: libapper/PkStrings.cpp:633
+#: libapper/PkStrings.cpp:653
 msgid ""
 "All of the packages selected for install are already installed on the system."
 msgstr "Alla paket valda att installeras är redan installerade på systemet."
 
-#: libapper/PkStrings.cpp:635
+#: libapper/PkStrings.cpp:655
 msgid ""
 "The specified file could not be found on the system.\n"
 "Check that the file still exists and has not been deleted."
@@ -2435,7 +2478,7 @@ msgstr ""
 "Den angivna filen kunde inte hittas på systemet.\n"
 "Kontrollera att filen fortfarande finns och inte har tagits bort."
 
-#: libapper/PkStrings.cpp:638
+#: libapper/PkStrings.cpp:658
 msgid ""
 "Required data could not be found on any of the configured software origins.\n"
 "There were no more download mirrors that could be tried."
@@ -2444,7 +2487,7 @@ msgstr ""
 "programvarukällorna.\n"
 "Det finns inga fler spegelplatser för nerladdning som kunde prövas."
 
-#: libapper/PkStrings.cpp:641
+#: libapper/PkStrings.cpp:661
 msgid ""
 "Required upgrade data could not be found in any of the configured software "
 "origins.\n"
@@ -2454,13 +2497,13 @@ msgstr ""
 "programvarukällorna.\n"
 "Listan med distributionsuppgraderingar kommer inte att vara tillgänglig."
 
-#: libapper/PkStrings.cpp:644
+#: libapper/PkStrings.cpp:664
 msgid ""
 "The package that is trying to be installed is incompatible with this system."
 msgstr ""
 "Paketet som håller på att installeras är inte kompatibelt med systemet."
 
-#: libapper/PkStrings.cpp:646
+#: libapper/PkStrings.cpp:666
 msgid ""
 "There is insufficient space on the device.\n"
 "Free some space on the system disk to perform this operation."
@@ -2468,11 +2511,11 @@ msgstr ""
 "Utrymmet på enheten är otillräckligt.\n"
 "Frigör en del utrymme på systemdisken för att utföra åtgärden."
 
-#: libapper/PkStrings.cpp:649
+#: libapper/PkStrings.cpp:669
 msgid "Additional media is required to complete the transaction."
 msgstr "Ytterligare media krävs för att göra färdigt transaktionen."
 
-#: libapper/PkStrings.cpp:651
+#: libapper/PkStrings.cpp:671
 msgid ""
 "You have failed to provide correct authentication.\n"
 "Please check any passwords or account settings."
@@ -2480,7 +2523,7 @@ msgstr ""
 "Du har misslyckats att ange riktig behörighetsinformation.\n"
 "Kontrollera eventuella lösenord eller kontoinställningar."
 
-#: libapper/PkStrings.cpp:654
+#: libapper/PkStrings.cpp:674
 msgid ""
 "The specified update could not be found.\n"
 "It could have already been installed or no longer available on the remote "
@@ -2490,27 +2533,27 @@ msgstr ""
 "Den kanske redan har installerats, eller är inte längre tillgänglig på "
 "fjärrservern."
 
-#: libapper/PkStrings.cpp:657
+#: libapper/PkStrings.cpp:677
 msgid "The package could not be installed from untrusted origin."
 msgstr "Paketet kunde inte installeras från en opålitlig programvarukälla"
 
-#: libapper/PkStrings.cpp:659
+#: libapper/PkStrings.cpp:679
 msgid "The package could not be updated from untrusted origin."
 msgstr "Paketet kunde inte uppdateras från en opålitlig programvarukälla"
 
-#: libapper/PkStrings.cpp:661
+#: libapper/PkStrings.cpp:681
 msgid "The file list is not available for this package."
 msgstr "Fillistan är inte tillgänglig för det här paketet."
 
-#: libapper/PkStrings.cpp:663
+#: libapper/PkStrings.cpp:683
 msgid "The information about what requires this package could not be obtained."
 msgstr "Information om vad som kräver det här paketet kunde inte erhållas."
 
-#: libapper/PkStrings.cpp:665
+#: libapper/PkStrings.cpp:685
 msgid "The specified software origin could not be disabled."
 msgstr "Den angivna programvarukällan kunde inte inaktiveras."
 
-#: libapper/PkStrings.cpp:667
+#: libapper/PkStrings.cpp:687
 msgid ""
 "The download could not be done automatically and should be done manually.\n"
 "More information is available in the detailed report."
@@ -2518,7 +2561,7 @@ msgstr ""
 "Nerladdningen kunde inte göras automatiskt, och bör göras manuellt.\n"
 "Mer information är tillgänglig i detaljrapporten."
 
-#: libapper/PkStrings.cpp:670
+#: libapper/PkStrings.cpp:690
 msgid ""
 "One of the selected packages failed to configure correctly.\n"
 "More information is available in the detailed report."
@@ -2526,7 +2569,7 @@ msgstr ""
 "Konfiguration av ett av de valda paketen misslyckades.\n"
 "Mer information är tillgänglig i detaljrapporten."
 
-#: libapper/PkStrings.cpp:673
+#: libapper/PkStrings.cpp:693
 msgid ""
 "One of the selected packages failed to build correctly.\n"
 "More information is available in the detailed report."
@@ -2534,7 +2577,7 @@ msgstr ""
 "Byggning av ett av de valda paketen misslyckades.\n"
 "Mer information är tillgänglig i detaljrapporten."
 
-#: libapper/PkStrings.cpp:676
+#: libapper/PkStrings.cpp:696
 msgid ""
 "One of the selected packages failed to install correctly.\n"
 "More information is available in the detailed report."
@@ -2542,7 +2585,7 @@ msgstr ""
 "Installation av ett av de valda paketen misslyckades.\n"
 "Mer information är tillgänglig i detaljrapporten."
 
-#: libapper/PkStrings.cpp:679
+#: libapper/PkStrings.cpp:699
 msgid ""
 "One of the selected packages failed to be removed correctly.\n"
 "More information is available in the detailed report."
@@ -2550,7 +2593,7 @@ msgstr ""
 "Borttagning av ett av de valda paketen misslyckades.\n"
 "Mer information är tillgänglig i detaljrapporten."
 
-#: libapper/PkStrings.cpp:682
+#: libapper/PkStrings.cpp:702
 msgid ""
 "A program is running that has to be closed before the update can proceed.\n"
 "More information is available in the detailed report."
@@ -2558,23 +2601,23 @@ msgstr ""
 "Ett program kör som måste stängas innan uppdateringen kan fortsätta.\n"
 "Mer information är tillgänglig i detaljrapporten."
 
-#: libapper/PkStrings.cpp:685
+#: libapper/PkStrings.cpp:705
 msgid "The package database was changed while the request was running."
 msgstr "Paketdatabasen ändrades medan begäran pågick."
 
-#: libapper/PkStrings.cpp:687
+#: libapper/PkStrings.cpp:707
 msgid "The virtual provide type is not supported by this system."
 msgstr "Den virtuella leverantörstypen stöds inte av det här systemet."
 
-#: libapper/PkStrings.cpp:689
+#: libapper/PkStrings.cpp:709
 msgid "The install root is invalid. Please contact your administrator."
 msgstr "Installeringsroten är ogiltig. Kontakta systemadministratören."
 
-#: libapper/PkStrings.cpp:691
+#: libapper/PkStrings.cpp:711
 msgid "The list of software could not be downloaded."
 msgstr "Listan med programvara kunde inte laddas ner."
 
-#: libapper/PkStrings.cpp:693
+#: libapper/PkStrings.cpp:713
 msgid ""
 "The transaction has been cancelled and will be retried when the system is "
 "idle."
@@ -2582,15 +2625,15 @@ msgstr ""
 "Transaktionen har avbrutits och kommer att försökas igen när systemet är "
 "overksamt."
 
-#: libapper/PkStrings.cpp:695
+#: libapper/PkStrings.cpp:715
 msgid "A previous package management transaction was interrupted."
 msgstr "En tidigare transaktion i pakethanteraren avbröts."
 
-#: libapper/PkStrings.cpp:697
+#: libapper/PkStrings.cpp:717
 msgid "A package manager lock is required."
 msgstr "Ett lås för pakethanteraren krävs."
 
-#: libapper/PkStrings.cpp:699
+#: libapper/PkStrings.cpp:719
 msgid ""
 "Unknown error, please report a bug.\n"
 "More information is available in the detailed report."
@@ -2598,236 +2641,236 @@ msgstr ""
 "Okänt fel, rapportera gärna som ett fel i programmet.\n"
 "Mer information är tillgänglig i detaljrapporten."
 
-#: libapper/PkStrings.cpp:710
+#: libapper/PkStrings.cpp:730
 msgctxt "The group type"
 msgid "Accessibility"
 msgstr "Handikappstöd"
 
-#: libapper/PkStrings.cpp:712
+#: libapper/PkStrings.cpp:732
 msgctxt "The group type"
 msgid "Accessories"
 msgstr "Tillbehör"
 
-#: libapper/PkStrings.cpp:714
+#: libapper/PkStrings.cpp:734
 msgctxt "The group type"
 msgid "Education"
 msgstr "Utbildning"
 
-#: libapper/PkStrings.cpp:716
+#: libapper/PkStrings.cpp:736
 msgctxt "The group type"
 msgid "Games"
 msgstr "Spel"
 
-#: libapper/PkStrings.cpp:718
+#: libapper/PkStrings.cpp:738
 msgctxt "The group type"
 msgid "Graphics"
 msgstr "Grafik"
 
-#: libapper/PkStrings.cpp:720
+#: libapper/PkStrings.cpp:740
 msgctxt "The group type"
 msgid "Internet"
 msgstr "Internet"
 
-#: libapper/PkStrings.cpp:722
+#: libapper/PkStrings.cpp:742
 msgctxt "The group type"
 msgid "Office"
 msgstr "Kontor"
 
-#: libapper/PkStrings.cpp:724
+#: libapper/PkStrings.cpp:744
 msgctxt "The group type"
 msgid "Others"
 msgstr "Övriga"
 
-#: libapper/PkStrings.cpp:726
+#: libapper/PkStrings.cpp:746
 msgctxt "The group type"
 msgid "Development"
 msgstr "Utveckling"
 
-#: libapper/PkStrings.cpp:728
+#: libapper/PkStrings.cpp:748
 msgctxt "The group type"
 msgid "Multimedia"
 msgstr "Multimedia"
 
-#: libapper/PkStrings.cpp:730
+#: libapper/PkStrings.cpp:750
 msgctxt "The group type"
 msgid "System"
 msgstr "System"
 
-#: libapper/PkStrings.cpp:732
+#: libapper/PkStrings.cpp:752
 msgctxt "The group type"
 msgid "GNOME desktop"
 msgstr "GNOME-skrivbord"
 
-#: libapper/PkStrings.cpp:734
+#: libapper/PkStrings.cpp:754
 msgctxt "The group type"
 msgid "KDE desktop"
 msgstr "KDE-skrivbord"
 
-#: libapper/PkStrings.cpp:736
+#: libapper/PkStrings.cpp:756
 msgctxt "The group type"
 msgid "XFCE desktop"
 msgstr "XFCE-skrivbord"
 
-#: libapper/PkStrings.cpp:738
+#: libapper/PkStrings.cpp:758
 msgctxt "The group type"
 msgid "Other desktops"
 msgstr "Övriga skrivbord"
 
-#: libapper/PkStrings.cpp:740
+#: libapper/PkStrings.cpp:760
 msgctxt "The group type"
 msgid "Publishing"
 msgstr "Publicering"
 
-#: libapper/PkStrings.cpp:742
+#: libapper/PkStrings.cpp:762
 msgctxt "The group type"
 msgid "Servers"
 msgstr "Servrar"
 
-#: libapper/PkStrings.cpp:744
+#: libapper/PkStrings.cpp:764
 msgctxt "The group type"
 msgid "Fonts"
 msgstr "Teckensnitt"
 
-#: libapper/PkStrings.cpp:746
+#: libapper/PkStrings.cpp:766
 msgctxt "The group type"
 msgid "Admin tools"
 msgstr "Administrationsverktyg"
 
-#: libapper/PkStrings.cpp:748
+#: libapper/PkStrings.cpp:768
 msgctxt "The group type"
 msgid "Legacy"
 msgstr "Gammalt"
 
-#: libapper/PkStrings.cpp:750
+#: libapper/PkStrings.cpp:770
 msgctxt "The group type"
 msgid "Localization"
 msgstr "Översättningar"
 
-#: libapper/PkStrings.cpp:752
+#: libapper/PkStrings.cpp:772
 msgctxt "The group type"
 msgid "Virtualization"
 msgstr "Virtualisering"
 
-#: libapper/PkStrings.cpp:754
+#: libapper/PkStrings.cpp:774
 msgctxt "The group type"
 msgid "Security"
 msgstr "Säkerhet"
 
-#: libapper/PkStrings.cpp:756
+#: libapper/PkStrings.cpp:776
 msgctxt "The group type"
 msgid "Power management"
 msgstr "Strömhantering"
 
-#: libapper/PkStrings.cpp:758
+#: libapper/PkStrings.cpp:778
 msgctxt "The group type"
 msgid "Communication"
 msgstr "Kommunikation"
 
-#: libapper/PkStrings.cpp:760
+#: libapper/PkStrings.cpp:780
 msgctxt "The group type"
 msgid "Network"
 msgstr "Nätverk"
 
-#: libapper/PkStrings.cpp:762
+#: libapper/PkStrings.cpp:782
 msgctxt "The group type"
 msgid "Maps"
 msgstr "Kartor"
 
-#: libapper/PkStrings.cpp:764
+#: libapper/PkStrings.cpp:784
 msgctxt "The group type"
 msgid "Software sources"
 msgstr "Programvarukällor"
 
-#: libapper/PkStrings.cpp:766
+#: libapper/PkStrings.cpp:786
 msgctxt "The group type"
 msgid "Science"
 msgstr "Vetenskap"
 
-#: libapper/PkStrings.cpp:768
+#: libapper/PkStrings.cpp:788
 msgctxt "The group type"
 msgid "Documentation"
 msgstr "Dokumentation"
 
-#: libapper/PkStrings.cpp:770
+#: libapper/PkStrings.cpp:790
 msgctxt "The group type"
 msgid "Electronics"
 msgstr "Elektronik"
 
-#: libapper/PkStrings.cpp:772
+#: libapper/PkStrings.cpp:792
 msgctxt "The group type"
 msgid "Package collections"
 msgstr "Paketsamlingar"
 
-#: libapper/PkStrings.cpp:774
+#: libapper/PkStrings.cpp:794
 msgctxt "The group type"
 msgid "Vendor"
 msgstr "Tillverkare"
 
-#: libapper/PkStrings.cpp:776
+#: libapper/PkStrings.cpp:796
 msgctxt "The group type"
 msgid "Newest packages"
 msgstr "Nyaste paket"
 
-#: libapper/PkStrings.cpp:778
+#: libapper/PkStrings.cpp:798
 msgctxt "The group type"
 msgid "Unknown group"
 msgstr "Okänd grupp"
 
-#: libapper/PkStrings.cpp:789
+#: libapper/PkStrings.cpp:809
 msgctxt "The type of update"
 msgid "Trivial update"
 msgstr "Enkel uppdatering"
 
-#: libapper/PkStrings.cpp:791
+#: libapper/PkStrings.cpp:811
 msgctxt "The type of update"
 msgid "Normal update"
 msgstr "Normal uppdatering"
 
-#: libapper/PkStrings.cpp:793
+#: libapper/PkStrings.cpp:813
 msgctxt "The type of update"
 msgid "Important update"
 msgstr "Viktig uppdatering"
 
-#: libapper/PkStrings.cpp:795
+#: libapper/PkStrings.cpp:815
 msgctxt "The type of update"
 msgid "Security update"
 msgstr "Säkerhetsuppdatering"
 
-#: libapper/PkStrings.cpp:797
+#: libapper/PkStrings.cpp:817
 msgctxt "The type of update"
 msgid "Bug fix update"
 msgstr "Felrättningsuppdatering"
 
-#: libapper/PkStrings.cpp:799
+#: libapper/PkStrings.cpp:819
 msgctxt "The type of update"
 msgid "Enhancement update"
 msgstr "Förbättringsuppdatering"
 
-#: libapper/PkStrings.cpp:801
+#: libapper/PkStrings.cpp:821
 msgctxt "The type of update"
 msgid "Blocked update"
 msgstr "Blockerad uppdatering"
 
-#: libapper/PkStrings.cpp:804
+#: libapper/PkStrings.cpp:824
 msgctxt "The type of update"
 msgid "Installed"
 msgstr "Installerad"
 
-#: libapper/PkStrings.cpp:807
+#: libapper/PkStrings.cpp:827
 msgctxt "The type of update"
 msgid "Available"
 msgstr "Tillgänglig"
 
-#: libapper/PkStrings.cpp:809
+#: libapper/PkStrings.cpp:829
 msgctxt "The type of update"
 msgid "Unknown update"
 msgstr "Okänd uppdatering"
 
-#: libapper/PkStrings.cpp:820
+#: libapper/PkStrings.cpp:840
 msgid "No Updates Available"
 msgstr "Inga uppdateringar tillgängliga"
 
-#: libapper/PkStrings.cpp:823
+#: libapper/PkStrings.cpp:843
 #, kde-format
 msgctxt "Some updates were selected on the view"
 msgid "1 Update Selected"
@@ -2835,7 +2878,7 @@ msgid_plural "%1 Updates Selected"
 msgstr[0] "1 uppdatering vald"
 msgstr[1] "%1 uppdateringar valda"
 
-#: libapper/PkStrings.cpp:827
+#: libapper/PkStrings.cpp:847
 #, kde-format
 msgctxt "Some updates are being shown on the screen"
 msgid "1 Update"
@@ -2843,13 +2886,13 @@ msgid_plural "%1 Updates"
 msgstr[0] "1 uppdatering"
 msgstr[1] "%1 uppdateringar"
 
-#: libapper/PkStrings.cpp:830
+#: libapper/PkStrings.cpp:850
 #, kde-format
 msgctxt "Type of update, in the case it's just an update"
 msgid "%1, %2"
 msgstr "%1, %2"
 
-#: libapper/PkStrings.cpp:831
+#: libapper/PkStrings.cpp:851
 #, kde-format
 msgctxt "Part of: %1 Updates, %1 Selected"
 msgid "%1 Update"
@@ -2857,7 +2900,7 @@ msgid_plural "%1 Updates"
 msgstr[0] "%1 uppdatering"
 msgstr[1] "%1 uppdateringar"
 
-#: libapper/PkStrings.cpp:832
+#: libapper/PkStrings.cpp:852
 #, kde-format
 msgctxt "Part of: %1 Updates, %1 Selected"
 msgid "%1 Selected"
@@ -2865,271 +2908,279 @@ msgid_plural "%1 Selected"
 msgstr[0] "%1 vald"
 msgstr[1] "%1 valda"
 
-#: libapper/PkStrings.cpp:836
+#: libapper/PkStrings.cpp:856
 msgid "No Packages"
 msgstr "Inga paket"
 
-#: libapper/PkStrings.cpp:838
+#: libapper/PkStrings.cpp:858
 #, kde-format
 msgid "1 Package"
 msgid_plural "%1 Packages"
 msgstr[0] "1 paket"
 msgstr[1] "%1 paket"
 
-#: libapper/PkStrings.cpp:846
+#: libapper/PkStrings.cpp:866
 msgid "No restart is necessary"
 msgstr "Ingen omstart krävs"
 
-#: libapper/PkStrings.cpp:848
+#: libapper/PkStrings.cpp:868
 msgid "You will be required to restart this application"
 msgstr "Du kommer att vara tvungen att starta om programmet"
 
-#: libapper/PkStrings.cpp:850
+#: libapper/PkStrings.cpp:870
 msgid "You will be required to log out and back in"
 msgstr "Du kommer att vara tvungen att logga ut och in igen"
 
-#: libapper/PkStrings.cpp:852
+#: libapper/PkStrings.cpp:872
 msgid "A restart will be required"
 msgstr "En omstart kommer att krävas"
 
-#: libapper/PkStrings.cpp:854
+#: libapper/PkStrings.cpp:874
 msgid "You will be required to log out and back in due to a security update."
 msgstr ""
 "Du kommer att vara tvungen att logga ut och in igen på grund av en "
 "säkerhetsuppdatering."
 
-#: libapper/PkStrings.cpp:856
+#: libapper/PkStrings.cpp:876
 msgid "A restart will be required due to a security update."
 msgstr "En omstart kommer att krävas på grund av en säkerhetsuppdatering."
 
-#: libapper/PkStrings.cpp:869
+#: libapper/PkStrings.cpp:889
 msgid "No restart is required"
 msgstr "Ingen omstart krävs"
 
-#: libapper/PkStrings.cpp:871
+#: libapper/PkStrings.cpp:891
 msgid "A restart is required"
 msgstr "En omstart krävs"
 
-#: libapper/PkStrings.cpp:873
+#: libapper/PkStrings.cpp:893
 msgid "You need to log out and log back in"
 msgstr "Du måste logga ut och in igen"
 
-#: libapper/PkStrings.cpp:875
+#: libapper/PkStrings.cpp:895
 msgid "You need to restart the application"
 msgstr "Du måste starta om programmet"
 
-#: libapper/PkStrings.cpp:877
+#: libapper/PkStrings.cpp:897
 msgid "You need to log out and log back in to remain secure."
 msgstr "Du måste logga ut och in igen för att behålla säkerheten."
 
-#: libapper/PkStrings.cpp:879
+#: libapper/PkStrings.cpp:899
 msgid "A restart is required to remain secure."
 msgstr "En omstart krävs för att behålla säkerheten."
 
-#: libapper/PkStrings.cpp:892
+#: libapper/PkStrings.cpp:912
 msgid "Stable"
 msgstr "Stabil"
 
-#: libapper/PkStrings.cpp:894
+#: libapper/PkStrings.cpp:914
 msgid "Unstable"
 msgstr "Instabil"
 
-#: libapper/PkStrings.cpp:896
+#: libapper/PkStrings.cpp:916
 msgid "Testing"
 msgstr "Test"
 
-#: libapper/PkStrings.cpp:909
+#: libapper/PkStrings.cpp:929
 #, kde-format
 msgid "Please insert the CD labeled '%1', and press continue."
 msgstr "Mata in cd:n med beteckningen '%1', och klicka på fortsätt."
 
-#: libapper/PkStrings.cpp:911
+#: libapper/PkStrings.cpp:931
 #, kde-format
 msgid "Please insert the DVD labeled '%1', and press continue."
 msgstr "Mata in dvd:n med beteckningen '%1', och klicka på fortsätt."
 
-#: libapper/PkStrings.cpp:913
+#: libapper/PkStrings.cpp:933
 #, kde-format
 msgid "Please insert the disc labeled '%1', and press continue."
 msgstr "Mata in skivan med beteckningen '%1', och klicka på fortsätt."
 
-#: libapper/PkStrings.cpp:915 libapper/PkStrings.cpp:918
+#: libapper/PkStrings.cpp:935 libapper/PkStrings.cpp:938
 #, kde-format
 msgid "Please insert the medium labeled '%1', and press continue."
 msgstr "Mata in medium med beteckningen '%1', och klicka på fortsätt."
 
-#: libapper/PkStrings.cpp:925
+#: libapper/PkStrings.cpp:945
 msgid "A mirror is possibly broken"
 msgstr "En spegelplats är möjligen felaktig"
 
-#: libapper/PkStrings.cpp:927
+#: libapper/PkStrings.cpp:947
 msgid "The connection was refused"
 msgstr "Anslutningen vägrades"
 
-#: libapper/PkStrings.cpp:929
+#: libapper/PkStrings.cpp:949
 msgid "The parameter was invalid"
 msgstr "Parametern var ogiltig"
 
-#: libapper/PkStrings.cpp:931
+#: libapper/PkStrings.cpp:951
 msgid "The priority was invalid"
 msgstr "Prioriteten var ogiltig"
 
-#: libapper/PkStrings.cpp:933
+#: libapper/PkStrings.cpp:953
 msgid "Backend warning"
 msgstr "Bakgrundsprogramvarning"
 
-#: libapper/PkStrings.cpp:935
+#: libapper/PkStrings.cpp:955
 msgid "Daemon warning"
 msgstr "Demonvarning"
 
-#: libapper/PkStrings.cpp:937
+#: libapper/PkStrings.cpp:957
 msgid "The package list cache is being rebuilt"
 msgstr "Paketlistans cache håller på att byggas om"
 
-#: libapper/PkStrings.cpp:939
+#: libapper/PkStrings.cpp:959
 msgid "An untrusted package was installed"
 msgstr "Ett inte pålitligt paket installerades"
 
-#: libapper/PkStrings.cpp:941
+#: libapper/PkStrings.cpp:961
 msgid "A newer package exists"
 msgstr "Ett nyare paket finns"
 
-#: libapper/PkStrings.cpp:943
+#: libapper/PkStrings.cpp:963
 msgid "Could not find package"
 msgstr "Kunde inte hitta paket"
 
-#: libapper/PkStrings.cpp:945
+#: libapper/PkStrings.cpp:965
 msgid "Configuration files were changed"
 msgstr "Inställningsfiler ändrades"
 
-#: libapper/PkStrings.cpp:947
+#: libapper/PkStrings.cpp:967
 msgid "Package is already installed"
 msgstr "Paketet är redan installerat"
 
-#: libapper/PkStrings.cpp:949
+#: libapper/PkStrings.cpp:969
 msgid "Automatic cleanup is being ignored"
 msgstr "Automatisk rensning ignoreras"
 
-#: libapper/PkStrings.cpp:951
+#: libapper/PkStrings.cpp:971
 msgid "Software source download failed"
 msgstr "Nerladdning av programkällkod misslyckades"
 
-#: libapper/PkStrings.cpp:953
+#: libapper/PkStrings.cpp:973
 msgid "This software source is for developers only"
 msgstr "Den här programvarukällan är bara till för utvecklare"
 
-#: libapper/PkStrings.cpp:955
+#: libapper/PkStrings.cpp:975
 msgid "Other updates have been held back"
 msgstr "Övriga uppdateringar har förhindrats"
 
-#: libapper/PkStrings.cpp:970
+#: libapper/PkStrings.cpp:989
+msgid "You do not have the necessary privileges to perform this action."
+msgstr "Du har inte de nödvändiga rättigheterna för att utföra åtgärden."
+
+#: libapper/PkStrings.cpp:991
 msgid "Could not get a transaction id from packagekitd."
 msgstr "Kunde inte få en transaktionsidentifierare från packagekitd."
 
-#: libapper/PkStrings.cpp:972
+#: libapper/PkStrings.cpp:993
 msgid "Cannot connect to this transaction id."
 msgstr "Kan inte ansluta till den här transaktionsidentifieraren."
 
-#: libapper/PkStrings.cpp:974
+#: libapper/PkStrings.cpp:995
 msgid "This action is unknown."
 msgstr "Åtgärden är inte känd."
 
-#: libapper/PkStrings.cpp:976
+#: libapper/PkStrings.cpp:997
 msgid "The packagekitd service could not be started."
 msgstr "Tjänsten packagekitd kunde inte startas."
 
-#: libapper/PkStrings.cpp:978
+#: libapper/PkStrings.cpp:999
 msgid "The query is not valid."
 msgstr "Förfrågan är inte giltig."
 
-#: libapper/PkStrings.cpp:980
+#: libapper/PkStrings.cpp:1001
 msgid "The file is not valid."
 msgstr "Filen är inte giltig."
 
-#: libapper/PkStrings.cpp:982
+#: libapper/PkStrings.cpp:1003
 msgid "This function is not yet supported."
 msgstr "Funktionen stöds inte ännu."
 
-#: libapper/PkStrings.cpp:984
+#: libapper/PkStrings.cpp:1005
 msgid "Could not talk to packagekitd."
 msgstr "Kunde inte kommunicera med packagekitd."
 
-#: libapper/PkStrings.cpp:988 libapper/PkStrings.cpp:991
+#: libapper/PkStrings.cpp:1007
+msgid "Error talking to packagekitd."
+msgstr "Kunde inte kommunicera med packagekitd."
+
+#: libapper/PkStrings.cpp:1010 libapper/PkStrings.cpp:1013
 msgid "An unknown error happened."
 msgstr "Ett okänt fel uppstod."
 
-#: libapper/PkStrings.cpp:1005 plasmoid/updaterapplet.cpp:146
+#: libapper/PkStrings.cpp:1027
 msgid "Your system is up to date"
 msgstr "Systemet är uppdaterat"
 
-#: libapper/PkStrings.cpp:1007
+#: libapper/PkStrings.cpp:1029
 msgid "You have no updates"
 msgstr "Det finns inga uppdateringar"
 
-#: libapper/PkStrings.cpp:1009
+#: libapper/PkStrings.cpp:1031
 msgid "Last check for updates was more than a month ago"
 msgstr "Senaste kontrollen av uppdateringar utfördes för mer än en månad sedan"
 
-#: libapper/PkStrings.cpp:1017
+#: libapper/PkStrings.cpp:1039
 #, kde-format
 msgid "Verified %1 ago"
 msgstr "Verifierades för %1 sedan"
 
-#: libapper/PkStrings.cpp:1019
+#: libapper/PkStrings.cpp:1041
 msgid "It's strongly recommended that you check for new updates now"
 msgstr "Det rekommenderas starkt att du kontrollerar uppdateringar nu"
 
-#: libapper/PkTransaction.cpp:129
+#: libapper/PkTransaction.cpp:139
 msgid "Failed to simulate file install"
 msgstr "Misslyckades simulera installation av fil"
 
-#: libapper/PkTransaction.cpp:133
+#: libapper/PkTransaction.cpp:143
 msgid "Current backend does not support installing files."
 msgstr "Nuvarande bakgrundsprogram stöder inte installation av filer."
 
-#: libapper/PkTransaction.cpp:147
+#: libapper/PkTransaction.cpp:157
 msgid "Failed to simulate package install"
 msgstr "Misslyckades simulera installation av paket"
 
-#: libapper/PkTransaction.cpp:151
+#: libapper/PkTransaction.cpp:161
 msgid "Current backend does not support installing packages."
 msgstr "Nuvarande bakgrundsprogram stöder inte installation av paket."
 
-#: libapper/PkTransaction.cpp:166
+#: libapper/PkTransaction.cpp:176
 msgid "Failed to simulate package removal"
 msgstr "Misslyckades simulera borttagning av paket"
 
-#: libapper/PkTransaction.cpp:170
+#: libapper/PkTransaction.cpp:180
 msgid "The current backend does not support removing packages."
 msgstr "Nuvarande bakgrundsprogram stöder inte att ta bort paket."
 
-#: libapper/PkTransaction.cpp:189
+#: libapper/PkTransaction.cpp:199
 msgid "Failed to simulate package update"
 msgstr "Misslyckades simulera uppdatering av paket"
 
-#: libapper/PkTransaction.cpp:193
+#: libapper/PkTransaction.cpp:203
 msgid "The current backend does not support updating packages."
 msgstr "Nuvarande bakgrundsprogram stöder inte att uppdatera paket."
 
-#: libapper/PkTransaction.cpp:234
+#: libapper/PkTransaction.cpp:254
 msgid "Failed to install package"
 msgstr "Misslyckades installera paket"
 
-#: libapper/PkTransaction.cpp:244 PkSession/PkInstallProvideFiles.cpp:101
+#: libapper/PkTransaction.cpp:264 PkSession/PkInstallProvideFiles.cpp:101
 msgid "Failed to install file"
 msgid_plural "Failed to install files"
 msgstr[0] "Misslyckades installera fil"
 msgstr[1] "Misslyckades installera filer"
 
-#: libapper/PkTransaction.cpp:255
+#: libapper/PkTransaction.cpp:275
 msgid "Failed to remove package"
 msgstr "Misslyckades ta bort paket"
 
-#: libapper/PkTransaction.cpp:265
+#: libapper/PkTransaction.cpp:285
 msgid "Failed to update package"
 msgstr "Misslyckades uppdatera paket"
 
-#: libapper/PkTransaction.cpp:331
+#: libapper/PkTransaction.cpp:351
 msgid ""
 "You are about to install unsigned packages that can compromise your system, "
 "as it is impossible to verify if the software came from a trusted source.\n"
@@ -3141,13 +3192,18 @@ msgstr ""
 "\n"
 "Är du säker på att du vill gå vidare med installationen?"
 
-#: libapper/PkTransaction.cpp:334
+#: libapper/PkTransaction.cpp:354
 msgid "Installing unsigned software"
 msgstr "Installerar osignerad programvara"
 
-#: libapper/PkTransaction.cpp:379 libapper/PkTransaction.cpp:463
+#: libapper/PkTransaction.cpp:399 libapper/PkTransaction.cpp:486
 msgid "Failed to install signature"
 msgstr "Misslyckades installera signatur"
+
+#: libapper/PkTransactionWidget.cpp:229 libapper/PkTransactionWidget.cpp:242
+#, kde-format
+msgid "%1 (%2%)"
+msgstr "%1 (%2 %)"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: libapper/PkTransactionWidget.ui:38
@@ -3189,53 +3245,59 @@ msgstr "Signaturens användaridentifierare:"
 msgid "Signature identifier:"
 msgstr "Signaturens identifierare:"
 
-#: libapper/Requirements.cpp:55
+#: libapper/Requirements.cpp:56
 msgid "Additional changes"
 msgstr "Ytterligare ändringar"
 
-#: libapper/Requirements.cpp:77
+#: libapper/Requirements.cpp:82
 #, kde-format
 msgid "1 package to remove"
 msgid_plural "%1 packages to remove"
 msgstr[0] "1 paket att ta bort"
 msgstr[1] "%1 paket att ta bort"
 
-#: libapper/Requirements.cpp:92
+#: libapper/Requirements.cpp:97
 #, kde-format
 msgid "1 package to downgrade"
 msgid_plural "%1 packages to downgrade"
 msgstr[0] "1 paket att nergradera"
 msgstr[1] "%1 paket att nergradera"
 
-#: libapper/Requirements.cpp:107
+#: libapper/Requirements.cpp:112
 #, kde-format
 msgid "1 package to reinstall"
 msgid_plural "%1 packages to reinstall"
 msgstr[0] "1 paket att återinstallera"
 msgstr[1] "%1 paket att återinstallera"
 
-#: libapper/Requirements.cpp:120
+#: libapper/Requirements.cpp:125
 #, kde-format
 msgid "1 package to install"
 msgid_plural "%1 packages to install"
 msgstr[0] "1 paket att installera"
 msgstr[1] "%1 paket att installera"
 
-#: libapper/Requirements.cpp:133
+#: libapper/Requirements.cpp:138
 #, kde-format
 msgid "1 package to update"
 msgid_plural "%1 packages to update"
 msgstr[0] "1 paket att uppdatera"
 msgstr[1] "%1 paket att uppdatera"
 
-#: libapper/Requirements.cpp:146
+#: libapper/Requirements.cpp:151
 #, kde-format
 msgid "1 untrusted package"
 msgid_plural "%1 untrusted packages"
 msgstr[0] "1 opålitligt paket"
 msgstr[1] "%1 opålitliga paket"
 
-#: libapper/Requirements.cpp:242
+#: libapper/Requirements.cpp:200
+#, kde-format
+msgctxt "how many bytes are required for download"
+msgid "Need to get %1 of archives"
+msgstr "Måste hämta %1 från arkiv"
+
+#: libapper/Requirements.cpp:260
 msgid ""
 "You are about to install unsigned packages that can compromise your system, "
 "as it is impossible to verify if the software came from a trusted source."
@@ -3261,10 +3323,6 @@ msgstr "Textetikett"
 #: PkSession/main.cpp:36
 msgid "Apper PackageKit Session helper"
 msgstr "Apper sessionshjälpverktyg för PackageKit"
-
-#: PkSession/main.cpp:38
-msgid "(C) 2008-2012 Daniel Nicoletti"
-msgstr "© 2008-2012 Daniel Nicoletti"
 
 #: PkSession/main.cpp:41
 msgid "Trever Fischer"
@@ -3339,7 +3397,7 @@ msgstr "Katalogen är tom"
 msgid "Could not find any package to install in this catalog"
 msgstr "Kunde inte hitta några paket att installera i den här katalogen"
 
-#: PkSession/PkInstallCatalogs.cpp:278 PkSession/PkInstallPackageNames.cpp:97
+#: PkSession/PkInstallCatalogs.cpp:280 PkSession/PkInstallPackageNames.cpp:97
 #: PkSession/PkIsInstalled.cpp:46
 msgid "Failed to start resolve transaction"
 msgstr "Misslyckades starta upplösningstransaktion"
@@ -3774,41 +3832,34 @@ msgid_plural "The following packages were found"
 msgstr[0] "Följande paket hittades"
 msgstr[1] "Följande paket hittades"
 
-#: PkSession/SessionTask.cpp:373
+#: PkSession/SessionTask.cpp:367
 msgid "There are no packages to Install or Remove"
 msgstr "Det finns inga paket att installera eller ta bort"
 
-#: PkSession/SessionTask.cpp:374
+#: PkSession/SessionTask.cpp:368
 msgid "This action should not happen"
 msgstr "Åtgärden ska inte ske"
 
-#: PkSession/SessionTask.cpp:405
+#: PkSession/SessionTask.cpp:399
 msgid "Could not find"
 msgstr "Kunde inte hitta"
 
-#: PkSession/SessionTask.cpp:406 PkSession/SessionTask.cpp:415
+#: PkSession/SessionTask.cpp:400 PkSession/SessionTask.cpp:409
 msgid "No packages were found that meet the request"
 msgstr "Inga paket hittades som motsvarar begäran"
 
-#: PkSession/SessionTask.cpp:414
+#: PkSession/SessionTask.cpp:408
 msgid "Failed to find"
 msgstr "Misslyckades hitta"
 
-#: PkSession/SessionTask.cpp:436
+#: PkSession/SessionTask.cpp:430
 msgid "Transaction did not finish with success"
 msgstr "Transaktionen avslutades inte med lyckat resultat"
 
-#: PkSession/SessionTask.cpp:442
+#: PkSession/SessionTask.cpp:436
 msgid "Task completed"
 msgstr "Aktivitet klar"
 
-#: PkSession/SessionTask.cpp:442
+#: PkSession/SessionTask.cpp:436
 msgid "All operations were committed successfully"
 msgstr "Alla åtgärder verkställdes med lyckat resultat"
-
-#: plasmoid/updaterapplet.cpp:148
-#, kde-format
-msgid "You have one update"
-msgid_plural "You have %1 updates"
-msgstr[0] "Det finns en uppdatering"
-msgstr[1] "Det finns %1 uppdateringar"

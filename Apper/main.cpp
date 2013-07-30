@@ -55,10 +55,11 @@ int main(int argc, char **argv)
                      APP_VERSION,
                      ki18n("Apper is an Application to Get and Manage Software"),
                      KAboutData::License_GPL,
-                     ki18n("(C) 2008-2011 Daniel Nicoletti"));
+                     ki18n("(C) 2008-2013 Daniel Nicoletti"));
 
     about.addAuthor(ki18n("Daniel Nicoletti"), KLocalizedString(), "dantti12@gmail.com", "http://dantti.wordpress.com");
     about.addCredit(ki18n("Adrien Bustany"), ki18n("libpackagekit-qt and other stuff"), "@");
+    about.setProgramIconName("applications-other");
 
     KCmdLineArgs::init(argc, argv, &about);
 
@@ -122,12 +123,6 @@ int main(int argc, char **argv)
 
     if (args->isSet("remove-package-by-file")) {
         return invoke("RemovePackageByFiles", args->getOptionList("remove-package-by-file"));
-    }
-
-    if (!Apper::start())
-    {
-        qDebug() << "Apper is already running!";
-        return 0;
     }
 
     Apper app;

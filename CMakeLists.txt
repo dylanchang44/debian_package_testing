@@ -26,13 +26,6 @@ option(LISTALLER "Build Apper with app install" OFF)
 set(HAVE_LISTALLER ${LISTALLER})
 message(STATUS "Building Apper with Listaller modules: " ${LISTALLER})
 
-if (HAVE_APPSTREAM)
-    # path to the categories.xml menus
-    set(AS_CATEGORIES_PATH "${CMAKE_INSTALL_PREFIX}/share/app-info"
-        CACHE STRING "AppStream categories path")
-    message(STATUS "AppStream categories path: " ${AS_CATEGORIES_PATH})
-endif (HAVE_APPSTREAM)
-
 if (DEBCONF_SUPPORT)
     # Tries to find the package, when it finds it HAVE_DEBCONFKDE is set in config.h
     find_package(DebconfKDE REQUIRED)
@@ -41,7 +34,7 @@ if (DEBCONF_SUPPORT)
     message(STATUS "Building with Debconf support")
 endif (DEBCONF_SUPPORT)
 
-set(APP_VERSION 0.8.0)
+set(APP_VERSION 0.8.1)
 
 # command to edit the packages origins
 set(EDIT_ORIGNS_DESKTOP_NAME "" CACHE STRING "Edit origins desktop name")
@@ -54,7 +47,7 @@ configure_file(${CMAKE_CURRENT_SOURCE_DIR}/config.h.cmake
                ${CMAKE_CURRENT_BINARY_DIR}/config.h)
 
 include(FindPkgConfig)
-set(QPACKAGEKIT_MIN_VERSION 0.8.5)
+set(QPACKAGEKIT_MIN_VERSION 0.8.8)
 pkg_check_modules(QPACKAGEKIT2 REQUIRED packagekit-qt2>=${QPACKAGEKIT_MIN_VERSION})
 macro_log_feature(QPACKAGEKIT2_FOUND "packagekit-qt2" "The Qt library to use PackageKit" "http://www.packagekit.org" TRUE ${QPACKAGEKIT_MIN_VERSION} "")
 include(KDE4Defaults)
@@ -77,6 +70,7 @@ add_subdirectory(ApperKCM)
 add_subdirectory(Apper)
 add_subdirectory(PkSession)
 add_subdirectory(apperd)
+add_subdirectory(declarative-plugins)
 add_subdirectory(plasmoid)
 add_subdirectory(doc)
 if(LISTALLER)

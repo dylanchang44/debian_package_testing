@@ -31,7 +31,9 @@
 #include <KMessageBox>
 #include <KFileItemDelegate>
 #include <KMenu>
+#include <KHelpMenu>
 #include <KTabBar>
+#include <KCmdLineArgs>
 
 #include <PackageModel.h>
 #include <ApplicationSortFilterModel.h>
@@ -41,7 +43,7 @@
 #include <PkTransactionWidget.h>
 
 #ifdef HAVE_APPSTREAM
-#include <AppStream/AppStreamDb.h>
+#include <AppStream.h>
 #endif
 
 #include <KDebug>
@@ -62,7 +64,7 @@
 KCONFIGGROUP_DECLARE_ENUM_QOBJECT(Transaction, Filter)
 
 K_PLUGIN_FACTORY(ApperFactory, registerPlugin<ApperKCM>();)
-K_EXPORT_PLUGIN(ApperFactory("kcm_apper"))
+K_EXPORT_PLUGIN(ApperFactory("kcm_apper", "apper"))
 
 ApperKCM::ApperKCM(QWidget *parent, const QVariantList &args) :
     KCModule(ApperFactory::componentData(), parent, args),
@@ -79,16 +81,15 @@ ApperKCM::ApperKCM(QWidget *parent, const QVariantList &args) :
     m_searchRole(Transaction::RoleUnknown)
 {
     KAboutData *aboutData;
-    aboutData = new KAboutData("apper",
+    aboutData = new KAboutData("kcm_apper",
                                "apper",
                                ki18n("Application Manager"),
                                APP_VERSION,
                                ki18n("KDE interface for managing software"),
                                KAboutData::License_GPL,
-                               ki18n("(C) 2008-2011 Daniel Nicoletti"));
+                               ki18n("(C) 2008-2013 Daniel Nicoletti"));
     setAboutData(aboutData);
     setButtons(Apply);
-    KGlobal::insertCatalog(QLatin1String("apper"));
 
     // store the actions supported by the backend
     m_roles = Daemon::global()->actions();
@@ -109,7 +110,7 @@ ApperKCM::ApperKCM(QWidget *parent, const QVariantList &args) :
     toolBar->setToolButtonStyle(Qt::ToolButtonTextBesideIcon);
 
     connect(ui->browseView, SIGNAL(categoryActivated(QModelIndex)),
-            this, SLOT(on_homeView_clicked(QModelIndex)));
+            this, SLOT(on_homeView_activated(QModelIndex)));
 
     QMenu *findMenu = new QMenu(this);
     // find is just a generic name in case we don't have any search method
@@ -220,6 +221,13 @@ ApperKCM::ApperKCM(QWidget *parent, const QVariantList &args) :
             signalMapper, SLOT(map()));
     connect(signalMapper, SIGNAL(mapped(QString)),
             this, SLOT(setPage(QString)));
+
+    // Only show help menu if not on System Settings
+    if (!args.isEmpty()) {
+        // adds the help menu
+        KHelpMenu *helpMenu = new KHelpMenu(this, KCmdLineArgs::aboutData());
+        menu->addMenu(helpMenu->menu());
+    }
 
     // Make sure the search bar is visible
     ui->stackedWidgetBar->setCurrentIndex(BAR_SEARCH);
@@ -370,7 +378,7 @@ void ApperKCM::on_actionFindFile_triggered()
     }
 }
 
-void ApperKCM::on_homeView_clicked(const QModelIndex &index)
+void ApperKCM::on_homeView_activated(const QModelIndex &index)
 {
     if (index.isValid()) {
         const QSortFilterProxyModel *proxy;
@@ -383,12 +391,12 @@ void ApperKCM::on_homeView_clicked(const QModelIndex &index)
         }
 
         // cache the search
-        m_searchRole    = static_cast<Transaction::Role>(index.data(CategoryModel::SearchRole).toUInt());
+        m_searchRole = static_cast<Transaction::Role>(index.data(CategoryModel::SearchRole).toUInt());
         kDebug() << m_searchRole << index.data(CategoryModel::CategoryRole).toString();
         if (m_searchRole == Transaction::RoleResolve) {
 #ifdef HAVE_APPSTREAM
             CategoryMatcher parser = index.data(CategoryModel::CategoryRole).value<CategoryMatcher>();
-            m_searchCategory = AppStreamDb::instance()->findPkgNames(parser);
+            m_searchCategory = AppStream::instance()->findPkgNames(parser);
 #endif // HAVE_APPSTREAM
         } else if (m_searchRole == Transaction::RoleSearchGroup) {
             if (index.data(CategoryModel::GroupRole).type() == QVariant::String) {
@@ -403,7 +411,9 @@ void ApperKCM::on_homeView_clicked(const QModelIndex &index)
                 }
             } else {
                 m_searchGroupCategory.clear();
-                m_searchGroup = index.data(CategoryModel::GroupRole).value<PackageKit::Transaction::Group>();
+                int groupRole = index.data(CategoryModel::GroupRole).toInt();
+                m_searchGroup = static_cast<PackageKit::Transaction::Group>(groupRole);
+                m_searchString = index.data().toString(); // Store the nice name to change the title
             }
         } else if (m_searchRole == Transaction::RoleGetUpdates) {
             setPage("updates");
@@ -477,6 +487,8 @@ void ApperKCM::setPage(const QString &page)
                 m_settingsPage = new Settings(m_roles, this);
                 connect(m_settingsPage, SIGNAL(changed(bool)),
                         this, SLOT(checkChanged()));
+                connect(m_settingsPage, SIGNAL(refreshCache()),
+                        SLOT(refreshCache()));
                 ui->stackedWidget->addWidget(m_settingsPage);
 
                 connect(ui->generalSettingsPB, SIGNAL(toggled(bool)),
@@ -494,6 +506,7 @@ void ApperKCM::setPage(const QString &page)
             m_settingsPage->load();
             ui->titleL->clear();
             ui->backTB->setEnabled(true);
+            emit caption(i18n("Settings"));
         }
     } else if (page == QLatin1String("updates")) {
         if (ui->stackedWidget->currentWidget() != m_updaterPage) {
@@ -520,6 +533,7 @@ void ApperKCM::setPage(const QString &page)
             m_updaterPage->load();
             ui->stackedWidgetBar->setCurrentIndex(BAR_UPDATE);
             ui->backTB->setEnabled(true);
+            emit caption(i18n("Updates"));
         }
     } else if (page == QLatin1String("home")) {
         if (ui->stackedWidget->currentWidget() == m_updaterPage ||
@@ -536,6 +550,7 @@ void ApperKCM::setPage(const QString &page)
         ui->backTB->setEnabled(true);
         ui->filtersTB->setEnabled(false);
         ui->widget->setEnabled(false);
+        emit caption(i18n("History"));
     }
 }
 
@@ -580,6 +595,7 @@ void ApperKCM::on_backTB_clicked()
     ui->backTB->setEnabled(canGoBack);
     // reset the search role
     m_searchRole = Transaction::RoleUnknown;
+    emit caption();
 }
 
 void ApperKCM::on_changesPB_clicked()
@@ -588,6 +604,7 @@ void ApperKCM::on_changesPB_clicked()
     m_changesModel->addSelectedPackagesFromModel(m_browseModel);
     ui->stackedWidget->setCurrentWidget(ui->pageChanges);
     ui->backTB->setEnabled(true);
+    emit caption(i18n("Pending Changes"));
 }
 
 void ApperKCM::disconnectTransaction()
@@ -614,6 +631,9 @@ void ApperKCM::disconnectTransaction()
 void ApperKCM::search()
 {
     ui->browseView->cleanUi();
+    if (ui->stackedWidgetBar->currentIndex() != BAR_SEARCH) {
+        ui->stackedWidgetBar->setCurrentIndex(BAR_SEARCH);
+    }
 
     disconnectTransaction();
 
@@ -636,18 +656,24 @@ void ApperKCM::search()
     switch (m_searchRole) {
     case Transaction::RoleSearchName:
         m_searchTransaction->searchNames(m_searchString, m_filtersMenu->filters());
+        emit caption(m_searchString);
         break;
     case Transaction::RoleSearchDetails:
         m_searchTransaction->searchDetails(m_searchString, m_filtersMenu->filters());
+        emit caption(m_searchString);
         break;
     case Transaction::RoleSearchFile:
         m_searchTransaction->searchFiles(m_searchString, m_filtersMenu->filters());
+        emit caption(m_searchString);
         break;
     case Transaction::RoleSearchGroup:
         if (m_searchGroupCategory.isEmpty()) {
             m_searchTransaction->searchGroup(m_searchGroup, m_filtersMenu->filters());
+            // m_searchString has the group nice name
+            emit caption(m_searchString);
         } else {
             ui->browseView->setParentCategory(m_searchParentCategory);
+            emit caption(m_searchParentCategory.data().toString());
 #ifndef HAVE_APPSTREAM
             if (m_searchGroupCategory.startsWith('@') ||
                 m_searchGroupCategory.startsWith(QLatin1String("repo:"))) {
@@ -663,6 +689,7 @@ void ApperKCM::search()
         connect(m_searchTransaction, SIGNAL(finished(PackageKit::Transaction::Exit,uint)),
                 ui->browseView, SLOT(enableExportInstalledPB()));
         m_searchTransaction->getPackages(Transaction::FilterInstalled | m_filtersMenu->filters());
+        emit caption(i18n("Installed Software"));
         break;
     case Transaction::RoleResolve:
 #ifdef HAVE_APPSTREAM
@@ -671,9 +698,11 @@ void ApperKCM::search()
             // WARNING the resolve might fail if the backend
             // has a low limit MaximumItemsToResolve
             m_searchTransaction->resolve(m_searchCategory, m_filtersMenu->filters());
+            emit caption(m_searchParentCategory.data().toString());
         } else {
             ui->browseView->setParentCategory(m_searchParentCategory);
             KMessageBox::sorry(this, i18n("Could not find an application that matched this category"));
+            emit caption();
             disconnectTransaction();
             m_searchTransaction = 0;
             return;
@@ -682,12 +711,13 @@ void ApperKCM::search()
 #endif
     default:
         kWarning() << "Search type not defined yet";
+        emit caption();
         disconnectTransaction();
         m_searchTransaction = 0;
         return;
     }
 
-    Transaction::InternalError error = m_searchTransaction->error();
+    Transaction::InternalError error = m_searchTransaction->internalError();
     if (error) {
         setCurrentActionEnabled(true);
         disconnectTransaction();
@@ -717,17 +747,17 @@ void ApperKCM::changed()
 
 void ApperKCM::refreshCache()
 {
-    QWidget *currentWidget = ui->stackedWidget->currentWidget();
     emit changed(false);
 
+    QWidget *currentWidget = ui->stackedWidget->currentWidget();
+
     PkTransactionWidget *transactionW = new PkTransactionWidget(this);
-    PkTransaction *transaction = new PkTransaction(transactionW);
-    QWeakPointer<PkTransaction> pointer = transaction;
+    connect(transactionW, SIGNAL(titleChangedProgress(QString)), this, SIGNAL(caption(QString)));
+    QPointer<PkTransaction> transaction = new PkTransaction(transactionW);
     transactionW->setTransaction(transaction, Transaction::RoleRefreshCache);
 
     ui->stackedWidget->addWidget(transactionW);
     ui->stackedWidget->setCurrentWidget(transactionW);
-    int oldBar = ui->stackedWidgetBar->currentIndex();
     ui->stackedWidgetBar->setCurrentIndex(BAR_TITLE);
     ui->backTB->setEnabled(false);
     connect(transactionW, SIGNAL(titleChanged(QString)),
@@ -740,7 +770,7 @@ void ApperKCM::refreshCache()
     // wait for the end of transaction
     if (!transaction->isFinished()) {
         loop.exec();
-        if (pointer.isNull()) {
+        if (!transaction) {
             // Avoid crashing
             return;
         }
@@ -749,18 +779,16 @@ void ApperKCM::refreshCache()
         m_forceRefreshCache = transaction->exitStatus() == PkTransaction::Failed;
     }
 
-    // Finished setup old stuff
-    ui->backTB->setEnabled(true);
-    ui->stackedWidget->setCurrentWidget(currentWidget);
-    ui->stackedWidgetBar->setCurrentIndex(oldBar);
-    transactionW->deleteLater();
-    transaction->deleteLater();
-    if (currentWidget == m_updaterPage) {
+    if (m_updaterPage) {
         m_updaterPage->getUpdates();
-    } else {
-        // install then remove packages
-        search();
     }
+
+    if (currentWidget == m_settingsPage) {
+        setPage("settings");
+    } else {
+        setPage("updates");
+    }
+
     QTimer::singleShot(0, this, SLOT(checkChanged()));
 }
 
@@ -771,12 +799,11 @@ void ApperKCM::save()
         m_settingsPage->save();
     } else {
         PkTransactionWidget *transactionW = new PkTransactionWidget(this);
-        PkTransaction *transaction = new PkTransaction(transactionW);
-        QWeakPointer<PkTransaction> pointer = transaction;
+        connect(transactionW, SIGNAL(titleChangedProgress(QString)), this, SIGNAL(caption(QString)));
+        QPointer<PkTransaction> transaction = new PkTransaction(transactionW);
 
         ui->stackedWidget->addWidget(transactionW);
         ui->stackedWidget->setCurrentWidget(transactionW);
-        int oldBar = ui->stackedWidgetBar->currentIndex();
         ui->stackedWidgetBar->setCurrentIndex(BAR_TITLE);
         ui->backTB->setEnabled(false);
         connect(transactionW, SIGNAL(titleChanged(QString)),
@@ -792,7 +819,7 @@ void ApperKCM::save()
             // wait for the end of transaction
             if (!transaction->isFinished()) {
                 loop.exec();
-                if (pointer.isNull()) {
+                if (!transaction) {
                     // Avoid crashing
                     return;
                 }
@@ -807,7 +834,7 @@ void ApperKCM::save()
                 // wait for the end of transaction
                 if (!transaction->isFinished()) {
                     loop.exec();
-                    if (pointer.isNull()) {
+                    if (!transaction) {
                         // Avoid crashing
                         return;
                     }
@@ -826,7 +853,7 @@ void ApperKCM::save()
                 // wait for the end of transaction
                 if (!transaction->isFinished()) {
                     loop.exec();
-                    if (pointer.isNull()) {
+                    if (!transaction) {
                         // Avoid crashing
                         return;
                     }
@@ -838,13 +865,10 @@ void ApperKCM::save()
             }
         }
 
-        // Finished setup old stuff
-        ui->backTB->setEnabled(true);
-        ui->stackedWidget->setCurrentWidget(currentWidget);
-        ui->stackedWidgetBar->setCurrentIndex(oldBar);
         transaction->deleteLater();
         if (currentWidget == m_updaterPage) {
             m_updaterPage->getUpdates();
+            setPage("updates");
         } else {
             // install then remove packages
             search();
