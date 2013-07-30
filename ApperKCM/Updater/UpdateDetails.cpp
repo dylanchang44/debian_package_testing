@@ -41,7 +41,7 @@ UpdateDetails::UpdateDetails(QWidget *parent)
    m_transaction(0)
 {
     setupUi(this);
-
+    hideTB->setIcon(KIcon("window-close"));
     connect(hideTB, SIGNAL(clicked()), this, SLOT(hide()));
 
     m_busySeq = new KPixmapSequenceOverlayPainter(this);
@@ -109,7 +109,7 @@ void UpdateDetails::setPackage(const QString &packageId, Transaction::Info updat
     connect(m_transaction, SIGNAL(finished(PackageKit::Transaction::Exit,uint)),
             this, SLOT(display()));
     m_transaction->getUpdateDetail(m_packageId);
-    Transaction::InternalError error = m_transaction->error();
+    Transaction::InternalError error = m_transaction->internalError();
     if (error) {
         disconnect(m_transaction, SIGNAL(finished(PackageKit::Transaction::Exit,uint)),
                    this, SLOT(display()));
@@ -146,6 +146,8 @@ void UpdateDetails::hide()
 
 void UpdateDetails::display()
 {
+    kDebug() << sender();
+
     // set transaction to 0 as if PK crashes
     // UpdateDetails won't be emmited
     m_transaction = 0;
@@ -162,6 +164,8 @@ void UpdateDetails::display()
 
         m_fadeDetails->setDirection(QAbstractAnimation::Forward);
         m_fadeDetails->start();
+    } else if (m_currentDescription.isEmpty()) {
+        updateDetailFinished();
     }
 }
 

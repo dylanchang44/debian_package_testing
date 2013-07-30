@@ -19,7 +19,6 @@ import QtQuick 1.1
 import org.kde.plasma.core 0.1 as PlasmaCore
 import org.kde.plasma.components 0.1 as PlasmaComponents
 import org.kde.apper 0.1 as Apper
-import org.packagekit 0.1 as PackageKit
 
 FocusScope {
     id: transactionItem
@@ -28,6 +27,8 @@ FocusScope {
     clip: true
 
     property int progressWidth: 30
+    property alias transaction: updateTransaction
+
     signal finished(bool success);
 
     function update(updates) {

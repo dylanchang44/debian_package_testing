@@ -39,7 +39,7 @@ namespace Ui {
 class PackageModel;
 class PackageDetails : public QWidget
 {
-Q_OBJECT
+    Q_OBJECT
 public:
     enum FadeWidget {
         FadeNone       = 0x0,
@@ -47,7 +47,7 @@ public:
         FadeScreenshot = 0x2
     };
     Q_DECLARE_FLAGS(FadeWidgets, FadeWidget)
-    PackageDetails(QWidget *parent = 0);
+    explicit PackageDetails(QWidget *parent = 0);
     ~PackageDetails();
 
     void init(PackageKit::Transaction::Roles roles);
@@ -81,6 +81,8 @@ private:
     void fadeOut(FadeWidgets widgets);
     void setupDescription();
     QVector<QPair<QString, QString> > locateApplication(const QString &_relPath, const QString &menuId) const;
+    QString thumbnail(const QString &pkgName) const;
+    QString screenshot(const QString &pkgName) const;
 
     Ui::PackageDetails *ui;
     QActionGroup *m_actionGroup;

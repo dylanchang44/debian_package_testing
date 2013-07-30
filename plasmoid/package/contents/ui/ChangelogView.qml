@@ -17,7 +17,7 @@
 
 import QtQuick 1.1
 import org.kde.plasma.components 0.1 as PlasmaComponents
-import org.packagekit 0.1 as PackageKit
+import org.kde.apper 0.1 as Apper
 
 Item {
     id: changelogItem
@@ -26,7 +26,15 @@ Item {
 
     property string updatesList: ""
 
-    PackageKit.Transaction {
+    function transactionFinished() {
+        if (changelogItem.state != "DETAILS") {
+            statusView.title = i18n("Failed to get update details");
+            statusView.subTitle = transaction.internalErrorMessage;
+            changelogItem.state = "ERROR";
+        }
+    }
+
+    Apper.Transaction {
         id: transaction
         onUpdateDetail: {
             for (var count = 0; count < updates.length; ++count) {
@@ -45,16 +53,35 @@ Item {
             }
             changelogItem.state = "DETAILS";
         }
+        onChanged: {
+            busyView.title = PkStrings.action(role, transactionFlags);
+            busyView.subTitle = PkStrings.status(status);
+        }
     }
 
-    PlasmaComponents.BusyIndicator {
-        id: busy
-        anchors.centerIn: parent
-        running: true
+    StatusView {
+        id: busyView
+        opacity: 0
+        anchors.left: parent.left
+        anchors.right: parent.right
+        anchors.verticalCenter: parent.verticalCenter
+        state: "BUSY"
+        iconSize: 32
+    }
+
+    StatusView {
+        id: statusView
+        opacity: 0
+        anchors.left: parent.left
+        anchors.right: parent.right
+        anchors.verticalCenter: parent.verticalCenter
+        iconSize: 32
+        iconName: "dialog-error"
     }
 
     Column {
         id: detailsColumn
+        opacity: 0
         spacing: 2
         anchors.left: parent.left
         anchors.top: parent.top
@@ -82,13 +109,17 @@ Item {
     states: [
         State {
             name: "FETCHING"
-            PropertyChanges { target: detailsColumn; opacity: 0 }
-            PropertyChanges { target: changelogItem; height: busy.height }
+            PropertyChanges { target: busyView; opacity: 1 }
+            PropertyChanges { target: changelogItem; height: busyView.preferedHeight }
+        },
+        State {
+            name: "ERROR"
+            PropertyChanges { target: statusView; opacity: 1 }
+            PropertyChanges { target: changelogItem; height: statusView.preferedHeight }
         },
         State {
             name: "DETAILS"
-            PropertyChanges { target: busy; opacity: 0 }
-            PropertyChanges { target: busy; running: false }
+            PropertyChanges { target: detailsColumn; opacity: 1 }
             PropertyChanges { target: changelogItem; height: detailsColumn.height }
         }
     ]
@@ -98,6 +129,13 @@ Item {
     }
 
     Component.onCompleted: {
+        transaction.finished.connect(transactionFinished);
         transaction.getUpdateDetail(rId);
+        var error = transaction.internalError;
+        if (error) {
+            statusView.title = PkStrings.daemonError(error);
+            statusView.subTitle = transaction.internalErrorMessage;
+            changelogItem.state = "ERROR";
+        }
     }
 }

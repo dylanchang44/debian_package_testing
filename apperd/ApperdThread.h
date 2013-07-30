@@ -29,6 +29,8 @@ class DistroUpgrade;
 class RefreshCacheTask;
 class TransactionWatcher;
 class Updater;
+class AptRebootListener;
+
 class ApperdThread : public QObject
 {
     Q_OBJECT
@@ -45,7 +47,6 @@ private slots:
     void proxyChanged();
     void setProxy();
 
-    void transactionListChanged(const QStringList &tids);
     void updatesChanged();
     void appShouldConserveResourcesChanged();
 
@@ -64,6 +65,9 @@ private:
     RefreshCacheTask *m_refreshCache;
     TransactionWatcher *m_transactionWatcher;
     Updater *m_updater;
+
+    // Apt reboot listener
+    AptRebootListener *m_AptRebootListener;
 };
 
 #endif // APPERDTHREAD_H

@@ -57,6 +57,7 @@ public:
 
 signals:
     void changed(bool state);
+    void caption(const QString &title = QString());
 
 public slots:
     void load();
@@ -76,7 +77,7 @@ private slots:
     void on_actionFindDescription_triggered();
     void on_actionFindFile_triggered();
 
-    void on_homeView_clicked(const QModelIndex &index);
+    void on_homeView_activated(const QModelIndex &index);
 
     void finished();
     void errorCode(PackageKit::Transaction::Error error, const QString &detail);

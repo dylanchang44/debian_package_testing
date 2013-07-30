@@ -29,11 +29,11 @@
 
 #include <KDebug>
 
-using namespace PackageKit;
-
 RefreshCacheTask::RefreshCacheTask(QObject *parent) :
     QObject(parent),
-    m_transaction(0)
+    m_transaction(0),
+    m_notification(0),
+    m_lastError(Transaction::ErrorUnknown)
 {
 }
 
@@ -43,21 +43,21 @@ void RefreshCacheTask::refreshCache()
     if (!m_transaction) {
         m_transaction = new Transaction(this);
         connect(m_transaction, SIGNAL(finished(PackageKit::Transaction::Exit,uint)),
-                this, SLOT(refreshCacheFinished(PackageKit::Transaction::Exit)));
+                this, SLOT(refreshCacheFinished(PackageKit::Transaction::Exit,uint)));
         connect(m_transaction, SIGNAL(errorCode(PackageKit::Transaction::Error,QString)),
                 this, SLOT(errorCode(PackageKit::Transaction::Error,QString)));
 
         // Refresh Cache is false otherwise it will rebuild
         // the whole cache on Fedora
         m_transaction->refreshCache(false);
-        if (m_transaction->error()) {
+        if (m_transaction->internalError() && !m_notification) {
             m_notification = new KNotification("TransactionFailed", KNotification::Persistent, this);
             m_notification->setComponentData(KComponentData("apperd"));
             connect(m_notification, SIGNAL(closed()), this, SLOT(notificationClosed()));
             KIcon icon("dialog-cancel");
             // use of QSize does the right thing
             m_notification->setPixmap(icon.pixmap(QSize(KPK_ICON_SIZE, KPK_ICON_SIZE)));
-            m_notification->setText(PkStrings::daemonError(m_transaction->error()));
+            m_notification->setText(PkStrings::daemonError(m_transaction->internalError()));
             m_notification->sendEvent();
         } else {
             m_transaction = 0;
@@ -67,16 +67,21 @@ void RefreshCacheTask::refreshCache()
 
 void RefreshCacheTask::refreshCacheFinished(PackageKit::Transaction::Exit status, uint runtime)
 {
-    Q_UNUSED(status)
     Q_UNUSED(runtime)
+
     m_transaction = 0;
+    if (status == Transaction::ExitSuccess) {
+        m_lastError = Transaction::ErrorUnknown;
+        m_lastErrorString.clear();
+    }
 }
 
 void RefreshCacheTask::errorCode(Transaction::Error error, const QString &errorMessage)
 {
-    // Not decreasing and being Persistent
-    // prevents multiple popups issued by
-    // subsequent refresh cache tries
+    if (m_notification || (m_lastError == error && m_lastErrorString == errorMessage)) {
+        return;
+    }
+
     m_notification = new KNotification("TransactionFailed", KNotification::Persistent, this);
     m_notification->setComponentData(KComponentData("apperd"));
     connect(m_notification, SIGNAL(closed()), this, SLOT(notificationClosed()));

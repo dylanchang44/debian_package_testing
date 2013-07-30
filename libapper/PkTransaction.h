@@ -49,8 +49,11 @@ public:
     Q_INVOKABLE void installFiles(const QStringList &files);
     Q_INVOKABLE void removePackages(const QStringList &packages);
     Q_INVOKABLE void updatePackages(const QStringList &packages, bool downloadOnly = false);
+    Q_INVOKABLE void refreshCache(bool force);
+
 
     QString title() const;
+    Transaction::Role cachedRole() const;
     Transaction::TransactionFlags flags() const;
     Q_INVOKABLE PkTransactionProgressModel* progressModel() const;
     Q_INVOKABLE void enableJobWatcher(bool enable);
@@ -101,16 +104,13 @@ private slots:
 
     void setExitStatus(PkTransaction::ExitStatus status = PkTransaction::Success);
     void reject();
+    void reset();
 
 private:
     void showDialog(KDialog *dialog);
     void showError(const QString &title, const QString &description, const QString &details = QString());
     void showSorry(const QString &title, const QString &description, const QString &details = QString());
 
-    bool m_handlingActionRequired;
-    bool m_showingError; //This might replace the above
-    ExitStatus m_exitStatus;
-    Transaction::Status m_status;
     PkTransactionPrivate *d;
 };
 

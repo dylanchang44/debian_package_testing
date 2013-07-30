@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kpackagekit\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-01-08 12:21+0100\n"
+"POT-Creation-Date: 2013-07-07 01:35+0000\n"
 "PO-Revision-Date: 2011-04-24 13:30-0700\n"
 "Last-Translator: Fumiaki Okushi <okushi@kde.gr.jp>\n"
 "Language-Team: Japanese <Kdeveloper@kde.gr.jp>\n"
@@ -26,121 +26,121 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "kom@kde.gr.jp"
 
-#: Apper/BackendDetails.cpp:31
+#: Apper/BackendDetails.cpp:34
 #, fuzzy
 #| msgid "Show backend details"
 msgid "Backend Details"
 msgstr "バックエンドの詳細を表示"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: Apper/BackendDetails.ui:26
+#: Apper/BackendDetails.ui:39
 msgid "About Backend"
 msgstr "バックエンドについて"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: Apper/BackendDetails.ui:32
+#: Apper/BackendDetails.ui:45
 msgid "Backend name:"
 msgstr "バックエンド名:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: Apper/BackendDetails.ui:46
+#: Apper/BackendDetails.ui:59
 msgid "Backend description:"
 msgstr "バックエンド記述:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: Apper/BackendDetails.ui:60
+#: Apper/BackendDetails.ui:73
 msgid "Backend author:"
 msgstr "バックエンド作者:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: Apper/BackendDetails.ui:74
+#: Apper/BackendDetails.ui:87
 msgid "Distribution ID:"
 msgstr ""
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
-#: Apper/BackendDetails.ui:94
+#: Apper/BackendDetails.ui:107
 msgid "Methods"
 msgstr "メソッド"
 
 #. i18n: ectx: property (text), widget (QCheckBox, getUpdatesCB)
-#: Apper/BackendDetails.ui:103
+#: Apper/BackendDetails.ui:116
 #, fuzzy
 #| msgid "GetUpdates"
 msgid "Get Updates"
 msgstr "アップデートを取得"
 
 #. i18n: ectx: property (text), widget (QCheckBox, refreshCacheCB)
-#: Apper/BackendDetails.ui:113
+#: Apper/BackendDetails.ui:126 ApperKCM/Settings/Settings.cpp:52
 #, fuzzy
 #| msgid "RefreshCache"
 msgid "Refresh Cache"
 msgstr "キャッシュ更新"
 
 #. i18n: ectx: property (text), widget (QCheckBox, searchNameCB)
-#: Apper/BackendDetails.ui:123
+#: Apper/BackendDetails.ui:136
 #, fuzzy
 #| msgid "SearchName"
 msgid "Search Name"
 msgstr "名前で検索"
 
 #. i18n: ectx: property (text), widget (QCheckBox, getDependsCB)
-#: Apper/BackendDetails.ui:133
+#: Apper/BackendDetails.ui:146
 #, fuzzy
 #| msgid "GetPackages"
 msgid "Get Package Depends"
 msgstr "パッケージを取得"
 
 #. i18n: ectx: property (text), widget (QCheckBox, searchDetailsCB)
-#: Apper/BackendDetails.ui:143
+#: Apper/BackendDetails.ui:156
 #, fuzzy
 #| msgid "SearchDetails"
 msgid "Search Details"
 msgstr "詳細を検索"
 
 #. i18n: ectx: property (text), widget (QCheckBox, getRequiresCB)
-#: Apper/BackendDetails.ui:153
+#: Apper/BackendDetails.ui:166
 #, fuzzy
 #| msgid "Cannot get package requires"
 msgid "Get Package Requires"
 msgstr "必要なパッケージを取得できません"
 
 #. i18n: ectx: property (text), widget (QCheckBox, searchGroupCB)
-#: Apper/BackendDetails.ui:163
+#: Apper/BackendDetails.ui:176
 #, fuzzy
 #| msgid "SearchGroup"
 msgid "Search Group"
 msgstr "グループを検索"
 
 #. i18n: ectx: property (text), widget (QCheckBox, getUpdateDetailCB)
-#: Apper/BackendDetails.ui:173
+#: Apper/BackendDetails.ui:186
 #, fuzzy
 #| msgid "GetUpdateDetail"
 msgid "Get Update Detail"
 msgstr "アップデートの詳細を取得"
 
 #. i18n: ectx: property (text), widget (QCheckBox, searchFileCB)
-#: Apper/BackendDetails.ui:183
+#: Apper/BackendDetails.ui:196
 #, fuzzy
 #| msgid "SearchFile"
 msgid "Search File"
 msgstr "ファイルを検索"
 
 #. i18n: ectx: property (text), widget (QCheckBox, getDescriptionCB)
-#: Apper/BackendDetails.ui:193
+#: Apper/BackendDetails.ui:206
 #, fuzzy
 #| msgid "GetDescription"
 msgid "Get Package Description"
 msgstr "記述を取得"
 
 #. i18n: ectx: property (text), widget (QCheckBox, getFilesCB)
-#: Apper/BackendDetails.ui:203
+#: Apper/BackendDetails.ui:216
 #, fuzzy
 #| msgid "GetPackages"
 msgid "Get Package Files"
 msgstr "パッケージを取得"
 
 #. i18n: ectx: property (text), widget (QCheckBox, getDistroUpgradesCB)
-#: Apper/BackendDetails.ui:213
+#: Apper/BackendDetails.ui:226
 #, fuzzy
 #| msgctxt "The role of the transaction, in past tense"
 #| msgid "Got distribution upgrades"
@@ -148,7 +148,7 @@ msgid "Get Distro Upgrades"
 msgstr "ディストリビューションアップグレードを取得済"
 
 #. i18n: ectx: property (text), widget (QCheckBox, installPackageCB)
-#: Apper/BackendDetails.ui:223
+#: Apper/BackendDetails.ui:236
 #, fuzzy
 #| msgctxt "The role of the transaction, in past tense"
 #| msgid "Installed packages"
@@ -156,66 +156,66 @@ msgid "Install Packages"
 msgstr "パッケージをインストール済"
 
 #. i18n: ectx: property (text), widget (QCheckBox, updatePackageCB)
-#: Apper/BackendDetails.ui:233
+#: Apper/BackendDetails.ui:246
 #, fuzzy
 #| msgid "UpdatePackage"
 msgid "Update Packages"
 msgstr "パッケージをアップデート"
 
 #. i18n: ectx: property (text), widget (QCheckBox, removePackageCB)
-#: Apper/BackendDetails.ui:243
+#: Apper/BackendDetails.ui:256
 #, fuzzy
 #| msgid "RemovePackage"
 msgid "Remove Packages"
 msgstr "パッケージを削除"
 
 #. i18n: ectx: property (text), widget (QCheckBox, installFileCB)
-#: Apper/BackendDetails.ui:253
+#: Apper/BackendDetails.ui:266
 #, fuzzy
 #| msgid "InstallFIle"
 msgid "Install Files"
 msgstr "ファイルをインストール"
 
 #. i18n: ectx: property (text), widget (QCheckBox, resolveCB)
-#: Apper/BackendDetails.ui:263
+#: Apper/BackendDetails.ui:276
 msgid "Resolve"
 msgstr "解決"
 
 #. i18n: ectx: property (text), widget (QCheckBox, cancelCB)
-#: Apper/BackendDetails.ui:273
+#: Apper/BackendDetails.ui:286
 msgid "Cancel"
 msgstr "キャンセル"
 
 #. i18n: ectx: property (text), widget (QCheckBox, repairSystemCB)
-#: Apper/BackendDetails.ui:283
+#: Apper/BackendDetails.ui:296
 #, fuzzy
 #| msgid "UpdateSystem"
 msgid "Repair System"
 msgstr "システムアップデート"
 
 #. i18n: ectx: property (text), widget (QCheckBox, upgradeSystemCB)
-#: Apper/BackendDetails.ui:293
+#: Apper/BackendDetails.ui:306
 #, fuzzy
 #| msgid "UpdateSystem"
 msgid "Upgrade System"
 msgstr "システムアップデート"
 
 #. i18n: ectx: property (text), widget (QCheckBox, getPackagesCB)
-#: Apper/BackendDetails.ui:303
+#: Apper/BackendDetails.ui:316
 #, fuzzy
 #| msgid "GetPackages"
 msgid "Get Packages"
 msgstr "パッケージを取得"
 
 #. i18n: ectx: property (text), widget (QCheckBox, whatProvidesCB)
-#: Apper/BackendDetails.ui:313
+#: Apper/BackendDetails.ui:326
 #, fuzzy
 #| msgid "WhatProvides"
 msgid "What Provides"
 msgstr "提供パッケージ"
 
 #. i18n: ectx: property (text), widget (QCheckBox, repositorySetEnableCB)
-#: Apper/BackendDetails.ui:323
+#: Apper/BackendDetails.ui:336
 #, fuzzy
 #| msgctxt "The role of the transaction, in past tense"
 #| msgid "Set repository data"
@@ -223,7 +223,7 @@ msgid "Set Repository Data"
 msgstr "リポジトリデータを設定済"
 
 #. i18n: ectx: property (text), widget (QCheckBox, repositoryEnableCB)
-#: Apper/BackendDetails.ui:333
+#: Apper/BackendDetails.ui:346
 #, fuzzy
 #| msgctxt "The role of the transaction, in past tense"
 #| msgid "Enabled repository"
@@ -231,7 +231,7 @@ msgid "Enable Repository"
 msgstr "リポジトリを有効化済"
 
 #. i18n: ectx: property (text), widget (QCheckBox, getRepositoryListCB)
-#: Apper/BackendDetails.ui:343
+#: Apper/BackendDetails.ui:356
 #, fuzzy
 #| msgid "GetRepositoryList"
 msgid "Get Repository List"
@@ -245,7 +245,7 @@ msgstr "フィルタ"
 
 #. i18n: ectx: property (text), widget (QCheckBox, installedCB)
 #: Apper/BackendDetails.ui:375 ApperKCM/FiltersMenu.cpp:60
-#: libapper/PkStrings.cpp:359
+#: libapper/PkStrings.cpp:379
 msgid "Installed"
 msgstr "インストール済"
 
@@ -286,6 +286,20 @@ msgstr "サポートされている"
 msgid "Only native"
 msgstr "テキストのみ"
 
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_4)
+#: Apper/BackendDetails.ui:455
+#, fuzzy
+#| msgid "Package"
+msgid "PackageKit"
+msgstr "パッケージ"
+
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: Apper/BackendDetails.ui:461
+#, fuzzy
+#| msgid "Version"
+msgid "Version:"
+msgstr "バージョン"
+
 #: Apper/main.cpp:54 PkSession/main.cpp:34
 msgid "Apper"
 msgstr ""
@@ -296,10 +310,10 @@ msgstr ""
 msgid "Apper is an Application to Get and Manage Software"
 msgstr "KPackageKit はソフトウェア管理のソフトウェアです"
 
-#: Apper/main.cpp:58 ApperKCM/ApperKCM.cpp:86
+#: Apper/main.cpp:58 ApperKCM/ApperKCM.cpp:90 PkSession/main.cpp:38
 #, fuzzy
 #| msgid "(C) 2008-2009 Daniel Nicoletti"
-msgid "(C) 2008-2011 Daniel Nicoletti"
+msgid "(C) 2008-2013 Daniel Nicoletti"
 msgstr "(C) 2008-2009 Daniel Nicoletti"
 
 #: Apper/main.cpp:60 PkSession/main.cpp:40
@@ -314,45 +328,45 @@ msgstr "Adrien Bustany"
 msgid "libpackagekit-qt and other stuff"
 msgstr "libpackagekit-qt とその他"
 
-#: Apper/main.cpp:66
+#: Apper/main.cpp:67
 msgid "Show updates"
 msgstr "アップデートを表示"
 
-#: Apper/main.cpp:67
+#: Apper/main.cpp:68
 msgid "Show settings"
 msgstr "設定を表示"
 
-#: Apper/main.cpp:68
+#: Apper/main.cpp:69
 msgid "Show backend details"
 msgstr "バックエンドの詳細を表示"
 
-#: Apper/main.cpp:69
+#: Apper/main.cpp:70
 msgid "Mime type installer"
 msgstr "Mime タイプインストーラ"
 
-#: Apper/main.cpp:70
+#: Apper/main.cpp:71
 msgid "Package name installer"
 msgstr "パッケージ名インストーラ"
 
-#: Apper/main.cpp:71
+#: Apper/main.cpp:72
 msgid "Single file installer"
 msgstr "単一ファイルインストーラ"
 
-#: Apper/main.cpp:72
+#: Apper/main.cpp:73
 #, fuzzy
 #| msgid "Catalog installer"
 msgid "Font resource installer"
 msgstr "パッケージ名インストーラ"
 
-#: Apper/main.cpp:73
+#: Apper/main.cpp:74
 msgid "Catalog installer"
 msgstr "パッケージ名インストーラ"
 
-#: Apper/main.cpp:74
+#: Apper/main.cpp:75
 msgid "Single package remover"
 msgstr "単一パッケージ削除"
 
-#: Apper/main.cpp:75
+#: Apper/main.cpp:76
 msgid "Package file to install"
 msgstr "インストールするパッケージファイル"
 
@@ -368,16 +382,16 @@ msgstr "アップグレートをすぐに開始する"
 msgid "Distribution upgrade finished. "
 msgstr "ディストリビューションアップグレードが完了しました。"
 
-#: apperd/DistroUpgrade.cpp:149 ApperKCM/Updater/DistroUpgrade.cpp:89
+#: apperd/DistroUpgrade.cpp:149 ApperKCM/Updater/DistroUpgrade.cpp:93
 #, kde-format
 msgid "Distribution upgrade process exited with code %1."
 msgstr "ディストリビューションアップデートプロセスがコード %1 で終了しました。"
 
-#: apperd/DistroUpgrade.cpp:167 ApperKCM/Updater/DistroUpgrade.cpp:101
+#: apperd/DistroUpgrade.cpp:167 ApperKCM/Updater/DistroUpgrade.cpp:105
 msgid "The distribution upgrade process failed to start."
 msgstr "ディストリビューションアップデートプロセスの開始に失敗しました。"
 
-#: apperd/DistroUpgrade.cpp:170 ApperKCM/Updater/DistroUpgrade.cpp:105
+#: apperd/DistroUpgrade.cpp:170 ApperKCM/Updater/DistroUpgrade.cpp:109
 msgid ""
 "The distribution upgrade process crashed some time after starting "
 "successfully."
@@ -385,24 +399,28 @@ msgstr ""
 "ディストリビューションアップデートプロセスが開始後に何回かクラッシュしまし"
 "た。"
 
-#: apperd/DistroUpgrade.cpp:173 ApperKCM/Updater/DistroUpgrade.cpp:109
+#: apperd/DistroUpgrade.cpp:173 ApperKCM/Updater/DistroUpgrade.cpp:113
 msgid "The distribution upgrade process failed with an unknown error."
 msgstr ""
 "ディストリビューションアップデートプロセスが未知のエラーで失敗しました。"
 
-#: apperd/TransactionWatcher.cpp:169
+#: apperd/TransactionWatcher.cpp:134
+msgid "The system update has completed"
+msgstr "システムアップデートが完了しました"
+
+#: apperd/TransactionWatcher.cpp:141 apperd/TransactionWatcher.cpp:183
+msgid "Restart"
+msgstr ""
+
+#: apperd/TransactionWatcher.cpp:174
 #, kde-format
 msgid "Package: %2"
 msgid_plural "Packages: %2"
 msgstr[0] "パッケージ: %2"
 msgstr[1] "パッケージ: %2"
 
-#: apperd/TransactionWatcher.cpp:178
-msgid "Restart"
-msgstr ""
-
-#: apperd/TransactionWatcher.cpp:231 ApperKCM/TransactionModel.cpp:48
-#: AppSetup/SetupWizard.cpp:199
+#: apperd/TransactionWatcher.cpp:236 ApperKCM/TransactionModel.cpp:48
+#: AppSetup/SetupWizard.cpp:202
 msgid "Details"
 msgstr "詳細"
 
@@ -444,66 +462,88 @@ msgstr[1] "アップデートをチェック中:"
 msgid "Review"
 msgstr "変更をレビュー"
 
-#: apperd/Updater.cpp:292 libapper/ApplicationsDelegate.cpp:40
+#: apperd/Updater.cpp:292 AppSetup/SetupWizard.cpp:337
+#: libapper/ApplicationsDelegate.cpp:40
 msgid "Install"
 msgstr "インストール"
 
-#: ApperKCM/ApperKCM.cpp:82
+#: ApperKCM/ApperKCM.cpp:86
 #, fuzzy
 #| msgid "Application"
 msgid "Application Manager"
 msgstr "アプリケーション"
 
-#: ApperKCM/ApperKCM.cpp:84
+#: ApperKCM/ApperKCM.cpp:88
 msgid "KDE interface for managing software"
 msgstr "ソフトウェア管理の KDE インターフェース"
 
-#: ApperKCM/ApperKCM.cpp:114 ApperKCM/ApperKCM.cpp:298
+#: ApperKCM/ApperKCM.cpp:117 ApperKCM/ApperKCM.cpp:308
 msgid "Find"
 msgstr "検索"
 
-#: ApperKCM/ApperKCM.cpp:209
+#: ApperKCM/ApperKCM.cpp:212 ApperKCM/ApperKCM.cpp:553
 msgid "History"
 msgstr "履歴"
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, Settings)
-#: ApperKCM/ApperKCM.cpp:215 ApperKCM/Settings/Settings.ui:14
+#: ApperKCM/ApperKCM.cpp:218 ApperKCM/ApperKCM.cpp:509
+#: ApperKCM/Settings/Settings.ui:14
 msgid "Settings"
 msgstr "設定"
 
-#: ApperKCM/ApperKCM.cpp:275 ApperKCM/ApperKCM.cpp:276
-#: ApperKCM/ApperKCM.cpp:277 ApperKCM/ApperKCM.cpp:278
+#: ApperKCM/ApperKCM.cpp:285 ApperKCM/ApperKCM.cpp:286
+#: ApperKCM/ApperKCM.cpp:287 ApperKCM/ApperKCM.cpp:288
 msgid "&Cancel"
 msgstr "キャンセル(&C)"
 
 #. i18n: ectx: property (text), widget (CategorizedView, changesView)
-#: ApperKCM/ApperKCM.cpp:285 ApperKCM/ApperKCM.ui:346
+#: ApperKCM/ApperKCM.cpp:295 ApperKCM/ApperKCM.ui:346
 msgid "Find by &name"
 msgstr "名前で検索(&N)"
 
 #. i18n: ectx: property (text), widget (CategorizedView, changesView)
-#: ApperKCM/ApperKCM.cpp:286 ApperKCM/ApperKCM.ui:356
+#: ApperKCM/ApperKCM.cpp:296 ApperKCM/ApperKCM.ui:356
 msgid "Find by f&ile name"
 msgstr "ファイル名で検索(&I)"
 
 #. i18n: ectx: property (text), widget (CategorizedView, changesView)
-#: ApperKCM/ApperKCM.cpp:287 ApperKCM/ApperKCM.ui:351
+#: ApperKCM/ApperKCM.cpp:297 ApperKCM/ApperKCM.ui:351
 msgid "Find by &description"
 msgstr "記述で検索(&D)"
 
-#: ApperKCM/ApperKCM.cpp:431
+#: ApperKCM/ApperKCM.cpp:447
 msgid ""
 "The settings of the current module have changed.\n"
 "Do you want to apply the changes or discard them?"
 msgstr ""
 
-#: ApperKCM/ApperKCM.cpp:433
+#: ApperKCM/ApperKCM.cpp:449
 #, fuzzy
 #| msgid "Settings"
 msgid "Apply Settings"
 msgstr "設定"
 
-#: ApperKCM/ApperKCM.cpp:670
+#: ApperKCM/ApperKCM.cpp:536 ApperKCM/CategoryModel.cpp:58
+#, fuzzy
+#| msgid "Updates"
+msgid "Updates"
+msgstr "アップデート"
+
+#. i18n: ectx: property (text), widget (QPushButton, changesPB)
+#: ApperKCM/ApperKCM.cpp:607 ApperKCM/ApperKCM.ui:127
+#, fuzzy
+#| msgctxt "transaction state, when we're doing a test transaction"
+#| msgid "Testing changes"
+msgid "Pending Changes"
+msgstr "変更をテスト中"
+
+#: ApperKCM/ApperKCM.cpp:692 ApperKCM/CategoryModel.cpp:50
+#, fuzzy
+#| msgid "Installing unsigned software"
+msgid "Installed Software"
+msgstr "未署名のソフトウェアをインストール中"
+
+#: ApperKCM/ApperKCM.cpp:704
 #, fuzzy
 #| msgid "<h3>Do you want to install this catalog?</h3><ul><li>%2</li></ul>"
 #| msgid_plural ""
@@ -520,14 +560,6 @@ msgstr "ソフトウェアを追加・削除"
 #: ApperKCM/ApperKCM.ui:58
 msgid "Search packages"
 msgstr "パッケージ検索"
-
-#. i18n: ectx: property (text), widget (QPushButton, changesPB)
-#: ApperKCM/ApperKCM.ui:127
-#, fuzzy
-#| msgctxt "transaction state, when we're doing a test transaction"
-#| msgid "Testing changes"
-msgid "Pending Changes"
-msgstr "変更をテスト中"
 
 #. i18n: ectx: property (text), widget (QPushButton, checkUpdatesPB)
 #: ApperKCM/ApperKCM.ui:161
@@ -597,21 +629,9 @@ msgstr "パッケージをインストール済"
 msgid "Install Packages from List..."
 msgstr "パッケージをインストール済"
 
-#: ApperKCM/CategoryModel.cpp:50
-#, fuzzy
-#| msgid "Installing unsigned software"
-msgid "Installed Software"
-msgstr "未署名のソフトウェアをインストール中"
-
 #: ApperKCM/CategoryModel.cpp:53 ApperKCM/CategoryModel.cpp:61
 msgid "Lists"
 msgstr ""
-
-#: ApperKCM/CategoryModel.cpp:58
-#, fuzzy
-#| msgid "Updates"
-msgid "Updates"
-msgstr "アップデート"
 
 #: ApperKCM/CategoryModel.cpp:161 ApperKCM/CategoryModel.cpp:359
 #, fuzzy
@@ -760,42 +780,42 @@ msgstr "コレクションのみ"
 msgid "Hide packages that are not applications"
 msgstr "パッケージに互換性がありません"
 
-#: ApperKCM/PackageDetails.cpp:85
+#: ApperKCM/PackageDetails.cpp:86
 #, fuzzy
 #| msgctxt "Daily refresh the package cache"
 #| msgid "Daily"
 msgid "Display"
 msgstr "毎日"
 
-#: ApperKCM/PackageDetails.cpp:92 AppSetup/SetupWizard.cpp:254
+#: ApperKCM/PackageDetails.cpp:93 AppSetup/SetupWizard.cpp:259
 msgid "Description"
 msgstr "記述"
 
-#: ApperKCM/PackageDetails.cpp:100
+#: ApperKCM/PackageDetails.cpp:101
 #, fuzzy
 #| msgid "Depends on"
 msgid "Depends On"
 msgstr "依存先"
 
-#: ApperKCM/PackageDetails.cpp:129
+#: ApperKCM/PackageDetails.cpp:130
 #, fuzzy
 #| msgid "Required by"
 msgid "Required By"
 msgstr "要求元"
 
-#: ApperKCM/PackageDetails.cpp:158
+#: ApperKCM/PackageDetails.cpp:159
 msgid "File List"
 msgstr "ファイルリスト"
 
-#: ApperKCM/PackageDetails.cpp:518
+#: ApperKCM/PackageDetails.cpp:509
 msgid "No files were found."
 msgstr "ファイルが見つかりませんでした。"
 
-#: ApperKCM/PackageDetails.cpp:566
+#: ApperKCM/PackageDetails.cpp:557
 msgid "Could not fetch software details"
 msgstr ""
 
-#: ApperKCM/PackageDetails.cpp:608
+#: ApperKCM/PackageDetails.cpp:599
 #, fuzzy
 #| msgid "Application"
 msgid "Applications"
@@ -819,13 +839,17 @@ msgstr "隠す"
 msgid "Could not find screen shot."
 msgstr "パッケージが見つかりませんでした"
 
-#: ApperKCM/Settings/OriginModel.cpp:39
+#: ApperKCM/Settings/OriginModel.cpp:36
 #, fuzzy
 #| msgid "Origin of packages"
 msgid "Origin of Packages"
 msgstr "パッケージの配布元"
 
-#: ApperKCM/Settings/Settings.cpp:81
+#: ApperKCM/Settings/Settings.cpp:56
+msgid "A repository was changed, it's highly recommended to refresh the cache"
+msgstr ""
+
+#: ApperKCM/Settings/Settings.cpp:88
 #, fuzzy
 #| msgctxt "Never refresh package cache"
 #| msgid "Never"
@@ -833,46 +857,46 @@ msgctxt "Inform about distribution upgrades"
 msgid "Never"
 msgstr "しない"
 
-#: ApperKCM/Settings/Settings.cpp:84
+#: ApperKCM/Settings/Settings.cpp:91
 #, fuzzy
 #| msgid "Only installed"
 msgctxt "Inform about distribution upgrades"
 msgid "Only stable"
 msgstr "インストール済のみ"
 
-#: ApperKCM/Settings/Settings.cpp:89
+#: ApperKCM/Settings/Settings.cpp:96
 #, fuzzy
 #| msgid "Only development"
 msgctxt "Inform about distribution upgrades"
 msgid "Stable and development"
 msgstr "開発のみ"
 
-#: ApperKCM/Settings/Settings.cpp:93
+#: ApperKCM/Settings/Settings.cpp:100
 msgctxt "Hourly refresh the package cache"
 msgid "Hourly"
 msgstr "毎時"
 
-#: ApperKCM/Settings/Settings.cpp:94
+#: ApperKCM/Settings/Settings.cpp:101
 msgctxt "Daily refresh the package cache"
 msgid "Daily"
 msgstr "毎日"
 
-#: ApperKCM/Settings/Settings.cpp:95
+#: ApperKCM/Settings/Settings.cpp:102
 msgctxt "Weekly refresh the package cache"
 msgid "Weekly"
 msgstr "毎週"
 
-#: ApperKCM/Settings/Settings.cpp:96
+#: ApperKCM/Settings/Settings.cpp:103
 msgctxt "Monthly refresh the package cache"
 msgid "Monthly"
 msgstr "毎月"
 
-#: ApperKCM/Settings/Settings.cpp:97
+#: ApperKCM/Settings/Settings.cpp:104
 msgctxt "Never refresh package cache"
 msgid "Never"
 msgstr "しない"
 
-#: ApperKCM/Settings/Settings.cpp:99
+#: ApperKCM/Settings/Settings.cpp:106
 #, fuzzy
 #| msgctxt "None updates will be automatically installed"
 #| msgid "None"
@@ -880,31 +904,23 @@ msgctxt "No updates will be automatically installed"
 msgid "None"
 msgstr "なし"
 
-#: ApperKCM/Settings/Settings.cpp:100
+#: ApperKCM/Settings/Settings.cpp:107
 #, fuzzy
 #| msgctxt "The action of the package, in past tense"
 #| msgid "Downloaded"
 msgid "Download only"
 msgstr "ダウンロード済"
 
-#: ApperKCM/Settings/Settings.cpp:101
+#: ApperKCM/Settings/Settings.cpp:108
 msgid "Security only"
 msgstr "セキュリティのみ"
 
-#: ApperKCM/Settings/Settings.cpp:102
+#: ApperKCM/Settings/Settings.cpp:109
 msgid "All updates"
 msgstr "すべてのアップデート"
 
-#: ApperKCM/Settings/Settings.cpp:314 libapper/PkStrings.cpp:968
-msgid "You do not have the necessary privileges to perform this action."
-msgstr "このアクションを実行するのに必要な権限がありません。"
-
-#: ApperKCM/Settings/Settings.cpp:315
-msgid "Failed to set origin data"
-msgstr "配布元データ設定に失敗しました"
-
 #. i18n: ectx: property (text), widget (QLabel, intervalL)
-#: ApperKCM/Settings/Settings.ui:50
+#: ApperKCM/Settings/Settings.ui:53
 #, fuzzy
 #| msgid "Check for updates:"
 msgid "Check for new updates:"
@@ -912,35 +928,38 @@ msgstr "アップデートをチェック中:"
 
 #. i18n: ectx: property (text), widget (QCheckBox, checkUpdatesMobileCB)
 #. i18n: ectx: property (text), widget (QCheckBox, installUpdatesMobileCB)
-#: ApperKCM/Settings/Settings.ui:91 ApperKCM/Settings/Settings.ui:159
+#: ApperKCM/Settings/Settings.ui:94 ApperKCM/Settings/Settings.ui:162
 msgid "when on a mobile broadband network connection"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, checkUpdatesBatteryCB)
 #. i18n: ectx: property (text), widget (QCheckBox, installUpdatesBatteryCB)
-#: ApperKCM/Settings/Settings.ui:98 ApperKCM/Settings/Settings.ui:152
+#: ApperKCM/Settings/Settings.ui:101 ApperKCM/Settings/Settings.ui:155
 msgid "when running on battery"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, autoInsL)
-#: ApperKCM/Settings/Settings.ui:117
+#: ApperKCM/Settings/Settings.ui:120
 #, fuzzy
 #| msgid "Automatically install:"
 msgid "Automatically update:"
 msgstr "自動インストール:"
 
 #. i18n: ectx: property (text), widget (QCheckBox, appLauncherCB)
-#: ApperKCM/Settings/Settings.ui:175
+#: ApperKCM/Settings/Settings.ui:178
+#, fuzzy
+#| msgid "A program wants to install a package"
+#| msgid_plural "A program wants to install packages"
 msgid "Show application launcher after installing new applications"
-msgstr ""
+msgstr "プログラムがパッケージをインストールしようとしています"
 
 #. i18n: ectx: property (text), widget (QCheckBox, autoConfirmCB)
-#: ApperKCM/Settings/Settings.ui:182
+#: ApperKCM/Settings/Settings.ui:185
 msgid "Show confirmation dialog when installing or updating packages"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: ApperKCM/Settings/Settings.ui:189
+#: ApperKCM/Settings/Settings.ui:192
 #, fuzzy
 #| msgctxt "The role of the transaction, in past tense"
 #| msgid "Got distribution upgrades"
@@ -948,14 +967,17 @@ msgid "Check for distribution upgrades:"
 msgstr "ディストリビューションアップグレードを取得済"
 
 #. i18n: ectx: property (text), widget (QCheckBox, showOriginsCB)
-#: ApperKCM/Settings/Settings.ui:227
+#: ApperKCM/Settings/Settings.ui:233
 msgid "&Show origins of debug and development packages"
 msgstr "デバッグと開発パッケージの配布元を表示(&S)"
 
 #. i18n: ectx: property (text), widget (QPushButton, editOriginsPB)
-#: ApperKCM/Settings/Settings.ui:247
+#: ApperKCM/Settings/Settings.ui:253
+#, fuzzy
+#| msgctxt "The group type"
+#| msgid "Software sources"
 msgid "Edit Origins"
-msgstr ""
+msgstr "ソフトウェアソース"
 
 #: ApperKCM/TransactionHistory.cpp:66
 msgid "Refresh transactions list"
@@ -970,7 +992,7 @@ msgstr "最後のキャッシュ更新からの間隔:  %1"
 msgid "Date"
 msgstr "日付"
 
-#: ApperKCM/TransactionModel.cpp:47 libapper/PackageModel.cpp:222
+#: ApperKCM/TransactionModel.cpp:47 libapper/PackageModel.cpp:224
 msgid "Action"
 msgstr "アクション"
 
@@ -989,72 +1011,72 @@ msgstr "アプリケーション"
 msgid "Upgrade"
 msgstr "%1 にアップグレード"
 
-#: ApperKCM/Updater/DistroUpgrade.cpp:47
+#: ApperKCM/Updater/DistroUpgrade.cpp:51
 #, fuzzy, kde-format
 #| msgid "Distribution upgrade available"
 msgid "Distribution upgrade available: %1"
 msgstr "ディストリビューションアップグレードが利用可能です"
 
-#: ApperKCM/Updater/DistroUpgrade.cpp:61
+#: ApperKCM/Updater/DistroUpgrade.cpp:65
 msgid ""
 "You are about to upgrade your distribution to the latest version. This is "
 "usually a very lengthy process and takes a lot longer than simply upgrading "
 "your packages."
 msgstr ""
 
-#: ApperKCM/Updater/DistroUpgrade.cpp:66
+#: ApperKCM/Updater/DistroUpgrade.cpp:70
 msgid "It is recommended to plug in your computer before proceeding."
 msgstr ""
 
-#: ApperKCM/Updater/DistroUpgrade.cpp:68
+#: ApperKCM/Updater/DistroUpgrade.cpp:72
 msgid ""
 "It is recommended that you keep your computer plugged in while the upgrade "
 "is being performed."
 msgstr ""
 
-#: ApperKCM/Updater/DistroUpgrade.cpp:87
+#: ApperKCM/Updater/DistroUpgrade.cpp:91
 msgid "Distribution upgrade complete."
 msgstr "ディストリビューションアップグレードが完了しました。"
 
-#: ApperKCM/Updater/UpdateDetails.cpp:187
+#: ApperKCM/Updater/UpdateDetails.cpp:191
 msgid "This update will add new features and expand functionality."
 msgstr ""
 
-#: ApperKCM/Updater/UpdateDetails.cpp:191
+#: ApperKCM/Updater/UpdateDetails.cpp:195
 msgid "This update will fix bugs and other non-critical problems."
 msgstr ""
 
-#: ApperKCM/Updater/UpdateDetails.cpp:195
+#: ApperKCM/Updater/UpdateDetails.cpp:199
 msgid "This update is important as it may solve critical problems."
 msgstr ""
 
-#: ApperKCM/Updater/UpdateDetails.cpp:199
+#: ApperKCM/Updater/UpdateDetails.cpp:203
 msgid ""
 "This update is needed to fix a security vulnerability with this package."
 msgstr ""
 
-#: ApperKCM/Updater/UpdateDetails.cpp:203
+#: ApperKCM/Updater/UpdateDetails.cpp:207
 msgid "This update is blocked."
 msgstr ""
 
-#: ApperKCM/Updater/UpdateDetails.cpp:210
+#: ApperKCM/Updater/UpdateDetails.cpp:214
 #, kde-format
 msgid "This notification was issued on %1 and last updated on %2."
 msgstr ""
 
-#: ApperKCM/Updater/UpdateDetails.cpp:216
+#: ApperKCM/Updater/UpdateDetails.cpp:220
 #, kde-format
 msgid "This notification was issued on %1."
 msgstr ""
 
-#: ApperKCM/Updater/UpdateDetails.cpp:235
+#: ApperKCM/Updater/UpdateDetails.cpp:239
 msgid "For more information about this update please visit this website:"
 msgid_plural ""
 "For more information about this update please visit these websites:"
 msgstr[0] ""
 msgstr[1] ""
 
-#: ApperKCM/Updater/UpdateDetails.cpp:245
+#: ApperKCM/Updater/UpdateDetails.cpp:249
 msgid ""
 "For more information about bugs fixed by this update please visit this "
 "website:"
@@ -1064,7 +1086,7 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: ApperKCM/Updater/UpdateDetails.cpp:255
+#: ApperKCM/Updater/UpdateDetails.cpp:259
 msgid ""
 "For more information about this security update please visit this website:"
 msgid_plural ""
@@ -1072,13 +1094,13 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: ApperKCM/Updater/UpdateDetails.cpp:265
+#: ApperKCM/Updater/UpdateDetails.cpp:269
 msgid ""
 "The computer will have to be restarted after the update for the changes to "
 "take effect."
 msgstr ""
 
-#: ApperKCM/Updater/UpdateDetails.cpp:269
+#: ApperKCM/Updater/UpdateDetails.cpp:273
 #, fuzzy
 #| msgid ""
 #| "You will be required to log out and back in due to a security update."
@@ -1087,19 +1109,19 @@ msgid ""
 "take effect."
 msgstr "セキュリティアップデートのため、ログアウトとログインが必要とされます。"
 
-#: ApperKCM/Updater/UpdateDetails.cpp:276
+#: ApperKCM/Updater/UpdateDetails.cpp:280
 msgid ""
 "The classification of this update is unstable which means it is not designed "
 "for production use."
 msgstr ""
 
-#: ApperKCM/Updater/UpdateDetails.cpp:280
+#: ApperKCM/Updater/UpdateDetails.cpp:284
 msgid ""
 "This is a test update, and is not designed for normal use. Please report any "
 "problems or regressions you encounter."
 msgstr ""
 
-#: ApperKCM/Updater/UpdateDetails.cpp:290
+#: ApperKCM/Updater/UpdateDetails.cpp:294
 #, fuzzy
 #| msgid "The file list is not available for this package."
 msgid ""
@@ -1107,25 +1129,25 @@ msgid ""
 "update:"
 msgstr "このパッケージのファイルリストが利用不可能です。"
 
-#: ApperKCM/Updater/UpdateDetails.cpp:298
+#: ApperKCM/Updater/UpdateDetails.cpp:302
 #, fuzzy
 #| msgid "Updates"
 msgid "Updates:"
 msgstr "アップデート"
 
-#: ApperKCM/Updater/UpdateDetails.cpp:308
+#: ApperKCM/Updater/UpdateDetails.cpp:312
 #, fuzzy
 #| msgid "Obsoletes"
 msgid "Obsoletes:"
 msgstr "オブソリュート"
 
-#: ApperKCM/Updater/UpdateDetails.cpp:318
+#: ApperKCM/Updater/UpdateDetails.cpp:322
 #, fuzzy, kde-format
 #| msgid "Repository"
 msgid "Repository: %1"
 msgstr "リポジトリ"
 
-#: ApperKCM/Updater/UpdateDetails.cpp:340
+#: ApperKCM/Updater/UpdateDetails.cpp:344
 msgid "No update description was found."
 msgstr "アップデートの記述が見つかりませんでした。"
 
@@ -1140,7 +1162,7 @@ msgstr "バージョン"
 msgid "Estimated download size: %1"
 msgstr ""
 
-#: ApperKCM/Updater/Updater.cpp:358 plasmoid/updaterapplet.cpp:57
+#: ApperKCM/Updater/Updater.cpp:358
 #, fuzzy
 #| msgid "Check for updates:"
 msgid "Check for new updates"
@@ -1148,8 +1170,10 @@ msgstr "アップデートをチェック中:"
 
 #. i18n: ectx: property (text), widget (QRadioButton, acceptedRB)
 #: AppSetup/LicensePage.ui:98
+#, fuzzy
+#| msgid "Please read the following important information before continuing:"
 msgid "I agree to the above terms and conditions"
-msgstr ""
+msgstr "続行する前に次の情報を読んでください:"
 
 #. i18n: ectx: property (text), widget (QRadioButton, rejectedRB)
 #: AppSetup/LicensePage.ui:111
@@ -1197,11 +1221,11 @@ msgstr "情報を取得中"
 msgid "IPK package filename"
 msgstr "無効なパッケージファイルです"
 
-#: AppSetup/main.cpp:75
+#: AppSetup/main.cpp:72
 msgid "Sorry, we didn't get an existing IPK package as parameter."
 msgstr ""
 
-#: AppSetup/main.cpp:76
+#: AppSetup/main.cpp:73
 #, fuzzy
 #| msgid "The package was not found"
 msgid "Package not found!"
@@ -1221,9 +1245,9 @@ msgstr "ファイルをインストール中"
 msgid "%1 has been installed successfully!"
 msgstr "ファイルのインストールに成功しました"
 
-#: AppSetup/SetupWizard.cpp:102 libapper/PkTransaction.cpp:133
-#: libapper/PkTransaction.cpp:151 libapper/PkTransaction.cpp:170
-#: libapper/PkTransaction.cpp:193
+#: AppSetup/SetupWizard.cpp:102 libapper/PkTransaction.cpp:143
+#: libapper/PkTransaction.cpp:161 libapper/PkTransaction.cpp:180
+#: libapper/PkTransaction.cpp:203
 msgid "Error"
 msgstr ""
 
@@ -1233,21 +1257,21 @@ msgstr ""
 msgid "An error occurred"
 msgstr "システム内部エラーが発生しました"
 
-#: AppSetup/SetupWizard.cpp:150 libapper/Requirements.cpp:58
+#: AppSetup/SetupWizard.cpp:150 libapper/Requirements.cpp:59
 #: PkSession/SessionTask.cpp:71
 msgid "Continue"
 msgstr "続行"
 
-#: AppSetup/SetupWizard.cpp:188
+#: AppSetup/SetupWizard.cpp:190
 msgid "Welcome!"
 msgstr ""
 
-#: AppSetup/SetupWizard.cpp:189
+#: AppSetup/SetupWizard.cpp:191
 #, kde-format
 msgid "Welcome to the installation of %1!"
 msgstr ""
 
-#: AppSetup/SetupWizard.cpp:190
+#: AppSetup/SetupWizard.cpp:192
 msgid ""
 "Please be careful while installing 3rd-party applications.<br>They may "
 "eventually <b>damage</b> your system or have <b>malicious behaviour</b>, "
@@ -1255,63 +1279,63 @@ msgid ""
 "you <b>trust the publisher and the author</b> of it."
 msgstr ""
 
-#: AppSetup/SetupWizard.cpp:200
+#: AppSetup/SetupWizard.cpp:203
 msgid "Details about this installation"
 msgstr ""
 
-#: AppSetup/SetupWizard.cpp:236
+#: AppSetup/SetupWizard.cpp:240
 #, fuzzy
 #| msgctxt "The role of the transaction, in past tense"
 #| msgid "Installed local files"
 msgid "Install for all users"
 msgstr "ローカルファイルをインストール済"
 
-#: AppSetup/SetupWizard.cpp:253
+#: AppSetup/SetupWizard.cpp:258
 #, fuzzy
 #| msgid "Application"
 msgid "Application description"
 msgstr "アプリケーション"
 
-#: AppSetup/SetupWizard.cpp:262
+#: AppSetup/SetupWizard.cpp:270
 #, fuzzy
 #| msgctxt "The group type"
 #| msgid "Software sources"
 msgid "Software license"
 msgstr "ソフトウェアソース"
 
-#: AppSetup/SetupWizard.cpp:263
+#: AppSetup/SetupWizard.cpp:271
 #, fuzzy
 #| msgid "Please read the following important information before continuing:"
 msgid "Please read the following terms and conditions carefully!"
 msgstr "続行する前に次の情報を読んでください:"
 
-#: AppSetup/SetupWizard.cpp:270
+#: AppSetup/SetupWizard.cpp:280
 #, fuzzy
 #| msgctxt "transaction state, scanning for running processes"
 #| msgid "Scanning installed applications"
 msgid "Running installation"
 msgstr "インストール済みのアプリケーションをスキャン中"
 
-#: AppSetup/SetupWizard.cpp:271
+#: AppSetup/SetupWizard.cpp:281
 #, fuzzy, kde-format
 #| msgctxt "The role of the transaction, in present tense"
 #| msgid "Installing"
 msgid "Installing %1..."
 msgstr "インストール中"
 
-#: AppSetup/SetupWizard.cpp:306
+#: AppSetup/SetupWizard.cpp:316
 msgid ""
 "Installing this package will make the following native packages obsolete. "
 "You might consider removing them manually."
 msgstr ""
 
-#: AppSetup/SetupWizard.cpp:307
+#: AppSetup/SetupWizard.cpp:317
 #, fuzzy
 #| msgid "SimulateUpdatePackages"
 msgid "Similar native packages found"
 msgstr "パッケージアップデートのシミュレーション"
 
-#: AppSetup/SetupWizard.cpp:402
+#: AppSetup/SetupWizard.cpp:417
 msgid ""
 "You want to install this application as root!\n"
 "This can damage your system or install malicious software for all users.\n"
@@ -1319,21 +1343,21 @@ msgid ""
 "Continue?"
 msgstr ""
 
-#: AppSetup/SetupWizard.cpp:405
+#: AppSetup/SetupWizard.cpp:420
 msgid "Really install as superuser?"
 msgstr ""
 
-#: AppSetup/SetupWizard.cpp:422
+#: AppSetup/SetupWizard.cpp:438
 #, kde-format
 msgid "This package has the following security level: <b>%1</b>"
 msgstr ""
 
-#: AppSetup/SetupWizard.cpp:424
+#: AppSetup/SetupWizard.cpp:440
 #, kde-format
 msgid "It was signed with a key belonging to these user-ids: %1"
 msgstr ""
 
-#: AppSetup/SetupWizard.cpp:428
+#: AppSetup/SetupWizard.cpp:444
 #, fuzzy
 #| msgid "Security only"
 msgid "Security hints"
@@ -1409,37 +1433,37 @@ msgstr "%2 によって %1 のライセンスが要求されています"
 msgid "Please read the following important information before continuing:"
 msgstr "続行する前に次の情報を読んでください:"
 
-#: libapper/PackageModel.cpp:203
+#: libapper/PackageModel.cpp:205
 #, fuzzy
 #| msgctxt "The group type"
 #| msgid "Games"
 msgid "Name"
 msgstr "ゲーム"
 
-#: libapper/PackageModel.cpp:207
+#: libapper/PackageModel.cpp:209
 msgid "Version"
 msgstr "バージョン"
 
-#: libapper/PackageModel.cpp:210
+#: libapper/PackageModel.cpp:212
 #, fuzzy
 #| msgctxt "The role of the transaction, in past tense"
 #| msgid "Installed signature"
 msgid "Installed Version"
 msgstr "署名をインストール済"
 
-#: libapper/PackageModel.cpp:213
+#: libapper/PackageModel.cpp:215
 msgid "Arch"
 msgstr ""
 
-#: libapper/PackageModel.cpp:216
+#: libapper/PackageModel.cpp:218
 msgid "Origin"
 msgstr ""
 
-#: libapper/PackageModel.cpp:219
+#: libapper/PackageModel.cpp:221
 msgid "Size"
 msgstr "サイズ"
 
-#: libapper/PackageModel.cpp:317
+#: libapper/PackageModel.cpp:319
 #, fuzzy, kde-format
 #| msgid "Architectures"
 msgid ""
@@ -1447,14 +1471,14 @@ msgid ""
 "Architecture: %2"
 msgstr "アーキテクチャ"
 
-#: libapper/PackageModel.cpp:363
+#: libapper/PackageModel.cpp:365
 #, fuzzy
 #| msgctxt "The action of the package, in past tense"
 #| msgid "Removed"
 msgid "To be Removed"
 msgstr "削除済"
 
-#: libapper/PackageModel.cpp:365
+#: libapper/PackageModel.cpp:367
 #, fuzzy
 #| msgid "Installed"
 msgid "To be Installed"
@@ -1750,102 +1774,151 @@ msgctxt "The role of the transaction, in present tense"
 msgid "Searching by package name"
 msgstr "パッケージ名で検索中"
 
-#: libapper/PkStrings.cpp:208
+#: libapper/PkStrings.cpp:209
+#, fuzzy
+#| msgctxt "The role of the transaction, in present tense"
+#| msgid "Simulating the remove"
 msgctxt "The role of the transaction, in present tense"
-msgid "Removing"
-msgstr "削除中"
+msgid "Simulating removal"
+msgstr "削除のシミュレーション中"
 
-#: libapper/PkStrings.cpp:210
-msgctxt "The role of the transaction, in present tense"
-msgid "Installing"
-msgstr "インストール中"
-
-#: libapper/PkStrings.cpp:212
-msgctxt "The role of the transaction, in present tense"
-msgid "Installing file"
-msgstr "ファイルをインストール中"
-
-#: libapper/PkStrings.cpp:214
-msgctxt "The role of the transaction, in present tense"
-msgid "Refreshing package cache"
-msgstr "パッケージキャッシュを更新中"
-
-#: libapper/PkStrings.cpp:216
-msgctxt "The role of the transaction, in present tense"
-msgid "Updating packages"
-msgstr "パッケージのアップデート中"
-
-#: libapper/PkStrings.cpp:218
-msgctxt "The role of the transaction, in present tense"
-msgid "Canceling"
-msgstr "キャンセル中"
-
-#: libapper/PkStrings.cpp:220
-msgctxt "The role of the transaction, in present tense"
-msgid "Getting list of repositories"
-msgstr "リポジトリのリストを取得中"
-
-#: libapper/PkStrings.cpp:222
-msgctxt "The role of the transaction, in present tense"
-msgid "Enabling repository"
-msgstr "リポジトリを有効化中"
-
-#: libapper/PkStrings.cpp:224
-msgctxt "The role of the transaction, in present tense"
-msgid "Setting repository data"
-msgstr "リポジトリのデータを設定中"
-
-#: libapper/PkStrings.cpp:226
-msgctxt "The role of the transaction, in present tense"
-msgid "Resolving"
-msgstr "解決中"
-
-#: libapper/PkStrings.cpp:228
-msgctxt "The role of the transaction, in present tense"
-msgid "Getting file list"
-msgstr "ファイルリストを取得中"
-
-#: libapper/PkStrings.cpp:230
-msgctxt "The role of the transaction, in present tense"
-msgid "Getting what provides"
-msgstr "提供パッケージを取得中"
-
-#: libapper/PkStrings.cpp:232
-msgctxt "The role of the transaction, in present tense"
-msgid "Installing signature"
-msgstr "署名をインストール中"
-
-#: libapper/PkStrings.cpp:234
-msgctxt "The role of the transaction, in present tense"
-msgid "Getting package lists"
-msgstr "パッケージリストを取得中"
-
-#: libapper/PkStrings.cpp:236
-msgctxt "The role of the transaction, in present tense"
-msgid "Accepting EULA"
-msgstr "EULA を受付中"
-
-#: libapper/PkStrings.cpp:238
+#: libapper/PkStrings.cpp:211 libapper/PkStrings.cpp:218
+#: libapper/PkStrings.cpp:258
 msgctxt "The role of the transaction, in present tense"
 msgid "Downloading packages"
 msgstr "パッケージをダウンロード中"
 
+#: libapper/PkStrings.cpp:213
+msgctxt "The role of the transaction, in present tense"
+msgid "Removing"
+msgstr "削除中"
+
+#: libapper/PkStrings.cpp:216
+#, fuzzy
+#| msgctxt "The role of the transaction, in present tense"
+#| msgid "Simulating the install"
+msgctxt "The role of the transaction, in present tense"
+msgid "Simulating install"
+msgstr "インストールのシミュレーション中"
+
+#: libapper/PkStrings.cpp:220
+msgctxt "The role of the transaction, in present tense"
+msgid "Installing"
+msgstr "インストール中"
+
+#: libapper/PkStrings.cpp:223
+#, fuzzy
+#| msgctxt "The role of the transaction, in present tense"
+#| msgid "Simulating the install"
+msgctxt "The role of the transaction, in present tense"
+msgid "Simulating file install"
+msgstr "インストールのシミュレーション中"
+
+#: libapper/PkStrings.cpp:225
+#, fuzzy
+#| msgctxt "The role of the transaction, in present tense"
+#| msgid "Downloading packages"
+msgctxt "The role of the transaction, in present tense"
+msgid "Downloading required packages"
+msgstr "パッケージをダウンロード中"
+
+#: libapper/PkStrings.cpp:227
+msgctxt "The role of the transaction, in present tense"
+msgid "Installing file"
+msgstr "ファイルをインストール中"
+
+#: libapper/PkStrings.cpp:229
+msgctxt "The role of the transaction, in present tense"
+msgid "Refreshing package cache"
+msgstr "パッケージキャッシュを更新中"
+
+#: libapper/PkStrings.cpp:232
+#, fuzzy
+#| msgctxt "The role of the transaction, in present tense"
+#| msgid "Simulating the update"
+msgctxt "The role of the transaction, in present tense"
+msgid "Simulating update"
+msgstr "アップデートのシミュレーション中"
+
+#: libapper/PkStrings.cpp:234
+#, fuzzy
+#| msgctxt "The role of the transaction, in present tense"
+#| msgid "Downloading packages"
+msgctxt "The role of the transaction, in present tense"
+msgid "Downloading updates"
+msgstr "パッケージをダウンロード中"
+
+#: libapper/PkStrings.cpp:236
+msgctxt "The role of the transaction, in present tense"
+msgid "Updating packages"
+msgstr "パッケージのアップデート中"
+
+#: libapper/PkStrings.cpp:238
+msgctxt "The role of the transaction, in present tense"
+msgid "Canceling"
+msgstr "キャンセル中"
+
 #: libapper/PkStrings.cpp:240
+msgctxt "The role of the transaction, in present tense"
+msgid "Getting list of repositories"
+msgstr "リポジトリのリストを取得中"
+
+#: libapper/PkStrings.cpp:242
+msgctxt "The role of the transaction, in present tense"
+msgid "Enabling repository"
+msgstr "リポジトリを有効化中"
+
+#: libapper/PkStrings.cpp:244
+msgctxt "The role of the transaction, in present tense"
+msgid "Setting repository data"
+msgstr "リポジトリのデータを設定中"
+
+#: libapper/PkStrings.cpp:246
+msgctxt "The role of the transaction, in present tense"
+msgid "Resolving"
+msgstr "解決中"
+
+#: libapper/PkStrings.cpp:248
+msgctxt "The role of the transaction, in present tense"
+msgid "Getting file list"
+msgstr "ファイルリストを取得中"
+
+#: libapper/PkStrings.cpp:250
+msgctxt "The role of the transaction, in present tense"
+msgid "Getting what provides"
+msgstr "提供パッケージを取得中"
+
+#: libapper/PkStrings.cpp:252
+msgctxt "The role of the transaction, in present tense"
+msgid "Installing signature"
+msgstr "署名をインストール中"
+
+#: libapper/PkStrings.cpp:254
+msgctxt "The role of the transaction, in present tense"
+msgid "Getting package lists"
+msgstr "パッケージリストを取得中"
+
+#: libapper/PkStrings.cpp:256
+msgctxt "The role of the transaction, in present tense"
+msgid "Accepting EULA"
+msgstr "EULA を受付中"
+
+#: libapper/PkStrings.cpp:260
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting distribution upgrade information"
 msgstr "ディストリビューションのアップグレード情報を取得中"
 
-#: libapper/PkStrings.cpp:242
+#: libapper/PkStrings.cpp:262
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting categories"
 msgstr "カテゴリを取得中"
 
-#: libapper/PkStrings.cpp:244
+#: libapper/PkStrings.cpp:264
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting old transactions"
 msgstr "古い処理を取得中"
 
-#: libapper/PkStrings.cpp:246
+#: libapper/PkStrings.cpp:266
 #, fuzzy
 #| msgctxt "The role of the transaction, in present tense"
 #| msgid "Updating system"
@@ -1853,7 +1926,7 @@ msgctxt "The role of the transaction, in present tense"
 msgid "Upgrading system"
 msgstr "システムのアップデート中"
 
-#: libapper/PkStrings.cpp:248
+#: libapper/PkStrings.cpp:268
 #, fuzzy
 #| msgctxt "The role of the transaction, in present tense"
 #| msgid "Updating system"
@@ -1861,152 +1934,152 @@ msgctxt "The role of the transaction, in present tense"
 msgid "Repairing system"
 msgstr "システムのアップデート中"
 
-#: libapper/PkStrings.cpp:258
+#: libapper/PkStrings.cpp:278
 msgctxt "The role of the transaction, in past tense"
 msgid "Unknown role type"
 msgstr "未知のロールタイプです"
 
-#: libapper/PkStrings.cpp:260
+#: libapper/PkStrings.cpp:280
 msgctxt "The role of the transaction, in past tense"
 msgid "Got dependencies"
 msgstr "依存性を取得済"
 
-#: libapper/PkStrings.cpp:262
+#: libapper/PkStrings.cpp:282
 msgctxt "The role of the transaction, in past tense"
 msgid "Got update detail"
 msgstr "アップデートの詳細を取得済"
 
-#: libapper/PkStrings.cpp:264
+#: libapper/PkStrings.cpp:284
 msgctxt "The role of the transaction, in past tense"
 msgid "Got details"
 msgstr "詳細を取得済"
 
-#: libapper/PkStrings.cpp:266
+#: libapper/PkStrings.cpp:286
 msgctxt "The role of the transaction, in past tense"
 msgid "Got requires"
 msgstr "要求先を取得済"
 
-#: libapper/PkStrings.cpp:268
+#: libapper/PkStrings.cpp:288
 msgctxt "The role of the transaction, in past tense"
 msgid "Got updates"
 msgstr "アップデートを取得済"
 
-#: libapper/PkStrings.cpp:270
+#: libapper/PkStrings.cpp:290
 msgctxt "The role of the transaction, in past tense"
 msgid "Searched for package details"
 msgstr "パッケージの詳細を検索済"
 
-#: libapper/PkStrings.cpp:272
+#: libapper/PkStrings.cpp:292
 msgctxt "The role of the transaction, in past tense"
 msgid "Searched for file"
 msgstr "ファイルを検索済"
 
-#: libapper/PkStrings.cpp:274
+#: libapper/PkStrings.cpp:294
 msgctxt "The role of the transaction, in past tense"
 msgid "Searched groups"
 msgstr "グループを検索済"
 
-#: libapper/PkStrings.cpp:276
+#: libapper/PkStrings.cpp:296
 msgctxt "The role of the transaction, in past tense"
 msgid "Searched for package name"
 msgstr "パッケージ名を検索済"
 
-#: libapper/PkStrings.cpp:278
+#: libapper/PkStrings.cpp:298
 msgctxt "The role of the transaction, in past tense"
 msgid "Removed packages"
 msgstr "パッケージを削除済"
 
-#: libapper/PkStrings.cpp:280
+#: libapper/PkStrings.cpp:300
 msgctxt "The role of the transaction, in past tense"
 msgid "Installed packages"
 msgstr "パッケージをインストール済"
 
-#: libapper/PkStrings.cpp:282
+#: libapper/PkStrings.cpp:302
 msgctxt "The role of the transaction, in past tense"
 msgid "Installed local files"
 msgstr "ローカルファイルをインストール済"
 
-#: libapper/PkStrings.cpp:284
+#: libapper/PkStrings.cpp:304
 msgctxt "The role of the transaction, in past tense"
 msgid "Refreshed package cache"
 msgstr "パッケージキャッシュを更新済"
 
-#: libapper/PkStrings.cpp:286
+#: libapper/PkStrings.cpp:306
 msgctxt "The role of the transaction, in past tense"
 msgid "Updated packages"
 msgstr "パッケージをアップデート済"
 
-#: libapper/PkStrings.cpp:288
+#: libapper/PkStrings.cpp:308
 msgctxt "The role of the transaction, in past tense"
 msgid "Canceled"
 msgstr "キャンセル済"
 
-#: libapper/PkStrings.cpp:290
+#: libapper/PkStrings.cpp:310
 msgctxt "The role of the transaction, in past tense"
 msgid "Got list of repositories"
 msgstr "リポジトリのリストを取得済"
 
-#: libapper/PkStrings.cpp:292
+#: libapper/PkStrings.cpp:312
 msgctxt "The role of the transaction, in past tense"
 msgid "Enabled repository"
 msgstr "リポジトリを有効化済"
 
-#: libapper/PkStrings.cpp:294
+#: libapper/PkStrings.cpp:314
 msgctxt "The role of the transaction, in past tense"
 msgid "Set repository data"
 msgstr "リポジトリデータを設定済"
 
-#: libapper/PkStrings.cpp:296
+#: libapper/PkStrings.cpp:316
 msgctxt "The role of the transaction, in past tense"
 msgid "Resolved"
 msgstr "解決済"
 
-#: libapper/PkStrings.cpp:298
+#: libapper/PkStrings.cpp:318
 msgctxt "The role of the transaction, in past tense"
 msgid "Got file list"
 msgstr "ファイルリストを取得済"
 
-#: libapper/PkStrings.cpp:300
+#: libapper/PkStrings.cpp:320
 msgctxt "The role of the transaction, in past tense"
 msgid "Got what provides"
 msgstr "提供パッケージを取得済"
 
-#: libapper/PkStrings.cpp:302
+#: libapper/PkStrings.cpp:322
 msgctxt "The role of the transaction, in past tense"
 msgid "Installed signature"
 msgstr "署名をインストール済"
 
-#: libapper/PkStrings.cpp:304
+#: libapper/PkStrings.cpp:324
 msgctxt "The role of the transaction, in past tense"
 msgid "Got package lists"
 msgstr "パッケージリストを取得済"
 
-#: libapper/PkStrings.cpp:306
+#: libapper/PkStrings.cpp:326
 msgctxt "The role of the transaction, in past tense"
 msgid "Accepted EULA"
 msgstr "EULA を受入済"
 
-#: libapper/PkStrings.cpp:308
+#: libapper/PkStrings.cpp:328
 msgctxt "The role of the transaction, in past tense"
 msgid "Downloaded packages"
 msgstr "パッケージをダウンロード済"
 
-#: libapper/PkStrings.cpp:310
+#: libapper/PkStrings.cpp:330
 msgctxt "The role of the transaction, in past tense"
 msgid "Got distribution upgrades"
 msgstr "ディストリビューションアップグレードを取得済"
 
-#: libapper/PkStrings.cpp:312
+#: libapper/PkStrings.cpp:332
 msgctxt "The role of the transaction, in past tense"
 msgid "Got categories"
 msgstr "カテゴリを取得済"
 
-#: libapper/PkStrings.cpp:314
+#: libapper/PkStrings.cpp:334
 msgctxt "The role of the transaction, in past tense"
 msgid "Got old transactions"
 msgstr "古い処理を取得済"
 
-#: libapper/PkStrings.cpp:316
+#: libapper/PkStrings.cpp:336
 #, fuzzy
 #| msgctxt "The role of the transaction, in past tense"
 #| msgid "Updated system"
@@ -2014,7 +2087,7 @@ msgctxt "The role of the transaction, in past tense"
 msgid "Upgraded system"
 msgstr "システムをアップデート済"
 
-#: libapper/PkStrings.cpp:318
+#: libapper/PkStrings.cpp:338
 #, fuzzy
 #| msgctxt "The role of the transaction, in past tense"
 #| msgid "Updated system"
@@ -2022,34 +2095,34 @@ msgctxt "The role of the transaction, in past tense"
 msgid "Repaired system"
 msgstr "システムをアップデート済"
 
-#: libapper/PkStrings.cpp:328
+#: libapper/PkStrings.cpp:348
 #, fuzzy
 #| msgctxt "The action of the package, in past tense"
 #| msgid "Downloaded"
 msgid "Downloading"
 msgstr "ダウンロード済"
 
-#: libapper/PkStrings.cpp:330
+#: libapper/PkStrings.cpp:350
 #, fuzzy
 #| msgid "Update settings"
 msgid "Updating"
 msgstr "アップデート設定"
 
-#: libapper/PkStrings.cpp:332
+#: libapper/PkStrings.cpp:352
 #, fuzzy
 #| msgctxt "The role of the transaction, in present tense"
 #| msgid "Installing"
 msgid "Installing"
 msgstr "インストール中"
 
-#: libapper/PkStrings.cpp:334
+#: libapper/PkStrings.cpp:354
 #, fuzzy
 #| msgctxt "The role of the transaction, in present tense"
 #| msgid "Removing"
 msgid "Removing"
 msgstr "削除中"
 
-#: libapper/PkStrings.cpp:336
+#: libapper/PkStrings.cpp:356
 #, fuzzy
 #| msgctxt ""
 #| "transaction state, removing old packages, and cleaning config files"
@@ -2057,354 +2130,354 @@ msgstr "削除中"
 msgid "Cleaning up"
 msgstr "パッケージをクリーニング中"
 
-#: libapper/PkStrings.cpp:338
+#: libapper/PkStrings.cpp:358
 #, fuzzy
 #| msgid "Obsoletes"
 msgid "Obsoleting"
 msgstr "オブソリュート"
 
-#: libapper/PkStrings.cpp:340
+#: libapper/PkStrings.cpp:360
 #, fuzzy
 #| msgctxt "The role of the transaction, in present tense"
 #| msgid "Installing"
 msgid "Reinstalling"
 msgstr "インストール中"
 
-#: libapper/PkStrings.cpp:342
+#: libapper/PkStrings.cpp:362
 msgid "Preparing"
 msgstr ""
 
-#: libapper/PkStrings.cpp:344
+#: libapper/PkStrings.cpp:364
 msgid "Decompressing"
 msgstr ""
 
-#: libapper/PkStrings.cpp:355
+#: libapper/PkStrings.cpp:375
 #, fuzzy
 #| msgctxt "The action of the package, in past tense"
 #| msgid "Downloaded"
 msgid "Downloaded"
 msgstr "ダウンロード済"
 
-#: libapper/PkStrings.cpp:357
+#: libapper/PkStrings.cpp:377
 msgid "Updated"
 msgstr "アップデート済"
 
-#: libapper/PkStrings.cpp:361
+#: libapper/PkStrings.cpp:381
 #, fuzzy
 #| msgctxt "The action of the package, in past tense"
 #| msgid "Removed"
 msgid "Removed"
 msgstr "削除済"
 
-#: libapper/PkStrings.cpp:363
+#: libapper/PkStrings.cpp:383
 #, fuzzy
 #| msgctxt "The action of the package, in past tense"
 #| msgid "Cleaned Up"
 msgid "Cleaned up"
 msgstr "クリーンアップ済"
 
-#: libapper/PkStrings.cpp:365
+#: libapper/PkStrings.cpp:385
 #, fuzzy
 #| msgctxt "The action of the package, in past tense"
 #| msgid "Obsoleted"
 msgid "Obsoleted"
 msgstr "オブソリュート処理済"
 
-#: libapper/PkStrings.cpp:367
+#: libapper/PkStrings.cpp:387
 #, fuzzy
 #| msgid "Installed"
 msgid "Reinstalled"
 msgstr "インストール済"
 
-#: libapper/PkStrings.cpp:369
+#: libapper/PkStrings.cpp:389
 msgid "Prepared"
 msgstr ""
 
-#: libapper/PkStrings.cpp:371
+#: libapper/PkStrings.cpp:391
 msgid "Decompressed"
 msgstr ""
 
-#: libapper/PkStrings.cpp:382
+#: libapper/PkStrings.cpp:402
 msgid "No network connection available"
 msgstr "利用可能なネットワーク接続がありません"
 
-#: libapper/PkStrings.cpp:384
+#: libapper/PkStrings.cpp:404
 msgid "No package cache is available"
 msgstr "利用可能なパッケージキャッシュがありません。"
 
-#: libapper/PkStrings.cpp:386
+#: libapper/PkStrings.cpp:406
 msgid "Out of memory"
 msgstr "メモリ不足"
 
-#: libapper/PkStrings.cpp:388
+#: libapper/PkStrings.cpp:408
 msgid "Failed to create a thread"
 msgstr "スレッド作成に失敗しました。"
 
-#: libapper/PkStrings.cpp:390
+#: libapper/PkStrings.cpp:410
 msgid "Not supported by this backend"
 msgstr "このバックエンドではサポートされていません"
 
-#: libapper/PkStrings.cpp:392
+#: libapper/PkStrings.cpp:412
 msgid "An internal system error has occurred"
 msgstr "システム内部エラーが発生しました"
 
-#: libapper/PkStrings.cpp:394
+#: libapper/PkStrings.cpp:414
 msgid "A security trust relationship is not present"
 msgstr "セキュリティ信頼関係が結ばれていません"
 
-#: libapper/PkStrings.cpp:396
+#: libapper/PkStrings.cpp:416
 msgid "The package is not installed"
 msgstr "パッケージはインストールされていません"
 
-#: libapper/PkStrings.cpp:398
+#: libapper/PkStrings.cpp:418
 msgid "The package was not found"
 msgstr "パッケージが見つかりませんでした"
 
-#: libapper/PkStrings.cpp:400
+#: libapper/PkStrings.cpp:420
 msgid "The package is already installed"
 msgstr "パッケージは既にインストールされています"
 
-#: libapper/PkStrings.cpp:402
+#: libapper/PkStrings.cpp:422
 msgid "The package download failed"
 msgstr "パッケージのダウンロードに失敗しました"
 
-#: libapper/PkStrings.cpp:404
+#: libapper/PkStrings.cpp:424
 msgid "The group was not found"
 msgstr "グループが見つかりませんでした"
 
-#: libapper/PkStrings.cpp:406
+#: libapper/PkStrings.cpp:426
 msgid "The group list was invalid"
 msgstr "グループリストが無効です"
 
-#: libapper/PkStrings.cpp:408
+#: libapper/PkStrings.cpp:428
 msgid "Dependency resolution failed"
 msgstr "依存性解決に失敗しました"
 
-#: libapper/PkStrings.cpp:410
+#: libapper/PkStrings.cpp:430
 msgid "Search filter was invalid"
 msgstr "検索フィルタが無効です"
 
-#: libapper/PkStrings.cpp:412
+#: libapper/PkStrings.cpp:432
 msgid "The package identifier was not well formed"
 msgstr "パッケージ識別子が正しく形成されていません"
 
-#: libapper/PkStrings.cpp:414
+#: libapper/PkStrings.cpp:434
 msgid "Transaction error"
 msgstr "処理エラー"
 
-#: libapper/PkStrings.cpp:416
+#: libapper/PkStrings.cpp:436
 msgid "Repository name was not found"
 msgstr "リポジトリ名が見つかりませんでした"
 
-#: libapper/PkStrings.cpp:418
+#: libapper/PkStrings.cpp:438
 msgid "Could not remove a protected system package"
 msgstr "保護されたシステムパッケージを削除できませんでした"
 
-#: libapper/PkStrings.cpp:420
+#: libapper/PkStrings.cpp:440
 msgid "The task was canceled"
 msgstr "タスクがキャンセルされました"
 
-#: libapper/PkStrings.cpp:422
+#: libapper/PkStrings.cpp:442
 msgid "The task was forcibly canceled"
 msgstr "タスクが強制的にキャンセルされました"
 
-#: libapper/PkStrings.cpp:424
+#: libapper/PkStrings.cpp:444
 msgid "Reading the config file failed"
 msgstr "設定ファイル読み込みに失敗しました"
 
-#: libapper/PkStrings.cpp:426
+#: libapper/PkStrings.cpp:446
 msgid "The task cannot be cancelled"
 msgstr "タスクがキャンセルできませんでした"
 
-#: libapper/PkStrings.cpp:428
+#: libapper/PkStrings.cpp:448
 msgid "Source packages cannot be installed"
 msgstr "ソースパッケージがインストールできませんでした"
 
-#: libapper/PkStrings.cpp:430
+#: libapper/PkStrings.cpp:450
 msgid "The license agreement failed"
 msgstr "ライセンス同意に失敗しました"
 
-#: libapper/PkStrings.cpp:432
+#: libapper/PkStrings.cpp:452
 msgid "Local file conflict between packages"
 msgstr "ローカルファイルとパッケージが競合しています"
 
-#: libapper/PkStrings.cpp:434
+#: libapper/PkStrings.cpp:454
 msgid "Packages are not compatible"
 msgstr "パッケージに互換性がありません"
 
-#: libapper/PkStrings.cpp:436
+#: libapper/PkStrings.cpp:456
 msgid "Problem connecting to a software origin"
 msgstr "ソフトウェアの配布元の接続に問題があります"
 
-#: libapper/PkStrings.cpp:438
+#: libapper/PkStrings.cpp:458
 msgid "Failed to initialize"
 msgstr "初期化に失敗しました"
 
-#: libapper/PkStrings.cpp:440
+#: libapper/PkStrings.cpp:460
 msgid "Failed to finalize"
 msgstr "終了処理に失敗しました"
 
-#: libapper/PkStrings.cpp:442
+#: libapper/PkStrings.cpp:462
 msgid "Cannot get lock"
 msgstr "ロックできませんでした"
 
-#: libapper/PkStrings.cpp:444
+#: libapper/PkStrings.cpp:464
 msgid "No packages to update"
 msgstr "アップデートするパッケージはありません"
 
-#: libapper/PkStrings.cpp:446
+#: libapper/PkStrings.cpp:466
 msgid "Cannot write repository configuration"
 msgstr "リポジトリ設定を書き込めません"
 
-#: libapper/PkStrings.cpp:448
+#: libapper/PkStrings.cpp:468
 msgid "Local install failed"
 msgstr "ローカルインストールに失敗しました"
 
-#: libapper/PkStrings.cpp:450
+#: libapper/PkStrings.cpp:470
 msgid "Bad GPG signature"
 msgstr "不正な GPG 署名です"
 
-#: libapper/PkStrings.cpp:452
+#: libapper/PkStrings.cpp:472
 msgid "Missing GPG signature"
 msgstr "GPG 署名がありません"
 
-#: libapper/PkStrings.cpp:454
+#: libapper/PkStrings.cpp:474
 msgid "Repository configuration invalid"
 msgstr "リポジトリ設定が無効です"
 
-#: libapper/PkStrings.cpp:456
+#: libapper/PkStrings.cpp:476
 msgid "Invalid package file"
 msgstr "無効なパッケージファイルです"
 
-#: libapper/PkStrings.cpp:458
+#: libapper/PkStrings.cpp:478
 msgid "Package install blocked"
 msgstr "パッケージのインストールがブロックされました"
 
-#: libapper/PkStrings.cpp:460
+#: libapper/PkStrings.cpp:480
 msgid "Package is corrupt"
 msgstr "パッケージが壊れています"
 
-#: libapper/PkStrings.cpp:462
+#: libapper/PkStrings.cpp:482
 msgid "All packages are already installed"
 msgstr "すべてのパッケージは既にインストールされています"
 
-#: libapper/PkStrings.cpp:464
+#: libapper/PkStrings.cpp:484
 msgid "The specified file could not be found"
 msgstr "指定されたファイルが見つかりませんでした"
 
-#: libapper/PkStrings.cpp:466
+#: libapper/PkStrings.cpp:486
 msgid "No more mirrors are available"
 msgstr "これ以上のミラーは利用可能ではありません"
 
-#: libapper/PkStrings.cpp:468
+#: libapper/PkStrings.cpp:488
 msgid "No distribution upgrade data is available"
 msgstr "利用可能なディストリビューションアップグレードのデータがありません"
 
-#: libapper/PkStrings.cpp:470
+#: libapper/PkStrings.cpp:490
 msgid "Package is incompatible with this system"
 msgstr "パッケージがシステムと互換性がありません"
 
-#: libapper/PkStrings.cpp:472
+#: libapper/PkStrings.cpp:492
 msgid "No space is left on the disk"
 msgstr "ディスクに空き容量がありません"
 
-#: libapper/PkStrings.cpp:474 libapper/PkTransaction.cpp:418
+#: libapper/PkStrings.cpp:494 libapper/PkTransaction.cpp:441
 msgid "A media change is required"
 msgstr "メディアの変更が必要です"
 
-#: libapper/PkStrings.cpp:476
+#: libapper/PkStrings.cpp:496
 msgid "Authorization failed"
 msgstr "権限付与に失敗しました"
 
-#: libapper/PkStrings.cpp:478
+#: libapper/PkStrings.cpp:498
 msgid "Update not found"
 msgstr "アップデートが見つかりませんでした"
 
-#: libapper/PkStrings.cpp:480
+#: libapper/PkStrings.cpp:500
 msgid "Cannot install from untrusted origin"
 msgstr "信頼されていない配布元からインストールできません"
 
-#: libapper/PkStrings.cpp:482
+#: libapper/PkStrings.cpp:502
 msgid "Cannot update from untrusted origin"
 msgstr "信頼されていない配布元からアップデートできません"
 
-#: libapper/PkStrings.cpp:484
+#: libapper/PkStrings.cpp:504
 msgid "Cannot get the file list"
 msgstr "ファイルリストを取得できません"
 
-#: libapper/PkStrings.cpp:486
+#: libapper/PkStrings.cpp:506
 msgid "Cannot get package requires"
 msgstr "必要なパッケージを取得できません"
 
-#: libapper/PkStrings.cpp:488
+#: libapper/PkStrings.cpp:508
 msgid "Cannot disable origin"
 msgstr "配布元を無効にできません"
 
-#: libapper/PkStrings.cpp:490
+#: libapper/PkStrings.cpp:510
 msgid "The download failed"
 msgstr "ダウンロードに失敗しました"
 
-#: libapper/PkStrings.cpp:492
+#: libapper/PkStrings.cpp:512
 msgid "Package failed to configure"
 msgstr "パッケージの設定に失敗しました"
 
-#: libapper/PkStrings.cpp:494
+#: libapper/PkStrings.cpp:514
 msgid "Package failed to build"
 msgstr "パッケージのビルドに失敗しました"
 
-#: libapper/PkStrings.cpp:496
+#: libapper/PkStrings.cpp:516
 msgid "Package failed to install"
 msgstr "パッケージのインストールに失敗しました"
 
-#: libapper/PkStrings.cpp:498
+#: libapper/PkStrings.cpp:518
 msgid "Package failed to be removed"
 msgstr "パッケージの削除に失敗しました"
 
-#: libapper/PkStrings.cpp:500
+#: libapper/PkStrings.cpp:520
 msgid "Update failed due to running process"
 msgstr "実行中のプロセスによりアップデートに失敗しました"
 
-#: libapper/PkStrings.cpp:502
+#: libapper/PkStrings.cpp:522
 msgid "The package database was changed"
 msgstr "パッケージデータベースが変更されました"
 
-#: libapper/PkStrings.cpp:504
+#: libapper/PkStrings.cpp:524
 msgid "Virtual provide type is not supported"
 msgstr ""
 
-#: libapper/PkStrings.cpp:506
+#: libapper/PkStrings.cpp:526
 msgid "Install root is invalid"
 msgstr ""
 
-#: libapper/PkStrings.cpp:508
+#: libapper/PkStrings.cpp:528
 #, fuzzy
 #| msgid "Cannot get lock"
 msgid "Cannot fetch install sources"
 msgstr "ロックできませんでした"
 
-#: libapper/PkStrings.cpp:510
+#: libapper/PkStrings.cpp:530
 msgid "Rescheduled due to priority"
 msgstr ""
 
-#: libapper/PkStrings.cpp:512
+#: libapper/PkStrings.cpp:532
 #, fuzzy
 #| msgctxt "The role of the transaction, in present tense"
 #| msgid "Getting old transactions"
 msgid "Unfinished transaction"
 msgstr "古い処理を取得中"
 
-#: libapper/PkStrings.cpp:514
+#: libapper/PkStrings.cpp:534
 #, fuzzy
 #| msgctxt "The role of the transaction, in past tense"
 #| msgid "Got requires"
 msgid "Lock required"
 msgstr "要求先を取得済"
 
-#: libapper/PkStrings.cpp:516
+#: libapper/PkStrings.cpp:536
 msgid "Unknown error"
 msgstr "未知のエラー"
 
-#: libapper/PkStrings.cpp:526
+#: libapper/PkStrings.cpp:546
 msgid ""
 "There is no network connection available.\n"
 "Please check your connection settings and try again"
@@ -2412,7 +2485,7 @@ msgstr ""
 "利用可能なネットワーク接続がありません。\n"
 "接続設定をチェックし再試行してください"
 
-#: libapper/PkStrings.cpp:529
+#: libapper/PkStrings.cpp:549
 msgid ""
 "The package list needs to be rebuilt.\n"
 "This should have been done by the backend automatically."
@@ -2420,7 +2493,7 @@ msgstr ""
 "パッケージリストの再構築が必要です。\n"
 "これはバックエンドによって自動的に実行されます。"
 
-#: libapper/PkStrings.cpp:532
+#: libapper/PkStrings.cpp:552
 msgid ""
 "The service that is responsible for handling user requests is out of "
 "memory.\n"
@@ -2429,11 +2502,11 @@ msgstr ""
 "ユーザ要求を担当するサービスがメモリ不足です。\n"
 "プログラムを閉じるかコンピュータを再起動してください。"
 
-#: libapper/PkStrings.cpp:535
+#: libapper/PkStrings.cpp:555
 msgid "A thread could not be created to service the user request."
 msgstr "ユーザ要求を提供するためのスレッドを作成できませんでした。"
 
-#: libapper/PkStrings.cpp:537
+#: libapper/PkStrings.cpp:557
 msgid ""
 "The action is not supported by this backend.\n"
 "Please report a bug as this should not have happened."
@@ -2441,7 +2514,7 @@ msgstr ""
 "アクションがバックエンドによってサポートされていません。\n"
 "再発防止のためにバグをレポートしてください。"
 
-#: libapper/PkStrings.cpp:540
+#: libapper/PkStrings.cpp:560
 msgid ""
 "A problem that we were not expecting has occurred.\n"
 "Please report this bug with the error description."
@@ -2449,7 +2522,7 @@ msgstr ""
 "想定していない問題が発生しました。\n"
 "エラーの記述とともにバグをレポートしてください。"
 
-#: libapper/PkStrings.cpp:543
+#: libapper/PkStrings.cpp:563
 msgid ""
 "A security trust relationship could not be made with the software origin.\n"
 "Please check your software signature settings."
@@ -2457,13 +2530,13 @@ msgstr ""
 "ソフトウェア配布元とセキュリティ信頼関係を結べませんでした。\n"
 "ソフトウェア署名設定をチェックしてください。"
 
-#: libapper/PkStrings.cpp:546
+#: libapper/PkStrings.cpp:566
 msgid ""
 "The package that is trying to be removed or updated is not already installed."
 msgstr ""
 "削除もしくはアップデートしようとしたパッケージはインストールされていません。"
 
-#: libapper/PkStrings.cpp:548
+#: libapper/PkStrings.cpp:568
 msgid ""
 "The package that is being modified was not found on your system or in any "
 "software origin."
@@ -2471,11 +2544,11 @@ msgstr ""
 "更新されたパッケージがあなたのシステムもしくはどのソフトウェア配布元において"
 "も見つかりませんでした。"
 
-#: libapper/PkStrings.cpp:550
+#: libapper/PkStrings.cpp:570
 msgid "The package that is trying to be installed is already installed."
 msgstr "インストールしようとしたパッケージは既にインストールされています."
 
-#: libapper/PkStrings.cpp:552
+#: libapper/PkStrings.cpp:572
 msgid ""
 "The package download failed.\n"
 "Please check your network connectivity."
@@ -2483,7 +2556,7 @@ msgstr ""
 "パッケージのダウンロードに失敗しました。\n"
 "ネットワーク接続をチェックしてください。"
 
-#: libapper/PkStrings.cpp:555
+#: libapper/PkStrings.cpp:575
 msgid ""
 "The group type was not found.\n"
 "Please check your group list and try again."
@@ -2491,7 +2564,7 @@ msgstr ""
 "グループタイプが見つかりませんでした。\n"
 "グループリストをチェックして再試行してください。"
 
-#: libapper/PkStrings.cpp:558
+#: libapper/PkStrings.cpp:578
 msgid ""
 "The group list could not be loaded.\n"
 "Refreshing your cache may help, although this is normally a software origin "
@@ -2501,7 +2574,7 @@ msgstr ""
 "たいていこれはソフトウェア配布元のエラーですが、キャッシュ更新が役に立つ可能"
 "性があります。"
 
-#: libapper/PkStrings.cpp:562
+#: libapper/PkStrings.cpp:582
 msgid ""
 "A package dependency could not be found.\n"
 "More information is available in the detailed report."
@@ -2509,11 +2582,11 @@ msgstr ""
 "パッケージ依存性が見つかりませんでした。\n"
 "詳細な情報は詳細レポートにて利用可能です。"
 
-#: libapper/PkStrings.cpp:565
+#: libapper/PkStrings.cpp:585
 msgid "The search filter was not correctly formed."
 msgstr "検索フィルタが正しくセットされていません。"
 
-#: libapper/PkStrings.cpp:567
+#: libapper/PkStrings.cpp:587
 msgid ""
 "The package identifier was not well formed when sent to the system daemon.\n"
 "This normally indicates an internal bug and should be reported."
@@ -2522,7 +2595,7 @@ msgstr ""
 "ん。\n"
 "これは通常内部バグであり、バグレポートがすべきものです。"
 
-#: libapper/PkStrings.cpp:570
+#: libapper/PkStrings.cpp:590
 msgid ""
 "An error occurred while running the transaction.\n"
 "More information is available in the detailed report."
@@ -2530,7 +2603,7 @@ msgstr ""
 "処理中にエラーが発生しました。\n"
 "詳細な情報は詳細レポートにて利用可能です。"
 
-#: libapper/PkStrings.cpp:573
+#: libapper/PkStrings.cpp:593
 msgid ""
 "The remote software origin name was not found.\n"
 "You may need to enable an item in Software Origins."
@@ -2538,15 +2611,15 @@ msgstr ""
 "リモートのソフトウェア配布元名が見つかりませんでした。\n"
 "ソフトウェア配布元のアイテムを有功にする必要があります。"
 
-#: libapper/PkStrings.cpp:576
+#: libapper/PkStrings.cpp:596
 msgid "Removing a protected system package is not allowed."
 msgstr "保護されたシステムパッケージの削除は許可されていません。"
 
-#: libapper/PkStrings.cpp:578
+#: libapper/PkStrings.cpp:598
 msgid "The task was canceled successfully and no packages were changed."
 msgstr "タスクは無事キャンセルされ、パッケージの変更は行われませんでした。"
 
-#: libapper/PkStrings.cpp:580
+#: libapper/PkStrings.cpp:600
 msgid ""
 "The task was canceled successfully and no packages were changed.\n"
 "The backend did not exit cleanly."
@@ -2554,7 +2627,7 @@ msgstr ""
 "タスクは無事キャンセルされ、パッケージの変更は行われませんでした。\n"
 "バックエンドはクリーンに終了しませんでした。"
 
-#: libapper/PkStrings.cpp:583
+#: libapper/PkStrings.cpp:603
 msgid ""
 "The native package configuration file could not be opened.\n"
 "Please make sure your system's configuration is valid."
@@ -2562,11 +2635,11 @@ msgstr ""
 "ネイティブパッケージ設定ファイルが開けませんでした。\n"
 "システム設定が有効か確認してください。"
 
-#: libapper/PkStrings.cpp:586
+#: libapper/PkStrings.cpp:606
 msgid "The task is not safe to be cancelled at this time."
 msgstr "現時点ではタスクのキャンセルは安全ではありません。"
 
-#: libapper/PkStrings.cpp:588
+#: libapper/PkStrings.cpp:608
 msgid ""
 "Source packages are not normally installed this way.\n"
 "Check the extension of the file you are trying to install."
@@ -2574,7 +2647,7 @@ msgstr ""
 "ソースパッケージがこのように正しくインストールできませんでした。\n"
 "インストールしようとしているファイルの拡張子をチェックしてください。"
 
-#: libapper/PkStrings.cpp:591
+#: libapper/PkStrings.cpp:611
 msgid ""
 "The license agreement was not agreed to.\n"
 "To use this software you have to accept the license."
@@ -2582,7 +2655,7 @@ msgstr ""
 "ライセンス同意にて同意が行われませんでした。\n"
 "このソフトウェアの使用にはライセンスを受け入れる必要があります。"
 
-#: libapper/PkStrings.cpp:594
+#: libapper/PkStrings.cpp:614
 msgid ""
 "Two packages provide the same file.\n"
 "This is usually due to mixing packages for different software origins."
@@ -2590,7 +2663,7 @@ msgstr ""
 "二つのパッケージが同一のファイルを提供しています。\n"
 "これは通常異なるソフトウェア配布元からのパッケージの混在によります。"
 
-#: libapper/PkStrings.cpp:597
+#: libapper/PkStrings.cpp:617
 msgid ""
 "Multiple packages exist that are not compatible with each other.\n"
 "This is usually due to mixing packages from different software origins."
@@ -2598,148 +2671,148 @@ msgstr ""
 "互いに互換性のない複数のパッケージが存在します。\n"
 "これは通常異なるソフトウェア配布元からのパッケージの混在によります。"
 
-#: libapper/PkStrings.cpp:600
+#: libapper/PkStrings.cpp:620
 msgid ""
 "There was a (possibly temporary) problem connecting to a software origins.\n"
 "Please check the detailed error for further details."
 msgstr ""
 
-#: libapper/PkStrings.cpp:603
+#: libapper/PkStrings.cpp:623
 msgid ""
 "Failed to initialize packaging backend.\n"
 "This may occur if other packaging tools are being used simultaneously."
 msgstr ""
 
-#: libapper/PkStrings.cpp:606
+#: libapper/PkStrings.cpp:626
 msgid ""
 "Failed to close down the backend instance.\n"
 "This error can normally be ignored."
 msgstr ""
 
-#: libapper/PkStrings.cpp:609
+#: libapper/PkStrings.cpp:629
 msgid ""
 "Cannot get the exclusive lock on the packaging backend.\n"
 "Please close any other legacy packaging tools that may be open."
 msgstr ""
 
-#: libapper/PkStrings.cpp:612
+#: libapper/PkStrings.cpp:632
 msgid "None of the selected packages could be updated."
 msgstr "選択されたパッケージはいずれもアップデートされませんでした。"
 
-#: libapper/PkStrings.cpp:614
+#: libapper/PkStrings.cpp:634
 msgid "The repository configuration could not be modified."
 msgstr "リポジトリ設定を更新できませんでした。"
 
-#: libapper/PkStrings.cpp:616
+#: libapper/PkStrings.cpp:636
 msgid ""
 "Installing the local file failed.\n"
 "More information is available in the detailed report."
 msgstr ""
 
-#: libapper/PkStrings.cpp:619
+#: libapper/PkStrings.cpp:639
 msgid "The package signature could not be verified."
 msgstr ""
 
-#: libapper/PkStrings.cpp:621
+#: libapper/PkStrings.cpp:641
 msgid ""
 "The package signature was missing and this package is untrusted.\n"
 "This package was not signed with a GPG key when created."
 msgstr ""
 
-#: libapper/PkStrings.cpp:624
+#: libapper/PkStrings.cpp:644
 msgid "Repository configuration was invalid and could not be read."
 msgstr ""
 
-#: libapper/PkStrings.cpp:626
+#: libapper/PkStrings.cpp:646
 msgid ""
 "The package you are attempting to install is not valid.\n"
 "The package file could be corrupt, or not a proper package."
 msgstr ""
 
-#: libapper/PkStrings.cpp:629
+#: libapper/PkStrings.cpp:649
 msgid ""
 "Installation of this package was prevented by your packaging system's "
 "configuration."
 msgstr ""
 
-#: libapper/PkStrings.cpp:631
+#: libapper/PkStrings.cpp:651
 msgid ""
 "The package that was downloaded is corrupt and needs to be downloaded again."
 msgstr ""
 
-#: libapper/PkStrings.cpp:633
+#: libapper/PkStrings.cpp:653
 msgid ""
 "All of the packages selected for install are already installed on the system."
 msgstr ""
 
-#: libapper/PkStrings.cpp:635
+#: libapper/PkStrings.cpp:655
 msgid ""
 "The specified file could not be found on the system.\n"
 "Check that the file still exists and has not been deleted."
 msgstr ""
 
-#: libapper/PkStrings.cpp:638
+#: libapper/PkStrings.cpp:658
 msgid ""
 "Required data could not be found on any of the configured software origins.\n"
 "There were no more download mirrors that could be tried."
 msgstr ""
 
-#: libapper/PkStrings.cpp:641
+#: libapper/PkStrings.cpp:661
 msgid ""
 "Required upgrade data could not be found in any of the configured software "
 "origins.\n"
 "The list of distribution upgrades will be unavailable."
 msgstr ""
 
-#: libapper/PkStrings.cpp:644
+#: libapper/PkStrings.cpp:664
 msgid ""
 "The package that is trying to be installed is incompatible with this system."
 msgstr ""
 
-#: libapper/PkStrings.cpp:646
+#: libapper/PkStrings.cpp:666
 msgid ""
 "There is insufficient space on the device.\n"
 "Free some space on the system disk to perform this operation."
 msgstr ""
 
-#: libapper/PkStrings.cpp:649
+#: libapper/PkStrings.cpp:669
 msgid "Additional media is required to complete the transaction."
 msgstr "処理を完了するには追加のメディアが必要です."
 
-#: libapper/PkStrings.cpp:651
+#: libapper/PkStrings.cpp:671
 msgid ""
 "You have failed to provide correct authentication.\n"
 "Please check any passwords or account settings."
 msgstr ""
 
-#: libapper/PkStrings.cpp:654
+#: libapper/PkStrings.cpp:674
 msgid ""
 "The specified update could not be found.\n"
 "It could have already been installed or no longer available on the remote "
 "server."
 msgstr ""
 
-#: libapper/PkStrings.cpp:657
+#: libapper/PkStrings.cpp:677
 msgid "The package could not be installed from untrusted origin."
 msgstr "パッケージを信頼されていない配布元からインストールできませんでした"
 
-#: libapper/PkStrings.cpp:659
+#: libapper/PkStrings.cpp:679
 msgid "The package could not be updated from untrusted origin."
 msgstr "パッケージを信頼されていない配布元からアップデートできませんでした"
 
-#: libapper/PkStrings.cpp:661
+#: libapper/PkStrings.cpp:681
 msgid "The file list is not available for this package."
 msgstr "このパッケージのファイルリストが利用不可能です。"
 
-#: libapper/PkStrings.cpp:663
+#: libapper/PkStrings.cpp:683
 msgid "The information about what requires this package could not be obtained."
 msgstr "このパッケージの提供物の情報が取得できませんでした。"
 
-#: libapper/PkStrings.cpp:665
+#: libapper/PkStrings.cpp:685
 msgid "The specified software origin could not be disabled."
 msgstr "指定したソフトウェア配布元を無効にできませんでした。"
 
-#: libapper/PkStrings.cpp:667
+#: libapper/PkStrings.cpp:687
 msgid ""
 "The download could not be done automatically and should be done manually.\n"
 "More information is available in the detailed report."
@@ -2747,7 +2820,7 @@ msgstr ""
 "ダウンロードが自動的に行われなかったため、手動で行う必要があります。\n"
 "詳細な情報は詳細レポートにて利用可能です。"
 
-#: libapper/PkStrings.cpp:670
+#: libapper/PkStrings.cpp:690
 msgid ""
 "One of the selected packages failed to configure correctly.\n"
 "More information is available in the detailed report."
@@ -2755,7 +2828,7 @@ msgstr ""
 "選択したパッケージの一つが正しい設定に失敗しました。\n"
 "詳細な情報は詳細レポートにて利用可能です。"
 
-#: libapper/PkStrings.cpp:673
+#: libapper/PkStrings.cpp:693
 msgid ""
 "One of the selected packages failed to build correctly.\n"
 "More information is available in the detailed report."
@@ -2763,7 +2836,7 @@ msgstr ""
 "選択したパッケージの一つが正しいビルドに失敗しました。\n"
 "詳細な情報は詳細レポートにて利用可能です。"
 
-#: libapper/PkStrings.cpp:676
+#: libapper/PkStrings.cpp:696
 msgid ""
 "One of the selected packages failed to install correctly.\n"
 "More information is available in the detailed report."
@@ -2771,7 +2844,7 @@ msgstr ""
 "選択したパッケージの一つが正しいインストールに失敗しました。\n"
 "詳細な情報は詳細レポートにて利用可能です。"
 
-#: libapper/PkStrings.cpp:679
+#: libapper/PkStrings.cpp:699
 msgid ""
 "One of the selected packages failed to be removed correctly.\n"
 "More information is available in the detailed report."
@@ -2779,7 +2852,7 @@ msgstr ""
 "選択したパッケージの一つが正しい削除に失敗しました。\n"
 "詳細な情報は詳細レポートにて利用可能です。"
 
-#: libapper/PkStrings.cpp:682
+#: libapper/PkStrings.cpp:702
 msgid ""
 "A program is running that has to be closed before the update can proceed.\n"
 "More information is available in the detailed report."
@@ -2787,82 +2860,82 @@ msgstr ""
 "実行しているプログラムはアップデートの続行の前に閉じる必要があります。\n"
 "詳細な情報は詳細レポートにて利用可能です。"
 
-#: libapper/PkStrings.cpp:685
+#: libapper/PkStrings.cpp:705
 msgid "The package database was changed while the request was running."
 msgstr "要求の実行中にパッケージデータベースが変更されました。"
 
-#: libapper/PkStrings.cpp:687
+#: libapper/PkStrings.cpp:707
 msgid "The virtual provide type is not supported by this system."
 msgstr ""
 
-#: libapper/PkStrings.cpp:689
+#: libapper/PkStrings.cpp:709
 msgid "The install root is invalid. Please contact your administrator."
 msgstr ""
 
-#: libapper/PkStrings.cpp:691
+#: libapper/PkStrings.cpp:711
 #, fuzzy
 #| msgid "The specified software origin could not be disabled."
 msgid "The list of software could not be downloaded."
 msgstr "指定したソフトウェア配布元を無効にできませんでした。"
 
-#: libapper/PkStrings.cpp:693
+#: libapper/PkStrings.cpp:713
 msgid ""
 "The transaction has been cancelled and will be retried when the system is "
 "idle."
 msgstr ""
 
-#: libapper/PkStrings.cpp:695
+#: libapper/PkStrings.cpp:715
 msgid "A previous package management transaction was interrupted."
 msgstr ""
 
-#: libapper/PkStrings.cpp:697
+#: libapper/PkStrings.cpp:717
 #, fuzzy
 #| msgid "A media change is required"
 msgid "A package manager lock is required."
 msgstr "メディアの変更が必要です"
 
-#: libapper/PkStrings.cpp:699
+#: libapper/PkStrings.cpp:719
 msgid ""
 "Unknown error, please report a bug.\n"
 "More information is available in the detailed report."
 msgstr ""
 
-#: libapper/PkStrings.cpp:710
+#: libapper/PkStrings.cpp:730
 msgctxt "The group type"
 msgid "Accessibility"
 msgstr "アクセシビリティ"
 
-#: libapper/PkStrings.cpp:712
+#: libapper/PkStrings.cpp:732
 msgctxt "The group type"
 msgid "Accessories"
 msgstr "アクセサリ"
 
-#: libapper/PkStrings.cpp:714
+#: libapper/PkStrings.cpp:734
 msgctxt "The group type"
 msgid "Education"
 msgstr "教育"
 
-#: libapper/PkStrings.cpp:716
+#: libapper/PkStrings.cpp:736
 msgctxt "The group type"
 msgid "Games"
 msgstr "ゲーム"
 
-#: libapper/PkStrings.cpp:718
+#: libapper/PkStrings.cpp:738
 msgctxt "The group type"
 msgid "Graphics"
 msgstr "グラフィック"
 
-#: libapper/PkStrings.cpp:720
+#: libapper/PkStrings.cpp:740
 msgctxt "The group type"
 msgid "Internet"
 msgstr "インターネット"
 
-#: libapper/PkStrings.cpp:722
+#: libapper/PkStrings.cpp:742
 msgctxt "The group type"
 msgid "Office"
 msgstr "オフィス"
 
-#: libapper/PkStrings.cpp:724
+#: libapper/PkStrings.cpp:744
 #, fuzzy
 #| msgctxt "The group type"
 #| msgid "Other"
@@ -2870,198 +2943,198 @@ msgctxt "The group type"
 msgid "Others"
 msgstr "その他"
 
-#: libapper/PkStrings.cpp:726
+#: libapper/PkStrings.cpp:746
 msgctxt "The group type"
 msgid "Development"
 msgstr "開発"
 
-#: libapper/PkStrings.cpp:728
+#: libapper/PkStrings.cpp:748
 msgctxt "The group type"
 msgid "Multimedia"
 msgstr "マルチメディア"
 
-#: libapper/PkStrings.cpp:730
+#: libapper/PkStrings.cpp:750
 msgctxt "The group type"
 msgid "System"
 msgstr "システム"
 
-#: libapper/PkStrings.cpp:732
+#: libapper/PkStrings.cpp:752
 msgctxt "The group type"
 msgid "GNOME desktop"
 msgstr "GNOME デスクトップ"
 
-#: libapper/PkStrings.cpp:734
+#: libapper/PkStrings.cpp:754
 msgctxt "The group type"
 msgid "KDE desktop"
 msgstr "KDE デスクトップ"
 
-#: libapper/PkStrings.cpp:736
+#: libapper/PkStrings.cpp:756
 msgctxt "The group type"
 msgid "XFCE desktop"
 msgstr "XFCE デスクトップ"
 
-#: libapper/PkStrings.cpp:738
+#: libapper/PkStrings.cpp:758
 msgctxt "The group type"
 msgid "Other desktops"
 msgstr "その他デスクトップ"
 
-#: libapper/PkStrings.cpp:740
+#: libapper/PkStrings.cpp:760
 msgctxt "The group type"
 msgid "Publishing"
 msgstr "出版"
 
-#: libapper/PkStrings.cpp:742
+#: libapper/PkStrings.cpp:762
 msgctxt "The group type"
 msgid "Servers"
 msgstr "サーバ"
 
-#: libapper/PkStrings.cpp:744
+#: libapper/PkStrings.cpp:764
 msgctxt "The group type"
 msgid "Fonts"
 msgstr "フォント"
 
-#: libapper/PkStrings.cpp:746
+#: libapper/PkStrings.cpp:766
 msgctxt "The group type"
 msgid "Admin tools"
 msgstr "管理ツール"
 
-#: libapper/PkStrings.cpp:748
+#: libapper/PkStrings.cpp:768
 msgctxt "The group type"
 msgid "Legacy"
 msgstr "レガシー"
 
-#: libapper/PkStrings.cpp:750
+#: libapper/PkStrings.cpp:770
 msgctxt "The group type"
 msgid "Localization"
 msgstr "ローカル化"
 
-#: libapper/PkStrings.cpp:752
+#: libapper/PkStrings.cpp:772
 msgctxt "The group type"
 msgid "Virtualization"
 msgstr "仮想化"
 
-#: libapper/PkStrings.cpp:754
+#: libapper/PkStrings.cpp:774
 msgctxt "The group type"
 msgid "Security"
 msgstr "セキュリティ"
 
-#: libapper/PkStrings.cpp:756
+#: libapper/PkStrings.cpp:776
 msgctxt "The group type"
 msgid "Power management"
 msgstr "電源管理"
 
-#: libapper/PkStrings.cpp:758
+#: libapper/PkStrings.cpp:778
 msgctxt "The group type"
 msgid "Communication"
 msgstr "コミュニケーション"
 
-#: libapper/PkStrings.cpp:760
+#: libapper/PkStrings.cpp:780
 msgctxt "The group type"
 msgid "Network"
 msgstr "ネットワーク"
 
-#: libapper/PkStrings.cpp:762
+#: libapper/PkStrings.cpp:782
 msgctxt "The group type"
 msgid "Maps"
 msgstr "マップ"
 
-#: libapper/PkStrings.cpp:764
+#: libapper/PkStrings.cpp:784
 msgctxt "The group type"
 msgid "Software sources"
 msgstr "ソフトウェアソース"
 
-#: libapper/PkStrings.cpp:766
+#: libapper/PkStrings.cpp:786
 msgctxt "The group type"
 msgid "Science"
 msgstr "科学"
 
-#: libapper/PkStrings.cpp:768
+#: libapper/PkStrings.cpp:788
 msgctxt "The group type"
 msgid "Documentation"
 msgstr "ドキュメンテーション"
 
-#: libapper/PkStrings.cpp:770
+#: libapper/PkStrings.cpp:790
 msgctxt "The group type"
 msgid "Electronics"
 msgstr "エレクトロニクス"
 
-#: libapper/PkStrings.cpp:772
+#: libapper/PkStrings.cpp:792
 msgctxt "The group type"
 msgid "Package collections"
 msgstr "パッケージコレクション"
 
-#: libapper/PkStrings.cpp:774
+#: libapper/PkStrings.cpp:794
 msgctxt "The group type"
 msgid "Vendor"
 msgstr "ベンダー"
 
-#: libapper/PkStrings.cpp:776
+#: libapper/PkStrings.cpp:796
 msgctxt "The group type"
 msgid "Newest packages"
 msgstr "最新パッケージ"
 
-#: libapper/PkStrings.cpp:778
+#: libapper/PkStrings.cpp:798
 msgctxt "The group type"
 msgid "Unknown group"
 msgstr "未知のグループ"
 
-#: libapper/PkStrings.cpp:789
+#: libapper/PkStrings.cpp:809
 msgctxt "The type of update"
 msgid "Trivial update"
 msgstr "影響の小さいアップデート"
 
-#: libapper/PkStrings.cpp:791
+#: libapper/PkStrings.cpp:811
 msgctxt "The type of update"
 msgid "Normal update"
 msgstr "通常のアップデート"
 
-#: libapper/PkStrings.cpp:793
+#: libapper/PkStrings.cpp:813
 msgctxt "The type of update"
 msgid "Important update"
 msgstr "重要なアップデート"
 
-#: libapper/PkStrings.cpp:795
+#: libapper/PkStrings.cpp:815
 msgctxt "The type of update"
 msgid "Security update"
 msgstr "セキュリティアップデート"
 
-#: libapper/PkStrings.cpp:797
+#: libapper/PkStrings.cpp:817
 msgctxt "The type of update"
 msgid "Bug fix update"
 msgstr "バグフィックスアップデート"
 
-#: libapper/PkStrings.cpp:799
+#: libapper/PkStrings.cpp:819
 msgctxt "The type of update"
 msgid "Enhancement update"
 msgstr "機能拡張アップデート"
 
-#: libapper/PkStrings.cpp:801
+#: libapper/PkStrings.cpp:821
 msgctxt "The type of update"
 msgid "Blocked update"
 msgstr "ブロックされたアップデート"
 
-#: libapper/PkStrings.cpp:804
+#: libapper/PkStrings.cpp:824
 msgctxt "The type of update"
 msgid "Installed"
 msgstr "インストール済"
 
-#: libapper/PkStrings.cpp:807
+#: libapper/PkStrings.cpp:827
 msgctxt "The type of update"
 msgid "Available"
 msgstr "利用可能"
 
-#: libapper/PkStrings.cpp:809
+#: libapper/PkStrings.cpp:829
 msgctxt "The type of update"
 msgid "Unknown update"
 msgstr "未知のアップデート"
 
-#: libapper/PkStrings.cpp:820
+#: libapper/PkStrings.cpp:840
 #, fuzzy
 #| msgid "Notify when updates are available"
 msgid "No Updates Available"
 msgstr "アップデートが利用可能な場合に通知"
 
-#: libapper/PkStrings.cpp:823
+#: libapper/PkStrings.cpp:843
 #, fuzzy, kde-format
 #| msgctxt "Type of update, in the case it's just an update"
 #| msgid "1 update selected"
@@ -3072,7 +3145,7 @@ msgid_plural "%1 Updates Selected"
 msgstr[0] "1 つのアップデートが選択されました"
 msgstr[1] "%1 つのアップデートが選択されました"
 
-#: libapper/PkStrings.cpp:827
+#: libapper/PkStrings.cpp:847
 #, fuzzy, kde-format
 #| msgctxt "Type of update, in the case it's just an update"
 #| msgid "1 update"
@@ -3083,14 +3156,14 @@ msgid_plural "%1 Updates"
 msgstr[0] "1 つのアップデート"
 msgstr[1] "%1 つのアップデート"
 
-#: libapper/PkStrings.cpp:830
+#: libapper/PkStrings.cpp:850
 #, fuzzy, kde-format
 #| msgid "%1% - %2"
 msgctxt "Type of update, in the case it's just an update"
 msgid "%1, %2"
 msgstr "%1% - %2"
 
-#: libapper/PkStrings.cpp:831
+#: libapper/PkStrings.cpp:851
 #, fuzzy, kde-format
 #| msgctxt "Type of update, in the case it's just an update"
 #| msgid "1 update"
@@ -3101,7 +3174,7 @@ msgid_plural "%1 Updates"
 msgstr[0] "1 つのアップデート"
 msgstr[1] "%1 つのアップデート"
 
-#: libapper/PkStrings.cpp:832
+#: libapper/PkStrings.cpp:852
 #, fuzzy, kde-format
 #| msgctxt "Type of update, in the case it's just an update"
 #| msgid "1 update selected"
@@ -3112,13 +3185,13 @@ msgid_plural "%1 Selected"
 msgstr[0] "1 つのアップデートが選択されました"
 msgstr[1] "%1 つのアップデートが選択されました"
 
-#: libapper/PkStrings.cpp:836
+#: libapper/PkStrings.cpp:856
 #, fuzzy
 #| msgid "Package"
 msgid "No Packages"
 msgstr "パッケージ"
 
-#: libapper/PkStrings.cpp:838
+#: libapper/PkStrings.cpp:858
 #, fuzzy, kde-format
 #| msgid "Package"
 msgid "1 Package"
@@ -3126,270 +3199,280 @@ msgid_plural "%1 Packages"
 msgstr[0] "パッケージ"
 msgstr[1] "パッケージ"
 
-#: libapper/PkStrings.cpp:846
+#: libapper/PkStrings.cpp:866
 msgid "No restart is necessary"
 msgstr "再起動は必要ありません"
 
-#: libapper/PkStrings.cpp:848
+#: libapper/PkStrings.cpp:868
 msgid "You will be required to restart this application"
 msgstr "このアプリケーションの再起動が必要です"
 
-#: libapper/PkStrings.cpp:850
+#: libapper/PkStrings.cpp:870
 msgid "You will be required to log out and back in"
 msgstr "ログアウトとログインが必要です"
 
-#: libapper/PkStrings.cpp:852
+#: libapper/PkStrings.cpp:872
 msgid "A restart will be required"
 msgstr "再起動が必要です"
 
-#: libapper/PkStrings.cpp:854
+#: libapper/PkStrings.cpp:874
 msgid "You will be required to log out and back in due to a security update."
 msgstr "セキュリティアップデートのため、ログアウトとログインが必要とされます。"
 
-#: libapper/PkStrings.cpp:856
+#: libapper/PkStrings.cpp:876
 msgid "A restart will be required due to a security update."
 msgstr "セキュリティアップデートのため、再起動が必要とされます。"
 
-#: libapper/PkStrings.cpp:869
+#: libapper/PkStrings.cpp:889
 msgid "No restart is required"
 msgstr "再起動は必要ありません"
 
-#: libapper/PkStrings.cpp:871
+#: libapper/PkStrings.cpp:891
 msgid "A restart is required"
 msgstr "再起動が必要です"
 
-#: libapper/PkStrings.cpp:873
+#: libapper/PkStrings.cpp:893
 msgid "You need to log out and log back in"
 msgstr "ログアウトとログインが必要です"
 
-#: libapper/PkStrings.cpp:875
+#: libapper/PkStrings.cpp:895
 msgid "You need to restart the application"
 msgstr "アプリケーションの再起動が必要です"
 
-#: libapper/PkStrings.cpp:877
+#: libapper/PkStrings.cpp:897
 msgid "You need to log out and log back in to remain secure."
 msgstr "安全のためにログアウトとログインが必要です。"
 
-#: libapper/PkStrings.cpp:879
+#: libapper/PkStrings.cpp:899
 msgid "A restart is required to remain secure."
 msgstr "安全のために再起動が必要です。"
 
-#: libapper/PkStrings.cpp:892
+#: libapper/PkStrings.cpp:912
 msgid "Stable"
 msgstr "Stable"
 
-#: libapper/PkStrings.cpp:894
+#: libapper/PkStrings.cpp:914
 msgid "Unstable"
 msgstr "Unstable"
 
-#: libapper/PkStrings.cpp:896
+#: libapper/PkStrings.cpp:916
 msgid "Testing"
 msgstr "Testing"
 
-#: libapper/PkStrings.cpp:909
+#: libapper/PkStrings.cpp:929
 #, kde-format
 msgid "Please insert the CD labeled '%1', and press continue."
 msgstr "'%1' というラベルの CD を挿入し、続行を押してください。"
 
-#: libapper/PkStrings.cpp:911
+#: libapper/PkStrings.cpp:931
 #, kde-format
 msgid "Please insert the DVD labeled '%1', and press continue."
 msgstr "'%1' というラベルの DVD を挿入し、続行を押してください。"
 
-#: libapper/PkStrings.cpp:913
+#: libapper/PkStrings.cpp:933
 #, kde-format
 msgid "Please insert the disc labeled '%1', and press continue."
 msgstr "'%1' というラベルのディスクを挿入し、続行を押してください。"
 
-#: libapper/PkStrings.cpp:915 libapper/PkStrings.cpp:918
+#: libapper/PkStrings.cpp:935 libapper/PkStrings.cpp:938
 #, kde-format
 msgid "Please insert the medium labeled '%1', and press continue."
 msgstr "'%1' というラベルのメディアを挿入し、続行を押してください。"
 
-#: libapper/PkStrings.cpp:925
+#: libapper/PkStrings.cpp:945
 msgid "A mirror is possibly broken"
 msgstr "おそらくミラーが壊れています"
 
-#: libapper/PkStrings.cpp:927
+#: libapper/PkStrings.cpp:947
 msgid "The connection was refused"
 msgstr "接続が拒否されました"
 
-#: libapper/PkStrings.cpp:929
+#: libapper/PkStrings.cpp:949
 msgid "The parameter was invalid"
 msgstr "パラメータが無効です"
 
-#: libapper/PkStrings.cpp:931
+#: libapper/PkStrings.cpp:951
 msgid "The priority was invalid"
 msgstr "優先度が無効です"
 
-#: libapper/PkStrings.cpp:933
+#: libapper/PkStrings.cpp:953
 msgid "Backend warning"
 msgstr "バックエンドの警告"
 
-#: libapper/PkStrings.cpp:935
+#: libapper/PkStrings.cpp:955
 msgid "Daemon warning"
 msgstr "デーモンの警告"
 
-#: libapper/PkStrings.cpp:937
+#: libapper/PkStrings.cpp:957
 msgid "The package list cache is being rebuilt"
 msgstr "パッケージリストキャッシュがリビルド中です"
 
-#: libapper/PkStrings.cpp:939
+#: libapper/PkStrings.cpp:959
 msgid "An untrusted package was installed"
 msgstr "信頼されていないパッケージがインストールされました"
 
-#: libapper/PkStrings.cpp:941
+#: libapper/PkStrings.cpp:961
 msgid "A newer package exists"
 msgstr "最新のパッケージが存在します"
 
-#: libapper/PkStrings.cpp:943
+#: libapper/PkStrings.cpp:963
 msgid "Could not find package"
 msgstr "パッケージが見つかりませんでした"
 
-#: libapper/PkStrings.cpp:945
+#: libapper/PkStrings.cpp:965
 msgid "Configuration files were changed"
 msgstr "設定ファイルが変更されました"
 
-#: libapper/PkStrings.cpp:947
+#: libapper/PkStrings.cpp:967
 msgid "Package is already installed"
 msgstr "パッケージは既にインストールされています"
 
-#: libapper/PkStrings.cpp:949
+#: libapper/PkStrings.cpp:969
 msgid "Automatic cleanup is being ignored"
 msgstr "自動クリーンアップが無視されました"
 
-#: libapper/PkStrings.cpp:951
+#: libapper/PkStrings.cpp:971
 msgid "Software source download failed"
 msgstr "ソフトウェアソースのダウンロードに失敗しました"
 
-#: libapper/PkStrings.cpp:953
+#: libapper/PkStrings.cpp:973
 msgid "This software source is for developers only"
 msgstr "ソフトウェアソースは開発者用です"
 
-#: libapper/PkStrings.cpp:955
+#: libapper/PkStrings.cpp:975
 msgid "Other updates have been held back"
 msgstr ""
 
-#: libapper/PkStrings.cpp:970
+#: libapper/PkStrings.cpp:989
+msgid "You do not have the necessary privileges to perform this action."
+msgstr "このアクションを実行するのに必要な権限がありません。"
+
+#: libapper/PkStrings.cpp:991
 msgid "Could not get a transaction id from packagekitd."
 msgstr "packagekitd から処理 id の取得できませんでした。"
 
-#: libapper/PkStrings.cpp:972
+#: libapper/PkStrings.cpp:993
 msgid "Cannot connect to this transaction id."
 msgstr "この処理 id に接続できませんでした。"
 
-#: libapper/PkStrings.cpp:974
+#: libapper/PkStrings.cpp:995
 msgid "This action is unknown."
 msgstr "このアクションは未知です。"
 
-#: libapper/PkStrings.cpp:976
+#: libapper/PkStrings.cpp:997
 msgid "The packagekitd service could not be started."
 msgstr "packagekitd サービスを開始できませんでした。"
 
-#: libapper/PkStrings.cpp:978
+#: libapper/PkStrings.cpp:999
 msgid "The query is not valid."
 msgstr "クエリが無効です。"
 
-#: libapper/PkStrings.cpp:980
+#: libapper/PkStrings.cpp:1001
 msgid "The file is not valid."
 msgstr "ファイルが無効です。"
 
-#: libapper/PkStrings.cpp:982
+#: libapper/PkStrings.cpp:1003
 msgid "This function is not yet supported."
 msgstr "この機能はまだサポートされていません。"
 
-#: libapper/PkStrings.cpp:984
+#: libapper/PkStrings.cpp:1005
 msgid "Could not talk to packagekitd."
 msgstr "packagekitd と通信できませんでした。"
 
-#: libapper/PkStrings.cpp:988 libapper/PkStrings.cpp:991
+#: libapper/PkStrings.cpp:1007
+#, fuzzy
+#| msgid "Could not talk to packagekitd."
+msgid "Error talking to packagekitd."
+msgstr "packagekitd と通信できませんでした。"
+
+#: libapper/PkStrings.cpp:1010 libapper/PkStrings.cpp:1013
 msgid "An unknown error happened."
 msgstr "未知のエラーが発生しました。"
 
-#: libapper/PkStrings.cpp:1005 plasmoid/updaterapplet.cpp:146
+#: libapper/PkStrings.cpp:1027
 msgid "Your system is up to date"
 msgstr ""
 
-#: libapper/PkStrings.cpp:1007
+#: libapper/PkStrings.cpp:1029
 #, fuzzy
 #| msgid "Review and update"
 msgid "You have no updates"
 msgstr "レビューとアップデート"
 
-#: libapper/PkStrings.cpp:1009
+#: libapper/PkStrings.cpp:1031
 msgid "Last check for updates was more than a month ago"
 msgstr ""
 
-#: libapper/PkStrings.cpp:1017
+#: libapper/PkStrings.cpp:1039
 #, kde-format
 msgid "Verified %1 ago"
 msgstr ""
 
-#: libapper/PkStrings.cpp:1019
+#: libapper/PkStrings.cpp:1041
 msgid "It's strongly recommended that you check for new updates now"
 msgstr ""
 
-#: libapper/PkTransaction.cpp:129
+#: libapper/PkTransaction.cpp:139
 #, fuzzy
 #| msgid "Failed to simulate package install"
 msgid "Failed to simulate file install"
 msgstr "パッケージインストールのシミュレーションに失敗"
 
-#: libapper/PkTransaction.cpp:133
+#: libapper/PkTransaction.cpp:143
 #, fuzzy
 #| msgid "Current backend does not support installing packages."
 msgid "Current backend does not support installing files."
 msgstr "現在のバックエンドはパッケージのインストールをサポートしていません"
 
-#: libapper/PkTransaction.cpp:147
+#: libapper/PkTransaction.cpp:157
 msgid "Failed to simulate package install"
 msgstr "パッケージインストールのシミュレーションに失敗"
 
-#: libapper/PkTransaction.cpp:151
+#: libapper/PkTransaction.cpp:161
 msgid "Current backend does not support installing packages."
 msgstr "現在のバックエンドはパッケージのインストールをサポートしていません"
 
-#: libapper/PkTransaction.cpp:166
+#: libapper/PkTransaction.cpp:176
 msgid "Failed to simulate package removal"
 msgstr "パッケージ削除のシミュレーションに失敗しました"
 
-#: libapper/PkTransaction.cpp:170
+#: libapper/PkTransaction.cpp:180
 msgid "The current backend does not support removing packages."
 msgstr "現在のバックエンドはパッケージの削除をサポートしていません"
 
-#: libapper/PkTransaction.cpp:189
+#: libapper/PkTransaction.cpp:199
 #, fuzzy
 #| msgid "Failed to simulate package removal"
 msgid "Failed to simulate package update"
 msgstr "パッケージ削除のシミュレーションに失敗しました"
 
-#: libapper/PkTransaction.cpp:193
+#: libapper/PkTransaction.cpp:203
 #, fuzzy
 #| msgid "The current backend does not support removing packages."
 msgid "The current backend does not support updating packages."
 msgstr "現在のバックエンドはパッケージの削除をサポートしていません"
 
-#: libapper/PkTransaction.cpp:234
+#: libapper/PkTransaction.cpp:254
 msgid "Failed to install package"
 msgstr "パッケージのインストールに失敗しました"
 
-#: libapper/PkTransaction.cpp:244 PkSession/PkInstallProvideFiles.cpp:101
+#: libapper/PkTransaction.cpp:264 PkSession/PkInstallProvideFiles.cpp:101
 msgid "Failed to install file"
 msgid_plural "Failed to install files"
 msgstr[0] "ファイルのインストールに失敗しました"
 msgstr[1] "ファイルのインストールに失敗しました"
 
-#: libapper/PkTransaction.cpp:255
+#: libapper/PkTransaction.cpp:275
 msgid "Failed to remove package"
 msgstr "パッケージの削除に失敗"
 
-#: libapper/PkTransaction.cpp:265
+#: libapper/PkTransaction.cpp:285
 #, fuzzy
 #| msgid "Failed to find package"
 msgid "Failed to update package"
 msgstr "パッケージ検索に失敗しました"
 
-#: libapper/PkTransaction.cpp:331
+#: libapper/PkTransaction.cpp:351
 msgid ""
 "You are about to install unsigned packages that can compromise your system, "
 "as it is impossible to verify if the software came from a trusted source.\n"
@@ -3397,16 +3480,21 @@ msgid ""
 "Are you sure you want to proceed with the installation?"
 msgstr ""
 
-#: libapper/PkTransaction.cpp:334
+#: libapper/PkTransaction.cpp:354
 msgid "Installing unsigned software"
 msgstr "未署名のソフトウェアをインストール中"
 
-#: libapper/PkTransaction.cpp:379 libapper/PkTransaction.cpp:463
+#: libapper/PkTransaction.cpp:399 libapper/PkTransaction.cpp:486
 #, fuzzy
 #| msgid "Failed to install file"
 #| msgid_plural "Failed to install files"
 msgid "Failed to install signature"
 msgstr "ファイルのインストールに失敗しました"
+
+#: libapper/PkTransactionWidget.cpp:229 libapper/PkTransactionWidget.cpp:242
+#, kde-format
+msgid "%1 (%2%)"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: libapper/PkTransactionWidget.ui:38
@@ -3448,46 +3536,46 @@ msgstr "署名ユーザ識別子:"
 msgid "Signature identifier:"
 msgstr "署名識別子:"
 
-#: libapper/Requirements.cpp:55
+#: libapper/Requirements.cpp:56
 msgid "Additional changes"
 msgstr "追加の変更"
 
-#: libapper/Requirements.cpp:77
+#: libapper/Requirements.cpp:82
 #, kde-format
 msgid "1 package to remove"
 msgid_plural "%1 packages to remove"
 msgstr[0] "1 パッケージを削除"
 msgstr[1] "%1 パッケージを削除"
 
-#: libapper/Requirements.cpp:92
+#: libapper/Requirements.cpp:97
 #, kde-format
 msgid "1 package to downgrade"
 msgid_plural "%1 packages to downgrade"
 msgstr[0] "1 パッケージをダウングレード"
 msgstr[1] "%1 パッケージをダウングレード"
 
-#: libapper/Requirements.cpp:107
+#: libapper/Requirements.cpp:112
 #, kde-format
 msgid "1 package to reinstall"
 msgid_plural "%1 packages to reinstall"
 msgstr[0] "1 パッケージを再インストール"
 msgstr[1] "%1 パッケージを再インストール"
 
-#: libapper/Requirements.cpp:120
+#: libapper/Requirements.cpp:125
 #, kde-format
 msgid "1 package to install"
 msgid_plural "%1 packages to install"
 msgstr[0] "1 パッケージをインストール"
 msgstr[1] "%1 パッケージをインストール"
 
-#: libapper/Requirements.cpp:133
+#: libapper/Requirements.cpp:138
 #, kde-format
 msgid "1 package to update"
 msgid_plural "%1 packages to update"
 msgstr[0] "1 パッケージをアップグレード"
 msgstr[1] "%1 パッケージをアップグレード"
 
-#: libapper/Requirements.cpp:146
+#: libapper/Requirements.cpp:151
 #, fuzzy, kde-format
 #| msgctxt "The role of the transaction, in past tense"
 #| msgid "Installed packages"
@@ -3496,7 +3584,13 @@ msgid_plural "%1 untrusted packages"
 msgstr[0] "パッケージをインストール済"
 msgstr[1] "パッケージをインストール済"
 
-#: libapper/Requirements.cpp:242
+#: libapper/Requirements.cpp:200
+#, kde-format
+msgctxt "how many bytes are required for download"
+msgid "Need to get %1 of archives"
+msgstr ""
+
+#: libapper/Requirements.cpp:260
 msgid ""
 "You are about to install unsigned packages that can compromise your system, "
 "as it is impossible to verify if the software came from a trusted source."
@@ -3520,12 +3614,6 @@ msgstr "テキストラベル"
 #: PkSession/main.cpp:36
 msgid "Apper PackageKit Session helper"
 msgstr ""
-
-#: PkSession/main.cpp:38
-#, fuzzy
-#| msgid "(C) 2008-2009 Daniel Nicoletti"
-msgid "(C) 2008-2012 Daniel Nicoletti"
-msgstr "(C) 2008-2009 Daniel Nicoletti"
 
 #: PkSession/main.cpp:41
 msgid "Trever Fischer"
@@ -3624,7 +3712,7 @@ msgstr "パッケージ名インストーラ"
 msgid "Could not find any package to install in this catalog"
 msgstr "<h3>以下のカタログをインストールしますか？</h3><ul><li>%2</li></ul>"
 
-#: PkSession/PkInstallCatalogs.cpp:278 PkSession/PkInstallPackageNames.cpp:97
+#: PkSession/PkInstallCatalogs.cpp:280 PkSession/PkInstallPackageNames.cpp:97
 #: PkSession/PkIsInstalled.cpp:46
 msgid "Failed to start resolve transaction"
 msgstr "解決処理の開始に失敗しました"
@@ -4211,81 +4299,60 @@ msgid_plural "The following packages were found"
 msgstr[0] "以下のパッケージが削除されます"
 msgstr[1] "以下のパッケージが削除されます"
 
-#: PkSession/SessionTask.cpp:373
+#: PkSession/SessionTask.cpp:367
 #, fuzzy
 #| msgid "The package is not installed"
 msgid "There are no packages to Install or Remove"
 msgstr "パッケージはインストールされていません"
 
-#: PkSession/SessionTask.cpp:374
+#: PkSession/SessionTask.cpp:368
 #, fuzzy
 #| msgid "This action is unknown."
 msgid "This action should not happen"
 msgstr "このアクションは未知です。"
 
-#: PkSession/SessionTask.cpp:405
+#: PkSession/SessionTask.cpp:399
 #, fuzzy
 #| msgid "Could not find %1"
 msgid "Could not find"
 msgstr "%1 が見つかりませんでした"
 
-#: PkSession/SessionTask.cpp:406 PkSession/SessionTask.cpp:415
+#: PkSession/SessionTask.cpp:400 PkSession/SessionTask.cpp:409
 #, fuzzy
 #| msgid "No package was found to be installed"
 msgid "No packages were found that meet the request"
 msgstr "インストールするパッケージが見つかりませんでした"
 
-#: PkSession/SessionTask.cpp:414
+#: PkSession/SessionTask.cpp:408
 #, fuzzy
 #| msgid "Failed to find font"
 msgid "Failed to find"
 msgstr "フォントの検索に失敗しました"
 
-#: PkSession/SessionTask.cpp:436
+#: PkSession/SessionTask.cpp:430
 msgid "Transaction did not finish with success"
 msgstr "処理は成功しませんでした"
 
-#: PkSession/SessionTask.cpp:442
+#: PkSession/SessionTask.cpp:436
 #, fuzzy
 #| msgctxt "The action of the package, in past tense"
 #| msgid "Obsoleted"
 msgid "Task completed"
 msgstr "オブソリュート処理済"
 
-#: PkSession/SessionTask.cpp:442
+#: PkSession/SessionTask.cpp:436
 #, fuzzy
 #| msgid "File was installed successfully"
 #| msgid_plural "Files were installed successfully"
 msgid "All operations were committed successfully"
 msgstr "ファイルのインストールに成功しました"
 
-#: plasmoid/updaterapplet.cpp:148
-#, fuzzy, kde-format
-#| msgid "Review and update"
-msgid "You have one update"
-msgid_plural "You have %1 updates"
-msgstr[0] "レビューとアップデート"
-msgstr[1] "レビューとアップデート"
-
 #, fuzzy
 
 
 
 
-
-
-
 #, fuzzy
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -4300,26 +4367,7 @@ msgstr[1] "レビューとアップデート"
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 #, fuzzy
-
-
-
-
-#, fuzzy
-
-
-
 
 
 
@@ -4353,6 +4401,38 @@ msgstr[1] "レビューとアップデート"
 
 
 
+
+
+
+
+
+
+
+#, fuzzy
+
+
+
+
+#, fuzzy
+
+
+
+
+
+
+
+
+
+
+#, fuzzy
+
+
+
+
+
+
+
+
 #, fuzzy
 
 
@@ -4366,6 +4446,8 @@ msgstr[1] "レビューとアップデート"
 
 
 
+
+#, fuzzy
 
 
 
