@@ -1,4 +1,4 @@
-apper (0.8.1-1) UNRELEASED; urgency=low
+apper (0.8.1-1) unstable; urgency=low
 
   * New upstream release: 0.8.1
   * Depend on software-properties-kde instead of suggesting it (Closes: #696583)
