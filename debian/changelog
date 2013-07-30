@@ -1,3 +1,11 @@
+apper (0.8.1-1) UNRELEASED; urgency=low
+
+  * New upstream release: 0.8.1
+  * Depend on software-properties-kde instead of suggesting it (Closes: #696583)
+  * Add patch to make AppStream loading more failsafe
+
+ -- Matthias Klumpp <mak@debian.org>  Tue, 30 Jul 2013 12:34:46 +0200
+
 apper (0.8.0-2) unstable; urgency=low
 
   * Upload to unstable (Closes: #696585, #697996, #708090)
