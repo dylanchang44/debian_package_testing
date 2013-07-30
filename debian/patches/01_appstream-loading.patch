@@ -1,0 +1,94 @@
+commit 77dbdd1285624dc76636124b22140897dcd34914
+Author: Matthias Klumpp <matthias@tenstral.net>
+Date:   Tue Jul 30 01:25:08 2013 +0200
+
+    appstream: Split db loading into exra function and add additional return check
+
+diff --git a/libapper/AppStream.cpp b/libapper/AppStream.cpp
+index 9786ccf..23a810f 100644
+--- a/libapper/AppStream.cpp
++++ b/libapper/AppStream.cpp
+@@ -37,8 +37,10 @@ AppStream* AppStream::m_instance = 0;
+ 
+ AppStream* AppStream::instance()
+ {
+-    if(!m_instance)
++    if(!m_instance) {
+         m_instance = new AppStream(qApp);
++        m_instance->open();
++    }
+ 
+     return m_instance;
+ }
+@@ -47,21 +49,36 @@ AppStream::AppStream(QObject *parent)
+  : QObject(parent)
+ {
+ #ifdef HAVE_APPSTREAM
+-    bool ret;
+-
+     // create new AppStream database and screenshot service
+     m_asDB = appstream_database_new();
+     m_asScreenshots = appstream_screenshot_service_new();
++#endif //HAVE_APPSTREAM
++}
++
++AppStream::~AppStream()
++{
++#ifdef HAVE_APPSTREAM
++    g_object_unref(m_asDB);
++    g_object_unref(m_asScreenshots);
++#endif
++}
+ 
+-    ret = appstream_database_open(m_asDB);
++bool AppStream::open()
++{
++#ifdef HAVE_APPSTREAM
++    bool ret = appstream_database_open(m_asDB);
+     if (!ret) {
+         qWarning("Unable to open AppStream Xapian database!");
+-        return;
++        return false;
+     }
+ 
+     // cache application data (we might use the db directly, later (making use of AppstreamSearchQuery))
+-    GPtrArray *appArray = NULL;
++    GPtrArray *appArray;
+     appArray = appstream_database_get_all_applications(m_asDB);
++    if (appArray == NULL) {
++	qWarning("AppStream application array way NULL! (This should never happen)");
++	return false;
++    }
+ 
+     for (uint i = 0; i < appArray->len; i++) {
+         AppstreamAppInfo *appInfo;
+@@ -98,14 +115,9 @@ AppStream::AppStream(QObject *parent)
+     }
+     g_ptr_array_unref(appArray);
+ 
+-#endif //HAVE_APPSTREAM
+-}
+-
+-AppStream::~AppStream()
+-{
+-#ifdef HAVE_APPSTREAM
+-    g_object_unref(m_asDB);
+-    g_object_unref(m_asScreenshots);
++    return true;
++#else
++    return false;
+ #endif
+ }
+ 
+diff --git a/libapper/AppStream.h b/libapper/AppStream.h
+index c288543..a3e139c 100644
+--- a/libapper/AppStream.h
++++ b/libapper/AppStream.h
+@@ -46,6 +46,7 @@ class KDE_EXPORT AppStream : public QObject {
+         };
+         static AppStream* instance();
+         virtual ~AppStream();
++        bool open();
+ 
+         QList<Application> applications(const QString &pkgName) const;
+         QString genericIcon(const QString &pkgName) const;
