@@ -1,3 +1,9 @@
+apper (0.8.1-2) unstable; urgency=low
+
+  * appstream-0.6.patch: Add support for AppStream 0.6
+
+ -- Matthias Klumpp <mak@debian.org>  Wed, 16 Apr 2014 21:38:12 +0200
+
 apper (0.8.1-1) unstable; urgency=low
 
   * New upstream release: 0.8.1
