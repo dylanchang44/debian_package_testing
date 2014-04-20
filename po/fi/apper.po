@@ -1,7 +1,7 @@
 # Copyright © 2010, 2011, 2012 This_file_is_part_of_KDE
 # This file is distributed under the same license as the apper package.
 # Tommi Nieminen <translator@legisign.org>, 2010, 2012.
-# Lasse Liehu <lasse.liehu@gmail.com>, 2012, 2013.
+# Lasse Liehu <lasse.liehu@gmail.com>, 2012, 2013, 2014.
 # Jiri Grönroos <jiri.gronroos+kde@iki.fi>, 2012.
 #
 # KDE Finnish translation sprint participants:
@@ -11,8 +11,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: apper\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-07-07 01:35+0000\n"
-"PO-Revision-Date: 2013-05-06 05:30+0300\n"
+"POT-Creation-Date: 2014-03-13 01:37+0000\n"
+"PO-Revision-Date: 2014-04-07 23:04+0300\n"
 "Last-Translator: Lasse Liehu <lasse.liehu@gmail.com>\n"
 "Language-Team: Finnish <lokalisointi@lists.coss.fi>\n"
 "Language: fi\n"
@@ -298,7 +298,7 @@ msgstr "Yksittäisen tiedoston asennus"
 
 #: Apper/main.cpp:73
 msgid "Font resource installer"
-msgstr "Kirjasinresurssin asennus"
+msgstr "Fonttiresurssin asennus"
 
 #: Apper/main.cpp:74
 msgid "Catalog installer"
@@ -519,12 +519,12 @@ msgstr "Näytä koot"
 #. i18n: ectx: property (text), widget (QPushButton, exportInstalledPB)
 #: ApperKCM/BrowseView.ui:140
 msgid "Export Installed Package List..."
-msgstr "Vie asennettujen pakettien luettelo..."
+msgstr "Vie asennettujen pakettien luettelo…"
 
 #. i18n: ectx: property (text), widget (QPushButton, importInstalledPB)
 #: ApperKCM/BrowseView.ui:150
 msgid "Install Packages from List..."
-msgstr "Asenna paketit luettelosta..."
+msgstr "Asenna paketit luettelosta…"
 
 #: ApperKCM/CategoryModel.cpp:53 ApperKCM/CategoryModel.cpp:61
 msgid "Lists"
@@ -835,7 +835,7 @@ msgstr "Toiminto"
 #: ApperKCM/TransactionModel.cpp:49
 msgctxt "Machine user who issued the transaction"
 msgid "Username"
-msgstr "Käyttäjänimi"
+msgstr "Käyttäjätunnus"
 
 #: ApperKCM/TransactionModel.cpp:50
 msgid "Application"
@@ -1122,7 +1122,7 @@ msgstr "Suoritetaan asennusta"
 #: AppSetup/SetupWizard.cpp:281
 #, kde-format
 msgid "Installing %1..."
-msgstr "Asennetaan %1..."
+msgstr "Asennetaan %1…"
 
 #: AppSetup/SetupWizard.cpp:316
 msgid ""
@@ -1166,13 +1166,13 @@ msgstr "Se on allekirjoitettu seuraavien käyttäjätunnisteiden avaimilla: %1"
 msgid "Security hints"
 msgstr "Turvallisuusvinkit"
 
-#: libapper/ApplicationLauncher.cpp:96
+#: libapper/ApplicationLauncher.cpp:94
 msgid "New application available"
 msgid_plural "New applications available"
 msgstr[0] "Uusi sovellus saatavilla"
 msgstr[1] "Uusia sovelluksia saatavilla"
 
-#: libapper/ApplicationLauncher.cpp:99
+#: libapper/ApplicationLauncher.cpp:97
 msgid "The following application was just installed. Click on it to launch:"
 msgid_plural ""
 "The following applications were just installed. Click on them to launch:"
@@ -2090,7 +2090,7 @@ msgstr "Paketti ei ole yhteensopiva järjestelmän kanssa"
 msgid "No space is left on the disk"
 msgstr "Levyllä ei ole tarpeeksi tilaa"
 
-#: libapper/PkStrings.cpp:494 libapper/PkTransaction.cpp:441
+#: libapper/PkStrings.cpp:494 libapper/PkTransaction.cpp:446
 msgid "A media change is required"
 msgstr "Tietovälineen vaihto tarpeen"
 
@@ -2128,7 +2128,7 @@ msgstr "Lataus epäonnistui"
 
 #: libapper/PkStrings.cpp:512
 msgid "Package failed to configure"
-msgstr "Paketin asettaminen epäonnistui"
+msgstr "Paketin asetusten tekeminen epäonnistui"
 
 #: libapper/PkStrings.cpp:514
 msgid "Package failed to build"
@@ -2718,7 +2718,7 @@ msgstr "Palvelimet"
 #: libapper/PkStrings.cpp:764
 msgctxt "The group type"
 msgid "Fonts"
-msgstr "Kirjasimet"
+msgstr "Fontit"
 
 #: libapper/PkStrings.cpp:766
 msgctxt "The group type"
@@ -3167,7 +3167,7 @@ msgstr "Paketin poisto epäonnistui"
 msgid "Failed to update package"
 msgstr "Paketin päivitys epäonnistui"
 
-#: libapper/PkTransaction.cpp:351
+#: libapper/PkTransaction.cpp:356
 msgid ""
 "You are about to install unsigned packages that can compromise your system, "
 "as it is impossible to verify if the software came from a trusted source.\n"
@@ -3179,11 +3179,11 @@ msgstr ""
 "lähteestä.\n"
 "Haluatko varmasti jatkaa asennusta?"
 
-#: libapper/PkTransaction.cpp:354
+#: libapper/PkTransaction.cpp:359
 msgid "Installing unsigned software"
 msgstr "Asenna allekirjoittamaton ohjelma"
 
-#: libapper/PkTransaction.cpp:399 libapper/PkTransaction.cpp:486
+#: libapper/PkTransaction.cpp:404 libapper/PkTransaction.cpp:491
 msgid "Failed to install signature"
 msgstr "Allekirjoituksen asennus epäonnistui"
 
@@ -3392,7 +3392,7 @@ msgstr "Ratkaisutoimenpidettä ei saatu käynnistetyksi"
 
 #: PkSession/PkInstallFontconfigResources.cpp:41
 msgid "Installs new Fonts"
-msgstr "Asentaa uusia kirjasimia"
+msgstr "Asentaa uusia fontteja"
 
 #: PkSession/PkInstallFontconfigResources.cpp:73
 msgid "Could interpret request"
@@ -3410,24 +3410,24 @@ msgid_plural ""
 "Additional fonts are required to view this document correctly.\n"
 "Do you want to search for suitable packages now?"
 msgstr[0] ""
-"Tämän asiakirjan näyttämiseksi oikein tarvitaan lisäkirjasin.\n"
+"Tämän tiedoston näyttämiseksi oikein tarvitaan lisäfontti.\n"
 "Haluatko etsiä sopivaa pakettia nyt?"
 msgstr[1] ""
-"Tämän asiakirjan näyttämiseksi oikein tarvitaan lisäkirjasimia.\n"
+"Tämän tiedoston näyttämiseksi oikein tarvitaan lisäfontteja.\n"
 "Haluatko etsiä sopivia paketteja nyt?"
 
 #: PkSession/PkInstallFontconfigResources.cpp:117
 msgid "A program wants to install a font"
 msgid_plural "A program wants to install fonts"
-msgstr[0] "Ohjelma haluaa asentaa kirjasimen"
-msgstr[1] "Ohjelma haluaa asentaa kirjasimia"
+msgstr[0] "Ohjelma haluaa asentaa fontin"
+msgstr[1] "Ohjelma haluaa asentaa fontteja"
 
 #: PkSession/PkInstallFontconfigResources.cpp:121
 #, kde-format
 msgid "The application %2 wants to install a font"
 msgid_plural "The application %2 wants to install fonts"
-msgstr[0] "Sovellus %2 haluaa asentaa kirjasimen"
-msgstr[1] "Sovellus %2 haluaa asentaa kirjasimia"
+msgstr[0] "Sovellus %2 haluaa asentaa fontin"
+msgstr[1] "Sovellus %2 haluaa asentaa fontteja"
 
 #: PkSession/PkInstallFontconfigResources.cpp:145
 #: PkSession/PkInstallFontconfigResources.cpp:166
@@ -3441,11 +3441,11 @@ msgstr "Tarjoajien haku epäonnistui"
 #: PkSession/PkInstallFontconfigResources.cpp:155
 #: PkSession/PkInstallFontconfigResources.cpp:164
 msgid "Failed to find font"
-msgstr "Kirjasinta ei löytynyt"
+msgstr "Fonttia ei löytynyt"
 
 #: PkSession/PkInstallFontconfigResources.cpp:157
 msgid "No new fonts could be found for this document"
-msgstr "Ei löytynyt uusia kirjasimia tähän asiakirjaan"
+msgstr "Ei löytynyt uusia fontteja tähän tiedostoon"
 
 #: PkSession/PkInstallGStreamerResources.cpp:39
 msgid "Install GStreamer Resources"

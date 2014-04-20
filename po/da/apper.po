@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kpackagekit\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-07-07 01:35+0000\n"
+"POT-Creation-Date: 2014-03-13 01:37+0000\n"
 "PO-Revision-Date: 2013-04-06 21:19+0200\n"
 "Last-Translator: Martin Schlander <mschlander@opensuse.org>\n"
 "Language-Team: Danish <kde-i18n-doc@kde.org>\n"
@@ -1168,13 +1168,13 @@ msgstr "Den er signeret med en nøgle som tilhører disse bruger-id'er: %1"
 msgid "Security hints"
 msgstr "Sikkerhedstips"
 
-#: libapper/ApplicationLauncher.cpp:96
+#: libapper/ApplicationLauncher.cpp:94
 msgid "New application available"
 msgid_plural "New applications available"
 msgstr[0] "Nyt program tilgængeligt"
 msgstr[1] "Nye programmer tilgængelige"
 
-#: libapper/ApplicationLauncher.cpp:99
+#: libapper/ApplicationLauncher.cpp:97
 msgid "The following application was just installed. Click on it to launch:"
 msgid_plural ""
 "The following applications were just installed. Click on them to launch:"
@@ -2092,7 +2092,7 @@ msgstr "Pakken er inkompatibel med dette system"
 msgid "No space is left on the disk"
 msgstr "Ingen plads tilbage på disken"
 
-#: libapper/PkStrings.cpp:494 libapper/PkTransaction.cpp:441
+#: libapper/PkStrings.cpp:494 libapper/PkTransaction.cpp:446
 msgid "A media change is required"
 msgstr "Et skift af medie kræves"
 
@@ -3176,7 +3176,7 @@ msgstr "Fjernelse af pakke mislykkedes"
 msgid "Failed to update package"
 msgstr "Kunne ikke opdatere pakke"
 
-#: libapper/PkTransaction.cpp:351
+#: libapper/PkTransaction.cpp:356
 msgid ""
 "You are about to install unsigned packages that can compromise your system, "
 "as it is impossible to verify if the software came from a trusted source.\n"
@@ -3188,11 +3188,11 @@ msgstr ""
 "\n"
 "Vil du virkelig fortsætte installationen?"
 
-#: libapper/PkTransaction.cpp:354
+#: libapper/PkTransaction.cpp:359
 msgid "Installing unsigned software"
 msgstr "Installerer usigneret software"
 
-#: libapper/PkTransaction.cpp:399 libapper/PkTransaction.cpp:486
+#: libapper/PkTransaction.cpp:404 libapper/PkTransaction.cpp:491
 msgid "Failed to install signature"
 msgstr "Kunne ikke installere signatur"
 

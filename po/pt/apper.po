@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kpackagekit\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-07-07 01:35+0000\n"
+"POT-Creation-Date: 2014-03-13 01:37+0000\n"
 "PO-Revision-Date: 2013-04-23 16:42+0100\n"
 "Last-Translator: José Nuno Coelho Pires <zepires@gmail.com>\n"
 "Language-Team: Portuguese <kde-i18n-pt@kde.org>\n"
@@ -1184,13 +1184,13 @@ msgstr ""
 msgid "Security hints"
 msgstr "Sugestões de segurança"
 
-#: libapper/ApplicationLauncher.cpp:96
+#: libapper/ApplicationLauncher.cpp:94
 msgid "New application available"
 msgid_plural "New applications available"
 msgstr[0] "Aplicação nova disponível"
 msgstr[1] "Aplicações novas disponíveis"
 
-#: libapper/ApplicationLauncher.cpp:99
+#: libapper/ApplicationLauncher.cpp:97
 msgid "The following application was just installed. Click on it to launch:"
 msgid_plural ""
 "The following applications were just installed. Click on them to launch:"
@@ -2110,7 +2110,7 @@ msgstr "O pacote é incompatível com este sistema"
 msgid "No space is left on the disk"
 msgstr "Não há mais espaço livre em disco"
 
-#: libapper/PkStrings.cpp:494 libapper/PkTransaction.cpp:441
+#: libapper/PkStrings.cpp:494 libapper/PkTransaction.cpp:446
 msgid "A media change is required"
 msgstr "É necessária uma mudança de disco"
 
@@ -3208,7 +3208,7 @@ msgstr "Não foi possível remover o pacote"
 msgid "Failed to update package"
 msgstr "Não foi possível actualizar o pacote"
 
-#: libapper/PkTransaction.cpp:351
+#: libapper/PkTransaction.cpp:356
 msgid ""
 "You are about to install unsigned packages that can compromise your system, "
 "as it is impossible to verify if the software came from a trusted source.\n"
@@ -3220,11 +3220,11 @@ msgstr ""
 "fidedigna.\n"
 "Tem a certeza que deseja continuar a instalação?"
 
-#: libapper/PkTransaction.cpp:354
+#: libapper/PkTransaction.cpp:359
 msgid "Installing unsigned software"
 msgstr "A instalar uma aplicação não-assinada"
 
-#: libapper/PkTransaction.cpp:399 libapper/PkTransaction.cpp:486
+#: libapper/PkTransaction.cpp:404 libapper/PkTransaction.cpp:491
 msgid "Failed to install signature"
 msgstr "Não foi possível instalar a assinatura"
 

@@ -1,63 +1,64 @@
+# SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-# Marce Villarino <mvillarino@kde-espana.es>, 2013.
 msgid ""
 msgstr ""
-"Project-Id-Version: \n"
+"Project-Id-Version: plasma\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2013-06-25 01:31+0000\n"
-"PO-Revision-Date: 2013-11-10 18:46+0100\n"
-"Last-Translator: Marce Villarino <mvillarino@kde-espana.org>\n"
-"Language-Team: Galician <proxecto@trasno.net>\n"
-"Language: gl\n"
+"PO-Revision-Date: 2013-12-30 18:36+0000\n"
+"Last-Translator: Samir Ribić <Unknown>\n"
+"Language-Team: bosanski <bs@li.org>\n"
+"Language: bs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 1.5\n"
-"X-Environment: kde\n"
-"X-Accelerator-Marker: &\n"
-"X-Text-Markup: kde4\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Launchpad-Export-Date: 2013-12-31 05:24+0000\n"
+"X-Generator: Launchpad (build 16877)\n"
 
 #: package/contents/ui/ChangelogView.qml:31
 msgid "Failed to get update details"
-msgstr "Non se conseguiu obter detalles da actualización"
+msgstr "Neuspješno dobavljanje detalja o nadogradnjama"
 
 #: package/contents/ui/ChangelogView.qml:94
 msgid "Version: %1"
-msgstr "Versión: %1"
+msgstr "Izdanje: %1"
 
 #: package/contents/ui/ChangelogView.qml:100
 msgid "Updates: %1"
-msgstr "Actualizacións: %1"
+msgstr "Nadogradnje: %1"
 
 #: package/contents/ui/main.qml:39
 msgid "Software Updates"
-msgstr "Actualizacións de sofware"
+msgstr "Software Updates"
 
 #: package/contents/ui/main.qml:65 package/contents/ui/main.qml:229
 msgid "Check for new updates"
-msgstr "Comprobar se hai novas actualizacións"
+msgstr "Provjerite nova ažuriranja"
 
 #: package/contents/ui/main.qml:128
 msgid "Failed to get updates"
-msgstr "Non se conseguiron actualizacións"
+msgstr "Neuspjelo dobivanje nadogradnji"
 
 #: package/contents/ui/main.qml:173
 msgid "You have one update"
 msgid_plural "You have %1 updates"
-msgstr[0] "Hai unha actualización"
-msgstr[1] "Hai %1 actualizacións"
+msgstr[0] "Imate %1 nadogradnju"
+msgstr[1] "Imate %1 nadogradnje"
+msgstr[2] "Imate %1 nadogradnji"
 
 #: package/contents/ui/main.qml:178
 msgid "Your system is up to date"
-msgstr "O sistema está posto ao día"
+msgstr "Sistem je već ažuran"
 
 #: package/contents/ui/Transaction.qml:76
 msgid "Cancel"
-msgstr "Cancelar"
+msgstr "Odustani"
 
 #: package/contents/ui/Updates.qml:79
 msgid "Install"
-msgstr "Instalar"
+msgstr "Instaliraj"

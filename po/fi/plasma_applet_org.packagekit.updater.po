@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2013-06-25 01:31+0000\n"
-"PO-Revision-Date: 2013-06-29 20:19+0300\n"
+"PO-Revision-Date: 2013-10-25 03:55+0300\n"
 "Last-Translator: Lasse Liehu <lasse.liehu@gmail.com>\n"
 "Language-Team: Finnish <lokalisointi@lists.coss.fi>\n"
 "Language: fi\n"
@@ -31,7 +31,7 @@ msgstr "Päivittää: %1"
 
 #: package/contents/ui/main.qml:39
 msgid "Software Updates"
-msgstr "Ohjelmapäivitykset"
+msgstr "Ohjelmistopäivitykset"
 
 #: package/contents/ui/main.qml:65 package/contents/ui/main.qml:229
 msgid "Check for new updates"

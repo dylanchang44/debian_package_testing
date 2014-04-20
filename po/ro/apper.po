@@ -1,13 +1,13 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
 #
-# Sergiu Bivol <sergiu@ase.md>, 2008, 2009, 2013.
+# Sergiu Bivol <sergiu@ase.md>, 2008, 2009, 2013, 2014.
 msgid ""
 msgstr ""
 "Project-Id-Version: kpackagekit\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-07-07 01:35+0000\n"
-"PO-Revision-Date: 2013-03-16 12:06+0200\n"
+"POT-Creation-Date: 2014-03-13 01:37+0000\n"
+"PO-Revision-Date: 2014-04-14 12:08+0300\n"
 "Last-Translator: Sergiu Bivol <sergiu@ase.md>\n"
 "Language-Team: Romanian <kde-i18n-ro@kde.org>\n"
 "Language: ro\n"
@@ -87,11 +87,8 @@ msgstr "Caută detalii"
 
 #. i18n: ectx: property (text), widget (QCheckBox, getRequiresCB)
 #: Apper/BackendDetails.ui:166
-#, fuzzy
-#| msgid "An additional package is required:"
-#| msgid_plural "Additional packages are required:"
 msgid "Get Package Requires"
-msgstr "Este necesar un pachet suplimentar:"
+msgstr "Obține necesitățile pachetului"
 
 #. i18n: ectx: property (text), widget (QCheckBox, searchGroupCB)
 #: Apper/BackendDetails.ui:176
@@ -227,10 +224,8 @@ msgstr "Programe libere"
 
 #. i18n: ectx: property (text), widget (QCheckBox, supportedCB)
 #: Apper/BackendDetails.ui:435
-#, fuzzy
-#| msgid "Not supported by this backend"
 msgid "Supported"
-msgstr "Nesusținut de această platformă"
+msgstr "Susținut"
 
 #. i18n: ectx: property (text), widget (QCheckBox, archCB)
 #: Apper/BackendDetails.ui:445
@@ -252,10 +247,8 @@ msgid "Apper"
 msgstr "Apper"
 
 #: Apper/main.cpp:56
-#, fuzzy
-#| msgid "KPackageKit is a tool to manage software"
 msgid "Apper is an Application to Get and Manage Software"
-msgstr "KPackageKit este o unealtă pentru gestiunea programelor"
+msgstr "Apper este un program pentru obținerea și gestiunea programelor"
 
 #: Apper/main.cpp:58 ApperKCM/ApperKCM.cpp:90 PkSession/main.cpp:38
 msgid "(C) 2008-2013 Daniel Nicoletti"
@@ -298,10 +291,8 @@ msgid "Single file installer"
 msgstr "Instalator de fișiere singulare"
 
 #: Apper/main.cpp:73
-#, fuzzy
-#| msgid "Package name installer"
 msgid "Font resource installer"
-msgstr "Instalator de denumiri de pachete"
+msgstr "Instalator de resurse cu fonturi"
 
 #: Apper/main.cpp:74
 msgid "Catalog installer"
@@ -474,11 +465,8 @@ msgid "Installed Software"
 msgstr "Aplicații instalate"
 
 #: ApperKCM/ApperKCM.cpp:704
-#, fuzzy
-#| msgid "Do you want to install this file?"
-#| msgid_plural "Do you want to install these files?"
 msgid "Could not find an application that matched this category"
-msgstr "Doriți să instalați acest fișier?"
+msgstr "Nu s-au găsit aplicații care să se potrivească cu această categorie"
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, ApperKCM)
 #: ApperKCM/ApperKCM.ui:20
@@ -502,11 +490,8 @@ msgstr "Configurări generale"
 
 #. i18n: ectx: property (text), widget (QPushButton, repoSettingsPB)
 #: ApperKCM/ApperKCM.ui:214
-#, fuzzy
-#| msgctxt "The group type"
-#| msgid "Software sources"
 msgid "Software Origins"
-msgstr "Surse software"
+msgstr "Origini software"
 
 #. i18n: ectx: property (text), widget (QToolButton, backTB)
 #: ApperKCM/ApperKCM.ui:267 AppSetup/SetupWizard.cpp:152
@@ -583,7 +568,7 @@ msgstr "Numai dezvoltare"
 
 #: ApperKCM/FiltersMenu.cpp:104
 msgid "Only end user files"
-msgstr ""
+msgstr "Numai fișierele utilizatorului final"
 
 #: ApperKCM/FiltersMenu.cpp:120
 msgid "Graphical"
@@ -611,23 +596,17 @@ msgid "Only non-free software"
 msgstr "Numai programe non-libere"
 
 #: ApperKCM/FiltersMenu.cpp:181
-#, fuzzy
-#| msgid "Not supported by this backend"
 msgctxt "Filter for supported packages"
 msgid "Supported"
-msgstr "Nesusținut de această platformă"
+msgstr "Susținut"
 
 #: ApperKCM/FiltersMenu.cpp:188
-#, fuzzy
-#| msgid "Only free software"
 msgid "Only supported software"
-msgstr "Numai programe libere"
+msgstr "Numai programe susținute"
 
 #: ApperKCM/FiltersMenu.cpp:195
-#, fuzzy
-#| msgid "Only non-free software"
 msgid "Only non-supported software"
-msgstr "Numai programe non-libere"
+msgstr "Numai programe nesusținute"
 
 #: ApperKCM/FiltersMenu.cpp:212
 msgctxt "Filter for source packages"
@@ -659,14 +638,12 @@ msgid "Only show the newest available package"
 msgstr "Arată numai cel mai nou pachet disponibil"
 
 #: ApperKCM/FiltersMenu.cpp:269
-#, fuzzy
-#| msgid "Only newest packages"
 msgid "Only Native Packages"
-msgstr "Numai cele mai noi pachete"
+msgstr "Numai pachete native"
 
 #: ApperKCM/FiltersMenu.cpp:274
 msgid "Only show packages matching the machine architecture"
-msgstr ""
+msgstr "Arată numai pachetele ce se potrivesc cu arhitectura mașinii"
 
 #: ApperKCM/FiltersMenu.cpp:283
 msgid "Only Show Applications"
@@ -677,11 +654,8 @@ msgid "Hide packages that are not applications"
 msgstr "Ascunde pachetele care nu sînt aplicații"
 
 #: ApperKCM/PackageDetails.cpp:86
-#, fuzzy
-#| msgctxt "Daily refresh the package cache"
-#| msgid "Daily"
 msgid "Display"
-msgstr "Zilnic"
+msgstr "Afișare"
 
 #: ApperKCM/PackageDetails.cpp:93 AppSetup/SetupWizard.cpp:259
 msgid "Description"
@@ -705,7 +679,7 @@ msgstr "Niciun fișier găsit."
 
 #: ApperKCM/PackageDetails.cpp:557
 msgid "Could not fetch software details"
-msgstr ""
+msgstr "Nu se pot prelua detalii despre aplicație"
 
 #: ApperKCM/PackageDetails.cpp:599
 msgid "Applications"
@@ -722,10 +696,8 @@ msgid "Hide"
 msgstr "Ascunde"
 
 #: ApperKCM/ScreenShotViewer.cpp:90
-#, fuzzy
-#| msgid "Could not find package"
 msgid "Could not find screen shot."
-msgstr "Pachetul nu a putut fi găsit"
+msgstr "Captura de ecran nu a putut fi găsită."
 
 #: ApperKCM/Settings/OriginModel.cpp:36
 msgid "Origin of Packages"
@@ -733,29 +705,22 @@ msgstr "Originea pachetelor"
 
 #: ApperKCM/Settings/Settings.cpp:56
 msgid "A repository was changed, it's highly recommended to refresh the cache"
-msgstr ""
+msgstr "A fost modificat un depozit, se recomandă să reîmprospătați cache-ul"
 
 #: ApperKCM/Settings/Settings.cpp:88
-#, fuzzy
-#| msgctxt "Never refresh package cache"
-#| msgid "Never"
 msgctxt "Inform about distribution upgrades"
 msgid "Never"
 msgstr "Niciodată"
 
 #: ApperKCM/Settings/Settings.cpp:91
-#, fuzzy
-#| msgid "Only installed"
 msgctxt "Inform about distribution upgrades"
 msgid "Only stable"
-msgstr "Numai instalate"
+msgstr "Numai stabile"
 
 #: ApperKCM/Settings/Settings.cpp:96
-#, fuzzy
-#| msgid "Only development"
 msgctxt "Inform about distribution upgrades"
 msgid "Stable and development"
-msgstr "Numai dezvoltare"
+msgstr "Stabile și dezvoltare"
 
 #: ApperKCM/Settings/Settings.cpp:100
 msgctxt "Hourly refresh the package cache"
@@ -783,77 +748,58 @@ msgid "Never"
 msgstr "Niciodată"
 
 #: ApperKCM/Settings/Settings.cpp:106
-#, fuzzy
-#| msgctxt "None updates will be automatically installed"
-#| msgid "None"
 msgctxt "No updates will be automatically installed"
 msgid "None"
 msgstr "Niciuna"
 
 #: ApperKCM/Settings/Settings.cpp:107
-#, fuzzy
-#| msgid "Downloading"
 msgid "Download only"
-msgstr "Se descarcă"
+msgstr "Numai descărcare"
 
 #: ApperKCM/Settings/Settings.cpp:108
-#, fuzzy
-#| msgid "Security Only"
 msgid "Security only"
 msgstr "Numai de securitate"
 
 #: ApperKCM/Settings/Settings.cpp:109
-#, fuzzy
-#| msgid "All Updates"
 msgid "All updates"
 msgstr "Toate actualizările"
 
 #. i18n: ectx: property (text), widget (QLabel, intervalL)
 #: ApperKCM/Settings/Settings.ui:53
-#, fuzzy
-#| msgid "Check for Updates:"
 msgid "Check for new updates:"
-msgstr "Verifică pentru actualizări:"
+msgstr "Verifică pentru actualizări noi:"
 
 #. i18n: ectx: property (text), widget (QCheckBox, checkUpdatesMobileCB)
 #. i18n: ectx: property (text), widget (QCheckBox, installUpdatesMobileCB)
 #: ApperKCM/Settings/Settings.ui:94 ApperKCM/Settings/Settings.ui:162
 msgid "when on a mobile broadband network connection"
-msgstr ""
+msgstr "de pe o conexiune de bandă largă mobilă"
 
 #. i18n: ectx: property (text), widget (QCheckBox, checkUpdatesBatteryCB)
 #. i18n: ectx: property (text), widget (QCheckBox, installUpdatesBatteryCB)
 #: ApperKCM/Settings/Settings.ui:101 ApperKCM/Settings/Settings.ui:155
 msgid "when running on battery"
-msgstr ""
+msgstr "la rularea de pe acumulator"
 
 #. i18n: ectx: property (text), widget (QLabel, autoInsL)
 #: ApperKCM/Settings/Settings.ui:120
-#, fuzzy
-#| msgid "Automatically Install:"
 msgid "Automatically update:"
-msgstr "Instalează automat:"
+msgstr "Actualizează automat:"
 
 #. i18n: ectx: property (text), widget (QCheckBox, appLauncherCB)
 #: ApperKCM/Settings/Settings.ui:178
-#, fuzzy
-#| msgid "A program wants to install a package"
-#| msgid_plural "A program wants to install packages"
 msgid "Show application launcher after installing new applications"
-msgstr "Un program dorește să instaleze un pachet"
+msgstr "Arată lansatorul aplicației la instalarea noilor aplicații"
 
 #. i18n: ectx: property (text), widget (QCheckBox, autoConfirmCB)
 #: ApperKCM/Settings/Settings.ui:185
 msgid "Show confirmation dialog when installing or updating packages"
-msgstr ""
+msgstr "Arată dialogul de confirmare la instalarea sau actualizarea pachetelor"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: ApperKCM/Settings/Settings.ui:192
-#, fuzzy
-#| msgctxt "The role of the transaction, in past tense"
-#| msgid "Got distribution upgrades"
 msgid "Check for distribution upgrades:"
-msgstr "Obținut actualizări distribuție"
+msgstr "Verifică după actualizări de distribuție:"
 
 #. i18n: ectx: property (text), widget (QCheckBox, showOriginsCB)
 #: ApperKCM/Settings/Settings.ui:233
@@ -862,11 +808,8 @@ msgstr "&Arată originile pachetelor de depanare și dezvoltare"
 
 #. i18n: ectx: property (text), widget (QPushButton, editOriginsPB)
 #: ApperKCM/Settings/Settings.ui:253
-#, fuzzy
-#| msgctxt "The group type"
-#| msgid "Software sources"
 msgid "Edit Origins"
-msgstr "Surse software"
+msgstr "Modifică origini"
 
 #: ApperKCM/TransactionHistory.cpp:66
 msgid "Refresh transactions list"
@@ -895,16 +838,13 @@ msgid "Application"
 msgstr "Aplicație"
 
 #: ApperKCM/Updater/DistroUpgrade.cpp:40
-#, fuzzy
-#| msgid "Upgrade to %1"
 msgid "Upgrade"
-msgstr "Actualizează la %1"
+msgstr "Înnoire"
 
 #: ApperKCM/Updater/DistroUpgrade.cpp:51
-#, fuzzy, kde-format
-#| msgid "Distribution upgrade available"
+#, kde-format
 msgid "Distribution upgrade available: %1"
-msgstr "Este disponibilă o actualizare a distribuției"
+msgstr "Este disponibilă o înnoire a distribuției: %1"
 
 #: ApperKCM/Updater/DistroUpgrade.cpp:65
 msgid ""
@@ -937,41 +877,53 @@ msgstr "Actualizarea distribuției s-a încheiat."
 #: ApperKCM/Updater/UpdateDetails.cpp:191
 msgid "This update will add new features and expand functionality."
 msgstr ""
+"Această actualizare va adăuga caracteristici noi și va extinde "
+"funcționalitatea."
 
 #: ApperKCM/Updater/UpdateDetails.cpp:195
 msgid "This update will fix bugs and other non-critical problems."
-msgstr ""
+msgstr "Această actualizare va rezolva defecțiuni și alte probleme necritice."
 
 #: ApperKCM/Updater/UpdateDetails.cpp:199
 msgid "This update is important as it may solve critical problems."
 msgstr ""
+"Această actualizare este importantă deoarece poate rezolva probleme critice."
 
 #: ApperKCM/Updater/UpdateDetails.cpp:203
 msgid ""
 "This update is needed to fix a security vulnerability with this package."
 msgstr ""
+"Această actualizare este necesară pentru a rezolva o vulnerabilitate de "
+"securitate din acest pachet."
 
 #: ApperKCM/Updater/UpdateDetails.cpp:207
 msgid "This update is blocked."
-msgstr ""
+msgstr "Această actualizare este blocată."
 
 #: ApperKCM/Updater/UpdateDetails.cpp:214
 #, kde-format
 msgid "This notification was issued on %1 and last updated on %2."
 msgstr ""
+"Această notificare a fost emisă pe %1 și actualizată ultima dată pe %2."
 
 #: ApperKCM/Updater/UpdateDetails.cpp:220
 #, kde-format
 msgid "This notification was issued on %1."
-msgstr ""
+msgstr "Această notificare a fost emisă pe %1."
 
 #: ApperKCM/Updater/UpdateDetails.cpp:239
 msgid "For more information about this update please visit this website:"
 msgid_plural ""
 "For more information about this update please visit these websites:"
 msgstr[0] ""
+"Pentru informații suplimentare despre această actualizare consultați acest "
+"sait:"
 msgstr[1] ""
+"Pentru informații suplimentare despre această actualizare consultați aceste "
+"saituri:"
 msgstr[2] ""
+"Pentru informații suplimentare despre această actualizare consultați aceste "
+"saituri:"
 
 #: ApperKCM/Updater/UpdateDetails.cpp:249
 msgid ""
@@ -990,129 +942,120 @@ msgid ""
 msgid_plural ""
 "For more information about this security update please visit these websites:"
 msgstr[0] ""
+"Pentru informații suplimentare despre această actualizare de securitate "
+"consultați acest sait:"
 msgstr[1] ""
+"Pentru informații suplimentare despre această actualizare de securitate "
+"consultați aceste saituri:"
 msgstr[2] ""
+"Pentru informații suplimentare despre această actualizare de securitate "
+"consultați aceste saituri:"
 
 #: ApperKCM/Updater/UpdateDetails.cpp:269
 msgid ""
 "The computer will have to be restarted after the update for the changes to "
 "take effect."
 msgstr ""
+"Calculatorul va trebui report după actualizare pentru ca modificările să "
+"intre în vigoare."
 
 #: ApperKCM/Updater/UpdateDetails.cpp:273
-#, fuzzy
-#| msgid "You will be required to log off and back on after this update"
 msgid ""
 "You will need to log out and back in after the update for the changes to "
 "take effect."
-msgstr "După această actualizare va trebui să vă reautentificați"
+msgstr ""
+"Va trebui să ieșiți din sistem și să vă autentificați din nou după "
+"actualizare pentru ca modificările să intre în vigoare."
 
 #: ApperKCM/Updater/UpdateDetails.cpp:280
 msgid ""
 "The classification of this update is unstable which means it is not designed "
 "for production use."
 msgstr ""
+"Această actualizare este clasificată ca fiind instabilă, ceea ce înseamnă că "
+"nu a fost destinată utilizării în producție."
 
 #: ApperKCM/Updater/UpdateDetails.cpp:284
 msgid ""
 "This is a test update, and is not designed for normal use. Please report any "
 "problems or regressions you encounter."
 msgstr ""
+"Această actualizare este un de probă și nu este destinată utilizării "
+"normale. Raportați orice probleme sau regresiuni pe care le întîlniți."
 
 #: ApperKCM/Updater/UpdateDetails.cpp:294
-#, fuzzy
-#| msgid "The file could not be found in any packages"
-#| msgid_plural "The files could not be found in any packages"
 msgid ""
 "The developer logs will be shown as no description is available for this "
 "update:"
-msgstr "Fișierul nu a fost găsit în niciun pachet"
+msgstr ""
+"Vor fi afișate jurnalele de dezvoltare întrucît nu e disponibilă nicio "
+"descriere pentru această actualizare:"
 
 #: ApperKCM/Updater/UpdateDetails.cpp:302
-#, fuzzy
-#| msgid "Updates"
 msgid "Updates:"
-msgstr "Actualizări"
+msgstr "Actualizări:"
 
 #: ApperKCM/Updater/UpdateDetails.cpp:312
-#, fuzzy
-#| msgid "Obsoletes"
 msgid "Obsoletes:"
-msgstr "Învechește"
+msgstr "Învechește:"
 
 #: ApperKCM/Updater/UpdateDetails.cpp:322
-#, fuzzy, kde-format
-#| msgid "Repository"
+#, kde-format
 msgid "Repository: %1"
-msgstr "Depozit"
+msgstr "Depozit: %1"
 
 #: ApperKCM/Updater/UpdateDetails.cpp:344
 msgid "No update description was found."
 msgstr "Nu a fost găsită nicio descriere a actualizării."
 
 #: ApperKCM/Updater/Updater.cpp:111
-#, fuzzy
-#| msgid "Version"
 msgid "Show Current Versions"
-msgstr "Versiune"
+msgstr "Arată versiunile curente"
 
 #: ApperKCM/Updater/Updater.cpp:239
 #, kde-format
 msgid "Estimated download size: %1"
-msgstr ""
+msgstr "Dimensiune estimată a descărcării: %1"
 
 #: ApperKCM/Updater/Updater.cpp:358
-#, fuzzy
-#| msgid "Check for Updates:"
 msgid "Check for new updates"
-msgstr "Verifică pentru actualizări:"
+msgstr "Verifică pentru actualizări noi"
 
 #. i18n: ectx: property (text), widget (QRadioButton, acceptedRB)
 #: AppSetup/LicensePage.ui:98
-#, fuzzy
-#| msgid "Please read the following important information before continuing:"
 msgid "I agree to the above terms and conditions"
-msgstr "Citiți următoarea informație importantă înainte de a continua:"
+msgstr "Sînt de acord cu acești termeni și condiții"
 
 #. i18n: ectx: property (text), widget (QRadioButton, rejectedRB)
 #: AppSetup/LicensePage.ui:111
 msgid "I don't agree"
-msgstr ""
+msgstr "Nu sînt de acord"
 
 #: AppSetup/main.cpp:34 AppSetup/main.cpp:35
-#, fuzzy
-#| msgid "Application"
 msgid "KDE Application Installer"
-msgstr "Aplicație"
+msgstr "Instalator de aplicații KDE"
 
 #: AppSetup/main.cpp:36
 msgid "(C) 2012, Matthias Klumpp"
-msgstr ""
+msgstr "(C) 2012, Matthias Klumpp"
 
 #: AppSetup/main.cpp:38
-#, fuzzy
-#| msgid "Daniel Nicoletti"
 msgctxt "@info:credit"
 msgid "Daniel Nicoletti"
 msgstr "Daniel Nicoletti"
 
 #: AppSetup/main.cpp:38 AppSetup/main.cpp:40
-#, fuzzy
-#| msgid "Development"
 msgid "Developer"
-msgstr "Dezvoltare"
+msgstr "Dezvoltator"
 
 #: AppSetup/main.cpp:40
 msgctxt "@info:credit"
 msgid "Matthias Klumpp"
-msgstr ""
+msgstr "Matthias Klumpp"
 
 #: AppSetup/main.cpp:47
-#, fuzzy
-#| msgctxt "The transaction state"
-#| msgid "Getting information"
 msgid "Show verbose information"
-msgstr "Obținere informații"
+msgstr "Arată informații detaliate"
 
 #: AppSetup/main.cpp:48
 #, fuzzy
@@ -1125,36 +1068,27 @@ msgid "Sorry, we didn't get an existing IPK package as parameter."
 msgstr ""
 
 #: AppSetup/main.cpp:73
-#, fuzzy
-#| msgid "The package was not found"
 msgid "Package not found!"
-msgstr "Pachetul nu a fost găsit"
+msgstr "Pachetul nu a fost găsit!"
 
 #: AppSetup/SetupWizard.cpp:87
-#, fuzzy
-#| msgctxt "The role of the transaction, in present tense"
-#| msgid "Installing file"
 msgid "Installation finished!"
-msgstr "Instalare fișier"
+msgstr "Instalare încheiată!"
 
 #: AppSetup/SetupWizard.cpp:88
-#, fuzzy, kde-format
-#| msgid "File was installed successfully"
-#| msgid_plural "Files were installed successfully"
+#, kde-format
 msgid "%1 has been installed successfully!"
-msgstr "Fișierul a fost instalat cu succes"
+msgstr "%1 a fost instalat cu succes!"
 
 #: AppSetup/SetupWizard.cpp:102 libapper/PkTransaction.cpp:143
 #: libapper/PkTransaction.cpp:161 libapper/PkTransaction.cpp:180
 #: libapper/PkTransaction.cpp:203
 msgid "Error"
-msgstr ""
+msgstr "Eroare"
 
 #: AppSetup/SetupWizard.cpp:103 AppSetup/SetupWizard.cpp:117
-#, fuzzy
-#| msgid "An error occurred."
 msgid "An error occurred"
-msgstr "A intervenit o eroare."
+msgstr "A intervenit o eroare"
 
 #: AppSetup/SetupWizard.cpp:150 libapper/Requirements.cpp:59
 #: PkSession/SessionTask.cpp:71
@@ -1163,14 +1097,12 @@ msgstr "Continuă"
 
 #: AppSetup/SetupWizard.cpp:190
 msgid "Welcome!"
-msgstr ""
+msgstr "Bun venit!"
 
 #: AppSetup/SetupWizard.cpp:191
-#, fuzzy, kde-format
-#| msgctxt "The role of the transaction, in past tense"
-#| msgid "Got old transactions"
+#, kde-format
 msgid "Welcome to the installation of %1!"
-msgstr "Obținut tranzacții vechi"
+msgstr "Bun venit în instalareaa %1!"
 
 #: AppSetup/SetupWizard.cpp:192
 msgid ""
@@ -1181,51 +1113,33 @@ msgid ""
 msgstr ""
 
 #: AppSetup/SetupWizard.cpp:203
-#, fuzzy
-#| msgctxt "The role of the transaction, in past tense"
-#| msgid "Got old transactions"
 msgid "Details about this installation"
-msgstr "Obținut tranzacții vechi"
+msgstr "Detalii despre această instalare"
 
 #: AppSetup/SetupWizard.cpp:240
-#, fuzzy
-#| msgctxt "The role of the transaction, in past tense"
-#| msgid "Installed local files"
 msgid "Install for all users"
-msgstr "Instalat fișiere locale"
+msgstr "Instalează pentru toți utilizatorii"
 
 #: AppSetup/SetupWizard.cpp:258
-#, fuzzy
-#| msgid "Application"
 msgid "Application description"
-msgstr "Aplicație"
+msgstr "Descrierea aplicației"
 
 #: AppSetup/SetupWizard.cpp:270
-#, fuzzy
-#| msgctxt "The group type"
-#| msgid "Software sources"
 msgid "Software license"
-msgstr "Surse software"
+msgstr "Licența aplicației"
 
 #: AppSetup/SetupWizard.cpp:271
-#, fuzzy
-#| msgid "Please read the following important information before continuing:"
 msgid "Please read the following terms and conditions carefully!"
-msgstr "Citiți următoarea informație importantă înainte de a continua:"
+msgstr "Citiți următorii termeni și condiții cu atenție!"
 
 #: AppSetup/SetupWizard.cpp:280
-#, fuzzy
-#| msgctxt "The transaction state"
-#| msgid "Scanning installed applications"
 msgid "Running installation"
-msgstr "Căutare aplicații instalate"
+msgstr "Rulează instalarea"
 
 #: AppSetup/SetupWizard.cpp:281
-#, fuzzy, kde-format
-#| msgctxt "The role of the transaction, in present tense"
-#| msgid "Installing"
+#, kde-format
 msgid "Installing %1..."
-msgstr "Instalare"
+msgstr "Se instalează %1..."
 
 #: AppSetup/SetupWizard.cpp:316
 msgid ""
@@ -1234,10 +1148,8 @@ msgid ""
 msgstr ""
 
 #: AppSetup/SetupWizard.cpp:317
-#, fuzzy
-#| msgid "UpdatePackage"
 msgid "Similar native packages found"
-msgstr "Actualizează pachete"
+msgstr "Pachete native similare găsite"
 
 #: AppSetup/SetupWizard.cpp:417
 msgid ""
@@ -1249,12 +1161,12 @@ msgstr ""
 
 #: AppSetup/SetupWizard.cpp:420
 msgid "Really install as superuser?"
-msgstr ""
+msgstr "Sigur instalați ca administrator?"
 
 #: AppSetup/SetupWizard.cpp:438
 #, kde-format
 msgid "This package has the following security level: <b>%1</b>"
-msgstr ""
+msgstr "Acest pachet are următorul nivel de securitate: <b>%1</b>"
 
 #: AppSetup/SetupWizard.cpp:440
 #, kde-format
@@ -1262,60 +1174,47 @@ msgid "It was signed with a key belonging to these user-ids: %1"
 msgstr ""
 
 #: AppSetup/SetupWizard.cpp:444
-#, fuzzy
-#| msgid "Security Only"
 msgid "Security hints"
-msgstr "Numai de securitate"
+msgstr "Indicii de securitate"
 
-#: libapper/ApplicationLauncher.cpp:96
-#, fuzzy
-#| msgid "No network connection available"
+#: libapper/ApplicationLauncher.cpp:94
 msgid "New application available"
 msgid_plural "New applications available"
-msgstr[0] "Nicio conexiune de rețea disponibilă"
-msgstr[1] "Nicio conexiune de rețea disponibilă"
-msgstr[2] "Nicio conexiune de rețea disponibilă"
+msgstr[0] "Este disponibilă o aplicație nouă"
+msgstr[1] "Sînt disponibile aplicații noi"
+msgstr[2] "Sînt disponibile aplicații noi"
 
-#: libapper/ApplicationLauncher.cpp:99
+#: libapper/ApplicationLauncher.cpp:97
 msgid "The following application was just installed. Click on it to launch:"
 msgid_plural ""
 "The following applications were just installed. Click on them to launch:"
 msgstr[0] ""
+"Următoarea aplicație a fost instalată acum. Apăsați pentru a o lansa:"
 msgstr[1] ""
+"Următoarele aplicații au fost instalate acum. Apăsați pentru a le lansa:"
 msgstr[2] ""
+"Următoarele aplicații au fost instalate acum. Apăsați pentru a le lansa:"
 
 #. i18n: ectx: property (text), widget (QCheckBox, showCB)
 #: libapper/ApplicationLauncher.ui:72
-#, fuzzy
-#| msgid "Do not ask again"
 msgid "Do not show this dialog again"
-msgstr "Nu mai întreba"
+msgstr "Nu mai arăta acest dialog"
 
 #: libapper/ApplicationsDelegate.cpp:42
-#, fuzzy
-#| msgctxt "The action of the package, in past tense"
-#| msgid "Removed"
 msgid "Remove"
-msgstr "Eliminat"
+msgstr "Elimină"
 
 #: libapper/ApplicationsDelegate.cpp:44 libapper/ChangesDelegate.cpp:51
-#, fuzzy
-#| msgid "Development"
 msgid "Deselect"
-msgstr "Dezvoltare"
+msgstr "Deselectează"
 
 #: libapper/ChangesDelegate.cpp:47
-#, fuzzy
-#| msgid "Installed"
 msgid "Do not Install"
-msgstr "Instalate"
+msgstr "Nu instala"
 
 #: libapper/ChangesDelegate.cpp:49
-#, fuzzy
-#| msgctxt "The action of the package, in past tense"
-#| msgid "Removed"
 msgid "Do not Remove"
-msgstr "Eliminat"
+msgstr "Nu elimina"
 
 #: libapper/CustomProgressBar.cpp:38
 #, kde-format
@@ -1342,369 +1241,246 @@ msgid "Please read the following important information before continuing:"
 msgstr "Citiți următoarea informație importantă înainte de a continua:"
 
 #: libapper/PackageModel.cpp:205
-#, fuzzy
-#| msgctxt "Machine user who issued the transaction"
-#| msgid "Username"
 msgid "Name"
-msgstr "Utilizator"
+msgstr "Denumire"
 
 #: libapper/PackageModel.cpp:209
 msgid "Version"
 msgstr "Versiune"
 
 #: libapper/PackageModel.cpp:212
-#, fuzzy
-#| msgctxt "The role of the transaction, in past tense"
-#| msgid "Installed signature"
 msgid "Installed Version"
-msgstr "Instalat semnătură"
+msgstr "Versiune instalată"
 
 #: libapper/PackageModel.cpp:215
 msgid "Arch"
-msgstr ""
+msgstr "Arh"
 
 #: libapper/PackageModel.cpp:218
 msgid "Origin"
-msgstr ""
+msgstr "Origine"
 
 #: libapper/PackageModel.cpp:221
 msgid "Size"
 msgstr "Dimensiune"
 
 #: libapper/PackageModel.cpp:319
-#, fuzzy, kde-format
-#| msgid "Architectures"
+#, kde-format
 msgid ""
 "Version: %1\n"
 "Architecture: %2"
-msgstr "Arhitecturi"
+msgstr ""
+"Versiune: %1\n"
+"Arhitectură: %2"
 
 #: libapper/PackageModel.cpp:365
-#, fuzzy
-#| msgctxt "The action of the package, in past tense"
-#| msgid "Removed"
 msgid "To be Removed"
-msgstr "Eliminat"
+msgstr "De eliminat"
 
 #: libapper/PackageModel.cpp:367
-#, fuzzy
-#| msgid "Installed"
 msgid "To be Installed"
-msgstr "Instalate"
+msgstr "De instalat"
 
 #: libapper/PkStrings.cpp:36
-#, fuzzy
-#| msgctxt "The transaction state"
-#| msgid "Unknown state"
 msgctxt "This is when the transaction status is not known"
 msgid "Unknown state"
 msgstr "Stare necunoscută"
 
 #: libapper/PkStrings.cpp:39
-#, fuzzy
-#| msgctxt "The transaction state"
-#| msgid "Waiting for service to start"
 msgctxt "transaction state, the daemon is in the process of starting"
 msgid "Waiting for service to start"
-msgstr "Aștept pornirea serviciului"
+msgstr "Se așteaptă pornirea serviciului"
 
 #: libapper/PkStrings.cpp:42
-#, fuzzy
-#| msgctxt "The transaction state"
-#| msgid "Waiting for other tasks"
 msgctxt "transaction state, the transaction is waiting for another to complete"
 msgid "Waiting for other tasks"
-msgstr "Aștept alte sarcini"
+msgstr "Se așteaptă alte sarcini"
 
 #: libapper/PkStrings.cpp:45
-#, fuzzy
-#| msgctxt "The transaction state"
-#| msgid "Running task"
 msgctxt "transaction state, just started"
 msgid "Running task"
-msgstr "Rulare sarcină"
+msgstr "Se execută sarcina"
 
 #: libapper/PkStrings.cpp:48
-#, fuzzy
-#| msgctxt "The transaction state"
-#| msgid "Querying"
 msgctxt "transaction state, is querying data"
 msgid "Querying"
-msgstr "Interogare"
+msgstr "Se interoghează"
 
 #: libapper/PkStrings.cpp:51
-#, fuzzy
-#| msgctxt "The transaction state"
-#| msgid "Getting information"
 msgctxt "transaction state, getting data from a server"
 msgid "Getting information"
-msgstr "Obținere informații"
+msgstr "Se obțin informații"
 
 #: libapper/PkStrings.cpp:54
-#, fuzzy
-#| msgctxt "The transaction state"
-#| msgid "Removing packages"
 msgctxt "transaction state, removing packages"
 msgid "Removing packages"
-msgstr "Eliminare pachete"
+msgstr "Se elimină pachete"
 
 #: libapper/PkStrings.cpp:58
-#, fuzzy, kde-format
-#| msgctxt "The transaction state"
-#| msgid "Downloading packages"
+#, kde-format
 msgctxt "transaction state, downloading package files"
 msgid "Downloading at %1/s, %2 remaining"
-msgstr "Descărcare pachete"
+msgstr "Se descarcă cu %1/s, %2 rămas"
 
 #: libapper/PkStrings.cpp:63
-#, fuzzy, kde-format
-#| msgctxt "The transaction state"
-#| msgid "Downloading packages"
+#, kde-format
 msgctxt "transaction state, downloading package files"
 msgid "Downloading at %1/s"
-msgstr "Descărcare pachete"
+msgstr "Se descarcă cu %1/s"
 
 #: libapper/PkStrings.cpp:67
-#, fuzzy, kde-format
-#| msgctxt "The transaction state"
-#| msgid "Downloading packages"
+#, kde-format
 msgctxt "transaction state, downloading package files"
 msgid "Downloading, %1 remaining"
-msgstr "Descărcare pachete"
+msgstr "Se descarcă, %1 rămas"
 
 #: libapper/PkStrings.cpp:71
-#, fuzzy
-#| msgid "Downloading"
 msgctxt "transaction state, downloading package files"
 msgid "Downloading"
 msgstr "Se descarcă"
 
 #: libapper/PkStrings.cpp:75
-#, fuzzy
-#| msgctxt "The transaction state"
-#| msgid "Installing packages"
 msgctxt "transaction state, installing packages"
 msgid "Installing packages"
-msgstr "Instalare pachete"
+msgstr "Se instalează pachete"
 
 #: libapper/PkStrings.cpp:78
-#, fuzzy
-#| msgctxt "The transaction state"
-#| msgid "Refreshing software list"
 msgctxt "transaction state, refreshing internal lists"
 msgid "Refreshing software list"
-msgstr "Reîmprospătare listă cu programe"
+msgstr "Se împrospătează lista de aplicații"
 
 #: libapper/PkStrings.cpp:81
-#, fuzzy
-#| msgctxt "The transaction state"
-#| msgid "Updating packages"
 msgctxt "transaction state, installing updates"
 msgid "Updating packages"
-msgstr "Actualizare pachete"
+msgstr "Se actualizează pachete"
 
 #: libapper/PkStrings.cpp:84
-#, fuzzy
-#| msgctxt "The transaction state"
-#| msgid "Cleaning up packages"
 msgctxt "transaction state, removing old packages, and cleaning config files"
 msgid "Cleaning up packages"
-msgstr "Curățare pachete"
+msgstr "Se curăță pachete"
 
 #: libapper/PkStrings.cpp:87
-#, fuzzy
-#| msgctxt "The transaction state"
-#| msgid "Obsoleting packages"
 msgctxt "transaction state, obsoleting old packages"
 msgid "Obsoleting packages"
-msgstr "Învechire pachete"
+msgstr "Se învechesc pachete"
 
 #: libapper/PkStrings.cpp:90
-#, fuzzy
-#| msgctxt "The transaction state"
-#| msgid "Resolving dependencies"
 msgctxt "transaction state, checking the transaction before we do it"
 msgid "Resolving dependencies"
-msgstr "Rezolvare dependențe"
+msgstr "Se rezolvă dependențe"
 
 #: libapper/PkStrings.cpp:93
-#, fuzzy
-#| msgctxt "The transaction state"
-#| msgid "Checking signatures"
 msgctxt ""
 "transaction state, checking if we have all the security keys for the "
 "operation"
 msgid "Checking signatures"
-msgstr "Verificare semnături"
+msgstr "Se verifică semnături"
 
 #: libapper/PkStrings.cpp:96
-#, fuzzy
-#| msgctxt "The transaction state"
-#| msgid "Testing changes"
 msgctxt "transaction state, when we're doing a test transaction"
 msgid "Testing changes"
-msgstr "Testare modificări"
+msgstr "Se testează modificările"
 
 #: libapper/PkStrings.cpp:99
-#, fuzzy
-#| msgctxt "The transaction state"
-#| msgid "Committing changes"
 msgctxt "transaction state, when we're writing to the system package database"
 msgid "Committing changes"
-msgstr "Aplicare modificări"
+msgstr "Se comit modificările"
 
 #: libapper/PkStrings.cpp:102
-#, fuzzy
-#| msgctxt "The transaction state"
-#| msgid "Requesting data"
 msgctxt "transaction state, requesting data from a server"
 msgid "Requesting data"
-msgstr "Cerere date"
+msgstr "Se cer date"
 
 #: libapper/PkStrings.cpp:105
-#, fuzzy
-#| msgctxt "The transaction state"
-#| msgid "Finished"
 msgctxt "transaction state, all done!"
 msgid "Finished"
-msgstr "Terminat"
+msgstr "Încheiat"
 
 #: libapper/PkStrings.cpp:108
-#, fuzzy
-#| msgctxt "The transaction state"
-#| msgid "Cancelling"
 msgctxt "transaction state, in the process of cancelling"
 msgid "Cancelling"
-msgstr "Renunțare"
+msgstr "Se renunță"
 
 #: libapper/PkStrings.cpp:111
-#, fuzzy
-#| msgctxt "The transaction state"
-#| msgid "Downloading repository information"
 msgctxt "transaction state, downloading metadata"
 msgid "Downloading repository information"
-msgstr "Descărcare informații depozit"
+msgstr "Se descarcă informații din depozit"
 
 #: libapper/PkStrings.cpp:114
-#, fuzzy
-#| msgctxt "The transaction state"
-#| msgid "Downloading list of packages"
 msgctxt "transaction state, downloading metadata"
 msgid "Downloading list of packages"
-msgstr "Descărcare listă cu pachete"
+msgstr "Se descarcă lista de pachete"
 
 #: libapper/PkStrings.cpp:117
-#, fuzzy
-#| msgctxt "The transaction state"
-#| msgid "Downloading file lists"
 msgctxt "transaction state, downloading metadata"
 msgid "Downloading file lists"
-msgstr "Descărcare liste cu fișiere"
+msgstr "Se descarcă listele cu fișiere"
 
 #: libapper/PkStrings.cpp:120
-#, fuzzy
-#| msgctxt "The transaction state"
-#| msgid "Downloading lists of changes"
 msgctxt "transaction state, downloading metadata"
 msgid "Downloading lists of changes"
-msgstr "Descărcare liste cu modificări"
+msgstr "Se descarcă listele cu modificări"
 
 #: libapper/PkStrings.cpp:123
-#, fuzzy
-#| msgctxt "The transaction state"
-#| msgid "Downloading groups"
 msgctxt "transaction state, downloading metadata"
 msgid "Downloading groups"
-msgstr "Descărcare grupuri"
+msgstr "Se descarcă grupuri"
 
 #: libapper/PkStrings.cpp:126
-#, fuzzy
-#| msgctxt "The transaction state"
-#| msgid "Downloading update information"
 msgctxt "transaction state, downloading metadata"
 msgid "Downloading update information"
-msgstr "Descărcare informații despre actualizare"
+msgstr "Se descarcă informații despre actualizări"
 
 #: libapper/PkStrings.cpp:129
-#, fuzzy
-#| msgctxt "The transaction state"
-#| msgid "Repackaging files"
 msgctxt "transaction state, repackaging delta files"
 msgid "Repackaging files"
-msgstr "Reîmpachetare fișiere"
+msgstr "Se reîmpachetează fișiere"
 
 #: libapper/PkStrings.cpp:132
-#, fuzzy
-#| msgctxt "The transaction state"
-#| msgid "Loading cache"
 msgctxt "transaction state, loading databases"
 msgid "Loading cache"
-msgstr "Încărcare cache"
+msgstr "Se încarcă cache-ul"
 
 #: libapper/PkStrings.cpp:135
-#, fuzzy
-#| msgctxt "The transaction state"
-#| msgid "Scanning installed applications"
 msgctxt "transaction state, scanning for running processes"
 msgid "Scanning installed applications"
-msgstr "Căutare aplicații instalate"
+msgstr "Se citesc aplicațiile instalate"
 
 #: libapper/PkStrings.cpp:138
-#, fuzzy
-#| msgctxt "The transaction state"
-#| msgid "Generating package lists"
 msgctxt ""
 "transaction state, generating a list of packages installed on the system"
 msgid "Generating package lists"
-msgstr "Generare liste de pachete"
+msgstr "Se generează liste de pachete"
 
 #: libapper/PkStrings.cpp:141
-#, fuzzy
-#| msgctxt "The transaction state"
-#| msgid "Waiting for package manager lock"
 msgctxt "transaction state, when we're waiting for the native tools to exit"
 msgid "Waiting for package manager lock"
 msgstr "Se așteaptă blocajul gestionarului de pachete"
 
 #: libapper/PkStrings.cpp:144
-#, fuzzy
-#| msgctxt "The transaction state"
-#| msgid "Waiting for authentication"
 msgctxt "waiting for user to type in a password"
 msgid "Waiting for authentication"
 msgstr "Se așteaptă autentificarea"
 
 #: libapper/PkStrings.cpp:147
-#, fuzzy
-#| msgctxt "The transaction state"
-#| msgid "Updating the list of running applications"
 msgctxt "we are updating the list of processes"
 msgid "Updating the list of running applications"
 msgstr "Se actualizează lista aplicațiilor ce rulează"
 
 #: libapper/PkStrings.cpp:150
-#, fuzzy
-#| msgctxt "The transaction state"
-#| msgid "Checking for applications currently in use"
 msgctxt "we are checking executable files in use"
 msgid "Checking for applications currently in use"
-msgstr "Se verifică după aplicații în uz"
+msgstr "Se verifică aplicațiile aflate în uz"
 
 #: libapper/PkStrings.cpp:153
-#, fuzzy
-#| msgctxt "The transaction state"
-#| msgid "Checking for libraries currently in use"
 msgctxt "we are checking for libraries in use"
 msgid "Checking for libraries currently in use"
-msgstr "Se verifică după biblioteci în uz"
+msgstr "Se verifică bibliotecile aflate în uz"
 
 #: libapper/PkStrings.cpp:156
-#, fuzzy
-#| msgctxt "The transaction state"
-#| msgid "Repackaging files"
 msgctxt "we are copying package files to prepare to install"
 msgid "Copying files"
-msgstr "Reîmpachetare fișiere"
+msgstr "Se copiază fișiere"
 
 #: libapper/PkStrings.cpp:166
 msgctxt "The action of the package, in past tense"
@@ -1787,9 +1563,6 @@ msgid "Searching by package name"
 msgstr "Căutare după denumire pachet"
 
 #: libapper/PkStrings.cpp:209
-#, fuzzy
-#| msgctxt "The role of the transaction, in present tense"
-#| msgid "Simulating the remove"
 msgctxt "The role of the transaction, in present tense"
 msgid "Simulating removal"
 msgstr "Se simulează eliminarea"
@@ -1806,9 +1579,6 @@ msgid "Removing"
 msgstr "Eliminare"
 
 #: libapper/PkStrings.cpp:216
-#, fuzzy
-#| msgctxt "The role of the transaction, in present tense"
-#| msgid "Simulating the install"
 msgctxt "The role of the transaction, in present tense"
 msgid "Simulating install"
 msgstr "Se simulează instalarea"
@@ -1819,20 +1589,14 @@ msgid "Installing"
 msgstr "Instalare"
 
 #: libapper/PkStrings.cpp:223
-#, fuzzy
-#| msgctxt "The role of the transaction, in present tense"
-#| msgid "Simulating the install"
 msgctxt "The role of the transaction, in present tense"
 msgid "Simulating file install"
-msgstr "Se simulează instalarea"
+msgstr "Se simulează instalarea fișierului"
 
 #: libapper/PkStrings.cpp:225
-#, fuzzy
-#| msgctxt "The role of the transaction, in present tense"
-#| msgid "Downloading packages"
 msgctxt "The role of the transaction, in present tense"
 msgid "Downloading required packages"
-msgstr "Descărcare pachete"
+msgstr "Se descarcă pachetele necesare"
 
 #: libapper/PkStrings.cpp:227
 msgctxt "The role of the transaction, in present tense"
@@ -1845,20 +1609,14 @@ msgid "Refreshing package cache"
 msgstr "Reîmprospătare cache pachete"
 
 #: libapper/PkStrings.cpp:232
-#, fuzzy
-#| msgctxt "The role of the transaction, in present tense"
-#| msgid "Simulating the update"
 msgctxt "The role of the transaction, in present tense"
 msgid "Simulating update"
 msgstr "Se simulează actualizarea"
 
 #: libapper/PkStrings.cpp:234
-#, fuzzy
-#| msgctxt "The role of the transaction, in present tense"
-#| msgid "Downloading packages"
 msgctxt "The role of the transaction, in present tense"
 msgid "Downloading updates"
-msgstr "Descărcare pachete"
+msgstr "Se descarcă actualizări"
 
 #: libapper/PkStrings.cpp:236
 msgctxt "The role of the transaction, in present tense"
@@ -1931,20 +1689,14 @@ msgid "Getting old transactions"
 msgstr "Obținere tranzacții vechi"
 
 #: libapper/PkStrings.cpp:266
-#, fuzzy
-#| msgctxt "The role of the transaction, in present tense"
-#| msgid "Updating system"
 msgctxt "The role of the transaction, in present tense"
 msgid "Upgrading system"
-msgstr "Actualizare sistem"
+msgstr "Se înnoiește sistemul"
 
 #: libapper/PkStrings.cpp:268
-#, fuzzy
-#| msgctxt "The role of the transaction, in present tense"
-#| msgid "Updating system"
 msgctxt "The role of the transaction, in present tense"
 msgid "Repairing system"
-msgstr "Actualizare sistem"
+msgstr "Se repară sistemul"
 
 #: libapper/PkStrings.cpp:278
 msgctxt "The role of the transaction, in past tense"
@@ -2092,74 +1844,52 @@ msgid "Got old transactions"
 msgstr "Obținut tranzacții vechi"
 
 #: libapper/PkStrings.cpp:336
-#, fuzzy
-#| msgctxt "The role of the transaction, in past tense"
-#| msgid "Updated system"
 msgctxt "The role of the transaction, in past tense"
 msgid "Upgraded system"
-msgstr "Actualizat sistem"
+msgstr "Înnoit sistemul"
 
 #: libapper/PkStrings.cpp:338
-#, fuzzy
-#| msgctxt "The role of the transaction, in past tense"
-#| msgid "Updated system"
 msgctxt "The role of the transaction, in past tense"
 msgid "Repaired system"
-msgstr "Actualizat sistem"
+msgstr "Reparat sistemul"
 
 #: libapper/PkStrings.cpp:348
 msgid "Downloading"
 msgstr "Se descarcă"
 
 #: libapper/PkStrings.cpp:350
-#, fuzzy
-#| msgid "Update"
 msgid "Updating"
-msgstr "Actualizare"
+msgstr "Se actualizează"
 
 #: libapper/PkStrings.cpp:352
-#, fuzzy
-#| msgctxt "The role of the transaction, in present tense"
-#| msgid "Installing"
 msgid "Installing"
-msgstr "Instalare"
+msgstr "Se instalează"
 
 #: libapper/PkStrings.cpp:354
-#, fuzzy
-#| msgctxt "The role of the transaction, in present tense"
-#| msgid "Removing"
 msgid "Removing"
-msgstr "Eliminare"
+msgstr "Se elimină"
 
 #: libapper/PkStrings.cpp:356
-#, fuzzy
-#| msgid "Cleaning Up"
 msgid "Cleaning up"
-msgstr "Curățare"
+msgstr "Se curăță"
 
 #: libapper/PkStrings.cpp:358
 msgid "Obsoleting"
 msgstr "Învechire"
 
 #: libapper/PkStrings.cpp:360
-#, fuzzy
-#| msgctxt "The role of the transaction, in present tense"
-#| msgid "Installing"
 msgid "Reinstalling"
-msgstr "Instalare"
+msgstr "Se reinstalează"
 
 #: libapper/PkStrings.cpp:362
 msgid "Preparing"
-msgstr ""
+msgstr "Se pregătește"
 
 #: libapper/PkStrings.cpp:364
 msgid "Decompressing"
-msgstr ""
+msgstr "Se decomprimă"
 
 #: libapper/PkStrings.cpp:375
-#, fuzzy
-#| msgctxt "The action of the package, in past tense"
-#| msgid "Downloaded"
 msgid "Downloaded"
 msgstr "Descărcat"
 
@@ -2168,39 +1898,28 @@ msgid "Updated"
 msgstr "Actualizat"
 
 #: libapper/PkStrings.cpp:381
-#, fuzzy
-#| msgctxt "The action of the package, in past tense"
-#| msgid "Removed"
 msgid "Removed"
 msgstr "Eliminat"
 
 #: libapper/PkStrings.cpp:383
-#, fuzzy
-#| msgctxt "The action of the package, in past tense"
-#| msgid "Cleaned Up"
 msgid "Cleaned up"
 msgstr "Curățat"
 
 #: libapper/PkStrings.cpp:385
-#, fuzzy
-#| msgctxt "The action of the package, in past tense"
-#| msgid "Obsoleted"
 msgid "Obsoleted"
 msgstr "Învechit"
 
 #: libapper/PkStrings.cpp:387
-#, fuzzy
-#| msgid "Installed"
 msgid "Reinstalled"
-msgstr "Instalate"
+msgstr "Reinstalat"
 
 #: libapper/PkStrings.cpp:389
 msgid "Prepared"
-msgstr ""
+msgstr "Pregătit"
 
 #: libapper/PkStrings.cpp:391
 msgid "Decompressed"
-msgstr ""
+msgstr "Decomprimat"
 
 #: libapper/PkStrings.cpp:402
 msgid "No network connection available"
@@ -2388,7 +2107,7 @@ msgstr "Pachetul este incompatibil cu acest sistem"
 msgid "No space is left on the disk"
 msgstr "Nu a mai rămas spațiu pe disc"
 
-#: libapper/PkStrings.cpp:494 libapper/PkTransaction.cpp:441
+#: libapper/PkStrings.cpp:494 libapper/PkTransaction.cpp:446
 msgid "A media change is required"
 msgstr "Este necesară o schimbare a mediului"
 
@@ -3612,7 +3331,7 @@ msgstr "Eșec la eliminarea pachetului"
 msgid "Failed to update package"
 msgstr "Eșec la găsirea pachetului"
 
-#: libapper/PkTransaction.cpp:351
+#: libapper/PkTransaction.cpp:356
 #, fuzzy
 #| msgid ""
 #| "<br />Installing unsigned packages can compromise your system, as it is "
@@ -3628,11 +3347,11 @@ msgstr ""
 "este imposibil de verificat dacă programele provin dintr-o sursă de "
 "încredere. Sigur doriți să continuați instalarea?"
 
-#: libapper/PkTransaction.cpp:354
+#: libapper/PkTransaction.cpp:359
 msgid "Installing unsigned software"
 msgstr "Instalare programe nesemnate"
 
-#: libapper/PkTransaction.cpp:399 libapper/PkTransaction.cpp:486
+#: libapper/PkTransaction.cpp:404 libapper/PkTransaction.cpp:491
 #, fuzzy
 #| msgid "Failed to install file"
 #| msgid_plural "Failed to install files"

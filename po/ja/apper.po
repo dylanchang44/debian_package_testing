@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kpackagekit\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-07-07 01:35+0000\n"
+"POT-Creation-Date: 2014-03-13 01:37+0000\n"
 "PO-Revision-Date: 2011-04-24 13:30-0700\n"
 "Last-Translator: Fumiaki Okushi <okushi@kde.gr.jp>\n"
 "Language-Team: Japanese <Kdeveloper@kde.gr.jp>\n"
@@ -1363,7 +1363,7 @@ msgstr ""
 msgid "Security hints"
 msgstr "セキュリティのみ"
 
-#: libapper/ApplicationLauncher.cpp:96
+#: libapper/ApplicationLauncher.cpp:94
 #, fuzzy
 #| msgid "No network connection available"
 msgid "New application available"
@@ -1371,7 +1371,7 @@ msgid_plural "New applications available"
 msgstr[0] "利用可能なネットワーク接続がありません"
 msgstr[1] "利用可能なネットワーク接続がありません"
 
-#: libapper/ApplicationLauncher.cpp:99
+#: libapper/ApplicationLauncher.cpp:97
 msgid "The following application was just installed. Click on it to launch:"
 msgid_plural ""
 "The following applications were just installed. Click on them to launch:"
@@ -2381,7 +2381,7 @@ msgstr "パッケージがシステムと互換性がありません"
 msgid "No space is left on the disk"
 msgstr "ディスクに空き容量がありません"
 
-#: libapper/PkStrings.cpp:494 libapper/PkTransaction.cpp:441
+#: libapper/PkStrings.cpp:494 libapper/PkTransaction.cpp:446
 msgid "A media change is required"
 msgstr "メディアの変更が必要です"
 
@@ -3472,7 +3472,7 @@ msgstr "パッケージの削除に失敗"
 msgid "Failed to update package"
 msgstr "パッケージ検索に失敗しました"
 
-#: libapper/PkTransaction.cpp:351
+#: libapper/PkTransaction.cpp:356
 msgid ""
 "You are about to install unsigned packages that can compromise your system, "
 "as it is impossible to verify if the software came from a trusted source.\n"
@@ -3480,11 +3480,11 @@ msgid ""
 "Are you sure you want to proceed with the installation?"
 msgstr ""
 
-#: libapper/PkTransaction.cpp:354
+#: libapper/PkTransaction.cpp:359
 msgid "Installing unsigned software"
 msgstr "未署名のソフトウェアをインストール中"
 
-#: libapper/PkTransaction.cpp:399 libapper/PkTransaction.cpp:486
+#: libapper/PkTransaction.cpp:404 libapper/PkTransaction.cpp:491
 #, fuzzy
 #| msgid "Failed to install file"
 #| msgid_plural "Failed to install files"

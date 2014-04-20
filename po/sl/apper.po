@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-07-07 01:35+0000\n"
-"PO-Revision-Date: 2013-07-07 09:28+0200\n"
+"POT-Creation-Date: 2014-03-13 01:37+0000\n"
+"PO-Revision-Date: 2013-11-26 18:11+0100\n"
 "Last-Translator: Andrej Mernik <andrejm@ubuntu.si>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -977,8 +977,8 @@ msgid ""
 "This is a test update, and is not designed for normal use. Please report any "
 "problems or regressions you encounter."
 msgstr ""
-"To je poskusna posodobitev in ni primerna za običajno uporabo. Prosimo, da "
-"nas obvestite o vseh težavah in novih napakah."
+"To je poskusna posodobitev in ni primerna za običajno uporabo. Obvestite nas "
+"o vseh težavah in novih napakah."
 
 #: ApperKCM/Updater/UpdateDetails.cpp:294
 msgid ""
@@ -994,7 +994,7 @@ msgstr "Posodobitev:"
 
 #: ApperKCM/Updater/UpdateDetails.cpp:312
 msgid "Obsoletes:"
-msgstr "Nadomesti:"
+msgstr "Zamenja:"
 
 #: ApperKCM/Updater/UpdateDetails.cpp:322
 #, kde-format
@@ -1064,7 +1064,7 @@ msgstr "Žal nismo dobili obstoječega paketa IPK kot parameter."
 
 #: AppSetup/main.cpp:73
 msgid "Package not found!"
-msgstr "Paketa ni bilo mogoče najti!"
+msgstr "Paket ni bil najden!"
 
 #: AppSetup/SetupWizard.cpp:87
 msgid "Installation finished!"
@@ -1129,7 +1129,7 @@ msgstr "Licenca programske opreme"
 
 #: AppSetup/SetupWizard.cpp:271
 msgid "Please read the following terms and conditions carefully!"
-msgstr "Pozorno si preberite sledeče pogoje!"
+msgstr "Pozorno si preberite naslednje pogoje!"
 
 #: AppSetup/SetupWizard.cpp:280
 msgid "Running installation"
@@ -1145,7 +1145,7 @@ msgid ""
 "Installing this package will make the following native packages obsolete. "
 "You might consider removing them manually."
 msgstr ""
-"Zaradi namestitve tega paketa, bodo sledeči lastni paketi zastareli. Če "
+"Zaradi namestitve tega paketa, bodo naslednji lastni paketi zastareli. Če "
 "želite, jih lahko ročno odstranite."
 
 #: AppSetup/SetupWizard.cpp:317
@@ -1172,18 +1172,19 @@ msgstr "Resnično namestim kot skrbnik?"
 #: AppSetup/SetupWizard.cpp:438
 #, kde-format
 msgid "This package has the following security level: <b>%1</b>"
-msgstr "Ta paket ima sledečo stopnjo varnosti: <b>%1</b>"
+msgstr "Ta paket ima naslednjo stopnjo varnosti: <b>%1</b>"
 
 #: AppSetup/SetupWizard.cpp:440
 #, kde-format
 msgid "It was signed with a key belonging to these user-ids: %1"
-msgstr "Podpisan je bil s ključi, ki pripadajo sledečim ID-jem uporabnikov: %1"
+msgstr ""
+"Podpisan je bil s ključi, ki pripadajo naslednjim ID-jem uporabnikov: %1"
 
 #: AppSetup/SetupWizard.cpp:444
 msgid "Security hints"
 msgstr "Varnostni namigi"
 
-#: libapper/ApplicationLauncher.cpp:96
+#: libapper/ApplicationLauncher.cpp:94
 msgid "New application available"
 msgid_plural "New applications available"
 msgstr[0] "Na voljo so novi programi"
@@ -1191,7 +1192,7 @@ msgstr[1] "Na voljo je nov program"
 msgstr[2] "Na voljo sta nova programa"
 msgstr[3] "Na voljo so novi programi"
 
-#: libapper/ApplicationLauncher.cpp:99
+#: libapper/ApplicationLauncher.cpp:97
 msgid "The following application was just installed. Click on it to launch:"
 msgid_plural ""
 "The following applications were just installed. Click on them to launch:"
@@ -1389,7 +1390,7 @@ msgstr "Preizkušanje sprememb"
 #: libapper/PkStrings.cpp:99
 msgctxt "transaction state, when we're writing to the system package database"
 msgid "Committing changes"
-msgstr "Zapisovanje sprememb"
+msgstr "Uveljavljanje sprememb"
 
 #: libapper/PkStrings.cpp:102
 msgctxt "transaction state, requesting data from a server"
@@ -2110,7 +2111,7 @@ msgstr "Paket ni združljiv s sistemom"
 msgid "No space is left on the disk"
 msgstr "Na disku je zmanjkalo prostora"
 
-#: libapper/PkStrings.cpp:494 libapper/PkTransaction.cpp:441
+#: libapper/PkStrings.cpp:494 libapper/PkTransaction.cpp:446
 msgid "A media change is required"
 msgstr "Potrebna je zamenjava nosilca"
 
@@ -2234,7 +2235,7 @@ msgid ""
 "Please report a bug as this should not have happened."
 msgstr ""
 "To zaledje ne podpira tega dejanja.\n"
-"Prosimo, obvestite nas o tej napaki, saj do nje ne bi smelo priti."
+"Obvestite nas o tej napaki, saj do nje ne bi smelo priti."
 
 #: libapper/PkStrings.cpp:560
 msgid ""
@@ -2242,7 +2243,7 @@ msgid ""
 "Please report this bug with the error description."
 msgstr ""
 "Prišlo je do nepričakovane napake.\n"
-"Prosimo, obvestite nas o tej napaki in priložite opis napake."
+"Obvestite nas o tej napaki in priložite opis napake."
 
 #: libapper/PkStrings.cpp:563
 msgid ""
@@ -2367,7 +2368,7 @@ msgid ""
 "Check the extension of the file you are trying to install."
 msgstr ""
 "Izvornih paketov se običajno ne namešča na ta način.\n"
-"Preverite končnico datoteke, ki jo poskušate namestiti."
+"Preverite pripono datoteke, ki jo poskušate namestiti."
 
 #: libapper/PkStrings.cpp:611
 msgid ""
@@ -2654,7 +2655,7 @@ msgid ""
 "Unknown error, please report a bug.\n"
 "More information is available in the detailed report."
 msgstr ""
-"Neznana napaka. Prosimo, obvestite nas o njej.\n"
+"Neznana napaka. Obvestite nas o njej.\n"
 "Več podatkov je na voljo v podrobnem poročilu."
 
 #: libapper/PkStrings.cpp:730
@@ -3207,7 +3208,7 @@ msgstr "Paketa ni bilo mogoče odstraniti"
 msgid "Failed to update package"
 msgstr "Paketa ni bilo mogoče posodobiti"
 
-#: libapper/PkTransaction.cpp:351
+#: libapper/PkTransaction.cpp:356
 msgid ""
 "You are about to install unsigned packages that can compromise your system, "
 "as it is impossible to verify if the software came from a trusted source.\n"
@@ -3219,11 +3220,11 @@ msgstr ""
 "\n"
 "Ali res želite nadaljevati z nameščanjem?"
 
-#: libapper/PkTransaction.cpp:354
+#: libapper/PkTransaction.cpp:359
 msgid "Installing unsigned software"
 msgstr "Nameščanje nepodpisanih programov"
 
-#: libapper/PkTransaction.cpp:399 libapper/PkTransaction.cpp:486
+#: libapper/PkTransaction.cpp:404 libapper/PkTransaction.cpp:491
 msgid "Failed to install signature"
 msgstr "Nameščanje podpisa ni uspelo"
 
@@ -3876,10 +3877,10 @@ msgstr "Odstrani pakete, ki ponujajo datoteke"
 #: PkSession/PkRemovePackageByFiles.cpp:67
 msgid "Do you want to remove the following application?"
 msgid_plural "Do you want to remove the following applications?"
-msgstr[0] "Ali želite odstraniti sledeče programe?"
-msgstr[1] "Ali želite odstraniti sledeč program?"
-msgstr[2] "Ali želite odstraniti sledeča programa?"
-msgstr[3] "Ali želite odstraniti sledeče programe?"
+msgstr[0] "Ali želite odstraniti naslednje programe?"
+msgstr[1] "Ali želite odstraniti naslednji program?"
+msgstr[2] "Ali želite odstraniti naslednja programa?"
+msgstr[3] "Ali želite odstraniti naslednje programe?"
 
 #: PkSession/PkRemovePackageByFiles.cpp:71
 msgid "Do you want to search for a package providing this file?"
@@ -3981,399 +3982,4 @@ msgstr "Opravilo zaključeno"
 
 #: PkSession/SessionTask.cpp:436
 msgid "All operations were committed successfully"
-msgstr "Vsa dejanja so bila uspešno izvedena"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#, fuzzy
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#, fuzzy
-
-
-
-
-
-
-
-
-
-
-
-
-
-#, fuzzy
-
-
-
-
-
-#, fuzzy
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#, fuzzy
-
-
-
-
-
-
-
-
-
-#, fuzzy
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#, fuzzy
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#, fuzzy
-
-
-
-
-
-
-
-
-
-
-
-
-
-#, fuzzy
+msgstr "Vsa dejanja so bila uspešno uveljavljena"

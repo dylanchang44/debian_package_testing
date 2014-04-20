@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kpackagekit.pot\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-07-07 01:35+0000\n"
+"POT-Creation-Date: 2014-03-13 01:37+0000\n"
 "PO-Revision-Date: 2013-03-14 13:28+0800\n"
 "Last-Translator: Franklin Weng <franklin at goodhorse dot idv dot tw>\n"
 "Language-Team: Chinese Traditional <kde-tw@googlegroups.com>\n"
@@ -1140,12 +1140,12 @@ msgstr "它由這些使用者所屬的金鑰簽署：%1"
 msgid "Security hints"
 msgstr "安全性提示"
 
-#: libapper/ApplicationLauncher.cpp:96
+#: libapper/ApplicationLauncher.cpp:94
 msgid "New application available"
 msgid_plural "New applications available"
 msgstr[0] "有新的應用程式可使用"
 
-#: libapper/ApplicationLauncher.cpp:99
+#: libapper/ApplicationLauncher.cpp:97
 msgid "The following application was just installed. Click on it to launch:"
 msgid_plural ""
 "The following applications were just installed. Click on them to launch:"
@@ -2061,7 +2061,7 @@ msgstr "套件與本系統不相容"
 msgid "No space is left on the disk"
 msgstr "磁碟空間不足"
 
-#: libapper/PkStrings.cpp:494 libapper/PkTransaction.cpp:441
+#: libapper/PkStrings.cpp:494 libapper/PkTransaction.cpp:446
 msgid "A media change is required"
 msgstr "需要更換媒體"
 
@@ -3122,7 +3122,7 @@ msgstr "移除套件失敗"
 msgid "Failed to update package"
 msgstr "更新套件失敗"
 
-#: libapper/PkTransaction.cpp:351
+#: libapper/PkTransaction.cpp:356
 msgid ""
 "You are about to install unsigned packages that can compromise your system, "
 "as it is impossible to verify if the software came from a trusted source.\n"
@@ -3134,11 +3134,11 @@ msgstr ""
 "\n"
 " 您確定您想要繼續進行安裝嗎？"
 
-#: libapper/PkTransaction.cpp:354
+#: libapper/PkTransaction.cpp:359
 msgid "Installing unsigned software"
 msgstr "安裝未簽署的軟體"
 
-#: libapper/PkTransaction.cpp:399 libapper/PkTransaction.cpp:486
+#: libapper/PkTransaction.cpp:404 libapper/PkTransaction.cpp:491
 msgid "Failed to install signature"
 msgstr "安裝簽章失敗"
 

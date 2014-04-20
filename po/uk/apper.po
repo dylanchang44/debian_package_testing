@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kpackagekit\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-07-07 01:35+0000\n"
-"PO-Revision-Date: 2013-03-13 07:57+0200\n"
+"POT-Creation-Date: 2014-03-13 01:37+0000\n"
+"PO-Revision-Date: 2013-11-07 20:01+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
 "Language: uk\n"
@@ -813,7 +813,7 @@ msgstr "Шукати оновлення дистрибутива:"
 #. i18n: ectx: property (text), widget (QCheckBox, showOriginsCB)
 #: ApperKCM/Settings/Settings.ui:233
 msgid "&Show origins of debug and development packages"
-msgstr "&Показувати походження пакунків зневаджування і розробки"
+msgstr "&Показувати походження пакунків налагоджування і розробки"
 
 #. i18n: ectx: property (text), widget (QPushButton, editOriginsPB)
 #: ApperKCM/Settings/Settings.ui:253
@@ -1205,7 +1205,7 @@ msgstr "Підписано ключем, що належить таким іде
 msgid "Security hints"
 msgstr "Рекомендації щодо безпеки"
 
-#: libapper/ApplicationLauncher.cpp:96
+#: libapper/ApplicationLauncher.cpp:94
 msgid "New application available"
 msgid_plural "New applications available"
 msgstr[0] "Доступні нові програми"
@@ -1213,7 +1213,7 @@ msgstr[1] "Доступні нові програми"
 msgstr[2] "Доступні нові програми"
 msgstr[3] "Доступна нова програма"
 
-#: libapper/ApplicationLauncher.cpp:99
+#: libapper/ApplicationLauncher.cpp:97
 msgid "The following application was just installed. Click on it to launch:"
 msgid_plural ""
 "The following applications were just installed. Click on them to launch:"
@@ -2139,7 +2139,7 @@ msgstr "Пакунок є несумісним з цією системою"
 msgid "No space is left on the disk"
 msgstr "На диску не залишилося місця"
 
-#: libapper/PkStrings.cpp:494 libapper/PkTransaction.cpp:441
+#: libapper/PkStrings.cpp:494 libapper/PkTransaction.cpp:446
 msgid "A media change is required"
 msgstr "Потрібно змінити носій"
 
@@ -3258,7 +3258,7 @@ msgstr "Не вдалося вилучити пакунок"
 msgid "Failed to update package"
 msgstr "Не вдалося оновити пакунок"
 
-#: libapper/PkTransaction.cpp:351
+#: libapper/PkTransaction.cpp:356
 msgid ""
 "You are about to install unsigned packages that can compromise your system, "
 "as it is impossible to verify if the software came from a trusted source.\n"
@@ -3271,11 +3271,11 @@ msgstr ""
 "\n"
 "Ви справді бажаєте продовжити встановлення?"
 
-#: libapper/PkTransaction.cpp:354
+#: libapper/PkTransaction.cpp:359
 msgid "Installing unsigned software"
 msgstr "Встановлення непідписаних програм"
 
-#: libapper/PkTransaction.cpp:399 libapper/PkTransaction.cpp:486
+#: libapper/PkTransaction.cpp:404 libapper/PkTransaction.cpp:491
 msgid "Failed to install signature"
 msgstr "Не вдалося встановити підпис"
 

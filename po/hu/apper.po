@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-07-07 01:35+0000\n"
+"POT-Creation-Date: 2014-03-13 01:37+0000\n"
 "PO-Revision-Date: 2013-07-03 19:55+0200\n"
 "Last-Translator: Balázs Úr <urbalazs@gmail.com>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
@@ -1168,13 +1168,13 @@ msgstr "Ezekhez a felhasználói azonosítókhoz tartozó kulccsal lett aláírv
 msgid "Security hints"
 msgstr "Biztonsági tanácsok"
 
-#: libapper/ApplicationLauncher.cpp:96
+#: libapper/ApplicationLauncher.cpp:94
 msgid "New application available"
 msgid_plural "New applications available"
 msgstr[0] "Új alkalmazás érhető el"
 msgstr[1] "Új alkalmazások érhetők el"
 
-#: libapper/ApplicationLauncher.cpp:99
+#: libapper/ApplicationLauncher.cpp:97
 msgid "The following application was just installed. Click on it to launch:"
 msgid_plural ""
 "The following applications were just installed. Click on them to launch:"
@@ -2094,7 +2094,7 @@ msgstr "A csomag nem kompatibilis ezzel a rendszerrel"
 msgid "No space is left on the disk"
 msgstr "Nincs több hely a lemezen"
 
-#: libapper/PkStrings.cpp:494 libapper/PkTransaction.cpp:441
+#: libapper/PkStrings.cpp:494 libapper/PkTransaction.cpp:446
 msgid "A media change is required"
 msgstr "Adathordozó-csere szükséges"
 
@@ -3176,7 +3176,7 @@ msgstr "A csomag eltávolítása meghiúsult"
 msgid "Failed to update package"
 msgstr "A csomag frissítése meghiúsult"
 
-#: libapper/PkTransaction.cpp:351
+#: libapper/PkTransaction.cpp:356
 msgid ""
 "You are about to install unsigned packages that can compromise your system, "
 "as it is impossible to verify if the software came from a trusted source.\n"
@@ -3189,11 +3189,11 @@ msgstr ""
 "\n"
 "Biztosan folytatja a telepítést?"
 
-#: libapper/PkTransaction.cpp:354
+#: libapper/PkTransaction.cpp:359
 msgid "Installing unsigned software"
 msgstr "Aláíratlan szoftverek telepítése"
 
-#: libapper/PkTransaction.cpp:399 libapper/PkTransaction.cpp:486
+#: libapper/PkTransaction.cpp:404 libapper/PkTransaction.cpp:491
 msgid "Failed to install signature"
 msgstr "Az aláírás telepítése nem sikerült"
 

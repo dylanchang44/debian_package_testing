@@ -1,18 +1,18 @@
-# Translation of kpackagekit.po to Catalan
-# Copyright (C) 2009-2010 This_file_is_part_of_KDE
+# Translation of apper.po to Catalan
+# Copyright (C) 2009-2014 This_file_is_part_of_KDE
 # This file is distributed under the license LGPL version 2 or later
 #
 #
 # Joan Maspons <joanmaspons@gmail.com>, 2009, 2011.
-# Josep Ma. Ferrer <txemaq@gmail.com>, 2010, 2013.
+# Josep Ma. Ferrer <txemaq@gmail.com>, 2010, 2013, 2014.
 # Manuel Tortosa <manutortosa@chakra-project.org>, 2010.
 # Antoni Bella Pérez <antonibella5@orange.es>, 2012.
 msgid ""
 msgstr ""
-"Project-Id-Version: kpackagekit\n"
+"Project-Id-Version: apper\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-07-07 01:35+0000\n"
-"PO-Revision-Date: 2013-01-19 19:44+0100\n"
+"POT-Creation-Date: 2014-03-13 01:37+0000\n"
+"PO-Revision-Date: 2014-02-14 22:16+0100\n"
 "Last-Translator: Josep Ma. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca@valencia\n"
@@ -234,24 +234,18 @@ msgstr "Suportat"
 
 #. i18n: ectx: property (text), widget (QCheckBox, archCB)
 #: Apper/BackendDetails.ui:445
-#, fuzzy
-#| msgid "Only text"
 msgid "Only native"
-msgstr "Només text"
+msgstr "Només natiu"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_4)
 #: Apper/BackendDetails.ui:455
-#, fuzzy
-#| msgid "KPackageKit"
 msgid "PackageKit"
-msgstr "KPackageKit"
+msgstr "PackageKit"
 
 #. i18n: ectx: property (text), widget (QLabel, label_5)
 #: Apper/BackendDetails.ui:461
-#, fuzzy
-#| msgid "Version"
 msgid "Version:"
-msgstr "Versió"
+msgstr "Versió:"
 
 #: Apper/main.cpp:54 PkSession/main.cpp:34
 msgid "Apper"
@@ -262,10 +256,8 @@ msgid "Apper is an Application to Get and Manage Software"
 msgstr "L'Apper és una aplicació per obtindre i gestionar programari"
 
 #: Apper/main.cpp:58 ApperKCM/ApperKCM.cpp:90 PkSession/main.cpp:38
-#, fuzzy
-#| msgid "(C) 2008-2011 Daniel Nicoletti"
 msgid "(C) 2008-2013 Daniel Nicoletti"
-msgstr "(C) 2008-2011 Daniel Nicoletti"
+msgstr "(C) 2008-2013 Daniel Nicoletti"
 
 #: Apper/main.cpp:60 PkSession/main.cpp:40
 msgid "Daniel Nicoletti"
@@ -359,9 +351,6 @@ msgid "The system update has completed"
 msgstr "S'ha completat l'actualització del sistema"
 
 #: apperd/TransactionWatcher.cpp:141 apperd/TransactionWatcher.cpp:183
-#, fuzzy
-#| msgctxt "Restart the computer"
-#| msgid "Restart"
 msgid "Restart"
 msgstr "Reinicia"
 
@@ -386,35 +375,27 @@ msgid "Security updates are being automatically installed."
 msgstr "Les actualitzacions de seguretat s'estan instal·lant automàticament."
 
 #: apperd/Updater.cpp:180
-#, fuzzy
-#| msgid "Updates are being automatically installed."
 msgid "Updates are being automatically downloaded."
-msgstr "Les actualitzacions s'estan instal·lant automàticament."
+msgstr "Les actualitzacions s'estan baixant automàticament."
 
 #: apperd/Updater.cpp:214
 msgid "System update was successful."
 msgstr "S'ha actualitzat el sistema correctament."
 
 #: apperd/Updater.cpp:221
-#, fuzzy
-#| msgid "The automated software update failed."
 msgid "The software update failed."
-msgstr "L'actualització automàtica del programari ha fallat."
+msgstr "L'actualització del programari ha fallat."
 
 #: apperd/Updater.cpp:275
-#, fuzzy, kde-format
-#| msgid "Check for new Updates"
+#, kde-format
 msgid "There is one new update"
 msgid_plural "There are %1 new updates"
-msgstr[0] "Comprova si hi ha noves actualitzacions"
-msgstr[1] "Comprova si hi ha noves actualitzacions"
+msgstr[0] "Hi ha una actualització nova"
+msgstr[1] "Hi ha %1 actualitzacions noves"
 
 #: apperd/Updater.cpp:290
-#, fuzzy
-#| msgid "Review Change"
-#| msgid_plural "Review Changes"
 msgid "Review"
-msgstr "Revisa el canvi"
+msgstr "Revisió"
 
 #: apperd/Updater.cpp:292 AppSetup/SetupWizard.cpp:337
 #: libapper/ApplicationsDelegate.cpp:40
@@ -505,7 +486,7 @@ msgstr "Cerca paquets"
 #. i18n: ectx: property (text), widget (QPushButton, checkUpdatesPB)
 #: ApperKCM/ApperKCM.ui:161
 msgid "Check for new Updates"
-msgstr "Comprova si hi ha noves actualitzacions"
+msgstr "Comprova si hi ha actualitzacions noves"
 
 #. i18n: ectx: property (text), widget (QPushButton, generalSettingsPB)
 #: ApperKCM/ApperKCM.ui:195
@@ -731,28 +712,22 @@ msgstr "Origen dels paquets"
 #: ApperKCM/Settings/Settings.cpp:56
 msgid "A repository was changed, it's highly recommended to refresh the cache"
 msgstr ""
+"Ha canviat un repositori, es recomana fermament refrescar la memòria cau"
 
 #: ApperKCM/Settings/Settings.cpp:88
-#, fuzzy
-#| msgctxt "Never refresh package cache"
-#| msgid "Never"
 msgctxt "Inform about distribution upgrades"
 msgid "Never"
 msgstr "Mai"
 
 #: ApperKCM/Settings/Settings.cpp:91
-#, fuzzy
-#| msgid "Only installed"
 msgctxt "Inform about distribution upgrades"
 msgid "Only stable"
-msgstr "Només instal·lat"
+msgstr "Només estable"
 
 #: ApperKCM/Settings/Settings.cpp:96
-#, fuzzy
-#| msgid "Only development"
 msgctxt "Inform about distribution upgrades"
 msgid "Stable and development"
-msgstr "Només desenvolupament"
+msgstr "Estable i desenvolupament"
 
 #: ApperKCM/Settings/Settings.cpp:100
 msgctxt "Hourly refresh the package cache"
@@ -785,10 +760,8 @@ msgid "None"
 msgstr "Cap"
 
 #: ApperKCM/Settings/Settings.cpp:107
-#, fuzzy
-#| msgid "Downloading"
 msgid "Download only"
-msgstr "S'està baixant..."
+msgstr "Només baixa"
 
 #: ApperKCM/Settings/Settings.cpp:108
 msgid "Security only"
@@ -800,10 +773,8 @@ msgstr "Totes les actualitzacions"
 
 #. i18n: ectx: property (text), widget (QLabel, intervalL)
 #: ApperKCM/Settings/Settings.ui:53
-#, fuzzy
-#| msgid "Check for new Updates"
 msgid "Check for new updates:"
-msgstr "Comprova si hi ha noves actualitzacions"
+msgstr "Comprova si hi ha actualitzacions noves:"
 
 #. i18n: ectx: property (text), widget (QCheckBox, checkUpdatesMobileCB)
 #. i18n: ectx: property (text), widget (QCheckBox, installUpdatesMobileCB)
@@ -819,15 +790,13 @@ msgstr "quan s'estiga funcionant amb la bateria"
 
 #. i18n: ectx: property (text), widget (QLabel, autoInsL)
 #: ApperKCM/Settings/Settings.ui:120
-#, fuzzy
-#| msgid "Automatically install:"
 msgid "Automatically update:"
-msgstr "Instal·la automàticament:"
+msgstr "Actualitza automàticament:"
 
 #. i18n: ectx: property (text), widget (QCheckBox, appLauncherCB)
 #: ApperKCM/Settings/Settings.ui:178
 msgid "Show application launcher after installing new applications"
-msgstr "Mostra el llançador de l'aplicació en instal·lar noves aplicacions"
+msgstr "Mostra el llançador de l'aplicació en instal·lar aplicacions noves"
 
 #. i18n: ectx: property (text), widget (QCheckBox, autoConfirmCB)
 #: ApperKCM/Settings/Settings.ui:185
@@ -836,11 +805,8 @@ msgstr "Mostra el diàleg de confirmació en instal·lar o actualitzar paquets"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: ApperKCM/Settings/Settings.ui:192
-#, fuzzy
-#| msgctxt "The role of the transaction, in past tense"
-#| msgid "Got distribution upgrades"
 msgid "Check for distribution upgrades:"
-msgstr "S'han obtingut les actualitzacions de la distribució"
+msgstr "Comprova les actualitzacions de la distribució:"
 
 #. i18n: ectx: property (text), widget (QCheckBox, showOriginsCB)
 #: ApperKCM/Settings/Settings.ui:233
@@ -879,16 +845,13 @@ msgid "Application"
 msgstr "Aplicació"
 
 #: ApperKCM/Updater/DistroUpgrade.cpp:40
-#, fuzzy
-#| msgid "Upgrade to %1"
 msgid "Upgrade"
-msgstr "Actualitza a %1"
+msgstr "Actualitza"
 
 #: ApperKCM/Updater/DistroUpgrade.cpp:51
-#, fuzzy, kde-format
-#| msgid "Distribution upgrade available"
+#, kde-format
 msgid "Distribution upgrade available: %1"
-msgstr "Hi ha disponible una actualització de la distribució"
+msgstr "Actualització de la distribució disponible: %1"
 
 #: ApperKCM/Updater/DistroUpgrade.cpp:65
 msgid ""
@@ -919,7 +882,7 @@ msgstr "S'ha completat l'actualització de la distribució."
 #: ApperKCM/Updater/UpdateDetails.cpp:191
 msgid "This update will add new features and expand functionality."
 msgstr ""
-"Esta actualització afegirà noves característiques i expandirà la "
+"Esta actualització afegirà característiques noves i expandirà la "
 "funcionalitat."
 
 #: ApperKCM/Updater/UpdateDetails.cpp:195
@@ -1055,10 +1018,8 @@ msgid "Estimated download size: %1"
 msgstr "Mida de descàrrega estimada: %1"
 
 #: ApperKCM/Updater/Updater.cpp:358
-#, fuzzy
-#| msgid "Check for new Updates"
 msgid "Check for new updates"
-msgstr "Comprova si hi ha noves actualitzacions"
+msgstr "Comprova si hi ha actualitzacions noves"
 
 #. i18n: ectx: property (text), widget (QRadioButton, acceptedRB)
 #: AppSetup/LicensePage.ui:98
@@ -1227,15 +1188,13 @@ msgstr ""
 msgid "Security hints"
 msgstr "Consells de seguretat"
 
-#: libapper/ApplicationLauncher.cpp:96
-#, fuzzy
-#| msgid "No network connection available"
+#: libapper/ApplicationLauncher.cpp:94
 msgid "New application available"
 msgid_plural "New applications available"
-msgstr[0] "La connexió de xarxa no està disponible"
-msgstr[1] "La connexió de xarxa no està disponible"
+msgstr[0] "Hi ha una aplicació nova disponible"
+msgstr[1] "Hi ha aplicacions noves disponibles"
 
-#: libapper/ApplicationLauncher.cpp:99
+#: libapper/ApplicationLauncher.cpp:97
 msgid "The following application was just installed. Click on it to launch:"
 msgid_plural ""
 "The following applications were just installed. Click on them to launch:"
@@ -1303,7 +1262,7 @@ msgstr "Versió instal·lada"
 
 #: libapper/PackageModel.cpp:215
 msgid "Arch"
-msgstr "Arq"
+msgstr "Arquitectura"
 
 #: libapper/PackageModel.cpp:218
 msgid "Origin"
@@ -1366,32 +1325,27 @@ msgid "Removing packages"
 msgstr "S'estan eliminant paquets"
 
 #: libapper/PkStrings.cpp:58
-#, fuzzy, kde-format
-#| msgid "Downloading packages at %1/s, %2 remaining"
+#, kde-format
 msgctxt "transaction state, downloading package files"
 msgid "Downloading at %1/s, %2 remaining"
 msgstr "S'estan baixant els paquets a %1/s, resta %2"
 
 #: libapper/PkStrings.cpp:63
-#, fuzzy, kde-format
-#| msgid "Downloading packages at %1/s"
+#, kde-format
 msgctxt "transaction state, downloading package files"
 msgid "Downloading at %1/s"
 msgstr "S'estan baixant els paquets a %1/s"
 
 #: libapper/PkStrings.cpp:67
-#, fuzzy, kde-format
-#| msgid "Downloading packages, %1 remaining"
+#, kde-format
 msgctxt "transaction state, downloading package files"
 msgid "Downloading, %1 remaining"
 msgstr "S'estan baixant els paquets, resta %1"
 
 #: libapper/PkStrings.cpp:71
-#, fuzzy
-#| msgid "Downloading"
 msgctxt "transaction state, downloading package files"
 msgid "Downloading"
-msgstr "S'està baixant..."
+msgstr "S'està baixant"
 
 #: libapper/PkStrings.cpp:75
 msgctxt "transaction state, installing packages"
@@ -1617,9 +1571,6 @@ msgid "Searching by package name"
 msgstr "S'està cercant per nom de paquet"
 
 #: libapper/PkStrings.cpp:209
-#, fuzzy
-#| msgctxt "The role of the transaction, in present tense"
-#| msgid "Simulating the remove"
 msgctxt "The role of the transaction, in present tense"
 msgid "Simulating removal"
 msgstr "S'està simulant l'eliminació"
@@ -1636,9 +1587,6 @@ msgid "Removing"
 msgstr "S'està eliminant"
 
 #: libapper/PkStrings.cpp:216
-#, fuzzy
-#| msgctxt "The role of the transaction, in present tense"
-#| msgid "Simulating the install"
 msgctxt "The role of the transaction, in present tense"
 msgid "Simulating install"
 msgstr "S'està simulant la instal·lació"
@@ -1649,20 +1597,14 @@ msgid "Installing"
 msgstr "S'està instal·lant"
 
 #: libapper/PkStrings.cpp:223
-#, fuzzy
-#| msgctxt "The role of the transaction, in present tense"
-#| msgid "Simulating the install"
 msgctxt "The role of the transaction, in present tense"
 msgid "Simulating file install"
-msgstr "S'està simulant la instal·lació"
+msgstr "S'està simulant la instal·lació dels fitxers"
 
 #: libapper/PkStrings.cpp:225
-#, fuzzy
-#| msgctxt "The role of the transaction, in present tense"
-#| msgid "Downloading packages"
 msgctxt "The role of the transaction, in present tense"
 msgid "Downloading required packages"
-msgstr "S'estan descarregant els paquets"
+msgstr "S'estan descarregant els paquets requerits"
 
 #: libapper/PkStrings.cpp:227
 msgctxt "The role of the transaction, in present tense"
@@ -1675,20 +1617,14 @@ msgid "Refreshing package cache"
 msgstr "S'està refrescant la memòria cau dels paquets"
 
 #: libapper/PkStrings.cpp:232
-#, fuzzy
-#| msgctxt "The role of the transaction, in present tense"
-#| msgid "Simulating the update"
 msgctxt "The role of the transaction, in present tense"
 msgid "Simulating update"
 msgstr "S'està simulant l'actualització"
 
 #: libapper/PkStrings.cpp:234
-#, fuzzy
-#| msgctxt "The role of the transaction, in present tense"
-#| msgid "Downloading packages"
 msgctxt "The role of the transaction, in present tense"
 msgid "Downloading updates"
-msgstr "S'estan descarregant els paquets"
+msgstr "S'estan descarregant les actualitzacions"
 
 #: libapper/PkStrings.cpp:236
 msgctxt "The role of the transaction, in present tense"
@@ -2131,7 +2067,7 @@ msgstr "La instal·lació local ha fallat"
 
 #: libapper/PkStrings.cpp:470
 msgid "Bad GPG signature"
-msgstr "La signatura GPG no és correcte"
+msgstr "La signatura GPG és incorrecta"
 
 #: libapper/PkStrings.cpp:472
 msgid "Missing GPG signature"
@@ -2177,7 +2113,7 @@ msgstr "El paquet és incompatible amb este sistema"
 msgid "No space is left on the disk"
 msgstr "No queda espai al disc"
 
-#: libapper/PkStrings.cpp:494 libapper/PkTransaction.cpp:441
+#: libapper/PkStrings.cpp:494 libapper/PkTransaction.cpp:446
 msgid "A media change is required"
 msgstr "Cal canviar el suport"
 
@@ -3198,10 +3134,8 @@ msgid "Could not talk to packagekitd."
 msgstr "No s'ha pogut comunicar amb el packagekitd."
 
 #: libapper/PkStrings.cpp:1007
-#, fuzzy
-#| msgid "Could not talk to packagekitd."
 msgid "Error talking to packagekitd."
-msgstr "No s'ha pogut comunicar amb el packagekitd."
+msgstr "Error en comunicar amb el packagekitd."
 
 #: libapper/PkStrings.cpp:1010 libapper/PkStrings.cpp:1013
 msgid "An unknown error happened."
@@ -3278,7 +3212,7 @@ msgstr "Ha fallat en eliminar el paquet"
 msgid "Failed to update package"
 msgstr "Ha fallat en actualitzar el paquet"
 
-#: libapper/PkTransaction.cpp:351
+#: libapper/PkTransaction.cpp:356
 msgid ""
 "You are about to install unsigned packages that can compromise your system, "
 "as it is impossible to verify if the software came from a trusted source.\n"
@@ -3290,18 +3224,18 @@ msgstr ""
 "confiança.\n"
 "Segur que voleu continuar amb la instal·lació?"
 
-#: libapper/PkTransaction.cpp:354
+#: libapper/PkTransaction.cpp:359
 msgid "Installing unsigned software"
 msgstr "S'està instal·lant programari sense signar"
 
-#: libapper/PkTransaction.cpp:399 libapper/PkTransaction.cpp:486
+#: libapper/PkTransaction.cpp:404 libapper/PkTransaction.cpp:491
 msgid "Failed to install signature"
 msgstr "Ha fallat en instal·lar la signatura"
 
 #: libapper/PkTransactionWidget.cpp:229 libapper/PkTransactionWidget.cpp:242
 #, kde-format
 msgid "%1 (%2%)"
-msgstr ""
+msgstr "%1 (%2%)"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: libapper/PkTransactionWidget.ui:38
@@ -3383,36 +3317,26 @@ msgstr[0] "1 paquet a actualitzar"
 msgstr[1] "%1 paquets a actualitzar"
 
 #: libapper/Requirements.cpp:151
-#, fuzzy, kde-format
-#| msgctxt "The role of the transaction, in past tense"
-#| msgid "Installed packages"
+#, kde-format
 msgid "1 untrusted package"
 msgid_plural "%1 untrusted packages"
-msgstr[0] "S'han instal·lat els paquets"
-msgstr[1] "S'han instal·lat els paquets"
+msgstr[0] "1 paquet no fiable"
+msgstr[1] "%1 paquets no fiables"
 
 #: libapper/Requirements.cpp:200
 #, kde-format
 msgctxt "how many bytes are required for download"
 msgid "Need to get %1 of archives"
-msgstr ""
+msgstr "Cal obtindre %1 d'arxius"
 
 #: libapper/Requirements.cpp:260
-#, fuzzy
-#| msgid ""
-#| "You are about to install unsigned packages that can compromise your "
-#| "system, as it is impossible to verify if the software came from a trusted "
-#| "source.\n"
-#| "\n"
-#| "Are you sure you want to proceed with the installation?"
 msgid ""
 "You are about to install unsigned packages that can compromise your system, "
 "as it is impossible to verify if the software came from a trusted source."
 msgstr ""
 "Esteu a punt d'instal·lar paquets no signats que poden comprometre el vostre "
 "sistema ja que és impossible verificar si el programari prové d'una font de "
-"confiança.\n"
-"Segur que voleu continuar amb la instal·lació?"
+"confiança."
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: libapper/Requirements.ui:31
@@ -3431,7 +3355,7 @@ msgstr "EtiquetaDeText"
 
 #: PkSession/main.cpp:36
 msgid "Apper PackageKit Session helper"
-msgstr ""
+msgstr "Ajudant de sessions del PackageKit per a l'Apper"
 
 #: PkSession/main.cpp:41
 msgid "Trever Fischer"
@@ -3512,7 +3436,7 @@ msgstr "Ha fallat en començar la transacció de resolució"
 
 #: PkSession/PkInstallFontconfigResources.cpp:41
 msgid "Installs new Fonts"
-msgstr "Instal·la nous tipus de lletra"
+msgstr "Instal·la tipus de lletra nous"
 
 #: PkSession/PkInstallFontconfigResources.cpp:73
 msgid "Could interpret request"
@@ -3556,7 +3480,7 @@ msgstr[1] "L'aplicació %2 vol instal·lar alguns tipus de lletra"
 #: PkSession/PkInstallPlasmaResources.cpp:101
 #: PkSession/PkInstallPrinterDrivers.cpp:74
 msgid "Failed to search for provides"
-msgstr "Ha fallat en cercar per proporcinador"
+msgstr "Ha fallat en cercar pel que proporciona"
 
 #: PkSession/PkInstallFontconfigResources.cpp:155
 #: PkSession/PkInstallFontconfigResources.cpp:164
@@ -3565,7 +3489,7 @@ msgstr "Ha fallat en trobar el tipus de lletra"
 
 #: PkSession/PkInstallFontconfigResources.cpp:157
 msgid "No new fonts could be found for this document"
-msgstr "No es poden trobar nous tipus de lletra per este document"
+msgstr "No es poden trobar tipus de lletra nous per este document"
 
 #: PkSession/PkInstallGStreamerResources.cpp:39
 msgid "Install GStreamer Resources"
@@ -3669,7 +3593,7 @@ msgstr "No s'ha pogut trobar el programari"
 #: PkSession/PkInstallMimeTypes.cpp:103
 msgid "No new applications can be found to handle this type of file"
 msgstr ""
-"No s'han trobat noves aplicacions que puguen manejar este tipus de fitxer"
+"No s'han trobat aplicacions noves que puguen manejar este tipus de fitxer"
 
 #: PkSession/PkInstallPackageFiles.cpp:38
 msgid "Install Packages Files"

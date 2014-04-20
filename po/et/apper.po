@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kpackagekit\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-07-07 01:35+0000\n"
+"POT-Creation-Date: 2014-03-13 01:37+0000\n"
 "PO-Revision-Date: 2013-01-14 18:15+0200\n"
 "Last-Translator: Marek Laane <bald@smail.ee>\n"
 "Language-Team: Estonian <kde-et@linux.ee>\n"
@@ -1160,13 +1160,13 @@ msgstr ""
 msgid "Security hints"
 msgstr "Turbevihjed"
 
-#: libapper/ApplicationLauncher.cpp:96
+#: libapper/ApplicationLauncher.cpp:94
 msgid "New application available"
 msgid_plural "New applications available"
 msgstr[0] "Saadaval on uus rakendus"
 msgstr[1] "Saadaval on uued rakendused"
 
-#: libapper/ApplicationLauncher.cpp:99
+#: libapper/ApplicationLauncher.cpp:97
 msgid "The following application was just installed. Click on it to launch:"
 msgid_plural ""
 "The following applications were just installed. Click on them to launch:"
@@ -2101,7 +2101,7 @@ msgstr "Pakett ei ühildu süsteemiga"
 msgid "No space is left on the disk"
 msgstr "Kettal pole enam ruumi"
 
-#: libapper/PkStrings.cpp:494 libapper/PkTransaction.cpp:441
+#: libapper/PkStrings.cpp:494 libapper/PkTransaction.cpp:446
 msgid "A media change is required"
 msgstr "Vajalik on andmekandja vahetamine"
 
@@ -3179,7 +3179,7 @@ msgstr "Paketi eemaldamine nurjus"
 msgid "Failed to update package"
 msgstr "Paketi uuendamine nurjus"
 
-#: libapper/PkTransaction.cpp:351
+#: libapper/PkTransaction.cpp:356
 msgid ""
 "You are about to install unsigned packages that can compromise your system, "
 "as it is impossible to verify if the software came from a trusted source.\n"
@@ -3192,11 +3192,11 @@ msgstr ""
 "\n"
 "Kas tõesti jätkata paigaldamist?"
 
-#: libapper/PkTransaction.cpp:354
+#: libapper/PkTransaction.cpp:359
 msgid "Installing unsigned software"
 msgstr "Allkirjastamata tarkvara paigaldamine"
 
-#: libapper/PkTransaction.cpp:399 libapper/PkTransaction.cpp:486
+#: libapper/PkTransaction.cpp:404 libapper/PkTransaction.cpp:491
 msgid "Failed to install signature"
 msgstr "Allkirja paigaldamine nurjus"
 

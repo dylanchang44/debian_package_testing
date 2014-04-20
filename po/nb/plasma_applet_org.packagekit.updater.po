@@ -1,16 +1,15 @@
-# Copyright (C) YEAR This_file_is_part_of_KDE
-# This file is distributed under the same license as the PACKAGE package.
+# Translation of plasma_applet_org.packagekit.updater to Norwegian Bokmål
 #
-# Marce Villarino <mvillarino@kde-espana.es>, 2013.
+# Bjørn Steensrud <bjornst@skogkatt.homelinux.org>, 2014.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2013-06-25 01:31+0000\n"
-"PO-Revision-Date: 2013-11-10 18:46+0100\n"
-"Last-Translator: Marce Villarino <mvillarino@kde-espana.org>\n"
-"Language-Team: Galician <proxecto@trasno.net>\n"
-"Language: gl\n"
+"PO-Revision-Date: 2014-03-23 11:52+0100\n"
+"Last-Translator: Bjørn Steensrud <bjornst@skogkatt.homelinux.org>\n"
+"Language-Team: Norwegian Bokmål <i18n-nb@lister.ping.uio.no>\n"
+"Language: nb\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -22,42 +21,42 @@ msgstr ""
 
 #: package/contents/ui/ChangelogView.qml:31
 msgid "Failed to get update details"
-msgstr "Non se conseguiu obter detalles da actualización"
+msgstr "Klarte ikke å hente detaljer om oppdatering"
 
 #: package/contents/ui/ChangelogView.qml:94
 msgid "Version: %1"
-msgstr "Versión: %1"
+msgstr "Versjon: %1"
 
 #: package/contents/ui/ChangelogView.qml:100
 msgid "Updates: %1"
-msgstr "Actualizacións: %1"
+msgstr "Oppdateringer: %1"
 
 #: package/contents/ui/main.qml:39
 msgid "Software Updates"
-msgstr "Actualizacións de sofware"
+msgstr "Programvare-oppdateringer"
 
 #: package/contents/ui/main.qml:65 package/contents/ui/main.qml:229
 msgid "Check for new updates"
-msgstr "Comprobar se hai novas actualizacións"
+msgstr "Se etter nye oppdateringer"
 
 #: package/contents/ui/main.qml:128
 msgid "Failed to get updates"
-msgstr "Non se conseguiron actualizacións"
+msgstr "Klarte ikke å hente oppdateringer"
 
 #: package/contents/ui/main.qml:173
 msgid "You have one update"
 msgid_plural "You have %1 updates"
-msgstr[0] "Hai unha actualización"
-msgstr[1] "Hai %1 actualizacións"
+msgstr[0] "Du har én oppdatering"
+msgstr[1] "Du har %1 oppdateringer"
 
 #: package/contents/ui/main.qml:178
 msgid "Your system is up to date"
-msgstr "O sistema está posto ao día"
+msgstr "Systemet ditt er oppdatert"
 
 #: package/contents/ui/Transaction.qml:76
 msgid "Cancel"
-msgstr "Cancelar"
+msgstr "Avbryt"
 
 #: package/contents/ui/Updates.qml:79
 msgid "Install"
-msgstr "Instalar"
+msgstr "Installer"

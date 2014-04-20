@@ -5,14 +5,14 @@
 # Maciej Wikło <maciej.wiklo@wp.pl>, 2009.
 # Marta Rybczyńska <kde-i18n@rybczynska.net>, 2009, 2010, 2013.
 # Artur Chłond <eugenewolfe@o2.pl>, 2010, 2011.
-# Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>, 2011, 2012, 2013.
+# Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>, 2011, 2012, 2013, 2014.
 msgid ""
 msgstr ""
 "Project-Id-Version: kpackagekit\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-07-07 01:35+0000\n"
-"PO-Revision-Date: 2013-06-22 20:29+0200\n"
-"Last-Translator: Marta Rybczyńska <kde-i18n@rybczynska.net>\n"
+"POT-Creation-Date: 2014-03-13 01:37+0000\n"
+"PO-Revision-Date: 2014-03-23 08:46+0100\n"
+"Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2);\n"
-"X-Generator: Lokalize 1.4\n"
+"X-Generator: Lokalize 1.5\n"
 
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
@@ -762,11 +762,11 @@ msgstr "Poprzestań na pobraniu"
 
 #: ApperKCM/Settings/Settings.cpp:108
 msgid "Security only"
-msgstr "Instaluj tylko te związane z bezpieczeństwem"
+msgstr "Wgraj tylko te związane z bezpieczeństwem"
 
 #: ApperKCM/Settings/Settings.cpp:109
 msgid "All updates"
-msgstr "Instaluj wszystkie uaktualnienia"
+msgstr "Wgraj wszystkie uaktualnienia"
 
 #. i18n: ectx: property (text), widget (QLabel, intervalL)
 #: ApperKCM/Settings/Settings.ui:53
@@ -1073,7 +1073,7 @@ msgstr "Nie znaleziono pakietu!"
 
 #: AppSetup/SetupWizard.cpp:87
 msgid "Installation finished!"
-msgstr "Ukończono instalowanie!"
+msgstr "Ukończono wgrywanie!"
 
 #: AppSetup/SetupWizard.cpp:88
 #, kde-format
@@ -1143,14 +1143,14 @@ msgstr "Uruchamianie instalacji"
 #: AppSetup/SetupWizard.cpp:281
 #, kde-format
 msgid "Installing %1..."
-msgstr "Instalowanie %1..."
+msgstr "Wgrywanie %1..."
 
 #: AppSetup/SetupWizard.cpp:316
 msgid ""
 "Installing this package will make the following native packages obsolete. "
 "You might consider removing them manually."
 msgstr ""
-"Zainstalowanie tego pakietu sprawi, że następujące natywne pakiety staną się "
+"Wgranie tego pakietu sprawi, że następujące natywne pakiety staną się "
 "przestarzałe. Możesz rozważyć ich ręczne usunięcie."
 
 #: AppSetup/SetupWizard.cpp:317
@@ -1188,14 +1188,14 @@ msgstr "Został podpisany kluczem należącym do identyfikatora użytkownika: %1
 msgid "Security hints"
 msgstr "Wskazówki bezpieczeństwa"
 
-#: libapper/ApplicationLauncher.cpp:96
+#: libapper/ApplicationLauncher.cpp:94
 msgid "New application available"
 msgid_plural "New applications available"
 msgstr[0] "Dostępny nowy program"
 msgstr[1] "Dostępne nowe programy"
 msgstr[2] "Dostępne nowe programy"
 
-#: libapper/ApplicationLauncher.cpp:99
+#: libapper/ApplicationLauncher.cpp:97
 msgid "The following application was just installed. Click on it to launch:"
 msgid_plural ""
 "The following applications were just installed. Click on them to launch:"
@@ -1353,7 +1353,7 @@ msgstr "Pobieranie"
 #: libapper/PkStrings.cpp:75
 msgctxt "transaction state, installing packages"
 msgid "Installing packages"
-msgstr "Instalowanie pakietów"
+msgstr "Wgrywanie pakietów"
 
 #: libapper/PkStrings.cpp:78
 msgctxt "transaction state, refreshing internal lists"
@@ -1390,7 +1390,7 @@ msgstr "Sprawdzanie podpisów"
 #: libapper/PkStrings.cpp:96
 msgctxt "transaction state, when we're doing a test transaction"
 msgid "Testing changes"
-msgstr "Testowanie zmian"
+msgstr "Próba zmian"
 
 #: libapper/PkStrings.cpp:99
 msgctxt "transaction state, when we're writing to the system package database"
@@ -1597,7 +1597,7 @@ msgstr "Symulowanie instalacji"
 #: libapper/PkStrings.cpp:220
 msgctxt "The role of the transaction, in present tense"
 msgid "Installing"
-msgstr "Instalowanie"
+msgstr "Wgrywanie"
 
 #: libapper/PkStrings.cpp:223
 msgctxt "The role of the transaction, in present tense"
@@ -1612,7 +1612,7 @@ msgstr "Pobieranie wymaganych pakietów"
 #: libapper/PkStrings.cpp:227
 msgctxt "The role of the transaction, in present tense"
 msgid "Installing file"
-msgstr "Instalowanie pliku"
+msgstr "Wgrywanie pliku"
 
 #: libapper/PkStrings.cpp:229
 msgctxt "The role of the transaction, in present tense"
@@ -1672,7 +1672,7 @@ msgstr "Pobieranie dostarczanych elementów"
 #: libapper/PkStrings.cpp:252
 msgctxt "The role of the transaction, in present tense"
 msgid "Installing signature"
-msgstr "Instalowanie podpisu"
+msgstr "Wgrywanie podpisu"
 
 #: libapper/PkStrings.cpp:254
 msgctxt "The role of the transaction, in present tense"
@@ -1874,7 +1874,7 @@ msgstr "Uaktualnianie"
 
 #: libapper/PkStrings.cpp:352
 msgid "Installing"
-msgstr "Instalowanie"
+msgstr "Wgrywanie"
 
 #: libapper/PkStrings.cpp:354
 msgid "Removing"
@@ -1890,7 +1890,7 @@ msgstr "Zastępowanie"
 
 #: libapper/PkStrings.cpp:360
 msgid "Reinstalling"
-msgstr "Ponowne instalowanie"
+msgstr "Ponowne wgrywanie"
 
 #: libapper/PkStrings.cpp:362
 msgid "Preparing"
@@ -2116,7 +2116,7 @@ msgstr "Pakiet nie jest kompatybilny z tym systemem"
 msgid "No space is left on the disk"
 msgstr "Brak miejsca na dysku"
 
-#: libapper/PkStrings.cpp:494 libapper/PkTransaction.cpp:441
+#: libapper/PkStrings.cpp:494 libapper/PkTransaction.cpp:446
 msgid "A media change is required"
 msgstr "Wymagana zmiana nośnika"
 
@@ -2438,7 +2438,7 @@ msgstr ""
 
 #: libapper/PkStrings.cpp:632
 msgid "None of the selected packages could be updated."
-msgstr "Żaden z wybranych pakietów nie może być aktualizowany."
+msgstr "Żaden z wybranych pakietów nie może zostać uaktualniony."
 
 #: libapper/PkStrings.cpp:634
 msgid "The repository configuration could not be modified."
@@ -3217,7 +3217,7 @@ msgstr "Usuwanie pakietu nieudane"
 msgid "Failed to update package"
 msgstr "Uaktualnienie pakietu nie powiodło się"
 
-#: libapper/PkTransaction.cpp:351
+#: libapper/PkTransaction.cpp:356
 msgid ""
 "You are about to install unsigned packages that can compromise your system, "
 "as it is impossible to verify if the software came from a trusted source.\n"
@@ -3230,11 +3230,11 @@ msgstr ""
 "\n"
 "Czy na pewno chcesz kontynuować instalację?"
 
-#: libapper/PkTransaction.cpp:354
+#: libapper/PkTransaction.cpp:359
 msgid "Installing unsigned software"
-msgstr "Instalowanie niepodpisanego oprogramowania"
+msgstr "Wgrywanie niepodpisanego oprogramowania"
 
-#: libapper/PkTransaction.cpp:399 libapper/PkTransaction.cpp:486
+#: libapper/PkTransaction.cpp:404 libapper/PkTransaction.cpp:491
 msgid "Failed to install signature"
 msgstr "Instalacja podpisu nie powiodła się"
 
@@ -3621,7 +3621,7 @@ msgstr "Nie znaleziono nowych aplikacji do obsługi tego typu pliku"
 
 #: PkSession/PkInstallPackageFiles.cpp:38
 msgid "Install Packages Files"
-msgstr "Instalowanie plików pakietów"
+msgstr "Wgrywanie plików pakietów"
 
 #: PkSession/PkInstallPackageFiles.cpp:42
 #: PkSession/PkRemovePackageByFiles.cpp:43
@@ -3678,7 +3678,7 @@ msgstr[2] "Pliki zostały zainstalowane"
 
 #: PkSession/PkInstallPackageFiles.cpp:118
 msgid "Failed to install files"
-msgstr "Nieudane instalowanie plików"
+msgstr "Nieudane wgrywanie plików"
 
 #: PkSession/PkInstallPackageFiles.cpp:119
 #: PkSession/PkInstallPackageFiles.cpp:121

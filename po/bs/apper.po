@@ -9,9 +9,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kpackagekit\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-07-07 01:35+0000\n"
-"PO-Revision-Date: 2011-05-08 12:57+0200\n"
-"Last-Translator: KDE 4 <megaribi@epn.ba>\n"
+"POT-Creation-Date: 2014-03-13 01:37+0000\n"
+"PO-Revision-Date: 2014-01-10 10:31+0000\n"
+"Last-Translator: memsud <dedovic.memsud94@hotmail.com>\n"
 "Language-Team: bosanski <bs@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
@@ -19,21 +19,20 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Launchpad-Export-Date: 2011-04-22 09:57+0000\n"
-"X-Generator: KBabel 1.11.4\n"
+"X-Generator: Launchpad (build 16890)\n"
+"X-Launchpad-Export-Date: 2014-01-11 06:23+0000\n"
 
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Samir Ribić,edina"
+msgstr "Samir Ribić,edina,memsud"
 
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "samir.ribic@etf.unsa.ba,edina@etf.ba"
+msgstr "samir.ribic@etf.unsa.ba,edina@etf.ba,dedovic.memsud94@hotmail.com"
 
 #: Apper/BackendDetails.cpp:34
-#, fuzzy
 msgid "Backend Details"
-msgstr "Prikaži pozadinske detalje"
+msgstr "pozadinski Detalji"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #: Apper/BackendDetails.ui:39
@@ -157,9 +156,8 @@ msgstr "Odustani"
 
 #. i18n: ectx: property (text), widget (QCheckBox, repairSystemCB)
 #: Apper/BackendDetails.ui:296
-#, fuzzy
 msgid "Repair System"
-msgstr "Ažuriraj sistem"
+msgstr "Popravi sistem"
 
 #. i18n: ectx: property (text), widget (QCheckBox, upgradeSystemCB)
 #: Apper/BackendDetails.ui:306
@@ -235,23 +233,18 @@ msgstr "Podržan"
 
 #. i18n: ectx: property (text), widget (QCheckBox, archCB)
 #: Apper/BackendDetails.ui:445
-#, fuzzy
 msgid "Only native"
-msgstr "Samo tekst"
+msgstr "samo lokalni"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_4)
 #: Apper/BackendDetails.ui:455
-#, fuzzy
-#| msgid "KPackageKit"
 msgid "PackageKit"
-msgstr "KPackageKit"
+msgstr "Paket opreme"
 
 #. i18n: ectx: property (text), widget (QLabel, label_5)
 #: Apper/BackendDetails.ui:461
-#, fuzzy
-#| msgid "Version"
 msgid "Version:"
-msgstr "Verzija"
+msgstr "Verzija:"
 
 #: Apper/main.cpp:54 PkSession/main.cpp:34
 msgid "Apper"
@@ -262,10 +255,8 @@ msgid "Apper is an Application to Get and Manage Software"
 msgstr "Apper je aplikacija za dobivanje i upravljanje softverom"
 
 #: Apper/main.cpp:58 ApperKCM/ApperKCM.cpp:90 PkSession/main.cpp:38
-#, fuzzy
-#| msgid "(C) 2008-2011 Daniel Nicoletti"
 msgid "(C) 2008-2013 Daniel Nicoletti"
-msgstr "(C) 2008-2011 Daniel Nicoletti"
+msgstr "(C) 2008-2013 Daniel Nicoletti"
 
 #: Apper/main.cpp:60 PkSession/main.cpp:40
 msgid "Daniel Nicoletti"
@@ -304,9 +295,8 @@ msgid "Single file installer"
 msgstr "Jedna datoteka za instalaciju"
 
 #: Apper/main.cpp:73
-#, fuzzy
 msgid "Font resource installer"
-msgstr "Katalog za instalaciju"
+msgstr "Font Installer resurs"
 
 #: Apper/main.cpp:74
 msgid "Catalog installer"
@@ -358,9 +348,8 @@ msgid "The system update has completed"
 msgstr "Sistemska nadgradnja je završena"
 
 #: apperd/TransactionWatcher.cpp:141 apperd/TransactionWatcher.cpp:183
-#, fuzzy
 msgid "Restart"
-msgstr "Ponovo pokrenuti"
+msgstr "Restartuj"
 
 #: apperd/TransactionWatcher.cpp:174
 #, kde-format
@@ -384,31 +373,28 @@ msgid "Security updates are being automatically installed."
 msgstr "Sigurnosne nadgradnje se automatski instališu"
 
 #: apperd/Updater.cpp:180
-#, fuzzy
 msgid "Updates are being automatically downloaded."
-msgstr "Nadgradnje se automatski instališu"
+msgstr "Nadogradnje će biti automatski preuzete"
 
 #: apperd/Updater.cpp:214
 msgid "System update was successful."
 msgstr "Sistemska nadgradnja je bila uspješna"
 
 #: apperd/Updater.cpp:221
-#, fuzzy
 msgid "The software update failed."
-msgstr "Automatizirano ažuriranje softvera nije uspjelo."
+msgstr "softversko ažuriranje nije uspjelo."
 
 #: apperd/Updater.cpp:275
-#, fuzzy, kde-format
+#, kde-format
 msgid "There is one new update"
 msgid_plural "There are %1 new updates"
-msgstr[0] "Potraži nove nadgradnje."
-msgstr[1] "Potraži nove nadgradnje."
-msgstr[2] "Potraži nove nadgradnje."
+msgstr[0] "Postoji %1 novo azuriranje"
+msgstr[1] "Postoji %1 nova azuriranja"
+msgstr[2] "Postoji %1 novih azuriranja"
 
 #: apperd/Updater.cpp:290
-#, fuzzy
 msgid "Review"
-msgstr "Pregled promjene"
+msgstr "Pregled"
 
 #: apperd/Updater.cpp:292 AppSetup/SetupWizard.cpp:337
 #: libapper/ApplicationsDelegate.cpp:40
@@ -483,10 +469,8 @@ msgid "Installed Software"
 msgstr "Instalirani softver"
 
 #: ApperKCM/ApperKCM.cpp:704
-#, fuzzy
 msgid "Could not find an application that matched this category"
-msgstr ""
-"<h3> Da li želite da instalirate ovaj katalog ? </h3><ul><li>%2</li></ul>"
+msgstr "Ne mogu naći program koji odgovara ovoj kategoriji"
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, ApperKCM)
 #: ApperKCM/ApperKCM.ui:20
@@ -505,15 +489,13 @@ msgstr "Potraži nove nadgradnje."
 
 #. i18n: ectx: property (text), widget (QPushButton, generalSettingsPB)
 #: ApperKCM/ApperKCM.ui:195
-#, fuzzy
 msgid "General Settings"
-msgstr "Primijeni postavke"
+msgstr "Opšte postavke"
 
 #. i18n: ectx: property (text), widget (QPushButton, repoSettingsPB)
 #: ApperKCM/ApperKCM.ui:214
-#, fuzzy
 msgid "Software Origins"
-msgstr "Programski izvori"
+msgstr "Porijeklo softfera"
 
 #. i18n: ectx: property (text), widget (QToolButton, backTB)
 #: ApperKCM/ApperKCM.ui:267 AppSetup/SetupWizard.cpp:152
@@ -529,14 +511,12 @@ msgid "Show Architectures"
 msgstr "Prikaži arhitekture"
 
 #: ApperKCM/BrowseView.cpp:104 ApperKCM/Updater/Updater.cpp:125
-#, fuzzy
 msgid "Show Origins"
-msgstr "Programski izvori"
+msgstr "Prikaži porijeklo"
 
 #: ApperKCM/BrowseView.cpp:111 ApperKCM/Updater/Updater.cpp:132
-#, fuzzy
 msgid "Show Sizes"
-msgstr "Prikaži nadogradnje"
+msgstr "Prikaži velicinu"
 
 #. i18n: ectx: property (text), widget (QPushButton, exportInstalledPB)
 #: ApperKCM/BrowseView.ui:140
@@ -620,20 +600,17 @@ msgid "Only non-free software"
 msgstr "Samo neslobodni softver"
 
 #: ApperKCM/FiltersMenu.cpp:181
-#, fuzzy
 msgctxt "Filter for supported packages"
 msgid "Supported"
-msgstr "Podržan"
+msgstr "Podržano"
 
 #: ApperKCM/FiltersMenu.cpp:188
-#, fuzzy
 msgid "Only supported software"
-msgstr "Samo slobodni softver"
+msgstr "Samo podržan software"
 
 #: ApperKCM/FiltersMenu.cpp:195
-#, fuzzy
 msgid "Only non-supported software"
-msgstr "Samo neslobodni softver"
+msgstr "Samo ne podržan softver"
 
 #: ApperKCM/FiltersMenu.cpp:212
 msgctxt "Filter for source packages"
@@ -733,24 +710,23 @@ msgstr "Porijeklo paketa."
 #: ApperKCM/Settings/Settings.cpp:56
 msgid "A repository was changed, it's highly recommended to refresh the cache"
 msgstr ""
+"Spremište je promijenjeno, te je vrlo preporučljivo da se osvježi "
+"predmemorija"
 
 #: ApperKCM/Settings/Settings.cpp:88
-#, fuzzy
 msgctxt "Inform about distribution upgrades"
 msgid "Never"
-msgstr "Nikad"
+msgstr "Nikada"
 
 #: ApperKCM/Settings/Settings.cpp:91
-#, fuzzy
 msgctxt "Inform about distribution upgrades"
 msgid "Only stable"
-msgstr "Samo instalirane"
+msgstr "samo stabilni"
 
 #: ApperKCM/Settings/Settings.cpp:96
-#, fuzzy
 msgctxt "Inform about distribution upgrades"
 msgid "Stable and development"
-msgstr "Samo razvoj"
+msgstr "Stabilno i razvoj"
 
 #: ApperKCM/Settings/Settings.cpp:100
 msgctxt "Hourly refresh the package cache"
@@ -783,9 +759,8 @@ msgid "None"
 msgstr "Ništa"
 
 #: ApperKCM/Settings/Settings.cpp:107
-#, fuzzy
 msgid "Download only"
-msgstr "Preuzimanje"
+msgstr "Samo preuzeti"
 
 #: ApperKCM/Settings/Settings.cpp:108
 msgid "Security only"
@@ -797,9 +772,8 @@ msgstr "Ažuriranje"
 
 #. i18n: ectx: property (text), widget (QLabel, intervalL)
 #: ApperKCM/Settings/Settings.ui:53
-#, fuzzy
 msgid "Check for new updates:"
-msgstr "Potraži nove nadgradnje."
+msgstr "Provjerite nova ažuriranja"
 
 #. i18n: ectx: property (text), widget (QCheckBox, checkUpdatesMobileCB)
 #. i18n: ectx: property (text), widget (QCheckBox, installUpdatesMobileCB)
@@ -815,9 +789,8 @@ msgstr "da li radi na bateriji"
 
 #. i18n: ectx: property (text), widget (QLabel, autoInsL)
 #: ApperKCM/Settings/Settings.ui:120
-#, fuzzy
 msgid "Automatically update:"
-msgstr "Automatska instalacija"
+msgstr "Automatsko ažuriranje"
 
 #. i18n: ectx: property (text), widget (QCheckBox, appLauncherCB)
 #: ApperKCM/Settings/Settings.ui:178
@@ -832,9 +805,8 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: ApperKCM/Settings/Settings.ui:192
-#, fuzzy
 msgid "Check for distribution upgrades:"
-msgstr "Dobijene distribucijske nadgradnje"
+msgstr "Provjerite za distribuciju nadogradnje:"
 
 #. i18n: ectx: property (text), widget (QCheckBox, showOriginsCB)
 #: ApperKCM/Settings/Settings.ui:233
@@ -873,14 +845,13 @@ msgid "Application"
 msgstr "Aplikacija"
 
 #: ApperKCM/Updater/DistroUpgrade.cpp:40
-#, fuzzy
 msgid "Upgrade"
-msgstr "Nadgradnja na %1"
+msgstr "Nadogradnja"
 
 #: ApperKCM/Updater/DistroUpgrade.cpp:51
-#, fuzzy, kde-format
+#, kde-format
 msgid "Distribution upgrade available: %1"
-msgstr "Distribucijska nadgradnja je dostupna"
+msgstr "Distribucijska nadogradnja dostupna:%1"
 
 #: ApperKCM/Updater/DistroUpgrade.cpp:65
 msgid ""
@@ -1033,93 +1004,83 @@ msgid "Obsoletes:"
 msgstr "Zastarjelosti :"
 
 #: ApperKCM/Updater/UpdateDetails.cpp:322
-#, fuzzy, kde-format
+#, kde-format
 msgid "Repository: %1"
-msgstr "Repozitorij:"
+msgstr "Repozitorij: %1"
 
 #: ApperKCM/Updater/UpdateDetails.cpp:344
 msgid "No update description was found."
 msgstr "Opis nadgradnje nije pronađen."
 
 #: ApperKCM/Updater/Updater.cpp:111
-#, fuzzy
 msgid "Show Current Versions"
-msgstr "Prikaži verzije"
+msgstr "Prikazi trenutne verzije"
 
 #: ApperKCM/Updater/Updater.cpp:239
 #, kde-format
 msgid "Estimated download size: %1"
-msgstr ""
+msgstr "Procijenjena veličina preuzimanja :%1"
 
 #: ApperKCM/Updater/Updater.cpp:358
-#, fuzzy
 msgid "Check for new updates"
-msgstr "Potraži nove nadgradnje."
+msgstr "Provjerite nova ažuriranja"
 
 #. i18n: ectx: property (text), widget (QRadioButton, acceptedRB)
 #: AppSetup/LicensePage.ui:98
-#, fuzzy
 msgid "I agree to the above terms and conditions"
-msgstr "Prije nastavljanja, molim vas pročitajte sljedeće važne informacije"
+msgstr "Slažem se sa gore navedenim uvjetima"
 
 #. i18n: ectx: property (text), widget (QRadioButton, rejectedRB)
 #: AppSetup/LicensePage.ui:111
 msgid "I don't agree"
-msgstr ""
+msgstr "Ne slažem se"
 
 #: AppSetup/main.cpp:34 AppSetup/main.cpp:35
-#, fuzzy
 msgid "KDE Application Installer"
-msgstr "Aplikacijski menadžer"
+msgstr "KDE Aplikacijski Instaler"
 
 #: AppSetup/main.cpp:36
 msgid "(C) 2012, Matthias Klumpp"
-msgstr ""
+msgstr "(C) 2012, Matthias Klumpp"
 
 #: AppSetup/main.cpp:38
-#, fuzzy
 msgctxt "@info:credit"
 msgid "Daniel Nicoletti"
 msgstr "Daniel Nicoletti"
 
 #: AppSetup/main.cpp:38 AppSetup/main.cpp:40
-#, fuzzy
 msgid "Developer"
 msgstr "Razvoj"
 
 #: AppSetup/main.cpp:40
 msgctxt "@info:credit"
 msgid "Matthias Klumpp"
-msgstr ""
+msgstr "Matthias Klumpp"
 
 #: AppSetup/main.cpp:47
-#, fuzzy
 msgid "Show verbose information"
-msgstr "Prikupljanje informacija"
+msgstr "Pokaži detaljne informacije"
 
 #: AppSetup/main.cpp:48
-#, fuzzy
 msgid "IPK package filename"
-msgstr "Nevažeća paketska datoteka"
+msgstr "IPK paket datoteke"
 
 #: AppSetup/main.cpp:72
 msgid "Sorry, we didn't get an existing IPK package as parameter."
-msgstr ""
+msgstr "Nažalost, nismo dobili već postojeći IPK paket kao parametar."
 
 #: AppSetup/main.cpp:73
-#, fuzzy
 msgid "Package not found!"
-msgstr "Paket nije pronađen"
+msgstr "Paket nije nadjen"
 
 #: AppSetup/SetupWizard.cpp:87
-#, fuzzy
 msgid "Installation finished!"
-msgstr "Instaliranje datoteke"
+msgstr "Instalacija završena!"
 
 #: AppSetup/SetupWizard.cpp:88
-#, fuzzy, kde-format
+#, kde-format
 msgid "%1 has been installed successfully!"
-msgstr "Datoteka je uspješno instalirana"
+msgstr "%1 instaliran je uspijesno"
 
 #: AppSetup/SetupWizard.cpp:102 libapper/PkTransaction.cpp:143
 #: libapper/PkTransaction.cpp:161 libapper/PkTransaction.cpp:180
@@ -1128,9 +1089,8 @@ msgid "Error"
 msgstr "Greška"
 
 #: AppSetup/SetupWizard.cpp:103 AppSetup/SetupWizard.cpp:117
-#, fuzzy
 msgid "An error occurred"
-msgstr "Pojavila se interna sistemska greška"
+msgstr "Desila se greška"
 
 #: AppSetup/SetupWizard.cpp:150 libapper/Requirements.cpp:59
 #: PkSession/SessionTask.cpp:71
@@ -1144,7 +1104,7 @@ msgstr "Dobro došli!"
 #: AppSetup/SetupWizard.cpp:191
 #, kde-format
 msgid "Welcome to the installation of %1!"
-msgstr ""
+msgstr "Dobrodošli na instalaciju od %1!"
 
 #: AppSetup/SetupWizard.cpp:192
 msgid ""
@@ -1153,51 +1113,51 @@ msgid ""
 "like spying out your passwords.<br>Please do only install this software if "
 "you <b>trust the publisher and the author</b> of it."
 msgstr ""
+"Molimo budite oprezni dok instalirate 3rd-party aplikacijama. <br> Oni mogu "
+"eventualno <b> ostetit </ b> vaš sistem ili su <b> zlonamjernog ponašanja </ "
+"b>, kao što je špijuniranje vase lozinke. <br> Molimo vas instalirajte samo "
+"ovaj program <b> vjerujte izdavaču i autoru </ b> toga."
 
 #: AppSetup/SetupWizard.cpp:203
 msgid "Details about this installation"
-msgstr ""
+msgstr "Detalji o ovoj instalaciji"
 
 #: AppSetup/SetupWizard.cpp:240
-#, fuzzy
 msgid "Install for all users"
-msgstr "Instalirane lokalne datoteke"
+msgstr "Instalacija za sve korisnike"
 
 #: AppSetup/SetupWizard.cpp:258
-#, fuzzy
 msgid "Application description"
-msgstr "Aplikacije"
+msgstr "opis programa"
 
 #: AppSetup/SetupWizard.cpp:270
-#, fuzzy
 msgid "Software license"
-msgstr "Programski izvori"
+msgstr "Softverska licenca"
 
 #: AppSetup/SetupWizard.cpp:271
-#, fuzzy
 msgid "Please read the following terms and conditions carefully!"
-msgstr "Prije nastavljanja, molim vas pročitajte sljedeće važne informacije"
+msgstr "Pročitajte sljedeće uvjete i obaveze pažljivo!"
 
 #: AppSetup/SetupWizard.cpp:280
-#, fuzzy
 msgid "Running installation"
-msgstr "Skeniranje instaliranih aplikacija"
+msgstr "U toku je instalacija"
 
 #: AppSetup/SetupWizard.cpp:281
-#, fuzzy, kde-format
+#, kde-format
 msgid "Installing %1..."
-msgstr "Instaliranje"
+msgstr "Instaliram %1..."
 
 #: AppSetup/SetupWizard.cpp:316
 msgid ""
 "Installing this package will make the following native packages obsolete. "
 "You might consider removing them manually."
 msgstr ""
+"Instaliranje ovog paketa ucinit ce prethodne pakete zastarijelim .Mozda se "
+"odlucite za njihovo rucno uklanjanje"
 
 #: AppSetup/SetupWizard.cpp:317
-#, fuzzy
 msgid "Similar native packages found"
-msgstr "simuliraj nadgradnju paketa"
+msgstr "Slični izvorni paketi su pronadjeni"
 
 #: AppSetup/SetupWizard.cpp:417
 msgid ""
@@ -1206,35 +1166,38 @@ msgid ""
 "Please only proceed, if you really know what you're doing!\n"
 "Continue?"
 msgstr ""
+"Želite li instalirati ovu aplikaciju kao root!\n"
+"Ovo moze ostetiti vas sistem ili instalirati zlonamjerni softver za sve "
+"korisnike.\n"
+"Molimo vas samo nastavite, ako zaista znate sta cinite.\n"
+"Nastaviti?"
 
 #: AppSetup/SetupWizard.cpp:420
 msgid "Really install as superuser?"
-msgstr ""
+msgstr "Stvarno instalirati kao superkorisnik?"
 
 #: AppSetup/SetupWizard.cpp:438
 #, kde-format
 msgid "This package has the following security level: <b>%1</b>"
-msgstr ""
+msgstr "Ovaj paket ima sljedeću razinu sigurnosti: <b>%1 </b>"
 
 #: AppSetup/SetupWizard.cpp:440
 #, kde-format
 msgid "It was signed with a key belonging to these user-ids: %1"
-msgstr ""
+msgstr "Sporazum je potpisan s ključem koji pripada ovim korisničkim ids:%1"
 
 #: AppSetup/SetupWizard.cpp:444
-#, fuzzy
 msgid "Security hints"
-msgstr "Samo sigurnost"
+msgstr "Sigurnosni savjeti"
 
-#: libapper/ApplicationLauncher.cpp:96
-#, fuzzy
+#: libapper/ApplicationLauncher.cpp:94
 msgid "New application available"
 msgid_plural "New applications available"
-msgstr[0] "Nema dostupne mrežne veze"
-msgstr[1] "Nema dostupne mrežne veze"
-msgstr[2] "Nema dostupne mrežne veze"
+msgstr[0] "Novi program  dostupan"
+msgstr[1] "Novi programi dostupni"
+msgstr[2] "Novi programi dostupni"
 
-#: libapper/ApplicationLauncher.cpp:99
+#: libapper/ApplicationLauncher.cpp:97
 msgid "The following application was just installed. Click on it to launch:"
 msgid_plural ""
 "The following applications were just installed. Click on them to launch:"
@@ -1259,14 +1222,12 @@ msgid "Deselect"
 msgstr "Poništi izbor"
 
 #: libapper/ChangesDelegate.cpp:47
-#, fuzzy
 msgid "Do not Install"
-msgstr "Za instalirati"
+msgstr "Ne isntalirajte"
 
 #: libapper/ChangesDelegate.cpp:49
-#, fuzzy
 msgid "Do not Remove"
-msgstr "Za odstraniti"
+msgstr "Ne uklanjajte"
 
 #: libapper/CustomProgressBar.cpp:38
 #, kde-format
@@ -1293,38 +1254,37 @@ msgid "Please read the following important information before continuing:"
 msgstr "Prije nastavljanja, molim vas pročitajte sljedeće važne informacije"
 
 #: libapper/PackageModel.cpp:205
-#, fuzzy
 msgid "Name"
-msgstr "Igre"
+msgstr "Ime"
 
 #: libapper/PackageModel.cpp:209
 msgid "Version"
 msgstr "Verzija"
 
 #: libapper/PackageModel.cpp:212
-#, fuzzy
 msgid "Installed Version"
-msgstr "Istalirani potpis"
+msgstr "Instalirana verzija"
 
 #: libapper/PackageModel.cpp:215
 msgid "Arch"
-msgstr ""
+msgstr "Arh"
 
 #: libapper/PackageModel.cpp:218
-#, fuzzy
 msgid "Origin"
-msgstr "Uredi izvore"
+msgstr "Porijeklo"
 
 #: libapper/PackageModel.cpp:221
 msgid "Size"
 msgstr "Veličina"
 
 #: libapper/PackageModel.cpp:319
-#, fuzzy, kde-format
+#, kde-format
 msgid ""
 "Version: %1\n"
 "Architecture: %2"
-msgstr "Prikaži arhitekture"
+msgstr ""
+"Verzija: %1\n"
+"Arhitektura: %2"
 
 #: libapper/PackageModel.cpp:365
 msgid "To be Removed"
@@ -1370,25 +1330,24 @@ msgid "Removing packages"
 msgstr "Uklanjanje paketa"
 
 #: libapper/PkStrings.cpp:58
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "transaction state, downloading package files"
 msgid "Downloading at %1/s, %2 remaining"
-msgstr "Preuzimanje paketa pri %1/s"
+msgstr "Skidanje na%1/s,%2 preostalo"
 
 #: libapper/PkStrings.cpp:63
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "transaction state, downloading package files"
 msgid "Downloading at %1/s"
-msgstr "Preuzimanje paketa pri %1/s"
+msgstr "Skidanje na%1/s"
 
 #: libapper/PkStrings.cpp:67
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "transaction state, downloading package files"
 msgid "Downloading, %1 remaining"
-msgstr "Preuzimanje paketa pri %1/s"
+msgstr "Skidanje, %1 preostalo"
 
 #: libapper/PkStrings.cpp:71
-#, fuzzy
 msgctxt "transaction state, downloading package files"
 msgid "Downloading"
 msgstr "Preuzimanje"
@@ -1617,9 +1576,6 @@ msgid "Searching by package name"
 msgstr "Traženje po imenu paketa"
 
 #: libapper/PkStrings.cpp:209
-#, fuzzy
-#| msgctxt "The role of the transaction, in present tense"
-#| msgid "Simulating the remove"
 msgctxt "The role of the transaction, in present tense"
 msgid "Simulating removal"
 msgstr "Simulacija uklanjanja"
@@ -1636,12 +1592,9 @@ msgid "Removing"
 msgstr "Uklanjanje"
 
 #: libapper/PkStrings.cpp:216
-#, fuzzy
-#| msgctxt "The role of the transaction, in present tense"
-#| msgid "Simulating the install"
 msgctxt "The role of the transaction, in present tense"
 msgid "Simulating install"
-msgstr "Simulacija instalacije"
+msgstr "Simulacija instaliranja"
 
 #: libapper/PkStrings.cpp:220
 msgctxt "The role of the transaction, in present tense"
@@ -1649,20 +1602,14 @@ msgid "Installing"
 msgstr "Instaliranje"
 
 #: libapper/PkStrings.cpp:223
-#, fuzzy
-#| msgctxt "The role of the transaction, in present tense"
-#| msgid "Simulating the install"
 msgctxt "The role of the transaction, in present tense"
 msgid "Simulating file install"
-msgstr "Simulacija instalacije"
+msgstr "Simulacija instalacije datoteke"
 
 #: libapper/PkStrings.cpp:225
-#, fuzzy
-#| msgctxt "The role of the transaction, in present tense"
-#| msgid "Downloading packages"
 msgctxt "The role of the transaction, in present tense"
 msgid "Downloading required packages"
-msgstr "Preuzimanje paketa"
+msgstr "Skidanje odgovarajucih datoteka"
 
 #: libapper/PkStrings.cpp:227
 msgctxt "The role of the transaction, in present tense"
@@ -1675,20 +1622,14 @@ msgid "Refreshing package cache"
 msgstr "Osvježavanje keša paketa"
 
 #: libapper/PkStrings.cpp:232
-#, fuzzy
-#| msgctxt "The role of the transaction, in present tense"
-#| msgid "Simulating the update"
 msgctxt "The role of the transaction, in present tense"
 msgid "Simulating update"
-msgstr "Simulacija ažuriranja"
+msgstr "Simuliranje ažuriranja"
 
 #: libapper/PkStrings.cpp:234
-#, fuzzy
-#| msgctxt "The role of the transaction, in present tense"
-#| msgid "Downloading packages"
 msgctxt "The role of the transaction, in present tense"
 msgid "Downloading updates"
-msgstr "Preuzimanje paketa"
+msgstr "Preuzimanje azuriranja"
 
 #: libapper/PkStrings.cpp:236
 msgctxt "The role of the transaction, in present tense"
@@ -1766,10 +1707,9 @@ msgid "Upgrading system"
 msgstr "Nadograđivanje sistema"
 
 #: libapper/PkStrings.cpp:268
-#, fuzzy
 msgctxt "The role of the transaction, in present tense"
 msgid "Repairing system"
-msgstr "Ažuriranje sistema"
+msgstr "Popravljanje sistema"
 
 #: libapper/PkStrings.cpp:278
 msgctxt "The role of the transaction, in past tense"
@@ -1922,10 +1862,9 @@ msgid "Upgraded system"
 msgstr "Ažuriran sistem"
 
 #: libapper/PkStrings.cpp:338
-#, fuzzy
 msgctxt "The role of the transaction, in past tense"
 msgid "Repaired system"
-msgstr "Ažuriran sistem"
+msgstr "Popravljeni sistem"
 
 #: libapper/PkStrings.cpp:348
 msgid "Downloading"
@@ -2179,7 +2118,7 @@ msgstr "Paket nije u skladu sa sistemom"
 msgid "No space is left on the disk"
 msgstr "Nema više slobodnog prostora na disku"
 
-#: libapper/PkStrings.cpp:494 libapper/PkTransaction.cpp:441
+#: libapper/PkStrings.cpp:494 libapper/PkTransaction.cpp:446
 msgid "A media change is required"
 msgstr "Potrebna je izmjena medija"
 
@@ -2248,23 +2187,20 @@ msgid "Install root is invalid"
 msgstr "Korijen instalacije je nevažeći"
 
 #: libapper/PkStrings.cpp:528
-#, fuzzy
 msgid "Cannot fetch install sources"
-msgstr "Ne može se dobiti zaključavanje"
+msgstr "Ne mogu se naći izvori instalacija"
 
 #: libapper/PkStrings.cpp:530
 msgid "Rescheduled due to priority"
-msgstr ""
+msgstr "Promijeniti raspored zbog prioriteta"
 
 #: libapper/PkStrings.cpp:532
-#, fuzzy
 msgid "Unfinished transaction"
-msgstr "Dobivanje starih transkacija"
+msgstr "Nezavršena transakcija"
 
 #: libapper/PkStrings.cpp:534
-#, fuzzy
 msgid "Lock required"
-msgstr "Dobijeni zahtjevi"
+msgstr "Zaključavanje potrebno"
 
 #: libapper/PkStrings.cpp:536
 msgid "Unknown error"
@@ -2690,24 +2626,22 @@ msgstr ""
 "Korijen instalacije je nevažeći. Molim kontaktirajte svog administratora."
 
 #: libapper/PkStrings.cpp:711
-#, fuzzy
 msgid "The list of software could not be downloaded."
-msgstr "Određeni programski izvor se ne može onemogućiti"
+msgstr "Lista programa ne moze biti skinuta"
 
 #: libapper/PkStrings.cpp:713
 msgid ""
 "The transaction has been cancelled and will be retried when the system is "
 "idle."
-msgstr ""
+msgstr "Transakcija je otkazana i ona ce  se ponoviti kad je sistem mirovanju."
 
 #: libapper/PkStrings.cpp:715
 msgid "A previous package management transaction was interrupted."
-msgstr ""
+msgstr "Prethodni paket upravljanja transakcijama je bio prekinut"
 
 #: libapper/PkStrings.cpp:717
-#, fuzzy
 msgid "A package manager lock is required."
-msgstr "Potrebna je izmjena medija"
+msgstr "Paket upravljanja zaključavanja je potreban"
 
 #: libapper/PkStrings.cpp:719
 msgid ""
@@ -2986,7 +2920,7 @@ msgid "%1 Selected"
 msgid_plural "%1 Selected"
 msgstr[0] "%1 odabran"
 msgstr[1] "%1 odabrana"
-msgstr[2] "%1 odabrano"
+msgstr[2] "%1 odabranih"
 
 #: libapper/PkStrings.cpp:856
 msgid "No Packages"
@@ -3184,10 +3118,8 @@ msgid "Could not talk to packagekitd."
 msgstr "Nije moguće komunicirati sa packagekitd"
 
 #: libapper/PkStrings.cpp:1007
-#, fuzzy
-#| msgid "Could not talk to packagekitd."
 msgid "Error talking to packagekitd."
-msgstr "Nije moguće komunicirati sa packagekitd"
+msgstr "Govorna greska ka  paketukitd."
 
 #: libapper/PkStrings.cpp:1010 libapper/PkStrings.cpp:1013
 msgid "An unknown error happened."
@@ -3195,35 +3127,32 @@ msgstr "Desila se nepoznata greška"
 
 #: libapper/PkStrings.cpp:1027
 msgid "Your system is up to date"
-msgstr ""
+msgstr "Sistem je već ažuriran"
 
 #: libapper/PkStrings.cpp:1029
-#, fuzzy
 msgid "You have no updates"
-msgstr "Imate %1 nadgradnju"
+msgstr "Nemate nikakih nadogradnji"
 
 #: libapper/PkStrings.cpp:1031
 msgid "Last check for updates was more than a month ago"
-msgstr ""
+msgstr "Posljednja provjera za update je bila prije mijesec dana"
 
 #: libapper/PkStrings.cpp:1039
 #, kde-format
 msgid "Verified %1 ago"
-msgstr ""
+msgstr "potvrdjeno %1 prije"
 
 #: libapper/PkStrings.cpp:1041
 msgid "It's strongly recommended that you check for new updates now"
-msgstr ""
+msgstr "Strogo je preporuceno da provjerite nove update sada"
 
 #: libapper/PkTransaction.cpp:139
-#, fuzzy
 msgid "Failed to simulate file install"
-msgstr "Simulacija instalacije paketa nije uspjela"
+msgstr "Neuspijela simulacija instalacije datoteke"
 
 #: libapper/PkTransaction.cpp:143
-#, fuzzy
 msgid "Current backend does not support installing files."
-msgstr "Postojeći backend ne podržava instaliranje paketa"
+msgstr "Trenutna pozadina ne podržava instalaciju datoteke."
 
 #: libapper/PkTransaction.cpp:157
 msgid "Failed to simulate package install"
@@ -3268,7 +3197,7 @@ msgstr "Odstranjivanje paketa nije uspjelo"
 msgid "Failed to update package"
 msgstr "Nadograđivanje paketa nije uspjelo"
 
-#: libapper/PkTransaction.cpp:351
+#: libapper/PkTransaction.cpp:356
 msgid ""
 "You are about to install unsigned packages that can compromise your system, "
 "as it is impossible to verify if the software came from a trusted source.\n"
@@ -3279,18 +3208,18 @@ msgstr ""
 "sistem, pošto je nemoguće potvrditi da li je program došao iz pouzdanog "
 "izvora"
 
-#: libapper/PkTransaction.cpp:354
+#: libapper/PkTransaction.cpp:359
 msgid "Installing unsigned software"
 msgstr "Instaliram nepotpisan program"
 
-#: libapper/PkTransaction.cpp:399 libapper/PkTransaction.cpp:486
+#: libapper/PkTransaction.cpp:404 libapper/PkTransaction.cpp:491
 msgid "Failed to install signature"
 msgstr "Instalacija potpisa nije uspjela"
 
 #: libapper/PkTransactionWidget.cpp:229 libapper/PkTransactionWidget.cpp:242
 #, kde-format
 msgid "%1 (%2%)"
-msgstr ""
+msgstr "%1 (%2%)"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: libapper/PkTransactionWidget.ui:38
@@ -3377,28 +3306,26 @@ msgstr[1] "%1 paketa za nadgradnju"
 msgstr[2] "%1 paketa za nadgradnju"
 
 #: libapper/Requirements.cpp:151
-#, fuzzy, kde-format
+#, kde-format
 msgid "1 untrusted package"
 msgid_plural "%1 untrusted packages"
-msgstr[0] "Instalirani paketi"
-msgstr[1] "Instalirani paketi"
-msgstr[2] "Instalirani paketi"
+msgstr[0] "%1 Nepovjerljiv paket"
+msgstr[1] "%1 Nepovjerljiva paketa"
+msgstr[2] "%1 Nepovjerljivih paketa"
 
 #: libapper/Requirements.cpp:200
 #, kde-format
 msgctxt "how many bytes are required for download"
 msgid "Need to get %1 of archives"
-msgstr ""
+msgstr "Trebate dobavitii %1 arhivu"
 
 #: libapper/Requirements.cpp:260
-#, fuzzy
 msgid ""
 "You are about to install unsigned packages that can compromise your system, "
 "as it is impossible to verify if the software came from a trusted source."
 msgstr ""
-"Upravo trebate da instalirate nepotpisane pakete koji mogu ugroziti vaš "
-"sistem, pošto je nemoguće potvrditi da li je program došao iz pouzdanog "
-"izvora"
+"Spremate se instalirati nepotpisane pakete koji mogu ugroziti vaš sistem, "
+"kao što je ne moguće provjeriti da li softver dolazi iz pouzdanog izvora."
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: libapper/Requirements.ui:31
@@ -3407,9 +3334,8 @@ msgstr "Potrebne su dodatne promjene da bi se završio zadatak"
 
 #. i18n: ectx: property (text), widget (QCheckBox, confirmCB)
 #: libapper/Requirements.ui:87
-#, fuzzy
 msgid "Do not confirm when installing or updating additional packages"
-msgstr "Ne prikazuj ovu potvrdu kada se instališu ili ažuriraju dodatni paketi"
+msgstr "Ne potvrđujte kada instalirate ili ažurirate dodatne pakete"
 
 #. i18n: ectx: property (text), widget (QLabel, descriptionL)
 #: PkSession/IntroDialog.ui:65
@@ -3418,52 +3344,45 @@ msgstr "TextLabel"
 
 #: PkSession/main.cpp:36
 msgid "Apper PackageKit Session helper"
-msgstr ""
+msgstr "Apper PackageKit Session pomagac"
 
 #: PkSession/main.cpp:41
 msgid "Trever Fischer"
 msgstr "Trever Fischer"
 
 #: PkSession/PkInstallCatalogs.cpp:46
-#, fuzzy
 msgid "Install Packages Catalogs"
-msgstr "Instaliraj pakete"
+msgstr "Instalirajte paketne kataloge"
 
 #: PkSession/PkInstallCatalogs.cpp:65
 msgid "You can drop more catalogs in here"
-msgstr ""
+msgstr "mozete ispustiti vise kataloga ovdje"
 
 #: PkSession/PkInstallCatalogs.cpp:85
-#, fuzzy
 msgid "No supported catalog was found"
-msgstr "Opis nadgradnje nije pronađen."
+msgstr "Katalog koji nije podrzan je nadjen"
 
 #: PkSession/PkInstallCatalogs.cpp:87
-#, fuzzy
 msgid "Do you want to install this catalog?"
 msgid_plural "Do you want to install these catalogs?"
-msgstr[0] ""
-"<h3> Da li želite da instalirate ovaj katalog ? </h3><ul><li>%2</li></ul>"
-msgstr[1] ""
-"<h3> Da li želite da instalirate ove kataloge ? </h3><ul><li>%2</li></ul>"
-msgstr[2] ""
-"<h3> Da li želite da instalirate ove kataloge ? </h3><ul><li>%2</li></ul>"
+msgstr[0] "Da li želite instalirati ovaj katalog"
+msgstr[1] "Da li želite instalirati ove kataloge"
+msgstr[2] "Da li želite instalirati ovaj katalog"
 
 #: PkSession/PkInstallCatalogs.cpp:96
-#, fuzzy
 msgid "An application wants to install a catalog"
 msgid_plural "An application wants to install catalogs"
-msgstr[0] "Program želi da instalira paket"
-msgstr[1] "Program želi da instalira pakete"
-msgstr[2] "Program želi da instalira pakete"
+msgstr[0] "Jedan program zeli da instalirate katalog"
+msgstr[1] "Jedan program zeli da instalirate kataloge"
+msgstr[2] "Jedan program zeli da instalirate kataloge"
 
 #: PkSession/PkInstallCatalogs.cpp:100
-#, fuzzy, kde-format
+#, kde-format
 msgid "The application <i>%2</i> wants to install a catalog"
 msgid_plural "The application <i>%2</i> wants to install catalogs"
-msgstr[0] "%2 želi da instalira paket"
-msgstr[1] "%2 želi da instalira pakete"
-msgstr[2] "%2 želi da instalira pakete"
+msgstr[0] "Program <i>%2 </i> želi instalirati katalog"
+msgstr[1] "Program <i>%2 </i> želi instalirati kataloge"
+msgstr[2] "Program <i>%2 </i> želi instalirati kataloge"
 
 #: PkSession/PkInstallCatalogs.cpp:137
 msgid "Not supported"
@@ -3475,14 +3394,12 @@ msgid ""
 msgstr "Vaš backend ne podržava bilo koju potrebnu metodu instalacije kataloga"
 
 #: PkSession/PkInstallCatalogs.cpp:177
-#, fuzzy
 msgid "Catalog not found"
-msgstr "Ažuriranje nije pronađeno"
+msgstr "Katalog nije nadjen"
 
 #: PkSession/PkInstallCatalogs.cpp:178
-#, fuzzy
 msgid "Could not find a catalog to install"
-msgstr "Nije pronađen paket"
+msgstr "Ne mogu naci katalog da instaliram"
 
 #: PkSession/PkInstallCatalogs.cpp:185
 #, kde-format
@@ -3497,15 +3414,12 @@ msgid "Failed to open"
 msgstr "Otvaranje neuspješno"
 
 #: PkSession/PkInstallCatalogs.cpp:195
-#, fuzzy
 msgid "Catalog is Empty"
-msgstr "Katalog za instalaciju"
+msgstr "Katalog je prazan"
 
 #: PkSession/PkInstallCatalogs.cpp:196
-#, fuzzy
 msgid "Could not find any package to install in this catalog"
-msgstr ""
-"<h3> Da li želite da instalirate ovaj katalog ? </h3><ul><li>%2</li></ul>"
+msgstr "Ne mogu da pronađem nijedan paket koji bi instalirao u ovaj katalog"
 
 #: PkSession/PkInstallCatalogs.cpp:280 PkSession/PkInstallPackageNames.cpp:97
 #: PkSession/PkIsInstalled.cpp:46
@@ -3513,20 +3427,18 @@ msgid "Failed to start resolve transaction"
 msgstr "Pokretanje rješavana transakcije nije uspjelo"
 
 #: PkSession/PkInstallFontconfigResources.cpp:41
-#, fuzzy
 msgid "Installs new Fonts"
-msgstr "instaliraj datoteke"
+msgstr "Instalirae nova slova"
 
 #: PkSession/PkInstallFontconfigResources.cpp:73
 msgid "Could interpret request"
-msgstr ""
+msgstr "Mogu protumaciti zahtijev"
 
 #: PkSession/PkInstallFontconfigResources.cpp:73
 msgid "Please verify if the request was valid"
-msgstr ""
+msgstr "molimo vas potvrdite ako je zahtijev validan"
 
 #: PkSession/PkInstallFontconfigResources.cpp:107
-#, fuzzy
 msgid ""
 "An additional font is required to view this document correctly.\n"
 "Do you want to search for a suitable package now?"
@@ -3534,14 +3446,14 @@ msgid_plural ""
 "Additional fonts are required to view this document correctly.\n"
 "Do you want to search for suitable packages now?"
 msgstr[0] ""
-"Zahtjeva se dodatni karakter da bi se ispravno pregledao ovaj dokument.Da li "
-"želite da potražite odgovarajući paket sada?"
+"Dodatni font je potreban da biste vidjeli ove dokumente ispravno.\n"
+"Želite li tražiti pogodan paket sada?"
 msgstr[1] ""
-"Zahtjevaju se dodatni karakteri da bi se ispravno pregledao ovaj dokument.Da "
-"li želite da potražite odgovarajuće pakete sada?"
+"Dodatni fontovi  su potrebni da biste vidjeli ove dokumente ispravno.\n"
+"Želite li tražiti pogodan paket sada?"
 msgstr[2] ""
-"Zahtjevaju se dodatni karakteri da bi se ispravno pregledao ovaj dokument.Da "
-"li želite da potražite odgovarajuće pakete sada?"
+"Dodatni font je potreban da biste vidjeli ove dokument ispravno.\n"
+"Želite li tražiti pogodan paket sada?"
 
 #: PkSession/PkInstallFontconfigResources.cpp:117
 msgid "A program wants to install a font"
@@ -3551,12 +3463,12 @@ msgstr[1] "Program želi da instalira fontove"
 msgstr[2] "Program želi da instalira fontove"
 
 #: PkSession/PkInstallFontconfigResources.cpp:121
-#, fuzzy, kde-format
+#, kde-format
 msgid "The application %2 wants to install a font"
 msgid_plural "The application %2 wants to install fonts"
-msgstr[0] "%2 želi da instalira paket"
-msgstr[1] "%2 želi da instalira pakete"
-msgstr[2] "%2 želi da instalira pakete"
+msgstr[0] "Aplikacija %2 zeli da instalira font"
+msgstr[1] "Aplikacija %2 zeli da instalira fontove"
+msgstr[2] "Aplikacija %2 zeli da instalira fontove"
 
 #: PkSession/PkInstallFontconfigResources.cpp:145
 #: PkSession/PkInstallFontconfigResources.cpp:166
@@ -3573,28 +3485,20 @@ msgid "Failed to find font"
 msgstr "Traženje karaktera nije uspjelo"
 
 #: PkSession/PkInstallFontconfigResources.cpp:157
-#, fuzzy
 msgid "No new fonts could be found for this document"
-msgstr "Ne mogu se naći novi karakteri za ovaj dokument"
+msgstr "Nijedan novi font ne moze biti nađen za ovaj dokment"
 
 #: PkSession/PkInstallGStreamerResources.cpp:39
 msgid "Install GStreamer Resources"
-msgstr ""
+msgstr "Instalirajte GStreamer resursima"
 
 #: PkSession/PkInstallGStreamerResources.cpp:68
-#, fuzzy
 msgid "The following plugin is required. Do you want to search for this now?"
 msgid_plural ""
 "The following plugins are required. Do you want to search for these now?"
-msgstr[0] ""
-"Sljedeći dodatak se zahtijeva : <ul><li>%2</li></ul> Da li želite da ga "
-"potražite sada ?"
-msgstr[1] ""
-"Sljedeći dodaci se zahtijevaju : <ul><li>%2</li></ul> Da li želite da ih "
-"potražite sada ?"
-msgstr[2] ""
-"Sljedeći dodaci se zahtijevaju : <ul><li>%2</li></ul> Da li želite da ih "
-"potražite sada ?"
+msgstr[0] "Sljedeći dodatak je potreban. Želite li tražiti ovo sada?"
+msgstr[1] "Sljedeci dodaci su potrebni .Da li zelite da ih trazite sada?"
+msgstr[2] "Sljedeci dodaci su potrebni .Da li zelite da ih trazite sada?"
 
 #: PkSession/PkInstallGStreamerResources.cpp:80
 msgid "A program requires an additional plugin to decode this file"
@@ -3642,9 +3546,8 @@ msgstr[1] "%2 zahtijeva dodatne priključke za ovu operaciju"
 msgstr[2] "%2 zahtijeva dodatne priključke za ovu operaciju"
 
 #: PkSession/PkInstallGStreamerResources.cpp:147
-#, fuzzy
 msgid "No results found"
-msgstr "Nijedna datoteka nije pronađena."
+msgstr "Bez rezultata"
 
 #: PkSession/PkInstallGStreamerResources.cpp:149
 msgid "Could not find plugin in any configured software source"
@@ -3652,112 +3555,94 @@ msgstr ""
 "Nije moguće naći priključak u bilo kojem konfigurisanom programskom izvoru"
 
 #: PkSession/PkInstallMimeTypes.cpp:39
-#, fuzzy
 msgid "Install Support for File Types"
-msgstr "instaliraj datoteke"
+msgstr "Instalirajte podrsku za tipove datoteka"
 
 #: PkSession/PkInstallMimeTypes.cpp:50
-#, fuzzy
 msgid "Do you want to search for a program that can open this file type?"
 msgid_plural ""
 "Do you want to search for a program that can open these file types?"
-msgstr[0] ""
-"Da li želite da tražite pakete koji sadrže ovu datoteku i da je odstranite "
-"sada :"
-msgstr[1] ""
-"Da li želite da tražite pakete koji sadrže ovu datoteku i da je odstranite "
-"sada :"
-msgstr[2] ""
-"Da li želite da tražite pakete koji sadrže ovu datoteku i da je odstranite "
-"sada :"
+msgstr[0] "Da li želite da tražite program koji može otvoriti ovu datoteku?"
+msgstr[1] "Da li želite da tražite program koji može otvoriti ove datoteke?"
+msgstr[2] "Da li želite da trazite program koji može otvoriti ove datoteke?"
 
 #: PkSession/PkInstallMimeTypes.cpp:55
-#, fuzzy
 msgid "No valid file types were provided"
-msgstr "Nijedna datoteka nije pronađena."
+msgstr "Nijedan valjan tip datoteke je osiguran"
 
 #: PkSession/PkInstallMimeTypes.cpp:62
-#, fuzzy
 msgid "A program is requiring support to open this kind of files"
 msgid_plural "A program is requiring support to open these kinds of files"
-msgstr[0] "Program zahtijeva dodatni priključak za dekodiranje ove datoteke"
-msgstr[1] "Program zahtijeva dodatne priključke za dekodiranje ove datoteke"
-msgstr[2] "Program zahtijeva dodatne priključke za dekodiranje ove datoteke"
+msgstr[0] "Program trazi podrsku kako bi otvorio ovu vrstu datoteka"
+msgstr[1] "Program traži podršku kako bi otvorio ove vrste datoteka"
+msgstr[2] "Program traži podršku kako bi otvorio ove vrste datoteka"
 
 #: PkSession/PkInstallMimeTypes.cpp:66
-#, fuzzy, kde-format
+#, kde-format
 msgid "The application %2 is requiring support to open this kind of files"
 msgid_plural ""
 "The application %2 is requiring support to open these kinds of files"
-msgstr[0] "Program zahtijeva dodatni priključak za dekodiranje ove datoteke"
-msgstr[1] "Program zahtijeva dodatne priključke za dekodiranje ove datoteke"
-msgstr[2] "Program zahtijeva dodatne priključke za dekodiranje ove datoteke"
+msgstr[0] "Aplikacija %2 trazi podršku kako bi otvorila ovu vrstu datoteka"
+msgstr[1] "Aplikacija %2 trazi podršku kako bi otvorila ove vrste datoteka"
+msgstr[2] "Aplikacija %2 trazi podršku kako bi otvorila ove vrste datoteka"
 
 #: PkSession/PkInstallMimeTypes.cpp:101
-#, fuzzy
 msgid "Could not find software"
-msgstr "Traženje programa nije uspjelo"
+msgstr "ne mogu pronaći softver"
 
 #: PkSession/PkInstallMimeTypes.cpp:103
 msgid "No new applications can be found to handle this type of file"
 msgstr "Ne mogu se naći nove aplikacije za rukovanje ovom datotekom"
 
 #: PkSession/PkInstallPackageFiles.cpp:38
-#, fuzzy
 msgid "Install Packages Files"
-msgstr "Instaliraj pakete"
+msgstr "Instalirajte paketne datoteke"
 
 #: PkSession/PkInstallPackageFiles.cpp:42
 #: PkSession/PkRemovePackageByFiles.cpp:43
 msgid "You can drop more files in here"
-msgstr ""
+msgstr "Moze ispustiti vise datoteka ovdije"
 
 #: PkSession/PkInstallPackageFiles.cpp:52
-#, fuzzy
 msgid "Not Supported"
 msgstr "Nije podržano"
 
 #: PkSession/PkInstallPackageFiles.cpp:53
-#, fuzzy
 msgid "Your current backend does not support installing files"
-msgstr "Postojeći backend ne podržava instaliranje paketa"
+msgstr "Vaša trenutna pozadina ne podržava instalaciju datoteke"
 
 #: PkSession/PkInstallPackageFiles.cpp:68
 #: PkSession/PkRemovePackageByFiles.cpp:64
-#, fuzzy
 msgid "No supported files were provided"
-msgstr "Nijedna datoteka nije pronađena."
+msgstr "Nijedna podrzana datoteka nije osigurana"
 
 #: PkSession/PkInstallPackageFiles.cpp:70
-#, fuzzy
 msgid "Press <i>Continue</i> if you want to install this file"
 msgid_plural "Press <i>Continue</i> if you want to install these files"
-msgstr[0] "Da li želite da instalirate ovu datoteku ?"
-msgstr[1] "Da li želite da instalirate ove datoteke ?"
-msgstr[2] "Da li želite da instalirate ove datoteke ?"
+msgstr[0] "Drzite<i> Nastavite</i> ako zelite da instalirate ovu datoteku"
+msgstr[1] "Drzite<i> Nastavite</i> ako zelite da instalirate ove datoteke"
+msgstr[2] "Drzite<i> Nastavite</i> ako zelite da instalirate ove datoteke"
 
 #: PkSession/PkInstallPackageFiles.cpp:79
 #: PkSession/PkInstallPackageNames.cpp:71
-#, fuzzy
 msgid "An application wants to install a package"
 msgid_plural "An application wants to install packages"
-msgstr[0] "Program želi da instalira paket"
-msgstr[1] "Program želi da instalira pakete"
-msgstr[2] "Program želi da instalira pakete"
+msgstr[0] "Jedan program zeli da instalira paket"
+msgstr[1] "Jedan program zeli da instalira pakete"
+msgstr[2] "Jedan program zeli da instalira pakete"
 
 #: PkSession/PkInstallPackageFiles.cpp:83
 #: PkSession/PkInstallPackageNames.cpp:75
-#, fuzzy, kde-format
+#, kde-format
 msgid "The application <i>%2</i> wants to install a package"
 msgid_plural "The application <i>%2</i> wants to install packages"
-msgstr[0] "%2 želi da instalira paket"
-msgstr[1] "%2 želi da instalira pakete"
-msgstr[2] "%2 želi da instalira pakete"
+msgstr[0] "Program <i>%2 </i> želi instalirati paket"
+msgstr[1] "Program <i>%2 </i> želi instalirati pakete"
+msgstr[2] "Programv <i>%2 </i> želi instalirati pakete"
 
 #: PkSession/PkInstallPackageFiles.cpp:106
-#, fuzzy
 msgid "Installation Complete"
-msgstr "Instaliranje datoteke"
+msgstr "Instalacija završena"
 
 #: PkSession/PkInstallPackageFiles.cpp:107
 msgid "File was installed successfully"
@@ -3767,39 +3652,28 @@ msgstr[1] "Datoteke su uspješno instalirane"
 msgstr[2] "Datoteke su uspješno instalirane"
 
 #: PkSession/PkInstallPackageFiles.cpp:118
-#, fuzzy
 msgid "Failed to install files"
-msgstr "Instalacija datoteke nije uspjela"
+msgstr "Neuspijesna instalacija datoteka"
 
 #: PkSession/PkInstallPackageFiles.cpp:119
 #: PkSession/PkInstallPackageFiles.cpp:121
-#, fuzzy
 msgid "Could not install files"
-msgstr "Instalacija datoteke nije uspjela"
+msgstr "Nije moguce instalirati datoteke"
 
 #: PkSession/PkInstallPackageNames.cpp:41
-#, fuzzy
 msgid "Install Packages by Name"
-msgstr "Instaliraj pakete"
+msgstr "Instaliraj pakete po imenima"
 
 #: PkSession/PkInstallPackageNames.cpp:58
-#, fuzzy
 msgid "No package names were provided"
-msgstr "Nijedna datoteka nije pronađena."
+msgstr "Nijedno ime paketa nije navedeno"
 
 #: PkSession/PkInstallPackageNames.cpp:61
-#, fuzzy
 msgid "Do you want to search for and install this package now?"
 msgid_plural "Do you want to search for and install these packages now?"
-msgstr[0] ""
-"Da li želite da tražite pakete koji sadrže ovu datoteku i da je odstranite "
-"sada :"
-msgstr[1] ""
-"Da li želite da tražite pakete koji sadrže ove datoteke i da ih odstranite "
-"sada :"
-msgstr[2] ""
-"Da li želite da tražite pakete koji sadrže ove datoteke i da ih odstranite "
-"sada :"
+msgstr[0] "Da li zelite da pretrazite i instalirate ovaj paket sada?"
+msgstr[1] "Da li zelite da pretrazite i instalirate ove pakete sada?"
+msgstr[2] "Da li zelite da pretrazite i instalirate ove pakete sada?"
 
 #: PkSession/PkInstallPackageNames.cpp:109
 msgid "Failed to install packages"
@@ -3827,63 +3701,49 @@ msgstr[1] "Paketi nisu mogli biti pronađeni u bilo kojem programskom izvoru"
 msgstr[2] "Paketi nisu mogli biti pronađeni u bilo kojem programskom izvoru"
 
 #: PkSession/PkInstallPlasmaResources.cpp:40
-#, fuzzy
 msgid "Install Plasma Resources"
-msgstr "Instaliraj pakete"
+msgstr "Instaliraj plazma resurse"
 
 #: PkSession/PkInstallPlasmaResources.cpp:53
-#, fuzzy, kde-format
+#, kde-format
 msgid "%1 data engine"
-msgstr "%1 nadgradnja"
+msgstr "%1 pogon podataka"
 
 #: PkSession/PkInstallPlasmaResources.cpp:55
 #, kde-format
 msgid "%1 script engine"
-msgstr ""
+msgstr "%1 skriptni pogon"
 
 #: PkSession/PkInstallPlasmaResources.cpp:67
-#, fuzzy
 msgid "No supported resources were provided"
-msgstr "Nijedna datoteka nije pronađena."
+msgstr "Nijedan podržani resurs nije osguran"
 
 #: PkSession/PkInstallPlasmaResources.cpp:69
-#, fuzzy
 msgid "The following service is required. Do you want to search for this now?"
 msgid_plural ""
 "The following services are required. Do you want to search for these now?"
-msgstr[0] ""
-"Sljedeći dodatak se zahtijeva : <ul><li>%2</li></ul> Da li želite da ga "
-"potražite sada ?"
-msgstr[1] ""
-"Sljedeći dodaci se zahtijevaju : <ul><li>%2</li></ul> Da li želite da ih "
-"potražite sada ?"
-msgstr[2] ""
-"Sljedeći dodaci se zahtijevaju : <ul><li>%2</li></ul> Da li želite da ih "
-"potražite sada ?"
+msgstr[0] "Sljedeći servis je potreban. Želite li tražiti ovo sada?"
+msgstr[1] "Sljedeći servisi su potrebni. Želite li tražiti ovo sada?"
+msgstr[2] "Sljedeći servisi su potrebni. Želite li tražiti ovo sada?"
 
 #: PkSession/PkInstallPlasmaResources.cpp:78
-#, fuzzy
 msgid "Plasma requires an additional service for this operation"
 msgid_plural "Plasma requires additional services for this operation"
-msgstr[0] "%2 zahtijeva dodatni priključak za ovu operaciju"
-msgstr[1] "%2 zahtijeva dodatne priključke za ovu operaciju"
-msgstr[2] "%2 zahtijeva dodatne priključke za ovu operaciju"
+msgstr[0] "Plazma zahtijeva dodatnu uslugu za ovu operaciju"
+msgstr[1] "Plazma zahtijeva dodatne usluge za ovu operaciju"
+msgstr[2] "Plazma zahtijeva dodatne usluge za ovu operaciju"
 
 #: PkSession/PkInstallPlasmaResources.cpp:112
-#, fuzzy
 msgid "Failed to search for Plasma service"
-msgstr "Potraga za pružaocima nije uspjela"
+msgstr "Nauspješna pretraga plazma usluga"
 
 #: PkSession/PkInstallPlasmaResources.cpp:115
-#, fuzzy
 msgid "Could not find service in any configured software source"
-msgstr ""
-"Nije moguće naći priključak u bilo kojem konfigurisanom programskom izvoru"
+msgstr "Ne mogu pronaći servis u bilo kojem konfigurisanom izvoru softvera"
 
 #: PkSession/PkInstallPrinterDrivers.cpp:39
-#, fuzzy
 msgid "Install Printer Drivers"
-msgstr "Instaliranje datoteke"
+msgstr "Instalirajte Drajvere za printer"
 
 #: PkSession/PkInstallPrinterDrivers.cpp:87
 msgid "Failed to search for printer driver"
@@ -3896,28 +3756,19 @@ msgstr ""
 "konfigurisanom izvoru softvera"
 
 #: PkSession/PkInstallProvideFiles.cpp:39
-#, fuzzy
 msgid "Install Packages that Provides Files"
-msgstr "Instaliraj pakete sa spiska..."
+msgstr "Instaliranje paketa koji pruzaju datoteke"
 
 #: PkSession/PkInstallProvideFiles.cpp:49
-#, fuzzy
 msgid "No files were provided"
-msgstr "Nijedna datoteka nije pronađena."
+msgstr "Nijedna datoteka nije osigurana"
 
 #: PkSession/PkInstallProvideFiles.cpp:52
-#, fuzzy
 msgid "Do you want to search for this now?"
 msgid_plural "Do you want to search for these now?"
-msgstr[0] ""
-"Da li želite da tražite pakete koji sadrže ovu datoteku i da je odstranite "
-"sada :"
-msgstr[1] ""
-"Da li želite da tražite pakete koji sadrže ove datoteke i da ih odstranite "
-"sada :"
-msgstr[2] ""
-"Da li želite da tražite pakete koji sadrže ove datoteke i da ih odstranite "
-"sada :"
+msgstr[0] "Želite li tražiti ovo sada?"
+msgstr[1] "Želite li tražiti ove sada?"
+msgstr[2] "Želite li tražiti ove sada?"
 
 #: PkSession/PkInstallProvideFiles.cpp:62
 msgid "A program wants to install a file"
@@ -3927,12 +3778,12 @@ msgstr[1] "Program želi da instalira datoteke"
 msgstr[2] "Program želi da instalira datoteke"
 
 #: PkSession/PkInstallProvideFiles.cpp:66
-#, fuzzy, kde-format
+#, kde-format
 msgid "The application %2 is asking to install a file"
 msgid_plural "The application %2 is asking to install files"
-msgstr[0] "%2 želi da instalira paket"
-msgstr[1] "%2 želi da instalira pakete"
-msgstr[2] "%2 želi da instalira pakete"
+msgstr[0] "Program %2 je zatrazio da instalira datoteku"
+msgstr[1] "Program %2 je zatrazio da instalira datoteke"
+msgstr[2] "Program %2 je zatrazio da instalira datoteke"
 
 #: PkSession/PkInstallProvideFiles.cpp:88
 #: PkSession/PkRemovePackageByFiles.cpp:128 PkSession/PkSearchFile.cpp:55
@@ -3956,9 +3807,8 @@ msgstr[1] "Datoteke nisu mogle biti pronađene u bilo kojim paketima"
 msgstr[2] "Datoteke nisu mogle biti pronađene u bilo kojim paketima"
 
 #: PkSession/PkIsInstalled.cpp:36
-#, fuzzy
 msgid "Querying if a Package is Installed"
-msgstr "Paket nije instaliran"
+msgstr "Pretrazuj listu,ako je paket instaliran"
 
 #: PkSession/PkIsInstalled.cpp:67
 msgid "User canceled the transaction"
@@ -3969,68 +3819,56 @@ msgid "An unknown error happened"
 msgstr "Desila se nepoznata greška"
 
 #: PkSession/PkRemovePackageByFiles.cpp:40
-#, fuzzy
 msgid "Remove Packages that Provides Files"
-msgstr "odstrani pakete"
+msgstr "Ukloni pakete koji pruzaju datoteke"
 
 #: PkSession/PkRemovePackageByFiles.cpp:67
-#, fuzzy
 msgid "Do you want to remove the following application?"
 msgid_plural "Do you want to remove the following applications?"
-msgstr[0] "Potrebno je da ponovno pokrenete aplikaciju"
-msgstr[1] "Potrebno je da ponovno pokrenete aplikaciju"
-msgstr[2] "Potrebno je da ponovno pokrenete aplikaciju"
+msgstr[0] "Da li zelite da uklonite sljedecu aplikaciju?"
+msgstr[1] "Da li zelite da uklonite sljedece aplikacije?"
+msgstr[2] "Da li zelite da uklonite sljedece aplikacije?"
 
 #: PkSession/PkRemovePackageByFiles.cpp:71
-#, fuzzy
 msgid "Do you want to search for a package providing this file?"
 msgid_plural "Do you want to search for a package providing these files?"
-msgstr[0] ""
-"Da li želite da tražite pakete koji sadrže ovu datoteku i da je odstranite "
-"sada :"
-msgstr[1] ""
-"Da li želite da tražite pakete koji sadrže ovu datoteku i da je odstranite "
-"sada :"
-msgstr[2] ""
-"Da li želite da tražite pakete koji sadrže ovu datoteku i da je odstranite "
-"sada :"
+msgstr[0] "Da li zelite da potrazite paket koji pruza ova datoteka?"
+msgstr[1] "Da li zelite da potrazite paket koji pruza ove datoteke?"
+msgstr[2] "Da li zelite da potrazite paket koji pruzaove datoteke?"
 
 #: PkSession/PkRemovePackageByFiles.cpp:82
-#, fuzzy
 msgid "An application is asking to remove an application"
 msgid_plural "An application is asking to remove applications"
-msgstr[0] "%2 želi da instalira paket"
-msgstr[1] "%2 želi da instalira pakete"
-msgstr[2] "%2 želi da instalira pakete"
+msgstr[0] "Jedna aplikacija  trazi  da ukloni program"
+msgstr[1] "Jedna aplikacija trazi da ukloni programe"
+msgstr[2] "Jedna aplikacija trazi da ukloni programe"
 
 #: PkSession/PkRemovePackageByFiles.cpp:86
-#, fuzzy
 msgid "An application is asking to remove a file"
 msgid_plural "An application is asking to remove files"
-msgstr[0] "%2 želi da instalira paket"
-msgstr[1] "%2 želi da instalira pakete"
-msgstr[2] "%2 želi da instalira pakete"
+msgstr[0] "Jedna aplikacija je zatrazila da ukloni datoteku"
+msgstr[1] "Jedna aplikacija je zatrazila da ukloni datoteke"
+msgstr[2] "Jedna aplikacija je zatrazila da ukloni datoteke"
 
 #: PkSession/PkRemovePackageByFiles.cpp:92
-#, fuzzy, kde-format
+#, kde-format
 msgid "The application <i>%2</i> is asking to remove an application"
 msgid_plural "The application <i>%2</i> is asking to remove applications"
-msgstr[0] "%2 želi da instalira paket"
-msgstr[1] "%2 želi da instalira pakete"
-msgstr[2] "%2 želi da instalira pakete"
+msgstr[0] "Program <i>%2 </i> je zatrazio  uklanjanje  jednog programa"
+msgstr[1] "Program <i>%2 </i> je zatrazio  uklanjanje programa"
+msgstr[2] "Program <i>%2 </i> je zatrazio  uklanjanje programa"
 
 #: PkSession/PkRemovePackageByFiles.cpp:97
-#, fuzzy, kde-format
+#, kde-format
 msgid "The application <i>%2</i> is asking to remove a file"
 msgid_plural "The application <i>%2</i> is asking to remove files"
-msgstr[0] "%2 želi da instalira paket"
-msgstr[1] "%2 želi da instalira pakete"
-msgstr[2] "%2 želi da instalira pakete"
+msgstr[0] "Program <i>%2 </i> je zatrazio  uklanjanje datoteke"
+msgstr[1] "Program <i>%2 </i> je zatrazio  uklanjanje datoteka"
+msgstr[2] "Program <i>%2 </i> je zatrazio  uklanjanje datoteka"
 
 #: PkSession/PkRemovePackageByFiles.cpp:103
-#, fuzzy
 msgid "No application was found"
-msgstr "Opis nadgradnje nije pronađen."
+msgstr "Nijedan progam nije pronađen"
 
 #: PkSession/PkRemovePackageByFiles.cpp:150
 msgid "The file could not be found in any installed package"
@@ -4040,9 +3878,8 @@ msgstr[1] "Datoteke nisu pronađene niti u jednom instaliranom paketu"
 msgstr[2] "Datoteke nisu pronađene niti u jednom instaliranom paketu"
 
 #: PkSession/PkSearchFile.cpp:38
-#, fuzzy
 msgid "Search Packages that Provides Files"
-msgstr "Traženi detalji paketa"
+msgstr "Potrazi pakete koji pruzaju datoteke"
 
 #: PkSession/PkSearchFile.cpp:88
 msgid "The file name could not be found in any software source"
@@ -4056,43 +3893,36 @@ msgstr[1] "Sljedeći paketi su pronađeni"
 msgstr[2] "Sljedeći paketi su pronađeni"
 
 #: PkSession/SessionTask.cpp:367
-#, fuzzy
 msgid "There are no packages to Install or Remove"
-msgstr "Paket nije instaliran"
+msgstr "Ne postoje paketi za instalaciju ili uklanjanje"
 
 #: PkSession/SessionTask.cpp:368
-#, fuzzy
 msgid "This action should not happen"
-msgstr "Ova radnja je nepoznata"
+msgstr "Ova radnja se ne bi smijela dogoditi"
 
 #: PkSession/SessionTask.cpp:399
-#, fuzzy
 msgid "Could not find"
-msgstr "Nisam mogao da nađem %1"
+msgstr "Ne mogu naci"
 
 #: PkSession/SessionTask.cpp:400 PkSession/SessionTask.cpp:409
-#, fuzzy
 msgid "No packages were found that meet the request"
-msgstr "Nije pronađen nijedan paket da bi se instalirao"
+msgstr "Nijedan paket nije pronadjen koji bi zadovoljili zahtijev"
 
 #: PkSession/SessionTask.cpp:408
-#, fuzzy
 msgid "Failed to find"
-msgstr "Traženje karaktera nije uspjelo"
+msgstr "Nisam uspio naći"
 
 #: PkSession/SessionTask.cpp:430
 msgid "Transaction did not finish with success"
 msgstr "Tranzakcija nije uspjela da se završi"
 
 #: PkSession/SessionTask.cpp:436
-#, fuzzy
 msgid "Task completed"
-msgstr "Zastarjelo"
+msgstr "Zadatak zavrsen"
 
 #: PkSession/SessionTask.cpp:436
-#, fuzzy
 msgid "All operations were committed successfully"
-msgstr "Datoteka je uspješno instalirana"
+msgstr "Sve operacije su uspješno zavrsene"
 
 #, fuzzy
 

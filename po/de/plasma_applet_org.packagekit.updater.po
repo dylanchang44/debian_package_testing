@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2013-06-25 01:31+0000\n"
-"PO-Revision-Date: 2013-06-16 17:06+0200\n"
+"PO-Revision-Date: 2013-07-30 13:05+0200\n"
 "Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
 "Language: de\n"
@@ -31,7 +31,7 @@ msgstr "Aktualisierungen: %1"
 
 #: package/contents/ui/main.qml:39
 msgid "Software Updates"
-msgstr ""
+msgstr "Software-Aktualisierungen"
 
 #: package/contents/ui/main.qml:65 package/contents/ui/main.qml:229
 msgid "Check for new updates"
