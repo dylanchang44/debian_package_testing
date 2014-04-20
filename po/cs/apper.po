@@ -1,6 +1,6 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# Vít Pelčák <vit@pelcak.org>, 2010, 2011, 2012, 2013.
+# Vít Pelčák <vit@pelcak.org>, 2010, 2011, 2012, 2013, 2014.
 # Lukáš Tinkl <lukas@kde.org>, 2010, 2011, 2012.
 # Tomáš Chvátal <tomas.chvatal@gmail.com>, 2012, 2013.
 #
@@ -8,9 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kpackagekit\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-07-07 01:35+0000\n"
-"PO-Revision-Date: 2013-05-30 14:08+0200\n"
-"Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
+"POT-Creation-Date: 2014-03-13 01:37+0000\n"
+"PO-Revision-Date: 2014-03-27 14:39+0100\n"
+"Last-Translator: Vít Pelčák <vit@pelcak.org>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
@@ -1166,14 +1166,14 @@ msgstr ""
 msgid "Security hints"
 msgstr "Bezpečnostní rady"
 
-#: libapper/ApplicationLauncher.cpp:96
+#: libapper/ApplicationLauncher.cpp:94
 msgid "New application available"
 msgid_plural "New applications available"
 msgstr[0] "Je dostupná nová aplikace"
 msgstr[1] "Jsou dostupné nové aplikace"
 msgstr[2] "Jsou dostupné nové aplikace"
 
-#: libapper/ApplicationLauncher.cpp:99
+#: libapper/ApplicationLauncher.cpp:97
 msgid "The following application was just installed. Click on it to launch:"
 msgid_plural ""
 "The following applications were just installed. Click on them to launch:"
@@ -1428,7 +1428,7 @@ msgstr "Přebalují se soubory"
 #: libapper/PkStrings.cpp:132
 msgctxt "transaction state, loading databases"
 msgid "Loading cache"
-msgstr "Nahrává se mezipaměť"
+msgstr "Načítá se mezipaměť"
 
 #: libapper/PkStrings.cpp:135
 msgctxt "transaction state, scanning for running processes"
@@ -2094,7 +2094,7 @@ msgstr "Balíček je nekompatibilní s tímto systémem."
 msgid "No space is left on the disk"
 msgstr "Na disku není žádné volné místo"
 
-#: libapper/PkStrings.cpp:494 libapper/PkTransaction.cpp:441
+#: libapper/PkStrings.cpp:494 libapper/PkTransaction.cpp:446
 msgid "A media change is required"
 msgstr "Je vyžadována změna média"
 
@@ -3177,7 +3177,7 @@ msgstr "Nepovedlo se odstranit balíček"
 msgid "Failed to update package"
 msgstr "Aktualizace balíčku selhala"
 
-#: libapper/PkTransaction.cpp:351
+#: libapper/PkTransaction.cpp:356
 msgid ""
 "You are about to install unsigned packages that can compromise your system, "
 "as it is impossible to verify if the software came from a trusted source.\n"
@@ -3189,11 +3189,11 @@ msgstr ""
 "\n"
 "Opravdu si přejete pokračovat v instalaci?"
 
-#: libapper/PkTransaction.cpp:354
+#: libapper/PkTransaction.cpp:359
 msgid "Installing unsigned software"
 msgstr "Instaluje se nepodepsaný software"
 
-#: libapper/PkTransaction.cpp:399 libapper/PkTransaction.cpp:486
+#: libapper/PkTransaction.cpp:404 libapper/PkTransaction.cpp:491
 msgid "Failed to install signature"
 msgstr "Selhala instalace podpisu"
 

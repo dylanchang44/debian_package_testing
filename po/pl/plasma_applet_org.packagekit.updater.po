@@ -1,13 +1,13 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
 #
-# Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>, 2013.
+# Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>, 2013, 2014.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2013-06-25 01:31+0000\n"
-"PO-Revision-Date: 2013-05-24 15:46+0200\n"
+"PO-Revision-Date: 2014-02-21 16:21+0100\n"
 "Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
 "Language: pl\n"
@@ -32,7 +32,7 @@ msgstr "Uaktualnienia: %1"
 
 #: package/contents/ui/main.qml:39
 msgid "Software Updates"
-msgstr ""
+msgstr "Uaktualnienia oprogramowania"
 
 #: package/contents/ui/main.qml:65 package/contents/ui/main.qml:229
 msgid "Check for new updates"
@@ -43,17 +43,15 @@ msgid "Failed to get updates"
 msgstr "Nieudane uzyskanie uaktualnień"
 
 #: package/contents/ui/main.qml:173
-#, fuzzy
-#| msgid "Check for new updates"
 msgid "You have one update"
 msgid_plural "You have %1 updates"
-msgstr[0] "Sprawdź dostępność nowych uaktualnień"
-msgstr[1] "Sprawdź dostępność nowych uaktualnień"
-msgstr[2] "Sprawdź dostępność nowych uaktualnień"
+msgstr[0] "Masz jedno uaktualnienie"
+msgstr[1] "Masz %1 uaktualnienia"
+msgstr[2] "Masz %1 uaktualnień"
 
 #: package/contents/ui/main.qml:178
 msgid "Your system is up to date"
-msgstr ""
+msgstr "Twój system jest aktualny"
 
 #: package/contents/ui/Transaction.qml:76
 msgid "Cancel"

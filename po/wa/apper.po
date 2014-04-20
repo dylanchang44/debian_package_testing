@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-07-07 01:35+0000\n"
+"POT-Creation-Date: 2014-03-13 01:37+0000\n"
 "PO-Revision-Date: 2012-12-30 11:08+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@base.be>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -1198,13 +1198,13 @@ msgstr "Il a stî siné avou ene clé apårtinant a ces id d' uzeu : %1"
 msgid "Security hints"
 msgstr "Propôzucions di såvrité"
 
-#: libapper/ApplicationLauncher.cpp:96
+#: libapper/ApplicationLauncher.cpp:94
 msgid "New application available"
 msgid_plural "New applications available"
 msgstr[0] "I gn a on novea programe di disponibe"
 msgstr[1] "I gn a des noveas programes di disponibe"
 
-#: libapper/ApplicationLauncher.cpp:99
+#: libapper/ApplicationLauncher.cpp:97
 msgid "The following application was just installed. Click on it to launch:"
 msgid_plural ""
 "The following applications were just installed. Click on them to launch:"
@@ -2143,7 +2143,7 @@ msgstr "Li pacaedje n' est nén compatibe avou ç' sistinme cial"
 msgid "No space is left on the disk"
 msgstr "I gn a pupont d' plaece sol plake"
 
-#: libapper/PkStrings.cpp:494 libapper/PkTransaction.cpp:441
+#: libapper/PkStrings.cpp:494 libapper/PkTransaction.cpp:446
 msgid "A media change is required"
 msgstr "I fåt on candjmint d' media"
 
@@ -3258,7 +3258,7 @@ msgstr "Li oistaedje des pacaedjes a fwait berwete"
 msgid "Failed to update package"
 msgstr "Li metaedje a djoû des pacaedjes a fwait berwete"
 
-#: libapper/PkTransaction.cpp:351
+#: libapper/PkTransaction.cpp:356
 msgid ""
 "You are about to install unsigned packages that can compromise your system, "
 "as it is impossible to verify if the software came from a trusted source.\n"
@@ -3271,11 +3271,11 @@ msgstr ""
 "\n"
 "Voloz vs fé cist astalaedje po do bon ?"
 
-#: libapper/PkTransaction.cpp:354
+#: libapper/PkTransaction.cpp:359
 msgid "Installing unsigned software"
 msgstr "Dj' astale on programe nén siné"
 
-#: libapper/PkTransaction.cpp:399 libapper/PkTransaction.cpp:486
+#: libapper/PkTransaction.cpp:404 libapper/PkTransaction.cpp:491
 msgid "Failed to install signature"
 msgstr "L' astalaedje del sinateure a fwait berwete"
 

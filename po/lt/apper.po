@@ -1,18 +1,18 @@
 # Lithuanian translations for kpackagekit package.
 # Copyright (C) 2009 This_file_is_part_of_KDE
-# Andrius Štikonas <stikonas@gmail.com>, 2009.
+# Andrius Štikonas <andrius@stikonas.eu>, 2009.
 # Donatas Glodenis <dgvirtual@akl.lt>, 2009.
 # Tomas Straupis <tomasstraupis@gmail.com>, 2010, 2011.
-# Liudas Ališauskas <liudas.alisauskas@gmail.com>, 2011, 2013.
+# Liudas Ališauskas <liudas.alisauskas@gmail.com>, 2011, 2013, 2014.
 # Remigijus Jarmalavičius <remigijus@jarmalavicius.lt>, 2011.
 # Liudas Alisauskas <liudas@akmc.lt>, 2013.
 msgid ""
 msgstr ""
 "Project-Id-Version: apper\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-07-07 01:35+0000\n"
-"PO-Revision-Date: 2013-04-28 23:34+0300\n"
-"Last-Translator: Liudas Ališauskas <liudas@akmc.lt>\n"
+"POT-Creation-Date: 2014-03-13 01:37+0000\n"
+"PO-Revision-Date: 2014-03-16 20:39+0200\n"
+"Last-Translator: Liudas Ališauskas <liudas@aksioma.lt>\n"
 "Language-Team: Lithuanian <kde-i18n-lt@kde.org>\n"
 "Language: lt\n"
 "MIME-Version: 1.0\n"
@@ -29,7 +29,8 @@ msgstr "Andrius Štikonas, Donatas Glodenis, Tomas Straupis, Liudas Ališauskas"
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr ""
-"stikonas@gmail.com, dgvirtual@akl.lt, tomasstraupis@gmail.com, liudas@akmc.lt"
+"andrius@stikonas.eu, dgvirtual@akl.lt, tomasstraupis@gmail.com, liudas@akmc."
+"lt"
 
 #: Apper/BackendDetails.cpp:34
 msgid "Backend Details"
@@ -1187,7 +1188,7 @@ msgstr "Jis buvo pasirašytas raktu priklausančiu šiems naudotojų id: %1"
 msgid "Security hints"
 msgstr "Saugumo patarimai"
 
-#: libapper/ApplicationLauncher.cpp:96
+#: libapper/ApplicationLauncher.cpp:94
 msgid "New application available"
 msgid_plural "New applications available"
 msgstr[0] "Pasiekiama nauja programa"
@@ -1195,7 +1196,7 @@ msgstr[1] "Pasiekiamas naujos programos"
 msgstr[2] "Pasiekiamas naujos programos"
 msgstr[3] "Pasiekiamas naujos programos"
 
-#: libapper/ApplicationLauncher.cpp:99
+#: libapper/ApplicationLauncher.cpp:97
 msgid "The following application was just installed. Click on it to launch:"
 msgid_plural ""
 "The following applications were just installed. Click on them to launch:"
@@ -2121,7 +2122,7 @@ msgstr "Paketas nesuderinamas su sistema"
 msgid "No space is left on the disk"
 msgstr "Diske nebėra vietos"
 
-#: libapper/PkStrings.cpp:494 libapper/PkTransaction.cpp:441
+#: libapper/PkStrings.cpp:494 libapper/PkTransaction.cpp:446
 msgid "A media change is required"
 msgstr "Reikia pakeisti media"
 
@@ -3022,22 +3023,22 @@ msgstr "Testavimas"
 #: libapper/PkStrings.cpp:929
 #, kde-format
 msgid "Please insert the CD labeled '%1', and press continue."
-msgstr "Įdėkite kompaktinį (CD) diską pažymėtą '%1' ir spauskite tęsti."
+msgstr "Įdėkite kompaktinį (CD) diską pažymėtą „%1“ ir spauskite tęsti."
 
 #: libapper/PkStrings.cpp:931
 #, kde-format
 msgid "Please insert the DVD labeled '%1', and press continue."
-msgstr "Įdėkite kompaktinį (DVD) diską pažymėtą '%1' ir spauskite tęsti."
+msgstr "Įdėkite kompaktinį (DVD) diską pažymėtą „%1“ ir spauskite tęsti."
 
 #: libapper/PkStrings.cpp:933
 #, kde-format
 msgid "Please insert the disc labeled '%1', and press continue."
-msgstr "Įdėkite diską pažymėtą '%1' ir spauskite tęsti."
+msgstr "Įdėkite diską pažymėtą „%1“ ir spauskite tęsti."
 
 #: libapper/PkStrings.cpp:935 libapper/PkStrings.cpp:938
 #, kde-format
 msgid "Please insert the medium labeled '%1', and press continue."
-msgstr "Įdėkite duomenų šaltinį pažymėtą '%1' ir spauskite tęsti."
+msgstr "Įdėkite duomenų šaltinį pažymėtą „%1“ ir spauskite tęsti."
 
 #: libapper/PkStrings.cpp:945
 msgid "A mirror is possibly broken"
@@ -3220,7 +3221,7 @@ msgstr "Nepavyko pašalinti paketo"
 msgid "Failed to update package"
 msgstr "Nepavyko atnaujinti paketo"
 
-#: libapper/PkTransaction.cpp:351
+#: libapper/PkTransaction.cpp:356
 msgid ""
 "You are about to install unsigned packages that can compromise your system, "
 "as it is impossible to verify if the software came from a trusted source.\n"
@@ -3232,11 +3233,11 @@ msgstr ""
 "\n"
 "Ar tikrai norite tęsti programų diegimą?"
 
-#: libapper/PkTransaction.cpp:354
+#: libapper/PkTransaction.cpp:359
 msgid "Installing unsigned software"
 msgstr "Diegiama nepasirašyta programinė įranga"
 
-#: libapper/PkTransaction.cpp:399 libapper/PkTransaction.cpp:486
+#: libapper/PkTransaction.cpp:404 libapper/PkTransaction.cpp:491
 msgid "Failed to install signature"
 msgstr "Nepavyko įdiegti parašo"
 

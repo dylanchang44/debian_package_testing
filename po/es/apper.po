@@ -6,13 +6,14 @@
 # Eloy Cuadra <ecuadra@eloihr.net>, 2009, 2011, 2012, 2013.
 # Cristina Yenyxe González García <the.blue.valkyrie@gmail.com>, 2010, 2011, 2013.
 # Rafael Belmonte <eaglescreen@gmail.com>, 2013.
+# Rocio Gallego <traducciones@rociogallego.com>, 2014.
 msgid ""
 msgstr ""
 "Project-Id-Version: kpackagekit\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-07-07 01:35+0000\n"
-"PO-Revision-Date: 2013-03-15 11:55+0100\n"
-"Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
+"POT-Creation-Date: 2014-03-13 01:37+0000\n"
+"PO-Revision-Date: 2014-02-12 13:18+0100\n"
+"Last-Translator: Rocio Gallego <traducciones@rociogallego.com>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
@@ -23,11 +24,13 @@ msgstr ""
 
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Rafael Belmonte,Cristina Yenyxe González García"
+msgstr "Rocío Gallego,Rafael Belmonte,Cristina Yenyxe González García"
 
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "eaglescreen@gmail.com,the.blue.valkyrie@gmail.com"
+msgstr ""
+"traducciones@rociogallego.com,eaglescreen@gmail.com,the.blue.valkyrie@gmail."
+"com"
 
 #: Apper/BackendDetails.cpp:34
 msgid "Backend Details"
@@ -218,7 +221,7 @@ msgstr "Último"
 #. i18n: ectx: property (text), widget (QCheckBox, guiCB)
 #: Apper/BackendDetails.ui:415
 msgid "GUI"
-msgstr "interfaz gráfica de usuario"
+msgstr "Interfaz gráfica de usuario"
 
 #. i18n: ectx: property (text), widget (QCheckBox, freeCB)
 #: Apper/BackendDetails.ui:425
@@ -228,7 +231,7 @@ msgstr "Software libre"
 #. i18n: ectx: property (text), widget (QCheckBox, supportedCB)
 #: Apper/BackendDetails.ui:435
 msgid "Supported"
-msgstr "Soportado"
+msgstr "Admitido"
 
 #. i18n: ectx: property (text), widget (QCheckBox, archCB)
 #: Apper/BackendDetails.ui:445
@@ -600,15 +603,15 @@ msgstr "Solo software no-libre"
 #: ApperKCM/FiltersMenu.cpp:181
 msgctxt "Filter for supported packages"
 msgid "Supported"
-msgstr "Reconocidos"
+msgstr "Admitidos"
 
 #: ApperKCM/FiltersMenu.cpp:188
 msgid "Only supported software"
-msgstr "Solo software reconocido"
+msgstr "Solo software admitido"
 
 #: ApperKCM/FiltersMenu.cpp:195
 msgid "Only non-supported software"
-msgstr "Solo software no reconocido"
+msgstr "Solo software no admitido"
 
 #: ApperKCM/FiltersMenu.cpp:212
 msgctxt "Filter for source packages"
@@ -811,7 +814,7 @@ msgstr "&Mostrar origen de los paquetes de depuración y desarrollo"
 #. i18n: ectx: property (text), widget (QPushButton, editOriginsPB)
 #: ApperKCM/Settings/Settings.ui:253
 msgid "Edit Origins"
-msgstr "Editar orígenes"
+msgstr "Editar fuentes"
 
 #: ApperKCM/TransactionHistory.cpp:66
 msgid "Refresh transactions list"
@@ -860,15 +863,15 @@ msgstr ""
 
 #: ApperKCM/Updater/DistroUpgrade.cpp:70
 msgid "It is recommended to plug in your computer before proceeding."
-msgstr "Le recomendamos que enchufe su ordenador antes de continuar."
+msgstr "Le recomendamos que enchufe su equipo antes de continuar."
 
 #: ApperKCM/Updater/DistroUpgrade.cpp:72
 msgid ""
 "It is recommended that you keep your computer plugged in while the upgrade "
 "is being performed."
 msgstr ""
-"Le recomendamos que mantenga su ordenador enchufado durante todo el proceso "
-"de actualización."
+"Le recomendamos que mantenga su equipo enchufado durante todo el proceso de "
+"actualización."
 
 #: ApperKCM/Updater/DistroUpgrade.cpp:91
 msgid "Distribution upgrade complete."
@@ -962,7 +965,9 @@ msgstr ""
 msgid ""
 "The classification of this update is unstable which means it is not designed "
 "for production use."
-msgstr "Esta actualización está clasificada como inestable, "
+msgstr ""
+"Esta actualización está clasificada como inestable, lo que significa que no "
+"está diseñada para su uso en producción."
 
 #: ApperKCM/Updater/UpdateDetails.cpp:284
 msgid ""
@@ -1044,7 +1049,7 @@ msgstr "Matthias Klumpp"
 
 #: AppSetup/main.cpp:47
 msgid "Show verbose information"
-msgstr "Mostrar información abundante"
+msgstr "Mostrar información detallada"
 
 #: AppSetup/main.cpp:48
 msgid "IPK package filename"
@@ -1169,19 +1174,21 @@ msgstr "Este paquete tiene el siguiente nivel de seguridad: <b>%1</b>"
 #: AppSetup/SetupWizard.cpp:440
 #, kde-format
 msgid "It was signed with a key belonging to these user-ids: %1"
-msgstr "Estaba firmado con una clave que pertenece a estas ids de usuarios: %1"
+msgstr ""
+"Se ha firmado con una clave que pertenece a estos identificadores de "
+"usuarios: %1"
 
 #: AppSetup/SetupWizard.cpp:444
 msgid "Security hints"
 msgstr "Consejos de seguridad"
 
-#: libapper/ApplicationLauncher.cpp:96
+#: libapper/ApplicationLauncher.cpp:94
 msgid "New application available"
 msgid_plural "New applications available"
 msgstr[0] "Nueva aplicación disponible"
 msgstr[1] "Nuevas aplicaciones disponibles"
 
-#: libapper/ApplicationLauncher.cpp:99
+#: libapper/ApplicationLauncher.cpp:97
 msgid "The following application was just installed. Click on it to launch:"
 msgid_plural ""
 "The following applications were just installed. Click on them to launch:"
@@ -1431,7 +1438,7 @@ msgstr "Descargando información de actualización"
 #: libapper/PkStrings.cpp:129
 msgctxt "transaction state, repackaging delta files"
 msgid "Repackaging files"
-msgstr "Reempaquetando archivos"
+msgstr "Volviendo a empaquetar los archivos"
 
 #: libapper/PkStrings.cpp:132
 msgctxt "transaction state, loading databases"
@@ -1512,7 +1519,7 @@ msgstr "Obsoleto"
 #: libapper/PkStrings.cpp:188
 msgctxt "The role of the transaction, in present tense"
 msgid "Unknown role type"
-msgstr "Tipo de rol desconocido"
+msgstr "Tipo de función desconocido"
 
 #: libapper/PkStrings.cpp:190
 msgctxt "The role of the transaction, in present tense"
@@ -1633,7 +1640,7 @@ msgstr "Obteniendo la lista de repositorios"
 #: libapper/PkStrings.cpp:242
 msgctxt "The role of the transaction, in present tense"
 msgid "Enabling repository"
-msgstr "Habilitando repositorio"
+msgstr "Activando repositorio"
 
 #: libapper/PkStrings.cpp:244
 msgctxt "The role of the transaction, in present tense"
@@ -1698,7 +1705,7 @@ msgstr "Reparando el sistema"
 #: libapper/PkStrings.cpp:278
 msgctxt "The role of the transaction, in past tense"
 msgid "Unknown role type"
-msgstr "Tipo de rol desconocido"
+msgstr "Tipo de función desconocido"
 
 #: libapper/PkStrings.cpp:280
 msgctxt "The role of the transaction, in past tense"
@@ -1783,7 +1790,7 @@ msgstr "Obtenida lista de repositorios"
 #: libapper/PkStrings.cpp:312
 msgctxt "The role of the transaction, in past tense"
 msgid "Enabled repository"
-msgstr "Repositorio habilitado"
+msgstr "Repositorio activado"
 
 #: libapper/PkStrings.cpp:314
 msgctxt "The role of the transaction, in past tense"
@@ -1936,7 +1943,7 @@ msgstr "No se pudo crear un hilo"
 
 #: libapper/PkStrings.cpp:410
 msgid "Not supported by this backend"
-msgstr "No soportado por este motor"
+msgstr "No admitido por este motor"
 
 #: libapper/PkStrings.cpp:412
 msgid "An internal system error has occurred"
@@ -1972,7 +1979,7 @@ msgstr "La lista de grupos no era válida"
 
 #: libapper/PkStrings.cpp:428
 msgid "Dependency resolution failed"
-msgstr "No se pudieron resolver las dependencias"
+msgstr "No se pudo resolver las dependencias"
 
 #: libapper/PkStrings.cpp:430
 msgid "Search filter was invalid"
@@ -2028,7 +2035,7 @@ msgstr "Los paquetes no son compatibles"
 
 #: libapper/PkStrings.cpp:456
 msgid "Problem connecting to a software origin"
-msgstr "No se pudo conectar al origen de software"
+msgstr "No se pudo conectar la fuente de software"
 
 #: libapper/PkStrings.cpp:458
 msgid "Failed to initialize"
@@ -2102,7 +2109,7 @@ msgstr "El paquete es incompatible con este sistema"
 msgid "No space is left on the disk"
 msgstr "No queda espacio en disco"
 
-#: libapper/PkStrings.cpp:494 libapper/PkTransaction.cpp:441
+#: libapper/PkStrings.cpp:494 libapper/PkTransaction.cpp:446
 msgid "A media change is required"
 msgstr "Es necesario un cambio de medio"
 
@@ -2132,7 +2139,7 @@ msgstr "No se pueden obtener los requisitos del paquete"
 
 #: libapper/PkStrings.cpp:508
 msgid "Cannot disable origin"
-msgstr "No se puede deshabilitar el origen"
+msgstr "No se puede desactivar el origen"
 
 #: libapper/PkStrings.cpp:510
 msgid "The download failed"
@@ -2144,7 +2151,7 @@ msgstr "Error al configurar el paquete"
 
 #: libapper/PkStrings.cpp:514
 msgid "Package failed to build"
-msgstr "Error al construir el paquete"
+msgstr "Error al compilar el paquete"
 
 #: libapper/PkStrings.cpp:516
 msgid "Package failed to install"
@@ -2164,7 +2171,7 @@ msgstr "Se modificó la base de datos de los paquetes"
 
 #: libapper/PkStrings.cpp:524
 msgid "Virtual provide type is not supported"
-msgstr "Tipo de suministro virtual no permitido"
+msgstr "No se admite el tipo de suministro virtual."
 
 #: libapper/PkStrings.cpp:526
 msgid "Install root is invalid"
@@ -2196,7 +2203,7 @@ msgid ""
 "Please check your connection settings and try again"
 msgstr ""
 "No hay ninguna conexión de red disponible.\n"
-"Por favor, revise su configuración y vuelva a intentarlo"
+"Compruebe su configuración y vuelva a intentarlo"
 
 #: libapper/PkStrings.cpp:549
 msgid ""
@@ -2214,7 +2221,7 @@ msgid ""
 msgstr ""
 "Se ha agotado la memoria del servicio responsable de tratar las peticiones "
 "de los usuarios.\n"
-"Por favor, cierre algún programa o reinicie su ordenador."
+"Por favor, cierre algún programa o reinicie su equipo."
 
 #: libapper/PkStrings.cpp:555
 msgid "A thread could not be created to service the user request."
@@ -2225,8 +2232,8 @@ msgid ""
 "The action is not supported by this backend.\n"
 "Please report a bug as this should not have happened."
 msgstr ""
-"La acción no está soportada por este motor.\n"
-"Le rogamos que envíe un informe de fallo, porque esto no debería ocurrir."
+"Este motor no admite esa acción.\n"
+"Envíe un informe de fallo, ya que esto no debería ocurrir."
 
 #: libapper/PkStrings.cpp:560
 msgid ""
@@ -2234,7 +2241,7 @@ msgid ""
 "Please report this bug with the error description."
 msgstr ""
 "Ha ocurrido un error inesperado.\n"
-"Por favor, envíe un informe de fallo con la descripción del error."
+"Envíe un informe de fallo con la descripción del error."
 
 #: libapper/PkStrings.cpp:563
 msgid ""
@@ -2243,7 +2250,7 @@ msgid ""
 msgstr ""
 "No se ha podido establecer una relación de confianza con el origen del "
 "software.\n"
-"Por favor, revise la configuración de sus firmas de software."
+"Compruebe la configuración de sus firmas de software."
 
 #: libapper/PkStrings.cpp:566
 msgid ""
@@ -2257,7 +2264,7 @@ msgid ""
 "software origin."
 msgstr ""
 "El paquete que está siendo modificado no se encontró en su sistema ni en "
-"ningún origen de software."
+"ninguna fuente de software."
 
 #: libapper/PkStrings.cpp:570
 msgid "The package that is trying to be installed is already installed."
@@ -2269,7 +2276,7 @@ msgid ""
 "Please check your network connectivity."
 msgstr ""
 "No se pudo descargar el paquete.\n"
-"Por favor, compruebe su conectividad de red."
+"Compruebe su conectividad de red."
 
 #: libapper/PkStrings.cpp:575
 msgid ""
@@ -2277,7 +2284,7 @@ msgid ""
 "Please check your group list and try again."
 msgstr ""
 "No se encontró el tipo de grupo.\n"
-"Por favor, compruebe su lista de grupos y vuelva a intentarlo."
+"Compruebe su lista de grupos y vuelva a intentarlo."
 
 #: libapper/PkStrings.cpp:578
 msgid ""
@@ -2287,7 +2294,7 @@ msgid ""
 msgstr ""
 "No se pudo cargar la lista de grupos.\n"
 "Puede intentar refrescar su caché, aunque normalmente se debe a un error en "
-"el origen de software."
+"la fuente de software."
 
 #: libapper/PkStrings.cpp:582
 msgid ""
@@ -2323,8 +2330,8 @@ msgid ""
 "The remote software origin name was not found.\n"
 "You may need to enable an item in Software Origins."
 msgstr ""
-"No se encontró el nombre del origen de software remoto.\n"
-"Puede que necesite habilitar algún elemento en «Orígenes de software»."
+"No se encontró el nombre de la fuente de software remota.\n"
+"Puede que necesite activar algún elemento en «Fuentes de software»."
 
 #: libapper/PkStrings.cpp:596
 msgid "Removing a protected system package is not allowed."
@@ -2352,7 +2359,7 @@ msgstr ""
 
 #: libapper/PkStrings.cpp:606
 msgid "The task is not safe to be cancelled at this time."
-msgstr "No es seguro cancelar la operación en este momento."
+msgstr "No es seguro cancelar la tarea en este momento."
 
 #: libapper/PkStrings.cpp:608
 msgid ""
@@ -2376,8 +2383,7 @@ msgid ""
 "This is usually due to mixing packages for different software origins."
 msgstr ""
 "Dos paquetes proporcionan el mismo archivo.\n"
-"Esto suele deberse a la mezcla de paquetes de diferentes orígenes de "
-"software."
+"Esto suele deberse a la mezcla de paquetes de diferentes fuentes de software."
 
 #: libapper/PkStrings.cpp:617
 msgid ""
@@ -2385,17 +2391,16 @@ msgid ""
 "This is usually due to mixing packages from different software origins."
 msgstr ""
 "Hay varios paquetes incompatibles entre sí.\n"
-"Esto suele deberse a la mezcla de paquetes de diferentes orígenes de "
-"software."
+"Esto suele deberse a la mezcla de paquetes de diferentes fuentes de software."
 
 #: libapper/PkStrings.cpp:620
 msgid ""
 "There was a (possibly temporary) problem connecting to a software origins.\n"
 "Please check the detailed error for further details."
 msgstr ""
-"Ha habido un problema (posiblemente temporal) de conexión al origen de "
+"Ha habido un error (posiblemente temporal) de conexión al origen de "
 "software.\n"
-"Por favor, para obtener más detalles compruebe el informe detallado."
+"Para obtener más detalles, compruebe el informe detallado."
 
 #: libapper/PkStrings.cpp:623
 msgid ""
@@ -2419,8 +2424,8 @@ msgid ""
 "Cannot get the exclusive lock on the packaging backend.\n"
 "Please close any other legacy packaging tools that may be open."
 msgstr ""
-"No se pudo obtener el bloque exclusivo del motor de paquetería.\n"
-"Por favor, cierre otras herramientas de paquetería que puedan estar abiertas."
+"No se pudo obtener el bloqueo exclusivo del motor de paquetería.\n"
+"Cierre otras herramientas de paquetería que puedan estar abiertas."
 
 #: libapper/PkStrings.cpp:632
 msgid "None of the selected packages could be updated."
@@ -2493,9 +2498,9 @@ msgid ""
 "Required data could not be found on any of the configured software origins.\n"
 "There were no more download mirrors that could be tried."
 msgstr ""
-"No se pudieron encontrar datos obligatorios en ninguno de los orígenes de "
-"software configurados.\n"
-"No quedan más espejos en los que intentar buscar."
+"No se pudo encontrar datos obligatorios en ninguno de las fuentes de "
+"software configuradas.\n"
+"No quedan más espejos de descarga en los que buscar."
 
 #: libapper/PkStrings.cpp:661
 msgid ""
@@ -2503,8 +2508,8 @@ msgid ""
 "origins.\n"
 "The list of distribution upgrades will be unavailable."
 msgstr ""
-"No se encontraron los datos de actualización necesarios en ninguno de los "
-"orígenes de software configurados.\n"
+"No se encontraron los datos de actualización necesarios en ninguno de las "
+"fuentes de software configuradas.\n"
 "La lista de actualizaciones de la distribución no estará disponible."
 
 #: libapper/PkStrings.cpp:664
@@ -2532,7 +2537,7 @@ msgid ""
 "Please check any passwords or account settings."
 msgstr ""
 "No se ha autenticado correctamente.\n"
-"Por favor, compruebe las preferencias de contraseñas y cuentas."
+"Compruebe las preferencias de las contraseñas y de las cuentas."
 
 #: libapper/PkStrings.cpp:674
 msgid ""
@@ -2541,7 +2546,8 @@ msgid ""
 "server."
 msgstr ""
 "No se pudo encontrar la actualización especificada.\n"
-"Quizá ya se haya instalado o ya no esté disponible en el servidor remoto."
+"Puede que ya se haya instalado o que ya no esté disponible en el servidor "
+"remoto."
 
 #: libapper/PkStrings.cpp:677
 msgid "The package could not be installed from untrusted origin."
@@ -2562,7 +2568,7 @@ msgstr ""
 
 #: libapper/PkStrings.cpp:685
 msgid "The specified software origin could not be disabled."
-msgstr "No se pudo deshabilitar el origen de software especificado."
+msgstr "No se pudo desactivar la fuente de software especificada."
 
 #: libapper/PkStrings.cpp:687
 msgid ""
@@ -2585,7 +2591,7 @@ msgid ""
 "One of the selected packages failed to build correctly.\n"
 "More information is available in the detailed report."
 msgstr ""
-"No se pudo construir uno de los paquetes seleccionados.\n"
+"No se pudo compilar uno de los paquetes seleccionados.\n"
 "En el informe detallado puede consultar más información."
 
 #: libapper/PkStrings.cpp:696
@@ -2621,13 +2627,11 @@ msgstr ""
 
 #: libapper/PkStrings.cpp:707
 msgid "The virtual provide type is not supported by this system."
-msgstr "El tipo de suministro virtual no está permitido en este sistema."
+msgstr "Este sistema no admite el tipo de suministro virtual."
 
 #: libapper/PkStrings.cpp:709
 msgid "The install root is invalid. Please contact your administrator."
-msgstr ""
-"La raíz de instalación no es válida. Por favor, contacte con el "
-"administrador."
+msgstr "La raíz de instalación no es válida. Contacte con el administrador."
 
 #: libapper/PkStrings.cpp:711
 msgid "The list of software could not be downloaded."
@@ -3001,22 +3005,22 @@ msgstr "En pruebas"
 #: libapper/PkStrings.cpp:929
 #, kde-format
 msgid "Please insert the CD labeled '%1', and press continue."
-msgstr "Por favor, introduzca el CD «%1» y pulse «continuar»."
+msgstr "Introduzca el CD «%1» y pulse «continuar»."
 
 #: libapper/PkStrings.cpp:931
 #, kde-format
 msgid "Please insert the DVD labeled '%1', and press continue."
-msgstr "Por favor, introduzca el DVD «%1» y pulse «continuar»."
+msgstr "Introduzca el DVD «%1» y pulse «continuar»."
 
 #: libapper/PkStrings.cpp:933
 #, kde-format
 msgid "Please insert the disc labeled '%1', and press continue."
-msgstr "Por favor, introduzca el disco «%1» y pulse «continuar»."
+msgstr "Introduzca el disco «%1» y pulse «continuar»."
 
 #: libapper/PkStrings.cpp:935 libapper/PkStrings.cpp:938
 #, kde-format
 msgid "Please insert the medium labeled '%1', and press continue."
-msgstr "Por favor, introduzca el medio «%1» y pulse «continuar»."
+msgstr "Introduzca el medio «%1» y pulse «continuar»."
 
 #: libapper/PkStrings.cpp:945
 msgid "A mirror is possibly broken"
@@ -3072,11 +3076,11 @@ msgstr "Se ignorará la limpieza automática"
 
 #: libapper/PkStrings.cpp:971
 msgid "Software source download failed"
-msgstr "No se pudo descargar el código del software"
+msgstr "No se pudo descargar la fuente de software"
 
 #: libapper/PkStrings.cpp:973
 msgid "This software source is for developers only"
-msgstr "Este origen de software es solo para desarrolladores"
+msgstr "Esta fuente de software es solo para desarrolladores"
 
 #: libapper/PkStrings.cpp:975
 msgid "Other updates have been held back"
@@ -3112,7 +3116,7 @@ msgstr "Archivo no válido."
 
 #: libapper/PkStrings.cpp:1003
 msgid "This function is not yet supported."
-msgstr "Función aún no soportada."
+msgstr "Función no admitida aún no."
 
 #: libapper/PkStrings.cpp:1005
 msgid "Could not talk to packagekitd."
@@ -3154,7 +3158,7 @@ msgstr "Ha fallado la simulación de la instalación del archivo"
 
 #: libapper/PkTransaction.cpp:143
 msgid "Current backend does not support installing files."
-msgstr "El motor actual no permite la instalación de archivos."
+msgstr "El motor actual no admite la instalación de archivos."
 
 #: libapper/PkTransaction.cpp:157
 msgid "Failed to simulate package install"
@@ -3162,7 +3166,7 @@ msgstr "No se pudo simular la instalación del paquete"
 
 #: libapper/PkTransaction.cpp:161
 msgid "Current backend does not support installing packages."
-msgstr "El motor actual no soporta la instalación de paquetes."
+msgstr "El motor actual no admite la instalación de paquetes."
 
 #: libapper/PkTransaction.cpp:176
 msgid "Failed to simulate package removal"
@@ -3170,7 +3174,7 @@ msgstr "No se pudo simular la eliminación del paquete"
 
 #: libapper/PkTransaction.cpp:180
 msgid "The current backend does not support removing packages."
-msgstr "El motor actual no soporta el borrado de paquetes."
+msgstr "El motor actual no admite el borrado de paquetes."
 
 #: libapper/PkTransaction.cpp:199
 msgid "Failed to simulate package update"
@@ -3178,7 +3182,7 @@ msgstr "No se pudo simular la actualización del paquete"
 
 #: libapper/PkTransaction.cpp:203
 msgid "The current backend does not support updating packages."
-msgstr "El motor actual no soporta la actualización de paquetes."
+msgstr "El motor actual no admite la actualización de paquetes."
 
 #: libapper/PkTransaction.cpp:254
 msgid "Failed to install package"
@@ -3198,7 +3202,7 @@ msgstr "No se pudo eliminar el paquete"
 msgid "Failed to update package"
 msgstr "No se pudo actualizar el paquete"
 
-#: libapper/PkTransaction.cpp:351
+#: libapper/PkTransaction.cpp:356
 msgid ""
 "You are about to install unsigned packages that can compromise your system, "
 "as it is impossible to verify if the software came from a trusted source.\n"
@@ -3211,11 +3215,11 @@ msgstr ""
 "\n"
 "¿Está seguro de que desea proseguir la instalación?"
 
-#: libapper/PkTransaction.cpp:354
+#: libapper/PkTransaction.cpp:359
 msgid "Installing unsigned software"
 msgstr "Instalar software no firmado"
 
-#: libapper/PkTransaction.cpp:399 libapper/PkTransaction.cpp:486
+#: libapper/PkTransaction.cpp:404 libapper/PkTransaction.cpp:491
 msgid "Failed to install signature"
 msgstr "Error al instalar la firma"
 
@@ -3279,7 +3283,7 @@ msgstr[1] "%1 paquetes a eliminar"
 #, kde-format
 msgid "1 package to downgrade"
 msgid_plural "%1 packages to downgrade"
-msgstr[0] "1 paquete a desactualizar"
+msgstr[0] "Se va a instalar la versión anterior de un paquete"
 msgstr[1] "%1 paquetes a desactualizar"
 
 #: libapper/Requirements.cpp:112
@@ -3328,7 +3332,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: libapper/Requirements.ui:31
 msgid "Additional changes are required to complete the task"
-msgstr "Para completar la tarea se necesitan cambios adicionales."
+msgstr "Para completar la tarea se necesitan cambios adicionales"
 
 #. i18n: ectx: property (text), widget (QCheckBox, confirmCB)
 #: libapper/Requirements.ui:87
@@ -3342,7 +3346,7 @@ msgstr "TextLabel"
 
 #: PkSession/main.cpp:36
 msgid "Apper PackageKit Session helper"
-msgstr "Ayudante de sesión de Apper PackageKit"
+msgstr "Asistente de sesión de Apper PackageKit"
 
 #: PkSession/main.cpp:41
 msgid "Trever Fischer"
@@ -3358,7 +3362,7 @@ msgstr "Puede soltar más catálogos aquí"
 
 #: PkSession/PkInstallCatalogs.cpp:85
 msgid "No supported catalog was found"
-msgstr "No se ha encontrado ningún catálogo permitido"
+msgstr "No se ha encontrado ningún catálogo admitido"
 
 #: PkSession/PkInstallCatalogs.cpp:87
 msgid "Do you want to install this catalog?"
@@ -3376,18 +3380,18 @@ msgstr[1] "Una aplicación desea instalar catálogos"
 #, kde-format
 msgid "The application <i>%2</i> wants to install a catalog"
 msgid_plural "The application <i>%2</i> wants to install catalogs"
-msgstr[0] "La aplicación <b>%2</b> desea instalar un catálogo"
-msgstr[1] "La aplicación <b>%2</b> desea instalar catálogos"
+msgstr[0] "La aplicación <i>%2</i> desea instalar un catálogo"
+msgstr[1] "La aplicación <i>%2</i> desea instalar catálogos"
 
 #: PkSession/PkInstallCatalogs.cpp:137
 msgid "Not supported"
-msgstr "No soportado"
+msgstr "No admitido"
 
 #: PkSession/PkInstallCatalogs.cpp:138
 msgid ""
 "Your backend does not support any of the needed methods to install a catalog"
 msgstr ""
-"Su motor no soporta ninguno de los métodos necesarios para instalar un "
+"Su motor no admite ninguno de los métodos necesarios para instalar un "
 "catálogo"
 
 #: PkSession/PkInstallCatalogs.cpp:177
@@ -3433,7 +3437,7 @@ msgstr "Se puede interpretar la petición"
 
 #: PkSession/PkInstallFontconfigResources.cpp:73
 msgid "Please verify if the request was valid"
-msgstr "Por favor, verifique si la petición era válida"
+msgstr "Verifique si la petición era válida"
 
 #: PkSession/PkInstallFontconfigResources.cpp:107
 msgid ""
@@ -3545,11 +3549,11 @@ msgstr "No se han encontrado coincidencias"
 
 #: PkSession/PkInstallGStreamerResources.cpp:149
 msgid "Could not find plugin in any configured software source"
-msgstr "No se ha podido encontrar el complemento en ningún origen de software"
+msgstr "No se ha podido encontrar el complemento en ninguna fuente de software"
 
 #: PkSession/PkInstallMimeTypes.cpp:39
 msgid "Install Support for File Types"
-msgstr "Instalar soporte de tipos de archivos"
+msgstr "Instalar uso de tipos de archivos"
 
 #: PkSession/PkInstallMimeTypes.cpp:50
 msgid "Do you want to search for a program that can open this file type?"
@@ -3565,17 +3569,16 @@ msgstr "No se han proporcionado tipos de archivos válidos"
 #: PkSession/PkInstallMimeTypes.cpp:62
 msgid "A program is requiring support to open this kind of files"
 msgid_plural "A program is requiring support to open these kinds of files"
-msgstr[0] "Un programa necesita soporte para abrir este tipo de archivos"
-msgstr[1] "Un programa necesita soporte para abrir estos tipos de archivos"
+msgstr[0] "Un programa necesita ayuda para abrir este tipo de archivos"
+msgstr[1] "Un programa necesita ayuda para abrir estos tipos de archivos"
 
 #: PkSession/PkInstallMimeTypes.cpp:66
 #, kde-format
 msgid "The application %2 is requiring support to open this kind of files"
 msgid_plural ""
 "The application %2 is requiring support to open these kinds of files"
-msgstr[0] "La aplicación %2 necesita soporte para abrir este tipo de archivos"
-msgstr[1] ""
-"La aplicación %2 necesita soporte para abrir estos tipos de archivos"
+msgstr[0] "La aplicación %2 necesita ayuda para abrir este tipo de archivos"
+msgstr[1] "La aplicación %2 necesita ayuda para abrir estos tipos de archivos"
 
 #: PkSession/PkInstallMimeTypes.cpp:101
 msgid "Could not find software"
@@ -3596,16 +3599,16 @@ msgstr "Puede soltar más archivos aquí"
 
 #: PkSession/PkInstallPackageFiles.cpp:52
 msgid "Not Supported"
-msgstr "No implementado"
+msgstr "No admitido"
 
 #: PkSession/PkInstallPackageFiles.cpp:53
 msgid "Your current backend does not support installing files"
-msgstr "El motor actual no permite la instalación de archivos"
+msgstr "El motor actual no admite la instalación de archivos"
 
 #: PkSession/PkInstallPackageFiles.cpp:68
 #: PkSession/PkRemovePackageByFiles.cpp:64
 msgid "No supported files were provided"
-msgstr "No se han proporcionado archivos permitidos"
+msgstr "No se han proporcionado archivos admitidos"
 
 #: PkSession/PkInstallPackageFiles.cpp:70
 msgid "Press <i>Continue</i> if you want to install this file"
@@ -3625,7 +3628,7 @@ msgstr[1] "Una aplicación desea instalar paquetes"
 #, kde-format
 msgid "The application <i>%2</i> wants to install a package"
 msgid_plural "The application <i>%2</i> wants to install packages"
-msgstr[0] "La aplicación <b>%2</b> desea instalar un paquete"
+msgstr[0] "La aplicación <i>%2</i> desea instalar un paquete"
 msgstr[1] "La aplicación <b>%2</b> desea instalar paquetes"
 
 #: PkSession/PkInstallPackageFiles.cpp:106
@@ -3681,8 +3684,9 @@ msgstr "No se pudo encontrar %1"
 #: PkSession/PkInstallPackageNames.cpp:119
 msgid "The package could not be found in any software source"
 msgid_plural "The packages could not be found in any software source"
-msgstr[0] "No se ha podido encontrar el paquete en ningún origen de software"
-msgstr[1] "No se ha podido encontrar los paquetes en ningún origen de software"
+msgstr[0] "No se ha podido encontrar el paquete en ninguna fuente de software"
+msgstr[1] ""
+"No se ha podido encontrar los paquetes en ninguna fuente de software"
 
 #: PkSession/PkInstallPlasmaResources.cpp:40
 msgid "Install Plasma Resources"
@@ -3700,7 +3704,7 @@ msgstr "Motor de scripts %1"
 
 #: PkSession/PkInstallPlasmaResources.cpp:67
 msgid "No supported resources were provided"
-msgstr "No se han proporcionado recursos permitidos"
+msgstr "No se han proporcionado recursos admitidos"
 
 #: PkSession/PkInstallPlasmaResources.cpp:69
 msgid "The following service is required. Do you want to search for this now?"
@@ -3736,7 +3740,7 @@ msgstr "No se encontró el controlador de la impresora"
 #: PkSession/PkInstallPrinterDrivers.cpp:88
 msgid "Could not find printer driver in any configured software source"
 msgstr ""
-"No se ha podido encontrar el controlador de impresora en ningún origen de "
+"No se ha podido encontrar el controlador de impresora en ninguna fuente de "
 "software"
 
 #: PkSession/PkInstallProvideFiles.cpp:39
@@ -3857,7 +3861,8 @@ msgstr "Buscar los paquetes que proporcionan los archivos"
 
 #: PkSession/PkSearchFile.cpp:88
 msgid "The file name could not be found in any software source"
-msgstr "No se pudo encontrar el nombre de archivo en ningún origen de software"
+msgstr ""
+"No se pudo encontrar el nombre de archivo en ninguna fuente de software"
 
 #: PkSession/ReviewChanges.cpp:50
 msgid "The following package was found"

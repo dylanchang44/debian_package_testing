@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kpackagekit\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-07-07 01:35+0000\n"
-"PO-Revision-Date: 2011-05-09 19:00+0900\n"
-"Last-Translator: Sahran <sahran@live.com>\n"
+"POT-Creation-Date: 2014-03-13 01:37+0000\n"
+"PO-Revision-Date: 2013-09-08 07:04+0900\n"
+"Last-Translator: Gheyret Kenji <gheyret@gmail.com>\n"
 "Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
@@ -27,33 +27,27 @@ msgstr "sahran.ug@gmail.com,  gheyret@gmail.com"
 
 #: Apper/BackendDetails.cpp:34
 msgid "Backend Details"
-msgstr ""
+msgstr "ئارقا ئۇچ تەپسىلاتى"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #: Apper/BackendDetails.ui:39
 msgid "About Backend"
-msgstr "ئاخىرقى ئۇچ ھەققىدە"
+msgstr "ئاقا ئۇچ ھەققىدە"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: Apper/BackendDetails.ui:45
-#, fuzzy
-#| msgid "Backend warning"
 msgid "Backend name:"
-msgstr "ئارقائۇچ  ئاگاھلاندۇرۇشى"
+msgstr "ئاقا ئۇچ ئاتى:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #: Apper/BackendDetails.ui:59
-#, fuzzy
-#| msgid "Applications"
 msgid "Backend description:"
-msgstr "پروگراممىلار"
+msgstr "ئاقا ئۇچ چۈشەندۈرۈلۈشى:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: Apper/BackendDetails.ui:73
-#, fuzzy
-#| msgid "Backend warning"
 msgid "Backend author:"
-msgstr "ئارقائۇچ  ئاگاھلاندۇرۇشى"
+msgstr "ئاقا ئۇچ ئاپتورى:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_4)
 #: Apper/BackendDetails.ui:87
@@ -67,11 +61,8 @@ msgstr "فۇنكسىيىلەر(Methods)"
 
 #. i18n: ectx: property (text), widget (QCheckBox, getUpdatesCB)
 #: Apper/BackendDetails.ui:116
-#, fuzzy
-#| msgctxt "The role of the transaction, in past tense"
-#| msgid "Got updates"
 msgid "Get Updates"
-msgstr "يېڭىلانمىلارغا ئېرىشتى"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, refreshCacheCB)
 #: Apper/BackendDetails.ui:126 ApperKCM/Settings/Settings.cpp:52
@@ -80,114 +71,73 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, searchNameCB)
 #: Apper/BackendDetails.ui:136
-#, fuzzy
-#| msgctxt "Search for a new mime type"
-#| msgid "Search"
 msgid "Search Name"
-msgstr "ئىزدە"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, getDependsCB)
 #: Apper/BackendDetails.ui:146
-#, fuzzy
-#| msgctxt "The role of the transaction, in past tense"
-#| msgid "Got package lists"
 msgid "Get Package Depends"
-msgstr "بوغچىلار تىزىمىغا ئېرىشتى"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, searchDetailsCB)
 #: Apper/BackendDetails.ui:156
-#, fuzzy
-#| msgctxt "The role of the transaction, in present tense"
-#| msgid "Searching details"
 msgid "Search Details"
-msgstr "تەپسىلاتىنى ئىزدەۋاتىدۇ"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, getRequiresCB)
 #: Apper/BackendDetails.ui:166
-#, fuzzy
-#| msgid "Cannot get package requires"
 msgid "Get Package Requires"
-msgstr "بوغچا ئېھتىياجىغا ئېرىشكىلى بولمىدى"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, searchGroupCB)
 #: Apper/BackendDetails.ui:176
-#, fuzzy
-#| msgctxt "The role of the transaction, in past tense"
-#| msgid "Searched groups"
 msgid "Search Group"
-msgstr "گۇرۇپپىلار  ئىزدەلدى"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, getUpdateDetailCB)
 #: Apper/BackendDetails.ui:186
-#, fuzzy
-#| msgctxt "The role of the transaction, in past tense"
-#| msgid "Got update detail"
 msgid "Get Update Detail"
-msgstr "يېڭىلاش ئۇچۇرىغا ئېرىشتى"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, searchFileCB)
 #: Apper/BackendDetails.ui:196
-#, fuzzy
-#| msgctxt "The role of the transaction, in past tense"
-#| msgid "Searched for file"
 msgid "Search File"
-msgstr "ھۆججەت  ئىزدەلدى"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, getDescriptionCB)
 #: Apper/BackendDetails.ui:206
-#, fuzzy
-#| msgctxt "The group type"
-#| msgid "Package collections"
 msgid "Get Package Description"
-msgstr "بوغچا توپلىمى"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, getFilesCB)
 #: Apper/BackendDetails.ui:216
-#, fuzzy
-#| msgctxt "The role of the transaction, in past tense"
-#| msgid "Got package lists"
 msgid "Get Package Files"
-msgstr "بوغچىلار تىزىمىغا ئېرىشتى"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, getDistroUpgradesCB)
 #: Apper/BackendDetails.ui:226
-#, fuzzy
-#| msgctxt "The role of the transaction, in past tense"
-#| msgid "Got distribution upgrades"
 msgid "Get Distro Upgrades"
-msgstr "تارقىتىلمىنىڭ يۈكسەلدۈرمىسىگە ئېرىشتى"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, installPackageCB)
 #: Apper/BackendDetails.ui:236
-#, fuzzy
-#| msgctxt "The role of the transaction, in past tense"
-#| msgid "Installed packages"
 msgid "Install Packages"
-msgstr "ئورنىتىلغان بوغچىلار"
+msgstr "بوغچىلارنى ئورنات"
 
 #. i18n: ectx: property (text), widget (QCheckBox, updatePackageCB)
 #: Apper/BackendDetails.ui:246
-#, fuzzy
-#| msgctxt "The role of the transaction, in past tense"
-#| msgid "Updated packages"
 msgid "Update Packages"
-msgstr "يېڭىلانغان بوغچىلار"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, removePackageCB)
 #: Apper/BackendDetails.ui:256
-#, fuzzy
-#| msgctxt "The role of the transaction, in past tense"
-#| msgid "Removed packages"
 msgid "Remove Packages"
-msgstr "ئۆچۈرۈلگەن بوغچىلار"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, installFileCB)
 #: Apper/BackendDetails.ui:266
-#, fuzzy
-#| msgctxt "The role of the transaction, in present tense"
-#| msgid "Installing file"
 msgid "Install Files"
-msgstr "ھۆججەت ئورنىتىۋاتىدۇ"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, resolveCB)
 #: Apper/BackendDetails.ui:276
@@ -197,62 +147,42 @@ msgstr "تەھلىل"
 #. i18n: ectx: property (text), widget (QCheckBox, cancelCB)
 #: Apper/BackendDetails.ui:286
 msgid "Cancel"
-msgstr "ئەمەلدىن قالدۇرۇش"
+msgstr "ئەمەلدىن قالدۇر"
 
 #. i18n: ectx: property (text), widget (QCheckBox, repairSystemCB)
 #: Apper/BackendDetails.ui:296
-#, fuzzy
-#| msgid "Update System"
 msgid "Repair System"
-msgstr "سىستېما يېڭىلا"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, upgradeSystemCB)
 #: Apper/BackendDetails.ui:306
-#, fuzzy
-#| msgctxt "The role of the transaction, in past tense"
-#| msgid "Upgraded system"
 msgid "Upgrade System"
-msgstr "يۈكسەلدۈرۈلگەن سىستېما"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, getPackagesCB)
 #: Apper/BackendDetails.ui:316
-#, fuzzy
-#| msgid "1 Package"
-#| msgid_plural "%1 Packages"
 msgid "Get Packages"
-msgstr "%1 بوغچا"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, whatProvidesCB)
 #: Apper/BackendDetails.ui:326
-#, fuzzy
-#| msgctxt "The role of the transaction, in past tense"
-#| msgid "Got what provides"
 msgid "What Provides"
-msgstr "تەمىنلىگەن ئۇچۇرغا ئېرىشتى"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, repositorySetEnableCB)
 #: Apper/BackendDetails.ui:336
-#, fuzzy
-#| msgctxt "The role of the transaction, in past tense"
-#| msgid "Set repository data"
 msgid "Set Repository Data"
-msgstr "خەزىنە مەلۇماتىنى تەڭشە"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, repositoryEnableCB)
 #: Apper/BackendDetails.ui:346
-#, fuzzy
-#| msgctxt "The role of the transaction, in past tense"
-#| msgid "Enabled repository"
 msgid "Enable Repository"
-msgstr "قوزغىتىلغان خەزىنىلەر"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, getRepositoryListCB)
 #: Apper/BackendDetails.ui:356
-#, fuzzy
-#| msgctxt "The role of the transaction, in past tense"
-#| msgid "Set repository data"
 msgid "Get Repository List"
-msgstr "خەزىنە مەلۇماتىنى تەڭشە"
+msgstr ""
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
 #. i18n: ectx: property (text), widget (QToolButton, filtersTB)
@@ -273,10 +203,8 @@ msgstr "ئىجادىيەت"
 
 #. i18n: ectx: property (text), widget (QCheckBox, visibleCB)
 #: Apper/BackendDetails.ui:395
-#, fuzzy
-#| msgid "Package install blocked"
 msgid "Package is visible"
-msgstr "بوغچا ئورنىتىش توسۇلدى"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, newestCB)
 #: Apper/BackendDetails.ui:405
@@ -295,31 +223,23 @@ msgstr "ھەقسىز يۇمشاق دېتال"
 
 #. i18n: ectx: property (text), widget (QCheckBox, supportedCB)
 #: Apper/BackendDetails.ui:435
-#, fuzzy
-#| msgid "Not Supported"
 msgid "Supported"
-msgstr "قوللىمايدۇ"
+msgstr "قوللايدىغانلىرى"
 
 #. i18n: ectx: property (text), widget (QCheckBox, archCB)
 #: Apper/BackendDetails.ui:445
-#, fuzzy
-#| msgid "Unstable"
 msgid "Only native"
-msgstr "مۇقىمسىز"
+msgstr ""
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_4)
 #: Apper/BackendDetails.ui:455
-#, fuzzy
-#| msgid "Package"
 msgid "PackageKit"
-msgstr "بوغچا"
+msgstr "PackageKit"
 
 #. i18n: ectx: property (text), widget (QLabel, label_5)
 #: Apper/BackendDetails.ui:461
-#, fuzzy
-#| msgid "Version"
 msgid "Version:"
-msgstr "نەشرى"
+msgstr "نەشرى:"
 
 #: Apper/main.cpp:54 PkSession/main.cpp:34
 msgid "Apper"
@@ -330,10 +250,8 @@ msgid "Apper is an Application to Get and Manage Software"
 msgstr ""
 
 #: Apper/main.cpp:58 ApperKCM/ApperKCM.cpp:90 PkSession/main.cpp:38
-#, fuzzy
-#| msgid "Daniel Nicoletti"
 msgid "(C) 2008-2013 Daniel Nicoletti"
-msgstr "Daniel Nicoletti"
+msgstr "(C) 2008-2013 Daniel Nicoletti"
 
 #: Apper/main.cpp:60 PkSession/main.cpp:40
 msgid "Daniel Nicoletti"
@@ -341,7 +259,7 @@ msgstr "Daniel Nicoletti"
 
 #: Apper/main.cpp:61 PkSession/main.cpp:43
 msgid "Adrien Bustany"
-msgstr ""
+msgstr "Adrien Bustany"
 
 #: Apper/main.cpp:61 PkSession/main.cpp:43
 msgid "libpackagekit-qt and other stuff"
@@ -357,7 +275,7 @@ msgstr "تەڭشەك كۆرسەت"
 
 #: Apper/main.cpp:69
 msgid "Show backend details"
-msgstr ""
+msgstr "ئاقا ئۇچ تەپسىلاتلىرىنى كۆرسەت"
 
 #: Apper/main.cpp:70
 msgid "Mime type installer"
@@ -365,11 +283,11 @@ msgstr "Mime تىپى ئورناتقۇچ"
 
 #: Apper/main.cpp:71
 msgid "Package name installer"
-msgstr ""
+msgstr "بوغچا ئات ئورناتقۇچ"
 
 #: Apper/main.cpp:72
 msgid "Single file installer"
-msgstr ""
+msgstr "يەككە ھۆججەت ئورناتقۇچ"
 
 #: Apper/main.cpp:73
 msgid "Font resource installer"
@@ -419,15 +337,10 @@ msgid "The distribution upgrade process failed with an unknown error."
 msgstr ""
 
 #: apperd/TransactionWatcher.cpp:134
-#, fuzzy
-#| msgid "The system update has completed"
 msgid "The system update has completed"
 msgstr "سىستېمىنى يېڭىلاش تاماملاندى"
 
 #: apperd/TransactionWatcher.cpp:141 apperd/TransactionWatcher.cpp:183
-#, fuzzy
-#| msgctxt "Restart the computer"
-#| msgid "Restart"
 msgid "Restart"
 msgstr "قايتا قوزغات"
 
@@ -435,12 +348,12 @@ msgstr "قايتا قوزغات"
 #, kde-format
 msgid "Package: %2"
 msgid_plural "Packages: %2"
-msgstr[0] ""
+msgstr[0] "بوغچىلار: %2"
 
 #: apperd/TransactionWatcher.cpp:236 ApperKCM/TransactionModel.cpp:48
 #: AppSetup/SetupWizard.cpp:202
 msgid "Details"
-msgstr "تەپسىلاتى"
+msgstr "تەپسىلاتلار"
 
 #: apperd/Updater.cpp:160
 msgid "Updates are being automatically installed."
@@ -456,33 +369,30 @@ msgstr ""
 
 #: apperd/Updater.cpp:214
 msgid "System update was successful."
-msgstr ""
+msgstr "سىستېما يېڭىلاش مۇۋەپپەقىيەتلىك بولدى."
 
 #: apperd/Updater.cpp:221
-#, fuzzy
-#| msgid "The system update has completed"
 msgid "The software update failed."
-msgstr "سىستېمىنى يېڭىلاش تاماملاندى"
+msgstr "يۇمشاق دېتال يېڭىلاش مەغلۇپ بولدى."
 
 #: apperd/Updater.cpp:275
-#, fuzzy, kde-format
-#| msgid "Show updates"
+#, kde-format
 msgid "There is one new update"
 msgid_plural "There are %1 new updates"
-msgstr[0] "يېڭىلاشنى كۆرسىتىش"
+msgstr[0] "%1 دانە يېڭىلانما بار"
 
 #: apperd/Updater.cpp:290
 msgid "Review"
-msgstr ""
+msgstr "تەكشۈر"
 
 #: apperd/Updater.cpp:292 AppSetup/SetupWizard.cpp:337
 #: libapper/ApplicationsDelegate.cpp:40
 msgid "Install"
-msgstr "ئورنىتىش"
+msgstr "ئورنات"
 
 #: ApperKCM/ApperKCM.cpp:86
 msgid "Application Manager"
-msgstr ""
+msgstr "پروگرامما باشقۇرغۇ"
 
 #: ApperKCM/ApperKCM.cpp:88
 msgid "KDE interface for managing software"
@@ -494,7 +404,7 @@ msgstr "ئىزدە"
 
 #: ApperKCM/ApperKCM.cpp:212 ApperKCM/ApperKCM.cpp:553
 msgid "History"
-msgstr "تارىخ"
+msgstr "ئىز"
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, Settings)
 #: ApperKCM/ApperKCM.cpp:218 ApperKCM/ApperKCM.cpp:509
@@ -558,18 +468,13 @@ msgstr ""
 
 #. i18n: ectx: property (clickMessage), widget (KLineEdit, searchKLE)
 #: ApperKCM/ApperKCM.ui:58
-#, fuzzy
-#| msgctxt "The role of the transaction, in past tense"
-#| msgid "Searched for package name"
 msgid "Search packages"
-msgstr "بوغچا ئىسمى ئىزدەلدى"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QPushButton, checkUpdatesPB)
 #: ApperKCM/ApperKCM.ui:161
-#, fuzzy
-#| msgid "Show updates"
 msgid "Check for new Updates"
-msgstr "يېڭىلاشنى كۆرسىتىش"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QPushButton, generalSettingsPB)
 #: ApperKCM/ApperKCM.ui:195
@@ -578,10 +483,8 @@ msgstr "ئادەتتىكى تەڭشەك"
 
 #. i18n: ectx: property (text), widget (QPushButton, repoSettingsPB)
 #: ApperKCM/ApperKCM.ui:214
-#, fuzzy
-#| msgid "Show settings"
 msgid "Software Origins"
-msgstr "تەڭشەك كۆرسەت"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QToolButton, backTB)
 #: ApperKCM/ApperKCM.ui:267 AppSetup/SetupWizard.cpp:152
@@ -597,10 +500,8 @@ msgid "Show Architectures"
 msgstr ""
 
 #: ApperKCM/BrowseView.cpp:104 ApperKCM/Updater/Updater.cpp:125
-#, fuzzy
-#| msgid "Show settings"
 msgid "Show Origins"
-msgstr "تەڭشەك كۆرسەت"
+msgstr ""
 
 #: ApperKCM/BrowseView.cpp:111 ApperKCM/Updater/Updater.cpp:132
 msgid "Show Sizes"
@@ -608,19 +509,13 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QPushButton, exportInstalledPB)
 #: ApperKCM/BrowseView.ui:140
-#, fuzzy
-#| msgctxt "The role of the transaction, in past tense"
-#| msgid "Installed packages"
 msgid "Export Installed Package List..."
-msgstr "ئورنىتىلغان بوغچىلار"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QPushButton, importInstalledPB)
 #: ApperKCM/BrowseView.ui:150
-#, fuzzy
-#| msgctxt "The role of the transaction, in past tense"
-#| msgid "Installed packages"
 msgid "Install Packages from List..."
-msgstr "ئورنىتىلغان بوغچىلار"
+msgstr ""
 
 #: ApperKCM/CategoryModel.cpp:53 ApperKCM/CategoryModel.cpp:61
 msgid "Lists"
@@ -658,7 +553,7 @@ msgstr ""
 #: ApperKCM/FiltersMenu.cpp:141 ApperKCM/FiltersMenu.cpp:171
 #: ApperKCM/FiltersMenu.cpp:202 ApperKCM/FiltersMenu.cpp:233
 msgid "No filter"
-msgstr ""
+msgstr "سۈزگۈچ يوق"
 
 #: ApperKCM/FiltersMenu.cpp:97
 msgid "Only development"
@@ -683,7 +578,7 @@ msgstr ""
 #: ApperKCM/FiltersMenu.cpp:150
 msgctxt "Filter for free packages"
 msgid "Free"
-msgstr "ھەقسىز"
+msgstr "بوش"
 
 #: ApperKCM/FiltersMenu.cpp:157
 msgid "Only free software"
@@ -694,17 +589,13 @@ msgid "Only non-free software"
 msgstr ""
 
 #: ApperKCM/FiltersMenu.cpp:181
-#, fuzzy
-#| msgid "Not Supported"
 msgctxt "Filter for supported packages"
 msgid "Supported"
-msgstr "قوللىمايدۇ"
+msgstr "قوللايدىغانلىرى"
 
 #: ApperKCM/FiltersMenu.cpp:188
-#, fuzzy
-#| msgid "Installed Software"
 msgid "Only supported software"
-msgstr "ئورنىتىلغان يۇمشاق دېتاللار"
+msgstr ""
 
 #: ApperKCM/FiltersMenu.cpp:195
 msgid "Only non-supported software"
@@ -741,7 +632,7 @@ msgstr "يېڭى ئىشلەتكىلى بولىدىغان بوغچىنىلا كۆ
 
 #: ApperKCM/FiltersMenu.cpp:269
 msgid "Only Native Packages"
-msgstr ""
+msgstr "ئەسلى بوغچىلارلا"
 
 #: ApperKCM/FiltersMenu.cpp:274
 msgid "Only show packages matching the machine architecture"
@@ -757,7 +648,7 @@ msgstr ""
 
 #: ApperKCM/PackageDetails.cpp:86
 msgid "Display"
-msgstr "كۆرسەت"
+msgstr "كۆرسەتكۈچ"
 
 #: ApperKCM/PackageDetails.cpp:93 AppSetup/SetupWizard.cpp:259
 msgid "Description"
@@ -773,7 +664,7 @@ msgstr ""
 
 #: ApperKCM/PackageDetails.cpp:159
 msgid "File List"
-msgstr ""
+msgstr "ھۆججەت تىزىمى"
 
 #: ApperKCM/PackageDetails.cpp:509
 msgid "No files were found."
@@ -810,26 +701,19 @@ msgid "A repository was changed, it's highly recommended to refresh the cache"
 msgstr ""
 
 #: ApperKCM/Settings/Settings.cpp:88
-#, fuzzy
-#| msgctxt "Never refresh package cache"
-#| msgid "Never"
 msgctxt "Inform about distribution upgrades"
 msgid "Never"
 msgstr "ھەرگىز"
 
 #: ApperKCM/Settings/Settings.cpp:91
-#, fuzzy
-#| msgid "Unstable"
 msgctxt "Inform about distribution upgrades"
 msgid "Only stable"
-msgstr "مۇقىمسىز"
+msgstr ""
 
 #: ApperKCM/Settings/Settings.cpp:96
-#, fuzzy
-#| msgid "Development"
 msgctxt "Inform about distribution upgrades"
 msgid "Stable and development"
-msgstr "ئىجادىيەت"
+msgstr ""
 
 #: ApperKCM/Settings/Settings.cpp:100
 msgctxt "Hourly refresh the package cache"
@@ -862,10 +746,8 @@ msgid "None"
 msgstr "يوق"
 
 #: ApperKCM/Settings/Settings.cpp:107
-#, fuzzy
-#| msgid "Downloading"
 msgid "Download only"
-msgstr "چۈشۈرۈۋاتىدۇ"
+msgstr ""
 
 #: ApperKCM/Settings/Settings.cpp:108
 msgid "Security only"
@@ -877,10 +759,8 @@ msgstr "بارلىق يېڭىلانمىلار"
 
 #. i18n: ectx: property (text), widget (QLabel, intervalL)
 #: ApperKCM/Settings/Settings.ui:53
-#, fuzzy
-#| msgid "Show updates"
 msgid "Check for new updates:"
-msgstr "يېڭىلاشنى كۆرسىتىش"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, checkUpdatesMobileCB)
 #. i18n: ectx: property (text), widget (QCheckBox, installUpdatesMobileCB)
@@ -896,11 +776,8 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, autoInsL)
 #: ApperKCM/Settings/Settings.ui:120
-#, fuzzy
-#| msgctxt "The type of update"
-#| msgid "Normal update"
 msgid "Automatically update:"
-msgstr "نورمال يېڭىلاش"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, appLauncherCB)
 #: ApperKCM/Settings/Settings.ui:178
@@ -914,11 +791,8 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: ApperKCM/Settings/Settings.ui:192
-#, fuzzy
-#| msgctxt "The role of the transaction, in past tense"
-#| msgid "Got distribution upgrades"
 msgid "Check for distribution upgrades:"
-msgstr "تارقىتىلمىنىڭ يۈكسەلدۈرمىسىگە ئېرىشتى"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, showOriginsCB)
 #: ApperKCM/Settings/Settings.ui:233
@@ -927,10 +801,8 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QPushButton, editOriginsPB)
 #: ApperKCM/Settings/Settings.ui:253
-#, fuzzy
-#| msgid "Show settings"
 msgid "Edit Origins"
-msgstr "تەڭشەك كۆرسەت"
+msgstr ""
 
 #: ApperKCM/TransactionHistory.cpp:66
 msgid "Refresh transactions list"
@@ -959,17 +831,13 @@ msgid "Application"
 msgstr "پروگرامما"
 
 #: ApperKCM/Updater/DistroUpgrade.cpp:40
-#, fuzzy
-#| msgctxt "The role of the transaction, in past tense"
-#| msgid "Upgraded system"
 msgid "Upgrade"
-msgstr "يۈكسەلدۈرۈلگەن سىستېما"
+msgstr "يۈكسەلدۈر"
 
 #: ApperKCM/Updater/DistroUpgrade.cpp:51
-#, fuzzy, kde-format
-#| msgid "No distribution upgrade data is available"
+#, kde-format
 msgid "Distribution upgrade available: %1"
-msgstr "ئىشلەتكىلى بولىدىغان تارقىتىلما يۈكسەلدۈرۈش سانلىق-مەلۇماتى يوق"
+msgstr ""
 
 #: ApperKCM/Updater/DistroUpgrade.cpp:65
 msgid ""
@@ -994,7 +862,7 @@ msgstr ""
 
 #: ApperKCM/Updater/UpdateDetails.cpp:191
 msgid "This update will add new features and expand functionality."
-msgstr ""
+msgstr "بۇ يېڭىلانما يېڭى ئىقتىدارنى قوشىدۇ ۋە ئىقتىدارنى كېڭەيتىدۇ."
 
 #: ApperKCM/Updater/UpdateDetails.cpp:195
 msgid "This update will fix bugs and other non-critical problems."
@@ -1071,6 +939,8 @@ msgid ""
 "The classification of this update is unstable which means it is not designed "
 "for production use."
 msgstr ""
+"بۇ يېڭىلانما مۇقىم بولمىغان تۈرگە كىرىدۇ. شۇڭا بۇنى رەسمىي مەھسۇلاتتا "
+"ئىشلىتىشكە بولمايدۇ."
 
 #: ApperKCM/Updater/UpdateDetails.cpp:284
 msgid ""
@@ -1097,10 +967,9 @@ msgid "Obsoletes:"
 msgstr ""
 
 #: ApperKCM/Updater/UpdateDetails.cpp:322
-#, fuzzy, kde-format
-#| msgid "Repository:"
+#, kde-format
 msgid "Repository: %1"
-msgstr "خەزىنە:"
+msgstr "خەزىنە: %1"
 
 #: ApperKCM/Updater/UpdateDetails.cpp:344
 msgid "No update description was found."
@@ -1116,10 +985,8 @@ msgid "Estimated download size: %1"
 msgstr ""
 
 #: ApperKCM/Updater/Updater.cpp:358
-#, fuzzy
-#| msgid "Show updates"
 msgid "Check for new updates"
-msgstr "يېڭىلاشنى كۆرسىتىش"
+msgstr "يېڭىلانما تەكشۈر"
 
 #. i18n: ectx: property (text), widget (QRadioButton, acceptedRB)
 #: AppSetup/LicensePage.ui:98
@@ -1129,65 +996,49 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QRadioButton, rejectedRB)
 #: AppSetup/LicensePage.ui:111
 msgid "I don't agree"
-msgstr ""
+msgstr "قوشۇلمايمەن"
 
 #: AppSetup/main.cpp:34 AppSetup/main.cpp:35
-#, fuzzy
-#| msgid "Applications"
 msgid "KDE Application Installer"
-msgstr "پروگراممىلار"
+msgstr ""
 
 #: AppSetup/main.cpp:36
 msgid "(C) 2012, Matthias Klumpp"
-msgstr ""
+msgstr "(C) 2012, Matthias Klumpp"
 
 #: AppSetup/main.cpp:38
-#, fuzzy
-#| msgid "Daniel Nicoletti"
 msgctxt "@info:credit"
 msgid "Daniel Nicoletti"
 msgstr "Daniel Nicoletti"
 
 #: AppSetup/main.cpp:38 AppSetup/main.cpp:40
-#, fuzzy
-#| msgid "Development"
 msgid "Developer"
-msgstr "ئىجادىيەت"
+msgstr "ئىجادىيەتچى"
 
 #: AppSetup/main.cpp:40
 msgctxt "@info:credit"
 msgid "Matthias Klumpp"
-msgstr ""
+msgstr "Matthias Klumpp"
 
 #: AppSetup/main.cpp:47
-#, fuzzy
-#| msgctxt "transaction state, getting data from a server"
-#| msgid "Getting information"
 msgid "Show verbose information"
-msgstr "ئۇچۇرغا ئېرىشىۋاتىدۇ"
+msgstr ""
 
 #: AppSetup/main.cpp:48
-#, fuzzy
-#| msgid "Invalid package file"
 msgid "IPK package filename"
-msgstr "ئىناۋەتسىز بوغچا ھۆججىتى"
+msgstr ""
 
 #: AppSetup/main.cpp:72
 msgid "Sorry, we didn't get an existing IPK package as parameter."
 msgstr ""
 
 #: AppSetup/main.cpp:73
-#, fuzzy
-#| msgid "The package was not found"
 msgid "Package not found!"
-msgstr "بوغچىلار تېپىلمىدى."
+msgstr "بوغچا تېپىلمىدى!"
 
 #: AppSetup/SetupWizard.cpp:87
-#, fuzzy
-#| msgctxt "The role of the transaction, in present tense"
-#| msgid "Installing file"
 msgid "Installation finished!"
-msgstr "ھۆججەت ئورنىتىۋاتىدۇ"
+msgstr "ئورنىتىش تاماملاندى!"
 
 #: AppSetup/SetupWizard.cpp:88
 #, kde-format
@@ -1201,10 +1052,8 @@ msgid "Error"
 msgstr "خاتالىق"
 
 #: AppSetup/SetupWizard.cpp:103 AppSetup/SetupWizard.cpp:117
-#, fuzzy
-#| msgid "An internal system error has occurred"
 msgid "An error occurred"
-msgstr "ئىچكى سىستېما خاتالىقى يۈز بەردى"
+msgstr "خاتالىق كۆرۈلدى"
 
 #: AppSetup/SetupWizard.cpp:150 libapper/Requirements.cpp:59
 #: PkSession/SessionTask.cpp:71
@@ -1213,7 +1062,7 @@ msgstr "داۋاملاشتۇر"
 
 #: AppSetup/SetupWizard.cpp:190
 msgid "Welcome!"
-msgstr ""
+msgstr "مەرھابا"
 
 #: AppSetup/SetupWizard.cpp:191
 #, kde-format
@@ -1233,41 +1082,29 @@ msgid "Details about this installation"
 msgstr ""
 
 #: AppSetup/SetupWizard.cpp:240
-#, fuzzy
-#| msgctxt "The role of the transaction, in past tense"
-#| msgid "Installed local files"
 msgid "Install for all users"
-msgstr "يەرلىك ھۆججەت ئورنىتىلدى"
+msgstr ""
 
 #: AppSetup/SetupWizard.cpp:258
-#, fuzzy
-#| msgid "Applications"
 msgid "Application description"
-msgstr "پروگراممىلار"
+msgstr ""
 
 #: AppSetup/SetupWizard.cpp:270
-#, fuzzy
-#| msgctxt "The group type"
-#| msgid "Software sources"
 msgid "Software license"
-msgstr "يۇمشاق دېتال مەنبەلىرى"
+msgstr ""
 
 #: AppSetup/SetupWizard.cpp:271
 msgid "Please read the following terms and conditions carefully!"
 msgstr ""
 
 #: AppSetup/SetupWizard.cpp:280
-#, fuzzy
-#| msgctxt "transaction state, scanning for running processes"
-#| msgid "Scanning installed applications"
 msgid "Running installation"
-msgstr "قاچىلانغان پروگراممىنى تەكشۈرۈۋاتىدۇ"
+msgstr ""
 
 #: AppSetup/SetupWizard.cpp:281
-#, fuzzy, kde-format
-#| msgid "Installing"
+#, kde-format
 msgid "Installing %1..."
-msgstr "ئورنىتىۋاتىدۇ"
+msgstr "ئورنىتىۋاتقىنى %1 …"
 
 #: AppSetup/SetupWizard.cpp:316
 msgid ""
@@ -1289,7 +1126,7 @@ msgstr ""
 
 #: AppSetup/SetupWizard.cpp:420
 msgid "Really install as superuser?"
-msgstr ""
+msgstr "ئالىي ئىشلەتكۈچى سۈپىتىدە ئورناتسۇنمۇ؟"
 
 #: AppSetup/SetupWizard.cpp:438
 #, kde-format
@@ -1302,20 +1139,15 @@ msgid "It was signed with a key belonging to these user-ids: %1"
 msgstr ""
 
 #: AppSetup/SetupWizard.cpp:444
-#, fuzzy
-#| msgctxt "The group type"
-#| msgid "Security"
 msgid "Security hints"
-msgstr "بىخەتەرلىك"
+msgstr ""
 
-#: libapper/ApplicationLauncher.cpp:96
-#, fuzzy
-#| msgid "No network connection available"
+#: libapper/ApplicationLauncher.cpp:94
 msgid "New application available"
 msgid_plural "New applications available"
-msgstr[0] "تور باغلىنىشى يوق"
+msgstr[0] ""
 
-#: libapper/ApplicationLauncher.cpp:99
+#: libapper/ApplicationLauncher.cpp:97
 msgid "The following application was just installed. Click on it to launch:"
 msgid_plural ""
 "The following applications were just installed. Click on them to launch:"
@@ -1336,20 +1168,20 @@ msgstr "ئەكسىچە تاللا"
 
 #: libapper/ChangesDelegate.cpp:47
 msgid "Do not Install"
-msgstr ""
+msgstr "ئورناتما"
 
 #: libapper/ChangesDelegate.cpp:49
 msgid "Do not Remove"
-msgstr ""
+msgstr "چىقىرىۋەتمە"
 
 #: libapper/CustomProgressBar.cpp:38
 #, kde-format
 msgid "%1 remaining"
-msgstr ""
+msgstr "%1  قالدى"
 
 #: libapper/LicenseAgreement.cpp:40
 msgid "Accept Agreement"
-msgstr ""
+msgstr "كېلىشىمىنى قوبۇللاش"
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, LicenseAgreement)
 #: libapper/LicenseAgreement.cpp:41 libapper/LicenseAgreement.ui:14
@@ -1375,11 +1207,8 @@ msgid "Version"
 msgstr "نەشرى"
 
 #: libapper/PackageModel.cpp:212
-#, fuzzy
-#| msgctxt "The role of the transaction, in past tense"
-#| msgid "Installed signature"
 msgid "Installed Version"
-msgstr "ئىمزا ئورنىتىلدى"
+msgstr "ئورنىتىلغان نەشرى"
 
 #: libapper/PackageModel.cpp:215
 msgid "Arch"
@@ -1387,7 +1216,7 @@ msgstr ""
 
 #: libapper/PackageModel.cpp:218
 msgid "Origin"
-msgstr ""
+msgstr "مەنبە"
 
 #: libapper/PackageModel.cpp:221
 msgid "Size"
@@ -1441,34 +1270,27 @@ msgstr "ئۇچۇرغا ئېرىشىۋاتىدۇ"
 #: libapper/PkStrings.cpp:54
 msgctxt "transaction state, removing packages"
 msgid "Removing packages"
-msgstr "بوغچىلارنى ئۆچۈرۈش"
+msgstr "بوغچىلار ئۆچۈرۈۋاتىدۇ"
 
 #: libapper/PkStrings.cpp:58
-#, fuzzy, kde-format
-#| msgctxt "transaction state, downloading package files"
-#| msgid "Downloading packages"
+#, kde-format
 msgctxt "transaction state, downloading package files"
 msgid "Downloading at %1/s, %2 remaining"
-msgstr "بوغچىلارنى چۈشۈرۈۋاتىدۇ"
+msgstr ""
 
 #: libapper/PkStrings.cpp:63
-#, fuzzy, kde-format
-#| msgid "Downloading"
+#, kde-format
 msgctxt "transaction state, downloading package files"
 msgid "Downloading at %1/s"
-msgstr "چۈشۈرۈۋاتىدۇ"
+msgstr ""
 
 #: libapper/PkStrings.cpp:67
-#, fuzzy, kde-format
-#| msgctxt "transaction state, downloading package files"
-#| msgid "Downloading packages"
+#, kde-format
 msgctxt "transaction state, downloading package files"
 msgid "Downloading, %1 remaining"
-msgstr "بوغچىلارنى چۈشۈرۈۋاتىدۇ"
+msgstr ""
 
 #: libapper/PkStrings.cpp:71
-#, fuzzy
-#| msgid "Downloading"
 msgctxt "transaction state, downloading package files"
 msgid "Downloading"
 msgstr "چۈشۈرۈۋاتىدۇ"
@@ -1486,7 +1308,7 @@ msgstr "يۇمشاق دېتال تىزىمىنى يېڭىلاۋاتىدۇ"
 #: libapper/PkStrings.cpp:81
 msgctxt "transaction state, installing updates"
 msgid "Updating packages"
-msgstr "بوغچىلارنى يېڭىلاش"
+msgstr "بوغچىلار يېڭىلاۋاتىدۇ"
 
 #: libapper/PkStrings.cpp:84
 msgctxt "transaction state, removing old packages, and cleaning config files"
@@ -1578,7 +1400,7 @@ msgstr "غەملەك يۈكلەۋاتىدۇ"
 #: libapper/PkStrings.cpp:135
 msgctxt "transaction state, scanning for running processes"
 msgid "Scanning installed applications"
-msgstr "قاچىلانغان پروگراممىنى تەكشۈرۈۋاتىدۇ"
+msgstr "قاچىلانغان قوللىنىشچان پروگراممىنى تەكشۈرۈۋاتىدۇ"
 
 #: libapper/PkStrings.cpp:138
 msgctxt ""
@@ -1594,7 +1416,7 @@ msgstr "يۇمشاق دېتال بوغچا باشقۇرغۇچنىڭ قۇلۇپل
 #: libapper/PkStrings.cpp:144
 msgctxt "waiting for user to type in a password"
 msgid "Waiting for authentication"
-msgstr "ئىسپاتلاشنى ساقلاۋاتىدۇ"
+msgstr "دەلىللەشنى ساقلاۋاتىدۇ"
 
 #: libapper/PkStrings.cpp:147
 msgctxt "we are updating the list of processes"
@@ -1697,12 +1519,9 @@ msgid "Searching by package name"
 msgstr ""
 
 #: libapper/PkStrings.cpp:209
-#, fuzzy
-#| msgctxt "The role of the transaction, in present tense"
-#| msgid "Simulating the remove"
 msgctxt "The role of the transaction, in present tense"
 msgid "Simulating removal"
-msgstr "تەقلىدىي چىقىرىۋىتىلۋاتىدۇ"
+msgstr ""
 
 #: libapper/PkStrings.cpp:211 libapper/PkStrings.cpp:218
 #: libapper/PkStrings.cpp:258
@@ -1716,12 +1535,9 @@ msgid "Removing"
 msgstr "ئۆچۈرۈۋاتىدۇ..."
 
 #: libapper/PkStrings.cpp:216
-#, fuzzy
-#| msgctxt "The role of the transaction, in present tense"
-#| msgid "Simulating the install"
 msgctxt "The role of the transaction, in present tense"
 msgid "Simulating install"
-msgstr "تەقلىدىي ئورنىتىلىۋاتىدۇ"
+msgstr ""
 
 #: libapper/PkStrings.cpp:220
 msgctxt "The role of the transaction, in present tense"
@@ -1729,20 +1545,14 @@ msgid "Installing"
 msgstr "ئورنىتىۋاتىدۇ"
 
 #: libapper/PkStrings.cpp:223
-#, fuzzy
-#| msgctxt "The role of the transaction, in present tense"
-#| msgid "Simulating the install"
 msgctxt "The role of the transaction, in present tense"
 msgid "Simulating file install"
-msgstr "تەقلىدىي ئورنىتىلىۋاتىدۇ"
+msgstr ""
 
 #: libapper/PkStrings.cpp:225
-#, fuzzy
-#| msgctxt "The role of the transaction, in present tense"
-#| msgid "Downloading packages"
 msgctxt "The role of the transaction, in present tense"
 msgid "Downloading required packages"
-msgstr "بوغچىلارنى چۈشۈرۈۋاتىدۇ"
+msgstr ""
 
 #: libapper/PkStrings.cpp:227
 msgctxt "The role of the transaction, in present tense"
@@ -1755,25 +1565,19 @@ msgid "Refreshing package cache"
 msgstr "بوغچا غەملىكىنى يېڭىلاۋاتىدۇ"
 
 #: libapper/PkStrings.cpp:232
-#, fuzzy
-#| msgctxt "The role of the transaction, in present tense"
-#| msgid "Simulating the update"
 msgctxt "The role of the transaction, in present tense"
 msgid "Simulating update"
-msgstr "تەقلىدىي يېڭىلاۋاتىدۇ"
+msgstr ""
 
 #: libapper/PkStrings.cpp:234
-#, fuzzy
-#| msgctxt "The role of the transaction, in present tense"
-#| msgid "Downloading packages"
 msgctxt "The role of the transaction, in present tense"
 msgid "Downloading updates"
-msgstr "بوغچىلارنى چۈشۈرۈۋاتىدۇ"
+msgstr ""
 
 #: libapper/PkStrings.cpp:236
 msgctxt "The role of the transaction, in present tense"
 msgid "Updating packages"
-msgstr "بوغچىلارنى يېڭىلاش"
+msgstr "بوغچىلار يېڭىلاۋاتىدۇ"
 
 #: libapper/PkStrings.cpp:238
 msgctxt "The role of the transaction, in present tense"
@@ -1833,7 +1637,7 @@ msgstr "تارقىتىلمىنىڭ يۈكسەلدۈرۈش ئۇچۇرىغا ئې�
 #: libapper/PkStrings.cpp:262
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting categories"
-msgstr "كاتېگورىيىگە ئېرىشىۋاتىدۇ"
+msgstr "كاتېگورىيەگە ئېرىشىۋاتىدۇ"
 
 #: libapper/PkStrings.cpp:264
 msgctxt "The role of the transaction, in present tense"
@@ -1843,15 +1647,12 @@ msgstr "ئاۋۋالقى بىرتەرەپ قىلىش جەريان  ئۇچۇرى�
 #: libapper/PkStrings.cpp:266
 msgctxt "The role of the transaction, in present tense"
 msgid "Upgrading system"
-msgstr "سىستېمىنى يۈكسەلدۈرۈلۈۋاتىدۇ"
+msgstr "سىستېمىنى يۈكسەلدۈرۈۋاتىدۇ"
 
 #: libapper/PkStrings.cpp:268
-#, fuzzy
-#| msgctxt "The role of the transaction, in present tense"
-#| msgid "Updating system"
 msgctxt "The role of the transaction, in present tense"
 msgid "Repairing system"
-msgstr "سىستېمىنى يېڭىلاۋاتىدۇ"
+msgstr ""
 
 #: libapper/PkStrings.cpp:278
 msgctxt "The role of the transaction, in past tense"
@@ -1931,7 +1732,7 @@ msgstr "يېڭىلانغان بوغچىلار"
 #: libapper/PkStrings.cpp:308
 msgctxt "The role of the transaction, in past tense"
 msgid "Canceled"
-msgstr "ۋاز كەچتى"
+msgstr "قالدۇرۇۋېتىلدى"
 
 #: libapper/PkStrings.cpp:310
 msgctxt "The role of the transaction, in past tense"
@@ -1991,7 +1792,7 @@ msgstr "تارقىتىلمىنىڭ يۈكسەلدۈرمىسىگە ئېرىشتى
 #: libapper/PkStrings.cpp:332
 msgctxt "The role of the transaction, in past tense"
 msgid "Got categories"
-msgstr "كاتېگورىيىگە ئېرىشتى"
+msgstr "كاتېگورىيەگە ئېرىشتى"
 
 #: libapper/PkStrings.cpp:334
 msgctxt "The role of the transaction, in past tense"
@@ -2004,12 +1805,9 @@ msgid "Upgraded system"
 msgstr "يۈكسەلدۈرۈلگەن سىستېما"
 
 #: libapper/PkStrings.cpp:338
-#, fuzzy
-#| msgctxt "The role of the transaction, in past tense"
-#| msgid "Updated system"
 msgctxt "The role of the transaction, in past tense"
 msgid "Repaired system"
-msgstr "يېڭىلانغان سىستېما"
+msgstr ""
 
 #: libapper/PkStrings.cpp:348
 msgid "Downloading"
@@ -2197,7 +1995,7 @@ msgstr "دەسلەپلەشتۈرۈش مەغلۇپ بولدى"
 
 #: libapper/PkStrings.cpp:460
 msgid "Failed to finalize"
-msgstr ""
+msgstr "تاماملاش مەشغۇلاتى مەغلۇپ بولدى"
 
 #: libapper/PkStrings.cpp:462
 msgid "Cannot get lock"
@@ -2263,7 +2061,7 @@ msgstr "بوغچا بۇ سىستېما بىلەن ماسلاشمايدۇ"
 msgid "No space is left on the disk"
 msgstr "دىسكىدا بوشلۇق قالمىدى"
 
-#: libapper/PkStrings.cpp:494 libapper/PkTransaction.cpp:441
+#: libapper/PkStrings.cpp:494 libapper/PkTransaction.cpp:446
 msgid "A media change is required"
 msgstr "ۋاسىتە ئالماشتۇرۇشقا ئېھتىياجلىق"
 
@@ -2333,25 +2131,19 @@ msgstr "يىلتىز ئورنىتىش ئىناۋەتسىز"
 
 #: libapper/PkStrings.cpp:528
 msgid "Cannot fetch install sources"
-msgstr ""
+msgstr "ئورنىتىلغان مەنبەلەرنى ئەكىلەلمىدى"
 
 #: libapper/PkStrings.cpp:530
 msgid "Rescheduled due to priority"
-msgstr ""
+msgstr "مەرتىۋە تۈپەيلى قايتا پىلانلانغان"
 
 #: libapper/PkStrings.cpp:532
-#, fuzzy
-#| msgctxt "The role of the transaction, in present tense"
-#| msgid "Getting old transactions"
 msgid "Unfinished transaction"
-msgstr "ئاۋۋالقى بىرتەرەپ قىلىش جەريان  ئۇچۇرىغا ئېرىشىۋاتىدۇ"
+msgstr "تاماملانمىغان بىر تەرەپ قىلىش(transaction)"
 
 #: libapper/PkStrings.cpp:534
-#, fuzzy
-#| msgctxt "The role of the transaction, in past tense"
-#| msgid "Got requires"
 msgid "Lock required"
-msgstr "ئېھتىياج ئۇچۇرىغا ئېرىشتى"
+msgstr "قۇلۇپلاش زۆرۈر"
 
 #: libapper/PkStrings.cpp:536
 msgid "Unknown error"
@@ -2755,13 +2547,11 @@ msgstr ""
 
 #: libapper/PkStrings.cpp:715
 msgid "A previous package management transaction was interrupted."
-msgstr ""
+msgstr "ئالدىنقى بوغچا باشقۇرۇش ئىشى(transaction) ئوتتۇرىدا ئۈزۈلگەن."
 
 #: libapper/PkStrings.cpp:717
-#, fuzzy
-#| msgid "A media change is required"
 msgid "A package manager lock is required."
-msgstr "ۋاسىتە ئالماشتۇرۇشقا ئېھتىياجلىق"
+msgstr "بوغچا باشقۇرغۇنى قۇلۇپلاش زۆرۈردۇر."
 
 #: libapper/PkStrings.cpp:719
 msgid ""
@@ -2772,12 +2562,12 @@ msgstr ""
 #: libapper/PkStrings.cpp:730
 msgctxt "The group type"
 msgid "Accessibility"
-msgstr "قوشۇمچە ئىقتىدار"
+msgstr "ياردەم ئىقتىدارى"
 
 #: libapper/PkStrings.cpp:732
 msgctxt "The group type"
 msgid "Accessories"
-msgstr "قوشۇمچە دېتاللار"
+msgstr "قوشۇمچە"
 
 #: libapper/PkStrings.cpp:734
 msgctxt "The group type"
@@ -2827,7 +2617,7 @@ msgstr "سىستېما"
 #: libapper/PkStrings.cpp:752
 msgctxt "The group type"
 msgid "GNOME desktop"
-msgstr "GNOME ئۈستەلئۈستى"
+msgstr "گىنوم ئۈستەلئۈستى"
 
 #: libapper/PkStrings.cpp:754
 msgctxt "The group type"
@@ -2857,7 +2647,7 @@ msgstr "مۇلازىمېتىر"
 #: libapper/PkStrings.cpp:764
 msgctxt "The group type"
 msgid "Fonts"
-msgstr "خەت نۇسخا"
+msgstr "خەت نۇسخىلىرى"
 
 #: libapper/PkStrings.cpp:766
 msgctxt "The group type"
@@ -2987,7 +2777,7 @@ msgstr "ئورنىتىلغان"
 #: libapper/PkStrings.cpp:827
 msgctxt "The type of update"
 msgid "Available"
-msgstr "ئىشلىتىلىشچان"
+msgstr "ئىشلەتكىلى بولىدۇ"
 
 #: libapper/PkStrings.cpp:829
 msgctxt "The type of update"
@@ -3126,7 +2916,7 @@ msgstr ""
 
 #: libapper/PkStrings.cpp:945
 msgid "A mirror is possibly broken"
-msgstr "تەسۋىر بۇزۇلغان بولۇشى مۇمكىن"
+msgstr "تەسۋىر نۆۋەتتە بۇزۇق ھالەتتە"
 
 #: libapper/PkStrings.cpp:947
 msgid "The connection was refused"
@@ -3138,7 +2928,7 @@ msgstr "پارامېتىر ئىناۋەتسىز."
 
 #: libapper/PkStrings.cpp:951
 msgid "The priority was invalid"
-msgstr "ئالدىنلىق دەرىجىسى ئىناۋەتسىز."
+msgstr "مەرتىۋىسى ئىناۋەتسىز."
 
 #: libapper/PkStrings.cpp:953
 msgid "Backend warning"
@@ -3234,7 +3024,7 @@ msgstr ""
 
 #: libapper/PkStrings.cpp:1027
 msgid "Your system is up to date"
-msgstr ""
+msgstr "سىستېمىڭىز ئەڭ يېڭى ھالەتتە"
 
 #: libapper/PkStrings.cpp:1029
 msgid "You have no updates"
@@ -3302,7 +3092,7 @@ msgstr "بوغچىنى چىقىرىۋېتىش مەغلۇپ بولدى"
 msgid "Failed to update package"
 msgstr ""
 
-#: libapper/PkTransaction.cpp:351
+#: libapper/PkTransaction.cpp:356
 msgid ""
 "You are about to install unsigned packages that can compromise your system, "
 "as it is impossible to verify if the software came from a trusted source.\n"
@@ -3310,18 +3100,18 @@ msgid ""
 "Are you sure you want to proceed with the installation?"
 msgstr ""
 
-#: libapper/PkTransaction.cpp:354
+#: libapper/PkTransaction.cpp:359
 msgid "Installing unsigned software"
 msgstr ""
 
-#: libapper/PkTransaction.cpp:399 libapper/PkTransaction.cpp:486
+#: libapper/PkTransaction.cpp:404 libapper/PkTransaction.cpp:491
 msgid "Failed to install signature"
 msgstr ""
 
 #: libapper/PkTransactionWidget.cpp:229 libapper/PkTransactionWidget.cpp:242
 #, kde-format
 msgid "%1 (%2%)"
-msgstr ""
+msgstr "%1 (%2%)"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: libapper/PkTransactionWidget.ui:38
@@ -3330,9 +3120,6 @@ msgstr "سىنبەلگە"
 
 #. i18n: ectx: property (text), widget (QLabel, currentL)
 #: libapper/PkTransactionWidget.ui:64
-#, fuzzy
-#| msgctxt "The role of the transaction, in present tense"
-#| msgid "Downloading packages"
 msgid "Downloading Packages"
 msgstr "بوغچىلارنى چۈشۈرۈۋاتىدۇ"
 
@@ -3401,12 +3188,10 @@ msgid_plural "%1 packages to update"
 msgstr[0] "%1 بوغچا يېڭىلىنىدۇ"
 
 #: libapper/Requirements.cpp:151
-#, fuzzy, kde-format
-#| msgctxt "The role of the transaction, in past tense"
-#| msgid "Installed packages"
+#, kde-format
 msgid "1 untrusted package"
 msgid_plural "%1 untrusted packages"
-msgstr[0] "ئورنىتىلغان بوغچىلار"
+msgstr[0] ""
 
 #: libapper/Requirements.cpp:200
 #, kde-format
@@ -3422,10 +3207,8 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: libapper/Requirements.ui:31
-#, fuzzy
-#| msgid "Additional media is required to complete the transaction."
 msgid "Additional changes are required to complete the task"
-msgstr "قوشۇمچە ۋاسىتە قىستۇرۇپ بۇ جەرياننى بىر تەرەپ قىلىش كېرەك."
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, confirmCB)
 #: libapper/Requirements.ui:87
@@ -3643,7 +3426,7 @@ msgstr[0] ""
 
 #: PkSession/PkInstallMimeTypes.cpp:101
 msgid "Could not find software"
-msgstr ""
+msgstr "يۇمشاق دېتال تېپىلمىدى"
 
 #: PkSession/PkInstallMimeTypes.cpp:103
 msgid "No new applications can be found to handle this type of file"
@@ -3734,7 +3517,7 @@ msgstr[0] ""
 #: PkSession/PkRemovePackageByFiles.cpp:149 PkSession/PkSearchFile.cpp:89
 #, kde-format
 msgid "Could not find %1"
-msgstr ""
+msgstr "%1 نى تاپقىلى بولمىدى"
 
 #: PkSession/PkInstallPackageNames.cpp:119
 msgid "The package could not be found in any software source"
@@ -3768,15 +3551,15 @@ msgstr[0] ""
 #: PkSession/PkInstallPlasmaResources.cpp:78
 msgid "Plasma requires an additional service for this operation"
 msgid_plural "Plasma requires additional services for this operation"
-msgstr[0] ""
+msgstr[0] "پلازما بۇ مەشغۇلات ئۈچۈن قوشۇمچە مۇلازىمەتكە ئېھتىياجلىق"
 
 #: PkSession/PkInstallPlasmaResources.cpp:112
 msgid "Failed to search for Plasma service"
-msgstr ""
+msgstr "پلازما مۇلازىمىتىنى ئىزدىيەلمىدى"
 
 #: PkSession/PkInstallPlasmaResources.cpp:115
 msgid "Could not find service in any configured software source"
-msgstr ""
+msgstr "ھەر قانداق سەپلەنگەن يۇمشاق دېتال مەنبەسىدىن مۇلازىمەتنى تاپالمىدى"
 
 #: PkSession/PkInstallPrinterDrivers.cpp:39
 msgid "Install Printer Drivers"
@@ -3934,31 +3717,3 @@ msgstr ""
 #: PkSession/SessionTask.cpp:436
 msgid "All operations were committed successfully"
 msgstr ""
-
-#, fuzzy
-
-
-
-
-#, fuzzy
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#, fuzzy

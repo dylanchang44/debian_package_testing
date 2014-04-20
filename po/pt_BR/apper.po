@@ -1,15 +1,15 @@
 # Translation of apper.po to Brazilian Portuguese
-# Copyright (C) 2012-2013 This_file_is_part_of_KDE
+# Copyright (C) 2012-2014 This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Marcus Gama <marcus.gama@gmail.com>, 2012.
-# André Marcelo Alvarenga <alvarenga@kde.org>, 2012, 2013.
+# André Marcelo Alvarenga <alvarenga@kde.org>, 2012, 2013, 2014.
 msgid ""
 msgstr ""
 "Project-Id-Version: apper\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-07-07 01:35+0000\n"
-"PO-Revision-Date: 2013-06-30 02:15-0300\n"
+"POT-Creation-Date: 2014-03-13 01:37+0000\n"
+"PO-Revision-Date: 2014-02-21 10:07-0300\n"
 "Last-Translator: André Marcelo Alvarenga <alvarenga@kde.org>\n"
 "Language-Team: Brazilian Portuguese <kde-i18n-pt_br@kde.org>\n"
 "Language: pt_BR\n"
@@ -388,9 +388,10 @@ msgid_plural "There are %1 new updates"
 msgstr[0] "Existe uma nova atualização"
 msgstr[1] "Existem %1 novas atualizações"
 
+# Ação para executar a revisão dos pacotes a serem instalados. (Alvarenga)
 #: apperd/Updater.cpp:290
 msgid "Review"
-msgstr "Revisão"
+msgstr "Revisar"
 
 #: apperd/Updater.cpp:292 AppSetup/SetupWizard.cpp:337
 #: libapper/ApplicationsDelegate.cpp:40
@@ -462,7 +463,7 @@ msgstr "Alterações pendentes"
 
 #: ApperKCM/ApperKCM.cpp:692 ApperKCM/CategoryModel.cpp:50
 msgid "Installed Software"
-msgstr "Software instalado"
+msgstr "Aplicativos instalados"
 
 #: ApperKCM/ApperKCM.cpp:704
 msgid "Could not find an application that matched this category"
@@ -523,7 +524,7 @@ msgstr "Exportar a lista de pacotes instalados..."
 #. i18n: ectx: property (text), widget (QPushButton, importInstalledPB)
 #: ApperKCM/BrowseView.ui:150
 msgid "Install Packages from List..."
-msgstr "Instalar os pacotes a partir da lista..."
+msgstr "Instalar os pacotes da lista..."
 
 #: ApperKCM/CategoryModel.cpp:53 ApperKCM/CategoryModel.cpp:61
 msgid "Lists"
@@ -792,12 +793,13 @@ msgstr "Atualizar automaticamente:"
 #. i18n: ectx: property (text), widget (QCheckBox, appLauncherCB)
 #: ApperKCM/Settings/Settings.ui:178
 msgid "Show application launcher after installing new applications"
-msgstr "Mostrar o lançador após a instalação dos novos aplicativos"
+msgstr "Mostrar o lançador após a instalação de novos aplicativos"
 
 #. i18n: ectx: property (text), widget (QCheckBox, autoConfirmCB)
 #: ApperKCM/Settings/Settings.ui:185
 msgid "Show confirmation dialog when installing or updating packages"
-msgstr "Mostrar um diálogo de confirmação ao instalar ou atualizar pacotes"
+msgstr ""
+"Mostrar a caixa de diálogo de confirmação ao instalar ou atualizar pacotes"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: ApperKCM/Settings/Settings.ui:192
@@ -1156,15 +1158,15 @@ msgid ""
 "Please only proceed, if you really know what you're doing!\n"
 "Continue?"
 msgstr ""
-"Você deseja instalar este aplicativo como administrador!\n"
-"Isto pode danificar seu sistema ou instalar programas maliciosos para todos "
+"Você quer instalar este aplicativo como administrador!\n"
+"Isso pode danificar seu sistema ou instalar programas maliciosos para todos "
 "os usuários.\n"
-"Por favor, continue somente se você realmente sabe o que está fazendo!\n"
-"Continuar?"
+"Por favor, continue apenas se você realmente souber o que está fazendo!\n"
+"Deseja continuar?"
 
 #: AppSetup/SetupWizard.cpp:420
 msgid "Really install as superuser?"
-msgstr "Instalar realmente como super-usuário?"
+msgstr "Deseja realmente instalar como superusuário?"
 
 #: AppSetup/SetupWizard.cpp:438
 #, kde-format
@@ -1180,13 +1182,13 @@ msgstr "Foi assinado com uma chave oriunda dos Ids de usuário: %1"
 msgid "Security hints"
 msgstr "Dicas de segurança"
 
-#: libapper/ApplicationLauncher.cpp:96
+#: libapper/ApplicationLauncher.cpp:94
 msgid "New application available"
 msgid_plural "New applications available"
 msgstr[0] "Novo aplicativo disponível"
 msgstr[1] "Novos aplicativos disponíveis"
 
-#: libapper/ApplicationLauncher.cpp:99
+#: libapper/ApplicationLauncher.cpp:97
 msgid "The following application was just installed. Click on it to launch:"
 msgid_plural ""
 "The following applications were just installed. Click on them to launch:"
@@ -2106,7 +2108,7 @@ msgstr "O pacote é incompatível com o sistema"
 msgid "No space is left on the disk"
 msgstr "Não há espaço disponível no disco"
 
-#: libapper/PkStrings.cpp:494 libapper/PkTransaction.cpp:441
+#: libapper/PkStrings.cpp:494 libapper/PkTransaction.cpp:446
 msgid "A media change is required"
 msgstr "É necessário trocar a mídia"
 
@@ -2172,7 +2174,7 @@ msgstr "O tipo de fornecimento virtual não é suportado"
 
 #: libapper/PkStrings.cpp:526
 msgid "Install root is invalid"
-msgstr "A pasta de base de instalação é inválida"
+msgstr "A pasta base de instalação é inválida"
 
 #: libapper/PkStrings.cpp:528
 msgid "Cannot fetch install sources"
@@ -3205,7 +3207,7 @@ msgstr "Falha ao remover o pacote"
 msgid "Failed to update package"
 msgstr "Falha ao atualizar o pacote"
 
-#: libapper/PkTransaction.cpp:351
+#: libapper/PkTransaction.cpp:356
 msgid ""
 "You are about to install unsigned packages that can compromise your system, "
 "as it is impossible to verify if the software came from a trusted source.\n"
@@ -3218,11 +3220,11 @@ msgstr ""
 "\n"
 "Tem certeza de que deseja efetuar a instalação?"
 
-#: libapper/PkTransaction.cpp:354
+#: libapper/PkTransaction.cpp:359
 msgid "Installing unsigned software"
 msgstr "Instalando software não assinado"
 
-#: libapper/PkTransaction.cpp:399 libapper/PkTransaction.cpp:486
+#: libapper/PkTransaction.cpp:404 libapper/PkTransaction.cpp:491
 msgid "Failed to install signature"
 msgstr "Falha ao instalar a assinatura"
 
@@ -3618,8 +3620,8 @@ msgstr "Não foram oferecidos quaisquer arquivos suportados"
 #: PkSession/PkInstallPackageFiles.cpp:70
 msgid "Press <i>Continue</i> if you want to install this file"
 msgid_plural "Press <i>Continue</i> if you want to install these files"
-msgstr[0] "Pressione em <i>Continuar</i> se desejar instalar este arquivo"
-msgstr[1] "Pressione em <i>Continuar</i> se desejar instalar estes arquivos"
+msgstr[0] "Clique em <i>Continuar</i> se deseja instalar este arquivo"
+msgstr[1] "Clique em <i>Continuar</i> se deseja instalar estes arquivos"
 
 #: PkSession/PkInstallPackageFiles.cpp:79
 #: PkSession/PkInstallPackageNames.cpp:71
@@ -3653,7 +3655,7 @@ msgstr "Falha ao instalar os arquivos"
 #: PkSession/PkInstallPackageFiles.cpp:119
 #: PkSession/PkInstallPackageFiles.cpp:121
 msgid "Could not install files"
-msgstr "Não foi possível instalar o arquivos"
+msgstr "Não foi possível instalar os arquivos"
 
 #: PkSession/PkInstallPackageNames.cpp:41
 msgid "Install Packages by Name"

@@ -1,13 +1,13 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the kpackagekit package.
 #
-# Valter Mura <valtermura@gmail.com>, 2010, 2011, 2013.
+# Valter Mura <valtermura@gmail.com>, 2010, 2011, 2013, 2014.
 msgid ""
 msgstr ""
 "Project-Id-Version: apper\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-07-07 01:35+0000\n"
-"PO-Revision-Date: 2013-07-02 23:01+0200\n"
+"POT-Creation-Date: 2014-03-13 01:37+0000\n"
+"PO-Revision-Date: 2014-02-23 13:32+0100\n"
 "Last-Translator: Valter Mura <valtermura@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
 "Language: it\n"
@@ -1185,13 +1185,13 @@ msgstr ""
 msgid "Security hints"
 msgstr "Suggerimenti per la sicurezza"
 
-#: libapper/ApplicationLauncher.cpp:96
+#: libapper/ApplicationLauncher.cpp:94
 msgid "New application available"
 msgid_plural "New applications available"
 msgstr[0] "È disponibile una nuova applicazione"
 msgstr[1] "Sono disponibili nuove applicazioni"
 
-#: libapper/ApplicationLauncher.cpp:99
+#: libapper/ApplicationLauncher.cpp:97
 msgid "The following application was just installed. Click on it to launch:"
 msgid_plural ""
 "The following applications were just installed. Click on them to launch:"
@@ -2112,7 +2112,7 @@ msgstr "Il pacchetto è incompatibile con questo sistema"
 msgid "No space is left on the disk"
 msgstr "Non c'è spazio sufficiente sul disco"
 
-#: libapper/PkStrings.cpp:494 libapper/PkTransaction.cpp:441
+#: libapper/PkStrings.cpp:494 libapper/PkTransaction.cpp:446
 msgid "A media change is required"
 msgstr "È necessario un cambio di supporto"
 
@@ -3223,7 +3223,7 @@ msgstr "Rimozione del pacchetto non riuscita"
 msgid "Failed to update package"
 msgstr "Aggiornamento del pacchetto non riuscito"
 
-#: libapper/PkTransaction.cpp:351
+#: libapper/PkTransaction.cpp:356
 msgid ""
 "You are about to install unsigned packages that can compromise your system, "
 "as it is impossible to verify if the software came from a trusted source.\n"
@@ -3236,11 +3236,11 @@ msgstr ""
 "\n"
 "Sei sicuro di voler procedere con l'installazione?"
 
-#: libapper/PkTransaction.cpp:354
+#: libapper/PkTransaction.cpp:359
 msgid "Installing unsigned software"
 msgstr "Installazione di software non firmato"
 
-#: libapper/PkTransaction.cpp:399 libapper/PkTransaction.cpp:486
+#: libapper/PkTransaction.cpp:404 libapper/PkTransaction.cpp:491
 msgid "Failed to install signature"
 msgstr "Installazione della firma non riuscita"
 
@@ -3495,7 +3495,6 @@ msgstr[1] "L'applicazione %2 vuole installare dei caratteri"
 #: PkSession/PkInstallMimeTypes.cpp:92
 #: PkSession/PkInstallPlasmaResources.cpp:101
 #: PkSession/PkInstallPrinterDrivers.cpp:74
-#, fuzzy
 msgid "Failed to search for provides"
 msgstr "Impossibile trovare pacchetti che soddisfano le dipendenze"
 

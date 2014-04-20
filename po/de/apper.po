@@ -10,8 +10,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: apper\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-07-07 01:35+0000\n"
-"PO-Revision-Date: 2013-04-07 20:53+0200\n"
+"POT-Creation-Date: 2014-03-13 01:37+0000\n"
+"PO-Revision-Date: 2013-11-09 13:40+0100\n"
 "Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
 "Language: de\n"
@@ -232,10 +232,8 @@ msgstr "Unterstützt"
 
 #. i18n: ectx: property (text), widget (QCheckBox, archCB)
 #: Apper/BackendDetails.ui:445
-#, fuzzy
-#| msgid "Only text"
 msgid "Only native"
-msgstr "Nur Text"
+msgstr "Nur nativ"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_4)
 #: Apper/BackendDetails.ui:455
@@ -394,11 +392,8 @@ msgstr[0] "Es gibt eine neue Aktualisierung"
 msgstr[1] "Es gibt %1 neue Aktualisierungen"
 
 #: apperd/Updater.cpp:290
-#, fuzzy
-#| msgid "Review Change"
-#| msgid_plural "Review Changes"
 msgid "Review"
-msgstr "Änderung überwachen"
+msgstr "Überprüfen"
 
 #: apperd/Updater.cpp:292 AppSetup/SetupWizard.cpp:337
 #: libapper/ApplicationsDelegate.cpp:40
@@ -714,7 +709,7 @@ msgstr "Paket-Quellen"
 #: ApperKCM/Settings/Settings.cpp:56
 msgid "A repository was changed, it's highly recommended to refresh the cache"
 msgstr ""
-"Ein Paket-Archiv wurde geändert, es wird dringend empfohlen, den "
+"Eine Paketquelle wurde geändert, es wird dringend empfohlen, den "
 "Zwischenspeicher neu einzulesen."
 
 #: ApperKCM/Settings/Settings.cpp:88
@@ -723,18 +718,14 @@ msgid "Never"
 msgstr "Niemals"
 
 #: ApperKCM/Settings/Settings.cpp:91
-#, fuzzy
-#| msgid "Only installed"
 msgctxt "Inform about distribution upgrades"
 msgid "Only stable"
-msgstr "Nur installierte"
+msgstr "Nur stabile"
 
 #: ApperKCM/Settings/Settings.cpp:96
-#, fuzzy
-#| msgid "Only development"
 msgctxt "Inform about distribution upgrades"
 msgid "Stable and development"
-msgstr "Nur Entwicklung"
+msgstr "Stabile und Entwicklung"
 
 #: ApperKCM/Settings/Settings.cpp:100
 msgctxt "Hourly refresh the package cache"
@@ -1075,7 +1066,7 @@ msgstr "Dateiname des IPK-Pakets"
 
 #: AppSetup/main.cpp:72
 msgid "Sorry, we didn't get an existing IPK package as parameter."
-msgstr ""
+msgstr "Leider wurde kein vorhandenes IPK-Paket als Parameter zurückgegeben."
 
 #: AppSetup/main.cpp:73
 msgid "Package not found!"
@@ -1121,6 +1112,11 @@ msgid ""
 "like spying out your passwords.<br>Please do only install this software if "
 "you <b>trust the publisher and the author</b> of it."
 msgstr ""
+"Bitte seien Sie vorsichtig bei der Installation von fremdem Quellen.<br>Sie "
+"können eventuell Ihr System <b>beschädigen</b> oder <b>bösartige</b> "
+"Programme installieren, die zum Beispiel Ihre Passwörter ausspionieren."
+"<br>Bitte installieren Sie diese Software nur, wenn Sie dem <b>Herausgeber "
+"und Autor</b> der Software vertrauen."
 
 #: AppSetup/SetupWizard.cpp:203
 msgid "Details about this installation"
@@ -1158,12 +1154,12 @@ msgid ""
 "Installing this package will make the following native packages obsolete. "
 "You might consider removing them manually."
 msgstr ""
+"Die Installation dieses Paket macht die folgenden nativen Pakete obsolet. "
+"Sie sollten überlegen, sie manuell zu entfernen."
 
 #: AppSetup/SetupWizard.cpp:317
-#, fuzzy
-#| msgid "Simulate Update Packages"
 msgid "Similar native packages found"
-msgstr "Paket-Aktualisierung simulieren"
+msgstr "Ähnliche native Pakete wurden gefunden"
 
 #: AppSetup/SetupWizard.cpp:417
 msgid ""
@@ -1172,6 +1168,11 @@ msgid ""
 "Please only proceed, if you really know what you're doing!\n"
 "Continue?"
 msgstr ""
+"Sie möchten diese Programm als Systemverwalter (root) installieren.\n"
+"Dies kann Ihr System beschädigen oder böswillige Software für alle Benutzer "
+"installieren.\n"
+"Fahren Sie nur dann fort, wenn Sie sicher sind, was Sie tun.\n"
+"Möchten Sie wirklich fortfahren?"
 
 #: AppSetup/SetupWizard.cpp:420
 msgid "Really install as superuser?"
@@ -1192,13 +1193,13 @@ msgstr ""
 msgid "Security hints"
 msgstr "Sicherheitshinweise"
 
-#: libapper/ApplicationLauncher.cpp:96
+#: libapper/ApplicationLauncher.cpp:94
 msgid "New application available"
 msgid_plural "New applications available"
 msgstr[0] "Neue Anwendung verfügbar"
 msgstr[1] "Neue Anwendungen verfügbar"
 
-#: libapper/ApplicationLauncher.cpp:99
+#: libapper/ApplicationLauncher.cpp:97
 msgid "The following application was just installed. Click on it to launch:"
 msgid_plural ""
 "The following applications were just installed. Click on them to launch:"
@@ -2122,7 +2123,7 @@ msgstr "Das Paket ist mit diesem System nicht kompatibel."
 msgid "No space is left on the disk"
 msgstr "Auf der Festplatte ist kein Speicherplatz mehr vorhanden."
 
-#: libapper/PkStrings.cpp:494 libapper/PkTransaction.cpp:441
+#: libapper/PkStrings.cpp:494 libapper/PkTransaction.cpp:446
 msgid "A media change is required"
 msgstr "Ein Wechsel des Mediums ist erforderlich"
 
@@ -2184,11 +2185,11 @@ msgstr "Die Paketdatenbank ist geändert worden."
 
 #: libapper/PkStrings.cpp:524
 msgid "Virtual provide type is not supported"
-msgstr ""
+msgstr "Der virtuelle Angebotstyp wird nicht unterstützt"
 
 #: libapper/PkStrings.cpp:526
 msgid "Install root is invalid"
-msgstr ""
+msgstr "Die Installationsbasis ist ungültig"
 
 #: libapper/PkStrings.cpp:528
 msgid "Cannot fetch install sources"
@@ -2196,7 +2197,7 @@ msgstr "Abholen der Installationsquellen nicht möglich"
 
 #: libapper/PkStrings.cpp:530
 msgid "Rescheduled due to priority"
-msgstr ""
+msgstr "Wegen der Priorität neu eingeplant"
 
 #: libapper/PkStrings.cpp:532
 msgid "Unfinished transaction"
@@ -2667,11 +2668,13 @@ msgstr ""
 
 #: libapper/PkStrings.cpp:707
 msgid "The virtual provide type is not supported by this system."
-msgstr ""
+msgstr "Der virtuelle Angebotstyp wird von diesem System nicht unterstützt."
 
 #: libapper/PkStrings.cpp:709
 msgid "The install root is invalid. Please contact your administrator."
 msgstr ""
+"Die Installationsbasis ist ungültig. Bitte kontaktieren Sie Ihren "
+"Systemverwalter."
 
 #: libapper/PkStrings.cpp:711
 msgid "The list of software could not be downloaded."
@@ -2682,6 +2685,8 @@ msgid ""
 "The transaction has been cancelled and will be retried when the system is "
 "idle."
 msgstr ""
+"Die Transaktion wurde abgebrochen und wird wieder aufgenommen, wenn das "
+"System unbeschäftigt ist."
 
 #: libapper/PkStrings.cpp:715
 msgid "A previous package management transaction was interrupted."
@@ -3258,7 +3263,7 @@ msgstr "Das Entfernen des Pakets ist fehlgeschlagen."
 msgid "Failed to update package"
 msgstr "Das Paket kann nicht aktualisiert werden."
 
-#: libapper/PkTransaction.cpp:351
+#: libapper/PkTransaction.cpp:356
 msgid ""
 "You are about to install unsigned packages that can compromise your system, "
 "as it is impossible to verify if the software came from a trusted source.\n"
@@ -3270,11 +3275,11 @@ msgstr ""
 "Software aus einer sicheren Quelle stammt.\n"
 "Möchten Sie die Installation dennoch fortsetzen?"
 
-#: libapper/PkTransaction.cpp:354
+#: libapper/PkTransaction.cpp:359
 msgid "Installing unsigned software"
 msgstr "Unsichere Software wird installiert"
 
-#: libapper/PkTransaction.cpp:399 libapper/PkTransaction.cpp:486
+#: libapper/PkTransaction.cpp:404 libapper/PkTransaction.cpp:491
 msgid "Failed to install signature"
 msgstr "Fehler beim Signieren der Installation"
 
@@ -3373,7 +3378,7 @@ msgstr[1] "%1 nicht vertrauenswürdige Pakete"
 #, kde-format
 msgctxt "how many bytes are required for download"
 msgid "Need to get %1 of archives"
-msgstr ""
+msgstr "%1 aus den Archiven muss abgeholt werden"
 
 #: libapper/Requirements.cpp:260
 msgid ""
@@ -3403,7 +3408,7 @@ msgstr "TextBezeichnung"
 
 #: PkSession/main.cpp:36
 msgid "Apper PackageKit Session helper"
-msgstr ""
+msgstr "Sitzungshilfsprogramm für Apper PackageKit"
 
 #: PkSession/main.cpp:41
 msgid "Trever Fischer"
@@ -3764,7 +3769,7 @@ msgstr "%1 Datenmodul"
 #: PkSession/PkInstallPlasmaResources.cpp:55
 #, kde-format
 msgid "%1 script engine"
-msgstr ""
+msgstr "%1-Skriptmodul"
 
 #: PkSession/PkInstallPlasmaResources.cpp:67
 msgid "No supported resources were provided"
@@ -3808,10 +3813,8 @@ msgstr ""
 "werden."
 
 #: PkSession/PkInstallProvideFiles.cpp:39
-#, fuzzy
-#| msgid "Install Packages from List..."
 msgid "Install Packages that Provides Files"
-msgstr "Pakete aus einer Dateiliste installieren ..."
+msgstr "Pakete installieren, die Dateien bereitstellen"
 
 #: PkSession/PkInstallProvideFiles.cpp:49
 msgid "No files were provided"
@@ -3869,10 +3872,8 @@ msgid "An unknown error happened"
 msgstr "Ein unbekannter Fehler ist aufgetreten"
 
 #: PkSession/PkRemovePackageByFiles.cpp:40
-#, fuzzy
-#| msgid "Remove Packages"
 msgid "Remove Packages that Provides Files"
-msgstr "Pakete entfernen"
+msgstr "Pakete entfernen, die Dateien bereitstellen"
 
 #: PkSession/PkRemovePackageByFiles.cpp:67
 msgid "Do you want to remove the following application?"
@@ -3924,11 +3925,8 @@ msgstr[0] "Die Datei kann in keinem installierten Paket gefunden werden."
 msgstr[1] "Die Dateien können in keinem installierten Paket gefunden werden."
 
 #: PkSession/PkSearchFile.cpp:38
-#, fuzzy
-#| msgctxt "The role of the transaction, in past tense"
-#| msgid "Searched for package details"
 msgid "Search Packages that Provides Files"
-msgstr "Paketinformationen wurde gesucht"
+msgstr "Pakete suchen, die Dateien bereitstellen"
 
 #: PkSession/PkSearchFile.cpp:88
 msgid "The file name could not be found in any software source"
@@ -3969,11 +3967,8 @@ msgid "Task completed"
 msgstr "Die Aufgabe ist abgeschlossen"
 
 #: PkSession/SessionTask.cpp:436
-#, fuzzy
-#| msgid "File was installed successfully"
-#| msgid_plural "Files were installed successfully"
 msgid "All operations were committed successfully"
-msgstr "Die Datei wurde erfolgreich installiert"
+msgstr "Alle Aktionen wurden erfolgreich fertiggestellt"
 
 
 

@@ -1,12 +1,12 @@
 # Translation of apper to Norwegian Bokmål
 #
-# Bjørn Steensrud <bjornst@skogkatt.homelinux.org>, 2012, 2013.
+# Bjørn Steensrud <bjornst@skogkatt.homelinux.org>, 2012, 2013, 2014.
 msgid ""
 msgstr ""
 "Project-Id-Version: KDE 4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-07-07 01:35+0000\n"
-"PO-Revision-Date: 2013-04-30 21:08+0200\n"
+"POT-Creation-Date: 2014-03-13 01:37+0000\n"
+"PO-Revision-Date: 2014-03-23 08:48+0100\n"
 "Last-Translator: Bjørn Steensrud <bjornst@skogkatt.homelinux.org>\n"
 "Language-Team: Norwegian Bokmål <i18n-nb@lister.ping.uio.no>\n"
 "Language: nb\n"
@@ -17,7 +17,7 @@ msgstr ""
 "X-Environment: kde\n"
 "X-Accelerator-Marker: &\n"
 "X-Text-Markup: kde4\n"
-"X-Generator: Lokalize 1.4\n"
+"X-Generator: Lokalize 1.5\n"
 
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
@@ -342,7 +342,7 @@ msgstr "Prosessen med distribusjonsoppgradering feilet med en ukjent feil."
 
 #: apperd/TransactionWatcher.cpp:134
 msgid "The system update has completed"
-msgstr ""
+msgstr "Systemoppdateringen er fullført"
 
 #: apperd/TransactionWatcher.cpp:141 apperd/TransactionWatcher.cpp:183
 msgid "Restart"
@@ -1175,13 +1175,13 @@ msgstr "Den ble signert med en nøkkel som tilhører disse bruker-IDene: %1"
 msgid "Security hints"
 msgstr "Si&kkerhetstips"
 
-#: libapper/ApplicationLauncher.cpp:96
+#: libapper/ApplicationLauncher.cpp:94
 msgid "New application available"
 msgid_plural "New applications available"
 msgstr[0] "Nytt program tilgjengelig"
 msgstr[1] "Nye programmer tilgjengelige"
 
-#: libapper/ApplicationLauncher.cpp:99
+#: libapper/ApplicationLauncher.cpp:97
 msgid "The following application was just installed. Click on it to launch:"
 msgid_plural ""
 "The following applications were just installed. Click on them to launch:"
@@ -2100,7 +2100,7 @@ msgstr "Pakka er ikke kompatibel med dette systemet"
 msgid "No space is left on the disk"
 msgstr "Ingen plass igjen på disken"
 
-#: libapper/PkStrings.cpp:494 libapper/PkTransaction.cpp:441
+#: libapper/PkStrings.cpp:494 libapper/PkTransaction.cpp:446
 msgid "A media change is required"
 msgstr "Det bå byttes medium"
 
@@ -3182,7 +3182,7 @@ msgstr "Klarte ikke fjerne pakka"
 msgid "Failed to update package"
 msgstr "Klarte ikke oppdatere pakka"
 
-#: libapper/PkTransaction.cpp:351
+#: libapper/PkTransaction.cpp:356
 msgid ""
 "You are about to install unsigned packages that can compromise your system, "
 "as it is impossible to verify if the software came from a trusted source.\n"
@@ -3195,11 +3195,11 @@ msgstr ""
 "\n"
 "Er du sikker på at du vil fortsette med installeringen?"
 
-#: libapper/PkTransaction.cpp:354
+#: libapper/PkTransaction.cpp:359
 msgid "Installing unsigned software"
 msgstr "Installerer usignert programvare"
 
-#: libapper/PkTransaction.cpp:399 libapper/PkTransaction.cpp:486
+#: libapper/PkTransaction.cpp:404 libapper/PkTransaction.cpp:491
 msgid "Failed to install signature"
 msgstr "Klarte ikke installere signatur"
 
