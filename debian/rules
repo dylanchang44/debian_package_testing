@@ -4,9 +4,10 @@
 # Uncomment this to turn on verbose mode.
 #export DH_VERBOSE=1
 
-APPER_CONFIG_FLAGS = -DDEBCONF_SUPPORT=true \
+APPER_CONFIG_FLAGS = -DDEBCONF_SUPPORT=ON \
 		-DAPPSTREAM=ON \
 		-DLISTALLER=ON \
+		-DAUTOREMOVE=ON \
 		-DEDIT_ORIGNS_DESKTOP_NAME=software-properties-kde
 
 INSTALLDIR = $(CURDIR)/debian/tmp
