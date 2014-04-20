@@ -1,7 +1,10 @@
-apper (0.8.2-1) UNRELEASED; urgency=low
+apper (0.8.2-1) unstable; urgency=low
 
   * New upstream bugfix release: 0.8.2
   * Update debian/watch file
+  * Drop all patches: Applied upstream
+  * Build with autoremove enabled
+  * Bump standards version: No changes needed
 
  -- Matthias Klumpp <mak@debian.org>  Sun, 20 Apr 2014 14:42:30 +0200
 
