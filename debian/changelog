@@ -1,3 +1,10 @@
+apper (0.8.2-1) UNRELEASED; urgency=low
+
+  * New upstream bugfix release: 0.8.2
+  * Update debian/watch file
+
+ -- Matthias Klumpp <mak@debian.org>  Sun, 20 Apr 2014 14:42:30 +0200
+
 apper (0.8.1-2) unstable; urgency=low
 
   * appstream-0.6.patch: Add support for AppStream 0.6
