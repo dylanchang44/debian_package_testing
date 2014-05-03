@@ -1,3 +1,10 @@
+apper (0.8.2-2) unstable; urgency=high
+
+  * No-change upload to trigger a rebuild (Closes: #746702)
+    - Previous builds partially failed due to #743087
+
+ -- Matthias Klumpp <mak@debian.org>  Sat, 03 May 2014 14:40:56 +0200
+
 apper (0.8.2-1) unstable; urgency=low
 
   * New upstream bugfix release: 0.8.2
