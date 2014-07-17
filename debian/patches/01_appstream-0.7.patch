@@ -17,7 +17,7 @@ Adjust to AppStream 0.7 API change
          cpt = (AsComponent*) g_ptr_array_index(cptArray, i);
          // we only want desktop apps at time
          if (as_component_get_kind (cpt) != AS_COMPONENT_KIND_DESKTOP_APP)
-@@ -92,7 +93,10 @@
+@@ -92,10 +93,13 @@
          app.name = QString::fromUtf8(as_component_get_name(cpt));
  
          // Package name
@@ -28,5 +28,8 @@ Adjust to AppStream 0.7 API change
 +            pkgName = QString::fromUtf8(pkgs[0]);
  
          // Desktop file
-         app.id = QString::fromUtf8(as_component_get_id(cpt));
-
+-        app.id = QString::fromUtf8(as_component_get_idname(cpt));
++        app.id = QString::fromUtf8(as_component_get_id(cpt));
+ 
+         // Summary
+         app.summary = QString::fromUtf8(as_component_get_summary(cpt));
