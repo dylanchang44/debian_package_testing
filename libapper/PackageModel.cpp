@@ -25,6 +25,8 @@
 #include "PackageModel.h"
 #include <PkStrings.h>
 
+#include <Daemon>
+
 #include <QPainter>
 #include <QStringBuilder>
 
@@ -85,6 +87,11 @@ void PackageModel::addSelectedPackagesFromModel(PackageModel *model)
 
 void PackageModel::addPackage(Transaction::Info info, const QString &packageID, const QString &summary, bool selected)
 {
+    if (m_finished) {
+        qDebug() << Q_FUNC_INFO << "we are finished calling clear";
+        clear();
+    }
+
     switch(info) {
     case Transaction::InfoBlocked:
     case Transaction::InfoFinished:
@@ -436,11 +443,17 @@ void PackageModel::removePackage(const QString &packageID)
 
 void PackageModel::clear()
 {
+    qDebug() << Q_FUNC_INFO;
     beginRemoveRows(QModelIndex(), 0, m_packages.size());
     m_finished = false;
     m_packages.clear();
     m_fetchSizesTransaction = 0;
     m_fetchInstalledVersionsTransaction = 0;
+
+    if (m_getUpdatesTransaction) {
+        m_getUpdatesTransaction->disconnect(this);
+        m_getUpdatesTransaction->cancel();
+    }
     endRemoveRows();
 }
 
@@ -490,7 +503,9 @@ void PackageModel::uncheckAvailablePackages()
 void PackageModel::finished()
 {
     Transaction *trans = qobject_cast<Transaction*>(sender());
-    if (trans) {
+    qDebug() << Q_FUNC_INFO << trans << sender();
+    if (trans /*== m_getUpdatesTransaction*/) {
+//        m_getUpdatesTransaction = 0;
         // When pkd dies this method is called twice
         // pk-qt2 bug..
         trans->disconnect(this, SLOT(finished()));
@@ -516,12 +531,11 @@ void PackageModel::fetchSizes()
         pkgs << p.packageID;
     }
     if (!pkgs.isEmpty()) {
-        m_fetchSizesTransaction = new Transaction(this);
-        connect(m_fetchSizesTransaction, SIGNAL(details(QString,QString,PackageKit::Transaction::Group,QString,QString,qulonglong)),
-                this, SLOT(updateSize(QString,QString,PackageKit::Transaction::Group,QString,QString,qulonglong)));
+        m_fetchSizesTransaction = Daemon::getDetails(pkgs);
+        connect(m_fetchSizesTransaction, SIGNAL(details(PackageKit::Details)),
+                SLOT(updateSize(PackageKit::Details)));
         connect(m_fetchSizesTransaction, SIGNAL(finished(PackageKit::Transaction::Exit,uint)),
                 this, SLOT(fetchSizesFinished()));
-        m_fetchSizesTransaction->getDetails(pkgs);
     }
 }
 
@@ -539,31 +553,23 @@ void PackageModel::fetchSizesFinished()
     emit changed(!m_checkedPackages.isEmpty());
 }
 
-void PackageModel::updateSize(const QString &packageID,
-                              const QString &license,
-                              PackageKit::Transaction::Group group,
-                              const QString &detail,
-                              const QString &url,
-                              qulonglong size)
+void PackageModel::updateSize(const PackageKit::Details &details)
 {
-    Q_UNUSED(license)
-    Q_UNUSED(group)
-    Q_UNUSED(detail)
-    Q_UNUSED(url)
-
     // if size is 0 don't waste time looking for the package
+    qulonglong size  = details.size();
     if (size == 0) {
         return;
     }
 
     for (int i = 0; i < m_packages.size(); ++i) {
-        if (packageID == m_packages[i].packageID) {
+        const QString &packageId = details.packageId();
+        if (packageId == m_packages[i].packageID) {
             m_packages[i].size = size;
             if (m_checkable) {
                 // updates the checked packages as well
-                if (m_checkedPackages.contains(packageID)) {
+                if (m_checkedPackages.contains(packageId)) {
                     // Avoid checking packages that aren't checked
-                    m_checkedPackages[packageID].size = size;
+                    m_checkedPackages[packageId].size = size;
                 }
                 break;
             }
@@ -595,12 +601,11 @@ void PackageModel::fetchCurrentVersions()
     }
 
     if (!pkgs.isEmpty()) {
-        m_fetchInstalledVersionsTransaction = new Transaction(this);
+        m_fetchInstalledVersionsTransaction = Daemon::resolve(pkgs, Transaction::FilterInstalled);;
         connect(m_fetchInstalledVersionsTransaction, SIGNAL(package(PackageKit::Transaction::Info,QString,QString)),
                 this, SLOT(updateCurrentVersion(PackageKit::Transaction::Info,QString,QString)));
         connect(m_fetchInstalledVersionsTransaction, SIGNAL(finished(PackageKit::Transaction::Exit,uint)),
                 this, SLOT(fetchCurrentVersionsFinished()));
-        m_fetchInstalledVersionsTransaction->resolve(pkgs, Transaction::FilterInstalled);
     }
 }
 
@@ -644,39 +649,30 @@ void PackageModel::updateCurrentVersion(Transaction::Info info, const QString &p
 void PackageModel::getUpdates(bool fetchCurrentVersions, bool selected)
 {
     clear();
-    Transaction *transaction = new Transaction(this);
+    m_getUpdatesTransaction = Daemon::getUpdates();
     if (selected) {
-        connect(transaction, SIGNAL(package(PackageKit::Transaction::Info,QString,QString)),
+        connect(m_getUpdatesTransaction, SIGNAL(package(PackageKit::Transaction::Info,QString,QString)),
                 this, SLOT(addSelectedPackage(PackageKit::Transaction::Info,QString,QString)));
     } else {
-        connect(transaction, SIGNAL(package(PackageKit::Transaction::Info,QString,QString)),
+        connect(m_getUpdatesTransaction, SIGNAL(package(PackageKit::Transaction::Info,QString,QString)),
                 this, SLOT(addPackage(PackageKit::Transaction::Info,QString,QString)));
     }
-    connect(transaction, SIGNAL(errorCode(PackageKit::Transaction::Error,QString)),
+    connect(m_getUpdatesTransaction, SIGNAL(errorCode(PackageKit::Transaction::Error,QString)),
             this, SLOT(errorCode(PackageKit::Transaction::Error,QString)));
-//    connect(transaction, SIGNAL(finished(PackageKit::Transaction::Exit,uint)),
+//    connect(m_getUpdatesTransaction, SIGNAL(finished(PackageKit::Transaction::Exit,uint)),
 //            m_busySeq, SLOT(stop()));
-    connect(transaction, SIGNAL(finished(PackageKit::Transaction::Exit,uint)),
-            this, SLOT(finished()));
+//    connect(m_getUpdatesTransaction, SIGNAL(finished(PackageKit::Transaction::Exit,uint)),
+//            this, SLOT(finished()));
     // This is required to estimate download size
-    connect(transaction, SIGNAL(finished(PackageKit::Transaction::Exit,uint)),
+    connect(m_getUpdatesTransaction, SIGNAL(finished(PackageKit::Transaction::Exit,uint)),
             this, SLOT(fetchSizes()));
     if (fetchCurrentVersions) {
-        connect(transaction, SIGNAL(finished(PackageKit::Transaction::Exit,uint)),
+        connect(m_getUpdatesTransaction, SIGNAL(finished(PackageKit::Transaction::Exit,uint)),
                 this, SLOT(fetchCurrentVersions()));
     }
-//    connect(transaction, SIGNAL(finished(PackageKit::Transaction::Exit,uint)),
-//            this, SLOT(getUpdatesFinished()));
+    connect(m_getUpdatesTransaction, SIGNAL(finished(PackageKit::Transaction::Exit,uint)),
+            this, SLOT(getUpdatesFinished()));
     // get all updates
-    transaction->getUpdates();
-
-    Transaction::InternalError error = transaction->internalError();
-    if (error) {
-        transaction->deleteLater();
-//        KMessageBox::sorry(this, PkStrings::daemonError(error));
-    } else {
-//        m_busySeq->start();
-    }
 }
 
 void PackageModel::toggleSelection(const QString &packageID)

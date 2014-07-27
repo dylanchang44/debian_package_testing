@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kpackagekit\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-03-13 01:37+0000\n"
+"POT-Creation-Date: 2014-04-25 01:48+0000\n"
 "PO-Revision-Date: 2013-03-26 06:02+0530\n"
 "Last-Translator: A S Alam <aalam@users.sf.net>\n"
 "Language-Team: Punjabi/Panjabi <punjabi-users@lists.sf.net>\n"
@@ -66,7 +66,7 @@ msgid "Get Updates"
 msgstr "ਅੱਪਡੇਟ ਲਵੋ"
 
 #. i18n: ectx: property (text), widget (QCheckBox, refreshCacheCB)
-#: Apper/BackendDetails.ui:126 ApperKCM/Settings/Settings.cpp:52
+#: Apper/BackendDetails.ui:126 ApperKCM/Settings/Settings.cpp:53
 msgid "Refresh Cache"
 msgstr "ਕੈਸ਼ ਤਾਜ਼ਾ ਕਰੋ"
 
@@ -193,7 +193,7 @@ msgstr "ਫਿਲਟਰ"
 
 #. i18n: ectx: property (text), widget (QCheckBox, installedCB)
 #: Apper/BackendDetails.ui:375 ApperKCM/FiltersMenu.cpp:60
-#: libapper/PkStrings.cpp:379
+#: libapper/PkStrings.cpp:385
 msgid "Installed"
 msgstr "ਇੰਸਟਾਲ ਕੀਤਾ"
 
@@ -306,89 +306,89 @@ msgstr "ਇੱਕ ਪੈਕੇਜ ਹਟਾਉਣ ਵਾਲਾ"
 msgid "Package file to install"
 msgstr "ਇੰਸਟਾਲ ਕਰਨ ਲਈ ਪੈਕੇਜ ਫਾਇਲ"
 
-#: apperd/DistroUpgrade.cpp:91
+#: apperd/DistroUpgrade.cpp:89
 msgid "Distribution upgrade available"
 msgstr "ਡਿਸਟਰੀਬਿਊਸ਼ਨ ਅੱਪਗਰੇਡ ਉਪਲੱਬਧ"
 
-#: apperd/DistroUpgrade.cpp:95
+#: apperd/DistroUpgrade.cpp:93
 msgid "Start upgrade now"
 msgstr "ਹੁਣੇ ਅੱਪਗਰੇਡ ਸ਼ੁਰੂ ਕਰੋ"
 
-#: apperd/DistroUpgrade.cpp:146
+#: apperd/DistroUpgrade.cpp:144
 msgid "Distribution upgrade finished. "
 msgstr "ਡਿਸਟਰੀਬਿਊਸ਼ਨ ਅੱਪਗਰੇਡ ਮੁਕੰਮਲ ਹੋਇਆ। "
 
-#: apperd/DistroUpgrade.cpp:149 ApperKCM/Updater/DistroUpgrade.cpp:93
+#: apperd/DistroUpgrade.cpp:147 ApperKCM/Updater/DistroUpgrade.cpp:93
 #, kde-format
 msgid "Distribution upgrade process exited with code %1."
 msgstr "ਡਿਸਟਰੀਬਿਊਸ਼ਨ ਅੱਪਗਰੇਡ ਕਾਰਵਾਈ %1 ਕੋਡ ਨਾਲ ਬੰਦ ਹੋ ਗਈ।"
 
-#: apperd/DistroUpgrade.cpp:167 ApperKCM/Updater/DistroUpgrade.cpp:105
+#: apperd/DistroUpgrade.cpp:165 ApperKCM/Updater/DistroUpgrade.cpp:105
 msgid "The distribution upgrade process failed to start."
 msgstr "ਡਿਸਟਰੀਬਿਊਸ਼ਨ ਅੱਪਗਰੇਡ ਕਾਰਵਾਈ ਸ਼ੁਰੂ ਹੋਣ ਲਈ ਫੇਲ੍ਹ ਹੈ।"
 
-#: apperd/DistroUpgrade.cpp:170 ApperKCM/Updater/DistroUpgrade.cpp:109
+#: apperd/DistroUpgrade.cpp:168 ApperKCM/Updater/DistroUpgrade.cpp:109
 msgid ""
 "The distribution upgrade process crashed some time after starting "
 "successfully."
 msgstr "ਡਿਸਟਰੀਬਿਊਸ਼ਨ ਅੱਪਗਰੇਡ ਕਾਰਵਾਈ ਠੀਕ ਤਰ੍ਹਾਂ ਸ਼ੁਰੂ ਹੋਣ ਦੇ ਕੁਝ ਚਿਰ ਬਾਅਦ ਕਰੈਸ਼ ਹੋ ਗਈ।"
 
-#: apperd/DistroUpgrade.cpp:173 ApperKCM/Updater/DistroUpgrade.cpp:113
+#: apperd/DistroUpgrade.cpp:171 ApperKCM/Updater/DistroUpgrade.cpp:113
 msgid "The distribution upgrade process failed with an unknown error."
 msgstr "ਡਿਸਟਰੀਬਿਊਸ਼ਨ ਅੱਪਗਰੇਡ ਪਰੋਸੈਸ ਅਣਜਾਣ ਕਾਰਨਾਂ ਕਰਕੇ ਫੇਲ੍ਹ ਹੈ।"
 
-#: apperd/TransactionWatcher.cpp:134
+#: apperd/TransactionWatcher.cpp:139
 msgid "The system update has completed"
 msgstr "ਸਿਸਟਮ ਅੱਪਡੇਟ ਪੂਰਾ ਹੋਇਆ"
 
-#: apperd/TransactionWatcher.cpp:141 apperd/TransactionWatcher.cpp:183
+#: apperd/TransactionWatcher.cpp:146 apperd/TransactionWatcher.cpp:188
 msgid "Restart"
 msgstr "ਮੁੜ-ਚਾਲੂ"
 
-#: apperd/TransactionWatcher.cpp:174
+#: apperd/TransactionWatcher.cpp:179
 #, kde-format
 msgid "Package: %2"
 msgid_plural "Packages: %2"
 msgstr[0] "ਪੈਕੇਜ: %2"
 msgstr[1] "ਪੈਕੇਜ: %2"
 
-#: apperd/TransactionWatcher.cpp:236 ApperKCM/TransactionModel.cpp:48
+#: apperd/TransactionWatcher.cpp:241 ApperKCM/TransactionModel.cpp:45
 #: AppSetup/SetupWizard.cpp:202
 msgid "Details"
 msgstr "ਵੇਰਵਾ"
 
-#: apperd/Updater.cpp:160
+#: apperd/Updater.cpp:158
 msgid "Updates are being automatically installed."
 msgstr "ਅੱਪਡੇਟ ਆਟੋਮੈਟਿਕ ਹੀ ਇੰਸਟਾਲ ਕੀਤੇ ਜਾ ਰਹੇ ਹਨ।"
 
-#: apperd/Updater.cpp:170
+#: apperd/Updater.cpp:168
 msgid "Security updates are being automatically installed."
 msgstr "ਸੁਰੱਖਿਆ ਅੱਪਡੇਟ ਆਟੋਮੈਟਿਕ ਹੀ ਇੰਸਟਾਲ ਕੀਤੇ ਜਾ ਰਹੇ ਹਨ।"
 
-#: apperd/Updater.cpp:180
+#: apperd/Updater.cpp:178
 msgid "Updates are being automatically downloaded."
 msgstr "ਅੱਪਡੇਟ ਆਟੋਮੈਟਿਕ ਹੀ ਡਾਊਨਲੋਡ ਕੀਤੇ ਜਾ ਰਹੇ ਹਨ।"
 
-#: apperd/Updater.cpp:214
+#: apperd/Updater.cpp:212
 msgid "System update was successful."
 msgstr "ਸਿਸਟਮ ਠੀਕ ਤਰ੍ਹਾਂ ਅੱਪਡੇਟ ਹੋ ਗਿਆ।"
 
-#: apperd/Updater.cpp:221
+#: apperd/Updater.cpp:219
 msgid "The software update failed."
 msgstr "ਸਾਫਟਵੇਅਰ ਅੱਪਡੇਟ ਫੇਲ੍ਹ ਹੋਇਆ।"
 
-#: apperd/Updater.cpp:275
+#: apperd/Updater.cpp:273
 #, kde-format
 msgid "There is one new update"
 msgid_plural "There are %1 new updates"
 msgstr[0] "ਇੱਕ ਨਵਾਂ ਅੱਪਡੇਟ ਉਪਲੱਬਧ ਹੈ"
 msgstr[1] "%1 ਨਵੇਂ ਅੱਪਡੇਟ ਉਪਲੱਬਧ ਹਨ"
 
-#: apperd/Updater.cpp:290
+#: apperd/Updater.cpp:288
 msgid "Review"
 msgstr "ਪੜਤਾਲ"
 
-#: apperd/Updater.cpp:292 AppSetup/SetupWizard.cpp:337
+#: apperd/Updater.cpp:290 AppSetup/SetupWizard.cpp:337
 #: libapper/ApplicationsDelegate.cpp:40
 msgid "Install"
 msgstr "ਇੰਸਟਾਲ"
@@ -401,41 +401,41 @@ msgstr "ਐਪਲੀਕੇਸ਼ਨ ਮੈਨੇਜਰ"
 msgid "KDE interface for managing software"
 msgstr "ਸਾਫਟਵੇਅਰ ਪਰਬੰਧ ਲਈ ਕੇ ਡੀ ਈ ਇੰਟਰਫੇਸ"
 
-#: ApperKCM/ApperKCM.cpp:117 ApperKCM/ApperKCM.cpp:308
+#: ApperKCM/ApperKCM.cpp:123 ApperKCM/ApperKCM.cpp:314
 msgid "Find"
 msgstr "ਲੱਭੋ"
 
-#: ApperKCM/ApperKCM.cpp:212 ApperKCM/ApperKCM.cpp:553
+#: ApperKCM/ApperKCM.cpp:218 ApperKCM/ApperKCM.cpp:559
 msgid "History"
 msgstr "ਅਤੀਤ"
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, Settings)
-#: ApperKCM/ApperKCM.cpp:218 ApperKCM/ApperKCM.cpp:509
+#: ApperKCM/ApperKCM.cpp:224 ApperKCM/ApperKCM.cpp:515
 #: ApperKCM/Settings/Settings.ui:14
 msgid "Settings"
 msgstr "ਸੈਟਿੰਗ"
 
-#: ApperKCM/ApperKCM.cpp:285 ApperKCM/ApperKCM.cpp:286
-#: ApperKCM/ApperKCM.cpp:287 ApperKCM/ApperKCM.cpp:288
+#: ApperKCM/ApperKCM.cpp:291 ApperKCM/ApperKCM.cpp:292
+#: ApperKCM/ApperKCM.cpp:293 ApperKCM/ApperKCM.cpp:294
 msgid "&Cancel"
 msgstr "ਰੱਦ ਕਰੋ(&C)"
 
 #. i18n: ectx: property (text), widget (CategorizedView, changesView)
-#: ApperKCM/ApperKCM.cpp:295 ApperKCM/ApperKCM.ui:346
+#: ApperKCM/ApperKCM.cpp:301 ApperKCM/ApperKCM.ui:346
 msgid "Find by &name"
 msgstr "ਨਾਂ ਨਾਲ ਲੱਭੋ(&N)"
 
 #. i18n: ectx: property (text), widget (CategorizedView, changesView)
-#: ApperKCM/ApperKCM.cpp:296 ApperKCM/ApperKCM.ui:356
+#: ApperKCM/ApperKCM.cpp:302 ApperKCM/ApperKCM.ui:356
 msgid "Find by f&ile name"
 msgstr "ਫਾਇਲ ਨਾਂ ਨਾਲ ਲੱਭੋ(&i)"
 
 #. i18n: ectx: property (text), widget (CategorizedView, changesView)
-#: ApperKCM/ApperKCM.cpp:297 ApperKCM/ApperKCM.ui:351
+#: ApperKCM/ApperKCM.cpp:303 ApperKCM/ApperKCM.ui:351
 msgid "Find by &description"
 msgstr "ਵੇਰਵਾ ਨਾਲ ਲੱਭੋ(&d)"
 
-#: ApperKCM/ApperKCM.cpp:447
+#: ApperKCM/ApperKCM.cpp:453
 msgid ""
 "The settings of the current module have changed.\n"
 "Do you want to apply the changes or discard them?"
@@ -443,24 +443,24 @@ msgstr ""
 "ਮੌਜੂਦਾ ਮੋਡੀਊਲ ਦੀ ਸੈਟਿੰਗ ਬਦਲੀ ਗਈ ਹੈ।\n"
 "ਕੀ ਤੁਸੀਂ ਬਦਲਾਅ ਲਾਗੂ ਕਰਨੇ ਚਾਹੁੰਦੇ ਹੋ ਜਾਂ ਅਣਡਿੱਠੇ?"
 
-#: ApperKCM/ApperKCM.cpp:449
+#: ApperKCM/ApperKCM.cpp:455
 msgid "Apply Settings"
 msgstr "ਸੈਟਿੰਗ ਲਾਗੂ ਕਰੋ"
 
-#: ApperKCM/ApperKCM.cpp:536 ApperKCM/CategoryModel.cpp:58
+#: ApperKCM/ApperKCM.cpp:542 ApperKCM/CategoryModel.cpp:58
 msgid "Updates"
 msgstr "ਅੱਪਡੇਟ"
 
 #. i18n: ectx: property (text), widget (QPushButton, changesPB)
-#: ApperKCM/ApperKCM.cpp:607 ApperKCM/ApperKCM.ui:127
+#: ApperKCM/ApperKCM.cpp:613 ApperKCM/ApperKCM.ui:127
 msgid "Pending Changes"
 msgstr "ਬਾਕੀ ਰਹਿੰਦੇ ਬਦਲਾਅ"
 
-#: ApperKCM/ApperKCM.cpp:692 ApperKCM/CategoryModel.cpp:50
+#: ApperKCM/ApperKCM.cpp:683 ApperKCM/CategoryModel.cpp:50
 msgid "Installed Software"
 msgstr "ਇੰਸਟਾਲ ਹੋਏ ਸਾਫਟਵੇਅਰ"
 
-#: ApperKCM/ApperKCM.cpp:704
+#: ApperKCM/ApperKCM.cpp:695
 msgid "Could not find an application that matched this category"
 msgstr "ਕੋਈ ਐਪਲੀਕੇਸ਼ਨ ਨਹੀਂ ਲੱਭੀ, ਜੋ ਕਿ ਇਹ ਕੈਟਾਗਰੀ ਨਾਲ ਮਿਲਦੀ ਹੈ"
 
@@ -524,11 +524,11 @@ msgstr "ਲਿਸਟ ਤੋਂ ਪੈਕੇਜ ਇੰਸਟਾਲ ਕਰੋ..."
 msgid "Lists"
 msgstr "ਲਿਸਟ"
 
-#: ApperKCM/CategoryModel.cpp:161 ApperKCM/CategoryModel.cpp:359
+#: ApperKCM/CategoryModel.cpp:159 ApperKCM/CategoryModel.cpp:357
 msgid "Categories"
 msgstr "ਕੈਟਾਗਰੀ"
 
-#: ApperKCM/CategoryModel.cpp:218
+#: ApperKCM/CategoryModel.cpp:216
 msgid "Groups"
 msgstr "ਗਰੁੱਪ"
 
@@ -669,15 +669,15 @@ msgstr "ਲੋੜੀਦਾ ਹੈ"
 msgid "File List"
 msgstr "ਫਾਇਲ ਲਿਸਟ"
 
-#: ApperKCM/PackageDetails.cpp:509
+#: ApperKCM/PackageDetails.cpp:497
 msgid "No files were found."
 msgstr "ਕੋਈ ਫਾਇਲ ਨਹੀਂ ਲੱਭੀ।"
 
-#: ApperKCM/PackageDetails.cpp:557
+#: ApperKCM/PackageDetails.cpp:545
 msgid "Could not fetch software details"
 msgstr "ਸਾਫਟਵੇਅਰ ਵੇਰਵਾ ਨਹੀਂ ਲਿਆ ਜਾ ਸਕਿਆ"
 
-#: ApperKCM/PackageDetails.cpp:599
+#: ApperKCM/PackageDetails.cpp:587
 msgid "Applications"
 msgstr "ਐਪਲੀਕੇਸ਼ਨ"
 
@@ -695,68 +695,68 @@ msgstr "ਓਹਲੇ"
 msgid "Could not find screen shot."
 msgstr "ਸਕਰੀਨਸ਼ਾਟ ਲੱਭਿਆ ਨਹੀਂ ਜਾ ਸਕਿਆ।"
 
-#: ApperKCM/Settings/OriginModel.cpp:36
+#: ApperKCM/Settings/OriginModel.cpp:37
 msgid "Origin of Packages"
 msgstr "ਪੈਕੇਜ ਦਾ ਸਰੋਤ"
 
-#: ApperKCM/Settings/Settings.cpp:56
+#: ApperKCM/Settings/Settings.cpp:57
 msgid "A repository was changed, it's highly recommended to refresh the cache"
 msgstr "ਰਿਪੋਜ਼ਟਰੀ ਬਦਲੀ ਗਈ ਸੀ, ਕੈਸ਼ ਨੂੰ ਤਾਜ਼ਾ ਕਰਨ ਦੀ ਜ਼ੋਰਦਾਰ ਸਿਫਾਰਸ਼ ਕੀਤੀ ਜਾਂਦੀ ਹੈ"
 
-#: ApperKCM/Settings/Settings.cpp:88
+#: ApperKCM/Settings/Settings.cpp:89
 msgctxt "Inform about distribution upgrades"
 msgid "Never"
 msgstr "ਕਦੇ ਵੀ ਨਹੀਂ"
 
-#: ApperKCM/Settings/Settings.cpp:91
+#: ApperKCM/Settings/Settings.cpp:92
 msgctxt "Inform about distribution upgrades"
 msgid "Only stable"
 msgstr "ਕੇਵਲ ਸਟੇਬਲ"
 
-#: ApperKCM/Settings/Settings.cpp:96
+#: ApperKCM/Settings/Settings.cpp:97
 msgctxt "Inform about distribution upgrades"
 msgid "Stable and development"
 msgstr "ਸਟੇਬਲ ਤੇ ਡਿਵੈਲਪਮੈਂਟ"
 
-#: ApperKCM/Settings/Settings.cpp:100
+#: ApperKCM/Settings/Settings.cpp:101
 msgctxt "Hourly refresh the package cache"
 msgid "Hourly"
 msgstr "ਘੰਟੇਵਾਰ"
 
-#: ApperKCM/Settings/Settings.cpp:101
+#: ApperKCM/Settings/Settings.cpp:102
 msgctxt "Daily refresh the package cache"
 msgid "Daily"
 msgstr "ਰੋਜ਼ਾਨਾ"
 
-#: ApperKCM/Settings/Settings.cpp:102
+#: ApperKCM/Settings/Settings.cpp:103
 msgctxt "Weekly refresh the package cache"
 msgid "Weekly"
 msgstr "ਹਫ਼ਤੇਵਾਰ"
 
-#: ApperKCM/Settings/Settings.cpp:103
+#: ApperKCM/Settings/Settings.cpp:104
 msgctxt "Monthly refresh the package cache"
 msgid "Monthly"
 msgstr "ਮਹੀਨੇਵਾਰ"
 
-#: ApperKCM/Settings/Settings.cpp:104
+#: ApperKCM/Settings/Settings.cpp:105
 msgctxt "Never refresh package cache"
 msgid "Never"
 msgstr "ਕਦੇ ਵੀ ਨਹੀਂ"
 
-#: ApperKCM/Settings/Settings.cpp:106
+#: ApperKCM/Settings/Settings.cpp:107
 msgctxt "No updates will be automatically installed"
 msgid "None"
 msgstr "ਕੋਈ ਨਹੀਂ"
 
-#: ApperKCM/Settings/Settings.cpp:107
+#: ApperKCM/Settings/Settings.cpp:108
 msgid "Download only"
 msgstr "ਕੇਵਲ ਡਾਊਨਲੋਡ"
 
-#: ApperKCM/Settings/Settings.cpp:108
+#: ApperKCM/Settings/Settings.cpp:109
 msgid "Security only"
 msgstr "ਕੇਵਲ ਸੁਰੱਖਿਆ"
 
-#: ApperKCM/Settings/Settings.cpp:109
+#: ApperKCM/Settings/Settings.cpp:110
 msgid "All updates"
 msgstr "ਸਭ ਅੱਪਡੇਟ"
 
@@ -811,25 +811,25 @@ msgstr "ਸਰੋਤ ਸੋਧ"
 msgid "Refresh transactions list"
 msgstr "ਟਰਾਂਸੈਕਸ਼ਨ ਲਿਸਟ ਤਾਜ਼ਾ ਕਰੋ"
 
-#: ApperKCM/TransactionHistory.cpp:87
+#: ApperKCM/TransactionHistory.cpp:83
 #, kde-format
 msgid "Time since last cache refresh: %1"
 msgstr "ਆਖਰੀ ਕੈਸ਼ ਤਾਜ਼ਾ ਤੋਂ ਹੁਣ ਸਮਾਂ: %1"
 
-#: ApperKCM/TransactionModel.cpp:46
+#: ApperKCM/TransactionModel.cpp:43
 msgid "Date"
 msgstr "ਮਿਤੀ"
 
-#: ApperKCM/TransactionModel.cpp:47 libapper/PackageModel.cpp:224
+#: ApperKCM/TransactionModel.cpp:44 libapper/PackageModel.cpp:231
 msgid "Action"
 msgstr "ਐਕਸ਼ਨ"
 
-#: ApperKCM/TransactionModel.cpp:49
+#: ApperKCM/TransactionModel.cpp:46
 msgctxt "Machine user who issued the transaction"
 msgid "Username"
 msgstr "ਯੂਜ਼ਰ-ਨਾਂ"
 
-#: ApperKCM/TransactionModel.cpp:50
+#: ApperKCM/TransactionModel.cpp:47
 msgid "Application"
 msgstr "ਐਪਲੀਕੇਸ਼ਨ"
 
@@ -866,45 +866,45 @@ msgstr ""
 msgid "Distribution upgrade complete."
 msgstr "ਡਿਸਟਰੀਬਿਊਸ਼ਨ ਅੱਪਗਰੇਡ  ਪੂਰਾ।"
 
-#: ApperKCM/Updater/UpdateDetails.cpp:191
+#: ApperKCM/Updater/UpdateDetails.cpp:184
 msgid "This update will add new features and expand functionality."
 msgstr "ਇਹ ਅੱਪਡੇਟ ਨਵੇਂ ਫੀਚਰ ਜੋੜੇਗਾ ਤੇ ਸਹੂਲਤਾਂ ਨੂੰ ਵਧਾਏਗਾ।"
 
-#: ApperKCM/Updater/UpdateDetails.cpp:195
+#: ApperKCM/Updater/UpdateDetails.cpp:188
 msgid "This update will fix bugs and other non-critical problems."
 msgstr "ਇਹ ਅੱਪਡੇਟ ਬੱਗ ਅਤੇ ਹੋਰ ਗ਼ੈਰ-ਨਾਜ਼ੁਕ ਸਮੱਸਿਆ ਫਿਕਸ ਕਰੇਗਾ।"
 
-#: ApperKCM/Updater/UpdateDetails.cpp:199
+#: ApperKCM/Updater/UpdateDetails.cpp:192
 msgid "This update is important as it may solve critical problems."
 msgstr "ਇਹ ਅੱਪਡੇਟ ਖਾਸ ਹੈ, ਕਿਉਂਕਿ ਇਹ ਕਈ ਘਾਤਕ ਸਮੱਸਿਆ ਠੀਕ ਕਰ ਸਕੇਗਾ।"
 
-#: ApperKCM/Updater/UpdateDetails.cpp:203
+#: ApperKCM/Updater/UpdateDetails.cpp:196
 msgid ""
 "This update is needed to fix a security vulnerability with this package."
 msgstr "ਇਹ ਅੱਪਡੇਟ ਇਸ ਪੈਕੇਜ ਵਿੱਚ ਸੁਰੱਖਿਆ ਕਮਜ਼ੋਰੀ ਠੀਕ ਕਰਨ ਲਈ ਲੋੜੀਦਾ ਹੈ।"
 
-#: ApperKCM/Updater/UpdateDetails.cpp:207
+#: ApperKCM/Updater/UpdateDetails.cpp:200
 msgid "This update is blocked."
 msgstr "ਇਹ ਅੱਪਡੇਟ ਉੱਤੇ ਪਾਬੰਦੀ ਲਾਈ ਹੈ।"
 
-#: ApperKCM/Updater/UpdateDetails.cpp:214
+#: ApperKCM/Updater/UpdateDetails.cpp:207
 #, kde-format
 msgid "This notification was issued on %1 and last updated on %2."
 msgstr "ਇਹ ਸੂਚਨਾ %1 ਨੂੰ ਦਿੱਤੀ ਗਈ ਸੀ ਤੇ %2 ਨੂੰ ਆਖਰੀ ਅੱਪਡੇਟ ਕੀਤਾ ਗਿਆ ਸੀ।"
 
-#: ApperKCM/Updater/UpdateDetails.cpp:220
+#: ApperKCM/Updater/UpdateDetails.cpp:213
 #, kde-format
 msgid "This notification was issued on %1."
 msgstr "ਇਹ ਸੂਚਨਾ %1 ਨੂੰ ਦਿੱਤੀ ਗਈ ਸੀ।"
 
-#: ApperKCM/Updater/UpdateDetails.cpp:239
+#: ApperKCM/Updater/UpdateDetails.cpp:232
 msgid "For more information about this update please visit this website:"
 msgid_plural ""
 "For more information about this update please visit these websites:"
 msgstr[0] "ਇਹ ਅੱਪਡੇਟ ਬਾਰੇ ਹੋਰ ਜਾਣਕਾਰੀ ਲਈ ਇਹ ਵੈੱਬਸਾਈਟ ਵੇਖੋ:"
 msgstr[1] "ਇਹ ਅੱਪਡੇਟ ਬਾਰੇ ਹੋਰ ਜਾਣਕਾਰੀ ਲਈ ਇਹ ਵੈੱਬਸਾਈਟਾਂ ਵੇਖੋ:"
 
-#: ApperKCM/Updater/UpdateDetails.cpp:249
+#: ApperKCM/Updater/UpdateDetails.cpp:242
 msgid ""
 "For more information about bugs fixed by this update please visit this "
 "website:"
@@ -914,7 +914,7 @@ msgid_plural ""
 msgstr[0] "ਇਸ ਅੱਪਡੇਟ ਵਲੋਂ ਠੀਕ ਕੀਤੇ ਬੱਗ ਬਾਰੇ ਹੋਰ ਜਾਣਕਾਰੀ ਲੈਣ ਵਾਸਤੇ ਇਹ ਵੈੱਬਸਾਈਟ ਵੇਖੋ:"
 msgstr[1] "ਇਸ ਅੱਪਡੇਟ ਵਲੋਂ ਠੀਕ ਕੀਤੇ ਬੱਗ ਬਾਰੇ ਹੋਰ ਜਾਣਕਾਰੀ ਲੈਣ ਵਾਸਤੇ ਇਹ ਵੈੱਬਸਾਈਟਾਂ ਵੇਖੋ:"
 
-#: ApperKCM/Updater/UpdateDetails.cpp:259
+#: ApperKCM/Updater/UpdateDetails.cpp:252
 msgid ""
 "For more information about this security update please visit this website:"
 msgid_plural ""
@@ -922,25 +922,25 @@ msgid_plural ""
 msgstr[0] "ਇਸ ਸੁਰੱਖਿਆ ਅੱਪਡੇਟ ਬਾਰੇ ਹੋਰ ਜਾਣਕਾਰੀ ਲੈਣ ਵਾਸਤੇ ਇਹ ਵੈੱਬਸਾਈਟ ਵੇਖੋ:"
 msgstr[1] "ਇਹਨਾਂ ਸੁਰੱਖਿਆ ਅੱਪਡੇਟ ਬਾਰੇ ਹੋਰ ਜਾਣਕਾਰੀ ਲੈਣ ਵਾਸਤੇ ਇਹ ਵੈੱਬਸਾਈਟਾਂ ਵੇਖੋ:"
 
-#: ApperKCM/Updater/UpdateDetails.cpp:269
+#: ApperKCM/Updater/UpdateDetails.cpp:262
 msgid ""
 "The computer will have to be restarted after the update for the changes to "
 "take effect."
 msgstr "ਬਦਲਾਅ ਨੂੰ ਲਾਗੂ ਕਰਨ ਵਾਸਤੇ ਕੰਪਿਊਟਰ ਨੂੰ ਅੱਪਡੇਟ ਦੇ ਬਾਅਦ ਮੁੜ-ਚਾਲੂ ਕਰਨ ਦੀ ਲੋੜ ਹੈ।"
 
-#: ApperKCM/Updater/UpdateDetails.cpp:273
+#: ApperKCM/Updater/UpdateDetails.cpp:266
 msgid ""
 "You will need to log out and back in after the update for the changes to "
 "take effect."
 msgstr "ਬਦਲਾਅ ਨੂੰ ਲਾਗੂ ਕਰਨ ਵਾਸਤੇ ਤੁਹਾਨੂੰ ਅੱਪਡੇਟ ਦੇ ਬਾਅਦ ਲਾਗ ਆਫ਼ ਕਰਕੇ ਮੁੜ ਲਾਗਇਨ ਕਰਨਾ ਪਵੇਗਾ।"
 
-#: ApperKCM/Updater/UpdateDetails.cpp:280
+#: ApperKCM/Updater/UpdateDetails.cpp:273
 msgid ""
 "The classification of this update is unstable which means it is not designed "
 "for production use."
 msgstr "ਇਹ ਅੱਪਡੇਟ ਅਸਥਿਰ (ਅਣ-ਸਟੇਬਲ) ਹੈ ਅਤੇ ਇਸ ਨੂੰ ਪਰੋਡੱਕਸ਼ਨ ਲਈ ਤਿਆਰ ਨਹੀਂ ਕੀਤਾ ਗਿਆ ਹੈ।"
 
-#: ApperKCM/Updater/UpdateDetails.cpp:284
+#: ApperKCM/Updater/UpdateDetails.cpp:277
 msgid ""
 "This is a test update, and is not designed for normal use. Please report any "
 "problems or regressions you encounter."
@@ -948,26 +948,26 @@ msgstr ""
 "ਇਹ ਟੈਸਟ ਅੱਪਡੇਟ ਹੈ, ਅਤੇ ਇਸ ਨੂੰ ਆਮ ਵਰਤੋਂ ਲਈ ਤਿਆਰ ਨਹੀਂ ਕੀਤਾ ਗਿਆ ਹੈ। ਜੇ ਤੁਹਾਨੂੰ ਕੋਈ ਵੀ ਸਮੱਸਿਆ ਜਾਂ "
 "ਰੈਗਰੇਸ਼ਨ (regression) ਮਿਲਦੀ  ਹੈ ਤਾਂ ਰਿਪੋਰਟ ਦਿਓ ਜੀ।"
 
-#: ApperKCM/Updater/UpdateDetails.cpp:294
+#: ApperKCM/Updater/UpdateDetails.cpp:287
 msgid ""
 "The developer logs will be shown as no description is available for this "
 "update:"
 msgstr "ਡਿਵੈਲਪਰ ਲਾਗ ਵੇਖਾਇਆ ਜਾਵੇਗਾ, ਕਿਉਂਕਿ ਇਸ ਅੱਪਡੇਟ ਲਈ ਕੋਈ ਵੀ ਜਾਣਕਾਰੀ ਉਪਲੱਬਧ ਨਹੀਂ ਹੈ:"
 
-#: ApperKCM/Updater/UpdateDetails.cpp:302
+#: ApperKCM/Updater/UpdateDetails.cpp:295
 msgid "Updates:"
 msgstr "ਅੱਪਡੇਟ:"
 
-#: ApperKCM/Updater/UpdateDetails.cpp:312
+#: ApperKCM/Updater/UpdateDetails.cpp:305
 msgid "Obsoletes:"
 msgstr "ਬਰਤਰਫ਼:"
 
-#: ApperKCM/Updater/UpdateDetails.cpp:322
+#: ApperKCM/Updater/UpdateDetails.cpp:315
 #, kde-format
 msgid "Repository: %1"
 msgstr "ਰਿਪੋਜ਼ਟਰੀ: %1"
 
-#: ApperKCM/Updater/UpdateDetails.cpp:344
+#: ApperKCM/Updater/UpdateDetails.cpp:337
 msgid "No update description was found."
 msgstr "ਕੋਈ ਅੱਪਡੇਟ ਵੇਰਵਾ ਨਹੀਂ ਲੱਭਿਆ।"
 
@@ -980,7 +980,7 @@ msgstr "ਮੌਜੂਦਾ ਵਰਜਨ ਵੇਖੋ"
 msgid "Estimated download size: %1"
 msgstr "ਅੰਦਾਜ਼ਨ ਡਾਊਨਲੋਡ ਆਕਾਰ: %1"
 
-#: ApperKCM/Updater/Updater.cpp:358
+#: ApperKCM/Updater/Updater.cpp:340
 msgid "Check for new updates"
 msgstr "ਨਵੇਂ ਅੱਪਡੇਟ ਲਈ ਚੈੱਕ ਕਰੋ"
 
@@ -1041,9 +1041,9 @@ msgstr "ਇੰਸਟਾਲੇਸ਼ਨ ਪੂਰੀ ਹੋਈ!"
 msgid "%1 has been installed successfully!"
 msgstr "%1 ਨੂੰ ਠੀਕ ਤਰ੍ਹਾਂ ਇੰਸਟਾਲ ਕੀਤਾ ਗਿਆ ਹੈ!"
 
-#: AppSetup/SetupWizard.cpp:102 libapper/PkTransaction.cpp:143
-#: libapper/PkTransaction.cpp:161 libapper/PkTransaction.cpp:180
-#: libapper/PkTransaction.cpp:203
+#: AppSetup/SetupWizard.cpp:102 libapper/PkTransaction.cpp:118
+#: libapper/PkTransaction.cpp:131 libapper/PkTransaction.cpp:145
+#: libapper/PkTransaction.cpp:163
 msgid "Error"
 msgstr "ਗਲਤੀ"
 
@@ -1204,31 +1204,31 @@ msgstr "%1 ਲਈ %2 ਵਲੋਂ ਲਾਈਸੈਂਸ ਚਾਹੀਦਾ ਹ�
 msgid "Please read the following important information before continuing:"
 msgstr "ਜਾਰੀ ਰੱਖਣ ਤੋਂ ਪਹਿਲਾਂ ਅੱਗੇ ਦਿੱਤੀ ਖਾਸ ਜਾਣਕਾਰੀ ਧਿਆਨ ਨਾਲ ਪੜ੍ਹ ਲਵੋ ਜੀ:"
 
-#: libapper/PackageModel.cpp:205
+#: libapper/PackageModel.cpp:212
 msgid "Name"
 msgstr "ਨਾਂ"
 
-#: libapper/PackageModel.cpp:209
+#: libapper/PackageModel.cpp:216
 msgid "Version"
 msgstr "ਵਰਜਨ"
 
-#: libapper/PackageModel.cpp:212
+#: libapper/PackageModel.cpp:219
 msgid "Installed Version"
 msgstr "ਇੰਸਟਾਲ ਕੀਤਾ ਵਰਜਨ"
 
-#: libapper/PackageModel.cpp:215
+#: libapper/PackageModel.cpp:222
 msgid "Arch"
 msgstr "ਆਰਚ"
 
-#: libapper/PackageModel.cpp:218
+#: libapper/PackageModel.cpp:225
 msgid "Origin"
 msgstr "ਸਰੋਤ"
 
-#: libapper/PackageModel.cpp:221
+#: libapper/PackageModel.cpp:228
 msgid "Size"
 msgstr "ਸਾਈਜ਼"
 
-#: libapper/PackageModel.cpp:319
+#: libapper/PackageModel.cpp:326
 #, kde-format
 msgid ""
 "Version: %1\n"
@@ -1237,377 +1237,377 @@ msgstr ""
 "ਵਰਜਨ: %1\n"
 "ਆਰਚੀਟੈਕਚਰ: %2"
 
-#: libapper/PackageModel.cpp:365
+#: libapper/PackageModel.cpp:372
 msgid "To be Removed"
 msgstr "ਹਟਾਉਣ ਲਈ"
 
-#: libapper/PackageModel.cpp:367
+#: libapper/PackageModel.cpp:374
 msgid "To be Installed"
 msgstr "ਇੰਸਟਾਲ ਕਰਨ ਲਈ"
 
-#: libapper/PkStrings.cpp:36
+#: libapper/PkStrings.cpp:35
 msgctxt "This is when the transaction status is not known"
 msgid "Unknown state"
 msgstr "ਅਣਜਾਣ ਹਾਲਤ"
 
-#: libapper/PkStrings.cpp:39
+#: libapper/PkStrings.cpp:38
 msgctxt "transaction state, the daemon is in the process of starting"
 msgid "Waiting for service to start"
 msgstr "ਸਰਵਿਸ ਸ਼ੁਰੂ ਹੋਣ ਲਈ ਉਡੀਕ ਜਾਰੀ ਹੈ"
 
-#: libapper/PkStrings.cpp:42
+#: libapper/PkStrings.cpp:41
 msgctxt "transaction state, the transaction is waiting for another to complete"
 msgid "Waiting for other tasks"
 msgstr "ਹੋਰ ਕੰਮਾਂ ਲਈ ਉਡੀਕ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ"
 
-#: libapper/PkStrings.cpp:45
+#: libapper/PkStrings.cpp:44
 msgctxt "transaction state, just started"
 msgid "Running task"
 msgstr "ਕੰਮ ਚੱਲ ਰਿਹਾ ਹੈ"
 
-#: libapper/PkStrings.cpp:48
+#: libapper/PkStrings.cpp:47
 msgctxt "transaction state, is querying data"
 msgid "Querying"
 msgstr "ਕਿਊਰੀ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ"
 
-#: libapper/PkStrings.cpp:51
+#: libapper/PkStrings.cpp:50
 msgctxt "transaction state, getting data from a server"
 msgid "Getting information"
 msgstr "ਜਾਣਕਾਰੀ ਲਈ ਜਾ ਰਹੀ ਹੈ"
 
-#: libapper/PkStrings.cpp:54
+#: libapper/PkStrings.cpp:53
 msgctxt "transaction state, removing packages"
 msgid "Removing packages"
 msgstr "ਪੈਕੇਜ ਹਟਾਏ ਜਾ ਰਹੇ ਹਨ"
 
-#: libapper/PkStrings.cpp:58
+#: libapper/PkStrings.cpp:57
 #, kde-format
 msgctxt "transaction state, downloading package files"
 msgid "Downloading at %1/s, %2 remaining"
 msgstr "%1/s ਨਾਲ ਡਾਊਨਲੋਡ ਕੀਤੇ ਜਾ ਰਹੇ ਹਨ, %2 ਬਾਕੀ"
 
-#: libapper/PkStrings.cpp:63
+#: libapper/PkStrings.cpp:62
 #, kde-format
 msgctxt "transaction state, downloading package files"
 msgid "Downloading at %1/s"
 msgstr "%1/s ਨਾਲ ਡਾਊਨਲੋਡ ਕੀਤੇ ਜਾ ਰਹੇ ਹਨ"
 
-#: libapper/PkStrings.cpp:67
+#: libapper/PkStrings.cpp:66
 #, kde-format
 msgctxt "transaction state, downloading package files"
 msgid "Downloading, %1 remaining"
 msgstr "ਡਾਊਨਲੋਡ ਕੀਤੀਆਂ ਜਾ ਰਹੀਆਂ ਹਨ, %1 ਬਾਕੀ"
 
-#: libapper/PkStrings.cpp:71
+#: libapper/PkStrings.cpp:70
 msgctxt "transaction state, downloading package files"
 msgid "Downloading"
 msgstr "ਡਾਊਨਲੋਡ ਕੀਤੀਆਂ ਜਾ ਰਹੀਆਂ ਹਨ"
 
-#: libapper/PkStrings.cpp:75
+#: libapper/PkStrings.cpp:74
 msgctxt "transaction state, installing packages"
 msgid "Installing packages"
 msgstr "ਪੈਕੇਜ ਇੰਸਟਾਲ ਕੀਤੇ ਜਾ ਰਹੇ ਹਨ"
 
-#: libapper/PkStrings.cpp:78
+#: libapper/PkStrings.cpp:77
 msgctxt "transaction state, refreshing internal lists"
 msgid "Refreshing software list"
 msgstr "ਸਾਫਟਵੇਅਰ ਲਿਸਟ ਤਾਜ਼ਾ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ"
 
-#: libapper/PkStrings.cpp:81
+#: libapper/PkStrings.cpp:80
 msgctxt "transaction state, installing updates"
 msgid "Updating packages"
 msgstr "ਪੈਕੇਜ ਅੱਪਡੇਟ ਕੀਤੇ ਜਾ ਰਹੇ ਹਨ"
 
-#: libapper/PkStrings.cpp:84
+#: libapper/PkStrings.cpp:83
 msgctxt "transaction state, removing old packages, and cleaning config files"
 msgid "Cleaning up packages"
 msgstr "ਪੈਕੇਜ ਸਾਫ਼ ਕੀਤੇ ਜਾ ਰਹੇ ਹਨ"
 
-#: libapper/PkStrings.cpp:87
+#: libapper/PkStrings.cpp:86
 msgctxt "transaction state, obsoleting old packages"
 msgid "Obsoleting packages"
 msgstr "ਪੈਕੇਜ ਬਰਤਰਫ਼ ਕੀਤੇ ਜਾ ਰਹੇ ਹਨ"
 
-#: libapper/PkStrings.cpp:90
+#: libapper/PkStrings.cpp:89
 msgctxt "transaction state, checking the transaction before we do it"
 msgid "Resolving dependencies"
 msgstr "ਨਿਰਭਰਤਾ ਹੱਲ਼ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ"
 
-#: libapper/PkStrings.cpp:93
+#: libapper/PkStrings.cpp:92
 msgctxt ""
 "transaction state, checking if we have all the security keys for the "
 "operation"
 msgid "Checking signatures"
 msgstr "ਦਸਤਖਤ ਚੈੱਕ ਕੀਤੇ ਜਾ ਰਹੇ ਹਨ"
 
-#: libapper/PkStrings.cpp:96
+#: libapper/PkStrings.cpp:95
 msgctxt "transaction state, when we're doing a test transaction"
 msgid "Testing changes"
 msgstr "ਬਦਲਾਅ ਟੈਸਟ ਕੀਤੇ ਜਾ ਰਹੇ ਹਨ"
 
-#: libapper/PkStrings.cpp:99
+#: libapper/PkStrings.cpp:98
 msgctxt "transaction state, when we're writing to the system package database"
 msgid "Committing changes"
 msgstr "ਬਦਲਾਅ ਕਮਿਟ ਕੀਤੇ ਜਾ ਰਹੇ ਹਨ"
 
-#: libapper/PkStrings.cpp:102
+#: libapper/PkStrings.cpp:101
 msgctxt "transaction state, requesting data from a server"
 msgid "Requesting data"
 msgstr "ਡਾਟੇ ਲਈ ਮੰਗ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ"
 
-#: libapper/PkStrings.cpp:105
+#: libapper/PkStrings.cpp:104
 msgctxt "transaction state, all done!"
 msgid "Finished"
 msgstr "ਮੁਕੰਮਲ ਹੈ"
 
-#: libapper/PkStrings.cpp:108
+#: libapper/PkStrings.cpp:107
 msgctxt "transaction state, in the process of cancelling"
 msgid "Cancelling"
 msgstr "ਰੱਦ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ"
 
-#: libapper/PkStrings.cpp:111
+#: libapper/PkStrings.cpp:110
 msgctxt "transaction state, downloading metadata"
 msgid "Downloading repository information"
 msgstr "ਰਿਪੋਜ਼ਟਰੀ ਜਾਣਕਾਰੀ ਡਾਊਨਲੋਡ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ"
 
-#: libapper/PkStrings.cpp:114
+#: libapper/PkStrings.cpp:113
 msgctxt "transaction state, downloading metadata"
 msgid "Downloading list of packages"
 msgstr "ਪੈਕੇਜਾਂ ਦੀ ਲਿਸਟ ਡਾਊਨਲੋਡ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ"
 
-#: libapper/PkStrings.cpp:117
+#: libapper/PkStrings.cpp:116
 msgctxt "transaction state, downloading metadata"
 msgid "Downloading file lists"
 msgstr "ਫਾਇਲ ਲਿਸਟ ਡਾਊਨਲੋਡ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ"
 
-#: libapper/PkStrings.cpp:120
+#: libapper/PkStrings.cpp:119
 msgctxt "transaction state, downloading metadata"
 msgid "Downloading lists of changes"
 msgstr "ਬਦਲਾਅ ਦੀ ਲਿਸਟ ਡਾਊਨਲੋਡ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ"
 
-#: libapper/PkStrings.cpp:123
+#: libapper/PkStrings.cpp:122
 msgctxt "transaction state, downloading metadata"
 msgid "Downloading groups"
 msgstr "ਗਰੁੱਪ ਡਾਊਨਲੋਡ ਕੀਤੇ ਜਾ ਰਹੇ ਹਨ"
 
-#: libapper/PkStrings.cpp:126
+#: libapper/PkStrings.cpp:125
 msgctxt "transaction state, downloading metadata"
 msgid "Downloading update information"
 msgstr "ਅੱਪਡੇਟ ਜਾਣਕਾਰੀ ਡਾਊਨਲੋਡ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ"
 
-#: libapper/PkStrings.cpp:129
+#: libapper/PkStrings.cpp:128
 msgctxt "transaction state, repackaging delta files"
 msgid "Repackaging files"
 msgstr "ਫਾਇਲਾਂ ਮੁੜ-ਪੈਕ ਕੀਤੀਆਂ ਜਾ ਰਹੀਆਂ ਹਨ"
 
-#: libapper/PkStrings.cpp:132
+#: libapper/PkStrings.cpp:131
 msgctxt "transaction state, loading databases"
 msgid "Loading cache"
 msgstr "ਕੈਸ਼ ਲੋਡ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ"
 
-#: libapper/PkStrings.cpp:135
+#: libapper/PkStrings.cpp:134
 msgctxt "transaction state, scanning for running processes"
 msgid "Scanning installed applications"
 msgstr "ਇੰਸਟਾਲ ਐਪਲੀਕੇਸ਼ਨਾਂ ਸਕੈਨ ਕੀਤੀਆਂ ਜਾ ਰਹੀਆਂ ਹਨ"
 
-#: libapper/PkStrings.cpp:138
+#: libapper/PkStrings.cpp:137
 msgctxt ""
 "transaction state, generating a list of packages installed on the system"
 msgid "Generating package lists"
 msgstr "ਪੈਕੇਜ ਲਿਸਟਾਂ ਤਿਆਰ ਕੀਤੀਆਂ ਜਾ ਰਹੀਆਂ ਹਨ"
 
-#: libapper/PkStrings.cpp:141
+#: libapper/PkStrings.cpp:140
 msgctxt "transaction state, when we're waiting for the native tools to exit"
 msgid "Waiting for package manager lock"
 msgstr "ਪੈਕੇਜ ਮੈਨੇਜਰ ਲਾਕ ਲਈ ਉਡੀਕ ਜਾਰੀ"
 
-#: libapper/PkStrings.cpp:144
+#: libapper/PkStrings.cpp:143
 msgctxt "waiting for user to type in a password"
 msgid "Waiting for authentication"
 msgstr "ਪਰਮਾਣਕਿਤਾ ਲਈ ਉਡੀਕ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ"
 
-#: libapper/PkStrings.cpp:147
+#: libapper/PkStrings.cpp:146
 msgctxt "we are updating the list of processes"
 msgid "Updating the list of running applications"
 msgstr "ਚੱਲ ਰਹੀਆਂ ਐਪਲੀਕੇਸ਼ਨਾਂ ਦੀ ਲਿਸਟ ਅੱਪਡੇਟ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ"
 
-#: libapper/PkStrings.cpp:150
+#: libapper/PkStrings.cpp:149
 msgctxt "we are checking executable files in use"
 msgid "Checking for applications currently in use"
 msgstr "ਮੌਜੂਦਾ ਵਰਤੋਂ ਅਧੀਨ ਐਪਲੀਕੇਸ਼ਨ ਦੀ ਜਾਂਚ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ"
 
-#: libapper/PkStrings.cpp:153
+#: libapper/PkStrings.cpp:152
 msgctxt "we are checking for libraries in use"
 msgid "Checking for libraries currently in use"
 msgstr "ਇਸ ਸਮੇਂ ਵਰਤੀਆਂ ਜਾ ਰਹੀਆਂ ਲਾਇਬਰੇਰੀਆਂ ਚੈੱਕ ਕੀਤੀਆਂ ਜਾ ਰਹੀਆਂ ਹਨ"
 
-#: libapper/PkStrings.cpp:156
+#: libapper/PkStrings.cpp:155
 msgctxt "we are copying package files to prepare to install"
 msgid "Copying files"
 msgstr "ਫਾਇਲਾਂ ਕਾਪੀ ਕੀਤੀਆਂ ਜਾ ਰਹੀਆਂ ਹਨ"
 
-#: libapper/PkStrings.cpp:166
+#: libapper/PkStrings.cpp:165
 msgctxt "The action of the package, in past tense"
 msgid "Downloaded"
 msgstr "ਡਾਊਨਲੋਡ ਕੀਤਾ"
 
-#: libapper/PkStrings.cpp:168
+#: libapper/PkStrings.cpp:167
 msgctxt "The action of the package, in past tense"
 msgid "Updated"
 msgstr "ਅੱਪਡੇਟ ਕੀਤੇ"
 
-#: libapper/PkStrings.cpp:170
+#: libapper/PkStrings.cpp:169
 msgctxt "The action of the package, in past tense"
 msgid "Installed"
 msgstr "ਇੰਸਟਾਲ ਕੀਤੇ"
 
-#: libapper/PkStrings.cpp:172
+#: libapper/PkStrings.cpp:171
 msgctxt "The action of the package, in past tense"
 msgid "Removed"
 msgstr "ਹਟਾਏ"
 
-#: libapper/PkStrings.cpp:174
+#: libapper/PkStrings.cpp:173
 msgctxt "The action of the package, in past tense"
 msgid "Cleaned Up"
 msgstr "ਸਾਫ਼ ਕੀਤੇ"
 
-#: libapper/PkStrings.cpp:176
+#: libapper/PkStrings.cpp:175
 msgctxt "The action of the package, in past tense"
 msgid "Obsoleted"
 msgstr "ਬਰਤਰਫ਼"
 
-#: libapper/PkStrings.cpp:188
+#: libapper/PkStrings.cpp:186
 msgctxt "The role of the transaction, in present tense"
 msgid "Unknown role type"
 msgstr "ਅਣਜਾਣ ਰੋਲ ਕਿਸਮ"
 
-#: libapper/PkStrings.cpp:190
+#: libapper/PkStrings.cpp:188
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting dependencies"
 msgstr "ਨਿਰਭਰਤਾ ਲਈ ਜਾ ਰਹੀ ਹੈ"
 
-#: libapper/PkStrings.cpp:192
+#: libapper/PkStrings.cpp:190
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting update detail"
 msgstr "ਅੱਪਡੇਟ ਵੇਰਵਾ ਲਿਆ ਜਾ ਰਿਹਾ ਹੈ"
 
-#: libapper/PkStrings.cpp:194
+#: libapper/PkStrings.cpp:193
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting details"
 msgstr "ਵੇਰਵਾ ਲਿਆ ਜਾ ਰਿਹਾ ਹੈ"
 
-#: libapper/PkStrings.cpp:196
+#: libapper/PkStrings.cpp:195
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting requires"
 msgstr "ਨਿਰਭਰਤਾ ਲਈ ਜਾ ਰਹੀ ਹੈ"
 
-#: libapper/PkStrings.cpp:198
+#: libapper/PkStrings.cpp:197
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting updates"
 msgstr "ਅੱਪਡੇਟ ਲਏ ਜਾ ਰਹੇ ਹਨ"
 
-#: libapper/PkStrings.cpp:200
+#: libapper/PkStrings.cpp:199
 msgctxt "The role of the transaction, in present tense"
 msgid "Searching details"
 msgstr "ਵੇਰਵਾ ਖੋਜਿਆ ਜਾ ਰਿਹਾ ਹੈ"
 
-#: libapper/PkStrings.cpp:202
+#: libapper/PkStrings.cpp:201
 msgctxt "The role of the transaction, in present tense"
 msgid "Searching for file"
 msgstr "ਫਾਇਲ ਲਈ ਖੋਜ ਜਾਰੀ ਹੈ"
 
-#: libapper/PkStrings.cpp:204
+#: libapper/PkStrings.cpp:203
 msgctxt "The role of the transaction, in present tense"
 msgid "Searching groups"
 msgstr "ਗਰੁੱਪ ਖੋਜ ਕੀਤੇ ਜਾ ਰਹੇ ਹਨ"
 
-#: libapper/PkStrings.cpp:206
+#: libapper/PkStrings.cpp:205
 msgctxt "The role of the transaction, in present tense"
 msgid "Searching by package name"
 msgstr "ਪੈਕੇਜ ਨਾਂ ਨਾਲ ਖੋਜ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ"
 
-#: libapper/PkStrings.cpp:209
+#: libapper/PkStrings.cpp:208
 msgctxt "The role of the transaction, in present tense"
 msgid "Simulating removal"
 msgstr "ਹਟਾਉਣ ਦੀ ਨਕਲ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ"
 
-#: libapper/PkStrings.cpp:211 libapper/PkStrings.cpp:218
+#: libapper/PkStrings.cpp:210 libapper/PkStrings.cpp:217
 #: libapper/PkStrings.cpp:258
 msgctxt "The role of the transaction, in present tense"
 msgid "Downloading packages"
 msgstr "ਪੈਕੇਜ ਡਾਊਨਲੋਡ ਕੀਤੇ ਜਾ ਰਹੇ ਹਨ"
 
-#: libapper/PkStrings.cpp:213
+#: libapper/PkStrings.cpp:212
 msgctxt "The role of the transaction, in present tense"
 msgid "Removing"
 msgstr "ਹਟਾਇਆ ਜਾ ਰਿਹਾ ਹੈ"
 
-#: libapper/PkStrings.cpp:216
+#: libapper/PkStrings.cpp:215
 msgctxt "The role of the transaction, in present tense"
 msgid "Simulating install"
 msgstr "ਇੰਸਟਾਲ ਕਰਨ ਦੀ ਨਕਲ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ"
 
-#: libapper/PkStrings.cpp:220
+#: libapper/PkStrings.cpp:219
 msgctxt "The role of the transaction, in present tense"
 msgid "Installing"
 msgstr "ਇੰਸਟਾਲ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ"
 
-#: libapper/PkStrings.cpp:223
+#: libapper/PkStrings.cpp:222
 msgctxt "The role of the transaction, in present tense"
 msgid "Simulating file install"
 msgstr "ਫਾਇਲ ਇੰਸਟਾਲ ਕਰਨ ਦੀ ਨਕਲ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ"
 
-#: libapper/PkStrings.cpp:225
+#: libapper/PkStrings.cpp:224
 msgctxt "The role of the transaction, in present tense"
 msgid "Downloading required packages"
 msgstr "ਲੋੜੀਦੇ ਪੈਕੇਜ ਡਾਊਨਲੋਡ ਕੀਤੇ ਜਾ ਰਹੇ ਹਨ"
 
-#: libapper/PkStrings.cpp:227
+#: libapper/PkStrings.cpp:226
 msgctxt "The role of the transaction, in present tense"
 msgid "Installing file"
 msgstr "ਫਾਇਲ ਇੰਸਟਾਲ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ"
 
-#: libapper/PkStrings.cpp:229
+#: libapper/PkStrings.cpp:228
 msgctxt "The role of the transaction, in present tense"
 msgid "Refreshing package cache"
 msgstr "ਪੈਕੇਜ ਕੈਸ਼ ਤਾਜ਼ਾ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ"
 
-#: libapper/PkStrings.cpp:232
+#: libapper/PkStrings.cpp:231
 msgctxt "The role of the transaction, in present tense"
 msgid "Simulating update"
 msgstr "ਅੱਪਡੇਟ ਦੀ ਨਕਲ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ"
 
-#: libapper/PkStrings.cpp:234
+#: libapper/PkStrings.cpp:233
 msgctxt "The role of the transaction, in present tense"
 msgid "Downloading updates"
 msgstr "ਅੱਪਡੇਟ ਡਾਊਨਲੋਡ ਕੀਤੇ ਜਾ ਰਹੇ ਹਨ"
 
-#: libapper/PkStrings.cpp:236
+#: libapper/PkStrings.cpp:235
 msgctxt "The role of the transaction, in present tense"
 msgid "Updating packages"
 msgstr "ਪੈਕੇਜ ਅੱਪਡੇਟ ਕੀਤੇ ਜਾ ਰਹੇ ਹਨ"
 
-#: libapper/PkStrings.cpp:238
+#: libapper/PkStrings.cpp:237
 msgctxt "The role of the transaction, in present tense"
 msgid "Canceling"
 msgstr "ਰੱਦ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ"
 
-#: libapper/PkStrings.cpp:240
+#: libapper/PkStrings.cpp:239
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting list of repositories"
 msgstr "ਰਿਪੋਜ਼ਟਰੀਆਂ ਦੀ ਲਿਸਟ ਲਈ ਜਾ ਰਹੀ ਹੈ"
 
-#: libapper/PkStrings.cpp:242
+#: libapper/PkStrings.cpp:241
 msgctxt "The role of the transaction, in present tense"
 msgid "Enabling repository"
 msgstr "ਰਿਪੋਜ਼ਟਰੀ ਯੋਗ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ"
 
-#: libapper/PkStrings.cpp:244
+#: libapper/PkStrings.cpp:243
 msgctxt "The role of the transaction, in present tense"
 msgid "Setting repository data"
 msgstr "ਰਿਪੋਜ਼ਟਰੀ ਡਾਟਾ ਸੈੱਟ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ"
 
-#: libapper/PkStrings.cpp:246
+#: libapper/PkStrings.cpp:245
 msgctxt "The role of the transaction, in present tense"
 msgid "Resolving"
 msgstr "ਹੱਲ਼ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ"
@@ -1662,502 +1662,518 @@ msgctxt "The role of the transaction, in present tense"
 msgid "Repairing system"
 msgstr "ਸਿਸਟਮ ਰਿਪੇਅਰ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ"
 
-#: libapper/PkStrings.cpp:278
+#: libapper/PkStrings.cpp:270
+#, fuzzy
+#| msgctxt "The role of the transaction, in present tense"
+#| msgid "Enabling repository"
+msgctxt "The role of the transaction, in present tense"
+msgid "Removing repository"
+msgstr "ਰਿਪੋਜ਼ਟਰੀ ਯੋਗ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ"
+
+#: libapper/PkStrings.cpp:280
 msgctxt "The role of the transaction, in past tense"
 msgid "Unknown role type"
 msgstr "ਅਣਜਾਣ ਰੋਲ ਟਾਈਪ"
 
-#: libapper/PkStrings.cpp:280
+#: libapper/PkStrings.cpp:282
 msgctxt "The role of the transaction, in past tense"
 msgid "Got dependencies"
 msgstr "ਨਿਰਭਰਤਾ ਲਈ ਗਈ"
 
-#: libapper/PkStrings.cpp:282
+#: libapper/PkStrings.cpp:284
 msgctxt "The role of the transaction, in past tense"
 msgid "Got update detail"
 msgstr "ਅੱਪਡੇਟ ਵੇਰਵਾ ਲਿਆ"
 
-#: libapper/PkStrings.cpp:284
+#: libapper/PkStrings.cpp:287
 msgctxt "The role of the transaction, in past tense"
 msgid "Got details"
 msgstr "ਵੇਰਵਾ ਲਿਆ"
 
-#: libapper/PkStrings.cpp:286
+#: libapper/PkStrings.cpp:289
 msgctxt "The role of the transaction, in past tense"
 msgid "Got requires"
 msgstr "ਵੇਰਵਾ ਲਿਆ ਗਿਆ"
 
-#: libapper/PkStrings.cpp:288
+#: libapper/PkStrings.cpp:291
 msgctxt "The role of the transaction, in past tense"
 msgid "Got updates"
 msgstr "ਅੱਪਡੇਟ ਲਏ"
 
-#: libapper/PkStrings.cpp:290
+#: libapper/PkStrings.cpp:293
 msgctxt "The role of the transaction, in past tense"
 msgid "Searched for package details"
 msgstr "ਪੈਕੇਜ ਵੇਰਵੇ ਲਈ ਖੋਜ ਕੀਤੀ ਗਈ"
 
-#: libapper/PkStrings.cpp:292
+#: libapper/PkStrings.cpp:295
 msgctxt "The role of the transaction, in past tense"
 msgid "Searched for file"
 msgstr "ਫਾਇਲ ਲਈ ਖੋਜ ਕੀਤੀ"
 
-#: libapper/PkStrings.cpp:294
+#: libapper/PkStrings.cpp:297
 msgctxt "The role of the transaction, in past tense"
 msgid "Searched groups"
 msgstr "ਗਰੁੱਪ ਲਈ ਖੋਜ ਕੀਤੀ"
 
-#: libapper/PkStrings.cpp:296
+#: libapper/PkStrings.cpp:299
 msgctxt "The role of the transaction, in past tense"
 msgid "Searched for package name"
 msgstr "ਪੈਕੇਜ ਨਾਂ ਲਈ ਖੋਜ ਕੀਤੀ"
 
-#: libapper/PkStrings.cpp:298
+#: libapper/PkStrings.cpp:301
 msgctxt "The role of the transaction, in past tense"
 msgid "Removed packages"
 msgstr "ਪੈਕੇਜ ਹਟਾਏ"
 
-#: libapper/PkStrings.cpp:300
+#: libapper/PkStrings.cpp:303
 msgctxt "The role of the transaction, in past tense"
 msgid "Installed packages"
 msgstr "ਪੈਕੇਜ ਇੰਸਟਾਲ ਕੀਤੇ"
 
-#: libapper/PkStrings.cpp:302
+#: libapper/PkStrings.cpp:305
 msgctxt "The role of the transaction, in past tense"
 msgid "Installed local files"
 msgstr "ਲੋਕਲ ਫਾਇਲਾਂ ਇੰਸਟਾਲ ਕੀਤੀਆਂ"
 
-#: libapper/PkStrings.cpp:304
+#: libapper/PkStrings.cpp:307
 msgctxt "The role of the transaction, in past tense"
 msgid "Refreshed package cache"
 msgstr "ਪੈਕੇਜ ਕੈਸ਼ ਤਾਜ਼ਾ ਕੀਤੀ ਗਈ"
 
-#: libapper/PkStrings.cpp:306
+#: libapper/PkStrings.cpp:309
 msgctxt "The role of the transaction, in past tense"
 msgid "Updated packages"
 msgstr "ਪੈਕੇਜ ਅੱਪਡੇਟ ਕੀਤੇ ਗਏ"
 
-#: libapper/PkStrings.cpp:308
+#: libapper/PkStrings.cpp:311
 msgctxt "The role of the transaction, in past tense"
 msgid "Canceled"
 msgstr "ਰੱਦ ਕੀਤਾ"
 
-#: libapper/PkStrings.cpp:310
+#: libapper/PkStrings.cpp:313
 msgctxt "The role of the transaction, in past tense"
 msgid "Got list of repositories"
 msgstr "ਰਿਪੋਜ਼ਟਰੀਆਂ ਦੀ ਲਿਸਟ ਲਈ ਗਈ"
 
-#: libapper/PkStrings.cpp:312
+#: libapper/PkStrings.cpp:315
 msgctxt "The role of the transaction, in past tense"
 msgid "Enabled repository"
 msgstr "ਰਿਪੋਜ਼ਟਰੀ ਯੋਗ ਕੀਤੀ ਗਈ"
 
-#: libapper/PkStrings.cpp:314
+#: libapper/PkStrings.cpp:317
 msgctxt "The role of the transaction, in past tense"
 msgid "Set repository data"
 msgstr "ਰਿਪੋਜ਼ਟਰੀ ਡਾਟਾ ਸੈੱਟ ਕੀਤਾ"
 
-#: libapper/PkStrings.cpp:316
+#: libapper/PkStrings.cpp:319
 msgctxt "The role of the transaction, in past tense"
 msgid "Resolved"
 msgstr "ਹੱਲ਼ ਕੀਤਾ"
 
-#: libapper/PkStrings.cpp:318
+#: libapper/PkStrings.cpp:322
 msgctxt "The role of the transaction, in past tense"
 msgid "Got file list"
 msgstr "ਫਾਇਲ ਲਿਸਟ ਲਈ"
 
-#: libapper/PkStrings.cpp:320
+#: libapper/PkStrings.cpp:324
 msgctxt "The role of the transaction, in past tense"
 msgid "Got what provides"
 msgstr "ਜੋ ਦਿੰਦੀ ਹੈ ਲਈ ਗਈ"
 
-#: libapper/PkStrings.cpp:322
+#: libapper/PkStrings.cpp:326
 msgctxt "The role of the transaction, in past tense"
 msgid "Installed signature"
 msgstr "ਦਸਤਖਤ ਇੰਸਟਾਲ ਕੀਤੇ"
 
-#: libapper/PkStrings.cpp:324
+#: libapper/PkStrings.cpp:328
 msgctxt "The role of the transaction, in past tense"
 msgid "Got package lists"
 msgstr "ਪੈਕੇਜ ਲਿਸਟ ਲਈ"
 
-#: libapper/PkStrings.cpp:326
+#: libapper/PkStrings.cpp:330
 msgctxt "The role of the transaction, in past tense"
 msgid "Accepted EULA"
 msgstr "EULA ਮਨਜ਼ੂਰ ਕੀਤਾ"
 
-#: libapper/PkStrings.cpp:328
+#: libapper/PkStrings.cpp:332
 msgctxt "The role of the transaction, in past tense"
 msgid "Downloaded packages"
 msgstr "ਪੈਕੇਜ ਡਾਊਨਲੋਡ ਕੀਤੇ"
 
-#: libapper/PkStrings.cpp:330
+#: libapper/PkStrings.cpp:334
 msgctxt "The role of the transaction, in past tense"
 msgid "Got distribution upgrades"
 msgstr "ਡਿਸਟਰੀਬਿਊਸ਼ਨ ਅੱਪਗਰੇਡ ਲਏ"
 
-#: libapper/PkStrings.cpp:332
+#: libapper/PkStrings.cpp:336
 msgctxt "The role of the transaction, in past tense"
 msgid "Got categories"
 msgstr "ਕੈਟਾਗਰੀ ਲਈਆਂ"
 
-#: libapper/PkStrings.cpp:334
+#: libapper/PkStrings.cpp:338
 msgctxt "The role of the transaction, in past tense"
 msgid "Got old transactions"
 msgstr "ਪੁਰਾਣੀ ਟਰਾਂਸੈਕਸ਼ਨ ਲਈ"
 
-#: libapper/PkStrings.cpp:336
+#: libapper/PkStrings.cpp:340
 msgctxt "The role of the transaction, in past tense"
 msgid "Upgraded system"
 msgstr "ਸਿਸਟਮ ਅੱਪਗਰੇਡ ਕੀਤਾ ਗਿਆ"
 
-#: libapper/PkStrings.cpp:338
+#: libapper/PkStrings.cpp:342
 msgctxt "The role of the transaction, in past tense"
 msgid "Repaired system"
 msgstr "ਸਿਸਟਮ ਰਿਪੇਅਰ ਕੀਤਾ"
 
-#: libapper/PkStrings.cpp:348
+#: libapper/PkStrings.cpp:344
+#, fuzzy
+#| msgctxt "The role of the transaction, in past tense"
+#| msgid "Enabled repository"
+msgctxt "The role of the transaction, in past tense"
+msgid "Removed repository"
+msgstr "ਰਿਪੋਜ਼ਟਰੀ ਯੋਗ ਕੀਤੀ ਗਈ"
+
+#: libapper/PkStrings.cpp:354
 msgid "Downloading"
 msgstr "ਡਾਊਨਲੋਡ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ"
 
-#: libapper/PkStrings.cpp:350
+#: libapper/PkStrings.cpp:356
 msgid "Updating"
 msgstr "ਅੱਪਡੇਟ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ"
 
-#: libapper/PkStrings.cpp:352
+#: libapper/PkStrings.cpp:358
 msgid "Installing"
 msgstr "ਇੰਸਟਾਲ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ"
 
-#: libapper/PkStrings.cpp:354
+#: libapper/PkStrings.cpp:360
 msgid "Removing"
 msgstr "ਹਟਾਇਆ ਜਾ ਰਿਹਾ ਹੈ"
 
-#: libapper/PkStrings.cpp:356
+#: libapper/PkStrings.cpp:362
 msgid "Cleaning up"
 msgstr "ਸਾਫ਼ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ"
 
-#: libapper/PkStrings.cpp:358
+#: libapper/PkStrings.cpp:364
 msgid "Obsoleting"
 msgstr "ਬਰਤਰਫ਼ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ"
 
-#: libapper/PkStrings.cpp:360
+#: libapper/PkStrings.cpp:366
 msgid "Reinstalling"
 msgstr "ਮੁੜ-ਇੰਸਟਾਲ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ"
 
-#: libapper/PkStrings.cpp:362
+#: libapper/PkStrings.cpp:368
 msgid "Preparing"
 msgstr "ਤਿਆਰ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ"
 
-#: libapper/PkStrings.cpp:364
+#: libapper/PkStrings.cpp:370
 msgid "Decompressing"
 msgstr "ਡੀ-ਕੰਪਰੈੱਸ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ"
 
-#: libapper/PkStrings.cpp:375
+#: libapper/PkStrings.cpp:381
 msgid "Downloaded"
 msgstr "ਡਾਊਨਲੋਡ ਕੀਤੇ"
 
-#: libapper/PkStrings.cpp:377
+#: libapper/PkStrings.cpp:383
 msgid "Updated"
 msgstr "ਅੱਪਡੇਟ ਕੀਤੇ"
 
-#: libapper/PkStrings.cpp:381
+#: libapper/PkStrings.cpp:387
 msgid "Removed"
 msgstr "ਹਟਾਏ"
 
-#: libapper/PkStrings.cpp:383
+#: libapper/PkStrings.cpp:389
 msgid "Cleaned up"
 msgstr "ਸਾਫ਼ ਕੀਤੇ"
 
-#: libapper/PkStrings.cpp:385
+#: libapper/PkStrings.cpp:391
 msgid "Obsoleted"
 msgstr "ਬਰਤਰਫ਼ ਕੀਤੇ"
 
-#: libapper/PkStrings.cpp:387
+#: libapper/PkStrings.cpp:393
 msgid "Reinstalled"
 msgstr "ਮੁੜ-ਇੰਸਟਾਲ ਕੀਤੇ"
 
-#: libapper/PkStrings.cpp:389
+#: libapper/PkStrings.cpp:395
 msgid "Prepared"
 msgstr "ਤਿਆਰ ਕੀਤੇ"
 
-#: libapper/PkStrings.cpp:391
+#: libapper/PkStrings.cpp:397
 msgid "Decompressed"
 msgstr "ਡੀ-ਕੰਪਰੈੱਸ ਕੀਤਾ"
 
-#: libapper/PkStrings.cpp:402
+#: libapper/PkStrings.cpp:408
 msgid "No network connection available"
 msgstr "ਕੋਈ ਨੈੱਟਵਰਕ ਕੁਨੈਕਸ਼ਨ ਉਪਲੱਬਧ ਨਹੀਂ ਹੈ"
 
-#: libapper/PkStrings.cpp:404
+#: libapper/PkStrings.cpp:410
 msgid "No package cache is available"
 msgstr "ਕੋਈ ਪੈਕੇਜ ਕੈਸ਼ ਉਪਲੱਬਧ ਨਹੀਂ ਹੈ"
 
-#: libapper/PkStrings.cpp:406
+#: libapper/PkStrings.cpp:412
 msgid "Out of memory"
 msgstr "ਮੈਮੋਰੀ ਖਤਮ ਹੋਈ"
 
-#: libapper/PkStrings.cpp:408
+#: libapper/PkStrings.cpp:414
 msgid "Failed to create a thread"
 msgstr "ਥਰਿੱਡ ਬਣਾਉਣ ਲਈ ਫੇਲ੍ਹ"
 
-#: libapper/PkStrings.cpp:410
+#: libapper/PkStrings.cpp:416
 msgid "Not supported by this backend"
 msgstr "ਇਹ ਬੈਕਐਂਡ ਵਲੋਂ ਹਾਲੇ ਸਹਾਇਕ ਨਹੀਂ ਹੈ"
 
-#: libapper/PkStrings.cpp:412
+#: libapper/PkStrings.cpp:418
 msgid "An internal system error has occurred"
 msgstr "ਇੱਕ ਅੰਦਰੂਨੀ ਸਿਸਟਮ ਗਲਤੀ ਆਈ ਹੈ"
 
-#: libapper/PkStrings.cpp:414
+#: libapper/PkStrings.cpp:420
 msgid "A security trust relationship is not present"
 msgstr "ਇੱਕ ਸੁਰੱਖਿਆ ਟਰੱਸਟ ਸਬੰਧ ਮੌਜੂਦ ਨਹੀਂ ਹੈ"
 
-#: libapper/PkStrings.cpp:416
+#: libapper/PkStrings.cpp:422
 msgid "The package is not installed"
 msgstr "ਪੈਕੇਜ ਇੰਸਟਾਲ ਨਹੀਂ ਹੈ"
 
-#: libapper/PkStrings.cpp:418
+#: libapper/PkStrings.cpp:424
 msgid "The package was not found"
 msgstr "ਪੈਕੇਜ ਨਹੀਂ ਲੱਭਿਆ"
 
-#: libapper/PkStrings.cpp:420
+#: libapper/PkStrings.cpp:426
 msgid "The package is already installed"
 msgstr "ਪੈਕੇਜ ਪਹਿਲਾਂ ਹੀ ਇੰਸਟਾਲ ਹੈ"
 
-#: libapper/PkStrings.cpp:422
+#: libapper/PkStrings.cpp:428
 msgid "The package download failed"
 msgstr "ਪੈਕੇਜ ਡਾਊਨਲੋਡ ਫੇਲ੍ਹ ਹੈ"
 
-#: libapper/PkStrings.cpp:424
+#: libapper/PkStrings.cpp:430
 msgid "The group was not found"
 msgstr "ਗਰੁੱਪ ਨਹੀਂ ਲੱਭਿਆ"
 
-#: libapper/PkStrings.cpp:426
+#: libapper/PkStrings.cpp:432
 msgid "The group list was invalid"
 msgstr "ਗਰੁੱਪ ਲਿਸਟ ਗਲਤ ਹੈ"
 
-#: libapper/PkStrings.cpp:428
+#: libapper/PkStrings.cpp:434
 msgid "Dependency resolution failed"
 msgstr "ਨਿਰਭਰਤਾ ਹੱਲ਼ ਫੇਲ੍ਹ ਹੈ"
 
-#: libapper/PkStrings.cpp:430
+#: libapper/PkStrings.cpp:436
 msgid "Search filter was invalid"
 msgstr "ਖੋਜ ਫਿਲਟਰ ਗਲਤ ਹੈ"
 
-#: libapper/PkStrings.cpp:432
+#: libapper/PkStrings.cpp:438
 msgid "The package identifier was not well formed"
 msgstr "ਪੈਕੇਜ ਪਛਾਣ ਕਰਤਾ ਠੀਕ ਢੰਗ ਨਾਲ ਤਿਆਰ ਨਹੀਂ"
 
-#: libapper/PkStrings.cpp:434
+#: libapper/PkStrings.cpp:440
 msgid "Transaction error"
 msgstr "ਟਰਾਂਸੈਕਸ਼ਨ ਗਲਤੀ"
 
-#: libapper/PkStrings.cpp:436
+#: libapper/PkStrings.cpp:442
 msgid "Repository name was not found"
 msgstr "ਰਿਪੋਜ਼ਟਰੀ ਨਾਂ ਨਹੀਂ ਲੱਭਿਆ"
 
-#: libapper/PkStrings.cpp:438
+#: libapper/PkStrings.cpp:444
 msgid "Could not remove a protected system package"
 msgstr "ਇੱਕ ਸੁਰੱਖਿਅਤ ਸਿਸਟਮ ਪੈਕੇਜ ਹਟਾਇਆ ਨਹੀਂ ਜਾ ਸਕਿਆ"
 
-#: libapper/PkStrings.cpp:440
+#: libapper/PkStrings.cpp:446
 msgid "The task was canceled"
 msgstr "ਟਾਸਕ ਰੱਦ ਕੀਤੀ ਗਈ ਸੀ"
 
-#: libapper/PkStrings.cpp:442
+#: libapper/PkStrings.cpp:448
 msgid "The task was forcibly canceled"
 msgstr "ਟਾਸਕ ਧੱਕੇ ਨਾਲ ਬੰਦ ਕੀਤੀ ਗਈ"
 
-#: libapper/PkStrings.cpp:444
+#: libapper/PkStrings.cpp:450
 msgid "Reading the config file failed"
 msgstr "ਸੰਰਚਨਾ ਫਾਇਲ ਪੜ੍ਹਨ ਲਈ ਫੇਲ੍ਹ"
 
-#: libapper/PkStrings.cpp:446
+#: libapper/PkStrings.cpp:452
 msgid "The task cannot be cancelled"
 msgstr "ਟਾਸਕ ਰੱਦ ਨਹੀਂ ਕੀਤੀ ਜਾ ਸਕਦੀ"
 
-#: libapper/PkStrings.cpp:448
+#: libapper/PkStrings.cpp:454
 msgid "Source packages cannot be installed"
 msgstr "ਸਰੋਤ ਪੈਕੇਜ ਇੰਸਟਾਲ ਨਹੀਂ ਕੀਤੇ ਜਾ ਸਕਦੇ"
 
-#: libapper/PkStrings.cpp:450
+#: libapper/PkStrings.cpp:456
 msgid "The license agreement failed"
 msgstr "ਲਾਈਸੈਂਸ ਇਕਰਾਰਨਾਮ ਫੇਲ੍ਹ ਹੈ"
 
-#: libapper/PkStrings.cpp:452
+#: libapper/PkStrings.cpp:458
 msgid "Local file conflict between packages"
 msgstr "ਪੈਕੇਜਾਂ ਵਿੱਚ ਲੋਕਲ ਫਾਇਲ ਲਈ ਅਪਵਾਦ ਹੈ"
 
-#: libapper/PkStrings.cpp:454
+#: libapper/PkStrings.cpp:460
 msgid "Packages are not compatible"
 msgstr "ਪੈਕੇਜ ਢੁੱਕਵੇਂ ਨਹੀਂ ਹਨ"
 
-#: libapper/PkStrings.cpp:456
+#: libapper/PkStrings.cpp:462
 msgid "Problem connecting to a software origin"
 msgstr "ਸਾਫਟਵੇਅਰ ਸਰੋਤ ਨਾਲ ਕੁਨੈਕਟ ਕਰਨ ਦੌਰਾਨ ਸਮੱਸਿਆ"
 
-#: libapper/PkStrings.cpp:458
+#: libapper/PkStrings.cpp:464
 msgid "Failed to initialize"
 msgstr "ਸ਼ੁਰੂ ਕਰਨ ਲਈ ਫੇਲ੍ਹ"
 
-#: libapper/PkStrings.cpp:460
+#: libapper/PkStrings.cpp:466
 msgid "Failed to finalize"
 msgstr "ਪੂਰਾ ਕਰਨ ਲਈ ਫੇਲ੍ਹ"
 
-#: libapper/PkStrings.cpp:462
+#: libapper/PkStrings.cpp:468
 msgid "Cannot get lock"
 msgstr "ਲਾਕ ਨਹੀਂ ਲਿਆ ਜਾ ਸਕਦਾ"
 
-#: libapper/PkStrings.cpp:464
+#: libapper/PkStrings.cpp:470
 msgid "No packages to update"
 msgstr "ਕੋਈ ਪੈਕੇਜ ਅੱਪਡੇਟ ਨਹੀਂ"
 
-#: libapper/PkStrings.cpp:466
+#: libapper/PkStrings.cpp:472
 msgid "Cannot write repository configuration"
 msgstr "ਰਿਪੋਜ਼ਟਰੀ ਸੰਰਚਨਾ ਲਿਖੀ ਨਹੀਂ ਜਾ ਸਕਦੀ"
 
-#: libapper/PkStrings.cpp:468
+#: libapper/PkStrings.cpp:474
 msgid "Local install failed"
 msgstr "ਲੋਕਲ ਇੰਸਟਾਲ ਫੇਲ੍ਹ ਹੈ"
 
-#: libapper/PkStrings.cpp:470
+#: libapper/PkStrings.cpp:476
 msgid "Bad GPG signature"
 msgstr "ਖ਼ਰਾਬ GPG ਦਸਤਖਤ"
 
-#: libapper/PkStrings.cpp:472
+#: libapper/PkStrings.cpp:478
 msgid "Missing GPG signature"
 msgstr "ਗੁੰਮ GPG ਦਸਤਖਤ"
 
-#: libapper/PkStrings.cpp:474
+#: libapper/PkStrings.cpp:480
 msgid "Repository configuration invalid"
 msgstr "ਰਿਪੋਜ਼ਟਰੀ ਸੰਰਚਨਾ ਗਲਤ ਹੈ"
 
-#: libapper/PkStrings.cpp:476
+#: libapper/PkStrings.cpp:482
 msgid "Invalid package file"
 msgstr "ਗਲਤ ਪੈਕੇਜ ਫਾਇਲ"
 
-#: libapper/PkStrings.cpp:478
+#: libapper/PkStrings.cpp:484
 msgid "Package install blocked"
 msgstr "ਪੈਕੇਜ ਇੰਸਟਾਲ ਬਲਾਕ ਹੈ"
 
-#: libapper/PkStrings.cpp:480
+#: libapper/PkStrings.cpp:486
 msgid "Package is corrupt"
 msgstr "ਪੈਕੇਜ ਨਿਕਾਰਾ ਹੈ"
 
-#: libapper/PkStrings.cpp:482
+#: libapper/PkStrings.cpp:488
 msgid "All packages are already installed"
 msgstr "ਸਭ ਪੈਕੇਜ ਪਹਿਲਾਂ ਹੀ ਇੰਸਟਾਲ ਹਨ"
 
-#: libapper/PkStrings.cpp:484
+#: libapper/PkStrings.cpp:490
 msgid "The specified file could not be found"
 msgstr "ਦਿੱਤੀ ਫਾਇਲ ਨਹੀਂ ਲੱਭੀ ਜਾ ਸਕੀ"
 
-#: libapper/PkStrings.cpp:486
+#: libapper/PkStrings.cpp:492
 msgid "No more mirrors are available"
 msgstr "ਕੋਈ ਹੋਰ ਮਿਰੱਰ ਉਪਲੱਬਧ ਨਹੀਂ ਹਨ"
 
-#: libapper/PkStrings.cpp:488
+#: libapper/PkStrings.cpp:494
 msgid "No distribution upgrade data is available"
 msgstr "ਡਿਸਟਰੀਬਿਊਸ਼ਨ ਅੱਪਗਰੇਡ ਡਾਟਾ ਉਪਲੱਬਧ ਨਹੀਂ ਹੈ"
 
-#: libapper/PkStrings.cpp:490
+#: libapper/PkStrings.cpp:496
 msgid "Package is incompatible with this system"
 msgstr "ਪੈਕੇਜ ਇਹ ਸਿਸਟਮ ਲਈ ਅਢੁੱਕਵਾਂ ਹੈ"
 
-#: libapper/PkStrings.cpp:492
+#: libapper/PkStrings.cpp:498
 msgid "No space is left on the disk"
 msgstr "ਡਿਸਕ ਉੱਤੇ ਕੋਈ ਥਾਂ ਨਹੀਂ ਬਚੀ ਹੈ"
 
-#: libapper/PkStrings.cpp:494 libapper/PkTransaction.cpp:446
+#: libapper/PkStrings.cpp:500 libapper/PkTransaction.cpp:344
 msgid "A media change is required"
 msgstr "ਮੀਡਿਆ ਬਦਲਣ ਦੀ ਲੋੜ ਹੈ"
 
-#: libapper/PkStrings.cpp:496
+#: libapper/PkStrings.cpp:502
 msgid "Authorization failed"
 msgstr "ਪਰਮਾਣਕਿਤਾ ਫੇਲ੍ਹ ਹੋਈ"
 
-#: libapper/PkStrings.cpp:498
+#: libapper/PkStrings.cpp:504
 msgid "Update not found"
 msgstr "ਅੱਪਡੇਟ ਨਹੀਂ ਲੱਭਿਆ"
 
-#: libapper/PkStrings.cpp:500
+#: libapper/PkStrings.cpp:506
 msgid "Cannot install from untrusted origin"
 msgstr "ਬੇਭਰੋਸੇ ਸਰੋਤ ਤੋਂ ਇੰਸਟਾਲ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਦਾ"
 
-#: libapper/PkStrings.cpp:502
+#: libapper/PkStrings.cpp:508
 msgid "Cannot update from untrusted origin"
 msgstr "ਬੇਭਰੋਸੇਯੋਗ ਖੇਤਰ ਤੋਂ ਅੱਪਡੇਟ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਦਾ"
 
-#: libapper/PkStrings.cpp:504
+#: libapper/PkStrings.cpp:510
 msgid "Cannot get the file list"
 msgstr "ਫਾਇਲ ਲਿਸਟ ਲਈ ਨਹੀਂ ਜਾ ਸਕਦਾ"
 
-#: libapper/PkStrings.cpp:506
+#: libapper/PkStrings.cpp:512
 msgid "Cannot get package requires"
 msgstr "ਲੋੜੀਦਾ ਪੈਕੇਜ ਲਿਆ ਨਹੀਂ ਜਾ ਸਕਦਾ"
 
-#: libapper/PkStrings.cpp:508
+#: libapper/PkStrings.cpp:514
 msgid "Cannot disable origin"
 msgstr "ਸਰੋਤ ਆਯੋਗ ਹੈ"
 
-#: libapper/PkStrings.cpp:510
+#: libapper/PkStrings.cpp:516
 msgid "The download failed"
 msgstr "ਡਾਊਨਲੋਡ ਫੇਲ੍ਹ ਹੈ"
 
-#: libapper/PkStrings.cpp:512
+#: libapper/PkStrings.cpp:518
 msgid "Package failed to configure"
 msgstr "ਸੰਰਚਨਾ ਲਈ ਪੈਕੇਜ ਫੇਲ੍ਹ ਹੈ"
 
-#: libapper/PkStrings.cpp:514
+#: libapper/PkStrings.cpp:520
 msgid "Package failed to build"
 msgstr "ਪੈਕੇਜ ਬਿਲਡ ਹੋਣ ਲਈ ਫੇਲ੍ਹ"
 
-#: libapper/PkStrings.cpp:516
+#: libapper/PkStrings.cpp:522
 msgid "Package failed to install"
 msgstr "ਪੈਕੇਜ ਇੰਸਟਾਲ ਹੋਣ ਲਈ ਫੇਲ੍ਹ ਹੈ"
 
-#: libapper/PkStrings.cpp:518
+#: libapper/PkStrings.cpp:524
 msgid "Package failed to be removed"
 msgstr "ਪੈਕੇਜ ਹਟਾਉਣ ਲਈ ਫੇਲ੍ਹ ਹੈ"
 
-#: libapper/PkStrings.cpp:520
+#: libapper/PkStrings.cpp:526
 msgid "Update failed due to running process"
 msgstr "ਕਾਰਵਾਈ ਚੱਲਣ ਦੇ ਦੌਰਾਨ ਅੱਪਡੇਟ ਫੇਲ੍ਹ ਹੋਇਆ"
 
-#: libapper/PkStrings.cpp:522
+#: libapper/PkStrings.cpp:528
 msgid "The package database was changed"
 msgstr "ਪੈਕੇਜ ਡਾਟਾਬੇਸ ਬਦਲਿਆ ਗਿਆ"
 
-#: libapper/PkStrings.cpp:524
+#: libapper/PkStrings.cpp:530
 msgid "Virtual provide type is not supported"
 msgstr "ਵੁਰਚੁਅਲ ਦਿੱਤੀ ਕਿਸਮ ਸਹਾਇਕ ਨਹੀਂ ਹੈ"
 
-#: libapper/PkStrings.cpp:526
+#: libapper/PkStrings.cpp:532
 msgid "Install root is invalid"
 msgstr "ਇੰਸਟਾਲ ਰੂਟ ਅਢੁੱਕਵਾਂ ਹੈ"
 
-#: libapper/PkStrings.cpp:528
+#: libapper/PkStrings.cpp:534
 msgid "Cannot fetch install sources"
 msgstr "ਇੰਸਟਾਲ ਸਰੋਤ ਲਏ ਨਹੀਂ ਜਾ ਸਕੇ"
 
-#: libapper/PkStrings.cpp:530
+#: libapper/PkStrings.cpp:536
 msgid "Rescheduled due to priority"
 msgstr "ਤਰਜੀਹ ਕਰਕੇ ਮੁੜ-ਸੈਡਿਊਲ ਕੀਤਾ ਗਿਆ ਹੈ"
 
-#: libapper/PkStrings.cpp:532
+#: libapper/PkStrings.cpp:538
 msgid "Unfinished transaction"
 msgstr "ਅਧੂਰੀ ਪਈ ਟਰਾਂਸੈਕਸ਼ਨ"
 
-#: libapper/PkStrings.cpp:534
+#: libapper/PkStrings.cpp:540
 msgid "Lock required"
 msgstr "ਲਾਕ ਚਾਹੀਦਾ ਹੈ"
 
-#: libapper/PkStrings.cpp:536
+#: libapper/PkStrings.cpp:542
 msgid "Unknown error"
 msgstr "ਅਣਜਾਣ ਗਲਤੀ"
 
-#: libapper/PkStrings.cpp:546
+#: libapper/PkStrings.cpp:552
 msgid ""
 "There is no network connection available.\n"
 "Please check your connection settings and try again"
@@ -2165,7 +2181,7 @@ msgstr ""
 "ਕੋਈ ਨੈੱਟਵਰਕ ਕੁਨੈਕਸ਼ਨ ਉਪਲੱਬਧ ਨਹੀਂ ਹੈ।\n"
 "ਆਪਣੀ ਕੁਨੈਕਸ਼ਨ ਸੈਟਿੰਗ ਚੈੱਕ ਕਰਕੇ ਮੁੜ ਟਰਾਈ ਕਰੋ"
 
-#: libapper/PkStrings.cpp:549
+#: libapper/PkStrings.cpp:555
 msgid ""
 "The package list needs to be rebuilt.\n"
 "This should have been done by the backend automatically."
@@ -2173,7 +2189,7 @@ msgstr ""
 "ਪੈਕੇਜ ਲਿਸਟ ਨੂੰ ਮੁੜ-ਬਣਾਉਣ ਲਈ ਲੋੜ ਹੈ।\n"
 "ਇਹ ਬੈਕਐਂਡ ਵਲੋਂ ਆਟੋਮੈਟਿਕ ਹੀ ਕੀਤਾ ਜਾਵੇਗਾ।"
 
-#: libapper/PkStrings.cpp:552
+#: libapper/PkStrings.cpp:558
 msgid ""
 "The service that is responsible for handling user requests is out of "
 "memory.\n"
@@ -2182,11 +2198,11 @@ msgstr ""
 "ਸਰਵਿਸ, ਜੋ ਕਿ ਯੂਜ਼ਰ ਮੰਗ ਨੂੰ ਹੈਂਡਲ ਕਰਨ ਲਈ ਜਵਾਬਦੇਹ ਹੈ, ਲਈ ਮੈਮੋਰੀ ਖਤਮ ਹੋ ਗਈ ਹੈ।\n"
 "ਕੁਝ ਪਰੋਗਰਾਮ ਬੰਦ ਕਰੋ ਜਾਂ ਕੰਪਿਊਟਰ ਨੂੰ ਮੁੜ-ਚਾਲੂ ਕਰੋ।"
 
-#: libapper/PkStrings.cpp:555
+#: libapper/PkStrings.cpp:561
 msgid "A thread could not be created to service the user request."
 msgstr "ਯੂਜ਼ਰ ਮੰਗ ਦੀ ਸਰਵਿਸ ਲਈ ਥਰਿੱਡ ਬਣਾਇਆ ਨਹੀਂ ਜਾ ਸਕਿਆ।"
 
-#: libapper/PkStrings.cpp:557
+#: libapper/PkStrings.cpp:563
 msgid ""
 "The action is not supported by this backend.\n"
 "Please report a bug as this should not have happened."
@@ -2194,7 +2210,7 @@ msgstr ""
 "ਐਕਸ਼ਨ ਇਸ ਬੈਕਐਂਡ ਵਲੋਂ ਸਹਿਯੋਗੀ ਨਹੀਂ ਹੈ।\n"
 "ਇਹ ਹੋਣਾ ਨਹੀਂ ਸੀ ਚਾਹੀਦਾ, ਇਸਕਰਕੇ ਬੱਗ ਰਿਪੋਰਟ ਦਿਓ।"
 
-#: libapper/PkStrings.cpp:560
+#: libapper/PkStrings.cpp:566
 msgid ""
 "A problem that we were not expecting has occurred.\n"
 "Please report this bug with the error description."
@@ -2202,7 +2218,7 @@ msgstr ""
 "ਇੱਕ ਸਮੱਸਿਆ, ਜਿਸ ਦੀ ਸਾਨੂੰ ਉਮੀਦ ਨਹੀਂ ਸੀ, ਆਈ ਹੈ।\n"
 "ਗਲਤੀ ਵੇਰਵੇ ਸਮੇਤ ਇਹ ਬੱਗ ਰਿਪੋਰਟ ਦਿਓ ਜੀ।"
 
-#: libapper/PkStrings.cpp:563
+#: libapper/PkStrings.cpp:569
 msgid ""
 "A security trust relationship could not be made with the software origin.\n"
 "Please check your software signature settings."
@@ -2210,23 +2226,23 @@ msgstr ""
 "ਸਾਫਟਵੇਅਰ ਸਰੋਤ ਨਾਲ ਇੱਕ ਸੁਰੱਖਿਆ ਟਰੱਸਟ ਸਬੰਧ ਬਣਾਇਆ ਨਹੀਂ ਜਾ ਸਕਿਆ।\n"
 "ਆਪਣੀ ਸਾਫਟਵੇਅਰ ਦਸਤਖਤ ਸੈਟਿੰਗ ਚੈੱਕ ਕਰੋ ਜੀ।"
 
-#: libapper/PkStrings.cpp:566
+#: libapper/PkStrings.cpp:572
 msgid ""
 "The package that is trying to be removed or updated is not already installed."
 msgstr ""
 "ਪੈਕੇਜ, ਜੋ ਕਿ ਹਟਾਉਣ ਜਾਂ ਅੱਪਡੇਟ ਕਰਨ ਦੀ ਕੋਸ਼ਿਸ਼ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ, ਪਹਿਲਾਂ ਇੰਸਟਾਲ ਹੀ ਨਹੀਂ ਹੈ।"
 
-#: libapper/PkStrings.cpp:568
+#: libapper/PkStrings.cpp:574
 msgid ""
 "The package that is being modified was not found on your system or in any "
 "software origin."
 msgstr "ਪੈਕੇਜ, ਜੋ ਕਿ ਸੋਧਿਆ ਜਾਣਾ ਸੀ, ਤੁਹਾਡੇ ਸਿਸਟਮ ਜਾਂ ਕਿਸੇ ਸਾਫਟਵੇਅਰ ਸਰੋਤ ਉੱਤੇ ਨਹੀਂ ਲੱਭਿਆ।"
 
-#: libapper/PkStrings.cpp:570
+#: libapper/PkStrings.cpp:576
 msgid "The package that is trying to be installed is already installed."
 msgstr "ਪੈਕੇਜ, ਜੋ ਕਿ ਇੰਸਟਾਲ ਕਰਨ ਦੀ ਕੋਸ਼ਿਸ਼ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ, ਪਹਿਲਾਂ ਹੀ ਇੰਸਟਾਲ ਹੈ।"
 
-#: libapper/PkStrings.cpp:572
+#: libapper/PkStrings.cpp:578
 msgid ""
 "The package download failed.\n"
 "Please check your network connectivity."
@@ -2234,7 +2250,7 @@ msgstr ""
 "ਪੈਕੇਜ ਡਾਊਨਲੋਡ ਕਰਨ ਲਈ ਫੇਲ੍ਹ ਹੈ।\n"
 "ਆਪਣਾ ਨੈੱਟਵਰਕ ਕੁਨੈਕਸ਼ਨ ਚੈੱਕ ਕਰੋ ਜੀ।"
 
-#: libapper/PkStrings.cpp:575
+#: libapper/PkStrings.cpp:581
 msgid ""
 "The group type was not found.\n"
 "Please check your group list and try again."
@@ -2242,7 +2258,7 @@ msgstr ""
 "ਗਰੁੱਪ ਟਾਈਪ ਨਹੀਂ ਲੱਭੀ ਜਾ ਸਕੀ।\n"
 "ਆਪਣੀ ਗਰੁੱਪ ਲਿਸਟ ਚੈੱਕ ਕਰਕੇ ਮੁੜ ਟਰਾਈ ਕਰੋ ਜੀ।"
 
-#: libapper/PkStrings.cpp:578
+#: libapper/PkStrings.cpp:584
 msgid ""
 "The group list could not be loaded.\n"
 "Refreshing your cache may help, although this is normally a software origin "
@@ -2251,7 +2267,7 @@ msgstr ""
 "ਗਰੁੱਪ ਲਿਸਟ ਲੋਡ ਨਹੀਂ ਕੀਤੀ ਜਾ ਸਕੀ।\n"
 "ਤੁਹਾਡੀ ਕੈਸ਼ ਤਾਜ਼ਾ ਕਰਨ ਨਾਲ ਮੱਦਦ ਹੋ ਸਕਦੀ ਹੈ, ਭਾਵੇਂ ਕਿ ਇਹ ਇੱਕ ਸਾਫਟਵੇਅਰ ਸਰੋਤ ਗਲਤੀ ਹੈ।"
 
-#: libapper/PkStrings.cpp:582
+#: libapper/PkStrings.cpp:588
 msgid ""
 "A package dependency could not be found.\n"
 "More information is available in the detailed report."
@@ -2259,11 +2275,11 @@ msgstr ""
 "ਇੱਕ ਪੈਕੇਜ ਨਿਰਭਰਤਾ ਨਹੀਂ ਲੱਭੀ ਹੈ।\n"
 "ਹੋਰ ਜਾਣਕਾਰੀ ਨੂੰ ਵੇਰਵਾ ਰਿਪੋਰਟ ਵਿੱਚ ਵੇਖਿਆ ਜਾ ਸਕਦਾ ਹੈ।"
 
-#: libapper/PkStrings.cpp:585
+#: libapper/PkStrings.cpp:591
 msgid "The search filter was not correctly formed."
 msgstr "ਖੋਜ ਫਿਲਟਰ ਠੀਕ ਤਰ੍ਹਾਂ ਨਹੀਂ ਬਣਾਇਆ ਗਿਆ।"
 
-#: libapper/PkStrings.cpp:587
+#: libapper/PkStrings.cpp:593
 msgid ""
 "The package identifier was not well formed when sent to the system daemon.\n"
 "This normally indicates an internal bug and should be reported."
@@ -2271,7 +2287,7 @@ msgstr ""
 "ਪੈਕੇਜ ਅਡੈਂਟਟੀਫਾਇਰ ਠੀਕ ਰੂਪ ਵਿੱਚ ਨਹੀਂ ਸੀ, ਜਦੋਂ ਸਿਸਟਮ ਡੈਮਨ ਨੂੰ ਭੇਜਿਆ ਗਿਆ।\n"
 "ਇਹ ਅਕਸਰ ਅੰਦਰੂਨੀ ਬੱਗ ਹੁੰਦਾ ਹੈ ਅਤੇ ਇਸ ਬਾਰੇ ਰਿਪੋਰਟ ਕਰਨੀ ਚਾਹੀਦੀ ਹੈ।"
 
-#: libapper/PkStrings.cpp:590
+#: libapper/PkStrings.cpp:596
 msgid ""
 "An error occurred while running the transaction.\n"
 "More information is available in the detailed report."
@@ -2279,7 +2295,7 @@ msgstr ""
 "ਕਾਰਵਾਈ (ਟਰਾਂਸਐਕਸ਼ਨ) ਚਲਾਉਣ ਦੌਰਾਨ ਇੱਕ ਗਲਤੀ ਆਈ ਹੈ।\n"
 "ਹੋਰ ਜਾਣਕਾਰੀ ਨੂੰ ਵੇਰਵਾ ਰਿਪੋਰਟ ਵਿੱਚ ਵੇਖਿਆ ਜਾ ਸਕਦਾ ਹੈ।"
 
-#: libapper/PkStrings.cpp:593
+#: libapper/PkStrings.cpp:599
 msgid ""
 "The remote software origin name was not found.\n"
 "You may need to enable an item in Software Origins."
@@ -2287,15 +2303,15 @@ msgstr ""
 "ਰਿਮੋਟ ਸਾਫਟਵੇਅਰ ਸਰੋਤ ਨਾਂ ਨਹੀਂ ਲੱਭਿਆ ਜਾ ਸਕਿਆ।\n"
 "ਤੁਹਾਨੂੰ ਸਾਫਟਵੇਅਰ ਸਰੋਤਾਂ ਵਿੱਚ ਇੱਕ ਆਈਟਮ ਯੋਗ ਕਰਨ ਦੀ ਲੋੜ ਸਕਦੀ ਹੈ।"
 
-#: libapper/PkStrings.cpp:596
+#: libapper/PkStrings.cpp:602
 msgid "Removing a protected system package is not allowed."
 msgstr "ਇੱਕ ਸੁਰੱਖਿਅਤ ਸਿਸਟਮ ਪੈਕੇਜ ਹਟਾਇਆ ਨਹੀਂ ਜਾ ਸਕਦਾ ਹੈ।"
 
-#: libapper/PkStrings.cpp:598
+#: libapper/PkStrings.cpp:604
 msgid "The task was canceled successfully and no packages were changed."
 msgstr "ਟਾਸਕ ਠੀਕ ਢੰਗ ਨਾਲ ਰੱਦ ਹੋ ਗਈ ਹੈ ਅਤੇ ਕੋਈ ਪੈਕੇਜ ਵਿੱਚ ਬਦਲਾਅ ਨਹੀਂ ਕੀਤਾ ਗਿਆ।"
 
-#: libapper/PkStrings.cpp:600
+#: libapper/PkStrings.cpp:606
 msgid ""
 "The task was canceled successfully and no packages were changed.\n"
 "The backend did not exit cleanly."
@@ -2303,7 +2319,7 @@ msgstr ""
 "ਇਹ ਟਾਸਕ ਠੀਕ ਤਰ੍ਹਾਂ ਰੱਦ ਕੀਤੀ ਗਈ ਹੈ ਅਤੇ ਕੋਈ ਪੈਕੇਜ ਬਦਲਾਅ ਨਹੀਂ ਕੀਤਾ ਗਿਆ ਹੈ।\n"
 "ਬੈਕਐਂਡ ਠੀਕ ਢੰਗ ਨਾਲ ਬੰਦ ਨਹੀਂ ਹੋਇਆ।"
 
-#: libapper/PkStrings.cpp:603
+#: libapper/PkStrings.cpp:609
 msgid ""
 "The native package configuration file could not be opened.\n"
 "Please make sure your system's configuration is valid."
@@ -2311,11 +2327,11 @@ msgstr ""
 "ਨੇਟਿਵ ਪੈਕੇਜ ਸੰਰਚਨਾ ਫਾਇਲ ਖੋਲ੍ਹੀ ਨਹੀਂ ਜਾ ਸਕੀ ਹੈ।\n"
 "ਯਕੀਨੀ ਬਣਾਉ ਕਿ ਸਿਸਟਮ ਦੀ ਸੰਰਚਨਾ ਠੀਕ ਹੈ।"
 
-#: libapper/PkStrings.cpp:606
+#: libapper/PkStrings.cpp:612
 msgid "The task is not safe to be cancelled at this time."
 msgstr "ਟਾਸਕ ਨੂੰ ਇਸ ਸਮੇਂ ਰੱਦ ਕਰਨਾ ਸੁਰੱਖਿਅਤ ਨਹੀਂ ਹੈ।"
 
-#: libapper/PkStrings.cpp:608
+#: libapper/PkStrings.cpp:614
 msgid ""
 "Source packages are not normally installed this way.\n"
 "Check the extension of the file you are trying to install."
@@ -2323,7 +2339,7 @@ msgstr ""
 "ਸਰੋਤ ਪੈਕੇਜ ਅਕਸਰ ਇਸ ਢੰਗ ਨਾਲ ਇੰਸਟਾਲ ਨਹੀਂ ਕੀਤੇ ਜਾਂਦੇ ਹਨ।\n"
 "ਫਾਇਲ ਦੀ ਇਕਸਟੈਨਸ਼ਨ ਚੈੱਕ ਕਰੋ, ਜੋ ਕਿ ਤੁਸੀਂ ਇੰਸਟਾਲ ਕਰਨ ਦੀ ਕੋਸ਼ਿਸ਼ ਕਰ ਰਹੇ ਹੋ।"
 
-#: libapper/PkStrings.cpp:611
+#: libapper/PkStrings.cpp:617
 msgid ""
 "The license agreement was not agreed to.\n"
 "To use this software you have to accept the license."
@@ -2331,7 +2347,7 @@ msgstr ""
 "ਲਾਈਸੈਂਸ ਇਕਰਾਰਨਾਮੇ ਨਾਲ ਸਹਿਮਤ ਨਹੀਂ ਸੀ।\n"
 "ਇਹ ਸਾਫਟਵੇਅਰ ਵਰਤਣ ਲਈ ਤੁਹਾਨੂੰ ਲਾਇਸੈਂਸ ਸ਼ਰਤਾਂ ਮੰਨਣੀਆਂ ਪੈਣਗੀਆਂ।"
 
-#: libapper/PkStrings.cpp:614
+#: libapper/PkStrings.cpp:620
 msgid ""
 "Two packages provide the same file.\n"
 "This is usually due to mixing packages for different software origins."
@@ -2339,7 +2355,7 @@ msgstr ""
 "ਦੋ ਪੈਕੇਜ ਇੱਕੋ ਹੀ ਫਾਇਲ ਦਿੰਦੇ ਹਨ।\n"
 "ਇਹ ਅਕਸਰ ਵੱਖ ਵੱਖ ਸਾਫਟਵੇਅਰ ਸਰੋਤਾਂ ਲਈ ਪੈਕੇਜ ਰਲਣ ਕਰਕੇ ਹੁੰਦਾ ਹੈ।"
 
-#: libapper/PkStrings.cpp:617
+#: libapper/PkStrings.cpp:623
 msgid ""
 "Multiple packages exist that are not compatible with each other.\n"
 "This is usually due to mixing packages from different software origins."
@@ -2347,7 +2363,7 @@ msgstr ""
 "ਕਈ ਪੈਕੇਜ ਮੌਜੂਦ ਹਨ, ਜੋ ਕਿ ਆਪਸ ਵਿੱਚ ਰਲਦੇ ਨਹੀਂ ਹਨ।\n"
 "ਇਹ ਅਕਸਰ ਵੱਖ ਵੱਖ ਸਾਫਟਵੇਅਰ ਸਰੋਤਾਂ ਤੋਂ ਪੈਕੇਜ ਮਿਲਾਉਣ ਕਰਕੇ ਹੁੰਦਾ ਹੈ।"
 
-#: libapper/PkStrings.cpp:620
+#: libapper/PkStrings.cpp:626
 msgid ""
 "There was a (possibly temporary) problem connecting to a software origins.\n"
 "Please check the detailed error for further details."
@@ -2355,7 +2371,7 @@ msgstr ""
 "ਇਹ ਸਾਫਟਵੇਅਰ ਸਰੋਤ ਨਾਲ ਕੁਨੈਕਟ ਕਰਨ ਲਈ ਇੱਕ (ਸ਼ਾਇਦ ਆਰਜ਼ੀ) ਸਮੱਸਿਆ ਹੈ।\n"
 "ਹੋਰ ਜਾਣਕਾਰੀ ਲਈ ਵੇਰਵਾ ਗਲਤੀ ਚੈੱਕ ਕਰੋ ਜੀ।"
 
-#: libapper/PkStrings.cpp:623
+#: libapper/PkStrings.cpp:629
 msgid ""
 "Failed to initialize packaging backend.\n"
 "This may occur if other packaging tools are being used simultaneously."
@@ -2363,7 +2379,7 @@ msgstr ""
 "ਪੈਕੇਜ ਬੈਕਐਂਡ ਸ਼ੁਰੂ ਕਰਨ ਲਈ ਫੇਲ੍ਹ ਹੈ।\n"
 "ਇਹ ਤਾਂ ਹੋ ਸਕਦਾ ਹੈ, ਜੇ ਹੋਰ ਪੈਕੇਜ ਟੂਲ ਵੀ ਇੱਕੋ ਸਮੇਂ ਵਰਤੇ ਜਾ ਰਹੇ ਹਨ।"
 
-#: libapper/PkStrings.cpp:626
+#: libapper/PkStrings.cpp:632
 msgid ""
 "Failed to close down the backend instance.\n"
 "This error can normally be ignored."
@@ -2371,7 +2387,7 @@ msgstr ""
 "ਬੈਕਐਂਡ ਮੌਕੇ ਨੂੰ ਬੰਦ ਕਰਨ ਲਈ ਫੇਲ੍ਹ ਹੈ।\n"
 "ਇਹ ਗਲਤੀ ਅਕਸਰ ਅਣਡਿੱਠੀ ਕੀਤੀ ਜਾ ਸਕਦੀ ਹੈ।"
 
-#: libapper/PkStrings.cpp:629
+#: libapper/PkStrings.cpp:635
 msgid ""
 "Cannot get the exclusive lock on the packaging backend.\n"
 "Please close any other legacy packaging tools that may be open."
@@ -2379,15 +2395,15 @@ msgstr ""
 "ਪੈਕੇਜ ਬੈਕਐਂਡ ਲਈ ਲਾਕ ਨਹੀਂ ਲੈ ਸਕਦਾ ਹੈ।\n"
 "ਹੋਰ ਪੁਰਾਤਨ ਪੈਕੇਜ ਟੂਲ ਬੰਦ ਕਰ ਦਿਓ ਜੀ, ਜੋ ਕਿ ਚਾਲੂ ਹੋ ਸਕਦੇ ਹਨ।"
 
-#: libapper/PkStrings.cpp:632
+#: libapper/PkStrings.cpp:638
 msgid "None of the selected packages could be updated."
 msgstr "ਕੋਈ ਵੀ ਚੁਣਿਆ ਪੈਕੇਜ ਅੱਪਡੇਟ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਿਆ।"
 
-#: libapper/PkStrings.cpp:634
+#: libapper/PkStrings.cpp:640
 msgid "The repository configuration could not be modified."
 msgstr "ਰਿਪੋਜ਼ਟਰੀ ਸੰਰਚਨਾ ਨੂੰ ਸੋਧਿਆ ਨਹੀਂ ਜਾ ਸਕਿਆ।"
 
-#: libapper/PkStrings.cpp:636
+#: libapper/PkStrings.cpp:642
 msgid ""
 "Installing the local file failed.\n"
 "More information is available in the detailed report."
@@ -2395,11 +2411,11 @@ msgstr ""
 "ਲੋਕਲ ਫਾਇਲ ਇੰਸਟਾਲੇਸ਼ਨ ਫੇਲ੍ਹ ਹੋਈ।\n"
 "ਹੋਰ ਜਾਣਕਾਰੀ ਨੂੰ ਵੇਰਵਾ ਰਿਪੋਰਟ ਵਿੱਚ ਵੇਖਿਆ ਜਾ ਸਕਦਾ ਹੈ।"
 
-#: libapper/PkStrings.cpp:639
+#: libapper/PkStrings.cpp:645
 msgid "The package signature could not be verified."
 msgstr "ਪੈਕੇਜ ਦਸਤਖਤ ਦੀ ਜਾਂਚ ਨਹੀਂ ਕੀਤੀ ਜਾ ਸਕੀ।"
 
-#: libapper/PkStrings.cpp:641
+#: libapper/PkStrings.cpp:647
 msgid ""
 "The package signature was missing and this package is untrusted.\n"
 "This package was not signed with a GPG key when created."
@@ -2407,11 +2423,11 @@ msgstr ""
 "ਪੈਕੇਜ ਦਸਤਖਤ ਗੁੰਮ ਹਨ ਅਤੇ ਇਹ ਪੈਕੇਜ ਅਣ-ਭਰੋਸੇਯੋਗ ਹੈ।\n"
 "ਇਹ ਪੈਕੇਜ GPG ਕੁੰਜੀ ਨਾਲ ਸਾਇਨ ਨਹੀਂ ਹੈ, ਜਦੋਂ ਇਹ ਬਣਾਇਆ ਗਿਆ ਸੀ।"
 
-#: libapper/PkStrings.cpp:644
+#: libapper/PkStrings.cpp:650
 msgid "Repository configuration was invalid and could not be read."
 msgstr "ਰਿਪੋਜ਼ਟਰੀ ਸੰਰਚਨਾ ਗਲਤ ਹੈ ਅਤੇ ਪੜ੍ਹੀ ਨਹੀਂ ਜਾ ਸਕੀ।"
 
-#: libapper/PkStrings.cpp:646
+#: libapper/PkStrings.cpp:652
 msgid ""
 "The package you are attempting to install is not valid.\n"
 "The package file could be corrupt, or not a proper package."
@@ -2419,23 +2435,23 @@ msgstr ""
 "ਪੈਕੇਜ, ਜੋ ਤੁਸੀਂ ਇੰਸਟਾਲ ਕਰਨ ਦੀ ਕੋਸ਼ਿਸ਼ ਕਰ ਰਹੇ ਹੋ, ਠੀਕ ਨਹੀਂ ਹੈ।\n"
 "ਜਾਂ ਤਾਂ ਪੈਕੇਜ ਫਾਇਲ ਨਿਕਾਰਾ ਹੈ, ਜਾਂ ਇਹ ਠੀਕ ਪੈਕੇਜ ਹੀ ਨਹੀਂ ਹੈ।"
 
-#: libapper/PkStrings.cpp:649
+#: libapper/PkStrings.cpp:655
 msgid ""
 "Installation of this package was prevented by your packaging system's "
 "configuration."
 msgstr "ਇਹ ਪੈਕੇਜ ਦੀ ਇੰਸਟਾਲ ਨੂੰ ਤੁਹਾਡੇ ਪੈਕੇਜ ਸਿਸਟਮ ਦੀ ਸੰਰਚਨਾ ਵਲੋਂ ਰੋਕਿਆ ਗਿਆ ਹੈ।"
 
-#: libapper/PkStrings.cpp:651
+#: libapper/PkStrings.cpp:657
 msgid ""
 "The package that was downloaded is corrupt and needs to be downloaded again."
 msgstr "ਪੈਕੇਜ, ਜੋ ਕਿ ਡਾਊਨਲੋਡ ਕੀਤਾ ਗਿਆ ਸੀ, ਨਿਕਾਰਾ ਹੋ ਗਿਆ ਹੈ ਅਤੇ ਫੇਰ ਡਾਊਨਲੋਡ ਕਰਨ ਦੀ ਲੋੜ ਹੈ।"
 
-#: libapper/PkStrings.cpp:653
+#: libapper/PkStrings.cpp:659
 msgid ""
 "All of the packages selected for install are already installed on the system."
 msgstr "ਚੁਣੇ ਗਏ ਪੈਕੇਜਾਂ ਵਿੱਚ ਸਭ ਪਹਿਲਾਂ ਹੀ ਸਿਸਟਮ ਉੱਤੇ ਇੰਸਟਾਲ ਹਨ।"
 
-#: libapper/PkStrings.cpp:655
+#: libapper/PkStrings.cpp:661
 msgid ""
 "The specified file could not be found on the system.\n"
 "Check that the file still exists and has not been deleted."
@@ -2443,7 +2459,7 @@ msgstr ""
 "ਦਿੱਤੀ ਫਾਇਲ ਤੁਹਾਡੇ ਸਿਸਟਮ ਉੱਤੇ ਨਹੀਂ ਲੱਭੀ ਜਾ ਸਕੀ।\n"
 "ਚੈੱਕ ਕਰੋ ਕਿ ਫਾਇਲ ਹਾਲੇ ਵੀ ਮੌਜੂਦ ਹੈ ਅਤੇ ਹਟਾਈ ਨਹੀਂ ਗਈ ਹੈ।"
 
-#: libapper/PkStrings.cpp:658
+#: libapper/PkStrings.cpp:664
 msgid ""
 "Required data could not be found on any of the configured software origins.\n"
 "There were no more download mirrors that could be tried."
@@ -2451,7 +2467,7 @@ msgstr ""
 "ਲੋੜੀਦਾ ਡਾਟਾ ਕਿਸੇ ਵੀ ਸੰਰਚਿਤ ਸਾਫਟਵੇਅਰ ਸਰੋਤ ਉੱਤੇ ਨਹੀਂ ਲੱਭਿਆ।\n"
 "ਕੋਈ ਵੀ ਹੋਰ ਡਾਊਨਲੋਡ ਮਿੱਰਰ ਟਰਾਈ ਕਰਨ ਲਈ ਨਹੀਂ ਹਨ।"
 
-#: libapper/PkStrings.cpp:661
+#: libapper/PkStrings.cpp:667
 msgid ""
 "Required upgrade data could not be found in any of the configured software "
 "origins.\n"
@@ -2460,12 +2476,12 @@ msgstr ""
 "ਲੋੜੀਂਦਾ ਅੱਪਗਰੇਡ ਡਾਟਾ ਕਿਸੇ ਵੀ ਸੰਰਚਿਤ ਸਾਫਟਵੇਅਰ ਸਰੋਤ ਉੱਤੇ ਨਹੀਂ ਲੱਭਿਆ।\n"
 "ਡਿਸਟਰੀਬਿਊਸ਼ਨ ਅੱਪਗਰੇਡ ਦੀ ਲਿਸਟ ਉਪਲੱਬਧ ਨਹੀਂ।"
 
-#: libapper/PkStrings.cpp:664
+#: libapper/PkStrings.cpp:670
 msgid ""
 "The package that is trying to be installed is incompatible with this system."
 msgstr "ਪੈਕੇਜ, ਜੋ ਕਿ ਇੰਸਟਾਲ ਕਰਨ ਦੀ ਕੋਸ਼ਿਸ਼ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ, ਇਸ ਸਿਸਟਮ ਨਾਲ ਅਨੁਕੂਲ ਨਹੀਂ ਹੈ।"
 
-#: libapper/PkStrings.cpp:666
+#: libapper/PkStrings.cpp:672
 msgid ""
 "There is insufficient space on the device.\n"
 "Free some space on the system disk to perform this operation."
@@ -2473,11 +2489,11 @@ msgstr ""
 "ਜੰਤਰ ਉੱਤੇ ਅਢੁੱਕਵੀਂ ਥਾਂ ਨਹੀਂ ਹੈ।\n"
 "ਇਹ ਓਪਰੇਸ਼ਨ ਕਰਨ ਲਈ ਸਿਸਟਮ ਡਿਸਕ ਉੱਤੇ ਕੁਝ ਥਾਂ ਖਾਲੀ ਕਰੋ।"
 
-#: libapper/PkStrings.cpp:669
+#: libapper/PkStrings.cpp:675
 msgid "Additional media is required to complete the transaction."
 msgstr "ਟਰਾਂਸੈਕਸ਼ਨ ਪੂਰੀ ਕਰਨ ਲਈ ਹੋਰ ਮੀਡਿਆ ਦੀ ਲੋੜ ਹੈ।"
 
-#: libapper/PkStrings.cpp:671
+#: libapper/PkStrings.cpp:677
 msgid ""
 "You have failed to provide correct authentication.\n"
 "Please check any passwords or account settings."
@@ -2485,7 +2501,7 @@ msgstr ""
 "ਤੁਸੀਂ ਠੀਕ ਪਰਮਾਣਕਿਤਾ ਦੇ ਸਕਣ ਲਈ ਫੇਲ੍ਹ ਹੋਏ ਹੋ।\n"
 "ਕੋਈ ਪਾਸਵਰਡ ਜਾਂ ਅਕਾਊਂਟ ਸੈਟਿੰਗ ਚੈੱਕ ਕਰੋ ਜੀ।"
 
-#: libapper/PkStrings.cpp:674
+#: libapper/PkStrings.cpp:680
 msgid ""
 "The specified update could not be found.\n"
 "It could have already been installed or no longer available on the remote "
@@ -2494,27 +2510,27 @@ msgstr ""
 "ਦਿੱਤਾ ਅੱਪਡੇਟ ਨਹੀਂ ਲੱਭਿਆ ਜਾ ਸਕਿਆ।\n"
 "ਜਾਂ ਤਾਂ ਇਹ ਪਹਿਲਾਂ ਹੀ ਇੰਸਟਾਲ ਕੀਤਾ ਜਾ ਚੁੱਕਿਆ ਹੈ ਜਾਂ ਰਿਮੋਟ ਸਰਵਰ ਉੱਤੇ ਹੁਣ ਉਪਲੱਬਧ ਹੀ ਨਹੀਂ ਰਿਹਾ।"
 
-#: libapper/PkStrings.cpp:677
+#: libapper/PkStrings.cpp:683
 msgid "The package could not be installed from untrusted origin."
 msgstr "ਪੈਕੇਜ ਬੇਭਰੋਸੇਯੋਗ ਸਰੋਤ ਤੋਂ ਇੰਸਟਾਲ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਿਆ।"
 
-#: libapper/PkStrings.cpp:679
+#: libapper/PkStrings.cpp:685
 msgid "The package could not be updated from untrusted origin."
 msgstr "ਪੈਕੇਜ ਬੇਭਰੋਸੇਯੋਗ ਸਰੋਤ ਤੋਂ ਅੱਪਡੇਟ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਿਆ।"
 
-#: libapper/PkStrings.cpp:681
+#: libapper/PkStrings.cpp:687
 msgid "The file list is not available for this package."
 msgstr "ਇਹ ਪੈਕੇਜ ਲਈ ਫਾਇਲ-ਲਿਸਟ ਉਪਲੱਬਧ ਨਹੀਂ ਹੈ।"
 
-#: libapper/PkStrings.cpp:683
+#: libapper/PkStrings.cpp:689
 msgid "The information about what requires this package could not be obtained."
 msgstr "ਜਾਣਕਾਰੀ, ਜੋ ਇਸ ਪੈਕੇਜ ਵਲੋਂ ਚਾਹੀਦੀ ਸੀ, ਲਈ ਨਹੀਂ ਜਾ ਸਕੀ।"
 
-#: libapper/PkStrings.cpp:685
+#: libapper/PkStrings.cpp:691
 msgid "The specified software origin could not be disabled."
 msgstr "ਦਿੱਤਾ ਸਾਫਟਵੇਅਰ ਸਰੋਤ ਆਯੋਗ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਿਆ"
 
-#: libapper/PkStrings.cpp:687
+#: libapper/PkStrings.cpp:693
 msgid ""
 "The download could not be done automatically and should be done manually.\n"
 "More information is available in the detailed report."
@@ -2522,7 +2538,7 @@ msgstr ""
 "ਡਾਊਨਲੋਡ ਨੂੰ ਆਟੋਮੈਟਿਕ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਿਆ ਅਤੇ ਖੁਦ ਕਰਨ ਦੀ ਲੋੜ ਹੈ।\n"
 "ਹੋਰ ਜਾਣਕਾਰੀ ਨੂੰ ਵੇਰਵਾ ਰਿਪੋਰਟ ਵਿੱਚ ਵੇਖਿਆ ਜਾ ਸਕਦਾ ਹੈ।"
 
-#: libapper/PkStrings.cpp:690
+#: libapper/PkStrings.cpp:696
 msgid ""
 "One of the selected packages failed to configure correctly.\n"
 "More information is available in the detailed report."
@@ -2530,7 +2546,7 @@ msgstr ""
 "ਚੁਣੇ ਪੈਕੇਜਾਂ ਵਿੱਚੋਂ ਇੱਕ ਠੀਕ ਤਰ੍ਹਾਂ ਸੰਰਚਿਤ ਹੋਣ ਲਈ ਫੇਲ੍ਹ ਹੈ।\n"
 "ਹੋਰ ਜਾਣਕਾਰੀ ਨੂੰ ਵੇਰਵਾ ਰਿਪੋਰਟ ਵਿੱਚ ਵੇਖਿਆ ਜਾ ਸਕਦਾ ਹੈ।"
 
-#: libapper/PkStrings.cpp:693
+#: libapper/PkStrings.cpp:699
 msgid ""
 "One of the selected packages failed to build correctly.\n"
 "More information is available in the detailed report."
@@ -2538,7 +2554,7 @@ msgstr ""
 "ਚੁਣੇ ਪੈਕੇਜਾਂ ਵਿੱਚੋਂ ਇੱਕ ਠੀਕ ਤਰ੍ਹਾਂ ਬਿਲਡ ਹੋਣ ਲਈ ਫੇਲ੍ਹ ਹੈ।\n"
 "ਹੋਰ ਜਾਣਕਾਰੀ ਨੂੰ ਵੇਰਵਾ ਰਿਪੋਰਟ ਵਿੱਚ ਵੇਖਿਆ ਜਾ ਸਕਦਾ ਹੈ।"
 
-#: libapper/PkStrings.cpp:696
+#: libapper/PkStrings.cpp:702
 msgid ""
 "One of the selected packages failed to install correctly.\n"
 "More information is available in the detailed report."
@@ -2546,7 +2562,7 @@ msgstr ""
 "ਚੁਣੇ ਪੈਕੇਜਾਂ ਵਿੱਚੋਂ ਕੋਈ ਠੀਕ ਤਰ੍ਹਾਂ ਇੰਸਟਾਲ ਹੋਣ ਲਈ ਫੇਲ੍ਹ ਹੈ।\n"
 "ਹੋਰ ਜਾਣਕਾਰੀ ਨੂੰ ਵੇਰਵਾ ਰਿਪੋਰਟ ਵਿੱਚ ਵੇਖਿਆ ਜਾ ਸਕਦਾ ਹੈ।"
 
-#: libapper/PkStrings.cpp:699
+#: libapper/PkStrings.cpp:705
 msgid ""
 "One of the selected packages failed to be removed correctly.\n"
 "More information is available in the detailed report."
@@ -2554,7 +2570,7 @@ msgstr ""
 "ਚੁਣੇ ਪੈਕੇਜਾਂ ਵਿੱਚੋਂ ਕਿਸੇ ਨੂੰ ਠੀਕ ਤਰ੍ਹਾਂ ਹਟਾਉਣ ਲਈ ਫੇਲ੍ਹ ਹੈ।\n"
 "ਹੋਰ ਜਾਣਕਾਰੀ ਨੂੰ ਵੇਰਵਾ ਰਿਪੋਰਟ ਵਿੱਚ ਵੇਖਿਆ ਜਾ ਸਕਦਾ ਹੈ।"
 
-#: libapper/PkStrings.cpp:702
+#: libapper/PkStrings.cpp:708
 msgid ""
 "A program is running that has to be closed before the update can proceed.\n"
 "More information is available in the detailed report."
@@ -2562,37 +2578,37 @@ msgstr ""
 "ਪਰੋਗਰਾਮ ਚੱਲ ਰਿਹਾ ਹੈ, ਜਿਸ ਨੂੰ ਅੱਪਡੇਟ ਜਾਰੀ ਰੱਖਣ ਤੋਂ ਪਹਿਲਾਂ ਬੰਧ ਕਰਨ ਦੀ ਲੋੜ ਹੈ।\n"
 "ਹੋਰ ਜਾਣਕਾਰੀ ਨੂੰ ਵੇਰਵਾ ਰਿਪੋਰਟ ਵਿੱਚ ਵੇਖਿਆ ਜਾ ਸਕਦਾ ਹੈ।"
 
-#: libapper/PkStrings.cpp:705
+#: libapper/PkStrings.cpp:711
 msgid "The package database was changed while the request was running."
 msgstr "ਚਲਾਉਣ ਦੀ ਬੇਨਤੀ ਦੇ ਦੌਰਾਨ ਪੈਕੇਜ ਡਾਟਾਬੇਸ ਬਦਲਿਆ ਗਿਆ।"
 
-#: libapper/PkStrings.cpp:707
+#: libapper/PkStrings.cpp:713
 msgid "The virtual provide type is not supported by this system."
 msgstr "ਇਸ ਸਿਸਟਮ ਵਲੋਂ ਵੁਰਚੁਅਲ ਦਿੱਤੀ ਕਿਸਮ ਸਹਾਇਕ ਨਹੀਂ ਹੈ"
 
-#: libapper/PkStrings.cpp:709
+#: libapper/PkStrings.cpp:715
 msgid "The install root is invalid. Please contact your administrator."
 msgstr "ਇੰਸਟਾਲ ਰੂਟ ਗਲਤ ਹੈ। ਆਪਣੇ ਸਿਸਟਮ ਐਡਮਿਨਸਟੇਟਰ ਨਾਲ ਸੰਪਰਕ ਕਰੋ।"
 
-#: libapper/PkStrings.cpp:711
+#: libapper/PkStrings.cpp:717
 msgid "The list of software could not be downloaded."
 msgstr "ਸਾਫਟਵੇਅਰ ਦੀ ਲਿਸਟ ਡਾਊਨਲੋਡ ਨਹੀਂ ਕੀਤੀ ਜਾ ਸਕੀ।"
 
-#: libapper/PkStrings.cpp:713
+#: libapper/PkStrings.cpp:719
 msgid ""
 "The transaction has been cancelled and will be retried when the system is "
 "idle."
 msgstr "ਟਰਾਂਸੈਕਸ਼ਨ ਨੂੰ ਰੱਦ ਕੀਤਾ ਗਿਆ ਹੈ ਅਤੇ ਸਿਸਟਮ ਵੇਹਲਾ ਹੋਣ ਸਮੇਂ ਮੁੜ-ਪ੍ਰਾਪਤ ਕੀਤਾ ਜਾਵੇਗਾ।"
 
-#: libapper/PkStrings.cpp:715
+#: libapper/PkStrings.cpp:721
 msgid "A previous package management transaction was interrupted."
 msgstr "ਪਿਛਲੀ ਪੈਕੇਜ ਮੈਨਜੇਮੈਂਟ ਟਰਾਂਸੈਕਸ਼ਨ ਨੂੰ ਅਧੂਰਾ ਛੱਡਿਆ ਗਿਆ ਸੀ।"
 
-#: libapper/PkStrings.cpp:717
+#: libapper/PkStrings.cpp:723
 msgid "A package manager lock is required."
 msgstr "ਪੈਕੇਜ ਮੈਨੇਜਰ ਲਾਕ ਚਾਹੀਦਾ ਹੈ।"
 
-#: libapper/PkStrings.cpp:719
+#: libapper/PkStrings.cpp:725
 msgid ""
 "Unknown error, please report a bug.\n"
 "More information is available in the detailed report."
@@ -2600,236 +2616,236 @@ msgstr ""
 "ਅਣਜਾਣੀ ਗਲਤੀ ਹੈ, ਬੱਗ ਦੀ ਰਿਪੋਰਟ ਦਿਓ ਜੀ।\n"
 "ਹੋਰ ਜਾਣਕਾਰੀ ਨੂੰ ਵੇਰਵਾ ਰਿਪੋਰਟ ਵਿੱਚ ਵੇਖਿਆ ਜਾ ਸਕਦਾ ਹੈ।"
 
-#: libapper/PkStrings.cpp:730
+#: libapper/PkStrings.cpp:736
 msgctxt "The group type"
 msgid "Accessibility"
 msgstr "ਅਸੈੱਸਬਿਲਟੀ"
 
-#: libapper/PkStrings.cpp:732
+#: libapper/PkStrings.cpp:738
 msgctxt "The group type"
 msgid "Accessories"
 msgstr "ਸਹੂਲਤਾਂ"
 
-#: libapper/PkStrings.cpp:734
+#: libapper/PkStrings.cpp:740
 msgctxt "The group type"
 msgid "Education"
 msgstr "ਸਿੱਖਿਆ"
 
-#: libapper/PkStrings.cpp:736
+#: libapper/PkStrings.cpp:742
 msgctxt "The group type"
 msgid "Games"
 msgstr "ਖੇਡਾਂ"
 
-#: libapper/PkStrings.cpp:738
+#: libapper/PkStrings.cpp:744
 msgctxt "The group type"
 msgid "Graphics"
 msgstr "ਗਰਾਫਿਕਸ"
 
-#: libapper/PkStrings.cpp:740
+#: libapper/PkStrings.cpp:746
 msgctxt "The group type"
 msgid "Internet"
 msgstr "ਇੰਟਰਨੈੱਟ"
 
-#: libapper/PkStrings.cpp:742
+#: libapper/PkStrings.cpp:748
 msgctxt "The group type"
 msgid "Office"
 msgstr "ਆਫਿਸ"
 
-#: libapper/PkStrings.cpp:744
+#: libapper/PkStrings.cpp:750
 msgctxt "The group type"
 msgid "Others"
 msgstr "ਹੋਰ"
 
-#: libapper/PkStrings.cpp:746
+#: libapper/PkStrings.cpp:752
 msgctxt "The group type"
 msgid "Development"
 msgstr "ਡਿਵੈਲਪਮੈਂਟ"
 
-#: libapper/PkStrings.cpp:748
+#: libapper/PkStrings.cpp:754
 msgctxt "The group type"
 msgid "Multimedia"
 msgstr "ਮਲਟੀਮੀਡਿਆ"
 
-#: libapper/PkStrings.cpp:750
+#: libapper/PkStrings.cpp:756
 msgctxt "The group type"
 msgid "System"
 msgstr "ਸਿਸਟਮ"
 
-#: libapper/PkStrings.cpp:752
+#: libapper/PkStrings.cpp:758
 msgctxt "The group type"
 msgid "GNOME desktop"
 msgstr "ਗਨੋਮ ਡੈਸਕਟਾਪ"
 
-#: libapper/PkStrings.cpp:754
+#: libapper/PkStrings.cpp:760
 msgctxt "The group type"
 msgid "KDE desktop"
 msgstr "KDE ਡੈਸਕਟਾਪ"
 
-#: libapper/PkStrings.cpp:756
+#: libapper/PkStrings.cpp:762
 msgctxt "The group type"
 msgid "XFCE desktop"
 msgstr "XFCE ਡੈਸਕਟਾਪ"
 
-#: libapper/PkStrings.cpp:758
+#: libapper/PkStrings.cpp:764
 msgctxt "The group type"
 msgid "Other desktops"
 msgstr "ਹੋਰ ਡੈਸਕਟਾਪ"
 
-#: libapper/PkStrings.cpp:760
+#: libapper/PkStrings.cpp:766
 msgctxt "The group type"
 msgid "Publishing"
 msgstr "ਪਬਲਿਸ਼ਿੰਗ"
 
-#: libapper/PkStrings.cpp:762
+#: libapper/PkStrings.cpp:768
 msgctxt "The group type"
 msgid "Servers"
 msgstr "ਸਰਵਰ"
 
-#: libapper/PkStrings.cpp:764
+#: libapper/PkStrings.cpp:770
 msgctxt "The group type"
 msgid "Fonts"
 msgstr "ਫੋਂਟ"
 
-#: libapper/PkStrings.cpp:766
+#: libapper/PkStrings.cpp:772
 msgctxt "The group type"
 msgid "Admin tools"
 msgstr "ਐਡਮਿਨ ਟੂਲ"
 
-#: libapper/PkStrings.cpp:768
+#: libapper/PkStrings.cpp:774
 msgctxt "The group type"
 msgid "Legacy"
 msgstr "ਪੁਰਾਣੇ"
 
-#: libapper/PkStrings.cpp:770
+#: libapper/PkStrings.cpp:776
 msgctxt "The group type"
 msgid "Localization"
 msgstr "ਲੋਕਾਈਜੇਸ਼ਨ"
 
-#: libapper/PkStrings.cpp:772
+#: libapper/PkStrings.cpp:778
 msgctxt "The group type"
 msgid "Virtualization"
 msgstr "ਵੁਰਚੁਲਾਈਜੇਸ਼ਨ"
 
-#: libapper/PkStrings.cpp:774
+#: libapper/PkStrings.cpp:780
 msgctxt "The group type"
 msgid "Security"
 msgstr "ਸੁਰੱਖਿਆ"
 
-#: libapper/PkStrings.cpp:776
+#: libapper/PkStrings.cpp:782
 msgctxt "The group type"
 msgid "Power management"
 msgstr "ਪਾਵਰ ਪਰਬੰਧ"
 
-#: libapper/PkStrings.cpp:778
+#: libapper/PkStrings.cpp:784
 msgctxt "The group type"
 msgid "Communication"
 msgstr "ਕਮਿਊਨੀਕੇਸ਼ਨ"
 
-#: libapper/PkStrings.cpp:780
+#: libapper/PkStrings.cpp:786
 msgctxt "The group type"
 msgid "Network"
 msgstr "ਨੈੱਟਵਰਕ"
 
-#: libapper/PkStrings.cpp:782
+#: libapper/PkStrings.cpp:788
 msgctxt "The group type"
 msgid "Maps"
 msgstr "ਨਕਸ਼ੇ"
 
-#: libapper/PkStrings.cpp:784
+#: libapper/PkStrings.cpp:790
 msgctxt "The group type"
 msgid "Software sources"
 msgstr "ਸਾਫਟਵੇਅਰ ਸਰੋਤ"
 
-#: libapper/PkStrings.cpp:786
+#: libapper/PkStrings.cpp:792
 msgctxt "The group type"
 msgid "Science"
 msgstr "ਵਿਗਿਆਨ"
 
-#: libapper/PkStrings.cpp:788
+#: libapper/PkStrings.cpp:794
 msgctxt "The group type"
 msgid "Documentation"
 msgstr "ਡੌਕੂਮੈਨਟੇਸ਼ਨ"
 
-#: libapper/PkStrings.cpp:790
+#: libapper/PkStrings.cpp:796
 msgctxt "The group type"
 msgid "Electronics"
 msgstr "ਇਲੈਕਟਰੋਨਿਕਸ"
 
-#: libapper/PkStrings.cpp:792
+#: libapper/PkStrings.cpp:798
 msgctxt "The group type"
 msgid "Package collections"
 msgstr "ਪੈਕੇਜ ਭੰਡਾਰ"
 
-#: libapper/PkStrings.cpp:794
+#: libapper/PkStrings.cpp:800
 msgctxt "The group type"
 msgid "Vendor"
 msgstr "ਵੇਂਡਰ"
 
-#: libapper/PkStrings.cpp:796
+#: libapper/PkStrings.cpp:802
 msgctxt "The group type"
 msgid "Newest packages"
 msgstr "ਸਭ ਤੋਂ ਨਵੇਂ ਪੈਕੇਜ"
 
-#: libapper/PkStrings.cpp:798
+#: libapper/PkStrings.cpp:804
 msgctxt "The group type"
 msgid "Unknown group"
 msgstr "ਅਣਜਾਣ ਗਰੁੱਪ"
 
-#: libapper/PkStrings.cpp:809
+#: libapper/PkStrings.cpp:815
 msgctxt "The type of update"
 msgid "Trivial update"
 msgstr "ਟਰੀਵੀਲ ਅੱਪਡੇਟ"
 
-#: libapper/PkStrings.cpp:811
+#: libapper/PkStrings.cpp:817
 msgctxt "The type of update"
 msgid "Normal update"
 msgstr "ਆਮ ਅੱਪਡੇਟ"
 
-#: libapper/PkStrings.cpp:813
+#: libapper/PkStrings.cpp:819
 msgctxt "The type of update"
 msgid "Important update"
 msgstr "ਖਾਸ ਅੱਪਡੇਟ"
 
-#: libapper/PkStrings.cpp:815
+#: libapper/PkStrings.cpp:821
 msgctxt "The type of update"
 msgid "Security update"
 msgstr "ਸੁਰੱਖਿਆ ਅੱਪਡੇਟ"
 
-#: libapper/PkStrings.cpp:817
+#: libapper/PkStrings.cpp:823
 msgctxt "The type of update"
 msgid "Bug fix update"
 msgstr "ਬੱਗ ਫਿਕਸ ਅੱਪਡੇਟ"
 
-#: libapper/PkStrings.cpp:819
+#: libapper/PkStrings.cpp:825
 msgctxt "The type of update"
 msgid "Enhancement update"
 msgstr "ਇੰਹਾਂਸਮੈਂਟ ਅੱਪਡੇਟ"
 
-#: libapper/PkStrings.cpp:821
+#: libapper/PkStrings.cpp:827
 msgctxt "The type of update"
 msgid "Blocked update"
 msgstr "ਬਲਾਕ ਕੀਤੇ ਅੱਪਡੇਟ"
 
-#: libapper/PkStrings.cpp:824
+#: libapper/PkStrings.cpp:830
 msgctxt "The type of update"
 msgid "Installed"
 msgstr "ਇੰਸਟਾਲ ਕੀਤੇ"
 
-#: libapper/PkStrings.cpp:827
+#: libapper/PkStrings.cpp:833
 msgctxt "The type of update"
 msgid "Available"
 msgstr "ਉਪਲੱਬਧ"
 
-#: libapper/PkStrings.cpp:829
+#: libapper/PkStrings.cpp:835
 msgctxt "The type of update"
 msgid "Unknown update"
 msgstr "ਅਣਜਾਣ ਅੱਪਡੇਟ"
 
-#: libapper/PkStrings.cpp:840
+#: libapper/PkStrings.cpp:846
 msgid "No Updates Available"
 msgstr "ਕੋਈ ਅੱਪਡੇਟ ਉਪਲੱਬਧ ਨਹੀਂ ਹੈ"
 
-#: libapper/PkStrings.cpp:843
+#: libapper/PkStrings.cpp:849
 #, kde-format
 msgctxt "Some updates were selected on the view"
 msgid "1 Update Selected"
@@ -2837,7 +2853,7 @@ msgid_plural "%1 Updates Selected"
 msgstr[0] "੧ ਅੱਪਡੇਟ ਚੁਣਿਆ"
 msgstr[1] "%1 ਅੱਪਡੇਟ ਚੁਣੇ"
 
-#: libapper/PkStrings.cpp:847
+#: libapper/PkStrings.cpp:853
 #, kde-format
 msgctxt "Some updates are being shown on the screen"
 msgid "1 Update"
@@ -2845,13 +2861,13 @@ msgid_plural "%1 Updates"
 msgstr[0] "੧ ਅੱਪਡੇਟ"
 msgstr[1] "%1 ਅੱਪਡੇਟ"
 
-#: libapper/PkStrings.cpp:850
+#: libapper/PkStrings.cpp:856
 #, kde-format
 msgctxt "Type of update, in the case it's just an update"
 msgid "%1, %2"
 msgstr "%1, %2"
 
-#: libapper/PkStrings.cpp:851
+#: libapper/PkStrings.cpp:857
 #, kde-format
 msgctxt "Part of: %1 Updates, %1 Selected"
 msgid "%1 Update"
@@ -2859,7 +2875,7 @@ msgid_plural "%1 Updates"
 msgstr[0] "%1 ਅੱਪਡੇਟ"
 msgstr[1] "%1 ਅੱਪਡੇਟ"
 
-#: libapper/PkStrings.cpp:852
+#: libapper/PkStrings.cpp:858
 #, kde-format
 msgctxt "Part of: %1 Updates, %1 Selected"
 msgid "%1 Selected"
@@ -2867,277 +2883,243 @@ msgid_plural "%1 Selected"
 msgstr[0] "%1 ਚੁਣਿਆ"
 msgstr[1] "%1 ਚੁਣੇ"
 
-#: libapper/PkStrings.cpp:856
+#: libapper/PkStrings.cpp:862
 msgid "No Packages"
 msgstr "ਕੋਈ ਪੈਕੇਜ ਨਹੀਂ"
 
-#: libapper/PkStrings.cpp:858
+#: libapper/PkStrings.cpp:864
 #, kde-format
 msgid "1 Package"
 msgid_plural "%1 Packages"
 msgstr[0] "੧ ਪੈਕੇਜ"
 msgstr[1] "%1 ਪੈਕੇਜ"
 
-#: libapper/PkStrings.cpp:866
+#: libapper/PkStrings.cpp:872
 msgid "No restart is necessary"
 msgstr "ਮੁੜ-ਚਾਲੂ ਕਰਨ ਦੀ ਲੋੜ ਨਹੀਂ ਹੈ"
 
-#: libapper/PkStrings.cpp:868
+#: libapper/PkStrings.cpp:874
 msgid "You will be required to restart this application"
 msgstr "ਤੁਹਾਨੂੰ ਇਹ ਐਪਲੀਕੇਸ਼ਨ ਮੁੜ-ਚਾਲੂ ਕਰਨੀ ਪਵੇਗੀ"
 
-#: libapper/PkStrings.cpp:870
+#: libapper/PkStrings.cpp:876
 msgid "You will be required to log out and back in"
 msgstr "ਤੁਹਾਨੂੰ ਲਾਗ ਆਉਟ ਕਰਕੇ ਲਾਗਇਨ ਕਰਨ ਦੀ ਲੋੜ ਪਵੇਗੀ"
 
-#: libapper/PkStrings.cpp:872
+#: libapper/PkStrings.cpp:878
 msgid "A restart will be required"
 msgstr "ਮੁੜ-ਚਾਲੂ ਕਰਨਾ ਪਵੇਗਾ"
 
-#: libapper/PkStrings.cpp:874
+#: libapper/PkStrings.cpp:880
 msgid "You will be required to log out and back in due to a security update."
 msgstr "ਸੁਰੱਖਿਆ ਅਅੱਪਡੇਟ ਕਰਕੇ ਤੁਹਾਨੂੰ ਲਾਗ ਆਫ਼ ਕਰਕੇ ਮੁੜ ਲਾਗ-ਇਨ ਕਰਨ ਪਵੇਗਾ।"
 
-#: libapper/PkStrings.cpp:876
+#: libapper/PkStrings.cpp:882
 msgid "A restart will be required due to a security update."
 msgstr "ਸੁਰੱਖਿਆ ਅੱਪਡੇਟ ਕਰਕੇ ਮੁੜ-ਚਾਲੂ ਕਰਨ ਦੀ ਲੋੜ ਪਵੇਗੀ।"
 
-#: libapper/PkStrings.cpp:889
+#: libapper/PkStrings.cpp:895
 msgid "No restart is required"
 msgstr "ਮੁੜ-ਚਾਲੂ ਕਰਨ ਦੀ ਲੋੜ ਨਹੀਂ ਹੈ"
 
-#: libapper/PkStrings.cpp:891
+#: libapper/PkStrings.cpp:897
 msgid "A restart is required"
 msgstr "ਮੁੜ-ਚਾਲੂ ਕਰਨ ਦੀ ਲੋੜ ਹੈ"
 
-#: libapper/PkStrings.cpp:893
+#: libapper/PkStrings.cpp:899
 msgid "You need to log out and log back in"
 msgstr "ਤੁਹਾਨੂੰ ਲਾਗਆਉਟ ਕਰਕੇ ਫੇਰ ਲਾਗਇਨ ਕਰਨ ਦੀ ਲੋੜ ਹੈ"
 
-#: libapper/PkStrings.cpp:895
+#: libapper/PkStrings.cpp:901
 msgid "You need to restart the application"
 msgstr "ਤੁਹਾਨੂੰ ਐਪਲੀਕੇਸ਼ਨ ਮੁੜ-ਚਾਲੂ ਕਰਨ ਦੀ ਲੋੜ ਹੈ"
 
-#: libapper/PkStrings.cpp:897
+#: libapper/PkStrings.cpp:903
 msgid "You need to log out and log back in to remain secure."
 msgstr "ਤੁਹਾਨੂੰ ਸੁਰੱਖਿਅਤ ਰਹਿਣ ਲਈ ਲਾਗ ਆਉਟ ਕਰਕੇ ਲਾਗਇਨ ਕਰਨ ਦੀ ਲੋੜ ਹੈ।"
 
-#: libapper/PkStrings.cpp:899
+#: libapper/PkStrings.cpp:905
 msgid "A restart is required to remain secure."
 msgstr "ਸੁਰੱਖਿਅਤ ਕਰਨ ਲਈ ਮੁੜ-ਚਾਲੂ ਕਰਨ ਦੀ ਲੋੜ ਹੈ।"
 
-#: libapper/PkStrings.cpp:912
+#: libapper/PkStrings.cpp:918
 msgid "Stable"
 msgstr "ਸਥਿਰ"
 
-#: libapper/PkStrings.cpp:914
+#: libapper/PkStrings.cpp:920
 msgid "Unstable"
 msgstr "ਅਸਥਿਰ"
 
-#: libapper/PkStrings.cpp:916
+#: libapper/PkStrings.cpp:922
 msgid "Testing"
 msgstr "ਟੈਸਟਿੰਗ"
 
-#: libapper/PkStrings.cpp:929
+#: libapper/PkStrings.cpp:935
 #, kde-format
 msgid "Please insert the CD labeled '%1', and press continue."
 msgstr "'%1' ਨਾਂ ਦੀ ਸੀਡੀ ਪਾਉ ਜੀ ਅਤੇ ਜਾਰੀ ਰੱਖੋ।"
 
-#: libapper/PkStrings.cpp:931
+#: libapper/PkStrings.cpp:937
 #, kde-format
 msgid "Please insert the DVD labeled '%1', and press continue."
 msgstr "'%1' ਨਾਂ ਦੀ ਡੀਵੀਡੀ ਪਾ ਕੇ ਜਾਰੀ ਰੱਖੋ ਜੀ।"
 
-#: libapper/PkStrings.cpp:933
+#: libapper/PkStrings.cpp:939
 #, kde-format
 msgid "Please insert the disc labeled '%1', and press continue."
 msgstr "'%1' ਨਾਂ ਦੀ ਡਿਸਕ ਪਾ ਕੇ ਜਾਰੀ ਰੱਖੋ।"
 
-#: libapper/PkStrings.cpp:935 libapper/PkStrings.cpp:938
+#: libapper/PkStrings.cpp:941 libapper/PkStrings.cpp:944
 #, kde-format
 msgid "Please insert the medium labeled '%1', and press continue."
 msgstr "'%1' ਨਾਂ ਦਾ ਮੀਡਿਅਮ ਪਾ ਕੇ ਜਾਰੀ ਰੱਖੋ।"
 
-#: libapper/PkStrings.cpp:945
+#: libapper/PkStrings.cpp:951
 msgid "A mirror is possibly broken"
 msgstr "ਮਿੱਰਰ ਖਰਾਬ ਹੋ ਸਕਦਾ ਹੈ"
 
-#: libapper/PkStrings.cpp:947
+#: libapper/PkStrings.cpp:953
 msgid "The connection was refused"
 msgstr "ਕੁਨੈਕਸ਼ਨ ਤੋਂ ਇਨਕਾਰ"
 
-#: libapper/PkStrings.cpp:949
+#: libapper/PkStrings.cpp:955
 msgid "The parameter was invalid"
 msgstr "ਪੈਰਾਮੀਟਰ ਅਢੁੱਕਵਾਂ ਹੈ"
 
-#: libapper/PkStrings.cpp:951
+#: libapper/PkStrings.cpp:957
 msgid "The priority was invalid"
 msgstr "ਤਰਜੀਹ ਅਢੁੱਕਵੀਂ ਹੈ"
 
-#: libapper/PkStrings.cpp:953
+#: libapper/PkStrings.cpp:959
 msgid "Backend warning"
 msgstr "ਬੈਕਐਂਡ ਚੇਤਾਵਨੀ"
 
-#: libapper/PkStrings.cpp:955
+#: libapper/PkStrings.cpp:961
 msgid "Daemon warning"
 msgstr "ਡੈਮੇਨ ਚੇਤਾਵਨੀ"
 
-#: libapper/PkStrings.cpp:957
+#: libapper/PkStrings.cpp:963
 msgid "The package list cache is being rebuilt"
 msgstr "ਪੈਕੇਜ ਲਿਸਟ ਕੈਸ਼ ਮੁੜ-ਬਿਲਡ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ"
 
-#: libapper/PkStrings.cpp:959
+#: libapper/PkStrings.cpp:965
 msgid "An untrusted package was installed"
 msgstr "ਬੇਭਰੋਸੇਯੋਗ ਪੈਕੇਜ ਇੰਸਟਾਲ ਕੀਤਾ"
 
-#: libapper/PkStrings.cpp:961
+#: libapper/PkStrings.cpp:967
 msgid "A newer package exists"
 msgstr "ਨਵਾਂ ਪੈਕੇਜ ਮੌਜੂਦ ਹੈ"
 
-#: libapper/PkStrings.cpp:963
+#: libapper/PkStrings.cpp:969
 msgid "Could not find package"
 msgstr "ਪੈਕੇਜ ਨਹੀਂ ਲੱਭਿਆ"
 
-#: libapper/PkStrings.cpp:965
+#: libapper/PkStrings.cpp:971
 msgid "Configuration files were changed"
 msgstr "ਸੰਰਚਨਾ ਫਾਇਲਾਂ ਬਦਲੀਆਂ ਗਈਆਂ"
 
-#: libapper/PkStrings.cpp:967
+#: libapper/PkStrings.cpp:973
 msgid "Package is already installed"
 msgstr "ਪੈਕੇਜ ਪਹਿਲਾਂ ਹੀ ਇੰਸਟਾਲ ਹੈ"
 
-#: libapper/PkStrings.cpp:969
+#: libapper/PkStrings.cpp:975
 msgid "Automatic cleanup is being ignored"
 msgstr "ਆਟੋਮੈਟਿਕ ਸਾਫ਼ ਕਰਨ ਨੂੰ ਅਣਡਿੱਠਾ ਕੀਤਾ ਗਿਆ"
 
-#: libapper/PkStrings.cpp:971
+#: libapper/PkStrings.cpp:977
 msgid "Software source download failed"
 msgstr "ਸਾਫਟਵੇਅਰ ਸਰੋਤ ਡਾਊਨਲੋਡ ਫੇਲ੍ਹ ਹੋਇਆ"
 
-#: libapper/PkStrings.cpp:973
+#: libapper/PkStrings.cpp:979
 msgid "This software source is for developers only"
 msgstr "ਇਹ ਸਾਫਟਵੇਅਰ ਸਰੋਤ ਕੇਵਲ ਡਿਵੈਲਪਰਾਂ ਲਈ ਹੀ ਹੈ"
 
-#: libapper/PkStrings.cpp:975
+#: libapper/PkStrings.cpp:981
 msgid "Other updates have been held back"
 msgstr "ਹੋਰ ਅੱਪਡੇਟ ਰੋਕ ਕੇ ਰੱਖੇ ਗਏ ਹਨ"
 
-#: libapper/PkStrings.cpp:989
+#: libapper/PkStrings.cpp:995
 msgid "You do not have the necessary privileges to perform this action."
 msgstr "ਤੁਹਾਨੂੰ ਇਹ ਕਾਰਵਾਈ ਕਰਨ ਲਈ ਲੋੜੀਦੇ ਅਧਿਕਾਰ ਨਹੀਂ ਹਨ।"
 
-#: libapper/PkStrings.cpp:991
+#: libapper/PkStrings.cpp:997
 msgid "Could not get a transaction id from packagekitd."
 msgstr "packagekitd ਤੋਂ ਟਰਾਂਸੈਕਸ਼ਨ id ਲਿਆ ਨਹੀਂ ਜਾ ਸਕਿਆ।"
 
-#: libapper/PkStrings.cpp:993
+#: libapper/PkStrings.cpp:999
 msgid "Cannot connect to this transaction id."
 msgstr "ਇਸ ਟਰਾਂਸੈਕਸ਼ਨ id ਨਾਲ ਕੁਨੈਕਟ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਦਾ।"
 
-#: libapper/PkStrings.cpp:995
+#: libapper/PkStrings.cpp:1001
 msgid "This action is unknown."
 msgstr "ਇਹ ਕਾਰਵਾਈ ਅਣਜਾਣ ਹੈ।"
 
-#: libapper/PkStrings.cpp:997
+#: libapper/PkStrings.cpp:1003
 msgid "The packagekitd service could not be started."
 msgstr "packagekitd ਸਰਵਿਸ ਸ਼ੁਰੂ ਨਹੀਂ ਕੀਤੀ ਜਾ ਸਕਦੀ।"
 
-#: libapper/PkStrings.cpp:999
+#: libapper/PkStrings.cpp:1005
 msgid "The query is not valid."
 msgstr "ਕਿਊਰੀ ਅਢੁੱਕਵੀਂ ਹੈ।"
 
-#: libapper/PkStrings.cpp:1001
+#: libapper/PkStrings.cpp:1007
 msgid "The file is not valid."
 msgstr "ਫਾਇਲ ਅਢੁੱਕਵੀਂ ਨਹੀਂ ਹੈ।"
 
-#: libapper/PkStrings.cpp:1003
+#: libapper/PkStrings.cpp:1009
 msgid "This function is not yet supported."
 msgstr "ਇਹ ਫੰਕਸ਼ਨ ਸਹਾਇਕ ਨਹੀਂ ਹੈ।"
 
-#: libapper/PkStrings.cpp:1005
+#: libapper/PkStrings.cpp:1011
 msgid "Could not talk to packagekitd."
 msgstr "packagekitd ਨਾਲ ਗੱਲ ਨਹੀਂ ਕੀਤੀ ਜਾ ਸਕਦੀ।"
 
-#: libapper/PkStrings.cpp:1007
+#: libapper/PkStrings.cpp:1013
 msgid "Error talking to packagekitd."
 msgstr "packagekitd ਨਾਲ ਸੰਚਾਰ ਵਿੱਚ ਗਲਤੀ।"
 
-#: libapper/PkStrings.cpp:1010 libapper/PkStrings.cpp:1013
+#: libapper/PkStrings.cpp:1016 libapper/PkStrings.cpp:1019
 msgid "An unknown error happened."
 msgstr "ਅਣਜਾਣ ਗਲਤੀ ਆਈ ਹੈ।"
 
-#: libapper/PkStrings.cpp:1027
+#: libapper/PkStrings.cpp:1033
 msgid "Your system is up to date"
 msgstr "ਤੁਹਾਡਾ ਸਿਸਟਮ ਅੱਪ-ਟੂ-ਡੇਟ ਹੈ"
 
-#: libapper/PkStrings.cpp:1029
+#: libapper/PkStrings.cpp:1035
 msgid "You have no updates"
 msgstr "ਤੁਹਾਡੇ ਲਈ ਕੋਈ ਅੱਪਡੇਟ ਨਹੀਂ"
 
-#: libapper/PkStrings.cpp:1031
+#: libapper/PkStrings.cpp:1037
 msgid "Last check for updates was more than a month ago"
 msgstr "ਪਿਛਲਾ ਅੱਪਡੇਟ ਇੱਕ ਮਹੀਨੇ ਤੋਂ ਵੱਧ ਸਮੇਂ ਤੋਂ ਪਹਿਲਾਂ ਚੈੱਕ ਕੀਤਾ ਗਿਆ ਸੀ"
 
-#: libapper/PkStrings.cpp:1039
+#: libapper/PkStrings.cpp:1045
 #, kde-format
 msgid "Verified %1 ago"
 msgstr "%1 ਚਿਰ ਪਹਿਲਾਂ ਜਾਂਚਿਆ ਗਿਆ"
 
-#: libapper/PkStrings.cpp:1041
+#: libapper/PkStrings.cpp:1047
 msgid "It's strongly recommended that you check for new updates now"
 msgstr "ਇਹ ਜ਼ੋਰਦਾਰ ਸਿਫਾਰਸ਼ ਕੀਤੀ ਜਾਂਦੀ ਹੈ ਕਿ ਤੁਸੀਂ ਨਵੇਂ ਅੱਪਡੇਟ ਲਈ ਹੁਣੇ ਚੈੱਕ ਕਰੋ"
 
-#: libapper/PkTransaction.cpp:139
-msgid "Failed to simulate file install"
-msgstr "ਫਾਇਲ ਇੰਸਟਾਲ ਦੀ ਨਕਲ ਕਰਨ ਲਈ ਫੇਲ੍ਹ"
-
-#: libapper/PkTransaction.cpp:143
+#: libapper/PkTransaction.cpp:118
 msgid "Current backend does not support installing files."
 msgstr "ਮੌਜੂਦਾ ਬੈਕਐਂਡ ਫਾਇਲਾਂ ਇੰਸਟਾਲ ਕਰਨ ਲਈ ਸਹਾਇਕ ਨਹੀਂ ਹੈ।"
 
-#: libapper/PkTransaction.cpp:157
-msgid "Failed to simulate package install"
-msgstr "ਪੈਕੇਜ ਇੰਸਟਾਲ ਦੀ ਨਕਲ ਕਰਨ ਲਈ ਫੇਲ੍ਹ"
-
-#: libapper/PkTransaction.cpp:161
+#: libapper/PkTransaction.cpp:131
 msgid "Current backend does not support installing packages."
 msgstr "ਮੌਜੂਦਾ ਬੈਕਐਂਡ ਪੈਕੇਜ ਇੰਸਟਾਲ ਕਰਨ ਲਈ ਸਹਾਇਕ ਨਹੀਂ ਹੈ।"
 
-#: libapper/PkTransaction.cpp:176
-msgid "Failed to simulate package removal"
-msgstr "ਪੈਕੇਜ ਹਟਾਉਣ ਦੀ ਨਕਲ ਕਰਨ ਲਈ ਫੇਲ੍ਹ"
-
-#: libapper/PkTransaction.cpp:180
+#: libapper/PkTransaction.cpp:145
 msgid "The current backend does not support removing packages."
 msgstr "ਮੌਜੂਦਾ ਬੈਕਐਡ ਪੈਕੇਜ ਹਟਾਉਣ ਲਈ ਸਹਾਇਕ ਨਹੀਂ ਹੈ।"
 
-#: libapper/PkTransaction.cpp:199
-msgid "Failed to simulate package update"
-msgstr "ਪੈਕੇਜ ਅੱਪਡੇਟ ਕਰਨ ਦੀ ਨਕਲ ਕਰਨ ਲਈ ਫੇਲ੍ਹ"
-
-#: libapper/PkTransaction.cpp:203
+#: libapper/PkTransaction.cpp:163
 msgid "The current backend does not support updating packages."
 msgstr "ਮੌਜੂਦਾ ਬੈਕਐਡ ਪੈਕੇਜ ਅੱਪਡੇਟ ਕਰਨ ਲਈ ਸਹਾਇਕ ਨਹੀਂ ਹੈ।"
 
-#: libapper/PkTransaction.cpp:254
-msgid "Failed to install package"
-msgstr "ਪੈਕੇਜ ਇੰਸਟਾਲ ਕਰਨ ਲਈ ਫੇਲ੍ਹ"
-
-#: libapper/PkTransaction.cpp:264 PkSession/PkInstallProvideFiles.cpp:101
-msgid "Failed to install file"
-msgid_plural "Failed to install files"
-msgstr[0] "ਫਾਇਲ ਇੰਸਟਾਲ ਕਰਨ ਲਈ ਫੇਲ੍ਹ"
-msgstr[1] "ਫਾਇਲਾਂ ਇੰਸਟਾਲ ਕਰਨ ਲਈ ਫੇਲ੍ਹ"
-
-#: libapper/PkTransaction.cpp:275
-msgid "Failed to remove package"
-msgstr "ਪੈਕੇਜ ਹਟਾਉਣ ਲਈ ਫੇਲ੍ਹ ਹੈ"
-
-#: libapper/PkTransaction.cpp:285
-msgid "Failed to update package"
-msgstr "ਪੈਕੇਜ ਅੱਪਡੇਟ ਕਰਨ ਲਈ ਫੇਲ੍ਹ"
-
-#: libapper/PkTransaction.cpp:356
+#: libapper/PkTransaction.cpp:258
 msgid ""
 "You are about to install unsigned packages that can compromise your system, "
 "as it is impossible to verify if the software came from a trusted source.\n"
@@ -3149,15 +3131,11 @@ msgstr ""
 "\n"
 "ਕੀ ਤੁਸੀਂ ਇੰਸਟਾਲੇਸ਼ਨ ਜਾਰੀ ਰੱਖਣੀ ਚਾਹੁੰਦੇ ਹੋ?"
 
-#: libapper/PkTransaction.cpp:359
+#: libapper/PkTransaction.cpp:261
 msgid "Installing unsigned software"
 msgstr "ਅਣ-ਸਾਈਨ ਕੀਤਾ ਸਾਫਟਵੇਅਰ ਇੰਸਟਾਲ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ"
 
-#: libapper/PkTransaction.cpp:404 libapper/PkTransaction.cpp:491
-msgid "Failed to install signature"
-msgstr "ਦਸਤਖਤ ਇੰਸਟਾਲ ਕਰਨ ਲਈ ਫੇਲ੍ਹ ਹੈ"
-
-#: libapper/PkTransactionWidget.cpp:229 libapper/PkTransactionWidget.cpp:242
+#: libapper/PkTransactionWidget.cpp:253 libapper/PkTransactionWidget.cpp:266
 #, kde-format
 msgid "%1 (%2%)"
 msgstr "%1 (%2%)"
@@ -3352,11 +3330,6 @@ msgstr "ਕੈਟਾਲਾਗ ਖਾਲੀ ਹੈ"
 msgid "Could not find any package to install in this catalog"
 msgstr "ਇਸ ਕੈਟਾਲਾਗ ਵਿੱਚ ਇੰਸਟਾਲ ਕਰਨ ਲਈ ਕੋਈ ਪੈਕੇਜ ਨਹੀਂ ਲੱਭਿਆ ਜਾ ਸਕਿਆ"
 
-#: PkSession/PkInstallCatalogs.cpp:280 PkSession/PkInstallPackageNames.cpp:97
-#: PkSession/PkIsInstalled.cpp:46
-msgid "Failed to start resolve transaction"
-msgstr "ਟਰਾਂਸੈਕਸ਼ਨ ਹੱਲ਼ ਸ਼ੁਰੂ ਕਰਨ ਲਈ ਫੇਲ੍ਹ ਹੈ"
-
 #: PkSession/PkInstallFontconfigResources.cpp:41
 msgid "Installs new Fonts"
 msgstr "ਨਵੇਂ ਫੋਂਟ ਇੰਸਟਾਲ ਕਰੋ"
@@ -3396,104 +3369,99 @@ msgid_plural "The application %2 wants to install fonts"
 msgstr[0] "%2 ਐਪਲੀਕੇਸ਼ਨ ਇੱਕ ਫੋਂਟ ਇੰਸਟਾਲ ਕਰਨਾ ਚਾਹੁੰਦੀ ਹੈ"
 msgstr[1] "%2 ਐਪਲੀਕੇਸ਼ਨ ਫੋਂਟ ਇੰਸਟਾਲ ਕਰਨੇ ਚਾਹੁੰਦੀ ਹੈ"
 
-#: PkSession/PkInstallFontconfigResources.cpp:145
-#: PkSession/PkInstallFontconfigResources.cpp:166
-#: PkSession/PkInstallGStreamerResources.cpp:136
-#: PkSession/PkInstallMimeTypes.cpp:92
-#: PkSession/PkInstallPlasmaResources.cpp:101
-#: PkSession/PkInstallPrinterDrivers.cpp:74
-msgid "Failed to search for provides"
-msgstr "ਦੇਣ ਵਾਲੇ ਖੋਜਣ ਲਈ ਫੇਲ੍ਹ "
-
-#: PkSession/PkInstallFontconfigResources.cpp:155
-#: PkSession/PkInstallFontconfigResources.cpp:164
+#: PkSession/PkInstallFontconfigResources.cpp:149
+#: PkSession/PkInstallFontconfigResources.cpp:158
 msgid "Failed to find font"
 msgstr "ਫੋਂਟ ਲੱਭਣ ਲਈ ਫੇਲ੍ਹ ਹੈ"
 
-#: PkSession/PkInstallFontconfigResources.cpp:157
+#: PkSession/PkInstallFontconfigResources.cpp:151
 msgid "No new fonts could be found for this document"
 msgstr "ਇਹ ਡੌਕੂਮੈਂਟ ਲਈ ਨਵੇਂ ਫੋਂਟ ਨਹੀਂ ਲੱਭੇ ਜਾ ਸਕੇ"
 
-#: PkSession/PkInstallGStreamerResources.cpp:39
+#: PkSession/PkInstallFontconfigResources.cpp:160
+msgid "Failed to search for provides"
+msgstr "ਦੇਣ ਵਾਲੇ ਖੋਜਣ ਲਈ ਫੇਲ੍ਹ "
+
+#: PkSession/PkInstallGStreamerResources.cpp:40
 msgid "Install GStreamer Resources"
 msgstr "ਜੀਸਟਰੀਮਰ ਸਰੋਤ ਇੰਸਟਾਲ ਕਰੋ"
 
-#: PkSession/PkInstallGStreamerResources.cpp:68
+#: PkSession/PkInstallGStreamerResources.cpp:69
 msgid "The following plugin is required. Do you want to search for this now?"
 msgid_plural ""
 "The following plugins are required. Do you want to search for these now?"
 msgstr[0] "ਅੱਗੇ ਦਿੱਤੀ ਪਲੱਗਇਨ ਚਾਹੀਦੀ ਹੈ। ਕੀ ਤੁਸੀਂ ਇਹ ਹੁਣੇ ਲੱਭਣੀ ਚਾਹੁੰਦੇ ਹੋ?"
 msgstr[1] "ਅੱਗੇ ਦਿੱਤੀਆਂ ਪਲੱਗਇਨ ਲੋੜੀਦੀਆਂ ਹਨ। ਕੀ ਤੁਸੀਂ ਇਹਨਾਂ ਨੂੰ ਹੁਣੇ ਲੱਭਣੀਆਂ ਚਾਹੁੰਦੇ ਹੋ?"
 
-#: PkSession/PkInstallGStreamerResources.cpp:80
+#: PkSession/PkInstallGStreamerResources.cpp:81
 msgid "A program requires an additional plugin to decode this file"
 msgid_plural "A program requires additional plugins to decode this file"
 msgstr[0] "ਪਰੋਗਰਾਮ ਨੂੰ ਇਹ ਫਾਇਲ ਡੀਕੋਡ ਕਰਨ ਲਈ ਹੋਰ ਪਲੱਗਇਨ ਦੀ ਲੋੜ ਹੈ"
 msgstr[1] "ਇਹ ਪਰੋਗਰਾਮ ਨੂੰ ਇਹ ਫਾਇਲ ਡੀਕੋਡ ਕਰਨ ਲਈ ਹੋਰ ਪਲੱਗਇਨ ਦੀ ਲੋੜ ਹੈ"
 
-#: PkSession/PkInstallGStreamerResources.cpp:85
+#: PkSession/PkInstallGStreamerResources.cpp:86
 msgid "A program requires an additional plugin to encode this file"
 msgid_plural "A program requires additional plugins to encode this file"
 msgstr[0] "ਪਰੋਗਰਾਮ ਨੂੰ ਇਹ ਫਾਇਲ ਇੰਕੋਡ ਕਰਨ ਲਈ ਹੋਰ ਪਲੱਗਇਨ ਦੀ ਲੋੜ ਹੈ"
 msgstr[1] "ਪਰੋਗਰਾਮ ਨੂੰ ਇਹ ਫਾਇਲਾਂ ਇੰਕੋਡ ਕਰਨ ਲਈ ਹੋਰ ਪਲੱਗਇਨ ਦੀ ਲੋੜ ਹੈ"
 
-#: PkSession/PkInstallGStreamerResources.cpp:90
+#: PkSession/PkInstallGStreamerResources.cpp:91
 msgid "A program requires an additional plugin for this operation"
 msgid_plural "A program requires additional plugins for this operation"
 msgstr[0] "ਪਰੋਗਰਾਮ ਨੂੰ ਇਹ ਓਪਰੇਸ਼ਨ ਲਈ ਹੋਰ ਪਲੱਗਇਨ ਦੀ ਲੋੜ ਹੈ"
 msgstr[1] "ਪਰੋਗਰਾਮ ਨੂੰ ਇਹ ਓਪਰੇਸ਼ਨ ਲਈ ਹੋਰ ਪਲੱਗਇਨਾਂ ਦੀ ਲੋੜ ਹੈ"
 
-#: PkSession/PkInstallGStreamerResources.cpp:97
+#: PkSession/PkInstallGStreamerResources.cpp:98
 #, kde-format
 msgid "%2 requires an additional plugin to decode this file"
 msgid_plural "%2 requires additional plugins to decode this file"
 msgstr[0] "%2 ਨੂੰ ਇਹ ਫਾਇਲ ਡੀਕੋਡ ਕਰਨ ਲਈ ਹੋਰ ਪਲੱਗਇਨ ਦੀ ਲੋੜ ਹੈ"
 msgstr[1] "%2 ਨੂੰ ਇਹ ਫਾਇਲ ਡੀਕੋਡ ਕਰਨ ਲਈ ਹੋਰ ਪਲੱਗਇਨ ਦੀ ਲੋੜ ਹੈ"
 
-#: PkSession/PkInstallGStreamerResources.cpp:103
+#: PkSession/PkInstallGStreamerResources.cpp:104
 #, kde-format
 msgid "%2 requires an additional plugin to encode this file"
 msgid_plural "%2 requires additional plugins to encode this file"
 msgstr[0] "%2 ਨੂੰ ਇਹ ਫਾਇਲ ਇੰਕੋਡ ਕਰਨ ਲਈ ਹੋਰ ਪਲੱਗਇਨ ਦੀ ਲੋੜ ਹੈ"
 msgstr[1] "%2 ਨੂੰ ਇਹ ਫਾਇਲ ਇੰਕੋਡ ਕਰਨ ਲਈ ਹੋਰ ਪਲੱਗਇਨ ਦੀ ਲੋੜ ਹੈ"
 
-#: PkSession/PkInstallGStreamerResources.cpp:109
+#: PkSession/PkInstallGStreamerResources.cpp:110
 #, kde-format
 msgid "%2 requires an additional plugin for this operation"
 msgid_plural "%2 requires additional plugins for this operation"
 msgstr[0] "%2 ਨੂੰ ਇਹ ਓਪਰੇਸ਼ਨ ਲਈ ਹੋਰ ਪਲੱਗਇਨ ਦੀ ਲੋੜ ਹੈ"
 msgstr[1] "%2 ਨੂੰ ਇਹ ਓਪਰੇਸ਼ਨ ਲਈ ਹੋਰ ਪਲੱਗਇਨਾਂ ਦੀ ਲੋੜ ਹੈ"
 
-#: PkSession/PkInstallGStreamerResources.cpp:147
+#: PkSession/PkInstallGStreamerResources.cpp:142
 msgid "No results found"
 msgstr "ਕੋਈ ਨਤੀਜਾ ਨਹੀਂ ਲੱਭਿਆ"
 
-#: PkSession/PkInstallGStreamerResources.cpp:149
+#: PkSession/PkInstallGStreamerResources.cpp:144
 msgid "Could not find plugin in any configured software source"
 msgstr "ਸੰਰਚਿਤ ਸਾਫਟਵੇਅਰ ਸਰੋਤ ਉੱਤੇ ਕੋਈ ਪਲੱਗਇਨ ਨਹੀਂ ਲੱਭੀ"
 
-#: PkSession/PkInstallMimeTypes.cpp:39
+#: PkSession/PkInstallMimeTypes.cpp:41
 msgid "Install Support for File Types"
 msgstr "ਫਾਇਲ ਕਿਸਮਾਂ ਲਈ ਸਹਿਯੋਗ ਇੰਸਟਾਲ ਕਰੋ"
 
-#: PkSession/PkInstallMimeTypes.cpp:50
+#: PkSession/PkInstallMimeTypes.cpp:52
 msgid "Do you want to search for a program that can open this file type?"
 msgid_plural ""
 "Do you want to search for a program that can open these file types?"
 msgstr[0] "ਕੀ ਤੁਸੀਂ ਇਹ ਫਾਇਲ ਕਿਸਮ ਖੋਲ੍ਹਣ ਵਾਲੇ ਪ੍ਰੋਗਰਾਮ ਨੂੰ ਲੱਭਣਾ ਚਾਹੁੰਦੇ ਹੋ?"
 msgstr[1] "ਕੀ ਤੁਸੀਂ ਇਹ ਫਾਇਲ ਕਿਸਮਾਂ ਖੋਲ੍ਹਣ ਵਾਲੇ ਪ੍ਰੋਗਰਾਮ ਨੂੰ ਲੱਭਣਾ ਚਾਹੁੰਦੇ ਹੋ?"
 
-#: PkSession/PkInstallMimeTypes.cpp:55
+#: PkSession/PkInstallMimeTypes.cpp:57
 msgid "No valid file types were provided"
 msgstr "ਕੋਈ ਢੁੱਕਵੀਂਆਂ ਫਾਇਲ ਕਿਸਮਾਂ ਨਹੀਂ ਦਿੱਤੀਆਂ ਗਈਆਂ"
 
-#: PkSession/PkInstallMimeTypes.cpp:62
+#: PkSession/PkInstallMimeTypes.cpp:64
 msgid "A program is requiring support to open this kind of files"
 msgid_plural "A program is requiring support to open these kinds of files"
 msgstr[0] "ਇਹ ਕਿਸਮ ਦੀਆਂ ਫਾਇਲਾਂ ਨੂੰ ਖੋਲ੍ਹਣ ਲਈ ਸਹਿਯੋਗੀ ਪ੍ਰੋਗਰਾਮ ਦੀ ਲੋੜ ਹੈ"
 msgstr[1] "ਇਹ ਕਿਸਮਾਂ ਦੀਆਂ ਫਾਇਲਾਂ ਨੂੰ ਖੋਲ੍ਹਣ ਲਈ ਸਹਿਯੋਗੀ ਪ੍ਰੋਗਰਾਮ ਦੀ ਲੋੜ ਹੈ"
 
-#: PkSession/PkInstallMimeTypes.cpp:66
+#: PkSession/PkInstallMimeTypes.cpp:68
 #, kde-format
 msgid "The application %2 is requiring support to open this kind of files"
 msgid_plural ""
@@ -3501,11 +3469,11 @@ msgid_plural ""
 msgstr[0] "%2 ਐਪਲੀਕੇਸ਼ਨ ਇਹ ਫਾਇਲਾਂ ਦੀ ਕਿਸਮ ਖੋਲ੍ਹਣ ਲਈ ਸਹਿਯੋਗ ਚਾਹੀਦਾ ਹੈ"
 msgstr[1] "%2 ਐਪਲੀਕੇਸ਼ਨ ਲਈ ਇਹ ਫਾਇਲਾਂ ਦੀ ਕਿਸਮਾਂ ਖੋਲ੍ਹਣ ਲਈ ਸਹਿਯੋਗ ਦੀ ਲੋੜ ਹੈ"
 
-#: PkSession/PkInstallMimeTypes.cpp:101
+#: PkSession/PkInstallMimeTypes.cpp:97
 msgid "Could not find software"
 msgstr "ਸਾਫਟਵੇਅਰ ਨਹੀਂ ਲੱਭਿਆ ਜਾ ਸਕਿਆ"
 
-#: PkSession/PkInstallMimeTypes.cpp:103
+#: PkSession/PkInstallMimeTypes.cpp:99
 msgid "No new applications can be found to handle this type of file"
 msgstr "ਇਸ ਕਿਸਮ ਦੀ ਫਾਇਲ ਨੂੰ ਹੈਂਡਲ ਕਰਨ ਲਈ ਕੋਈ ਨਵੀਂ ਐਪਲੀਕੇਸ਼ਨ ਨਹੀਂ ਲੱਭੀ ਜਾ ਸਕੀ"
 
@@ -3514,7 +3482,7 @@ msgid "Install Packages Files"
 msgstr "ਪੈਕੇਜ ਫਾਇਲਾਂ ਇੰਸਟਾਲ ਕਰੋ"
 
 #: PkSession/PkInstallPackageFiles.cpp:42
-#: PkSession/PkRemovePackageByFiles.cpp:43
+#: PkSession/PkRemovePackageByFiles.cpp:45
 msgid "You can drop more files in here"
 msgstr "ਤੁਸੀਂ ਹੋਰ ਫਾਇਲਾਂ ਇੱਥੇ ਸੁੱਟ ਸਕਦੇ ਹੋ"
 
@@ -3527,7 +3495,7 @@ msgid "Your current backend does not support installing files"
 msgstr "ਤੁਹਾਡਾ ਮੌਜੂਦਾ ਬੈਕਐਂਡ ਫਾਇਲਾਂ ਇੰਸਟਾਲ ਕਰਨ ਲਈ ਸਹਾਇਕ ਨਹੀਂ ਹੈ"
 
 #: PkSession/PkInstallPackageFiles.cpp:68
-#: PkSession/PkRemovePackageByFiles.cpp:64
+#: PkSession/PkRemovePackageByFiles.cpp:66
 msgid "No supported files were provided"
 msgstr "ਕੋਈ ਸਹਾਇਕ ਫਾਇਲਾਂ ਨਹੀਂ ਦਿੱਤੀਆਂ ਗਈਆਂ ਹਨ"
 
@@ -3538,14 +3506,14 @@ msgstr[0] "ਕੀ ਤੁਸੀਂ ਇਹ ਫਾਇਲ ਇੰਸਟਾਲ ਕਰ�
 msgstr[1] "ਕੀ ਤੁਸੀਂ ਇਹ ਫਾਇਲਾਂ ਇੰਸਟਾਲ ਕਰਨੀਆਂ ਚਾਹੁੰਦੇ ਹੋ ਤਾਂ <i>ਜਾਰੀ ਰੱਖੋ</i> ਨੂੰ ਦੱਬੋ"
 
 #: PkSession/PkInstallPackageFiles.cpp:79
-#: PkSession/PkInstallPackageNames.cpp:71
+#: PkSession/PkInstallPackageNames.cpp:73
 msgid "An application wants to install a package"
 msgid_plural "An application wants to install packages"
 msgstr[0] "ਇੱਕ ਐਪਲੀਕੇਸ਼ਨ ਇੱਕ ਪੈਕੇਜ ਇੰਸਟਾਲ ਕਰਨੀ ਚਾਹੁੰਦੀ ਹੈ"
 msgstr[1] "ਇੱਕ ਐਪਲੀਕੇਸ਼ਨ ਪੈਕੇਜ ਇੰਸਟਾਲ ਕਰਨੇ ਚਾਹੁੰਦੀ ਹੈ"
 
 #: PkSession/PkInstallPackageFiles.cpp:83
-#: PkSession/PkInstallPackageNames.cpp:75
+#: PkSession/PkInstallPackageNames.cpp:77
 #, kde-format
 msgid "The application <i>%2</i> wants to install a package"
 msgid_plural "The application <i>%2</i> wants to install packages"
@@ -3571,210 +3539,212 @@ msgstr "ਫਾਇਲਾਂ ਇੰਸਟਾਲ ਕਰਨ ਲਈ ਫੇਲ੍ਹ �
 msgid "Could not install files"
 msgstr "ਫਾਇਲਾਂ ਇੰਸਟਾਲ ਨਹੀਂ ਕੀਤੀਆਂ ਜਾ ਸਕੀਆਂ"
 
-#: PkSession/PkInstallPackageNames.cpp:41
+#: PkSession/PkInstallPackageNames.cpp:43
 msgid "Install Packages by Name"
 msgstr "ਪੈਕੇਜ ਨਾਂ ਮੁਤਾਬਕ ਇੰਸਟਾਲ ਕਰੋ"
 
-#: PkSession/PkInstallPackageNames.cpp:58
+#: PkSession/PkInstallPackageNames.cpp:60
 msgid "No package names were provided"
 msgstr "ਕੋਈ ਪੈਕੇਜ ਨਾਂ ਨਹੀਂ ਦਿੱਤਾ ਗਿਆ"
 
-#: PkSession/PkInstallPackageNames.cpp:61
+#: PkSession/PkInstallPackageNames.cpp:63
 msgid "Do you want to search for and install this package now?"
 msgid_plural "Do you want to search for and install these packages now?"
 msgstr[0] "ਕੀ ਤੁਸੀਂ ਇਸ ਪੈਕੇਜ ਲਈ ਹੁਣੇ ਖੋਜ ਕਰਨੀ ਅਤੇ ਇੰਸਟਾਲ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ?"
 msgstr[1] "ਕੀ ਤੁਸੀਂ ਇਹ ਪੈਕੇਜ ਲਈ ਹੁਣੇ ਕਰਨੀ ਕਰਨ ਅਤੇ ਇੰਸਟਾਲ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ?"
 
-#: PkSession/PkInstallPackageNames.cpp:109
+#: PkSession/PkInstallPackageNames.cpp:104
 msgid "Failed to install packages"
 msgstr "ਪੈਕੇਜ ਇੰਸਟਾਲ ਕਰਨ ਲਈ ਫੇਲ੍ਹ"
 
-#: PkSession/PkInstallPackageNames.cpp:110
+#: PkSession/PkInstallPackageNames.cpp:105
 #, kde-format
 msgid "The package %2 is already installed"
 msgid_plural "The packages %2 are already installed"
 msgstr[0] "ਪੈਕੇਜ %2 ਪਹਿਲਾਂ ਹੀ ਇੰਸਟਾਲ ਹੈ"
 msgstr[1] "ਪੈਕੇਜ %2 ਪਹਿਲਾਂ ਹੀ ਇੰਸਟਾਲ ਹਨ"
 
-#: PkSession/PkInstallPackageNames.cpp:118
-#: PkSession/PkRemovePackageByFiles.cpp:149 PkSession/PkSearchFile.cpp:89
+#: PkSession/PkInstallPackageNames.cpp:113
+#: PkSession/PkRemovePackageByFiles.cpp:143 PkSession/PkSearchFile.cpp:82
 #, kde-format
 msgid "Could not find %1"
 msgstr "%1 ਨਹੀਂ ਲੱਭਿਆ"
 
-#: PkSession/PkInstallPackageNames.cpp:119
+#: PkSession/PkInstallPackageNames.cpp:114
 msgid "The package could not be found in any software source"
 msgid_plural "The packages could not be found in any software source"
 msgstr[0] "ਪੈਕੇਜ ਕਿਸੇ ਸਾਫਟਵੇਅਰ ਸਰੋਤ ਉੱਤੇ ਨਹੀਂ ਲੱਭਿਆ।"
 msgstr[1] "ਪੈਕੇਜ ਕਿਸੇ ਸਾਫਟਵੇਅਰ ਸਰੋਤ ਉੱਤੇ ਨਹੀਂ ਲੱਭੇ।"
 
-#: PkSession/PkInstallPlasmaResources.cpp:40
+#: PkSession/PkInstallPlasmaResources.cpp:41
 msgid "Install Plasma Resources"
 msgstr "ਪਲਾਜ਼ਮਾ ਸਰੋਤ ਇੰਸਟਾਲ ਕਰੋ"
 
-#: PkSession/PkInstallPlasmaResources.cpp:53
+#: PkSession/PkInstallPlasmaResources.cpp:54
 #, kde-format
 msgid "%1 data engine"
 msgstr "%1 ਡਾਟਾ ਇੰਜਣ"
 
-#: PkSession/PkInstallPlasmaResources.cpp:55
+#: PkSession/PkInstallPlasmaResources.cpp:56
 #, kde-format
 msgid "%1 script engine"
 msgstr "%1 ਸਕ੍ਰਿਪਟ ਇੰਜਣ"
 
-#: PkSession/PkInstallPlasmaResources.cpp:67
+#: PkSession/PkInstallPlasmaResources.cpp:68
 msgid "No supported resources were provided"
 msgstr "ਕੋਈ ਸਹਾਇਕ ਸਰੋਤ ਦਿੱਤਾ ਗਿਆ ਨਹੀਂ ਗਿਆ"
 
-#: PkSession/PkInstallPlasmaResources.cpp:69
+#: PkSession/PkInstallPlasmaResources.cpp:70
 msgid "The following service is required. Do you want to search for this now?"
 msgid_plural ""
 "The following services are required. Do you want to search for these now?"
 msgstr[0] "ਸਾਫਟਵੇਅਰ ਸਰਵਿਸ ਲੋੜੀਦੀ ਹੈ। ਕੀ ਤੁਸੀਂ ਇਹ ਹੁਣ ਲੱਭਣੀ ਚਾਹੁੰਦੇ ਹੋ?"
 msgstr[1] "ਅੱਗੇ ਦਿੱਤੀਆਂ ਸਰਵਿਸਾਂ ਦੀ ਲੋੜ ਹੈ। ਕੀ ਤੁਸੀਂ ਇਹਨਾਂ ਦੀ ਹੁਣ ਖੋਜ ਕਰਨੀ ਚਾਹੁੰਦੇ ਹੋ?"
 
-#: PkSession/PkInstallPlasmaResources.cpp:78
+#: PkSession/PkInstallPlasmaResources.cpp:79
 msgid "Plasma requires an additional service for this operation"
 msgid_plural "Plasma requires additional services for this operation"
 msgstr[0] "ਇਹ ਕਾਰਵਾਈ ਲਈ ਪਲਾਜ਼ਮਾ ਨੂੰ ਹੋਰ ਸਰਵਿਸ ਚਾਹੀਦੀ ਹੈ"
 msgstr[1] "ਇਹ ਕਾਰਵਾਈ ਲਈ ਪਲਾਜ਼ਮਾ ਵਾਸਤੇ ਹੋਰ ਸਰਵਿਸਾਂ ਦੀ ਲੋੜ ਹੈ"
 
-#: PkSession/PkInstallPlasmaResources.cpp:112
+#: PkSession/PkInstallPlasmaResources.cpp:106
 msgid "Failed to search for Plasma service"
 msgstr "ਪਲਾਜ਼ਮਾ ਸਰਵਿਸ ਲਈ ਲੱਭਣ ਵਾਸਤੇ ਫੇਲ੍ਹ ਹੈ"
 
-#: PkSession/PkInstallPlasmaResources.cpp:115
+#: PkSession/PkInstallPlasmaResources.cpp:109
 msgid "Could not find service in any configured software source"
 msgstr "ਕਿਸੇ ਵੀ ਸੰਰਚਿਤ ਸਾਫਟਵੇਅਰ ਸਰੋਤ ਵਿੱਚ ਕੋਈ ਵੀ ਸਰਵਿਸ ਨਹੀਂ ਲੱਭੀ"
 
-#: PkSession/PkInstallPrinterDrivers.cpp:39
+#: PkSession/PkInstallPrinterDrivers.cpp:41
 msgid "Install Printer Drivers"
 msgstr "ਪਰਿੰਟਰ ਡਰਾਇਵਰ ਇੰਸਟਾਲ ਕਰੋ"
 
-#: PkSession/PkInstallPrinterDrivers.cpp:87
+#: PkSession/PkInstallPrinterDrivers.cpp:84
 msgid "Failed to search for printer driver"
 msgstr "ਪਰਿੰਟਰ ਡਰਾਇਵਰ ਲੱਭਣ ਲਈ ਫੇਲ੍ਹ ਹੈ"
 
-#: PkSession/PkInstallPrinterDrivers.cpp:88
+#: PkSession/PkInstallPrinterDrivers.cpp:85
 msgid "Could not find printer driver in any configured software source"
 msgstr "ਸੰਰਚਿਤ ਸਾਫਟਵੇਅਰ ਸਰੋਤ ਤੋਂ ਕੋਈ ਪਰਿੰਟਰ ਡਰਾਇਵਰ ਨਹੀਂ ਲੱਭਿਆ ਜਾ ਸਕਿਆ"
 
-#: PkSession/PkInstallProvideFiles.cpp:39
+#: PkSession/PkInstallProvideFiles.cpp:41
 msgid "Install Packages that Provides Files"
 msgstr "ਪੈਕੇਜ ਇੰਸਟਾਲ ਕਰੋ, ਜੋ ਫਾਇਲਾਂ ਦਿੰਦੇ ਹਨ"
 
-#: PkSession/PkInstallProvideFiles.cpp:49
+#: PkSession/PkInstallProvideFiles.cpp:51
 msgid "No files were provided"
 msgstr "ਕੋਈ ਫਾਇਲਾਂ ਨਹੀਂ ਦਿੱਤੀਆਂ ਗਈਆਂ"
 
-#: PkSession/PkInstallProvideFiles.cpp:52
+#: PkSession/PkInstallProvideFiles.cpp:54
 msgid "Do you want to search for this now?"
 msgid_plural "Do you want to search for these now?"
 msgstr[0] "ਕੀ ਤੁਸੀਂ ਇਸ ਲਈ ਖੋਜ ਕਰਨੀ ਚਾਹੁੰਦੇ ਹੋ?"
 msgstr[1] "ਕੀ ਤੁਸੀਂ ਇਹਨਾਂ ਲਈ ਹੁਣ ਖੋਜ ਕਰਨੀ ਚਾਹੁੰਦੇ ਹੋ?"
 
-#: PkSession/PkInstallProvideFiles.cpp:62
+#: PkSession/PkInstallProvideFiles.cpp:64
 msgid "A program wants to install a file"
 msgid_plural "A program wants to install files"
 msgstr[0] "ਪਰੋਗਰਾਮ ਫਾਇਲ ਇੰਸਟਾਲ ਕਰਨੀ ਚਾਹੁੰਦਾ ਹੈ"
 msgstr[1] "ਪਰੋਗਰਾਮ ਫਾਇਲਾਂ ਇੰਸਟਾਲ ਕਰਨੀਆਂ ਚਾਹੁੰਦਾ ਹੈ"
 
-#: PkSession/PkInstallProvideFiles.cpp:66
+#: PkSession/PkInstallProvideFiles.cpp:68
 #, kde-format
 msgid "The application %2 is asking to install a file"
 msgid_plural "The application %2 is asking to install files"
 msgstr[0] "%2 ਐਪਲੀਕੇਸ਼ਨ ਇੱਕ ਫਾਇਲ ਇੰਸਟਾਲ ਕਰਨ ਲਈ ਪੁੱਛ ਰਹੀ ਹੈ"
 msgstr[1] "%2 ਐਪਲੀਕੇਸ਼ਨ ਫਾਇਲਾਂ ਇੰਸਟਾਲ ਕਰਨ ਲਈ ਪੁੱਛ ਰਹੀ ਹੈ"
 
-#: PkSession/PkInstallProvideFiles.cpp:88
-#: PkSession/PkRemovePackageByFiles.cpp:128 PkSession/PkSearchFile.cpp:55
-msgid "Failed to start search file transaction"
-msgstr "ਫਾਇਲ ਟਰਾਂਸੈਕਸ਼ਨ ਖੋਜ ਸ਼ੁਰੂ ਕਰਨ ਲਈ ਫੇਲ੍ਹ ਹੈ"
+#: PkSession/PkInstallProvideFiles.cpp:96
+#, fuzzy
+#| msgid "Failed to install file"
+#| msgid_plural "Failed to install files"
+msgid "Failed to install file"
+msgstr "ਫਾਇਲ ਇੰਸਟਾਲ ਕਰਨ ਲਈ ਫੇਲ੍ਹ"
 
-#: PkSession/PkInstallProvideFiles.cpp:102
+#: PkSession/PkInstallProvideFiles.cpp:97
 #, kde-format
 msgid "The %1 package already provides this file"
 msgstr "%1 ਪੈਕੇਜ ਪਹਿਲਾਂ ਹੀ ਇਹ ਫਾਇਲ ਦਿੰਦਾ ਹੈ"
 
-#: PkSession/PkInstallProvideFiles.cpp:108
+#: PkSession/PkInstallProvideFiles.cpp:103
 msgid "Failed to find package"
 msgstr "ਪੈਕੇਜ ਲੱਭਣ ਲਈ ਫੇਲ੍ਹ"
 
-#: PkSession/PkInstallProvideFiles.cpp:109
+#: PkSession/PkInstallProvideFiles.cpp:104
 msgid "The file could not be found in any packages"
 msgid_plural "The files could not be found in any packages"
 msgstr[0] "ਫਾਇਲ ਕਿਸੇ ਪੈਕੇਜ ਵਿੱਚ ਨਹੀਂ ਲੱਭੀ ਜਾ ਸਕੀ"
 msgstr[1] "ਫਾਇਲਾਂ ਕਿਸੇ ਪੈਕੇਜ ਵਿੱਚ ਲੱਭੀਆਂ ਜਾ ਸਕੀਆਂ"
 
-#: PkSession/PkIsInstalled.cpp:36
+#: PkSession/PkIsInstalled.cpp:38
 msgid "Querying if a Package is Installed"
 msgstr "ਕਿਊਰੀ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ, ਜੇ ਇੱਕ ਪੈਕੇਜ ਇੰਸਟਾਲ ਹੈ"
 
-#: PkSession/PkIsInstalled.cpp:67
+#: PkSession/PkIsInstalled.cpp:61
 msgid "User canceled the transaction"
 msgstr "ਯੂਜ਼ਰ ਨੇ ਟਰਾਂਸੈਕਸ਼ਨ ਰੱਦ ਕੀਤੀ"
 
-#: PkSession/PkIsInstalled.cpp:69
+#: PkSession/PkIsInstalled.cpp:63
 msgid "An unknown error happened"
 msgstr "ਅਣਜਾਣ ਗਲਤੀ ਆਈ"
 
-#: PkSession/PkRemovePackageByFiles.cpp:40
+#: PkSession/PkRemovePackageByFiles.cpp:42
 msgid "Remove Packages that Provides Files"
 msgstr "ਪੈਕੇਜ ਹਟਾਓ, ਜੋ ਫਾਇਲਾਂ ਦਿੰਦਾ ਹੈ"
 
-#: PkSession/PkRemovePackageByFiles.cpp:67
+#: PkSession/PkRemovePackageByFiles.cpp:69
 msgid "Do you want to remove the following application?"
 msgid_plural "Do you want to remove the following applications?"
 msgstr[0] "ਕੀ ਤੁਸੀਂ ਅੱਗੇ ਦਿੱਤੀ ਐਪਲੀਕੇਸ਼ਨ ਹਟਾਉਨਾ ਚਾਹੁੰਦੇ ਹੋ?"
 msgstr[1] "ਕੀ ਤੁਸੀਂ ਹੇਠ ਦਿੱਤੀਆਂ ਐਪਲੀਕੇਸ਼ਨ ਨੂੰ ਹਟਾਉਣਾ ਚਾਹੁੰਦੇ ਹੋ?"
 
-#: PkSession/PkRemovePackageByFiles.cpp:71
+#: PkSession/PkRemovePackageByFiles.cpp:73
 msgid "Do you want to search for a package providing this file?"
 msgid_plural "Do you want to search for a package providing these files?"
 msgstr[0] "ਕੀ ਤੁਸੀਂ ਇਹ ਫਾਇਲ ਦੇਣ ਵਾਲੇ ਪੈਕੇਜ ਨੂੰ ਲੱਭਣਾ ਚਾਹੁੰਦੇ ਹੋ?"
 msgstr[1] "ਕੀ ਤੁਸੀਂ ਇਹ ਫਾਇਲਾਂ ਦੇਣ ਵਾਲੇ ਪੈਕੇਜ ਨੂੰ ਲੱਭਣਾ ਚਾਹੁੰਦੇ ਹੋ?"
 
-#: PkSession/PkRemovePackageByFiles.cpp:82
+#: PkSession/PkRemovePackageByFiles.cpp:84
 msgid "An application is asking to remove an application"
 msgid_plural "An application is asking to remove applications"
 msgstr[0] "ਐਪਲੀਕੇਸ਼ਨ ਇੱਕ ਐਪਲੀਕੇਸ਼ਨ ਨੂੰ ਹਟਾਉਣ ਲਈ ਪੁੱਛ ਰਿਹਾ ਹੈ"
 msgstr[1] "ਐਪਲੀਕੇਸ਼ਨ ਹੋਰ ਐਪਲੀਕੇਸ਼ਨਾਂ ਨੂੰ ਹਟਾਉਣ ਲਈ ਪੁੱਛ ਰਿਹਾ ਹੈ"
 
-#: PkSession/PkRemovePackageByFiles.cpp:86
+#: PkSession/PkRemovePackageByFiles.cpp:88
 msgid "An application is asking to remove a file"
 msgid_plural "An application is asking to remove files"
 msgstr[0] "ਐਪਲੀਕੇਸ਼ਨ ਇੱਕ ਫਾਇਲ ਹਟਾਉਣ ਲਈ ਪੁੱਛ ਰਹੀ ਹੈ"
 msgstr[1] "ਐਪਲੀਕੇਸ਼ਨ ਫਾਇਲਾਂ ਹਟਾਉਣ ਲਈ ਪੁੱਛ ਰਹੀ ਹੈ"
 
-#: PkSession/PkRemovePackageByFiles.cpp:92
+#: PkSession/PkRemovePackageByFiles.cpp:94
 #, kde-format
 msgid "The application <i>%2</i> is asking to remove an application"
 msgid_plural "The application <i>%2</i> is asking to remove applications"
 msgstr[0] "<i>%2</i> ਐਪਲੀਕੇਸ਼ਨ ਇੱਕ ਐਪਲੀਕੇਸ਼ਨ ਨੂੰ ਹਟਾਉਣ ਲਈ ਪੁੱਛ ਰਹੀ ਹੈ"
 msgstr[1] "<i>%2</i> ਐਪਲੀਕੇਸ਼ਨ ਐਪਲੀਕੇਸ਼ਨਾਂ ਨੂੰ ਹਟਾਉਣ ਲਈ ਪੁੱਛ ਰਹੀ ਹੈ"
 
-#: PkSession/PkRemovePackageByFiles.cpp:97
+#: PkSession/PkRemovePackageByFiles.cpp:99
 #, kde-format
 msgid "The application <i>%2</i> is asking to remove a file"
 msgid_plural "The application <i>%2</i> is asking to remove files"
 msgstr[0] "<i>%2</i> ਐਪਲੀਕੇਸ਼ਨ ਇੱਕ ਫਾਇਲ ਹਟਾਉਣ ਲਈ ਪੁੱਛ ਰਹੀ ਹੈ"
 msgstr[1] "<i>%2</i> ਐਪਲੀਕੇਸ਼ਨ ਫਾਇਲਾਂ ਹਟਾਉਣ ਲਈ ਪੁੱਛ ਰਹੀ ਹੈ"
 
-#: PkSession/PkRemovePackageByFiles.cpp:103
+#: PkSession/PkRemovePackageByFiles.cpp:105
 msgid "No application was found"
 msgstr "ਕੋਈ ਐਪਲੀਕੇਸ਼ਨ ਨਹੀਂ ਲੱਭੀ"
 
-#: PkSession/PkRemovePackageByFiles.cpp:150
+#: PkSession/PkRemovePackageByFiles.cpp:144
 msgid "The file could not be found in any installed package"
 msgid_plural "The files could not be found in any installed package"
 msgstr[0] "ਫਾਇਲ ਕਿਸੇ ਇੰਸਟਾਲ ਪੈਕੇਜ ਵਿੱਚ ਨਹੀਂ ਲੱਭੀ"
 msgstr[1] "ਫਾਇਲ ਕਿਸੇ ਇੰਸਟਾਲ ਪੈਕੇਜ ਵਿੱਚ ਨਹੀਂ ਲੱਭੀ"
 
-#: PkSession/PkSearchFile.cpp:38
+#: PkSession/PkSearchFile.cpp:40
 msgid "Search Packages that Provides Files"
 msgstr "ਫਾਇਲਾਂ ਦੇਣ ਵਾਲੇ ਪੈਕੇਜ ਲੱਭੋ"
 
-#: PkSession/PkSearchFile.cpp:88
+#: PkSession/PkSearchFile.cpp:81
 msgid "The file name could not be found in any software source"
 msgstr "ਫਾਇਲ ਨਾਂ ਕਿਸੇ ਸਾਫਟਵੇਅਰ ਸਰੋਤ ਉੱਤੇ ਨਹੀਂ ਲੱਭਿਆ।"
 
@@ -3815,6 +3785,36 @@ msgstr "ਕੰਮ ਪੂਰਾ ਹੋਇਆ"
 #: PkSession/SessionTask.cpp:436
 msgid "All operations were committed successfully"
 msgstr "ਸਭ ਕਾਰਵਾਈਆਂ ਠੀਕ ਤਰ੍ਹਾਂ ਪੂਰੀਆਂ ਕੀਤੀਆਂ ਗਈਆਂ ਹਨ"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
