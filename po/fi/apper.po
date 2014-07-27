@@ -11,8 +11,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: apper\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-03-13 01:37+0000\n"
-"PO-Revision-Date: 2014-04-07 23:04+0300\n"
+"POT-Creation-Date: 2014-04-25 01:48+0000\n"
+"PO-Revision-Date: 2014-04-26 03:12+0300\n"
 "Last-Translator: Lasse Liehu <lasse.liehu@gmail.com>\n"
 "Language-Team: Finnish <lokalisointi@lists.coss.fi>\n"
 "Language: fi\n"
@@ -72,7 +72,7 @@ msgid "Get Updates"
 msgstr "Nouda päivitykset"
 
 #. i18n: ectx: property (text), widget (QCheckBox, refreshCacheCB)
-#: Apper/BackendDetails.ui:126 ApperKCM/Settings/Settings.cpp:52
+#: Apper/BackendDetails.ui:126 ApperKCM/Settings/Settings.cpp:53
 msgid "Refresh Cache"
 msgstr "Päivitä välimuisti"
 
@@ -199,7 +199,7 @@ msgstr "Suodattimet"
 
 #. i18n: ectx: property (text), widget (QCheckBox, installedCB)
 #: Apper/BackendDetails.ui:375 ApperKCM/FiltersMenu.cpp:60
-#: libapper/PkStrings.cpp:379
+#: libapper/PkStrings.cpp:385
 msgid "Installed"
 msgstr "Asennetut"
 
@@ -312,89 +312,89 @@ msgstr "Yksittäisen paketin poisto"
 msgid "Package file to install"
 msgstr "Asennettava pakettitiedosto"
 
-#: apperd/DistroUpgrade.cpp:91
+#: apperd/DistroUpgrade.cpp:89
 msgid "Distribution upgrade available"
 msgstr "Saatavilla on jakelupäivitys"
 
-#: apperd/DistroUpgrade.cpp:95
+#: apperd/DistroUpgrade.cpp:93
 msgid "Start upgrade now"
 msgstr "Käynnistä päivitys nyt"
 
-#: apperd/DistroUpgrade.cpp:146
+#: apperd/DistroUpgrade.cpp:144
 msgid "Distribution upgrade finished. "
 msgstr "Jakelupäivitys valmis. "
 
-#: apperd/DistroUpgrade.cpp:149 ApperKCM/Updater/DistroUpgrade.cpp:93
+#: apperd/DistroUpgrade.cpp:147 ApperKCM/Updater/DistroUpgrade.cpp:93
 #, kde-format
 msgid "Distribution upgrade process exited with code %1."
 msgstr "Jakelupäivitysprosessi päättyi koodiin %1."
 
-#: apperd/DistroUpgrade.cpp:167 ApperKCM/Updater/DistroUpgrade.cpp:105
+#: apperd/DistroUpgrade.cpp:165 ApperKCM/Updater/DistroUpgrade.cpp:105
 msgid "The distribution upgrade process failed to start."
 msgstr "Jakelupäivitysprosessi ei onnistunut käynnistymään."
 
-#: apperd/DistroUpgrade.cpp:170 ApperKCM/Updater/DistroUpgrade.cpp:109
+#: apperd/DistroUpgrade.cpp:168 ApperKCM/Updater/DistroUpgrade.cpp:109
 msgid ""
 "The distribution upgrade process crashed some time after starting "
 "successfully."
 msgstr "Jakelupäivitysprosessi kaatui pian käynnistyttyään onnistuneesti."
 
-#: apperd/DistroUpgrade.cpp:173 ApperKCM/Updater/DistroUpgrade.cpp:113
+#: apperd/DistroUpgrade.cpp:171 ApperKCM/Updater/DistroUpgrade.cpp:113
 msgid "The distribution upgrade process failed with an unknown error."
 msgstr "Jakelupäivitysprosessi epäonnistui tuntemattoman virheen takia."
 
-#: apperd/TransactionWatcher.cpp:134
+#: apperd/TransactionWatcher.cpp:139
 msgid "The system update has completed"
 msgstr "Järjestelmäpäivitys on valmistunut"
 
-#: apperd/TransactionWatcher.cpp:141 apperd/TransactionWatcher.cpp:183
+#: apperd/TransactionWatcher.cpp:146 apperd/TransactionWatcher.cpp:188
 msgid "Restart"
 msgstr "Käynnistä uudelleen"
 
-#: apperd/TransactionWatcher.cpp:174
+#: apperd/TransactionWatcher.cpp:179
 #, kde-format
 msgid "Package: %2"
 msgid_plural "Packages: %2"
 msgstr[0] "Paketti: %2"
 msgstr[1] "Paketit: %2"
 
-#: apperd/TransactionWatcher.cpp:236 ApperKCM/TransactionModel.cpp:48
+#: apperd/TransactionWatcher.cpp:241 ApperKCM/TransactionModel.cpp:45
 #: AppSetup/SetupWizard.cpp:202
 msgid "Details"
 msgstr "Yksityiskohdat"
 
-#: apperd/Updater.cpp:160
+#: apperd/Updater.cpp:158
 msgid "Updates are being automatically installed."
 msgstr "Päivityksiä asennetaan automaattisesti."
 
-#: apperd/Updater.cpp:170
+#: apperd/Updater.cpp:168
 msgid "Security updates are being automatically installed."
 msgstr "Turvallisuuspäivityksiä asennetaan automaattisesti."
 
-#: apperd/Updater.cpp:180
+#: apperd/Updater.cpp:178
 msgid "Updates are being automatically downloaded."
 msgstr "Päivityksiä ladataan automaattisesti."
 
-#: apperd/Updater.cpp:214
+#: apperd/Updater.cpp:212
 msgid "System update was successful."
 msgstr "Järjestelmän päivitys onnistui."
 
-#: apperd/Updater.cpp:221
+#: apperd/Updater.cpp:219
 msgid "The software update failed."
 msgstr "Ohjelmistopäivitys epäonnistui."
 
-#: apperd/Updater.cpp:275
+#: apperd/Updater.cpp:273
 #, kde-format
 msgid "There is one new update"
 msgid_plural "There are %1 new updates"
 msgstr[0] "Yksi uusi päivitys"
 msgstr[1] "%1 uutta päivitystä"
 
-#: apperd/Updater.cpp:290
+#: apperd/Updater.cpp:288
 msgid "Review"
 msgstr "Tarkastele"
 
-#: apperd/Updater.cpp:292 AppSetup/SetupWizard.cpp:337
+#: apperd/Updater.cpp:290 AppSetup/SetupWizard.cpp:337
 #: libapper/ApplicationsDelegate.cpp:40
 msgid "Install"
 msgstr "Asenna"
@@ -407,41 +407,41 @@ msgstr "Sovelluksenhallinta"
 msgid "KDE interface for managing software"
 msgstr "Ohjelmistonhallinnan KDE-liittymä"
 
-#: ApperKCM/ApperKCM.cpp:117 ApperKCM/ApperKCM.cpp:308
+#: ApperKCM/ApperKCM.cpp:123 ApperKCM/ApperKCM.cpp:314
 msgid "Find"
 msgstr "Etsi"
 
-#: ApperKCM/ApperKCM.cpp:212 ApperKCM/ApperKCM.cpp:553
+#: ApperKCM/ApperKCM.cpp:218 ApperKCM/ApperKCM.cpp:559
 msgid "History"
 msgstr "Historia"
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, Settings)
-#: ApperKCM/ApperKCM.cpp:218 ApperKCM/ApperKCM.cpp:509
+#: ApperKCM/ApperKCM.cpp:224 ApperKCM/ApperKCM.cpp:515
 #: ApperKCM/Settings/Settings.ui:14
 msgid "Settings"
 msgstr "Asetukset"
 
-#: ApperKCM/ApperKCM.cpp:285 ApperKCM/ApperKCM.cpp:286
-#: ApperKCM/ApperKCM.cpp:287 ApperKCM/ApperKCM.cpp:288
+#: ApperKCM/ApperKCM.cpp:291 ApperKCM/ApperKCM.cpp:292
+#: ApperKCM/ApperKCM.cpp:293 ApperKCM/ApperKCM.cpp:294
 msgid "&Cancel"
 msgstr "&Peru"
 
 #. i18n: ectx: property (text), widget (CategorizedView, changesView)
-#: ApperKCM/ApperKCM.cpp:295 ApperKCM/ApperKCM.ui:346
+#: ApperKCM/ApperKCM.cpp:301 ApperKCM/ApperKCM.ui:346
 msgid "Find by &name"
 msgstr "Etsi &nimellä"
 
 #. i18n: ectx: property (text), widget (CategorizedView, changesView)
-#: ApperKCM/ApperKCM.cpp:296 ApperKCM/ApperKCM.ui:356
+#: ApperKCM/ApperKCM.cpp:302 ApperKCM/ApperKCM.ui:356
 msgid "Find by f&ile name"
 msgstr "Etsi t&iedoston nimellä"
 
 #. i18n: ectx: property (text), widget (CategorizedView, changesView)
-#: ApperKCM/ApperKCM.cpp:297 ApperKCM/ApperKCM.ui:351
+#: ApperKCM/ApperKCM.cpp:303 ApperKCM/ApperKCM.ui:351
 msgid "Find by &description"
 msgstr "Etsi &kuvauksella"
 
-#: ApperKCM/ApperKCM.cpp:447
+#: ApperKCM/ApperKCM.cpp:453
 msgid ""
 "The settings of the current module have changed.\n"
 "Do you want to apply the changes or discard them?"
@@ -449,24 +449,24 @@ msgstr ""
 "Nykyisen asetusosion asetukset ovat muuttuneet.\n"
 "Haluatko ottaa muutokset käyttöön vai hylätä ne?"
 
-#: ApperKCM/ApperKCM.cpp:449
+#: ApperKCM/ApperKCM.cpp:455
 msgid "Apply Settings"
 msgstr "Ota muutokset käyttöön"
 
-#: ApperKCM/ApperKCM.cpp:536 ApperKCM/CategoryModel.cpp:58
+#: ApperKCM/ApperKCM.cpp:542 ApperKCM/CategoryModel.cpp:58
 msgid "Updates"
 msgstr "Päivitykset"
 
 #. i18n: ectx: property (text), widget (QPushButton, changesPB)
-#: ApperKCM/ApperKCM.cpp:607 ApperKCM/ApperKCM.ui:127
+#: ApperKCM/ApperKCM.cpp:613 ApperKCM/ApperKCM.ui:127
 msgid "Pending Changes"
 msgstr "Odottavat muutokset"
 
-#: ApperKCM/ApperKCM.cpp:692 ApperKCM/CategoryModel.cpp:50
+#: ApperKCM/ApperKCM.cpp:683 ApperKCM/CategoryModel.cpp:50
 msgid "Installed Software"
 msgstr "Asennetut ohjelmat"
 
-#: ApperKCM/ApperKCM.cpp:704
+#: ApperKCM/ApperKCM.cpp:695
 msgid "Could not find an application that matched this category"
 msgstr "Luokkaa vastaavaa sovellusta ei löytynyt"
 
@@ -530,11 +530,11 @@ msgstr "Asenna paketit luettelosta…"
 msgid "Lists"
 msgstr "Luettelot"
 
-#: ApperKCM/CategoryModel.cpp:161 ApperKCM/CategoryModel.cpp:359
+#: ApperKCM/CategoryModel.cpp:159 ApperKCM/CategoryModel.cpp:357
 msgid "Categories"
 msgstr "Luokat"
 
-#: ApperKCM/CategoryModel.cpp:218
+#: ApperKCM/CategoryModel.cpp:216
 msgid "Groups"
 msgstr "Ryhmät"
 
@@ -675,15 +675,15 @@ msgstr "Tarvitsevat paketit"
 msgid "File List"
 msgstr "Tiedostoluettelo"
 
-#: ApperKCM/PackageDetails.cpp:509
+#: ApperKCM/PackageDetails.cpp:497
 msgid "No files were found."
 msgstr "Tiedostoja ei löytynyt."
 
-#: ApperKCM/PackageDetails.cpp:557
+#: ApperKCM/PackageDetails.cpp:545
 msgid "Could not fetch software details"
 msgstr "Ohjelman yksityiskohtia ei voitu noutaa"
 
-#: ApperKCM/PackageDetails.cpp:599
+#: ApperKCM/PackageDetails.cpp:587
 msgid "Applications"
 msgstr "Sovellukset"
 
@@ -701,70 +701,70 @@ msgstr "Piilota"
 msgid "Could not find screen shot."
 msgstr "Kuvankaappausta ei löytynyt."
 
-#: ApperKCM/Settings/OriginModel.cpp:36
+#: ApperKCM/Settings/OriginModel.cpp:37
 msgid "Origin of Packages"
 msgstr "Pakettien alkuperä"
 
-#: ApperKCM/Settings/Settings.cpp:56
+#: ApperKCM/Settings/Settings.cpp:57
 msgid "A repository was changed, it's highly recommended to refresh the cache"
 msgstr ""
 "Ohjelmalähdettä muutettiin; välimuistin päivittäminen on erittäin "
 "suositeltavaa"
 
-#: ApperKCM/Settings/Settings.cpp:88
+#: ApperKCM/Settings/Settings.cpp:89
 msgctxt "Inform about distribution upgrades"
 msgid "Never"
 msgstr "Ei koskaan"
 
-#: ApperKCM/Settings/Settings.cpp:91
+#: ApperKCM/Settings/Settings.cpp:92
 msgctxt "Inform about distribution upgrades"
 msgid "Only stable"
 msgstr "Vain vakaat versiot"
 
-#: ApperKCM/Settings/Settings.cpp:96
+#: ApperKCM/Settings/Settings.cpp:97
 msgctxt "Inform about distribution upgrades"
 msgid "Stable and development"
 msgstr "Vain kehitysversiot"
 
-#: ApperKCM/Settings/Settings.cpp:100
+#: ApperKCM/Settings/Settings.cpp:101
 msgctxt "Hourly refresh the package cache"
 msgid "Hourly"
 msgstr "Tunnin välein"
 
-#: ApperKCM/Settings/Settings.cpp:101
+#: ApperKCM/Settings/Settings.cpp:102
 msgctxt "Daily refresh the package cache"
 msgid "Daily"
 msgstr "Päivittäin"
 
-#: ApperKCM/Settings/Settings.cpp:102
+#: ApperKCM/Settings/Settings.cpp:103
 msgctxt "Weekly refresh the package cache"
 msgid "Weekly"
 msgstr "Viikoittain"
 
-#: ApperKCM/Settings/Settings.cpp:103
+#: ApperKCM/Settings/Settings.cpp:104
 msgctxt "Monthly refresh the package cache"
 msgid "Monthly"
 msgstr "Kuukausittain"
 
-#: ApperKCM/Settings/Settings.cpp:104
+#: ApperKCM/Settings/Settings.cpp:105
 msgctxt "Never refresh package cache"
 msgid "Never"
 msgstr "Ei koskaan"
 
-#: ApperKCM/Settings/Settings.cpp:106
+#: ApperKCM/Settings/Settings.cpp:107
 msgctxt "No updates will be automatically installed"
 msgid "None"
 msgstr "Ei mitään"
 
-#: ApperKCM/Settings/Settings.cpp:107
+#: ApperKCM/Settings/Settings.cpp:108
 msgid "Download only"
 msgstr "Ainoastaan lataa"
 
-#: ApperKCM/Settings/Settings.cpp:108
+#: ApperKCM/Settings/Settings.cpp:109
 msgid "Security only"
 msgstr "Vain tietoturvapäivitykset"
 
-#: ApperKCM/Settings/Settings.cpp:109
+#: ApperKCM/Settings/Settings.cpp:110
 msgid "All updates"
 msgstr "Kaikki päivitykset"
 
@@ -819,25 +819,25 @@ msgstr "Muokkaa alkuperiä"
 msgid "Refresh transactions list"
 msgstr "Päivitä toimenpideluettelo"
 
-#: ApperKCM/TransactionHistory.cpp:87
+#: ApperKCM/TransactionHistory.cpp:83
 #, kde-format
 msgid "Time since last cache refresh: %1"
 msgstr "Aikaa edellisestä välimuistin päivityksestä: %1"
 
-#: ApperKCM/TransactionModel.cpp:46
+#: ApperKCM/TransactionModel.cpp:43
 msgid "Date"
 msgstr "Päiväys"
 
-#: ApperKCM/TransactionModel.cpp:47 libapper/PackageModel.cpp:224
+#: ApperKCM/TransactionModel.cpp:44 libapper/PackageModel.cpp:231
 msgid "Action"
 msgstr "Toiminto"
 
-#: ApperKCM/TransactionModel.cpp:49
+#: ApperKCM/TransactionModel.cpp:46
 msgctxt "Machine user who issued the transaction"
 msgid "Username"
 msgstr "Käyttäjätunnus"
 
-#: ApperKCM/TransactionModel.cpp:50
+#: ApperKCM/TransactionModel.cpp:47
 msgid "Application"
 msgstr "Sovellus"
 
@@ -875,46 +875,46 @@ msgstr ""
 msgid "Distribution upgrade complete."
 msgstr "Jakelupäivitys on valmis."
 
-#: ApperKCM/Updater/UpdateDetails.cpp:191
+#: ApperKCM/Updater/UpdateDetails.cpp:184
 msgid "This update will add new features and expand functionality."
 msgstr "Tämä päivitys lisää uusia piirteitä ja laajentaa toiminnallisuutta."
 
-#: ApperKCM/Updater/UpdateDetails.cpp:195
+#: ApperKCM/Updater/UpdateDetails.cpp:188
 msgid "This update will fix bugs and other non-critical problems."
 msgstr "Tämä päivitys korjaa virheitä ja muita ei-vakavia ongelmia."
 
-#: ApperKCM/Updater/UpdateDetails.cpp:199
+#: ApperKCM/Updater/UpdateDetails.cpp:192
 msgid "This update is important as it may solve critical problems."
 msgstr "Tämä päivitys on tärkeä ja voi ratkaista vakavia ongelmia."
 
-#: ApperKCM/Updater/UpdateDetails.cpp:203
+#: ApperKCM/Updater/UpdateDetails.cpp:196
 msgid ""
 "This update is needed to fix a security vulnerability with this package."
 msgstr ""
 "Tätä päivitystä tarvitaan korjaamaan haavoittuvuus paketin turvallisuudessa."
 
-#: ApperKCM/Updater/UpdateDetails.cpp:207
+#: ApperKCM/Updater/UpdateDetails.cpp:200
 msgid "This update is blocked."
 msgstr "Tämä päivitys on estetty."
 
-#: ApperKCM/Updater/UpdateDetails.cpp:214
+#: ApperKCM/Updater/UpdateDetails.cpp:207
 #, kde-format
 msgid "This notification was issued on %1 and last updated on %2."
 msgstr "Tämä ilmoitus julkaistiin %1 ja päivitettiin viimeksi %2."
 
-#: ApperKCM/Updater/UpdateDetails.cpp:220
+#: ApperKCM/Updater/UpdateDetails.cpp:213
 #, kde-format
 msgid "This notification was issued on %1."
 msgstr "Tämä ilmoitus julkaistiin %1."
 
-#: ApperKCM/Updater/UpdateDetails.cpp:239
+#: ApperKCM/Updater/UpdateDetails.cpp:232
 msgid "For more information about this update please visit this website:"
 msgid_plural ""
 "For more information about this update please visit these websites:"
 msgstr[0] "Lisätietoa tästä päivityksestä saa sivulta:"
 msgstr[1] "Lisätietoa tästä päivityksestä saa näiltä sivuilta:"
 
-#: ApperKCM/Updater/UpdateDetails.cpp:249
+#: ApperKCM/Updater/UpdateDetails.cpp:242
 msgid ""
 "For more information about bugs fixed by this update please visit this "
 "website:"
@@ -925,7 +925,7 @@ msgstr[0] "Lisätietoa tämän päivityksen korjaamista virheistä saa sivulta:"
 msgstr[1] ""
 "Lisätietoa tämän päivityksen korjaamista virheistä saa näiltä sivuilta:"
 
-#: ApperKCM/Updater/UpdateDetails.cpp:259
+#: ApperKCM/Updater/UpdateDetails.cpp:252
 msgid ""
 "For more information about this security update please visit this website:"
 msgid_plural ""
@@ -933,7 +933,7 @@ msgid_plural ""
 msgstr[0] "Lisätietoa tästä turvallisuuspäivityksestä saa sivulta:"
 msgstr[1] "Lisätietoa tästä turvallisuuspäivityksestä saa näiltä sivuilta:"
 
-#: ApperKCM/Updater/UpdateDetails.cpp:269
+#: ApperKCM/Updater/UpdateDetails.cpp:262
 msgid ""
 "The computer will have to be restarted after the update for the changes to "
 "take effect."
@@ -941,7 +941,7 @@ msgstr ""
 "Tietokone on päivityksen jälkeen käynnistettävä uudelleen, jotta muutokset "
 "tulisivat voimaan."
 
-#: ApperKCM/Updater/UpdateDetails.cpp:273
+#: ApperKCM/Updater/UpdateDetails.cpp:266
 msgid ""
 "You will need to log out and back in after the update for the changes to "
 "take effect."
@@ -949,7 +949,7 @@ msgstr ""
 "Päivityksen jälkeen sinun on kirjauduttava ulos ja takaisin sisään, jotta "
 "muutokset tulisivat voimaan."
 
-#: ApperKCM/Updater/UpdateDetails.cpp:280
+#: ApperKCM/Updater/UpdateDetails.cpp:273
 msgid ""
 "The classification of this update is unstable which means it is not designed "
 "for production use."
@@ -957,7 +957,7 @@ msgstr ""
 "Päivityksen luokitus on epävakaa, joten sitä ei ole tarkoitettu "
 "tuotantokäyttöön."
 
-#: ApperKCM/Updater/UpdateDetails.cpp:284
+#: ApperKCM/Updater/UpdateDetails.cpp:277
 msgid ""
 "This is a test update, and is not designed for normal use. Please report any "
 "problems or regressions you encounter."
@@ -965,27 +965,27 @@ msgstr ""
 "Tämä on testipäivitys, jota ei ole tarkoitettu tavalliseen käyttöön. Ilmoita "
 "kohtaamistasi ongelmista."
 
-#: ApperKCM/Updater/UpdateDetails.cpp:294
+#: ApperKCM/Updater/UpdateDetails.cpp:287
 msgid ""
 "The developer logs will be shown as no description is available for this "
 "update:"
 msgstr ""
 "Näytetään kehittäjän loki, koska päivityksestä ei ole saatavilla kuvausta:"
 
-#: ApperKCM/Updater/UpdateDetails.cpp:302
+#: ApperKCM/Updater/UpdateDetails.cpp:295
 msgid "Updates:"
 msgstr "Päivittää:"
 
-#: ApperKCM/Updater/UpdateDetails.cpp:312
+#: ApperKCM/Updater/UpdateDetails.cpp:305
 msgid "Obsoletes:"
 msgstr "Vanhentaa:"
 
-#: ApperKCM/Updater/UpdateDetails.cpp:322
+#: ApperKCM/Updater/UpdateDetails.cpp:315
 #, kde-format
 msgid "Repository: %1"
 msgstr "Ohjelmalähde: %1"
 
-#: ApperKCM/Updater/UpdateDetails.cpp:344
+#: ApperKCM/Updater/UpdateDetails.cpp:337
 msgid "No update description was found."
 msgstr "Päivityskuvausta ei löytynyt."
 
@@ -998,7 +998,7 @@ msgstr "Näytä nykyiset versiot"
 msgid "Estimated download size: %1"
 msgstr "Arvioitu latauskoko: %1"
 
-#: ApperKCM/Updater/Updater.cpp:358
+#: ApperKCM/Updater/Updater.cpp:340
 msgid "Check for new updates"
 msgstr "Tarkista uudet päivitykset"
 
@@ -1059,9 +1059,9 @@ msgstr "Asennus valmis!"
 msgid "%1 has been installed successfully!"
 msgstr "%1 on onnistuneesti asennettu!"
 
-#: AppSetup/SetupWizard.cpp:102 libapper/PkTransaction.cpp:143
-#: libapper/PkTransaction.cpp:161 libapper/PkTransaction.cpp:180
-#: libapper/PkTransaction.cpp:203
+#: AppSetup/SetupWizard.cpp:102 libapper/PkTransaction.cpp:118
+#: libapper/PkTransaction.cpp:131 libapper/PkTransaction.cpp:145
+#: libapper/PkTransaction.cpp:163
 msgid "Error"
 msgstr "Virhe"
 
@@ -1225,31 +1225,31 @@ msgstr "%2 vaatii lisenssin paketille %1"
 msgid "Please read the following important information before continuing:"
 msgstr "Lue tarkasti seuraava teksti, ennen kuin jatkat:"
 
-#: libapper/PackageModel.cpp:205
+#: libapper/PackageModel.cpp:212
 msgid "Name"
 msgstr "Nimi"
 
-#: libapper/PackageModel.cpp:209
+#: libapper/PackageModel.cpp:216
 msgid "Version"
 msgstr "Versio"
 
-#: libapper/PackageModel.cpp:212
+#: libapper/PackageModel.cpp:219
 msgid "Installed Version"
 msgstr "Asennettu versio"
 
-#: libapper/PackageModel.cpp:215
+#: libapper/PackageModel.cpp:222
 msgid "Arch"
 msgstr "Arkkitehtuuri"
 
-#: libapper/PackageModel.cpp:218
+#: libapper/PackageModel.cpp:225
 msgid "Origin"
 msgstr "Alkuperä"
 
-#: libapper/PackageModel.cpp:221
+#: libapper/PackageModel.cpp:228
 msgid "Size"
 msgstr "Koko"
 
-#: libapper/PackageModel.cpp:319
+#: libapper/PackageModel.cpp:326
 #, kde-format
 msgid ""
 "Version: %1\n"
@@ -1258,377 +1258,377 @@ msgstr ""
 "Versio: %1\n"
 "Arkkitehtuuri: %2"
 
-#: libapper/PackageModel.cpp:365
+#: libapper/PackageModel.cpp:372
 msgid "To be Removed"
 msgstr "Poistetaan"
 
-#: libapper/PackageModel.cpp:367
+#: libapper/PackageModel.cpp:374
 msgid "To be Installed"
 msgstr "Asennetaan"
 
-#: libapper/PkStrings.cpp:36
+#: libapper/PkStrings.cpp:35
 msgctxt "This is when the transaction status is not known"
 msgid "Unknown state"
 msgstr "Tuntematon tila"
 
-#: libapper/PkStrings.cpp:39
+#: libapper/PkStrings.cpp:38
 msgctxt "transaction state, the daemon is in the process of starting"
 msgid "Waiting for service to start"
 msgstr "Odotetaan palvelun käynnistyvän"
 
-#: libapper/PkStrings.cpp:42
+#: libapper/PkStrings.cpp:41
 msgctxt "transaction state, the transaction is waiting for another to complete"
 msgid "Waiting for other tasks"
 msgstr "Odotetaan muita tehtäviä"
 
-#: libapper/PkStrings.cpp:45
+#: libapper/PkStrings.cpp:44
 msgctxt "transaction state, just started"
 msgid "Running task"
 msgstr "Käynnissä oleva tehtävä"
 
-#: libapper/PkStrings.cpp:48
+#: libapper/PkStrings.cpp:47
 msgctxt "transaction state, is querying data"
 msgid "Querying"
 msgstr "Kysellään"
 
-#: libapper/PkStrings.cpp:51
+#: libapper/PkStrings.cpp:50
 msgctxt "transaction state, getting data from a server"
 msgid "Getting information"
 msgstr "Noudetaan tietoa"
 
-#: libapper/PkStrings.cpp:54
+#: libapper/PkStrings.cpp:53
 msgctxt "transaction state, removing packages"
 msgid "Removing packages"
 msgstr "Poistetaan paketteja"
 
-#: libapper/PkStrings.cpp:58
+#: libapper/PkStrings.cpp:57
 #, kde-format
 msgctxt "transaction state, downloading package files"
 msgid "Downloading at %1/s, %2 remaining"
 msgstr "Ladataan nopeudella %1/s, %2 jäljellä"
 
-#: libapper/PkStrings.cpp:63
+#: libapper/PkStrings.cpp:62
 #, kde-format
 msgctxt "transaction state, downloading package files"
 msgid "Downloading at %1/s"
 msgstr "Ladataan nopeudella %1/s"
 
-#: libapper/PkStrings.cpp:67
+#: libapper/PkStrings.cpp:66
 #, kde-format
 msgctxt "transaction state, downloading package files"
 msgid "Downloading, %1 remaining"
 msgstr "Ladataan, %1 jäljellä"
 
-#: libapper/PkStrings.cpp:71
+#: libapper/PkStrings.cpp:70
 msgctxt "transaction state, downloading package files"
 msgid "Downloading"
 msgstr "Ladataan"
 
-#: libapper/PkStrings.cpp:75
+#: libapper/PkStrings.cpp:74
 msgctxt "transaction state, installing packages"
 msgid "Installing packages"
 msgstr "Asennetaan paketteja"
 
-#: libapper/PkStrings.cpp:78
+#: libapper/PkStrings.cpp:77
 msgctxt "transaction state, refreshing internal lists"
 msgid "Refreshing software list"
 msgstr "Päivitetään ohjelmaluetteloa"
 
-#: libapper/PkStrings.cpp:81
+#: libapper/PkStrings.cpp:80
 msgctxt "transaction state, installing updates"
 msgid "Updating packages"
 msgstr "Päivitetään paketteja"
 
-#: libapper/PkStrings.cpp:84
+#: libapper/PkStrings.cpp:83
 msgctxt "transaction state, removing old packages, and cleaning config files"
 msgid "Cleaning up packages"
 msgstr "Siivotaan paketteja"
 
-#: libapper/PkStrings.cpp:87
+#: libapper/PkStrings.cpp:86
 msgctxt "transaction state, obsoleting old packages"
 msgid "Obsoleting packages"
 msgstr "Vanhennetaan paketteja"
 
-#: libapper/PkStrings.cpp:90
+#: libapper/PkStrings.cpp:89
 msgctxt "transaction state, checking the transaction before we do it"
 msgid "Resolving dependencies"
 msgstr "Ratkaistaan riippuvuuksia"
 
-#: libapper/PkStrings.cpp:93
+#: libapper/PkStrings.cpp:92
 msgctxt ""
 "transaction state, checking if we have all the security keys for the "
 "operation"
 msgid "Checking signatures"
 msgstr "Tarkistetaan allekirjoituksia"
 
-#: libapper/PkStrings.cpp:96
+#: libapper/PkStrings.cpp:95
 msgctxt "transaction state, when we're doing a test transaction"
 msgid "Testing changes"
 msgstr "Testataan muutoksia"
 
-#: libapper/PkStrings.cpp:99
+#: libapper/PkStrings.cpp:98
 msgctxt "transaction state, when we're writing to the system package database"
 msgid "Committing changes"
 msgstr "Toteutetaan muutoksia"
 
-#: libapper/PkStrings.cpp:102
+#: libapper/PkStrings.cpp:101
 msgctxt "transaction state, requesting data from a server"
 msgid "Requesting data"
 msgstr "Pyydetään dataa"
 
-#: libapper/PkStrings.cpp:105
+#: libapper/PkStrings.cpp:104
 msgctxt "transaction state, all done!"
 msgid "Finished"
 msgstr "Valmis"
 
-#: libapper/PkStrings.cpp:108
+#: libapper/PkStrings.cpp:107
 msgctxt "transaction state, in the process of cancelling"
 msgid "Cancelling"
 msgstr "Perutaan"
 
-#: libapper/PkStrings.cpp:111
+#: libapper/PkStrings.cpp:110
 msgctxt "transaction state, downloading metadata"
 msgid "Downloading repository information"
 msgstr "Ladataan ohjelmalähdetietoa"
 
-#: libapper/PkStrings.cpp:114
+#: libapper/PkStrings.cpp:113
 msgctxt "transaction state, downloading metadata"
 msgid "Downloading list of packages"
 msgstr "Ladataan pakettiluetteloa"
 
-#: libapper/PkStrings.cpp:117
+#: libapper/PkStrings.cpp:116
 msgctxt "transaction state, downloading metadata"
 msgid "Downloading file lists"
 msgstr "Ladataan tiedostoluetteloita"
 
-#: libapper/PkStrings.cpp:120
+#: libapper/PkStrings.cpp:119
 msgctxt "transaction state, downloading metadata"
 msgid "Downloading lists of changes"
 msgstr "Ladataan muutosluetteloita"
 
-#: libapper/PkStrings.cpp:123
+#: libapper/PkStrings.cpp:122
 msgctxt "transaction state, downloading metadata"
 msgid "Downloading groups"
 msgstr "Ladataan ryhmiä"
 
-#: libapper/PkStrings.cpp:126
+#: libapper/PkStrings.cpp:125
 msgctxt "transaction state, downloading metadata"
 msgid "Downloading update information"
 msgstr "Ladataan päivitystietoja"
 
-#: libapper/PkStrings.cpp:129
+#: libapper/PkStrings.cpp:128
 msgctxt "transaction state, repackaging delta files"
 msgid "Repackaging files"
 msgstr "Paketoidaan tiedostoja uudelleen"
 
-#: libapper/PkStrings.cpp:132
+#: libapper/PkStrings.cpp:131
 msgctxt "transaction state, loading databases"
 msgid "Loading cache"
 msgstr "Ladataan välimuistia"
 
-#: libapper/PkStrings.cpp:135
+#: libapper/PkStrings.cpp:134
 msgctxt "transaction state, scanning for running processes"
 msgid "Scanning installed applications"
 msgstr "Etsitään asennettuja sovelluksia"
 
-#: libapper/PkStrings.cpp:138
+#: libapper/PkStrings.cpp:137
 msgctxt ""
 "transaction state, generating a list of packages installed on the system"
 msgid "Generating package lists"
 msgstr "Luodaan pakettiluetteloita"
 
-#: libapper/PkStrings.cpp:141
+#: libapper/PkStrings.cpp:140
 msgctxt "transaction state, when we're waiting for the native tools to exit"
 msgid "Waiting for package manager lock"
 msgstr "Odotetaan paketinhallinnan lukitusta"
 
-#: libapper/PkStrings.cpp:144
+#: libapper/PkStrings.cpp:143
 msgctxt "waiting for user to type in a password"
 msgid "Waiting for authentication"
 msgstr "Odotetaan tunnistautumista"
 
-#: libapper/PkStrings.cpp:147
+#: libapper/PkStrings.cpp:146
 msgctxt "we are updating the list of processes"
 msgid "Updating the list of running applications"
 msgstr "Päivitetään käynnissä olevien sovellusten luetteloa"
 
-#: libapper/PkStrings.cpp:150
+#: libapper/PkStrings.cpp:149
 msgctxt "we are checking executable files in use"
 msgid "Checking for applications currently in use"
 msgstr "Tarkistetaan käytössä olevia sovelluksia"
 
-#: libapper/PkStrings.cpp:153
+#: libapper/PkStrings.cpp:152
 msgctxt "we are checking for libraries in use"
 msgid "Checking for libraries currently in use"
 msgstr "Tarkistetaan käytössä olevia kirjastoja"
 
-#: libapper/PkStrings.cpp:156
+#: libapper/PkStrings.cpp:155
 msgctxt "we are copying package files to prepare to install"
 msgid "Copying files"
 msgstr "Kopioidaan tiedostoja"
 
-#: libapper/PkStrings.cpp:166
+#: libapper/PkStrings.cpp:165
 msgctxt "The action of the package, in past tense"
 msgid "Downloaded"
 msgstr "Ladattu"
 
-#: libapper/PkStrings.cpp:168
+#: libapper/PkStrings.cpp:167
 msgctxt "The action of the package, in past tense"
 msgid "Updated"
 msgstr "Päivitetty"
 
-#: libapper/PkStrings.cpp:170
+#: libapper/PkStrings.cpp:169
 msgctxt "The action of the package, in past tense"
 msgid "Installed"
 msgstr "Asennettu"
 
-#: libapper/PkStrings.cpp:172
+#: libapper/PkStrings.cpp:171
 msgctxt "The action of the package, in past tense"
 msgid "Removed"
 msgstr "Poistettu"
 
-#: libapper/PkStrings.cpp:174
+#: libapper/PkStrings.cpp:173
 msgctxt "The action of the package, in past tense"
 msgid "Cleaned Up"
 msgstr "Siivottu"
 
-#: libapper/PkStrings.cpp:176
+#: libapper/PkStrings.cpp:175
 msgctxt "The action of the package, in past tense"
 msgid "Obsoleted"
 msgstr "Vanhennettu"
 
-#: libapper/PkStrings.cpp:188
+#: libapper/PkStrings.cpp:186
 msgctxt "The role of the transaction, in present tense"
 msgid "Unknown role type"
 msgstr "Tuntematon roolityyppi"
 
-#: libapper/PkStrings.cpp:190
+#: libapper/PkStrings.cpp:188
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting dependencies"
 msgstr "Selvitetään riippuvuuksia"
 
-#: libapper/PkStrings.cpp:192
+#: libapper/PkStrings.cpp:190
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting update detail"
 msgstr "Selvitetään päivityksen yksityiskohtia"
 
-#: libapper/PkStrings.cpp:194
+#: libapper/PkStrings.cpp:193
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting details"
 msgstr "Selvitetään yksityiskohtia"
 
-#: libapper/PkStrings.cpp:196
+#: libapper/PkStrings.cpp:195
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting requires"
 msgstr "Selvitetään vaatimuksia"
 
-#: libapper/PkStrings.cpp:198
+#: libapper/PkStrings.cpp:197
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting updates"
 msgstr "Selvitetään päivityksiä"
 
-#: libapper/PkStrings.cpp:200
+#: libapper/PkStrings.cpp:199
 msgctxt "The role of the transaction, in present tense"
 msgid "Searching details"
 msgstr "Etsitään yksityiskohtia"
 
-#: libapper/PkStrings.cpp:202
+#: libapper/PkStrings.cpp:201
 msgctxt "The role of the transaction, in present tense"
 msgid "Searching for file"
 msgstr "Etsitään tiedostoja"
 
-#: libapper/PkStrings.cpp:204
+#: libapper/PkStrings.cpp:203
 msgctxt "The role of the transaction, in present tense"
 msgid "Searching groups"
 msgstr "Etsitään ryhmiä"
 
-#: libapper/PkStrings.cpp:206
+#: libapper/PkStrings.cpp:205
 msgctxt "The role of the transaction, in present tense"
 msgid "Searching by package name"
 msgstr "Etsitään pakettien nimiä"
 
-#: libapper/PkStrings.cpp:209
+#: libapper/PkStrings.cpp:208
 msgctxt "The role of the transaction, in present tense"
 msgid "Simulating removal"
 msgstr "Simuloidaan poisto"
 
-#: libapper/PkStrings.cpp:211 libapper/PkStrings.cpp:218
+#: libapper/PkStrings.cpp:210 libapper/PkStrings.cpp:217
 #: libapper/PkStrings.cpp:258
 msgctxt "The role of the transaction, in present tense"
 msgid "Downloading packages"
 msgstr "Ladataan paketteja"
 
-#: libapper/PkStrings.cpp:213
+#: libapper/PkStrings.cpp:212
 msgctxt "The role of the transaction, in present tense"
 msgid "Removing"
 msgstr "Poistetaan"
 
-#: libapper/PkStrings.cpp:216
+#: libapper/PkStrings.cpp:215
 msgctxt "The role of the transaction, in present tense"
 msgid "Simulating install"
 msgstr "Simuloidaan asennus"
 
-#: libapper/PkStrings.cpp:220
+#: libapper/PkStrings.cpp:219
 msgctxt "The role of the transaction, in present tense"
 msgid "Installing"
 msgstr "Asennetaan"
 
-#: libapper/PkStrings.cpp:223
+#: libapper/PkStrings.cpp:222
 msgctxt "The role of the transaction, in present tense"
 msgid "Simulating file install"
 msgstr "Simuloidaan tiedoston asennus"
 
-#: libapper/PkStrings.cpp:225
+#: libapper/PkStrings.cpp:224
 msgctxt "The role of the transaction, in present tense"
 msgid "Downloading required packages"
 msgstr "Ladataan vaadittuja paketteja"
 
-#: libapper/PkStrings.cpp:227
+#: libapper/PkStrings.cpp:226
 msgctxt "The role of the transaction, in present tense"
 msgid "Installing file"
 msgstr "Asennetaan tiedostoa"
 
-#: libapper/PkStrings.cpp:229
+#: libapper/PkStrings.cpp:228
 msgctxt "The role of the transaction, in present tense"
 msgid "Refreshing package cache"
 msgstr "Päivitetään pakettivälimuistia"
 
-#: libapper/PkStrings.cpp:232
+#: libapper/PkStrings.cpp:231
 msgctxt "The role of the transaction, in present tense"
 msgid "Simulating update"
 msgstr "Simuloidaan päivitys"
 
-#: libapper/PkStrings.cpp:234
+#: libapper/PkStrings.cpp:233
 msgctxt "The role of the transaction, in present tense"
 msgid "Downloading updates"
 msgstr "Päivityksiä ladataan"
 
-#: libapper/PkStrings.cpp:236
+#: libapper/PkStrings.cpp:235
 msgctxt "The role of the transaction, in present tense"
 msgid "Updating packages"
 msgstr "Päivitetään paketteja"
 
-#: libapper/PkStrings.cpp:238
+#: libapper/PkStrings.cpp:237
 msgctxt "The role of the transaction, in present tense"
 msgid "Canceling"
 msgstr "Perutaan"
 
-#: libapper/PkStrings.cpp:240
+#: libapper/PkStrings.cpp:239
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting list of repositories"
 msgstr "Noudetaan ohjelmalähdeluetteloa"
 
-#: libapper/PkStrings.cpp:242
+#: libapper/PkStrings.cpp:241
 msgctxt "The role of the transaction, in present tense"
 msgid "Enabling repository"
 msgstr "Otetaan ohjelmalähdettä käyttöön"
 
-#: libapper/PkStrings.cpp:244
+#: libapper/PkStrings.cpp:243
 msgctxt "The role of the transaction, in present tense"
 msgid "Setting repository data"
 msgstr "Asetetaan ohjelmalähteen tietoja"
 
-#: libapper/PkStrings.cpp:246
+#: libapper/PkStrings.cpp:245
 msgctxt "The role of the transaction, in present tense"
 msgid "Resolving"
 msgstr "Ratkaistaan"
@@ -1683,503 +1683,513 @@ msgctxt "The role of the transaction, in present tense"
 msgid "Repairing system"
 msgstr "Korjataan järjestelmää"
 
-#: libapper/PkStrings.cpp:278
+#: libapper/PkStrings.cpp:270
+msgctxt "The role of the transaction, in present tense"
+msgid "Removing repository"
+msgstr "Poistetaan ohjelmalähdettä"
+
+#: libapper/PkStrings.cpp:280
 msgctxt "The role of the transaction, in past tense"
 msgid "Unknown role type"
 msgstr "Tuntematon roolin tyyppi"
 
-#: libapper/PkStrings.cpp:280
+#: libapper/PkStrings.cpp:282
 msgctxt "The role of the transaction, in past tense"
 msgid "Got dependencies"
 msgstr "Selvitettiin riippuvuudet"
 
-#: libapper/PkStrings.cpp:282
+#: libapper/PkStrings.cpp:284
 msgctxt "The role of the transaction, in past tense"
 msgid "Got update detail"
 msgstr "Selvitettiin päivityksen yksityiskohdat"
 
-#: libapper/PkStrings.cpp:284
+#: libapper/PkStrings.cpp:287
 msgctxt "The role of the transaction, in past tense"
 msgid "Got details"
 msgstr "Selvitettiin yksityiskohdat"
 
-#: libapper/PkStrings.cpp:286
+#: libapper/PkStrings.cpp:289
 msgctxt "The role of the transaction, in past tense"
 msgid "Got requires"
 msgstr "Selvitettiin vaatimukset"
 
-#: libapper/PkStrings.cpp:288
+#: libapper/PkStrings.cpp:291
 msgctxt "The role of the transaction, in past tense"
 msgid "Got updates"
 msgstr "Selvitettiin päivitykset"
 
-#: libapper/PkStrings.cpp:290
+#: libapper/PkStrings.cpp:293
 msgctxt "The role of the transaction, in past tense"
 msgid "Searched for package details"
 msgstr "Etsittiin pakettien yksityiskohtia"
 
-#: libapper/PkStrings.cpp:292
+#: libapper/PkStrings.cpp:295
 msgctxt "The role of the transaction, in past tense"
 msgid "Searched for file"
 msgstr "Etsittiin tiedostoja"
 
-#: libapper/PkStrings.cpp:294
+#: libapper/PkStrings.cpp:297
 msgctxt "The role of the transaction, in past tense"
 msgid "Searched groups"
 msgstr "Etsittiin ryhmiä"
 
-#: libapper/PkStrings.cpp:296
+#: libapper/PkStrings.cpp:299
 msgctxt "The role of the transaction, in past tense"
 msgid "Searched for package name"
 msgstr "Etsittiin pakettia nimellä"
 
-#: libapper/PkStrings.cpp:298
+#: libapper/PkStrings.cpp:301
 msgctxt "The role of the transaction, in past tense"
 msgid "Removed packages"
 msgstr "Poistetut paketit"
 
-#: libapper/PkStrings.cpp:300
+#: libapper/PkStrings.cpp:303
 msgctxt "The role of the transaction, in past tense"
 msgid "Installed packages"
 msgstr "Asennetut paketit"
 
-#: libapper/PkStrings.cpp:302
+#: libapper/PkStrings.cpp:305
 msgctxt "The role of the transaction, in past tense"
 msgid "Installed local files"
 msgstr "Asennetut paikallistiedostot"
 
-#: libapper/PkStrings.cpp:304
+#: libapper/PkStrings.cpp:307
 msgctxt "The role of the transaction, in past tense"
 msgid "Refreshed package cache"
 msgstr "Päivitettiin pakettivälimuisti"
 
-#: libapper/PkStrings.cpp:306
+#: libapper/PkStrings.cpp:309
 msgctxt "The role of the transaction, in past tense"
 msgid "Updated packages"
 msgstr "Päivitetyt paketit"
 
-#: libapper/PkStrings.cpp:308
+#: libapper/PkStrings.cpp:311
 msgctxt "The role of the transaction, in past tense"
 msgid "Canceled"
 msgstr "Peruttiin"
 
-#: libapper/PkStrings.cpp:310
+#: libapper/PkStrings.cpp:313
 msgctxt "The role of the transaction, in past tense"
 msgid "Got list of repositories"
 msgstr "Noudettiin ohjelmalähdeluettelo"
 
-#: libapper/PkStrings.cpp:312
+#: libapper/PkStrings.cpp:315
 msgctxt "The role of the transaction, in past tense"
 msgid "Enabled repository"
 msgstr "Otettiin ohjelmalähde käyttöön"
 
-#: libapper/PkStrings.cpp:314
+#: libapper/PkStrings.cpp:317
 msgctxt "The role of the transaction, in past tense"
 msgid "Set repository data"
 msgstr "Asetettiin ohjelmalähteen tiedot"
 
-#: libapper/PkStrings.cpp:316
+#: libapper/PkStrings.cpp:319
 msgctxt "The role of the transaction, in past tense"
 msgid "Resolved"
 msgstr "Ratkaistiin"
 
-#: libapper/PkStrings.cpp:318
+#: libapper/PkStrings.cpp:322
 msgctxt "The role of the transaction, in past tense"
 msgid "Got file list"
 msgstr "Saatiin tiedostoluettelo"
 
-#: libapper/PkStrings.cpp:320
+#: libapper/PkStrings.cpp:324
 msgctxt "The role of the transaction, in past tense"
 msgid "Got what provides"
 msgstr "Saatiin tarjoaja"
 
-#: libapper/PkStrings.cpp:322
+#: libapper/PkStrings.cpp:326
 msgctxt "The role of the transaction, in past tense"
 msgid "Installed signature"
 msgstr "Asennettiin allekirjoitus"
 
-#: libapper/PkStrings.cpp:324
+#: libapper/PkStrings.cpp:328
 msgctxt "The role of the transaction, in past tense"
 msgid "Got package lists"
 msgstr "Saatiin pakettiluettelot"
 
-#: libapper/PkStrings.cpp:326
+#: libapper/PkStrings.cpp:330
 msgctxt "The role of the transaction, in past tense"
 msgid "Accepted EULA"
 msgstr "Hyväksyttiin käyttöehdot"
 
-#: libapper/PkStrings.cpp:328
+#: libapper/PkStrings.cpp:332
 msgctxt "The role of the transaction, in past tense"
 msgid "Downloaded packages"
 msgstr "Ladattiin paketit"
 
-#: libapper/PkStrings.cpp:330
+#: libapper/PkStrings.cpp:334
 msgctxt "The role of the transaction, in past tense"
 msgid "Got distribution upgrades"
 msgstr "Saatiin jakelupäivitykset"
 
-#: libapper/PkStrings.cpp:332
+#: libapper/PkStrings.cpp:336
 msgctxt "The role of the transaction, in past tense"
 msgid "Got categories"
 msgstr "Saatiin luokat"
 
-#: libapper/PkStrings.cpp:334
+#: libapper/PkStrings.cpp:338
 msgctxt "The role of the transaction, in past tense"
 msgid "Got old transactions"
 msgstr "Saatiin vanhat toimenpiteet"
 
-#: libapper/PkStrings.cpp:336
+#: libapper/PkStrings.cpp:340
 msgctxt "The role of the transaction, in past tense"
 msgid "Upgraded system"
 msgstr "Päivitettiin järjestelmä"
 
-#: libapper/PkStrings.cpp:338
+#: libapper/PkStrings.cpp:342
 msgctxt "The role of the transaction, in past tense"
 msgid "Repaired system"
 msgstr "Korjattiin järjestelmä"
 
-#: libapper/PkStrings.cpp:348
+#: libapper/PkStrings.cpp:344
+msgctxt "The role of the transaction, in past tense"
+msgid "Removed repository"
+msgstr "Poistettiin ohjelmalähde"
+
+#: libapper/PkStrings.cpp:354
 msgid "Downloading"
 msgstr "Ladataan"
 
-#: libapper/PkStrings.cpp:350
+#: libapper/PkStrings.cpp:356
 msgid "Updating"
 msgstr "Päivitetään"
 
-#: libapper/PkStrings.cpp:352
+#: libapper/PkStrings.cpp:358
 msgid "Installing"
 msgstr "Asennetaan"
 
-#: libapper/PkStrings.cpp:354
+#: libapper/PkStrings.cpp:360
 msgid "Removing"
 msgstr "Poistetaan"
 
-#: libapper/PkStrings.cpp:356
+#: libapper/PkStrings.cpp:362
 msgid "Cleaning up"
 msgstr "Siivotaan"
 
-#: libapper/PkStrings.cpp:358
+#: libapper/PkStrings.cpp:364
 msgid "Obsoleting"
 msgstr "Vanhennetaan"
 
-#: libapper/PkStrings.cpp:360
+#: libapper/PkStrings.cpp:366
 msgid "Reinstalling"
 msgstr "Asennetaan uudelleen"
 
-#: libapper/PkStrings.cpp:362
+#: libapper/PkStrings.cpp:368
 msgid "Preparing"
 msgstr "Valmistellaan"
 
-#: libapper/PkStrings.cpp:364
+#: libapper/PkStrings.cpp:370
 msgid "Decompressing"
 msgstr "Puretaan"
 
-#: libapper/PkStrings.cpp:375
+#: libapper/PkStrings.cpp:381
 msgid "Downloaded"
 msgstr "Ladattu"
 
-#: libapper/PkStrings.cpp:377
+#: libapper/PkStrings.cpp:383
 msgid "Updated"
 msgstr "Päivitetty"
 
-#: libapper/PkStrings.cpp:381
+#: libapper/PkStrings.cpp:387
 msgid "Removed"
 msgstr "Poistettu"
 
-#: libapper/PkStrings.cpp:383
+#: libapper/PkStrings.cpp:389
 msgid "Cleaned up"
 msgstr "Siivottu"
 
-#: libapper/PkStrings.cpp:385
+#: libapper/PkStrings.cpp:391
 msgid "Obsoleted"
 msgstr "Vanhennettu"
 
-#: libapper/PkStrings.cpp:387
+#: libapper/PkStrings.cpp:393
 msgid "Reinstalled"
 msgstr "Asennettu uudelleen"
 
-#: libapper/PkStrings.cpp:389
+#: libapper/PkStrings.cpp:395
 msgid "Prepared"
 msgstr "Valmisteltu"
 
-#: libapper/PkStrings.cpp:391
+#: libapper/PkStrings.cpp:397
 msgid "Decompressed"
 msgstr "Purettu"
 
-#: libapper/PkStrings.cpp:402
+#: libapper/PkStrings.cpp:408
 msgid "No network connection available"
 msgstr "Ei verkkoyhteyttä käytettävissä"
 
-#: libapper/PkStrings.cpp:404
+#: libapper/PkStrings.cpp:410
 msgid "No package cache is available"
 msgstr "Ei pakettivälimuistia käytettävissä"
 
-#: libapper/PkStrings.cpp:406
+#: libapper/PkStrings.cpp:412
 msgid "Out of memory"
 msgstr "Muisti loppui"
 
-#: libapper/PkStrings.cpp:408
+#: libapper/PkStrings.cpp:414
 msgid "Failed to create a thread"
 msgstr "Säikeen luonti epäonnistui"
 
-#: libapper/PkStrings.cpp:410
+#: libapper/PkStrings.cpp:416
 msgid "Not supported by this backend"
 msgstr "Tämä taustaosa ei tue"
 
-#: libapper/PkStrings.cpp:412
+#: libapper/PkStrings.cpp:418
 msgid "An internal system error has occurred"
 msgstr "Tapahtui sisäinen virhe"
 
-#: libapper/PkStrings.cpp:414
+#: libapper/PkStrings.cpp:420
 msgid "A security trust relationship is not present"
 msgstr "Turvaluottamussuhdetta ei ole"
 
-#: libapper/PkStrings.cpp:416
+#: libapper/PkStrings.cpp:422
 msgid "The package is not installed"
 msgstr "Pakettia ei ole asennettu"
 
-#: libapper/PkStrings.cpp:418
+#: libapper/PkStrings.cpp:424
 msgid "The package was not found"
 msgstr "Pakettia ei löytynyt"
 
-#: libapper/PkStrings.cpp:420
+#: libapper/PkStrings.cpp:426
 msgid "The package is already installed"
 msgstr "Paketti on jo asennettu"
 
-#: libapper/PkStrings.cpp:422
+#: libapper/PkStrings.cpp:428
 msgid "The package download failed"
 msgstr "Paketin lataus epäonnistui"
 
-#: libapper/PkStrings.cpp:424
+#: libapper/PkStrings.cpp:430
 msgid "The group was not found"
 msgstr "Ryhmää ei löytynyt"
 
-#: libapper/PkStrings.cpp:426
+#: libapper/PkStrings.cpp:432
 msgid "The group list was invalid"
 msgstr "Ryhmäluettelo ei ollut kelvollinen"
 
-#: libapper/PkStrings.cpp:428
+#: libapper/PkStrings.cpp:434
 msgid "Dependency resolution failed"
 msgstr "Riippuvuuksien ratkaisu epäonnistui"
 
-#: libapper/PkStrings.cpp:430
+#: libapper/PkStrings.cpp:436
 msgid "Search filter was invalid"
 msgstr "Hakusuodatin oli virheellinen"
 
-#: libapper/PkStrings.cpp:432
+#: libapper/PkStrings.cpp:438
 msgid "The package identifier was not well formed"
 msgstr "Paketin tunniste ei ollut kelvollinen"
 
-#: libapper/PkStrings.cpp:434
+#: libapper/PkStrings.cpp:440
 msgid "Transaction error"
 msgstr "Toimenpidevirhe"
 
-#: libapper/PkStrings.cpp:436
+#: libapper/PkStrings.cpp:442
 msgid "Repository name was not found"
 msgstr "Ohjelmistolähteen nimeä ei löytynyt"
 
-#: libapper/PkStrings.cpp:438
+#: libapper/PkStrings.cpp:444
 msgid "Could not remove a protected system package"
 msgstr "Suojatun järjestelmäpaketin poisto ei onnistunut"
 
-#: libapper/PkStrings.cpp:440
+#: libapper/PkStrings.cpp:446
 msgid "The task was canceled"
 msgstr "Toiminto peruttiin"
 
-#: libapper/PkStrings.cpp:442
+#: libapper/PkStrings.cpp:448
 msgid "The task was forcibly canceled"
 msgstr "Tehtävä peruttiin väkisin"
 
-#: libapper/PkStrings.cpp:444
+#: libapper/PkStrings.cpp:450
 msgid "Reading the config file failed"
 msgstr "Asetustiedoston luku epäonnistui"
 
-#: libapper/PkStrings.cpp:446
+#: libapper/PkStrings.cpp:452
 msgid "The task cannot be cancelled"
 msgstr "Toimintoa ei voi perua"
 
-#: libapper/PkStrings.cpp:448
+#: libapper/PkStrings.cpp:454
 msgid "Source packages cannot be installed"
 msgstr "Lähdekoodipaketteja ei voi asentaa"
 
-#: libapper/PkStrings.cpp:450
+#: libapper/PkStrings.cpp:456
 msgid "The license agreement failed"
 msgstr "Lisenssisopimus epäonnistui"
 
-#: libapper/PkStrings.cpp:452
+#: libapper/PkStrings.cpp:458
 msgid "Local file conflict between packages"
 msgstr "Paikallinen tiedosto on ristiriidassa pakettien kanssa"
 
-#: libapper/PkStrings.cpp:454
+#: libapper/PkStrings.cpp:460
 msgid "Packages are not compatible"
 msgstr "Paketit eivät ole yhteensopivia"
 
-#: libapper/PkStrings.cpp:456
+#: libapper/PkStrings.cpp:462
 msgid "Problem connecting to a software origin"
 msgstr "Ongelma yhdistettäessä ohjelmalähteeseen"
 
-#: libapper/PkStrings.cpp:458
+#: libapper/PkStrings.cpp:464
 msgid "Failed to initialize"
 msgstr "Alustaminen epäonnistui"
 
-#: libapper/PkStrings.cpp:460
+#: libapper/PkStrings.cpp:466
 msgid "Failed to finalize"
 msgstr "Viimeistely epäonnistui"
 
-#: libapper/PkStrings.cpp:462
+#: libapper/PkStrings.cpp:468
 msgid "Cannot get lock"
 msgstr "Lukitus epäonnistui"
 
-#: libapper/PkStrings.cpp:464
+#: libapper/PkStrings.cpp:470
 msgid "No packages to update"
 msgstr "Ei päivitettäviä paketteja"
 
-#: libapper/PkStrings.cpp:466
+#: libapper/PkStrings.cpp:472
 msgid "Cannot write repository configuration"
 msgstr "Ohjelmalähteen asetuksia ei voi kirjoittaa"
 
-#: libapper/PkStrings.cpp:468
+#: libapper/PkStrings.cpp:474
 msgid "Local install failed"
 msgstr "Paikallisasennus epäonnistui"
 
-#: libapper/PkStrings.cpp:470
+#: libapper/PkStrings.cpp:476
 msgid "Bad GPG signature"
 msgstr "Virheellinen GPG-allekirjoitus"
 
-#: libapper/PkStrings.cpp:472
+#: libapper/PkStrings.cpp:478
 msgid "Missing GPG signature"
 msgstr "Puuttuva GPG-allekirjoitus"
 
-#: libapper/PkStrings.cpp:474
+#: libapper/PkStrings.cpp:480
 msgid "Repository configuration invalid"
 msgstr "Ohjelmalähteen asetukset virheelliset"
 
-#: libapper/PkStrings.cpp:476
+#: libapper/PkStrings.cpp:482
 msgid "Invalid package file"
 msgstr "Virheellinen pakettitiedosto"
 
-#: libapper/PkStrings.cpp:478
+#: libapper/PkStrings.cpp:484
 msgid "Package install blocked"
 msgstr "Paketin asennus estetty"
 
-#: libapper/PkStrings.cpp:480
+#: libapper/PkStrings.cpp:486
 msgid "Package is corrupt"
 msgstr "Paketti on korruptoitunut"
 
-#: libapper/PkStrings.cpp:482
+#: libapper/PkStrings.cpp:488
 msgid "All packages are already installed"
 msgstr "Kaikki paketit on jo asennettu"
 
-#: libapper/PkStrings.cpp:484
+#: libapper/PkStrings.cpp:490
 msgid "The specified file could not be found"
 msgstr "Annettua tiedostoa ei löydy"
 
-#: libapper/PkStrings.cpp:486
+#: libapper/PkStrings.cpp:492
 msgid "No more mirrors are available"
 msgstr "Peilipalvelimia ei ole enempää saatavilla"
 
-#: libapper/PkStrings.cpp:488
+#: libapper/PkStrings.cpp:494
 msgid "No distribution upgrade data is available"
 msgstr "Jakelupäivitystietoa ei ole saatavilla"
 
-#: libapper/PkStrings.cpp:490
+#: libapper/PkStrings.cpp:496
 msgid "Package is incompatible with this system"
 msgstr "Paketti ei ole yhteensopiva järjestelmän kanssa"
 
-#: libapper/PkStrings.cpp:492
+#: libapper/PkStrings.cpp:498
 msgid "No space is left on the disk"
 msgstr "Levyllä ei ole tarpeeksi tilaa"
 
-#: libapper/PkStrings.cpp:494 libapper/PkTransaction.cpp:446
+#: libapper/PkStrings.cpp:500 libapper/PkTransaction.cpp:344
 msgid "A media change is required"
 msgstr "Tietovälineen vaihto tarpeen"
 
-#: libapper/PkStrings.cpp:496
+#: libapper/PkStrings.cpp:502
 msgid "Authorization failed"
 msgstr "Varmennus epäonnistui"
 
-#: libapper/PkStrings.cpp:498
+#: libapper/PkStrings.cpp:504
 msgid "Update not found"
 msgstr "Päivitystä ei löytynyt"
 
-#: libapper/PkStrings.cpp:500
+#: libapper/PkStrings.cpp:506
 msgid "Cannot install from untrusted origin"
 msgstr "Ei-luotettavasta lähteestä ei voi asentaa"
 
-#: libapper/PkStrings.cpp:502
+#: libapper/PkStrings.cpp:508
 msgid "Cannot update from untrusted origin"
 msgstr "Ei-luotettavasta lähteestä ei voi päivittää"
 
-#: libapper/PkStrings.cpp:504
+#: libapper/PkStrings.cpp:510
 msgid "Cannot get the file list"
 msgstr "Tiedostoluetteloa ei saada"
 
-#: libapper/PkStrings.cpp:506
+#: libapper/PkStrings.cpp:512
 msgid "Cannot get package requires"
 msgstr "Paketin vaatimuksia ei saada"
 
-#: libapper/PkStrings.cpp:508
+#: libapper/PkStrings.cpp:514
 msgid "Cannot disable origin"
 msgstr "Alkuperää ei voi poistaa käytöstä"
 
-#: libapper/PkStrings.cpp:510
+#: libapper/PkStrings.cpp:516
 msgid "The download failed"
 msgstr "Lataus epäonnistui"
 
-#: libapper/PkStrings.cpp:512
+#: libapper/PkStrings.cpp:518
 msgid "Package failed to configure"
 msgstr "Paketin asetusten tekeminen epäonnistui"
 
-#: libapper/PkStrings.cpp:514
+#: libapper/PkStrings.cpp:520
 msgid "Package failed to build"
 msgstr "Paketin koostaminen epäonnistui"
 
-#: libapper/PkStrings.cpp:516
+#: libapper/PkStrings.cpp:522
 msgid "Package failed to install"
 msgstr "Paketin asennus epäonnistui"
 
-#: libapper/PkStrings.cpp:518
+#: libapper/PkStrings.cpp:524
 msgid "Package failed to be removed"
 msgstr "Paketin poisto epäonnistui"
 
-#: libapper/PkStrings.cpp:520
+#: libapper/PkStrings.cpp:526
 msgid "Update failed due to running process"
 msgstr "Päivitys epäonnistui käynnissä olevan prosessin takia"
 
-#: libapper/PkStrings.cpp:522
+#: libapper/PkStrings.cpp:528
 msgid "The package database was changed"
 msgstr "Pakettitietokanta muuttui"
 
-#: libapper/PkStrings.cpp:524
+#: libapper/PkStrings.cpp:530
 msgid "Virtual provide type is not supported"
 msgstr "Virtuaalista tarjoajatyyppiä ei tueta"
 
 # *** TARKISTA: Install root = asennuksen juurikansio?
-#: libapper/PkStrings.cpp:526
+#: libapper/PkStrings.cpp:532
 msgid "Install root is invalid"
 msgstr "Asennuksen pääkansio on virheellinen"
 
-#: libapper/PkStrings.cpp:528
+#: libapper/PkStrings.cpp:534
 msgid "Cannot fetch install sources"
 msgstr "Asennuslähteitä ei saa noudetuksi"
 
-#: libapper/PkStrings.cpp:530
+#: libapper/PkStrings.cpp:536
 msgid "Rescheduled due to priority"
 msgstr "Ajastettu uudelleen prioriteetin takia"
 
-#: libapper/PkStrings.cpp:532
+#: libapper/PkStrings.cpp:538
 msgid "Unfinished transaction"
 msgstr "Keskeneräinen toimenpide"
 
-#: libapper/PkStrings.cpp:534
+#: libapper/PkStrings.cpp:540
 msgid "Lock required"
 msgstr "Lukitusta vaaditaan"
 
-#: libapper/PkStrings.cpp:536
+#: libapper/PkStrings.cpp:542
 msgid "Unknown error"
 msgstr "Tuntematon virhe"
 
-#: libapper/PkStrings.cpp:546
+#: libapper/PkStrings.cpp:552
 msgid ""
 "There is no network connection available.\n"
 "Please check your connection settings and try again"
@@ -2187,7 +2197,7 @@ msgstr ""
 "Verkkoyhteys ei ole käytettävissä.\n"
 "Tarkista verkkoasetuksesi ja koeta uudelleen"
 
-#: libapper/PkStrings.cpp:549
+#: libapper/PkStrings.cpp:555
 msgid ""
 "The package list needs to be rebuilt.\n"
 "This should have been done by the backend automatically."
@@ -2195,7 +2205,7 @@ msgstr ""
 "Pakettiluettelo täytyy koostaa uudelleen.\n"
 "Taustaosan olisi pitänyt tehdä tämä automaattisesti."
 
-#: libapper/PkStrings.cpp:552
+#: libapper/PkStrings.cpp:558
 msgid ""
 "The service that is responsible for handling user requests is out of "
 "memory.\n"
@@ -2204,11 +2214,11 @@ msgstr ""
 "Käyttäjän pyyntöihin vastaavalta palvelulta on muisti lopussa.\n"
 "Sulje joitakin ohjelmia tai käynnistä tietokone uudelleen."
 
-#: libapper/PkStrings.cpp:555
+#: libapper/PkStrings.cpp:561
 msgid "A thread could not be created to service the user request."
 msgstr "Ei voi luoda säiettä vastaamaan käyttäjän pyyntöön."
 
-#: libapper/PkStrings.cpp:557
+#: libapper/PkStrings.cpp:563
 msgid ""
 "The action is not supported by this backend.\n"
 "Please report a bug as this should not have happened."
@@ -2216,7 +2226,7 @@ msgstr ""
 "Tämä taustaosa ei tue toimintoa.\n"
 "Ilmoita viasta, koska näin ei pitäisi käydä."
 
-#: libapper/PkStrings.cpp:560
+#: libapper/PkStrings.cpp:566
 msgid ""
 "A problem that we were not expecting has occurred.\n"
 "Please report this bug with the error description."
@@ -2224,7 +2234,7 @@ msgstr ""
 "Sattui ongelma, jota emme osanneet ennakoida.\n"
 "Ilmoita tästä virheestä kuvauksen kera."
 
-#: libapper/PkStrings.cpp:563
+#: libapper/PkStrings.cpp:569
 msgid ""
 "A security trust relationship could not be made with the software origin.\n"
 "Please check your software signature settings."
@@ -2232,12 +2242,12 @@ msgstr ""
 "Turvaluottamussuhdetta ei voitu luoda ohjelmiston alkuperään.\n"
 "Tarkista ohjelmiston allekirjoitusasetukset."
 
-#: libapper/PkStrings.cpp:566
+#: libapper/PkStrings.cpp:572
 msgid ""
 "The package that is trying to be removed or updated is not already installed."
 msgstr "Pakettia, jota yritetään poistaa tai päivittää, ei ole vielä asennettu"
 
-#: libapper/PkStrings.cpp:568
+#: libapper/PkStrings.cpp:574
 msgid ""
 "The package that is being modified was not found on your system or in any "
 "software origin."
@@ -2245,11 +2255,11 @@ msgstr ""
 "Pakettia, jota ollaan muuttamassa, ei löytynyt järjestelmästä eikä "
 "ohjelmistolähteistä"
 
-#: libapper/PkStrings.cpp:570
+#: libapper/PkStrings.cpp:576
 msgid "The package that is trying to be installed is already installed."
 msgstr "Asennettava paketti on jo asennettu."
 
-#: libapper/PkStrings.cpp:572
+#: libapper/PkStrings.cpp:578
 msgid ""
 "The package download failed.\n"
 "Please check your network connectivity."
@@ -2257,7 +2267,7 @@ msgstr ""
 "Pakettien lataus epäonnistui.\n"
 "Tarkista verkkoyhteytesi tila."
 
-#: libapper/PkStrings.cpp:575
+#: libapper/PkStrings.cpp:581
 msgid ""
 "The group type was not found.\n"
 "Please check your group list and try again."
@@ -2265,7 +2275,7 @@ msgstr ""
 "Ryhmän tyyppiä ei löytynyt.\n"
 "Tarkista ryhmäluettelo ja yritä uudelleen."
 
-#: libapper/PkStrings.cpp:578
+#: libapper/PkStrings.cpp:584
 msgid ""
 "The group list could not be loaded.\n"
 "Refreshing your cache may help, although this is normally a software origin "
@@ -2275,7 +2285,7 @@ msgstr ""
 "Välimuistin päivittäminen voi auttaa, vaikka tämä on tavallisesti "
 "ohjelmistolähteen virhe."
 
-#: libapper/PkStrings.cpp:582
+#: libapper/PkStrings.cpp:588
 msgid ""
 "A package dependency could not be found.\n"
 "More information is available in the detailed report."
@@ -2283,11 +2293,11 @@ msgstr ""
 "Paketin riippuvuuksia ei löytynyt.\n"
 "Lisätietoa löytyy yksityiskohtaisesta raportista."
 
-#: libapper/PkStrings.cpp:585
+#: libapper/PkStrings.cpp:591
 msgid "The search filter was not correctly formed."
 msgstr "Hakusuodatinta ei ole muodostettu oikein."
 
-#: libapper/PkStrings.cpp:587
+#: libapper/PkStrings.cpp:593
 msgid ""
 "The package identifier was not well formed when sent to the system daemon.\n"
 "This normally indicates an internal bug and should be reported."
@@ -2296,7 +2306,7 @@ msgstr ""
 "järjestelmäpalveluun.\n"
 "Tämä on yleensä sisäinen ohjelmavirhe ja siitä tulisi ilmoittaa."
 
-#: libapper/PkStrings.cpp:590
+#: libapper/PkStrings.cpp:596
 msgid ""
 "An error occurred while running the transaction.\n"
 "More information is available in the detailed report."
@@ -2304,7 +2314,7 @@ msgstr ""
 "Toimenpidettä suoritettaessa sattui virhe.\n"
 "Lisätietoa löytyy yksityiskohtaisesta raportista."
 
-#: libapper/PkStrings.cpp:593
+#: libapper/PkStrings.cpp:599
 msgid ""
 "The remote software origin name was not found.\n"
 "You may need to enable an item in Software Origins."
@@ -2312,15 +2322,15 @@ msgstr ""
 "Etäohjelmistolähteen nimeä ei löytynyt.\n"
 "Sinun on otettava jokin ohjelmistolähde käyttöön."
 
-#: libapper/PkStrings.cpp:596
+#: libapper/PkStrings.cpp:602
 msgid "Removing a protected system package is not allowed."
 msgstr "Suojattua järjestelmäpakettia ei sallita poistaa."
 
-#: libapper/PkStrings.cpp:598
+#: libapper/PkStrings.cpp:604
 msgid "The task was canceled successfully and no packages were changed."
 msgstr "Toiminto peruttiin onnistuneesti eikä paketteja muutettu."
 
-#: libapper/PkStrings.cpp:600
+#: libapper/PkStrings.cpp:606
 msgid ""
 "The task was canceled successfully and no packages were changed.\n"
 "The backend did not exit cleanly."
@@ -2328,7 +2338,7 @@ msgstr ""
 "Tehtävä peruttiin onnistuneesti eikä paketteja muutettu.\n"
 "Taustaosa ei päättynyt siististi."
 
-#: libapper/PkStrings.cpp:603
+#: libapper/PkStrings.cpp:609
 msgid ""
 "The native package configuration file could not be opened.\n"
 "Please make sure your system's configuration is valid."
@@ -2336,11 +2346,11 @@ msgstr ""
 "Natiivipaketin asetustiedostoa ei voitu avata.\n"
 "Varmista, että järjestelmäsi asetukset ovat kelvolliset."
 
-#: libapper/PkStrings.cpp:606
+#: libapper/PkStrings.cpp:612
 msgid "The task is not safe to be cancelled at this time."
 msgstr "Toimintoa ei voi turvallisesti perua tällä hetkellä."
 
-#: libapper/PkStrings.cpp:608
+#: libapper/PkStrings.cpp:614
 msgid ""
 "Source packages are not normally installed this way.\n"
 "Check the extension of the file you are trying to install."
@@ -2348,7 +2358,7 @@ msgstr ""
 "Lähdekoodipaketteja ei tavallisesti asenneta näin.\n"
 "Tarkista asennettavan tiedoston tiedostopääte."
 
-#: libapper/PkStrings.cpp:611
+#: libapper/PkStrings.cpp:617
 msgid ""
 "The license agreement was not agreed to.\n"
 "To use this software you have to accept the license."
@@ -2356,7 +2366,7 @@ msgstr ""
 "Lisenssisopimusta ei ole hyväksytty.\n"
 "Tämän ohjelmiston käyttö vaatii sinua hyväksymään lisenssin."
 
-#: libapper/PkStrings.cpp:614
+#: libapper/PkStrings.cpp:620
 msgid ""
 "Two packages provide the same file.\n"
 "This is usually due to mixing packages for different software origins."
@@ -2364,7 +2374,7 @@ msgstr ""
 "Kaksi pakettia tarjoaa saman tiedoston.\n"
 "Näin käy yleensä sekoitettaessa eri ohjelmistolähteiden paketteja."
 
-#: libapper/PkStrings.cpp:617
+#: libapper/PkStrings.cpp:623
 msgid ""
 "Multiple packages exist that are not compatible with each other.\n"
 "This is usually due to mixing packages from different software origins."
@@ -2372,7 +2382,7 @@ msgstr ""
 "Useammat olemassa olevat paketit eivät ole yhteensopivia keskenään.\n"
 "Näin käy yleensä sekoitettaessa eri ohjelmistolähteiden paketteja."
 
-#: libapper/PkStrings.cpp:620
+#: libapper/PkStrings.cpp:626
 msgid ""
 "There was a (possibly temporary) problem connecting to a software origins.\n"
 "Please check the detailed error for further details."
@@ -2380,7 +2390,7 @@ msgstr ""
 "Sattui (ehkä hetkellinen) virhe yhdistettäessä ohjelmistolähteeseen.\n"
 "Katso lisätietoja yksityiskohtaisesta virheilmoituksesta."
 
-#: libapper/PkStrings.cpp:623
+#: libapper/PkStrings.cpp:629
 msgid ""
 "Failed to initialize packaging backend.\n"
 "This may occur if other packaging tools are being used simultaneously."
@@ -2388,7 +2398,7 @@ msgstr ""
 "Pakettitaustaosan alustus epäonnistui.\n"
 "Näin voi käydä, jos useampi pakettityökalu on käytössä yhtä aikaa."
 
-#: libapper/PkStrings.cpp:626
+#: libapper/PkStrings.cpp:632
 msgid ""
 "Failed to close down the backend instance.\n"
 "This error can normally be ignored."
@@ -2396,7 +2406,7 @@ msgstr ""
 "Taustaosainstanssin sulkeminen epäonnistui.\n"
 "Tämän virheen voi yleensä jättää huomiotta."
 
-#: libapper/PkStrings.cpp:629
+#: libapper/PkStrings.cpp:635
 msgid ""
 "Cannot get the exclusive lock on the packaging backend.\n"
 "Please close any other legacy packaging tools that may be open."
@@ -2404,15 +2414,15 @@ msgstr ""
 "Pakettitaustaosaa ei saada lukituksi yksin tämän ohjelman käyttöön.\n"
 "Sulje mahdollisesti avoinna olevat muut pakettityökalut."
 
-#: libapper/PkStrings.cpp:632
+#: libapper/PkStrings.cpp:638
 msgid "None of the selected packages could be updated."
 msgstr "Yhtäkään valittua pakettia ei voitu päivittää."
 
-#: libapper/PkStrings.cpp:634
+#: libapper/PkStrings.cpp:640
 msgid "The repository configuration could not be modified."
 msgstr "Ohjelmistolähteiden asetuksia ei voitu muuttaa."
 
-#: libapper/PkStrings.cpp:636
+#: libapper/PkStrings.cpp:642
 msgid ""
 "Installing the local file failed.\n"
 "More information is available in the detailed report."
@@ -2420,11 +2430,11 @@ msgstr ""
 "Paikallistiedoston asennus epäonnistui.\n"
 "Lisätietoja on saatavilla yksityiskohtaisessa raportissa."
 
-#: libapper/PkStrings.cpp:639
+#: libapper/PkStrings.cpp:645
 msgid "The package signature could not be verified."
 msgstr "Paketin allekirjoitusta ei voitu tarkistaa."
 
-#: libapper/PkStrings.cpp:641
+#: libapper/PkStrings.cpp:647
 msgid ""
 "The package signature was missing and this package is untrusted.\n"
 "This package was not signed with a GPG key when created."
@@ -2432,11 +2442,11 @@ msgstr ""
 "Paketilta puuttuu allekirjoitus eikä pakettiin siten voi luottaa.\n"
 "Pakettia ei allekirjoitettu GPG-avaimella sitä luotaessa."
 
-#: libapper/PkStrings.cpp:644
+#: libapper/PkStrings.cpp:650
 msgid "Repository configuration was invalid and could not be read."
 msgstr "Ohjelmalähteen asetus on virheellinen eikä sitä voi lukea."
 
-#: libapper/PkStrings.cpp:646
+#: libapper/PkStrings.cpp:652
 msgid ""
 "The package you are attempting to install is not valid.\n"
 "The package file could be corrupt, or not a proper package."
@@ -2445,23 +2455,23 @@ msgstr ""
 "Paketti on saattanut korruptoitua tai vaihtoehtoisesti se ei ole kelvollinen "
 "pakettitiedosto."
 
-#: libapper/PkStrings.cpp:649
+#: libapper/PkStrings.cpp:655
 msgid ""
 "Installation of this package was prevented by your packaging system's "
 "configuration."
 msgstr "Pakettijärjestelmäsi asetukset estivät tämän paketin asentamisen."
 
-#: libapper/PkStrings.cpp:651
+#: libapper/PkStrings.cpp:657
 msgid ""
 "The package that was downloaded is corrupt and needs to be downloaded again."
 msgstr "Ladattu paketti on korruptoitunut, joten se tulee ladata uudelleen."
 
-#: libapper/PkStrings.cpp:653
+#: libapper/PkStrings.cpp:659
 msgid ""
 "All of the packages selected for install are already installed on the system."
 msgstr "Kaikki valitut paketit on jo asennettu tähän järjestelmään."
 
-#: libapper/PkStrings.cpp:655
+#: libapper/PkStrings.cpp:661
 msgid ""
 "The specified file could not be found on the system.\n"
 "Check that the file still exists and has not been deleted."
@@ -2469,7 +2479,7 @@ msgstr ""
 "Annettua tiedostoa ei löydy järjestelmästä.\n"
 "Tarkista, että tiedosto on yhä olemassa eikä sitä ole poistettu."
 
-#: libapper/PkStrings.cpp:658
+#: libapper/PkStrings.cpp:664
 msgid ""
 "Required data could not be found on any of the configured software origins.\n"
 "There were no more download mirrors that could be tried."
@@ -2477,7 +2487,7 @@ msgstr ""
 "Vaadittua tietoa ei löytynyt asetetuista ohjelmistolähteistä.\n"
 "Sellaisia peilipalvelimia ei ollut, joita olisi voinut kokeilla."
 
-#: libapper/PkStrings.cpp:661
+#: libapper/PkStrings.cpp:667
 msgid ""
 "Required upgrade data could not be found in any of the configured software "
 "origins.\n"
@@ -2486,14 +2496,14 @@ msgstr ""
 "Vaadittua päivitystietoa ei löytynyt asetetuista ohjelmistolähteistä.\n"
 "Jakelupäivitysten luettelo ei ole käytettävissä."
 
-#: libapper/PkStrings.cpp:664
+#: libapper/PkStrings.cpp:670
 msgid ""
 "The package that is trying to be installed is incompatible with this system."
 msgstr ""
 "Asennettavaksi tarkoitettu paketti ei ole yhteensopiva tämän järjestelmän "
 "kanssa."
 
-#: libapper/PkStrings.cpp:666
+#: libapper/PkStrings.cpp:672
 msgid ""
 "There is insufficient space on the device.\n"
 "Free some space on the system disk to perform this operation."
@@ -2501,11 +2511,11 @@ msgstr ""
 "Tietokoneen kiintolevyllä ei ole riittävästi vapaata tilaa.\n"
 "Vapauta levytilaa suorittaaksesi tämän toiminnon."
 
-#: libapper/PkStrings.cpp:669
+#: libapper/PkStrings.cpp:675
 msgid "Additional media is required to complete the transaction."
 msgstr "Lisätietovälineitä vaaditaan toimenpiteen loppuun saattamiseksi."
 
-#: libapper/PkStrings.cpp:671
+#: libapper/PkStrings.cpp:677
 msgid ""
 "You have failed to provide correct authentication.\n"
 "Please check any passwords or account settings."
@@ -2513,7 +2523,7 @@ msgstr ""
 "Et onnistutunut tunnistautumaan oikein.\n"
 "Tarkista salasanasi ja tiliesi asetukset."
 
-#: libapper/PkStrings.cpp:674
+#: libapper/PkStrings.cpp:680
 msgid ""
 "The specified update could not be found.\n"
 "It could have already been installed or no longer available on the remote "
@@ -2522,27 +2532,27 @@ msgstr ""
 "Määritettyä päivitystä ei löytynyt.\n"
 "Se on voitu jo asentaa tai sitä ei enää ole saatavilla etäpalvelimelta."
 
-#: libapper/PkStrings.cpp:677
+#: libapper/PkStrings.cpp:683
 msgid "The package could not be installed from untrusted origin."
 msgstr "Pakettia ei voitu asentaa ei-luotettavasta lähteestä."
 
-#: libapper/PkStrings.cpp:679
+#: libapper/PkStrings.cpp:685
 msgid "The package could not be updated from untrusted origin."
 msgstr "Pakettia ei voitu päivittää ei-luotetusta lähteestä."
 
-#: libapper/PkStrings.cpp:681
+#: libapper/PkStrings.cpp:687
 msgid "The file list is not available for this package."
 msgstr "Paketin tiedostoluettelo ei ole saatavilla."
 
-#: libapper/PkStrings.cpp:683
+#: libapper/PkStrings.cpp:689
 msgid "The information about what requires this package could not be obtained."
 msgstr "Tietoja siitä, mikä tätä pakettia vaatii, ei saada hankituksi."
 
-#: libapper/PkStrings.cpp:685
+#: libapper/PkStrings.cpp:691
 msgid "The specified software origin could not be disabled."
 msgstr "Määritettyä ohjelmistolähdettä ei voitu poistaa käytöstä."
 
-#: libapper/PkStrings.cpp:687
+#: libapper/PkStrings.cpp:693
 msgid ""
 "The download could not be done automatically and should be done manually.\n"
 "More information is available in the detailed report."
@@ -2550,7 +2560,7 @@ msgstr ""
 "Latausta ei voitu tehdä automaattisesti, joten se pitää tehdä käsin.\n"
 "Lisätietoa löytyy yksityiskohtaisesta raportista."
 
-#: libapper/PkStrings.cpp:690
+#: libapper/PkStrings.cpp:696
 msgid ""
 "One of the selected packages failed to configure correctly.\n"
 "More information is available in the detailed report."
@@ -2558,7 +2568,7 @@ msgstr ""
 "Yhden valitun paketin asetuksia ei saatu tehdyksi oikein.\n"
 "Lisätietoa löytyy yksityiskohtaisesta raportista."
 
-#: libapper/PkStrings.cpp:693
+#: libapper/PkStrings.cpp:699
 msgid ""
 "One of the selected packages failed to build correctly.\n"
 "More information is available in the detailed report."
@@ -2566,7 +2576,7 @@ msgstr ""
 "Yhtä valituista paketeista ei saatu koostetuksi oikein.\n"
 "Lisätietoa löytyy yksityiskohtaisesta raportista."
 
-#: libapper/PkStrings.cpp:696
+#: libapper/PkStrings.cpp:702
 msgid ""
 "One of the selected packages failed to install correctly.\n"
 "More information is available in the detailed report."
@@ -2574,7 +2584,7 @@ msgstr ""
 "Yksi valituista paketeista ei onnistunut asentumaan oikein.\n"
 "Lisätietoa löytyy yksityiskohtaisesta raportista."
 
-#: libapper/PkStrings.cpp:699
+#: libapper/PkStrings.cpp:705
 msgid ""
 "One of the selected packages failed to be removed correctly.\n"
 "More information is available in the detailed report."
@@ -2582,7 +2592,7 @@ msgstr ""
 "Yhtä valituista paketeista ei saatu poistetuksi oikein.\n"
 "Lisätietoa löytyy yksityiskohtaisesta raportista."
 
-#: libapper/PkStrings.cpp:702
+#: libapper/PkStrings.cpp:708
 msgid ""
 "A program is running that has to be closed before the update can proceed.\n"
 "More information is available in the detailed report."
@@ -2591,38 +2601,38 @@ msgstr ""
 "jatkamista.\n"
 "Lisätietoa löytyy yksityiskohtaisesta raportista."
 
-#: libapper/PkStrings.cpp:705
+#: libapper/PkStrings.cpp:711
 msgid "The package database was changed while the request was running."
 msgstr "Pakettitietokanta muuttui pyyntöä suoritettaessa."
 
-#: libapper/PkStrings.cpp:707
+#: libapper/PkStrings.cpp:713
 msgid "The virtual provide type is not supported by this system."
 msgstr "Tämä järjestelmä ei tue virtuaalista tarjoajatyyppiä."
 
-#: libapper/PkStrings.cpp:709
+#: libapper/PkStrings.cpp:715
 msgid "The install root is invalid. Please contact your administrator."
 msgstr ""
 "Asennuksen pääkansio on virheellinen. Ota yhteyttä järjestelmän ylläpitäjään."
 
-#: libapper/PkStrings.cpp:711
+#: libapper/PkStrings.cpp:717
 msgid "The list of software could not be downloaded."
 msgstr "Ohjelmistoluetteloa ei saatu ladatuksi."
 
-#: libapper/PkStrings.cpp:713
+#: libapper/PkStrings.cpp:719
 msgid ""
 "The transaction has been cancelled and will be retried when the system is "
 "idle."
 msgstr "Toimenpide peruttiin, ja sitä jatketaan järjestelmän ollessa jouten."
 
-#: libapper/PkStrings.cpp:715
+#: libapper/PkStrings.cpp:721
 msgid "A previous package management transaction was interrupted."
 msgstr "Aiempi paketinhallintatoimenpide keskeytettiin."
 
-#: libapper/PkStrings.cpp:717
+#: libapper/PkStrings.cpp:723
 msgid "A package manager lock is required."
 msgstr "Paketinhallinnan lukitus vaaditaan."
 
-#: libapper/PkStrings.cpp:719
+#: libapper/PkStrings.cpp:725
 msgid ""
 "Unknown error, please report a bug.\n"
 "More information is available in the detailed report."
@@ -2630,236 +2640,236 @@ msgstr ""
 "Tuntematon virhe, ilmoita viasta.\n"
 "Lisätietoja on saatavilla yksityiskohtaisessa raportissa."
 
-#: libapper/PkStrings.cpp:730
+#: libapper/PkStrings.cpp:736
 msgctxt "The group type"
 msgid "Accessibility"
 msgstr "Esteettömyys"
 
-#: libapper/PkStrings.cpp:732
+#: libapper/PkStrings.cpp:738
 msgctxt "The group type"
 msgid "Accessories"
 msgstr "Apuohjelmat"
 
-#: libapper/PkStrings.cpp:734
+#: libapper/PkStrings.cpp:740
 msgctxt "The group type"
 msgid "Education"
 msgstr "Opetus"
 
-#: libapper/PkStrings.cpp:736
+#: libapper/PkStrings.cpp:742
 msgctxt "The group type"
 msgid "Games"
 msgstr "Pelit"
 
-#: libapper/PkStrings.cpp:738
+#: libapper/PkStrings.cpp:744
 msgctxt "The group type"
 msgid "Graphics"
 msgstr "Grafiikka"
 
-#: libapper/PkStrings.cpp:740
+#: libapper/PkStrings.cpp:746
 msgctxt "The group type"
 msgid "Internet"
 msgstr "Internet"
 
-#: libapper/PkStrings.cpp:742
+#: libapper/PkStrings.cpp:748
 msgctxt "The group type"
 msgid "Office"
 msgstr "Toimisto"
 
-#: libapper/PkStrings.cpp:744
+#: libapper/PkStrings.cpp:750
 msgctxt "The group type"
 msgid "Others"
 msgstr "Muut"
 
-#: libapper/PkStrings.cpp:746
+#: libapper/PkStrings.cpp:752
 msgctxt "The group type"
 msgid "Development"
 msgstr "Kehitys"
 
-#: libapper/PkStrings.cpp:748
+#: libapper/PkStrings.cpp:754
 msgctxt "The group type"
 msgid "Multimedia"
 msgstr "Multimedia"
 
-#: libapper/PkStrings.cpp:750
+#: libapper/PkStrings.cpp:756
 msgctxt "The group type"
 msgid "System"
 msgstr "Järjestelmä"
 
-#: libapper/PkStrings.cpp:752
+#: libapper/PkStrings.cpp:758
 msgctxt "The group type"
 msgid "GNOME desktop"
 msgstr "Gnome-työpöytä"
 
-#: libapper/PkStrings.cpp:754
+#: libapper/PkStrings.cpp:760
 msgctxt "The group type"
 msgid "KDE desktop"
 msgstr "KDE-työpöytä"
 
-#: libapper/PkStrings.cpp:756
+#: libapper/PkStrings.cpp:762
 msgctxt "The group type"
 msgid "XFCE desktop"
 msgstr "XFCE-työpöytä"
 
-#: libapper/PkStrings.cpp:758
+#: libapper/PkStrings.cpp:764
 msgctxt "The group type"
 msgid "Other desktops"
 msgstr "Muut työpöydät"
 
-#: libapper/PkStrings.cpp:760
+#: libapper/PkStrings.cpp:766
 msgctxt "The group type"
 msgid "Publishing"
 msgstr "Julkaisu"
 
-#: libapper/PkStrings.cpp:762
+#: libapper/PkStrings.cpp:768
 msgctxt "The group type"
 msgid "Servers"
 msgstr "Palvelimet"
 
-#: libapper/PkStrings.cpp:764
+#: libapper/PkStrings.cpp:770
 msgctxt "The group type"
 msgid "Fonts"
 msgstr "Fontit"
 
-#: libapper/PkStrings.cpp:766
+#: libapper/PkStrings.cpp:772
 msgctxt "The group type"
 msgid "Admin tools"
 msgstr "Ylläpitotyökalut"
 
-#: libapper/PkStrings.cpp:768
+#: libapper/PkStrings.cpp:774
 msgctxt "The group type"
 msgid "Legacy"
 msgstr "Yhteensopivuus"
 
-#: libapper/PkStrings.cpp:770
+#: libapper/PkStrings.cpp:776
 msgctxt "The group type"
 msgid "Localization"
 msgstr "Kotoistus"
 
-#: libapper/PkStrings.cpp:772
+#: libapper/PkStrings.cpp:778
 msgctxt "The group type"
 msgid "Virtualization"
 msgstr "Virtualisointi"
 
-#: libapper/PkStrings.cpp:774
+#: libapper/PkStrings.cpp:780
 msgctxt "The group type"
 msgid "Security"
 msgstr "Tietoturva"
 
-#: libapper/PkStrings.cpp:776
+#: libapper/PkStrings.cpp:782
 msgctxt "The group type"
 msgid "Power management"
 msgstr "Virranhallinta"
 
-#: libapper/PkStrings.cpp:778
+#: libapper/PkStrings.cpp:784
 msgctxt "The group type"
 msgid "Communication"
 msgstr "Viestintä"
 
-#: libapper/PkStrings.cpp:780
+#: libapper/PkStrings.cpp:786
 msgctxt "The group type"
 msgid "Network"
 msgstr "Verkko"
 
-#: libapper/PkStrings.cpp:782
+#: libapper/PkStrings.cpp:788
 msgctxt "The group type"
 msgid "Maps"
 msgstr "Kartat"
 
-#: libapper/PkStrings.cpp:784
+#: libapper/PkStrings.cpp:790
 msgctxt "The group type"
 msgid "Software sources"
 msgstr "Ohjelmistolähteet"
 
-#: libapper/PkStrings.cpp:786
+#: libapper/PkStrings.cpp:792
 msgctxt "The group type"
 msgid "Science"
 msgstr "Tiede"
 
-#: libapper/PkStrings.cpp:788
+#: libapper/PkStrings.cpp:794
 msgctxt "The group type"
 msgid "Documentation"
 msgstr "Ohjeet"
 
-#: libapper/PkStrings.cpp:790
+#: libapper/PkStrings.cpp:796
 msgctxt "The group type"
 msgid "Electronics"
 msgstr "Elektroniikka"
 
-#: libapper/PkStrings.cpp:792
+#: libapper/PkStrings.cpp:798
 msgctxt "The group type"
 msgid "Package collections"
 msgstr "Pakettikokoelmat"
 
-#: libapper/PkStrings.cpp:794
+#: libapper/PkStrings.cpp:800
 msgctxt "The group type"
 msgid "Vendor"
 msgstr "Valmistaja"
 
-#: libapper/PkStrings.cpp:796
+#: libapper/PkStrings.cpp:802
 msgctxt "The group type"
 msgid "Newest packages"
 msgstr "Uusimmat paketit"
 
-#: libapper/PkStrings.cpp:798
+#: libapper/PkStrings.cpp:804
 msgctxt "The group type"
 msgid "Unknown group"
 msgstr "Tuntematon ryhmä"
 
-#: libapper/PkStrings.cpp:809
+#: libapper/PkStrings.cpp:815
 msgctxt "The type of update"
 msgid "Trivial update"
 msgstr "Ongelmaton päivitys"
 
-#: libapper/PkStrings.cpp:811
+#: libapper/PkStrings.cpp:817
 msgctxt "The type of update"
 msgid "Normal update"
 msgstr "Tavallinen päivitys"
 
-#: libapper/PkStrings.cpp:813
+#: libapper/PkStrings.cpp:819
 msgctxt "The type of update"
 msgid "Important update"
 msgstr "Tärkeä päivitys"
 
-#: libapper/PkStrings.cpp:815
+#: libapper/PkStrings.cpp:821
 msgctxt "The type of update"
 msgid "Security update"
 msgstr "Turvapäivitys"
 
-#: libapper/PkStrings.cpp:817
+#: libapper/PkStrings.cpp:823
 msgctxt "The type of update"
 msgid "Bug fix update"
 msgstr "Viankorjauspäivitys"
 
-#: libapper/PkStrings.cpp:819
+#: libapper/PkStrings.cpp:825
 msgctxt "The type of update"
 msgid "Enhancement update"
 msgstr "Parannuspäivitys"
 
-#: libapper/PkStrings.cpp:821
+#: libapper/PkStrings.cpp:827
 msgctxt "The type of update"
 msgid "Blocked update"
 msgstr "Estetty päivitys"
 
-#: libapper/PkStrings.cpp:824
+#: libapper/PkStrings.cpp:830
 msgctxt "The type of update"
 msgid "Installed"
 msgstr "Asennettu"
 
-#: libapper/PkStrings.cpp:827
+#: libapper/PkStrings.cpp:833
 msgctxt "The type of update"
 msgid "Available"
 msgstr "Saatavilla"
 
-#: libapper/PkStrings.cpp:829
+#: libapper/PkStrings.cpp:835
 msgctxt "The type of update"
 msgid "Unknown update"
 msgstr "Tuntematon päivitys"
 
-#: libapper/PkStrings.cpp:840
+#: libapper/PkStrings.cpp:846
 msgid "No Updates Available"
 msgstr "Päivityksiä ei saatavilla"
 
-#: libapper/PkStrings.cpp:843
+#: libapper/PkStrings.cpp:849
 #, kde-format
 msgctxt "Some updates were selected on the view"
 msgid "1 Update Selected"
@@ -2867,7 +2877,7 @@ msgid_plural "%1 Updates Selected"
 msgstr[0] "Yksi päivitys valittu"
 msgstr[1] "%1 päivitystä valittu"
 
-#: libapper/PkStrings.cpp:847
+#: libapper/PkStrings.cpp:853
 #, kde-format
 msgctxt "Some updates are being shown on the screen"
 msgid "1 Update"
@@ -2875,13 +2885,13 @@ msgid_plural "%1 Updates"
 msgstr[0] "1 päivitys"
 msgstr[1] "%1 päivitystä"
 
-#: libapper/PkStrings.cpp:850
+#: libapper/PkStrings.cpp:856
 #, kde-format
 msgctxt "Type of update, in the case it's just an update"
 msgid "%1, %2"
 msgstr "%1, %2"
 
-#: libapper/PkStrings.cpp:851
+#: libapper/PkStrings.cpp:857
 #, kde-format
 msgctxt "Part of: %1 Updates, %1 Selected"
 msgid "%1 Update"
@@ -2889,7 +2899,7 @@ msgid_plural "%1 Updates"
 msgstr[0] "1 päivitys"
 msgstr[1] "%1 päivitystä"
 
-#: libapper/PkStrings.cpp:852
+#: libapper/PkStrings.cpp:858
 #, kde-format
 msgctxt "Part of: %1 Updates, %1 Selected"
 msgid "%1 Selected"
@@ -2897,277 +2907,243 @@ msgid_plural "%1 Selected"
 msgstr[0] "%1 valittu"
 msgstr[1] "%1 valittu"
 
-#: libapper/PkStrings.cpp:856
+#: libapper/PkStrings.cpp:862
 msgid "No Packages"
 msgstr "Ei paketteja"
 
-#: libapper/PkStrings.cpp:858
+#: libapper/PkStrings.cpp:864
 #, kde-format
 msgid "1 Package"
 msgid_plural "%1 Packages"
 msgstr[0] "1 paketti"
 msgstr[1] "%1 pakettia"
 
-#: libapper/PkStrings.cpp:866
+#: libapper/PkStrings.cpp:872
 msgid "No restart is necessary"
 msgstr "Uudelleenkäynnistys ei ole tarpeen"
 
-#: libapper/PkStrings.cpp:868
+#: libapper/PkStrings.cpp:874
 msgid "You will be required to restart this application"
 msgstr "Tämä sovellus on käynnistettävä uudelleen"
 
-#: libapper/PkStrings.cpp:870
+#: libapper/PkStrings.cpp:876
 msgid "You will be required to log out and back in"
 msgstr "Sinun on kirjauduttava ulos ja takaisin sisään"
 
-#: libapper/PkStrings.cpp:872
+#: libapper/PkStrings.cpp:878
 msgid "A restart will be required"
 msgstr "Uudelleenkäynnistys tarvitaan"
 
-#: libapper/PkStrings.cpp:874
+#: libapper/PkStrings.cpp:880
 msgid "You will be required to log out and back in due to a security update."
 msgstr "Turvapäivityksen takia sinun on kirjauduttava ulos ja takaisin sisään."
 
-#: libapper/PkStrings.cpp:876
+#: libapper/PkStrings.cpp:882
 msgid "A restart will be required due to a security update."
 msgstr "Turvapäivityksen takia järjestelmä on käynnistettävä uudelleen."
 
-#: libapper/PkStrings.cpp:889
+#: libapper/PkStrings.cpp:895
 msgid "No restart is required"
 msgstr "Uudelleenkäynnistystä ei tarvita"
 
-#: libapper/PkStrings.cpp:891
+#: libapper/PkStrings.cpp:897
 msgid "A restart is required"
 msgstr "Uudelleenkäynnistys tarvitaan"
 
-#: libapper/PkStrings.cpp:893
+#: libapper/PkStrings.cpp:899
 msgid "You need to log out and log back in"
 msgstr "Kirjaudu uudelleen"
 
-#: libapper/PkStrings.cpp:895
+#: libapper/PkStrings.cpp:901
 msgid "You need to restart the application"
 msgstr "Sinun tulee käynnistää sovellus uudelleen"
 
-#: libapper/PkStrings.cpp:897
+#: libapper/PkStrings.cpp:903
 msgid "You need to log out and log back in to remain secure."
 msgstr "Tietoturvan vuoksi vaaditaan uudelleenkirjautuminen."
 
-#: libapper/PkStrings.cpp:899
+#: libapper/PkStrings.cpp:905
 msgid "A restart is required to remain secure."
 msgstr "Tietoturvan vuoksi vaaditaan uudelleenkäynnistys."
 
-#: libapper/PkStrings.cpp:912
+#: libapper/PkStrings.cpp:918
 msgid "Stable"
 msgstr "Vakaa"
 
-#: libapper/PkStrings.cpp:914
+#: libapper/PkStrings.cpp:920
 msgid "Unstable"
 msgstr "Epävakaa"
 
-#: libapper/PkStrings.cpp:916
+#: libapper/PkStrings.cpp:922
 msgid "Testing"
 msgstr "Testattava"
 
-#: libapper/PkStrings.cpp:929
+#: libapper/PkStrings.cpp:935
 #, kde-format
 msgid "Please insert the CD labeled '%1', and press continue."
 msgstr "Syötä CD, jonka nimiö on ”%1”, ja paina Jatka."
 
-#: libapper/PkStrings.cpp:931
+#: libapper/PkStrings.cpp:937
 #, kde-format
 msgid "Please insert the DVD labeled '%1', and press continue."
 msgstr "Syötä DVD, jonka nimiö on ”%1”, ja paina Jatka."
 
-#: libapper/PkStrings.cpp:933
+#: libapper/PkStrings.cpp:939
 #, kde-format
 msgid "Please insert the disc labeled '%1', and press continue."
 msgstr "Syötä levy, jonka nimiö on ”%1”, ja paina Jatka."
 
-#: libapper/PkStrings.cpp:935 libapper/PkStrings.cpp:938
+#: libapper/PkStrings.cpp:941 libapper/PkStrings.cpp:944
 #, kde-format
 msgid "Please insert the medium labeled '%1', and press continue."
 msgstr "Syötä tietoväline, jonka nimiö on ”%1”, ja paina Jatka."
 
-#: libapper/PkStrings.cpp:945
+#: libapper/PkStrings.cpp:951
 msgid "A mirror is possibly broken"
 msgstr "Peilipalvelin on luultavasti rikki"
 
-#: libapper/PkStrings.cpp:947
+#: libapper/PkStrings.cpp:953
 msgid "The connection was refused"
 msgstr "Yhteys torjuttiin"
 
-#: libapper/PkStrings.cpp:949
+#: libapper/PkStrings.cpp:955
 msgid "The parameter was invalid"
 msgstr "Parametri oli virheellinen"
 
-#: libapper/PkStrings.cpp:951
+#: libapper/PkStrings.cpp:957
 msgid "The priority was invalid"
 msgstr "Prioriteetti oli virheellinen"
 
-#: libapper/PkStrings.cpp:953
+#: libapper/PkStrings.cpp:959
 msgid "Backend warning"
 msgstr "Taustaosan varoitus"
 
-#: libapper/PkStrings.cpp:955
+#: libapper/PkStrings.cpp:961
 msgid "Daemon warning"
 msgstr "Palvelun varoitus"
 
-#: libapper/PkStrings.cpp:957
+#: libapper/PkStrings.cpp:963
 msgid "The package list cache is being rebuilt"
 msgstr "Pakettivälimuistia uudelleenrakennetaan"
 
-#: libapper/PkStrings.cpp:959
+#: libapper/PkStrings.cpp:965
 msgid "An untrusted package was installed"
 msgstr "Asennettiin epäluotettava paketti"
 
-#: libapper/PkStrings.cpp:961
+#: libapper/PkStrings.cpp:967
 msgid "A newer package exists"
 msgstr "Uudempi paketti on olemassa"
 
-#: libapper/PkStrings.cpp:963
+#: libapper/PkStrings.cpp:969
 msgid "Could not find package"
 msgstr "Pakettia ei löytynyt"
 
-#: libapper/PkStrings.cpp:965
+#: libapper/PkStrings.cpp:971
 msgid "Configuration files were changed"
 msgstr "Määritystiedostoja muutettiin"
 
-#: libapper/PkStrings.cpp:967
+#: libapper/PkStrings.cpp:973
 msgid "Package is already installed"
 msgstr "Paketti on jo asennettu"
 
-#: libapper/PkStrings.cpp:969
+#: libapper/PkStrings.cpp:975
 msgid "Automatic cleanup is being ignored"
 msgstr "Automaattinen siivous ohitetaan"
 
-#: libapper/PkStrings.cpp:971
+#: libapper/PkStrings.cpp:977
 msgid "Software source download failed"
 msgstr "Ohjelman lähdekoodin lataus epäonnistui"
 
-#: libapper/PkStrings.cpp:973
+#: libapper/PkStrings.cpp:979
 msgid "This software source is for developers only"
 msgstr "Tämä ohjelman lähdekoodi on vain kehittäjille"
 
-#: libapper/PkStrings.cpp:975
+#: libapper/PkStrings.cpp:981
 msgid "Other updates have been held back"
 msgstr "Muut päivitykset on jätetty odottamaan"
 
-#: libapper/PkStrings.cpp:989
+#: libapper/PkStrings.cpp:995
 msgid "You do not have the necessary privileges to perform this action."
 msgstr "Sinulla ei ole tämän toiminnon suorittamiseen vaadittavia oikeuksia."
 
-#: libapper/PkStrings.cpp:991
+#: libapper/PkStrings.cpp:997
 msgid "Could not get a transaction id from packagekitd."
 msgstr "Ei saatu toimenpiteen tunnistetta packagekitd:ltä."
 
-#: libapper/PkStrings.cpp:993
+#: libapper/PkStrings.cpp:999
 msgid "Cannot connect to this transaction id."
 msgstr "Tämän tunnisteen toimenpiteeseen ei saada yhteyttä."
 
-#: libapper/PkStrings.cpp:995
+#: libapper/PkStrings.cpp:1001
 msgid "This action is unknown."
 msgstr "Tuntematon toiminto."
 
-#: libapper/PkStrings.cpp:997
+#: libapper/PkStrings.cpp:1003
 msgid "The packagekitd service could not be started."
 msgstr "Packagekitd-palvelua ei voitu käynnistää."
 
-#: libapper/PkStrings.cpp:999
+#: libapper/PkStrings.cpp:1005
 msgid "The query is not valid."
 msgstr "Kysely ei ole kelvollinen."
 
-#: libapper/PkStrings.cpp:1001
+#: libapper/PkStrings.cpp:1007
 msgid "The file is not valid."
 msgstr "Tiedosto ei ole kelvollinen."
 
-#: libapper/PkStrings.cpp:1003
+#: libapper/PkStrings.cpp:1009
 msgid "This function is not yet supported."
 msgstr "Tämä toiminto ei ole vielä tuettu."
 
-#: libapper/PkStrings.cpp:1005
+#: libapper/PkStrings.cpp:1011
 msgid "Could not talk to packagekitd."
 msgstr "Tiedonvälitys packagekitd:n kanssa epäonnistui."
 
-#: libapper/PkStrings.cpp:1007
+#: libapper/PkStrings.cpp:1013
 msgid "Error talking to packagekitd."
 msgstr "Virhe juteltaessa packagekitd:lle."
 
-#: libapper/PkStrings.cpp:1010 libapper/PkStrings.cpp:1013
+#: libapper/PkStrings.cpp:1016 libapper/PkStrings.cpp:1019
 msgid "An unknown error happened."
 msgstr "Tapahtui tuntematon virhe."
 
-#: libapper/PkStrings.cpp:1027
+#: libapper/PkStrings.cpp:1033
 msgid "Your system is up to date"
 msgstr "Järjestelmäsi on ajan tasalla"
 
-#: libapper/PkStrings.cpp:1029
+#: libapper/PkStrings.cpp:1035
 msgid "You have no updates"
 msgstr "Tarjolla ei ole päivityksiä"
 
-#: libapper/PkStrings.cpp:1031
+#: libapper/PkStrings.cpp:1037
 msgid "Last check for updates was more than a month ago"
 msgstr "Viimeisin päivitystarkistus oli yli kuukausi sitten"
 
-#: libapper/PkStrings.cpp:1039
+#: libapper/PkStrings.cpp:1045
 #, kde-format
 msgid "Verified %1 ago"
 msgstr "Tarkistettu %1 sitten"
 
-#: libapper/PkStrings.cpp:1041
+#: libapper/PkStrings.cpp:1047
 msgid "It's strongly recommended that you check for new updates now"
 msgstr "On hyvin suositeltavaa tarkistaa uudet päivitykset nyt"
 
-#: libapper/PkTransaction.cpp:139
-msgid "Failed to simulate file install"
-msgstr "Tiedoston asentamisen simulointi epäonnistui"
-
-#: libapper/PkTransaction.cpp:143
+#: libapper/PkTransaction.cpp:118
 msgid "Current backend does not support installing files."
 msgstr "Nykyinen taustaosa ei tue tiedostojen asentamista."
 
-#: libapper/PkTransaction.cpp:157
-msgid "Failed to simulate package install"
-msgstr "Paketin asentamisen simulointi epäonnistui"
-
-#: libapper/PkTransaction.cpp:161
+#: libapper/PkTransaction.cpp:131
 msgid "Current backend does not support installing packages."
 msgstr "Nykyinen taustaosa ei tue pakettien asentamista."
 
-#: libapper/PkTransaction.cpp:176
-msgid "Failed to simulate package removal"
-msgstr "Pakettien poistoa ei onnistuttu simuloimaan"
-
-#: libapper/PkTransaction.cpp:180
+#: libapper/PkTransaction.cpp:145
 msgid "The current backend does not support removing packages."
 msgstr "Nykyinen taustaosa ei tue pakettien poistamista."
 
-#: libapper/PkTransaction.cpp:199
-msgid "Failed to simulate package update"
-msgstr "Paketin päivityksen simulointi epäonnistui"
-
-#: libapper/PkTransaction.cpp:203
+#: libapper/PkTransaction.cpp:163
 msgid "The current backend does not support updating packages."
 msgstr "Nykyinen taustaosa ei tue pakettien päivittämistä."
 
-#: libapper/PkTransaction.cpp:254
-msgid "Failed to install package"
-msgstr "Paketin asennus epäonnistui"
-
-#: libapper/PkTransaction.cpp:264 PkSession/PkInstallProvideFiles.cpp:101
-msgid "Failed to install file"
-msgid_plural "Failed to install files"
-msgstr[0] "Tiedoston asennus epäonnistui"
-msgstr[1] "Tiedostojen asennus epäonnistui"
-
-#: libapper/PkTransaction.cpp:275
-msgid "Failed to remove package"
-msgstr "Paketin poisto epäonnistui"
-
-#: libapper/PkTransaction.cpp:285
-msgid "Failed to update package"
-msgstr "Paketin päivitys epäonnistui"
-
-#: libapper/PkTransaction.cpp:356
+#: libapper/PkTransaction.cpp:258
 msgid ""
 "You are about to install unsigned packages that can compromise your system, "
 "as it is impossible to verify if the software came from a trusted source.\n"
@@ -3179,15 +3155,11 @@ msgstr ""
 "lähteestä.\n"
 "Haluatko varmasti jatkaa asennusta?"
 
-#: libapper/PkTransaction.cpp:359
+#: libapper/PkTransaction.cpp:261
 msgid "Installing unsigned software"
 msgstr "Asenna allekirjoittamaton ohjelma"
 
-#: libapper/PkTransaction.cpp:404 libapper/PkTransaction.cpp:491
-msgid "Failed to install signature"
-msgstr "Allekirjoituksen asennus epäonnistui"
-
-#: libapper/PkTransactionWidget.cpp:229 libapper/PkTransactionWidget.cpp:242
+#: libapper/PkTransactionWidget.cpp:253 libapper/PkTransactionWidget.cpp:266
 #, kde-format
 msgid "%1 (%2%)"
 msgstr "%1 (%2%)"
@@ -3385,11 +3357,6 @@ msgstr "Luettelo on tyhjä"
 msgid "Could not find any package to install in this catalog"
 msgstr "Luettelosta ei löytynyt asennettavia paketteja"
 
-#: PkSession/PkInstallCatalogs.cpp:280 PkSession/PkInstallPackageNames.cpp:97
-#: PkSession/PkIsInstalled.cpp:46
-msgid "Failed to start resolve transaction"
-msgstr "Ratkaisutoimenpidettä ei saatu käynnistetyksi"
-
 #: PkSession/PkInstallFontconfigResources.cpp:41
 msgid "Installs new Fonts"
 msgstr "Asentaa uusia fontteja"
@@ -3429,106 +3396,101 @@ msgid_plural "The application %2 wants to install fonts"
 msgstr[0] "Sovellus %2 haluaa asentaa fontin"
 msgstr[1] "Sovellus %2 haluaa asentaa fontteja"
 
-#: PkSession/PkInstallFontconfigResources.cpp:145
-#: PkSession/PkInstallFontconfigResources.cpp:166
-#: PkSession/PkInstallGStreamerResources.cpp:136
-#: PkSession/PkInstallMimeTypes.cpp:92
-#: PkSession/PkInstallPlasmaResources.cpp:101
-#: PkSession/PkInstallPrinterDrivers.cpp:74
-msgid "Failed to search for provides"
-msgstr "Tarjoajien haku epäonnistui"
-
-#: PkSession/PkInstallFontconfigResources.cpp:155
-#: PkSession/PkInstallFontconfigResources.cpp:164
+#: PkSession/PkInstallFontconfigResources.cpp:149
+#: PkSession/PkInstallFontconfigResources.cpp:158
 msgid "Failed to find font"
 msgstr "Fonttia ei löytynyt"
 
-#: PkSession/PkInstallFontconfigResources.cpp:157
+#: PkSession/PkInstallFontconfigResources.cpp:151
 msgid "No new fonts could be found for this document"
 msgstr "Ei löytynyt uusia fontteja tähän tiedostoon"
 
-#: PkSession/PkInstallGStreamerResources.cpp:39
+#: PkSession/PkInstallFontconfigResources.cpp:160
+msgid "Failed to search for provides"
+msgstr "Tarjoajien haku epäonnistui"
+
+#: PkSession/PkInstallGStreamerResources.cpp:40
 msgid "Install GStreamer Resources"
 msgstr "Asenna GStreamer-resursseja"
 
-#: PkSession/PkInstallGStreamerResources.cpp:68
+#: PkSession/PkInstallGStreamerResources.cpp:69
 msgid "The following plugin is required. Do you want to search for this now?"
 msgid_plural ""
 "The following plugins are required. Do you want to search for these now?"
 msgstr[0] "Seuraavaa liitännäistä vaaditaan. Haluatko etsiä sitä nyt?"
 msgstr[1] "Seuraavia liitännäisiä vaaditaan. Haluatko etsiä niitä nyt?"
 
-#: PkSession/PkInstallGStreamerResources.cpp:80
+#: PkSession/PkInstallGStreamerResources.cpp:81
 msgid "A program requires an additional plugin to decode this file"
 msgid_plural "A program requires additional plugins to decode this file"
 msgstr[0] "Sovellus vaatii ylimääräisen liitännäisen tiedoston käyttämiseksi"
 msgstr[1] "Sovellus vaatii ylimääräisiä liitännäisiä tiedoston käyttämiseksi"
 
-#: PkSession/PkInstallGStreamerResources.cpp:85
+#: PkSession/PkInstallGStreamerResources.cpp:86
 msgid "A program requires an additional plugin to encode this file"
 msgid_plural "A program requires additional plugins to encode this file"
 msgstr[0] "Sovellus vaatii ylimääräisen liitännäisen tiedoston käyttämiseksi"
 msgstr[1] "Sovellus vaatii ylimääräisiä liitännäisiä tiedoston käyttämiseksi"
 
-#: PkSession/PkInstallGStreamerResources.cpp:90
+#: PkSession/PkInstallGStreamerResources.cpp:91
 msgid "A program requires an additional plugin for this operation"
 msgid_plural "A program requires additional plugins for this operation"
 msgstr[0] "Sovellus vaatii ylimääräisen liitännäisen tätä toimintoa varten"
 msgstr[1] "Sovellus vaatii ylimääräisiä liitännäisiä tätä toimintoa varten"
 
-#: PkSession/PkInstallGStreamerResources.cpp:97
+#: PkSession/PkInstallGStreamerResources.cpp:98
 #, kde-format
 msgid "%2 requires an additional plugin to decode this file"
 msgid_plural "%2 requires additional plugins to decode this file"
 msgstr[0] "%2 vaatii lisäliitännäisen tämän tiedoston purkamiseen"
 msgstr[1] "%2 vaatii lisäliitännäisiä tämän tiedoston purkamiseen"
 
-#: PkSession/PkInstallGStreamerResources.cpp:103
+#: PkSession/PkInstallGStreamerResources.cpp:104
 #, kde-format
 msgid "%2 requires an additional plugin to encode this file"
 msgid_plural "%2 requires additional plugins to encode this file"
 msgstr[0] "%2 vaatii lisäliitännäisen tämän tiedoston koodaamiseen"
 msgstr[1] "%2 vaatii lisäliitännäisiä tämän tiedoston koodaamiseen"
 
-#: PkSession/PkInstallGStreamerResources.cpp:109
+#: PkSession/PkInstallGStreamerResources.cpp:110
 #, kde-format
 msgid "%2 requires an additional plugin for this operation"
 msgid_plural "%2 requires additional plugins for this operation"
 msgstr[0] "%2 vaatii ylimääräisen liitännäisen tätä toimintoa varten"
 msgstr[1] "%2 vaatii ylimääräisiä liitännäisiä tätä toimintoa varten"
 
-#: PkSession/PkInstallGStreamerResources.cpp:147
+#: PkSession/PkInstallGStreamerResources.cpp:142
 msgid "No results found"
 msgstr "Ei hakutuloksia"
 
-#: PkSession/PkInstallGStreamerResources.cpp:149
+#: PkSession/PkInstallGStreamerResources.cpp:144
 msgid "Could not find plugin in any configured software source"
 msgstr "Liitännäistä ei löytynyt yhdestäkään ohjelmistolähteestä"
 
-#: PkSession/PkInstallMimeTypes.cpp:39
+#: PkSession/PkInstallMimeTypes.cpp:41
 msgid "Install Support for File Types"
 msgstr "Asenna tuki eri tiedostotyypeille"
 
-#: PkSession/PkInstallMimeTypes.cpp:50
+#: PkSession/PkInstallMimeTypes.cpp:52
 msgid "Do you want to search for a program that can open this file type?"
 msgid_plural ""
 "Do you want to search for a program that can open these file types?"
 msgstr[0] "Haluatko etsiä tämän tiedostotyypin avaavaa ohjelmaa?"
 msgstr[1] "Haluatko etsiä nämä tiedostotyypit avaavaa ohjelmaa?"
 
-#: PkSession/PkInstallMimeTypes.cpp:55
+#: PkSession/PkInstallMimeTypes.cpp:57
 msgid "No valid file types were provided"
 msgstr "Kelvollisia tiedostotyyppejä ei tarjottu"
 
 # Sama suomennos sopii kumpaankin
-#: PkSession/PkInstallMimeTypes.cpp:62
+#: PkSession/PkInstallMimeTypes.cpp:64
 msgid "A program is requiring support to open this kind of files"
 msgid_plural "A program is requiring support to open these kinds of files"
 msgstr[0] "Ohjelma vaatii tuen näille tiedostoille"
 msgstr[1] "Ohjelma vaatii tuen näille tiedostoille"
 
 # Sama suomennos sopii kumpaankin
-#: PkSession/PkInstallMimeTypes.cpp:66
+#: PkSession/PkInstallMimeTypes.cpp:68
 #, kde-format
 msgid "The application %2 is requiring support to open this kind of files"
 msgid_plural ""
@@ -3536,11 +3498,11 @@ msgid_plural ""
 msgstr[0] "Sovellus %2 vaatii tukea näiden tiedostojen avaamiseksi"
 msgstr[1] "Sovellus %2 vaatii tukea näiden tiedostojen avaamiseksi"
 
-#: PkSession/PkInstallMimeTypes.cpp:101
+#: PkSession/PkInstallMimeTypes.cpp:97
 msgid "Could not find software"
 msgstr "Ohjelmia ei löytynyt"
 
-#: PkSession/PkInstallMimeTypes.cpp:103
+#: PkSession/PkInstallMimeTypes.cpp:99
 msgid "No new applications can be found to handle this type of file"
 msgstr "Tätä tiedostotyyppiä käsitteleviä uusia sovelluksia ei löytynyt"
 
@@ -3549,7 +3511,7 @@ msgid "Install Packages Files"
 msgstr "Asenna pakettitiedostoja"
 
 #: PkSession/PkInstallPackageFiles.cpp:42
-#: PkSession/PkRemovePackageByFiles.cpp:43
+#: PkSession/PkRemovePackageByFiles.cpp:45
 msgid "You can drop more files in here"
 msgstr "Voit vetää lisää tiedostoja tähän"
 
@@ -3562,7 +3524,7 @@ msgid "Your current backend does not support installing files"
 msgstr "Nykyinen taustaosa ei tue tiedostojen asentamista"
 
 #: PkSession/PkInstallPackageFiles.cpp:68
-#: PkSession/PkRemovePackageByFiles.cpp:64
+#: PkSession/PkRemovePackageByFiles.cpp:66
 msgid "No supported files were provided"
 msgstr "Tuettuja tiedostoja ei tarjottu"
 
@@ -3573,14 +3535,14 @@ msgstr[0] "Paina <i>Jatka</i>, jos haluat asentaa tämän tiedoston"
 msgstr[1] "Paina <i>Jatka</i>, jos haluat asentaa nämä tiedostot"
 
 #: PkSession/PkInstallPackageFiles.cpp:79
-#: PkSession/PkInstallPackageNames.cpp:71
+#: PkSession/PkInstallPackageNames.cpp:73
 msgid "An application wants to install a package"
 msgid_plural "An application wants to install packages"
 msgstr[0] "Sovellus haluaa asentaa paketin"
 msgstr[1] "Sovellus haluaa asentaa paketteja"
 
 #: PkSession/PkInstallPackageFiles.cpp:83
-#: PkSession/PkInstallPackageNames.cpp:75
+#: PkSession/PkInstallPackageNames.cpp:77
 #, kde-format
 msgid "The application <i>%2</i> wants to install a package"
 msgid_plural "The application <i>%2</i> wants to install packages"
@@ -3606,210 +3568,209 @@ msgstr "Tiedostojen asennus epäonnistui"
 msgid "Could not install files"
 msgstr "Tiedostoja ei saatu asennetuksi"
 
-#: PkSession/PkInstallPackageNames.cpp:41
+#: PkSession/PkInstallPackageNames.cpp:43
 msgid "Install Packages by Name"
 msgstr "Asenna paketteja nimen perusteella"
 
-#: PkSession/PkInstallPackageNames.cpp:58
+#: PkSession/PkInstallPackageNames.cpp:60
 msgid "No package names were provided"
 msgstr "Pakettien nimiä ei tarjottu"
 
-#: PkSession/PkInstallPackageNames.cpp:61
+#: PkSession/PkInstallPackageNames.cpp:63
 msgid "Do you want to search for and install this package now?"
 msgid_plural "Do you want to search for and install these packages now?"
 msgstr[0] "Haluatko etsiä ja asentaa tämän paketin nyt?"
 msgstr[1] "Haluatko etsiä ja asentaa nämä paketit nyt?"
 
-#: PkSession/PkInstallPackageNames.cpp:109
+#: PkSession/PkInstallPackageNames.cpp:104
 msgid "Failed to install packages"
 msgstr "Pakettien asennus epäonnistui"
 
-#: PkSession/PkInstallPackageNames.cpp:110
+#: PkSession/PkInstallPackageNames.cpp:105
 #, kde-format
 msgid "The package %2 is already installed"
 msgid_plural "The packages %2 are already installed"
 msgstr[0] "Paketti %2 on jo asennettu"
 msgstr[1] "Paketit %2 on jo asennettu"
 
-#: PkSession/PkInstallPackageNames.cpp:118
-#: PkSession/PkRemovePackageByFiles.cpp:149 PkSession/PkSearchFile.cpp:89
+#: PkSession/PkInstallPackageNames.cpp:113
+#: PkSession/PkRemovePackageByFiles.cpp:143 PkSession/PkSearchFile.cpp:82
 #, kde-format
 msgid "Could not find %1"
 msgstr "Kohdetta %1 ei löytynyt"
 
-#: PkSession/PkInstallPackageNames.cpp:119
+#: PkSession/PkInstallPackageNames.cpp:114
 msgid "The package could not be found in any software source"
 msgid_plural "The packages could not be found in any software source"
 msgstr[0] "Pakettia ei löytynyt yhdestäkään ohjelmistolähteestä"
 msgstr[1] "Paketteja ei löytynyt yhdestäkään ohjelmistolähteestä"
 
-#: PkSession/PkInstallPlasmaResources.cpp:40
+#: PkSession/PkInstallPlasmaResources.cpp:41
 msgid "Install Plasma Resources"
 msgstr "Asenna Plasma-resursseja"
 
-#: PkSession/PkInstallPlasmaResources.cpp:53
+#: PkSession/PkInstallPlasmaResources.cpp:54
 #, kde-format
 msgid "%1 data engine"
 msgstr "%1-tietomoottori"
 
-#: PkSession/PkInstallPlasmaResources.cpp:55
+#: PkSession/PkInstallPlasmaResources.cpp:56
 #, kde-format
 msgid "%1 script engine"
 msgstr "%1-skriptimoottori"
 
-#: PkSession/PkInstallPlasmaResources.cpp:67
+#: PkSession/PkInstallPlasmaResources.cpp:68
 msgid "No supported resources were provided"
 msgstr "Tuettuja resursseja ei tarjottu"
 
-#: PkSession/PkInstallPlasmaResources.cpp:69
+#: PkSession/PkInstallPlasmaResources.cpp:70
 msgid "The following service is required. Do you want to search for this now?"
 msgid_plural ""
 "The following services are required. Do you want to search for these now?"
 msgstr[0] "Seuraava palvelu vaaditaan. Haluatko etsiä sitä nyt?"
 msgstr[1] "Seuraavat palvelut vaaditaan. Haluatko etsiä niitä nyt?"
 
-#: PkSession/PkInstallPlasmaResources.cpp:78
+#: PkSession/PkInstallPlasmaResources.cpp:79
 msgid "Plasma requires an additional service for this operation"
 msgid_plural "Plasma requires additional services for this operation"
 msgstr[0] "Plasma vaatii lisäpalvelun tähän toimintoon"
 msgstr[1] "Plasma vaatii lisäpalveluja tähän toimintoon"
 
-#: PkSession/PkInstallPlasmaResources.cpp:112
+#: PkSession/PkInstallPlasmaResources.cpp:106
 msgid "Failed to search for Plasma service"
 msgstr "Plasma-palvelujen haku epäonnistui"
 
-#: PkSession/PkInstallPlasmaResources.cpp:115
+#: PkSession/PkInstallPlasmaResources.cpp:109
 msgid "Could not find service in any configured software source"
 msgstr "Palvelua ei löytynyt yhdestäkään asetetusta ohjelmistolähteestä"
 
-#: PkSession/PkInstallPrinterDrivers.cpp:39
+#: PkSession/PkInstallPrinterDrivers.cpp:41
 msgid "Install Printer Drivers"
 msgstr "Asenna tulostinajureita"
 
-#: PkSession/PkInstallPrinterDrivers.cpp:87
+#: PkSession/PkInstallPrinterDrivers.cpp:84
 msgid "Failed to search for printer driver"
 msgstr "Tulostinajurin haku epäonnistui"
 
-#: PkSession/PkInstallPrinterDrivers.cpp:88
+#: PkSession/PkInstallPrinterDrivers.cpp:85
 msgid "Could not find printer driver in any configured software source"
 msgstr "Tulostinajuria ei löytynyt yhdestäkään asetetusta ohjelmistolähteestä"
 
-#: PkSession/PkInstallProvideFiles.cpp:39
+#: PkSession/PkInstallProvideFiles.cpp:41
 msgid "Install Packages that Provides Files"
 msgstr "Asenna tiedostoja tarjoavia paketteja"
 
-#: PkSession/PkInstallProvideFiles.cpp:49
+#: PkSession/PkInstallProvideFiles.cpp:51
 msgid "No files were provided"
 msgstr "Tiedostoja ei tarjottu"
 
-#: PkSession/PkInstallProvideFiles.cpp:52
+#: PkSession/PkInstallProvideFiles.cpp:54
 msgid "Do you want to search for this now?"
 msgid_plural "Do you want to search for these now?"
 msgstr[0] "Haluatko etsiä kyseisen tiedoston nyt?"
 msgstr[1] "Haluatko etsiä kyseisiä tiedostoja nyt?"
 
-#: PkSession/PkInstallProvideFiles.cpp:62
+#: PkSession/PkInstallProvideFiles.cpp:64
 msgid "A program wants to install a file"
 msgid_plural "A program wants to install files"
 msgstr[0] "Ohjelma haluaa asentaa tiedoston"
 msgstr[1] "Ohjelma haluaa asentaa tiedostoja"
 
-#: PkSession/PkInstallProvideFiles.cpp:66
+#: PkSession/PkInstallProvideFiles.cpp:68
 #, kde-format
 msgid "The application %2 is asking to install a file"
 msgid_plural "The application %2 is asking to install files"
 msgstr[0] "Sovellus %2 pyytää asentamaan tiedoston"
 msgstr[1] "Sovellus %2 pyytää asentamaan tiedostoja"
 
-#: PkSession/PkInstallProvideFiles.cpp:88
-#: PkSession/PkRemovePackageByFiles.cpp:128 PkSession/PkSearchFile.cpp:55
-msgid "Failed to start search file transaction"
-msgstr "Tiedoston etsintätoimenpidettä ei saatu käynnistetyksi"
+#: PkSession/PkInstallProvideFiles.cpp:96
+msgid "Failed to install file"
+msgstr "Tiedoston asennus epäonnistui"
 
-#: PkSession/PkInstallProvideFiles.cpp:102
+#: PkSession/PkInstallProvideFiles.cpp:97
 #, kde-format
 msgid "The %1 package already provides this file"
 msgstr "Paketti %1 sisältää jo kyseisen tiedoston"
 
-#: PkSession/PkInstallProvideFiles.cpp:108
+#: PkSession/PkInstallProvideFiles.cpp:103
 msgid "Failed to find package"
 msgstr "Pakettia ei löytynyt"
 
-#: PkSession/PkInstallProvideFiles.cpp:109
+#: PkSession/PkInstallProvideFiles.cpp:104
 msgid "The file could not be found in any packages"
 msgid_plural "The files could not be found in any packages"
 msgstr[0] "Tiedostoa ei löytynyt yhdestäkään paketista"
 msgstr[1] "Tiedostoja ei löytynyt yhdestäkään paketista"
 
-#: PkSession/PkIsInstalled.cpp:36
+#: PkSession/PkIsInstalled.cpp:38
 msgid "Querying if a Package is Installed"
 msgstr "Kysellään, onko paketti asennettu"
 
-#: PkSession/PkIsInstalled.cpp:67
+#: PkSession/PkIsInstalled.cpp:61
 msgid "User canceled the transaction"
 msgstr "Käyttäjä perui toimenpiteen"
 
-#: PkSession/PkIsInstalled.cpp:69
+#: PkSession/PkIsInstalled.cpp:63
 msgid "An unknown error happened"
 msgstr "Tapahtui tuntematon virhe"
 
-#: PkSession/PkRemovePackageByFiles.cpp:40
+#: PkSession/PkRemovePackageByFiles.cpp:42
 msgid "Remove Packages that Provides Files"
 msgstr "Poista tiedostot tarjavat paketit"
 
-#: PkSession/PkRemovePackageByFiles.cpp:67
+#: PkSession/PkRemovePackageByFiles.cpp:69
 msgid "Do you want to remove the following application?"
 msgid_plural "Do you want to remove the following applications?"
 msgstr[0] "Haluatko poistaa seuraavan sovelluksen?"
 msgstr[1] "Haluatko poistaa seuraavat sovellukset?"
 
-#: PkSession/PkRemovePackageByFiles.cpp:71
+#: PkSession/PkRemovePackageByFiles.cpp:73
 msgid "Do you want to search for a package providing this file?"
 msgid_plural "Do you want to search for a package providing these files?"
 msgstr[0] "Haluatko etsiä tämän tiedoston tarjoavaa pakettia?"
 msgstr[1] "Haluatko etsiä nämä tiedostot tarjoavaa pakettia?"
 
-#: PkSession/PkRemovePackageByFiles.cpp:82
+#: PkSession/PkRemovePackageByFiles.cpp:84
 msgid "An application is asking to remove an application"
 msgid_plural "An application is asking to remove applications"
 msgstr[0] "Sovellus pyytää poistamaan sovelluksen"
 msgstr[1] "Sovellus pyytää poistamaan sovelluksia"
 
-#: PkSession/PkRemovePackageByFiles.cpp:86
+#: PkSession/PkRemovePackageByFiles.cpp:88
 msgid "An application is asking to remove a file"
 msgid_plural "An application is asking to remove files"
 msgstr[0] "Sovellus pyytää poistamaan tiedoston"
 msgstr[1] "Sovellus pyytää poistamaan tiedostoja"
 
-#: PkSession/PkRemovePackageByFiles.cpp:92
+#: PkSession/PkRemovePackageByFiles.cpp:94
 #, kde-format
 msgid "The application <i>%2</i> is asking to remove an application"
 msgid_plural "The application <i>%2</i> is asking to remove applications"
 msgstr[0] "Sovellus <i>%2</i> pyytää poistamaan sovelluksen"
 msgstr[1] "Sovellus <i>%2</i> pyytää poistamaan sovelluksia"
 
-#: PkSession/PkRemovePackageByFiles.cpp:97
+#: PkSession/PkRemovePackageByFiles.cpp:99
 #, kde-format
 msgid "The application <i>%2</i> is asking to remove a file"
 msgid_plural "The application <i>%2</i> is asking to remove files"
 msgstr[0] "Sovellus <i>%2</i> pyytää poistamaan tiedoston"
 msgstr[1] "Sovellus <i>%2</i> pyytää poistamaan tiedostoja"
 
-#: PkSession/PkRemovePackageByFiles.cpp:103
+#: PkSession/PkRemovePackageByFiles.cpp:105
 msgid "No application was found"
 msgstr "Sovelluksia ei löytynyt"
 
-#: PkSession/PkRemovePackageByFiles.cpp:150
+#: PkSession/PkRemovePackageByFiles.cpp:144
 msgid "The file could not be found in any installed package"
 msgid_plural "The files could not be found in any installed package"
 msgstr[0] "Tiedostoa ei löytynyt yhdestäkään asennetusta paketista"
 msgstr[1] "Tiedostoja ei löytynyt yhdestäkään asennetusta paketista"
 
-#: PkSession/PkSearchFile.cpp:38
+#: PkSession/PkSearchFile.cpp:40
 msgid "Search Packages that Provides Files"
 msgstr "Etsi tiedostoja tarjoavia paketteja"
 
-#: PkSession/PkSearchFile.cpp:88
+#: PkSession/PkSearchFile.cpp:81
 msgid "The file name could not be found in any software source"
 msgstr "Tiedostonimeä ei löytynyt mistään ohjelmistolähteestä"
 
@@ -3850,6 +3811,36 @@ msgstr "Tehtävä valmis"
 #: PkSession/SessionTask.cpp:436
 msgid "All operations were committed successfully"
 msgstr "Kaikki toiminnot suoritettiin onnistuneesti"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

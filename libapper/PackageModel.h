@@ -27,6 +27,7 @@
 #include <KIcon>
 
 #include <Transaction>
+#include <Details>
 
 class KDE_EXPORT PackageModel : public QAbstractItemModel
 {
@@ -122,12 +123,7 @@ public slots:
 
     void fetchSizes();
     void fetchSizesFinished();
-    void updateSize(const QString &packageID,
-                    const QString &license,
-                    PackageKit::Transaction::Group group,
-                    const QString &detail,
-                    const QString &url,
-                    qulonglong size);
+    void updateSize(const PackageKit::Details &details);
 
     void fetchCurrentVersions();
     void fetchCurrentVersionsFinished();
@@ -145,11 +141,12 @@ private:
     QList<InternalPackage> internalSelectedPackages() const;
     bool containsChecked(const QString &pid) const;
 
-    bool                            m_finished;
+    bool                            m_finished = true;
     bool                            m_checkable;
     QPixmap                         m_installedEmblem;
     QVector<InternalPackage>        m_packages;
     QHash<QString, InternalPackage> m_checkedPackages;
+    PackageKit::Transaction *m_getUpdatesTransaction = 0;
     PackageKit::Transaction *m_fetchSizesTransaction;
     PackageKit::Transaction *m_fetchInstalledVersionsTransaction;
 };

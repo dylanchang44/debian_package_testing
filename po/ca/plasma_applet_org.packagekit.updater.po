@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma_applet_org.packagekit.updater\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-06-25 01:31+0000\n"
+"POT-Creation-Date: 2014-04-24 01:33+0000\n"
 "PO-Revision-Date: 2014-02-09 22:52+0100\n"
 "Last-Translator: Josep Ma. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
@@ -24,11 +24,11 @@ msgstr ""
 msgid "Failed to get update details"
 msgstr "Ha fallat en obtenir els detalls de les actualitzacions"
 
-#: package/contents/ui/ChangelogView.qml:94
+#: package/contents/ui/ChangelogView.qml:92
 msgid "Version: %1"
 msgstr "Versió: %1"
 
-#: package/contents/ui/ChangelogView.qml:100
+#: package/contents/ui/ChangelogView.qml:98
 msgid "Updates: %1"
 msgstr "Actualitzacions: %1"
 
@@ -36,25 +36,25 @@ msgstr "Actualitzacions: %1"
 msgid "Software Updates"
 msgstr "Actualitzacions de programari"
 
-#: package/contents/ui/main.qml:65 package/contents/ui/main.qml:229
+#: package/contents/ui/main.qml:65 package/contents/ui/main.qml:218
 msgid "Check for new updates"
 msgstr "Comprova si hi ha actualitzacions noves"
 
-#: package/contents/ui/main.qml:128
+#: package/contents/ui/main.qml:119
 msgid "Failed to get updates"
 msgstr "Ha fallat en obtenir les actualitzacions"
 
-#: package/contents/ui/main.qml:173
+#: package/contents/ui/main.qml:164
 msgid "You have one update"
 msgid_plural "You have %1 updates"
 msgstr[0] "HI ha una actualització"
 msgstr[1] "Hi ha %1 actualitzacions"
 
-#: package/contents/ui/main.qml:178
+#: package/contents/ui/main.qml:169
 msgid "Your system is up to date"
 msgstr "El sistema està actualitzat"
 
-#: package/contents/ui/Transaction.qml:76
+#: package/contents/ui/Transaction.qml:74
 msgid "Cancel"
 msgstr "Cancel·la"
 
