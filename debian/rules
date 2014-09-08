@@ -12,8 +12,6 @@ APPER_CONFIG_FLAGS = -DDEBCONF_SUPPORT=ON \
 
 INSTALLDIR = $(CURDIR)/debian/tmp
 
-export KUBUNTU_DESKTOP_POT=playground-sysadmin
-
 %:
 	dh $@ --parallel --with kde --dbg-package=apper-dbg
 
@@ -36,5 +34,5 @@ fetch_translations:
 	mkdir -p po
 	cd po; svn export svn://anonsvn.kde.org/home/kde/trunk/l10n-kde4/subdirs
 	cd po; for asdf in `cat subdirs`; do mkdir -p $${asdf}; done
-	cd po; for asdf in `cat subdirs`; do echo $${asdf}; cd $${asdf}; svn export svn://anonsvn.kde.org/home/kde/trunk/l10n-kde4/$${asdf}/messages/playground-sysadmin/apper.po; cd ..; done
+	cd po; for asdf in `cat subdirs`; do echo $${asdf}; cd $${asdf}; svn export svn://anonsvn.kde.org/home/kde/trunk/l10n-kde4/$${asdf}/messages/extragear-sysadmin/apper.po; cd ..; done
 	cd po; rm subdirs; rmdir --ignore-fail-on-non-empty *

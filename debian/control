@@ -11,8 +11,8 @@ Build-Depends: chrpath,
                libappstream-dev (>= 0.7),
                libdbus-1-dev,
                libdebconf-kde-dev,
-               liblistaller-glib-dev (>= 0.5.6),
-               libpackagekit-qt2-dev (>= 0.8.8),
+               liblistaller-glib-dev (>= 0.5.9),
+               libpackagekitqt4-dev (>= 0.9.2-4),
                pkg-kde-tools (>= 0.14)
 Standards-Version: 3.9.5
 Homepage: http://kde-apps.org/content/show.php/Apper?content=84745
@@ -22,7 +22,6 @@ Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-packagekit/apper.git
 Package: apper
 Architecture: any
 Depends: apper-data (>= ${source:Version}),
-         listaller (>= 0.5.4),
          packagekit (>= 0.8.6),
          polkit-kde-1 | policykit-1-gnome,
          software-properties-kde,
@@ -31,7 +30,8 @@ Depends: apper-data (>= ${source:Version}),
 Replaces: apper-appsetup (<< 0.7.2)
 Breaks: apper-appsetup (<< 0.7.2)
 Recommends: appstream-index
-Suggests: debconf-kde-helper
+Suggests: debconf-kde-helper,
+          listaller
 Description: KDE package management tool using PackageKit
  PackageKit allows performing simple software management tasks over a DBus
  interface  e.g. refreshing the cache, updating, installing and removing
