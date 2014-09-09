@@ -1,3 +1,11 @@
+apper (0.9.1-1) unstable; urgency=medium
+
+  * Upload to unstable
+  * New upstream release: 0.9.1
+  * Drop all patches: Applied upstream
+
+ -- Matthias Klumpp <mak@debian.org>  Mon, 08 Sep 2014 20:46:32 +0200
+
 apper (0.9.0-1) experimental; urgency=medium
 
   * New upstream release: 0.9.0
