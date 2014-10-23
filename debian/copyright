@@ -67,12 +67,6 @@ Copyright: 2011-2012 by Daniel Nicoletti
            2012 by Matthias Klumpp
 License: GPL-2+
 
-Files: Sentinel/PkInstallPlasmaResources.cpp
- Sentinel/PkInstallPlasmaResources.h
-Copyright: 2011 Kevin Kofler <kevin.kofler@chello.at>
-           2009-2011 by Daniel Nicoletti
-License: GPL-2+
-
 Files: libapper/ChangesDelegate.h
  libapper/ChangesDelegate.cpp
  libapper/ApplicationsDelegate.h
