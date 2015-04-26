@@ -1,5 +1,4 @@
-usr/bin/apper
-usr/bin/apper-appsetup
+usr/bin/apper*
 usr/lib/*
 usr/share/appdata/*
 usr/share/applications/*
