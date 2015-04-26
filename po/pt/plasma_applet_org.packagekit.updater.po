@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma_applet_org\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-04-24 01:33+0000\n"
+"POT-Creation-Date: 2015-04-07 02:18+0000\n"
 "PO-Revision-Date: 2013-06-25 09:38+0100\n"
 "Last-Translator: José Nuno Coelho Pires <zepires@gmail.com>\n"
 "Language-Team: Portuguese <kde-i18n-pt@kde.org>\n"
@@ -21,11 +21,11 @@ msgstr ""
 msgid "Failed to get update details"
 msgstr "Não foi possível obter os detalhes da actualização"
 
-#: package/contents/ui/ChangelogView.qml:92
+#: package/contents/ui/ChangelogView.qml:94
 msgid "Version: %1"
 msgstr "Versão: %1"
 
-#: package/contents/ui/ChangelogView.qml:98
+#: package/contents/ui/ChangelogView.qml:100
 msgid "Updates: %1"
 msgstr "Actualiza: %1"
 

@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: apper\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-08-21 01:47+0000\n"
+"POT-Creation-Date: 2015-03-28 01:56+0000\n"
 "PO-Revision-Date: 2014-03-16 20:39+0200\n"
 "Last-Translator: Liudas Ališauskas <liudas@aksioma.lt>\n"
 "Language-Team: Lithuanian <kde-i18n-lt@kde.org>\n"
@@ -194,7 +194,7 @@ msgstr "Filtrai"
 
 #. i18n: ectx: property (text), widget (QCheckBox, installedCB)
 #: Apper/BackendDetails.ui:365 ApperKCM/FiltersMenu.cpp:59
-#: libapper/PkStrings.cpp:381
+#: libapper/PkStrings.cpp:391
 msgid "Installed"
 msgstr "Įdiegti"
 
@@ -357,7 +357,7 @@ msgstr[2] "Paketai: %2"
 msgstr[3] "Paketai: %2"
 
 #: apperd/TransactionWatcher.cpp:240 ApperKCM/TransactionModel.cpp:45
-#: AppSetup/SetupWizard.cpp:204
+#: AppSetup/SetupWizard.cpp:149
 msgid "Details"
 msgstr "Smulkiau"
 
@@ -394,7 +394,7 @@ msgstr[3] "Yra %1 atnaujinimas"
 msgid "Review"
 msgstr "Peržiūra"
 
-#: apperd/Updater.cpp:290 AppSetup/SetupWizard.cpp:339
+#: apperd/Updater.cpp:290 AppSetup/SetupWizard.cpp:260
 #: libapper/ApplicationsDelegate.cpp:40
 msgid "Install"
 msgstr "Įdiegti"
@@ -496,7 +496,7 @@ msgid "Software Origins"
 msgstr "Programinės įrangos šaltiniai"
 
 #. i18n: ectx: property (text), widget (QToolButton, backTB)
-#: ApperKCM/ApperKCM.ui:267 AppSetup/SetupWizard.cpp:153
+#: ApperKCM/ApperKCM.ui:267 AppSetup/SetupWizard.cpp:87
 msgid "Back"
 msgstr "Atgal"
 
@@ -659,7 +659,7 @@ msgstr "Slėpti paketus, kurie nėra programos"
 msgid "Display"
 msgstr "Rodyti"
 
-#: ApperKCM/PackageDetails.cpp:87 AppSetup/SetupWizard.cpp:261
+#: ApperKCM/PackageDetails.cpp:87 AppSetup/SetupWizard.cpp:186
 msgid "Description"
 msgstr "Aprašymas"
 
@@ -1023,170 +1023,113 @@ msgstr "Numatomas atsiuntimo dydis: %1"
 msgid "Check for new updates"
 msgstr "Tikrinti, ar yra atnaujinimų"
 
-#. i18n: ectx: property (text), widget (QRadioButton, acceptedRB)
-#: AppSetup/LicensePage.ui:98
-msgid "I agree to the above terms and conditions"
-msgstr "Aš sutinku aukščiau esančiomis sąlygomis"
-
-#. i18n: ectx: property (text), widget (QRadioButton, rejectedRB)
-#: AppSetup/LicensePage.ui:111
-msgid "I don't agree"
-msgstr "Nesutinku"
-
-#: AppSetup/main.cpp:34 AppSetup/main.cpp:35
+#: AppSetup/main.cpp:33 AppSetup/main.cpp:34
 msgid "KDE Application Installer"
 msgstr "KDE programų diegimo programa"
 
-#: AppSetup/main.cpp:36
-msgid "(C) 2012, Matthias Klumpp"
+#: AppSetup/main.cpp:35
+#, fuzzy
+#| msgid "(C) 2012, Matthias Klumpp"
+msgid "(C) 2014, Matthias Klumpp"
 msgstr "(C) 2012, Matthias Klumpp"
 
-#: AppSetup/main.cpp:38
+#: AppSetup/main.cpp:37
 msgctxt "@info:credit"
 msgid "Daniel Nicoletti"
 msgstr "Daniel Nicoletti"
 
-#: AppSetup/main.cpp:38 AppSetup/main.cpp:40
+#: AppSetup/main.cpp:37 AppSetup/main.cpp:39
 msgid "Developer"
 msgstr "Kūrėjas"
 
-#: AppSetup/main.cpp:40
+#: AppSetup/main.cpp:39
 msgctxt "@info:credit"
 msgid "Matthias Klumpp"
 msgstr "Matthias Klumpp"
 
-#: AppSetup/main.cpp:47
+#: AppSetup/main.cpp:46
 msgid "Show verbose information"
 msgstr "Rodyti išsamią informaciją"
 
-#: AppSetup/main.cpp:48
+#: AppSetup/main.cpp:47
 msgid "IPK package filename"
 msgstr "IPK paketo pavadinimas"
 
-#: AppSetup/main.cpp:72
-msgid "Sorry, we didn't get an existing IPK package as parameter."
+#: AppSetup/main.cpp:70
+#, fuzzy
+#| msgid "Sorry, we didn't get an existing IPK package as parameter."
+msgid "We did not receive a path to an IPK package as parameter."
 msgstr "Atleiskite, negavome esančio IPK paketo kaip parametro."
 
-#: AppSetup/main.cpp:73
+#: AppSetup/main.cpp:71
 msgid "Package not found!"
 msgstr "Paketas nerastas!"
 
-#: AppSetup/SetupWizard.cpp:88
-msgid "Installation finished!"
-msgstr "Diegimas baigtas!"
-
-#: AppSetup/SetupWizard.cpp:89
-#, kde-format
-msgid "%1 has been installed successfully!"
-msgstr "%1 buvo įdiegta sėkmingai!"
-
-#: AppSetup/SetupWizard.cpp:103 libapper/PkTransaction.cpp:118
-#: libapper/PkTransaction.cpp:131 libapper/PkTransaction.cpp:145
-#: libapper/PkTransaction.cpp:163
-msgid "Error"
-msgstr "Klaida"
-
-#: AppSetup/SetupWizard.cpp:104 AppSetup/SetupWizard.cpp:118
-msgid "An error occurred"
-msgstr "Įvyko klaida"
-
-#: AppSetup/SetupWizard.cpp:151 libapper/Requirements.cpp:59
+#: AppSetup/SetupWizard.cpp:85 libapper/Requirements.cpp:59
 #: PkSession/SessionTask.cpp:71
 msgid "Continue"
 msgstr "Tęsti"
 
-#: AppSetup/SetupWizard.cpp:192
+#: AppSetup/SetupWizard.cpp:109
+msgid "Error"
+msgstr "Klaida"
+
+#: AppSetup/SetupWizard.cpp:110
+msgid "An error occurred"
+msgstr "Įvyko klaida"
+
+#: AppSetup/SetupWizard.cpp:137
 msgid "Welcome!"
 msgstr "Sveiki!"
 
-#: AppSetup/SetupWizard.cpp:193
+#: AppSetup/SetupWizard.cpp:138
 #, kde-format
 msgid "Welcome to the installation of %1!"
 msgstr "Jus sveikina %1 išdiegimas!"
 
-#: AppSetup/SetupWizard.cpp:194
+#: AppSetup/SetupWizard.cpp:139
+#, fuzzy
+#| msgid ""
+#| "Please be careful while installing 3rd-party applications.<br>They may "
+#| "eventually <b>damage</b> your system or have <b>malicious behaviour</b>, "
+#| "like spying out your passwords.<br>Please do only install this software "
+#| "if you <b>trust the publisher and the author</b> of it."
 msgid ""
-"Please be careful while installing 3rd-party applications.<br>They may "
+"Please be careful while installing a 3rd-party application.<br>It might "
 "eventually <b>damage</b> your system or have <b>malicious behaviour</b>, "
 "like spying out your passwords.<br>Please do only install this software if "
-"you <b>trust the publisher and the author</b> of it."
+"you <b>trust its publisher</b>."
 msgstr ""
 "Prašome būti atidiems diegiant trečių šalių programinę įrangą.<br>Ji gali "
 "<b>nugadinti</b> Jūsų sistemą arba elgtis <b>įtartinai</b>, kaip "
 "slaptažodžių rinkimas.<br>Prašome diegti programinę įrangą tik jei "
 "<b>pasitikite platintoju ir autoriumi</b>."
 
-#: AppSetup/SetupWizard.cpp:205
+#: AppSetup/SetupWizard.cpp:150
 msgid "Details about this installation"
 msgstr "Šio diegimo informacija"
 
-#: AppSetup/SetupWizard.cpp:242
-msgid "Install for all users"
-msgstr "Įdiegti visiems naudotojams"
-
-#: AppSetup/SetupWizard.cpp:260
+#: AppSetup/SetupWizard.cpp:185
 msgid "Application description"
 msgstr "Programos aprašymas"
 
-#: AppSetup/SetupWizard.cpp:272
-msgid "Software license"
-msgstr "Programinės įrangos licenzija"
-
-#: AppSetup/SetupWizard.cpp:273
-msgid "Please read the following terms and conditions carefully!"
-msgstr "Prašome atidžiai perskaityti sekančias sąlygas!"
-
-#: AppSetup/SetupWizard.cpp:282
+#: AppSetup/SetupWizard.cpp:193
 msgid "Running installation"
 msgstr "Vykdomas diegimas"
 
-#: AppSetup/SetupWizard.cpp:283
+#: AppSetup/SetupWizard.cpp:194
 #, kde-format
 msgid "Installing %1..."
 msgstr "Diegiama %1..."
 
-#: AppSetup/SetupWizard.cpp:318
-msgid ""
-"Installing this package will make the following native packages obsolete. "
-"You might consider removing them manually."
-msgstr ""
-"Šio paketo įdiegimas padarys sekančius prigimtinius paketus nebenaudojamais. "
-"Galite pašalinti juos rankiniu būdu."
+#: AppSetup/SetupWizard.cpp:234
+msgid "Installation finished!"
+msgstr "Diegimas baigtas!"
 
-#: AppSetup/SetupWizard.cpp:319
-msgid "Similar native packages found"
-msgstr "Rastas panašus prigimtinis paketas"
-
-#: AppSetup/SetupWizard.cpp:419
-msgid ""
-"You want to install this application as root!\n"
-"This can damage your system or install malicious software for all users.\n"
-"Please only proceed, if you really know what you're doing!\n"
-"Continue?"
-msgstr ""
-"Norite įdiegti šią programą kaip root naudotojas!\n"
-"Tai gali sugadinti Jūsų sistemą arba įdiegti kenkėjišką programinę įrangą "
-"visiems naudotojams.\n"
-"Prašome tęsti tik jei žinote ką darote!\n"
-"Ar tęsti?"
-
-#: AppSetup/SetupWizard.cpp:422
-msgid "Really install as superuser?"
-msgstr "Tikrai įdiegti super naudotojo teisėmis?"
-
-#: AppSetup/SetupWizard.cpp:440
+#: AppSetup/SetupWizard.cpp:235
 #, kde-format
-msgid "This package has the following security level: <b>%1</b>"
-msgstr "Šis paketas turi šį saugumo lygį: <b>%1</b>"
-
-#: AppSetup/SetupWizard.cpp:442
-#, kde-format
-msgid "It was signed with a key belonging to these user-ids: %1"
-msgstr "Jis buvo pasirašytas raktu priklausančiu šiems naudotojų id: %1"
-
-#: AppSetup/SetupWizard.cpp:446
-msgid "Security hints"
-msgstr "Saugumo patarimai"
+msgid "%1 has been installed successfully!"
+msgstr "%1 buvo įdiegta sėkmingai!"
 
 #: libapper/ApplicationLauncher.cpp:94
 msgid "New application available"
@@ -1281,7 +1224,7 @@ msgstr "Kilmė"
 msgid "Size"
 msgstr "Dydis"
 
-#: libapper/PackageModel.cpp:326
+#: libapper/PackageModel.cpp:334
 #, kde-format
 msgid ""
 "Version: %1\n"
@@ -1290,11 +1233,11 @@ msgstr ""
 "Versija: %1\n"
 "Architektūra: %2"
 
-#: libapper/PackageModel.cpp:372
+#: libapper/PackageModel.cpp:380
 msgid "To be Removed"
 msgstr "Pašalinta"
 
-#: libapper/PackageModel.cpp:374
+#: libapper/PackageModel.cpp:382
 msgid "To be Installed"
 msgstr "Bus įdiegti"
 
@@ -1499,218 +1442,218 @@ msgctxt "we are copying package files to prepare to install"
 msgid "Copying files"
 msgstr "Kopijuojami failai"
 
-#: libapper/PkStrings.cpp:165
+#: libapper/PkStrings.cpp:170
 msgctxt "The action of the package, in past tense"
 msgid "Downloaded"
 msgstr "Atsisiųsta"
 
-#: libapper/PkStrings.cpp:167
+#: libapper/PkStrings.cpp:172
 msgctxt "The action of the package, in past tense"
 msgid "Updated"
 msgstr "Atnaujinta"
 
-#: libapper/PkStrings.cpp:169
+#: libapper/PkStrings.cpp:174
 msgctxt "The action of the package, in past tense"
 msgid "Installed"
 msgstr "Įdiegta"
 
-#: libapper/PkStrings.cpp:171
+#: libapper/PkStrings.cpp:176
 msgctxt "The action of the package, in past tense"
 msgid "Removed"
 msgstr "Pašalinta"
 
-#: libapper/PkStrings.cpp:173
+#: libapper/PkStrings.cpp:178
 msgctxt "The action of the package, in past tense"
 msgid "Cleaned Up"
 msgstr "Išvaloma"
 
-#: libapper/PkStrings.cpp:175
+#: libapper/PkStrings.cpp:180
 msgctxt "The action of the package, in past tense"
 msgid "Obsoleted"
 msgstr "Nebevartojami"
 
-#: libapper/PkStrings.cpp:186
+#: libapper/PkStrings.cpp:191
 msgctxt "The role of the transaction, in present tense"
 msgid "Unknown role type"
 msgstr "Nežinomas vaidmens tipas"
 
-#: libapper/PkStrings.cpp:188
+#: libapper/PkStrings.cpp:193
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting dependencies"
 msgstr "Gaunamos priklausomybės"
 
-#: libapper/PkStrings.cpp:190
+#: libapper/PkStrings.cpp:195
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting update detail"
 msgstr "Gaunamos atnaujinimų detalės"
 
-#: libapper/PkStrings.cpp:193
+#: libapper/PkStrings.cpp:198
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting details"
 msgstr "Gaunamos detalės"
 
-#: libapper/PkStrings.cpp:195
+#: libapper/PkStrings.cpp:200
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting requires"
 msgstr "Gaunama informacija apie privalomus paketus"
 
-#: libapper/PkStrings.cpp:197
+#: libapper/PkStrings.cpp:202
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting updates"
 msgstr "Gaunami atnaujinimai"
 
-#: libapper/PkStrings.cpp:199
+#: libapper/PkStrings.cpp:204
 msgctxt "The role of the transaction, in present tense"
 msgid "Searching details"
 msgstr "Ieškoma detalių"
 
-#: libapper/PkStrings.cpp:201
+#: libapper/PkStrings.cpp:206
 msgctxt "The role of the transaction, in present tense"
 msgid "Searching for file"
 msgstr "Ieškoma failo"
 
-#: libapper/PkStrings.cpp:203
+#: libapper/PkStrings.cpp:208
 msgctxt "The role of the transaction, in present tense"
 msgid "Searching groups"
 msgstr "Ieškoma grupių"
 
-#: libapper/PkStrings.cpp:205
+#: libapper/PkStrings.cpp:210
 msgctxt "The role of the transaction, in present tense"
 msgid "Searching by package name"
 msgstr "Ieškoti paketo pavadinimo"
 
-#: libapper/PkStrings.cpp:208
+#: libapper/PkStrings.cpp:213
 msgctxt "The role of the transaction, in present tense"
 msgid "Simulating removal"
 msgstr "Imituojamas šalinimas"
 
-#: libapper/PkStrings.cpp:210 libapper/PkStrings.cpp:217
-#: libapper/PkStrings.cpp:258
+#: libapper/PkStrings.cpp:215 libapper/PkStrings.cpp:222
+#: libapper/PkStrings.cpp:263
 msgctxt "The role of the transaction, in present tense"
 msgid "Downloading packages"
 msgstr "Atsisiunčiami paketai"
 
-#: libapper/PkStrings.cpp:212
+#: libapper/PkStrings.cpp:217
 msgctxt "The role of the transaction, in present tense"
 msgid "Removing"
 msgstr "Šalinama"
 
-#: libapper/PkStrings.cpp:215
+#: libapper/PkStrings.cpp:220
 msgctxt "The role of the transaction, in present tense"
 msgid "Simulating install"
 msgstr "Imituojamas diegimas"
 
-#: libapper/PkStrings.cpp:219
+#: libapper/PkStrings.cpp:224
 msgctxt "The role of the transaction, in present tense"
 msgid "Installing"
 msgstr "Diegiama"
 
-#: libapper/PkStrings.cpp:222
+#: libapper/PkStrings.cpp:227
 msgctxt "The role of the transaction, in present tense"
 msgid "Simulating file install"
 msgstr "Imituojamas failo diegimas"
 
-#: libapper/PkStrings.cpp:224
+#: libapper/PkStrings.cpp:229
 msgctxt "The role of the transaction, in present tense"
 msgid "Downloading required packages"
 msgstr "Atsiunčiami reikalingi paketai"
 
-#: libapper/PkStrings.cpp:226
+#: libapper/PkStrings.cpp:231
 msgctxt "The role of the transaction, in present tense"
 msgid "Installing file"
 msgstr "Diegiamas failas"
 
-#: libapper/PkStrings.cpp:228
+#: libapper/PkStrings.cpp:233
 msgctxt "The role of the transaction, in present tense"
 msgid "Refreshing package cache"
 msgstr "Atnaujinama paketų atmintinė"
 
-#: libapper/PkStrings.cpp:231
+#: libapper/PkStrings.cpp:236
 msgctxt "The role of the transaction, in present tense"
 msgid "Simulating update"
 msgstr "Imituojamas atnaujinimas"
 
-#: libapper/PkStrings.cpp:233
+#: libapper/PkStrings.cpp:238
 msgctxt "The role of the transaction, in present tense"
 msgid "Downloading updates"
 msgstr "Atsiunčiami atnaujinimai"
 
-#: libapper/PkStrings.cpp:235
+#: libapper/PkStrings.cpp:240
 msgctxt "The role of the transaction, in present tense"
 msgid "Updating packages"
 msgstr "Atnaujinami paketai"
 
-#: libapper/PkStrings.cpp:237
+#: libapper/PkStrings.cpp:242
 msgctxt "The role of the transaction, in present tense"
 msgid "Canceling"
 msgstr "Atšaukiama"
 
-#: libapper/PkStrings.cpp:239
+#: libapper/PkStrings.cpp:244
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting list of repositories"
 msgstr "Gaunamas repozitorijų sąrašas"
 
-#: libapper/PkStrings.cpp:241
+#: libapper/PkStrings.cpp:246
 msgctxt "The role of the transaction, in present tense"
 msgid "Enabling repository"
 msgstr "Repozitorija įgalinama"
 
-#: libapper/PkStrings.cpp:243
+#: libapper/PkStrings.cpp:248
 msgctxt "The role of the transaction, in present tense"
 msgid "Setting repository data"
 msgstr "Nustatomi repozitorijos duomenys"
 
-#: libapper/PkStrings.cpp:245
+#: libapper/PkStrings.cpp:250
 msgctxt "The role of the transaction, in present tense"
 msgid "Resolving"
 msgstr "Nustatomas adresas"
 
-#: libapper/PkStrings.cpp:248
+#: libapper/PkStrings.cpp:253
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting file list"
 msgstr "Gaunamas failų sąrašas"
 
-#: libapper/PkStrings.cpp:250
+#: libapper/PkStrings.cpp:255
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting what provides"
 msgstr "Ieškoma kas pateikia"
 
-#: libapper/PkStrings.cpp:252
+#: libapper/PkStrings.cpp:257
 msgctxt "The role of the transaction, in present tense"
 msgid "Installing signature"
 msgstr "Diegiamas parašas"
 
-#: libapper/PkStrings.cpp:254
+#: libapper/PkStrings.cpp:259
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting package lists"
 msgstr "Gaunami paketų sąrašai"
 
-#: libapper/PkStrings.cpp:256
+#: libapper/PkStrings.cpp:261
 msgctxt "The role of the transaction, in present tense"
 msgid "Accepting EULA"
 msgstr "Priimamas EULA"
 
-#: libapper/PkStrings.cpp:260
+#: libapper/PkStrings.cpp:265
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting distribution upgrade information"
 msgstr "Gaunama distributyvo atnaujinimo informacija"
 
-#: libapper/PkStrings.cpp:262
+#: libapper/PkStrings.cpp:267
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting categories"
 msgstr "Gaunamos kategorijos"
 
-#: libapper/PkStrings.cpp:264
+#: libapper/PkStrings.cpp:269
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting old transactions"
 msgstr "Gaunami senesni veiksmai"
 
-#: libapper/PkStrings.cpp:266
+#: libapper/PkStrings.cpp:271
 msgctxt "The role of the transaction, in present tense"
 msgid "Repairing system"
 msgstr "Taisoma sistema"
 
-#: libapper/PkStrings.cpp:268
+#: libapper/PkStrings.cpp:273
 #, fuzzy
 #| msgctxt "The role of the transaction, in present tense"
 #| msgid "Enabling repository"
@@ -1718,157 +1661,157 @@ msgctxt "The role of the transaction, in present tense"
 msgid "Removing repository"
 msgstr "Repozitorija įgalinama"
 
-#: libapper/PkStrings.cpp:278
+#: libapper/PkStrings.cpp:288
 msgctxt "The role of the transaction, in past tense"
 msgid "Unknown role type"
 msgstr "Nežinomas vaidmens tipas"
 
-#: libapper/PkStrings.cpp:280
+#: libapper/PkStrings.cpp:290
 msgctxt "The role of the transaction, in past tense"
 msgid "Got dependencies"
 msgstr "Turi priklausomybių"
 
-#: libapper/PkStrings.cpp:282
+#: libapper/PkStrings.cpp:292
 msgctxt "The role of the transaction, in past tense"
 msgid "Got update detail"
 msgstr "Turi atnaujinimo detalių"
 
-#: libapper/PkStrings.cpp:285
+#: libapper/PkStrings.cpp:295
 msgctxt "The role of the transaction, in past tense"
 msgid "Got details"
 msgstr "Turi detalių"
 
-#: libapper/PkStrings.cpp:287
+#: libapper/PkStrings.cpp:297
 msgctxt "The role of the transaction, in past tense"
 msgid "Got requires"
 msgstr "Turi reikalaujamų"
 
-#: libapper/PkStrings.cpp:289
+#: libapper/PkStrings.cpp:299
 msgctxt "The role of the transaction, in past tense"
 msgid "Got updates"
 msgstr "Turi atnaujinimų"
 
-#: libapper/PkStrings.cpp:291
+#: libapper/PkStrings.cpp:301
 msgctxt "The role of the transaction, in past tense"
 msgid "Searched for package details"
 msgstr "Ieškota paketų detalių"
 
-#: libapper/PkStrings.cpp:293
+#: libapper/PkStrings.cpp:303
 msgctxt "The role of the transaction, in past tense"
 msgid "Searched for file"
 msgstr "Ieškota failo"
 
-#: libapper/PkStrings.cpp:295
+#: libapper/PkStrings.cpp:305
 msgctxt "The role of the transaction, in past tense"
 msgid "Searched groups"
 msgstr "Ieškota grupių"
 
-#: libapper/PkStrings.cpp:297
+#: libapper/PkStrings.cpp:307
 msgctxt "The role of the transaction, in past tense"
 msgid "Searched for package name"
 msgstr "Ieškoti paketo pavadinimo"
 
-#: libapper/PkStrings.cpp:299
+#: libapper/PkStrings.cpp:309
 msgctxt "The role of the transaction, in past tense"
 msgid "Removed packages"
 msgstr "Pašalinti paketai"
 
-#: libapper/PkStrings.cpp:301
+#: libapper/PkStrings.cpp:311
 msgctxt "The role of the transaction, in past tense"
 msgid "Installed packages"
 msgstr "Įdiegti paketai"
 
-#: libapper/PkStrings.cpp:303
+#: libapper/PkStrings.cpp:313
 msgctxt "The role of the transaction, in past tense"
 msgid "Installed local files"
 msgstr "Įdiegti vietiniai failai"
 
-#: libapper/PkStrings.cpp:305
+#: libapper/PkStrings.cpp:315
 msgctxt "The role of the transaction, in past tense"
 msgid "Refreshed package cache"
 msgstr "Atnaujinta paketų atmintinė"
 
-#: libapper/PkStrings.cpp:307
+#: libapper/PkStrings.cpp:317
 msgctxt "The role of the transaction, in past tense"
 msgid "Updated packages"
 msgstr "Atnaujinti paketai"
 
-#: libapper/PkStrings.cpp:309
+#: libapper/PkStrings.cpp:319
 msgctxt "The role of the transaction, in past tense"
 msgid "Canceled"
 msgstr "Atšaukta"
 
-#: libapper/PkStrings.cpp:311
+#: libapper/PkStrings.cpp:321
 msgctxt "The role of the transaction, in past tense"
 msgid "Got list of repositories"
 msgstr "Gautas repozitorijų sąrašas"
 
-#: libapper/PkStrings.cpp:313
+#: libapper/PkStrings.cpp:323
 msgctxt "The role of the transaction, in past tense"
 msgid "Enabled repository"
 msgstr "Įgalinta repozitorija"
 
-#: libapper/PkStrings.cpp:315
+#: libapper/PkStrings.cpp:325
 msgctxt "The role of the transaction, in past tense"
 msgid "Set repository data"
 msgstr "Nustatyti repozitorijos duomenis"
 
-#: libapper/PkStrings.cpp:317
+#: libapper/PkStrings.cpp:327
 msgctxt "The role of the transaction, in past tense"
 msgid "Resolved"
 msgstr "Nustatyta"
 
-#: libapper/PkStrings.cpp:320
+#: libapper/PkStrings.cpp:330
 msgctxt "The role of the transaction, in past tense"
 msgid "Got file list"
 msgstr "Sąrašas gautas"
 
-#: libapper/PkStrings.cpp:322
+#: libapper/PkStrings.cpp:332
 msgctxt "The role of the transaction, in past tense"
 msgid "Got what provides"
 msgstr "Gauta kas suteikia"
 
-#: libapper/PkStrings.cpp:324
+#: libapper/PkStrings.cpp:334
 msgctxt "The role of the transaction, in past tense"
 msgid "Installed signature"
 msgstr "Parašas įdiegtas"
 
-#: libapper/PkStrings.cpp:326
+#: libapper/PkStrings.cpp:336
 msgctxt "The role of the transaction, in past tense"
 msgid "Got package lists"
 msgstr "Gauti paketų sąrašai"
 
-#: libapper/PkStrings.cpp:328
+#: libapper/PkStrings.cpp:338
 msgctxt "The role of the transaction, in past tense"
 msgid "Accepted EULA"
 msgstr "EULA priimta"
 
-#: libapper/PkStrings.cpp:330
+#: libapper/PkStrings.cpp:340
 msgctxt "The role of the transaction, in past tense"
 msgid "Downloaded packages"
 msgstr "Atsisiųsti paketai"
 
-#: libapper/PkStrings.cpp:332
+#: libapper/PkStrings.cpp:342
 msgctxt "The role of the transaction, in past tense"
 msgid "Got distribution upgrades"
 msgstr "Gauta nauja distributyvo versija"
 
-#: libapper/PkStrings.cpp:334
+#: libapper/PkStrings.cpp:344
 msgctxt "The role of the transaction, in past tense"
 msgid "Got categories"
 msgstr "Gautos kategorijos"
 
-#: libapper/PkStrings.cpp:336
+#: libapper/PkStrings.cpp:346
 msgctxt "The role of the transaction, in past tense"
 msgid "Got old transactions"
 msgstr "Gauti seni veiksmai"
 
-#: libapper/PkStrings.cpp:338
+#: libapper/PkStrings.cpp:348
 msgctxt "The role of the transaction, in past tense"
 msgid "Repaired system"
 msgstr "Pataisyta sistema"
 
-#: libapper/PkStrings.cpp:340
+#: libapper/PkStrings.cpp:350
 #, fuzzy
 #| msgctxt "The role of the transaction, in past tense"
 #| msgid "Enabled repository"
@@ -1876,347 +1819,347 @@ msgctxt "The role of the transaction, in past tense"
 msgid "Removed repository"
 msgstr "Įgalinta repozitorija"
 
-#: libapper/PkStrings.cpp:350
+#: libapper/PkStrings.cpp:360
 msgid "Downloading"
 msgstr "Atsiunčiama"
 
-#: libapper/PkStrings.cpp:352
+#: libapper/PkStrings.cpp:362
 msgid "Updating"
 msgstr "Atnaujinama"
 
-#: libapper/PkStrings.cpp:354
+#: libapper/PkStrings.cpp:364
 msgid "Installing"
 msgstr "Diegiama"
 
-#: libapper/PkStrings.cpp:356
+#: libapper/PkStrings.cpp:366
 msgid "Removing"
 msgstr "Šalinama"
 
-#: libapper/PkStrings.cpp:358
+#: libapper/PkStrings.cpp:368
 msgid "Cleaning up"
 msgstr "Valoma"
 
-#: libapper/PkStrings.cpp:360
+#: libapper/PkStrings.cpp:370
 msgid "Obsoleting"
 msgstr "Nebevartojami paketai"
 
-#: libapper/PkStrings.cpp:362
+#: libapper/PkStrings.cpp:372
 msgid "Reinstalling"
 msgstr "Diegiama iš naujo"
 
-#: libapper/PkStrings.cpp:364
+#: libapper/PkStrings.cpp:374
 msgid "Preparing"
 msgstr "Paruošiama"
 
-#: libapper/PkStrings.cpp:366
+#: libapper/PkStrings.cpp:376
 msgid "Decompressing"
 msgstr "Išpakuojama"
 
-#: libapper/PkStrings.cpp:377
+#: libapper/PkStrings.cpp:387
 msgid "Downloaded"
 msgstr "Atsisiųsta"
 
-#: libapper/PkStrings.cpp:379
+#: libapper/PkStrings.cpp:389
 msgid "Updated"
 msgstr "Atnaujinta"
 
-#: libapper/PkStrings.cpp:383
+#: libapper/PkStrings.cpp:393
 msgid "Removed"
 msgstr "Pašalinta"
 
-#: libapper/PkStrings.cpp:385
+#: libapper/PkStrings.cpp:395
 msgid "Cleaned up"
 msgstr "Išvalyta"
 
-#: libapper/PkStrings.cpp:387
+#: libapper/PkStrings.cpp:397
 msgid "Obsoleted"
 msgstr "Nebevartojami"
 
-#: libapper/PkStrings.cpp:389
+#: libapper/PkStrings.cpp:399
 msgid "Reinstalled"
 msgstr "Įdiegta iš naujo"
 
-#: libapper/PkStrings.cpp:391
+#: libapper/PkStrings.cpp:401
 msgid "Prepared"
 msgstr "Paruošta"
 
-#: libapper/PkStrings.cpp:393
+#: libapper/PkStrings.cpp:403
 msgid "Decompressed"
 msgstr "Išpakuota"
 
-#: libapper/PkStrings.cpp:404
+#: libapper/PkStrings.cpp:414
 msgid "No network connection available"
 msgstr "Nėra tinklo ryšio"
 
-#: libapper/PkStrings.cpp:406
+#: libapper/PkStrings.cpp:416
 msgid "No package cache is available"
 msgstr "Paketų atmintinės nėra"
 
-#: libapper/PkStrings.cpp:408
+#: libapper/PkStrings.cpp:418
 msgid "Out of memory"
 msgstr "Trūksta atminties"
 
-#: libapper/PkStrings.cpp:410
+#: libapper/PkStrings.cpp:420
 msgid "Failed to create a thread"
 msgstr "Nepavyko sukurti gijos"
 
-#: libapper/PkStrings.cpp:412
+#: libapper/PkStrings.cpp:422
 msgid "Not supported by this backend"
 msgstr "Ši programinė sąsaja šito nepalaiko"
 
-#: libapper/PkStrings.cpp:414
+#: libapper/PkStrings.cpp:424
 msgid "An internal system error has occurred"
 msgstr "Įvyko vidinė sistemos klaida"
 
-#: libapper/PkStrings.cpp:416
+#: libapper/PkStrings.cpp:426
 msgid "A security trust relationship is not present"
 msgstr "Saugaus pasitikėjimo ryšio nėra"
 
-#: libapper/PkStrings.cpp:418
+#: libapper/PkStrings.cpp:428
 msgid "The package is not installed"
 msgstr "Paketas nėra įdiegtas"
 
-#: libapper/PkStrings.cpp:420
+#: libapper/PkStrings.cpp:430
 msgid "The package was not found"
 msgstr "Paketo nerasta"
 
-#: libapper/PkStrings.cpp:422
+#: libapper/PkStrings.cpp:432
 msgid "The package is already installed"
 msgstr "Paketas jau įdiegtas"
 
-#: libapper/PkStrings.cpp:424
+#: libapper/PkStrings.cpp:434
 msgid "The package download failed"
 msgstr "Paketo atsisiuntimas nepavyko"
 
-#: libapper/PkStrings.cpp:426
+#: libapper/PkStrings.cpp:436
 msgid "The group was not found"
 msgstr "Grupė nerasta"
 
-#: libapper/PkStrings.cpp:428
+#: libapper/PkStrings.cpp:438
 msgid "The group list was invalid"
 msgstr "Grupės sąrašas buvo neteisingas"
 
-#: libapper/PkStrings.cpp:430
+#: libapper/PkStrings.cpp:440
 msgid "Dependency resolution failed"
 msgstr "Priklausomybių sprendimas nepavyko"
 
-#: libapper/PkStrings.cpp:432
+#: libapper/PkStrings.cpp:442
 msgid "Search filter was invalid"
 msgstr "Paieškos filtras neteisingas"
 
-#: libapper/PkStrings.cpp:434
+#: libapper/PkStrings.cpp:444
 msgid "The package identifier was not well formed"
 msgstr "Paketo identifikatorius buvo suformuotas neteisingas"
 
-#: libapper/PkStrings.cpp:436
+#: libapper/PkStrings.cpp:446
 msgid "Transaction error"
 msgstr "Operacijos klaida"
 
-#: libapper/PkStrings.cpp:438
+#: libapper/PkStrings.cpp:448
 msgid "Repository name was not found"
 msgstr "Repozitorijos pavadinimas nerastas"
 
-#: libapper/PkStrings.cpp:440
+#: libapper/PkStrings.cpp:450
 msgid "Could not remove a protected system package"
 msgstr "Nepavyko pašalinti apsaugoto sistemos paketo"
 
-#: libapper/PkStrings.cpp:442
+#: libapper/PkStrings.cpp:452
 msgid "The task was canceled"
 msgstr "Užduotis buvo nutraukta"
 
-#: libapper/PkStrings.cpp:444
+#: libapper/PkStrings.cpp:454
 msgid "The task was forcibly canceled"
 msgstr "Užduotis buvo nutraukta prievartiniu būdu"
 
-#: libapper/PkStrings.cpp:446
+#: libapper/PkStrings.cpp:456
 msgid "Reading the config file failed"
 msgstr "Nepavyko perskaityti konfigūracijos failo"
 
-#: libapper/PkStrings.cpp:448
+#: libapper/PkStrings.cpp:458
 msgid "The task cannot be cancelled"
 msgstr "Užduotis negali būti nutraukta"
 
-#: libapper/PkStrings.cpp:450
+#: libapper/PkStrings.cpp:460
 msgid "Source packages cannot be installed"
 msgstr "Šaltinio paketo įdiegti neįmanoma"
 
-#: libapper/PkStrings.cpp:452
+#: libapper/PkStrings.cpp:462
 msgid "The license agreement failed"
 msgstr "Patvirtinti licencijos susitarimo nepavyko"
 
-#: libapper/PkStrings.cpp:454
+#: libapper/PkStrings.cpp:464
 msgid "Local file conflict between packages"
 msgstr "Konfliktas tarp paketų dėl vietinių failų"
 
-#: libapper/PkStrings.cpp:456
+#: libapper/PkStrings.cpp:466
 msgid "Packages are not compatible"
 msgstr "Paketas nebuvo suderinamas"
 
-#: libapper/PkStrings.cpp:458
+#: libapper/PkStrings.cpp:468
 msgid "Problem connecting to a software origin"
 msgstr "Problema susijungiant su programinės įrangos šaltiniu"
 
-#: libapper/PkStrings.cpp:460
+#: libapper/PkStrings.cpp:470
 msgid "Failed to initialize"
 msgstr "Nepavyko inicializuoti"
 
-#: libapper/PkStrings.cpp:462
+#: libapper/PkStrings.cpp:472
 msgid "Failed to finalize"
 msgstr "Nepavyko užbaigti"
 
-#: libapper/PkStrings.cpp:464
+#: libapper/PkStrings.cpp:474
 msgid "Cannot get lock"
 msgstr "Nepavyko gauti užrakto"
 
-#: libapper/PkStrings.cpp:466
+#: libapper/PkStrings.cpp:476
 msgid "No packages to update"
 msgstr "Atnaujintinų paketų nėra"
 
-#: libapper/PkStrings.cpp:468
+#: libapper/PkStrings.cpp:478
 msgid "Cannot write repository configuration"
 msgstr "Nepavyksta įrašyti repozitorijos konfigūracijos"
 
-#: libapper/PkStrings.cpp:470
+#: libapper/PkStrings.cpp:480
 msgid "Local install failed"
 msgstr "Užrakto įdiegimas nepavyko"
 
-#: libapper/PkStrings.cpp:472
+#: libapper/PkStrings.cpp:482
 msgid "Bad GPG signature"
 msgstr "Blogas GPG parašas"
 
-#: libapper/PkStrings.cpp:474
+#: libapper/PkStrings.cpp:484
 msgid "Missing GPG signature"
 msgstr "Trūkstamas GPG parašas"
 
-#: libapper/PkStrings.cpp:476
+#: libapper/PkStrings.cpp:486
 msgid "Repository configuration invalid"
 msgstr "Neteisinga repozitorijos konfigūracija"
 
-#: libapper/PkStrings.cpp:478
+#: libapper/PkStrings.cpp:488
 msgid "Invalid package file"
 msgstr "Neteisingas paketo failas"
 
-#: libapper/PkStrings.cpp:480
+#: libapper/PkStrings.cpp:490
 msgid "Package install blocked"
 msgstr "Paketo diegimas užblokuotas"
 
-#: libapper/PkStrings.cpp:482
+#: libapper/PkStrings.cpp:492
 msgid "Package is corrupt"
 msgstr "Paketas sugadintas"
 
-#: libapper/PkStrings.cpp:484
+#: libapper/PkStrings.cpp:494
 msgid "All packages are already installed"
 msgstr "Visi paketai jau įdiegti"
 
-#: libapper/PkStrings.cpp:486
+#: libapper/PkStrings.cpp:496
 msgid "The specified file could not be found"
 msgstr "Nepavyko rasti nurodyto failo"
 
-#: libapper/PkStrings.cpp:488
+#: libapper/PkStrings.cpp:498
 msgid "No more mirrors are available"
 msgstr "Daugiau nėra pasiekiamų veidrodžių"
 
-#: libapper/PkStrings.cpp:490
+#: libapper/PkStrings.cpp:500
 msgid "No distribution upgrade data is available"
 msgstr "Nėra duomenų apie naują distributyvo versiją"
 
-#: libapper/PkStrings.cpp:492
+#: libapper/PkStrings.cpp:502
 msgid "Package is incompatible with this system"
 msgstr "Paketas nesuderinamas su sistema"
 
-#: libapper/PkStrings.cpp:494
+#: libapper/PkStrings.cpp:504
 msgid "No space is left on the disk"
 msgstr "Diske nebėra vietos"
 
-#: libapper/PkStrings.cpp:496 libapper/PkTransaction.cpp:344
+#: libapper/PkStrings.cpp:506 libapper/PkTransaction.cpp:344
 msgid "A media change is required"
 msgstr "Reikia pakeisti media"
 
-#: libapper/PkStrings.cpp:498
+#: libapper/PkStrings.cpp:508
 msgid "Authorization failed"
 msgstr "Autorizacija nepavyko"
 
-#: libapper/PkStrings.cpp:500
+#: libapper/PkStrings.cpp:510
 msgid "Update not found"
 msgstr "Atnaujinimas nerastas"
 
-#: libapper/PkStrings.cpp:502
+#: libapper/PkStrings.cpp:512
 msgid "Cannot install from untrusted origin"
 msgstr "Negalima diegti iš nepatikimo šaltinio"
 
-#: libapper/PkStrings.cpp:504
+#: libapper/PkStrings.cpp:514
 msgid "Cannot update from untrusted origin"
 msgstr "Negalima atnaujinti iš nepatikimo šaltinio"
 
-#: libapper/PkStrings.cpp:506
+#: libapper/PkStrings.cpp:516
 msgid "Cannot get the file list"
 msgstr "Nepavyko gauti failų sąrašo"
 
-#: libapper/PkStrings.cpp:508
+#: libapper/PkStrings.cpp:518
 msgid "Cannot get package requires"
 msgstr "Nepavyko gauti paketo priklausomybių"
 
-#: libapper/PkStrings.cpp:510
+#: libapper/PkStrings.cpp:520
 msgid "Cannot disable origin"
 msgstr "Nepavyko atjungti šaltinio"
 
-#: libapper/PkStrings.cpp:512
+#: libapper/PkStrings.cpp:522
 msgid "The download failed"
 msgstr "Paketo atsisiuntimas nepavyko"
 
-#: libapper/PkStrings.cpp:514
+#: libapper/PkStrings.cpp:524
 msgid "Package failed to configure"
 msgstr "Nepavyko sukonfigūruoti paketo"
 
-#: libapper/PkStrings.cpp:516
+#: libapper/PkStrings.cpp:526
 msgid "Package failed to build"
 msgstr "Nepavyko sukurti paketo"
 
-#: libapper/PkStrings.cpp:518
+#: libapper/PkStrings.cpp:528
 msgid "Package failed to install"
 msgstr "Nepavyko įdiegti paketo"
 
-#: libapper/PkStrings.cpp:520
+#: libapper/PkStrings.cpp:530
 msgid "Package failed to be removed"
 msgstr "Nepavyko pašalinti paketo"
 
-#: libapper/PkStrings.cpp:522
+#: libapper/PkStrings.cpp:532
 msgid "Update failed due to running process"
 msgstr "Atnaujinimas nepavyko dėl kito jau veikiančio proceso"
 
-#: libapper/PkStrings.cpp:524
+#: libapper/PkStrings.cpp:534
 msgid "The package database was changed"
 msgstr "Pakeista paketų duomenų bazė"
 
-#: libapper/PkStrings.cpp:526
+#: libapper/PkStrings.cpp:536
 msgid "Virtual provide type is not supported"
 msgstr "Virtualus teikiamas tipas nepalaikomas"
 
-#: libapper/PkStrings.cpp:528
+#: libapper/PkStrings.cpp:538
 msgid "Install root is invalid"
 msgstr "Neteisinga diegimo šaknis"
 
-#: libapper/PkStrings.cpp:530
+#: libapper/PkStrings.cpp:540
 msgid "Cannot fetch install sources"
 msgstr "Nepavyko gauti diegimo šaltinių"
 
-#: libapper/PkStrings.cpp:532
+#: libapper/PkStrings.cpp:542
 msgid "Rescheduled due to priority"
 msgstr "Perplanuota dėl prioriteto"
 
-#: libapper/PkStrings.cpp:534
+#: libapper/PkStrings.cpp:544
 msgid "Unfinished transaction"
 msgstr "Nebaigtas perdavimas"
 
-#: libapper/PkStrings.cpp:536
+#: libapper/PkStrings.cpp:546
 msgid "Lock required"
 msgstr "Užrakinimas privalomas"
 
-#: libapper/PkStrings.cpp:538
+#: libapper/PkStrings.cpp:548
 msgid "Unknown error"
 msgstr "Nežinoma klaida"
 
-#: libapper/PkStrings.cpp:548
+#: libapper/PkStrings.cpp:558
 msgid ""
 "There is no network connection available.\n"
 "Please check your connection settings and try again"
@@ -2224,7 +2167,7 @@ msgstr ""
 "Nėra ryšio su tinklu.\n"
 "Prašome patikrinti ryšio nustatymus ir bandyti iš naujo"
 
-#: libapper/PkStrings.cpp:551
+#: libapper/PkStrings.cpp:561
 msgid ""
 "The package list needs to be rebuilt.\n"
 "This should have been done by the backend automatically."
@@ -2232,7 +2175,7 @@ msgstr ""
 "Reikia iš naujo sukurti paketų sąrašą.\n"
 "Programinė sąsaja tai turėjo atlikti automatiškai."
 
-#: libapper/PkStrings.cpp:554
+#: libapper/PkStrings.cpp:564
 msgid ""
 "The service that is responsible for handling user requests is out of "
 "memory.\n"
@@ -2242,11 +2185,11 @@ msgstr ""
 "Prašome užverti kai kurias daug atminties naudojančias programas arba "
 "paleisti kompiuterį iš naujo."
 
-#: libapper/PkStrings.cpp:557
+#: libapper/PkStrings.cpp:567
 msgid "A thread could not be created to service the user request."
 msgstr "Naudotojo užklausai patenkinti nepavyko sukurti programos gijos."
 
-#: libapper/PkStrings.cpp:559
+#: libapper/PkStrings.cpp:569
 msgid ""
 "The action is not supported by this backend.\n"
 "Please report a bug as this should not have happened."
@@ -2254,7 +2197,7 @@ msgstr ""
 "Programinė sąsaja nepalaiko šio veiksmo.\n"
 "Prašome pranešti apie šią programos klaidą, taip neturėtų būti."
 
-#: libapper/PkStrings.cpp:562
+#: libapper/PkStrings.cpp:572
 msgid ""
 "A problem that we were not expecting has occurred.\n"
 "Please report this bug with the error description."
@@ -2262,7 +2205,7 @@ msgstr ""
 "Kilo netikėta problema.\n"
 "Prašome pranešti apie šią programos klaidą ir pateikti klaidos aprašymą."
 
-#: libapper/PkStrings.cpp:565
+#: libapper/PkStrings.cpp:575
 msgid ""
 "A security trust relationship could not be made with the software origin.\n"
 "Please check your software signature settings."
@@ -2270,12 +2213,12 @@ msgstr ""
 "Nepavyko nustatyti pasitikėjimo programos šaltiniu santykio.\n"
 "Prašome patikrinti Jūsų programinės įrangos parašų nustatymus."
 
-#: libapper/PkStrings.cpp:568
+#: libapper/PkStrings.cpp:578
 msgid ""
 "The package that is trying to be removed or updated is not already installed."
 msgstr "Paketas, kurį bandote pašalinti arba atnaujinti, išvis nėra įdiegtas."
 
-#: libapper/PkStrings.cpp:570
+#: libapper/PkStrings.cpp:580
 msgid ""
 "The package that is being modified was not found on your system or in any "
 "software origin."
@@ -2283,11 +2226,11 @@ msgstr ""
 "Nei jūsų sistemoje, nei bet kurioje programų repozitorijoje nepavyko rasti "
 "paketo, kurį bandote modifikuoti."
 
-#: libapper/PkStrings.cpp:572
+#: libapper/PkStrings.cpp:582
 msgid "The package that is trying to be installed is already installed."
 msgstr "Paketas, kurį bandote įdiegti, ir taip yra įdiegtas."
 
-#: libapper/PkStrings.cpp:574
+#: libapper/PkStrings.cpp:584
 msgid ""
 "The package download failed.\n"
 "Please check your network connectivity."
@@ -2295,7 +2238,7 @@ msgstr ""
 "Nepavyko atsisiųsti paketo.\n"
 "Prašome patikrinti, ar turite ryšį su tinklu."
 
-#: libapper/PkStrings.cpp:577
+#: libapper/PkStrings.cpp:587
 msgid ""
 "The group type was not found.\n"
 "Please check your group list and try again."
@@ -2303,7 +2246,7 @@ msgstr ""
 "Nepavyko rasti grupės tipo.\n"
 "Prašome patikrinti savo grupių sąrašą ir bandyti iš naujo."
 
-#: libapper/PkStrings.cpp:580
+#: libapper/PkStrings.cpp:590
 msgid ""
 "The group list could not be loaded.\n"
 "Refreshing your cache may help, although this is normally a software origin "
@@ -2313,7 +2256,7 @@ msgstr ""
 "Gali būti, kad problemą padės išspręsti paketų sąrašų atnaujinimas, nors "
 "dažniausiai šios problemos priežastis glūdi repozitorijose."
 
-#: libapper/PkStrings.cpp:584
+#: libapper/PkStrings.cpp:594
 msgid ""
 "A package dependency could not be found.\n"
 "More information is available in the detailed report."
@@ -2321,11 +2264,11 @@ msgstr ""
 "Nepavyko rasti paketo priklausomybių.\n"
 "Detaliame pranešime yra daugiau informacijos."
 
-#: libapper/PkStrings.cpp:587
+#: libapper/PkStrings.cpp:597
 msgid "The search filter was not correctly formed."
 msgstr "Paieškos filtras nebuvo teisingai suformuotas."
 
-#: libapper/PkStrings.cpp:589
+#: libapper/PkStrings.cpp:599
 msgid ""
 "The package identifier was not well formed when sent to the system daemon.\n"
 "This normally indicates an internal bug and should be reported."
@@ -2334,7 +2277,7 @@ msgstr ""
 "suformuotas.\n"
 "Dažniausiai tai reiškia vidinę programos klaidą, apie kurią būtina pranešti."
 
-#: libapper/PkStrings.cpp:592
+#: libapper/PkStrings.cpp:602
 msgid ""
 "An error occurred while running the transaction.\n"
 "More information is available in the detailed report."
@@ -2342,7 +2285,7 @@ msgstr ""
 "Vykdant operaciją įvyko klaida.\n"
 "Daugiau informacijos rasite detaliame pranešime."
 
-#: libapper/PkStrings.cpp:595
+#: libapper/PkStrings.cpp:605
 msgid ""
 "The remote software origin name was not found.\n"
 "You may need to enable an item in Software Origins."
@@ -2350,15 +2293,15 @@ msgstr ""
 "Programos nepavyko rasti nutolusiuose programinės įrangos šaltiniuose.\n"
 "Gali būti, kad nėra įjungtas reikiamas programinės įrangos šaltinis."
 
-#: libapper/PkStrings.cpp:598
+#: libapper/PkStrings.cpp:608
 msgid "Removing a protected system package is not allowed."
 msgstr "Negalima pašalinti apsaugoto sistemos paketo."
 
-#: libapper/PkStrings.cpp:600
+#: libapper/PkStrings.cpp:610
 msgid "The task was canceled successfully and no packages were changed."
 msgstr "Procesas nutrauktas sėkmingai, paketų pakeitimų neatlikta."
 
-#: libapper/PkStrings.cpp:602
+#: libapper/PkStrings.cpp:612
 msgid ""
 "The task was canceled successfully and no packages were changed.\n"
 "The backend did not exit cleanly."
@@ -2366,7 +2309,7 @@ msgstr ""
 "Užduotis sėkmingai nutraukta ir jokių paketų pakeitimų neatlikta.\n"
 "Programinė sąsaja baigė darbą netvarkingai."
 
-#: libapper/PkStrings.cpp:605
+#: libapper/PkStrings.cpp:615
 msgid ""
 "The native package configuration file could not be opened.\n"
 "Please make sure your system's configuration is valid."
@@ -2374,11 +2317,11 @@ msgstr ""
 "Nepavyko atverti vietinio paketo konfigūravimo failo.\n"
 "Prašome patikrinti, ar jūsų sistemos konfigūracija yra teisinga."
 
-#: libapper/PkStrings.cpp:608
+#: libapper/PkStrings.cpp:618
 msgid "The task is not safe to be cancelled at this time."
 msgstr "Užduotį šiuo metu nutraukti nesaugu."
 
-#: libapper/PkStrings.cpp:610
+#: libapper/PkStrings.cpp:620
 msgid ""
 "Source packages are not normally installed this way.\n"
 "Check the extension of the file you are trying to install."
@@ -2386,7 +2329,7 @@ msgstr ""
 "Šaltinių failai paprastai tokiu būdu nediegiami.\n"
 "Pasitikrinkite failo, kurį norite įdiegti, priesagą."
 
-#: libapper/PkStrings.cpp:613
+#: libapper/PkStrings.cpp:623
 msgid ""
 "The license agreement was not agreed to.\n"
 "To use this software you have to accept the license."
@@ -2394,7 +2337,7 @@ msgstr ""
 "Dar nesutikote su licencijos sutarties sąlygomis.\n"
 "Norėdami naudoti šią programą turite sutikti su jos licencija."
 
-#: libapper/PkStrings.cpp:616
+#: libapper/PkStrings.cpp:626
 msgid ""
 "Two packages provide the same file.\n"
 "This is usually due to mixing packages for different software origins."
@@ -2403,7 +2346,7 @@ msgstr ""
 "Dažniausiai taip nutinka naudojant paketus iš kelių skirtingų programinės "
 "įrangos šaltinių."
 
-#: libapper/PkStrings.cpp:619
+#: libapper/PkStrings.cpp:629
 msgid ""
 "Multiple packages exist that are not compatible with each other.\n"
 "This is usually due to mixing packages from different software origins."
@@ -2412,7 +2355,7 @@ msgstr ""
 "Dažniausiai taip nutinka naudojant paketus iš kelių skirtingų programinės "
 "įrangos šaltinių."
 
-#: libapper/PkStrings.cpp:622
+#: libapper/PkStrings.cpp:632
 msgid ""
 "There was a (possibly temporary) problem connecting to a software origins.\n"
 "Please check the detailed error for further details."
@@ -2420,7 +2363,7 @@ msgstr ""
 "Nepavyko prisijungti prie programinės įrangos šaltinių (galbūt laikinai).\n"
 "Peržiūrėkite detalų problemos aprašymą."
 
-#: libapper/PkStrings.cpp:625
+#: libapper/PkStrings.cpp:635
 msgid ""
 "Failed to initialize packaging backend.\n"
 "This may occur if other packaging tools are being used simultaneously."
@@ -2429,7 +2372,7 @@ msgstr ""
 "Taip paprastai atsitinka, kai kitos programos tuo pačiu metu naudoja paketų "
 "tvarkyklę."
 
-#: libapper/PkStrings.cpp:628
+#: libapper/PkStrings.cpp:638
 msgid ""
 "Failed to close down the backend instance.\n"
 "This error can normally be ignored."
@@ -2437,7 +2380,7 @@ msgstr ""
 "Nepavyko išjungti paketų tvarkytuvės.\n"
 "Paprastai galima nekreipti dėmesio į šią klaidą."
 
-#: libapper/PkStrings.cpp:631
+#: libapper/PkStrings.cpp:641
 msgid ""
 "Cannot get the exclusive lock on the packaging backend.\n"
 "Please close any other legacy packaging tools that may be open."
@@ -2445,15 +2388,15 @@ msgstr ""
 "Nepavyko gauti išskirtinių teisių į paketų tvarkytuvę.\n"
 "Uždarykite visas kitas atnaujinimo/diegimo programas."
 
-#: libapper/PkStrings.cpp:634
+#: libapper/PkStrings.cpp:644
 msgid "None of the selected packages could be updated."
 msgstr "Nei vienas iš pažymėtų paketų negali būti atnaujintas."
 
-#: libapper/PkStrings.cpp:636
+#: libapper/PkStrings.cpp:646
 msgid "The repository configuration could not be modified."
 msgstr "Nepavyko pakeisti repozitorijos konfigūracijos."
 
-#: libapper/PkStrings.cpp:638
+#: libapper/PkStrings.cpp:648
 msgid ""
 "Installing the local file failed.\n"
 "More information is available in the detailed report."
@@ -2461,11 +2404,11 @@ msgstr ""
 "Vietinio failo diegimas nepavyko.\n"
 "Detaliame pranešime rasite daugiau informacijos."
 
-#: libapper/PkStrings.cpp:641
+#: libapper/PkStrings.cpp:651
 msgid "The package signature could not be verified."
 msgstr "Nepavyko patikrinti paketo parašo."
 
-#: libapper/PkStrings.cpp:643
+#: libapper/PkStrings.cpp:653
 msgid ""
 "The package signature was missing and this package is untrusted.\n"
 "This package was not signed with a GPG key when created."
@@ -2473,11 +2416,11 @@ msgstr ""
 "Paketo parašo nėra, ir šis paketas nėra patikimas.\n"
 "Paketas nebuvo pasirašytas GPG raktu jį sukūrus."
 
-#: libapper/PkStrings.cpp:646
+#: libapper/PkStrings.cpp:656
 msgid "Repository configuration was invalid and could not be read."
 msgstr "Repozitorijų konfigūracija neteisinga, jos nepavyko perskaityti."
 
-#: libapper/PkStrings.cpp:648
+#: libapper/PkStrings.cpp:658
 msgid ""
 "The package you are attempting to install is not valid.\n"
 "The package file could be corrupt, or not a proper package."
@@ -2485,7 +2428,7 @@ msgstr ""
 "Bandomas įdiegti paketas nėra tinkamas.\n"
 "Paketo failas gali būti sugadintas, o gal būt tai iš tiesų nėra paketas."
 
-#: libapper/PkStrings.cpp:651
+#: libapper/PkStrings.cpp:661
 msgid ""
 "Installation of this package was prevented by your packaging system's "
 "configuration."
@@ -2493,17 +2436,17 @@ msgstr ""
 "Paketo įdiegti nepavyko dėl jūsų kompiuterio paketų valdymo sistemos "
 "konfigūracijos."
 
-#: libapper/PkStrings.cpp:653
+#: libapper/PkStrings.cpp:663
 msgid ""
 "The package that was downloaded is corrupt and needs to be downloaded again."
 msgstr "Atsisiųstas paketas yra sugadintas, jį teks atsisiųsti iš naujo."
 
-#: libapper/PkStrings.cpp:655
+#: libapper/PkStrings.cpp:665
 msgid ""
 "All of the packages selected for install are already installed on the system."
 msgstr "Visi diegimui pažymėti paketai jau yra įdiegti sistemoje."
 
-#: libapper/PkStrings.cpp:657
+#: libapper/PkStrings.cpp:667
 msgid ""
 "The specified file could not be found on the system.\n"
 "Check that the file still exists and has not been deleted."
@@ -2511,7 +2454,7 @@ msgstr ""
 "Nurodyto failo sistemoje nepavyko rasti.\n"
 "Patikrinkite ar failas vis dar egzistuoja, ar nebuvo ištrintas."
 
-#: libapper/PkStrings.cpp:660
+#: libapper/PkStrings.cpp:670
 msgid ""
 "Required data could not be found on any of the configured software origins.\n"
 "There were no more download mirrors that could be tried."
@@ -2520,7 +2463,7 @@ msgstr ""
 "programinės įrangos šaltinių.\n"
 "Daugiau nebėra atsisiuntimo veidrodžių, kuriuos būtų galima pamėginti."
 
-#: libapper/PkStrings.cpp:663
+#: libapper/PkStrings.cpp:673
 msgid ""
 "Required upgrade data could not be found in any of the configured software "
 "origins.\n"
@@ -2530,12 +2473,12 @@ msgstr ""
 "programinės įrangos šaltinių.\n"
 "Distributyvo atnaujinimų sąrašas bus nepasiekiamas."
 
-#: libapper/PkStrings.cpp:666
+#: libapper/PkStrings.cpp:676
 msgid ""
 "The package that is trying to be installed is incompatible with this system."
 msgstr "Bandomas įdiegti paketas nėra suderinamas su šia sistema."
 
-#: libapper/PkStrings.cpp:668
+#: libapper/PkStrings.cpp:678
 msgid ""
 "There is insufficient space on the device.\n"
 "Free some space on the system disk to perform this operation."
@@ -2543,13 +2486,13 @@ msgstr ""
 "Įrenginyje neužtenka vietos.\n"
 "Norėdami įvykdyti operaciją, atlaisvinkite dalį vietos sistemos diske."
 
-#: libapper/PkStrings.cpp:671
+#: libapper/PkStrings.cpp:681
 msgid "Additional media is required to complete the transaction."
 msgstr ""
 "Norit užbaigti perdavimą reikia papildomų išorinių šaltinių (pvz. "
 "kompaktinio disko)"
 
-#: libapper/PkStrings.cpp:673
+#: libapper/PkStrings.cpp:683
 msgid ""
 "You have failed to provide correct authentication.\n"
 "Please check any passwords or account settings."
@@ -2557,7 +2500,7 @@ msgstr ""
 "Nenurodėte teisingų autentifikacijos duomenų.\n"
 "Patikrinkite slaptažodžius ir jūsų prieigos nustatymus."
 
-#: libapper/PkStrings.cpp:676
+#: libapper/PkStrings.cpp:686
 msgid ""
 "The specified update could not be found.\n"
 "It could have already been installed or no longer available on the remote "
@@ -2566,27 +2509,27 @@ msgstr ""
 "Nepavyko rasti nurodyto atnaujinimo.\n"
 "Jis arba jau įdiegtas, arba daugiau nebe pateikiamas atnaujinimo serveryje."
 
-#: libapper/PkStrings.cpp:679
+#: libapper/PkStrings.cpp:689
 msgid "The package could not be installed from untrusted origin."
 msgstr "Negalima diegti paketo iš nepatikimo šaltinio."
 
-#: libapper/PkStrings.cpp:681
+#: libapper/PkStrings.cpp:691
 msgid "The package could not be updated from untrusted origin."
 msgstr "Negalima atnaujinti paketo iš nepatikimo šaltinio."
 
-#: libapper/PkStrings.cpp:683
+#: libapper/PkStrings.cpp:693
 msgid "The file list is not available for this package."
 msgstr "Šis paketas neturi failų sąrašo."
 
-#: libapper/PkStrings.cpp:685
+#: libapper/PkStrings.cpp:695
 msgid "The information about what requires this package could not be obtained."
 msgstr "Nepavyko gauti informacijos apie tai, kas naudoja šį paketą."
 
-#: libapper/PkStrings.cpp:687
+#: libapper/PkStrings.cpp:697
 msgid "The specified software origin could not be disabled."
 msgstr "Nepavyko išjungti nurodytą programinės įrangos šaltinį."
 
-#: libapper/PkStrings.cpp:689
+#: libapper/PkStrings.cpp:699
 msgid ""
 "The download could not be done automatically and should be done manually.\n"
 "More information is available in the detailed report."
@@ -2595,7 +2538,7 @@ msgstr ""
 "rankiniu būdu.\n"
 "Detaliame pranešime yra daugiau informacijos."
 
-#: libapper/PkStrings.cpp:692
+#: libapper/PkStrings.cpp:702
 msgid ""
 "One of the selected packages failed to configure correctly.\n"
 "More information is available in the detailed report."
@@ -2603,7 +2546,7 @@ msgstr ""
 "Nepavyko teisingai sukonfigūruoti vieno iš pažymėtų paketų.\n"
 "Detaliame pranešime rasite daugiau informacijos."
 
-#: libapper/PkStrings.cpp:695
+#: libapper/PkStrings.cpp:705
 msgid ""
 "One of the selected packages failed to build correctly.\n"
 "More information is available in the detailed report."
@@ -2611,7 +2554,7 @@ msgstr ""
 "Nepavyko teisingai sukurti vieno iš pažymėtų paketų.\n"
 "Detaliame pranešime rasite daugiau informacijos."
 
-#: libapper/PkStrings.cpp:698
+#: libapper/PkStrings.cpp:708
 msgid ""
 "One of the selected packages failed to install correctly.\n"
 "More information is available in the detailed report."
@@ -2619,7 +2562,7 @@ msgstr ""
 "Nepavyko teisingai įdiegti vieno iš pažymėtų paketų.\n"
 "Detaliame pranešime rasite daugiau informacijos."
 
-#: libapper/PkStrings.cpp:701
+#: libapper/PkStrings.cpp:711
 msgid ""
 "One of the selected packages failed to be removed correctly.\n"
 "More information is available in the detailed report."
@@ -2627,7 +2570,7 @@ msgstr ""
 "Nepavyko teisingai pašalinti vieno iš pažymėtų paketų.\n"
 "Detaliame pranešime rasite daugiau informacijos."
 
-#: libapper/PkStrings.cpp:704
+#: libapper/PkStrings.cpp:714
 msgid ""
 "A program is running that has to be closed before the update can proceed.\n"
 "More information is available in the detailed report."
@@ -2636,37 +2579,37 @@ msgstr ""
 "galima sėkmingai tęsti atnaujinimą.\n"
 "Daugiau informacijos rasite detaliame pranešime."
 
-#: libapper/PkStrings.cpp:707
+#: libapper/PkStrings.cpp:717
 msgid "The package database was changed while the request was running."
 msgstr "Paketų duomenų bazė pasikeitė tuo metu, kai buvo vykdoma užklausa."
 
-#: libapper/PkStrings.cpp:709
+#: libapper/PkStrings.cpp:719
 msgid "The virtual provide type is not supported by this system."
 msgstr "Ši sistema nepalaiko virtualaus teikiamo tipo."
 
-#: libapper/PkStrings.cpp:711
+#: libapper/PkStrings.cpp:721
 msgid "The install root is invalid. Please contact your administrator."
 msgstr "Neteisinga diegimo šaknis. Susisiekite su jūsų administratoriumi."
 
-#: libapper/PkStrings.cpp:713
+#: libapper/PkStrings.cpp:723
 msgid "The list of software could not be downloaded."
 msgstr "Nepavyko atsiųsti programinės įrangos sąrašo."
 
-#: libapper/PkStrings.cpp:715
+#: libapper/PkStrings.cpp:725
 msgid ""
 "The transaction has been cancelled and will be retried when the system is "
 "idle."
 msgstr "Perdavimas buvo atšauktas ir bus kartojamas, kai sistema bus laisva."
 
-#: libapper/PkStrings.cpp:717
+#: libapper/PkStrings.cpp:727
 msgid "A previous package management transaction was interrupted."
 msgstr "Ankstesnė paketų tvarkymo operacija buvo pertraukta."
 
-#: libapper/PkStrings.cpp:719
+#: libapper/PkStrings.cpp:729
 msgid "A package manager lock is required."
 msgstr "Paketų tvarkyklės užrakinimas yra privalomas."
 
-#: libapper/PkStrings.cpp:721
+#: libapper/PkStrings.cpp:731
 msgid ""
 "Unknown error, please report a bug.\n"
 "More information is available in the detailed report."
@@ -2674,236 +2617,236 @@ msgstr ""
 "Nežinoma klaida, prašome užpildyti pranešimą apie programos klaidą.\n"
 "Daugiau informacijos rasite detaliajame pranešime."
 
-#: libapper/PkStrings.cpp:732
+#: libapper/PkStrings.cpp:742
 msgctxt "The group type"
 msgid "Accessibility"
 msgstr "Pritaikymas neįgaliesiems"
 
-#: libapper/PkStrings.cpp:734
+#: libapper/PkStrings.cpp:744
 msgctxt "The group type"
 msgid "Accessories"
 msgstr "Pagalbininkai"
 
-#: libapper/PkStrings.cpp:736
+#: libapper/PkStrings.cpp:746
 msgctxt "The group type"
 msgid "Education"
 msgstr "Švietimas"
 
-#: libapper/PkStrings.cpp:738
+#: libapper/PkStrings.cpp:748
 msgctxt "The group type"
 msgid "Games"
 msgstr "Žaidimai"
 
-#: libapper/PkStrings.cpp:740
+#: libapper/PkStrings.cpp:750
 msgctxt "The group type"
 msgid "Graphics"
 msgstr "Grafika"
 
-#: libapper/PkStrings.cpp:742
+#: libapper/PkStrings.cpp:752
 msgctxt "The group type"
 msgid "Internet"
 msgstr "Internetas"
 
-#: libapper/PkStrings.cpp:744
+#: libapper/PkStrings.cpp:754
 msgctxt "The group type"
 msgid "Office"
 msgstr "Biuras"
 
-#: libapper/PkStrings.cpp:746
+#: libapper/PkStrings.cpp:756
 msgctxt "The group type"
 msgid "Others"
 msgstr "Kita"
 
-#: libapper/PkStrings.cpp:748
+#: libapper/PkStrings.cpp:758
 msgctxt "The group type"
 msgid "Development"
 msgstr "Programavimas"
 
-#: libapper/PkStrings.cpp:750
+#: libapper/PkStrings.cpp:760
 msgctxt "The group type"
 msgid "Multimedia"
 msgstr "Multimedia"
 
-#: libapper/PkStrings.cpp:752
+#: libapper/PkStrings.cpp:762
 msgctxt "The group type"
 msgid "System"
 msgstr "Sistema"
 
-#: libapper/PkStrings.cpp:754
+#: libapper/PkStrings.cpp:764
 msgctxt "The group type"
 msgid "GNOME desktop"
 msgstr "GNOME darbastalis"
 
-#: libapper/PkStrings.cpp:756
+#: libapper/PkStrings.cpp:766
 msgctxt "The group type"
 msgid "KDE desktop"
 msgstr "KDE darbastalis"
 
-#: libapper/PkStrings.cpp:758
+#: libapper/PkStrings.cpp:768
 msgctxt "The group type"
 msgid "XFCE desktop"
 msgstr "XFCE darbastalis"
 
-#: libapper/PkStrings.cpp:760
+#: libapper/PkStrings.cpp:770
 msgctxt "The group type"
 msgid "Other desktops"
 msgstr "Kiti darbastaliai"
 
-#: libapper/PkStrings.cpp:762
+#: libapper/PkStrings.cpp:772
 msgctxt "The group type"
 msgid "Publishing"
 msgstr "Publikavimas"
 
-#: libapper/PkStrings.cpp:764
+#: libapper/PkStrings.cpp:774
 msgctxt "The group type"
 msgid "Servers"
 msgstr "Serveriai"
 
-#: libapper/PkStrings.cpp:766
+#: libapper/PkStrings.cpp:776
 msgctxt "The group type"
 msgid "Fonts"
 msgstr "Šriftai"
 
-#: libapper/PkStrings.cpp:768
+#: libapper/PkStrings.cpp:778
 msgctxt "The group type"
 msgid "Admin tools"
 msgstr "Administravimo įrankiai"
 
-#: libapper/PkStrings.cpp:770
+#: libapper/PkStrings.cpp:780
 msgctxt "The group type"
 msgid "Legacy"
 msgstr "Pasenusios programos"
 
-#: libapper/PkStrings.cpp:772
+#: libapper/PkStrings.cpp:782
 msgctxt "The group type"
 msgid "Localization"
 msgstr "Lokalizavimas"
 
-#: libapper/PkStrings.cpp:774
+#: libapper/PkStrings.cpp:784
 msgctxt "The group type"
 msgid "Virtualization"
 msgstr "Virtualizacija"
 
-#: libapper/PkStrings.cpp:776
+#: libapper/PkStrings.cpp:786
 msgctxt "The group type"
 msgid "Security"
 msgstr "Saugumas"
 
-#: libapper/PkStrings.cpp:778
+#: libapper/PkStrings.cpp:788
 msgctxt "The group type"
 msgid "Power management"
 msgstr "Maitinimo valdymas"
 
-#: libapper/PkStrings.cpp:780
+#: libapper/PkStrings.cpp:790
 msgctxt "The group type"
 msgid "Communication"
 msgstr "Bendravimas"
 
-#: libapper/PkStrings.cpp:782
+#: libapper/PkStrings.cpp:792
 msgctxt "The group type"
 msgid "Network"
 msgstr "Tinklas"
 
-#: libapper/PkStrings.cpp:784
+#: libapper/PkStrings.cpp:794
 msgctxt "The group type"
 msgid "Maps"
 msgstr "Žemėlapiai"
 
-#: libapper/PkStrings.cpp:786
+#: libapper/PkStrings.cpp:796
 msgctxt "The group type"
 msgid "Software sources"
 msgstr "Programinės įrangos šaltiniai"
 
-#: libapper/PkStrings.cpp:788
+#: libapper/PkStrings.cpp:798
 msgctxt "The group type"
 msgid "Science"
 msgstr "Mokslas"
 
-#: libapper/PkStrings.cpp:790
+#: libapper/PkStrings.cpp:800
 msgctxt "The group type"
 msgid "Documentation"
 msgstr "Dokumentacija"
 
-#: libapper/PkStrings.cpp:792
+#: libapper/PkStrings.cpp:802
 msgctxt "The group type"
 msgid "Electronics"
 msgstr "Elektronika"
 
-#: libapper/PkStrings.cpp:794
+#: libapper/PkStrings.cpp:804
 msgctxt "The group type"
 msgid "Package collections"
 msgstr "Paketų kolekcijos"
 
-#: libapper/PkStrings.cpp:796
+#: libapper/PkStrings.cpp:806
 msgctxt "The group type"
 msgid "Vendor"
 msgstr "Gamintojas"
 
-#: libapper/PkStrings.cpp:798
+#: libapper/PkStrings.cpp:808
 msgctxt "The group type"
 msgid "Newest packages"
 msgstr "Naujausi paketai"
 
-#: libapper/PkStrings.cpp:800
+#: libapper/PkStrings.cpp:810
 msgctxt "The group type"
 msgid "Unknown group"
 msgstr "Nežinoma grupė"
 
-#: libapper/PkStrings.cpp:811
+#: libapper/PkStrings.cpp:821
 msgctxt "The type of update"
 msgid "Trivial update"
 msgstr "Nereikšmingas atnaujinimas"
 
-#: libapper/PkStrings.cpp:813
+#: libapper/PkStrings.cpp:823
 msgctxt "The type of update"
 msgid "Normal update"
 msgstr "Įprastas atnaujinimas"
 
-#: libapper/PkStrings.cpp:815
+#: libapper/PkStrings.cpp:825
 msgctxt "The type of update"
 msgid "Important update"
 msgstr "Svarbus atnaujinimas"
 
-#: libapper/PkStrings.cpp:817
+#: libapper/PkStrings.cpp:827
 msgctxt "The type of update"
 msgid "Security update"
 msgstr "Saugumo atnaujinimai"
 
-#: libapper/PkStrings.cpp:819
+#: libapper/PkStrings.cpp:829
 msgctxt "The type of update"
 msgid "Bug fix update"
 msgstr "Atnaujinimas klaidų ištaisymui"
 
-#: libapper/PkStrings.cpp:821
+#: libapper/PkStrings.cpp:831
 msgctxt "The type of update"
 msgid "Enhancement update"
 msgstr "Patobulinantis atnaujinimas"
 
-#: libapper/PkStrings.cpp:823
+#: libapper/PkStrings.cpp:833
 msgctxt "The type of update"
 msgid "Blocked update"
 msgstr "Užblokuotas atnaujinimas"
 
-#: libapper/PkStrings.cpp:826
+#: libapper/PkStrings.cpp:836
 msgctxt "The type of update"
 msgid "Installed"
 msgstr "Įdiegta"
 
-#: libapper/PkStrings.cpp:829
+#: libapper/PkStrings.cpp:839
 msgctxt "The type of update"
 msgid "Available"
 msgstr "Pasiekiamas"
 
-#: libapper/PkStrings.cpp:831
+#: libapper/PkStrings.cpp:841
 msgctxt "The type of update"
 msgid "Unknown update"
 msgstr "Nežinomas atnaujinimas"
 
-#: libapper/PkStrings.cpp:842
+#: libapper/PkStrings.cpp:852
 msgid "No Updates Available"
 msgstr "Nėra pasiekiamų atnaujinimų"
 
-#: libapper/PkStrings.cpp:845
+#: libapper/PkStrings.cpp:855
 #, kde-format
 msgctxt "Some updates were selected on the view"
 msgid "1 Update Selected"
@@ -2913,7 +2856,7 @@ msgstr[1] "Pažymėti %1 atnaujinimai"
 msgstr[2] "Pažymėta %1 atnaujinimų"
 msgstr[3] "Pažymėtas %1 atnaujinimas"
 
-#: libapper/PkStrings.cpp:849
+#: libapper/PkStrings.cpp:859
 #, kde-format
 msgctxt "Some updates are being shown on the screen"
 msgid "1 Update"
@@ -2923,13 +2866,13 @@ msgstr[1] "%1 atnaujinimai"
 msgstr[2] "%1 atnaujinimų"
 msgstr[3] "%1 atnaujinimas"
 
-#: libapper/PkStrings.cpp:852
+#: libapper/PkStrings.cpp:862
 #, kde-format
 msgctxt "Type of update, in the case it's just an update"
 msgid "%1, %2"
 msgstr "%1%, %2"
 
-#: libapper/PkStrings.cpp:853
+#: libapper/PkStrings.cpp:863
 #, kde-format
 msgctxt "Part of: %1 Updates, %1 Selected"
 msgid "%1 Update"
@@ -2939,7 +2882,7 @@ msgstr[1] "%1 atnaujinimai"
 msgstr[2] "%1 atnaujinimų"
 msgstr[3] "%1 atnaujinimas"
 
-#: libapper/PkStrings.cpp:854
+#: libapper/PkStrings.cpp:864
 #, kde-format
 msgctxt "Part of: %1 Updates, %1 Selected"
 msgid "%1 Selected"
@@ -2949,11 +2892,11 @@ msgstr[1] "%1 pažymėti"
 msgstr[2] "%1 pažymėtų"
 msgstr[3] "%1 pažymėtas"
 
-#: libapper/PkStrings.cpp:858
+#: libapper/PkStrings.cpp:868
 msgid "No Packages"
 msgstr "Nėra paketų"
 
-#: libapper/PkStrings.cpp:860
+#: libapper/PkStrings.cpp:870
 #, kde-format
 msgid "1 Package"
 msgid_plural "%1 Packages"
@@ -2962,234 +2905,218 @@ msgstr[1] "%1 paketai"
 msgstr[2] "%1 paketų"
 msgstr[3] "%1 paketas"
 
-#: libapper/PkStrings.cpp:868
+#: libapper/PkStrings.cpp:878
 msgid "No restart is necessary"
 msgstr "Po šio atnaujinimo kompiuterio iš naujo paleisti nereikia"
 
-#: libapper/PkStrings.cpp:870
+#: libapper/PkStrings.cpp:880
 msgid "You will be required to restart this application"
 msgstr "Turite paleisti programą iš naujo"
 
-#: libapper/PkStrings.cpp:872
+#: libapper/PkStrings.cpp:882
 msgid "You will be required to log out and back in"
 msgstr "Turite išsiregistruoti ir prisiregistruoti iš naujo"
 
-#: libapper/PkStrings.cpp:874
+#: libapper/PkStrings.cpp:884
 msgid "A restart will be required"
 msgstr "Reikės perkrauti kompiuterį"
 
-#: libapper/PkStrings.cpp:876
+#: libapper/PkStrings.cpp:886
 msgid "You will be required to log out and back in due to a security update."
 msgstr ""
 "Dėl saugumo patobulinimų, po šio atnaujinimo turėsite išsiregistruoti ir "
 "prisiregistruoti iš naujo."
 
-#: libapper/PkStrings.cpp:878
+#: libapper/PkStrings.cpp:888
 msgid "A restart will be required due to a security update."
 msgstr "Dėl saugumo patobulinimo, turėsite perkrauti kompiuterį."
 
-#: libapper/PkStrings.cpp:891
+#: libapper/PkStrings.cpp:901
 msgid "No restart is required"
 msgstr "Nereikia paleisti sistemos iš naujo"
 
-#: libapper/PkStrings.cpp:893
+#: libapper/PkStrings.cpp:903
 msgid "A restart is required"
 msgstr "Reikia perkrauti sistemą"
 
-#: libapper/PkStrings.cpp:895
+#: libapper/PkStrings.cpp:905
 msgid "You need to log out and log back in"
 msgstr "Turite išsiregistruoti ir prisiregistruoti iš naujo"
 
-#: libapper/PkStrings.cpp:897
+#: libapper/PkStrings.cpp:907
 msgid "You need to restart the application"
 msgstr "Turite paleisti programą iš naujo"
 
-#: libapper/PkStrings.cpp:899
+#: libapper/PkStrings.cpp:909
 msgid "You need to log out and log back in to remain secure."
 msgstr ""
 "Tam, kad liktumėte saugūs, turite išsiregistruoti ir prisiregistruoti iš "
 "naujo."
 
-#: libapper/PkStrings.cpp:901
+#: libapper/PkStrings.cpp:911
 msgid "A restart is required to remain secure."
 msgstr "Tam, kad liktumėte saugūs, turite perkrauti sistemą."
 
-#: libapper/PkStrings.cpp:914
+#: libapper/PkStrings.cpp:924
 msgid "Stable"
 msgstr "Stabilus"
 
-#: libapper/PkStrings.cpp:916
+#: libapper/PkStrings.cpp:926
 msgid "Unstable"
 msgstr "Nestabilus"
 
-#: libapper/PkStrings.cpp:918
+#: libapper/PkStrings.cpp:928
 msgid "Testing"
 msgstr "Testavimas"
 
-#: libapper/PkStrings.cpp:931
+#: libapper/PkStrings.cpp:941
 #, kde-format
 msgid "Please insert the CD labeled '%1', and press continue."
 msgstr "Įdėkite kompaktinį (CD) diską pažymėtą „%1“ ir spauskite tęsti."
 
-#: libapper/PkStrings.cpp:933
+#: libapper/PkStrings.cpp:943
 #, kde-format
 msgid "Please insert the DVD labeled '%1', and press continue."
 msgstr "Įdėkite kompaktinį (DVD) diską pažymėtą „%1“ ir spauskite tęsti."
 
-#: libapper/PkStrings.cpp:935
+#: libapper/PkStrings.cpp:945
 #, kde-format
 msgid "Please insert the disc labeled '%1', and press continue."
 msgstr "Įdėkite diską pažymėtą „%1“ ir spauskite tęsti."
 
-#: libapper/PkStrings.cpp:937 libapper/PkStrings.cpp:940
+#: libapper/PkStrings.cpp:947 libapper/PkStrings.cpp:950
 #, kde-format
 msgid "Please insert the medium labeled '%1', and press continue."
 msgstr "Įdėkite duomenų šaltinį pažymėtą „%1“ ir spauskite tęsti."
 
-#: libapper/PkStrings.cpp:947
+#: libapper/PkStrings.cpp:957
 msgid "A mirror is possibly broken"
 msgstr "Tikriausiai sugedęs atsarginis duomenų šaltinis"
 
-#: libapper/PkStrings.cpp:949
+#: libapper/PkStrings.cpp:959
 msgid "The connection was refused"
 msgstr "Prisijungimas buvo atmestas"
 
-#: libapper/PkStrings.cpp:951
+#: libapper/PkStrings.cpp:961
 msgid "The parameter was invalid"
 msgstr "Neteisingas parametras"
 
-#: libapper/PkStrings.cpp:953
+#: libapper/PkStrings.cpp:963
 msgid "The priority was invalid"
 msgstr "Neteisingas prioritetas"
 
-#: libapper/PkStrings.cpp:955
+#: libapper/PkStrings.cpp:965
 msgid "Backend warning"
 msgstr "Tvarkyklės įspėjimas"
 
-#: libapper/PkStrings.cpp:957
+#: libapper/PkStrings.cpp:967
 msgid "Daemon warning"
 msgstr "Paslaugos įspėjimas"
 
-#: libapper/PkStrings.cpp:959
+#: libapper/PkStrings.cpp:969
 msgid "The package list cache is being rebuilt"
 msgstr "Perkuriamas paketų sąrašas"
 
-#: libapper/PkStrings.cpp:961
+#: libapper/PkStrings.cpp:971
 msgid "An untrusted package was installed"
 msgstr "Įdiegtas nepatikimas paketas"
 
-#: libapper/PkStrings.cpp:963
+#: libapper/PkStrings.cpp:973
 msgid "A newer package exists"
 msgstr "Yra naujesnis paketas"
 
-#: libapper/PkStrings.cpp:965
+#: libapper/PkStrings.cpp:975
 msgid "Could not find package"
 msgstr "Paketas nerastas"
 
-#: libapper/PkStrings.cpp:967
+#: libapper/PkStrings.cpp:977
 msgid "Configuration files were changed"
 msgstr "Pasikeitė konfigūraciniai failai"
 
-#: libapper/PkStrings.cpp:969
+#: libapper/PkStrings.cpp:979
 msgid "Package is already installed"
 msgstr "Paketas jau įdiegtas"
 
-#: libapper/PkStrings.cpp:971
+#: libapper/PkStrings.cpp:981
 msgid "Automatic cleanup is being ignored"
 msgstr "Automatinis apsikuopimas ignoruojamas"
 
-#: libapper/PkStrings.cpp:973
+#: libapper/PkStrings.cpp:983
 msgid "Software source download failed"
 msgstr "Nepavyko atsiųsti programų šaltinių"
 
-#: libapper/PkStrings.cpp:975
+#: libapper/PkStrings.cpp:985
 msgid "This software source is for developers only"
 msgstr "Šis programų šaltinis skirtas tik programuotojams"
 
-#: libapper/PkStrings.cpp:977
+#: libapper/PkStrings.cpp:987
 msgid "Other updates have been held back"
 msgstr "Kiti atnaujinimai buvo atidėti"
 
-#: libapper/PkStrings.cpp:991
+#: libapper/PkStrings.cpp:1001
 msgid "You do not have the necessary privileges to perform this action."
 msgstr "Šiam veiksmui atlikti neturite reikiamų teisių."
 
-#: libapper/PkStrings.cpp:993
+#: libapper/PkStrings.cpp:1003
 msgid "Could not get a transaction id from packagekitd."
 msgstr "Nepavyko gauti perdavimo ID iš packagekitd."
 
-#: libapper/PkStrings.cpp:995
+#: libapper/PkStrings.cpp:1005
 msgid "Cannot connect to this transaction id."
 msgstr "Nepavyksta prisijungti prie šio perdavimo id."
 
-#: libapper/PkStrings.cpp:997
+#: libapper/PkStrings.cpp:1007
 msgid "This action is unknown."
 msgstr "Nežinomas veiksmas."
 
-#: libapper/PkStrings.cpp:999
+#: libapper/PkStrings.cpp:1009
 msgid "The packagekitd service could not be started."
 msgstr "Nepavyko įjungti packagekitd paslaugos."
 
-#: libapper/PkStrings.cpp:1001
+#: libapper/PkStrings.cpp:1011
 msgid "The query is not valid."
 msgstr "Neteisinga užklausa."
 
-#: libapper/PkStrings.cpp:1003
+#: libapper/PkStrings.cpp:1013
 msgid "The file is not valid."
 msgstr "Neteisingas failas."
 
-#: libapper/PkStrings.cpp:1005
+#: libapper/PkStrings.cpp:1015
 msgid "This function is not yet supported."
 msgstr "Ši funkcija kol kas nepalaikoma."
 
-#: libapper/PkStrings.cpp:1007
+#: libapper/PkStrings.cpp:1017
 msgid "Could not talk to packagekitd."
 msgstr "Nepavyko susikalbėti su packagekitd."
 
-#: libapper/PkStrings.cpp:1009
+#: libapper/PkStrings.cpp:1019
 msgid "Error talking to packagekitd."
 msgstr "Klaida kalbant su packagekitd."
 
-#: libapper/PkStrings.cpp:1012 libapper/PkStrings.cpp:1015
+#: libapper/PkStrings.cpp:1022 libapper/PkStrings.cpp:1025
 msgid "An unknown error happened."
 msgstr "Įvyko nežinoma klaida"
 
-#: libapper/PkStrings.cpp:1029
+#: libapper/PkStrings.cpp:1039
 msgid "Your system is up to date"
 msgstr "Jūsų sistema pilnai atnaujinta"
 
-#: libapper/PkStrings.cpp:1031
+#: libapper/PkStrings.cpp:1041
 msgid "You have no updates"
 msgstr "Jūs neturite atnaujinimų"
 
-#: libapper/PkStrings.cpp:1033
+#: libapper/PkStrings.cpp:1043
 msgid "Last check for updates was more than a month ago"
 msgstr "Paskutinį kartą atnaujinimų ieškota daugiau nei prieš mėnesį"
 
-#: libapper/PkStrings.cpp:1041
+#: libapper/PkStrings.cpp:1051
 #, kde-format
 msgid "Verified %1 ago"
 msgstr "Patikrinta prieš %1"
 
-#: libapper/PkStrings.cpp:1043
+#: libapper/PkStrings.cpp:1053
 msgid "It's strongly recommended that you check for new updates now"
 msgstr "Patartina dabar patikrinti, ar nėra atnaujinimų"
-
-#: libapper/PkTransaction.cpp:118
-msgid "Current backend does not support installing files."
-msgstr "Šiuo metu naudojama programinė sąsaja nepalaiko failų įdiegimo."
-
-#: libapper/PkTransaction.cpp:131
-msgid "Current backend does not support installing packages."
-msgstr "Šiuo metu naudojama programinė sąsaja nepalaiko paketų įdiegimo."
-
-#: libapper/PkTransaction.cpp:145
-msgid "The current backend does not support removing packages."
-msgstr "Ši programinė sąsaja nepalaiko paketų šalinimo."
-
-#: libapper/PkTransaction.cpp:163
-msgid "The current backend does not support updating packages."
-msgstr "Dabartinė programinė sąsaja nepalaiko paketų atnaujinimo."
 
 #: libapper/PkTransaction.cpp:258
 msgid ""
@@ -3608,14 +3535,6 @@ msgstr "Diegti paketų failus"
 #: PkSession/PkRemovePackageByFiles.cpp:45
 msgid "You can drop more files in here"
 msgstr "Čia galite numesti daugiau failų"
-
-#: PkSession/PkInstallPackageFiles.cpp:52
-msgid "Not Supported"
-msgstr "Nepalaikoma"
-
-#: PkSession/PkInstallPackageFiles.cpp:53
-msgid "Your current backend does not support installing files"
-msgstr "Šiuo metu naudojama programinė sąsaja nepalaiko failų įdiegimo"
 
 #: PkSession/PkInstallPackageFiles.cpp:68
 #: PkSession/PkRemovePackageByFiles.cpp:66

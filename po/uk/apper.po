@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: apper\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-08-21 01:47+0000\n"
-"PO-Revision-Date: 2014-08-21 08:34+0300\n"
+"POT-Creation-Date: 2015-03-28 01:56+0000\n"
+"PO-Revision-Date: 2014-12-29 07:25+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
 "Language: uk\n"
@@ -190,7 +190,7 @@ msgstr "Фільтри"
 
 #. i18n: ectx: property (text), widget (QCheckBox, installedCB)
 #: Apper/BackendDetails.ui:365 ApperKCM/FiltersMenu.cpp:59
-#: libapper/PkStrings.cpp:381
+#: libapper/PkStrings.cpp:391
 msgid "Installed"
 msgstr "Встановлене"
 
@@ -358,7 +358,7 @@ msgstr[2] "Пакунки: %2"
 msgstr[3] "Пакунок: %2"
 
 #: apperd/TransactionWatcher.cpp:240 ApperKCM/TransactionModel.cpp:45
-#: AppSetup/SetupWizard.cpp:204
+#: AppSetup/SetupWizard.cpp:149
 msgid "Details"
 msgstr "Подробиці"
 
@@ -395,7 +395,7 @@ msgstr[3] "Виявлено одне оновлення"
 msgid "Review"
 msgstr "Переглянути"
 
-#: apperd/Updater.cpp:290 AppSetup/SetupWizard.cpp:339
+#: apperd/Updater.cpp:290 AppSetup/SetupWizard.cpp:260
 #: libapper/ApplicationsDelegate.cpp:40
 msgid "Install"
 msgstr "Встановити"
@@ -497,7 +497,7 @@ msgid "Software Origins"
 msgstr "Джерела програм"
 
 #. i18n: ectx: property (text), widget (QToolButton, backTB)
-#: ApperKCM/ApperKCM.ui:267 AppSetup/SetupWizard.cpp:153
+#: ApperKCM/ApperKCM.ui:267 AppSetup/SetupWizard.cpp:87
 msgid "Back"
 msgstr "Назад"
 
@@ -660,7 +660,7 @@ msgstr "Приховати пакунки, які не є пакунками п�
 msgid "Display"
 msgstr "Показ"
 
-#: ApperKCM/PackageDetails.cpp:87 AppSetup/SetupWizard.cpp:261
+#: ApperKCM/PackageDetails.cpp:87 AppSetup/SetupWizard.cpp:186
 msgid "Description"
 msgstr "Опис"
 
@@ -1037,174 +1037,105 @@ msgstr "Приблизний об’єм звантаження: %1"
 msgid "Check for new updates"
 msgstr "Знайти оновлення"
 
-#. i18n: ectx: property (text), widget (QRadioButton, acceptedRB)
-#: AppSetup/LicensePage.ui:98
-msgid "I agree to the above terms and conditions"
-msgstr "Погоджуюся з викладеними вище умовами користування"
-
-#. i18n: ectx: property (text), widget (QRadioButton, rejectedRB)
-#: AppSetup/LicensePage.ui:111
-msgid "I don't agree"
-msgstr "Не погоджуюся"
-
-#: AppSetup/main.cpp:34 AppSetup/main.cpp:35
+#: AppSetup/main.cpp:33 AppSetup/main.cpp:34
 msgid "KDE Application Installer"
 msgstr "Програма KDE для керування програмами"
 
-#: AppSetup/main.cpp:36
-msgid "(C) 2012, Matthias Klumpp"
-msgstr "© Matthias Klumpp, 2012"
+#: AppSetup/main.cpp:35
+msgid "(C) 2014, Matthias Klumpp"
+msgstr "© Matthias Klumpp, 2014"
 
-#: AppSetup/main.cpp:38
+#: AppSetup/main.cpp:37
 msgctxt "@info:credit"
 msgid "Daniel Nicoletti"
 msgstr "Daniel Nicoletti"
 
-#: AppSetup/main.cpp:38 AppSetup/main.cpp:40
+#: AppSetup/main.cpp:37 AppSetup/main.cpp:39
 msgid "Developer"
 msgstr "Розробник"
 
-#: AppSetup/main.cpp:40
+#: AppSetup/main.cpp:39
 msgctxt "@info:credit"
 msgid "Matthias Klumpp"
 msgstr "Matthias Klumpp"
 
-#: AppSetup/main.cpp:47
+#: AppSetup/main.cpp:46
 msgid "Show verbose information"
 msgstr "Показати докладні дані"
 
-#: AppSetup/main.cpp:48
+#: AppSetup/main.cpp:47
 msgid "IPK package filename"
 msgstr "Назва файла пакунка IPK"
 
-#: AppSetup/main.cpp:72
-msgid "Sorry, we didn't get an existing IPK package as parameter."
-msgstr "Вибачте, у параметрах не було передано жодних пакунків IPK."
+#: AppSetup/main.cpp:70
+msgid "We did not receive a path to an IPK package as parameter."
+msgstr "У параметрах не вказано шляху до пакунка IPK."
 
-#: AppSetup/main.cpp:73
+#: AppSetup/main.cpp:71
 msgid "Package not found!"
 msgstr "Пакунок не знайдено!"
 
-#: AppSetup/SetupWizard.cpp:88
-msgid "Installation finished!"
-msgstr "Встановлення завершено!"
-
-#: AppSetup/SetupWizard.cpp:89
-#, kde-format
-msgid "%1 has been installed successfully!"
-msgstr "%1 успішно встановлено!"
-
-#: AppSetup/SetupWizard.cpp:103 libapper/PkTransaction.cpp:118
-#: libapper/PkTransaction.cpp:131 libapper/PkTransaction.cpp:145
-#: libapper/PkTransaction.cpp:163
-msgid "Error"
-msgstr "Помилка"
-
-#: AppSetup/SetupWizard.cpp:104 AppSetup/SetupWizard.cpp:118
-msgid "An error occurred"
-msgstr "Сталася помилка"
-
-#: AppSetup/SetupWizard.cpp:151 libapper/Requirements.cpp:59
+#: AppSetup/SetupWizard.cpp:85 libapper/Requirements.cpp:59
 #: PkSession/SessionTask.cpp:71
 msgid "Continue"
 msgstr "Продовжити"
 
-#: AppSetup/SetupWizard.cpp:192
+#: AppSetup/SetupWizard.cpp:109
+msgid "Error"
+msgstr "Помилка"
+
+#: AppSetup/SetupWizard.cpp:110
+msgid "An error occurred"
+msgstr "Сталася помилка"
+
+#: AppSetup/SetupWizard.cpp:137
 msgid "Welcome!"
 msgstr "Вітаємо!"
 
-#: AppSetup/SetupWizard.cpp:193
+#: AppSetup/SetupWizard.cpp:138
 #, kde-format
 msgid "Welcome to the installation of %1!"
 msgstr "Вітаємо у майстрі встановлення %1!"
 
-#: AppSetup/SetupWizard.cpp:194
+#: AppSetup/SetupWizard.cpp:139
 msgid ""
-"Please be careful while installing 3rd-party applications.<br>They may "
+"Please be careful while installing a 3rd-party application.<br>It might "
 "eventually <b>damage</b> your system or have <b>malicious behaviour</b>, "
 "like spying out your passwords.<br>Please do only install this software if "
-"you <b>trust the publisher and the author</b> of it."
+"you <b>trust its publisher</b>."
 msgstr ""
 "Будь ласка, будьте обережні зі встановленням стороннього програмного "
 "забезпечення.<br>Встановлення цього програмного забезпечення може <b>завдати "
 "шкоди</b> вашій системі або <b>призвести до розповсюдження конфіденційних "
 "даних</b>, зокрема ваших паролів.<br>Будь ласка, встановлюйте стороннє "
-"програмне забезпечення, лише якщо <b>ви довіряєте розповсюджувачам або "
-"розробникам</b> цього програмного забезпечення."
+"програмне забезпечення, лише якщо <b>ви довіряєте розповсюджувачам</b> цього "
+"програмного забезпечення."
 
-#: AppSetup/SetupWizard.cpp:205
+#: AppSetup/SetupWizard.cpp:150
 msgid "Details about this installation"
 msgstr "Параметри цього встановлення"
 
-#: AppSetup/SetupWizard.cpp:242
-msgid "Install for all users"
-msgstr "Встановлення для всіх користувачів"
-
-#: AppSetup/SetupWizard.cpp:260
+#: AppSetup/SetupWizard.cpp:185
 msgid "Application description"
 msgstr "Опис програми"
 
-#: AppSetup/SetupWizard.cpp:272
-msgid "Software license"
-msgstr "Умови ліцензування програми"
-
-#: AppSetup/SetupWizard.cpp:273
-msgid "Please read the following terms and conditions carefully!"
-msgstr ""
-"Будь ласка, уважно ознайомтеся з викладеними нижче умовами користування!"
-
-#: AppSetup/SetupWizard.cpp:282
+#: AppSetup/SetupWizard.cpp:193
 msgid "Running installation"
 msgstr "Виконується встановлення"
 
-#: AppSetup/SetupWizard.cpp:283
+#: AppSetup/SetupWizard.cpp:194
 #, kde-format
 msgid "Installing %1..."
 msgstr "Встановлення %1…"
 
-#: AppSetup/SetupWizard.cpp:318
-msgid ""
-"Installing this package will make the following native packages obsolete. "
-"You might consider removing them manually."
-msgstr ""
-"Встановлення цього пакунка зробить вказані нижче пакунки системи "
-"застарілими. Вам варто вилучити застарілі пакунки вручну."
+#: AppSetup/SetupWizard.cpp:234
+msgid "Installation finished!"
+msgstr "Встановлення завершено!"
 
-#: AppSetup/SetupWizard.cpp:319
-msgid "Similar native packages found"
-msgstr "Знайдено подібні пакунки системи"
-
-#: AppSetup/SetupWizard.cpp:419
-msgid ""
-"You want to install this application as root!\n"
-"This can damage your system or install malicious software for all users.\n"
-"Please only proceed, if you really know what you're doing!\n"
-"Continue?"
-msgstr ""
-"Ви наказали програмі встановити пакунок від імені адміністратора!\n"
-"Такі дії можуть завдати шкоди вашій системі або призвести до встановлення\n"
-"шпигунського програмного забезпечення для всіх користувачів.\n"
-"Встановлення слід продовжувати, лише якщо ви повністю усвідомлюєте "
-"наслідки!\n"
-"Продовжувати?"
-
-#: AppSetup/SetupWizard.cpp:422
-msgid "Really install as superuser?"
-msgstr "Встановити від імені адміністратора?"
-
-#: AppSetup/SetupWizard.cpp:440
+#: AppSetup/SetupWizard.cpp:235
 #, kde-format
-msgid "This package has the following security level: <b>%1</b>"
-msgstr "Рівень захисту цього пакунка: <b>%1</b>"
-
-#: AppSetup/SetupWizard.cpp:442
-#, kde-format
-msgid "It was signed with a key belonging to these user-ids: %1"
-msgstr "Підписано ключем, що належить таким ідентифікаторам користувачів: %1"
-
-#: AppSetup/SetupWizard.cpp:446
-msgid "Security hints"
-msgstr "Рекомендації щодо безпеки"
+msgid "%1 has been installed successfully!"
+msgstr "%1 успішно встановлено!"
 
 #: libapper/ApplicationLauncher.cpp:94
 msgid "New application available"
@@ -1299,7 +1230,7 @@ msgstr "Джерело"
 msgid "Size"
 msgstr "Розмір"
 
-#: libapper/PackageModel.cpp:326
+#: libapper/PackageModel.cpp:334
 #, kde-format
 msgid ""
 "Version: %1\n"
@@ -1308,11 +1239,11 @@ msgstr ""
 "Версія: %1\n"
 "Архітектура: %2"
 
-#: libapper/PackageModel.cpp:372
+#: libapper/PackageModel.cpp:380
 msgid "To be Removed"
 msgstr "Буде вилучено"
 
-#: libapper/PackageModel.cpp:374
+#: libapper/PackageModel.cpp:382
 msgid "To be Installed"
 msgstr "Буде встановлене"
 
@@ -1517,718 +1448,718 @@ msgctxt "we are copying package files to prepare to install"
 msgid "Copying files"
 msgstr "Копіювання файлів"
 
-#: libapper/PkStrings.cpp:165
+#: libapper/PkStrings.cpp:170
 msgctxt "The action of the package, in past tense"
 msgid "Downloaded"
 msgstr "Звантажено"
 
-#: libapper/PkStrings.cpp:167
+#: libapper/PkStrings.cpp:172
 msgctxt "The action of the package, in past tense"
 msgid "Updated"
 msgstr "Оновлено"
 
-#: libapper/PkStrings.cpp:169
+#: libapper/PkStrings.cpp:174
 msgctxt "The action of the package, in past tense"
 msgid "Installed"
 msgstr "Встановлене"
 
-#: libapper/PkStrings.cpp:171
+#: libapper/PkStrings.cpp:176
 msgctxt "The action of the package, in past tense"
 msgid "Removed"
 msgstr "Вилучено"
 
-#: libapper/PkStrings.cpp:173
+#: libapper/PkStrings.cpp:178
 msgctxt "The action of the package, in past tense"
 msgid "Cleaned Up"
 msgstr "Спорожнено"
 
-#: libapper/PkStrings.cpp:175
+#: libapper/PkStrings.cpp:180
 msgctxt "The action of the package, in past tense"
 msgid "Obsoleted"
 msgstr "Став застарілим"
 
-#: libapper/PkStrings.cpp:186
+#: libapper/PkStrings.cpp:191
 msgctxt "The role of the transaction, in present tense"
 msgid "Unknown role type"
 msgstr "Невідомий тип"
 
-#: libapper/PkStrings.cpp:188
+#: libapper/PkStrings.cpp:193
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting dependencies"
 msgstr "Отримання залежностей"
 
-#: libapper/PkStrings.cpp:190
+#: libapper/PkStrings.cpp:195
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting update detail"
 msgstr "Отримання подробиць про оновлення"
 
-#: libapper/PkStrings.cpp:193
+#: libapper/PkStrings.cpp:198
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting details"
 msgstr "Отримання подробиць"
 
-#: libapper/PkStrings.cpp:195
+#: libapper/PkStrings.cpp:200
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting requires"
 msgstr "Отримання даних про вимоги"
 
-#: libapper/PkStrings.cpp:197
+#: libapper/PkStrings.cpp:202
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting updates"
 msgstr "Отримання оновлень"
 
-#: libapper/PkStrings.cpp:199
+#: libapper/PkStrings.cpp:204
 msgctxt "The role of the transaction, in present tense"
 msgid "Searching details"
 msgstr "Пошук подробиць"
 
-#: libapper/PkStrings.cpp:201
+#: libapper/PkStrings.cpp:206
 msgctxt "The role of the transaction, in present tense"
 msgid "Searching for file"
 msgstr "Пошук файла"
 
-#: libapper/PkStrings.cpp:203
+#: libapper/PkStrings.cpp:208
 msgctxt "The role of the transaction, in present tense"
 msgid "Searching groups"
 msgstr "Пошук груп"
 
-#: libapper/PkStrings.cpp:205
+#: libapper/PkStrings.cpp:210
 msgctxt "The role of the transaction, in present tense"
 msgid "Searching by package name"
 msgstr "Пошук назви пакунка"
 
-#: libapper/PkStrings.cpp:208
+#: libapper/PkStrings.cpp:213
 msgctxt "The role of the transaction, in present tense"
 msgid "Simulating removal"
 msgstr "Імітація вилучення"
 
-#: libapper/PkStrings.cpp:210 libapper/PkStrings.cpp:217
-#: libapper/PkStrings.cpp:258
+#: libapper/PkStrings.cpp:215 libapper/PkStrings.cpp:222
+#: libapper/PkStrings.cpp:263
 msgctxt "The role of the transaction, in present tense"
 msgid "Downloading packages"
 msgstr "Звантаження пакунків"
 
-#: libapper/PkStrings.cpp:212
+#: libapper/PkStrings.cpp:217
 msgctxt "The role of the transaction, in present tense"
 msgid "Removing"
 msgstr "Вилучення"
 
-#: libapper/PkStrings.cpp:215
+#: libapper/PkStrings.cpp:220
 msgctxt "The role of the transaction, in present tense"
 msgid "Simulating install"
 msgstr "Імітація встановлення"
 
-#: libapper/PkStrings.cpp:219
+#: libapper/PkStrings.cpp:224
 msgctxt "The role of the transaction, in present tense"
 msgid "Installing"
 msgstr "Встановлення"
 
-#: libapper/PkStrings.cpp:222
+#: libapper/PkStrings.cpp:227
 msgctxt "The role of the transaction, in present tense"
 msgid "Simulating file install"
 msgstr "Імітація встановлення файла"
 
-#: libapper/PkStrings.cpp:224
+#: libapper/PkStrings.cpp:229
 msgctxt "The role of the transaction, in present tense"
 msgid "Downloading required packages"
 msgstr "Звантаження потрібних пакунків"
 
-#: libapper/PkStrings.cpp:226
+#: libapper/PkStrings.cpp:231
 msgctxt "The role of the transaction, in present tense"
 msgid "Installing file"
 msgstr "Встановлення файла"
 
-#: libapper/PkStrings.cpp:228
+#: libapper/PkStrings.cpp:233
 msgctxt "The role of the transaction, in present tense"
 msgid "Refreshing package cache"
 msgstr "Освіження кешу пакунків"
 
-#: libapper/PkStrings.cpp:231
+#: libapper/PkStrings.cpp:236
 msgctxt "The role of the transaction, in present tense"
 msgid "Simulating update"
 msgstr "Імітація оновлення"
 
-#: libapper/PkStrings.cpp:233
+#: libapper/PkStrings.cpp:238
 msgctxt "The role of the transaction, in present tense"
 msgid "Downloading updates"
 msgstr "Звантаження оновлень"
 
-#: libapper/PkStrings.cpp:235
+#: libapper/PkStrings.cpp:240
 msgctxt "The role of the transaction, in present tense"
 msgid "Updating packages"
 msgstr "Оновлення пакунків"
 
-#: libapper/PkStrings.cpp:237
+#: libapper/PkStrings.cpp:242
 msgctxt "The role of the transaction, in present tense"
 msgid "Canceling"
 msgstr "Скасування"
 
-#: libapper/PkStrings.cpp:239
+#: libapper/PkStrings.cpp:244
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting list of repositories"
 msgstr "Отримання списку сховищ"
 
-#: libapper/PkStrings.cpp:241
+#: libapper/PkStrings.cpp:246
 msgctxt "The role of the transaction, in present tense"
 msgid "Enabling repository"
 msgstr "Увімкнення сховища"
 
-#: libapper/PkStrings.cpp:243
+#: libapper/PkStrings.cpp:248
 msgctxt "The role of the transaction, in present tense"
 msgid "Setting repository data"
 msgstr "Встановлення даних сховища"
 
-#: libapper/PkStrings.cpp:245
+#: libapper/PkStrings.cpp:250
 msgctxt "The role of the transaction, in present tense"
 msgid "Resolving"
 msgstr "Розв’язання"
 
-#: libapper/PkStrings.cpp:248
+#: libapper/PkStrings.cpp:253
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting file list"
 msgstr "Отримання списку файлів"
 
-#: libapper/PkStrings.cpp:250
+#: libapper/PkStrings.cpp:255
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting what provides"
 msgstr "Отримання даних про вміст"
 
-#: libapper/PkStrings.cpp:252
+#: libapper/PkStrings.cpp:257
 msgctxt "The role of the transaction, in present tense"
 msgid "Installing signature"
 msgstr "Встановлення підпису"
 
-#: libapper/PkStrings.cpp:254
+#: libapper/PkStrings.cpp:259
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting package lists"
 msgstr "Отримання списків пакунків"
 
-#: libapper/PkStrings.cpp:256
+#: libapper/PkStrings.cpp:261
 msgctxt "The role of the transaction, in present tense"
 msgid "Accepting EULA"
 msgstr "Згода з EULA"
 
-#: libapper/PkStrings.cpp:260
+#: libapper/PkStrings.cpp:265
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting distribution upgrade information"
 msgstr "Отримання інформації про оновлення дистрибутива"
 
-#: libapper/PkStrings.cpp:262
+#: libapper/PkStrings.cpp:267
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting categories"
 msgstr "Отримання категорій"
 
-#: libapper/PkStrings.cpp:264
+#: libapper/PkStrings.cpp:269
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting old transactions"
 msgstr "Отримання списку старих дій"
 
-#: libapper/PkStrings.cpp:266
+#: libapper/PkStrings.cpp:271
 msgctxt "The role of the transaction, in present tense"
 msgid "Repairing system"
 msgstr "Лагодження системи"
 
-#: libapper/PkStrings.cpp:268
+#: libapper/PkStrings.cpp:273
 msgctxt "The role of the transaction, in present tense"
 msgid "Removing repository"
 msgstr "Вилучення запису сховища"
 
-#: libapper/PkStrings.cpp:278
+#: libapper/PkStrings.cpp:288
 msgctxt "The role of the transaction, in past tense"
 msgid "Unknown role type"
 msgstr "Невідомий тип"
 
-#: libapper/PkStrings.cpp:280
+#: libapper/PkStrings.cpp:290
 msgctxt "The role of the transaction, in past tense"
 msgid "Got dependencies"
 msgstr "Отримано залежностей"
 
-#: libapper/PkStrings.cpp:282
+#: libapper/PkStrings.cpp:292
 msgctxt "The role of the transaction, in past tense"
 msgid "Got update detail"
 msgstr "Отримано подробиці про оновлення"
 
-#: libapper/PkStrings.cpp:285
+#: libapper/PkStrings.cpp:295
 msgctxt "The role of the transaction, in past tense"
 msgid "Got details"
 msgstr "Отримано подробиць"
 
-#: libapper/PkStrings.cpp:287
+#: libapper/PkStrings.cpp:297
 msgctxt "The role of the transaction, in past tense"
 msgid "Got requires"
 msgstr "Отримано вимог"
 
-#: libapper/PkStrings.cpp:289
+#: libapper/PkStrings.cpp:299
 msgctxt "The role of the transaction, in past tense"
 msgid "Got updates"
 msgstr "Отримано оновлення"
 
-#: libapper/PkStrings.cpp:291
+#: libapper/PkStrings.cpp:301
 msgctxt "The role of the transaction, in past tense"
 msgid "Searched for package details"
 msgstr "Шукати відомостей про пакунок"
 
-#: libapper/PkStrings.cpp:293
+#: libapper/PkStrings.cpp:303
 msgctxt "The role of the transaction, in past tense"
 msgid "Searched for file"
 msgstr "Пошук файла"
 
-#: libapper/PkStrings.cpp:295
+#: libapper/PkStrings.cpp:305
 msgctxt "The role of the transaction, in past tense"
 msgid "Searched groups"
 msgstr "Пошук груп"
 
-#: libapper/PkStrings.cpp:297
+#: libapper/PkStrings.cpp:307
 msgctxt "The role of the transaction, in past tense"
 msgid "Searched for package name"
 msgstr "Пошук назви пакунка"
 
-#: libapper/PkStrings.cpp:299
+#: libapper/PkStrings.cpp:309
 msgctxt "The role of the transaction, in past tense"
 msgid "Removed packages"
 msgstr "Вилучено пакунки"
 
-#: libapper/PkStrings.cpp:301
+#: libapper/PkStrings.cpp:311
 msgctxt "The role of the transaction, in past tense"
 msgid "Installed packages"
 msgstr "Встановлено пакунки"
 
-#: libapper/PkStrings.cpp:303
+#: libapper/PkStrings.cpp:313
 msgctxt "The role of the transaction, in past tense"
 msgid "Installed local files"
 msgstr "Встановлено локальні файли"
 
-#: libapper/PkStrings.cpp:305
+#: libapper/PkStrings.cpp:315
 msgctxt "The role of the transaction, in past tense"
 msgid "Refreshed package cache"
 msgstr "Освіжено кеш пакунків"
 
-#: libapper/PkStrings.cpp:307
+#: libapper/PkStrings.cpp:317
 msgctxt "The role of the transaction, in past tense"
 msgid "Updated packages"
 msgstr "Оновлено пакунки"
 
-#: libapper/PkStrings.cpp:309
+#: libapper/PkStrings.cpp:319
 msgctxt "The role of the transaction, in past tense"
 msgid "Canceled"
 msgstr "Скасовано"
 
-#: libapper/PkStrings.cpp:311
+#: libapper/PkStrings.cpp:321
 msgctxt "The role of the transaction, in past tense"
 msgid "Got list of repositories"
 msgstr "Отримано список сховищ"
 
-#: libapper/PkStrings.cpp:313
+#: libapper/PkStrings.cpp:323
 msgctxt "The role of the transaction, in past tense"
 msgid "Enabled repository"
 msgstr "Увімкнено сховище"
 
-#: libapper/PkStrings.cpp:315
+#: libapper/PkStrings.cpp:325
 msgctxt "The role of the transaction, in past tense"
 msgid "Set repository data"
 msgstr "Встановлено дані сховища"
 
-#: libapper/PkStrings.cpp:317
+#: libapper/PkStrings.cpp:327
 msgctxt "The role of the transaction, in past tense"
 msgid "Resolved"
 msgstr "Розв’язано"
 
-#: libapper/PkStrings.cpp:320
+#: libapper/PkStrings.cpp:330
 msgctxt "The role of the transaction, in past tense"
 msgid "Got file list"
 msgstr "Отримано список файлів"
 
-#: libapper/PkStrings.cpp:322
+#: libapper/PkStrings.cpp:332
 msgctxt "The role of the transaction, in past tense"
 msgid "Got what provides"
 msgstr "Отримано дані про вміст"
 
-#: libapper/PkStrings.cpp:324
+#: libapper/PkStrings.cpp:334
 msgctxt "The role of the transaction, in past tense"
 msgid "Installed signature"
 msgstr "Встановлено підпис"
 
-#: libapper/PkStrings.cpp:326
+#: libapper/PkStrings.cpp:336
 msgctxt "The role of the transaction, in past tense"
 msgid "Got package lists"
 msgstr "Отримано списків пакунків"
 
-#: libapper/PkStrings.cpp:328
+#: libapper/PkStrings.cpp:338
 msgctxt "The role of the transaction, in past tense"
 msgid "Accepted EULA"
 msgstr "Згода з EULA"
 
-#: libapper/PkStrings.cpp:330
+#: libapper/PkStrings.cpp:340
 msgctxt "The role of the transaction, in past tense"
 msgid "Downloaded packages"
 msgstr "Звантажено пакунки"
 
-#: libapper/PkStrings.cpp:332
+#: libapper/PkStrings.cpp:342
 msgctxt "The role of the transaction, in past tense"
 msgid "Got distribution upgrades"
 msgstr "Отримано оновлення дистрибутива"
 
-#: libapper/PkStrings.cpp:334
+#: libapper/PkStrings.cpp:344
 msgctxt "The role of the transaction, in past tense"
 msgid "Got categories"
 msgstr "Отримано список категорій"
 
-#: libapper/PkStrings.cpp:336
+#: libapper/PkStrings.cpp:346
 msgctxt "The role of the transaction, in past tense"
 msgid "Got old transactions"
 msgstr "Отримано список старих дій"
 
-#: libapper/PkStrings.cpp:338
+#: libapper/PkStrings.cpp:348
 msgctxt "The role of the transaction, in past tense"
 msgid "Repaired system"
 msgstr "Полагоджено систему"
 
-#: libapper/PkStrings.cpp:340
+#: libapper/PkStrings.cpp:350
 msgctxt "The role of the transaction, in past tense"
 msgid "Removed repository"
 msgstr "Сховище вилучено"
 
-#: libapper/PkStrings.cpp:350
+#: libapper/PkStrings.cpp:360
 msgid "Downloading"
 msgstr "Звантаження"
 
-#: libapper/PkStrings.cpp:352
+#: libapper/PkStrings.cpp:362
 msgid "Updating"
 msgstr "Оновлення"
 
-#: libapper/PkStrings.cpp:354
+#: libapper/PkStrings.cpp:364
 msgid "Installing"
 msgstr "Встановлення"
 
-#: libapper/PkStrings.cpp:356
+#: libapper/PkStrings.cpp:366
 msgid "Removing"
 msgstr "Вилучення"
 
-#: libapper/PkStrings.cpp:358
+#: libapper/PkStrings.cpp:368
 msgid "Cleaning up"
 msgstr "Спорожнення"
 
-#: libapper/PkStrings.cpp:360
+#: libapper/PkStrings.cpp:370
 msgid "Obsoleting"
 msgstr "Визначення застарілих"
 
-#: libapper/PkStrings.cpp:362
+#: libapper/PkStrings.cpp:372
 msgid "Reinstalling"
 msgstr "Перевстановлення"
 
-#: libapper/PkStrings.cpp:364
+#: libapper/PkStrings.cpp:374
 msgid "Preparing"
 msgstr "Приготування"
 
-#: libapper/PkStrings.cpp:366
+#: libapper/PkStrings.cpp:376
 msgid "Decompressing"
 msgstr "Розпакування"
 
-#: libapper/PkStrings.cpp:377
+#: libapper/PkStrings.cpp:387
 msgid "Downloaded"
 msgstr "Звантажено"
 
-#: libapper/PkStrings.cpp:379
+#: libapper/PkStrings.cpp:389
 msgid "Updated"
 msgstr "Оновлено"
 
-#: libapper/PkStrings.cpp:383
+#: libapper/PkStrings.cpp:393
 msgid "Removed"
 msgstr "Вилучено"
 
-#: libapper/PkStrings.cpp:385
+#: libapper/PkStrings.cpp:395
 msgid "Cleaned up"
 msgstr "Спорожнено"
 
-#: libapper/PkStrings.cpp:387
+#: libapper/PkStrings.cpp:397
 msgid "Obsoleted"
 msgstr "Став застарілим"
 
-#: libapper/PkStrings.cpp:389
+#: libapper/PkStrings.cpp:399
 msgid "Reinstalled"
 msgstr "Перевстановлено"
 
-#: libapper/PkStrings.cpp:391
+#: libapper/PkStrings.cpp:401
 msgid "Prepared"
 msgstr "Приготовано"
 
-#: libapper/PkStrings.cpp:393
+#: libapper/PkStrings.cpp:403
 msgid "Decompressed"
 msgstr "Розпаковано"
 
-#: libapper/PkStrings.cpp:404
+#: libapper/PkStrings.cpp:414
 msgid "No network connection available"
 msgstr "З’єднання з мережею недоступне"
 
-#: libapper/PkStrings.cpp:406
+#: libapper/PkStrings.cpp:416
 msgid "No package cache is available"
 msgstr "Кеш пакунків недоступний"
 
-#: libapper/PkStrings.cpp:408
+#: libapper/PkStrings.cpp:418
 msgid "Out of memory"
 msgstr "Не вистачає пам'яті"
 
-#: libapper/PkStrings.cpp:410
+#: libapper/PkStrings.cpp:420
 msgid "Failed to create a thread"
 msgstr "Не вдалося створити нитку"
 
-#: libapper/PkStrings.cpp:412
+#: libapper/PkStrings.cpp:422
 msgid "Not supported by this backend"
 msgstr "Не підтримується цим модулем обробки"
 
-#: libapper/PkStrings.cpp:414
+#: libapper/PkStrings.cpp:424
 msgid "An internal system error has occurred"
 msgstr "Сталася внутрішня системна помилка"
 
-#: libapper/PkStrings.cpp:416
+#: libapper/PkStrings.cpp:426
 msgid "A security trust relationship is not present"
 msgstr "Відсутні відносини довіри щодо безпеки"
 
-#: libapper/PkStrings.cpp:418
+#: libapper/PkStrings.cpp:428
 msgid "The package is not installed"
 msgstr "Пакунок не встановлено"
 
-#: libapper/PkStrings.cpp:420
+#: libapper/PkStrings.cpp:430
 msgid "The package was not found"
 msgstr "Пакунок не було знайдено"
 
-#: libapper/PkStrings.cpp:422
+#: libapper/PkStrings.cpp:432
 msgid "The package is already installed"
 msgstr "Пакунок вже встановлено"
 
-#: libapper/PkStrings.cpp:424
+#: libapper/PkStrings.cpp:434
 msgid "The package download failed"
 msgstr "Звантаження пакунка зазнало невдачі"
 
-#: libapper/PkStrings.cpp:426
+#: libapper/PkStrings.cpp:436
 msgid "The group was not found"
 msgstr "Групу не знайдено"
 
-#: libapper/PkStrings.cpp:428
+#: libapper/PkStrings.cpp:438
 msgid "The group list was invalid"
 msgstr "Список груп був некоректним"
 
-#: libapper/PkStrings.cpp:430
+#: libapper/PkStrings.cpp:440
 msgid "Dependency resolution failed"
 msgstr "Не вдалося розв’язати залежності"
 
-#: libapper/PkStrings.cpp:432
+#: libapper/PkStrings.cpp:442
 msgid "Search filter was invalid"
 msgstr "Некоректний фільтр пошуку"
 
-#: libapper/PkStrings.cpp:434
+#: libapper/PkStrings.cpp:444
 msgid "The package identifier was not well formed"
 msgstr "Ідентифікатор пакунка неправильно оформлено"
 
-#: libapper/PkStrings.cpp:436
+#: libapper/PkStrings.cpp:446
 msgid "Transaction error"
 msgstr "Помилка під час операції"
 
-#: libapper/PkStrings.cpp:438
+#: libapper/PkStrings.cpp:448
 msgid "Repository name was not found"
 msgstr "Не знайдено назви сховища"
 
-#: libapper/PkStrings.cpp:440
+#: libapper/PkStrings.cpp:450
 msgid "Could not remove a protected system package"
 msgstr "Не можна вилучати захищений системний пакунок"
 
-#: libapper/PkStrings.cpp:442
+#: libapper/PkStrings.cpp:452
 msgid "The task was canceled"
 msgstr "Завдання було скасовано"
 
-#: libapper/PkStrings.cpp:444
+#: libapper/PkStrings.cpp:454
 msgid "The task was forcibly canceled"
 msgstr "Завдання було примусово скасовано"
 
-#: libapper/PkStrings.cpp:446
+#: libapper/PkStrings.cpp:456
 msgid "Reading the config file failed"
 msgstr "Спроба читання файла налаштувань зазнала невдачі"
 
-#: libapper/PkStrings.cpp:448
+#: libapper/PkStrings.cpp:458
 msgid "The task cannot be cancelled"
 msgstr "Завдання не можна скасувати"
 
-#: libapper/PkStrings.cpp:450
+#: libapper/PkStrings.cpp:460
 msgid "Source packages cannot be installed"
 msgstr "Пакунки вихідних кодів неможливо встановити"
 
-#: libapper/PkStrings.cpp:452
+#: libapper/PkStrings.cpp:462
 msgid "The license agreement failed"
 msgstr "Ліцензійну угоду не прийнято"
 
-#: libapper/PkStrings.cpp:454
+#: libapper/PkStrings.cpp:464
 msgid "Local file conflict between packages"
 msgstr "Конфлікт локальних файлів між пакунками"
 
-#: libapper/PkStrings.cpp:456
+#: libapper/PkStrings.cpp:466
 msgid "Packages are not compatible"
 msgstr "Пакунки несумісні"
 
-#: libapper/PkStrings.cpp:458
+#: libapper/PkStrings.cpp:468
 msgid "Problem connecting to a software origin"
 msgstr "Проблема зі зв’язком з джерелом програм"
 
-#: libapper/PkStrings.cpp:460
+#: libapper/PkStrings.cpp:470
 msgid "Failed to initialize"
 msgstr "Не вдалося ініціалізувати"
 
-#: libapper/PkStrings.cpp:462
+#: libapper/PkStrings.cpp:472
 msgid "Failed to finalize"
 msgstr "Не вдала спроба завершення"
 
-#: libapper/PkStrings.cpp:464
+#: libapper/PkStrings.cpp:474
 msgid "Cannot get lock"
 msgstr "Не вдалося заблокувати"
 
-#: libapper/PkStrings.cpp:466
+#: libapper/PkStrings.cpp:476
 msgid "No packages to update"
 msgstr "Немає пакунків для оновлення"
 
-#: libapper/PkStrings.cpp:468
+#: libapper/PkStrings.cpp:478
 msgid "Cannot write repository configuration"
 msgstr "Не вдалося записати налаштування сховища"
 
-#: libapper/PkStrings.cpp:470
+#: libapper/PkStrings.cpp:480
 msgid "Local install failed"
 msgstr "Невдала спроба локального встановлення"
 
-#: libapper/PkStrings.cpp:472
+#: libapper/PkStrings.cpp:482
 msgid "Bad GPG signature"
 msgstr "Неприйнятний підпис GPG"
 
-#: libapper/PkStrings.cpp:474
+#: libapper/PkStrings.cpp:484
 msgid "Missing GPG signature"
 msgstr "Немає підпису GPG"
 
-#: libapper/PkStrings.cpp:476
+#: libapper/PkStrings.cpp:486
 msgid "Repository configuration invalid"
 msgstr "Некоректне налаштування сховища"
 
-#: libapper/PkStrings.cpp:478
+#: libapper/PkStrings.cpp:488
 msgid "Invalid package file"
 msgstr "Некоректний файл пакунка"
 
-#: libapper/PkStrings.cpp:480
+#: libapper/PkStrings.cpp:490
 msgid "Package install blocked"
 msgstr "Встановлення пакунка заблоковано"
 
-#: libapper/PkStrings.cpp:482
+#: libapper/PkStrings.cpp:492
 msgid "Package is corrupt"
 msgstr "Пакунок пошкоджено"
 
-#: libapper/PkStrings.cpp:484
+#: libapper/PkStrings.cpp:494
 msgid "All packages are already installed"
 msgstr "Всі пакунки вже встановлено"
 
-#: libapper/PkStrings.cpp:486
+#: libapper/PkStrings.cpp:496
 msgid "The specified file could not be found"
 msgstr "Не вдалося знайти вказаний файл"
 
-#: libapper/PkStrings.cpp:488
+#: libapper/PkStrings.cpp:498
 msgid "No more mirrors are available"
 msgstr "Вичерпано список дзеркал"
 
-#: libapper/PkStrings.cpp:490
+#: libapper/PkStrings.cpp:500
 msgid "No distribution upgrade data is available"
 msgstr "Дані щодо оновлення дистрибутива недоступні"
 
-#: libapper/PkStrings.cpp:492
+#: libapper/PkStrings.cpp:502
 msgid "Package is incompatible with this system"
 msgstr "Пакунок є несумісним з цією системою"
 
-#: libapper/PkStrings.cpp:494
+#: libapper/PkStrings.cpp:504
 msgid "No space is left on the disk"
 msgstr "На диску не залишилося місця"
 
-#: libapper/PkStrings.cpp:496 libapper/PkTransaction.cpp:344
+#: libapper/PkStrings.cpp:506 libapper/PkTransaction.cpp:344
 msgid "A media change is required"
 msgstr "Потрібно змінити носій"
 
-#: libapper/PkStrings.cpp:498
+#: libapper/PkStrings.cpp:508
 msgid "Authorization failed"
 msgstr "Спроба розпізнавання зазнала невдачі"
 
-#: libapper/PkStrings.cpp:500
+#: libapper/PkStrings.cpp:510
 msgid "Update not found"
 msgstr "Оновлення не було знайдено"
 
-#: libapper/PkStrings.cpp:502
+#: libapper/PkStrings.cpp:512
 msgid "Cannot install from untrusted origin"
 msgstr "Не вдалося встановити з ненадійного джерела"
 
-#: libapper/PkStrings.cpp:504
+#: libapper/PkStrings.cpp:514
 msgid "Cannot update from untrusted origin"
 msgstr "Не вдалося оновити з ненадійного джерела"
 
-#: libapper/PkStrings.cpp:506
+#: libapper/PkStrings.cpp:516
 msgid "Cannot get the file list"
 msgstr "Не вдалося отримати список файлів"
 
-#: libapper/PkStrings.cpp:508
+#: libapper/PkStrings.cpp:518
 msgid "Cannot get package requires"
 msgstr "Не вдалося отримати список потрібних пакунків"
 
-#: libapper/PkStrings.cpp:510
+#: libapper/PkStrings.cpp:520
 msgid "Cannot disable origin"
 msgstr "Не вдалося вимкнути джерело"
 
-#: libapper/PkStrings.cpp:512
+#: libapper/PkStrings.cpp:522
 msgid "The download failed"
 msgstr "Спроба звантаження зазнала невдачі"
 
-#: libapper/PkStrings.cpp:514
+#: libapper/PkStrings.cpp:524
 msgid "Package failed to configure"
 msgstr "Спроба налаштування пакунка зазнала невдачі"
 
-#: libapper/PkStrings.cpp:516
+#: libapper/PkStrings.cpp:526
 msgid "Package failed to build"
 msgstr "Спроба збирання пакунка зазнала невдачі"
 
-#: libapper/PkStrings.cpp:518
+#: libapper/PkStrings.cpp:528
 msgid "Package failed to install"
 msgstr "Спроба встановлення пакунка зазнала невдачі"
 
-#: libapper/PkStrings.cpp:520
+#: libapper/PkStrings.cpp:530
 msgid "Package failed to be removed"
 msgstr "Не вдалося вилучити пакунок"
 
-#: libapper/PkStrings.cpp:522
+#: libapper/PkStrings.cpp:532
 msgid "Update failed due to running process"
 msgstr "Спроба оновлення зазнала невдачі через запущений процес"
 
-#: libapper/PkStrings.cpp:524
+#: libapper/PkStrings.cpp:534
 msgid "The package database was changed"
 msgstr "Базу даних пакунків було змінено"
 
-#: libapper/PkStrings.cpp:526
+#: libapper/PkStrings.cpp:536
 msgid "Virtual provide type is not supported"
 msgstr "Тип віртуального вмісту не підтримується"
 
-#: libapper/PkStrings.cpp:528
+#: libapper/PkStrings.cpp:538
 msgid "Install root is invalid"
 msgstr "Некоректна коренева тека встановлення"
 
-#: libapper/PkStrings.cpp:530
+#: libapper/PkStrings.cpp:540
 msgid "Cannot fetch install sources"
 msgstr "Не вдалося отримати джерела даних для встановлення"
 
-#: libapper/PkStrings.cpp:532
+#: libapper/PkStrings.cpp:542
 msgid "Rescheduled due to priority"
 msgstr "Список впорядковано за пріоритетом"
 
-#: libapper/PkStrings.cpp:534
+#: libapper/PkStrings.cpp:544
 msgid "Unfinished transaction"
 msgstr "Незавершена дія"
 
-#: libapper/PkStrings.cpp:536
+#: libapper/PkStrings.cpp:546
 msgid "Lock required"
 msgstr "Потрібне блокування"
 
-#: libapper/PkStrings.cpp:538
+#: libapper/PkStrings.cpp:548
 msgid "Unknown error"
 msgstr "Невідома помилка"
 
-#: libapper/PkStrings.cpp:548
+#: libapper/PkStrings.cpp:558
 msgid ""
 "There is no network connection available.\n"
 "Please check your connection settings and try again"
@@ -2236,7 +2167,7 @@ msgstr ""
 "З’єднання з мережею недоступне.\n"
 "Будь ласка, перевірте ваші параметри з’єднання і спробуйте ще раз"
 
-#: libapper/PkStrings.cpp:551
+#: libapper/PkStrings.cpp:561
 msgid ""
 "The package list needs to be rebuilt.\n"
 "This should have been done by the backend automatically."
@@ -2244,7 +2175,7 @@ msgstr ""
 "Список пакунків слід перебудувати.\n"
 "Це буде автоматично зроблено модулем обробки."
 
-#: libapper/PkStrings.cpp:554
+#: libapper/PkStrings.cpp:564
 msgid ""
 "The service that is responsible for handling user requests is out of "
 "memory.\n"
@@ -2255,11 +2186,11 @@ msgstr ""
 "Будь ласка, завершіть роботу певної частини програм або перезавантажте "
 "комп’ютер."
 
-#: libapper/PkStrings.cpp:557
+#: libapper/PkStrings.cpp:567
 msgid "A thread could not be created to service the user request."
 msgstr "Для потрібної користувачеві служби неможливо створити нитку."
 
-#: libapper/PkStrings.cpp:559
+#: libapper/PkStrings.cpp:569
 msgid ""
 "The action is not supported by this backend.\n"
 "Please report a bug as this should not have happened."
@@ -2267,7 +2198,7 @@ msgstr ""
 "Ця дія не підтримується цим модулем обробки.\n"
 "Будь ласка, повідомте про ваду, оскільки цього не мало трапитися."
 
-#: libapper/PkStrings.cpp:562
+#: libapper/PkStrings.cpp:572
 msgid ""
 "A problem that we were not expecting has occurred.\n"
 "Please report this bug with the error description."
@@ -2275,7 +2206,7 @@ msgstr ""
 "Сталася помилка, на яку ми не очікували.\n"
 "Будь ласка, повідомте про цю ваду, долучивши опис помилки."
 
-#: libapper/PkStrings.cpp:565
+#: libapper/PkStrings.cpp:575
 msgid ""
 "A security trust relationship could not be made with the software origin.\n"
 "Please check your software signature settings."
@@ -2283,14 +2214,14 @@ msgstr ""
 "Неможливо створити відносини довіри щодо безпеки з цим джерелом програм.\n"
 "Будь ласка, перевірте ваші параметри підписів пакунків."
 
-#: libapper/PkStrings.cpp:568
+#: libapper/PkStrings.cpp:578
 msgid ""
 "The package that is trying to be removed or updated is not already installed."
 msgstr ""
 "Пакунок, щодо якого виконано спробу вилучення або оновлення, взагалі не "
 "встановлено."
 
-#: libapper/PkStrings.cpp:570
+#: libapper/PkStrings.cpp:580
 msgid ""
 "The package that is being modified was not found on your system or in any "
 "software origin."
@@ -2298,11 +2229,11 @@ msgstr ""
 "Пакунок, який ви змінюєте, не виявлено ні у вашій системі, ні у джерелах "
 "програм."
 
-#: libapper/PkStrings.cpp:572
+#: libapper/PkStrings.cpp:582
 msgid "The package that is trying to be installed is already installed."
 msgstr "Пакунок, який ви намагаєтеся встановити, вже встановлено."
 
-#: libapper/PkStrings.cpp:574
+#: libapper/PkStrings.cpp:584
 msgid ""
 "The package download failed.\n"
 "Please check your network connectivity."
@@ -2310,7 +2241,7 @@ msgstr ""
 "Спроба звантаження пакунка зазнала невдачі.\n"
 "Будь ласка, перевірте наявність зв’язку з мережею."
 
-#: libapper/PkStrings.cpp:577
+#: libapper/PkStrings.cpp:587
 msgid ""
 "The group type was not found.\n"
 "Please check your group list and try again."
@@ -2318,7 +2249,7 @@ msgstr ""
 "Не знайдено типу групи.\n"
 "Будь ласка, перевірте ваш список груп і спробуйте ще раз."
 
-#: libapper/PkStrings.cpp:580
+#: libapper/PkStrings.cpp:590
 msgid ""
 "The group list could not be loaded.\n"
 "Refreshing your cache may help, although this is normally a software origin "
@@ -2328,7 +2259,7 @@ msgstr ""
 "Може допомогти освіження вашого кешу, але зазвичай такі помилки спричинені "
 "вадами у програмах."
 
-#: libapper/PkStrings.cpp:584
+#: libapper/PkStrings.cpp:594
 msgid ""
 "A package dependency could not be found.\n"
 "More information is available in the detailed report."
@@ -2336,11 +2267,11 @@ msgstr ""
 "Не знайдено пакунок-залежність.\n"
 "Детальнішу інформацію розміщено у докладному звіті."
 
-#: libapper/PkStrings.cpp:587
+#: libapper/PkStrings.cpp:597
 msgid "The search filter was not correctly formed."
 msgstr "Фільтр пошуку не було належно оформлено."
 
-#: libapper/PkStrings.cpp:589
+#: libapper/PkStrings.cpp:599
 msgid ""
 "The package identifier was not well formed when sent to the system daemon.\n"
 "This normally indicates an internal bug and should be reported."
@@ -2350,7 +2281,7 @@ msgstr ""
 "Зазвичай, це означає, що сталася внутрішня помилка. Повідомте про неї "
 "розробників."
 
-#: libapper/PkStrings.cpp:592
+#: libapper/PkStrings.cpp:602
 msgid ""
 "An error occurred while running the transaction.\n"
 "More information is available in the detailed report."
@@ -2358,7 +2289,7 @@ msgstr ""
 "Під час виконання завдання сталася помилка.\n"
 "Детальнішу інформацію наведено у докладному звіті."
 
-#: libapper/PkStrings.cpp:595
+#: libapper/PkStrings.cpp:605
 msgid ""
 "The remote software origin name was not found.\n"
 "You may need to enable an item in Software Origins."
@@ -2366,15 +2297,15 @@ msgstr ""
 "Назву віддаленого джерела програм не було знайдено.\n"
 "Можливо, вам слід увімкнути джерело у списку джерел програм."
 
-#: libapper/PkStrings.cpp:598
+#: libapper/PkStrings.cpp:608
 msgid "Removing a protected system package is not allowed."
 msgstr "Вилучення захищеного системного пакунка недозволене."
 
-#: libapper/PkStrings.cpp:600
+#: libapper/PkStrings.cpp:610
 msgid "The task was canceled successfully and no packages were changed."
 msgstr "Завдання було успішно скасовано, жодного з пакунків не було змінено."
 
-#: libapper/PkStrings.cpp:602
+#: libapper/PkStrings.cpp:612
 msgid ""
 "The task was canceled successfully and no packages were changed.\n"
 "The backend did not exit cleanly."
@@ -2382,7 +2313,7 @@ msgstr ""
 "Завдання було успішно скасовано, жодного з пакунків не було змінено.\n"
 "Роботу модуля обробки завершено в аварійному режимі."
 
-#: libapper/PkStrings.cpp:605
+#: libapper/PkStrings.cpp:615
 msgid ""
 "The native package configuration file could not be opened.\n"
 "Please make sure your system's configuration is valid."
@@ -2390,11 +2321,11 @@ msgstr ""
 "Рідний файл налаштувань пакунка не вдалося відкрити.\n"
 "Будь ласка, переконайтеся у правильності налаштувань вашої системи."
 
-#: libapper/PkStrings.cpp:608
+#: libapper/PkStrings.cpp:618
 msgid "The task is not safe to be cancelled at this time."
 msgstr "Зараз небезпечно скасовувати завдання."
 
-#: libapper/PkStrings.cpp:610
+#: libapper/PkStrings.cpp:620
 msgid ""
 "Source packages are not normally installed this way.\n"
 "Check the extension of the file you are trying to install."
@@ -2402,7 +2333,7 @@ msgstr ""
 "Пакунки з вихідними кодами не встановлюють таким чином.\n"
 "Перевірте суфікс файла, який ви намагаєтеся встановити."
 
-#: libapper/PkStrings.cpp:613
+#: libapper/PkStrings.cpp:623
 msgid ""
 "The license agreement was not agreed to.\n"
 "To use this software you have to accept the license."
@@ -2410,7 +2341,7 @@ msgstr ""
 "Ви не погодилися на умови ліцензійної угоди.\n"
 "Щоб користуватися програмою, вам слід прийняти умови ліцензії."
 
-#: libapper/PkStrings.cpp:616
+#: libapper/PkStrings.cpp:626
 msgid ""
 "Two packages provide the same file.\n"
 "This is usually due to mixing packages for different software origins."
@@ -2418,7 +2349,7 @@ msgstr ""
 "Два пакунка містять однаковий файл.\n"
 "Зазвичай, така ситуація спричинена змішуванням пакунків з різних джерел."
 
-#: libapper/PkStrings.cpp:619
+#: libapper/PkStrings.cpp:629
 msgid ""
 "Multiple packages exist that are not compatible with each other.\n"
 "This is usually due to mixing packages from different software origins."
@@ -2427,7 +2358,7 @@ msgstr ""
 "Причиною цього, зазвичай, є використання одразу декількох різних джерел "
 "програм."
 
-#: libapper/PkStrings.cpp:622
+#: libapper/PkStrings.cpp:632
 msgid ""
 "There was a (possibly temporary) problem connecting to a software origins.\n"
 "Please check the detailed error for further details."
@@ -2435,7 +2366,7 @@ msgstr ""
 "Виникла (можливо, тимчасова) проблема зі зв’язком з джерелом програм.\n"
 "Будь ласка, погляньте на подробиці помилки, щоб дізнатися більше."
 
-#: libapper/PkStrings.cpp:625
+#: libapper/PkStrings.cpp:635
 msgid ""
 "Failed to initialize packaging backend.\n"
 "This may occur if other packaging tools are being used simultaneously."
@@ -2443,7 +2374,7 @@ msgstr ""
 "Спроба ініціалізації модуля обробки пакування зазнала невдачі.\n"
 "Це може статися, якщо одночасно використовуються інші пакувальні інструменти."
 
-#: libapper/PkStrings.cpp:628
+#: libapper/PkStrings.cpp:638
 msgid ""
 "Failed to close down the backend instance.\n"
 "This error can normally be ignored."
@@ -2451,7 +2382,7 @@ msgstr ""
 "Спроба закриття екземпляра модуля обробки зазнала невдачі.\n"
 "Зазвичай, на таку помилку можна не зважати."
 
-#: libapper/PkStrings.cpp:631
+#: libapper/PkStrings.cpp:641
 msgid ""
 "Cannot get the exclusive lock on the packaging backend.\n"
 "Please close any other legacy packaging tools that may be open."
@@ -2461,15 +2392,15 @@ msgstr ""
 "Будь ласка, закрийте всі інші застарілі інструменти пакування, які може бути "
 "відкрито."
 
-#: libapper/PkStrings.cpp:634
+#: libapper/PkStrings.cpp:644
 msgid "None of the selected packages could be updated."
 msgstr "Жоден з вибраних пакунків оновити неможливо."
 
-#: libapper/PkStrings.cpp:636
+#: libapper/PkStrings.cpp:646
 msgid "The repository configuration could not be modified."
 msgstr "Не вдалося змінити налаштування сховища."
 
-#: libapper/PkStrings.cpp:638
+#: libapper/PkStrings.cpp:648
 msgid ""
 "Installing the local file failed.\n"
 "More information is available in the detailed report."
@@ -2477,11 +2408,11 @@ msgstr ""
 "Спроба встановлення локального файла зазнала невдачі.\n"
 "Детальнішу інформацію наведено у докладному звіті."
 
-#: libapper/PkStrings.cpp:641
+#: libapper/PkStrings.cpp:651
 msgid "The package signature could not be verified."
 msgstr "Не вдалося перевірити підпис пакунка."
 
-#: libapper/PkStrings.cpp:643
+#: libapper/PkStrings.cpp:653
 msgid ""
 "The package signature was missing and this package is untrusted.\n"
 "This package was not signed with a GPG key when created."
@@ -2489,11 +2420,11 @@ msgstr ""
 "Немає підпису пакунка, отже, цей пакунок не можна вважати надійним.\n"
 "Цей пакунок не було підписано ключем GPG під час створення."
 
-#: libapper/PkStrings.cpp:646
+#: libapper/PkStrings.cpp:656
 msgid "Repository configuration was invalid and could not be read."
 msgstr "Налаштування сховища було некоректним, його не вдалося прочитати."
 
-#: libapper/PkStrings.cpp:648
+#: libapper/PkStrings.cpp:658
 msgid ""
 "The package you are attempting to install is not valid.\n"
 "The package file could be corrupt, or not a proper package."
@@ -2501,7 +2432,7 @@ msgstr ""
 "Пакунок, який ви намагаєтеся встановити - некоректний.\n"
 "Можливо, його пошкоджено, або це взагалі не пакунок."
 
-#: libapper/PkStrings.cpp:651
+#: libapper/PkStrings.cpp:661
 msgid ""
 "Installation of this package was prevented by your packaging system's "
 "configuration."
@@ -2509,19 +2440,19 @@ msgstr ""
 "Встановлення цього пакунка заборонене налаштуванням вашої системи керування "
 "пакунками."
 
-#: libapper/PkStrings.cpp:653
+#: libapper/PkStrings.cpp:663
 msgid ""
 "The package that was downloaded is corrupt and needs to be downloaded again."
 msgstr ""
 "Звантажений пакунок було пошкоджено у процесі звантаження, його слід "
 "звантажити ще раз."
 
-#: libapper/PkStrings.cpp:655
+#: libapper/PkStrings.cpp:665
 msgid ""
 "All of the packages selected for install are already installed on the system."
 msgstr "Всі обрані для встановлення пакунки вже встановлено у системі."
 
-#: libapper/PkStrings.cpp:657
+#: libapper/PkStrings.cpp:667
 msgid ""
 "The specified file could not be found on the system.\n"
 "Check that the file still exists and has not been deleted."
@@ -2529,7 +2460,7 @@ msgstr ""
 "У системі не вдалося знайти вказаний файл.\n"
 "Перевірте, чи існує цей файл, чи його не було вилучено."
 
-#: libapper/PkStrings.cpp:660
+#: libapper/PkStrings.cpp:670
 msgid ""
 "Required data could not be found on any of the configured software origins.\n"
 "There were no more download mirrors that could be tried."
@@ -2538,7 +2469,7 @@ msgstr ""
 "програм.\n"
 "Перевірку за списком дзеркал звантажень завершено."
 
-#: libapper/PkStrings.cpp:663
+#: libapper/PkStrings.cpp:673
 msgid ""
 "Required upgrade data could not be found in any of the configured software "
 "origins.\n"
@@ -2548,12 +2479,12 @@ msgstr ""
 "джерел програм.\n"
 "Список оновлень дистрибутива побудовано не буде."
 
-#: libapper/PkStrings.cpp:666
+#: libapper/PkStrings.cpp:676
 msgid ""
 "The package that is trying to be installed is incompatible with this system."
 msgstr "Пакунок, який ви намагаєтеся встановити, є несумісним з цією системою."
 
-#: libapper/PkStrings.cpp:668
+#: libapper/PkStrings.cpp:678
 msgid ""
 "There is insufficient space on the device.\n"
 "Free some space on the system disk to perform this operation."
@@ -2561,11 +2492,11 @@ msgstr ""
 "На цьому пристрої недостатньо місця.\n"
 "Для виконання цієї дії вам доведеться звільнити на диску місце."
 
-#: libapper/PkStrings.cpp:671
+#: libapper/PkStrings.cpp:681
 msgid "Additional media is required to complete the transaction."
 msgstr "Для завершення дії потрібен додатковий носій."
 
-#: libapper/PkStrings.cpp:673
+#: libapper/PkStrings.cpp:683
 msgid ""
 "You have failed to provide correct authentication.\n"
 "Please check any passwords or account settings."
@@ -2573,7 +2504,7 @@ msgstr ""
 "Вам не вдалося пройти розпізнавання.\n"
 "Будь ласка, перевірте паролі та параметри облікового запису."
 
-#: libapper/PkStrings.cpp:676
+#: libapper/PkStrings.cpp:686
 msgid ""
 "The specified update could not be found.\n"
 "It could have already been installed or no longer available on the remote "
@@ -2583,28 +2514,28 @@ msgstr ""
 "Можливо його вже було встановлено або системі не вдалося знайти його на "
 "віддаленому сервері."
 
-#: libapper/PkStrings.cpp:679
+#: libapper/PkStrings.cpp:689
 msgid "The package could not be installed from untrusted origin."
 msgstr "Пакунок не вдалося встановити з ненадійного джерела."
 
-#: libapper/PkStrings.cpp:681
+#: libapper/PkStrings.cpp:691
 msgid "The package could not be updated from untrusted origin."
 msgstr "Пакунок не вдалося оновити з ненадійного джерела."
 
-#: libapper/PkStrings.cpp:683
+#: libapper/PkStrings.cpp:693
 msgid "The file list is not available for this package."
 msgstr "Для цього пакунка список файлів недоступний."
 
-#: libapper/PkStrings.cpp:685
+#: libapper/PkStrings.cpp:695
 msgid "The information about what requires this package could not be obtained."
 msgstr ""
 "Не вдалося отримати відомості щодо пакунків, для яких потрібен цей пакунок."
 
-#: libapper/PkStrings.cpp:687
+#: libapper/PkStrings.cpp:697
 msgid "The specified software origin could not be disabled."
 msgstr "Вказане сховище програмного забезпечення не можна вимкнути."
 
-#: libapper/PkStrings.cpp:689
+#: libapper/PkStrings.cpp:699
 msgid ""
 "The download could not be done automatically and should be done manually.\n"
 "More information is available in the detailed report."
@@ -2613,7 +2544,7 @@ msgstr ""
 "виконати вручну.\n"
 "Детальнішу інформацію розміщено у докладному звіті."
 
-#: libapper/PkStrings.cpp:692
+#: libapper/PkStrings.cpp:702
 msgid ""
 "One of the selected packages failed to configure correctly.\n"
 "More information is available in the detailed report."
@@ -2621,7 +2552,7 @@ msgstr ""
 "Один з позначених вами пакунків не вдалося належним чином налаштувати.\n"
 "Детальнішу інформацію наведено у докладному звіті."
 
-#: libapper/PkStrings.cpp:695
+#: libapper/PkStrings.cpp:705
 msgid ""
 "One of the selected packages failed to build correctly.\n"
 "More information is available in the detailed report."
@@ -2629,7 +2560,7 @@ msgstr ""
 "Один з позначених вами пакунків не вдалося належним чином зібрати.\n"
 "Детальнішу інформацію наведено у докладному звіті."
 
-#: libapper/PkStrings.cpp:698
+#: libapper/PkStrings.cpp:708
 msgid ""
 "One of the selected packages failed to install correctly.\n"
 "More information is available in the detailed report."
@@ -2637,7 +2568,7 @@ msgstr ""
 "Один з позначених вами пакунків не вдалося належним чином встановити.\n"
 "Детальнішу інформацію наведено у докладному звіті."
 
-#: libapper/PkStrings.cpp:701
+#: libapper/PkStrings.cpp:711
 msgid ""
 "One of the selected packages failed to be removed correctly.\n"
 "More information is available in the detailed report."
@@ -2645,7 +2576,7 @@ msgstr ""
 "Один з позначених вами пакунків не вдалося належним чином вилучити.\n"
 "Детальнішу інформацію наведено у докладному звіті."
 
-#: libapper/PkStrings.cpp:704
+#: libapper/PkStrings.cpp:714
 msgid ""
 "A program is running that has to be closed before the update can proceed.\n"
 "More information is available in the detailed report."
@@ -2654,26 +2585,26 @@ msgstr ""
 "програми.\n"
 "Детальнішу інформацію наведено у докладному звіті."
 
-#: libapper/PkStrings.cpp:707
+#: libapper/PkStrings.cpp:717
 msgid "The package database was changed while the request was running."
 msgstr ""
 "Базу даних пакунків було змінено з часу надсилання запиту на виконання."
 
-#: libapper/PkStrings.cpp:709
+#: libapper/PkStrings.cpp:719
 msgid "The virtual provide type is not supported by this system."
 msgstr "Цей тип віртуального вмісту не підтримується операційною системою."
 
-#: libapper/PkStrings.cpp:711
+#: libapper/PkStrings.cpp:721
 msgid "The install root is invalid. Please contact your administrator."
 msgstr ""
 "Некоректна коренева тека встановлення. Будь ласка, зверніться до системного "
 "адміністратора."
 
-#: libapper/PkStrings.cpp:713
+#: libapper/PkStrings.cpp:723
 msgid "The list of software could not be downloaded."
 msgstr "Не вдалося звантажити список пакунків програмного забезпечення."
 
-#: libapper/PkStrings.cpp:715
+#: libapper/PkStrings.cpp:725
 msgid ""
 "The transaction has been cancelled and will be retried when the system is "
 "idle."
@@ -2681,15 +2612,15 @@ msgstr ""
 "Операцію було скасовано. Повторну спробу буде виконано, коли система "
 "перебуватиме у стані бездіяльності."
 
-#: libapper/PkStrings.cpp:717
+#: libapper/PkStrings.cpp:727
 msgid "A previous package management transaction was interrupted."
 msgstr "Попередню дію з керування пакунками було перервано."
 
-#: libapper/PkStrings.cpp:719
+#: libapper/PkStrings.cpp:729
 msgid "A package manager lock is required."
 msgstr "Потрібне блокування керування пакунками."
 
-#: libapper/PkStrings.cpp:721
+#: libapper/PkStrings.cpp:731
 msgid ""
 "Unknown error, please report a bug.\n"
 "More information is available in the detailed report."
@@ -2697,236 +2628,236 @@ msgstr ""
 "Невідома помилка, будь ласка, повідомте про ваду.\n"
 "Докладнішу інформацію можна знайти у докладному звіті."
 
-#: libapper/PkStrings.cpp:732
+#: libapper/PkStrings.cpp:742
 msgctxt "The group type"
 msgid "Accessibility"
 msgstr "Доступність"
 
-#: libapper/PkStrings.cpp:734
+#: libapper/PkStrings.cpp:744
 msgctxt "The group type"
 msgid "Accessories"
 msgstr "Інструменти"
 
-#: libapper/PkStrings.cpp:736
+#: libapper/PkStrings.cpp:746
 msgctxt "The group type"
 msgid "Education"
 msgstr "Освіта"
 
-#: libapper/PkStrings.cpp:738
+#: libapper/PkStrings.cpp:748
 msgctxt "The group type"
 msgid "Games"
 msgstr "Ігри"
 
-#: libapper/PkStrings.cpp:740
+#: libapper/PkStrings.cpp:750
 msgctxt "The group type"
 msgid "Graphics"
 msgstr "Графіка"
 
-#: libapper/PkStrings.cpp:742
+#: libapper/PkStrings.cpp:752
 msgctxt "The group type"
 msgid "Internet"
 msgstr "Інтернет"
 
-#: libapper/PkStrings.cpp:744
+#: libapper/PkStrings.cpp:754
 msgctxt "The group type"
 msgid "Office"
 msgstr "Офіс"
 
-#: libapper/PkStrings.cpp:746
+#: libapper/PkStrings.cpp:756
 msgctxt "The group type"
 msgid "Others"
 msgstr "Інші"
 
-#: libapper/PkStrings.cpp:748
+#: libapper/PkStrings.cpp:758
 msgctxt "The group type"
 msgid "Development"
 msgstr "Розробка"
 
-#: libapper/PkStrings.cpp:750
+#: libapper/PkStrings.cpp:760
 msgctxt "The group type"
 msgid "Multimedia"
 msgstr "Мультимедіа"
 
-#: libapper/PkStrings.cpp:752
+#: libapper/PkStrings.cpp:762
 msgctxt "The group type"
 msgid "System"
 msgstr "Система"
 
-#: libapper/PkStrings.cpp:754
+#: libapper/PkStrings.cpp:764
 msgctxt "The group type"
 msgid "GNOME desktop"
 msgstr "Стільниця GNOME"
 
-#: libapper/PkStrings.cpp:756
+#: libapper/PkStrings.cpp:766
 msgctxt "The group type"
 msgid "KDE desktop"
 msgstr "Стільниця KDE"
 
-#: libapper/PkStrings.cpp:758
+#: libapper/PkStrings.cpp:768
 msgctxt "The group type"
 msgid "XFCE desktop"
 msgstr "Стільниця XFCE"
 
-#: libapper/PkStrings.cpp:760
+#: libapper/PkStrings.cpp:770
 msgctxt "The group type"
 msgid "Other desktops"
 msgstr "Інші стільниці"
 
-#: libapper/PkStrings.cpp:762
+#: libapper/PkStrings.cpp:772
 msgctxt "The group type"
 msgid "Publishing"
 msgstr "Видавнича справа"
 
-#: libapper/PkStrings.cpp:764
+#: libapper/PkStrings.cpp:774
 msgctxt "The group type"
 msgid "Servers"
 msgstr "Сервери"
 
-#: libapper/PkStrings.cpp:766
+#: libapper/PkStrings.cpp:776
 msgctxt "The group type"
 msgid "Fonts"
 msgstr "Шрифти"
 
-#: libapper/PkStrings.cpp:768
+#: libapper/PkStrings.cpp:778
 msgctxt "The group type"
 msgid "Admin tools"
 msgstr "Адміністрування"
 
-#: libapper/PkStrings.cpp:770
+#: libapper/PkStrings.cpp:780
 msgctxt "The group type"
 msgid "Legacy"
 msgstr "Програми для сумісності"
 
-#: libapper/PkStrings.cpp:772
+#: libapper/PkStrings.cpp:782
 msgctxt "The group type"
 msgid "Localization"
 msgstr "Локалізація"
 
-#: libapper/PkStrings.cpp:774
+#: libapper/PkStrings.cpp:784
 msgctxt "The group type"
 msgid "Virtualization"
 msgstr "Віртуалізація"
 
-#: libapper/PkStrings.cpp:776
+#: libapper/PkStrings.cpp:786
 msgctxt "The group type"
 msgid "Security"
 msgstr "Безпека"
 
-#: libapper/PkStrings.cpp:778
+#: libapper/PkStrings.cpp:788
 msgctxt "The group type"
 msgid "Power management"
 msgstr "Керування живленням"
 
-#: libapper/PkStrings.cpp:780
+#: libapper/PkStrings.cpp:790
 msgctxt "The group type"
 msgid "Communication"
 msgstr "Обмін даними"
 
-#: libapper/PkStrings.cpp:782
+#: libapper/PkStrings.cpp:792
 msgctxt "The group type"
 msgid "Network"
 msgstr "Мережа"
 
-#: libapper/PkStrings.cpp:784
+#: libapper/PkStrings.cpp:794
 msgctxt "The group type"
 msgid "Maps"
 msgstr "Карти"
 
-#: libapper/PkStrings.cpp:786
+#: libapper/PkStrings.cpp:796
 msgctxt "The group type"
 msgid "Software sources"
 msgstr "Джерела програм"
 
-#: libapper/PkStrings.cpp:788
+#: libapper/PkStrings.cpp:798
 msgctxt "The group type"
 msgid "Science"
 msgstr "Наука"
 
-#: libapper/PkStrings.cpp:790
+#: libapper/PkStrings.cpp:800
 msgctxt "The group type"
 msgid "Documentation"
 msgstr "Документація"
 
-#: libapper/PkStrings.cpp:792
+#: libapper/PkStrings.cpp:802
 msgctxt "The group type"
 msgid "Electronics"
 msgstr "Електроніка"
 
-#: libapper/PkStrings.cpp:794
+#: libapper/PkStrings.cpp:804
 msgctxt "The group type"
 msgid "Package collections"
 msgstr "Збірки пакунків"
 
-#: libapper/PkStrings.cpp:796
+#: libapper/PkStrings.cpp:806
 msgctxt "The group type"
 msgid "Vendor"
 msgstr "Постачальник"
 
-#: libapper/PkStrings.cpp:798
+#: libapper/PkStrings.cpp:808
 msgctxt "The group type"
 msgid "Newest packages"
 msgstr "Найновіші пакунки"
 
-#: libapper/PkStrings.cpp:800
+#: libapper/PkStrings.cpp:810
 msgctxt "The group type"
 msgid "Unknown group"
 msgstr "Невідома група"
 
-#: libapper/PkStrings.cpp:811
+#: libapper/PkStrings.cpp:821
 msgctxt "The type of update"
 msgid "Trivial update"
 msgstr "Звичайнісіньке оновлення"
 
-#: libapper/PkStrings.cpp:813
+#: libapper/PkStrings.cpp:823
 msgctxt "The type of update"
 msgid "Normal update"
 msgstr "Звичайне оновлення"
 
-#: libapper/PkStrings.cpp:815
+#: libapper/PkStrings.cpp:825
 msgctxt "The type of update"
 msgid "Important update"
 msgstr "Важливе оновлення"
 
-#: libapper/PkStrings.cpp:817
+#: libapper/PkStrings.cpp:827
 msgctxt "The type of update"
 msgid "Security update"
 msgstr "Оновлення безпеки"
 
-#: libapper/PkStrings.cpp:819
+#: libapper/PkStrings.cpp:829
 msgctxt "The type of update"
 msgid "Bug fix update"
 msgstr "Оновлення з виправленнями вад"
 
-#: libapper/PkStrings.cpp:821
+#: libapper/PkStrings.cpp:831
 msgctxt "The type of update"
 msgid "Enhancement update"
 msgstr "Оновлення з покращеннями"
 
-#: libapper/PkStrings.cpp:823
+#: libapper/PkStrings.cpp:833
 msgctxt "The type of update"
 msgid "Blocked update"
 msgstr "Заблоковане оновлення"
 
-#: libapper/PkStrings.cpp:826
+#: libapper/PkStrings.cpp:836
 msgctxt "The type of update"
 msgid "Installed"
 msgstr "Встановлене"
 
-#: libapper/PkStrings.cpp:829
+#: libapper/PkStrings.cpp:839
 msgctxt "The type of update"
 msgid "Available"
 msgstr "Наявне"
 
-#: libapper/PkStrings.cpp:831
+#: libapper/PkStrings.cpp:841
 msgctxt "The type of update"
 msgid "Unknown update"
 msgstr "Невідоме оновлення"
 
-#: libapper/PkStrings.cpp:842
+#: libapper/PkStrings.cpp:852
 msgid "No Updates Available"
 msgstr "Немає оновлень"
 
-#: libapper/PkStrings.cpp:845
+#: libapper/PkStrings.cpp:855
 #, kde-format
 msgctxt "Some updates were selected on the view"
 msgid "1 Update Selected"
@@ -2936,7 +2867,7 @@ msgstr[1] "Вибрано %1 оновлення"
 msgstr[2] "Вибрано %1 оновлень"
 msgstr[3] "Вибрано одне оновлення"
 
-#: libapper/PkStrings.cpp:849
+#: libapper/PkStrings.cpp:859
 #, kde-format
 msgctxt "Some updates are being shown on the screen"
 msgid "1 Update"
@@ -2946,13 +2877,13 @@ msgstr[1] "%1 оновлення"
 msgstr[2] "%1 оновлень"
 msgstr[3] "Одне оновлення"
 
-#: libapper/PkStrings.cpp:852
+#: libapper/PkStrings.cpp:862
 #, kde-format
 msgctxt "Type of update, in the case it's just an update"
 msgid "%1, %2"
 msgstr "%1, %2"
 
-#: libapper/PkStrings.cpp:853
+#: libapper/PkStrings.cpp:863
 #, kde-format
 msgctxt "Part of: %1 Updates, %1 Selected"
 msgid "%1 Update"
@@ -2962,7 +2893,7 @@ msgstr[1] "%1 оновлення"
 msgstr[2] "%1 оновлень"
 msgstr[3] "Одне оновлення"
 
-#: libapper/PkStrings.cpp:854
+#: libapper/PkStrings.cpp:864
 #, kde-format
 msgctxt "Part of: %1 Updates, %1 Selected"
 msgid "%1 Selected"
@@ -2972,11 +2903,11 @@ msgstr[1] "вибрано %1 оновлення"
 msgstr[2] "вибрано %1 оновлень"
 msgstr[3] "вибрано одне оновлення"
 
-#: libapper/PkStrings.cpp:858
+#: libapper/PkStrings.cpp:868
 msgid "No Packages"
 msgstr "Немає пакунків"
 
-#: libapper/PkStrings.cpp:860
+#: libapper/PkStrings.cpp:870
 #, kde-format
 msgid "1 Package"
 msgid_plural "%1 Packages"
@@ -2985,243 +2916,224 @@ msgstr[1] "%1 пакунки"
 msgstr[2] "%1 пакунків"
 msgstr[3] "1 пакунок"
 
-#: libapper/PkStrings.cpp:868
+#: libapper/PkStrings.cpp:878
 msgid "No restart is necessary"
 msgstr "Потреби у перезапуску немає"
 
-#: libapper/PkStrings.cpp:870
+#: libapper/PkStrings.cpp:880
 msgid "You will be required to restart this application"
 msgstr "Вам слід перезапустити цю програму"
 
-#: libapper/PkStrings.cpp:872
+#: libapper/PkStrings.cpp:882
 msgid "You will be required to log out and back in"
 msgstr "Вам слід вийти і знову увійти до вашого облікового запису"
 
-#: libapper/PkStrings.cpp:874
+#: libapper/PkStrings.cpp:884
 msgid "A restart will be required"
 msgstr "Слід перезавантажити систему"
 
-#: libapper/PkStrings.cpp:876
+#: libapper/PkStrings.cpp:886
 msgid "You will be required to log out and back in due to a security update."
 msgstr ""
 "Для належного встановлення оновлення безпеки вам слід буде вийти і знову "
 "увійти до системи."
 
-#: libapper/PkStrings.cpp:878
+#: libapper/PkStrings.cpp:888
 msgid "A restart will be required due to a security update."
 msgstr ""
 "Для належного встановлення оновлення безпеки вам слід перезавантажити "
 "систему."
 
-#: libapper/PkStrings.cpp:891
+#: libapper/PkStrings.cpp:901
 msgid "No restart is required"
 msgstr "Перезавантаження системи не знадобиться"
 
-#: libapper/PkStrings.cpp:893
+#: libapper/PkStrings.cpp:903
 msgid "A restart is required"
 msgstr "Потрібне перезавантаження"
 
-#: libapper/PkStrings.cpp:895
+#: libapper/PkStrings.cpp:905
 msgid "You need to log out and log back in"
 msgstr "Вам слід вийти і знову увійти до вашого облікового запису"
 
-#: libapper/PkStrings.cpp:897
+#: libapper/PkStrings.cpp:907
 msgid "You need to restart the application"
 msgstr "Вам слід перезапустити програму"
 
-#: libapper/PkStrings.cpp:899
+#: libapper/PkStrings.cpp:909
 msgid "You need to log out and log back in to remain secure."
 msgstr ""
 "Щоб забезпечити безпеку системи, вам слід вийти і знову увійти до вашого "
 "облікового запису."
 
-#: libapper/PkStrings.cpp:901
+#: libapper/PkStrings.cpp:911
 msgid "A restart is required to remain secure."
 msgstr "Щоб забезпечити безпеку системи, потрібне перезавантаження."
 
-#: libapper/PkStrings.cpp:914
+#: libapper/PkStrings.cpp:924
 msgid "Stable"
 msgstr "Стабільна версія"
 
-#: libapper/PkStrings.cpp:916
+#: libapper/PkStrings.cpp:926
 msgid "Unstable"
 msgstr "Нестабільна версія"
 
-#: libapper/PkStrings.cpp:918
+#: libapper/PkStrings.cpp:928
 msgid "Testing"
 msgstr "Перевірка"
 
-#: libapper/PkStrings.cpp:931
+#: libapper/PkStrings.cpp:941
 #, kde-format
 msgid "Please insert the CD labeled '%1', and press continue."
 msgstr ""
 "Будь ласка, вставте компакт-диск з міткою «%1» і натисніть кнопку "
 "«Продовжити»."
 
-#: libapper/PkStrings.cpp:933
+#: libapper/PkStrings.cpp:943
 #, kde-format
 msgid "Please insert the DVD labeled '%1', and press continue."
 msgstr "Будь ласка, вставте DVD з міткою «%1» і натисніть кнопку «Продовжити»."
 
-#: libapper/PkStrings.cpp:935
+#: libapper/PkStrings.cpp:945
 #, kde-format
 msgid "Please insert the disc labeled '%1', and press continue."
 msgstr ""
 "Будь ласка, вставте диск з міткою «%1» і натисніть кнопку «Продовжити»."
 
-#: libapper/PkStrings.cpp:937 libapper/PkStrings.cpp:940
+#: libapper/PkStrings.cpp:947 libapper/PkStrings.cpp:950
 #, kde-format
 msgid "Please insert the medium labeled '%1', and press continue."
 msgstr ""
 "Будь ласка, вставте носій з міткою «%1» і натисніть кнопку «Продовжити»."
 
-#: libapper/PkStrings.cpp:947
+#: libapper/PkStrings.cpp:957
 msgid "A mirror is possibly broken"
 msgstr "Ймовірно, дзеркальну копію пошкоджено"
 
-#: libapper/PkStrings.cpp:949
+#: libapper/PkStrings.cpp:959
 msgid "The connection was refused"
 msgstr "З’єднання було заборонено"
 
-#: libapper/PkStrings.cpp:951
+#: libapper/PkStrings.cpp:961
 msgid "The parameter was invalid"
 msgstr "Вказано некоректний параметр"
 
-#: libapper/PkStrings.cpp:953
+#: libapper/PkStrings.cpp:963
 msgid "The priority was invalid"
 msgstr "Вказано некоректний пріоритет"
 
-#: libapper/PkStrings.cpp:955
+#: libapper/PkStrings.cpp:965
 msgid "Backend warning"
 msgstr "Попередження модуля обробки"
 
-#: libapper/PkStrings.cpp:957
+#: libapper/PkStrings.cpp:967
 msgid "Daemon warning"
 msgstr "Попередження фонової служби"
 
-#: libapper/PkStrings.cpp:959
+#: libapper/PkStrings.cpp:969
 msgid "The package list cache is being rebuilt"
 msgstr "Перебудова кешу пакунків"
 
-#: libapper/PkStrings.cpp:961
+#: libapper/PkStrings.cpp:971
 msgid "An untrusted package was installed"
 msgstr "Було встановлено несертифікований пакунок"
 
-#: libapper/PkStrings.cpp:963
+#: libapper/PkStrings.cpp:973
 msgid "A newer package exists"
 msgstr "Існує новіший пакунок"
 
-#: libapper/PkStrings.cpp:965
+#: libapper/PkStrings.cpp:975
 msgid "Could not find package"
 msgstr "Не вдалося знайти пакунок"
 
-#: libapper/PkStrings.cpp:967
+#: libapper/PkStrings.cpp:977
 msgid "Configuration files were changed"
 msgstr "Файли налаштування було змінено"
 
-#: libapper/PkStrings.cpp:969
+#: libapper/PkStrings.cpp:979
 msgid "Package is already installed"
 msgstr "Пакунок вже встановлено"
 
-#: libapper/PkStrings.cpp:971
+#: libapper/PkStrings.cpp:981
 msgid "Automatic cleanup is being ignored"
 msgstr "Автоматичне спорожнення проігноровано"
 
-#: libapper/PkStrings.cpp:973
+#: libapper/PkStrings.cpp:983
 msgid "Software source download failed"
 msgstr "Звантаження з джерела пакунків зазнало невдачі"
 
-#: libapper/PkStrings.cpp:975
+#: libapper/PkStrings.cpp:985
 msgid "This software source is for developers only"
 msgstr "Це джерело програмного забезпечення призначено лише для розробників"
 
-#: libapper/PkStrings.cpp:977
+#: libapper/PkStrings.cpp:987
 msgid "Other updates have been held back"
 msgstr "Інші оновлення затримано"
 
-#: libapper/PkStrings.cpp:991
+#: libapper/PkStrings.cpp:1001
 msgid "You do not have the necessary privileges to perform this action."
 msgstr "У вас недостатньо прав для виконання цієї дії."
 
-#: libapper/PkStrings.cpp:993
+#: libapper/PkStrings.cpp:1003
 msgid "Could not get a transaction id from packagekitd."
 msgstr "Не вдалося отримати ідентифікатор операції від packagekitd."
 
-#: libapper/PkStrings.cpp:995
+#: libapper/PkStrings.cpp:1005
 msgid "Cannot connect to this transaction id."
 msgstr "Не вдалося з’єднатися з операцією з цим ідентифікатором."
 
-#: libapper/PkStrings.cpp:997
+#: libapper/PkStrings.cpp:1007
 msgid "This action is unknown."
 msgstr "Невідома дія."
 
-#: libapper/PkStrings.cpp:999
+#: libapper/PkStrings.cpp:1009
 msgid "The packagekitd service could not be started."
 msgstr "Не вдалося запустити службу packagekitd."
 
-#: libapper/PkStrings.cpp:1001
+#: libapper/PkStrings.cpp:1011
 msgid "The query is not valid."
 msgstr "Цей запит не є коректним."
 
-#: libapper/PkStrings.cpp:1003
+#: libapper/PkStrings.cpp:1013
 msgid "The file is not valid."
 msgstr "Цей файл не є коректним."
 
-#: libapper/PkStrings.cpp:1005
+#: libapper/PkStrings.cpp:1015
 msgid "This function is not yet supported."
 msgstr "Ця функціональна можливість ще не підтримується."
 
-#: libapper/PkStrings.cpp:1007
+#: libapper/PkStrings.cpp:1017
 msgid "Could not talk to packagekitd."
 msgstr "Не вдалося обмінятися даними з packagekitd."
 
-#: libapper/PkStrings.cpp:1009
+#: libapper/PkStrings.cpp:1019
 msgid "Error talking to packagekitd."
 msgstr "Помилка під час обміну даними з packagekitd."
 
-#: libapper/PkStrings.cpp:1012 libapper/PkStrings.cpp:1015
+#: libapper/PkStrings.cpp:1022 libapper/PkStrings.cpp:1025
 msgid "An unknown error happened."
 msgstr "Сталася невідома помилка."
 
-#: libapper/PkStrings.cpp:1029
+#: libapper/PkStrings.cpp:1039
 msgid "Your system is up to date"
 msgstr "Немає потреби у оновленні пакунків вашої системи"
 
-#: libapper/PkStrings.cpp:1031
+#: libapper/PkStrings.cpp:1041
 msgid "You have no updates"
 msgstr "Немає оновлень"
 
-#: libapper/PkStrings.cpp:1033
+#: libapper/PkStrings.cpp:1043
 msgid "Last check for updates was more than a month ago"
 msgstr "Останній пошук оновлень було виконано понад місяць тому"
 
-#: libapper/PkStrings.cpp:1041
+#: libapper/PkStrings.cpp:1051
 #, kde-format
 msgid "Verified %1 ago"
 msgstr "Перевірено %1 тому"
 
-#: libapper/PkStrings.cpp:1043
+#: libapper/PkStrings.cpp:1053
 msgid "It's strongly recommended that you check for new updates now"
 msgstr "Наполегливо рекомендуємо вам виконати пошук оновлень зараз"
-
-#: libapper/PkTransaction.cpp:118
-msgid "Current backend does not support installing files."
-msgstr ""
-"Вибачте, поточним модулем обробки не передбачено можливості встановлення "
-"файлів."
-
-#: libapper/PkTransaction.cpp:131
-msgid "Current backend does not support installing packages."
-msgstr ""
-"Вибачте, поточним модулем обробки не підтримується встановлення пакунків."
-
-#: libapper/PkTransaction.cpp:145
-msgid "The current backend does not support removing packages."
-msgstr "Вибачте, модуль обробки вашої системи не підтримує вилучення пакунків."
-
-#: libapper/PkTransaction.cpp:163
-msgid "The current backend does not support updating packages."
-msgstr "Вибачте, модуль обробки вашої системи не підтримує оновлення пакунків."
 
 #: libapper/PkTransaction.cpp:258
 msgid ""
@@ -3657,15 +3569,6 @@ msgstr "Встановлення пакунків за файлами"
 #: PkSession/PkRemovePackageByFiles.cpp:45
 msgid "You can drop more files in here"
 msgstr "Сюди можна скинути додаткові файли"
-
-#: PkSession/PkInstallPackageFiles.cpp:52
-msgid "Not Supported"
-msgstr "Не підтримується"
-
-#: PkSession/PkInstallPackageFiles.cpp:53
-msgid "Your current backend does not support installing files"
-msgstr ""
-"Вашим поточним модулем обробки не передбачено можливості встановлення файлів"
 
 #: PkSession/PkInstallPackageFiles.cpp:68
 #: PkSession/PkRemovePackageByFiles.cpp:66

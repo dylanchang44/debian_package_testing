@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-04-24 01:33+0000\n"
+"POT-Creation-Date: 2015-04-07 02:18+0000\n"
 "PO-Revision-Date: 2013-06-28 17:18+0200\n"
 "Last-Translator: Andrej Mernik <andrejm@ubuntu.si>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
@@ -22,11 +22,11 @@ msgstr ""
 msgid "Failed to get update details"
 msgstr "Ni bilo mogoče podrobnosti posodobitev"
 
-#: package/contents/ui/ChangelogView.qml:92
+#: package/contents/ui/ChangelogView.qml:94
 msgid "Version: %1"
 msgstr "Različica: %1"
 
-#: package/contents/ui/ChangelogView.qml:98
+#: package/contents/ui/ChangelogView.qml:100
 msgid "Updates: %1"
 msgstr "Posodobitve: %1"
 

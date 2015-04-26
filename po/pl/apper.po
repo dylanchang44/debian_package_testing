@@ -5,13 +5,13 @@
 # Maciej Wikło <maciej.wiklo@wp.pl>, 2009.
 # Marta Rybczyńska <kde-i18n@rybczynska.net>, 2009, 2010, 2013.
 # Artur Chłond <eugenewolfe@o2.pl>, 2010, 2011.
-# Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>, 2011, 2012, 2013, 2014.
+# Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>, 2011, 2012, 2013, 2014, 2015.
 msgid ""
 msgstr ""
 "Project-Id-Version: kpackagekit\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-08-21 01:47+0000\n"
-"PO-Revision-Date: 2014-08-23 07:22+0200\n"
+"POT-Creation-Date: 2015-03-28 01:56+0000\n"
+"PO-Revision-Date: 2015-01-10 10:37+0100\n"
 "Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
 "Language: pl\n"
@@ -192,7 +192,7 @@ msgstr "Filtry"
 
 #. i18n: ectx: property (text), widget (QCheckBox, installedCB)
 #: Apper/BackendDetails.ui:365 ApperKCM/FiltersMenu.cpp:59
-#: libapper/PkStrings.cpp:381
+#: libapper/PkStrings.cpp:391
 msgid "Installed"
 msgstr "Wgrane"
 
@@ -355,7 +355,7 @@ msgstr[1] "Pakiety: %2"
 msgstr[2] "Pakiety: %2"
 
 #: apperd/TransactionWatcher.cpp:240 ApperKCM/TransactionModel.cpp:45
-#: AppSetup/SetupWizard.cpp:204
+#: AppSetup/SetupWizard.cpp:149
 msgid "Details"
 msgstr "Szczegóły"
 
@@ -391,7 +391,7 @@ msgstr[2] "Dostępnych jest %1 nowych uaktualnień"
 msgid "Review"
 msgstr "Przejrzyj"
 
-#: apperd/Updater.cpp:290 AppSetup/SetupWizard.cpp:339
+#: apperd/Updater.cpp:290 AppSetup/SetupWizard.cpp:260
 #: libapper/ApplicationsDelegate.cpp:40
 msgid "Install"
 msgstr "Wgraj"
@@ -443,12 +443,13 @@ msgid ""
 "The settings of the current module have changed.\n"
 "Do you want to apply the changes or discard them?"
 msgstr ""
-"Ustawienia w bieżącym module zostały zmienione.\n"
-"Zastosować zmiany, czy je porzucić?"
+"Ustawienia w bieżącym module uległy zmianie.\n"
+"Zastosować czy porzucić zmiany?"
 
+# Lepiej brzmi w tytule okna
 #: ApperKCM/ApperKCM.cpp:465
 msgid "Apply Settings"
-msgstr "Zastosuj zmiany"
+msgstr "Wprowadzanie zmian"
 
 #: ApperKCM/ApperKCM.cpp:552 ApperKCM/CategoryModel.cpp:57
 msgid "Updates"
@@ -493,7 +494,7 @@ msgid "Software Origins"
 msgstr "Źródła oprogramowania"
 
 #. i18n: ectx: property (text), widget (QToolButton, backTB)
-#: ApperKCM/ApperKCM.ui:267 AppSetup/SetupWizard.cpp:153
+#: ApperKCM/ApperKCM.ui:267 AppSetup/SetupWizard.cpp:87
 msgid "Back"
 msgstr "Wstecz"
 
@@ -656,7 +657,7 @@ msgstr "Ukryj pakiety, które nie są programami"
 msgid "Display"
 msgstr "Wyświetl"
 
-#: ApperKCM/PackageDetails.cpp:87 AppSetup/SetupWizard.cpp:261
+#: ApperKCM/PackageDetails.cpp:87 AppSetup/SetupWizard.cpp:186
 msgid "Description"
 msgstr "Opis"
 
@@ -1023,170 +1024,103 @@ msgstr "Szacowany rozmiar pobierania: %1"
 msgid "Check for new updates"
 msgstr "Szukaj nowych uaktualnień"
 
-#. i18n: ectx: property (text), widget (QRadioButton, acceptedRB)
-#: AppSetup/LicensePage.ui:98
-msgid "I agree to the above terms and conditions"
-msgstr "Zgadzam się na powyższe warunki"
-
-#. i18n: ectx: property (text), widget (QRadioButton, rejectedRB)
-#: AppSetup/LicensePage.ui:111
-msgid "I don't agree"
-msgstr "Nie zgadzam się"
-
-#: AppSetup/main.cpp:34 AppSetup/main.cpp:35
+#: AppSetup/main.cpp:33 AppSetup/main.cpp:34
 msgid "KDE Application Installer"
 msgstr "Wgrywanie programów dla KDE"
 
-#: AppSetup/main.cpp:36
-msgid "(C) 2012, Matthias Klumpp"
-msgstr "(C) 2012, Matthias Klumpp"
+#: AppSetup/main.cpp:35
+msgid "(C) 2014, Matthias Klumpp"
+msgstr "(C) 2014, Matthias Klumpp"
 
-#: AppSetup/main.cpp:38
+#: AppSetup/main.cpp:37
 msgctxt "@info:credit"
 msgid "Daniel Nicoletti"
 msgstr "Daniel Nicoletti"
 
-#: AppSetup/main.cpp:38 AppSetup/main.cpp:40
+#: AppSetup/main.cpp:37 AppSetup/main.cpp:39
 msgid "Developer"
 msgstr "Programista"
 
-#: AppSetup/main.cpp:40
+#: AppSetup/main.cpp:39
 msgctxt "@info:credit"
 msgid "Matthias Klumpp"
 msgstr "Matthias Klumpp"
 
-#: AppSetup/main.cpp:47
+#: AppSetup/main.cpp:46
 msgid "Show verbose information"
 msgstr "Pokaż szczegółowe informacje"
 
-#: AppSetup/main.cpp:48
+#: AppSetup/main.cpp:47
 msgid "IPK package filename"
 msgstr "Nazwa pliku pakietu IPK"
 
-#: AppSetup/main.cpp:72
-msgid "Sorry, we didn't get an existing IPK package as parameter."
-msgstr "Wybacz, ale nie uzyskaliśmy istniejącego pakietu IPK jako parametr."
+#: AppSetup/main.cpp:70
+msgid "We did not receive a path to an IPK package as parameter."
+msgstr "Nie uzyskaliśmy ścieżki do pakietu IPK jako parametr."
 
-#: AppSetup/main.cpp:73
+#: AppSetup/main.cpp:71
 msgid "Package not found!"
 msgstr "Nie znaleziono pakietu!"
 
-#: AppSetup/SetupWizard.cpp:88
-msgid "Installation finished!"
-msgstr "Ukończono wgrywanie!"
-
-#: AppSetup/SetupWizard.cpp:89
-#, kde-format
-msgid "%1 has been installed successfully!"
-msgstr "%1 został pomyślnie wgrany!"
-
-#: AppSetup/SetupWizard.cpp:103 libapper/PkTransaction.cpp:118
-#: libapper/PkTransaction.cpp:131 libapper/PkTransaction.cpp:145
-#: libapper/PkTransaction.cpp:163
-msgid "Error"
-msgstr "Błąd"
-
-#: AppSetup/SetupWizard.cpp:104 AppSetup/SetupWizard.cpp:118
-msgid "An error occurred"
-msgstr "Wystąpił błąd"
-
-#: AppSetup/SetupWizard.cpp:151 libapper/Requirements.cpp:59
+#: AppSetup/SetupWizard.cpp:85 libapper/Requirements.cpp:59
 #: PkSession/SessionTask.cpp:71
 msgid "Continue"
 msgstr "Kontynuuj"
 
-#: AppSetup/SetupWizard.cpp:192
+#: AppSetup/SetupWizard.cpp:109
+msgid "Error"
+msgstr "Błąd"
+
+#: AppSetup/SetupWizard.cpp:110
+msgid "An error occurred"
+msgstr "Wystąpił błąd"
+
+#: AppSetup/SetupWizard.cpp:137
 msgid "Welcome!"
 msgstr "Witaj!"
 
-#: AppSetup/SetupWizard.cpp:193
+#: AppSetup/SetupWizard.cpp:138
 #, kde-format
 msgid "Welcome to the installation of %1!"
 msgstr "Witaj w instalacji %1!"
 
-#: AppSetup/SetupWizard.cpp:194
+#: AppSetup/SetupWizard.cpp:139
 msgid ""
-"Please be careful while installing 3rd-party applications.<br>They may "
+"Please be careful while installing a 3rd-party application.<br>It might "
 "eventually <b>damage</b> your system or have <b>malicious behaviour</b>, "
 "like spying out your passwords.<br>Please do only install this software if "
-"you <b>trust the publisher and the author</b> of it."
+"you <b>trust its publisher</b>."
 msgstr ""
 "Proszę zachować ostrożność przy wgrywaniu programów osób trzecich. <br>Mogą "
 "one <b>uszkodzić</b> twój system lub wykazywać <b>zachowanie szkodliwie</b>, "
 "takie jak wykradanie haseł.<br>Proszę wgrać to oprogramowanie tylko wtedy, "
-"jeśli <b>ufasz jego wydawcy i autorowi</b>."
+"jeśli <b>ufasz jego wydawcy</b>."
 
-#: AppSetup/SetupWizard.cpp:205
+#: AppSetup/SetupWizard.cpp:150
 msgid "Details about this installation"
 msgstr "Szczegóły o tej instalacji"
 
-#: AppSetup/SetupWizard.cpp:242
-msgid "Install for all users"
-msgstr "Wgraj dla wszystkich użytkowników"
-
-#: AppSetup/SetupWizard.cpp:260
+#: AppSetup/SetupWizard.cpp:185
 msgid "Application description"
 msgstr "Opis programu"
 
-#: AppSetup/SetupWizard.cpp:272
-msgid "Software license"
-msgstr "Licencja oprogramowania"
-
-#: AppSetup/SetupWizard.cpp:273
-msgid "Please read the following terms and conditions carefully!"
-msgstr "Proszę uważnie przeczytać poniższe warunki!"
-
-#: AppSetup/SetupWizard.cpp:282
+#: AppSetup/SetupWizard.cpp:193
 msgid "Running installation"
-msgstr "Uruchamianie wgrywania"
+msgstr "Wgrywanie w toku"
 
-#: AppSetup/SetupWizard.cpp:283
+#: AppSetup/SetupWizard.cpp:194
 #, kde-format
 msgid "Installing %1..."
 msgstr "Wgrywanie %1..."
 
-#: AppSetup/SetupWizard.cpp:318
-msgid ""
-"Installing this package will make the following native packages obsolete. "
-"You might consider removing them manually."
-msgstr ""
-"Wgranie tego pakietu sprawi, że następujące przeznaczone pakiety staną się "
-"przestarzałe. Możesz rozważyć ich ręczne usunięcie."
+#: AppSetup/SetupWizard.cpp:234
+msgid "Installation finished!"
+msgstr "Ukończono wgrywanie!"
 
-#: AppSetup/SetupWizard.cpp:319
-msgid "Similar native packages found"
-msgstr "Znaleziono podobne przeznaczone pakiety"
-
-#: AppSetup/SetupWizard.cpp:419
-msgid ""
-"You want to install this application as root!\n"
-"This can damage your system or install malicious software for all users.\n"
-"Please only proceed, if you really know what you're doing!\n"
-"Continue?"
-msgstr ""
-"Chcesz wgrać ten program jako administrator!\n"
-"Może to uszkodzić twój system lub wgrać złośliwe oprogramowanie dla "
-"wszystkich użytkowników.\n"
-"Proszę kontynuować tylko wtedy, gdy wiesz co robisz!\n"
-"Czy kontynuować?"
-
-#: AppSetup/SetupWizard.cpp:422
-msgid "Really install as superuser?"
-msgstr "Czy na pewno wgrać jako administrator?"
-
-#: AppSetup/SetupWizard.cpp:440
+#: AppSetup/SetupWizard.cpp:235
 #, kde-format
-msgid "This package has the following security level: <b>%1</b>"
-msgstr "Ten pakiet ma następujący poziom bezpieczeństwa: <b>%1</b>"
-
-#: AppSetup/SetupWizard.cpp:442
-#, kde-format
-msgid "It was signed with a key belonging to these user-ids: %1"
-msgstr "Został podpisany kluczem należącym do identyfikatora użytkownika: %1"
-
-#: AppSetup/SetupWizard.cpp:446
-msgid "Security hints"
-msgstr "Wskazówki bezpieczeństwa"
+msgid "%1 has been installed successfully!"
+msgstr "%1 został pomyślnie wgrany!"
 
 #: libapper/ApplicationLauncher.cpp:94
 msgid "New application available"
@@ -1275,7 +1209,7 @@ msgstr "Źródło"
 msgid "Size"
 msgstr "Rozmiar"
 
-#: libapper/PackageModel.cpp:326
+#: libapper/PackageModel.cpp:334
 #, kde-format
 msgid ""
 "Version: %1\n"
@@ -1284,11 +1218,11 @@ msgstr ""
 "Wersja: %1\n"
 "Architektura: %2"
 
-#: libapper/PackageModel.cpp:372
+#: libapper/PackageModel.cpp:380
 msgid "To be Removed"
 msgstr "Do usunięcia"
 
-#: libapper/PackageModel.cpp:374
+#: libapper/PackageModel.cpp:382
 msgid "To be Installed"
 msgstr "Do wgrania"
 
@@ -1493,718 +1427,718 @@ msgctxt "we are copying package files to prepare to install"
 msgid "Copying files"
 msgstr "Kopiowanie plików"
 
-#: libapper/PkStrings.cpp:165
+#: libapper/PkStrings.cpp:170
 msgctxt "The action of the package, in past tense"
 msgid "Downloaded"
 msgstr "Pobrano"
 
-#: libapper/PkStrings.cpp:167
+#: libapper/PkStrings.cpp:172
 msgctxt "The action of the package, in past tense"
 msgid "Updated"
 msgstr "Uaktualniono"
 
-#: libapper/PkStrings.cpp:169
+#: libapper/PkStrings.cpp:174
 msgctxt "The action of the package, in past tense"
 msgid "Installed"
 msgstr "Wgrano"
 
-#: libapper/PkStrings.cpp:171
+#: libapper/PkStrings.cpp:176
 msgctxt "The action of the package, in past tense"
 msgid "Removed"
 msgstr "Usunięto"
 
-#: libapper/PkStrings.cpp:173
+#: libapper/PkStrings.cpp:178
 msgctxt "The action of the package, in past tense"
 msgid "Cleaned Up"
 msgstr "Uporządkowano"
 
-#: libapper/PkStrings.cpp:175
+#: libapper/PkStrings.cpp:180
 msgctxt "The action of the package, in past tense"
 msgid "Obsoleted"
 msgstr "Zastąpiono"
 
-#: libapper/PkStrings.cpp:186
+#: libapper/PkStrings.cpp:191
 msgctxt "The role of the transaction, in present tense"
 msgid "Unknown role type"
 msgstr "Nieznany typ"
 
-#: libapper/PkStrings.cpp:188
+#: libapper/PkStrings.cpp:193
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting dependencies"
 msgstr "Pobieranie zależności"
 
-#: libapper/PkStrings.cpp:190
+#: libapper/PkStrings.cpp:195
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting update detail"
 msgstr "Pobieranie szczegółów uaktualnienia"
 
-#: libapper/PkStrings.cpp:193
+#: libapper/PkStrings.cpp:198
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting details"
 msgstr "Pobieranie szczegółów"
 
-#: libapper/PkStrings.cpp:195
+#: libapper/PkStrings.cpp:200
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting requires"
 msgstr "Pobieranie wymagań"
 
-#: libapper/PkStrings.cpp:197
+#: libapper/PkStrings.cpp:202
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting updates"
 msgstr "Pobieranie uaktualnień"
 
-#: libapper/PkStrings.cpp:199
+#: libapper/PkStrings.cpp:204
 msgctxt "The role of the transaction, in present tense"
 msgid "Searching details"
 msgstr "Wyszukiwanie szczegółów"
 
-#: libapper/PkStrings.cpp:201
+#: libapper/PkStrings.cpp:206
 msgctxt "The role of the transaction, in present tense"
 msgid "Searching for file"
 msgstr "Wyszukiwanie pliku"
 
-#: libapper/PkStrings.cpp:203
+#: libapper/PkStrings.cpp:208
 msgctxt "The role of the transaction, in present tense"
 msgid "Searching groups"
 msgstr "Wyszukiwanie grup"
 
-#: libapper/PkStrings.cpp:205
+#: libapper/PkStrings.cpp:210
 msgctxt "The role of the transaction, in present tense"
 msgid "Searching by package name"
 msgstr "Wyszukiwanie w nazwie pakietu"
 
-#: libapper/PkStrings.cpp:208
+#: libapper/PkStrings.cpp:213
 msgctxt "The role of the transaction, in present tense"
 msgid "Simulating removal"
 msgstr "Symulowanie usuwania"
 
-#: libapper/PkStrings.cpp:210 libapper/PkStrings.cpp:217
-#: libapper/PkStrings.cpp:258
+#: libapper/PkStrings.cpp:215 libapper/PkStrings.cpp:222
+#: libapper/PkStrings.cpp:263
 msgctxt "The role of the transaction, in present tense"
 msgid "Downloading packages"
 msgstr "Pobieranie pakietów"
 
-#: libapper/PkStrings.cpp:212
+#: libapper/PkStrings.cpp:217
 msgctxt "The role of the transaction, in present tense"
 msgid "Removing"
 msgstr "Usuwanie"
 
-#: libapper/PkStrings.cpp:215
+#: libapper/PkStrings.cpp:220
 msgctxt "The role of the transaction, in present tense"
 msgid "Simulating install"
 msgstr "Symulowanie wgrywania"
 
-#: libapper/PkStrings.cpp:219
+#: libapper/PkStrings.cpp:224
 msgctxt "The role of the transaction, in present tense"
 msgid "Installing"
 msgstr "Wgrywanie"
 
-#: libapper/PkStrings.cpp:222
+#: libapper/PkStrings.cpp:227
 msgctxt "The role of the transaction, in present tense"
 msgid "Simulating file install"
 msgstr "Symulowanie wgrywania pliku"
 
-#: libapper/PkStrings.cpp:224
+#: libapper/PkStrings.cpp:229
 msgctxt "The role of the transaction, in present tense"
 msgid "Downloading required packages"
 msgstr "Pobieranie wymaganych pakietów"
 
-#: libapper/PkStrings.cpp:226
+#: libapper/PkStrings.cpp:231
 msgctxt "The role of the transaction, in present tense"
 msgid "Installing file"
 msgstr "Wgrywanie pliku"
 
-#: libapper/PkStrings.cpp:228
+#: libapper/PkStrings.cpp:233
 msgctxt "The role of the transaction, in present tense"
 msgid "Refreshing package cache"
 msgstr "Odświeżanie pamięci podręcznej pakietów"
 
-#: libapper/PkStrings.cpp:231
+#: libapper/PkStrings.cpp:236
 msgctxt "The role of the transaction, in present tense"
 msgid "Simulating update"
 msgstr "Symulowanie uaktualnienia"
 
-#: libapper/PkStrings.cpp:233
+#: libapper/PkStrings.cpp:238
 msgctxt "The role of the transaction, in present tense"
 msgid "Downloading updates"
 msgstr "Pobieranie uaktualnień"
 
-#: libapper/PkStrings.cpp:235
+#: libapper/PkStrings.cpp:240
 msgctxt "The role of the transaction, in present tense"
 msgid "Updating packages"
 msgstr "Uaktualnianie pakietów"
 
-#: libapper/PkStrings.cpp:237
+#: libapper/PkStrings.cpp:242
 msgctxt "The role of the transaction, in present tense"
 msgid "Canceling"
 msgstr "Anulowanie"
 
-#: libapper/PkStrings.cpp:239
+#: libapper/PkStrings.cpp:244
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting list of repositories"
 msgstr "Pobieranie wykazu repozytoriów"
 
-#: libapper/PkStrings.cpp:241
+#: libapper/PkStrings.cpp:246
 msgctxt "The role of the transaction, in present tense"
 msgid "Enabling repository"
 msgstr "Włączanie repozytorium"
 
-#: libapper/PkStrings.cpp:243
+#: libapper/PkStrings.cpp:248
 msgctxt "The role of the transaction, in present tense"
 msgid "Setting repository data"
 msgstr "Ustawianie danych repozytorium"
 
-#: libapper/PkStrings.cpp:245
+#: libapper/PkStrings.cpp:250
 msgctxt "The role of the transaction, in present tense"
 msgid "Resolving"
 msgstr "Rozwiązywanie"
 
-#: libapper/PkStrings.cpp:248
+#: libapper/PkStrings.cpp:253
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting file list"
 msgstr "Pobieranie wykazu plików"
 
-#: libapper/PkStrings.cpp:250
+#: libapper/PkStrings.cpp:255
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting what provides"
 msgstr "Pobieranie dostarczanych elementów"
 
-#: libapper/PkStrings.cpp:252
+#: libapper/PkStrings.cpp:257
 msgctxt "The role of the transaction, in present tense"
 msgid "Installing signature"
 msgstr "Wgrywanie podpisu"
 
-#: libapper/PkStrings.cpp:254
+#: libapper/PkStrings.cpp:259
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting package lists"
 msgstr "Pobieranie wykazu pakietów"
 
-#: libapper/PkStrings.cpp:256
+#: libapper/PkStrings.cpp:261
 msgctxt "The role of the transaction, in present tense"
 msgid "Accepting EULA"
 msgstr "Akceptacja EULA"
 
-#: libapper/PkStrings.cpp:260
+#: libapper/PkStrings.cpp:265
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting distribution upgrade information"
 msgstr "Pobieranie informacji o uaktualnieniu dystrybucji"
 
-#: libapper/PkStrings.cpp:262
+#: libapper/PkStrings.cpp:267
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting categories"
 msgstr "Pobieranie kategorii"
 
-#: libapper/PkStrings.cpp:264
+#: libapper/PkStrings.cpp:269
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting old transactions"
 msgstr "Pobieranie starych transakcji"
 
-#: libapper/PkStrings.cpp:266
+#: libapper/PkStrings.cpp:271
 msgctxt "The role of the transaction, in present tense"
 msgid "Repairing system"
 msgstr "Naprawianie systemu"
 
-#: libapper/PkStrings.cpp:268
+#: libapper/PkStrings.cpp:273
 msgctxt "The role of the transaction, in present tense"
 msgid "Removing repository"
 msgstr "Usuwanie repozytorium"
 
-#: libapper/PkStrings.cpp:278
+#: libapper/PkStrings.cpp:288
 msgctxt "The role of the transaction, in past tense"
 msgid "Unknown role type"
 msgstr "Nieznany typ roli"
 
-#: libapper/PkStrings.cpp:280
+#: libapper/PkStrings.cpp:290
 msgctxt "The role of the transaction, in past tense"
 msgid "Got dependencies"
 msgstr "Pobrano zależności"
 
-#: libapper/PkStrings.cpp:282
+#: libapper/PkStrings.cpp:292
 msgctxt "The role of the transaction, in past tense"
 msgid "Got update detail"
 msgstr "Pobrano szczegóły uaktualnienia"
 
-#: libapper/PkStrings.cpp:285
+#: libapper/PkStrings.cpp:295
 msgctxt "The role of the transaction, in past tense"
 msgid "Got details"
 msgstr "Pobrano szczegóły"
 
-#: libapper/PkStrings.cpp:287
+#: libapper/PkStrings.cpp:297
 msgctxt "The role of the transaction, in past tense"
 msgid "Got requires"
 msgstr "Pobrano wymagania"
 
-#: libapper/PkStrings.cpp:289
+#: libapper/PkStrings.cpp:299
 msgctxt "The role of the transaction, in past tense"
 msgid "Got updates"
 msgstr "Pobrano uaktualnienia"
 
-#: libapper/PkStrings.cpp:291
+#: libapper/PkStrings.cpp:301
 msgctxt "The role of the transaction, in past tense"
 msgid "Searched for package details"
 msgstr "Poszukiwano szczegółów pakietu"
 
-#: libapper/PkStrings.cpp:293
+#: libapper/PkStrings.cpp:303
 msgctxt "The role of the transaction, in past tense"
 msgid "Searched for file"
 msgstr "Poszukiwano pliku"
 
-#: libapper/PkStrings.cpp:295
+#: libapper/PkStrings.cpp:305
 msgctxt "The role of the transaction, in past tense"
 msgid "Searched groups"
 msgstr "Poszukiwano grup"
 
-#: libapper/PkStrings.cpp:297
+#: libapper/PkStrings.cpp:307
 msgctxt "The role of the transaction, in past tense"
 msgid "Searched for package name"
 msgstr "Poszukiwano w nazwie pliku"
 
-#: libapper/PkStrings.cpp:299
+#: libapper/PkStrings.cpp:309
 msgctxt "The role of the transaction, in past tense"
 msgid "Removed packages"
 msgstr "Usunięto pakiety"
 
-#: libapper/PkStrings.cpp:301
+#: libapper/PkStrings.cpp:311
 msgctxt "The role of the transaction, in past tense"
 msgid "Installed packages"
 msgstr "Wgrane pakiety"
 
-#: libapper/PkStrings.cpp:303
+#: libapper/PkStrings.cpp:313
 msgctxt "The role of the transaction, in past tense"
 msgid "Installed local files"
 msgstr "Wgrane pliki lokalne"
 
-#: libapper/PkStrings.cpp:305
+#: libapper/PkStrings.cpp:315
 msgctxt "The role of the transaction, in past tense"
 msgid "Refreshed package cache"
 msgstr "Odświeżono pamięć podręczną pakietów"
 
-#: libapper/PkStrings.cpp:307
+#: libapper/PkStrings.cpp:317
 msgctxt "The role of the transaction, in past tense"
 msgid "Updated packages"
 msgstr "Uaktualniono pakiety"
 
-#: libapper/PkStrings.cpp:309
+#: libapper/PkStrings.cpp:319
 msgctxt "The role of the transaction, in past tense"
 msgid "Canceled"
 msgstr "Anulowano"
 
-#: libapper/PkStrings.cpp:311
+#: libapper/PkStrings.cpp:321
 msgctxt "The role of the transaction, in past tense"
 msgid "Got list of repositories"
 msgstr "Pobrano wykaz repozytoriów "
 
-#: libapper/PkStrings.cpp:313
+#: libapper/PkStrings.cpp:323
 msgctxt "The role of the transaction, in past tense"
 msgid "Enabled repository"
 msgstr "Włączono repozytorium"
 
-#: libapper/PkStrings.cpp:315
+#: libapper/PkStrings.cpp:325
 msgctxt "The role of the transaction, in past tense"
 msgid "Set repository data"
 msgstr "Ustawiono dane repozytorium"
 
-#: libapper/PkStrings.cpp:317
+#: libapper/PkStrings.cpp:327
 msgctxt "The role of the transaction, in past tense"
 msgid "Resolved"
 msgstr "Rozwiązano"
 
-#: libapper/PkStrings.cpp:320
+#: libapper/PkStrings.cpp:330
 msgctxt "The role of the transaction, in past tense"
 msgid "Got file list"
 msgstr "Pobrano wykaz plików"
 
-#: libapper/PkStrings.cpp:322
+#: libapper/PkStrings.cpp:332
 msgctxt "The role of the transaction, in past tense"
 msgid "Got what provides"
 msgstr "Pobrano dostarczane elementy"
 
-#: libapper/PkStrings.cpp:324
+#: libapper/PkStrings.cpp:334
 msgctxt "The role of the transaction, in past tense"
 msgid "Installed signature"
 msgstr "Wgrany podpis"
 
-#: libapper/PkStrings.cpp:326
+#: libapper/PkStrings.cpp:336
 msgctxt "The role of the transaction, in past tense"
 msgid "Got package lists"
 msgstr "Pobrano wykaz pakietów"
 
-#: libapper/PkStrings.cpp:328
+#: libapper/PkStrings.cpp:338
 msgctxt "The role of the transaction, in past tense"
 msgid "Accepted EULA"
 msgstr "Zaakceptowano EULA"
 
-#: libapper/PkStrings.cpp:330
+#: libapper/PkStrings.cpp:340
 msgctxt "The role of the transaction, in past tense"
 msgid "Downloaded packages"
 msgstr "Pobrano pakiety"
 
-#: libapper/PkStrings.cpp:332
+#: libapper/PkStrings.cpp:342
 msgctxt "The role of the transaction, in past tense"
 msgid "Got distribution upgrades"
 msgstr "Pobrano uaktualnienia dystrybucji"
 
-#: libapper/PkStrings.cpp:334
+#: libapper/PkStrings.cpp:344
 msgctxt "The role of the transaction, in past tense"
 msgid "Got categories"
 msgstr "Pobrano kategorie"
 
-#: libapper/PkStrings.cpp:336
+#: libapper/PkStrings.cpp:346
 msgctxt "The role of the transaction, in past tense"
 msgid "Got old transactions"
 msgstr "Pobrano stare transakcje"
 
-#: libapper/PkStrings.cpp:338
+#: libapper/PkStrings.cpp:348
 msgctxt "The role of the transaction, in past tense"
 msgid "Repaired system"
 msgstr "Naprawiono system"
 
-#: libapper/PkStrings.cpp:340
+#: libapper/PkStrings.cpp:350
 msgctxt "The role of the transaction, in past tense"
 msgid "Removed repository"
 msgstr "Usunięto repozytorium"
 
-#: libapper/PkStrings.cpp:350
+#: libapper/PkStrings.cpp:360
 msgid "Downloading"
 msgstr "Pobieranie"
 
-#: libapper/PkStrings.cpp:352
+#: libapper/PkStrings.cpp:362
 msgid "Updating"
 msgstr "Uaktualnianie"
 
-#: libapper/PkStrings.cpp:354
+#: libapper/PkStrings.cpp:364
 msgid "Installing"
 msgstr "Wgrywanie"
 
-#: libapper/PkStrings.cpp:356
+#: libapper/PkStrings.cpp:366
 msgid "Removing"
 msgstr "Usuwanie"
 
-#: libapper/PkStrings.cpp:358
+#: libapper/PkStrings.cpp:368
 msgid "Cleaning up"
 msgstr "Porządkowanie"
 
-#: libapper/PkStrings.cpp:360
+#: libapper/PkStrings.cpp:370
 msgid "Obsoleting"
 msgstr "Zastępowanie"
 
-#: libapper/PkStrings.cpp:362
+#: libapper/PkStrings.cpp:372
 msgid "Reinstalling"
 msgstr "Ponowne wgrywanie"
 
-#: libapper/PkStrings.cpp:364
+#: libapper/PkStrings.cpp:374
 msgid "Preparing"
 msgstr "Przygotowywanie"
 
-#: libapper/PkStrings.cpp:366
+#: libapper/PkStrings.cpp:376
 msgid "Decompressing"
 msgstr "Rozpakowywanie"
 
-#: libapper/PkStrings.cpp:377
+#: libapper/PkStrings.cpp:387
 msgid "Downloaded"
 msgstr "Pobrano"
 
-#: libapper/PkStrings.cpp:379
+#: libapper/PkStrings.cpp:389
 msgid "Updated"
 msgstr "Uaktualniono"
 
-#: libapper/PkStrings.cpp:383
+#: libapper/PkStrings.cpp:393
 msgid "Removed"
 msgstr "Usunięto"
 
-#: libapper/PkStrings.cpp:385
+#: libapper/PkStrings.cpp:395
 msgid "Cleaned up"
 msgstr "Uporządkowano"
 
-#: libapper/PkStrings.cpp:387
+#: libapper/PkStrings.cpp:397
 msgid "Obsoleted"
 msgstr "Zastąpiono"
 
-#: libapper/PkStrings.cpp:389
+#: libapper/PkStrings.cpp:399
 msgid "Reinstalled"
 msgstr "Wgrano ponownie"
 
-#: libapper/PkStrings.cpp:391
+#: libapper/PkStrings.cpp:401
 msgid "Prepared"
 msgstr "Przygotowano"
 
-#: libapper/PkStrings.cpp:393
+#: libapper/PkStrings.cpp:403
 msgid "Decompressed"
 msgstr "Rozpakowano"
 
-#: libapper/PkStrings.cpp:404
+#: libapper/PkStrings.cpp:414
 msgid "No network connection available"
 msgstr "Brak połączenia z siecią"
 
-#: libapper/PkStrings.cpp:406
+#: libapper/PkStrings.cpp:416
 msgid "No package cache is available"
 msgstr "Brak pamięci podręcznej pakietów"
 
-#: libapper/PkStrings.cpp:408
+#: libapper/PkStrings.cpp:418
 msgid "Out of memory"
 msgstr "Brak pamięci"
 
-#: libapper/PkStrings.cpp:410
+#: libapper/PkStrings.cpp:420
 msgid "Failed to create a thread"
 msgstr "Tworzenie wątku nie powiodło się"
 
-#: libapper/PkStrings.cpp:412
+#: libapper/PkStrings.cpp:422
 msgid "Not supported by this backend"
 msgstr "Nie obsługiwane przez ten moduł obsługi"
 
-#: libapper/PkStrings.cpp:414
+#: libapper/PkStrings.cpp:424
 msgid "An internal system error has occurred"
 msgstr "Wystąpił wewnętrzny błąd systemu"
 
-#: libapper/PkStrings.cpp:416
+#: libapper/PkStrings.cpp:426
 msgid "A security trust relationship is not present"
 msgstr "Brak wiarygodnej relacji"
 
-#: libapper/PkStrings.cpp:418
+#: libapper/PkStrings.cpp:428
 msgid "The package is not installed"
 msgstr "Pakiet nie jest wgrany"
 
-#: libapper/PkStrings.cpp:420
+#: libapper/PkStrings.cpp:430
 msgid "The package was not found"
 msgstr "Nie odnaleziono pakietu"
 
-#: libapper/PkStrings.cpp:422
+#: libapper/PkStrings.cpp:432
 msgid "The package is already installed"
 msgstr "Pakiet jest już wgrany"
 
-#: libapper/PkStrings.cpp:424
+#: libapper/PkStrings.cpp:434
 msgid "The package download failed"
 msgstr "Pobieranie pakietu nie powiodło się"
 
-#: libapper/PkStrings.cpp:426
+#: libapper/PkStrings.cpp:436
 msgid "The group was not found"
 msgstr "Nie odnaleziono grupy"
 
-#: libapper/PkStrings.cpp:428
+#: libapper/PkStrings.cpp:438
 msgid "The group list was invalid"
 msgstr "Niepoprawny wykaz grup"
 
-#: libapper/PkStrings.cpp:430
+#: libapper/PkStrings.cpp:440
 msgid "Dependency resolution failed"
 msgstr "Rozwiązywanie kwestii zależności nie powiodło się"
 
-#: libapper/PkStrings.cpp:432
+#: libapper/PkStrings.cpp:442
 msgid "Search filter was invalid"
 msgstr "Niepoprawny filtr wyszukiwania"
 
-#: libapper/PkStrings.cpp:434
+#: libapper/PkStrings.cpp:444
 msgid "The package identifier was not well formed"
 msgstr "Źle skonstruowany identyfikator pakietu"
 
-#: libapper/PkStrings.cpp:436
+#: libapper/PkStrings.cpp:446
 msgid "Transaction error"
 msgstr "Błąd transakcji"
 
-#: libapper/PkStrings.cpp:438
+#: libapper/PkStrings.cpp:448
 msgid "Repository name was not found"
 msgstr "Nie znaleziono nazwy repozytorium"
 
-#: libapper/PkStrings.cpp:440
+#: libapper/PkStrings.cpp:450
 msgid "Could not remove a protected system package"
 msgstr "Nie można usunąć zabezpieczonego pakietu systemowego"
 
-#: libapper/PkStrings.cpp:442
+#: libapper/PkStrings.cpp:452
 msgid "The task was canceled"
 msgstr "Anulowano zadanie"
 
-#: libapper/PkStrings.cpp:444
+#: libapper/PkStrings.cpp:454
 msgid "The task was forcibly canceled"
 msgstr "Wymuszono anulowanie zadania"
 
-#: libapper/PkStrings.cpp:446
+#: libapper/PkStrings.cpp:456
 msgid "Reading the config file failed"
 msgstr "Odczyt pliku ustawień nie powiódł się"
 
-#: libapper/PkStrings.cpp:448
+#: libapper/PkStrings.cpp:458
 msgid "The task cannot be cancelled"
 msgstr "Zadanie nie może być anulowane"
 
-#: libapper/PkStrings.cpp:450
+#: libapper/PkStrings.cpp:460
 msgid "Source packages cannot be installed"
 msgstr "Nie można wgrać pakietów źródłowych"
 
-#: libapper/PkStrings.cpp:452
+#: libapper/PkStrings.cpp:462
 msgid "The license agreement failed"
 msgstr "Akceptacja licencji nie powiodła się"
 
-#: libapper/PkStrings.cpp:454
+#: libapper/PkStrings.cpp:464
 msgid "Local file conflict between packages"
 msgstr "Lokalny konflikt pliku pomiędzy pakietami"
 
-#: libapper/PkStrings.cpp:456
+#: libapper/PkStrings.cpp:466
 msgid "Packages are not compatible"
 msgstr "Pakiety nie są kompatybilne"
 
-#: libapper/PkStrings.cpp:458
+#: libapper/PkStrings.cpp:468
 msgid "Problem connecting to a software origin"
 msgstr "Problem podczas łączenia ze źródłem oprogramowania"
 
-#: libapper/PkStrings.cpp:460
+#: libapper/PkStrings.cpp:470
 msgid "Failed to initialize"
 msgstr "Inicjalizacja nie powiodła się"
 
-#: libapper/PkStrings.cpp:462
+#: libapper/PkStrings.cpp:472
 msgid "Failed to finalize"
 msgstr "Finalizacja nie powiodła się"
 
-#: libapper/PkStrings.cpp:464
+#: libapper/PkStrings.cpp:474
 msgid "Cannot get lock"
 msgstr "Nie można uzyskać blokady"
 
-#: libapper/PkStrings.cpp:466
+#: libapper/PkStrings.cpp:476
 msgid "No packages to update"
 msgstr "Brak pakietów do uaktualnienia"
 
-#: libapper/PkStrings.cpp:468
+#: libapper/PkStrings.cpp:478
 msgid "Cannot write repository configuration"
 msgstr "Nie można zapisać ustawień repozytorium"
 
-#: libapper/PkStrings.cpp:470
+#: libapper/PkStrings.cpp:480
 msgid "Local install failed"
 msgstr "Wgrywanie lokalne nie powiodło się"
 
-#: libapper/PkStrings.cpp:472
+#: libapper/PkStrings.cpp:482
 msgid "Bad GPG signature"
 msgstr "Zły podpis GPG"
 
-#: libapper/PkStrings.cpp:474
+#: libapper/PkStrings.cpp:484
 msgid "Missing GPG signature"
 msgstr "Brak podpisu GPG"
 
-#: libapper/PkStrings.cpp:476
+#: libapper/PkStrings.cpp:486
 msgid "Repository configuration invalid"
 msgstr "Niepoprawne ustawienia repozytorium"
 
-#: libapper/PkStrings.cpp:478
+#: libapper/PkStrings.cpp:488
 msgid "Invalid package file"
 msgstr "Niepoprawny plik pakietu"
 
-#: libapper/PkStrings.cpp:480
+#: libapper/PkStrings.cpp:490
 msgid "Package install blocked"
 msgstr "Zablokowano wgrywanie pakietu"
 
-#: libapper/PkStrings.cpp:482
+#: libapper/PkStrings.cpp:492
 msgid "Package is corrupt"
 msgstr "Pakiet jest uszkodzony"
 
-#: libapper/PkStrings.cpp:484
+#: libapper/PkStrings.cpp:494
 msgid "All packages are already installed"
 msgstr "Wszystkie pakiety są już wgrane"
 
-#: libapper/PkStrings.cpp:486
+#: libapper/PkStrings.cpp:496
 msgid "The specified file could not be found"
 msgstr "Nie można znaleźć określonego pliku"
 
-#: libapper/PkStrings.cpp:488
+#: libapper/PkStrings.cpp:498
 msgid "No more mirrors are available"
 msgstr "Brak większej ilości dostępnych serwerów lustrzanych"
 
-#: libapper/PkStrings.cpp:490
+#: libapper/PkStrings.cpp:500
 msgid "No distribution upgrade data is available"
 msgstr "Brak danych do uaktualnienia dystrybucji"
 
-#: libapper/PkStrings.cpp:492
+#: libapper/PkStrings.cpp:502
 msgid "Package is incompatible with this system"
 msgstr "Pakiet nie jest kompatybilny z tym systemem"
 
-#: libapper/PkStrings.cpp:494
+#: libapper/PkStrings.cpp:504
 msgid "No space is left on the disk"
 msgstr "Brak miejsca na dysku"
 
-#: libapper/PkStrings.cpp:496 libapper/PkTransaction.cpp:344
+#: libapper/PkStrings.cpp:506 libapper/PkTransaction.cpp:344
 msgid "A media change is required"
 msgstr "Wymagana zmiana nośnika"
 
-#: libapper/PkStrings.cpp:498
+#: libapper/PkStrings.cpp:508
 msgid "Authorization failed"
 msgstr "Uwierzytelnienie nie powiodło się"
 
-#: libapper/PkStrings.cpp:500
+#: libapper/PkStrings.cpp:510
 msgid "Update not found"
 msgstr "Nie znaleziono uaktualnienia"
 
-#: libapper/PkStrings.cpp:502
+#: libapper/PkStrings.cpp:512
 msgid "Cannot install from untrusted origin"
 msgstr "Wgrywanie z niezaufanego źródła niemożliwe"
 
-#: libapper/PkStrings.cpp:504
+#: libapper/PkStrings.cpp:514
 msgid "Cannot update from untrusted origin"
 msgstr "Uaktualnienie z niezaufanego źródła niemożliwe"
 
-#: libapper/PkStrings.cpp:506
+#: libapper/PkStrings.cpp:516
 msgid "Cannot get the file list"
 msgstr "Nie można uzyskać wykazu plików"
 
-#: libapper/PkStrings.cpp:508
+#: libapper/PkStrings.cpp:518
 msgid "Cannot get package requires"
 msgstr "Pobranie wymaganych pakietów niemożliwe"
 
-#: libapper/PkStrings.cpp:510
+#: libapper/PkStrings.cpp:520
 msgid "Cannot disable origin"
 msgstr "Blokada źródła niemożliwa"
 
-#: libapper/PkStrings.cpp:512
+#: libapper/PkStrings.cpp:522
 msgid "The download failed"
 msgstr "Pobieranie nie powiodło się"
 
-#: libapper/PkStrings.cpp:514
+#: libapper/PkStrings.cpp:524
 msgid "Package failed to configure"
 msgstr "Ustawienie pakietu nie powiodło się"
 
-#: libapper/PkStrings.cpp:516
+#: libapper/PkStrings.cpp:526
 msgid "Package failed to build"
 msgstr "Budowa pliku nie powiodła się"
 
-#: libapper/PkStrings.cpp:518
+#: libapper/PkStrings.cpp:528
 msgid "Package failed to install"
 msgstr "Wgrywanie pakietu nie powiodło się"
 
-#: libapper/PkStrings.cpp:520
+#: libapper/PkStrings.cpp:530
 msgid "Package failed to be removed"
 msgstr "Usuwanie pakietu nie powiodło się"
 
-#: libapper/PkStrings.cpp:522
+#: libapper/PkStrings.cpp:532
 msgid "Update failed due to running process"
 msgstr "Uaktualnienie nie powiodło się z powodu działającego procesu"
 
-#: libapper/PkStrings.cpp:524
+#: libapper/PkStrings.cpp:534
 msgid "The package database was changed"
 msgstr "Zmieniła się baza pakietów"
 
-#: libapper/PkStrings.cpp:526
+#: libapper/PkStrings.cpp:536
 msgid "Virtual provide type is not supported"
 msgstr "Wirtualny typ zapewniający jest nieobsługiwany"
 
-#: libapper/PkStrings.cpp:528
+#: libapper/PkStrings.cpp:538
 msgid "Install root is invalid"
 msgstr "Główny katalog wgrywania jest nieprawidłowy"
 
-#: libapper/PkStrings.cpp:530
+#: libapper/PkStrings.cpp:540
 msgid "Cannot fetch install sources"
 msgstr "Nie można pobrać zasobów do wgrywania"
 
-#: libapper/PkStrings.cpp:532
+#: libapper/PkStrings.cpp:542
 msgid "Rescheduled due to priority"
 msgstr "Przeplanowano ze względu na priorytet"
 
-#: libapper/PkStrings.cpp:534
+#: libapper/PkStrings.cpp:544
 msgid "Unfinished transaction"
 msgstr "Nieukończone transakcje"
 
-#: libapper/PkStrings.cpp:536
+#: libapper/PkStrings.cpp:546
 msgid "Lock required"
 msgstr "Wymagana blokada"
 
-#: libapper/PkStrings.cpp:538
+#: libapper/PkStrings.cpp:548
 msgid "Unknown error"
 msgstr "Nieznany błąd"
 
-#: libapper/PkStrings.cpp:548
+#: libapper/PkStrings.cpp:558
 msgid ""
 "There is no network connection available.\n"
 "Please check your connection settings and try again"
@@ -2212,7 +2146,7 @@ msgstr ""
 "Brak dostępnego połączenia z siecią.\n"
 "Proszę sprawdzić swoje ustawienia połączenia i spróbować ponownie"
 
-#: libapper/PkStrings.cpp:551
+#: libapper/PkStrings.cpp:561
 msgid ""
 "The package list needs to be rebuilt.\n"
 "This should have been done by the backend automatically."
@@ -2220,7 +2154,7 @@ msgstr ""
 "Wykaz pakietów musi zostać przebudowany.\n"
 "Operacja ta powinna zostać wykonana samoczynnie przez silnik."
 
-#: libapper/PkStrings.cpp:554
+#: libapper/PkStrings.cpp:564
 msgid ""
 "The service that is responsible for handling user requests is out of "
 "memory.\n"
@@ -2229,11 +2163,11 @@ msgstr ""
 "Brak pamięci dla usługi odpowiedzialnej za zapytania użytkownika.\n"
 "Proszę zamknąć niektóre programy lub ponownie uruchomić komputer."
 
-#: libapper/PkStrings.cpp:557
+#: libapper/PkStrings.cpp:567
 msgid "A thread could not be created to service the user request."
 msgstr "Nie można utworzyć wątku dla zapytania użytkownika."
 
-#: libapper/PkStrings.cpp:559
+#: libapper/PkStrings.cpp:569
 msgid ""
 "The action is not supported by this backend.\n"
 "Please report a bug as this should not have happened."
@@ -2241,7 +2175,7 @@ msgstr ""
 "Działanie nie jest obsługiwane przez ten moduł obsługi.\n"
 "Proszę zgłosić błąd. Taka sytuacja nie powinna się zdarzyć."
 
-#: libapper/PkStrings.cpp:562
+#: libapper/PkStrings.cpp:572
 msgid ""
 "A problem that we were not expecting has occurred.\n"
 "Please report this bug with the error description."
@@ -2249,7 +2183,7 @@ msgstr ""
 "Wystąpił nieoczekiwany problem.\n"
 "Proszę zgłosić błąd wraz z jego opisem."
 
-#: libapper/PkStrings.cpp:565
+#: libapper/PkStrings.cpp:575
 msgid ""
 "A security trust relationship could not be made with the software origin.\n"
 "Please check your software signature settings."
@@ -2258,25 +2192,25 @@ msgstr ""
 "oprogramowania.\n"
 "Proszę sprawdzić ustawienia podpisu oprogramowania."
 
-#: libapper/PkStrings.cpp:568
+#: libapper/PkStrings.cpp:578
 msgid ""
 "The package that is trying to be removed or updated is not already installed."
 msgstr ""
 "Próba usunięcia lub uaktualnienia pakietu, który nie jest jeszcze wgrany."
 
-#: libapper/PkStrings.cpp:570
+#: libapper/PkStrings.cpp:580
 msgid ""
 "The package that is being modified was not found on your system or in any "
 "software origin."
 msgstr ""
-"Modyfikowany pakiet nie został odnaleziony w systemie ani w żadnym źródle "
+"Zmieniany pakiet nie został odnaleziony ani w systemie, ani w żadnym źródle "
 "oprogramowania."
 
-#: libapper/PkStrings.cpp:572
+#: libapper/PkStrings.cpp:582
 msgid "The package that is trying to be installed is already installed."
 msgstr "Próba wgrania pakietu, który jest już wgrany."
 
-#: libapper/PkStrings.cpp:574
+#: libapper/PkStrings.cpp:584
 msgid ""
 "The package download failed.\n"
 "Please check your network connectivity."
@@ -2284,7 +2218,7 @@ msgstr ""
 "Pobieranie pakietu nie powiodło się.\n"
 "Proszę sprawdzić połączenie sieciowe."
 
-#: libapper/PkStrings.cpp:577
+#: libapper/PkStrings.cpp:587
 msgid ""
 "The group type was not found.\n"
 "Please check your group list and try again."
@@ -2292,7 +2226,7 @@ msgstr ""
 "Nie znaleziono rodzaju grupy.\n"
 "Proszę sprawdzić wykaz grup i spróbować ponownie."
 
-#: libapper/PkStrings.cpp:580
+#: libapper/PkStrings.cpp:590
 msgid ""
 "The group list could not be loaded.\n"
 "Refreshing your cache may help, although this is normally a software origin "
@@ -2302,7 +2236,7 @@ msgstr ""
 "Odświeżenie pamięci podręcznej może pomóc, jednak zazwyczaj jest to błąd "
 "źródła oprogramowania."
 
-#: libapper/PkStrings.cpp:584
+#: libapper/PkStrings.cpp:594
 msgid ""
 "A package dependency could not be found.\n"
 "More information is available in the detailed report."
@@ -2310,11 +2244,11 @@ msgstr ""
 "Nie znaleziono zależności pakietu.\n"
 "Więcej informacji znajduje się w szczegółowym raporcie."
 
-#: libapper/PkStrings.cpp:587
+#: libapper/PkStrings.cpp:597
 msgid "The search filter was not correctly formed."
 msgstr "Filtr wyszukiwania został niepoprawnie skonstruowany."
 
-#: libapper/PkStrings.cpp:589
+#: libapper/PkStrings.cpp:599
 msgid ""
 "The package identifier was not well formed when sent to the system daemon.\n"
 "This normally indicates an internal bug and should be reported."
@@ -2323,7 +2257,7 @@ msgstr ""
 "systemowej.\n"
 "Zazwyczaj sytuacja taka oznacza wewnętrzny błąd i powinna być zgłoszona."
 
-#: libapper/PkStrings.cpp:592
+#: libapper/PkStrings.cpp:602
 msgid ""
 "An error occurred while running the transaction.\n"
 "More information is available in the detailed report."
@@ -2331,7 +2265,7 @@ msgstr ""
 "Wystąpił błąd podczas przebiegu transakcji.\n"
 "Więcej informacji znajduje się w szczegółowym raporcie."
 
-#: libapper/PkStrings.cpp:595
+#: libapper/PkStrings.cpp:605
 msgid ""
 "The remote software origin name was not found.\n"
 "You may need to enable an item in Software Origins."
@@ -2339,15 +2273,15 @@ msgstr ""
 "Nie znaleziono nazwy zdalnego źródła oprogramowania.\n"
 "Może wystąpić konieczność jego włączenia w źródłach oprogramowania."
 
-#: libapper/PkStrings.cpp:598
+#: libapper/PkStrings.cpp:608
 msgid "Removing a protected system package is not allowed."
 msgstr "Usuwanie zabezpieczonego pakietu systemowego jest zabronione."
 
-#: libapper/PkStrings.cpp:600
+#: libapper/PkStrings.cpp:610
 msgid "The task was canceled successfully and no packages were changed."
 msgstr "Anulowanie zadania powiodło się i nie zmieniono żadnych pakietów."
 
-#: libapper/PkStrings.cpp:602
+#: libapper/PkStrings.cpp:612
 msgid ""
 "The task was canceled successfully and no packages were changed.\n"
 "The backend did not exit cleanly."
@@ -2355,7 +2289,7 @@ msgstr ""
 "Anulowanie zadania powiodło się i nie zmieniono żadnych pakietów.\n"
 "Moduł obsługi nie zakończył poprawnie działania."
 
-#: libapper/PkStrings.cpp:605
+#: libapper/PkStrings.cpp:615
 msgid ""
 "The native package configuration file could not be opened.\n"
 "Please make sure your system's configuration is valid."
@@ -2363,11 +2297,11 @@ msgstr ""
 "Nie można otworzyć pliku ustawień natywnego pakietu.\n"
 "Proszę sprawdzić, czy ustawienia systemu są poprawne."
 
-#: libapper/PkStrings.cpp:608
+#: libapper/PkStrings.cpp:618
 msgid "The task is not safe to be cancelled at this time."
 msgstr "Anulowanie zadania w tym momencie jest niebezpieczne."
 
-#: libapper/PkStrings.cpp:610
+#: libapper/PkStrings.cpp:620
 msgid ""
 "Source packages are not normally installed this way.\n"
 "Check the extension of the file you are trying to install."
@@ -2375,7 +2309,7 @@ msgstr ""
 "Pakiety źródłowe nie są zazwyczaj wgrywane w ten sposób.\n"
 "Proszę sprawdzić rozszerzenie pliku, który ma zostać wgrany."
 
-#: libapper/PkStrings.cpp:613
+#: libapper/PkStrings.cpp:623
 msgid ""
 "The license agreement was not agreed to.\n"
 "To use this software you have to accept the license."
@@ -2383,7 +2317,7 @@ msgstr ""
 "Nie zaakceptowano umowy licencyjnej.\n"
 "Aby używać tego programu, licencja musi zostać zaakceptowana."
 
-#: libapper/PkStrings.cpp:616
+#: libapper/PkStrings.cpp:626
 msgid ""
 "Two packages provide the same file.\n"
 "This is usually due to mixing packages for different software origins."
@@ -2392,7 +2326,7 @@ msgstr ""
 "Jest to zazwyczaj spowodowane mieszaniem pakietów z różnych źródeł "
 "oprogramowania."
 
-#: libapper/PkStrings.cpp:619
+#: libapper/PkStrings.cpp:629
 msgid ""
 "Multiple packages exist that are not compatible with each other.\n"
 "This is usually due to mixing packages from different software origins."
@@ -2400,7 +2334,7 @@ msgstr ""
 "Istnieje kilka pakietów, które nie są ze sobą kompatybilne.\n"
 "Zazwyczaj jest to efektem mieszania pakietów z różnych źródeł oprogramowania."
 
-#: libapper/PkStrings.cpp:622
+#: libapper/PkStrings.cpp:632
 msgid ""
 "There was a (possibly temporary) problem connecting to a software origins.\n"
 "Please check the detailed error for further details."
@@ -2409,7 +2343,7 @@ msgstr ""
 "oprogramowania.\n"
 "Aby uzyskać więcej informacji, proszę sprawdzić szczegóły błędu."
 
-#: libapper/PkStrings.cpp:625
+#: libapper/PkStrings.cpp:635
 msgid ""
 "Failed to initialize packaging backend.\n"
 "This may occur if other packaging tools are being used simultaneously."
@@ -2418,7 +2352,7 @@ msgstr ""
 "Taka sytuacja może wystąpić, jeśli używane są równocześnie różne narzędzia "
 "do obsługi pakietów."
 
-#: libapper/PkStrings.cpp:628
+#: libapper/PkStrings.cpp:638
 msgid ""
 "Failed to close down the backend instance.\n"
 "This error can normally be ignored."
@@ -2426,7 +2360,7 @@ msgstr ""
 "Zamykanie instancji modułu obsługi nie powiodło się.\n"
 "Ten błąd może być zwyczajnie zignorowany."
 
-#: libapper/PkStrings.cpp:631
+#: libapper/PkStrings.cpp:641
 msgid ""
 "Cannot get the exclusive lock on the packaging backend.\n"
 "Please close any other legacy packaging tools that may be open."
@@ -2435,15 +2369,15 @@ msgstr ""
 "Proszę zamknąć wszystkie inne narzędzia do obsługi pakietów, które mogą być "
 "otwarte."
 
-#: libapper/PkStrings.cpp:634
+#: libapper/PkStrings.cpp:644
 msgid "None of the selected packages could be updated."
 msgstr "Żaden z wybranych pakietów nie może zostać uaktualniony."
 
-#: libapper/PkStrings.cpp:636
+#: libapper/PkStrings.cpp:646
 msgid "The repository configuration could not be modified."
 msgstr "Nie można zmienić ustawień repozytorium."
 
-#: libapper/PkStrings.cpp:638
+#: libapper/PkStrings.cpp:648
 msgid ""
 "Installing the local file failed.\n"
 "More information is available in the detailed report."
@@ -2451,11 +2385,11 @@ msgstr ""
 "Wgrywanie pliku lokalnego nie powiodło się.\n"
 "Więcej informacji znajduje się w szczegółowym sprawozdaniu."
 
-#: libapper/PkStrings.cpp:641
+#: libapper/PkStrings.cpp:651
 msgid "The package signature could not be verified."
 msgstr "Nie można zweryfikować podpisu pakietu."
 
-#: libapper/PkStrings.cpp:643
+#: libapper/PkStrings.cpp:653
 msgid ""
 "The package signature was missing and this package is untrusted.\n"
 "This package was not signed with a GPG key when created."
@@ -2463,11 +2397,11 @@ msgstr ""
 "Brak podpisu pakietu i jest on niezaufany.\n"
 "Ten pakiet nie został podpisany przy tworzeniu za pomocą klucza GPG."
 
-#: libapper/PkStrings.cpp:646
+#: libapper/PkStrings.cpp:656
 msgid "Repository configuration was invalid and could not be read."
 msgstr "Ustawienia repozytorium są niepoprawne i nie można ich odczytać."
 
-#: libapper/PkStrings.cpp:648
+#: libapper/PkStrings.cpp:658
 msgid ""
 "The package you are attempting to install is not valid.\n"
 "The package file could be corrupt, or not a proper package."
@@ -2475,7 +2409,7 @@ msgstr ""
 "Wgrywany pakiet jest niewłaściwy.\n"
 "Plik pakietu mógł zostać uszkodzony lub nie jest to poprawny pakiet."
 
-#: libapper/PkStrings.cpp:651
+#: libapper/PkStrings.cpp:661
 msgid ""
 "Installation of this package was prevented by your packaging system's "
 "configuration."
@@ -2483,17 +2417,17 @@ msgstr ""
 "Wgrywanie tego pakietu zostało przerwane przez ustawienia systemu tworzenia "
 "pakietów."
 
-#: libapper/PkStrings.cpp:653
+#: libapper/PkStrings.cpp:663
 msgid ""
 "The package that was downloaded is corrupt and needs to be downloaded again."
 msgstr "Pobrany pakiet jest uszkodzony i należy pobrać go ponownie."
 
-#: libapper/PkStrings.cpp:655
+#: libapper/PkStrings.cpp:665
 msgid ""
 "All of the packages selected for install are already installed on the system."
 msgstr "Wszystkie wybrane do wgrywania pakiety są już wgrane w systemie."
 
-#: libapper/PkStrings.cpp:657
+#: libapper/PkStrings.cpp:667
 msgid ""
 "The specified file could not be found on the system.\n"
 "Check that the file still exists and has not been deleted."
@@ -2501,7 +2435,7 @@ msgstr ""
 "Określonego pliku nie można odnaleźć w systemie.\n"
 "Sprawdź, czy plik jeszcze istnieje i czy nie został usunięty."
 
-#: libapper/PkStrings.cpp:660
+#: libapper/PkStrings.cpp:670
 msgid ""
 "Required data could not be found on any of the configured software origins.\n"
 "There were no more download mirrors that could be tried."
@@ -2510,7 +2444,7 @@ msgstr ""
 "oprogramowania.\n"
 "Nie ma już więcej serwerów lustrzanych, które można by przeszukać."
 
-#: libapper/PkStrings.cpp:663
+#: libapper/PkStrings.cpp:673
 msgid ""
 "Required upgrade data could not be found in any of the configured software "
 "origins.\n"
@@ -2520,12 +2454,12 @@ msgstr ""
 "źródeł oprogramowania.\n"
 "Lista uaktualnień dystrybucji będzie niedostępna."
 
-#: libapper/PkStrings.cpp:666
+#: libapper/PkStrings.cpp:676
 msgid ""
 "The package that is trying to be installed is incompatible with this system."
 msgstr "Wgrywany pakiet jest niezgodny z systemem."
 
-#: libapper/PkStrings.cpp:668
+#: libapper/PkStrings.cpp:678
 msgid ""
 "There is insufficient space on the device.\n"
 "Free some space on the system disk to perform this operation."
@@ -2533,11 +2467,11 @@ msgstr ""
 "Brak miejsca na nośniku.\n"
 "Aby przeprowadzić tę operację zwolnij nieco miejsca na dysku systemowym."
 
-#: libapper/PkStrings.cpp:671
+#: libapper/PkStrings.cpp:681
 msgid "Additional media is required to complete the transaction."
 msgstr "Dodatkowe nośniki są niezbędne do zakończenia transakcji."
 
-#: libapper/PkStrings.cpp:673
+#: libapper/PkStrings.cpp:683
 msgid ""
 "You have failed to provide correct authentication.\n"
 "Please check any passwords or account settings."
@@ -2545,7 +2479,7 @@ msgstr ""
 "Nie podano prawidłowych danych uwierzytelniających.\n"
 "Należy sprawdzić hasła lub ustawienia konta."
 
-#: libapper/PkStrings.cpp:676
+#: libapper/PkStrings.cpp:686
 msgid ""
 "The specified update could not be found.\n"
 "It could have already been installed or no longer available on the remote "
@@ -2555,27 +2489,27 @@ msgstr ""
 "Możliwe, że zostało już wgrane lub też nie jest dłużej dostępne na zdalnym "
 "serwerze."
 
-#: libapper/PkStrings.cpp:679
+#: libapper/PkStrings.cpp:689
 msgid "The package could not be installed from untrusted origin."
 msgstr "Pakiet nie może zostać wgrany z niezaufanego źródła."
 
-#: libapper/PkStrings.cpp:681
+#: libapper/PkStrings.cpp:691
 msgid "The package could not be updated from untrusted origin."
 msgstr "Pakiet nie może zostać uaktualniony z niezaufanego źródła."
 
-#: libapper/PkStrings.cpp:683
+#: libapper/PkStrings.cpp:693
 msgid "The file list is not available for this package."
 msgstr "Wykaz plików nie jest dostępny dla tego pakietu."
 
-#: libapper/PkStrings.cpp:685
+#: libapper/PkStrings.cpp:695
 msgid "The information about what requires this package could not be obtained."
 msgstr "Informacja na temat wymagań tego pakietu nie jest dostępna. "
 
-#: libapper/PkStrings.cpp:687
+#: libapper/PkStrings.cpp:697
 msgid "The specified software origin could not be disabled."
 msgstr "Wskazane źródło oprogramowania nie może zostać zablokowane."
 
-#: libapper/PkStrings.cpp:689
+#: libapper/PkStrings.cpp:699
 msgid ""
 "The download could not be done automatically and should be done manually.\n"
 "More information is available in the detailed report."
@@ -2584,7 +2518,7 @@ msgstr ""
 "ręcznie.\n"
 "Więcej informacji znajduje się w szczegółowym raporcie."
 
-#: libapper/PkStrings.cpp:692
+#: libapper/PkStrings.cpp:702
 msgid ""
 "One of the selected packages failed to configure correctly.\n"
 "More information is available in the detailed report."
@@ -2592,7 +2526,7 @@ msgstr ""
 "Jeden z wybranych pakietów nie może zostać poprawnie ustawiony.\n"
 "Więcej informacji znajduje się w szczegółowym raporcie."
 
-#: libapper/PkStrings.cpp:695
+#: libapper/PkStrings.cpp:705
 msgid ""
 "One of the selected packages failed to build correctly.\n"
 "More information is available in the detailed report."
@@ -2600,7 +2534,7 @@ msgstr ""
 "Budowa jednego z wybranych plików nie powiodła się.\n"
 "Więcej informacji znajduje się w szczegółowym raporcie."
 
-#: libapper/PkStrings.cpp:698
+#: libapper/PkStrings.cpp:708
 msgid ""
 "One of the selected packages failed to install correctly.\n"
 "More information is available in the detailed report."
@@ -2608,7 +2542,7 @@ msgstr ""
 "Wgrywanie jednego z wybranych pakietów nie powiodło się.\n"
 "Więcej informacji znajduje się w szczegółowym sprawozdaniu."
 
-#: libapper/PkStrings.cpp:701
+#: libapper/PkStrings.cpp:711
 msgid ""
 "One of the selected packages failed to be removed correctly.\n"
 "More information is available in the detailed report."
@@ -2616,7 +2550,7 @@ msgstr ""
 "Usunięcie jednego z wybranych pakietów nie powiodło się.\n"
 "Więcej informacji znajduje się w szczegółowym raporcie."
 
-#: libapper/PkStrings.cpp:704
+#: libapper/PkStrings.cpp:714
 msgid ""
 "A program is running that has to be closed before the update can proceed.\n"
 "More information is available in the detailed report."
@@ -2625,41 +2559,41 @@ msgstr ""
 "uaktualnienia.\n"
 "Więcej informacji znajduje się w szczegółowym raporcie."
 
-#: libapper/PkStrings.cpp:707
+#: libapper/PkStrings.cpp:717
 msgid "The package database was changed while the request was running."
 msgstr ""
 "Baza danych pakietu została zmieniona w trakcie przeprowadzania zapytania."
 
-#: libapper/PkStrings.cpp:709
+#: libapper/PkStrings.cpp:719
 msgid "The virtual provide type is not supported by this system."
 msgstr "Wirtualny typ dostarczający jest nieobsługiwany przez system."
 
-#: libapper/PkStrings.cpp:711
+#: libapper/PkStrings.cpp:721
 msgid "The install root is invalid. Please contact your administrator."
 msgstr ""
 "Główny katalog wgrywania jest nieprawidłowy. Proszę skontaktować się z "
 "administratorem."
 
-#: libapper/PkStrings.cpp:713
+#: libapper/PkStrings.cpp:723
 msgid "The list of software could not be downloaded."
 msgstr "Nie można pobrać wykazu oprogramowania."
 
-#: libapper/PkStrings.cpp:715
+#: libapper/PkStrings.cpp:725
 msgid ""
 "The transaction has been cancelled and will be retried when the system is "
 "idle."
 msgstr ""
 "Transakcja została anulowana i zostanie ponowiona przy bezczynności systemu."
 
-#: libapper/PkStrings.cpp:717
+#: libapper/PkStrings.cpp:727
 msgid "A previous package management transaction was interrupted."
 msgstr "Poprzednia transakcja zarządzania pakietami została przerwana."
 
-#: libapper/PkStrings.cpp:719
+#: libapper/PkStrings.cpp:729
 msgid "A package manager lock is required."
 msgstr "Wymagana jest blokada zarządzania pakietami."
 
-#: libapper/PkStrings.cpp:721
+#: libapper/PkStrings.cpp:731
 msgid ""
 "Unknown error, please report a bug.\n"
 "More information is available in the detailed report."
@@ -2667,236 +2601,236 @@ msgstr ""
 "Nieznany błąd, proszę go zgłosić.\n"
 "Więcej informacji znajduje się w szczegółowym raporcie."
 
-#: libapper/PkStrings.cpp:732
+#: libapper/PkStrings.cpp:742
 msgctxt "The group type"
 msgid "Accessibility"
 msgstr "Dostępność"
 
-#: libapper/PkStrings.cpp:734
+#: libapper/PkStrings.cpp:744
 msgctxt "The group type"
 msgid "Accessories"
 msgstr "Akcesoria"
 
-#: libapper/PkStrings.cpp:736
+#: libapper/PkStrings.cpp:746
 msgctxt "The group type"
 msgid "Education"
 msgstr "Edukacja"
 
-#: libapper/PkStrings.cpp:738
+#: libapper/PkStrings.cpp:748
 msgctxt "The group type"
 msgid "Games"
 msgstr "Gry"
 
-#: libapper/PkStrings.cpp:740
+#: libapper/PkStrings.cpp:750
 msgctxt "The group type"
 msgid "Graphics"
 msgstr "Grafika"
 
-#: libapper/PkStrings.cpp:742
+#: libapper/PkStrings.cpp:752
 msgctxt "The group type"
 msgid "Internet"
 msgstr "Internet"
 
-#: libapper/PkStrings.cpp:744
+#: libapper/PkStrings.cpp:754
 msgctxt "The group type"
 msgid "Office"
 msgstr "Biuro"
 
-#: libapper/PkStrings.cpp:746
+#: libapper/PkStrings.cpp:756
 msgctxt "The group type"
 msgid "Others"
 msgstr "Inne"
 
-#: libapper/PkStrings.cpp:748
+#: libapper/PkStrings.cpp:758
 msgctxt "The group type"
 msgid "Development"
 msgstr "Programowanie"
 
-#: libapper/PkStrings.cpp:750
+#: libapper/PkStrings.cpp:760
 msgctxt "The group type"
 msgid "Multimedia"
 msgstr "Multimedia"
 
-#: libapper/PkStrings.cpp:752
+#: libapper/PkStrings.cpp:762
 msgctxt "The group type"
 msgid "System"
 msgstr "System"
 
-#: libapper/PkStrings.cpp:754
+#: libapper/PkStrings.cpp:764
 msgctxt "The group type"
 msgid "GNOME desktop"
 msgstr "Środowisko GNOME"
 
-#: libapper/PkStrings.cpp:756
+#: libapper/PkStrings.cpp:766
 msgctxt "The group type"
 msgid "KDE desktop"
 msgstr "Środowisko KDE"
 
-#: libapper/PkStrings.cpp:758
+#: libapper/PkStrings.cpp:768
 msgctxt "The group type"
 msgid "XFCE desktop"
 msgstr "Środowisko XFCE"
 
-#: libapper/PkStrings.cpp:760
+#: libapper/PkStrings.cpp:770
 msgctxt "The group type"
 msgid "Other desktops"
 msgstr "Inne środowiska"
 
-#: libapper/PkStrings.cpp:762
+#: libapper/PkStrings.cpp:772
 msgctxt "The group type"
 msgid "Publishing"
 msgstr "Publikowanie"
 
-#: libapper/PkStrings.cpp:764
+#: libapper/PkStrings.cpp:774
 msgctxt "The group type"
 msgid "Servers"
 msgstr "Serwery"
 
-#: libapper/PkStrings.cpp:766
+#: libapper/PkStrings.cpp:776
 msgctxt "The group type"
 msgid "Fonts"
 msgstr "Czcionki"
 
-#: libapper/PkStrings.cpp:768
+#: libapper/PkStrings.cpp:778
 msgctxt "The group type"
 msgid "Admin tools"
 msgstr "Narzędzia administracyjne"
 
-#: libapper/PkStrings.cpp:770
+#: libapper/PkStrings.cpp:780
 msgctxt "The group type"
 msgid "Legacy"
 msgstr "Starsze wersje"
 
-#: libapper/PkStrings.cpp:772
+#: libapper/PkStrings.cpp:782
 msgctxt "The group type"
 msgid "Localization"
 msgstr "Lokalizacja"
 
-#: libapper/PkStrings.cpp:774
+#: libapper/PkStrings.cpp:784
 msgctxt "The group type"
 msgid "Virtualization"
 msgstr "Wirtualizacja"
 
-#: libapper/PkStrings.cpp:776
+#: libapper/PkStrings.cpp:786
 msgctxt "The group type"
 msgid "Security"
 msgstr "Bezpieczeństwo"
 
-#: libapper/PkStrings.cpp:778
+#: libapper/PkStrings.cpp:788
 msgctxt "The group type"
 msgid "Power management"
 msgstr "Zarządzanie energią"
 
-#: libapper/PkStrings.cpp:780
+#: libapper/PkStrings.cpp:790
 msgctxt "The group type"
 msgid "Communication"
 msgstr "Komunikacja"
 
-#: libapper/PkStrings.cpp:782
+#: libapper/PkStrings.cpp:792
 msgctxt "The group type"
 msgid "Network"
 msgstr "Sieć"
 
-#: libapper/PkStrings.cpp:784
+#: libapper/PkStrings.cpp:794
 msgctxt "The group type"
 msgid "Maps"
 msgstr "Mapy"
 
-#: libapper/PkStrings.cpp:786
+#: libapper/PkStrings.cpp:796
 msgctxt "The group type"
 msgid "Software sources"
 msgstr "Źródła oprogramowania"
 
-#: libapper/PkStrings.cpp:788
+#: libapper/PkStrings.cpp:798
 msgctxt "The group type"
 msgid "Science"
 msgstr "Nauka"
 
-#: libapper/PkStrings.cpp:790
+#: libapper/PkStrings.cpp:800
 msgctxt "The group type"
 msgid "Documentation"
 msgstr "Dokumentacja"
 
-#: libapper/PkStrings.cpp:792
+#: libapper/PkStrings.cpp:802
 msgctxt "The group type"
 msgid "Electronics"
 msgstr "Elektronika"
 
-#: libapper/PkStrings.cpp:794
+#: libapper/PkStrings.cpp:804
 msgctxt "The group type"
 msgid "Package collections"
 msgstr "Kolekcje pakietów"
 
-#: libapper/PkStrings.cpp:796
+#: libapper/PkStrings.cpp:806
 msgctxt "The group type"
 msgid "Vendor"
 msgstr "Dostawca"
 
-#: libapper/PkStrings.cpp:798
+#: libapper/PkStrings.cpp:808
 msgctxt "The group type"
 msgid "Newest packages"
 msgstr "Najnowsze pakiety"
 
-#: libapper/PkStrings.cpp:800
+#: libapper/PkStrings.cpp:810
 msgctxt "The group type"
 msgid "Unknown group"
 msgstr "Nieznana grupa"
 
-#: libapper/PkStrings.cpp:811
+#: libapper/PkStrings.cpp:821
 msgctxt "The type of update"
 msgid "Trivial update"
 msgstr "Drobne uaktualnienie"
 
-#: libapper/PkStrings.cpp:813
+#: libapper/PkStrings.cpp:823
 msgctxt "The type of update"
 msgid "Normal update"
 msgstr "Zwykłe uaktualnienie"
 
-#: libapper/PkStrings.cpp:815
+#: libapper/PkStrings.cpp:825
 msgctxt "The type of update"
 msgid "Important update"
 msgstr "Ważne uaktualnienie"
 
-#: libapper/PkStrings.cpp:817
+#: libapper/PkStrings.cpp:827
 msgctxt "The type of update"
 msgid "Security update"
 msgstr "Uaktualnienie bezpieczeństwa"
 
-#: libapper/PkStrings.cpp:819
+#: libapper/PkStrings.cpp:829
 msgctxt "The type of update"
 msgid "Bug fix update"
 msgstr "Uaktualnienie naprawiające błędy"
 
-#: libapper/PkStrings.cpp:821
+#: libapper/PkStrings.cpp:831
 msgctxt "The type of update"
 msgid "Enhancement update"
 msgstr "Uaktualnienie ulepszające"
 
-#: libapper/PkStrings.cpp:823
+#: libapper/PkStrings.cpp:833
 msgctxt "The type of update"
 msgid "Blocked update"
 msgstr "Zablokowane uaktualnienie"
 
-#: libapper/PkStrings.cpp:826
+#: libapper/PkStrings.cpp:836
 msgctxt "The type of update"
 msgid "Installed"
 msgstr "Wgrane"
 
-#: libapper/PkStrings.cpp:829
+#: libapper/PkStrings.cpp:839
 msgctxt "The type of update"
 msgid "Available"
 msgstr "Dostępne"
 
-#: libapper/PkStrings.cpp:831
+#: libapper/PkStrings.cpp:841
 msgctxt "The type of update"
 msgid "Unknown update"
 msgstr "Nieznane uaktualnienie"
 
-#: libapper/PkStrings.cpp:842
+#: libapper/PkStrings.cpp:852
 msgid "No Updates Available"
 msgstr "Brak uaktualnień"
 
-#: libapper/PkStrings.cpp:845
+#: libapper/PkStrings.cpp:855
 #, kde-format
 msgctxt "Some updates were selected on the view"
 msgid "1 Update Selected"
@@ -2905,7 +2839,7 @@ msgstr[0] "Zaznaczono 1 uaktualnienie"
 msgstr[1] "Zaznaczono %1 uaktualnienia"
 msgstr[2] "Zaznaczono %1 uaktualnień"
 
-#: libapper/PkStrings.cpp:849
+#: libapper/PkStrings.cpp:859
 #, kde-format
 msgctxt "Some updates are being shown on the screen"
 msgid "1 Update"
@@ -2914,13 +2848,13 @@ msgstr[0] "1 uaktualnienie"
 msgstr[1] "%1 uaktualnienia"
 msgstr[2] "%1 uaktualnień"
 
-#: libapper/PkStrings.cpp:852
+#: libapper/PkStrings.cpp:862
 #, kde-format
 msgctxt "Type of update, in the case it's just an update"
 msgid "%1, %2"
 msgstr "%1, %2"
 
-#: libapper/PkStrings.cpp:853
+#: libapper/PkStrings.cpp:863
 #, kde-format
 msgctxt "Part of: %1 Updates, %1 Selected"
 msgid "%1 Update"
@@ -2929,7 +2863,7 @@ msgstr[0] "%1 uaktualnienie"
 msgstr[1] "%1 uaktualnienia"
 msgstr[2] "%1 uaktualnień"
 
-#: libapper/PkStrings.cpp:854
+#: libapper/PkStrings.cpp:864
 #, kde-format
 msgctxt "Part of: %1 Updates, %1 Selected"
 msgid "%1 Selected"
@@ -2938,11 +2872,11 @@ msgstr[0] "1 zaznaczona"
 msgstr[1] "%1 zaznaczone"
 msgstr[2] "%1 zaznaczonych"
 
-#: libapper/PkStrings.cpp:858
+#: libapper/PkStrings.cpp:868
 msgid "No Packages"
 msgstr "Brak pakietów"
 
-#: libapper/PkStrings.cpp:860
+#: libapper/PkStrings.cpp:870
 #, kde-format
 msgid "1 Package"
 msgid_plural "%1 Packages"
@@ -2950,235 +2884,219 @@ msgstr[0] "1 pakiet"
 msgstr[1] "%1 pakiety"
 msgstr[2] "%1 pakietów"
 
-#: libapper/PkStrings.cpp:868
+#: libapper/PkStrings.cpp:878
 msgid "No restart is necessary"
 msgstr "Ponowne uruchomienie nie jest wymagane"
 
-#: libapper/PkStrings.cpp:870
+#: libapper/PkStrings.cpp:880
 msgid "You will be required to restart this application"
 msgstr "Wymagany będzie ponowne uruchomienie tego programu"
 
-#: libapper/PkStrings.cpp:872
+#: libapper/PkStrings.cpp:882
 msgid "You will be required to log out and back in"
 msgstr "Wymagane będzie wylogowanie i zalogowanie się ponownie"
 
-#: libapper/PkStrings.cpp:874
+#: libapper/PkStrings.cpp:884
 msgid "A restart will be required"
 msgstr "Wymagane będzie ponowne uruchomienie systemu"
 
-#: libapper/PkStrings.cpp:876
+#: libapper/PkStrings.cpp:886
 msgid "You will be required to log out and back in due to a security update."
 msgstr ""
 "Wymagane będzie wylogowanie i zalogowanie się ponownie ze względu na "
 "uaktualnienie zabezpieczeń."
 
-#: libapper/PkStrings.cpp:878
+#: libapper/PkStrings.cpp:888
 msgid "A restart will be required due to a security update."
 msgstr ""
 "Wymagany będzie ponowne uruchomienie systemu ze względu na uaktualnienie "
 "zabezpieczeń."
 
-#: libapper/PkStrings.cpp:891
+#: libapper/PkStrings.cpp:901
 msgid "No restart is required"
 msgstr "Ponowne uruchomienie nie jest wymagane"
 
-#: libapper/PkStrings.cpp:893
+#: libapper/PkStrings.cpp:903
 msgid "A restart is required"
 msgstr "Wymagane jest ponowne uruchomienie"
 
-#: libapper/PkStrings.cpp:895
+#: libapper/PkStrings.cpp:905
 msgid "You need to log out and log back in"
 msgstr "Należy wylogować i zalogować się ponownie"
 
-#: libapper/PkStrings.cpp:897
+#: libapper/PkStrings.cpp:907
 msgid "You need to restart the application"
 msgstr "Należy ponownie uruchomić program"
 
-#: libapper/PkStrings.cpp:899
+#: libapper/PkStrings.cpp:909
 msgid "You need to log out and log back in to remain secure."
 msgstr ""
 "W celu zachowania bezpieczeństwa należy się wylogować i zalogować ponownie."
 
-#: libapper/PkStrings.cpp:901
+#: libapper/PkStrings.cpp:911
 msgid "A restart is required to remain secure."
 msgstr "Restart jest wymagany, w celu zachowania bezpieczeństwa."
 
-#: libapper/PkStrings.cpp:914
+#: libapper/PkStrings.cpp:924
 msgid "Stable"
 msgstr "Stabilne"
 
-#: libapper/PkStrings.cpp:916
+#: libapper/PkStrings.cpp:926
 msgid "Unstable"
 msgstr "Niestabilne"
 
-#: libapper/PkStrings.cpp:918
+#: libapper/PkStrings.cpp:928
 msgid "Testing"
 msgstr "Testowe"
 
-#: libapper/PkStrings.cpp:931
+#: libapper/PkStrings.cpp:941
 #, kde-format
 msgid "Please insert the CD labeled '%1', and press continue."
 msgstr "Proszę wsunąć CD o nazwie '%1' i kontynuować."
 
-#: libapper/PkStrings.cpp:933
+#: libapper/PkStrings.cpp:943
 #, kde-format
 msgid "Please insert the DVD labeled '%1', and press continue."
 msgstr "Proszę wsunąć DVD o nazwie '%1' i kontynuować."
 
-#: libapper/PkStrings.cpp:935
+#: libapper/PkStrings.cpp:945
 #, kde-format
 msgid "Please insert the disc labeled '%1', and press continue."
 msgstr "Proszę podłączyć dysk o nazwie '%1' i kontynuować."
 
-#: libapper/PkStrings.cpp:937 libapper/PkStrings.cpp:940
+#: libapper/PkStrings.cpp:947 libapper/PkStrings.cpp:950
 #, kde-format
 msgid "Please insert the medium labeled '%1', and press continue."
 msgstr "Proszę podłączyć nośnik o nazwie '%1' i kontynuować."
 
-#: libapper/PkStrings.cpp:947
+#: libapper/PkStrings.cpp:957
 msgid "A mirror is possibly broken"
 msgstr "Serwer lustrzany jest prawdopodobnie uszkodzony"
 
-#: libapper/PkStrings.cpp:949
+#: libapper/PkStrings.cpp:959
 msgid "The connection was refused"
 msgstr "Połączenie odrzucone"
 
-#: libapper/PkStrings.cpp:951
+#: libapper/PkStrings.cpp:961
 msgid "The parameter was invalid"
 msgstr "Nieprawidłowy parametr"
 
-#: libapper/PkStrings.cpp:953
+#: libapper/PkStrings.cpp:963
 msgid "The priority was invalid"
 msgstr "Priorytet niepoprawny"
 
-#: libapper/PkStrings.cpp:955
+#: libapper/PkStrings.cpp:965
 msgid "Backend warning"
 msgstr "Ostrzeżenie modułu obsługi"
 
-#: libapper/PkStrings.cpp:957
+#: libapper/PkStrings.cpp:967
 msgid "Daemon warning"
 msgstr "Ostrzeżenie usługi"
 
-#: libapper/PkStrings.cpp:959
+#: libapper/PkStrings.cpp:969
 msgid "The package list cache is being rebuilt"
 msgstr "Przebudowywanie pamięci podręcznej wykazu pakietów"
 
-#: libapper/PkStrings.cpp:961
+#: libapper/PkStrings.cpp:971
 msgid "An untrusted package was installed"
 msgstr "Niezaufany pakiet został wgrany"
 
-#: libapper/PkStrings.cpp:963
+#: libapper/PkStrings.cpp:973
 msgid "A newer package exists"
 msgstr "Dostępne są nowsze pakiety"
 
-#: libapper/PkStrings.cpp:965
+#: libapper/PkStrings.cpp:975
 msgid "Could not find package"
 msgstr "Nie można znaleźć pakietu"
 
-#: libapper/PkStrings.cpp:967
+#: libapper/PkStrings.cpp:977
 msgid "Configuration files were changed"
 msgstr "Zmieniono ustawienia plików"
 
-#: libapper/PkStrings.cpp:969
+#: libapper/PkStrings.cpp:979
 msgid "Package is already installed"
 msgstr "Pakiet jest już wgrany"
 
-#: libapper/PkStrings.cpp:971
+#: libapper/PkStrings.cpp:981
 msgid "Automatic cleanup is being ignored"
 msgstr "Ignorowanie samoczynnego porządkowania"
 
-#: libapper/PkStrings.cpp:973
+#: libapper/PkStrings.cpp:983
 msgid "Software source download failed"
 msgstr "Pobieranie źródeł oprogramowania nie powiodło się"
 
-#: libapper/PkStrings.cpp:975
+#: libapper/PkStrings.cpp:985
 msgid "This software source is for developers only"
 msgstr "Źródła oprogramowania tylko dla programistów"
 
-#: libapper/PkStrings.cpp:977
+#: libapper/PkStrings.cpp:987
 msgid "Other updates have been held back"
 msgstr "Inne uaktualnienia zostały wstrzymane"
 
-#: libapper/PkStrings.cpp:991
+#: libapper/PkStrings.cpp:1001
 msgid "You do not have the necessary privileges to perform this action."
 msgstr "Nie posiadasz wymaganych uprawnień do przeprowadzenia tego działania."
 
-#: libapper/PkStrings.cpp:993
+#: libapper/PkStrings.cpp:1003
 msgid "Could not get a transaction id from packagekitd."
 msgstr "Nie można pobrać id transakcji z packagekitd."
 
-#: libapper/PkStrings.cpp:995
+#: libapper/PkStrings.cpp:1005
 msgid "Cannot connect to this transaction id."
 msgstr "Nie można połączyć z tym id transakcji."
 
-#: libapper/PkStrings.cpp:997
+#: libapper/PkStrings.cpp:1007
 msgid "This action is unknown."
 msgstr "To działanie jest nieznane."
 
-#: libapper/PkStrings.cpp:999
+#: libapper/PkStrings.cpp:1009
 msgid "The packagekitd service could not be started."
 msgstr "Nie można uruchomić usługi packagekitd."
 
-#: libapper/PkStrings.cpp:1001
+#: libapper/PkStrings.cpp:1011
 msgid "The query is not valid."
 msgstr "Niepoprawne zapytanie."
 
-#: libapper/PkStrings.cpp:1003
+#: libapper/PkStrings.cpp:1013
 msgid "The file is not valid."
 msgstr "Niepoprawny plik."
 
-#: libapper/PkStrings.cpp:1005
+#: libapper/PkStrings.cpp:1015
 msgid "This function is not yet supported."
 msgstr "Ta funkcja nie jest jeszcze wspierana."
 
-#: libapper/PkStrings.cpp:1007
+#: libapper/PkStrings.cpp:1017
 msgid "Could not talk to packagekitd."
 msgstr "Nie można się porozumieć z packagekitd."
 
-#: libapper/PkStrings.cpp:1009
+#: libapper/PkStrings.cpp:1019
 msgid "Error talking to packagekitd."
 msgstr "Błąd porozumiewania z packagekitd."
 
-#: libapper/PkStrings.cpp:1012 libapper/PkStrings.cpp:1015
+#: libapper/PkStrings.cpp:1022 libapper/PkStrings.cpp:1025
 msgid "An unknown error happened."
 msgstr "Wystąpił nieznany błąd."
 
-#: libapper/PkStrings.cpp:1029
+#: libapper/PkStrings.cpp:1039
 msgid "Your system is up to date"
 msgstr "Twój system jest aktualny"
 
-#: libapper/PkStrings.cpp:1031
+#: libapper/PkStrings.cpp:1041
 msgid "You have no updates"
 msgstr "Nie masz uaktualnień"
 
-#: libapper/PkStrings.cpp:1033
+#: libapper/PkStrings.cpp:1043
 msgid "Last check for updates was more than a month ago"
 msgstr "Ostatnie sprawdzanie uaktualnień nastąpiło dawniej niż miesiąc temu"
 
-#: libapper/PkStrings.cpp:1041
+#: libapper/PkStrings.cpp:1051
 #, kde-format
 msgid "Verified %1 ago"
 msgstr "Sprawdzano %1 temu"
 
-#: libapper/PkStrings.cpp:1043
+#: libapper/PkStrings.cpp:1053
 msgid "It's strongly recommended that you check for new updates now"
 msgstr "Usilnie zalecamy sprawdzenie uaktualnień w tej chwili"
-
-#: libapper/PkTransaction.cpp:118
-msgid "Current backend does not support installing files."
-msgstr "Obecny silnik nie obsługuje wgrywania plików."
-
-#: libapper/PkTransaction.cpp:131
-msgid "Current backend does not support installing packages."
-msgstr "Bieżący moduł obsługi nie wspiera wgrywania pakietów."
-
-#: libapper/PkTransaction.cpp:145
-msgid "The current backend does not support removing packages."
-msgstr "Bieżący moduł obsługi nie wspiera usuwania pakietów."
-
-#: libapper/PkTransaction.cpp:163
-msgid "The current backend does not support updating packages."
-msgstr "Bieżący moduł obsługi nie wspiera uaktualnienia pakietów."
 
 #: libapper/PkTransaction.cpp:258
 msgid ""
@@ -3258,9 +3176,9 @@ msgstr[2] "%1 pakietów do usunięcia"
 #, kde-format
 msgid "1 package to downgrade"
 msgid_plural "%1 packages to downgrade"
-msgstr[0] "1 pakiet do przywrócenia wcześniejszej wersji"
-msgstr[1] "%1 pakiety do przywrócenia wcześniejszej wersji"
-msgstr[2] "%1 pakietów do przywrócenia wcześniejszej wersji"
+msgstr[0] "1 pakiet do obniżenia wersji"
+msgstr[1] "%1 pakiety do obniżenia wersji"
+msgstr[2] "%1 pakietów do obniżenia wersji"
 
 #: libapper/Requirements.cpp:112
 #, kde-format
@@ -3574,14 +3492,6 @@ msgstr "Wgrywanie plików pakietów"
 msgid "You can drop more files in here"
 msgstr "Możesz tutaj upuścić więcej plików"
 
-#: PkSession/PkInstallPackageFiles.cpp:52
-msgid "Not Supported"
-msgstr "Nieobsługiwane"
-
-#: PkSession/PkInstallPackageFiles.cpp:53
-msgid "Your current backend does not support installing files"
-msgstr "Twój obecny silnik nie obsługuje wgrywania plików"
-
 #: PkSession/PkInstallPackageFiles.cpp:68
 #: PkSession/PkRemovePackageByFiles.cpp:66
 msgid "No supported files were provided"
@@ -3892,6 +3802,74 @@ msgstr "Zadanie ukończyło"
 #: PkSession/SessionTask.cpp:436
 msgid "All operations were committed successfully"
 msgstr "Wszystkie operacje zostały pomyślnie dokonane"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

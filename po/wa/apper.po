@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-08-21 01:47+0000\n"
+"POT-Creation-Date: 2015-03-28 01:56+0000\n"
 "PO-Revision-Date: 2012-12-30 11:08+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@base.be>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -188,7 +188,7 @@ msgstr "Passetes"
 
 #. i18n: ectx: property (text), widget (QCheckBox, installedCB)
 #: Apper/BackendDetails.ui:365 ApperKCM/FiltersMenu.cpp:59
-#: libapper/PkStrings.cpp:381
+#: libapper/PkStrings.cpp:391
 msgid "Installed"
 msgstr "Astalé"
 
@@ -360,7 +360,7 @@ msgstr[0] "Pacaedje : %2"
 msgstr[1] "Pacaedjes : %2"
 
 #: apperd/TransactionWatcher.cpp:240 ApperKCM/TransactionModel.cpp:45
-#: AppSetup/SetupWizard.cpp:204
+#: AppSetup/SetupWizard.cpp:149
 msgid "Details"
 msgstr "Detays"
 
@@ -395,7 +395,7 @@ msgstr[1] "I gn a %1 noveas metaedjes a djoû"
 msgid "Review"
 msgstr "Rilever"
 
-#: apperd/Updater.cpp:290 AppSetup/SetupWizard.cpp:339
+#: apperd/Updater.cpp:290 AppSetup/SetupWizard.cpp:260
 #: libapper/ApplicationsDelegate.cpp:40
 msgid "Install"
 msgstr "Astaler"
@@ -498,7 +498,7 @@ msgid "Software Origins"
 msgstr "Oridjenes do programe"
 
 #. i18n: ectx: property (text), widget (QToolButton, backTB)
-#: ApperKCM/ApperKCM.ui:267 AppSetup/SetupWizard.cpp:153
+#: ApperKCM/ApperKCM.ui:267 AppSetup/SetupWizard.cpp:87
 msgid "Back"
 msgstr "Èn erî"
 
@@ -662,7 +662,7 @@ msgstr "Catchî les pacaedjes k' i n' sont nén des programes"
 msgid "Display"
 msgstr "Håynaedje"
 
-#: ApperKCM/PackageDetails.cpp:87 AppSetup/SetupWizard.cpp:261
+#: ApperKCM/PackageDetails.cpp:87 AppSetup/SetupWizard.cpp:186
 msgid "Description"
 msgstr "Discrijhaedje"
 
@@ -1032,93 +1032,82 @@ msgstr "Grandeu d' aberwetaedje a l' avirance : %1"
 msgid "Check for new updates"
 msgstr "Cachî après des noveas metaedjes a djoû"
 
-#. i18n: ectx: property (text), widget (QRadioButton, acceptedRB)
-#: AppSetup/LicensePage.ui:98
-msgid "I agree to the above terms and conditions"
-msgstr "Dji so d' acoird so les termes eyet condicions cial pa dzeu"
-
-#. i18n: ectx: property (text), widget (QRadioButton, rejectedRB)
-#: AppSetup/LicensePage.ui:111
-msgid "I don't agree"
-msgstr "Dji n' so nén d' acoird"
-
-#: AppSetup/main.cpp:34 AppSetup/main.cpp:35
+#: AppSetup/main.cpp:33 AppSetup/main.cpp:34
 msgid "KDE Application Installer"
 msgstr "Astaleu des programes di KDE"
 
-#: AppSetup/main.cpp:36
-msgid "(C) 2012, Matthias Klumpp"
+#: AppSetup/main.cpp:35
+#, fuzzy
+#| msgid "(C) 2012, Matthias Klumpp"
+msgid "(C) 2014, Matthias Klumpp"
 msgstr "© 2012, Matthias Klumpp"
 
-#: AppSetup/main.cpp:38
+#: AppSetup/main.cpp:37
 msgctxt "@info:credit"
 msgid "Daniel Nicoletti"
 msgstr "Daniel Nicoletti"
 
-#: AppSetup/main.cpp:38 AppSetup/main.cpp:40
+#: AppSetup/main.cpp:37 AppSetup/main.cpp:39
 msgid "Developer"
 msgstr "Diswalpeu"
 
-#: AppSetup/main.cpp:40
+#: AppSetup/main.cpp:39
 msgctxt "@info:credit"
 msgid "Matthias Klumpp"
 msgstr "Matthias Klumpp"
 
-#: AppSetup/main.cpp:47
+#: AppSetup/main.cpp:46
 msgid "Show verbose information"
 msgstr "Mostrer l' infôrmåcion vierbeuse"
 
-#: AppSetup/main.cpp:48
+#: AppSetup/main.cpp:47
 msgid "IPK package filename"
 msgstr "No do fitchî IPK"
 
-#: AppSetup/main.cpp:72
-msgid "Sorry, we didn't get an existing IPK package as parameter."
+#: AppSetup/main.cpp:70
+#, fuzzy
+#| msgid "Sorry, we didn't get an existing IPK package as parameter."
+msgid "We did not receive a path to an IPK package as parameter."
 msgstr "Dji rgrete mins nos n' avans yeu nou pacaedje IPK come paramete."
 
-#: AppSetup/main.cpp:73
+#: AppSetup/main.cpp:71
 msgid "Package not found!"
 msgstr "Pacaedje nén trové !"
 
-#: AppSetup/SetupWizard.cpp:88
-msgid "Installation finished!"
-msgstr "Astalaedje fini !"
-
-#: AppSetup/SetupWizard.cpp:89
-#, kde-format
-msgid "%1 has been installed successfully!"
-msgstr "%1 a stî astalé comifåt !"
-
-#: AppSetup/SetupWizard.cpp:103 libapper/PkTransaction.cpp:118
-#: libapper/PkTransaction.cpp:131 libapper/PkTransaction.cpp:145
-#: libapper/PkTransaction.cpp:163
-msgid "Error"
-msgstr "Aroke"
-
-#: AppSetup/SetupWizard.cpp:104 AppSetup/SetupWizard.cpp:118
-msgid "An error occurred"
-msgstr "Åk n' a nén stî"
-
-#: AppSetup/SetupWizard.cpp:151 libapper/Requirements.cpp:59
+#: AppSetup/SetupWizard.cpp:85 libapper/Requirements.cpp:59
 #: PkSession/SessionTask.cpp:71
 msgid "Continue"
 msgstr "Tcheryî pus lon"
 
-#: AppSetup/SetupWizard.cpp:192
+#: AppSetup/SetupWizard.cpp:109
+msgid "Error"
+msgstr "Aroke"
+
+#: AppSetup/SetupWizard.cpp:110
+msgid "An error occurred"
+msgstr "Åk n' a nén stî"
+
+#: AppSetup/SetupWizard.cpp:137
 msgid "Welcome!"
 msgstr "Wilicome !"
 
-#: AppSetup/SetupWizard.cpp:193
+#: AppSetup/SetupWizard.cpp:138
 #, kde-format
 msgid "Welcome to the installation of %1!"
 msgstr "Bénvou a l' astalaedje di %1 !"
 
-#: AppSetup/SetupWizard.cpp:194
+#: AppSetup/SetupWizard.cpp:139
+#, fuzzy
+#| msgid ""
+#| "Please be careful while installing 3rd-party applications.<br>They may "
+#| "eventually <b>damage</b> your system or have <b>malicious behaviour</b>, "
+#| "like spying out your passwords.<br>Please do only install this software "
+#| "if you <b>trust the publisher and the author</b> of it."
 msgid ""
-"Please be careful while installing 3rd-party applications.<br>They may "
+"Please be careful while installing a 3rd-party application.<br>It might "
 "eventually <b>damage</b> your system or have <b>malicious behaviour</b>, "
 "like spying out your passwords.<br>Please do only install this software if "
-"you <b>trust the publisher and the author</b> of it."
+"you <b>trust its publisher</b>."
 msgstr ""
 "Waitîz a vos cwand vs astalez des programes viant d' ticès djins.<br>I "
 "pôrent pa des côps <b>fé do må</b> a vosse sistinme oudon-bén aveur des "
@@ -1126,77 +1115,31 @@ msgstr ""
 "<br>N' astalez ci programa cial, s' i vs plait, ki si <b>vos avoz fiyate e "
 "l' eplaideu ey e l' oteur</b> di ci cial."
 
-#: AppSetup/SetupWizard.cpp:205
+#: AppSetup/SetupWizard.cpp:150
 msgid "Details about this installation"
 msgstr "Detays åd fwait di l' astalaedje"
 
-#: AppSetup/SetupWizard.cpp:242
-msgid "Install for all users"
-msgstr "Astaler po tos les uzeus"
-
-#: AppSetup/SetupWizard.cpp:260
+#: AppSetup/SetupWizard.cpp:185
 msgid "Application description"
 msgstr "Discrijhaedje do programe"
 
-#: AppSetup/SetupWizard.cpp:272
-msgid "Software license"
-msgstr "Licince do programe"
-
-#: AppSetup/SetupWizard.cpp:273
-msgid "Please read the following terms and conditions carefully!"
-msgstr "Lijhoz bén s' i vs plait les termes eyet condicions shuvants !"
-
-#: AppSetup/SetupWizard.cpp:282
+#: AppSetup/SetupWizard.cpp:193
 msgid "Running installation"
 msgstr "Dji boute a l' astalaedje"
 
-#: AppSetup/SetupWizard.cpp:283
+#: AppSetup/SetupWizard.cpp:194
 #, kde-format
 msgid "Installing %1..."
 msgstr "Dj' astale %1..."
 
-#: AppSetup/SetupWizard.cpp:318
-msgid ""
-"Installing this package will make the following native packages obsolete. "
-"You might consider removing them manually."
-msgstr ""
-"L' astalaedje di ç' pacaedje cial rindrè forpassés les pacaedjes shuvants "
-"askepyîs pol sistinme. Vos dvrîz tuzer a lzès oister al mwin."
+#: AppSetup/SetupWizard.cpp:234
+msgid "Installation finished!"
+msgstr "Astalaedje fini !"
 
-#: AppSetup/SetupWizard.cpp:319
-msgid "Similar native packages found"
-msgstr "Minmes pacaedjes, mins askepyîs pols sistinme, trovés"
-
-#: AppSetup/SetupWizard.cpp:419
-msgid ""
-"You want to install this application as root!\n"
-"This can damage your system or install malicious software for all users.\n"
-"Please only proceed, if you really know what you're doing!\n"
-"Continue?"
-msgstr ""
-"Vos vloz astalez ç' programe cial come root !\n"
-"Çoucial pôreut fé sketer vosse sistinme oudon-bén astaler des måhaitîs "
-"programes po tos les uzeus.\n"
-"Nel fijhoz ki si vos savoz vormint çou k' vos estoz a fé !\n"
-"Tcheryî pus lon ?"
-
-#: AppSetup/SetupWizard.cpp:422
-msgid "Really install as superuser?"
-msgstr "Astaler po do bon come super-uzeu ?"
-
-#: AppSetup/SetupWizard.cpp:440
+#: AppSetup/SetupWizard.cpp:235
 #, kde-format
-msgid "This package has the following security level: <b>%1</b>"
-msgstr "Çou pacaejde ci a l' livea di såvrité shuvant : <b>%1</b>"
-
-#: AppSetup/SetupWizard.cpp:442
-#, kde-format
-msgid "It was signed with a key belonging to these user-ids: %1"
-msgstr "Il a stî siné avou ene clé apårtinant a ces id d' uzeu : %1"
-
-#: AppSetup/SetupWizard.cpp:446
-msgid "Security hints"
-msgstr "Propôzucions di såvrité"
+msgid "%1 has been installed successfully!"
+msgstr "%1 a stî astalé comifåt !"
 
 #: libapper/ApplicationLauncher.cpp:94
 msgid "New application available"
@@ -1284,7 +1227,7 @@ msgstr "Oridjene"
 msgid "Size"
 msgstr "Grandeu"
 
-#: libapper/PackageModel.cpp:326
+#: libapper/PackageModel.cpp:334
 #, kde-format
 msgid ""
 "Version: %1\n"
@@ -1293,11 +1236,11 @@ msgstr ""
 "Modêye : %1\n"
 "Årtchitecteure : %2"
 
-#: libapper/PackageModel.cpp:372
+#: libapper/PackageModel.cpp:380
 msgid "To be Removed"
 msgstr "A oister"
 
-#: libapper/PackageModel.cpp:374
+#: libapper/PackageModel.cpp:382
 msgid "To be Installed"
 msgstr "A-z astaler"
 
@@ -1502,87 +1445,87 @@ msgctxt "we are copying package files to prepare to install"
 msgid "Copying files"
 msgstr "Dji copeye les fitchîs"
 
-#: libapper/PkStrings.cpp:165
+#: libapper/PkStrings.cpp:170
 msgctxt "The action of the package, in past tense"
 msgid "Downloaded"
 msgstr "Aberweté"
 
-#: libapper/PkStrings.cpp:167
+#: libapper/PkStrings.cpp:172
 msgctxt "The action of the package, in past tense"
 msgid "Updated"
 msgstr "Metou a djoû"
 
-#: libapper/PkStrings.cpp:169
+#: libapper/PkStrings.cpp:174
 msgctxt "The action of the package, in past tense"
 msgid "Installed"
 msgstr "Astalé"
 
-#: libapper/PkStrings.cpp:171
+#: libapper/PkStrings.cpp:176
 msgctxt "The action of the package, in past tense"
 msgid "Removed"
 msgstr "Oisté"
 
-#: libapper/PkStrings.cpp:173
+#: libapper/PkStrings.cpp:178
 msgctxt "The action of the package, in past tense"
 msgid "Cleaned Up"
 msgstr "Netyî"
 
-#: libapper/PkStrings.cpp:175
+#: libapper/PkStrings.cpp:180
 msgctxt "The action of the package, in past tense"
 msgid "Obsoleted"
 msgstr "Trop vî"
 
-#: libapper/PkStrings.cpp:186
+#: libapper/PkStrings.cpp:191
 msgctxt "The role of the transaction, in present tense"
 msgid "Unknown role type"
 msgstr "Sôre di role nén cnoxhowe"
 
-#: libapper/PkStrings.cpp:188
+#: libapper/PkStrings.cpp:193
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting dependencies"
 msgstr "Dji cache après les aloyances"
 
-#: libapper/PkStrings.cpp:190
+#: libapper/PkStrings.cpp:195
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting update detail"
 msgstr "Dji cache après les detays des metaedjes a djoû"
 
-#: libapper/PkStrings.cpp:193
+#: libapper/PkStrings.cpp:198
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting details"
 msgstr "Dji cache après les detays"
 
-#: libapper/PkStrings.cpp:195
+#: libapper/PkStrings.cpp:200
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting requires"
 msgstr "Dji cache après les « dimande »"
 
-#: libapper/PkStrings.cpp:197
+#: libapper/PkStrings.cpp:202
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting updates"
 msgstr "Dji cache après les metaedjes a djoû"
 
-#: libapper/PkStrings.cpp:199
+#: libapper/PkStrings.cpp:204
 msgctxt "The role of the transaction, in present tense"
 msgid "Searching details"
 msgstr "Detays do cweraedje"
 
-#: libapper/PkStrings.cpp:201
+#: libapper/PkStrings.cpp:206
 msgctxt "The role of the transaction, in present tense"
 msgid "Searching for file"
 msgstr "Dji cache après on fitchî"
 
-#: libapper/PkStrings.cpp:203
+#: libapper/PkStrings.cpp:208
 msgctxt "The role of the transaction, in present tense"
 msgid "Searching groups"
 msgstr "Groupes di cweraedje"
 
-#: libapper/PkStrings.cpp:205
+#: libapper/PkStrings.cpp:210
 msgctxt "The role of the transaction, in present tense"
 msgid "Searching by package name"
 msgstr "Trover sol no do pacaedje"
 
-#: libapper/PkStrings.cpp:208
+#: libapper/PkStrings.cpp:213
 #, fuzzy
 #| msgctxt "The role of the transaction, in present tense"
 #| msgid "Simulating the remove"
@@ -1590,18 +1533,18 @@ msgctxt "The role of the transaction, in present tense"
 msgid "Simulating removal"
 msgstr "Dji fwait come si dj' oisteu"
 
-#: libapper/PkStrings.cpp:210 libapper/PkStrings.cpp:217
-#: libapper/PkStrings.cpp:258
+#: libapper/PkStrings.cpp:215 libapper/PkStrings.cpp:222
+#: libapper/PkStrings.cpp:263
 msgctxt "The role of the transaction, in present tense"
 msgid "Downloading packages"
 msgstr "Dj' aberwete  les pacaedjes"
 
-#: libapper/PkStrings.cpp:212
+#: libapper/PkStrings.cpp:217
 msgctxt "The role of the transaction, in present tense"
 msgid "Removing"
 msgstr "Dji oistêye"
 
-#: libapper/PkStrings.cpp:215
+#: libapper/PkStrings.cpp:220
 #, fuzzy
 #| msgctxt "The role of the transaction, in present tense"
 #| msgid "Simulating the install"
@@ -1609,12 +1552,12 @@ msgctxt "The role of the transaction, in present tense"
 msgid "Simulating install"
 msgstr "Dji fwait come si dj' astaleu l' atalaedje"
 
-#: libapper/PkStrings.cpp:219
+#: libapper/PkStrings.cpp:224
 msgctxt "The role of the transaction, in present tense"
 msgid "Installing"
 msgstr "Dj' astale"
 
-#: libapper/PkStrings.cpp:222
+#: libapper/PkStrings.cpp:227
 #, fuzzy
 #| msgctxt "The role of the transaction, in present tense"
 #| msgid "Simulating the install"
@@ -1622,7 +1565,7 @@ msgctxt "The role of the transaction, in present tense"
 msgid "Simulating file install"
 msgstr "Dji fwait come si dj' astaleu l' atalaedje"
 
-#: libapper/PkStrings.cpp:224
+#: libapper/PkStrings.cpp:229
 #, fuzzy
 #| msgctxt "The role of the transaction, in present tense"
 #| msgid "Downloading packages"
@@ -1630,17 +1573,17 @@ msgctxt "The role of the transaction, in present tense"
 msgid "Downloading required packages"
 msgstr "Dj' aberwete  les pacaedjes"
 
-#: libapper/PkStrings.cpp:226
+#: libapper/PkStrings.cpp:231
 msgctxt "The role of the transaction, in present tense"
 msgid "Installing file"
 msgstr "Dj' astale li fitchî"
 
-#: libapper/PkStrings.cpp:228
+#: libapper/PkStrings.cpp:233
 msgctxt "The role of the transaction, in present tense"
 msgid "Refreshing package cache"
 msgstr "Dji rafristêye li muchete des pacaedje"
 
-#: libapper/PkStrings.cpp:231
+#: libapper/PkStrings.cpp:236
 #, fuzzy
 #| msgctxt "The role of the transaction, in present tense"
 #| msgid "Simulating the update"
@@ -1648,7 +1591,7 @@ msgctxt "The role of the transaction, in present tense"
 msgid "Simulating update"
 msgstr "Dji fwait come si dj' meteu a djoû"
 
-#: libapper/PkStrings.cpp:233
+#: libapper/PkStrings.cpp:238
 #, fuzzy
 #| msgctxt "The role of the transaction, in present tense"
 #| msgid "Downloading packages"
@@ -1656,82 +1599,82 @@ msgctxt "The role of the transaction, in present tense"
 msgid "Downloading updates"
 msgstr "Dj' aberwete  les pacaedjes"
 
-#: libapper/PkStrings.cpp:235
+#: libapper/PkStrings.cpp:240
 msgctxt "The role of the transaction, in present tense"
 msgid "Updating packages"
 msgstr "Dji met a djoû les pacaedjes"
 
-#: libapper/PkStrings.cpp:237
+#: libapper/PkStrings.cpp:242
 msgctxt "The role of the transaction, in present tense"
 msgid "Canceling"
 msgstr "Dji rnonce"
 
-#: libapper/PkStrings.cpp:239
+#: libapper/PkStrings.cpp:244
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting list of repositories"
 msgstr "Dji cache après l' djivêye des depots"
 
-#: libapper/PkStrings.cpp:241
+#: libapper/PkStrings.cpp:246
 msgctxt "The role of the transaction, in present tense"
 msgid "Enabling repository"
 msgstr "Dji met en alaedje li depot"
 
-#: libapper/PkStrings.cpp:243
+#: libapper/PkStrings.cpp:248
 msgctxt "The role of the transaction, in present tense"
 msgid "Setting repository data"
 msgstr "Dji defini les dnêyes do depot"
 
-#: libapper/PkStrings.cpp:245
+#: libapper/PkStrings.cpp:250
 msgctxt "The role of the transaction, in present tense"
 msgid "Resolving"
 msgstr "Dji rezoud"
 
-#: libapper/PkStrings.cpp:248
+#: libapper/PkStrings.cpp:253
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting file list"
 msgstr "Dji cache après l' djivêye des fitchîs"
 
-#: libapper/PkStrings.cpp:250
+#: libapper/PkStrings.cpp:255
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting what provides"
 msgstr "Dji cache après çou k' i dene"
 
-#: libapper/PkStrings.cpp:252
+#: libapper/PkStrings.cpp:257
 msgctxt "The role of the transaction, in present tense"
 msgid "Installing signature"
 msgstr "Dj' astale li sinateure"
 
-#: libapper/PkStrings.cpp:254
+#: libapper/PkStrings.cpp:259
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting package lists"
 msgstr "Dji cache après les djivêyes des pacaedjes"
 
-#: libapper/PkStrings.cpp:256
+#: libapper/PkStrings.cpp:261
 msgctxt "The role of the transaction, in present tense"
 msgid "Accepting EULA"
 msgstr "Dj' acceptêye l' EULA"
 
-#: libapper/PkStrings.cpp:260
+#: libapper/PkStrings.cpp:265
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting distribution upgrade information"
 msgstr "Dji cache après les informåcions d' metaedje a livea del distribucion"
 
-#: libapper/PkStrings.cpp:262
+#: libapper/PkStrings.cpp:267
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting categories"
 msgstr "Dji cache après les categoreyes"
 
-#: libapper/PkStrings.cpp:264
+#: libapper/PkStrings.cpp:269
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting old transactions"
 msgstr "Dji cache après les viyès tranzaccions"
 
-#: libapper/PkStrings.cpp:266
+#: libapper/PkStrings.cpp:271
 msgctxt "The role of the transaction, in present tense"
 msgid "Repairing system"
 msgstr "Dji remantche li sistinme"
 
-#: libapper/PkStrings.cpp:268
+#: libapper/PkStrings.cpp:273
 #, fuzzy
 #| msgctxt "The role of the transaction, in present tense"
 #| msgid "Enabling repository"
@@ -1739,157 +1682,157 @@ msgctxt "The role of the transaction, in present tense"
 msgid "Removing repository"
 msgstr "Dji met en alaedje li depot"
 
-#: libapper/PkStrings.cpp:278
+#: libapper/PkStrings.cpp:288
 msgctxt "The role of the transaction, in past tense"
 msgid "Unknown role type"
 msgstr "Sôre di role nén cnoxhowe"
 
-#: libapper/PkStrings.cpp:280
+#: libapper/PkStrings.cpp:290
 msgctxt "The role of the transaction, in past tense"
 msgid "Got dependencies"
 msgstr "Dj' a ls aloyances"
 
-#: libapper/PkStrings.cpp:282
+#: libapper/PkStrings.cpp:292
 msgctxt "The role of the transaction, in past tense"
 msgid "Got update detail"
 msgstr "Dj' a les detays pol metaedje a djoû"
 
-#: libapper/PkStrings.cpp:285
+#: libapper/PkStrings.cpp:295
 msgctxt "The role of the transaction, in past tense"
 msgid "Got details"
 msgstr "Dj' a les detays"
 
-#: libapper/PkStrings.cpp:287
+#: libapper/PkStrings.cpp:297
 msgctxt "The role of the transaction, in past tense"
 msgid "Got requires"
 msgstr "Dj' a les « dimande »"
 
-#: libapper/PkStrings.cpp:289
+#: libapper/PkStrings.cpp:299
 msgctxt "The role of the transaction, in past tense"
 msgid "Got updates"
 msgstr "Dj' a les metaedjes a djoû"
 
-#: libapper/PkStrings.cpp:291
+#: libapper/PkStrings.cpp:301
 msgctxt "The role of the transaction, in past tense"
 msgid "Searched for package details"
 msgstr "Detays so les fitchîs cachîs après"
 
-#: libapper/PkStrings.cpp:293
+#: libapper/PkStrings.cpp:303
 msgctxt "The role of the transaction, in past tense"
 msgid "Searched for file"
 msgstr "Fitchîs cachîs après"
 
-#: libapper/PkStrings.cpp:295
+#: libapper/PkStrings.cpp:305
 msgctxt "The role of the transaction, in past tense"
 msgid "Searched groups"
 msgstr "Groupes cachîs après"
 
-#: libapper/PkStrings.cpp:297
+#: libapper/PkStrings.cpp:307
 msgctxt "The role of the transaction, in past tense"
 msgid "Searched for package name"
 msgstr "No d' fitchîs cachîs après"
 
-#: libapper/PkStrings.cpp:299
+#: libapper/PkStrings.cpp:309
 msgctxt "The role of the transaction, in past tense"
 msgid "Removed packages"
 msgstr "Pacaedjes oistés"
 
-#: libapper/PkStrings.cpp:301
+#: libapper/PkStrings.cpp:311
 msgctxt "The role of the transaction, in past tense"
 msgid "Installed packages"
 msgstr "Pacaedjes astalés"
 
-#: libapper/PkStrings.cpp:303
+#: libapper/PkStrings.cpp:313
 msgctxt "The role of the transaction, in past tense"
 msgid "Installed local files"
 msgstr "Fitchîs locås astalés"
 
-#: libapper/PkStrings.cpp:305
+#: libapper/PkStrings.cpp:315
 msgctxt "The role of the transaction, in past tense"
 msgid "Refreshed package cache"
 msgstr "Muchete des pacaedjes rafristêye"
 
-#: libapper/PkStrings.cpp:307
+#: libapper/PkStrings.cpp:317
 msgctxt "The role of the transaction, in past tense"
 msgid "Updated packages"
 msgstr "Pacaedjes metous a djoû"
 
-#: libapper/PkStrings.cpp:309
+#: libapper/PkStrings.cpp:319
 msgctxt "The role of the transaction, in past tense"
 msgid "Canceled"
 msgstr "Rinoncî"
 
-#: libapper/PkStrings.cpp:311
+#: libapper/PkStrings.cpp:321
 msgctxt "The role of the transaction, in past tense"
 msgid "Got list of repositories"
 msgstr "Dj' a l' djivêye des depots"
 
-#: libapper/PkStrings.cpp:313
+#: libapper/PkStrings.cpp:323
 msgctxt "The role of the transaction, in past tense"
 msgid "Enabled repository"
 msgstr "Depot en alaedje"
 
-#: libapper/PkStrings.cpp:315
+#: libapper/PkStrings.cpp:325
 msgctxt "The role of the transaction, in past tense"
 msgid "Set repository data"
 msgstr "Defini les dinêyes do depot"
 
-#: libapper/PkStrings.cpp:317
+#: libapper/PkStrings.cpp:327
 msgctxt "The role of the transaction, in past tense"
 msgid "Resolved"
 msgstr "Rezoudou"
 
-#: libapper/PkStrings.cpp:320
+#: libapper/PkStrings.cpp:330
 msgctxt "The role of the transaction, in past tense"
 msgid "Got file list"
 msgstr "Dj' a yeu l'  djivêye des fitchîs"
 
-#: libapper/PkStrings.cpp:322
+#: libapper/PkStrings.cpp:332
 msgctxt "The role of the transaction, in past tense"
 msgid "Got what provides"
 msgstr "Dj' a yeu çou ki dene"
 
-#: libapper/PkStrings.cpp:324
+#: libapper/PkStrings.cpp:334
 msgctxt "The role of the transaction, in past tense"
 msgid "Installed signature"
 msgstr "Sinateure astalêye"
 
-#: libapper/PkStrings.cpp:326
+#: libapper/PkStrings.cpp:336
 msgctxt "The role of the transaction, in past tense"
 msgid "Got package lists"
 msgstr "Dj' a yeu l' djivêye des pacaedjes"
 
-#: libapper/PkStrings.cpp:328
+#: libapper/PkStrings.cpp:338
 msgctxt "The role of the transaction, in past tense"
 msgid "Accepted EULA"
 msgstr "EULA accepté"
 
-#: libapper/PkStrings.cpp:330
+#: libapper/PkStrings.cpp:340
 msgctxt "The role of the transaction, in past tense"
 msgid "Downloaded packages"
 msgstr "Pacaedjes aberwetés"
 
-#: libapper/PkStrings.cpp:332
+#: libapper/PkStrings.cpp:342
 msgctxt "The role of the transaction, in past tense"
 msgid "Got distribution upgrades"
 msgstr "Dj' a yeu les metaedjes a livea del distribucion"
 
-#: libapper/PkStrings.cpp:334
+#: libapper/PkStrings.cpp:344
 msgctxt "The role of the transaction, in past tense"
 msgid "Got categories"
 msgstr "Dj' a yeu les categoreyes"
 
-#: libapper/PkStrings.cpp:336
+#: libapper/PkStrings.cpp:346
 msgctxt "The role of the transaction, in past tense"
 msgid "Got old transactions"
 msgstr "Dj' a yeu les viyès tranzaccions"
 
-#: libapper/PkStrings.cpp:338
+#: libapper/PkStrings.cpp:348
 msgctxt "The role of the transaction, in past tense"
 msgid "Repaired system"
 msgstr "Sistinme remantchî"
 
-#: libapper/PkStrings.cpp:340
+#: libapper/PkStrings.cpp:350
 #, fuzzy
 #| msgctxt "The role of the transaction, in past tense"
 #| msgid "Enabled repository"
@@ -1897,347 +1840,347 @@ msgctxt "The role of the transaction, in past tense"
 msgid "Removed repository"
 msgstr "Depot en alaedje"
 
-#: libapper/PkStrings.cpp:350
+#: libapper/PkStrings.cpp:360
 msgid "Downloading"
 msgstr "Dj' aberwete "
 
-#: libapper/PkStrings.cpp:352
+#: libapper/PkStrings.cpp:362
 msgid "Updating"
 msgstr "Dji met a djoû"
 
-#: libapper/PkStrings.cpp:354
+#: libapper/PkStrings.cpp:364
 msgid "Installing"
 msgstr "Dj' astale"
 
-#: libapper/PkStrings.cpp:356
+#: libapper/PkStrings.cpp:366
 msgid "Removing"
 msgstr "Dji oistêye"
 
-#: libapper/PkStrings.cpp:358
+#: libapper/PkStrings.cpp:368
 msgid "Cleaning up"
 msgstr "Dji rneteye"
 
-#: libapper/PkStrings.cpp:360
+#: libapper/PkStrings.cpp:370
 msgid "Obsoleting"
 msgstr "Dji rind forpassé"
 
-#: libapper/PkStrings.cpp:362
+#: libapper/PkStrings.cpp:372
 msgid "Reinstalling"
 msgstr "Dji rastale"
 
-#: libapper/PkStrings.cpp:364
+#: libapper/PkStrings.cpp:374
 msgid "Preparing"
 msgstr "Dj' aprestêye"
 
-#: libapper/PkStrings.cpp:366
+#: libapper/PkStrings.cpp:376
 msgid "Decompressing"
 msgstr "Dji disrastrind"
 
-#: libapper/PkStrings.cpp:377
+#: libapper/PkStrings.cpp:387
 msgid "Downloaded"
 msgstr "Aberweté"
 
-#: libapper/PkStrings.cpp:379
+#: libapper/PkStrings.cpp:389
 msgid "Updated"
 msgstr "Metou a djoû"
 
-#: libapper/PkStrings.cpp:383
+#: libapper/PkStrings.cpp:393
 msgid "Removed"
 msgstr "Oisté"
 
-#: libapper/PkStrings.cpp:385
+#: libapper/PkStrings.cpp:395
 msgid "Cleaned up"
 msgstr "Netyî"
 
-#: libapper/PkStrings.cpp:387
+#: libapper/PkStrings.cpp:397
 msgid "Obsoleted"
 msgstr "Trop vî"
 
-#: libapper/PkStrings.cpp:389
+#: libapper/PkStrings.cpp:399
 msgid "Reinstalled"
 msgstr "Rastalé"
 
-#: libapper/PkStrings.cpp:391
+#: libapper/PkStrings.cpp:401
 msgid "Prepared"
 msgstr "Apresté"
 
-#: libapper/PkStrings.cpp:393
+#: libapper/PkStrings.cpp:403
 msgid "Decompressed"
 msgstr "Disrastrindou"
 
-#: libapper/PkStrings.cpp:404
+#: libapper/PkStrings.cpp:414
 msgid "No network connection available"
 msgstr "I gn a pont d' raloyaedje rantoele di disponibe"
 
-#: libapper/PkStrings.cpp:406
+#: libapper/PkStrings.cpp:416
 msgid "No package cache is available"
 msgstr "I gn a pont d' muchete des pacaedjes"
 
-#: libapper/PkStrings.cpp:408
+#: libapper/PkStrings.cpp:418
 msgid "Out of memory"
 msgstr "Pupont d' memwere"
 
-#: libapper/PkStrings.cpp:410
+#: libapper/PkStrings.cpp:420
 msgid "Failed to create a thread"
 msgstr "L' ahivaedje d' ene lignoûle a fwait berwete"
 
-#: libapper/PkStrings.cpp:412
+#: libapper/PkStrings.cpp:422
 msgid "Not supported by this backend"
 msgstr "Nén sopoirté pa c' fondmint ci"
 
-#: libapper/PkStrings.cpp:414
+#: libapper/PkStrings.cpp:424
 msgid "An internal system error has occurred"
 msgstr "Ene divintrinne aroke sistinme s' a passé"
 
-#: libapper/PkStrings.cpp:416
+#: libapper/PkStrings.cpp:426
 msgid "A security trust relationship is not present"
 msgstr "I gn a pont d' loyaedje fiyåve di såvrité"
 
-#: libapper/PkStrings.cpp:418
+#: libapper/PkStrings.cpp:428
 msgid "The package is not installed"
 msgstr "Li pacaedje n' est nén astalé"
 
-#: libapper/PkStrings.cpp:420
+#: libapper/PkStrings.cpp:430
 msgid "The package was not found"
 msgstr "Dji n' a nén trové l' pacaedje"
 
-#: libapper/PkStrings.cpp:422
+#: libapper/PkStrings.cpp:432
 msgid "The package is already installed"
 msgstr "Li pacaedje est ddja astalé"
 
-#: libapper/PkStrings.cpp:424
+#: libapper/PkStrings.cpp:434
 msgid "The package download failed"
 msgstr "L' aberwetaedje do pacaedje a fwait berwete"
 
-#: libapper/PkStrings.cpp:426
+#: libapper/PkStrings.cpp:436
 msgid "The group was not found"
 msgstr "Dji n' a nén trové l' groupe"
 
-#: libapper/PkStrings.cpp:428
+#: libapper/PkStrings.cpp:438
 msgid "The group list was invalid"
 msgstr "Li djivêye des groupes n' esteut nén valåbe"
 
-#: libapper/PkStrings.cpp:430
+#: libapper/PkStrings.cpp:440
 msgid "Dependency resolution failed"
 msgstr "Li rezoudaedje des aloyances a fwait berwete"
 
-#: libapper/PkStrings.cpp:432
+#: libapper/PkStrings.cpp:442
 msgid "Search filter was invalid"
 msgstr "Li passete di cweraedje n' esteut nén valåbe"
 
-#: libapper/PkStrings.cpp:434
+#: libapper/PkStrings.cpp:444
 msgid "The package identifier was not well formed"
 msgstr "L' idintifieu do pacaedje n' esteut nén bén a môde di djin"
 
-#: libapper/PkStrings.cpp:436
+#: libapper/PkStrings.cpp:446
 msgid "Transaction error"
 msgstr "Aroke di tranzaccion"
 
-#: libapper/PkStrings.cpp:438
+#: libapper/PkStrings.cpp:448
 msgid "Repository name was not found"
 msgstr "Dji n' a nén trové l' pno do depot"
 
-#: libapper/PkStrings.cpp:440
+#: libapper/PkStrings.cpp:450
 msgid "Could not remove a protected system package"
 msgstr "Dji n' a sepou oister on pacaedje sistinme waerantî"
 
-#: libapper/PkStrings.cpp:442
+#: libapper/PkStrings.cpp:452
 msgid "The task was canceled"
 msgstr "Dj' a rnoncî al bouye"
 
-#: libapper/PkStrings.cpp:444
+#: libapper/PkStrings.cpp:454
 msgid "The task was forcibly canceled"
 msgstr "Dj' a rnoncî pal foice al bouye"
 
-#: libapper/PkStrings.cpp:446
+#: libapper/PkStrings.cpp:456
 msgid "Reading the config file failed"
 msgstr "Li ljhaedje do fitchî d' apontiaedje a fwait berwete"
 
-#: libapper/PkStrings.cpp:448
+#: libapper/PkStrings.cpp:458
 msgid "The task cannot be cancelled"
 msgstr "Dji n' sai nén rnoncî al bouye"
 
-#: libapper/PkStrings.cpp:450
+#: libapper/PkStrings.cpp:460
 msgid "Source packages cannot be installed"
 msgstr "Les pacaedjes sourdants n' savèt nén esse astalés"
 
-#: libapper/PkStrings.cpp:452
+#: libapper/PkStrings.cpp:462
 msgid "The license agreement failed"
 msgstr "L' acoird di licince a fwait berwete"
 
-#: libapper/PkStrings.cpp:454
+#: libapper/PkStrings.cpp:464
 msgid "Local file conflict between packages"
 msgstr "Afrontmint d' fitchîs locås etur pacaedjes"
 
-#: libapper/PkStrings.cpp:456
+#: libapper/PkStrings.cpp:466
 msgid "Packages are not compatible"
 msgstr "Les pacaedjes ni sont nén copatibes"
 
-#: libapper/PkStrings.cpp:458
+#: libapper/PkStrings.cpp:468
 msgid "Problem connecting to a software origin"
 msgstr "Åk n' a nén stî come dji m' raloyive a ene oridjene di programes"
 
-#: libapper/PkStrings.cpp:460
+#: libapper/PkStrings.cpp:470
 msgid "Failed to initialize"
 msgstr "L' inicialijhaedje a fwait berwete"
 
-#: libapper/PkStrings.cpp:462
+#: libapper/PkStrings.cpp:472
 msgid "Failed to finalize"
 msgstr "Li finixhaedje a fwait berwete"
 
-#: libapper/PkStrings.cpp:464
+#: libapper/PkStrings.cpp:474
 msgid "Cannot get lock"
 msgstr "Dji n' sai eclawer"
 
-#: libapper/PkStrings.cpp:466
+#: libapper/PkStrings.cpp:476
 msgid "No packages to update"
 msgstr "Pont d' pacaedjes a mete a djoû"
 
-#: libapper/PkStrings.cpp:468
+#: libapper/PkStrings.cpp:478
 msgid "Cannot write repository configuration"
 msgstr "Dji n' sai scrire l' apontiaedje do depot"
 
-#: libapper/PkStrings.cpp:470
+#: libapper/PkStrings.cpp:480
 msgid "Local install failed"
 msgstr "L' astalaedje locå a fwait berwete"
 
-#: libapper/PkStrings.cpp:472
+#: libapper/PkStrings.cpp:482
 msgid "Bad GPG signature"
 msgstr "Mwaijhe sinateure GPG"
 
-#: libapper/PkStrings.cpp:474
+#: libapper/PkStrings.cpp:484
 msgid "Missing GPG signature"
 msgstr "I manke li sinateure GPG"
 
-#: libapper/PkStrings.cpp:476
+#: libapper/PkStrings.cpp:486
 msgid "Repository configuration invalid"
 msgstr "Apontiaedje do depot nén valåbe"
 
-#: libapper/PkStrings.cpp:478
+#: libapper/PkStrings.cpp:488
 msgid "Invalid package file"
 msgstr "Fitchî pacaedje nén valåbe"
 
-#: libapper/PkStrings.cpp:480
+#: libapper/PkStrings.cpp:490
 msgid "Package install blocked"
 msgstr "Astalaedje do pacaedje bloké"
 
-#: libapper/PkStrings.cpp:482
+#: libapper/PkStrings.cpp:492
 msgid "Package is corrupt"
 msgstr "Li pacaedje est cron"
 
-#: libapper/PkStrings.cpp:484
+#: libapper/PkStrings.cpp:494
 msgid "All packages are already installed"
 msgstr "Tos les pacaedjes sont ddja astalés"
 
-#: libapper/PkStrings.cpp:486
+#: libapper/PkStrings.cpp:496
 msgid "The specified file could not be found"
 msgstr "Dji n' a savou trover l' sipecifyî fitchî"
 
-#: libapper/PkStrings.cpp:488
+#: libapper/PkStrings.cpp:498
 msgid "No more mirrors are available"
 msgstr "I gn a pont d' ôte muroe d' disponibe"
 
-#: libapper/PkStrings.cpp:490
+#: libapper/PkStrings.cpp:500
 msgid "No distribution upgrade data is available"
 msgstr "Nou metaedje a djoû del distribucion di disponibe"
 
-#: libapper/PkStrings.cpp:492
+#: libapper/PkStrings.cpp:502
 msgid "Package is incompatible with this system"
 msgstr "Li pacaedje n' est nén compatibe avou ç' sistinme cial"
 
-#: libapper/PkStrings.cpp:494
+#: libapper/PkStrings.cpp:504
 msgid "No space is left on the disk"
 msgstr "I gn a pupont d' plaece sol plake"
 
-#: libapper/PkStrings.cpp:496 libapper/PkTransaction.cpp:344
+#: libapper/PkStrings.cpp:506 libapper/PkTransaction.cpp:344
 msgid "A media change is required"
 msgstr "I fåt on candjmint d' media"
 
-#: libapper/PkStrings.cpp:498
+#: libapper/PkStrings.cpp:508
 msgid "Authorization failed"
 msgstr "L' otorijhåcion a fwait berwete"
 
-#: libapper/PkStrings.cpp:500
+#: libapper/PkStrings.cpp:510
 msgid "Update not found"
 msgstr "Metaedje a djoû nén trové"
 
-#: libapper/PkStrings.cpp:502
+#: libapper/PkStrings.cpp:512
 msgid "Cannot install from untrusted origin"
 msgstr "Dji n' sai astaler dispoy ene oridjene nén fiyåve"
 
-#: libapper/PkStrings.cpp:504
+#: libapper/PkStrings.cpp:514
 msgid "Cannot update from untrusted origin"
 msgstr "Dji n' sai mete a djoû dispoy ene oridjene nén fiyåve"
 
-#: libapper/PkStrings.cpp:506
+#: libapper/PkStrings.cpp:516
 msgid "Cannot get the file list"
 msgstr "Dji n' sai aler cweri après l' djivêye des fitchîs"
 
-#: libapper/PkStrings.cpp:508
+#: libapper/PkStrings.cpp:518
 msgid "Cannot get package requires"
 msgstr "Dji n' sai aler cweri après çou k' les pacaedjes ont mezåjhe"
 
-#: libapper/PkStrings.cpp:510
+#: libapper/PkStrings.cpp:520
 msgid "Cannot disable origin"
 msgstr "Dji n' sai essocter l' oridjene"
 
-#: libapper/PkStrings.cpp:512
+#: libapper/PkStrings.cpp:522
 msgid "The download failed"
 msgstr "L' aberwetaedje a fwait berwete"
 
-#: libapper/PkStrings.cpp:514
+#: libapper/PkStrings.cpp:524
 msgid "Package failed to configure"
 msgstr "L' apontiaedje do pacaedje a fwait berwete"
 
-#: libapper/PkStrings.cpp:516
+#: libapper/PkStrings.cpp:526
 msgid "Package failed to build"
 msgstr "Li bastixhaedje do pacaedje a fwait berwete"
 
-#: libapper/PkStrings.cpp:518
+#: libapper/PkStrings.cpp:528
 msgid "Package failed to install"
 msgstr "L' astalaedje do pacaedje a fwait berwete"
 
-#: libapper/PkStrings.cpp:520
+#: libapper/PkStrings.cpp:530
 msgid "Package failed to be removed"
 msgstr "Li oistaedje do pacaedje a fwait berwete"
 
-#: libapper/PkStrings.cpp:522
+#: libapper/PkStrings.cpp:532
 msgid "Update failed due to running process"
 msgstr "Li metaedje a djoû a fwait berwete a cåze di processus ovrants"
 
-#: libapper/PkStrings.cpp:524
+#: libapper/PkStrings.cpp:534
 msgid "The package database was changed"
 msgstr "Li båze di dnêyes des pacaedje a stî candjeye"
 
-#: libapper/PkStrings.cpp:526
+#: libapper/PkStrings.cpp:536
 msgid "Virtual provide type is not supported"
 msgstr "Li sôre di donaedje forveyou n' est nén sopoirtêye"
 
-#: libapper/PkStrings.cpp:528
+#: libapper/PkStrings.cpp:538
 msgid "Install root is invalid"
 msgstr "L' astalaedje raecene n' est nén valåbe"
 
-#: libapper/PkStrings.cpp:530
+#: libapper/PkStrings.cpp:540
 msgid "Cannot fetch install sources"
 msgstr "Dji n' sai aler cweri après les sourdants d' astalaedje"
 
-#: libapper/PkStrings.cpp:532
+#: libapper/PkStrings.cpp:542
 msgid "Rescheduled due to priority"
 msgstr "Riprogramé a cåze d' ene prumiristé"
 
-#: libapper/PkStrings.cpp:534
+#: libapper/PkStrings.cpp:544
 msgid "Unfinished transaction"
 msgstr "Tranzaccion nén fineye"
 
-#: libapper/PkStrings.cpp:536
+#: libapper/PkStrings.cpp:546
 msgid "Lock required"
 msgstr "Eclawaedje reki"
 
-#: libapper/PkStrings.cpp:538
+#: libapper/PkStrings.cpp:548
 msgid "Unknown error"
 msgstr "Aroke nén cnoxhowe"
 
-#: libapper/PkStrings.cpp:548
+#: libapper/PkStrings.cpp:558
 msgid ""
 "There is no network connection available.\n"
 "Please check your connection settings and try again"
@@ -2245,7 +2188,7 @@ msgstr ""
 "I gn a pont d' raloyaedje rantoele di disponibe.\n"
 "Waitîz vos tchuzes di raloyaedjes s' i vs plait eyet sayîz co on côp"
 
-#: libapper/PkStrings.cpp:551
+#: libapper/PkStrings.cpp:561
 msgid ""
 "The package list needs to be rebuilt.\n"
 "This should have been done by the backend automatically."
@@ -2253,7 +2196,7 @@ msgstr ""
 "Li djivêye des pacaedjes a dandjî d' esse ricostrute.\n"
 "Ça duvreut ddja esse awè stî fwait otomaticmint pal boye di fond."
 
-#: libapper/PkStrings.cpp:554
+#: libapper/PkStrings.cpp:564
 msgid ""
 "The service that is responsible for handling user requests is out of "
 "memory.\n"
@@ -2262,12 +2205,12 @@ msgstr ""
 "Li siervice ki doet apougnî les dmandes des uzeus n' a pupont d' memwere.\n"
 "Cloyoz kékes programes s' i vs plait oudon-bén renonder voste éndjole."
 
-#: libapper/PkStrings.cpp:557
+#: libapper/PkStrings.cpp:567
 msgid "A thread could not be created to service the user request."
 msgstr ""
 "Ene lignoûle n' a nén savou esse ahivêye po siervi l' dimande di l' uzeu."
 
-#: libapper/PkStrings.cpp:559
+#: libapper/PkStrings.cpp:569
 msgid ""
 "The action is not supported by this backend.\n"
 "Please report a bug as this should not have happened."
@@ -2275,7 +2218,7 @@ msgstr ""
 "Li faitindje n' est nén sopoirté pa ç' programe fondmint cial.\n"
 "Rapoirtez on bug s' i vs plait ca çoula n' åreu djamåy divou ariver."
 
-#: libapper/PkStrings.cpp:562
+#: libapper/PkStrings.cpp:572
 msgid ""
 "A problem that we were not expecting has occurred.\n"
 "Please report this bug with the error description."
@@ -2283,7 +2226,7 @@ msgstr ""
 "On problinme k' on n' s' î ratindeu nén s' a passé.\n"
 "Rapoirtez ç' bug la s' i vs plait avou l' discrijhaedje di l' aroke."
 
-#: libapper/PkStrings.cpp:565
+#: libapper/PkStrings.cpp:575
 msgid ""
 "A security trust relationship could not be made with the software origin.\n"
 "Please check your software signature settings."
@@ -2292,14 +2235,14 @@ msgstr ""
 "programe.\n"
 "Verifyîz vos apontiaedjes des sinateures des programes, s' i vs plait."
 
-#: libapper/PkStrings.cpp:568
+#: libapper/PkStrings.cpp:578
 msgid ""
 "The package that is trying to be removed or updated is not already installed."
 msgstr ""
 "Li pacaedje k' on saye di oister oudonbén d' mete a djoû n' est nén co "
 "astalé."
 
-#: libapper/PkStrings.cpp:570
+#: libapper/PkStrings.cpp:580
 msgid ""
 "The package that is being modified was not found on your system or in any "
 "software origin."
@@ -2307,11 +2250,11 @@ msgstr ""
 "Li pacaedje k' est å candjadje n' a nén stî trové ni so vosse sistinme, ni "
 "so tolminme kéne oridjene di programe."
 
-#: libapper/PkStrings.cpp:572
+#: libapper/PkStrings.cpp:582
 msgid "The package that is trying to be installed is already installed."
 msgstr "Li pacaedje k' on saye d' astaler est ddja astalé."
 
-#: libapper/PkStrings.cpp:574
+#: libapper/PkStrings.cpp:584
 msgid ""
 "The package download failed.\n"
 "Please check your network connectivity."
@@ -2319,7 +2262,7 @@ msgstr ""
 "L' aberwetaedje do pacaedje a fwait berwete.\n"
 "Waitîz vosse raloyaedje al rantoele, s' i vs plait."
 
-#: libapper/PkStrings.cpp:577
+#: libapper/PkStrings.cpp:587
 msgid ""
 "The group type was not found.\n"
 "Please check your group list and try again."
@@ -2327,7 +2270,7 @@ msgstr ""
 "Dji n' a nén trové sôre do groupe.\n"
 "Waitîz vosse djivêye des groupe, s' i vs plaît, eyet sayîz co on côp."
 
-#: libapper/PkStrings.cpp:580
+#: libapper/PkStrings.cpp:590
 msgid ""
 "The group list could not be loaded.\n"
 "Refreshing your cache may help, although this is normally a software origin "
@@ -2337,7 +2280,7 @@ msgstr ""
 "Rafrister vosse muchete pôreut aidî minme si c' est normålmint ene aroke "
 "d' oridjene di programes."
 
-#: libapper/PkStrings.cpp:584
+#: libapper/PkStrings.cpp:594
 msgid ""
 "A package dependency could not be found.\n"
 "More information is available in the detailed report."
@@ -2345,11 +2288,11 @@ msgstr ""
 "Dji n' a savou trover ene des aloyances.\n"
 "Vos savoz ndè saveur dipus e spepieus rapoirt."
 
-#: libapper/PkStrings.cpp:587
+#: libapper/PkStrings.cpp:597
 msgid "The search filter was not correctly formed."
 msgstr "Li passete di ceraedje n' esteut nén foirmé comifåt."
 
-#: libapper/PkStrings.cpp:589
+#: libapper/PkStrings.cpp:599
 msgid ""
 "The package identifier was not well formed when sent to the system daemon.\n"
 "This normally indicates an internal bug and should be reported."
@@ -2359,7 +2302,7 @@ msgstr ""
 "Ça vout dire les troes cwårts do tins ki c' est on dvintrin bug et dveur "
 "esse rapoirté."
 
-#: libapper/PkStrings.cpp:592
+#: libapper/PkStrings.cpp:602
 msgid ""
 "An error occurred while running the transaction.\n"
 "More information is available in the detailed report."
@@ -2367,7 +2310,7 @@ msgstr ""
 "Ene aroke s' a passé cwand dj' fijheu l' tranzaccion.\n"
 "I gn a pus d' informåcions dins l' sipepieus rapoirt."
 
-#: libapper/PkStrings.cpp:595
+#: libapper/PkStrings.cpp:605
 msgid ""
 "The remote software origin name was not found.\n"
 "You may need to enable an item in Software Origins."
@@ -2375,15 +2318,15 @@ msgstr ""
 "Dji n' a nén trové l' no d' l' oridjene di programes då lon.\n"
 "Vos dvoz kécfeye mete èn alaedje on cayet ezès Oridjenes des programes."
 
-#: libapper/PkStrings.cpp:598
+#: libapper/PkStrings.cpp:608
 msgid "Removing a protected system package is not allowed."
 msgstr "Oister on pacaedje sistinme waeranti n' est nén permetou."
 
-#: libapper/PkStrings.cpp:600
+#: libapper/PkStrings.cpp:610
 msgid "The task was canceled successfully and no packages were changed."
 msgstr "Dj' a rnoncî al bouye comifåt eyet nou pacaedje n' a stî candjî."
 
-#: libapper/PkStrings.cpp:602
+#: libapper/PkStrings.cpp:612
 msgid ""
 "The task was canceled successfully and no packages were changed.\n"
 "The backend did not exit cleanly."
@@ -2391,7 +2334,7 @@ msgstr ""
 "Dj' a rnoncî al bouye comifåt eyet nou pacaedje n' a stî candjî.\n"
 "Li bouye di fond n' a nén moussî foû d' ene façon prôpe."
 
-#: libapper/PkStrings.cpp:605
+#: libapper/PkStrings.cpp:615
 msgid ""
 "The native package configuration file could not be opened.\n"
 "Please make sure your system's configuration is valid."
@@ -2399,11 +2342,11 @@ msgstr ""
 "Dji n' a savou drovi l' fitchî d' apontiaedje des pacaedjes do sistinme.\n"
 "Waitîz bén ki l' apontiaedje di vosse sistinme est valåbe."
 
-#: libapper/PkStrings.cpp:608
+#: libapper/PkStrings.cpp:618
 msgid "The task is not safe to be cancelled at this time."
 msgstr "I n' est nén såve di rnoncî al bouye pol moumint."
 
-#: libapper/PkStrings.cpp:610
+#: libapper/PkStrings.cpp:620
 msgid ""
 "Source packages are not normally installed this way.\n"
 "Check the extension of the file you are trying to install."
@@ -2411,7 +2354,7 @@ msgstr ""
 "Les pacaedjes sourdants n' sont normålmint nén astalés d' cisse manire la.\n"
 "Waitîz l' cawete do fitchî k' vos sayîz d' astaler."
 
-#: libapper/PkStrings.cpp:613
+#: libapper/PkStrings.cpp:623
 msgid ""
 "The license agreement was not agreed to.\n"
 "To use this software you have to accept the license."
@@ -2419,7 +2362,7 @@ msgstr ""
 "L' acoird di licince n' a nén stî accepté.\n"
 "Po vs siervi di c' programe ci, vos dvoz accepter l' licince."
 
-#: libapper/PkStrings.cpp:616
+#: libapper/PkStrings.cpp:626
 msgid ""
 "Two packages provide the same file.\n"
 "This is usually due to mixing packages for different software origins."
@@ -2428,7 +2371,7 @@ msgstr ""
 "C' est les troes cwårts do tins a cåze di maxhaedjes di pacaedjes po "
 "diferinnès oridjenes di programes."
 
-#: libapper/PkStrings.cpp:619
+#: libapper/PkStrings.cpp:629
 msgid ""
 "Multiple packages exist that are not compatible with each other.\n"
 "This is usually due to mixing packages from different software origins."
@@ -2437,7 +2380,7 @@ msgstr ""
 "C' est les troes cwårts do tins a cåze di maxhaedjes di pacaedjes di "
 "diferinnès oridjenes di programes."
 
-#: libapper/PkStrings.cpp:622
+#: libapper/PkStrings.cpp:632
 msgid ""
 "There was a (possibly temporary) problem connecting to a software origins.\n"
 "Please check the detailed error for further details."
@@ -2446,7 +2389,7 @@ msgstr ""
 "ça pasrè).\n"
 "Waitîz bén l' sipepieus rapoirt d' aroke po ndè saveur dipus."
 
-#: libapper/PkStrings.cpp:625
+#: libapper/PkStrings.cpp:635
 msgid ""
 "Failed to initialize packaging backend.\n"
 "This may occur if other packaging tools are being used simultaneously."
@@ -2455,7 +2398,7 @@ msgstr ""
 "Ça s' pout passer si ds ôtès usteyes di pacaedjaedje sont-st eployîs å minme "
 "moumint."
 
-#: libapper/PkStrings.cpp:628
+#: libapper/PkStrings.cpp:638
 msgid ""
 "Failed to close down the backend instance.\n"
 "This error can normally be ignored."
@@ -2463,7 +2406,7 @@ msgstr ""
 "Li cloyaedje di l' instance del bouye di fond a fwait berwete.\n"
 "On pout normålmint passer houte ciste aroke la."
 
-#: libapper/PkStrings.cpp:631
+#: libapper/PkStrings.cpp:641
 msgid ""
 "Cannot get the exclusive lock on the packaging backend.\n"
 "Please close any other legacy packaging tools that may be open."
@@ -2473,15 +2416,15 @@ msgstr ""
 "Cloyoz s' i vs plait tote ôte usteye d' pacaedjaedje eritêye ki pôrént awè "
 "stî drovowe."
 
-#: libapper/PkStrings.cpp:634
+#: libapper/PkStrings.cpp:644
 msgid "None of the selected packages could be updated."
 msgstr "Nou des pacaedjes tchoezis n' a plou esse metou a djoû."
 
-#: libapper/PkStrings.cpp:636
+#: libapper/PkStrings.cpp:646
 msgid "The repository configuration could not be modified."
 msgstr "Dji n' a savou candjî l' apontiaedje do depot."
 
-#: libapper/PkStrings.cpp:638
+#: libapper/PkStrings.cpp:648
 msgid ""
 "Installing the local file failed.\n"
 "More information is available in the detailed report."
@@ -2489,11 +2432,11 @@ msgstr ""
 "L' astalaedje do fitchî locå a fwait berwete.\n"
 "I gn a pus d' informåcions dins l' sipepieus rapoirt."
 
-#: libapper/PkStrings.cpp:641
+#: libapper/PkStrings.cpp:651
 msgid "The package signature could not be verified."
 msgstr "Li sinateure do pacaedje n' a nén polou esse verifieye."
 
-#: libapper/PkStrings.cpp:643
+#: libapper/PkStrings.cpp:653
 msgid ""
 "The package signature was missing and this package is untrusted.\n"
 "This package was not signed with a GPG key when created."
@@ -2501,12 +2444,12 @@ msgstr ""
 "I mankéve li sinateure do pacaedje eyet ç' pacaedje cial est nén fiyåve.\n"
 "Ci pacaedje cial n' a nén stî siné avou ene clé GPG cwand il a stî ahivé."
 
-#: libapper/PkStrings.cpp:646
+#: libapper/PkStrings.cpp:656
 msgid "Repository configuration was invalid and could not be read."
 msgstr ""
 "L' apontiaedje do depot n' esteut nén valåbe eyet dji n' l' a savou lére."
 
-#: libapper/PkStrings.cpp:648
+#: libapper/PkStrings.cpp:658
 msgid ""
 "The package you are attempting to install is not valid.\n"
 "The package file could be corrupt, or not a proper package."
@@ -2515,7 +2458,7 @@ msgstr ""
 "Li fitchî do pacaedje pôreut esse cron oudonbén ça n' est nén on vraiy "
 "pacaedje."
 
-#: libapper/PkStrings.cpp:651
+#: libapper/PkStrings.cpp:661
 msgid ""
 "Installation of this package was prevented by your packaging system's "
 "configuration."
@@ -2523,18 +2466,18 @@ msgstr ""
 "L' astalaedje di ç' pacaedje cial a stî espaitchî pa l' apontiaedje da vosse "
 "sistinme di pacaedjaedje."
 
-#: libapper/PkStrings.cpp:653
+#: libapper/PkStrings.cpp:663
 msgid ""
 "The package that was downloaded is corrupt and needs to be downloaded again."
 msgstr "Li pacaedje aberweté est cron ey a dandjî d' resse aberweté."
 
-#: libapper/PkStrings.cpp:655
+#: libapper/PkStrings.cpp:665
 msgid ""
 "All of the packages selected for install are already installed on the system."
 msgstr ""
 "Tos les pacaedjes tchoezis po l' astalaedje sont ddja astalés sol sistinme."
 
-#: libapper/PkStrings.cpp:657
+#: libapper/PkStrings.cpp:667
 msgid ""
 "The specified file could not be found on the system.\n"
 "Check that the file still exists and has not been deleted."
@@ -2542,7 +2485,7 @@ msgstr ""
 "Dji n' a savou trover l' fitchî di specifyî sol sistinme.\n"
 "Waitî kel fitchî egzistêye co et n' a nén stî disfacé."
 
-#: libapper/PkStrings.cpp:660
+#: libapper/PkStrings.cpp:670
 msgid ""
 "Required data could not be found on any of the configured software origins.\n"
 "There were no more download mirrors that could be tried."
@@ -2551,7 +2494,7 @@ msgstr ""
 "d' apontieyes.\n"
 "I gn aveu pupont d' muroe d' aberwetaedje a sayî."
 
-#: libapper/PkStrings.cpp:663
+#: libapper/PkStrings.cpp:673
 msgid ""
 "Required upgrade data could not be found in any of the configured software "
 "origins.\n"
@@ -2561,14 +2504,14 @@ msgstr ""
 "oridjenes di programes d' apontieyes.\n"
 "Vos n' alez nén aveur li djivêye des metaedjes a livea del distribucion."
 
-#: libapper/PkStrings.cpp:666
+#: libapper/PkStrings.cpp:676
 msgid ""
 "The package that is trying to be installed is incompatible with this system."
 msgstr ""
 "Li pacaedje ki dj' saye d' astaler n' est nén compatibe avou ç' sistinme "
 "cial."
 
-#: libapper/PkStrings.cpp:668
+#: libapper/PkStrings.cpp:678
 msgid ""
 "There is insufficient space on the device.\n"
 "Free some space on the system disk to perform this operation."
@@ -2576,11 +2519,11 @@ msgstr ""
 "Gn a pont d' plaece assez so l' éndjin.\n"
 "Fijhoz on pô d' plaece sol plake do sistinme po fé ciste operåcion la."
 
-#: libapper/PkStrings.cpp:671
+#: libapper/PkStrings.cpp:681
 msgid "Additional media is required to complete the transaction."
 msgstr "I fåt èn ôte media po fini l' tranzaccion."
 
-#: libapper/PkStrings.cpp:673
+#: libapper/PkStrings.cpp:683
 msgid ""
 "You have failed to provide correct authentication.\n"
 "Please check any passwords or account settings."
@@ -2588,7 +2531,7 @@ msgstr ""
 "Vos n' avoz nén savou dner l' otintifiaedje k' i fåt.\n"
 "Verifyîz tos les scret et totes les tchuzes do conte."
 
-#: libapper/PkStrings.cpp:676
+#: libapper/PkStrings.cpp:686
 msgid ""
 "The specified update could not be found.\n"
 "It could have already been installed or no longer available on the remote "
@@ -2597,28 +2540,28 @@ msgstr ""
 "Dji n' a savou trover l' metaedje a djoû d' sipecifyî. Il a motoit ddja stî "
 "astalé oudon-bén n' est pus disponibe sol sierveu då lon."
 
-#: libapper/PkStrings.cpp:679
+#: libapper/PkStrings.cpp:689
 msgid "The package could not be installed from untrusted origin."
 msgstr "Dji n' a savou astaler l' pacaedje a pårti d' ene oridjene nén fiyåve."
 
-#: libapper/PkStrings.cpp:681
+#: libapper/PkStrings.cpp:691
 msgid "The package could not be updated from untrusted origin."
 msgstr ""
 "Dji n' a savou mete a djoû l' pacaedje a pårti d' ene oridjene nén fiyåve."
 
-#: libapper/PkStrings.cpp:683
+#: libapper/PkStrings.cpp:693
 msgid "The file list is not available for this package."
 msgstr "I gn a pont d' djivêye des fitchîs po ç' pacaedje la."
 
-#: libapper/PkStrings.cpp:685
+#: libapper/PkStrings.cpp:695
 msgid "The information about what requires this package could not be obtained."
 msgstr "Dji n' a savou aveur l' informåcion so ç' k' i fåt po ç' pacaedje la."
 
-#: libapper/PkStrings.cpp:687
+#: libapper/PkStrings.cpp:697
 msgid "The specified software origin could not be disabled."
 msgstr "Dji n' a savou essocter l' oridjene di programe di specifieye."
 
-#: libapper/PkStrings.cpp:689
+#: libapper/PkStrings.cpp:699
 msgid ""
 "The download could not be done automatically and should be done manually.\n"
 "More information is available in the detailed report."
@@ -2626,7 +2569,7 @@ msgstr ""
 "Dji n' a savou fé otomaticmint l' aberwetaedje. I doet esse fwait al mwin.\n"
 "Vos ploz ndè saveur dipus e spepieus rapoirt."
 
-#: libapper/PkStrings.cpp:692
+#: libapper/PkStrings.cpp:702
 msgid ""
 "One of the selected packages failed to configure correctly.\n"
 "More information is available in the detailed report."
@@ -2634,7 +2577,7 @@ msgstr ""
 "Onk des pacaedjes di tchoezis n' s' a nén apontyî comifåt.\n"
 "Vos ploz ndè saveur dipus e spepieus rapoirt."
 
-#: libapper/PkStrings.cpp:695
+#: libapper/PkStrings.cpp:705
 msgid ""
 "One of the selected packages failed to build correctly.\n"
 "More information is available in the detailed report."
@@ -2642,7 +2585,7 @@ msgstr ""
 "Onk des pacaedjes di tchoezis n' s' a nén basti comifåt.\n"
 "Vos ploz ndè saveur dipus e spepieus rapoirt."
 
-#: libapper/PkStrings.cpp:698
+#: libapper/PkStrings.cpp:708
 msgid ""
 "One of the selected packages failed to install correctly.\n"
 "More information is available in the detailed report."
@@ -2650,7 +2593,7 @@ msgstr ""
 "Onk des pacaedjes di tchoezis n' s' a nén astalé comifåt.\n"
 "Vos ploz ndè saveur dipus e spepieus rapoirt."
 
-#: libapper/PkStrings.cpp:701
+#: libapper/PkStrings.cpp:711
 msgid ""
 "One of the selected packages failed to be removed correctly.\n"
 "More information is available in the detailed report."
@@ -2658,7 +2601,7 @@ msgstr ""
 "Onk des pacaedjes di tchoezis n' s' a nén oisté comifåt.\n"
 "Vos ploz ndè saveur dipus e spepieus rapoirt."
 
-#: libapper/PkStrings.cpp:704
+#: libapper/PkStrings.cpp:714
 msgid ""
 "A program is running that has to be closed before the update can proceed.\n"
 "More information is available in the detailed report."
@@ -2667,27 +2610,27 @@ msgstr ""
 "metaedje a djoû.\n"
 "Vos ploz ndè saveur dipus e spepieus rapoirt."
 
-#: libapper/PkStrings.cpp:707
+#: libapper/PkStrings.cpp:717
 msgid "The package database was changed while the request was running."
 msgstr ""
 "Li båze di dnêyes des pacaedjes a candjî sol tins k' dji fjheu l' dimande."
 
-#: libapper/PkStrings.cpp:709
+#: libapper/PkStrings.cpp:719
 msgid "The virtual provide type is not supported by this system."
 msgstr ""
 "Li sôre di donaedje forveyowe n' est nén sopoirtêye pa ç' sistinme cial."
 
-#: libapper/PkStrings.cpp:711
+#: libapper/PkStrings.cpp:721
 msgid "The install root is invalid. Please contact your administrator."
 msgstr ""
 "Li raecene po l' astalaedje n' est nén valåbe. Houkîz vosse manaedjeu s' i "
 "vs plait."
 
-#: libapper/PkStrings.cpp:713
+#: libapper/PkStrings.cpp:723
 msgid "The list of software could not be downloaded."
 msgstr "Dji n' a savou aberweter l' djivêye des programes."
 
-#: libapper/PkStrings.cpp:715
+#: libapper/PkStrings.cpp:725
 msgid ""
 "The transaction has been cancelled and will be retried when the system is "
 "idle."
@@ -2695,16 +2638,16 @@ msgstr ""
 "Il a stî rnoncî al tranzaccion eyet esse rissayeye cwand l' sistinme ni frè "
 "rén."
 
-#: libapper/PkStrings.cpp:717
+#: libapper/PkStrings.cpp:727
 msgid "A previous package management transaction was interrupted."
 msgstr ""
 "Ene tranzaccion di manaedjmint des pacaedjes ki s' a passé a stî djokêye."
 
-#: libapper/PkStrings.cpp:719
+#: libapper/PkStrings.cpp:729
 msgid "A package manager lock is required."
 msgstr "Èn eclawaedje do manaedjeu des pacaedjes est reki."
 
-#: libapper/PkStrings.cpp:721
+#: libapper/PkStrings.cpp:731
 msgid ""
 "Unknown error, please report a bug.\n"
 "More information is available in the detailed report."
@@ -2712,236 +2655,236 @@ msgstr ""
 "Aroke nén cnoxhowe, rapoirtez on bug s' i vs plait.\n"
 "I gn a pus d' informåcions dins l' sipepieus rapoirt."
 
-#: libapper/PkStrings.cpp:732
+#: libapper/PkStrings.cpp:742
 msgctxt "The group type"
 msgid "Accessibility"
 msgstr "Accessibilité"
 
-#: libapper/PkStrings.cpp:734
+#: libapper/PkStrings.cpp:744
 msgctxt "The group type"
 msgid "Accessories"
 msgstr "Usteyes"
 
-#: libapper/PkStrings.cpp:736
+#: libapper/PkStrings.cpp:746
 msgctxt "The group type"
 msgid "Education"
 msgstr "Sicolaedje"
 
-#: libapper/PkStrings.cpp:738
+#: libapper/PkStrings.cpp:748
 msgctxt "The group type"
 msgid "Games"
 msgstr "Djeus"
 
-#: libapper/PkStrings.cpp:740
+#: libapper/PkStrings.cpp:750
 msgctxt "The group type"
 msgid "Graphics"
 msgstr "Imådjes"
 
-#: libapper/PkStrings.cpp:742
+#: libapper/PkStrings.cpp:752
 msgctxt "The group type"
 msgid "Internet"
 msgstr "Daegntoele"
 
-#: libapper/PkStrings.cpp:744
+#: libapper/PkStrings.cpp:754
 msgctxt "The group type"
 msgid "Office"
 msgstr "Burotike"
 
-#: libapper/PkStrings.cpp:746
+#: libapper/PkStrings.cpp:756
 msgctxt "The group type"
 msgid "Others"
 msgstr "Ôtes"
 
-#: libapper/PkStrings.cpp:748
+#: libapper/PkStrings.cpp:758
 msgctxt "The group type"
 msgid "Development"
 msgstr "Diswalpaedje"
 
-#: libapper/PkStrings.cpp:750
+#: libapper/PkStrings.cpp:760
 msgctxt "The group type"
 msgid "Multimedia"
 msgstr "Multimedia"
 
-#: libapper/PkStrings.cpp:752
+#: libapper/PkStrings.cpp:762
 msgctxt "The group type"
 msgid "System"
 msgstr "Sistinme"
 
-#: libapper/PkStrings.cpp:754
+#: libapper/PkStrings.cpp:764
 msgctxt "The group type"
 msgid "GNOME desktop"
 msgstr "Sicribanne GNOME"
 
-#: libapper/PkStrings.cpp:756
+#: libapper/PkStrings.cpp:766
 msgctxt "The group type"
 msgid "KDE desktop"
 msgstr "Sicribanne KDE"
 
-#: libapper/PkStrings.cpp:758
+#: libapper/PkStrings.cpp:768
 msgctxt "The group type"
 msgid "XFCE desktop"
 msgstr "Sicribanne XFCE"
 
-#: libapper/PkStrings.cpp:760
+#: libapper/PkStrings.cpp:770
 msgctxt "The group type"
 msgid "Other desktops"
 msgstr "Ôtes sicribannes"
 
-#: libapper/PkStrings.cpp:762
+#: libapper/PkStrings.cpp:772
 msgctxt "The group type"
 msgid "Publishing"
 msgstr "Eplaidaedje"
 
-#: libapper/PkStrings.cpp:764
+#: libapper/PkStrings.cpp:774
 msgctxt "The group type"
 msgid "Servers"
 msgstr "Sierveus"
 
-#: libapper/PkStrings.cpp:766
+#: libapper/PkStrings.cpp:776
 msgctxt "The group type"
 msgid "Fonts"
 msgstr "Fontes"
 
-#: libapper/PkStrings.cpp:768
+#: libapper/PkStrings.cpp:778
 msgctxt "The group type"
 msgid "Admin tools"
 msgstr "Usteyes di manaedjmint"
 
-#: libapper/PkStrings.cpp:770
+#: libapper/PkStrings.cpp:780
 msgctxt "The group type"
 msgid "Legacy"
 msgstr "Eritaedje"
 
-#: libapper/PkStrings.cpp:772
+#: libapper/PkStrings.cpp:782
 msgctxt "The group type"
 msgid "Localization"
 msgstr "Locålizaedje"
 
-#: libapper/PkStrings.cpp:774
+#: libapper/PkStrings.cpp:784
 msgctxt "The group type"
 msgid "Virtualization"
 msgstr "Forvoeyaedje"
 
-#: libapper/PkStrings.cpp:776
+#: libapper/PkStrings.cpp:786
 msgctxt "The group type"
 msgid "Security"
 msgstr "Såvrité"
 
-#: libapper/PkStrings.cpp:778
+#: libapper/PkStrings.cpp:788
 msgctxt "The group type"
 msgid "Power management"
 msgstr "Manaedjmint di l' enerdjeye"
 
-#: libapper/PkStrings.cpp:780
+#: libapper/PkStrings.cpp:790
 msgctxt "The group type"
 msgid "Communication"
 msgstr "Comunicåcion"
 
-#: libapper/PkStrings.cpp:782
+#: libapper/PkStrings.cpp:792
 msgctxt "The group type"
 msgid "Network"
 msgstr "Rantoele"
 
-#: libapper/PkStrings.cpp:784
+#: libapper/PkStrings.cpp:794
 msgctxt "The group type"
 msgid "Maps"
 msgstr "Mapes"
 
-#: libapper/PkStrings.cpp:786
+#: libapper/PkStrings.cpp:796
 msgctxt "The group type"
 msgid "Software sources"
 msgstr "Sourdants do programe"
 
-#: libapper/PkStrings.cpp:788
+#: libapper/PkStrings.cpp:798
 msgctxt "The group type"
 msgid "Science"
 msgstr "Siyince"
 
-#: libapper/PkStrings.cpp:790
+#: libapper/PkStrings.cpp:800
 msgctxt "The group type"
 msgid "Documentation"
 msgstr "Documintåcion"
 
-#: libapper/PkStrings.cpp:792
+#: libapper/PkStrings.cpp:802
 msgctxt "The group type"
 msgid "Electronics"
 msgstr "Electronike"
 
-#: libapper/PkStrings.cpp:794
+#: libapper/PkStrings.cpp:804
 msgctxt "The group type"
 msgid "Package collections"
 msgstr "Ramexhnêye di pacaedjes"
 
-#: libapper/PkStrings.cpp:796
+#: libapper/PkStrings.cpp:806
 msgctxt "The group type"
 msgid "Vendor"
 msgstr "Vindeu"
 
-#: libapper/PkStrings.cpp:798
+#: libapper/PkStrings.cpp:808
 msgctxt "The group type"
 msgid "Newest packages"
 msgstr "Pacaedjes les pus noûs"
 
-#: libapper/PkStrings.cpp:800
+#: libapper/PkStrings.cpp:810
 msgctxt "The group type"
 msgid "Unknown group"
 msgstr "Groupe nén cnoxhou"
 
-#: libapper/PkStrings.cpp:811
+#: libapper/PkStrings.cpp:821
 msgctxt "The type of update"
 msgid "Trivial update"
 msgstr "Biesse metaedje a djoû"
 
-#: libapper/PkStrings.cpp:813
+#: libapper/PkStrings.cpp:823
 msgctxt "The type of update"
 msgid "Normal update"
 msgstr "Metaedje a djoû normå"
 
-#: libapper/PkStrings.cpp:815
+#: libapper/PkStrings.cpp:825
 msgctxt "The type of update"
 msgid "Important update"
 msgstr "Impôrtant metaedje a djoû"
 
-#: libapper/PkStrings.cpp:817
+#: libapper/PkStrings.cpp:827
 msgctxt "The type of update"
 msgid "Security update"
 msgstr "Metaedje a djoû di såvrité"
 
-#: libapper/PkStrings.cpp:819
+#: libapper/PkStrings.cpp:829
 msgctxt "The type of update"
 msgid "Bug fix update"
 msgstr "Metaedje a djoû coridjant des bugs"
 
-#: libapper/PkStrings.cpp:821
+#: libapper/PkStrings.cpp:831
 msgctxt "The type of update"
 msgid "Enhancement update"
 msgstr "Metaedje a djoû d' amidraedje"
 
-#: libapper/PkStrings.cpp:823
+#: libapper/PkStrings.cpp:833
 msgctxt "The type of update"
 msgid "Blocked update"
 msgstr "Metaedje a djoû ehåyî"
 
-#: libapper/PkStrings.cpp:826
+#: libapper/PkStrings.cpp:836
 msgctxt "The type of update"
 msgid "Installed"
 msgstr "Astalé"
 
-#: libapper/PkStrings.cpp:829
+#: libapper/PkStrings.cpp:839
 msgctxt "The type of update"
 msgid "Available"
 msgstr "Disponibe"
 
-#: libapper/PkStrings.cpp:831
+#: libapper/PkStrings.cpp:841
 msgctxt "The type of update"
 msgid "Unknown update"
 msgstr "Metaedje a djoû nén cnoxhou"
 
-#: libapper/PkStrings.cpp:842
+#: libapper/PkStrings.cpp:852
 msgid "No Updates Available"
 msgstr "I gn a pont d' metaedje a djoû"
 
-#: libapper/PkStrings.cpp:845
+#: libapper/PkStrings.cpp:855
 #, kde-format
 msgctxt "Some updates were selected on the view"
 msgid "1 Update Selected"
@@ -2949,7 +2892,7 @@ msgid_plural "%1 Updates Selected"
 msgstr[0] "On metaedje a djoû di tchoezi"
 msgstr[1] "%1 metaedjes a djoû di tchoezis"
 
-#: libapper/PkStrings.cpp:849
+#: libapper/PkStrings.cpp:859
 #, kde-format
 msgctxt "Some updates are being shown on the screen"
 msgid "1 Update"
@@ -2957,13 +2900,13 @@ msgid_plural "%1 Updates"
 msgstr[0] "On metaedje a djoû"
 msgstr[1] "%1 metaedjes a djoû"
 
-#: libapper/PkStrings.cpp:852
+#: libapper/PkStrings.cpp:862
 #, kde-format
 msgctxt "Type of update, in the case it's just an update"
 msgid "%1, %2"
 msgstr "%1, %2"
 
-#: libapper/PkStrings.cpp:853
+#: libapper/PkStrings.cpp:863
 #, kde-format
 msgctxt "Part of: %1 Updates, %1 Selected"
 msgid "%1 Update"
@@ -2971,7 +2914,7 @@ msgid_plural "%1 Updates"
 msgstr[0] "%1 metaedje a djoû"
 msgstr[1] "%1 metaedjes a djoû"
 
-#: libapper/PkStrings.cpp:854
+#: libapper/PkStrings.cpp:864
 #, kde-format
 msgctxt "Part of: %1 Updates, %1 Selected"
 msgid "%1 Selected"
@@ -2979,256 +2922,235 @@ msgid_plural "%1 Selected"
 msgstr[0] "%1 di tchoezi"
 msgstr[1] "%1 di tchoezis"
 
-#: libapper/PkStrings.cpp:858
+#: libapper/PkStrings.cpp:868
 msgid "No Packages"
 msgstr "Nou pacaedje"
 
-#: libapper/PkStrings.cpp:860
+#: libapper/PkStrings.cpp:870
 #, kde-format
 msgid "1 Package"
 msgid_plural "%1 Packages"
 msgstr[0] "On pacaedje"
 msgstr[1] "%1 pacaedjes"
 
-#: libapper/PkStrings.cpp:868
+#: libapper/PkStrings.cpp:878
 msgid "No restart is necessary"
 msgstr "I n' fåt rén renonder"
 
-#: libapper/PkStrings.cpp:870
+#: libapper/PkStrings.cpp:880
 msgid "You will be required to restart this application"
 msgstr "I fårè k' vos renondoxhe ci programe cial"
 
-#: libapper/PkStrings.cpp:872
+#: libapper/PkStrings.cpp:882
 msgid "You will be required to log out and back in"
 msgstr "I fårè k' vos vs dislodjoxhe del session eyet s' relodjî"
 
-#: libapper/PkStrings.cpp:874
+#: libapper/PkStrings.cpp:884
 msgid "A restart will be required"
 msgstr "Vos dvoz renonder l' éndjole"
 
-#: libapper/PkStrings.cpp:876
+#: libapper/PkStrings.cpp:886
 msgid "You will be required to log out and back in due to a security update."
 msgstr ""
 "I fårè k' vos vs dislodjoxhe del session eyet s' relodjî a cåze d' on "
 "metaedje a djoû di såvrité."
 
-#: libapper/PkStrings.cpp:878
+#: libapper/PkStrings.cpp:888
 msgid "A restart will be required due to a security update."
 msgstr "Vos dvoz renonder l' éndjole a cåze d' on metaedje a djoû d' såvrité."
 
-#: libapper/PkStrings.cpp:891
+#: libapper/PkStrings.cpp:901
 msgid "No restart is required"
 msgstr "Nén dandjî d' renonder"
 
-#: libapper/PkStrings.cpp:893
+#: libapper/PkStrings.cpp:903
 msgid "A restart is required"
 msgstr "I fåt renonder"
 
-#: libapper/PkStrings.cpp:895
+#: libapper/PkStrings.cpp:905
 msgid "You need to log out and log back in"
 msgstr "Vos avoz dandjî d' vos dislodjî del session eyet s' relodjî"
 
-#: libapper/PkStrings.cpp:897
+#: libapper/PkStrings.cpp:907
 msgid "You need to restart the application"
 msgstr "Vos avoz dandjî d' renonder l' programe"
 
-#: libapper/PkStrings.cpp:899
+#: libapper/PkStrings.cpp:909
 msgid "You need to log out and log back in to remain secure."
 msgstr ""
 "Vos avoz dandjî d' vos dislodjî del session eyet s' relodjî po dmorer al "
 "coete."
 
-#: libapper/PkStrings.cpp:901
+#: libapper/PkStrings.cpp:911
 msgid "A restart is required to remain secure."
 msgstr "I fåt renonder po dmorer al coete."
 
-#: libapper/PkStrings.cpp:914
+#: libapper/PkStrings.cpp:924
 msgid "Stable"
 msgstr "Stocaesse"
 
-#: libapper/PkStrings.cpp:916
+#: libapper/PkStrings.cpp:926
 msgid "Unstable"
 msgstr "Nén stocaesse"
 
-#: libapper/PkStrings.cpp:918
+#: libapper/PkStrings.cpp:928
 msgid "Testing"
 msgstr "Sayes"
 
-#: libapper/PkStrings.cpp:931
+#: libapper/PkStrings.cpp:941
 #, kde-format
 msgid "Please insert the CD labeled '%1', and press continue."
 msgstr ""
 "Tchôkîz l' plake lazer CD lomêye « %1 » eyet tchôkî so tcheryî pus lon."
 
-#: libapper/PkStrings.cpp:933
+#: libapper/PkStrings.cpp:943
 #, kde-format
 msgid "Please insert the DVD labeled '%1', and press continue."
 msgstr "Tchôkîz l' plake DVD lomêye « %1 » eyet tchôkî so tcheryî pus lon."
 
-#: libapper/PkStrings.cpp:935
+#: libapper/PkStrings.cpp:945
 #, kde-format
 msgid "Please insert the disc labeled '%1', and press continue."
 msgstr "Tchôkîz l' plake lomêye « %1 » eyet tchôkî so tcheryî pus lon."
 
-#: libapper/PkStrings.cpp:937 libapper/PkStrings.cpp:940
+#: libapper/PkStrings.cpp:947 libapper/PkStrings.cpp:950
 #, kde-format
 msgid "Please insert the medium labeled '%1', and press continue."
 msgstr "Tchôkîz l' media lomé « %1 » eyet tchôkî so tcheryî pus lon."
 
-#: libapper/PkStrings.cpp:947
+#: libapper/PkStrings.cpp:957
 msgid "A mirror is possibly broken"
 msgstr "On muroe est motoit scheté"
 
-#: libapper/PkStrings.cpp:949
+#: libapper/PkStrings.cpp:959
 msgid "The connection was refused"
 msgstr "Li raloyaedje a stî rfuzé"
 
-#: libapper/PkStrings.cpp:951
+#: libapper/PkStrings.cpp:961
 msgid "The parameter was invalid"
 msgstr "Li paramete n' esteut nén valåbe"
 
-#: libapper/PkStrings.cpp:953
+#: libapper/PkStrings.cpp:963
 msgid "The priority was invalid"
 msgstr "Li prumiristé n' esteut nén valåbe"
 
-#: libapper/PkStrings.cpp:955
+#: libapper/PkStrings.cpp:965
 msgid "Backend warning"
 msgstr "Adviertixhmint del bouye di fond"
 
-#: libapper/PkStrings.cpp:957
+#: libapper/PkStrings.cpp:967
 msgid "Daemon warning"
 msgstr "Adviertixhmint do démon"
 
-#: libapper/PkStrings.cpp:959
+#: libapper/PkStrings.cpp:969
 msgid "The package list cache is being rebuilt"
 msgstr "Li djivêye des pacaedjes est a esse ricostrute"
 
-#: libapper/PkStrings.cpp:961
+#: libapper/PkStrings.cpp:971
 msgid "An untrusted package was installed"
 msgstr "On pacaedje nén fiyåve a stî astalé"
 
-#: libapper/PkStrings.cpp:963
+#: libapper/PkStrings.cpp:973
 msgid "A newer package exists"
 msgstr "On programe pis noûs egzistêye"
 
-#: libapper/PkStrings.cpp:965
+#: libapper/PkStrings.cpp:975
 msgid "Could not find package"
 msgstr "Dji n' a savou trover l' pacaedje"
 
-#: libapper/PkStrings.cpp:967
+#: libapper/PkStrings.cpp:977
 msgid "Configuration files were changed"
 msgstr "Les fitchîs d' apontiaedje ont stî candjîs"
 
-#: libapper/PkStrings.cpp:969
+#: libapper/PkStrings.cpp:979
 msgid "Package is already installed"
 msgstr "Li pacaedje est ddja astalé"
 
-#: libapper/PkStrings.cpp:971
+#: libapper/PkStrings.cpp:981
 msgid "Automatic cleanup is being ignored"
 msgstr "Dji passe houte do rnetiaedje otomatike"
 
-#: libapper/PkStrings.cpp:973
+#: libapper/PkStrings.cpp:983
 msgid "Software source download failed"
 msgstr "L' aberwetaedje do sourdant di programes a fwait berwete"
 
-#: libapper/PkStrings.cpp:975
+#: libapper/PkStrings.cpp:985
 msgid "This software source is for developers only"
 msgstr "Ci sourdant d' programes la n' est k' po les programeus"
 
-#: libapper/PkStrings.cpp:977
+#: libapper/PkStrings.cpp:987
 msgid "Other updates have been held back"
 msgstr "D' ôtes metaedjes a djoû ont stî wårdés"
 
-#: libapper/PkStrings.cpp:991
+#: libapper/PkStrings.cpp:1001
 msgid "You do not have the necessary privileges to perform this action."
 msgstr "Vos n' avoz nén les droets k' i fåt po fé ç' faitindje la."
 
-#: libapper/PkStrings.cpp:993
+#: libapper/PkStrings.cpp:1003
 msgid "Could not get a transaction id from packagekitd."
 msgstr "Dji n' a savou rçure di tranzaccion di packagekitd."
 
-#: libapper/PkStrings.cpp:995
+#: libapper/PkStrings.cpp:1005
 msgid "Cannot connect to this transaction id."
 msgstr "Dji n' mi sai raloyî a ciste id di tranzaccion la."
 
-#: libapper/PkStrings.cpp:997
+#: libapper/PkStrings.cpp:1007
 msgid "This action is unknown."
 msgstr "Ciste accion n' est nén cnoxhowe."
 
-#: libapper/PkStrings.cpp:999
+#: libapper/PkStrings.cpp:1009
 msgid "The packagekitd service could not be started."
 msgstr "Dji n' a savou enonder l' siervice packagekitd."
 
-#: libapper/PkStrings.cpp:1001
+#: libapper/PkStrings.cpp:1011
 msgid "The query is not valid."
 msgstr "Li cweraedje n' est nén valåbe."
 
-#: libapper/PkStrings.cpp:1003
+#: libapper/PkStrings.cpp:1013
 msgid "The file is not valid."
 msgstr "Li fitchî n' est nén valåbe."
 
-#: libapper/PkStrings.cpp:1005
+#: libapper/PkStrings.cpp:1015
 msgid "This function is not yet supported."
 msgstr "Cisse fonccion la n' est nén co sopoirtêye."
 
-#: libapper/PkStrings.cpp:1007
+#: libapper/PkStrings.cpp:1017
 msgid "Could not talk to packagekitd."
 msgstr "Dji n' a savou cåzer avou packagekitd."
 
-#: libapper/PkStrings.cpp:1009
+#: libapper/PkStrings.cpp:1019
 #, fuzzy
 #| msgid "Could not talk to packagekitd."
 msgid "Error talking to packagekitd."
 msgstr "Dji n' a savou cåzer avou packagekitd."
 
-#: libapper/PkStrings.cpp:1012 libapper/PkStrings.cpp:1015
+#: libapper/PkStrings.cpp:1022 libapper/PkStrings.cpp:1025
 msgid "An unknown error happened."
 msgstr "Åk n' a nén stî, aroke nén cnoxhowe."
 
-#: libapper/PkStrings.cpp:1029
+#: libapper/PkStrings.cpp:1039
 msgid "Your system is up to date"
 msgstr "Vosse sistinme est a djoû"
 
-#: libapper/PkStrings.cpp:1031
+#: libapper/PkStrings.cpp:1041
 msgid "You have no updates"
 msgstr "Vos n' avoz nou metaedje a djoû"
 
-#: libapper/PkStrings.cpp:1033
+#: libapper/PkStrings.cpp:1043
 msgid "Last check for updates was more than a month ago"
 msgstr ""
 "Li dierin côp k' dj' a waitî après des metaedjes a djoû c' esteut gn a dpus "
 "d' on moes did ci"
 
-#: libapper/PkStrings.cpp:1041
+#: libapper/PkStrings.cpp:1051
 #, kde-format
 msgid "Verified %1 ago"
 msgstr "Verifyî gn a %1"
 
-#: libapper/PkStrings.cpp:1043
+#: libapper/PkStrings.cpp:1053
 msgid "It's strongly recommended that you check for new updates now"
 msgstr ""
 "Dji vs ricomande vormint d' waitî après des noveas metaedjes a djoû do côp"
-
-#: libapper/PkTransaction.cpp:118
-msgid "Current backend does not support installing files."
-msgstr ""
-"Li programe fondmint do moumint n' sopoite nén l' astalaedje di fitchîs."
-
-#: libapper/PkTransaction.cpp:131
-msgid "Current backend does not support installing packages."
-msgstr ""
-"Li programe fondmint do moumint n' sopoite nén l' astalaedje di pacaedjes."
-
-#: libapper/PkTransaction.cpp:145
-msgid "The current backend does not support removing packages."
-msgstr ""
-"Li programe fondmint do moumint n' sopoite nén l' oistaedje des pacaedjes."
-
-#: libapper/PkTransaction.cpp:163
-msgid "The current backend does not support updating packages."
-msgstr ""
-"Li programe fondmint do moumint n' sopoite nén l' metaedje a djoû des "
-"pacaedjes."
 
 #: libapper/PkTransaction.cpp:258
 msgid ""
@@ -3612,15 +3534,6 @@ msgstr "Astaler les fitchîs di pacaedje"
 msgid "You can drop more files in here"
 msgstr "Vos ploz poizer d' ôtes fitchîs cial"
 
-#: PkSession/PkInstallPackageFiles.cpp:52
-msgid "Not Supported"
-msgstr "Nén sopoirté"
-
-#: PkSession/PkInstallPackageFiles.cpp:53
-msgid "Your current backend does not support installing files"
-msgstr ""
-"Vosse programe fondmint do moumint n' sopoite nén l' astalaedje di fitchîs"
-
 #: PkSession/PkInstallPackageFiles.cpp:68
 #: PkSession/PkRemovePackageByFiles.cpp:66
 msgid "No supported files were provided"
@@ -3916,6 +3829,79 @@ msgstr "Bouye tote fwaite"
 #: PkSession/SessionTask.cpp:436
 msgid "All operations were committed successfully"
 msgstr "Totes les operåcions ont stî fwaites comifåt"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
