@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-04-24 01:33+0000\n"
+"POT-Creation-Date: 2015-04-07 02:18+0000\n"
 "PO-Revision-Date: 2013-07-12 11:46+0200\n"
 "Last-Translator: xavier <xavier.besnard@neuf.fr>\n"
 "Language-Team: French <kde-i18n-doc@kde.org>\n"
@@ -25,11 +25,11 @@ msgstr ""
 msgid "Failed to get update details"
 msgstr "Il est impossible d'obtenir les détails de mise à jour"
 
-#: package/contents/ui/ChangelogView.qml:92
+#: package/contents/ui/ChangelogView.qml:94
 msgid "Version: %1"
 msgstr "Version : %1"
 
-#: package/contents/ui/ChangelogView.qml:98
+#: package/contents/ui/ChangelogView.qml:100
 msgid "Updates: %1"
 msgstr "Mises à jour : %1"
 

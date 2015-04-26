@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-04-24 01:33+0000\n"
+"POT-Creation-Date: 2015-04-07 02:18+0000\n"
 "PO-Revision-Date: 2013-06-28 00:45+0200\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: Dutch <kde-i18n-nl@kde.org>\n"
@@ -21,11 +21,11 @@ msgstr ""
 msgid "Failed to get update details"
 msgstr "Details van elementen voor bijwerken ophalen is mislukt"
 
-#: package/contents/ui/ChangelogView.qml:92
+#: package/contents/ui/ChangelogView.qml:94
 msgid "Version: %1"
 msgstr "Versie: %1"
 
-#: package/contents/ui/ChangelogView.qml:98
+#: package/contents/ui/ChangelogView.qml:100
 msgid "Updates: %1"
 msgstr "Elementen voor bijwerken: %1"
 

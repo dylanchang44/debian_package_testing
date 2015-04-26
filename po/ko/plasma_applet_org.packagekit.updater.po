@@ -1,14 +1,14 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
 #
-# Park Shinjo <peremen@gmail.com>, 2014.
+# Shinjo Park <kde@peremen.name>, 2014.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-04-24 01:33+0000\n"
+"POT-Creation-Date: 2015-04-07 02:18+0000\n"
 "PO-Revision-Date: 2014-03-09 03:38+0900\n"
-"Last-Translator: Park Shinjo <peremen@gmail.com>\n"
+"Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde@peremen.name>\n"
 "Language: ko\n"
 "MIME-Version: 1.0\n"
@@ -20,11 +20,11 @@ msgstr ""
 msgid "Failed to get update details"
 msgstr "업데이트 정보를 가져올 수 없음"
 
-#: package/contents/ui/ChangelogView.qml:92
+#: package/contents/ui/ChangelogView.qml:94
 msgid "Version: %1"
 msgstr "버전: %1"
 
-#: package/contents/ui/ChangelogView.qml:98
+#: package/contents/ui/ChangelogView.qml:100
 msgid "Updates: %1"
 msgstr "업데이트: %1"
 
