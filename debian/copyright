@@ -56,15 +56,13 @@ License: GPL-2+
 
 Files: AppSetup/SimplePage.cpp
  AppSetup/SimplePage.h
- AppSetup/LicensePage.cpp
- AppSetup/LicensePage.h
 Copyright: 2011-2012 by Daniel Nicoletti
-           2012 by Matthias Klumpp
+           2012-2014 by Matthias Klumpp
 License: LGPL-2+
 
 Files: AppSetup/*
 Copyright: 2011-2012 by Daniel Nicoletti
-           2012 by Matthias Klumpp
+           2012-2014 by Matthias Klumpp
 License: GPL-2+
 
 Files: libapper/ChangesDelegate.h
@@ -83,5 +81,5 @@ Copyright: (C) 2008-2011 The KDE Translation teams <kde-i18n-doc@kde.org>
 License: GPL-2+
 
 Files: debian/*
-Copyright: 2010-2012 Matthias Klumpp <matthias@tenstral.net>
+Copyright: 2010-2012 Matthias Klumpp <mak@debian.org>
 License: GPL-2+
