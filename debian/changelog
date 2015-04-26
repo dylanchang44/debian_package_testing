@@ -1,6 +1,9 @@
-apper (0.9.2-1) UNRELEASED; urgency=medium
+apper (0.9.2-1) unstable; urgency=medium
 
   * New upstream release: 0.9.2
+  * Drop all patches: Applied upstream
+  * Fix compiler warning
+  * Only depend on Limba on linux-any
 
  -- Matthias Klumpp <mak@debian.org>  Sun, 26 Apr 2015 16:08:38 +0200
 
