@@ -1,4 +1,4 @@
-apper (0.9.2-1) unstable; urgency=medium
+apper (0.9.2-1) experimental; urgency=medium
 
   * New upstream release: 0.9.2
   * Drop all patches: Applied upstream
