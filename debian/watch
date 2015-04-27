@@ -1,4 +1,4 @@
 version=3
 
-ftp://ftp.kde.org/pub/kde/stable/apper/([\d\.]+)/src/apper-([\d\.]+)\.tar\.xz \
+http://download.kde.org/stable/apper/([\d\.]+)/src/apper-([\d\.]+)\.tar\.xz \
   debian git-import-orig
