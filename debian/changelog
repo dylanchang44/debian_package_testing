@@ -1,3 +1,9 @@
+apper (0.9.2-2) unstable; urgency=medium
+
+  * Upload to unstable
+
+ -- Matthias Klumpp <mak@debian.org>  Sun, 21 Jun 2015 14:58:20 +0200
+
 apper (0.9.2-1) experimental; urgency=medium
 
   * New upstream release: 0.9.2
