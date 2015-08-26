@@ -44,7 +44,7 @@ Files: libapper/CategorizedView.cpp
  libapper/CategorizedView.h
  libapper/CategoryDrawer.cpp
  libapper/CategoryDrawer.h
-Copyright: 2009 by Rafael Fernãndez LÃ³pez <ereslibre@kde.org>
+Copyright: 2009 by Rafael Fernández López <ereslibre@kde.org>
 License: GPL-2+
 
 Files: libapper/PkIcons.cpp
