@@ -29,7 +29,7 @@ Depends: apper-data (>= ${source:Version}),
          ${shlibs:Depends}
 Replaces: apper-appsetup (<< 0.7.2)
 Breaks: apper-appsetup (<< 0.7.2)
-Recommends: appstream-index
+Recommends: appstream
 Suggests: debconf-kde-helper,
           limba [linux-any]
 Description: KDE package management tool using PackageKit
