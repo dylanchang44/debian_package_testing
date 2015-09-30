@@ -1,3 +1,5 @@
+# CMakeLists for the Apper KDE control module (KCM)
+
 set(kcm_apper_SRCS
     Settings/Settings.cpp
     Settings/OriginModel.cpp
@@ -18,7 +20,7 @@ set(kcm_apper_SRCS
     ApperKCM.cpp
 )
 
-kde4_add_ui_files(kcm_apper_SRCS
+qt5_wrap_ui(kcm_apper_SRCS
     Settings/Settings.ui
     Updater/UpdateDetails.ui
     Updater/Updater.ui
@@ -28,17 +30,18 @@ kde4_add_ui_files(kcm_apper_SRCS
     ApperKCM.ui
 )
 
-kde4_add_plugin(kcm_apper ${kcm_apper_SRCS})
+add_library(kcm_apper MODULE ${kcm_apper_SRCS})
+
 target_link_libraries(kcm_apper
-    ${KDE4_KDEUI_LIBS}
-    ${KDE4_KIO_LIBS}
-    ${KDE4_KUTILS_LIBS}
-    ${PackageKitQt4_LIBRARIES}
-    ${KDE4_SOLID_LIBS}
-    apper
+    KF5::WidgetsAddons
+    KF5::KIOFileWidgets
+    KF5::KDELibs4Support
+    KF5::IconThemes
+    ${PackageKitQt5_LIBRARIES}
+    apper_private
 )
 
-set_target_properties(kcm_apper PROPERTIES INSTALL_RPATH ${LIB_INSTALL_DIR}/apper)
+set_target_properties(kcm_apper PROPERTIES INSTALL_RPATH ${CMAKE_INSTALL_FULL_LIBDIR}/apper)
 
-install(TARGETS kcm_apper DESTINATION ${PLUGIN_INSTALL_DIR})
-install(FILES kcm_apper.desktop DESTINATION ${SERVICES_INSTALL_DIR})
+install(TARGETS kcm_apper DESTINATION ${CMAKE_INSTALL_QTPLUGINDIR})
+install(FILES kcm_apper.desktop DESTINATION ${CMAKE_INSTALL_KSERVICES5DIR})

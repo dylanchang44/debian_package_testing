@@ -34,8 +34,9 @@
 #include <KConfigGroup>
 #include <KDirWatch>
 #include <KProtocolManager>
-#include <KLocale>
+#include <KLocalizedString>
 #include <Solid/PowerManagement>
+#include <KGlobal>
 
 #include <QStringBuilder>
 #include <QtDBus/QDBusConnection>

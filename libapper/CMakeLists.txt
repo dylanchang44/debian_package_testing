@@ -1,4 +1,6 @@
-#Set the correct compiler options
+# CMakeLists for Apper private shared library
+
+# Set the correct compiler options
 IF(CMAKE_SIZEOF_VOID_P EQUAL 4)
    # 32 bit
    MESSAGE(STATUS "Apper detected that you use a 32 bit processor.")
@@ -33,12 +35,12 @@ set(libapper_SRCS
 
 if(APPSTREAM)
     pkg_check_modules(GLIB2 REQUIRED glib-2.0>=2.36)
-    pkg_check_modules(APPSTREAM REQUIRED appstream>=0.6.2)
+    pkg_check_modules(APPSTREAM REQUIRED appstream>=0.8.2)
 
     set(libapper_SRCS ${libapper_SRCS} AppStream.cpp)
 endif()
 
-kde4_add_ui_files(libapper_SRCS
+qt5_wrap_ui(libapper_SRCS
     ApplicationLauncher.ui
     PkTransactionWidget.ui
     RepoSig.ui
@@ -47,19 +49,23 @@ kde4_add_ui_files(libapper_SRCS
     InfoWidget.ui
 )
 
-kde4_add_library(apper SHARED ${libapper_SRCS})
+add_library(apper_private SHARED ${libapper_SRCS})
 
 include_directories(${CMAKE_CURRENT_BINARY_DIR}
-		    ${GLIB2_INCLUDE_DIR}
-		    ${APPSTREAM_INCLUDE_DIRS}
+    ${GLIB2_INCLUDE_DIR}
+    ${APPSTREAM_INCLUDE_DIRS}
 )
 
-target_link_libraries(apper
-    ${KDE4_KDEUI_LIBS}
-    ${KDE4_KIO_LIBS}
+target_link_libraries(apper_private
+    KF5::WidgetsAddons
+    KF5::KIOFileWidgets
+    KF5::KDELibs4Support
+    KF5::IconThemes
     ${QT_QTSQL_LIBRARY}
-    ${PackageKitQt4_LIBRARIES}
+    ${PackageKitQt5_LIBRARIES}
     ${APPSTREAM_LIBRARIES}
 )
 
-install(TARGETS apper DESTINATION ${LIB_INSTALL_DIR}/apper)
+qt5_use_modules(apper_private Quick Core Sql)
+
+install(TARGETS apper_private DESTINATION ${CMAKE_INSTALL_LIBDIR}/apper)

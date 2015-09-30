@@ -21,20 +21,20 @@
 #ifndef APPER_H
 #define APPER_H
 
-#include <KUniqueApplication>
+#include <QApplication>
 
 class MainUi;
-class Apper : public KUniqueApplication
+class Apper : public QApplication
 {
-Q_OBJECT
+    Q_OBJECT
 
 public:
-    Apper();
+    Apper(int& argc, char** argv);
     virtual ~Apper();
 
-    virtual int newInstance();
+    void activate(const QStringList& arguments, const QString& workingDirectory);
 
-private slots:
+private Q_SLOTS:
     void appClose();
     void kcmFinished();
     void decreaseAndKillRunning();
@@ -49,6 +49,5 @@ private:
     int m_running;
     bool m_init;
 };
-
 
 #endif

@@ -27,7 +27,7 @@
 #include <PkStrings.h>
 
 #include <QStandardItemModel>
-#include <KLocale>
+#include <KLocalizedString>
 
 #include <KDebug>
 
@@ -57,7 +57,7 @@ PkInstallPlasmaResources::PkInstallPlasmaResources(uint xid,
         }
 
         QStandardItem *item = new QStandardItem(prettyService);
-        item->setIcon(KIcon("application-x-plasma").pixmap(32, 32));
+        item->setIcon(QIcon::fromTheme("application-x-plasma").pixmap(32, 32));
         item->setFlags(Qt::ItemIsEnabled);
         model->appendRow(item);
 

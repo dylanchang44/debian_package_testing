@@ -1,3 +1,5 @@
+# CMakeLists for Apper PackageKit Session Interface
+
 set(pksession_SRCS
     AbstractIsRunning.cpp
     FilesModel.cpp
@@ -21,34 +23,36 @@ set(pksession_SRCS
     main.cpp
 )
 
-qt4_add_dbus_adaptor(pksession_SRCS
+qt5_add_dbus_adaptor(pksession_SRCS
     org.freedesktop.PackageKit.xml
     PkInterface.h
     PkInterface
 )
 
-kde4_add_ui_files(pksession_SRCS
+qt5_wrap_ui(pksession_SRCS
     IntroDialog.ui
     ReviewChanges.ui
     SessionTask.ui
 )
 
-kde4_add_executable(apper-pk-session
+add_executable(apper-pk-session
     ${pksession_SRCS}
 )
 
 target_link_libraries(apper-pk-session
-    ${KDE4_KDEUI_LIBS}
-    ${KDE4_KIO_LIBS}
-    ${PackageKitQt4_LIBRARIES}
-    ${QT_QTXMLPATTERNS_LIBRARY}
-    apper
+    KF5::WidgetsAddons
+    KF5::KIOFileWidgets
+    KF5::KDELibs4Support
+    KF5::IconThemes
+    ${PackageKitQt5_LIBRARIES}
+    apper_private
 )
 
-set_target_properties(apper-pk-session PROPERTIES INSTALL_RPATH ${LIB_INSTALL_DIR}/apper)
+qt5_use_modules(apper-pk-session Core XmlPatterns)
 
-install(TARGETS apper-pk-session DESTINATION ${LIBEXEC_INSTALL_DIR})
+set_target_properties(apper-pk-session PROPERTIES INSTALL_RPATH ${CMAKE_INSTALL_FULL_LIBDIR}/apper)
+
+install(TARGETS apper-pk-session DESTINATION ${CMAKE_INSTALL_LIBEXECDIR})
 
 include(MacroDBusAddActivationService)
 dbus_add_activation_service(org.freedesktop.PackageKit.service.in)
-

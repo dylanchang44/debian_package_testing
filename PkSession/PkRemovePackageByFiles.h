@@ -40,10 +40,10 @@ protected:
     virtual void search();
     virtual void notFound();
 
-protected slots:
+protected Q_SLOTS:
     void searchFinished(PkTransaction::ExitStatus status);
 
-private slots:
+private Q_SLOTS:
     void modelChanged();
 
 private:
