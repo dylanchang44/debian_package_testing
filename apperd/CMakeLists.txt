@@ -1,3 +1,5 @@
+# CMakeLists for the kded component
+
 set(kded_apperd_SRCS
     DistroUpgrade.cpp
     DBusInterface.cpp
@@ -10,25 +12,29 @@ set(kded_apperd_SRCS
     apperd.cpp
 )
 
-qt4_add_dbus_adaptor(kded_apperd_SRCS
+qt5_add_dbus_adaptor(kded_apperd_SRCS
     org.kde.apperd.xml
     DBusInterface.h
     DBusInterface
 )
 
-kde4_add_plugin(kded_apperd ${kded_apperd_SRCS})
+add_library(kded_apperd MODULE ${kded_apperd_SRCS})
 
 target_link_libraries(kded_apperd
-    ${KDE4_KIO_LIBS}
-    ${KDE4_SOLID_LIBS}
-    ${KDE4WORKSPACE_KWORKSPACE_LIBS}
-    ${PackageKitQt4_LIBRARIES}
-    ${DEBCONF_KDE_LIB}
-    apper
+    KF5::WidgetsAddons
+    KF5::KIOFileWidgets
+    KF5::KDELibs4Support
+    KF5::IconThemes
+    KF5::Notifications
+    KF5::DBusAddons
+    DebconfKDE::Main
+    ${PackageKitQt5_LIBRARIES}
+    kworkspace5
+    apper_private
 )
 
-set_target_properties(kded_apperd PROPERTIES INSTALL_RPATH ${LIB_INSTALL_DIR}/apper)
+set_target_properties(kded_apperd PROPERTIES INSTALL_RPATH ${CMAKE_INSTALL_FULL_LIBDIR}/apper)
 
-install(TARGETS kded_apperd DESTINATION ${PLUGIN_INSTALL_DIR})
-install(FILES apperd.notifyrc DESTINATION ${DATA_INSTALL_DIR}/apperd)
-install(FILES apperd.desktop DESTINATION ${SERVICES_INSTALL_DIR}/kded)
+install(TARGETS kded_apperd DESTINATION ${CMAKE_INSTALL_QTPLUGINDIR})
+install(FILES apperd.notifyrc DESTINATION ${CMAKE_INSTALL_DATADIR}/apperd)
+install(FILES apperd.desktop DESTINATION ${CMAKE_INSTALL_KSERVICES5DIR}/kded)

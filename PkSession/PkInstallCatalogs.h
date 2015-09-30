@@ -39,10 +39,10 @@ public:
 protected:
     virtual void search();
 
-protected slots:
+protected Q_SLOTS:
     virtual void searchFinished(PkTransaction::ExitStatus status);
 
-private slots:
+private Q_SLOTS:
     void modelChanged();
 
 private:

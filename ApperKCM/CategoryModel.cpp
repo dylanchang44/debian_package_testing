@@ -29,7 +29,7 @@
 #include <PkIcons.h>
 
 #include <KCategorizedSortFilterProxyModel>
-#include <KLocale>
+#include <KLocalizedString>
 #include <KServiceGroup>
 #include <KDesktopFile>
 #include <KConfigGroup>
@@ -51,7 +51,7 @@ CategoryModel::CategoryModel(QObject *parent) :
     item->setData(Transaction::RoleGetPackages, SearchRole);
     item->setData(i18n("Lists"), KCategorizedSortFilterProxyModel::CategoryDisplayRole);
     item->setData(0, KCategorizedSortFilterProxyModel::CategorySortRole);
-    item->setIcon(KIcon("dialog-ok-apply"));
+    item->setIcon(QIcon::fromTheme("dialog-ok-apply"));
     appendRow(item);
 
     item = new QStandardItem(i18n("Updates"));
@@ -59,7 +59,7 @@ CategoryModel::CategoryModel(QObject *parent) :
     item->setData(Transaction::RoleGetUpdates, SearchRole);
     item->setData(i18n("Lists"), KCategorizedSortFilterProxyModel::CategoryDisplayRole);
     item->setData(0, KCategorizedSortFilterProxyModel::CategorySortRole);
-    item->setIcon(KIcon("system-software-update"));
+    item->setIcon(QIcon::fromTheme("system-software-update"));
     appendRow(item);
 
 #ifdef HAVE_APPSTREAM
@@ -166,7 +166,7 @@ void CategoryModel::category(const QString &parentId,
     item->setData(i18n("Categories"), KCategorizedSortFilterProxyModel::CategoryDisplayRole);
     item->setData(2, KCategorizedSortFilterProxyModel::CategorySortRole);
     item->setToolTip(summary);
-    item->setIcon(KIcon("/usr/share/pixmaps/comps/" + icon + ".png"));
+    item->setIcon(QIcon("/usr/share/pixmaps/comps/" + icon + ".png"));
 
     if (parentId.isEmpty()) {
         appendRow(item);
@@ -262,7 +262,6 @@ void CategoryModel::fillWithServiceGroups()
 
 void CategoryModel::parseMenu(QXmlStreamReader &xml, const QString &parentIcon, QStandardItem *parent)
 {
-//     kDebug() << 1 << xml.name();
     QString icon = parentIcon;
     QStandardItem *item = 0;
     while(!xml.atEnd() &&
@@ -272,15 +271,14 @@ void CategoryModel::parseMenu(QXmlStreamReader &xml, const QString &parentIcon, 
         if(xml.tokenType() == QXmlStreamReader::StartElement) {
             if (xml.name() == QLatin1String("Menu")) {
                 xml.readNext();
-//                 kDebug() << "Found Menu";
                 parseMenu(xml, icon, item);
             } else if (xml.name() == QLatin1String("Name")) {
                 QString name = xml.readElementText();
                 if (!item) {
-                    item = new QStandardItem(i18n(name.toUtf8()));
+                    item = new QStandardItem(i18n(name.toUtf8().data()));
                     item->setDragEnabled(false);
                 } else if (item->text().isEmpty()) {
-                    item->setText(i18n(name.toUtf8()));
+                    item->setText(i18n(name.toUtf8().data()));
                 }
             } else if (xml.name() == QLatin1String("Icon")) {
                 if (!item) {
@@ -296,7 +294,6 @@ void CategoryModel::parseMenu(QXmlStreamReader &xml, const QString &parentIcon, 
                     icon = _icon;
                 }
             } else if (xml.name() == QLatin1String("Categories")) {
-//                 kDebug() << "Found Categories           ";
                 QList<CategoryMatcher> categories;
                 categories = parseCategories(xml);
                 if (!categories.isEmpty()) {
@@ -322,7 +319,7 @@ void CategoryModel::parseMenu(QXmlStreamReader &xml, const QString &parentIcon, 
                 }
                 QString directory = xml.readElementText();
 
-                const KDesktopFile desktopFile("xdgdata-dirs", directory);
+                const KDesktopFile desktopFile(directory);
                 const KConfigGroup config = desktopFile.desktopGroup();
                 QString _icon = config.readEntry("Icon");
                 QString _name = config.readEntry("Name");

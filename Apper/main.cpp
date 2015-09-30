@@ -27,105 +27,27 @@
 #include <KDebug>
 #include <KConfig>
 #include <KAboutData>
-#include <KCmdLineArgs>
-#include <KUrl>
+#include <KLocalizedString>
 
-int invoke(const QString &method_name, const QStringList &args)
-{
-    QDBusMessage message;
-    message = QDBusMessage::createMethodCall(QLatin1String("org.freedesktop.PackageKit"),
-                                             QLatin1String("/org/freedesktop/PackageKit"),
-                                             QLatin1String("org.freedesktop.PackageKit.Modify"),
-                                             method_name);
-    message << (uint) 0;
-    message << args;
-    message << QString();
-
-    // This call must block otherwise this application closes before
-    // smarticon is activated
-    QDBusMessage reply = QDBusConnection::sessionBus().call(message, QDBus::Block);
-    return reply.type() == QDBusMessage::ErrorMessage ? 1 : 0;
-}
+#include <QDir>
+#include <QCommandLineParser>
+#include <QCommandLineOption>
 
 int main(int argc, char **argv)
 {
-    KAboutData about("apper",
+    KAboutData aboutData("apper",
                      "apper", // DO NOT change this catalog unless you know it will not break translations!
-                     ki18n("Apper"),
-                     APP_VERSION,
-                     ki18n("Apper is an Application to Get and Manage Software"),
-                     KAboutData::License_GPL,
-                     ki18n("(C) 2008-2013 Daniel Nicoletti"));
+                     APPER_VERSION,
+                     i18n("Apper is an application to get and manage software"),
+                     KAboutLicense::LicenseKey::GPL);
+    aboutData.addAuthor(i18n("Daniel Nicoletti"), QString(), "dantti12@gmail.com", "http://dantti.wordpress.com");
+    aboutData.addCredit(i18n("Adrien Bustany"), i18n("libpackagekit-qt and other stuff"), "@");
+    aboutData.setProgramIconName("applications-other");
 
-    about.addAuthor(ki18n("Daniel Nicoletti"), KLocalizedString(), "dantti12@gmail.com", "http://dantti.wordpress.com");
-    about.addCredit(ki18n("Adrien Bustany"), ki18n("libpackagekit-qt and other stuff"), "@");
-    about.setProgramIconName("applications-other");
+    Apper app(argc, argv);
+    KAboutData::setApplicationData(aboutData);
 
-    KCmdLineArgs::init(argc, argv, &about);
-
-    KCmdLineOptions options;
-    options.add("updates", ki18n("Show updates"));
-    options.add("settings", ki18n("Show settings"));
-    options.add("backend-details", ki18n("Show backend details"));
-    options.add("install-mime-type <mime-type>", ki18n("Mime type installer"));
-    options.add("install-package-name <name>", ki18n("Package name installer"));
-    options.add("install-provide-file <file>", ki18n("Single file installer"));
-    options.add("install-font-resource <lang>", ki18n("Font resource installer"));
-    options.add("install-catalog <file>", ki18n("Catalog installer"));
-    options.add("remove-package-by-file <filename>", ki18n("Single package remover"));
-    options.add("+[package]", ki18n("Package file to install"));
-    KCmdLineArgs::addCmdLineOptions(options);
-    Apper::addCmdLineOptions();
-
-    KCmdLineArgs *args = KCmdLineArgs::parsedArgs();
-
-    if (args->count()) {
-        // grab the list of files
-        QStringList urls;
-        for (int i = 0; i < args->count(); i++) {
-            urls << args->url(i).url();
-        }
-
-        // TODO remote files are copied to /tmp
-        // what will happen if we call the other process to
-        // install and this very one closes? will the files
-        // in /tmp be deleted?
-        return invoke("InstallPackageFiles", urls);
-    }
-
-    if (args->isSet("install-mime-type")) {
-        return invoke("InstallMimeTypes", args->getOptionList("install-mime-type"));
-    }
-
-    if (args->isSet("install-package-name")) {
-        return invoke("InstallPackageNames", args->getOptionList("install-package-name"));
-    }
-
-    if (args->isSet("install-provide-file")) {
-        return invoke("InstallProvideFiles", args->getOptionList("install-provide-file"));
-    }
-
-    if (args->isSet("install-font-resource")) {
-        QStringList fonts;
-        foreach (const QString &font, args->getOptionList("install-font-resource")) {
-            if (font.startsWith(QLatin1String(":lang="))) {
-                fonts << font;
-            } else {
-                fonts << QString(":lang=%1").arg(font);
-            }
-        }
-        return invoke("InstallFontconfigResources", fonts);
-    }
-
-    if (args->isSet("install-catalog")) {
-        return invoke("InstallCatalogs", args->getOptionList("install-catalog"));
-    }
-
-    if (args->isSet("remove-package-by-file")) {
-        return invoke("RemovePackageByFiles", args->getOptionList("remove-package-by-file"));
-    }
-
-    Apper app;
+    app.activate(app.arguments(), QDir::currentPath());
 
     return app.exec();
 }

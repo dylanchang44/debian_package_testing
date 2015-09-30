@@ -29,11 +29,11 @@
 #include <QAction>
 #include <QProgressBar>
 #include <QCheckBox>
-#include <KPushButton>
-#include <KMenuBar>
+#include <QPushButton>
 #include <KDebug>
 #include <KMessageBox>
 #include <KGlobalSettings>
+#include <KLocalizedString>
 
 #include "InfoWidget.h"
 #include "SimplePage.h"
@@ -305,7 +305,7 @@ bool SetupWizard::initialize(const QString& ipkFName)
     ui->stackedWidget->addWidget(d->infoPage);
 
     // Load the package file, required to have metadata
-    li_installer_open_file(d->setup, ipkFName.toUtf8(), &error);
+    li_installer_open_file(d->setup, ipkFName.toUtf8().data(), &error);
     if (error != NULL) {
         this->showError(QString::fromUtf8(error->message));
         g_error_free (error);
@@ -322,7 +322,9 @@ bool SetupWizard::initialize(const QString& ipkFName)
         g_object_unref (mdata);
         return false;
     }
-    d->cpt = g_object_ref (as_metadata_get_component (mdata));
+
+    d->cpt = as_metadata_get_component (mdata);
+    g_object_ref (d->cpt);
     d->pki = li_installer_get_package_info (d->setup);
     g_object_unref (mdata);
 

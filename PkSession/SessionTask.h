@@ -82,7 +82,7 @@ public:
     QWidget* mainWidget();
     uint parentWId() const;
 
-public slots:
+public Q_SLOTS:
     void enableButtonOk(bool state);
     void setMainWidget(QWidget *widget);
 
@@ -105,7 +105,7 @@ protected:
     bool sendMessageFinished(const QDBusMessage &message);
     QString parentTitle;
 
-protected slots:
+protected Q_SLOTS:
     void setTitle(const QString &title);
     void setInfo(const QString &title, const QString &text, const QString &details = QString());
     void setError(const QString &title, const QString &text, const QString &details = QString());
@@ -114,7 +114,7 @@ protected slots:
     virtual void searchFinished(PkTransaction::ExitStatus status);
     virtual void commitFinished(PkTransaction::ExitStatus status);
 
-private slots:
+private Q_SLOTS:
     void updatePallete();
     void setDialog(KDialog *dialog);
 
