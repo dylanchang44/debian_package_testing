@@ -2,18 +2,24 @@ Source: apper
 Section: kde
 Priority: optional
 Maintainer: Matthias Klumpp <mak@debian.org>
-Build-Depends: chrpath,
-               cmake (>= 2.8.4),
+Build-Depends: cmake (>= 3.0),
                debhelper (>= 9.0.0),
                docbook (>= 4.5),
-               kde-workspace-dev (>= 4:4.8),
-               kdelibs5-dev (>= 4:4.8),
+               kded5-dev,
+               kio-dev,
                libappstream-dev (>= 0.8),
-               libdbus-1-dev,
-               libdebconf-kde0-dev,
+               libdebconf-kde-dev (>= 1.0.2),
+               libkf5config-dev,
+               libkf5dbusaddons-dev,
+               libkf5guiaddons-dev,
+               libkf5i18n-dev,
+               libkf5kcmutils-dev,
+               libkf5kdelibs4support-dev,
+               libkf5notifications-dev,
                liblimba-dev (>= 0.4) [linux-any],
-               libpackagekitqt4-dev (>= 0.9.2-4),
-               pkg-kde-tools (>= 0.14)
+               libpackagekitqt5-dev (>= 0.9.2-4),
+               pkg-kde-tools (>= 0.15),
+               plasma-workspace-dev
 Standards-Version: 3.9.6
 Homepage: http://kde-apps.org/content/show.php/Apper?content=84745
 Vcs-Git: git://anonscm.debian.org/pkg-packagekit/apper.git
