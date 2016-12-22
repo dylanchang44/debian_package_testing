@@ -24,7 +24,7 @@ Build-Depends: cmake (>= 3.0),
                pkg-kde-tools (>= 0.15),
                plasma-workspace-dev
 Standards-Version: 3.9.6
-Homepage: http://kde-apps.org/content/show.php/Apper?content=84745
+Homepage: https://www.linux-apps.com/content/show.php/Apper?content=84745
 Vcs-Git: git://anonscm.debian.org/pkg-packagekit/apper.git
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-packagekit/apper.git
 
