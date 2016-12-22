@@ -23,7 +23,7 @@ Build-Depends: cmake (>= 3.0),
                libqt5xmlpatterns5-dev,
                pkg-kde-tools (>= 0.15),
                plasma-workspace-dev
-Standards-Version: 3.9.6
+Standards-Version: 3.9.8
 Homepage: https://www.linux-apps.com/content/show.php/Apper?content=84745
 Vcs-Git: https://anonscm.debian.org/git/pkg-packagekit/apper.git
 Vcs-Browser: https://anonscm.debian.org/git/pkg-packagekit/apper.git
