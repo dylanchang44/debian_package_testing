@@ -1,13 +1,17 @@
-apper (0.9.2+git20161222-1) UNRELEASED; urgency=medium
+apper (0.9.2+git20161222-1) unstable; urgency=medium
 
-  * Imported Upstream version 0.9.2+git20150930
-  * New upstream version 0.9.2+git20161222
-  * Basic modernization
+  * New upstream Git snapshot: 0.9.2+git20161222
+    - The package is brought back to unstable due to a lot of
+      users requesting it, but since it is essentially dead upstream
+      and I do not know how well it works for most users,
+      I will drop it from the Debian Stretch release if it is found to
+      be unfit and issues can not be fixed in time.
+      Any help (patches! - and testing) is appreciated.
   * Use secure Vcs-* URLs
-  * Update gbp.conf
   * Bump dh compat level to 10
+  * Drop manual debug package in favor of automatic dbgsym packages
 
- -- Matthias Klumpp <matthias@tenstral.net>  Thu, 22 Dec 2016 20:54:57 +0100
+ -- Matthias Klumpp <mak@debian.org>  Thu, 22 Dec 2016 20:54:58 +0100
 
 apper (0.9.2+git20150930-1) experimental; urgency=medium
 
