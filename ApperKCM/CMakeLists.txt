@@ -1,5 +1,7 @@
 # CMakeLists for the Apper KDE control module (KCM)
 
+add_definitions(-DTRANSLATION_DOMAIN=\"apper\")
+
 set(kcm_apper_SRCS
     Settings/Settings.cpp
     Settings/OriginModel.cpp
@@ -20,7 +22,7 @@ set(kcm_apper_SRCS
     ApperKCM.cpp
 )
 
-qt5_wrap_ui(kcm_apper_SRCS
+ki18n_wrap_ui(kcm_apper_SRCS
     Settings/Settings.ui
     Updater/UpdateDetails.ui
     Updater/Updater.ui
@@ -35,6 +37,7 @@ add_library(kcm_apper MODULE ${kcm_apper_SRCS})
 target_link_libraries(kcm_apper
     KF5::WidgetsAddons
     KF5::KIOFileWidgets
+    KF5::KCMUtils
     KF5::KDELibs4Support
     KF5::IconThemes
     ${PackageKitQt5_LIBRARIES}
