@@ -16,7 +16,7 @@ endif
 INSTALLDIR = $(CURDIR)/debian/tmp
 
 %:
-	dh $@ --parallel --with kde --dbg-package=apper-dbg
+	dh $@ --parallel --with kde
 
 override_dh_auto_configure:
 	dh_auto_configure -Skde -- $(APPER_CONFIG_FLAGS)

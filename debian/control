@@ -64,22 +64,3 @@ Description: KDE package management tool using PackageKit (data files)
  .
  This package provides data files for Apper, the
  KDE package manager based on PackageKit.
-
-Package: apper-dbg
-Section: debug
-Architecture: any
-Priority: extra
-Depends: apper (= ${binary:Version}),
-         ${misc:Depends}
-Recommends: kdelibs5-dbg
-Description: Debugging symbols for Apper
- Apper ist a graphical package manager UI based on the PackageKit
- framework as well as a KDE implementation of the PackageKit session
- installer interface.
- .
- This package contains debugging symbols for Apper.
- When Apper crashes, in most cases this package is
- needed to get a backtrace that is useful for developers. If you have
- experienced an Apper crash without this package
- installed, please install it, try to reproduce the problem and fill a bug
- report with a new backtrace attached.
