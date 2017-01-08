@@ -13,6 +13,8 @@ ifeq ($(DEB_HOST_ARCH_OS), linux)
 	APPER_CONFIG_FLAGS += -DLIMBA=ON
 endif
 
+DEB_HOST_MULTIARCH ?= $(shell dpkg-architecture -qDEB_HOST_MULTIARCH)
+
 INSTALLDIR = $(CURDIR)/debian/tmp
 
 %:
@@ -26,6 +28,10 @@ override_dh_auto_install:
 
 	# Fix file conflict between GS and Apper
 	mv $(INSTALLDIR)/usr/share/dbus-1/services/org.freedesktop.PackageKit.service $(INSTALLDIR)/usr/share/dbus-1/services/kde-org.freedesktop.PackageKit.service
+
+	# hack around rpath oddness
+	chrpath --list $(INSTALLDIR)/usr/bin/apper
+	chrpath --replace /usr/lib/$(DEB_HOST_MULTIARCH)/apper $(INSTALLDIR)/usr/bin/apper
 
 override_dh_install:
 	dh_install --list-missing

@@ -2,7 +2,8 @@ Source: apper
 Section: kde
 Priority: optional
 Maintainer: Matthias Klumpp <mak@debian.org>
-Build-Depends: cmake (>= 3.0),
+Build-Depends: chrpath,
+               cmake (>= 3.0),
                debhelper (>= 10),
                docbook (>= 4.5),
                extra-cmake-modules (>= 5.14),
