@@ -1,3 +1,4 @@
+debian/extra/60apper /etc/apt/apt.conf.d/
 usr/bin/apper*
 usr/lib/*
 usr/share/apperd/*
