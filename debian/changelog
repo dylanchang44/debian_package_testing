@@ -1,3 +1,15 @@
+apper (0.9.2+git20161222-3) unstable; urgency=medium
+
+  * Enable AppStream icon download explicitly
+  * Don't install the updater Plasmoid (Closes: #851117)
+    - The updater Plasmoid is currently broken and will need some
+      work to be revived. We can not ship with it for Debian Stretch.
+      Having two default-enabled updater icons also is very confusing
+      to users, so if the updater gets ported to recent QtQuick and
+      received upstream fixes, we can bring it back as separate package.
+
+ -- Matthias Klumpp <mak@debian.org>  Thu, 19 Jan 2017 20:45:22 +0100
+
 apper (0.9.2+git20161222-2) unstable; urgency=medium
 
   * Hack around rpath oddness (Closes: #849956)
