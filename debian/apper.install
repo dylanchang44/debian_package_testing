@@ -7,4 +7,4 @@ usr/share/dbus-1/services/*
 usr/share/kservices5/*
 usr/share/man/man1/*
 usr/share/metainfo/*
-usr/share/plasma/plasmoids/*
+#usr/share/plasma/plasmoids/*

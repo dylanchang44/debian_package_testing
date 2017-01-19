@@ -34,6 +34,8 @@ override_dh_auto_install:
 	chrpath --replace /usr/lib/$(DEB_HOST_MULTIARCH)/apper $(INSTALLDIR)/usr/bin/apper
 
 override_dh_install:
+	# FIXME: Temporarily disable the update notifier applet
+	rm -f $(INSTALLDIR)/usr/share/kservices5/plasma-applet-org.packagekit.updater
 	dh_install --list-missing
 
 fetch_translations:
