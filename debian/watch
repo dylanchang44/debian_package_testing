@@ -1,4 +1,2 @@
-version=3
-
-http://download.kde.org/stable/apper/([\d\.]+)/src/apper-([\d\.]+)\.tar\.xz \
-  debian git-import-orig
+version=4
+https://download.kde.org/stable/apper/([\d.]+)/apper-@ANY_VERSION@@ARCHIVE_EXT@
