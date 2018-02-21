@@ -24,10 +24,10 @@ Build-Depends: chrpath,
                libqt5xmlpatterns5-dev,
                pkg-kde-tools (>= 0.15),
                plasma-workspace-dev
-Standards-Version: 3.9.8
-Homepage: https://www.linux-apps.com/content/show.php/Apper?content=84745
-Vcs-Git: https://anonscm.debian.org/git/pkg-packagekit/apper.git
-Vcs-Browser: https://anonscm.debian.org/git/pkg-packagekit/apper.git
+Standards-Version: 4.1.2
+Homepage: https://www.kde.org/applications/system/apper/
+Vcs-Git: https://salsa.debian.org/pkgutopia-team/apper.git
+Vcs-Browser: https://salsa.debian.org/pkgutopia-team/apper
 
 Package: apper
 Architecture: any
