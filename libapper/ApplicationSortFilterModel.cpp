@@ -21,7 +21,7 @@
 
 #include "PackageModel.h"
 
-#include <KDebug>
+//#include <KDebug>
 
 ApplicationSortFilterModel::ApplicationSortFilterModel(QObject *parent) :
     QSortFilterProxyModel(parent),
@@ -102,3 +102,5 @@ void ApplicationSortFilterModel::sortNow()
 {
     sort(0);
 }
+
+#include "moc_ApplicationSortFilterModel.cpp"

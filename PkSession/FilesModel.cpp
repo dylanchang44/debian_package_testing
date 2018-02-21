@@ -1,5 +1,5 @@
 /***************************************************************************
- *   Copyright (C) 2009-2010 by Daniel Nicoletti                           *
+ *   Copyright (C) 2009-2018 by Daniel Nicoletti                           *
  *   dantti12@gmail.com                                                    *
  *                                                                         *
  *   This program is free software; you can redistribute it and/or modify  *
@@ -24,7 +24,7 @@
 #include <QUrl>
 #include <QFileInfo>
 
-#include <KDebug>
+#include <QLoggingCategory>
 #include <PkIcons.h>
 #include <KLocalizedString>
 #include <QMimeType>
@@ -32,23 +32,25 @@
 #include <KIconLoader>
 #include <KService>
 
+Q_DECLARE_LOGGING_CATEGORY(APPER_SESSION)
+
 FilesModel::FilesModel(const QStringList &files, const QStringList &mimes, QObject *parent)
-: QStandardItemModel(parent),
-  m_mimes(mimes)
+    : QStandardItemModel(parent)
+    ,  m_mimes(mimes)
 {
     if (!files.isEmpty()) {
         QList<QUrl> urls;
-        foreach (const QString &file, files) {
+        for (const QString &file : files) {
             urls << QUrl(file);
         }
         insertFiles(urls);
     } else if (!mimes.isEmpty()) {
         QMimeDatabase db;
         // we are searching for mimetypes
-        foreach (const QString &mimeName, mimes) {
+        for (const QString &mimeName : mimes) {
             QMimeType mime = db.mimeTypeForName(mimeName);
             if (mime.isValid()) {
-                QStandardItem *item = new QStandardItem(mimeName);
+                auto item = new QStandardItem(mimeName);
                 item->setData(mimeName);
                 item->setIcon(KIconLoader::global()->loadMimeTypeIcon(mime.iconName(),
                                                                       KIconLoader::Desktop));
@@ -74,8 +76,8 @@ bool FilesModel::dropMimeData(const QMimeData *data, Qt::DropAction action, int 
 bool FilesModel::insertFiles(const QList<QUrl> &urls)
 {
     bool ret = false;
-    foreach (const QUrl &url, urls) {
-        QString path = QUrl::fromPercentEncoding(url.path().toUtf8());
+    for (const QUrl &url : urls) {
+        const QString path = QUrl::fromPercentEncoding(url.path().toLatin1());
         if (files().contains(path)) {
             continue;
         }
@@ -85,11 +87,11 @@ bool FilesModel::insertFiles(const QList<QUrl> &urls)
         if (fileInfo.isFile()) {
             QMimeDatabase db;
             QMimeType mime = db.mimeTypeForFile(path, QMimeDatabase::MatchContent);
-            kDebug() << url << mime.name();
-            foreach (const QString &mimeType, m_mimes) {
+            qCDebug(APPER_SESSION) << url << mime.name();
+            for (const QString &mimeType : qAsConst(m_mimes)) {
                 if (mime.name() == mimeType) {
                     ret = true;
-/*                    kDebug() << "Found Supported Mime" << mimeType << mime->iconName();*/
+                    qCDebug(APPER_SESSION) << "Found Supported Mime" << mimeType << mime.iconName();
                     item = new QStandardItem(fileInfo.fileName());
                     item->setData(path);
                     item->setToolTip(path);
@@ -100,8 +102,8 @@ bool FilesModel::insertFiles(const QList<QUrl> &urls)
             }
 
             if (ret == false && m_mimes.isEmpty()) {
-                if (mime.name() == "application/x-desktop") {
-                    KService *service = new KService(path);
+                if (mime.name() == QLatin1String("application/x-desktop")) {
+                    auto service = new KService(path);
                     item = new QStandardItem(service->name());
                     item->setData(true, Qt::UserRole);
                     item->setIcon(KIconLoader::global()->loadMimeTypeIcon(service->icon(),
@@ -118,14 +120,14 @@ bool FilesModel::insertFiles(const QList<QUrl> &urls)
                 item->setData(path);
                 item->setToolTip(path);
                 item->setEnabled(false);
-                item->setIcon(KIconLoader::global()->loadIcon("dialog-cancel", KIconLoader::Desktop));
+                item->setIcon(KIconLoader::global()->loadIcon(QLatin1String("dialog-cancel"), KIconLoader::Desktop));
             }
         } else if (m_mimes.isEmpty()) {
             // It's not a file but we don't have a mime so it's ok
             item = new QStandardItem(fileInfo.fileName());
             item->setData(path);
             item->setToolTip(path);
-            item->setIcon(KIconLoader::global()->loadIcon("unknown", KIconLoader::Desktop));
+            item->setIcon(KIconLoader::global()->loadIcon(QLatin1String("unknown"), KIconLoader::Desktop));
         }
 
         if (item) {
@@ -137,7 +139,7 @@ bool FilesModel::insertFiles(const QList<QUrl> &urls)
 
 QStringList FilesModel::mimeTypes() const
 {
-    return QStringList() << "text/uri-list";
+    return { QStringLiteral("text/uri-list") };
 }
 
 Qt::DropActions FilesModel::supportedDropActions() const
@@ -174,4 +176,4 @@ bool FilesModel::onlyApplications() const
     return true;
 }
 
-#include "FilesModel.moc"
+#include "moc_FilesModel.cpp"

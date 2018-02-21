@@ -36,10 +36,11 @@
 #include <KLocalizedString>
 #include <KNotification>
 #include <KActionCollection>
-#include <KMenu>
 #include <KToolInvocation>
 
-#include <KDebug>
+#include <QLoggingCategory>
+
+Q_DECLARE_LOGGING_CATEGORY(APPER_DAEMON)
 
 #define UPDATES_ICON "system-software-update"
 
@@ -51,13 +52,11 @@ Updater::Updater(QObject* parent) :
 {
     // in case registration fails due to another user or application running
     // keep an eye on it so we can register when available
-    QDBusServiceWatcher *watcher;
-    watcher = new QDBusServiceWatcher(QLatin1String("org.kde.ApperUpdaterIcon"),
-                                      QDBusConnection::sessionBus(),
-                                      QDBusServiceWatcher::WatchForOwnerChange,
-                                      this);
-    connect(watcher, SIGNAL(serviceOwnerChanged(QString,QString,QString)),
-            this, SLOT(serviceOwnerChanged(QString,QString,QString)));
+    auto watcher = new QDBusServiceWatcher(QLatin1String("org.kde.ApperUpdaterIcon"),
+                                           QDBusConnection::sessionBus(),
+                                           QDBusServiceWatcher::WatchForOwnerChange,
+                                           this);
+    connect(watcher, &QDBusServiceWatcher::serviceOwnerChanged, this, &Updater::serviceOwnerChanged);
 
     m_hasAppletIconified = ApperdThread::nameHasOwner(QLatin1String("org.kde.ApperUpdaterIcon"),
                                                       QDBusConnection::sessionBus());
@@ -94,10 +93,8 @@ void Updater::checkForUpdates(bool systemReady)
     m_importantList.clear();
     m_securityList.clear();
     m_getUpdatesT = Daemon::getUpdates();
-    connect(m_getUpdatesT, SIGNAL(package(PackageKit::Transaction::Info,QString,QString)),
-            this, SLOT(packageToUpdate(PackageKit::Transaction::Info,QString,QString)));
-    connect(m_getUpdatesT, SIGNAL(finished(PackageKit::Transaction::Exit,uint)),
-            this, SLOT(getUpdateFinished()));
+    connect(m_getUpdatesT, &Transaction::package, this, &Updater::packageToUpdate);
+    connect(m_getUpdatesT, &Transaction::finished, this, &Updater::getUpdateFinished);
 }
 
 void Updater::packageToUpdate(Transaction::Info info, const QString &packageID, const QString &summary)
@@ -125,7 +122,7 @@ void Updater::getUpdateFinished()
 {
     m_getUpdatesT = 0;
     if (!m_updateList.isEmpty()) {
-        Transaction *transaction = qobject_cast<Transaction*>(sender());
+        auto transaction = qobject_cast<Transaction*>(sender());
 
         bool different = false;
         if (m_oldUpdateList.size() != m_updateList.size()) {
@@ -133,7 +130,8 @@ void Updater::getUpdateFinished()
         } else {
             // The lists have the same size let's make sure
             // all the packages are the same
-            foreach (const QString &packageId, m_updateList) {
+            const QStringList updates = m_updateList;
+            for (const QString &packageId : updates) {
                 if (!m_oldUpdateList.contains(packageId)) {
                     different = true;
                     break;
@@ -148,13 +146,13 @@ void Updater::getUpdateFinished()
             return;
         }
 
-        uint updateType = m_configs[CFG_AUTO_UP].value<uint>();
+        uint updateType = m_configs[QLatin1String(CFG_AUTO_UP)].value<uint>();
         if (m_systemReady && updateType == Enum::All) {
             // update all
             bool ret;
             ret = updatePackages(m_updateList,
                                  false,
-                                 "plasmagik",
+                                 QLatin1String("plasmagik"),
                                  i18n("Updates are being automatically installed."));
             if (ret) {
                 return;
@@ -164,7 +162,7 @@ void Updater::getUpdateFinished()
             bool ret;
             ret = updatePackages(m_securityList,
                                  false,
-                                 UPDATES_ICON,
+                                 QLatin1String(UPDATES_ICON),
                                  i18n("Security updates are being automatically installed."));
             if (ret) {
                 return;
@@ -174,7 +172,7 @@ void Updater::getUpdateFinished()
             bool ret;
             ret = updatePackages(m_updateList,
                                  true,
-                                 "download",
+                                 QLatin1String("download"),
                                  i18n("Updates are being automatically downloaded."));
             if (ret) {
                 return;
@@ -183,7 +181,7 @@ void Updater::getUpdateFinished()
                    (updateType == Enum::All ||
                     updateType == Enum::DownloadOnly ||
                     (updateType == Enum::Security && !m_securityList.isEmpty()))) {
-            kDebug() << "Not auto updating or downloading, as we might be on battery or mobile connection";
+            qCDebug(APPER_DAEMON) << "Not auto updating or downloading, as we might be on battery or mobile connection";
         }
 
         // If an erro happened to create the auto update
@@ -199,21 +197,21 @@ void Updater::getUpdateFinished()
 
 void Updater::autoUpdatesFinished(PkTransaction::ExitStatus status)
 {
-    KNotification *notify = new KNotification("UpdatesComplete");
-    notify->setComponentName("apperd");
+    auto notify = new KNotification(QLatin1String("UpdatesComplete"));
+    notify->setComponentName(QLatin1String("apperd"));
     if (status == PkTransaction::Success) {
         if (sender()->property("DownloadOnly").toBool()) {
             // We finished downloading show the updates to the user
             showUpdatesPopup();
         } else {
-            QIcon icon = QIcon::fromTheme("task-complete");
+            QIcon icon = QIcon::fromTheme(QLatin1String("task-complete"));
             // use of QSize does the right thing
             notify->setPixmap(icon.pixmap(KPK_ICON_SIZE, KPK_ICON_SIZE));
             notify->setText(i18n("System update was successful."));
             notify->sendEvent();
         }
     } else {
-        QIcon icon = QIcon::fromTheme("dialog-cancel");
+        QIcon icon = QIcon::fromTheme(QLatin1String("dialog-cancel"));
         // use of QSize does the right thing
         notify->setPixmap(icon.pixmap(KPK_ICON_SIZE, KPK_ICON_SIZE));
         notify->setText(i18n("The software update failed."));
@@ -236,11 +234,11 @@ void Updater::reviewUpdates()
         if (reply.type() == QDBusMessage::ReplyMessage) {
             return;
         }
-        kWarning() << "Message did not receive a reply";
+        qCWarning(APPER_DAEMON) << "Message did not receive a reply";
     }
 
     // This must be called from the main thread...
-    KToolInvocation::startServiceByDesktopName("apper_updates");
+    KToolInvocation::startServiceByDesktopName(QLatin1String("apper_updates"));
 }
 
 void Updater::installUpdates()
@@ -266,14 +264,15 @@ void Updater::showUpdatesPopup()
 {
     m_oldUpdateList = m_updateList;
 
-    KNotification *notify = new KNotification("ShowUpdates", 0, KNotification::Persistent);
-    notify->setComponentName("apperd");
-    connect(notify, SIGNAL(action1Activated()), this, SLOT(reviewUpdates()));
-    connect(notify, SIGNAL(action2Activated()), this, SLOT(installUpdates()));
+    auto notify = new KNotification(QLatin1String("ShowUpdates"), 0, KNotification::Persistent);
+    notify->setComponentName(QLatin1String("apperd"));
+    connect(notify, &KNotification::action1Activated, this, &Updater::reviewUpdates);
+    connect(notify, &KNotification::action2Activated, this, &Updater::installUpdates);
     notify->setTitle(i18np("There is one new update", "There are %1 new updates", m_updateList.size()));
     QString text;
-    foreach (const QString &packageId, m_updateList) {
-        QString packageName = Transaction::packageName(packageId);
+    const QStringList updates = m_updateList;
+    for (const QString &packageId : updates) {
+        const QString packageName = Transaction::packageName(packageId);
         if (text.length() + packageName.length() > 150) {
             text.append(QLatin1String(" ..."));
             break;
@@ -292,7 +291,7 @@ void Updater::showUpdatesPopup()
     notify->setActions(actions);
 
     // use of QSize does the right thing
-    notify->setPixmap(QIcon::fromTheme("system-software-update").pixmap(KPK_ICON_SIZE, KPK_ICON_SIZE));
+    notify->setPixmap(QIcon::fromTheme(QLatin1String("system-software-update")).pixmap(KPK_ICON_SIZE, KPK_ICON_SIZE));
     notify->sendEvent();
 }
 
@@ -301,20 +300,19 @@ bool Updater::updatePackages(const QStringList &packages, bool downloadOnly, con
     m_oldUpdateList = m_updateList;
 
     // Defaults to security
-    PkTransaction *transaction = new PkTransaction;
+    auto transaction = new PkTransaction;
     transaction->setProperty("DownloadOnly", downloadOnly);
     transaction->enableJobWatcher(true);
     transaction->updatePackages(packages, downloadOnly);
-    connect(transaction, SIGNAL(finished(PkTransaction::ExitStatus)),
-            this, SLOT(autoUpdatesFinished(PkTransaction::ExitStatus)));
+    connect(transaction, &PkTransaction::finished, this, &Updater::autoUpdatesFinished);
     if (!icon.isNull()) {
         KNotification *notify;
         if (downloadOnly) {
-            notify = new KNotification("DownloadingUpdates");
+            notify = new KNotification(QLatin1String("DownloadingUpdates"));
         } else {
-            notify = new KNotification("AutoInstallingUpdates");
+            notify = new KNotification(QLatin1String("AutoInstallingUpdates"));
         }
-        notify->setComponentName("apperd");
+        notify->setComponentName(QLatin1String("apperd"));
         notify->setText(msg);
         // use of QSize does the right thing
         notify->setPixmap(QIcon::fromTheme(icon).pixmap(QSize(KPK_ICON_SIZE, KPK_ICON_SIZE)));
@@ -323,3 +321,5 @@ bool Updater::updatePackages(const QStringList &packages, bool downloadOnly, con
 
     return true;
 }
+
+#include "moc_Updater.cpp"

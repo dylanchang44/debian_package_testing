@@ -24,10 +24,9 @@
 
 #include <Daemon>
 
-#include <KIcon>
 #include <KLocalizedString>
 
-#include <KDebug>
+#include <QLoggingCategory>
 
 RefreshCacheTask::RefreshCacheTask(QObject *parent) :
     QObject(parent),
@@ -40,16 +39,14 @@ RefreshCacheTask::RefreshCacheTask(QObject *parent) :
 
 void RefreshCacheTask::refreshCache()
 {
-    kDebug();
+//    kDebug();
     if (!m_transaction) {
         // Refresh Cache is false otherwise it will rebuild
         // the whole cache on Fedora
-        Daemon::setHints (QLatin1String("cache-age=")+QString::number(m_cacheAge));
+        Daemon::setHints (QLatin1String("cache-age=") + QString::number(m_cacheAge));
         m_transaction = Daemon::refreshCache(false);
-        connect(m_transaction, SIGNAL(finished(PackageKit::Transaction::Exit,uint)),
-                this, SLOT(refreshCacheFinished(PackageKit::Transaction::Exit,uint)));
-        connect(m_transaction, SIGNAL(errorCode(PackageKit::Transaction::Error,QString)),
-                this, SLOT(errorCode(PackageKit::Transaction::Error,QString)));
+        connect(m_transaction, &Transaction::finished, this, &RefreshCacheTask::refreshCacheFinished);
+        connect(m_transaction, &Transaction::errorCode, this, &RefreshCacheTask::errorCode);
     }
 }
 
@@ -70,10 +67,10 @@ void RefreshCacheTask::errorCode(Transaction::Error error, const QString &errorM
         return;
     }
 
-    m_notification = new KNotification("TransactionFailed", KNotification::Persistent, this);
-    m_notification->setComponentName("apperd");
-    connect(m_notification, SIGNAL(closed()), this, SLOT(notificationClosed()));
-    KIcon icon("dialog-cancel");
+    m_notification = new KNotification(QLatin1String("TransactionFailed"), KNotification::Persistent, this);
+    m_notification->setComponentName(QLatin1String("apperd"));
+    connect(m_notification, &KNotification::closed, this, &RefreshCacheTask::notificationClosed);
+    QIcon icon = QIcon::fromTheme(QLatin1String("dialog-cancel"));
     // use of QSize does the right thing
     m_notification->setPixmap(icon.pixmap(QSize(KPK_ICON_SIZE, KPK_ICON_SIZE)));
     m_notification->setTitle(PkStrings::error(error));
@@ -86,3 +83,5 @@ void RefreshCacheTask::notificationClosed()
     m_notification->deleteLater();
     m_notification = 0;
 }
+
+#include "moc_RefreshCacheTask.cpp"

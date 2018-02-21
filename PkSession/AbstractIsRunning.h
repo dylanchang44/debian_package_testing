@@ -21,7 +21,7 @@
 #ifndef ABSTRACT_IS_RUNNING_H
 #define ABSTRACT_IS_RUNNING_H
 
-#include <kdemacros.h>
+//#include <kdemacros.h>
 
 #include <QObject>
 
@@ -42,7 +42,7 @@ protected Q_SLOTS:
     void decreaseRunning();
 
 private:
-    int m_running;
+    int m_running = 0;
 };
 
 #endif

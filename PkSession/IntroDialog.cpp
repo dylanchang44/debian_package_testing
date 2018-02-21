@@ -27,7 +27,7 @@
 #include <KLocalizedString>
 #include <KMessageBox>
 
-#include <KDebug>
+#include <QLoggingCategory>
 
 #include <QWeakPointer>
 #include <QFileInfo>
@@ -52,8 +52,7 @@ IntroDialog::~IntroDialog()
 void IntroDialog::setModel(QAbstractItemModel *model)
 {
     ui->listView->setModel(model);
-    connect(model, SIGNAL(dataChanged(QModelIndex,QModelIndex)),
-            this, SLOT(selectionChanged()));
+    connect(model, &QAbstractItemModel::dataChanged, this, &IntroDialog::selectionChanged);
 }
 
 void IntroDialog::acceptDrops(const QString &toolTip)
@@ -78,4 +77,4 @@ void IntroDialog::setDescription(const QString &description)
     ui->descriptionL->setText(description);
 }
 
-#include "IntroDialog.moc"
+#include "moc_IntroDialog.cpp"

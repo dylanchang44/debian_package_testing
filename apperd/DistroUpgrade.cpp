@@ -1,5 +1,5 @@
 /***************************************************************************
- *   Copyright (C) 2009-2011 by Daniel Nicoletti                           *
+ *   Copyright (C) 2009-2018 by Daniel Nicoletti                           *
  *   dantti12@gmail.com                                                    *
  *                                                                         *
  *   This program is free software; you can redistribute it and/or modify  *
@@ -26,9 +26,11 @@
 
 #include <KNotification>
 #include <KLocalizedString>
-#include <KIcon>
+#include <QIcon>
 
-#include <KDebug>
+#include <QLoggingCategory>
+
+Q_DECLARE_LOGGING_CATEGORY(APPER_DAEMON)
 
 DistroUpgrade::DistroUpgrade(QObject *parent) :
     QObject(parent),
@@ -49,24 +51,21 @@ void DistroUpgrade::setConfig(const QVariantHash &configs)
 void DistroUpgrade::checkDistroUpgrades()
 {
     // Ignore check if the user disabled it
-    if (m_configs[CFG_DISTRO_UPGRADE].toInt() == Enum::DistroNever) {
+    if (m_configs[QLatin1String(CFG_DISTRO_UPGRADE)].toInt() == Enum::DistroNever) {
         return;
     }
 
     if (!m_transaction) {
         m_transaction = Daemon::getDistroUpgrades();
-        connect(m_transaction, SIGNAL(distroUpgrade(PackageKit::Transaction::DistroUpgrade,QString,QString)),
-                this, SLOT(distroUpgrade(PackageKit::Transaction::DistroUpgrade,QString,QString)));
-        connect(m_transaction, SIGNAL(finished(PackageKit::Transaction::Exit,uint)),
-                this, SLOT(checkDistroFinished(PackageKit::Transaction::Exit,uint)));
-
+        connect(m_transaction, &Transaction::distroUpgrade, this, &DistroUpgrade::distroUpgrade);
+        connect(m_transaction, &Transaction::finished, this, &DistroUpgrade::checkDistroFinished);
     }
 }
 
 void DistroUpgrade::distroUpgrade(PackageKit::Transaction::DistroUpgrade type, const QString &name, const QString &description)
 {
     // TODO make use of the type
-    switch (m_configs[CFG_DISTRO_UPGRADE].toInt()) {
+    switch (m_configs[QLatin1String(CFG_DISTRO_UPGRADE)].toInt()) {
     case Enum::DistroNever:
         return;
     case Enum::DistroStable:
@@ -78,14 +77,14 @@ void DistroUpgrade::distroUpgrade(PackageKit::Transaction::DistroUpgrade type, c
         break;
     }
 
-    kDebug() << "Distro upgrade found!" << name << description;
+    qCDebug(APPER_DAEMON) << "Distro upgrade found!" << name << description;
     if (m_shownDistroUpgrades.contains(name)) {
         // ignore distro upgrade if the user already saw it
         return;
     }
 
-    KNotification *notify = new KNotification("DistroUpgradeAvailable", 0, KNotification::Persistent);
-    notify->setComponentName("apperd");
+    auto notify = new KNotification(QLatin1String("DistroUpgradeAvailable"), 0, KNotification::Persistent);
+    notify->setComponentName(QLatin1String("apperd"));
     notify->setTitle(i18n("Distribution upgrade available"));
     notify->setText(description);
 
@@ -108,7 +107,7 @@ void DistroUpgrade::checkDistroFinished(Transaction::Exit status, uint enlapsed)
 void DistroUpgrade::handleDistroUpgradeAction(uint action)
 {
     // get the sender cause there might be more than one
-    KNotification *notify = qobject_cast<KNotification*>(sender());
+    auto notify = qobject_cast<KNotification*>(sender());
     switch(action) {
         case 1:
             // Check to see if there isn't another process running
@@ -118,14 +117,12 @@ void DistroUpgrade::handleDistroUpgradeAction(uint action)
                 break;
             }
             m_distroUpgradeProcess = new QProcess;
-            connect (m_distroUpgradeProcess, SIGNAL(error(QProcess::ProcessError)),
-                    this, SLOT(distroUpgradeError(QProcess::ProcessError)));
-            connect (m_distroUpgradeProcess, SIGNAL(finished(int,QProcess::ExitStatus)),
-                    this, SLOT(distroUpgradeFinished(int,QProcess::ExitStatus)));
+            connect (m_distroUpgradeProcess, &QProcess::errorOccurred, this, &DistroUpgrade::distroUpgradeError);
+            connect (m_distroUpgradeProcess, QOverload<int, QProcess::ExitStatus>::of(&QProcess::finished), this, &DistroUpgrade::distroUpgradeFinished);
             QStringList env = QProcess::systemEnvironment();
-            env << "DESKTOP=kde";
+            env.append(QStringLiteral("DESKTOP=kde"));
             m_distroUpgradeProcess->setEnvironment(env);
-            m_distroUpgradeProcess->start("/usr/share/PackageKit/pk-upgrade-distro.sh");
+            m_distroUpgradeProcess->start(QStringLiteral("/usr/share/PackageKit/pk-upgrade-distro.sh"));
             // TODO
 //             suppressSleep(true);
             break;
@@ -137,13 +134,13 @@ void DistroUpgrade::handleDistroUpgradeAction(uint action)
 
 void DistroUpgrade::distroUpgradeFinished(int exitCode, QProcess::ExitStatus exitStatus)
 {
-    KNotification *notify = new KNotification("DistroUpgradeFinished");
-    notify->setComponentName("apperd");
+    auto notify = new KNotification(QLatin1String("DistroUpgradeFinished"));
+    notify->setComponentName(QLatin1String("apperd"));
     if (exitStatus == QProcess::NormalExit && exitCode == 0) {
-        notify->setPixmap(KIcon("security-high").pixmap(64, 64));
+        notify->setPixmap(QIcon::fromTheme(QLatin1String("security-high")).pixmap(64, 64));
         notify->setText(i18n("Distribution upgrade finished. "));
     } else if (exitStatus == QProcess::NormalExit) {
-        notify->setPixmap(KIcon("dialog-warning").pixmap(64, 64));
+        notify->setPixmap(QIcon::fromTheme(QLatin1String("dialog-warning")).pixmap(64, 64));
         notify->setText(i18n("Distribution upgrade process exited with code %1.", exitCode));
     }/* else {
         notify->setText(i18n("Distribution upgrade didn't exit normally, the process probably crashed. "));
@@ -158,8 +155,8 @@ void DistroUpgrade::distroUpgradeError(QProcess::ProcessError error)
 {
     QString text;
 
-    KNotification *notify = new KNotification("DistroUpgradeError");
-    notify->setComponentName("apperd");
+    auto notify = new KNotification(QLatin1String("DistroUpgradeError"));
+    notify->setComponentName(QLatin1String("apperd"));
     switch(error) {
         case QProcess::FailedToStart:
             text = i18n("The distribution upgrade process failed to start.");
@@ -171,9 +168,9 @@ void DistroUpgrade::distroUpgradeError(QProcess::ProcessError error)
             text = i18n("The distribution upgrade process failed with an unknown error.");
             break;
     }
-    notify->setPixmap(KIcon("dialog-error").pixmap(64,64));
+    notify->setPixmap(QIcon::fromTheme(QLatin1String("dialog-error")).pixmap(64,64));
     notify->setText(text);
     notify->sendEvent();
 }
 
-#include "DistroUpgrade.moc"
+#include "moc_DistroUpgrade.cpp"

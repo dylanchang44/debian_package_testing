@@ -22,36 +22,33 @@
 
 #include "PkInterface.h"
 
-#include <QStringBuilder>
+#include <QApplication>
 
 #include <KLocalizedString>
-#include <KCmdLineArgs>
-#include <KDebug>
-#include <KGlobal>
+
+#include <QLoggingCategory>
 
 #include <Daemon>
 
 #define MINUTE 60000
 
+Q_DECLARE_LOGGING_CATEGORY(APPER_SESSION)
+
 using namespace PackageKit;
 
-PkSession::PkSession() :
-    KUniqueApplication()
+PkSession::PkSession(QObject* parent) : QObject(parent)
+  , m_pkInterface(new PkInterface(this))
 {
-    m_pkInterface = new PkInterface(this);
-    connect(m_pkInterface, SIGNAL(close()),
-            this, SLOT(prepareToClose()));
+    connect(m_pkInterface, &PkInterface::close, this, &PkSession::prepareToClose);
 
-    QString locale(KGlobal::locale()->language() % QLatin1Char('.') % KGlobal::locale()->encoding());
-    Daemon::global()->setHints(QLatin1String("locale=") % locale);
+    Daemon::global()->setHints(QLatin1String("locale=") + QLocale::system().name() + QLatin1String(".UTF-8"));
 
     // this enables not quitting when closing a transaction ui
-    setQuitOnLastWindowClosed(false);
+    qApp->setQuitOnLastWindowClosed(false);
 
     // create the close timer and connect it's signal
     m_closeT = new QTimer(this);
-    connect(m_closeT, SIGNAL(timeout()),
-            this, SLOT(close()));
+    connect(m_closeT, &QTimer::timeout, this, &PkSession::close);
 
     prepareToClose();
 }
@@ -59,10 +56,10 @@ PkSession::PkSession() :
 void PkSession::prepareToClose()
 {
     if (isRunning()) {
-        kDebug() << "Stoping Timer";
+        qCDebug(APPER_SESSION) << "Stoping Timer";
         m_closeT->stop();
     } else {
-        kDebug() << "Starting Timer: " << MINUTE;
+        qCDebug(APPER_SESSION) << "Starting Timer: " << MINUTE;
         m_closeT->start(MINUTE);
     }
 }
@@ -70,7 +67,7 @@ void PkSession::prepareToClose()
 bool PkSession::isRunning()
 {
     if (m_pkInterface && m_pkInterface->isRunning()) {
-        kDebug() << m_pkInterface;
+        qCDebug(APPER_SESSION) << m_pkInterface;
         return true;
     }
 
@@ -82,8 +79,8 @@ void PkSession::close()
     // This will run when the timer times out, we will check
     // again just to be sure.
     if (!isRunning()) {
-        kDebug() << "Closed by Timer";
-        quit();
+        qCDebug(APPER_SESSION) << "Closed by Timer";
+        qApp->quit();
     }
 }
 
@@ -95,3 +92,5 @@ int PkSession::newInstance()
 PkSession::~PkSession()
 {
 }
+
+#include "moc_PkSession.cpp"

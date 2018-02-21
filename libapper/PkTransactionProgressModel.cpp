@@ -20,26 +20,20 @@
 
 #include "PkTransactionProgressModel.h"
 
-#include <KDebug>
+#include <QLoggingCategory>
 
 #include <PkStrings.h>
 
 #include "PkTransaction.h"
+
+Q_DECLARE_LOGGING_CATEGORY(APP_LIB)
 
 using namespace PackageKit;
 
 PkTransactionProgressModel::PkTransactionProgressModel(QObject *parent) :
     QStandardItemModel(parent)
 {
-    QHash<int, QByteArray> roles = roleNames();
-    roles[RoleInfo] = "rInfo";
-    roles[RolePkgName] = "rPkgName";
-    roles[RolePkgSummary] = "rPkgSummary";
-    roles[RoleFinished] = "rFinished";
-    roles[RoleProgress] = "rProgress";
-    roles[RoleId] = "rId";
-    roles[RoleRepo] = "rRepo";
-    setRoleNames(roles);
+
 }
 
 PkTransactionProgressModel::~PkTransactionProgressModel()
@@ -50,12 +44,12 @@ void PkTransactionProgressModel::currentRepo(const QString &repoId, const QStrin
 {
     Q_UNUSED(enabled)
 
-    PkTransaction *transaction = qobject_cast<PkTransaction *>(sender());
+    auto transaction = qobject_cast<PkTransaction *>(sender());
     if (transaction && transaction->flags() & Transaction::TransactionFlagSimulate) {
         return;
     }
 
-    QStandardItem *stdItem = new QStandardItem(description);
+    auto stdItem = new QStandardItem(description);
     stdItem->setData(repoId, RoleId);
     stdItem->setData(true,   RoleRepo);
     appendRow(stdItem);
@@ -65,7 +59,7 @@ void PkTransactionProgressModel::itemProgress(const QString &id, Transaction::St
 {
     Q_UNUSED(status)
 
-    PkTransaction *transaction = qobject_cast<PkTransaction *>(sender());
+    auto transaction = qobject_cast<PkTransaction *>(sender());
     if (transaction && transaction->flags() & Transaction::TransactionFlagSimulate) {
         return;
     }
@@ -87,9 +81,22 @@ void PkTransactionProgressModel::clear()
     removeRows(0, rowCount());
 }
 
+QHash<int, QByteArray> PkTransactionProgressModel::roleNames() const
+{
+    QHash<int, QByteArray> roles;
+    roles[RoleInfo] = "rInfo";
+    roles[RolePkgName] = "rPkgName";
+    roles[RolePkgSummary] = "rPkgSummary";
+    roles[RoleFinished] = "rFinished";
+    roles[RoleProgress] = "rProgress";
+    roles[RoleId] = "rId";
+    roles[RoleRepo] = "rRepo";
+    return roles;
+}
+
 void PkTransactionProgressModel::currentPackage(PackageKit::Transaction::Info info, const QString &packageID, const QString &summary)
 {
-    PkTransaction *transaction = qobject_cast<PkTransaction *>(sender());
+    auto transaction = qobject_cast<PkTransaction *>(sender());
     if (transaction &&
             (transaction->flags() & Transaction::TransactionFlagSimulate ||
              transaction->cachedRole() == Transaction::RoleResolve ||
@@ -186,3 +193,5 @@ QStandardItem* PkTransactionProgressModel::findLastItem(const QString &packageID
     }
     return 0;
 }
+
+#include "moc_PkTransactionProgressModel.cpp"

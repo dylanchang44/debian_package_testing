@@ -30,17 +30,18 @@
 #include <KLocalizedString>
 #include <KMessageBox>
 #include <KNotification>
-#include <KComponentData>
+//#include <KComponentData>
 
-#include <Solid/PowerManagement>
+//#include <Solid/PowerManagement>
 #include <QtDBus/QDBusMessage>
 #include <QtDBus/QDBusConnection>
 
 #include <kworkspace5/kworkspace.h>
-
-#include <KDebug>
-
 #include <Daemon>
+
+#include <QLoggingCategory>
+
+Q_DECLARE_LOGGING_CATEGORY(APPER_DAEMON)
 
 TransactionWatcher::TransactionWatcher(bool packagekitIsRunning, QObject *parent) :
     QObject(parent),
@@ -49,15 +50,14 @@ TransactionWatcher::TransactionWatcher(bool packagekitIsRunning, QObject *parent
     m_tracker = new KUiServerJobTracker(this);
 
     // keep track of new transactions
-    connect(Daemon::global(), SIGNAL(transactionListChanged(QStringList)),
-            this, SLOT(transactionListChanged(QStringList)));
+    connect(Daemon::global(), &Daemon::transactionListChanged, this, &TransactionWatcher::transactionListChanged);
 
     // if PackageKit is running check to see if there are running transactons already
     if (packagekitIsRunning) {
         // here we check whether a transaction job should be created or not
-        QList<QDBusObjectPath> paths = Daemon::global()->getTransactionList();
         QStringList tids;
-        foreach (const QDBusObjectPath &path, paths) {
+        const QList<QDBusObjectPath> paths = Daemon::global()->getTransactionList();
+        for (const QDBusObjectPath &path : paths) {
             tids << path.path();
         }
         transactionListChanged(tids);
@@ -70,13 +70,18 @@ TransactionWatcher::~TransactionWatcher()
     suppressSleep(false, m_inhibitCookie);
 }
 
+void TransactionWatcher::watchTransactionInteractive(const QDBusObjectPath &tid)
+{
+    watchTransaction(tid);
+}
+
 void TransactionWatcher::transactionListChanged(const QStringList &tids)
 {
     if (tids.isEmpty()) {
         // release any cookie that we might have
         suppressSleep(false, m_inhibitCookie);
     } else {
-        foreach (const QString &tid, tids) {
+        for (const QString &tid : tids) {
             watchTransaction(QDBusObjectPath(tid), false);
         }
     }
@@ -88,9 +93,8 @@ void TransactionWatcher::watchTransaction(const QDBusObjectPath &tid, bool inter
     if (!m_transactions.contains(tid)) {
         // Check if the current transaction is still the same
         transaction = new Transaction(tid);
-        connect(transaction, SIGNAL(roleChanged()), this, SLOT(transactionReady()));
-        connect(transaction, SIGNAL(finished(PackageKit::Transaction::Exit,uint)),
-                this, SLOT(finished(PackageKit::Transaction::Exit)));
+        connect(transaction, &Transaction::roleChanged, this, &TransactionWatcher::transactionReady);
+        connect(transaction, &Transaction::finished, this, &TransactionWatcher::finished);
 
         // Store the transaction id
         m_transactions[tid] = transaction;
@@ -106,7 +110,7 @@ void TransactionWatcher::watchTransaction(const QDBusObjectPath &tid, bool inter
 
 void TransactionWatcher::transactionReady()
 {
-    Transaction *transaction = qobject_cast<Transaction*>(sender());
+    auto transaction = qobject_cast<Transaction*>(sender());
 
     Transaction::Role role = transaction->role();
     Transaction::TransactionFlags flags = transaction->transactionFlags();
@@ -117,28 +121,26 @@ void TransactionWatcher::transactionReady()
              role == Transaction::RoleUpdatePackages)) {
         // AVOID showing messages and restart requires when
         // the user was just simulating an instalation
-        connect(transaction, SIGNAL(message(PackageKit::Transaction::Message,QString)),
-                this, SLOT(message(PackageKit::Transaction::Message,QString)));
-        connect(transaction, SIGNAL(requireRestart(PackageKit::Transaction::Restart,QString)),
-                this, SLOT(requireRestart(PackageKit::Transaction::Restart,QString)));
+        connect(transaction, &Transaction::requireRestart, this, &TransactionWatcher::requireRestart);
 
         // Don't let the system sleep while doing some sensible actions
         suppressSleep(true, m_inhibitCookie, PkStrings::action(role, flags));
     }
 
-    connect(transaction, SIGNAL(isCallerActiveChanged()),
-            SLOT(transactionChanged()));
+    connect(transaction, &Transaction::isCallerActiveChanged, this, [this, transaction] () {
+        transactionChanged(transaction);
+    });
 
 }
 
 void TransactionWatcher::showRebootNotificationApt() {
     // Create the notification about this transaction
-    KNotification *notify = new KNotification("RestartRequired", 0, KNotification::Persistent);
-    connect(notify, SIGNAL(activated(uint)), this, SLOT(logout()));
-    notify->setComponentName("apperd");
+    auto notify = new KNotification(QLatin1String("RestartRequired"), 0, KNotification::Persistent);
+    connect(notify, QOverload<uint>::of(&KNotification::activated), this, &TransactionWatcher::logout);
+    notify->setComponentName(QLatin1String("apperd"));
 
-    QString text("<b>" + i18n("The system update has completed") + "</b>");
-    text.append("<br/>" + PkStrings::restartType(Transaction::RestartSystem));
+    QString text(QLatin1String("<b>") + i18n("The system update has completed") + QLatin1String("</b>"));
+    text.append(QLatin1String("<br>") + PkStrings::restartType(Transaction::RestartSystem));
     notify->setPixmap(PkIcons::restartIcon(Transaction::RestartSystem).pixmap(KPK_ICON_SIZE, KPK_ICON_SIZE));
     notify->setText(text);
 
@@ -153,7 +155,7 @@ void TransactionWatcher::showRebootNotificationApt() {
 void TransactionWatcher::finished(PackageKit::Transaction::Exit exit)
 {
     // check if the transaction emitted any require restart
-    Transaction *transaction = qobject_cast<Transaction*>(sender());
+    auto transaction = qobject_cast<Transaction*>(sender());
     QDBusObjectPath tid = transaction->tid();
     transaction->disconnect(this);
     m_transactions.remove(tid);
@@ -164,9 +166,9 @@ void TransactionWatcher::finished(PackageKit::Transaction::Exit exit)
         QStringList restartPackages = transaction->property("restartPackages").toStringList();
 
         // Create the notification about this transaction
-        KNotification *notify = new KNotification("RestartRequired", 0, KNotification::Persistent);
-        connect(notify, SIGNAL(activated(uint)), this, SLOT(logout()));
-        notify->setComponentName("apperd");
+        auto notify = new KNotification(QLatin1String("RestartRequired"), 0, KNotification::Persistent);
+        connect(notify, QOverload<uint>::of(&KNotification::activated), this, &TransactionWatcher::logout);
+        notify->setComponentName(QLatin1String("apperd"));
         notify->setProperty("restartType", qVariantFromValue(type));
         notify->setPixmap(PkIcons::restartIcon(type).pixmap(KPK_ICON_SIZE, KPK_ICON_SIZE));
         notify->setTitle(PkStrings::restartType(type));
@@ -206,33 +208,19 @@ void TransactionWatcher::transactionChanged(Transaction *transaction, bool inter
 
     // If the
     if (!m_transactionJob.contains(tid) && interactive) {
-        TransactionJob *job = new TransactionJob(transaction, this);
-        connect(transaction, SIGNAL(errorCode(PackageKit::Transaction::Error,QString)),
-                this, SLOT(errorCode(PackageKit::Transaction::Error,QString)));
-        connect(job, SIGNAL(canceled()), this, SLOT(watchedCanceled()));
+        auto job = new TransactionJob(transaction, this);
+        connect(transaction, &Transaction::errorCode, this, &TransactionWatcher::errorCode);
+        connect(job, &TransactionJob::canceled, this, &TransactionWatcher::watchedCanceled);
         m_tracker->registerJob(job);
         m_transactionJob[tid] = job;
         job->start();
     }
 }
 
-void TransactionWatcher::message(PackageKit::Transaction::Message type, const QString &message)
-{
-    KNotification *notify;
-    notify = new KNotification("TransactionMessage", 0, KNotification::Persistent);
-    notify->setComponentName("apperd");
-    notify->setTitle(PkStrings::message(type));
-    notify->setText(message);
-
-    notify->setPixmap(QIcon::fromTheme("dialog-warning").pixmap(KPK_ICON_SIZE, KPK_ICON_SIZE));
-    notify->sendEvent();
-}
-
 void TransactionWatcher::errorCode(PackageKit::Transaction::Error err, const QString &details)
 {
-    KNotification *notify;
-    notify = new KNotification("TransactionError", 0, KNotification::Persistent);
-    notify->setComponentName("apperd");
+    auto notify = new KNotification(QLatin1String("TransactionError"), 0, KNotification::Persistent);
+    notify->setComponentName(QLatin1String("apperd"));
     notify->setTitle(PkStrings::error(err));
     notify->setText(PkStrings::errorMessage(err));
     notify->setProperty("ErrorType", QVariant::fromValue(err));
@@ -241,15 +229,14 @@ void TransactionWatcher::errorCode(PackageKit::Transaction::Error err, const QSt
     QStringList actions;
     actions << i18n("Details");
     notify->setActions(actions);
-    notify->setPixmap(QIcon::fromTheme("dialog-error").pixmap(KPK_ICON_SIZE, KPK_ICON_SIZE));
-    connect(notify, SIGNAL(activated(uint)),
-            this, SLOT(errorActivated(uint)));
+    notify->setPixmap(QIcon::fromTheme(QLatin1String("dialog-error")).pixmap(KPK_ICON_SIZE, KPK_ICON_SIZE));
+    connect(notify, QOverload<uint>::of(&KNotification::activated), this, &TransactionWatcher::errorActivated);
     notify->sendEvent();
 }
 
 void TransactionWatcher::errorActivated(uint action)
 {
-    KNotification *notify = qobject_cast<KNotification*>(sender());
+    auto notify = qobject_cast<KNotification*>(sender());
 
     // if the user clicked "Details"
     if (action == 1) {
@@ -257,7 +244,7 @@ void TransactionWatcher::errorActivated(uint action)
         QString details = notify->property("Details").toString();
         KMessageBox::detailedSorry(0,
                                    PkStrings::errorMessage(error),
-                                   details.replace('\n', "<br />"),
+                                   details.replace(QLatin1Char('\n'), QLatin1String("<br>")),
                                    PkStrings::error(error),
                                    KMessageBox::Notify);
     }
@@ -267,7 +254,7 @@ void TransactionWatcher::errorActivated(uint action)
 
 void TransactionWatcher::requireRestart(PackageKit::Transaction::Restart type, const QString &packageID)
 {
-    Transaction *transaction = qobject_cast<Transaction*>(sender());
+    auto transaction = qobject_cast<Transaction*>(sender());
     if (transaction->property("restartType").isNull()) {
         transaction->setProperty("restartType", qVariantFromValue(type));
     } else {
@@ -290,7 +277,7 @@ void TransactionWatcher::requireRestart(PackageKit::Transaction::Restart type, c
 
 void TransactionWatcher::logout()
 {
-    KNotification *notify = qobject_cast<KNotification*>(sender());
+    auto notify = qobject_cast<KNotification*>(sender());
     Transaction::Restart restartType;
     restartType = notify->property("restartType").value<Transaction::Restart>();
 
@@ -307,7 +294,7 @@ void TransactionWatcher::logout()
         shutdownType = KWorkSpace::ShutdownTypeLogout;
         break;
     default:
-        kWarning() << "Unknown restart type:" << restartType;
+        qCWarning(APPER_DAEMON) << "Unknown restart type:" << restartType;
         return;
     }
 
@@ -319,7 +306,7 @@ void TransactionWatcher::logout()
 
 void TransactionWatcher::watchedCanceled()
 {
-    TransactionJob *job = qobject_cast<TransactionJob*>(sender());
+    auto job = qobject_cast<TransactionJob*>(sender());
     if (job->isFinished()) {
         job->deleteLater();
         return;
@@ -341,16 +328,18 @@ void TransactionWatcher::suppressSleep(bool enable, int &inhibitCookie, const QS
     }
 
     if (enable) {
-        kDebug() << "Begin Suppressing Sleep";
-        inhibitCookie = Solid::PowerManagement::beginSuppressingSleep(reason);
+        qCDebug(APPER_DAEMON) << "Begin Suppressing Sleep";
+//        inhibitCookie = Solid::PowerManagement::beginSuppressingSleep(reason);
         if (inhibitCookie == -1) {
-            kDebug() << "Sleep suppression denied!";
+            qCDebug(APPER_DAEMON) << "Sleep suppression denied!";
         }
     } else {
-        kDebug() << "Stop Suppressing Sleep";
-        if (!Solid::PowerManagement::stopSuppressingSleep(inhibitCookie)) {
-            kDebug() << "Stop failed: invalid cookie.";
-        }
+        qCDebug(APPER_DAEMON) << "Stop Suppressing Sleep";
+//        if (!Solid::PowerManagement::stopSuppressingSleep(inhibitCookie)) {
+            qCDebug(APPER_DAEMON) << "Stop failed: invalid cookie.";
+//        }
         inhibitCookie = -1;
     }
 }
+
+#include "moc_TransactionWatcher.cpp"

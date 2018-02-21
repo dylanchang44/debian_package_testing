@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: apper\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-11-29 03:04+0100\n"
+"POT-Creation-Date: 2018-01-29 03:18+0100\n"
 "PO-Revision-Date: 2015-07-13 14:40+0100\n"
 "Last-Translator: Roman Paholik <wizzardsk@gmail.com>\n"
 "Language-Team: Slovak <kde-sk@linux.sk>\n"
@@ -29,493 +29,117 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "misurel@gmail.com,prescott66@gmail.com"
 
-#: Apper/Apper.cpp:89
+#: Apper/Apper.cpp:91
 #, kde-format
 msgid "Show updates"
 msgstr "Zobraziť aktualizácie"
 
-#: Apper/Apper.cpp:90
+#: Apper/Apper.cpp:94
 #, kde-format
 msgid "Show settings"
 msgstr "Zobraziť nastavenie"
 
-#: Apper/Apper.cpp:91
+#: Apper/Apper.cpp:97
 #, kde-format
 msgid "Show backend details"
 msgstr "Zobraziť podrobnosti backendu"
 
-#: Apper/Apper.cpp:92
+#: Apper/Apper.cpp:100
 #, kde-format
 msgid "Mime type installer"
 msgstr "Inštalátor typov MIME"
 
-#: Apper/Apper.cpp:93
+#: Apper/Apper.cpp:103
 #, kde-format
 msgid "Package name installer"
 msgstr "Inštalátor balíkov"
 
-#: Apper/Apper.cpp:94
+#: Apper/Apper.cpp:106
 #, kde-format
 msgid "Single file installer"
 msgstr "Inštalátor jednotlivých súborov"
 
-#: Apper/Apper.cpp:95
+#: Apper/Apper.cpp:109
 #, kde-format
 msgid "Font resource installer"
 msgstr "Inštalátor zdrojov písma"
 
-#: Apper/Apper.cpp:96
+#: Apper/Apper.cpp:112
 #, kde-format
 msgid "Catalog installer"
 msgstr "Inštalátor katalógov"
 
-#: Apper/Apper.cpp:97
+#: Apper/Apper.cpp:115
 #, kde-format
 msgid "Single package remover"
 msgstr "Odstraňovač jednotlivých balíkov"
 
-#: Apper/Apper.cpp:98
+#: Apper/Apper.cpp:118
 #, kde-format
 msgid "Package file to install"
 msgstr "Súbor balíka na inštaláciu"
 
-#: Apper/BackendDetails.cpp:34
-#, kde-format
-msgid "Backend Details"
-msgstr "Zobraziť podrobnosti backendu"
-
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: Apper/BackendDetails.ui:39
-#, kde-format
-msgid "About Backend"
-msgstr "O backende"
-
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: Apper/BackendDetails.ui:45
-#, kde-format
-msgid "Backend name:"
-msgstr "Názov backendu:"
-
-#. i18n: ectx: property (text), widget (QLabel, label_3)
-#: Apper/BackendDetails.ui:59
-#, kde-format
-msgid "Backend description:"
-msgstr "Popis backendu:"
-
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: Apper/BackendDetails.ui:73
-#, kde-format
-msgid "Backend author:"
-msgstr "Autor backendu:"
-
-#. i18n: ectx: property (text), widget (QLabel, label_4)
-#: Apper/BackendDetails.ui:87
-#, kde-format
-msgid "Distribution ID:"
-msgstr "ID distribúcie:"
-
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
-#: Apper/BackendDetails.ui:107
-#, kde-format
-msgid "Methods"
-msgstr "Metódy"
-
-#. i18n: ectx: property (text), widget (QCheckBox, getUpdatesCB)
-#: Apper/BackendDetails.ui:116
-#, kde-format
-msgid "Get Updates"
-msgstr "Získať aktualizácie"
-
-#. i18n: ectx: property (text), widget (QCheckBox, refreshCacheCB)
-#: Apper/BackendDetails.ui:126 ApperKCM/Settings/Settings.cpp:58
-#, kde-format
-msgid "Refresh Cache"
-msgstr "Obnoviť vyrovnávaciu pamäť"
-
-#. i18n: ectx: property (text), widget (QCheckBox, searchNameCB)
-#: Apper/BackendDetails.ui:136
-#, kde-format
-msgid "Search Name"
-msgstr "Hľadať názov"
-
-#. i18n: ectx: property (text), widget (QCheckBox, getDependsCB)
-#: Apper/BackendDetails.ui:146
-#, kde-format
-msgid "Get Package Depends"
-msgstr "Získať závislosti balíka"
-
-#. i18n: ectx: property (text), widget (QCheckBox, searchDetailsCB)
-#: Apper/BackendDetails.ui:156
-#, kde-format
-msgid "Search Details"
-msgstr "Hľadať podrobnosti"
-
-#. i18n: ectx: property (text), widget (QCheckBox, getRequiresCB)
-#: Apper/BackendDetails.ui:166
-#, kde-format
-msgid "Get Package Requires"
-msgstr "Získať požiadavky balíka"
-
-#. i18n: ectx: property (text), widget (QCheckBox, searchGroupCB)
-#: Apper/BackendDetails.ui:176
-#, kde-format
-msgid "Search Group"
-msgstr "Hľadať skupinu"
-
-#. i18n: ectx: property (text), widget (QCheckBox, getUpdateDetailCB)
-#: Apper/BackendDetails.ui:186
-#, kde-format
-msgid "Get Update Detail"
-msgstr "Získať podrobnosti o aktualizácii"
-
-#. i18n: ectx: property (text), widget (QCheckBox, searchFileCB)
-#: Apper/BackendDetails.ui:196
-#, kde-format
-msgid "Search File"
-msgstr "Hľadať súbor"
-
-#. i18n: ectx: property (text), widget (QCheckBox, getDescriptionCB)
-#: Apper/BackendDetails.ui:206
-#, kde-format
-msgid "Get Package Description"
-msgstr "Získať popis balíka"
-
-#. i18n: ectx: property (text), widget (QCheckBox, getFilesCB)
-#: Apper/BackendDetails.ui:216
-#, kde-format
-msgid "Get Package Files"
-msgstr "Získať súbory balíka"
-
-#. i18n: ectx: property (text), widget (QCheckBox, getDistroUpgradesCB)
-#: Apper/BackendDetails.ui:226
-#, kde-format
-msgid "Get Distro Upgrades"
-msgstr "Získať aktualizácie distribúcie"
-
-#. i18n: ectx: property (text), widget (QCheckBox, installPackageCB)
-#: Apper/BackendDetails.ui:236
-#, kde-format
-msgid "Install Packages"
-msgstr "Inštalovať balíky"
-
-#. i18n: ectx: property (text), widget (QCheckBox, updatePackageCB)
-#: Apper/BackendDetails.ui:246
-#, kde-format
-msgid "Update Packages"
-msgstr "Aktualizovať balíky"
-
-#. i18n: ectx: property (text), widget (QCheckBox, removePackageCB)
-#: Apper/BackendDetails.ui:256
-#, kde-format
-msgid "Remove Packages"
-msgstr "Odstrániť balíky"
-
-#. i18n: ectx: property (text), widget (QCheckBox, installFileCB)
-#: Apper/BackendDetails.ui:266
-#, kde-format
-msgid "Install Files"
-msgstr "Inštalovať súbory"
-
-#. i18n: ectx: property (text), widget (QCheckBox, resolveCB)
-#: Apper/BackendDetails.ui:276
-#, kde-format
-msgid "Resolve"
-msgstr "Vyriešiť"
-
-#. i18n: ectx: property (text), widget (QCheckBox, cancelCB)
-#: Apper/BackendDetails.ui:286
-#, kde-format
-msgid "Cancel"
-msgstr "Zrušiť"
-
-#. i18n: ectx: property (text), widget (QCheckBox, getPackagesCB)
-#: Apper/BackendDetails.ui:296
-#, kde-format
-msgid "Get Packages"
-msgstr "Získať balíky"
-
-#. i18n: ectx: property (text), widget (QCheckBox, whatProvidesCB)
-#: Apper/BackendDetails.ui:306
-#, kde-format
-msgid "What Provides"
-msgstr "Čo poskytuje"
-
-#. i18n: ectx: property (text), widget (QCheckBox, repositorySetEnableCB)
-#: Apper/BackendDetails.ui:316
-#, kde-format
-msgid "Set Repository Data"
-msgstr "Nastaviť dáta repozitára"
-
-#. i18n: ectx: property (text), widget (QCheckBox, repositoryEnableCB)
-#: Apper/BackendDetails.ui:326
-#, kde-format
-msgid "Enable Repository"
-msgstr "Povoliť repozitár"
-
-#. i18n: ectx: property (text), widget (QCheckBox, getRepositoryListCB)
-#: Apper/BackendDetails.ui:336
-#, kde-format
-msgid "Get Repository List"
-msgstr "Získať zoznam repozitárov"
-
-#. i18n: ectx: property (text), widget (QCheckBox, repairSystemCB)
-#: Apper/BackendDetails.ui:346
-#, kde-format
-msgid "Repair System"
-msgstr "Opraviť systém"
-
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#. i18n: ectx: property (text), widget (QToolButton, filtersTB)
-#: Apper/BackendDetails.ui:356 ApperKCM/ApperKCM.ui:98
-#, kde-format
-msgid "Filters"
-msgstr "Filtre"
-
-#. i18n: ectx: property (text), widget (QCheckBox, installedCB)
-#: Apper/BackendDetails.ui:365 ApperKCM/FiltersMenu.cpp:59
-#: libapper/PkStrings.cpp:391
-#, kde-format
-msgid "Installed"
-msgstr "Nainštalované"
-
-#. i18n: ectx: property (text), widget (QCheckBox, developmentCB)
-#: Apper/BackendDetails.ui:375 ApperKCM/FiltersMenu.cpp:90
-#, kde-format
-msgid "Development"
-msgstr "Vývojové"
-
-#. i18n: ectx: property (text), widget (QCheckBox, visibleCB)
-#: Apper/BackendDetails.ui:385
-#, kde-format
-msgid "Package is visible"
-msgstr "Balík je viditeľný"
-
-#. i18n: ectx: property (text), widget (QCheckBox, newestCB)
-#: Apper/BackendDetails.ui:395
-#, kde-format
-msgid "Newest"
-msgstr "Najnovšie"
-
-#. i18n: ectx: property (text), widget (QCheckBox, guiCB)
-#: Apper/BackendDetails.ui:405
-#, kde-format
-msgid "GUI"
-msgstr "GUI"
-
-#. i18n: ectx: property (text), widget (QCheckBox, freeCB)
-#: Apper/BackendDetails.ui:415
-#, kde-format
-msgid "Free software"
-msgstr "Slobodný softvér"
-
-#. i18n: ectx: property (text), widget (QCheckBox, supportedCB)
-#: Apper/BackendDetails.ui:425
-#, kde-format
-msgid "Supported"
-msgstr "Podporované"
-
-#. i18n: ectx: property (text), widget (QCheckBox, archCB)
-#: Apper/BackendDetails.ui:435
-#, kde-format
-msgid "Only native"
-msgstr "Iba natívne"
-
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox_4)
-#: Apper/BackendDetails.ui:445
-#, kde-format
-msgid "PackageKit"
-msgstr "PackageKit"
-
-#. i18n: ectx: property (text), widget (QLabel, label_5)
-#: Apper/BackendDetails.ui:451
-#, kde-format
-msgid "Version:"
-msgstr "Verzia:"
-
-#: Apper/main.cpp:43
-#, kde-format
-msgid "Apper is an application to get and manage software"
-msgstr "Apper je aplikácia na získanie a správu softvéru"
-
-#: Apper/main.cpp:45 PkSession/main.cpp:40
-#, kde-format
-msgid "Daniel Nicoletti"
-msgstr "Daniel Nicoletti"
-
-#: Apper/main.cpp:46 PkSession/main.cpp:43
-#, kde-format
-msgid "Adrien Bustany"
-msgstr "Adrien Bustany"
-
-#: Apper/main.cpp:46 PkSession/main.cpp:43
-#, kde-format
-msgid "libpackagekit-qt and other stuff"
-msgstr "libpackagekit-qt a ostatné veci"
-
-#: apperd/DistroUpgrade.cpp:89
-#, kde-format
-msgid "Distribution upgrade available"
-msgstr "Dostupná aktualizácia distribúcie"
-
-#: apperd/DistroUpgrade.cpp:93
-#, kde-format
-msgid "Start upgrade now"
-msgstr "Spustiť aktualizáciu"
-
-#: apperd/DistroUpgrade.cpp:144
-#, kde-format
-msgid "Distribution upgrade finished. "
-msgstr "Aktualizácia distribúcie dokončená. "
-
-#: apperd/DistroUpgrade.cpp:147 ApperKCM/Updater/DistroUpgrade.cpp:93
-#, kde-format
-msgid "Distribution upgrade process exited with code %1."
-msgstr "Proces aktualizácie distribúcie skončil s kódom %1."
-
-#: apperd/DistroUpgrade.cpp:165 ApperKCM/Updater/DistroUpgrade.cpp:105
-#, kde-format
-msgid "The distribution upgrade process failed to start."
-msgstr "Proces aktualizácie distribúcie sa nepodarilo spustiť."
-
-#: apperd/DistroUpgrade.cpp:168 ApperKCM/Updater/DistroUpgrade.cpp:109
-#, kde-format
-msgid ""
-"The distribution upgrade process crashed some time after starting "
-"successfully."
-msgstr ""
-"Proces aktualizácie distribúcie spadol chvíľu potom, ako bol úspešne "
-"spustený."
-
-#: apperd/DistroUpgrade.cpp:171 ApperKCM/Updater/DistroUpgrade.cpp:113
-#, kde-format
-msgid "The distribution upgrade process failed with an unknown error."
-msgstr "Proces aktualizácie distribúcie zlyhal s neznámou chybou."
-
-#: apperd/TransactionWatcher.cpp:140
-#, kde-format
-msgid "The system update has completed"
-msgstr "Aktualizácia systému je dokončená"
-
-#: apperd/TransactionWatcher.cpp:147 apperd/TransactionWatcher.cpp:189
-#, kde-format
-msgid "Restart"
-msgstr "Reštart"
-
-#: apperd/TransactionWatcher.cpp:180
-#, kde-format
-msgid "Package: %2"
-msgid_plural "Packages: %2"
-msgstr[0] "Balík: %2"
-msgstr[1] "Balíky: %2"
-msgstr[2] "Balíkov: %2"
-
-#: apperd/TransactionWatcher.cpp:242 ApperKCM/TransactionModel.cpp:45
-#: AppSetup/SetupWizard.cpp:149
-#, kde-format
-msgid "Details"
-msgstr "podrobnosti"
-
-#: apperd/Updater.cpp:158
-#, kde-format
-msgid "Updates are being automatically installed."
-msgstr "Prebieha automatická inštalácia aktualizácií."
-
-#: apperd/Updater.cpp:168
-#, kde-format
-msgid "Security updates are being automatically installed."
-msgstr "Prebieha automatická inštalácia bezpečnostných aktualizácií."
-
-#: apperd/Updater.cpp:178
-#, kde-format
-msgid "Updates are being automatically downloaded."
-msgstr "Aktualizácie sa automaticky preberajú."
-
-#: apperd/Updater.cpp:212
-#, kde-format
-msgid "System update was successful."
-msgstr "Aktualizácia systému bola úspešná."
-
-#: apperd/Updater.cpp:219
-#, kde-format
-msgid "The software update failed."
-msgstr "Aktualizácia softvéru zlyhala."
-
-#: apperd/Updater.cpp:273
-#, kde-format
-msgid "There is one new update"
-msgid_plural "There are %1 new updates"
-msgstr[0] "Je dostupná jedna nová aktualizácia"
-msgstr[1] "Sú dostupné %1 nové aktualizácie"
-msgstr[2] "Je dostupných %1 nových aktualizácií"
-
-#: apperd/Updater.cpp:288
-#, kde-format
-msgid "Review"
-msgstr "Prezrieť"
-
-#: apperd/Updater.cpp:290 AppSetup/SetupWizard.cpp:260
-#: libapper/ApplicationsDelegate.cpp:41
-#, kde-format
-msgid "Install"
-msgstr "Inštalovať"
-
-#: ApperKCM/ApperKCM.cpp:89
-#, kde-format
-msgid "KDE interface for managing software"
-msgstr "KDE rozhranie pre spravovanie softvéru"
-
-#: ApperKCM/ApperKCM.cpp:91
-#, kde-format
-msgid "(C) 2008-2013 Daniel Nicoletti"
-msgstr "(C) 2008-2013 Daniel Nicoletti"
-
-#: ApperKCM/ApperKCM.cpp:92
-#, kde-format
-msgid "Matthias Klumpp"
-msgstr "Matthias Klumpp"
-
-#: ApperKCM/ApperKCM.cpp:118 ApperKCM/ApperKCM.cpp:306
+#: Apper/ApperKCM.cpp:93 Apper/ApperKCM.cpp:292
 #, kde-format
 msgid "Find"
 msgstr "Nájsť"
 
-#: ApperKCM/ApperKCM.cpp:210 ApperKCM/ApperKCM.cpp:571
+#: Apper/ApperKCM.cpp:174
+#, kde-format
+msgid "Some software changes were made"
+msgstr ""
+
+#: Apper/ApperKCM.cpp:175 apperd/Updater.cpp:287
+#, kde-format
+msgid "Review"
+msgstr "Prezrieť"
+
+#: Apper/ApperKCM.cpp:178
+#, kde-format
+msgid "Discard"
+msgstr ""
+
+#: Apper/ApperKCM.cpp:181
+#, kde-format
+msgid "Apply"
+msgstr ""
+
+#: Apper/ApperKCM.cpp:205 Apper/ApperKCM.cpp:562
 #, kde-format
 msgid "History"
 msgstr "História"
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, Settings)
-#: ApperKCM/ApperKCM.cpp:216 ApperKCM/ApperKCM.cpp:527
-#: ApperKCM/Settings/Settings.ui:14
+#: Apper/ApperKCM.cpp:209 Apper/ApperKCM.cpp:519 Apper/Settings/Settings.ui:14
 #, kde-format
 msgid "Settings"
 msgstr "Nastavenie"
 
-#: ApperKCM/ApperKCM.cpp:283 ApperKCM/ApperKCM.cpp:284
-#: ApperKCM/ApperKCM.cpp:285 ApperKCM/ApperKCM.cpp:286
+#: Apper/ApperKCM.cpp:269 Apper/ApperKCM.cpp:270 Apper/ApperKCM.cpp:271
+#: Apper/ApperKCM.cpp:272
 #, kde-format
 msgid "&Cancel"
 msgstr "&Zrušiť"
 
-#. i18n: ectx: property (text), widget (CategorizedView, changesView)
-#: ApperKCM/ApperKCM.cpp:293 ApperKCM/ApperKCM.ui:346
+#. i18n: ectx: property (text), widget (KMessageWidget, reviewMessage)
+#: Apper/ApperKCM.cpp:279 Apper/ApperKCM.ui:427
 #, kde-format
 msgid "Find by &name"
 msgstr "Nájsť podľa &názvu"
 
-#. i18n: ectx: property (text), widget (CategorizedView, changesView)
-#: ApperKCM/ApperKCM.cpp:294 ApperKCM/ApperKCM.ui:356
+#. i18n: ectx: property (text), widget (KMessageWidget, reviewMessage)
+#: Apper/ApperKCM.cpp:280 Apper/ApperKCM.ui:437
 #, kde-format
 msgid "Find by f&ile name"
 msgstr "Nájsť podľa názvu &súboru"
 
-#. i18n: ectx: property (text), widget (CategorizedView, changesView)
-#: ApperKCM/ApperKCM.cpp:295 ApperKCM/ApperKCM.ui:351
+#. i18n: ectx: property (text), widget (KMessageWidget, reviewMessage)
+#: Apper/ApperKCM.cpp:281 Apper/ApperKCM.ui:432
 #, kde-format
 msgid "Find by &description"
 msgstr "Nájsť podľa &popisu"
 
-#: ApperKCM/ApperKCM.cpp:465
+#: Apper/ApperKCM.cpp:459
 #, kde-format
 msgid ""
 "The settings of the current module have changed.\n"
@@ -524,501 +148,809 @@ msgstr ""
 "V nastaveniach aktuálneho modulu sa zmenili. Želáte si tieto zmeny použiť, "
 "alebo zahodiť?"
 
-#: ApperKCM/ApperKCM.cpp:467
+#: Apper/ApperKCM.cpp:461
 #, kde-format
 msgid "Apply Settings"
 msgstr "Použiť nastavenie"
 
-#: ApperKCM/ApperKCM.cpp:554 ApperKCM/CategoryModel.cpp:57
+#: Apper/ApperKCM.cpp:546 Apper/CategoryModel.cpp:59
 #, kde-format
 msgid "Updates"
 msgstr "Aktualizácie"
 
-#. i18n: ectx: property (text), widget (QPushButton, changesPB)
-#: ApperKCM/ApperKCM.cpp:625 ApperKCM/ApperKCM.ui:127
+#: Apper/ApperKCM.cpp:615
 #, kde-format
 msgid "Pending Changes"
 msgstr "Čakajúce zmeny"
 
-#: ApperKCM/ApperKCM.cpp:695 ApperKCM/CategoryModel.cpp:49
+#: Apper/ApperKCM.cpp:678 Apper/CategoryModel.cpp:51
 #, kde-format
 msgid "Installed Software"
 msgstr "Nainštalovaný softvér"
 
-#: ApperKCM/ApperKCM.cpp:707
+#: Apper/ApperKCM.cpp:690
 #, kde-format
 msgid "Could not find an application that matched this category"
 msgstr "Nedá sa nájsť aplikácia, ktorá vyhovuje tejto kategórii"
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, ApperKCM)
-#: ApperKCM/ApperKCM.ui:20
+#: Apper/ApperKCM.ui:20
 #, kde-format
 msgid "Add and Remove Software"
 msgstr "Pridať a odstrániť softvér"
 
-#. i18n: ectx: property (clickMessage), widget (KLineEdit, searchKLE)
-#: ApperKCM/ApperKCM.ui:58
+#. i18n: ectx: property (text), widget (QToolButton, backTB)
+#: Apper/ApperKCM.ui:47 AppSetup/SetupWizard.cpp:87
+#, kde-format
+msgid "Back"
+msgstr "Späť"
+
+#. i18n: ectx: property (clickMessage), widget (QLineEdit, searchKLE)
+#: Apper/ApperKCM.ui:188
 #, kde-format
 msgid "Search packages"
 msgstr "Hľadať balíky"
 
+#. i18n: ectx: property (text), widget (QToolButton, filtersTB)
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#: Apper/ApperKCM.ui:237 Apper/BackendDetails.ui:373
+#, kde-format
+msgid "Filters"
+msgstr "Filtre"
+
+#. i18n: ectx: property (text), widget (QPushButton, updatePB)
+#: Apper/ApperKCM.ui:299
+#, fuzzy, kde-format
+#| msgid "Updates"
+msgid "Update"
+msgstr "Aktualizácie"
+
 #. i18n: ectx: property (text), widget (QPushButton, checkUpdatesPB)
-#: ApperKCM/ApperKCM.ui:161
+#: Apper/ApperKCM.ui:312
 #, kde-format
 msgid "Check for new Updates"
 msgstr "Skontrolovať nové aktualizácie"
 
 #. i18n: ectx: property (text), widget (QPushButton, generalSettingsPB)
-#: ApperKCM/ApperKCM.ui:195
+#: Apper/ApperKCM.ui:346
 #, kde-format
 msgid "General Settings"
 msgstr "Všeobecné nastavenia"
 
 #. i18n: ectx: property (text), widget (QPushButton, repoSettingsPB)
-#: ApperKCM/ApperKCM.ui:214
+#: Apper/ApperKCM.ui:365
 #, kde-format
 msgid "Software Origins"
 msgstr "Pôvody softvéru"
 
-#. i18n: ectx: property (text), widget (QToolButton, backTB)
-#: ApperKCM/ApperKCM.ui:267 AppSetup/SetupWizard.cpp:87
+#: Apper/BackendDetails.cpp:36
 #, kde-format
-msgid "Back"
-msgstr "Späť"
+msgid "Backend Details"
+msgstr "Zobraziť podrobnosti backendu"
 
-#: ApperKCM/BrowseView.cpp:90 ApperKCM/Updater/Updater.cpp:106
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
+#: Apper/BackendDetails.ui:23
+#, kde-format
+msgid "Methods"
+msgstr "Metódy"
+
+#. i18n: ectx: property (text), widget (QCheckBox, getUpdatesCB)
+#: Apper/BackendDetails.ui:32
+#, kde-format
+msgid "Get Updates"
+msgstr "Získať aktualizácie"
+
+#. i18n: ectx: property (text), widget (QCheckBox, refreshCacheCB)
+#: Apper/BackendDetails.ui:42 Apper/Settings/Settings.cpp:60
+#, kde-format
+msgid "Refresh Cache"
+msgstr "Obnoviť vyrovnávaciu pamäť"
+
+#. i18n: ectx: property (text), widget (QCheckBox, searchNameCB)
+#: Apper/BackendDetails.ui:52
+#, kde-format
+msgid "Search Name"
+msgstr "Hľadať názov"
+
+#. i18n: ectx: property (text), widget (QCheckBox, getDependsCB)
+#: Apper/BackendDetails.ui:62
+#, kde-format
+msgid "Get Package Depends"
+msgstr "Získať závislosti balíka"
+
+#. i18n: ectx: property (text), widget (QCheckBox, searchDetailsCB)
+#: Apper/BackendDetails.ui:72
+#, kde-format
+msgid "Search Details"
+msgstr "Hľadať podrobnosti"
+
+#. i18n: ectx: property (text), widget (QCheckBox, getRequiresCB)
+#: Apper/BackendDetails.ui:82
+#, kde-format
+msgid "Get Package Requires"
+msgstr "Získať požiadavky balíka"
+
+#. i18n: ectx: property (text), widget (QCheckBox, searchGroupCB)
+#: Apper/BackendDetails.ui:92
+#, kde-format
+msgid "Search Group"
+msgstr "Hľadať skupinu"
+
+#. i18n: ectx: property (text), widget (QCheckBox, getUpdateDetailCB)
+#: Apper/BackendDetails.ui:102
+#, kde-format
+msgid "Get Update Detail"
+msgstr "Získať podrobnosti o aktualizácii"
+
+#. i18n: ectx: property (text), widget (QCheckBox, searchFileCB)
+#: Apper/BackendDetails.ui:112
+#, kde-format
+msgid "Search File"
+msgstr "Hľadať súbor"
+
+#. i18n: ectx: property (text), widget (QCheckBox, getDescriptionCB)
+#: Apper/BackendDetails.ui:122
+#, kde-format
+msgid "Get Package Description"
+msgstr "Získať popis balíka"
+
+#. i18n: ectx: property (text), widget (QCheckBox, getFilesCB)
+#: Apper/BackendDetails.ui:132
+#, kde-format
+msgid "Get Package Files"
+msgstr "Získať súbory balíka"
+
+#. i18n: ectx: property (text), widget (QCheckBox, getDistroUpgradesCB)
+#: Apper/BackendDetails.ui:142
+#, kde-format
+msgid "Get Distro Upgrades"
+msgstr "Získať aktualizácie distribúcie"
+
+#. i18n: ectx: property (text), widget (QCheckBox, installPackageCB)
+#: Apper/BackendDetails.ui:152
+#, kde-format
+msgid "Install Packages"
+msgstr "Inštalovať balíky"
+
+#. i18n: ectx: property (text), widget (QCheckBox, updatePackageCB)
+#: Apper/BackendDetails.ui:162
+#, kde-format
+msgid "Update Packages"
+msgstr "Aktualizovať balíky"
+
+#. i18n: ectx: property (text), widget (QCheckBox, removePackageCB)
+#: Apper/BackendDetails.ui:172
+#, kde-format
+msgid "Remove Packages"
+msgstr "Odstrániť balíky"
+
+#. i18n: ectx: property (text), widget (QCheckBox, installFileCB)
+#: Apper/BackendDetails.ui:182
+#, kde-format
+msgid "Install Files"
+msgstr "Inštalovať súbory"
+
+#. i18n: ectx: property (text), widget (QCheckBox, resolveCB)
+#: Apper/BackendDetails.ui:192
+#, kde-format
+msgid "Resolve"
+msgstr "Vyriešiť"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cancelCB)
+#: Apper/BackendDetails.ui:202
+#, kde-format
+msgid "Cancel"
+msgstr "Zrušiť"
+
+#. i18n: ectx: property (text), widget (QCheckBox, getPackagesCB)
+#: Apper/BackendDetails.ui:212
+#, kde-format
+msgid "Get Packages"
+msgstr "Získať balíky"
+
+#. i18n: ectx: property (text), widget (QCheckBox, whatProvidesCB)
+#: Apper/BackendDetails.ui:222
+#, kde-format
+msgid "What Provides"
+msgstr "Čo poskytuje"
+
+#. i18n: ectx: property (text), widget (QCheckBox, repositorySetEnableCB)
+#: Apper/BackendDetails.ui:232
+#, kde-format
+msgid "Set Repository Data"
+msgstr "Nastaviť dáta repozitára"
+
+#. i18n: ectx: property (text), widget (QCheckBox, repositoryEnableCB)
+#: Apper/BackendDetails.ui:242
+#, kde-format
+msgid "Enable Repository"
+msgstr "Povoliť repozitár"
+
+#. i18n: ectx: property (text), widget (QCheckBox, getRepositoryListCB)
+#: Apper/BackendDetails.ui:252
+#, kde-format
+msgid "Get Repository List"
+msgstr "Získať zoznam repozitárov"
+
+#. i18n: ectx: property (text), widget (QCheckBox, repairSystemCB)
+#: Apper/BackendDetails.ui:262
+#, kde-format
+msgid "Repair System"
+msgstr "Opraviť systém"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: Apper/BackendDetails.ui:278
+#, kde-format
+msgid "About Backend"
+msgstr "O backende"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: Apper/BackendDetails.ui:284
+#, kde-format
+msgid "Backend name:"
+msgstr "Názov backendu:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: Apper/BackendDetails.ui:298
+#, kde-format
+msgid "Backend description:"
+msgstr "Popis backendu:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: Apper/BackendDetails.ui:312
+#, kde-format
+msgid "Backend author:"
+msgstr "Autor backendu:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: Apper/BackendDetails.ui:326
+#, kde-format
+msgid "Distribution ID:"
+msgstr "ID distribúcie:"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_4)
+#: Apper/BackendDetails.ui:343
+#, kde-format
+msgid "PackageKit"
+msgstr "PackageKit"
+
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: Apper/BackendDetails.ui:349
+#, kde-format
+msgid "Version:"
+msgstr "Verzia:"
+
+#. i18n: ectx: property (text), widget (QCheckBox, installedCB)
+#: Apper/BackendDetails.ui:382 Apper/FiltersMenu.cpp:60
+#: libapper/PkStrings.cpp:404
+#, kde-format
+msgid "Installed"
+msgstr "Nainštalované"
+
+#. i18n: ectx: property (text), widget (QCheckBox, developmentCB)
+#: Apper/BackendDetails.ui:392 Apper/FiltersMenu.cpp:89
+#, kde-format
+msgid "Development"
+msgstr "Vývojové"
+
+#. i18n: ectx: property (text), widget (QCheckBox, visibleCB)
+#: Apper/BackendDetails.ui:402
+#, kde-format
+msgid "Package is visible"
+msgstr "Balík je viditeľný"
+
+#. i18n: ectx: property (text), widget (QCheckBox, newestCB)
+#: Apper/BackendDetails.ui:412
+#, kde-format
+msgid "Newest"
+msgstr "Najnovšie"
+
+#. i18n: ectx: property (text), widget (QCheckBox, guiCB)
+#: Apper/BackendDetails.ui:422
+#, kde-format
+msgid "GUI"
+msgstr "GUI"
+
+#. i18n: ectx: property (text), widget (QCheckBox, freeCB)
+#: Apper/BackendDetails.ui:432
+#, kde-format
+msgid "Free software"
+msgstr "Slobodný softvér"
+
+#. i18n: ectx: property (text), widget (QCheckBox, supportedCB)
+#: Apper/BackendDetails.ui:442
+#, kde-format
+msgid "Supported"
+msgstr "Podporované"
+
+#. i18n: ectx: property (text), widget (QCheckBox, archCB)
+#: Apper/BackendDetails.ui:452
+#, kde-format
+msgid "Only native"
+msgstr "Iba natívne"
+
+#: Apper/BrowseView.cpp:89 Apper/Updater/Updater.cpp:105
 #, kde-format
 msgid "Show Versions"
 msgstr "Zobraziť verzie"
 
-#: ApperKCM/BrowseView.cpp:97 ApperKCM/Updater/Updater.cpp:120
+#: Apper/BrowseView.cpp:96 Apper/Updater/Updater.cpp:119
 #, kde-format
 msgid "Show Architectures"
 msgstr "Zobraziť architektúry"
 
-#: ApperKCM/BrowseView.cpp:104 ApperKCM/Updater/Updater.cpp:127
+#: Apper/BrowseView.cpp:103 Apper/Updater/Updater.cpp:126
 #, kde-format
 msgid "Show Origins"
 msgstr "Zobraziť pôvody"
 
-#: ApperKCM/BrowseView.cpp:111 ApperKCM/Updater/Updater.cpp:134
+#: Apper/BrowseView.cpp:110 Apper/Updater/Updater.cpp:133
 #, kde-format
 msgid "Show Sizes"
 msgstr "Zobraziť veľkosti"
 
+#: Apper/BrowseView.cpp:282
+#, fuzzy, kde-format
+#| msgid "Export Installed Package List..."
+msgid "Export installed packages"
+msgstr "Exportovať zoznam nainštalovaných balíkov..."
+
+#: Apper/BrowseView.cpp:306
+#, fuzzy, kde-format
+#| msgid "Install Packages Catalogs"
+msgid "Install packages from catalog"
+msgstr "Inštalovať katalógy balíkov"
+
 #. i18n: ectx: property (text), widget (QPushButton, exportInstalledPB)
-#: ApperKCM/BrowseView.ui:140
+#: Apper/BrowseView.ui:140
 #, kde-format
 msgid "Export Installed Package List..."
 msgstr "Exportovať zoznam nainštalovaných balíkov..."
 
 #. i18n: ectx: property (text), widget (QPushButton, importInstalledPB)
-#: ApperKCM/BrowseView.ui:150
+#: Apper/BrowseView.ui:150
 #, kde-format
 msgid "Install Packages from List..."
 msgstr "Importovať balíky zo zoznamu..."
 
-#: ApperKCM/CategoryModel.cpp:52 ApperKCM/CategoryModel.cpp:60
+#: Apper/CategoryModel.cpp:54 Apper/CategoryModel.cpp:62
 #, kde-format
 msgid "Lists"
 msgstr "Zoznamy"
 
-#: ApperKCM/CategoryModel.cpp:166 ApperKCM/CategoryModel.cpp:361
+#: Apper/CategoryModel.cpp:167 Apper/CategoryModel.cpp:362
 #, kde-format
 msgid "Categories"
 msgstr "Kategórie"
 
-#: ApperKCM/CategoryModel.cpp:223
+#: Apper/CategoryModel.cpp:224
 #, kde-format
 msgid "Groups"
 msgstr "Skupiny"
 
-#: ApperKCM/FiltersMenu.cpp:36
+#: Apper/FiltersMenu.cpp:36
 #, kde-format
 msgid "Collections"
 msgstr "Kolekcie"
 
-#: ApperKCM/FiltersMenu.cpp:44
+#: Apper/FiltersMenu.cpp:45
 #, kde-format
 msgid "Only collections"
 msgstr "Iba kolekcie"
 
-#: ApperKCM/FiltersMenu.cpp:51
+#: Apper/FiltersMenu.cpp:52
 #, kde-format
 msgid "Exclude collections"
 msgstr "Vylúčiť kolekcie"
 
-#: ApperKCM/FiltersMenu.cpp:68
+#: Apper/FiltersMenu.cpp:67
 #, kde-format
 msgid "Only installed"
 msgstr "Iba nainštalované"
 
-#: ApperKCM/FiltersMenu.cpp:75
+#: Apper/FiltersMenu.cpp:74
 #, kde-format
 msgid "Only available"
 msgstr "Iba dostupné"
 
-#: ApperKCM/FiltersMenu.cpp:82 ApperKCM/FiltersMenu.cpp:113
-#: ApperKCM/FiltersMenu.cpp:144 ApperKCM/FiltersMenu.cpp:175
-#: ApperKCM/FiltersMenu.cpp:206 ApperKCM/FiltersMenu.cpp:237
+#: Apper/FiltersMenu.cpp:81 Apper/FiltersMenu.cpp:110 Apper/FiltersMenu.cpp:139
+#: Apper/FiltersMenu.cpp:168 Apper/FiltersMenu.cpp:197
+#: Apper/FiltersMenu.cpp:226
 #, kde-format
 msgid "No filter"
 msgstr "Žiadny filter"
 
-#: ApperKCM/FiltersMenu.cpp:99
+#: Apper/FiltersMenu.cpp:96
 #, kde-format
 msgid "Only development"
 msgstr "Iba vývojové"
 
-#: ApperKCM/FiltersMenu.cpp:106
+#: Apper/FiltersMenu.cpp:103
 #, kde-format
 msgid "Only end user files"
 msgstr "Iba užívateľské súbory"
 
-#: ApperKCM/FiltersMenu.cpp:121
+#: Apper/FiltersMenu.cpp:118
 #, kde-format
 msgid "Graphical"
 msgstr "Grafické"
 
-#: ApperKCM/FiltersMenu.cpp:130
+#: Apper/FiltersMenu.cpp:125
 #, kde-format
 msgid "Only graphical"
 msgstr "Iba grafické"
 
-#: ApperKCM/FiltersMenu.cpp:137
+#: Apper/FiltersMenu.cpp:132
 #, kde-format
 msgid "Only text"
 msgstr "Iba textové"
 
-#: ApperKCM/FiltersMenu.cpp:152
+#: Apper/FiltersMenu.cpp:147
 #, kde-format
 msgctxt "Filter for free packages"
 msgid "Free"
 msgstr "Slobodné"
 
-#: ApperKCM/FiltersMenu.cpp:161
+#: Apper/FiltersMenu.cpp:154
 #, kde-format
 msgid "Only free software"
 msgstr "Iba slobodný softvér"
 
-#: ApperKCM/FiltersMenu.cpp:168
+#: Apper/FiltersMenu.cpp:161
 #, kde-format
 msgid "Only non-free software"
 msgstr "Iba neslobodný softvér"
 
-#: ApperKCM/FiltersMenu.cpp:183
+#: Apper/FiltersMenu.cpp:176
 #, kde-format
 msgctxt "Filter for supported packages"
 msgid "Supported"
 msgstr "Podporované"
 
-#: ApperKCM/FiltersMenu.cpp:192
+#: Apper/FiltersMenu.cpp:183
 #, kde-format
 msgid "Only supported software"
 msgstr "Iba podporovaný softvér"
 
-#: ApperKCM/FiltersMenu.cpp:199
+#: Apper/FiltersMenu.cpp:190
 #, kde-format
 msgid "Only non-supported software"
 msgstr "Iba nepodporovaný softvér"
 
-#: ApperKCM/FiltersMenu.cpp:214
+#: Apper/FiltersMenu.cpp:205
 #, kde-format
 msgctxt "Filter for source packages"
 msgid "Source"
 msgstr "Zdrojové"
 
-#: ApperKCM/FiltersMenu.cpp:223
+#: Apper/FiltersMenu.cpp:212
 #, kde-format
 msgid "Only sourcecode"
 msgstr "Iba so zdrojovým kódom"
 
-#: ApperKCM/FiltersMenu.cpp:230
+#: Apper/FiltersMenu.cpp:219
 #, kde-format
 msgid "Only non-sourcecode"
 msgstr "Iba bez zdrojového kódu"
 
-#: ApperKCM/FiltersMenu.cpp:248
+#: Apper/FiltersMenu.cpp:236
 #, kde-format
 msgid "Hide Subpackages"
 msgstr "Skryť podbalíky"
 
-#: ApperKCM/FiltersMenu.cpp:254
+#: Apper/FiltersMenu.cpp:240
 #, kde-format
 msgid "Only show one package, not subpackages"
 msgstr "Zobraziť iba jeden balík, nie podbalíky"
 
-#: ApperKCM/FiltersMenu.cpp:258
+#: Apper/FiltersMenu.cpp:244
 #, kde-format
 msgid "Only Newest Packages"
 msgstr "Iba najnovšie balíky"
 
-#: ApperKCM/FiltersMenu.cpp:265
+#: Apper/FiltersMenu.cpp:249
 #, kde-format
 msgid "Only show the newest available package"
 msgstr "Zobraziť iba najnovší dostupný balík"
 
-#: ApperKCM/FiltersMenu.cpp:269
+#: Apper/FiltersMenu.cpp:253
 #, kde-format
 msgid "Only Native Packages"
 msgstr "Iba natívne balíky"
 
-#: ApperKCM/FiltersMenu.cpp:276
+#: Apper/FiltersMenu.cpp:258
 #, kde-format
 msgid "Only show packages matching the machine architecture"
 msgstr "Zobraziť iba balíky odpovedajúce architektúre počítača"
 
-#: ApperKCM/FiltersMenu.cpp:282
+#: Apper/FiltersMenu.cpp:264
 #, kde-format
 msgid "Only Show Applications"
 msgstr "Zobraziť iba aplikácie"
 
-#: ApperKCM/FiltersMenu.cpp:285
+#: Apper/FiltersMenu.cpp:267
 #, kde-format
 msgid "Hide packages that are not applications"
 msgstr "Skryť balíky, ktoré nie sú aplikácie"
 
-#: ApperKCM/PackageDetails.cpp:84
+#: Apper/main.cpp:44 Apper/MainUi.cpp:41
+#, kde-format
+msgid "Apper"
+msgstr "Apper"
+
+#: Apper/main.cpp:46
+#, kde-format
+msgid "Apper is an application to get and manage software"
+msgstr "Apper je aplikácia na získanie a správu softvéru"
+
+#: Apper/main.cpp:48
+#, fuzzy, kde-format
+#| msgid "(C) 2008-2013 Daniel Nicoletti"
+msgid "(C) 2008-2018 Daniel Nicoletti"
+msgstr "(C) 2008-2013 Daniel Nicoletti"
+
+#: Apper/main.cpp:49 PkSession/main.cpp:54
+#, kde-format
+msgid "Adrien Bustany"
+msgstr "Adrien Bustany"
+
+#: Apper/main.cpp:49 PkSession/main.cpp:54
+#, kde-format
+msgid "libpackagekit-qt and other stuff"
+msgstr "libpackagekit-qt a ostatné veci"
+
+#: Apper/main.cpp:50
+#, kde-format
+msgid "Matthias Klumpp"
+msgstr "Matthias Klumpp"
+
+#: Apper/PackageDetails.cpp:87
 #, kde-format
 msgid "Display"
 msgstr "Zobraziť"
 
-#: ApperKCM/PackageDetails.cpp:89 AppSetup/SetupWizard.cpp:186
+#: Apper/PackageDetails.cpp:92 AppSetup/SetupWizard.cpp:186
 #, kde-format
 msgid "Description"
 msgstr "Popis"
 
-#: ApperKCM/PackageDetails.cpp:95
+#: Apper/PackageDetails.cpp:98
 #, kde-format
 msgid "Depends On"
 msgstr "Závisí na"
 
-#: ApperKCM/PackageDetails.cpp:122
+#: Apper/PackageDetails.cpp:125
 #, kde-format
 msgid "Required By"
 msgstr "Vyžadované"
 
-#: ApperKCM/PackageDetails.cpp:149
+#: Apper/PackageDetails.cpp:152
 #, kde-format
 msgid "File List"
 msgstr "Zoznam súborov"
 
-#: ApperKCM/PackageDetails.cpp:522
+#: Apper/PackageDetails.cpp:522
 #, kde-format
 msgid "No files were found."
 msgstr "Neboli nájdené žiadne súbory."
 
-#: ApperKCM/PackageDetails.cpp:570
+#: Apper/PackageDetails.cpp:570
 #, kde-format
 msgid "Could not fetch software details"
 msgstr "Nie je možné získať podrobnosti o softvére"
 
-#: ApperKCM/PackageDetails.cpp:612
+#: Apper/PackageDetails.cpp:612
 #, kde-format
 msgid "Applications"
 msgstr "Aplikácie"
 
 #. i18n: ectx: property (text), widget (QLabel, licenseL)
-#: ApperKCM/PackageDetails.ui:164
+#: Apper/PackageDetails.ui:164
 #, kde-format
 msgid "License:"
 msgstr "Licencia:"
 
 #. i18n: ectx: property (text), widget (QPushButton, menuTB)
-#: ApperKCM/PackageDetails.ui:394
+#: Apper/PackageDetails.ui:394
 #, kde-format
 msgid "More..."
 msgstr "Viac..."
 
 #. i18n: ectx: property (text), widget (QToolButton, hideTB)
-#: ApperKCM/PackageDetails.ui:404 ApperKCM/Updater/UpdateDetails.ui:20
+#: Apper/PackageDetails.ui:404 Apper/Updater/UpdateDetails.ui:29
 #, kde-format
 msgid "Hide"
 msgstr "Skryť"
 
-#: ApperKCM/ScreenShotViewer.cpp:91
+#: Apper/ScreenShotViewer.cpp:90
 #, kde-format
 msgid "Could not find screen shot."
 msgstr "Nepodarilo sa nájsť snímka obrazovky."
 
-#: ApperKCM/Settings/OriginModel.cpp:37
+#: Apper/Settings/OriginModel.cpp:37
 #, kde-format
 msgid "Origin of Packages"
 msgstr "Pôvod balíkov"
 
-#: ApperKCM/Settings/Settings.cpp:62
+#: Apper/Settings/Settings.cpp:64
 #, kde-format
 msgid "A repository was changed, it's highly recommended to refresh the cache"
 msgstr "Repozitár sa zmenil, veľmi sa odporúča aktualizovať cache"
 
-#: ApperKCM/Settings/Settings.cpp:94
+#: Apper/Settings/Settings.cpp:94
 #, kde-format
 msgctxt "Inform about distribution upgrades"
 msgid "Never"
 msgstr "Nikdy"
 
-#: ApperKCM/Settings/Settings.cpp:97
+#: Apper/Settings/Settings.cpp:97
 #, kde-format
 msgctxt "Inform about distribution upgrades"
 msgid "Only stable"
 msgstr "Iba stabilné"
 
-#: ApperKCM/Settings/Settings.cpp:102
+#: Apper/Settings/Settings.cpp:102
 #, kde-format
 msgctxt "Inform about distribution upgrades"
 msgid "Stable and development"
 msgstr "Stabilné a vývojové"
 
-#: ApperKCM/Settings/Settings.cpp:106
+#: Apper/Settings/Settings.cpp:106
 #, kde-format
 msgctxt "Hourly refresh the package cache"
 msgid "Hourly"
 msgstr "Každú hodinu"
 
-#: ApperKCM/Settings/Settings.cpp:107
+#: Apper/Settings/Settings.cpp:107
 #, kde-format
 msgctxt "Daily refresh the package cache"
 msgid "Daily"
 msgstr "Denne"
 
-#: ApperKCM/Settings/Settings.cpp:108
+#: Apper/Settings/Settings.cpp:108
 #, kde-format
 msgctxt "Weekly refresh the package cache"
 msgid "Weekly"
 msgstr "Týždenne"
 
-#: ApperKCM/Settings/Settings.cpp:109
+#: Apper/Settings/Settings.cpp:109
 #, kde-format
 msgctxt "Monthly refresh the package cache"
 msgid "Monthly"
 msgstr "Mesačne"
 
-#: ApperKCM/Settings/Settings.cpp:110
+#: Apper/Settings/Settings.cpp:110
 #, kde-format
 msgctxt "Never refresh package cache"
 msgid "Never"
 msgstr "Nikdy"
 
-#: ApperKCM/Settings/Settings.cpp:112
+#: Apper/Settings/Settings.cpp:112
 #, kde-format
 msgctxt "No updates will be automatically installed"
 msgid "None"
 msgstr "Žiadne"
 
-#: ApperKCM/Settings/Settings.cpp:113
+#: Apper/Settings/Settings.cpp:113
 #, kde-format
 msgid "Download only"
 msgstr "Iba prevziať"
 
-#: ApperKCM/Settings/Settings.cpp:114
+#: Apper/Settings/Settings.cpp:114
 #, kde-format
 msgid "Security only"
 msgstr "Iba bezpečnostné aktualizácie"
 
-#: ApperKCM/Settings/Settings.cpp:115
+#: Apper/Settings/Settings.cpp:115
 #, kde-format
 msgid "All updates"
 msgstr "Všetky aktualizácie"
 
 #. i18n: ectx: property (text), widget (QLabel, intervalL)
-#: ApperKCM/Settings/Settings.ui:53
+#: Apper/Settings/Settings.ui:74
 #, kde-format
 msgid "Check for new updates:"
 msgstr "Skontrolovať nové aktualizácie:"
 
 #. i18n: ectx: property (text), widget (QCheckBox, checkUpdatesMobileCB)
 #. i18n: ectx: property (text), widget (QCheckBox, installUpdatesMobileCB)
-#: ApperKCM/Settings/Settings.ui:94 ApperKCM/Settings/Settings.ui:162
+#: Apper/Settings/Settings.ui:115 Apper/Settings/Settings.ui:183
 #, kde-format
 msgid "when on a mobile broadband network connection"
 msgstr "pri mobilnom širokopásmovom pripojení k sieti"
 
 #. i18n: ectx: property (text), widget (QCheckBox, checkUpdatesBatteryCB)
 #. i18n: ectx: property (text), widget (QCheckBox, installUpdatesBatteryCB)
-#: ApperKCM/Settings/Settings.ui:101 ApperKCM/Settings/Settings.ui:155
+#: Apper/Settings/Settings.ui:122 Apper/Settings/Settings.ui:176
 #, kde-format
 msgid "when running on battery"
 msgstr "pri prevádzke na batériu"
 
 #. i18n: ectx: property (text), widget (QLabel, autoInsL)
-#: ApperKCM/Settings/Settings.ui:120
+#: Apper/Settings/Settings.ui:141
 #, kde-format
 msgid "Automatically update:"
 msgstr "Automaticky aktualizovať:"
 
 #. i18n: ectx: property (text), widget (QCheckBox, appLauncherCB)
-#: ApperKCM/Settings/Settings.ui:178
+#: Apper/Settings/Settings.ui:199
 #, kde-format
 msgid "Show application launcher after installing new applications"
 msgstr "Zobrazovať spúšťač aplikácií po inštalácii nových aplikácií"
 
 #. i18n: ectx: property (text), widget (QCheckBox, autoConfirmCB)
-#: ApperKCM/Settings/Settings.ui:185
+#: Apper/Settings/Settings.ui:206
 #, kde-format
 msgid "Show confirmation dialog when installing or updating packages"
 msgstr ""
 "Zobrazovať potvrdzovací dialóg pri inštalácii alebo aktualizácii balíkov"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: ApperKCM/Settings/Settings.ui:192
+#: Apper/Settings/Settings.ui:213
 #, kde-format
 msgid "Check for distribution upgrades:"
 msgstr "Skontrolovať aktualizácie systému:"
 
 #. i18n: ectx: property (text), widget (QCheckBox, showOriginsCB)
-#: ApperKCM/Settings/Settings.ui:233
+#: Apper/Settings/Settings.ui:270
 #, kde-format
 msgid "&Show origins of debug and development packages"
 msgstr "Zo&braziť pôvody ladiacich a vývojových balíkov"
 
 #. i18n: ectx: property (text), widget (QPushButton, editOriginsPB)
-#: ApperKCM/Settings/Settings.ui:253
+#: Apper/Settings/Settings.ui:290
 #, kde-format
 msgid "Edit Origins"
 msgstr "Upraviť pôvody"
 
-#: ApperKCM/TransactionHistory.cpp:68
+#: Apper/TransactionHistory.cpp:67
 #, kde-format
 msgid "Refresh transactions list"
 msgstr "Obnoviť zoznam transakcií"
 
-#: ApperKCM/TransactionHistory.cpp:85
+#: Apper/TransactionHistory.cpp:83
 #, kde-format
 msgid "Time since last cache refresh: %1"
 msgstr "Čas od poslednej obnovy vyrovnávacej pamäte: %1"
 
-#: ApperKCM/TransactionModel.cpp:43
+#: Apper/TransactionModel.cpp:43
 #, kde-format
 msgid "Date"
 msgstr "Dátum"
 
-#: ApperKCM/TransactionModel.cpp:44 libapper/PackageModel.cpp:231
+#: Apper/TransactionModel.cpp:44 libapper/PackageModel.cpp:220
 #, kde-format
 msgid "Action"
 msgstr "Akcia"
 
-#: ApperKCM/TransactionModel.cpp:46
+#: Apper/TransactionModel.cpp:45 apperd/TransactionWatcher.cpp:230
+#: AppSetup/SetupWizard.cpp:149
+#, kde-format
+msgid "Details"
+msgstr "podrobnosti"
+
+#: Apper/TransactionModel.cpp:46
 #, kde-format
 msgctxt "Machine user who issued the transaction"
 msgid "Username"
 msgstr "Užívateľské meno"
 
-#: ApperKCM/TransactionModel.cpp:47
+#: Apper/TransactionModel.cpp:47
 #, kde-format
 msgid "Application"
 msgstr "Aplikácia"
 
-#: ApperKCM/Updater/DistroUpgrade.cpp:39
+#: Apper/Updater/DistroUpgrade.cpp:39
 #, kde-format
 msgid "Upgrade"
 msgstr "Aktualizovať"
 
-#: ApperKCM/Updater/DistroUpgrade.cpp:50
+#: Apper/Updater/DistroUpgrade.cpp:50
 #, kde-format
 msgid "Distribution upgrade available: %1"
 msgstr "Dostupná aktualizácia distribúcie: %1"
 
-#: ApperKCM/Updater/DistroUpgrade.cpp:65
+#: Apper/Updater/DistroUpgrade.cpp:65
 #, kde-format
 msgid ""
 "You are about to upgrade your distribution to the latest version. This is "
@@ -1029,13 +961,13 @@ msgstr ""
 "obvykle časovo náročný proces a trvá oveľa dlhšie ako len aktualizovanie "
 "balíkov."
 
-#: ApperKCM/Updater/DistroUpgrade.cpp:70
+#: Apper/Updater/DistroUpgrade.cpp:70
 #, kde-format
 msgid "It is recommended to plug in your computer before proceeding."
 msgstr ""
 "Skôr ako budete pokračovať, odporúča sa pripojiť k počítaču napájací adaptér."
 
-#: ApperKCM/Updater/DistroUpgrade.cpp:72
+#: Apper/Updater/DistroUpgrade.cpp:72
 #, kde-format
 msgid ""
 "It is recommended that you keep your computer plugged in while the upgrade "
@@ -1044,27 +976,51 @@ msgstr ""
 "Odporúča sa nechať počítač pripojený k napájaciemu adaptéru, kým sa "
 "aktualizácia nedokončí."
 
-#: ApperKCM/Updater/DistroUpgrade.cpp:91
+#: Apper/Updater/DistroUpgrade.cpp:90
 #, kde-format
 msgid "Distribution upgrade complete."
 msgstr "Aktualizácia distribúcie dokončená."
 
-#: ApperKCM/Updater/UpdateDetails.cpp:187
+#: Apper/Updater/DistroUpgrade.cpp:92 apperd/DistroUpgrade.cpp:144
+#, kde-format
+msgid "Distribution upgrade process exited with code %1."
+msgstr "Proces aktualizácie distribúcie skončil s kódom %1."
+
+#: Apper/Updater/DistroUpgrade.cpp:104 apperd/DistroUpgrade.cpp:162
+#, kde-format
+msgid "The distribution upgrade process failed to start."
+msgstr "Proces aktualizácie distribúcie sa nepodarilo spustiť."
+
+#: Apper/Updater/DistroUpgrade.cpp:108 apperd/DistroUpgrade.cpp:165
+#, kde-format
+msgid ""
+"The distribution upgrade process crashed some time after starting "
+"successfully."
+msgstr ""
+"Proces aktualizácie distribúcie spadol chvíľu potom, ako bol úspešne "
+"spustený."
+
+#: Apper/Updater/DistroUpgrade.cpp:112 apperd/DistroUpgrade.cpp:168
+#, kde-format
+msgid "The distribution upgrade process failed with an unknown error."
+msgstr "Proces aktualizácie distribúcie zlyhal s neznámou chybou."
+
+#: Apper/Updater/UpdateDetails.cpp:183
 #, kde-format
 msgid "This update will add new features and expand functionality."
 msgstr "Táto aktualizácia pridá nové funkcie a rozšíri funkcionalitu."
 
-#: ApperKCM/Updater/UpdateDetails.cpp:191
+#: Apper/Updater/UpdateDetails.cpp:187
 #, kde-format
 msgid "This update will fix bugs and other non-critical problems."
 msgstr "Táto aktualizácia opraví chyby a iné nekritické problémy."
 
-#: ApperKCM/Updater/UpdateDetails.cpp:195
+#: Apper/Updater/UpdateDetails.cpp:191
 #, kde-format
 msgid "This update is important as it may solve critical problems."
 msgstr "Táto aktualizácia je dôležitá, pretože môže riešiť kritické problémy."
 
-#: ApperKCM/Updater/UpdateDetails.cpp:199
+#: Apper/Updater/UpdateDetails.cpp:195
 #, kde-format
 msgid ""
 "This update is needed to fix a security vulnerability with this package."
@@ -1072,22 +1028,22 @@ msgstr ""
 "Táto aktualizácia je potrebná na opravu bezpečnostnej zraniteľnosti tohto "
 "balíka."
 
-#: ApperKCM/Updater/UpdateDetails.cpp:203
+#: Apper/Updater/UpdateDetails.cpp:199
 #, kde-format
 msgid "This update is blocked."
 msgstr "Táto aktualizácia je blokovaná."
 
-#: ApperKCM/Updater/UpdateDetails.cpp:210
+#: Apper/Updater/UpdateDetails.cpp:206
 #, kde-format
 msgid "This notification was issued on %1 and last updated on %2."
 msgstr "Toto upozornenie bolo vydané %1 a naposledy aktualizované %2."
 
-#: ApperKCM/Updater/UpdateDetails.cpp:216
+#: Apper/Updater/UpdateDetails.cpp:212
 #, kde-format
 msgid "This notification was issued on %1."
 msgstr "Toto upozornenie bolo vydané %1."
 
-#: ApperKCM/Updater/UpdateDetails.cpp:235
+#: Apper/Updater/UpdateDetails.cpp:229
 #, kde-format
 msgid "For more information about this update please visit this website:"
 msgid_plural ""
@@ -1099,7 +1055,7 @@ msgstr[1] ""
 msgstr[2] ""
 "Ďalšie informácie o tejto aktualizácii nájdete na týchto webových stránkach:"
 
-#: ApperKCM/Updater/UpdateDetails.cpp:245
+#: Apper/Updater/UpdateDetails.cpp:239
 #, kde-format
 msgid ""
 "For more information about bugs fixed by this update please visit this "
@@ -1117,7 +1073,7 @@ msgstr[2] ""
 "Ďalšie informácie o chybách, ktoré táto aktualizácia opravila, nájdete na "
 "týchto webových stránkach:"
 
-#: ApperKCM/Updater/UpdateDetails.cpp:255
+#: Apper/Updater/UpdateDetails.cpp:249
 #, kde-format
 msgid ""
 "For more information about this security update please visit this website:"
@@ -1133,7 +1089,7 @@ msgstr[2] ""
 "Ďalšie informácie o tejto bezpečnostnej aktualizácii nájdete na týchto "
 "webových stránkach:"
 
-#: ApperKCM/Updater/UpdateDetails.cpp:265
+#: Apper/Updater/UpdateDetails.cpp:259
 #, kde-format
 msgid ""
 "The computer will have to be restarted after the update for the changes to "
@@ -1141,7 +1097,7 @@ msgid ""
 msgstr ""
 "Aby sa po aktualizácii zmeny prejavili, budete musieť reštartovať počítač."
 
-#: ApperKCM/Updater/UpdateDetails.cpp:269
+#: Apper/Updater/UpdateDetails.cpp:263
 #, kde-format
 msgid ""
 "You will need to log out and back in after the update for the changes to "
@@ -1150,7 +1106,7 @@ msgstr ""
 "Aby sa po aktualizácii zmeny prejavili, budete sa musieť odhlásiť a znovu "
 "prihlásiť."
 
-#: ApperKCM/Updater/UpdateDetails.cpp:276
+#: Apper/Updater/UpdateDetails.cpp:270
 #, kde-format
 msgid ""
 "The classification of this update is unstable which means it is not designed "
@@ -1159,7 +1115,7 @@ msgstr ""
 "Klasifikácia tejto aktualizácie je nestabilná, čo znamená, že nie je určená "
 "pre produkčné použitie."
 
-#: ApperKCM/Updater/UpdateDetails.cpp:280
+#: Apper/Updater/UpdateDetails.cpp:274
 #, kde-format
 msgid ""
 "This is a test update, and is not designed for normal use. Please report any "
@@ -1168,7 +1124,7 @@ msgstr ""
 "Toto je testovacia aktualizácia a nie je určená na normálne použitie. "
 "Nahláste akékoľvek problémy alebo regresie s ktorými sa stretnete."
 
-#: ApperKCM/Updater/UpdateDetails.cpp:290
+#: Apper/Updater/UpdateDetails.cpp:284
 #, kde-format
 msgid ""
 "The developer logs will be shown as no description is available for this "
@@ -1177,40 +1133,112 @@ msgstr ""
 "Zobrazia sa vývojárske záznamy, pretože pre túto aktualizáciu nie je "
 "dostupný žiadny popis:"
 
-#: ApperKCM/Updater/UpdateDetails.cpp:298
+#: Apper/Updater/UpdateDetails.cpp:292
 #, kde-format
 msgid "Updates:"
 msgstr "Aktualizuje:"
 
-#: ApperKCM/Updater/UpdateDetails.cpp:308
+#: Apper/Updater/UpdateDetails.cpp:302
 #, kde-format
 msgid "Obsoletes:"
 msgstr "Zastaráva:"
 
-#: ApperKCM/Updater/UpdateDetails.cpp:318
+#: Apper/Updater/UpdateDetails.cpp:312
 #, kde-format
 msgid "Repository: %1"
 msgstr "Repozitár: %1"
 
-#: ApperKCM/Updater/UpdateDetails.cpp:340
+#: Apper/Updater/UpdateDetails.cpp:334
 #, kde-format
 msgid "No update description was found."
 msgstr "Nebol nájdený žiadny popis aktualizácie."
 
-#: ApperKCM/Updater/Updater.cpp:113
+#: Apper/Updater/Updater.cpp:112
 #, kde-format
 msgid "Show Current Versions"
 msgstr "Zobraziť aktuálne verzie"
 
-#: ApperKCM/Updater/Updater.cpp:241
+#: Apper/Updater/Updater.cpp:241
 #, kde-format
 msgid "Estimated download size: %1"
 msgstr "Odhadovaná veľkosť preberania: %1"
 
-#: ApperKCM/Updater/Updater.cpp:342
+#: Apper/Updater/Updater.cpp:335
 #, kde-format
 msgid "Check for new updates"
 msgstr "Skontrolovať nové aktualizácie"
+
+#: apperd/DistroUpgrade.cpp:88
+#, kde-format
+msgid "Distribution upgrade available"
+msgstr "Dostupná aktualizácia distribúcie"
+
+#: apperd/DistroUpgrade.cpp:92
+#, kde-format
+msgid "Start upgrade now"
+msgstr "Spustiť aktualizáciu"
+
+#: apperd/DistroUpgrade.cpp:141
+#, kde-format
+msgid "Distribution upgrade finished. "
+msgstr "Aktualizácia distribúcie dokončená. "
+
+#: apperd/TransactionWatcher.cpp:142
+#, kde-format
+msgid "The system update has completed"
+msgstr "Aktualizácia systému je dokončená"
+
+#: apperd/TransactionWatcher.cpp:149 apperd/TransactionWatcher.cpp:191
+#, kde-format
+msgid "Restart"
+msgstr "Reštart"
+
+#: apperd/TransactionWatcher.cpp:182
+#, kde-format
+msgid "Package: %2"
+msgid_plural "Packages: %2"
+msgstr[0] "Balík: %2"
+msgstr[1] "Balíky: %2"
+msgstr[2] "Balíkov: %2"
+
+#: apperd/Updater.cpp:156
+#, kde-format
+msgid "Updates are being automatically installed."
+msgstr "Prebieha automatická inštalácia aktualizácií."
+
+#: apperd/Updater.cpp:166
+#, kde-format
+msgid "Security updates are being automatically installed."
+msgstr "Prebieha automatická inštalácia bezpečnostných aktualizácií."
+
+#: apperd/Updater.cpp:176
+#, kde-format
+msgid "Updates are being automatically downloaded."
+msgstr "Aktualizácie sa automaticky preberajú."
+
+#: apperd/Updater.cpp:210
+#, kde-format
+msgid "System update was successful."
+msgstr "Aktualizácia systému bola úspešná."
+
+#: apperd/Updater.cpp:217
+#, kde-format
+msgid "The software update failed."
+msgstr "Aktualizácia softvéru zlyhala."
+
+#: apperd/Updater.cpp:271
+#, kde-format
+msgid "There is one new update"
+msgid_plural "There are %1 new updates"
+msgstr[0] "Je dostupná jedna nová aktualizácia"
+msgstr[1] "Sú dostupné %1 nové aktualizácie"
+msgstr[2] "Je dostupných %1 nových aktualizácií"
+
+#: apperd/Updater.cpp:289 AppSetup/SetupWizard.cpp:260
+#: libapper/ApplicationsDelegate.cpp:44
+#, kde-format
+msgid "Install"
+msgstr "Inštalovať"
 
 #: AppSetup/main.cpp:43
 #, kde-format
@@ -1254,8 +1282,8 @@ msgstr "Nedostali sme cestu k IPK balíku ako parameter."
 msgid "Package not found!"
 msgstr "balík nebol nájdený!"
 
-#: AppSetup/SetupWizard.cpp:85 libapper/Requirements.cpp:60
-#: PkSession/SessionTask.cpp:72
+#: AppSetup/SetupWizard.cpp:85 libapper/Requirements.cpp:57
+#: PkSession/SessionTask.cpp:73
 #, kde-format
 msgid "Continue"
 msgstr "Pokračovať"
@@ -1323,7 +1351,7 @@ msgstr "Inštalácia ukončená!"
 msgid "%1 has been installed successfully!"
 msgstr "Balík %1 bol nainštalovaný úspešne!"
 
-#: libapper/ApplicationLauncher.cpp:96
+#: libapper/ApplicationLauncher.cpp:97
 #, kde-format
 msgid "New application available"
 msgid_plural "New applications available"
@@ -1331,7 +1359,7 @@ msgstr[0] "Dostupná nová aplikácia"
 msgstr[1] "Dostupné nové aplikácie"
 msgstr[2] "Dostupné nové aplikácie"
 
-#: libapper/ApplicationLauncher.cpp:99
+#: libapper/ApplicationLauncher.cpp:100
 #, kde-format
 msgid "The following application was just installed. Click on it to launch:"
 msgid_plural ""
@@ -1347,27 +1375,27 @@ msgstr[2] ""
 "chcete spustiť:"
 
 #. i18n: ectx: property (text), widget (QCheckBox, showCB)
-#: libapper/ApplicationLauncher.ui:72
+#: libapper/ApplicationLauncher.ui:81
 #, kde-format
 msgid "Do not show this dialog again"
 msgstr "Tento dialóg znovu nezobrazovať"
 
-#: libapper/ApplicationsDelegate.cpp:43
+#: libapper/ApplicationsDelegate.cpp:46
 #, kde-format
 msgid "Remove"
 msgstr "Odstrániť"
 
-#: libapper/ApplicationsDelegate.cpp:45 libapper/ChangesDelegate.cpp:55
+#: libapper/ApplicationsDelegate.cpp:48 libapper/ChangesDelegate.cpp:59
 #, kde-format
 msgid "Deselect"
 msgstr "Zrušiť výber"
 
-#: libapper/ChangesDelegate.cpp:51
+#: libapper/ChangesDelegate.cpp:55
 #, kde-format
 msgid "Do not Install"
 msgstr "Neinštalovať"
 
-#: libapper/ChangesDelegate.cpp:53
+#: libapper/ChangesDelegate.cpp:57
 #, kde-format
 msgid "Do not Remove"
 msgstr "Neodstraňovať"
@@ -1377,18 +1405,18 @@ msgstr "Neodstraňovať"
 msgid "%1 remaining"
 msgstr "Zostáva %1"
 
-#: libapper/LicenseAgreement.cpp:40
-#, kde-format
-msgid "Accept Agreement"
-msgstr "Prijať licenciu"
-
-#. i18n: ectx: property (windowTitle), widget (QWidget, LicenseAgreement)
-#: libapper/LicenseAgreement.cpp:41 libapper/LicenseAgreement.ui:14
+#. i18n: ectx: property (windowTitle), widget (QDialog, LicenseAgreement)
+#: libapper/LicenseAgreement.cpp:40 libapper/LicenseAgreement.ui:14
 #, kde-format
 msgid "License Agreement Required"
 msgstr "Vyžadovaná licenčná zmluva"
 
-#: libapper/LicenseAgreement.cpp:42
+#: libapper/LicenseAgreement.cpp:43
+#, kde-format
+msgid "Accept Agreement"
+msgstr "Prijať licenciu"
+
+#: libapper/LicenseAgreement.cpp:45
 #, kde-format
 msgid "License required for %1 by %2"
 msgstr "Vyžadovaná licencia pre %1 od %2"
@@ -1401,37 +1429,37 @@ msgstr ""
 "Skôr ako budete pokračovať, prečítajte si, prosím, nasledujúce dôležité "
 "informácie:"
 
-#: libapper/PackageModel.cpp:212
+#: libapper/PackageModel.cpp:201
 #, kde-format
 msgid "Name"
 msgstr "Názov"
 
-#: libapper/PackageModel.cpp:216
+#: libapper/PackageModel.cpp:205
 #, kde-format
 msgid "Version"
 msgstr "Verzia"
 
-#: libapper/PackageModel.cpp:219
+#: libapper/PackageModel.cpp:208
 #, kde-format
 msgid "Installed Version"
 msgstr "Nainštalovaná verzia"
 
-#: libapper/PackageModel.cpp:222
+#: libapper/PackageModel.cpp:211
 #, kde-format
 msgid "Arch"
 msgstr "Architektúra"
 
-#: libapper/PackageModel.cpp:225
+#: libapper/PackageModel.cpp:214
 #, kde-format
 msgid "Origin"
 msgstr "Pôvod"
 
-#: libapper/PackageModel.cpp:228
+#: libapper/PackageModel.cpp:217
 #, kde-format
 msgid "Size"
 msgstr "Veľkosť"
 
-#: libapper/PackageModel.cpp:334
+#: libapper/PackageModel.cpp:332
 #, kde-format
 msgid ""
 "Version: %1\n"
@@ -1440,119 +1468,119 @@ msgstr ""
 "Verzia: %1\n"
 "Architektúra: %2"
 
-#: libapper/PackageModel.cpp:380
+#: libapper/PackageModel.cpp:379
 #, kde-format
 msgid "To be Removed"
 msgstr "Na odstránenie"
 
-#: libapper/PackageModel.cpp:382
+#: libapper/PackageModel.cpp:381
 #, kde-format
 msgid "To be Installed"
 msgstr "Na inštaláciu"
 
-#: libapper/PkStrings.cpp:35
+#: libapper/PkStrings.cpp:38
 #, kde-format
 msgctxt "This is when the transaction status is not known"
 msgid "Unknown state"
 msgstr "Neznámy stav"
 
-#: libapper/PkStrings.cpp:38
+#: libapper/PkStrings.cpp:41
 #, kde-format
 msgctxt "transaction state, the daemon is in the process of starting"
 msgid "Waiting for service to start"
 msgstr "Čaká sa na spustenie služby"
 
-#: libapper/PkStrings.cpp:41
+#: libapper/PkStrings.cpp:44
 #, kde-format
 msgctxt "transaction state, the transaction is waiting for another to complete"
 msgid "Waiting for other tasks"
 msgstr "Čaká sa na ďalšie úlohy"
 
-#: libapper/PkStrings.cpp:44
+#: libapper/PkStrings.cpp:47
 #, kde-format
 msgctxt "transaction state, just started"
 msgid "Running task"
 msgstr "Prebieha úloha"
 
-#: libapper/PkStrings.cpp:47
+#: libapper/PkStrings.cpp:50
 #, kde-format
 msgctxt "transaction state, is querying data"
 msgid "Querying"
 msgstr "Zisťuje sa"
 
-#: libapper/PkStrings.cpp:50
+#: libapper/PkStrings.cpp:53
 #, kde-format
 msgctxt "transaction state, getting data from a server"
 msgid "Getting information"
 msgstr "Získavajú sa informácie"
 
-#: libapper/PkStrings.cpp:53
+#: libapper/PkStrings.cpp:56
 #, kde-format
 msgctxt "transaction state, removing packages"
 msgid "Removing packages"
 msgstr "Odstraňujú sa balíky"
 
-#: libapper/PkStrings.cpp:57
+#: libapper/PkStrings.cpp:61
 #, kde-format
 msgctxt "transaction state, downloading package files"
 msgid "Downloading at %1/s, %2 remaining"
 msgstr "Preberá sa rýchlosťou %1/s, zostáva %2"
 
-#: libapper/PkStrings.cpp:62
+#: libapper/PkStrings.cpp:67
 #, kde-format
 msgctxt "transaction state, downloading package files"
 msgid "Downloading at %1/s"
 msgstr "Preberá sa rýchlosťou %1/s"
 
-#: libapper/PkStrings.cpp:66
+#: libapper/PkStrings.cpp:72
 #, kde-format
 msgctxt "transaction state, downloading package files"
 msgid "Downloading, %1 remaining"
 msgstr "Preberá sa, zostáva %1"
 
-#: libapper/PkStrings.cpp:70
+#: libapper/PkStrings.cpp:76
 #, kde-format
 msgctxt "transaction state, downloading package files"
 msgid "Downloading"
 msgstr "Preberá sa"
 
-#: libapper/PkStrings.cpp:74
+#: libapper/PkStrings.cpp:80
 #, kde-format
 msgctxt "transaction state, installing packages"
 msgid "Installing packages"
 msgstr "Inštalujú sa balíky"
 
-#: libapper/PkStrings.cpp:77
+#: libapper/PkStrings.cpp:83
 #, kde-format
 msgctxt "transaction state, refreshing internal lists"
 msgid "Refreshing software list"
 msgstr "Obnovuje sa zoznam softvéru"
 
-#: libapper/PkStrings.cpp:80
+#: libapper/PkStrings.cpp:86
 #, kde-format
 msgctxt "transaction state, installing updates"
 msgid "Updating packages"
 msgstr "Aktualizujú sa balíky"
 
-#: libapper/PkStrings.cpp:83
+#: libapper/PkStrings.cpp:89
 #, kde-format
 msgctxt "transaction state, removing old packages, and cleaning config files"
 msgid "Cleaning up packages"
 msgstr "Čistia sa balíky"
 
-#: libapper/PkStrings.cpp:86
+#: libapper/PkStrings.cpp:92
 #, kde-format
 msgctxt "transaction state, obsoleting old packages"
 msgid "Obsoleting packages"
 msgstr "Označujú sa zastarané balíky"
 
-#: libapper/PkStrings.cpp:89
+#: libapper/PkStrings.cpp:95
 #, kde-format
 msgctxt "transaction state, checking the transaction before we do it"
 msgid "Resolving dependencies"
 msgstr "Riešia sa závislosti"
 
-#: libapper/PkStrings.cpp:92
+#: libapper/PkStrings.cpp:98
 #, kde-format
 msgctxt ""
 "transaction state, checking if we have all the security keys for the "
@@ -1560,1004 +1588,1028 @@ msgctxt ""
 msgid "Checking signatures"
 msgstr "Kontrolujú sa podpisy"
 
-#: libapper/PkStrings.cpp:95
+#: libapper/PkStrings.cpp:101
 #, kde-format
 msgctxt "transaction state, when we're doing a test transaction"
 msgid "Testing changes"
 msgstr "Testujú sa zmeny"
 
-#: libapper/PkStrings.cpp:98
+#: libapper/PkStrings.cpp:104
 #, kde-format
 msgctxt "transaction state, when we're writing to the system package database"
 msgid "Committing changes"
 msgstr "Potvrdzujú sa zmeny"
 
-#: libapper/PkStrings.cpp:101
+#: libapper/PkStrings.cpp:107
 #, kde-format
 msgctxt "transaction state, requesting data from a server"
 msgid "Requesting data"
 msgstr "Vyžadovanie dát"
 
-#: libapper/PkStrings.cpp:104
+#: libapper/PkStrings.cpp:110
 #, kde-format
 msgctxt "transaction state, all done!"
 msgid "Finished"
 msgstr "Dokončené"
 
-#: libapper/PkStrings.cpp:107
+#: libapper/PkStrings.cpp:113
 #, kde-format
 msgctxt "transaction state, in the process of cancelling"
 msgid "Cancelling"
 msgstr "Ruší sa"
 
-#: libapper/PkStrings.cpp:110
+#: libapper/PkStrings.cpp:116
 #, kde-format
 msgctxt "transaction state, downloading metadata"
 msgid "Downloading repository information"
 msgstr "Preberajú sa informácie o repozitároch"
 
-#: libapper/PkStrings.cpp:113
+#: libapper/PkStrings.cpp:119
 #, kde-format
 msgctxt "transaction state, downloading metadata"
 msgid "Downloading list of packages"
 msgstr "Preberá sa zoznam balíkov"
 
-#: libapper/PkStrings.cpp:116
+#: libapper/PkStrings.cpp:122
 #, kde-format
 msgctxt "transaction state, downloading metadata"
 msgid "Downloading file lists"
 msgstr "Preberajú sa zoznamy súborov"
 
-#: libapper/PkStrings.cpp:119
+#: libapper/PkStrings.cpp:125
 #, kde-format
 msgctxt "transaction state, downloading metadata"
 msgid "Downloading lists of changes"
 msgstr "Preberajú sa zoznamy zmien"
 
-#: libapper/PkStrings.cpp:122
+#: libapper/PkStrings.cpp:128
 #, kde-format
 msgctxt "transaction state, downloading metadata"
 msgid "Downloading groups"
 msgstr "Preberajú sa skupiny"
 
-#: libapper/PkStrings.cpp:125
+#: libapper/PkStrings.cpp:131
 #, kde-format
 msgctxt "transaction state, downloading metadata"
 msgid "Downloading update information"
 msgstr "Preberajú sa informácie o aktualizáciách"
 
-#: libapper/PkStrings.cpp:128
+#: libapper/PkStrings.cpp:134
 #, kde-format
 msgctxt "transaction state, repackaging delta files"
 msgid "Repackaging files"
 msgstr "Znovu sa balia súbory"
 
-#: libapper/PkStrings.cpp:131
+#: libapper/PkStrings.cpp:137
 #, kde-format
 msgctxt "transaction state, loading databases"
 msgid "Loading cache"
 msgstr "Načítava sa vyrovnávacia pamäť"
 
-#: libapper/PkStrings.cpp:134
+#: libapper/PkStrings.cpp:140
 #, kde-format
 msgctxt "transaction state, scanning for running processes"
 msgid "Scanning installed applications"
 msgstr "Prehľadávajú sa nainštalované aplikácie"
 
-#: libapper/PkStrings.cpp:137
+#: libapper/PkStrings.cpp:143
 #, kde-format
 msgctxt ""
 "transaction state, generating a list of packages installed on the system"
 msgid "Generating package lists"
 msgstr "Generuje sa zoznam balíkov"
 
-#: libapper/PkStrings.cpp:140
+#: libapper/PkStrings.cpp:146
 #, kde-format
 msgctxt "transaction state, when we're waiting for the native tools to exit"
 msgid "Waiting for package manager lock"
 msgstr "Čaká sa na zámok správcu balíkov"
 
-#: libapper/PkStrings.cpp:143
+#: libapper/PkStrings.cpp:149
 #, kde-format
 msgctxt "waiting for user to type in a password"
 msgid "Waiting for authentication"
 msgstr "Čaká sa na overenie"
 
-#: libapper/PkStrings.cpp:146
+#: libapper/PkStrings.cpp:152
 #, kde-format
 msgctxt "we are updating the list of processes"
 msgid "Updating the list of running applications"
 msgstr "Aktualizuje sa zoznam bežiacich aplikácií"
 
-#: libapper/PkStrings.cpp:149
+#: libapper/PkStrings.cpp:155
 #, kde-format
 msgctxt "we are checking executable files in use"
 msgid "Checking for applications currently in use"
 msgstr "Kontrolujú sa aktuálne používané aplikácie"
 
-#: libapper/PkStrings.cpp:152
+#: libapper/PkStrings.cpp:158
 #, kde-format
 msgctxt "we are checking for libraries in use"
 msgid "Checking for libraries currently in use"
 msgstr "Kontrolujú sa aktuálne používané knižnice"
 
-#: libapper/PkStrings.cpp:155
+#: libapper/PkStrings.cpp:161
 #, kde-format
 msgctxt "we are copying package files to prepare to install"
 msgid "Copying files"
 msgstr "Kopírujú sa súbory"
 
-#: libapper/PkStrings.cpp:170
+#: libapper/PkStrings.cpp:164
+#, fuzzy, kde-format
+#| msgctxt "transaction state, just started"
+#| msgid "Running task"
+msgctxt "we are running hooks pre or post transaction"
+msgid "Running hooks"
+msgstr "Prebieha úloha"
+
+#: libapper/PkStrings.cpp:179
 #, kde-format
 msgctxt "The action of the package, in past tense"
 msgid "Downloaded"
 msgstr "Prevzatý balík"
 
-#: libapper/PkStrings.cpp:172
+#: libapper/PkStrings.cpp:181
 #, kde-format
 msgctxt "The action of the package, in past tense"
 msgid "Updated"
 msgstr "Aktualizovaný balík"
 
-#: libapper/PkStrings.cpp:174
+#: libapper/PkStrings.cpp:183
 #, kde-format
 msgctxt "The action of the package, in past tense"
 msgid "Installed"
 msgstr "Nainštalovaný balík"
 
-#: libapper/PkStrings.cpp:176
+#: libapper/PkStrings.cpp:185
 #, kde-format
 msgctxt "The action of the package, in past tense"
 msgid "Removed"
 msgstr "Odstránený balík"
 
-#: libapper/PkStrings.cpp:178
+#: libapper/PkStrings.cpp:187
 #, kde-format
 msgctxt "The action of the package, in past tense"
 msgid "Cleaned Up"
 msgstr "Vyčistený balík"
 
-#: libapper/PkStrings.cpp:180
+#: libapper/PkStrings.cpp:189
 #, kde-format
 msgctxt "The action of the package, in past tense"
 msgid "Obsoleted"
 msgstr "Zastaraný balík"
 
-#: libapper/PkStrings.cpp:191
+#: libapper/PkStrings.cpp:200
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Unknown role type"
 msgstr "Neznámy typ úlohy"
 
-#: libapper/PkStrings.cpp:193
+#: libapper/PkStrings.cpp:202
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting dependencies"
 msgstr "Získavajú sa závislosti"
 
-#: libapper/PkStrings.cpp:195
+#: libapper/PkStrings.cpp:204
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting update detail"
 msgstr "Získavajú sa podrobnosti o aktualizácii"
 
-#: libapper/PkStrings.cpp:198
+#: libapper/PkStrings.cpp:207
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting details"
 msgstr "Získavajú sa podrobnosti"
 
-#: libapper/PkStrings.cpp:200
+#: libapper/PkStrings.cpp:209
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting requires"
 msgstr "Získavajú sa požiadavky"
 
-#: libapper/PkStrings.cpp:202
+#: libapper/PkStrings.cpp:211
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting updates"
 msgstr "Získavajú sa aktualizácie"
 
-#: libapper/PkStrings.cpp:204
+#: libapper/PkStrings.cpp:213
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Searching details"
 msgstr "Hľadajú sa podrobnosti"
 
-#: libapper/PkStrings.cpp:206
+#: libapper/PkStrings.cpp:215
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Searching for file"
 msgstr "Hľadá sa súbor"
 
-#: libapper/PkStrings.cpp:208
+#: libapper/PkStrings.cpp:217
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Searching groups"
 msgstr "Hľadajú sa skupiny"
 
-#: libapper/PkStrings.cpp:210
+#: libapper/PkStrings.cpp:219
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Searching by package name"
 msgstr "Hľadá sa podľa názvu súboru"
 
-#: libapper/PkStrings.cpp:213
+#: libapper/PkStrings.cpp:222
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Simulating removal"
 msgstr "Simulácia odstránenia"
 
-#: libapper/PkStrings.cpp:215 libapper/PkStrings.cpp:222
-#: libapper/PkStrings.cpp:263
+#: libapper/PkStrings.cpp:224 libapper/PkStrings.cpp:231
+#: libapper/PkStrings.cpp:272
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Downloading packages"
 msgstr "Preberajú sa balíky"
 
-#: libapper/PkStrings.cpp:217
+#: libapper/PkStrings.cpp:226
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Removing"
 msgstr "Odstraňuje sa"
 
-#: libapper/PkStrings.cpp:220
+#: libapper/PkStrings.cpp:229
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Simulating install"
 msgstr "Simuluje sa inštalácia"
 
-#: libapper/PkStrings.cpp:224
+#: libapper/PkStrings.cpp:233
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Installing"
 msgstr "Inštaluje sa"
 
-#: libapper/PkStrings.cpp:227
+#: libapper/PkStrings.cpp:236
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Simulating file install"
 msgstr "Simulácia inštalácie súborov"
 
-#: libapper/PkStrings.cpp:229
+#: libapper/PkStrings.cpp:238
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Downloading required packages"
 msgstr "Preberajú sa potrebné balíky"
 
-#: libapper/PkStrings.cpp:231
+#: libapper/PkStrings.cpp:240
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Installing file"
 msgstr "Inštaluje sa súbor"
 
-#: libapper/PkStrings.cpp:233
+#: libapper/PkStrings.cpp:242
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Refreshing package cache"
 msgstr "Obnovuje sa vyrovnávacia pamäť balíkov"
 
-#: libapper/PkStrings.cpp:236
+#: libapper/PkStrings.cpp:245
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Simulating update"
 msgstr "Simuluje sa aktualizácia"
 
-#: libapper/PkStrings.cpp:238
+#: libapper/PkStrings.cpp:247
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Downloading updates"
 msgstr "Preberajú sa aktualizácie"
 
-#: libapper/PkStrings.cpp:240
+#: libapper/PkStrings.cpp:249
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Updating packages"
 msgstr "Aktualizujú sa balíky"
 
-#: libapper/PkStrings.cpp:242
+#: libapper/PkStrings.cpp:251
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Canceling"
 msgstr "Ruší sa"
 
-#: libapper/PkStrings.cpp:244
+#: libapper/PkStrings.cpp:253
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting list of repositories"
 msgstr "Získava sa zoznam repozitárov"
 
-#: libapper/PkStrings.cpp:246
+#: libapper/PkStrings.cpp:255
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Enabling repository"
 msgstr "Povoľuje sa repozitár"
 
-#: libapper/PkStrings.cpp:248
+#: libapper/PkStrings.cpp:257
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Setting repository data"
 msgstr "Nastavujú sa dáta repozitára"
 
-#: libapper/PkStrings.cpp:250
+#: libapper/PkStrings.cpp:259
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Resolving"
 msgstr "Rieši sa"
 
-#: libapper/PkStrings.cpp:253
+#: libapper/PkStrings.cpp:262
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting file list"
 msgstr "Získava sa zoznam súborov"
 
-#: libapper/PkStrings.cpp:255
+#: libapper/PkStrings.cpp:264
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting what provides"
 msgstr "Získava sa čo poskytuje"
 
-#: libapper/PkStrings.cpp:257
+#: libapper/PkStrings.cpp:266
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Installing signature"
 msgstr "Inštaluje sa podpis"
 
-#: libapper/PkStrings.cpp:259
+#: libapper/PkStrings.cpp:268
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting package lists"
 msgstr "Získava sa zoznam balíkov"
 
-#: libapper/PkStrings.cpp:261
+#: libapper/PkStrings.cpp:270
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Accepting EULA"
 msgstr "Prijíma sa EULA"
 
-#: libapper/PkStrings.cpp:265
+#: libapper/PkStrings.cpp:274
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting distribution upgrade information"
 msgstr "Získavajú sa informácie o aktualizácii distribúcie"
 
-#: libapper/PkStrings.cpp:267
+#: libapper/PkStrings.cpp:276
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting categories"
 msgstr "Získavajú sa kategórie"
 
-#: libapper/PkStrings.cpp:269
+#: libapper/PkStrings.cpp:278
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting old transactions"
 msgstr "Získavajú sa staré transakcie"
 
-#: libapper/PkStrings.cpp:271
+#: libapper/PkStrings.cpp:280
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Repairing system"
 msgstr "Opravuje sa systém"
 
-#: libapper/PkStrings.cpp:273
+#: libapper/PkStrings.cpp:282
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Removing repository"
 msgstr "Odstraňujem repozitár"
 
-#: libapper/PkStrings.cpp:288
+#: libapper/PkStrings.cpp:284
+#, fuzzy, kde-format
+#| msgctxt "The role of the transaction, in present tense"
+#| msgid "Repairing system"
+msgctxt "The role of the transaction, in present tense"
+msgid "Upgrading the system"
+msgstr "Opravuje sa systém"
+
+#: libapper/PkStrings.cpp:299
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Unknown role type"
 msgstr "Neznámy typ role"
 
-#: libapper/PkStrings.cpp:290
+#: libapper/PkStrings.cpp:301
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Got dependencies"
 msgstr "Získané závislosti"
 
-#: libapper/PkStrings.cpp:292
+#: libapper/PkStrings.cpp:303
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Got update detail"
 msgstr "Získané podrobnosti o aktualizácii"
 
-#: libapper/PkStrings.cpp:295
+#: libapper/PkStrings.cpp:306
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Got details"
 msgstr "Získané podrobnosti"
 
-#: libapper/PkStrings.cpp:297
+#: libapper/PkStrings.cpp:308
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Got requires"
 msgstr "Získané požiadavky"
 
-#: libapper/PkStrings.cpp:299
+#: libapper/PkStrings.cpp:310
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Got updates"
 msgstr "Získané aktualizácie"
 
-#: libapper/PkStrings.cpp:301
+#: libapper/PkStrings.cpp:312
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Searched for package details"
 msgstr "Nájdené podrobnosti o balíku"
 
-#: libapper/PkStrings.cpp:303
+#: libapper/PkStrings.cpp:314
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Searched for file"
 msgstr "Nájdený súbor"
 
-#: libapper/PkStrings.cpp:305
+#: libapper/PkStrings.cpp:316
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Searched groups"
 msgstr "Nájdené skupiny"
 
-#: libapper/PkStrings.cpp:307
+#: libapper/PkStrings.cpp:318
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Searched for package name"
 msgstr "Nájdený názov balíka"
 
-#: libapper/PkStrings.cpp:309
+#: libapper/PkStrings.cpp:320
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Removed packages"
 msgstr "Odstránené balíky"
 
-#: libapper/PkStrings.cpp:311
+#: libapper/PkStrings.cpp:322
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Installed packages"
 msgstr "Nainštalované balíky"
 
-#: libapper/PkStrings.cpp:313
+#: libapper/PkStrings.cpp:324
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Installed local files"
 msgstr "Nainštalované lokálne súbory"
 
-#: libapper/PkStrings.cpp:315
+#: libapper/PkStrings.cpp:326
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Refreshed package cache"
 msgstr "Obnovená vyrovnávacia pamäť balíkov"
 
-#: libapper/PkStrings.cpp:317
+#: libapper/PkStrings.cpp:328
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Updated packages"
 msgstr "Aktualizované balíky"
 
-#: libapper/PkStrings.cpp:319
+#: libapper/PkStrings.cpp:330
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Canceled"
 msgstr "Zrušené"
 
-#: libapper/PkStrings.cpp:321
+#: libapper/PkStrings.cpp:332
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Got list of repositories"
 msgstr "Získaný zoznam repozitárov"
 
-#: libapper/PkStrings.cpp:323
+#: libapper/PkStrings.cpp:334
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Enabled repository"
 msgstr "Povolený repozitár"
 
-#: libapper/PkStrings.cpp:325
+#: libapper/PkStrings.cpp:336
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Set repository data"
 msgstr "Nastavené dáta repozitára"
 
-#: libapper/PkStrings.cpp:327
+#: libapper/PkStrings.cpp:338
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Resolved"
 msgstr "Vyriešené"
 
-#: libapper/PkStrings.cpp:330
+#: libapper/PkStrings.cpp:341
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Got file list"
 msgstr "Získaný zoznam súborov"
 
-#: libapper/PkStrings.cpp:332
+#: libapper/PkStrings.cpp:343
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Got what provides"
 msgstr "Získané čo poskytuje"
 
-#: libapper/PkStrings.cpp:334
+#: libapper/PkStrings.cpp:345
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Installed signature"
 msgstr "Nainštalovaný podpis"
 
-#: libapper/PkStrings.cpp:336
+#: libapper/PkStrings.cpp:347
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Got package lists"
 msgstr "Získaný zoznam balíkov"
 
-#: libapper/PkStrings.cpp:338
+#: libapper/PkStrings.cpp:349
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Accepted EULA"
 msgstr "Prijatá EULA"
 
-#: libapper/PkStrings.cpp:340
+#: libapper/PkStrings.cpp:351
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Downloaded packages"
 msgstr "Prevzaté balíky"
 
-#: libapper/PkStrings.cpp:342
+#: libapper/PkStrings.cpp:353
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Got distribution upgrades"
 msgstr "Získané aktualizácie distribúcie"
 
-#: libapper/PkStrings.cpp:344
+#: libapper/PkStrings.cpp:355
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Got categories"
 msgstr "Získané kategórie"
 
-#: libapper/PkStrings.cpp:346
+#: libapper/PkStrings.cpp:357
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Got old transactions"
 msgstr "Získané staré transakcie"
 
-#: libapper/PkStrings.cpp:348
+#: libapper/PkStrings.cpp:359
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Repaired system"
 msgstr "Systém opravený"
 
-#: libapper/PkStrings.cpp:350
+#: libapper/PkStrings.cpp:361
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Removed repository"
 msgstr "Odstránený repozitár"
 
-#: libapper/PkStrings.cpp:360
+#: libapper/PkStrings.cpp:363
+#, fuzzy, kde-format
+#| msgctxt "The role of the transaction, in past tense"
+#| msgid "Repaired system"
+msgctxt "The role of the transaction, in past tense"
+msgid "Upgraded the system"
+msgstr "Systém opravený"
+
+#: libapper/PkStrings.cpp:373
 #, kde-format
 msgid "Downloading"
 msgstr "Preberá sa"
 
-#: libapper/PkStrings.cpp:362
+#: libapper/PkStrings.cpp:375
 #, kde-format
 msgid "Updating"
 msgstr "Aktualizuje sa"
 
-#: libapper/PkStrings.cpp:364
+#: libapper/PkStrings.cpp:377
 #, kde-format
 msgid "Installing"
 msgstr "Inštaluje sa"
 
-#: libapper/PkStrings.cpp:366
+#: libapper/PkStrings.cpp:379
 #, kde-format
 msgid "Removing"
 msgstr "Odstraňuje sa"
 
-#: libapper/PkStrings.cpp:368
+#: libapper/PkStrings.cpp:381
 #, kde-format
 msgid "Cleaning up"
 msgstr "Čistí sa"
 
-#: libapper/PkStrings.cpp:370
+#: libapper/PkStrings.cpp:383
 #, kde-format
 msgid "Obsoleting"
 msgstr "Označuje sa ako zastaraný"
 
-#: libapper/PkStrings.cpp:372
+#: libapper/PkStrings.cpp:385
 #, kde-format
 msgid "Reinstalling"
 msgstr "Znovu sa inštaluje"
 
-#: libapper/PkStrings.cpp:374
+#: libapper/PkStrings.cpp:387
 #, kde-format
 msgid "Preparing"
 msgstr "Pripravuje sa"
 
-#: libapper/PkStrings.cpp:376
+#: libapper/PkStrings.cpp:389
 #, kde-format
 msgid "Decompressing"
 msgstr "Rozbaľuje sa"
 
-#: libapper/PkStrings.cpp:387
+#: libapper/PkStrings.cpp:400
 #, kde-format
 msgid "Downloaded"
 msgstr "Prevzaté"
 
-#: libapper/PkStrings.cpp:389
+#: libapper/PkStrings.cpp:402
 #, kde-format
 msgid "Updated"
 msgstr "Aktualizované"
 
-#: libapper/PkStrings.cpp:393
+#: libapper/PkStrings.cpp:406
 #, kde-format
 msgid "Removed"
 msgstr "Odstránené"
 
-#: libapper/PkStrings.cpp:395
+#: libapper/PkStrings.cpp:408
 #, kde-format
 msgid "Cleaned up"
 msgstr "Vyčistené"
 
-#: libapper/PkStrings.cpp:397
+#: libapper/PkStrings.cpp:410
 #, kde-format
 msgid "Obsoleted"
 msgstr "Zastarané"
 
-#: libapper/PkStrings.cpp:399
+#: libapper/PkStrings.cpp:412
 #, kde-format
 msgid "Reinstalled"
 msgstr "Znovu nainštalované"
 
-#: libapper/PkStrings.cpp:401
+#: libapper/PkStrings.cpp:414
 #, kde-format
 msgid "Prepared"
 msgstr "Pripravené"
 
-#: libapper/PkStrings.cpp:403
+#: libapper/PkStrings.cpp:416
 #, kde-format
 msgid "Decompressed"
 msgstr "Rozbalené"
 
-#: libapper/PkStrings.cpp:414
+#: libapper/PkStrings.cpp:427
 #, kde-format
 msgid "No network connection available"
 msgstr "Nie je dostupné sieťové pripojenie"
 
-#: libapper/PkStrings.cpp:416
+#: libapper/PkStrings.cpp:429
 #, kde-format
 msgid "No package cache is available"
 msgstr "Nie je dostupná vyrovnávacia pamäť balíkov"
 
-#: libapper/PkStrings.cpp:418
+#: libapper/PkStrings.cpp:431
 #, kde-format
 msgid "Out of memory"
 msgstr "Nedostatok pamäte"
 
-#: libapper/PkStrings.cpp:420
+#: libapper/PkStrings.cpp:433
 #, kde-format
 msgid "Failed to create a thread"
 msgstr "Nepodarilo sa vytvoriť vlákno"
 
-#: libapper/PkStrings.cpp:422
+#: libapper/PkStrings.cpp:435
 #, kde-format
 msgid "Not supported by this backend"
 msgstr "Nie je podporované týmto backendom"
 
-#: libapper/PkStrings.cpp:424
+#: libapper/PkStrings.cpp:437
 #, kde-format
 msgid "An internal system error has occurred"
 msgstr "Nastala vnútorná systémová chyba"
 
-#: libapper/PkStrings.cpp:426
+#: libapper/PkStrings.cpp:439
 #, kde-format
 msgid "A security trust relationship is not present"
 msgstr "Bezpečnostný vzťah dôvery nie je k dispozícii"
 
-#: libapper/PkStrings.cpp:428
+#: libapper/PkStrings.cpp:441
 #, kde-format
 msgid "The package is not installed"
 msgstr "balík nie je nainštalovaný"
 
-#: libapper/PkStrings.cpp:430
+#: libapper/PkStrings.cpp:443
 #, kde-format
 msgid "The package was not found"
 msgstr "balík nebol nájdený"
 
-#: libapper/PkStrings.cpp:432
+#: libapper/PkStrings.cpp:445
 #, kde-format
 msgid "The package is already installed"
 msgstr "balík je už nainštalovaný"
 
-#: libapper/PkStrings.cpp:434
+#: libapper/PkStrings.cpp:447
 #, kde-format
 msgid "The package download failed"
 msgstr "Preberanie balíka zlyhalo"
 
-#: libapper/PkStrings.cpp:436
+#: libapper/PkStrings.cpp:449
 #, kde-format
 msgid "The group was not found"
 msgstr "Skupina nebola nájdená"
 
-#: libapper/PkStrings.cpp:438
+#: libapper/PkStrings.cpp:451
 #, kde-format
 msgid "The group list was invalid"
 msgstr "Zoznam skupín bol neplatný"
 
-#: libapper/PkStrings.cpp:440
+#: libapper/PkStrings.cpp:453
 #, kde-format
 msgid "Dependency resolution failed"
 msgstr "Riešenie závislostí zlyhalo"
 
-#: libapper/PkStrings.cpp:442
+#: libapper/PkStrings.cpp:455
 #, kde-format
 msgid "Search filter was invalid"
 msgstr "Filter hľadania bol neplatný"
 
-#: libapper/PkStrings.cpp:444
+#: libapper/PkStrings.cpp:457
 #, kde-format
 msgid "The package identifier was not well formed"
 msgstr "Identifikátor balíka nie je v správnom formáte"
 
-#: libapper/PkStrings.cpp:446
+#: libapper/PkStrings.cpp:459
 #, kde-format
 msgid "Transaction error"
 msgstr "Chyba transakcie"
 
-#: libapper/PkStrings.cpp:448
+#: libapper/PkStrings.cpp:461
 #, kde-format
 msgid "Repository name was not found"
 msgstr "Názov repozitára nebol nájdený"
 
-#: libapper/PkStrings.cpp:450
+#: libapper/PkStrings.cpp:463
 #, kde-format
 msgid "Could not remove a protected system package"
 msgstr "Nepodarilo sa odstrániť chránený systémový balík"
 
-#: libapper/PkStrings.cpp:452
+#: libapper/PkStrings.cpp:465
 #, kde-format
 msgid "The task was canceled"
 msgstr "Úloha bola zrušená"
 
-#: libapper/PkStrings.cpp:454
+#: libapper/PkStrings.cpp:467
 #, kde-format
 msgid "The task was forcibly canceled"
 msgstr "Úloha bola násilne zrušená"
 
-#: libapper/PkStrings.cpp:456
+#: libapper/PkStrings.cpp:469
 #, kde-format
 msgid "Reading the config file failed"
 msgstr "Čítanie konfiguračného súboru zlyhalo"
 
-#: libapper/PkStrings.cpp:458
+#: libapper/PkStrings.cpp:471
 #, kde-format
 msgid "The task cannot be cancelled"
 msgstr "Úloha nemôže byť zrušená"
 
-#: libapper/PkStrings.cpp:460
+#: libapper/PkStrings.cpp:473
 #, kde-format
 msgid "Source packages cannot be installed"
 msgstr "Zdrojové balíky nemôžu byť nainštalované"
 
-#: libapper/PkStrings.cpp:462
+#: libapper/PkStrings.cpp:475
 #, kde-format
 msgid "The license agreement failed"
 msgstr "Licenčná zmluva zlyhala"
 
-#: libapper/PkStrings.cpp:464
+#: libapper/PkStrings.cpp:477
 #, kde-format
 msgid "Local file conflict between packages"
 msgstr "Konflikt lokálneho súboru medzi balíkami"
 
-#: libapper/PkStrings.cpp:466
+#: libapper/PkStrings.cpp:479
 #, kde-format
 msgid "Packages are not compatible"
 msgstr "balíky nie sú kompatibilné"
 
-#: libapper/PkStrings.cpp:468
+#: libapper/PkStrings.cpp:481
 #, kde-format
 msgid "Problem connecting to a software origin"
 msgstr "Problém pri pripájaní k pôvodu softvéru"
 
-#: libapper/PkStrings.cpp:470
+#: libapper/PkStrings.cpp:483
 #, kde-format
 msgid "Failed to initialize"
 msgstr "Inicializácia zlyhala"
 
-#: libapper/PkStrings.cpp:472
+#: libapper/PkStrings.cpp:485
 #, kde-format
 msgid "Failed to finalize"
 msgstr "Dokončenie zlyhalo"
 
-#: libapper/PkStrings.cpp:474
+#: libapper/PkStrings.cpp:487
 #, kde-format
 msgid "Cannot get lock"
 msgstr "Nie je možné získať zámok"
 
-#: libapper/PkStrings.cpp:476
+#: libapper/PkStrings.cpp:489
 #, kde-format
 msgid "No packages to update"
 msgstr "Žiadne balíky na aktualizáciu"
 
-#: libapper/PkStrings.cpp:478
+#: libapper/PkStrings.cpp:491
 #, kde-format
 msgid "Cannot write repository configuration"
 msgstr "Nie je možné zapísať konfiguráciu repozitára"
 
-#: libapper/PkStrings.cpp:480
+#: libapper/PkStrings.cpp:493
 #, kde-format
 msgid "Local install failed"
 msgstr "Lokálna inštalácia zlyhala"
 
-#: libapper/PkStrings.cpp:482
+#: libapper/PkStrings.cpp:495
 #, kde-format
 msgid "Bad GPG signature"
 msgstr "Zlý GPG podpis"
 
-#: libapper/PkStrings.cpp:484
+#: libapper/PkStrings.cpp:497
 #, kde-format
 msgid "Missing GPG signature"
 msgstr "Chýbajúci GPG podpis"
 
-#: libapper/PkStrings.cpp:486
+#: libapper/PkStrings.cpp:499
 #, kde-format
 msgid "Repository configuration invalid"
 msgstr "Konfigurácia repozitára je neplatná"
 
-#: libapper/PkStrings.cpp:488
+#: libapper/PkStrings.cpp:501
 #, kde-format
 msgid "Invalid package file"
 msgstr "Neplatný súbor balíka"
 
-#: libapper/PkStrings.cpp:490
+#: libapper/PkStrings.cpp:503
 #, kde-format
 msgid "Package install blocked"
 msgstr "Inštalácia balíka zablokovaná"
 
-#: libapper/PkStrings.cpp:492
+#: libapper/PkStrings.cpp:505
 #, kde-format
 msgid "Package is corrupt"
 msgstr "balík je poškodený"
 
-#: libapper/PkStrings.cpp:494
+#: libapper/PkStrings.cpp:507
 #, kde-format
 msgid "All packages are already installed"
 msgstr "Všetky balíky sú už nainštalované"
 
-#: libapper/PkStrings.cpp:496
+#: libapper/PkStrings.cpp:509
 #, kde-format
 msgid "The specified file could not be found"
 msgstr "Zadaný súbor sa nepodarilo nájsť"
 
-#: libapper/PkStrings.cpp:498
+#: libapper/PkStrings.cpp:511
 #, kde-format
 msgid "No more mirrors are available"
 msgstr "Nie sú dostupné ďalšie zrkadlá"
 
-#: libapper/PkStrings.cpp:500
+#: libapper/PkStrings.cpp:513
 #, kde-format
 msgid "No distribution upgrade data is available"
 msgstr "Nie sú dostupné dáta k aktualizácii distribúcie"
 
-#: libapper/PkStrings.cpp:502
+#: libapper/PkStrings.cpp:515
 #, kde-format
 msgid "Package is incompatible with this system"
 msgstr "balík je nekompatibilný s týmto systémom"
 
-#: libapper/PkStrings.cpp:504
+#: libapper/PkStrings.cpp:517
 #, kde-format
 msgid "No space is left on the disk"
 msgstr "Na disku nie je dostatok miesta"
 
-#: libapper/PkStrings.cpp:506 libapper/PkTransaction.cpp:341
+#: libapper/PkStrings.cpp:519 libapper/PkTransaction.cpp:341
 #, kde-format
 msgid "A media change is required"
 msgstr "Je vyžadovaná zmena média"
 
-#: libapper/PkStrings.cpp:508
+#: libapper/PkStrings.cpp:521
 #, kde-format
 msgid "Authorization failed"
 msgstr "Overenie zlyhalo"
 
-#: libapper/PkStrings.cpp:510
+#: libapper/PkStrings.cpp:523
 #, kde-format
 msgid "Update not found"
 msgstr "Aktualizácia nenájdená"
 
-#: libapper/PkStrings.cpp:512
+#: libapper/PkStrings.cpp:525
 #, kde-format
 msgid "Cannot install from untrusted origin"
 msgstr "Nie je možné inštalovať z nedôveryhodného pôvodu"
 
-#: libapper/PkStrings.cpp:514
+#: libapper/PkStrings.cpp:527
 #, kde-format
 msgid "Cannot update from untrusted origin"
 msgstr "Nie je možné aktualizovať z nedôveryhodného pôvodu"
 
-#: libapper/PkStrings.cpp:516
+#: libapper/PkStrings.cpp:529
 #, kde-format
 msgid "Cannot get the file list"
 msgstr "Nie je možné získať zoznam súborov"
 
-#: libapper/PkStrings.cpp:518
+#: libapper/PkStrings.cpp:531
 #, kde-format
 msgid "Cannot get package requires"
 msgstr "Nie je možné získať požiadavky balíka"
 
-#: libapper/PkStrings.cpp:520
+#: libapper/PkStrings.cpp:533
 #, kde-format
 msgid "Cannot disable origin"
 msgstr "Nie je možné zakázať pôvod"
 
-#: libapper/PkStrings.cpp:522
+#: libapper/PkStrings.cpp:535
 #, kde-format
 msgid "The download failed"
 msgstr "Preberanie zlyhalo"
 
-#: libapper/PkStrings.cpp:524
+#: libapper/PkStrings.cpp:537
 #, kde-format
 msgid "Package failed to configure"
 msgstr "Konfigurácia balíka zlyhala"
 
-#: libapper/PkStrings.cpp:526
+#: libapper/PkStrings.cpp:539
 #, kde-format
 msgid "Package failed to build"
 msgstr "Zostavenie balíka zlyhalo"
 
-#: libapper/PkStrings.cpp:528
+#: libapper/PkStrings.cpp:541
 #, kde-format
 msgid "Package failed to install"
 msgstr "Inštalácia balíka zlyhala"
 
-#: libapper/PkStrings.cpp:530
+#: libapper/PkStrings.cpp:543
 #, kde-format
 msgid "Package failed to be removed"
 msgstr "Odstránenie balíka zlyhalo"
 
-#: libapper/PkStrings.cpp:532
+#: libapper/PkStrings.cpp:545
 #, kde-format
 msgid "Update failed due to running process"
 msgstr "Aktualizácia zlyhala kvôli bežiacemu procesu"
 
-#: libapper/PkStrings.cpp:534
+#: libapper/PkStrings.cpp:547
 #, kde-format
 msgid "The package database was changed"
 msgstr "Databáza balíkov sa zmenila"
 
-#: libapper/PkStrings.cpp:536
+#: libapper/PkStrings.cpp:549
 #, kde-format
 msgid "Virtual provide type is not supported"
 msgstr "Virtuálne poskytovanie nie je podporované"
 
-#: libapper/PkStrings.cpp:538
+#: libapper/PkStrings.cpp:551
 #, kde-format
 msgid "Install root is invalid"
 msgstr "Inštalačný koreň je neplatný"
 
-#: libapper/PkStrings.cpp:540
+#: libapper/PkStrings.cpp:553
 #, kde-format
 msgid "Cannot fetch install sources"
 msgstr "Nie je možné získať inštalačné zdroje"
 
-#: libapper/PkStrings.cpp:542
+#: libapper/PkStrings.cpp:555
 #, kde-format
 msgid "Rescheduled due to priority"
 msgstr "Preplánované kvôli priorite"
 
-#: libapper/PkStrings.cpp:544
+#: libapper/PkStrings.cpp:557
 #, kde-format
 msgid "Unfinished transaction"
 msgstr "Nedokončená transakcia"
 
-#: libapper/PkStrings.cpp:546
+#: libapper/PkStrings.cpp:559
 #, kde-format
 msgid "Lock required"
 msgstr "Vyžaduje sa zámok"
 
-#: libapper/PkStrings.cpp:548
+#: libapper/PkStrings.cpp:561
 #, kde-format
 msgid "Unknown error"
 msgstr "Neznáma chyba"
 
-#: libapper/PkStrings.cpp:558
+#: libapper/PkStrings.cpp:571
 #, kde-format
 msgid ""
 "There is no network connection available.\n"
@@ -2566,7 +2618,7 @@ msgstr ""
 "Nie je dostupné sieťové pripojenie.\n"
 "Prosím, skontrolujte nastavenie pripojenia a skúste to znovu"
 
-#: libapper/PkStrings.cpp:561
+#: libapper/PkStrings.cpp:574
 #, kde-format
 msgid ""
 "The package list needs to be rebuilt.\n"
@@ -2575,7 +2627,7 @@ msgstr ""
 "Je potrebné znovu zostaviť zoznam balíkov.\n"
 "To by mal spraviť automaticky backend."
 
-#: libapper/PkStrings.cpp:564
+#: libapper/PkStrings.cpp:577
 #, kde-format
 msgid ""
 "The service that is responsible for handling user requests is out of "
@@ -2586,12 +2638,12 @@ msgstr ""
 "nedostatok pamäte.\n"
 "Prosím, ukončite niektoré programy alebo reštartujte svoj počítač."
 
-#: libapper/PkStrings.cpp:567
+#: libapper/PkStrings.cpp:580
 #, kde-format
 msgid "A thread could not be created to service the user request."
 msgstr "Vlákno pre obsluhu užívateľských požiadaviek sa nepodarilo vytvoriť."
 
-#: libapper/PkStrings.cpp:569
+#: libapper/PkStrings.cpp:582
 #, kde-format
 msgid ""
 "The action is not supported by this backend.\n"
@@ -2600,7 +2652,7 @@ msgstr ""
 "Akcia nie je týmto backendom podporovaná.\n"
 "Prosím, nahláste chybu, pretože toto by sa nemalo stať."
 
-#: libapper/PkStrings.cpp:572
+#: libapper/PkStrings.cpp:585
 #, kde-format
 msgid ""
 "A problem that we were not expecting has occurred.\n"
@@ -2609,7 +2661,7 @@ msgstr ""
 "Nastal neočakávaný problém.\n"
 "Prosím, nahláste chybu s popisom problému."
 
-#: libapper/PkStrings.cpp:575
+#: libapper/PkStrings.cpp:588
 #, kde-format
 msgid ""
 "A security trust relationship could not be made with the software origin.\n"
@@ -2618,14 +2670,14 @@ msgstr ""
 "Nepodarilo sa vytvoriť bezpečnostný vzťah dôvery s pôvodom softvéru.\n"
 "Prosím, skontrolujte svoje nastavenie softvérových podpisov."
 
-#: libapper/PkStrings.cpp:578
+#: libapper/PkStrings.cpp:591
 #, kde-format
 msgid ""
 "The package that is trying to be removed or updated is not already installed."
 msgstr ""
 "balík, ktorý má byť odstránený alebo aktualizovaný, už nie je nainštalovaný."
 
-#: libapper/PkStrings.cpp:580
+#: libapper/PkStrings.cpp:593
 #, kde-format
 msgid ""
 "The package that is being modified was not found on your system or in any "
@@ -2634,12 +2686,12 @@ msgstr ""
 "Balík, ktorý má byť zmenený, nebol nájdený vo vašom systéme, ani v žiadnom "
 "pôvode softvéru."
 
-#: libapper/PkStrings.cpp:582
+#: libapper/PkStrings.cpp:595
 #, kde-format
 msgid "The package that is trying to be installed is already installed."
 msgstr "balík, ktorý má byť nainštalovaný, je už nainštalovaný."
 
-#: libapper/PkStrings.cpp:584
+#: libapper/PkStrings.cpp:597
 #, kde-format
 msgid ""
 "The package download failed.\n"
@@ -2648,7 +2700,7 @@ msgstr ""
 "Preberanie balíka zlyhalo.\n"
 "Prosím, skontrolujte svoje sieťové pripojenie."
 
-#: libapper/PkStrings.cpp:587
+#: libapper/PkStrings.cpp:600
 #, kde-format
 msgid ""
 "The group type was not found.\n"
@@ -2657,7 +2709,7 @@ msgstr ""
 "Typ skupiny nebol nájdený.\n"
 "Prosím, skontrolujte svoj zoznam skupín a skúste to znovu."
 
-#: libapper/PkStrings.cpp:590
+#: libapper/PkStrings.cpp:603
 #, kde-format
 msgid ""
 "The group list could not be loaded.\n"
@@ -2668,7 +2720,7 @@ msgstr ""
 "Obnovenie vyrovnávacej pamäte môže pomôcť, hoci je toto obvykle chyba pôvodu "
 "softvéru."
 
-#: libapper/PkStrings.cpp:594
+#: libapper/PkStrings.cpp:607
 #, kde-format
 msgid ""
 "A package dependency could not be found.\n"
@@ -2677,12 +2729,12 @@ msgstr ""
 "Závislosť balíka sa nepodarilo nájsť.\n"
 "Viac informácií je dostupných v podrobnej správe."
 
-#: libapper/PkStrings.cpp:597
+#: libapper/PkStrings.cpp:610
 #, kde-format
 msgid "The search filter was not correctly formed."
 msgstr "Filter hľadania nebol zadaný správne."
 
-#: libapper/PkStrings.cpp:599
+#: libapper/PkStrings.cpp:612
 #, kde-format
 msgid ""
 "The package identifier was not well formed when sent to the system daemon.\n"
@@ -2691,7 +2743,7 @@ msgstr ""
 "Identifikátor balíka nebol správne zadaný pri posielaní systémovému démonu.\n"
 "Toto obvykle naznačuje internú chybu a mala by byť nahlásená."
 
-#: libapper/PkStrings.cpp:602
+#: libapper/PkStrings.cpp:615
 #, kde-format
 msgid ""
 "An error occurred while running the transaction.\n"
@@ -2700,7 +2752,7 @@ msgstr ""
 "Nastala chyba počas behu transakcie.\n"
 "Viac informácií je dostupných v podrobnej správe."
 
-#: libapper/PkStrings.cpp:605
+#: libapper/PkStrings.cpp:618
 #, kde-format
 msgid ""
 "The remote software origin name was not found.\n"
@@ -2709,17 +2761,17 @@ msgstr ""
 "Názov vzdialeného pôvodu softvéru nebol nájdený.\n"
 "Možno bude treba povoliť túto položku v Pôvodoch softvéru."
 
-#: libapper/PkStrings.cpp:608
+#: libapper/PkStrings.cpp:621
 #, kde-format
 msgid "Removing a protected system package is not allowed."
 msgstr "Odstránenie chráneného systémového balíka nie je povolené."
 
-#: libapper/PkStrings.cpp:610
+#: libapper/PkStrings.cpp:623
 #, kde-format
 msgid "The task was canceled successfully and no packages were changed."
 msgstr "Úloha bola úspešne zrušená a neboli zmenené žiadne balíky."
 
-#: libapper/PkStrings.cpp:612
+#: libapper/PkStrings.cpp:625
 #, kde-format
 msgid ""
 "The task was canceled successfully and no packages were changed.\n"
@@ -2728,7 +2780,7 @@ msgstr ""
 "Úloha bola úspešne zrušená a neboli zmenené žiadne balíky.\n"
 "Backend ale nebol korektne ukončený."
 
-#: libapper/PkStrings.cpp:615
+#: libapper/PkStrings.cpp:628
 #, kde-format
 msgid ""
 "The native package configuration file could not be opened.\n"
@@ -2737,12 +2789,12 @@ msgstr ""
 "Natívny konfiguračný súbor sa nepodarilo otvoriť.\n"
 "Prosím, skontrolujte, či je systémové nastavenie v poriadku."
 
-#: libapper/PkStrings.cpp:618
+#: libapper/PkStrings.cpp:631
 #, kde-format
 msgid "The task is not safe to be cancelled at this time."
 msgstr "V tejto chvíli nie je bezpečné zrušiť úlohu."
 
-#: libapper/PkStrings.cpp:620
+#: libapper/PkStrings.cpp:633
 #, kde-format
 msgid ""
 "Source packages are not normally installed this way.\n"
@@ -2751,7 +2803,7 @@ msgstr ""
 "Zdrojové balíky sa obvykle neinštalujú týmto spôsobom.\n"
 "Skontrolujte príponu súboru, ktorý sa pokúšate nainštalovať."
 
-#: libapper/PkStrings.cpp:623
+#: libapper/PkStrings.cpp:636
 #, kde-format
 msgid ""
 "The license agreement was not agreed to.\n"
@@ -2760,7 +2812,7 @@ msgstr ""
 "Nebola potvrdená licenčná zmluva.\n"
 "Ak chcete používať tento softvér, musíte prijať licenciu."
 
-#: libapper/PkStrings.cpp:626
+#: libapper/PkStrings.cpp:639
 #, kde-format
 msgid ""
 "Two packages provide the same file.\n"
@@ -2769,7 +2821,7 @@ msgstr ""
 "Dva balíky poskytujú rovnaký súbor.\n"
 "Toto je obvykle kvôli miešaniu balíkov z rôznych pôvodov softvéru."
 
-#: libapper/PkStrings.cpp:629
+#: libapper/PkStrings.cpp:642
 #, kde-format
 msgid ""
 "Multiple packages exist that are not compatible with each other.\n"
@@ -2778,7 +2830,7 @@ msgstr ""
 "Existuje viacero balíkov, ktoré nie sú navzájom kompatibilné.\n"
 "Toto je obvykle kvôli miešaniu balíkov z rôznych pôvodov softvéru."
 
-#: libapper/PkStrings.cpp:632
+#: libapper/PkStrings.cpp:645
 #, kde-format
 msgid ""
 "There was a (possibly temporary) problem connecting to a software origins.\n"
@@ -2787,7 +2839,7 @@ msgstr ""
 "Nastal (pravdepodobne dočasný) problém s pripojením k pôvodu softvéru.\n"
 "Pre viac podrobností, prosím, skontrolujte podrobné chybové hlásenie."
 
-#: libapper/PkStrings.cpp:635
+#: libapper/PkStrings.cpp:648
 #, kde-format
 msgid ""
 "Failed to initialize packaging backend.\n"
@@ -2796,7 +2848,7 @@ msgstr ""
 "Nepodarilo sa inicializovať balíkovací backend.\n"
 "Toto môže nastať, ak sú súčasne používané rôzne balíkovacie nástroje."
 
-#: libapper/PkStrings.cpp:638
+#: libapper/PkStrings.cpp:651
 #, kde-format
 msgid ""
 "Failed to close down the backend instance.\n"
@@ -2805,7 +2857,7 @@ msgstr ""
 "Nepodarilo sa zatvoriť inštanciu backendu.\n"
 "Táto chyba môže byť obvykle ignorovaná."
 
-#: libapper/PkStrings.cpp:641
+#: libapper/PkStrings.cpp:654
 #, kde-format
 msgid ""
 "Cannot get the exclusive lock on the packaging backend.\n"
@@ -2814,17 +2866,17 @@ msgstr ""
 "Nie je možné získať výhradný zámok na balíkovací backend.\n"
 "Prosím, ukončite všetky ostatné nástroje balíkov, ktoré môžu byť otvorené."
 
-#: libapper/PkStrings.cpp:644
+#: libapper/PkStrings.cpp:657
 #, kde-format
 msgid "None of the selected packages could be updated."
 msgstr "Žiadny z vybraných balíkov sa nepodarilo aktualizovať."
 
-#: libapper/PkStrings.cpp:646
+#: libapper/PkStrings.cpp:659
 #, kde-format
 msgid "The repository configuration could not be modified."
 msgstr "Nastavenie repozitára sa nepodarilo zmeniť."
 
-#: libapper/PkStrings.cpp:648
+#: libapper/PkStrings.cpp:661
 #, kde-format
 msgid ""
 "Installing the local file failed.\n"
@@ -2833,12 +2885,12 @@ msgstr ""
 "Inštalácia lokálneho súboru zlyhala.\n"
 "Viac informácií je dostupných v podrobnej správe."
 
-#: libapper/PkStrings.cpp:651
+#: libapper/PkStrings.cpp:664
 #, kde-format
 msgid "The package signature could not be verified."
 msgstr "Podpis balíka sa nepodarilo overiť."
 
-#: libapper/PkStrings.cpp:653
+#: libapper/PkStrings.cpp:666
 #, kde-format
 msgid ""
 "The package signature was missing and this package is untrusted.\n"
@@ -2847,12 +2899,12 @@ msgstr ""
 "Chýba podpis balíka, a preto je tento balík nedôveryhodný.\n"
 "Tento balík nebol pri vytváraní podpísaný GPG kľúčom."
 
-#: libapper/PkStrings.cpp:656
+#: libapper/PkStrings.cpp:669
 #, kde-format
 msgid "Repository configuration was invalid and could not be read."
 msgstr "Nastavenie repozitára je neplatné a nemôže byť načítané."
 
-#: libapper/PkStrings.cpp:658
+#: libapper/PkStrings.cpp:671
 #, kde-format
 msgid ""
 "The package you are attempting to install is not valid.\n"
@@ -2861,7 +2913,7 @@ msgstr ""
 "balík, ktorý sa pokúšate nainštalovať, je neplatný.\n"
 "Súbor balíku môže byť poškodený, alebo nie je balíkom."
 
-#: libapper/PkStrings.cpp:661
+#: libapper/PkStrings.cpp:674
 #, kde-format
 msgid ""
 "Installation of this package was prevented by your packaging system's "
@@ -2869,20 +2921,20 @@ msgid ""
 msgstr ""
 "Nastavenie vášho balíkovacieho systému zabránilo inštalácii tohto balíka."
 
-#: libapper/PkStrings.cpp:663
+#: libapper/PkStrings.cpp:676
 #, kde-format
 msgid ""
 "The package that was downloaded is corrupt and needs to be downloaded again."
 msgstr ""
 "Balík, ktorý bol prevzatý, je poškodený a je potrebné ho prevziať znovu."
 
-#: libapper/PkStrings.cpp:665
+#: libapper/PkStrings.cpp:678
 #, kde-format
 msgid ""
 "All of the packages selected for install are already installed on the system."
 msgstr "Všetky balíky vybrané na inštaláciu sú už v systéme nainštalované."
 
-#: libapper/PkStrings.cpp:667
+#: libapper/PkStrings.cpp:680
 #, kde-format
 msgid ""
 "The specified file could not be found on the system.\n"
@@ -2891,7 +2943,7 @@ msgstr ""
 "Zadaný súbor sa nepodarilo nájsť v systéme.\n"
 "Skontrolujte, či súbor stále existuje a nebol odstránený."
 
-#: libapper/PkStrings.cpp:670
+#: libapper/PkStrings.cpp:683
 #, kde-format
 msgid ""
 "Required data could not be found on any of the configured software origins.\n"
@@ -2901,7 +2953,7 @@ msgstr ""
 "softvéru.\n"
 "Nie je dostupné žiadne ďalšie zrkadlo, ktoré by sa dalo vyskúšať."
 
-#: libapper/PkStrings.cpp:673
+#: libapper/PkStrings.cpp:686
 #, kde-format
 msgid ""
 "Required upgrade data could not be found in any of the configured software "
@@ -2912,14 +2964,14 @@ msgstr ""
 "softvéru.\n"
 "Zoznam aktualizácií pre distribúciu nebude dostupný."
 
-#: libapper/PkStrings.cpp:676
+#: libapper/PkStrings.cpp:689
 #, kde-format
 msgid ""
 "The package that is trying to be installed is incompatible with this system."
 msgstr ""
 "balík, ktorý má byť nainštalovaný, nie je kompatibilný s týmto systémom."
 
-#: libapper/PkStrings.cpp:678
+#: libapper/PkStrings.cpp:691
 #, kde-format
 msgid ""
 "There is insufficient space on the device.\n"
@@ -2928,12 +2980,12 @@ msgstr ""
 "Na zariadení nie je dostatok miesta.\n"
 "Uvoľnite miesto na systémovom disku na vykonanie tejto operácie."
 
-#: libapper/PkStrings.cpp:681
+#: libapper/PkStrings.cpp:694
 #, kde-format
 msgid "Additional media is required to complete the transaction."
 msgstr "Na dokončenie tejto transakcie je vyžadované ďalšie médium."
 
-#: libapper/PkStrings.cpp:683
+#: libapper/PkStrings.cpp:696
 #, kde-format
 msgid ""
 "You have failed to provide correct authentication.\n"
@@ -2942,7 +2994,7 @@ msgstr ""
 "Nepodarilo sa overiť vašu totožnosť.\n"
 "Prosím, skontrolujte heslá alebo nastavenie konta."
 
-#: libapper/PkStrings.cpp:686
+#: libapper/PkStrings.cpp:699
 #, kde-format
 msgid ""
 "The specified update could not be found.\n"
@@ -2952,32 +3004,32 @@ msgstr ""
 "Zadanú aktualizáciu sa nepodarilo nájsť.\n"
 "Môže byť už nainštalovaná alebo nedostupná na vzdialenom servery."
 
-#: libapper/PkStrings.cpp:689
+#: libapper/PkStrings.cpp:702
 #, kde-format
 msgid "The package could not be installed from untrusted origin."
 msgstr "Nepodarilo sa nainštalovať balík z nedôveryhodného pôvodu."
 
-#: libapper/PkStrings.cpp:691
+#: libapper/PkStrings.cpp:704
 #, kde-format
 msgid "The package could not be updated from untrusted origin."
 msgstr "Nepodarilo sa aktualizovať balík z nedôveryhodného pôvodu."
 
-#: libapper/PkStrings.cpp:693
+#: libapper/PkStrings.cpp:706
 #, kde-format
 msgid "The file list is not available for this package."
 msgstr "Pre tento balík nie je dostupný zoznam súborov."
 
-#: libapper/PkStrings.cpp:695
+#: libapper/PkStrings.cpp:708
 #, kde-format
 msgid "The information about what requires this package could not be obtained."
 msgstr "Nepodarilo sa získať informácie o požiadavkách tohto balíka."
 
-#: libapper/PkStrings.cpp:697
+#: libapper/PkStrings.cpp:710
 #, kde-format
 msgid "The specified software origin could not be disabled."
 msgstr "Nepodarilo sa zakázať zadaný pôvod softvéru."
 
-#: libapper/PkStrings.cpp:699
+#: libapper/PkStrings.cpp:712
 #, kde-format
 msgid ""
 "The download could not be done automatically and should be done manually.\n"
@@ -2986,7 +3038,7 @@ msgstr ""
 "Preberanie sa nepodarilo vykonať automaticky a malo by byť vykonané ručne.\n"
 "Viac informácií je dostupných v podrobnom hlásení."
 
-#: libapper/PkStrings.cpp:702
+#: libapper/PkStrings.cpp:715
 #, kde-format
 msgid ""
 "One of the selected packages failed to configure correctly.\n"
@@ -2995,7 +3047,7 @@ msgstr ""
 "Jeden z vybraných balíkov sa nepodarilo správne nastaviť.\n"
 "Viac informácií je dostupných v podrobnej správe."
 
-#: libapper/PkStrings.cpp:705
+#: libapper/PkStrings.cpp:718
 #, kde-format
 msgid ""
 "One of the selected packages failed to build correctly.\n"
@@ -3004,7 +3056,7 @@ msgstr ""
 "Jeden z vybraných balíkov sa nepodarilo správne zostaviť.\n"
 "Viac informácií je dostupných v podrobnej správe."
 
-#: libapper/PkStrings.cpp:708
+#: libapper/PkStrings.cpp:721
 #, kde-format
 msgid ""
 "One of the selected packages failed to install correctly.\n"
@@ -3013,7 +3065,7 @@ msgstr ""
 "Jeden z vybraných balíkov sa nepodarilo správne nainštalovať.\n"
 "Viac informácií je dostupných v podrobnej správe."
 
-#: libapper/PkStrings.cpp:711
+#: libapper/PkStrings.cpp:724
 #, kde-format
 msgid ""
 "One of the selected packages failed to be removed correctly.\n"
@@ -3022,7 +3074,7 @@ msgstr ""
 "Jeden z vybraných balíkov sa nepodarilo správne odstrániť.\n"
 "Viac informácií je dostupných v podrobnej správe."
 
-#: libapper/PkStrings.cpp:714
+#: libapper/PkStrings.cpp:727
 #, kde-format
 msgid ""
 "A program is running that has to be closed before the update can proceed.\n"
@@ -3031,44 +3083,44 @@ msgstr ""
 "Pred pokračovaním aktualizácie je potrebné uzavrieť bežiaci program.\n"
 "Viac informácií je dostupných v podrobnej správe."
 
-#: libapper/PkStrings.cpp:717
+#: libapper/PkStrings.cpp:730
 #, kde-format
 msgid "The package database was changed while the request was running."
 msgstr "Databáza balíkov sa zmenila počas vykonávania požiadavky."
 
-#: libapper/PkStrings.cpp:719
+#: libapper/PkStrings.cpp:732
 #, kde-format
 msgid "The virtual provide type is not supported by this system."
 msgstr "Virtuálne poskytovanie nie je podporované systémom"
 
-#: libapper/PkStrings.cpp:721
+#: libapper/PkStrings.cpp:734
 #, kde-format
 msgid "The install root is invalid. Please contact your administrator."
 msgstr "Inštalačný koreň je neplatný. Prosím, kontaktuje správcu systému."
 
-#: libapper/PkStrings.cpp:723
+#: libapper/PkStrings.cpp:736
 #, kde-format
 msgid "The list of software could not be downloaded."
 msgstr "Nepodarilo sa prevziať zoznam softvéru."
 
-#: libapper/PkStrings.cpp:725
+#: libapper/PkStrings.cpp:738
 #, kde-format
 msgid ""
 "The transaction has been cancelled and will be retried when the system is "
 "idle."
 msgstr "Transakcia bola prerušená a spustená bude až bude systém nečinný."
 
-#: libapper/PkStrings.cpp:727
+#: libapper/PkStrings.cpp:740
 #, kde-format
 msgid "A previous package management transaction was interrupted."
 msgstr "Predošlá transakcia správy balíkov bola prerušená."
 
-#: libapper/PkStrings.cpp:729
+#: libapper/PkStrings.cpp:742
 #, kde-format
 msgid "A package manager lock is required."
 msgstr "Vyžaduje sa zámok správcu balíkov."
 
-#: libapper/PkStrings.cpp:731
+#: libapper/PkStrings.cpp:744
 #, kde-format
 msgid ""
 "Unknown error, please report a bug.\n"
@@ -3077,282 +3129,282 @@ msgstr ""
 "Neznáma chyba, prosím, nahláste chybu.\n"
 "Viac informácií je dostupných v podrobnej správe."
 
-#: libapper/PkStrings.cpp:742
+#: libapper/PkStrings.cpp:755
 #, kde-format
 msgctxt "The group type"
 msgid "Accessibility"
 msgstr "Prístupnosť"
 
-#: libapper/PkStrings.cpp:744
+#: libapper/PkStrings.cpp:757
 #, kde-format
 msgctxt "The group type"
 msgid "Accessories"
 msgstr "Príslušenstvo"
 
-#: libapper/PkStrings.cpp:746
+#: libapper/PkStrings.cpp:759
 #, kde-format
 msgctxt "The group type"
 msgid "Education"
 msgstr "Vzdelanie"
 
-#: libapper/PkStrings.cpp:748
+#: libapper/PkStrings.cpp:761
 #, kde-format
 msgctxt "The group type"
 msgid "Games"
 msgstr "Hry"
 
-#: libapper/PkStrings.cpp:750
+#: libapper/PkStrings.cpp:763
 #, kde-format
 msgctxt "The group type"
 msgid "Graphics"
 msgstr "Grafika"
 
-#: libapper/PkStrings.cpp:752
+#: libapper/PkStrings.cpp:765
 #, kde-format
 msgctxt "The group type"
 msgid "Internet"
 msgstr "Internet"
 
-#: libapper/PkStrings.cpp:754
+#: libapper/PkStrings.cpp:767
 #, kde-format
 msgctxt "The group type"
 msgid "Office"
 msgstr "Kancelária"
 
-#: libapper/PkStrings.cpp:756
+#: libapper/PkStrings.cpp:769
 #, kde-format
 msgctxt "The group type"
 msgid "Others"
 msgstr "Ostatné"
 
-#: libapper/PkStrings.cpp:758
+#: libapper/PkStrings.cpp:771
 #, kde-format
 msgctxt "The group type"
 msgid "Development"
 msgstr "Vývoj"
 
-#: libapper/PkStrings.cpp:760
+#: libapper/PkStrings.cpp:773
 #, kde-format
 msgctxt "The group type"
 msgid "Multimedia"
 msgstr "Multimédiá"
 
-#: libapper/PkStrings.cpp:762
+#: libapper/PkStrings.cpp:775
 #, kde-format
 msgctxt "The group type"
 msgid "System"
 msgstr "Systém"
 
-#: libapper/PkStrings.cpp:764
+#: libapper/PkStrings.cpp:777
 #, kde-format
 msgctxt "The group type"
 msgid "GNOME desktop"
 msgstr "Prostredie GNOME"
 
-#: libapper/PkStrings.cpp:766
+#: libapper/PkStrings.cpp:779
 #, kde-format
 msgctxt "The group type"
 msgid "KDE desktop"
 msgstr "Prostredie KDE"
 
-#: libapper/PkStrings.cpp:768
+#: libapper/PkStrings.cpp:781
 #, kde-format
 msgctxt "The group type"
 msgid "XFCE desktop"
 msgstr "Prostredie XFCE"
 
-#: libapper/PkStrings.cpp:770
+#: libapper/PkStrings.cpp:783
 #, kde-format
 msgctxt "The group type"
 msgid "Other desktops"
 msgstr "Ostatné prostredia"
 
-#: libapper/PkStrings.cpp:772
+#: libapper/PkStrings.cpp:785
 #, kde-format
 msgctxt "The group type"
 msgid "Publishing"
 msgstr "Publikovanie"
 
-#: libapper/PkStrings.cpp:774
+#: libapper/PkStrings.cpp:787
 #, kde-format
 msgctxt "The group type"
 msgid "Servers"
 msgstr "Servery"
 
-#: libapper/PkStrings.cpp:776
+#: libapper/PkStrings.cpp:789
 #, kde-format
 msgctxt "The group type"
 msgid "Fonts"
 msgstr "Písma"
 
-#: libapper/PkStrings.cpp:778
+#: libapper/PkStrings.cpp:791
 #, kde-format
 msgctxt "The group type"
 msgid "Admin tools"
 msgstr "Administrácia"
 
-#: libapper/PkStrings.cpp:780
+#: libapper/PkStrings.cpp:793
 #, kde-format
 msgctxt "The group type"
 msgid "Legacy"
 msgstr "Staršie aplikácie"
 
-#: libapper/PkStrings.cpp:782
+#: libapper/PkStrings.cpp:795
 #, kde-format
 msgctxt "The group type"
 msgid "Localization"
 msgstr "Lokalizácia"
 
-#: libapper/PkStrings.cpp:784
+#: libapper/PkStrings.cpp:797
 #, kde-format
 msgctxt "The group type"
 msgid "Virtualization"
 msgstr "Virtualizácia"
 
-#: libapper/PkStrings.cpp:786
+#: libapper/PkStrings.cpp:799
 #, kde-format
 msgctxt "The group type"
 msgid "Security"
 msgstr "Bezpečnosť"
 
-#: libapper/PkStrings.cpp:788
+#: libapper/PkStrings.cpp:801
 #, kde-format
 msgctxt "The group type"
 msgid "Power management"
 msgstr "Správa napájania"
 
-#: libapper/PkStrings.cpp:790
+#: libapper/PkStrings.cpp:803
 #, kde-format
 msgctxt "The group type"
 msgid "Communication"
 msgstr "Komunikácia"
 
-#: libapper/PkStrings.cpp:792
+#: libapper/PkStrings.cpp:805
 #, kde-format
 msgctxt "The group type"
 msgid "Network"
 msgstr "Sieť"
 
-#: libapper/PkStrings.cpp:794
+#: libapper/PkStrings.cpp:807
 #, kde-format
 msgctxt "The group type"
 msgid "Maps"
 msgstr "Mapy"
 
-#: libapper/PkStrings.cpp:796
+#: libapper/PkStrings.cpp:809
 #, kde-format
 msgctxt "The group type"
 msgid "Software sources"
 msgstr "Zdroje softvéru"
 
-#: libapper/PkStrings.cpp:798
+#: libapper/PkStrings.cpp:811
 #, kde-format
 msgctxt "The group type"
 msgid "Science"
 msgstr "Veda"
 
-#: libapper/PkStrings.cpp:800
+#: libapper/PkStrings.cpp:813
 #, kde-format
 msgctxt "The group type"
 msgid "Documentation"
 msgstr "Dokumentácia"
 
-#: libapper/PkStrings.cpp:802
+#: libapper/PkStrings.cpp:815
 #, kde-format
 msgctxt "The group type"
 msgid "Electronics"
 msgstr "Elektronika"
 
-#: libapper/PkStrings.cpp:804
+#: libapper/PkStrings.cpp:817
 #, kde-format
 msgctxt "The group type"
 msgid "Package collections"
 msgstr "Kolekcie balíkov"
 
-#: libapper/PkStrings.cpp:806
+#: libapper/PkStrings.cpp:819
 #, kde-format
 msgctxt "The group type"
 msgid "Vendor"
 msgstr "Dodávateľ"
 
-#: libapper/PkStrings.cpp:808
+#: libapper/PkStrings.cpp:821
 #, kde-format
 msgctxt "The group type"
 msgid "Newest packages"
 msgstr "Najnovšie balíky"
 
-#: libapper/PkStrings.cpp:810
+#: libapper/PkStrings.cpp:823
 #, kde-format
 msgctxt "The group type"
 msgid "Unknown group"
 msgstr "Neznáma skupina"
 
-#: libapper/PkStrings.cpp:821
+#: libapper/PkStrings.cpp:834
 #, kde-format
 msgctxt "The type of update"
 msgid "Trivial update"
 msgstr "Obyčajná aktualizácia"
 
-#: libapper/PkStrings.cpp:823
+#: libapper/PkStrings.cpp:836
 #, kde-format
 msgctxt "The type of update"
 msgid "Normal update"
 msgstr "Normálna aktualizácia"
 
-#: libapper/PkStrings.cpp:825
+#: libapper/PkStrings.cpp:838
 #, kde-format
 msgctxt "The type of update"
 msgid "Important update"
 msgstr "Dôležitá aktualizácia"
 
-#: libapper/PkStrings.cpp:827
+#: libapper/PkStrings.cpp:840
 #, kde-format
 msgctxt "The type of update"
 msgid "Security update"
 msgstr "Bezpečnostná aktualizácia"
 
-#: libapper/PkStrings.cpp:829
+#: libapper/PkStrings.cpp:842
 #, kde-format
 msgctxt "The type of update"
 msgid "Bug fix update"
 msgstr "Opravná aktualizácia"
 
-#: libapper/PkStrings.cpp:831
+#: libapper/PkStrings.cpp:844
 #, kde-format
 msgctxt "The type of update"
 msgid "Enhancement update"
 msgstr "Vylepšujúca aktualizácia"
 
-#: libapper/PkStrings.cpp:833
+#: libapper/PkStrings.cpp:846
 #, kde-format
 msgctxt "The type of update"
 msgid "Blocked update"
 msgstr "Blokovaná aktualizácia"
 
-#: libapper/PkStrings.cpp:836
+#: libapper/PkStrings.cpp:849
 #, kde-format
 msgctxt "The type of update"
 msgid "Installed"
 msgstr "Nainštalované"
 
-#: libapper/PkStrings.cpp:839
+#: libapper/PkStrings.cpp:852
 #, kde-format
 msgctxt "The type of update"
 msgid "Available"
 msgstr "Dostupné"
 
-#: libapper/PkStrings.cpp:841
+#: libapper/PkStrings.cpp:854
 #, kde-format
 msgctxt "The type of update"
 msgid "Unknown update"
 msgstr "Neznáma aktualizácia"
 
-#: libapper/PkStrings.cpp:852
+#: libapper/PkStrings.cpp:865
 #, kde-format
 msgid "No Updates Available"
 msgstr "Nie sú dostupné žiadne aktualizácie"
 
-#: libapper/PkStrings.cpp:855
+#: libapper/PkStrings.cpp:868
 #, kde-format
 msgctxt "Some updates were selected on the view"
 msgid "1 Update Selected"
@@ -3361,7 +3413,7 @@ msgstr[0] "Vybraná 1 aktualizácia"
 msgstr[1] "Vybrané %1 aktualizácie"
 msgstr[2] "Vybraných %1 aktualizácií"
 
-#: libapper/PkStrings.cpp:859
+#: libapper/PkStrings.cpp:872
 #, kde-format
 msgctxt "Some updates are being shown on the screen"
 msgid "1 Update"
@@ -3370,13 +3422,13 @@ msgstr[0] "1 aktualizácia"
 msgstr[1] "%1 aktualizácie"
 msgstr[2] "%1 aktualizácií"
 
-#: libapper/PkStrings.cpp:862
+#: libapper/PkStrings.cpp:875
 #, kde-format
 msgctxt "Type of update, in the case it's just an update"
 msgid "%1, %2"
 msgstr "%1, %2"
 
-#: libapper/PkStrings.cpp:863
+#: libapper/PkStrings.cpp:876
 #, kde-format
 msgctxt "Part of: %1 Updates, %1 Selected"
 msgid "%1 Update"
@@ -3385,7 +3437,7 @@ msgstr[0] "%1 aktualizácia"
 msgstr[1] "%1 aktualizácie"
 msgstr[2] "%1 aktualizácií"
 
-#: libapper/PkStrings.cpp:864
+#: libapper/PkStrings.cpp:877
 #, kde-format
 msgctxt "Part of: %1 Updates, %1 Selected"
 msgid "%1 Selected"
@@ -3394,12 +3446,12 @@ msgstr[0] "Vybraná %1"
 msgstr[1] "Vybrané %1"
 msgstr[2] "Vybraných %1"
 
-#: libapper/PkStrings.cpp:868
+#: libapper/PkStrings.cpp:881
 #, kde-format
 msgid "No Packages"
 msgstr "Žiadne balíky"
 
-#: libapper/PkStrings.cpp:870
+#: libapper/PkStrings.cpp:883
 #, kde-format
 msgid "1 Package"
 msgid_plural "%1 Packages"
@@ -3407,264 +3459,184 @@ msgstr[0] "1 balík"
 msgstr[1] "%1 balíky"
 msgstr[2] "%1 balíkov"
 
-#: libapper/PkStrings.cpp:878
+#: libapper/PkStrings.cpp:891
 #, kde-format
 msgid "No restart is necessary"
 msgstr "Nie je potrebný reštart"
 
-#: libapper/PkStrings.cpp:880
+#: libapper/PkStrings.cpp:893
 #, kde-format
 msgid "You will be required to restart this application"
 msgstr "Bude potrebné reštartovať túto aplikáciu"
 
-#: libapper/PkStrings.cpp:882
+#: libapper/PkStrings.cpp:895
 #, kde-format
 msgid "You will be required to log out and back in"
 msgstr "Bude potrebné odhlásiť sa a znovu prihlásiť"
 
-#: libapper/PkStrings.cpp:884
+#: libapper/PkStrings.cpp:897
 #, kde-format
 msgid "A restart will be required"
 msgstr "Bude potrebný reštart"
 
-#: libapper/PkStrings.cpp:886
+#: libapper/PkStrings.cpp:899
 #, kde-format
 msgid "You will be required to log out and back in due to a security update."
 msgstr ""
 "Bude potrebné odhlásiť sa a znovu prihlásiť kvôli bezpečnostnej aktualizácii."
 
-#: libapper/PkStrings.cpp:888
+#: libapper/PkStrings.cpp:901
 #, kde-format
 msgid "A restart will be required due to a security update."
 msgstr "Bude potrebný reštart kvôli bezpečnostnej aktualizácii."
 
-#: libapper/PkStrings.cpp:901
+#: libapper/PkStrings.cpp:914
 #, kde-format
 msgid "No restart is required"
 msgstr "Nie je potrebný reštart"
 
-#: libapper/PkStrings.cpp:903
+#: libapper/PkStrings.cpp:916
 #, kde-format
 msgid "A restart is required"
 msgstr "Je potrebný reštart"
 
-#: libapper/PkStrings.cpp:905
+#: libapper/PkStrings.cpp:918
 #, kde-format
 msgid "You need to log out and log back in"
 msgstr "Je potrebné sa odhlásiť a znovu prihlásiť"
 
-#: libapper/PkStrings.cpp:907
+#: libapper/PkStrings.cpp:920
 #, kde-format
 msgid "You need to restart the application"
 msgstr "Je potrebné reštartovať aplikáciu"
 
-#: libapper/PkStrings.cpp:909
+#: libapper/PkStrings.cpp:922
 #, kde-format
 msgid "You need to log out and log back in to remain secure."
 msgstr ""
 "Je potrebné sa odhlásiť a znovu prihlásiť kvôli zachovaniu bezpečnosti."
 
-#: libapper/PkStrings.cpp:911
+#: libapper/PkStrings.cpp:924
 #, kde-format
 msgid "A restart is required to remain secure."
 msgstr "Je vyžadovaný reštart kvôli zachovaniu bezpečnosti."
 
-#: libapper/PkStrings.cpp:924
+#: libapper/PkStrings.cpp:937
 #, kde-format
 msgid "Stable"
 msgstr "Stabilné"
 
-#: libapper/PkStrings.cpp:926
+#: libapper/PkStrings.cpp:939
 #, kde-format
 msgid "Unstable"
 msgstr "Nestabilné"
 
-#: libapper/PkStrings.cpp:928
+#: libapper/PkStrings.cpp:941
 #, kde-format
 msgid "Testing"
 msgstr "Testovacie"
 
-#: libapper/PkStrings.cpp:941
+#: libapper/PkStrings.cpp:954
 #, kde-format
 msgid "Please insert the CD labeled '%1', and press continue."
 msgstr "Prosím, vložte CD označené '%1', a kliknite na pokračovať."
 
-#: libapper/PkStrings.cpp:943
+#: libapper/PkStrings.cpp:956
 #, kde-format
 msgid "Please insert the DVD labeled '%1', and press continue."
 msgstr "Prosím, vložte DVD označené '%1', a kliknite na pokračovať."
 
-#: libapper/PkStrings.cpp:945
+#: libapper/PkStrings.cpp:958
 #, kde-format
 msgid "Please insert the disc labeled '%1', and press continue."
 msgstr "Prosím, vložte disk označený '%1', a kliknite na pokračovať."
 
-#: libapper/PkStrings.cpp:947 libapper/PkStrings.cpp:950
+#: libapper/PkStrings.cpp:960 libapper/PkStrings.cpp:963
 #, kde-format
 msgid "Please insert the medium labeled '%1', and press continue."
 msgstr "Prosím, vložte médium označené '%1', a kliknite na pokračovať."
 
-#: libapper/PkStrings.cpp:957
-#, kde-format
-msgid "A mirror is possibly broken"
-msgstr "Zrkadlo je pravdepodobne poškodené"
-
-#: libapper/PkStrings.cpp:959
-#, kde-format
-msgid "The connection was refused"
-msgstr "Pripojenie bolo odmietnuté"
-
-#: libapper/PkStrings.cpp:961
-#, kde-format
-msgid "The parameter was invalid"
-msgstr "Parameter bol neplatný"
-
-#: libapper/PkStrings.cpp:963
-#, kde-format
-msgid "The priority was invalid"
-msgstr "Priorita bola neplatná"
-
-#: libapper/PkStrings.cpp:965
-#, kde-format
-msgid "Backend warning"
-msgstr "Varovanie backendu"
-
-#: libapper/PkStrings.cpp:967
-#, kde-format
-msgid "Daemon warning"
-msgstr "Varovanie démona"
-
-#: libapper/PkStrings.cpp:969
-#, kde-format
-msgid "The package list cache is being rebuilt"
-msgstr "Zostavuje sa vyrovnávacia pamäť zoznamu balíkov"
-
-#: libapper/PkStrings.cpp:971
-#, kde-format
-msgid "An untrusted package was installed"
-msgstr "Bol nainštalovaný nedôveryhodný balík"
-
-#: libapper/PkStrings.cpp:973
-#, kde-format
-msgid "A newer package exists"
-msgstr "Existuje novší balík"
-
-#: libapper/PkStrings.cpp:975
-#, kde-format
-msgid "Could not find package"
-msgstr "Nepodarilo sa nájsť balík"
-
-#: libapper/PkStrings.cpp:977
-#, kde-format
-msgid "Configuration files were changed"
-msgstr "Konfiguračné súbory boli zmenené"
-
-#: libapper/PkStrings.cpp:979
-#, kde-format
-msgid "Package is already installed"
-msgstr "balík je už nainštalovaný"
-
-#: libapper/PkStrings.cpp:981
-#, kde-format
-msgid "Automatic cleanup is being ignored"
-msgstr "Ignoruje sa automatické čistenie"
-
-#: libapper/PkStrings.cpp:983
-#, kde-format
-msgid "Software source download failed"
-msgstr "Preberanie zdroja softvéru zlyhalo"
-
-#: libapper/PkStrings.cpp:985
-#, kde-format
-msgid "This software source is for developers only"
-msgstr "Tento zdroj softvéru je iba pre vývojárov"
-
-#: libapper/PkStrings.cpp:987
-#, kde-format
-msgid "Other updates have been held back"
-msgstr "Ostatné aktualizácie boli pozdržané"
-
-#: libapper/PkStrings.cpp:1001
+#: libapper/PkStrings.cpp:1014
 #, kde-format
 msgid "You do not have the necessary privileges to perform this action."
 msgstr "Nemáte dostatočné práva na vykonanie tejto akcie."
 
-#: libapper/PkStrings.cpp:1003
+#: libapper/PkStrings.cpp:1016
 #, kde-format
 msgid "Could not get a transaction id from packagekitd."
 msgstr "Nepodarilo sa získať transakčné id z packagekitd."
 
-#: libapper/PkStrings.cpp:1005
+#: libapper/PkStrings.cpp:1018
 #, kde-format
 msgid "Cannot connect to this transaction id."
 msgstr "Nedá sa pripojiť k tomuto transakčnému id."
 
-#: libapper/PkStrings.cpp:1007
+#: libapper/PkStrings.cpp:1020
 #, kde-format
 msgid "This action is unknown."
 msgstr "Neznáma akcia."
 
-#: libapper/PkStrings.cpp:1009
+#: libapper/PkStrings.cpp:1022
 #, kde-format
 msgid "The packagekitd service could not be started."
 msgstr "Nepodarilo sa spustiť službu packagekitd."
 
-#: libapper/PkStrings.cpp:1011
+#: libapper/PkStrings.cpp:1024
 #, kde-format
 msgid "The query is not valid."
 msgstr "Dotaz je neplatný."
 
-#: libapper/PkStrings.cpp:1013
+#: libapper/PkStrings.cpp:1026
 #, kde-format
 msgid "The file is not valid."
 msgstr "Súbor je neplatný."
 
-#: libapper/PkStrings.cpp:1015
+#: libapper/PkStrings.cpp:1028
 #, kde-format
 msgid "This function is not yet supported."
 msgstr "Táto funkcia ešte nie je podporovaná."
 
-#: libapper/PkStrings.cpp:1017
+#: libapper/PkStrings.cpp:1030
 #, kde-format
 msgid "Could not talk to packagekitd."
 msgstr "Nepodarilo sa komunikovať s packagekitd."
 
-#: libapper/PkStrings.cpp:1019
+#: libapper/PkStrings.cpp:1032
 #, kde-format
 msgid "Error talking to packagekitd."
 msgstr "Chyba komunikácie s packagekitd."
 
-#: libapper/PkStrings.cpp:1022 libapper/PkStrings.cpp:1025
+#: libapper/PkStrings.cpp:1035 libapper/PkStrings.cpp:1038
 #, kde-format
 msgid "An unknown error happened."
 msgstr "Nastala neznáma chyba."
 
-#: libapper/PkStrings.cpp:1039
+#: libapper/PkStrings.cpp:1053
 #, kde-format
 msgid "Your system is up to date"
 msgstr "Váš systém je aktuálny"
 
-#: libapper/PkStrings.cpp:1041
+#: libapper/PkStrings.cpp:1055
 #, kde-format
 msgid "You have no updates"
 msgstr "Nemáte žiadne aktualizácie"
 
-#: libapper/PkStrings.cpp:1043
+#: libapper/PkStrings.cpp:1057
 #, kde-format
 msgid "Last check for updates was more than a month ago"
 msgstr "Posledná kontrola aktualizácií prebehla pred viac ako mesiacom"
 
-#: libapper/PkStrings.cpp:1051
+#: libapper/PkStrings.cpp:1065
 #, kde-format
 msgid "Verified %1 ago"
 msgstr "Čas od poslednej kontroly: %1"
 
-#: libapper/PkStrings.cpp:1053
+#: libapper/PkStrings.cpp:1067
 #, kde-format
 msgid "It's strongly recommended that you check for new updates now"
 msgstr "Je dôrazne odporúčané skontrolovať aktualizácie teraz"
 
-#: libapper/PkTransaction.cpp:255
+#: libapper/PkTransaction.cpp:264
 #, kde-format
 msgid ""
 "You are about to install unsigned packages that can compromise your system, "
@@ -3677,39 +3649,33 @@ msgstr ""
 "dôveryhodného zdroja.\n"
 "Naozaj chcete pokračovať v inštalácii?"
 
-#: libapper/PkTransaction.cpp:258
+#: libapper/PkTransaction.cpp:267
 #, kde-format
 msgid "Installing unsigned software"
 msgstr "Inštaluje sa nepodpísaný softvér"
 
-#: libapper/PkTransactionWidget.cpp:250 libapper/PkTransactionWidget.cpp:263
+#: libapper/PkTransactionWidget.cpp:229 libapper/PkTransactionWidget.cpp:242
 #, kde-format
 msgid "%1 (%2%)"
 msgstr "%1 (%2%)"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: libapper/PkTransactionWidget.ui:38
+#: libapper/PkTransactionWidget.ui:47
 #, kde-format
 msgid "icon"
 msgstr "ikona"
 
 #. i18n: ectx: property (text), widget (QLabel, currentL)
-#: libapper/PkTransactionWidget.ui:64
+#: libapper/PkTransactionWidget.ui:73
 #, kde-format
 msgid "Downloading Packages"
 msgstr "Preberajú sa balíky"
 
-#. i18n: ectx: property (windowTitle), widget (QWidget, RepoSig)
-#: libapper/RepoSig.cpp:52 libapper/RepoSig.ui:14
+#. i18n: ectx: property (windowTitle), widget (QDialog, RepoSig)
+#: libapper/RepoSig.ui:14
 #, kde-format
 msgid "Software signature is required"
 msgstr "Je vyžadovaný podpis softvéru"
-
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: libapper/RepoSig.ui:23
-#, kde-format
-msgid "Do you trust the origin of packages?"
-msgstr "Dôverujete pôvodu balíkov?"
 
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: libapper/RepoSig.ui:47
@@ -3735,12 +3701,18 @@ msgstr "Identifikátor podpisu užívateľa:"
 msgid "Signature identifier:"
 msgstr "Identifikátor podpisu:"
 
-#: libapper/Requirements.cpp:57
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: libapper/RepoSig.ui:147
+#, kde-format
+msgid "Do you trust the origin of packages?"
+msgstr "Dôverujete pôvodu balíkov?"
+
+#: libapper/Requirements.cpp:55
 #, kde-format
 msgid "Additional changes"
 msgstr "Ďalšie zmeny"
 
-#: libapper/Requirements.cpp:83
+#: libapper/Requirements.cpp:82
 #, kde-format
 msgid "1 package to remove"
 msgid_plural "%1 packages to remove"
@@ -3748,7 +3720,7 @@ msgstr[0] "1 balík na odstránenie"
 msgstr[1] "%1 balíky na odstránenie"
 msgstr[2] "%1 balíkov na odstránenie"
 
-#: libapper/Requirements.cpp:98
+#: libapper/Requirements.cpp:97
 #, kde-format
 msgid "1 package to downgrade"
 msgid_plural "%1 packages to downgrade"
@@ -3756,7 +3728,7 @@ msgstr[0] "1 balík na nižšiu verziu"
 msgstr[1] "%1 balíky na nižšiu verziu"
 msgstr[2] "%1 balíkov na nižšiu verziu"
 
-#: libapper/Requirements.cpp:113
+#: libapper/Requirements.cpp:112
 #, kde-format
 msgid "1 package to reinstall"
 msgid_plural "%1 packages to reinstall"
@@ -3764,7 +3736,7 @@ msgstr[0] "1 balík na reinštaláciu"
 msgstr[1] "%1 balíky na reinštaláciu"
 msgstr[2] "%1 balíkov na reinštaláciu"
 
-#: libapper/Requirements.cpp:126
+#: libapper/Requirements.cpp:125
 #, kde-format
 msgid "1 package to install"
 msgid_plural "%1 packages to install"
@@ -3772,7 +3744,7 @@ msgstr[0] "1 balík na inštaláciu"
 msgstr[1] "%1 balíky na inštaláciu"
 msgstr[2] "%1 balíkov na inštaláciu"
 
-#: libapper/Requirements.cpp:139
+#: libapper/Requirements.cpp:138
 #, kde-format
 msgid "1 package to update"
 msgid_plural "%1 packages to update"
@@ -3780,7 +3752,7 @@ msgstr[0] "1 balík na aktualizáciu"
 msgstr[1] "%1 balíky na aktualizáciu"
 msgstr[2] "%1 balíkov na aktualizáciu"
 
-#: libapper/Requirements.cpp:152
+#: libapper/Requirements.cpp:151
 #, kde-format
 msgid "1 untrusted package"
 msgid_plural "%1 untrusted packages"
@@ -3788,13 +3760,13 @@ msgstr[0] "1 nedôveryhodný balík"
 msgstr[1] "%1 nedôveryhodné balíky"
 msgstr[2] "%1 nedôveryhodných balíkov"
 
-#: libapper/Requirements.cpp:201
+#: libapper/Requirements.cpp:199
 #, kde-format
 msgctxt "how many bytes are required for download"
 msgid "Need to get %1 of archives"
 msgstr "Je potrebné prevziať %1 archívov"
 
-#: libapper/Requirements.cpp:261
+#: libapper/Requirements.cpp:258
 #, kde-format
 msgid ""
 "You are about to install unsigned packages that can compromise your system, "
@@ -3805,13 +3777,13 @@ msgstr ""
 "dôveryhodného zdroja."
 
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: libapper/Requirements.ui:31
+#: libapper/Requirements.ui:28
 #, kde-format
 msgid "Additional changes are required to complete the task"
 msgstr "Na dokončenie úlohy sú vyžadované ďalšie zmeny"
 
 #. i18n: ectx: property (text), widget (QCheckBox, confirmCB)
-#: libapper/Requirements.ui:87
+#: libapper/Requirements.ui:101
 #, kde-format
 msgid "Do not confirm when installing or updating additional packages"
 msgstr "Nepotvrdzovať pri inštalácii alebo aktualizácii ďalších balíkov"
@@ -3822,22 +3794,27 @@ msgstr "Nepotvrdzovať pri inštalácii alebo aktualizácii ďalších balíkov"
 msgid "TextLabel"
 msgstr "TextLabel"
 
-#: PkSession/main.cpp:37
+#: PkSession/main.cpp:48
 #, kde-format
 msgid "Apper PackageKit Session helper"
 msgstr "Pomocník sedenia Apper PackageKit"
 
-#: PkSession/main.cpp:41
+#: PkSession/main.cpp:51
+#, kde-format
+msgid "Daniel Nicoletti"
+msgstr "Daniel Nicoletti"
+
+#: PkSession/main.cpp:52
 #, kde-format
 msgid "Trever Fischer"
 msgstr "Trever Fischer"
 
-#: PkSession/PkInstallCatalogs.cpp:46
+#: PkSession/PkInstallCatalogs.cpp:47
 #, kde-format
 msgid "Install Packages Catalogs"
 msgstr "Inštalovať katalógy balíkov"
 
-#: PkSession/PkInstallCatalogs.cpp:65
+#: PkSession/PkInstallCatalogs.cpp:66
 #, kde-format
 msgid "You can drop more catalogs in here"
 msgstr "Sem môžete dať ďalšie katalógy"
@@ -3882,17 +3859,17 @@ msgid ""
 "Your backend does not support any of the needed methods to install a catalog"
 msgstr "Váš backend nepodporuje žiadnu metódu potrebnú na inštaláciu katalógu"
 
-#: PkSession/PkInstallCatalogs.cpp:177
+#: PkSession/PkInstallCatalogs.cpp:178
 #, kde-format
 msgid "Catalog not found"
 msgstr "Katalóg nenájdený"
 
-#: PkSession/PkInstallCatalogs.cpp:178
+#: PkSession/PkInstallCatalogs.cpp:179
 #, kde-format
 msgid "Could not find a catalog to install"
 msgstr "Nepodarilo sa nájsť katalóg pre inštaláciu"
 
-#: PkSession/PkInstallCatalogs.cpp:185
+#: PkSession/PkInstallCatalogs.cpp:186
 #, kde-format
 msgid "Catalog %2 failed to open"
 msgid_plural "Catalogs %2 failed to open"
@@ -3900,37 +3877,37 @@ msgstr[0] "Katalóg %2 sa nepodarilo otvoriť"
 msgstr[1] "Katalógy %2 sa nepodarilo otvoriť"
 msgstr[2] "Katalógy %2 sa nepodarilo otvoriť"
 
-#: PkSession/PkInstallCatalogs.cpp:189
+#: PkSession/PkInstallCatalogs.cpp:190
 #, kde-format
 msgid "Failed to open"
 msgstr "Nepodarilo sa otvoriť"
 
-#: PkSession/PkInstallCatalogs.cpp:195
+#: PkSession/PkInstallCatalogs.cpp:196
 #, kde-format
 msgid "Catalog is Empty"
 msgstr "Katalóg je prázdny"
 
-#: PkSession/PkInstallCatalogs.cpp:196
+#: PkSession/PkInstallCatalogs.cpp:197
 #, kde-format
 msgid "Could not find any package to install in this catalog"
 msgstr "V tomto katalógu sa nepodarilo nájsť žiadny balík pre inštaláciu"
 
-#: PkSession/PkInstallFontconfigResources.cpp:41
+#: PkSession/PkInstallFontconfigResources.cpp:43
 #, kde-format
 msgid "Installs new Fonts"
 msgstr "Inštalovať nové písma"
 
-#: PkSession/PkInstallFontconfigResources.cpp:73
+#: PkSession/PkInstallFontconfigResources.cpp:74
 #, kde-format
 msgid "Could interpret request"
 msgstr "Požiadavku nebolo možné spracovať"
 
-#: PkSession/PkInstallFontconfigResources.cpp:73
+#: PkSession/PkInstallFontconfigResources.cpp:74
 #, kde-format
 msgid "Please verify if the request was valid"
 msgstr "Prosím, overte, či je požiadavka platná"
 
-#: PkSession/PkInstallFontconfigResources.cpp:107
+#: PkSession/PkInstallFontconfigResources.cpp:108
 #, kde-format
 msgid ""
 "An additional font is required to view this document correctly.\n"
@@ -3948,7 +3925,7 @@ msgstr[2] ""
 "Pre správne zobrazenie tohoto dokumentu sú vyžadované ďalšie písma. Chcete "
 "vyhľadať vhodné balíky teraz?"
 
-#: PkSession/PkInstallFontconfigResources.cpp:117
+#: PkSession/PkInstallFontconfigResources.cpp:118
 #, kde-format
 msgid "A program wants to install a font"
 msgid_plural "A program wants to install fonts"
@@ -3956,7 +3933,7 @@ msgstr[0] "Program vyžaduje inštaláciu písma"
 msgstr[1] "Program chce nainštalovať písma"
 msgstr[2] "Program chce nainštalovať písma"
 
-#: PkSession/PkInstallFontconfigResources.cpp:121
+#: PkSession/PkInstallFontconfigResources.cpp:122
 #, kde-format
 msgid "The application %2 wants to install a font"
 msgid_plural "The application %2 wants to install fonts"
@@ -3964,18 +3941,18 @@ msgstr[0] "Aplikácia %2 vyžaduje inštaláciu písma"
 msgstr[1] "Aplikácia %2 vyžaduje inštaláciu písiem"
 msgstr[2] "Aplikácia %2 vyžaduje inštaláciu písiem"
 
-#: PkSession/PkInstallFontconfigResources.cpp:149
-#: PkSession/PkInstallFontconfigResources.cpp:158
+#: PkSession/PkInstallFontconfigResources.cpp:148
+#: PkSession/PkInstallFontconfigResources.cpp:157
 #, kde-format
 msgid "Failed to find font"
 msgstr "Nepodarilo sa nájsť písmo"
 
-#: PkSession/PkInstallFontconfigResources.cpp:151
+#: PkSession/PkInstallFontconfigResources.cpp:150
 #, kde-format
 msgid "No new fonts could be found for this document"
 msgstr "Nie je možné nájsť žiadne nové písma pre tento dokument"
 
-#: PkSession/PkInstallFontconfigResources.cpp:160
+#: PkSession/PkInstallFontconfigResources.cpp:159
 #, kde-format
 msgid "Failed to search for provides"
 msgstr "Nepodarilo sa nájsť poskytované informácie"
@@ -3985,7 +3962,7 @@ msgstr "Nepodarilo sa nájsť poskytované informácie"
 msgid "Install GStreamer Resources"
 msgstr "Inštalovať zdroje GStreamera"
 
-#: PkSession/PkInstallGStreamerResources.cpp:69
+#: PkSession/PkInstallGStreamerResources.cpp:68
 #, kde-format
 msgid "The following plugin is required. Do you want to search for this now?"
 msgid_plural ""
@@ -3994,7 +3971,7 @@ msgstr[0] "Je požadovaný nasledujúci modul. Chcete ho teraz vyhľadať?"
 msgstr[1] "Sú požadované nasledujúce moduly. Chcete ich teraz vyhľadať?"
 msgstr[2] "Sú požadované nasledujúce moduly. Chcete ich teraz vyhľadať?"
 
-#: PkSession/PkInstallGStreamerResources.cpp:81
+#: PkSession/PkInstallGStreamerResources.cpp:80
 #, kde-format
 msgid "A program requires an additional plugin to decode this file"
 msgid_plural "A program requires additional plugins to decode this file"
@@ -4002,7 +3979,7 @@ msgstr[0] "Program vyžaduje ďalší modul pre dekódovanie tohto súboru"
 msgstr[1] "Program vyžaduje ďalšie moduly pre dekódovanie tohto súboru"
 msgstr[2] "Program vyžaduje ďalšie moduly pre dekódovanie tohto súboru"
 
-#: PkSession/PkInstallGStreamerResources.cpp:86
+#: PkSession/PkInstallGStreamerResources.cpp:85
 #, kde-format
 msgid "A program requires an additional plugin to encode this file"
 msgid_plural "A program requires additional plugins to encode this file"
@@ -4010,7 +3987,7 @@ msgstr[0] "Program vyžaduje ďalší modul pre kódovanie tohto súboru"
 msgstr[1] "Program vyžaduje ďalšie moduly pre kódovanie tohto súboru"
 msgstr[2] "Program vyžaduje ďalšie moduly pre kódovanie tohto súboru"
 
-#: PkSession/PkInstallGStreamerResources.cpp:91
+#: PkSession/PkInstallGStreamerResources.cpp:90
 #, kde-format
 msgid "A program requires an additional plugin for this operation"
 msgid_plural "A program requires additional plugins for this operation"
@@ -4018,7 +3995,7 @@ msgstr[0] "Program vyžaduje ďalší modul pre túto operáciu"
 msgstr[1] "Program vyžaduje ďalšie moduly pre túto operáciu"
 msgstr[2] "Program vyžaduje ďalšie moduly pre túto operáciu"
 
-#: PkSession/PkInstallGStreamerResources.cpp:98
+#: PkSession/PkInstallGStreamerResources.cpp:97
 #, kde-format
 msgid "%2 requires an additional plugin to decode this file"
 msgid_plural "%2 requires additional plugins to decode this file"
@@ -4026,7 +4003,7 @@ msgstr[0] "%2 vyžaduje ďalší modul pre dekódovanie tohto súboru"
 msgstr[1] "%2 vyžaduje ďalšie moduly pre dekódovanie tohto súboru"
 msgstr[2] "%2 vyžaduje ďalšie moduly pre dekódovanie tohto súboru"
 
-#: PkSession/PkInstallGStreamerResources.cpp:104
+#: PkSession/PkInstallGStreamerResources.cpp:103
 #, kde-format
 msgid "%2 requires an additional plugin to encode this file"
 msgid_plural "%2 requires additional plugins to encode this file"
@@ -4034,7 +4011,7 @@ msgstr[0] "%2 vyžaduje ďalší modul pre kódovanie tohto súboru"
 msgstr[1] "%2 vyžaduje ďalšie moduly pre kódovanie tohto súboru"
 msgstr[2] "%2 vyžaduje ďalšie moduly pre kódovanie tohto súboru"
 
-#: PkSession/PkInstallGStreamerResources.cpp:110
+#: PkSession/PkInstallGStreamerResources.cpp:109
 #, kde-format
 msgid "%2 requires an additional plugin for this operation"
 msgid_plural "%2 requires additional plugins for this operation"
@@ -4042,12 +4019,12 @@ msgstr[0] "%2 vyžaduje ďalší modul pre túto operáciu"
 msgstr[1] "%2 vyžaduje ďalšie moduly pre túto operáciu"
 msgstr[2] "%2 vyžaduje ďalšie moduly pre túto operáciu"
 
-#: PkSession/PkInstallGStreamerResources.cpp:142
+#: PkSession/PkInstallGStreamerResources.cpp:139
 #, kde-format
 msgid "No results found"
 msgstr "Neboli nájdené žiadne výsledky"
 
-#: PkSession/PkInstallGStreamerResources.cpp:144
+#: PkSession/PkInstallGStreamerResources.cpp:141
 #, kde-format
 msgid "Could not find plugin in any configured software source"
 msgstr "Modul sa nepodarilo nájsť v žiadnom nastavenom zdroji softvéru"
@@ -4057,7 +4034,7 @@ msgstr "Modul sa nepodarilo nájsť v žiadnom nastavenom zdroji softvéru"
 msgid "Install Support for File Types"
 msgstr "Inštalovať podporu pre typy súborov"
 
-#: PkSession/PkInstallMimeTypes.cpp:52
+#: PkSession/PkInstallMimeTypes.cpp:51
 #, kde-format
 msgid "Do you want to search for a program that can open this file type?"
 msgid_plural ""
@@ -4066,12 +4043,12 @@ msgstr[0] "Chcete vyhľadať program, ktorý dokáže otvoriť tento typ súboru
 msgstr[1] "Chcete vyhľadať program, ktorý dokáže otvoriť tieto typy súborov?"
 msgstr[2] "Chcete vyhľadať program, ktorý dokáže otvoriť tieto typy súborov?"
 
-#: PkSession/PkInstallMimeTypes.cpp:57
+#: PkSession/PkInstallMimeTypes.cpp:56
 #, kde-format
 msgid "No valid file types were provided"
 msgstr "Neboli poskytnuté žiadne platné typy súborov"
 
-#: PkSession/PkInstallMimeTypes.cpp:64
+#: PkSession/PkInstallMimeTypes.cpp:63
 #, kde-format
 msgid "A program is requiring support to open this kind of files"
 msgid_plural "A program is requiring support to open these kinds of files"
@@ -4079,7 +4056,7 @@ msgstr[0] "Program vyžaduje podporu pre otvorenie tohoto druhu súborov"
 msgstr[1] "Program vyžaduje podporu pre otvorenie týchto druhov súborov"
 msgstr[2] "Program vyžaduje podporu pre otvorenie týchto druhov súborov"
 
-#: PkSession/PkInstallMimeTypes.cpp:68
+#: PkSession/PkInstallMimeTypes.cpp:67
 #, kde-format
 msgid "The application %2 is requiring support to open this kind of files"
 msgid_plural ""
@@ -4088,34 +4065,44 @@ msgstr[0] "Aplikácia %2 vyžaduje podporu pre otvorenie tohoto druhu súborov"
 msgstr[1] "Aplikácia %2 vyžaduje podporu pre otvorenie týchto druhov súborov"
 msgstr[2] "Aplikácia %2 vyžaduje podporu pre otvorenie týchto druhov súborov"
 
-#: PkSession/PkInstallMimeTypes.cpp:97
+#: PkSession/PkInstallMimeTypes.cpp:94
 #, kde-format
 msgid "Could not find software"
 msgstr "Nepodarilo sa nájsť softvér"
 
-#: PkSession/PkInstallMimeTypes.cpp:99
+#: PkSession/PkInstallMimeTypes.cpp:96
 #, kde-format
 msgid "No new applications can be found to handle this type of file"
 msgstr "Nebola nájdená žiadna nová aplikácia pre daný typ súboru"
 
-#: PkSession/PkInstallPackageFiles.cpp:38
+#: PkSession/PkInstallPackageFiles.cpp:40
 #, kde-format
 msgid "Install Packages Files"
 msgstr "Inštalovať súbory balíkov"
 
-#: PkSession/PkInstallPackageFiles.cpp:42
+#: PkSession/PkInstallPackageFiles.cpp:44
 #: PkSession/PkRemovePackageByFiles.cpp:45
 #, kde-format
 msgid "You can drop more files in here"
 msgstr "Sem môžete dať ďalšie súbory"
 
-#: PkSession/PkInstallPackageFiles.cpp:68
-#: PkSession/PkRemovePackageByFiles.cpp:66
+#: PkSession/PkInstallPackageFiles.cpp:53
+#, kde-format
+msgid "Not Supported"
+msgstr "Nepodporované"
+
+#: PkSession/PkInstallPackageFiles.cpp:54
+#, kde-format
+msgid "Your current backend does not support installing files"
+msgstr "Aktuálny backend nepodporuje inštaláciu súborov"
+
+#: PkSession/PkInstallPackageFiles.cpp:69
+#: PkSession/PkRemovePackageByFiles.cpp:65
 #, kde-format
 msgid "No supported files were provided"
 msgstr "Neboli poskytnuté žiadne podporované súbory"
 
-#: PkSession/PkInstallPackageFiles.cpp:70
+#: PkSession/PkInstallPackageFiles.cpp:71
 #, kde-format
 msgid "Press <i>Continue</i> if you want to install this file"
 msgid_plural "Press <i>Continue</i> if you want to install these files"
@@ -4123,8 +4110,8 @@ msgstr[0] "Ak chcete inštalovať tento súbor, stlačte <i>Pokračovať</i>"
 msgstr[1] "Ak chcete inštalovať tieto súbory, stlačte <i>Pokračovať</i>"
 msgstr[2] "Ak chcete inštalovať tieto súbory, stlačte <i>Pokračovať</i>"
 
-#: PkSession/PkInstallPackageFiles.cpp:79
-#: PkSession/PkInstallPackageNames.cpp:73
+#: PkSession/PkInstallPackageFiles.cpp:80
+#: PkSession/PkInstallPackageNames.cpp:72
 #, kde-format
 msgid "An application wants to install a package"
 msgid_plural "An application wants to install packages"
@@ -4132,8 +4119,8 @@ msgstr[0] "Aplikácia chce inštalovať balík"
 msgstr[1] "Aplikácia chce inštalovať balíky"
 msgstr[2] "Aplikácia chce inštalovať balíky"
 
-#: PkSession/PkInstallPackageFiles.cpp:83
-#: PkSession/PkInstallPackageNames.cpp:77
+#: PkSession/PkInstallPackageFiles.cpp:84
+#: PkSession/PkInstallPackageNames.cpp:76
 #, kde-format
 msgid "The application <i>%2</i> wants to install a package"
 msgid_plural "The application <i>%2</i> wants to install packages"
@@ -4170,12 +4157,12 @@ msgstr "Súbory nie je možné nainštalovať"
 msgid "Install Packages by Name"
 msgstr "Inštalovať balíky podľa názvu"
 
-#: PkSession/PkInstallPackageNames.cpp:60
+#: PkSession/PkInstallPackageNames.cpp:59
 #, kde-format
 msgid "No package names were provided"
 msgstr "Neboli poskytnuté žiadne názvy balíkov"
 
-#: PkSession/PkInstallPackageNames.cpp:63
+#: PkSession/PkInstallPackageNames.cpp:62
 #, kde-format
 msgid "Do you want to search for and install this package now?"
 msgid_plural "Do you want to search for and install these packages now?"
@@ -4183,12 +4170,12 @@ msgstr[0] "Želáte si vyhľadať a inštalovať tento balík teraz?"
 msgstr[1] "Želáte si vyhľadať a inštalovať tieto balíky teraz?"
 msgstr[2] "Želáte si vyhľadať a inštalovať tieto balíky teraz?"
 
-#: PkSession/PkInstallPackageNames.cpp:104
+#: PkSession/PkInstallPackageNames.cpp:101
 #, kde-format
 msgid "Failed to install packages"
 msgstr "Nepodarilo sa nainštalovať balíky"
 
-#: PkSession/PkInstallPackageNames.cpp:105
+#: PkSession/PkInstallPackageNames.cpp:102
 #, kde-format
 msgid "The package %2 is already installed"
 msgid_plural "The packages %2 are already installed"
@@ -4196,13 +4183,13 @@ msgstr[0] "balík %2 je už nainštalovaný"
 msgstr[1] "balíky %2 sú už nainštalované"
 msgstr[2] "balíky %2 sú už nainštalované"
 
-#: PkSession/PkInstallPackageNames.cpp:113
-#: PkSession/PkRemovePackageByFiles.cpp:143 PkSession/PkSearchFile.cpp:82
+#: PkSession/PkInstallPackageNames.cpp:110
+#: PkSession/PkRemovePackageByFiles.cpp:140 PkSession/PkSearchFile.cpp:82
 #, kde-format
 msgid "Could not find %1"
 msgstr "Nepodarilo sa nájsť %1"
 
-#: PkSession/PkInstallPackageNames.cpp:114
+#: PkSession/PkInstallPackageNames.cpp:111
 #, kde-format
 msgid "The package could not be found in any software source"
 msgid_plural "The packages could not be found in any software source"
@@ -4215,22 +4202,22 @@ msgstr[2] "balíky sa nepodarilo nájsť v žiadnom zdroji softvéru"
 msgid "Install Plasma Resources"
 msgstr "Inštalovať zdroje plazmy"
 
-#: PkSession/PkInstallPlasmaResources.cpp:54
+#: PkSession/PkInstallPlasmaResources.cpp:53
 #, kde-format
 msgid "%1 data engine"
 msgstr "Dátový nástroj %1"
 
-#: PkSession/PkInstallPlasmaResources.cpp:56
+#: PkSession/PkInstallPlasmaResources.cpp:55
 #, kde-format
 msgid "%1 script engine"
 msgstr "Skriptovací nástroj %1"
 
-#: PkSession/PkInstallPlasmaResources.cpp:68
+#: PkSession/PkInstallPlasmaResources.cpp:67
 #, kde-format
 msgid "No supported resources were provided"
 msgstr "Neboli poskytnuté žiadne podporované zdroje"
 
-#: PkSession/PkInstallPlasmaResources.cpp:70
+#: PkSession/PkInstallPlasmaResources.cpp:69
 #, kde-format
 msgid "The following service is required. Do you want to search for this now?"
 msgid_plural ""
@@ -4239,7 +4226,7 @@ msgstr[0] "Nasledujúca služba je vyžadovaná. Chcete ju vyhľadať teraz?"
 msgstr[1] "Nasledujúce služby sú vyžadované. Chcete ich vyhľadať teraz?"
 msgstr[2] "Nasledujúce služby sú vyžadované. Chcete ich vyhľadať teraz?"
 
-#: PkSession/PkInstallPlasmaResources.cpp:79
+#: PkSession/PkInstallPlasmaResources.cpp:78
 #, kde-format
 msgid "Plasma requires an additional service for this operation"
 msgid_plural "Plasma requires additional services for this operation"
@@ -4247,12 +4234,12 @@ msgstr[0] "Plazma vyžaduje ďalšiu službu pre túto operáciu"
 msgstr[1] "Plazma vyžaduje ďalšie služby pre túto operáciu"
 msgstr[2] "Plazma vyžaduje ďalšie služby pre túto operáciu"
 
-#: PkSession/PkInstallPlasmaResources.cpp:106
+#: PkSession/PkInstallPlasmaResources.cpp:103
 #, kde-format
 msgid "Failed to search for Plasma service"
 msgstr "Nepodarilo sa nájsť službu plazmy"
 
-#: PkSession/PkInstallPlasmaResources.cpp:109
+#: PkSession/PkInstallPlasmaResources.cpp:106
 #, kde-format
 msgid "Could not find service in any configured software source"
 msgstr "Službu sa nepodarilo nájsť v žiadnom nastavenom zdroji softvéru"
@@ -4262,12 +4249,12 @@ msgstr "Službu sa nepodarilo nájsť v žiadnom nastavenom zdroji softvéru"
 msgid "Install Printer Drivers"
 msgstr "Inštalovať ovládače tlačiarne"
 
-#: PkSession/PkInstallPrinterDrivers.cpp:84
+#: PkSession/PkInstallPrinterDrivers.cpp:82
 #, kde-format
 msgid "Failed to search for printer driver"
 msgstr "Nepodarilo sa nájsť ovládač tlačiarne"
 
-#: PkSession/PkInstallPrinterDrivers.cpp:85
+#: PkSession/PkInstallPrinterDrivers.cpp:83
 #, kde-format
 msgid "Could not find printer driver in any configured software source"
 msgstr ""
@@ -4278,12 +4265,12 @@ msgstr ""
 msgid "Install Packages that Provides Files"
 msgstr "Inštalovať balíky, ktoré poskytujú súbory"
 
-#: PkSession/PkInstallProvideFiles.cpp:51
+#: PkSession/PkInstallProvideFiles.cpp:50
 #, kde-format
 msgid "No files were provided"
 msgstr "Neboli poskytnuté žiadne súbory"
 
-#: PkSession/PkInstallProvideFiles.cpp:54
+#: PkSession/PkInstallProvideFiles.cpp:53
 #, kde-format
 msgid "Do you want to search for this now?"
 msgid_plural "Do you want to search for these now?"
@@ -4291,7 +4278,7 @@ msgstr[0] "Prajete si ho teraz vyhľadať?"
 msgstr[1] "Prajete si ich teraz vyhľadať?"
 msgstr[2] "Prajete si ich teraz vyhľadať?"
 
-#: PkSession/PkInstallProvideFiles.cpp:64
+#: PkSession/PkInstallProvideFiles.cpp:63
 #, kde-format
 msgid "A program wants to install a file"
 msgid_plural "A program wants to install files"
@@ -4299,7 +4286,7 @@ msgstr[0] "Program chce nainštalovať súbor"
 msgstr[1] "Program chce nainštalovať súbory"
 msgstr[2] "Program chce nainštalovať súbory"
 
-#: PkSession/PkInstallProvideFiles.cpp:68
+#: PkSession/PkInstallProvideFiles.cpp:67
 #, kde-format
 msgid "The application %2 is asking to install a file"
 msgid_plural "The application %2 is asking to install files"
@@ -4307,22 +4294,22 @@ msgstr[0] "Aplikácia %2 požaduje nainštalovať súbor"
 msgstr[1] "Aplikácia %2 požaduje nainštalovať súbory"
 msgstr[2] "Aplikácia %2 požaduje nainštalovať súbory"
 
-#: PkSession/PkInstallProvideFiles.cpp:96
+#: PkSession/PkInstallProvideFiles.cpp:93
 #, kde-format
 msgid "Failed to install file"
 msgstr "Inštalácia súboru zlyhala"
 
-#: PkSession/PkInstallProvideFiles.cpp:97
+#: PkSession/PkInstallProvideFiles.cpp:94
 #, kde-format
 msgid "The %1 package already provides this file"
 msgstr "balík %1 už poskytuje tento súbor"
 
-#: PkSession/PkInstallProvideFiles.cpp:103
+#: PkSession/PkInstallProvideFiles.cpp:100
 #, kde-format
 msgid "Failed to find package"
 msgstr "Nepodarilo sa nájsť balík"
 
-#: PkSession/PkInstallProvideFiles.cpp:104
+#: PkSession/PkInstallProvideFiles.cpp:101
 #, kde-format
 msgid "The file could not be found in any packages"
 msgid_plural "The files could not be found in any packages"
@@ -4330,7 +4317,7 @@ msgstr[0] "Súbor sa nepodarilo nájsť v žiadnych balíkoch"
 msgstr[1] "Súbory sa nepodarilo nájsť v žiadnych balíkoch"
 msgstr[2] "Súbory sa nepodarilo nájsť v žiadnych balíkoch"
 
-#: PkSession/PkIsInstalled.cpp:38
+#: PkSession/PkIsInstalled.cpp:40
 #, kde-format
 msgid "Querying if a Package is Installed"
 msgstr "Požiadavka, či je balík nainštalovaný"
@@ -4350,7 +4337,7 @@ msgstr "Nastala neznáma chyba"
 msgid "Remove Packages that Provides Files"
 msgstr "Odstrániť balíky, ktoré poskytujú súbory"
 
-#: PkSession/PkRemovePackageByFiles.cpp:69
+#: PkSession/PkRemovePackageByFiles.cpp:68
 #, kde-format
 msgid "Do you want to remove the following application?"
 msgid_plural "Do you want to remove the following applications?"
@@ -4358,7 +4345,7 @@ msgstr[0] "Chcete odstrániť nasledujúcu aplikáciu?"
 msgstr[1] "Chcete odstrániť nasledujúce aplikácie?"
 msgstr[2] "Chcete odstrániť nasledujúce aplikácie?"
 
-#: PkSession/PkRemovePackageByFiles.cpp:73
+#: PkSession/PkRemovePackageByFiles.cpp:72
 #, kde-format
 msgid "Do you want to search for a package providing this file?"
 msgid_plural "Do you want to search for a package providing these files?"
@@ -4366,7 +4353,7 @@ msgstr[0] "Chcete vyhľadať balík poskytujúci tento súbor?"
 msgstr[1] "Chcete vyhľadať balík poskytujúci tieto súbory?"
 msgstr[2] "Chcete vyhľadať balík poskytujúci tieto súbory?"
 
-#: PkSession/PkRemovePackageByFiles.cpp:84
+#: PkSession/PkRemovePackageByFiles.cpp:83
 #, kde-format
 msgid "An application is asking to remove an application"
 msgid_plural "An application is asking to remove applications"
@@ -4374,7 +4361,7 @@ msgstr[0] "Aplikácia požaduje odstrániť aplikáciu"
 msgstr[1] "Aplikácia požaduje odstrániť aplikácie"
 msgstr[2] "Aplikácia požaduje odstrániť aplikácie"
 
-#: PkSession/PkRemovePackageByFiles.cpp:88
+#: PkSession/PkRemovePackageByFiles.cpp:87
 #, kde-format
 msgid "An application is asking to remove a file"
 msgid_plural "An application is asking to remove files"
@@ -4382,7 +4369,7 @@ msgstr[0] "Aplikácia požaduje odstrániť súbor"
 msgstr[1] "Aplikácia požaduje odstrániť súbory"
 msgstr[2] "Aplikácia požaduje odstrániť súbory"
 
-#: PkSession/PkRemovePackageByFiles.cpp:94
+#: PkSession/PkRemovePackageByFiles.cpp:93
 #, kde-format
 msgid "The application <i>%2</i> is asking to remove an application"
 msgid_plural "The application <i>%2</i> is asking to remove applications"
@@ -4390,7 +4377,7 @@ msgstr[0] "Aplikácia <i>%2</i> požaduje odstrániť aplikáciu"
 msgstr[1] "Aplikácia <i>%2</i> požaduje odstrániť aplikácie"
 msgstr[2] "Aplikácia <i>%2</i> požaduje odstrániť aplikácie"
 
-#: PkSession/PkRemovePackageByFiles.cpp:99
+#: PkSession/PkRemovePackageByFiles.cpp:98
 #, kde-format
 msgid "The application <i>%2</i> is asking to remove a file"
 msgid_plural "The application <i>%2</i> is asking to remove files"
@@ -4398,12 +4385,12 @@ msgstr[0] "Aplikácia <i>%2</i> požaduje odstrániť súbor"
 msgstr[1] "Aplikácia <i>%2</i> požaduje odstrániť súbory"
 msgstr[2] "Aplikácia <i>%2</i> požaduje odstrániť súbory"
 
-#: PkSession/PkRemovePackageByFiles.cpp:105
+#: PkSession/PkRemovePackageByFiles.cpp:104
 #, kde-format
 msgid "No application was found"
 msgstr "Aplikácia nebola nájdená"
 
-#: PkSession/PkRemovePackageByFiles.cpp:144
+#: PkSession/PkRemovePackageByFiles.cpp:141
 #, kde-format
 msgid "The file could not be found in any installed package"
 msgid_plural "The files could not be found in any installed package"
@@ -4411,7 +4398,7 @@ msgstr[0] "Súbor sa nepodarilo nájsť v žiadnom nainštalovanom balíku"
 msgstr[1] "Súbory sa nepodarilo sa nájsť v žiadnom nainštalovanom balíku"
 msgstr[2] "Súbory sa nepodarilo sa nájsť v žiadnom nainštalovanom balíku"
 
-#: PkSession/PkSearchFile.cpp:40
+#: PkSession/PkSearchFile.cpp:42
 #, kde-format
 msgid "Search Packages that Provides Files"
 msgstr "Vyhľadať balíky, ktoré poskytujú súbory"
@@ -4429,44 +4416,44 @@ msgstr[0] "Bol nájdený nasledujúci balík"
 msgstr[1] "Boli nájdené nasledujúce balíky"
 msgstr[2] "Boli nájdené nasledujúce balíky"
 
-#: PkSession/SessionTask.cpp:368
+#: PkSession/SessionTask.cpp:374
 #, kde-format
 msgid "There are no packages to Install or Remove"
 msgstr "Nie sú žiadne balíky pre inštaláciu či odstránenie"
 
-#: PkSession/SessionTask.cpp:369
+#: PkSession/SessionTask.cpp:375
 #, kde-format
 msgid "This action should not happen"
 msgstr "Toto by sa nemalo stať"
 
-#: PkSession/SessionTask.cpp:400
+#: PkSession/SessionTask.cpp:404
 #, kde-format
 msgid "Could not find"
 msgstr "Nepodarilo sa nájsť"
 
-#: PkSession/SessionTask.cpp:401 PkSession/SessionTask.cpp:410
+#: PkSession/SessionTask.cpp:405 PkSession/SessionTask.cpp:414
 #, kde-format
 msgid "No packages were found that meet the request"
 msgstr "Neboli nájdené žiadne balíky, ktoré by spĺňali požiadavky"
 
-#: PkSession/SessionTask.cpp:409
+#: PkSession/SessionTask.cpp:413
 #, kde-format
 msgid "Failed to find"
 msgstr "Nepodarilo sa nájsť"
 
 #. i18n("Failed to commit transaction"),
-#. PkStrings::errorMessage(m_pkTransaction->error()));
-#: PkSession/SessionTask.cpp:431
+#. PkStrings::errsearchFailedorMessage(m_pkTransaction->error()));
+#: PkSession/SessionTask.cpp:434
 #, kde-format
 msgid "Transaction did not finish with success"
 msgstr "Transakcia neskončila úspešne"
 
-#: PkSession/SessionTask.cpp:437
+#: PkSession/SessionTask.cpp:440
 #, kde-format
 msgid "Task completed"
 msgstr "Úloha dokončená"
 
-#: PkSession/SessionTask.cpp:437
+#: PkSession/SessionTask.cpp:440
 #, kde-format
 msgid "All operations were committed successfully"
 msgstr "Všetky operácie boli úspešne dokončené"

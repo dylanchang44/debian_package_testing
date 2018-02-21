@@ -21,9 +21,12 @@
 #include "PkStrings.h"
 
 #include <KLocalizedString>
-#include <KGlobal>
+#include <KFormat>
+//#include <KGlobal>
 
-#include <KDebug>
+#include <QLoggingCategory>
+
+Q_DECLARE_LOGGING_CATEGORY(APPER_LIB)
 
 using namespace PackageKit;
 
@@ -53,18 +56,21 @@ QString PkStrings::status(Transaction::Status status, uint speed, qulonglong dow
                      "Removing packages");
     case Transaction::StatusDownload:
         if (speed != 0 && downloadRemaining != 0) {
+            KFormat f;
             return i18nc("transaction state, downloading package files",
                          "Downloading at %1/s, %2 remaining",
-                         KGlobal::locale()->formatByteSize(speed),
-                         KGlobal::locale()->formatByteSize(downloadRemaining));
+                         f.formatByteSize(speed),
+                         f.formatByteSize(downloadRemaining));
         } else if (speed != 0 && downloadRemaining == 0) {
+            KFormat f;
             return i18nc("transaction state, downloading package files",
                          "Downloading at %1/s",
-                         KGlobal::locale()->formatByteSize(speed));
+                         f.formatByteSize(speed));
         } else if (speed == 0 && downloadRemaining != 0) {
+            KFormat f;
             return i18nc("transaction state, downloading package files",
                          "Downloading, %1 remaining",
-                         KGlobal::locale()->formatByteSize(downloadRemaining));
+                         f.formatByteSize(downloadRemaining));
         } else {
             return i18nc("transaction state, downloading package files",
                          "Downloading");
@@ -153,8 +159,11 @@ QString PkStrings::status(Transaction::Status status, uint speed, qulonglong dow
     case Transaction::StatusCopyFiles :
         return i18nc("we are copying package files to prepare to install",
                      "Copying files");
+    case Transaction::StatusRunHook :
+        return i18nc("we are running hooks pre or post transaction",
+                     "Running hooks");
     }
-    kWarning() << "status unrecognised: " << status;
+    qCWarning(APPER_LIB) << "status unrecognised: " << status;
     return QString();
 }
 
@@ -179,7 +188,7 @@ QString PkStrings::statusPast(Transaction::Status status)
     case Transaction::StatusObsolete:
         return i18nc("The action of the package, in past tense", "Obsoleted");
     default : // In this case we don't want to map all enums
-        kWarning() << "status unrecognised: " << status;
+        qCWarning(APPER_LIB) << "status unrecognised: " << status;
         return QString();
     }
 }
@@ -271,8 +280,10 @@ QString PkStrings::action(Transaction::Role role, Transaction::TransactionFlags 
         return i18nc("The role of the transaction, in present tense", "Repairing system");
     case Transaction::RoleRepoRemove:
         return i18nc("The role of the transaction, in present tense", "Removing repository");
+    case Transaction::RoleUpgradeSystem:
+        return i18nc("The role of the transaction, in present tense", "Upgrading the system");
     }
-    kWarning() << "action unrecognised: " << role;
+    qCWarning(APPER_LIB) << "action unrecognised: " << role;
     return QString();
 }
 
@@ -348,8 +359,10 @@ QString PkStrings::actionPast(Transaction::Role action)
         return i18nc("The role of the transaction, in past tense", "Repaired system");
     case Transaction::RoleRepoRemove:
         return i18nc("The role of the transaction, in past tense", "Removed repository");
+    case Transaction::RoleUpgradeSystem:
+        return i18nc("The role of the transaction, in past tense", "Upgraded the system");
     }
-    kWarning() << "action unrecognised: " << action;
+    qCWarning(APPER_LIB) << "action unrecognised: " << action;
     return QString();
 }
 
@@ -375,7 +388,7 @@ QString PkStrings::infoPresent(Transaction::Info info)
     case Transaction::InfoDecompressing :
         return i18n("Decompressing");
     default :
-        kWarning() << "info unrecognised:" << info;
+        qCWarning(APPER_LIB) << "info unrecognised:" << info;
         return QString();
     }
 }
@@ -402,7 +415,7 @@ QString PkStrings::infoPast(Transaction::Info info)
     case Transaction::InfoDecompressing :
         return i18n("Decompressed");
     default :
-        kWarning() << "info unrecognised: " << info;
+        qCWarning(APPER_LIB) << "info unrecognised: " << info;
         return QString();
     }
 }
@@ -547,7 +560,7 @@ QString PkStrings::error(Transaction::Error error)
     case Transaction::ErrorUnknown:
         return i18n("Unknown error");
     }
-    kWarning() << "error unrecognised: " << error;
+    qCWarning(APPER_LIB) << "error unrecognised: " << error;
     return QString();
 }
 
@@ -731,7 +744,7 @@ QString PkStrings::errorMessage(Transaction::Error error)
         return i18n("Unknown error, please report a bug.\n"
                     "More information is available in the detailed report.");
     }
-    kWarning() << "error unrecognised: " << error;
+    qCWarning(APPER_LIB) << "error unrecognised: " << error;
     return QString();
 }
 
@@ -809,7 +822,7 @@ QString PkStrings::groups(Transaction::Group group)
     case Transaction::GroupUnknown:
         return i18nc("The group type", "Unknown group");
     }
-    kWarning() << "group unrecognised: " << group;
+    qCWarning(APPER_LIB) << "group unrecognised: " << group;
     return QString();
 }
 
@@ -840,7 +853,7 @@ QString PkStrings::info(int state)
     case Transaction::InfoUnknown:
         return i18nc("The type of update", "Unknown update");
     default : // In this case we don't want to map all enums
-        kWarning() << "info unrecognised: " << state;
+        qCWarning(APPER_LIB) << "info unrecognised: " << state;
         return QString();
     }
 }
@@ -887,10 +900,10 @@ QString PkStrings::restartTypeFuture(Transaction::Restart value)
     case Transaction::RestartSecuritySystem:
         return i18n("A restart will be required due to a security update.");
     case Transaction::RestartUnknown:
-        kWarning() << "restartTypeFuture(Transaction::RestartUnknown)";
+        qCWarning(APPER_LIB) << "restartTypeFuture(Transaction::RestartUnknown)";
         return QString();
     }
-    kWarning() << "restart unrecognised: " << value;
+    qCWarning(APPER_LIB) << "restart unrecognised: " << value;
     return QString();
 }
 
@@ -910,10 +923,10 @@ QString PkStrings::restartType(Transaction::Restart value)
     case Transaction::RestartSecuritySystem:
         return i18n("A restart is required to remain secure.");
     case Transaction::RestartUnknown:
-        kWarning() << "restartType(Transaction::RestartUnknown)";
+        qCWarning(APPER_LIB) << "restartType(Transaction::RestartUnknown)";
         return QString();
     }
-    kWarning() << "restart unrecognised: " << value;
+    qCWarning(APPER_LIB) << "restart unrecognised: " << value;
     return QString();
 }
 
@@ -927,10 +940,10 @@ QString PkStrings::updateState(Transaction::UpdateState value)
     case Transaction::UpdateStateTesting:
         return i18n("Testing");
     case Transaction::UpdateStateUnknown:
-        kWarning() << "updateState(Transaction::UnknownUpdateState)";
+        qCWarning(APPER_LIB) << "updateState(Transaction::UnknownUpdateState)";
         return QString();
     }
-    kWarning() << "value unrecognised: " << value;
+    qCWarning(APPER_LIB) << "value unrecognised: " << value;
     return QString();
 }
 
@@ -946,52 +959,52 @@ QString PkStrings::mediaMessage(Transaction::MediaType value, const QString &tex
     case Transaction::MediaTypeUnknown:
         return i18n("Please insert the medium labeled '%1', and press continue.", text);
     }
-    kWarning() << "value unrecognised: " << value;
+    qCWarning(APPER_LIB) << "value unrecognised: " << value;
     return i18n("Please insert the medium labeled '%1', and press continue.", text);
 }
 
-QString PkStrings::message(Transaction::Message value)
-{
-    switch (value) {
-    case Transaction::MessageBrokenMirror :
-        return i18n("A mirror is possibly broken");
-    case Transaction::MessageConnectionRefused :
-        return i18n("The connection was refused");
-    case Transaction::MessageParameterInvalid :
-        return i18n("The parameter was invalid");
-    case Transaction::MessagePriorityInvalid :
-        return i18n("The priority was invalid");
-    case Transaction::MessageBackendError :
-        return i18n("Backend warning");
-    case Transaction::MessageDaemonError :
-        return i18n("Daemon warning");
-    case Transaction::MessageCacheBeingRebuilt :
-        return i18n("The package list cache is being rebuilt");
-    case Transaction::MessageUntrustedPackage :
-        return i18n("An untrusted package was installed");
-    case Transaction::MessageNewerPackageExists :
-        return i18n("A newer package exists");
-    case Transaction::MessageCouldNotFindPackage :
-        return i18n("Could not find package");
-    case Transaction::MessageConfigFilesChanged :
-        return i18n("Configuration files were changed");
-    case Transaction::MessagePackageAlreadyInstalled :
-        return i18n("Package is already installed");
-    case Transaction::MessageAutoremoveIgnored :
-        return i18n("Automatic cleanup is being ignored");
-    case Transaction::MessageRepoMetadataDownloadFailed :
-        return i18n("Software source download failed");
-    case Transaction::MessageRepoForDevelopersOnly :
-        return i18n("This software source is for developers only");
-    case Transaction::MessageOtherUpdatesHeldBack :
-        return i18n("Other updates have been held back");
-    case Transaction::MessageUnknown:
-        kWarning() << "message(Enum::UnknownMessageType)";
-        return QString();
-    }
-    kWarning() << "value unrecognised: " << value;
-    return QString();
-}
+//QString PkStrings::message(Transaction::Message value)
+//{
+//    switch (value) {
+//    case Transaction::MessageBrokenMirror :
+//        return i18n("A mirror is possibly broken");
+//    case Transaction::MessageConnectionRefused :
+//        return i18n("The connection was refused");
+//    case Transaction::MessageParameterInvalid :
+//        return i18n("The parameter was invalid");
+//    case Transaction::MessagePriorityInvalid :
+//        return i18n("The priority was invalid");
+//    case Transaction::MessageBackendError :
+//        return i18n("Backend warning");
+//    case Transaction::MessageDaemonError :
+//        return i18n("Daemon warning");
+//    case Transaction::MessageCacheBeingRebuilt :
+//        return i18n("The package list cache is being rebuilt");
+//    case Transaction::MessageUntrustedPackage :
+//        return i18n("An untrusted package was installed");
+//    case Transaction::MessageNewerPackageExists :
+//        return i18n("A newer package exists");
+//    case Transaction::MessageCouldNotFindPackage :
+//        return i18n("Could not find package");
+//    case Transaction::MessageConfigFilesChanged :
+//        return i18n("Configuration files were changed");
+//    case Transaction::MessagePackageAlreadyInstalled :
+//        return i18n("Package is already installed");
+//    case Transaction::MessageAutoremoveIgnored :
+//        return i18n("Automatic cleanup is being ignored");
+//    case Transaction::MessageRepoMetadataDownloadFailed :
+//        return i18n("Software source download failed");
+//    case Transaction::MessageRepoForDevelopersOnly :
+//        return i18n("This software source is for developers only");
+//    case Transaction::MessageOtherUpdatesHeldBack :
+//        return i18n("Other updates have been held back");
+//    case Transaction::MessageUnknown:
+//        qCWarning(APPER_LIB) << "message(Enum::UnknownMessageType)";
+//        return QString();
+//    }
+//    qCWarning(APPER_LIB) << "value unrecognised: " << value;
+//    return QString();
+//}
 
 QString PkStrings::daemonError(int value)
 {
@@ -1021,13 +1034,14 @@ QString PkStrings::daemonError(int value)
     case Transaction::InternalErrorUnkown :
         return i18n("An unknown error happened.");
     }
-    kWarning() << "value unrecognised: " << value;
+    qCWarning(APPER_LIB) << "value unrecognised: " << value;
     return i18n("An unknown error happened.");
 }
 
 QString PkStrings::prettyFormatDuration(unsigned long mSec)
 {
-    return KGlobal::locale()->prettyFormatDuration(mSec);
+
+    return KFormat().formatSpelloutDuration(mSec);
 }
 
 QString PkStrings::lastCacheRefreshTitle(uint lastTime)
@@ -1052,3 +1066,5 @@ QString PkStrings::lastCacheRefreshSubTitle(uint lastTime)
     }
     return i18n("It's strongly recommended that you check for new updates now");
 }
+
+#include "moc_PkStrings.cpp"

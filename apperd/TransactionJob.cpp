@@ -24,10 +24,12 @@
 #include <PkIcons.h>
 
 #include <KLocalizedString>
-#include <KGlobal>
+//#include <KGlobal>
 #include <KNotification>
 
-#include <KDebug>
+#include <QLoggingCategory>
+
+Q_DECLARE_LOGGING_CATEGORY(APPER_DAEMON)
 
 TransactionJob::TransactionJob(Transaction *transaction, QObject *parent) :
     KJob(parent),
@@ -42,26 +44,15 @@ TransactionJob::TransactionJob(Transaction *transaction, QObject *parent) :
 {
     setCapabilities(Killable);
 
-    connect(transaction, SIGNAL(roleChanged()),
-            SLOT(updateJob()));
-    connect(transaction, SIGNAL(statusChanged()),
-            SLOT(updateJob()));
-    connect(transaction, SIGNAL(downloadSizeRemainingChanged()),
-            SLOT(updateJob()));
-    connect(transaction, SIGNAL(transactionFlagsChanged()),
-            SLOT(updateJob()));
-    connect(transaction, SIGNAL(percentageChanged()),
-            SLOT(updateJob()));
-    connect(transaction, SIGNAL(roleChanged()),
-            SLOT(updateJob()));
-    connect(transaction, SIGNAL(speedChanged()),
-            SLOT(updateJob()));
-    connect(transaction, SIGNAL(finished(PackageKit::Transaction::Exit,uint)),
-            this, SLOT(finished(PackageKit::Transaction::Exit)));
-    connect(transaction, SIGNAL(package(PackageKit::Transaction::Info,QString,QString)),
-            this, SLOT(package(PackageKit::Transaction::Info,QString,QString)));
-    connect(transaction, SIGNAL(repoDetail(QString,QString,bool)),
-            this, SLOT(repoDetail(QString,QString)));
+    connect(transaction, &Transaction::roleChanged, this, &TransactionJob::updateJob);
+    connect(transaction, &Transaction::statusChanged, this, &TransactionJob::updateJob);
+    connect(transaction, &Transaction::downloadSizeRemainingChanged, this, &TransactionJob::updateJob);
+    connect(transaction, &Transaction::transactionFlagsChanged, this, &TransactionJob::updateJob);
+    connect(transaction, &Transaction::percentageChanged, this, &TransactionJob::updateJob);
+    connect(transaction, &Transaction::speedChanged, this, &TransactionJob::updateJob);
+    connect(transaction, &Transaction::finished, this, &TransactionJob::finished);
+    connect(transaction, &Transaction::package, this, &TransactionJob::package);
+    connect(transaction, &Transaction::repoDetail, this, &TransactionJob::repoDetail);
 }
 
 TransactionJob::~TransactionJob()
@@ -188,10 +179,12 @@ bool TransactionJob::doKill()
     // emit the description so the Speed: xxx KiB/s
     // don't get confused to a destination URL
     emit description(this, PkStrings::action(m_role, m_flags));
-    m_transaction->cancel();
+    QDBusPendingReply<> reply = m_transaction->cancel();
+    reply.waitForFinished();
+    qCDebug(APPER_DAEMON) << "Transaction cancel operation result" << m_transaction->tid().path() << reply.error();
     emit canceled();
 
-    return m_transaction->role() == Transaction::RoleCancel;
+    return !reply.isError() && m_transaction->role() == Transaction::RoleCancel;
 }
 
-#include "TransactionJob.moc"
+#include "moc_TransactionJob.cpp"

@@ -37,44 +37,50 @@
 #include <QFile>
 #include <QSignalMapper>
 #include <QStringBuilder>
+#include <QDialogButtonBox>
 
-#include <KWindowSystem>
+//#include <KWindowSystem>
 #include <KLocalizedString>
-#include <KGlobalSettings>
-#include <KPushButton>
-#include <KGlobal>
+//#include <KGlobalSettings>
+#include <QPushButton>
+//#include <KGlobal>
 
-#include <KDebug>
+#include <QLoggingCategory>
 
 #include <Daemon>
+
+Q_DECLARE_LOGGING_CATEGORY(APPER_SESSION)
 
 using namespace PackageKit;
 
 SessionTask::SessionTask(uint xid, const QString &interaction, const QDBusMessage &message, QWidget *parent) :
-    KDialog(parent),
+    QDialog(parent),
     m_xid(xid),
     m_message(message),
-    m_reviewChanges(0),
-    m_pkTransaction(0),
     ui(new Ui::SessionTask)
 {
-    ui->setupUi(KDialog::mainWidget());
+    ui->setupUi(this);
     setAttribute(Qt::WA_DeleteOnClose);
 
     m_model = new PackageModel(this);
 
-    connect(KGlobalSettings::self(), SIGNAL(kdisplayPaletteChanged()),
-            this, SLOT(updatePallete()));
+//    connect(KGlobalSettings::self(), SIGNAL(kdisplayPaletteChanged()),
+//            this, SLOT(updatePallete()));
     updatePallete();
 
-    setWindowIcon(KIcon("applications-other"));
-    setButtons(KDialog::Ok | KDialog::Cancel);
-    setButtonText(KDialog::Ok, i18n("Continue"));
-    setButtonIcon(KDialog::Ok, KIcon("go-next"));
+    setWindowIcon(QIcon::fromTheme(QLatin1String("system-software-install")));
+    QPushButton *okButton = ui->buttonBox->button(QDialogButtonBox::Ok);
+    okButton->setText(i18n("Continue"));
+    okButton->setIcon(QIcon::fromTheme(QLatin1String("go-next")));
     enableButtonOk(false);
+    connect(okButton, &QPushButton::clicked, this, &SessionTask::slotContinueClicked);
 
-    QString locale(KGlobal::locale()->language() % QLatin1Char('.') % KGlobal::locale()->encoding());
-    Daemon::global()->setHints(QLatin1String("locale=") % locale);
+    QPushButton *cancelButton = ui->buttonBox->button(QDialogButtonBox::Cancel);
+    connect(cancelButton, &QPushButton::clicked, this, &SessionTask::slotCancelClicked);
+
+
+
+    Daemon::global()->setHints(QLatin1String("locale=") + QLocale::system().name() + QLatin1String(".UTF-8"));
 
     // Defaults to always
     m_interactions = ConfirmSearch
@@ -101,16 +107,16 @@ SessionTask::SessionTask(uint xid, const QString &interaction, const QDBusMessag
     }
 
     setMinimumSize(QSize(430,280));
-    KConfig config("apper");
-    KConfigGroup configGroup(&config, "SessionInstaller");
-    restoreDialogSize(configGroup);
+//    KConfig config("apper");
+//    KConfigGroup configGroup(&config, "SessionInstaller");
+//    restoreDialogSize(configGroup);
 }
 
 SessionTask::~SessionTask()
 {
-    KConfig config("apper");
-    KConfigGroup configGroup(&config, "SessionInstaller");
-    saveDialogSize(configGroup);
+//    KConfig config("apper");
+//    KConfigGroup configGroup(&config, "SessionInstaller");
+//    saveDialogSize(configGroup);
 
     delete ui;
 }
@@ -124,21 +130,22 @@ void SessionTask::searchFinished(PkTransaction::ExitStatus status)
 {
     if (m_pkTransaction) {
         // Disconnect so it can be connected to commitFinished latter
-        disconnect(m_pkTransaction->transaction(), SIGNAL(finished(PkTransaction::ExitStatus)),
-                   this, SLOT(searchFinished(PkTransaction::ExitStatus)));
+        disconnect(m_pkTransaction->transaction(), &PkTransaction::finished, this, &SessionTask::searchFinished);
     }
 
     if (status == PkTransaction::Success) {
         m_model->finished();
         if (m_model->rowCount() == 0) {
             notFound();
+            showCloseButton();
         } else {
             searchSuccess();
         }
     } else if (status == PkTransaction::Cancelled) {
-        slotButtonClicked(KDialog::Cancel);
+        cancelClicked();
     } else {
         searchFailed();
+        showCloseButton();
     }
 }
 
@@ -146,8 +153,7 @@ void SessionTask::commitFinished(PkTransaction::ExitStatus status)
 {
     if (m_pkTransaction) {
         // Disconnect so it can be connected to something else latter
-        disconnect(m_pkTransaction->transaction(), SIGNAL(finished(PkTransaction::ExitStatus)),
-                   this, SLOT(searchFinished(PkTransaction::ExitStatus)));
+        disconnect(m_pkTransaction->transaction(), &PkTransaction::finished, this, &SessionTask::searchFinished);
     }
 
     if (status == PkTransaction::Success) {
@@ -155,23 +161,25 @@ void SessionTask::commitFinished(PkTransaction::ExitStatus status)
             removePackages();
         } else {
             commitSuccess();
+            showCloseButton();
         }
     } else if (status == PkTransaction::Cancelled) {
-        slotButtonClicked(KDialog::Cancel);
+        cancelClicked();
     } else {
         commitFailed();
+        showCloseButton();
     }
 }
 
 void SessionTask::updatePallete()
 {
     QPalette pal;
-    pal.setColor(QPalette::Window, KGlobalSettings::activeTitleColor());
-    pal.setColor(QPalette::WindowText, KGlobalSettings::activeTextColor());
+//    pal.setColor(QPalette::Window, KGlobalSettings::activeTitleColor());
+//    pal.setColor(QPalette::WindowText, KGlobalSettings::activeTextColor());
     ui->backgroundFrame->setPalette(pal);
 }
 
-void SessionTask::setDialog(KDialog *dialog)
+void SessionTask::setDialog(QDialog *dialog)
 {
     // Store the current values
     QWidget *widget = ui->stackedWidget->currentWidget();
@@ -180,25 +188,23 @@ void SessionTask::setDialog(KDialog *dialog)
         // TODO if there is a removal after instalation
         // this will break it, but we don't have
         // this case yet...
-        commitSuccess(dialog->mainWidget());
+        commitSuccess(dialog);
     } else {
         // Set the new ones
-        setMainWidget(dialog->mainWidget());
-        setTitle(dialog->windowTitle()); // must come after
-        connect(this, SIGNAL(okClicked()),
-                dialog, SLOT(accept()));
-        connect(this, SIGNAL(okClicked()),
-                dialog->mainWidget(), SLOT(deleteLater()));
-        connect(this, SIGNAL(okClicked()),
-                dialog, SLOT(deleteLater()));
+        setMainWidget(dialog);
+//        setTitle(dialog->windowTitle()); // must come after
+        connect(this, &SessionTask::continueClicked, dialog, &QDialog::accept);
+//        connect(this, &SessionTask::continueClicked, dia, &QDialog::accept);
+//        connect(this, SIGNAL(okClicked()),
+//                dialog->mainWidget(), SLOT(deleteLater()));
+//        connect(this, SIGNAL(okClicked()),
+//                dialog, SLOT(deleteLater()));
 
         // Make sure we see the last widget and title
-        QSignalMapper *mapper = new QSignalMapper(this);
+        auto mapper = new QSignalMapper(this);
         mapper->setMapping(this, widget);
-        connect(this, SIGNAL(okClicked()),
-                mapper, SLOT(map()));
-        connect(mapper, SIGNAL(mapped(QWidget*)),
-                this, SLOT(setMainWidget(QWidget*)));
+        connect(this, &SessionTask::continueClicked, mapper, QOverload<>::of(&QSignalMapper::map));
+        connect(mapper, QOverload<QWidget*>::of(&QSignalMapper::mapped), this, &SessionTask::setMainWidget);
         enableButtonOk(true);
     }
 }
@@ -219,13 +225,12 @@ QWidget* SessionTask::mainWidget()
 
 void SessionTask::setInfo(const QString &title, const QString &text, const QString &details)
 {
-    InfoWidget *info = new InfoWidget(this);
+    auto info = new InfoWidget(this);
     info->setWindowTitle(title);
     info->setDescription(text);
     info->setDetails(details);
     setMainWidget(info);
-    setButtons(KDialog::Close);
-    button(KDialog::Close)->setFocus();
+    showCloseButton();
 
     if (qobject_cast<PkTransaction*>(sender())) {
         // if we have a sender this method was caller by PkTransaction
@@ -237,14 +242,13 @@ void SessionTask::setInfo(const QString &title, const QString &text, const QStri
 
 void SessionTask::setError(const QString &title, const QString &text, const QString &details)
 {
-    InfoWidget *info = new InfoWidget(this);
+    auto info = new InfoWidget(this);
     info->setWindowTitle(title);
     info->setDescription(text);
-    info->setIcon(KIcon("dialog-error"));
+    info->setIcon(QIcon::fromTheme(QLatin1String("dialog-error")));
     info->setDetails(details);
     setMainWidget(info);
-    setButtons(KDialog::Close);
-    button(KDialog::Close)->setFocus();
+    showCloseButton();
 
     if (qobject_cast<PkTransaction*>(sender())) {
         // if we have a sender this method was caller by PkTransaction
@@ -256,14 +260,13 @@ void SessionTask::setError(const QString &title, const QString &text, const QStr
 
 void SessionTask::setFinish(const QString &title, const QString &text, QWidget *widget)
 {
-    InfoWidget *info = new InfoWidget(this);
+    auto info = new InfoWidget(this);
     info->setWindowTitle(title);
     info->setDescription(text);
-    info->setIcon(KIcon("dialog-ok-apply"));
+    info->setIcon(QIcon::fromTheme(QLatin1String("dialog-ok-apply")));
     info->addWidget(widget);
     setMainWidget(info);
-    setButtons(KDialog::Close);
-    button(KDialog::Close)->setFocus();
+    showCloseButton();
 }
 
 void SessionTask::setTitle(const QString &title)
@@ -275,8 +278,8 @@ void SessionTask::setExec(const QString &exec)
 {
     if (pathIsTrusted(exec)) {
         // Get from X11 the window title
-        KWindowInfo info = KWindowSystem::windowInfo(m_xid, NET::WMVisibleName);
-        parentTitle = info.visibleName();
+//        KWindowInfo info = KWindowSystem::windowInfo(m_xid, NET::WMVisibleName);
+//        parentTitle = info.visibleName();
     } else {
         parentTitle = exec;
     }
@@ -285,17 +288,17 @@ void SessionTask::setExec(const QString &exec)
 bool SessionTask::pathIsTrusted(const QString &exec)
 {
     // special case the plugin helper -- it's trusted
-    return exec == "/usr/libexec/gst-install-plugins-helper" ||
-           exec == "/usr/libexec/pk-gstreamer-install" ||
-           exec == "/usr/bin/gstreamer-codec-install" ||
-           exec == "/usr/lib/packagekit/pk-gstreamer-install" ||
-           exec == "/usr/bin/plasma-desktop" ||
-           exec == "/usr/bin/apper";
+    return exec == QLatin1String("/usr/libexec/gst-install-plugins-helper") ||
+           exec == QLatin1String("/usr/libexec/pk-gstreamer-install") ||
+           exec == QLatin1String("/usr/bin/gstreamer-codec-install") ||
+           exec == QLatin1String("/usr/lib/packagekit/pk-gstreamer-install") ||
+           exec == QLatin1String("/usr/bin/plasma-desktop") ||
+           exec == QLatin1String("/usr/bin/apper");
 }
 
 QString SessionTask::getCmdLine(uint pid)
 {
-    QFile file(QString("/proc/%1/cmdline").arg(pid));
+    QFile file(QString(QLatin1String("/proc/%1/cmdline")).arg(pid));
     QString line;
     if (file.open(QFile::ReadOnly)) {
         char buf[1024];
@@ -303,7 +306,7 @@ QString SessionTask::getCmdLine(uint pid)
         if (lineLength != -1) {
             // the line is available in buf
             line = QString::fromLocal8Bit(buf);
-            if (!line.contains("(deleted)")) {
+            if (!line.contains(QLatin1String("(deleted)"))) {
                 return line;
             }
         }
@@ -314,14 +317,14 @@ QString SessionTask::getCmdLine(uint pid)
 uint SessionTask::getPidSystem()
 {
     QDBusMessage msg;
-    msg = QDBusMessage::createMethodCall("org.freedesktop.DBus",
-                                         "/org/freedesktop/DBus/Bus",
-                                         "org.freedesktop.DBus",
+    msg = QDBusMessage::createMethodCall(QLatin1String("org.freedesktop.DBus"),
+                                         QLatin1String("/org/freedesktop/DBus/Bus"),
+                                         QLatin1String("org.freedesktop.DBus"),
                                          QLatin1String("GetConnectionUnixProcessID"));
     msg << m_message.service();
     QDBusMessage reply = QDBusConnection::systemBus().call(msg);
     if (reply.type() != QDBusMessage::ReplyMessage) {
-        kWarning() << "Message did not receive a reply";
+        qCWarning(APPER_SESSION) << "Message did not receive a reply";
     }
 
     if (reply.arguments().size() == 1) {
@@ -334,14 +337,14 @@ uint SessionTask::getPidSystem()
 uint SessionTask::getPidSession()
 {
     QDBusMessage msg;
-    msg = QDBusMessage::createMethodCall("org.freedesktop.DBus",
-                                         "/org/freedesktop/DBus/Bus",
-                                         "org.freedesktop.DBus",
+    msg = QDBusMessage::createMethodCall(QLatin1String("org.freedesktop.DBus"),
+                                         QLatin1String("/org/freedesktop/DBus/Bus"),
+                                         QLatin1String("org.freedesktop.DBus"),
                                          QLatin1String("GetConnectionUnixProcessID"));
     msg << m_message.service();
     QDBusMessage reply = QDBusConnection::sessionBus().call(msg);
     if (reply.type() != QDBusMessage::ReplyMessage) {
-        kWarning() << "Message did not receive a reply";
+        qCWarning(APPER_SESSION) << "Message did not receive a reply";
     }
 
     if (reply.arguments().size() == 1) {
@@ -353,13 +356,13 @@ uint SessionTask::getPidSession()
 
 void SessionTask::search()
 {
-    kDebug() << "virtual method called, falling back to commit()";
+    qCDebug(APPER_SESSION) << "virtual method called, falling back to commit()";
     commit();
 }
 
 void SessionTask::commit()
 {
-    kDebug() << "virtual method called";
+    qCDebug(APPER_SESSION) << "virtual method called";
     if (m_reviewChanges) {
         QStringList installPackages = m_reviewChanges->model()->selectedPackagesToInstall();
         m_removePackages = m_reviewChanges->model()->selectedPackagesToRemove();
@@ -367,13 +370,12 @@ void SessionTask::commit()
         if (installPackages.isEmpty() && m_removePackages.isEmpty()) {
             setInfo(i18n("There are no packages to Install or Remove"),
                     i18n("This action should not happen"));
-            sendErrorFinished(Failed, "to install or remove due to empty lists");
+            sendErrorFinished(Failed, QLatin1String("to install or remove due to empty lists"));
         } else if (!installPackages.isEmpty()) {
             // Install Packages
-            PkTransaction *transaction = new PkTransaction(this);
+            auto transaction = new PkTransaction(this);
             setTransaction(Transaction::RoleInstallPackages, transaction);
-            connect(transaction, SIGNAL(finished(PkTransaction::ExitStatus)),
-                    this, SLOT(commitFinished(PkTransaction::ExitStatus)), Qt::UniqueConnection);
+            connect(transaction, &PkTransaction::finished, this, &SessionTask::commitFinished, Qt::UniqueConnection);
             transaction->installPackages(installPackages);
         } else {
             // Remove them
@@ -385,76 +387,63 @@ void SessionTask::commit()
 void SessionTask::removePackages()
 {
     // Remove Packages
-    PkTransaction *transaction = new PkTransaction(this);
+    auto transaction = new PkTransaction(this);
     setTransaction(Transaction::RoleRemovePackages, transaction);
-    connect(transaction, SIGNAL(finished(PkTransaction::ExitStatus)),
-            this, SLOT(commitFinished(PkTransaction::ExitStatus)), Qt::UniqueConnection);
+    connect(transaction, &PkTransaction::finished, this, &SessionTask::commitFinished, Qt::UniqueConnection);
     transaction->removePackages(m_removePackages);
     m_removePackages.clear();
 }
 
 void SessionTask::notFound()
 {
-    kDebug() << "virtual method called";
+    qCDebug(APPER_SESSION) << "virtual method called";
     if (showWarning()) {
         setInfo(i18n("Could not find"),
                 i18n("No packages were found that meet the request"));
     }
-    sendErrorFinished(NoPackagesFound, "no package found");
+    sendErrorFinished(NoPackagesFound, QLatin1String("no package found"));
 }
 
 void SessionTask::searchFailed()
 {
-    kDebug() << "virtual method called";
+    qCDebug(APPER_SESSION) << "virtual method called";
     setInfo(i18n("Failed to find"),
             i18n("No packages were found that meet the request"));
-    sendErrorFinished(Failed, "failed to search");
+    sendErrorFinished(Failed, QLatin1String("failed to search"));
 }
 
 void SessionTask::searchSuccess()
 {
-    kDebug() << "virtual method called";
+    qCDebug(APPER_SESSION) << "virtual method called";
     enableButtonOk(true);
     m_reviewChanges = new ReviewChanges(m_model, this);
-    connect(m_reviewChanges, SIGNAL(hasSelectedPackages(bool)),
-            this, SLOT(enableButtonOk(bool)));
+    connect(m_reviewChanges, &ReviewChanges::hasSelectedPackages, this, &SessionTask::enableButtonOk);
     setMainWidget(m_reviewChanges);
 }
 
 void SessionTask::commitFailed()
 {
-    kDebug() << "virtual method called";
+    qCDebug(APPER_SESSION) << "virtual method called";
     // This should not be used to display stuff as the transaction should
     // emit error() or info()
 //    setInfo(i18n("Failed to commit transaction"),
-//            PkStrings::errorMessage(m_pkTransaction->error()));
+//            PkStrings::errsearchFailedorMessage(m_pkTransaction->error()));
     sendErrorFinished(Failed, i18n("Transaction did not finish with success"));
 }
 
 void SessionTask::commitSuccess(QWidget *widget)
 {
-    kDebug() << "virtual method called";
+    qCDebug(APPER_SESSION) << "virtual method called";
     setFinish(i18n("Task completed"), i18n("All operations were committed successfully"), widget);
     finishTaskOk();
 }
 
-void SessionTask::slotButtonClicked(int button)
+void SessionTask::showCloseButton()
 {
-    if (button == KDialog::Ok) {
-//        kDebug() << mainWidget()->objectName();
-        if (qobject_cast<IntroDialog*>(mainWidget())) {
-            enableButtonOk(false);
-            search();
-        } else if (qobject_cast<ReviewChanges*>(mainWidget())) {
-            enableButtonOk(false);
-            commit();
-        } else {
-            emit okClicked();
-        }
-    } else {
-        KDialog::slotButtonClicked(button);
-        sendErrorFinished(Cancelled, "Aborted by the user");
-    }
+    ui->buttonBox->setStandardButtons(QDialogButtonBox::Close);
+    QPushButton *closeBt = ui->buttonBox->button(QDialogButtonBox::Close);
+    closeBt->setDefault(true);
+    connect(closeBt, &QPushButton::clicked, this, &SessionTask::accept);
 }
 
 void SessionTask::sendErrorFinished(DBusError error, const QString &msg)
@@ -462,29 +451,28 @@ void SessionTask::sendErrorFinished(DBusError error, const QString &msg)
     QString dbusError;
     switch (error) {
     case Failed:
-        dbusError = "org.freedesktop.PackageKit.Failed";
+        dbusError = QLatin1String("org.freedesktop.PackageKit.Failed");
         break;
     case InternalError:
-        dbusError = "org.freedesktop.PackageKit.InternalError";
+        dbusError = QLatin1String("org.freedesktop.PackageKit.InternalError");
         break;
     case NoPackagesFound:
-        dbusError = "org.freedesktop.PackageKit.NoPackagesFound";
+        dbusError = QLatin1String("org.freedesktop.PackageKit.NoPackagesFound");
         break;
     case Forbidden:
-        dbusError = "org.freedesktop.PackageKit.Forbidden";
+        dbusError = QLatin1String("org.freedesktop.PackageKit.Forbidden");
         break;
     case Cancelled:
-        dbusError = "org.freedesktop.PackageKit.Cancelled";
+        dbusError = QLatin1String("org.freedesktop.PackageKit.Cancelled");
         break;
     }
-    QDBusMessage reply;
-    reply = m_message.createErrorReply(dbusError, msg);
+    QDBusMessage reply = m_message.createErrorReply(dbusError, msg);
     QDBusConnection::sessionBus().send(reply);
 }
 
 bool SessionTask::sendMessageFinished(const QDBusMessage &message)
 {
-    emit finished();
+//    emit finished();
     return QDBusConnection::sessionBus().send(message);
 }
 
@@ -493,73 +481,95 @@ uint SessionTask::parentWId() const
     return m_xid;
 }
 
-void SessionTask::enableButtonOk(bool state)
+void SessionTask::slotContinueClicked()
 {
-    KDialog::enableButtonOk(state);
-    if (state) {
+    if (qobject_cast<IntroDialog*>(mainWidget())) {
+        enableButtonOk(false);
+        search();
+    } else if (qobject_cast<ReviewChanges*>(mainWidget())) {
+        enableButtonOk(false);
+        commit();
+    } else {
+//        emit okClicked();
+    }
+}
+
+void SessionTask::slotCancelClicked()
+{
+    emit cancelClicked();
+    sendErrorFinished(Cancelled, QLatin1String("Aborted by the user"));
+    reject();
+
+}
+
+void SessionTask::enableButtonOk(bool enable)
+{
+    QPushButton *okButton = ui->buttonBox->button(QDialogButtonBox::Ok);
+    okButton->setEnabled(enable);
+    if (enable) {
         // When enabling the Continue button put focus on it
-        button(KDialog::Ok)->setFocus();
+        okButton->setFocus();
     }
 }
 
 void SessionTask::parseInteraction(const QString &interaction)
 {
-    QStringList interactions = interaction.split(',');
+    QStringList interactions = interaction.split(QLatin1Char(','));
 
     // Enable or disable all options
-    if (interactions.contains("always")) {
+    if (interactions.contains(QLatin1String("always"))) {
         m_interactions = ConfirmSearch
                        | ConfirmDeps
                        | ConfirmInstall
                        | Progress
                        | Finished
                        | Warning;
-    } else if (interactions.contains("never")) {
+    } else if (interactions.contains(QLatin1String("never"))) {
         m_interactions = 0;
     }
 
     // show custom options
-    if (interactions.contains("show-confirm-search")) {
+    if (interactions.contains(QLatin1String("show-confirm-search"))) {
         m_interactions |= ConfirmSearch;
     }
-    if (interactions.contains("show-confirm-deps")) {
+    if (interactions.contains(QLatin1String("show-confirm-deps"))) {
         m_interactions |= ConfirmDeps;
     }
-    if (interactions.contains("show-confirm-install")) {
+    if (interactions.contains(QLatin1String("show-confirm-install"))) {
         m_interactions |= ConfirmInstall;
     }
-    if (interactions.contains("show-progress")) {
+    if (interactions.contains(QLatin1String("show-progress"))) {
         m_interactions |= Progress;
     }
-    if (interactions.contains("show-finished")) {
+    if (interactions.contains(QLatin1String("show-finished"))) {
         m_interactions |= Finished;
     }
-    if (interactions.contains("show-warning")) {
+    if (interactions.contains(QLatin1String("show-warning"))) {
         m_interactions |= Warning;
     }
 
     // hide custom options
-    if (interactions.contains("hide-confirm-search")) {
+    if (interactions.contains(QLatin1String("hide-confirm-search"))) {
         m_interactions &= ~ConfirmSearch;
     }
-    if (interactions.contains("hide-confirm-deps")) {
+    if (interactions.contains(QLatin1String("hide-confirm-deps"))) {
         m_interactions &= ~ConfirmDeps;
     }
-    if (interactions.contains("hide-confirm-install")) {
+    if (interactions.contains(QLatin1String("hide-confirm-install"))) {
         m_interactions &= ~ConfirmInstall;
     }
-    if (interactions.contains("hide-progress")) {
+    if (interactions.contains(QLatin1String("hide-progress"))) {
         m_interactions &= ~Progress;
     }
-    if (interactions.contains("hide-finished")) {
+    if (interactions.contains(QLatin1String("hide-finished"))) {
         m_interactions &= ~Finished;
     }
-    if (interactions.contains("hide-warning")) {
+    if (interactions.contains(QLatin1String("hide-warning"))) {
         m_interactions &= ~Warning;
     }
 
     int index;
-    QRegExp rx("^timeout=(\\d+)$");
+    QRegExp rx(QLatin1String("^timeout=(\\d+)$"));
     index = interactions.indexOf(rx);
     if (index != -1) {
         if (rx.indexIn(interactions.at(index)) != -1) {
@@ -590,18 +600,12 @@ void SessionTask::setTransaction(Transaction::Role role, PkTransaction *t)
         m_pkTransaction->hideCancelButton();
 
         ui->stackedWidget->addWidget(m_pkTransaction);
-        connect(m_pkTransaction, SIGNAL(titleChanged(QString)),
-                this, SLOT(setTitle(QString)));
-        connect(this, SIGNAL(cancelClicked()),
-                m_pkTransaction, SLOT(cancel()));
-        connect(m_pkTransaction, SIGNAL(dialog(KDialog*)),
-                this, SLOT(setDialog(KDialog*)));
-        connect(m_pkTransaction, SIGNAL(sorry(QString,QString,QString)),
-                this, SLOT(setInfo(QString,QString,QString)));
-        connect(m_pkTransaction, SIGNAL(error(QString,QString,QString)),
-                this, SLOT(setError(QString,QString,QString)));
+        connect(m_pkTransaction, &PkTransactionWidget::titleChanged, this, &SessionTask::setTitle);
+        connect(this, &SessionTask::cancelClicked, m_pkTransaction, &PkTransactionWidget::cancel);
+        connect(m_pkTransaction, &PkTransactionWidget::dialog, this, &SessionTask::setDialog);
+        connect(m_pkTransaction, &PkTransactionWidget::sorry, this, &SessionTask::setInfo);
+        connect(m_pkTransaction, &PkTransactionWidget::error, this, &SessionTask::setError);
     }
-
     if (t) {
         m_pkTransaction->setTransaction(t, role);
 //        setTitle(m_pkTransaction->title());
@@ -658,4 +662,4 @@ bool SessionTask::showWarning() const
     return m_interactions & Warning;
 }
 
-#include "SessionTask.moc"
+#include "moc_SessionTask.cpp"

@@ -22,27 +22,28 @@
 #include "ui_ApplicationLauncher.h"
 
 #include <QStandardItemModel>
+#include <QLoggingCategory>
 #include <KToolInvocation>
 #include <KLocalizedString>
-#include <KDebug>
 #include <KService>
 #include <KConfig>
+#include <KConfigGroup>
+
+Q_DECLARE_LOGGING_CATEGORY(APPER_LIB)
 
 ApplicationLauncher::ApplicationLauncher(QWidget *parent) :
-    KDialog(parent),
+    QDialog(parent),
     m_embed(false),
     ui(new Ui::ApplicationLauncher)
 {
-    ui->setupUi(mainWidget());
-    connect(ui->showCB, SIGNAL(toggled(bool)), this, SLOT(on_showCB_toggled(bool)));
-    setObjectName("ApplicationLauncher");
+    ui->setupUi(this);
+    connect(ui->showCB, &QCheckBox::toggled, this, &ApplicationLauncher::on_showCB_toggled);
+    setObjectName(QLatin1String("ApplicationLauncher"));
 
-    connect(ui->kdialogbuttonbox, SIGNAL(rejected()), this, SLOT(accept()));
-    setButtons(KDialog::None);
-    setWindowIcon(QIcon::fromTheme("task-complete"));
+    connect(ui->kdialogbuttonbox, &QDialogButtonBox::rejected, this, &ApplicationLauncher::accept);
+    setWindowIcon(QIcon::fromTheme(QLatin1String("task-complete")));
 
-    connect(ui->applicationsView, SIGNAL(clicked(QModelIndex)),
-            this, SLOT(itemClicked(QModelIndex)));
+    connect(ui->applicationsView, &QListView::clicked, this, &ApplicationLauncher::itemClicked);
 }
 
 ApplicationLauncher::~ApplicationLauncher()
@@ -60,7 +61,7 @@ void ApplicationLauncher::setEmbedded(bool embedded)
     m_embed = embedded;
     ui->showCB->setVisible(!embedded);
     ui->kdialogbuttonbox->setVisible(!embedded);
-    kDebug() << embedded;
+    qCDebug(APPER_LIB) << embedded;
 }
 
 QStringList ApplicationLauncher::packages() const
@@ -75,7 +76,7 @@ bool ApplicationLauncher::hasApplications()
     m_files.removeDuplicates();
 
     QStandardItem *item;
-    foreach (const QString &desktop, m_files) {
+    for (const QString &desktop : m_files) {
         // we use KService to parse the .desktop file because findByDestopPath
         // might fail because the Sycoca database is not up to date yet.
         KService service(desktop);
@@ -84,7 +85,7 @@ bool ApplicationLauncher::hasApplications()
            !service.exec().isEmpty())
         {
             QString name = service.genericName().isEmpty() ? service.name()
-                                                           : service.name() + " - " + service.genericName();
+                                                           : service.name() + QLatin1String(" - ") + service.genericName();
             item = new QStandardItem(name);
             item->setIcon(QIcon::fromTheme(service.icon()));
             item->setData(service.entryPath(), Qt::UserRole);
@@ -115,7 +116,7 @@ void ApplicationLauncher::addPackage(PackageKit::Transaction::Info info, const Q
 void ApplicationLauncher::files(const QString &packageID, const QStringList &files)
 {
     Q_UNUSED(packageID)
-    m_files.append(files.filter(".desktop"));
+    m_files.append(files.filter(QLatin1String(".desktop")));
 }
 
 void ApplicationLauncher::itemClicked(const QModelIndex &index)
@@ -126,10 +127,10 @@ void ApplicationLauncher::itemClicked(const QModelIndex &index)
 
 void ApplicationLauncher::on_showCB_toggled(bool checked)
 {
-    KConfig config("apper");
+    KConfig config(QLatin1String("apper"));
     KConfigGroup transactionGroup(&config, "Transaction");
     transactionGroup.writeEntry("ShowApplicationLauncher", !checked);
     config.sync();
 }
 
-#include "ApplicationLauncher.moc"
+#include "moc_ApplicationLauncher.cpp"

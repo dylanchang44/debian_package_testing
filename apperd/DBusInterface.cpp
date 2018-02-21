@@ -31,27 +31,29 @@
 using namespace PackageKit;
 #endif
 
-#include <KDebug>
+#include <QLoggingCategory>
+
+Q_DECLARE_LOGGING_CATEGORY(APPER_DAEMON)
 
 DBusInterface::DBusInterface(QObject *parent) :
     QObject(parent)
 {
-    kDebug() << "Creating Helper";
+    qCDebug(APPER_DAEMON) << "Creating Helper";
     (void) new ApperdAdaptor(this);
-    if (!QDBusConnection::sessionBus().registerService("org.kde.apperd")) {
-        kDebug() << "another helper is already running";
+    if (!QDBusConnection::sessionBus().registerService(QStringLiteral("org.kde.apperd"))) {
+        qCDebug(APPER_DAEMON) << "another helper is already running";
         return;
     }
 
-    if (!QDBusConnection::sessionBus().registerObject("/", this)) {
-        kDebug() << "unable to register service interface to dbus";
+    if (!QDBusConnection::sessionBus().registerObject(QStringLiteral("/"), this)) {
+        qCDebug(APPER_DAEMON) << "unable to register service interface to dbus";
         return;
     }
 }
 
 DBusInterface::~DBusInterface()
 {
-    kDebug() << "-------------DBusInterface-------------" << QThread::currentThreadId();
+    qCDebug(APPER_DAEMON) << "-------------DBusInterface-------------" << QThread::currentThreadId();
 }
 
 void DBusInterface::RefreshCache()
@@ -62,17 +64,16 @@ void DBusInterface::RefreshCache()
 void DBusInterface::SetupDebconfDialog(const QString &tid, const QString &socketPath, uint xidParent)
 {
 #ifdef HAVE_DEBCONFKDE
-    kDebug() << tid << socketPath << xidParent;
+    qCDebug(APPER_DAEMON) << tid << socketPath << xidParent;
     DebconfGui *gui;
     if (m_debconfGuis.contains(socketPath)) {
         gui = m_debconfGuis[socketPath];
     } else {
         // Create the Transaction object to delete
         // the DebconfGui class when the transaction finishes
-        Transaction *transaction = new Transaction(QDBusObjectPath(tid));
+        auto transaction = new Transaction(QDBusObjectPath(tid));
         transaction->setProperty("socketPath", socketPath);
-        connect(transaction, SIGNAL(finished(PackageKit::Transaction::Exit,uint)),
-                this, SLOT(transactionFinished()));
+        connect(transaction, &Transaction::finished, this, &DBusInterface::transactionFinished);
 
         // Setup the Debconf dialog
         gui = new DebconfGui(socketPath);
@@ -87,7 +88,7 @@ void DBusInterface::SetupDebconfDialog(const QString &tid, const QString &socket
     Q_UNUSED(tid)
     Q_UNUSED(socketPath)
     Q_UNUSED(xidParent)
-    kDebug() << "Not compiled with Debconf support - ignoring";
+    qCDebug(APPER_DAEMON) << "Not compiled with Debconf support - ignoring";
 #endif //HAVE_DEBCONFKDE
 }
 
@@ -100,7 +101,7 @@ void DBusInterface::debconfActivate()
 {
 #ifdef HAVE_DEBCONFKDE
     // Correct the parent
-    kDebug();
+    qCDebug(APPER_DAEMON);
     DebconfGui *gui = qobject_cast<DebconfGui*>(sender());
     uint xidParent  = gui->property("xidParent").toUInt();
     KWindowSystem::setMainWindow(gui, xidParent);
@@ -118,3 +119,5 @@ void DBusInterface::transactionFinished()
     }
 #endif // HAVE_DEBCONFKDE
 }
+
+#include "moc_DBusInterface.cpp"

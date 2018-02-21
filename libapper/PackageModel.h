@@ -59,6 +59,7 @@ public:
     };
     typedef struct {
         QString    displayName;
+        QString    pkgName;
         QString    version;
         QString    arch;
         QString    repo;
@@ -68,8 +69,8 @@ public:
         QString    icon;
         QString    appId;
         QString    currentVersion;
-        bool       isPackage;
-        double     size;
+        bool       isPackage = true;
+        double     size = 0;
     } InternalPackage;
 
     explicit PackageModel(QObject *parent = 0);
@@ -99,18 +100,27 @@ public:
     QModelIndex index(int row, int column, const QModelIndex &parent = QModelIndex()) const;
     QModelIndex parent(const QModelIndex &index) const;
 
+    virtual QHash<int,QByteArray> roleNames() const override;
+
 public Q_SLOTS:
     void addSelectedPackagesFromModel(PackageModel *model);
+    void addNotSelectedPackage(PackageKit::Transaction::Info info, const QString &packageID, const QString &summary);
     void addPackage(PackageKit::Transaction::Info info, const QString &packageID, const QString &summary, bool selected = false);
     void addSelectedPackage(PackageKit::Transaction::Info info, const QString &packageID, const QString &summary);
     void removePackage(const QString &packageID);
 
+    void checkAll();
     void setAllChecked(bool checked);
     void checkPackage(const PackageModel::InternalPackage &package,
                       bool emitDataChanged = true);
+    void uncheckAll();
+    void uncheckPackageDefault(const QString &packageID);
     void uncheckPackage(const QString &packageID,
                         bool forceEmitUnchecked = false,
                         bool emitDataChanged = true);
+    void uncheckPackageLogic(const QString &packageID,
+                             bool forceEmitUnchecked = false,
+                             bool emitDataChanged = true);
     bool hasChanges() const;
     int countInfo(PackageKit::Transaction::Info info) const;
 
@@ -147,6 +157,7 @@ private:
     PackageKit::Transaction *m_getUpdatesTransaction = 0;
     PackageKit::Transaction *m_fetchSizesTransaction;
     PackageKit::Transaction *m_fetchInstalledVersionsTransaction;
+    QHash<int, QByteArray> m_roles;
 };
 
 #endif

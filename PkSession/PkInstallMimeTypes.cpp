@@ -28,7 +28,7 @@
 
 #include <KLocalizedString>
 
-#include <KDebug>
+#include <QLoggingCategory>
 
 PkInstallMimeTypes::PkInstallMimeTypes(uint xid,
                                       const QStringList &mime_types,
@@ -40,11 +40,10 @@ PkInstallMimeTypes::PkInstallMimeTypes(uint xid,
 {
     setWindowTitle(i18n("Install Support for File Types"));
 
-    IntroDialog *introDialog = new IntroDialog(this);
+    auto introDialog = new IntroDialog(this);
     m_model = new FilesModel(QStringList(), mime_types, this);
     introDialog->setModel(m_model);
-    connect(introDialog, SIGNAL(continueChanged(bool)),
-            this, SLOT(enableButtonOk(bool)));
+    connect(introDialog, &IntroDialog::continueChanged, this, &PkInstallMimeTypes::enableButtonOk);
     setMainWidget(introDialog);
 
     QString description;
@@ -80,16 +79,14 @@ PkInstallMimeTypes::~PkInstallMimeTypes()
 void PkInstallMimeTypes::search()
 {
     QStringList mimeTypes = m_model->files();
-    PkTransaction *transaction = new PkTransaction(this);
+    auto transaction = new PkTransaction(this);
     Transaction *t;
     t = Daemon::whatProvides(mimeTypes,
                              Transaction::FilterNotInstalled | Transaction::FilterArch | Transaction::FilterNewest);
     transaction->setupTransaction(t);
     setTransaction(Transaction::RoleWhatProvides, transaction);
-    connect(transaction, SIGNAL(finished(PkTransaction::ExitStatus)),
-            this, SLOT(searchFinished(PkTransaction::ExitStatus)), Qt::UniqueConnection);
-    connect(transaction, SIGNAL(package(PackageKit::Transaction::Info,QString,QString)),
-            this, SLOT(addPackage(PackageKit::Transaction::Info,QString,QString)));
+    connect(transaction, &PkTransaction::finished, this, &PkInstallMimeTypes::searchFinished, Qt::UniqueConnection);
+    connect(transaction, &PkTransaction::package, this, &PkInstallMimeTypes::addPackage);
 }
 
 void PkInstallMimeTypes::notFound()
@@ -99,11 +96,11 @@ void PkInstallMimeTypes::notFound()
         setInfo(msg, i18n("No new applications can be found "
                           "to handle this type of file"));
     }
-    sendErrorFinished(NoPackagesFound, "nothing was found to handle mime type");
+    sendErrorFinished(NoPackagesFound, QLatin1String("nothing was found to handle mime type"));
 }
 
 //setTitle(i18np("Application that can open this type of file",
 //               "Applications that can open this type of file",
 //               m_foundPackages.size()));
 
-#include "PkInstallMimeTypes.moc"
+#include "moc_PkInstallMimeTypes.cpp"

@@ -29,7 +29,9 @@
 #include <QFile>
 
 #include <KLocalizedString>
-#include <KDebug>
+#include <QLoggingCategory>
+
+Q_DECLARE_LOGGING_CATEGORY(APPER_SESSION)
 
 PkInstallFontconfigResources::PkInstallFontconfigResources(uint xid,
                                                            const QStringList &resources,
@@ -40,28 +42,27 @@ PkInstallFontconfigResources::PkInstallFontconfigResources(uint xid,
 {
     setWindowTitle(i18n("Installs new Fonts"));
 
-    IntroDialog *introDialog = new IntroDialog(this);
-    QStandardItemModel *model = new QStandardItemModel(this);
+    auto introDialog = new IntroDialog(this);
+    auto model = new QStandardItemModel(this);
     introDialog->setModel(model);
-    connect(introDialog, SIGNAL(continueChanged(bool)),
-            this, SLOT(enableButtonOk(bool)));
+    connect(introDialog, &IntroDialog::continueChanged, this, &PkInstallFontconfigResources::enableButtonOk);
     setMainWidget(introDialog);
 
     // This will only validate fields
     QStringList errors;
     QStringList iso639;
-    foreach (const QString &font, resources) {
+    for (const QString &font : resources) {
         // TODO never return in here
         // TODO add name field from /usr/share/xml/iso-codes/iso_639.xml into model
         if (!font.startsWith(QLatin1String(":lang="))) {
-            errors << QString("not recognised prefix: '%1'").arg(font);
-            kWarning() << QString("not recognised prefix: '%1'").arg(font);
+            errors << QString(QLatin1String("not recognised prefix: '%1'")).arg(font);
+            qCWarning(APPER_SESSION) << QString(QLatin1String("not recognised prefix: '%1'")).arg(font);
             continue;
         }
         int size = font.size();
         if (size < 7 || size > 20) {
-            errors << QString("lang tag malformed: '%1'").arg(font);
-            kWarning() << QString("lang tag malformed: '%1'").arg(font);
+            errors << QString(QLatin1String("lang tag malformed: '%1'")).arg(font);
+            qCWarning(APPER_SESSION) << QString(QLatin1String("lang tag malformed: '%1'")).arg(font);
             continue;
         }
 
@@ -71,24 +72,24 @@ PkInstallFontconfigResources::PkInstallFontconfigResources(uint xid,
 
     if (m_resources.isEmpty()) {
         setError(i18n("Could interpret request"), i18n("Please verify if the request was valid"));
-        sendErrorFinished(InternalError, errors.join("\n"));
+        sendErrorFinished(InternalError, errors.join(QLatin1Char('\n')));
         return;
     }
     enableButtonOk(true);
 
     // Search for the iso 639 names to present it nicely to the user
     QStringList niceNames;
-    QFile file("/usr/share/xml/iso-codes/iso_639.xml");
+    QFile file(QLatin1String("/usr/share/xml/iso-codes/iso_639.xml"));
     file.open(QFile::ReadOnly);
     QXmlQuery query;
-    query.bindVariable("path", &file);
-    foreach (const QString &font, iso639) {
+    query.bindVariable(QLatin1String("path"), &file);
+    for (const QString &font : iso639) {
         QString queryTxt;
-        queryTxt = QString("declare variable $path external;"
-                           "doc($path)/iso_639_entries/"
-                           "iso_639_entry[@iso_639_2B_code=\"%1\" or "
+        queryTxt = QString(QLatin1String("declare variable $path external;"
+                                         "doc($path)/iso_639_entries/"
+                                         "iso_639_entry[@iso_639_2B_code=\"%1\" or "
                                          "@iso_639_2T_code=\"%1\" or "
-                                         "@iso_639_1_code=\"%1\"]/string(@name)").arg(font);
+                                         "@iso_639_1_code=\"%1\"]/string(@name)")).arg(font);
         query.setQuery(queryTxt);
         QStringList result;
         query.evaluateTo(&result);
@@ -96,9 +97,9 @@ PkInstallFontconfigResources::PkInstallFontconfigResources(uint xid,
     }
 
 //    kDebug() << "result" << niceNames << iso639;
-    foreach (const QString &name, niceNames) {
-        QStandardItem *item = new QStandardItem(name);
-        item->setIcon(QIcon::fromTheme("fonts-package").pixmap(32, 32));
+    for (const QString &name : niceNames) {
+        auto item = new QStandardItem(name);
+        item->setIcon(QIcon::fromTheme(QLatin1String("fonts-package")).pixmap(32, 32));
         item->setFlags(Qt::ItemIsEnabled);
         model->appendRow(item);
     }
@@ -132,16 +133,14 @@ PkInstallFontconfigResources::~PkInstallFontconfigResources()
 
 void PkInstallFontconfigResources::search()
 {
-    PkTransaction *transaction = new PkTransaction(this);
+    auto transaction = new PkTransaction(this);
     Transaction *t;
     t = Daemon::whatProvides(m_resources,
                              Transaction::FilterNotInstalled | Transaction::FilterArch | Transaction::FilterNewest);
     transaction->setupTransaction(t);
     setTransaction(Transaction::RoleWhatProvides, transaction);
-    connect(transaction, SIGNAL(finished(PkTransaction::ExitStatus)),
-            this, SLOT(searchFinished(PkTransaction::ExitStatus)), Qt::UniqueConnection);
-    connect(transaction, SIGNAL(package(PackageKit::Transaction::Info,QString,QString)),
-            this, SLOT(addPackage(PackageKit::Transaction::Info,QString,QString)));
+    connect(transaction, &PkTransaction::finished, this, &PkInstallFontconfigResources::searchFinished, Qt::UniqueConnection);
+    connect(transaction, &PkTransaction::package, this, &PkInstallFontconfigResources::addPackage);
 }
 
 void PkInstallFontconfigResources::notFound()
@@ -159,7 +158,7 @@ void PkInstallFontconfigResources::searchFailed()
     if (showWarning()) {
         setError(msg, i18n("Failed to search for provides"));
     }
-    sendErrorFinished(Failed, "failed to search for provides");
+    sendErrorFinished(Failed, QLatin1String("failed to search for provides"));
 }
 
-#include "PkInstallFontconfigResources.moc"
+#include "moc_PkInstallFontconfigResources.cpp"

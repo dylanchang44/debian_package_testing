@@ -1,5 +1,5 @@
 /***************************************************************************
- *   Copyright (C) 2008-2011 by Daniel Nicoletti                           *
+ *   Copyright (C) 2008-2018 by Daniel Nicoletti                           *
  *   dantti12@gmail.com                                                    *
  *                                                                         *
  *   This program is free software; you can redistribute it and/or modify  *
@@ -24,9 +24,11 @@
 #include "FilesModel.h"
 
 #include <KLocalizedString>
-#include <KDebug>
+#include <QLoggingCategory>
 
 #include <Daemon>
+
+Q_DECLARE_LOGGING_CATEGORY(APPER_SESSION)
 
 PkInstallPackageFiles::PkInstallPackageFiles(uint xid,
                                              const QStringList &files,
@@ -37,21 +39,20 @@ PkInstallPackageFiles::PkInstallPackageFiles(uint xid,
 {
     setWindowTitle(i18n("Install Packages Files"));
 
-//    if (Daemon::global()->roles() & Transaction::RoleInstallFiles) {
+    if (Daemon::global()->roles() & Transaction::RoleInstallFiles) {
         m_introDialog = new IntroDialog(this);
         m_introDialog->acceptDrops(i18n("You can drop more files in here"));
 
         m_model = new FilesModel(files, Daemon::global()->mimeTypes(), this);
         m_introDialog->setModel(m_model);
-        connect(m_model, SIGNAL(rowsInserted(QModelIndex,int,int)),
-                this, SLOT(modelChanged()));
+        connect(m_model, &FilesModel::rowsInserted, this, &PkInstallPackageFiles::modelChanged);
         setMainWidget(m_introDialog);
 
         modelChanged();
-//    } else {
-//        setError(i18n("Not Supported"),
-//                 i18n("Your current backend does not support installing files"));
-//    }
+    } else {
+        setError(i18n("Not Supported"),
+                 i18n("Your current backend does not support installing files"));
+    }
 }
 
 PkInstallPackageFiles::~PkInstallPackageFiles()
@@ -60,7 +61,7 @@ PkInstallPackageFiles::~PkInstallPackageFiles()
 
 void PkInstallPackageFiles::modelChanged()
 {
-    QStringList files = m_model->files();
+    const QStringList files = m_model->files();
     enableButtonOk(!files.isEmpty());
 
     QString description;
@@ -90,16 +91,15 @@ void PkInstallPackageFiles::modelChanged()
 
 void PkInstallPackageFiles::commit()
 {
-    PkTransaction *transaction = new PkTransaction(this);
+    auto transaction = new PkTransaction(this);
     setTransaction(Transaction::RoleInstallFiles, transaction);
-    connect(transaction, SIGNAL(finished(PkTransaction::ExitStatus)),
-            this, SLOT(transactionFinished(PkTransaction::ExitStatus)), Qt::UniqueConnection);
+    connect(transaction, &PkTransaction::finished, this, &PkInstallPackageFiles::transactionFinished, Qt::UniqueConnection);
     transaction->installFiles(m_model->files());
 }
 
 void PkInstallPackageFiles::transactionFinished(PkTransaction::ExitStatus status)
 {
-     kDebug() << "Finished.";
+     qCDebug(APPER_SESSION) << "Finished.";
      switch (status) {
      case PkTransaction::Success :
          if (showFinished()) {
@@ -111,7 +111,7 @@ void PkInstallPackageFiles::transactionFinished(PkTransaction::ExitStatus status
          finishTaskOk();
          break;
      case PkTransaction::Cancelled :
-         sendErrorFinished(Cancelled, "Aborted");
+         sendErrorFinished(Cancelled, QLatin1String("Aborted"));
          break;
      case PkTransaction::Failed :
          if (showWarning()) {
@@ -123,4 +123,4 @@ void PkInstallPackageFiles::transactionFinished(PkTransaction::ExitStatus status
      }
 }
 
-#include "PkInstallPackageFiles.moc"
+#include "moc_PkInstallPackageFiles.cpp"

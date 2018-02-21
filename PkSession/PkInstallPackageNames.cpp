@@ -25,7 +25,7 @@
 #include <KLocalizedString>
 #include <QStandardItemModel>
 
-#include <KDebug>
+#include <QLoggingCategory>
 
 #include <Daemon>
 
@@ -42,16 +42,15 @@ PkInstallPackageNames::PkInstallPackageNames(uint xid,
 {
     setWindowTitle(i18n("Install Packages by Name"));
 
-    IntroDialog *introDialog = new IntroDialog(this);
-    QStandardItemModel *model = new QStandardItemModel(this);
+    auto introDialog = new IntroDialog(this);
+    auto model = new QStandardItemModel(this);
     introDialog->setModel(model);
-    connect(introDialog, SIGNAL(continueChanged(bool)),
-            this, SLOT(enableButtonOk(bool)));
+    connect(introDialog, &IntroDialog::continueChanged, this, &PkInstallPackageNames::enableButtonOk);
     setMainWidget(introDialog);
 
-    foreach (const QString &package, packages) {
+    for (const QString &package : packages) {
         QStandardItem *item = new QStandardItem(package);
-        item->setIcon(QIcon::fromTheme("package-x-generic").pixmap(32, 32));
+        item->setIcon(QIcon::fromTheme(QLatin1String("package-x-generic")).pixmap(32, 32));
         item->setFlags(Qt::ItemIsEnabled);
         model->appendRow(item);
     }
@@ -88,13 +87,11 @@ PkInstallPackageNames::~PkInstallPackageNames()
 
 void PkInstallPackageNames::search()
 {
-    PkTransaction *transaction = new PkTransaction(this);
+    auto transaction = new PkTransaction(this);
     transaction->setupTransaction(Daemon::resolve(m_packages, Transaction::FilterArch | Transaction::FilterNewest));
     setTransaction(Transaction::RoleResolve, transaction);
-    connect(transaction, SIGNAL(finished(PkTransaction::ExitStatus)),
-            this, SLOT(searchFinished(PkTransaction::ExitStatus)), Qt::UniqueConnection);
-    connect(transaction, SIGNAL(package(PackageKit::Transaction::Info,QString,QString)),
-            this, SLOT(addPackage(PackageKit::Transaction::Info,QString,QString)));
+    connect(transaction, &PkTransaction::finished, this, &PkInstallPackageNames::searchFinished, Qt::UniqueConnection);
+    connect(transaction, &PkTransaction::package, this, &PkInstallPackageNames::addPackage);
 }
 
 void PkInstallPackageNames::notFound()
@@ -105,23 +102,23 @@ void PkInstallPackageNames::notFound()
                     i18np("The package %2 is already installed",
                           "The packages %2 are already installed",
                           m_alreadyInstalled.size(),
-                          m_alreadyInstalled.join(",")));
+                          m_alreadyInstalled.join(QLatin1Char(','))));
         }
-        sendErrorFinished(Failed, "package already found");
+        sendErrorFinished(Failed, QLatin1String("package already found"));
     } else {
         if (showWarning()) {
-            setInfo(i18n("Could not find %1", m_packages.join(", ")),
+            setInfo(i18n("Could not find %1", m_packages.join(QLatin1String(", "))),
                     i18np("The package could not be found in any software source",
                           "The packages could not be found in any software source",
                           m_packages.size()));
         }
-        sendErrorFinished(NoPackagesFound, "no package found");
+        sendErrorFinished(NoPackagesFound, QLatin1String("no package found"));
     }
 }
 
 void PkInstallPackageNames::searchFailed()
 {
-    sendErrorFinished(Failed, "failed to resolve package name");
+    sendErrorFinished(Failed, QLatin1String("failed to resolve package name"));
 }
 
 void PkInstallPackageNames::addPackage(Transaction::Info info, const QString &packageID, const QString &summary)
@@ -133,4 +130,4 @@ void PkInstallPackageNames::addPackage(Transaction::Info info, const QString &pa
     }
 }
 
-#include "PkInstallPackageNames.moc"
+#include "moc_PkInstallPackageNames.cpp"

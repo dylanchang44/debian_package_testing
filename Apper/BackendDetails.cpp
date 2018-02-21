@@ -1,5 +1,5 @@
 /***************************************************************************
- *   Copyright (C) 2009-2013 by Daniel Nicoletti                           *
+ *   Copyright (C) 2009-2018 by Daniel Nicoletti                           *
  *   dantti12@gmail.com                                                    *
  *                                                                         *
  *   This program is free software; you can redistribute it and/or modify  *
@@ -28,17 +28,16 @@
 using namespace PackageKit;
 
 BackendDetails::BackendDetails(QWidget *parent) :
-    KDialog(parent),
+    QDialog(parent),
     ui(new Ui::BackendDetails)
 {
-    setWindowTitle(i18n("Backend Details"));
+    ui->setupUi(this);
 
-    ui->setupUi(mainWidget());
-    setButtons(KDialog::Close);
-    setWindowIcon(QIcon::fromTheme("help-about"));
+    setWindowTitle(i18n("Backend Details"));
+    setWindowIcon(QIcon::fromTheme(QLatin1String("help-about")));
 
     // update information about PackageKit backend
-    connect(Daemon::global(), SIGNAL(changed()), this, SLOT(daemonChanged()));
+    connect(Daemon::global(), &Daemon::changed, this, &BackendDetails::daemonChanged);
 
     if (Daemon::global()->isRunning()) {
         daemonChanged();
@@ -108,4 +107,4 @@ void BackendDetails::daemonChanged()
     ui->archCB->setChecked(filters & Transaction::FilterNotArch);
 }
 
-#include "BackendDetails.moc"
+#include "moc_BackendDetails.cpp"
