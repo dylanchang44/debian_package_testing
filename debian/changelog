@@ -1,7 +1,20 @@
-apper (1.0.0-1) UNRELEASED; urgency=medium
+apper (1.0.0-1) unstable; urgency=medium
 
   * New upstream version: 1.0.0
+    - Builds with recent PackageKit-Qt (Closes: #888155)
+    - Resolves some drawing issues (Closes: #876846)
   * Update d/watch
+  * Update VCS and homepage URLs
+  * Build without Limba support
+  * Use dh compat level 11
+  * Drop all patches: Applied upstream
+  * Update build deps
+    - Drop stale build-dep on kdelibs5-dev (Closes: #883586)
+    - Don't build-depend on kio-dev transitional package (Closes: #885385)
+  * fix-build-with-editorigins.patch: Fix FTBFS when EDIT_ORIGNS_DESKTOP_NAME
+    is defined
+  * Update install files
+  * d/rules: Remove some cruft
 
  -- Matthias Klumpp <mak@debian.org>  Wed, 21 Feb 2018 20:38:26 +0100
 
