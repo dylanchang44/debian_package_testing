@@ -41,7 +41,6 @@ Replaces: apper-appsetup (<< 0.7.2)
 Breaks: apper-appsetup (<< 0.7.2)
 Recommends: appstream,
             debconf-kde-helper
-Suggests: limba [linux-any]
 Description: KDE package management tool using PackageKit
  PackageKit allows performing simple software management tasks over a DBus
  interface  e.g. refreshing the cache, updating, installing and removing

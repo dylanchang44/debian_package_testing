@@ -9,10 +9,6 @@ APPER_CONFIG_FLAGS = -DDEBCONF_SUPPORT=ON \
 		-DAUTOREMOVE=ON \
 		-DEDIT_ORIGNS_DESKTOP_NAME=software-properties-kde
 
-ifeq ($(DEB_HOST_ARCH_OS), linux)
-	APPER_CONFIG_FLAGS += -DLIMBA=ON
-endif
-
 DEB_HOST_MULTIARCH ?= $(shell dpkg-architecture -qDEB_HOST_MULTIARCH)
 
 INSTALLDIR = $(CURDIR)/debian/tmp
