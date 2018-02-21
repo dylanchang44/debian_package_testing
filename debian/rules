@@ -29,10 +29,5 @@ override_dh_auto_install:
 	chrpath --list $(INSTALLDIR)/usr/bin/apper
 	chrpath --replace /usr/lib/$(DEB_HOST_MULTIARCH)/apper $(INSTALLDIR)/usr/bin/apper
 
-override_dh_install:
-	# FIXME: Temporarily disable the update notifier applet
-	rm -f $(INSTALLDIR)/usr/share/kservices5/plasma-applet-org.packagekit.updater
-	dh_install
-
-override_dh_override:
-	dh_override --fail-missing
+override_dh_missing:
+	dh_missing --fail-missing
