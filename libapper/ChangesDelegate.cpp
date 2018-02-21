@@ -20,13 +20,15 @@
 
 #include "ChangesDelegate.h"
 
-#include <KDebug>
 #include <KIconLoader>
 #include <KLocalizedString>
 #include <QApplication>
+#include <QLoggingCategory>
 #include <QPushButton>
 #include <QTreeView>
 #include <QHeaderView>
+
+#include <QPainter>
 
 #include "PackageModel.h"
 #include "PkIcons.h"
@@ -39,31 +41,33 @@
 #define FADE_LENGTH 16
 #define MAIN_ICON_SIZE 32
 
+Q_DECLARE_LOGGING_CATEGORY(APPER_LIB)
+
 using namespace PackageKit;
 
 ChangesDelegate::ChangesDelegate(QAbstractItemView *parent) :
     KExtendableItemDelegate(parent),
     m_viewport(parent->viewport()),
     // loads it here to be faster when displaying items
-    m_packageIcon("package"),
-    m_collectionIcon("package-orign"),
-    m_installIcon("dialog-cancel"),
+    m_packageIcon(QIcon::fromTheme(QLatin1String("package"))),
+    m_collectionIcon(QIcon::fromTheme(QLatin1String("package-orign"))),
+    m_installIcon(QIcon::fromTheme(QLatin1String("dialog-cancel"))),
     m_installString(i18n("Do not Install")),
-    m_removeIcon("dialog-cancel"),
+    m_removeIcon(QIcon::fromTheme(QLatin1String("dialog-cancel"))),
     m_removeString(i18n("Do not Remove")),
-    m_undoIcon("edit-undo"),
+    m_undoIcon(QIcon::fromTheme(QLatin1String("edit-undo"))),
     m_undoString(i18n("Deselect")),
-    m_checkedIcon("dialog-ok-apply")
+    m_checkedIcon(QIcon::fromTheme(QLatin1String("dialog-ok-apply")))
 {
     // maybe rename or copy it to package-available
     if (QApplication::isRightToLeft()) {
-        setExtendPixmap(SmallIcon("arrow-left"));
+        setExtendPixmap(SmallIcon(QLatin1String("arrow-left")));
     } else {
-        setExtendPixmap(SmallIcon("arrow-right"));
+        setExtendPixmap(SmallIcon(QLatin1String("arrow-right")));
     }
-    setContractPixmap(SmallIcon("arrow-down"));
+    setContractPixmap(SmallIcon(QLatin1String("arrow-down")));
     // store the size of the extend pixmap to know how much we should move
-    m_extendPixmapWidth = SmallIcon("arrow-right").size().width();
+    m_extendPixmapWidth = SmallIcon(QLatin1String("arrow-right")).size().width();
 
     QPushButton button, button2;
     button.setText(m_installString);
@@ -79,15 +83,15 @@ ChangesDelegate::ChangesDelegate(QAbstractItemView *parent) :
 }
 
 void ChangesDelegate::paint(QPainter *painter,
-                        const QStyleOptionViewItem &option,
-                        const QModelIndex &index) const
+                            const QStyleOptionViewItem &option,
+                            const QModelIndex &index) const
 {
     if (!index.isValid()) {
         return;
     }
     bool leftToRight = (painter->layoutDirection() == Qt::LeftToRight);
 
-    QStyleOptionViewItemV4 opt(option);
+    QStyleOptionViewItem opt(option);
     QStyle *style = opt.widget ? opt.widget->style() : QApplication::style();
     painter->save();
     style->drawPrimitive(QStyle::PE_PanelItemViewItem, &opt, painter, opt.widget);
@@ -377,7 +381,7 @@ bool ChangesDelegate::editorEvent(QEvent *event,
         optBt.rect.setTop(optBt.rect.top() + ((calcItemHeight(option) - m_buttonSize.height()) / 2));
         optBt.rect.setSize(m_buttonSize);
 
-        kDebug() << point << option.rect.left() << option << insideButton(optBt.rect, point);
+        qCDebug(APPER_LIB) << point << option.rect.left() << option << insideButton(optBt.rect, point);
 //         kDebug() << view->visualRect(index);
         if (insideButton(optBt.rect, point)) {
             return model->setData(index,
@@ -396,7 +400,7 @@ bool ChangesDelegate::editorEvent(QEvent *event,
 
     // We need move the option rect left because KExtendableItemDelegate
     // drew the extendPixmap
-    QStyleOptionViewItemV4 opt(option);
+    QStyleOptionViewItem opt(option);
     if (QApplication::isRightToLeft()) {
         opt.rect.setRight(option.rect.right() - m_extendPixmapWidth);
     } else {
@@ -431,4 +435,4 @@ QSize ChangesDelegate::sizeHint(const QStyleOptionViewItem &option, const QModel
     return ret;
 }
 
-#include "ChangesDelegate.moc"
+#include "moc_ChangesDelegate.cpp"

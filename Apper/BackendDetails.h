@@ -1,5 +1,5 @@
 /***************************************************************************
- *   Copyright (C) 2009-2013 by Daniel Nicoletti                           *
+ *   Copyright (C) 2009-2018 by Daniel Nicoletti                           *
  *   dantti12@gmail.com                                                    *
  *                                                                         *
  *   This program is free software; you can redistribute it and/or modify  *
@@ -21,20 +21,19 @@
 #ifndef BACKEND_DETAILS_H
 #define BACKEND_DETAILS_H
 
-#include <KDialog>
+#include <QDialog>
 
 namespace Ui {
     class BackendDetails;
 }
 
-class BackendDetails : public KDialog
+class BackendDetails : public QDialog
 {
     Q_OBJECT
 public:
     explicit BackendDetails(QWidget *parent = 0);
     ~BackendDetails();
 
-private Q_SLOTS:
     void daemonChanged();
 
 private:

@@ -27,7 +27,9 @@
 
 #include <KLocalizedString>
 
-#include <KDebug>
+#include <QLoggingCategory>
+
+Q_DECLARE_LOGGING_CATEGORY(APPER_SESSION)
 
 PkSearchFile::PkSearchFile(const QString &file_name,
                            const QString &interaction,
@@ -40,18 +42,16 @@ PkSearchFile::PkSearchFile(const QString &file_name,
     setWindowTitle(i18n("Search Packages that Provides Files"));
 
     // Check for a leading slash '/' return with an error if it's not there..
-    if (!m_fileName.startsWith('/')) {
-        sendErrorFinished(Failed, "Only full file name path is supported");
+    if (!m_fileName.startsWith(QLatin1Char('/'))) {
+        sendErrorFinished(Failed, QLatin1String("Only full file name path is supported"));
         return;
     }
 
-    PkTransaction *transaction = new PkTransaction(this);
+    auto transaction = new PkTransaction(this);
     transaction->setupTransaction(Daemon::searchFiles(m_fileName, Transaction::FilterNewest));
     setTransaction(Transaction::RoleSearchFile, transaction);
-    connect(transaction, SIGNAL(finished(PkTransaction::ExitStatus)),
-            this, SLOT(searchFinished(PkTransaction::ExitStatus)), Qt::UniqueConnection);
-    connect(transaction, SIGNAL(package(PackageKit::Transaction::Info,QString,QString)),
-            this, SLOT(addPackage(PackageKit::Transaction::Info,QString,QString)));
+    connect(transaction, &PkTransaction::finished, this, &PkSearchFile::searchFinished, Qt::UniqueConnection);
+    connect(transaction, &PkTransaction::package, this, &PkSearchFile::addPackage);
 }
 
 PkSearchFile::~PkSearchFile()
@@ -72,7 +72,7 @@ void PkSearchFile::searchSuccess()
     QDBusMessage reply = m_message.createReply();
     reply << installed;
     reply << Transaction::packageName(packageID);
-    kDebug() << reply;
+    qCDebug(APPER_SESSION) << reply;
     sendMessageFinished(reply);
 }
 
@@ -83,4 +83,4 @@ void PkSearchFile::notFound()
     sendErrorFinished(NoPackagesFound, msg);
 }
 
-#include "PkSearchFile.moc"
+#include "moc_PkSearchFile.cpp"

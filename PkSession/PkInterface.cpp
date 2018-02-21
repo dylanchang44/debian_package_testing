@@ -22,7 +22,7 @@
 #include "packagekitadaptor.h"
 
 #include <QtDBus/QDBusConnection>
-#include <KWindowSystem>
+//#include <KWindowSystem>
 
 #include "SessionTask.h"
 #include "PkInstallPackageNames.h"
@@ -41,7 +41,9 @@
 
 #include <Daemon>
 
-#include <KDebug>
+#include <QLoggingCategory>
+
+Q_DECLARE_LOGGING_CATEGORY(APPER_SESSION)
 
 using namespace PackageKit;
 
@@ -52,28 +54,26 @@ PkInterface::PkInterface(QObject *parent) :
         QTimer timer;
         timer.setInterval(5000);
         QEventLoop loop;
-        connect(Daemon::global(), SIGNAL(isRunningChanged()),
-                &loop, SLOT(quit()));
-        connect(&timer, SIGNAL(timeout()),
-                &loop, SLOT(quit()));
+        connect(Daemon::global(), &Daemon::isRunningChanged, &loop, &QEventLoop::quit);
+        connect(&timer, &QTimer::timeout, &loop, &QEventLoop::quit);
         loop.exec();
         if (!Daemon::isRunning()) {
-            kWarning() << "Packagekit didn't start";
+            qCWarning(APPER_SESSION) << "Packagekit didn't start";
             qApp->quit();
             return;
         }
     }
 
-    kDebug() << "Creating Helper";
+    qCDebug(APPER_SESSION) << "Creating Helper";
     (void) new ModifyAdaptor(this);
     (void) new QueryAdaptor(this);
-    if (!QDBusConnection::sessionBus().registerService("org.freedesktop.PackageKit")) {
-        kDebug() << "unable to register service to dbus";
+    if (!QDBusConnection::sessionBus().registerService(QLatin1String("org.freedesktop.PackageKit"))) {
+        qCDebug(APPER_SESSION) << "unable to register service to dbus";
         return;
     }
 
-    if (!QDBusConnection::sessionBus().registerObject("/org/freedesktop/PackageKit", this)) {
-        kDebug() << "unable to register object to dbus";
+    if (!QDBusConnection::sessionBus().registerObject(QLatin1String("/org/freedesktop/PackageKit"), this)) {
+        qCDebug(APPER_SESSION) << "unable to register object to dbus";
         return;
     }
 }
@@ -84,133 +84,85 @@ PkInterface::~PkInterface()
 
 void PkInterface::InstallCatalogs(uint xid, const QStringList &files, const QString &interaction)
 {
-    increaseRunning();
-    kDebug() << xid << files << interaction;
-    setDelayedReply(true);
-    PkInstallCatalogs *task;
-    task = new PkInstallCatalogs(xid, files, interaction, message());
-    connect(task, SIGNAL(finished()), this, SLOT(decreaseRunning()));
-    show(task);
+    qCDebug(APPER_SESSION) << xid << files << interaction;
+    show(new PkInstallCatalogs(xid, files, interaction, message()));
 }
 
 void PkInterface::InstallFontconfigResources(uint xid, const QStringList &resources, const QString &interaction)
 {
-    increaseRunning();
-    kDebug() << xid << resources << interaction;
-    setDelayedReply(true);
-    PkInstallFontconfigResources *task;
-    task = new PkInstallFontconfigResources(xid, resources, interaction, message());
-    connect(task, SIGNAL(finished()), this, SLOT(decreaseRunning()));
-    show(task);
+    qCDebug(APPER_SESSION) << xid << resources << interaction;
+    show(new PkInstallFontconfigResources(xid, resources, interaction, message()));
 }
 
 void PkInterface::InstallGStreamerResources(uint xid, const QStringList &resources, const QString &interaction)
 {
-    increaseRunning();
-    kDebug() << xid << resources << interaction;
-    setDelayedReply(true);
-    PkInstallGStreamerResources *task;
-    task = new PkInstallGStreamerResources(xid, resources, interaction, message());
-    connect(task, SIGNAL(finished()), this, SLOT(decreaseRunning()));
-    show(task);
+    qCDebug(APPER_SESSION) << xid << resources << interaction;
+    show(new PkInstallGStreamerResources(xid, resources, interaction, message()));
 }
 
 void PkInterface::InstallMimeTypes(uint xid, const QStringList &mime_types, const QString &interaction)
 {
-    increaseRunning();
-    kDebug() << xid << mime_types << interaction;
-    setDelayedReply(true);
-    PkInstallMimeTypes *task = new PkInstallMimeTypes(xid, mime_types, interaction, message());
-    connect(task, SIGNAL(finished()), this, SLOT(decreaseRunning()));
-    show(task);
+    qCDebug(APPER_SESSION) << xid << mime_types << interaction;
+    show(new PkInstallMimeTypes(xid, mime_types, interaction, message()));
 }
 
 void PkInterface::InstallPackageFiles(uint xid, const QStringList &files, const QString &interaction)
 {
-    increaseRunning();
-    kDebug() << xid << files << interaction;
-    setDelayedReply(true);
-    PkInstallPackageFiles *task = new PkInstallPackageFiles(xid, files, interaction, message());
-    connect(task, SIGNAL(finished()), this, SLOT(decreaseRunning()));
-    show(task);
+    qCDebug(APPER_SESSION) << xid << files << interaction;
+    show(new PkInstallPackageFiles(xid, files, interaction, message()));
 }
 
 void PkInterface::InstallPackageNames(uint xid, const QStringList &packages, const QString &interaction)
 {
-    increaseRunning();
-    kDebug() << xid << packages << interaction;
-    setDelayedReply(true);
-    PkInstallPackageNames *task = new PkInstallPackageNames(xid, packages, interaction, message());
-    connect(task, SIGNAL(finished()), this, SLOT(decreaseRunning()));
-    show(task);
+    qCDebug(APPER_SESSION) << xid << packages << interaction;
+    show(new PkInstallPackageNames(xid, packages, interaction, message()));
 }
 
 void PkInterface::InstallProvideFiles(uint xid, const QStringList &files, const QString &interaction)
 {
-    increaseRunning();
-    kDebug() << xid << files << interaction;
-    setDelayedReply(true);
-    PkInstallProvideFiles *task = new PkInstallProvideFiles(xid, files, interaction, message());
-    connect(task, SIGNAL(finished()), this, SLOT(decreaseRunning()));
-    show(task);
+    qCDebug(APPER_SESSION) << xid << files << interaction;
+    show(new PkInstallProvideFiles(xid, files, interaction, message()));
 }
 
 void PkInterface::RemovePackageByFiles(uint xid, const QStringList &files, const QString &interaction)
 {
-    increaseRunning();
-    kDebug() << xid << files << interaction;
-    setDelayedReply(true);
-    PkRemovePackageByFiles *task = new PkRemovePackageByFiles(xid, files, interaction, message());
-    connect(task, SIGNAL(finished()), this, SLOT(decreaseRunning()));
-    show(task);
+    qCDebug(APPER_SESSION) << xid << files << interaction;
+    show(new PkRemovePackageByFiles(xid, files, interaction, message()));
 }
 
 void PkInterface::InstallPrinterDrivers(uint xid, const QStringList &resources, const QString &interaction)
 {
-    increaseRunning();
-    kDebug() << xid << resources << interaction;
-    setDelayedReply(true);
-    PkInstallPrinterDrivers *task;
-    task = new PkInstallPrinterDrivers(xid, resources, interaction, message());
-    connect(task, SIGNAL(finished()), this, SLOT(decreaseRunning()));
-    show(task);
+    qCDebug(APPER_SESSION) << xid << resources << interaction;
+    show(new PkInstallPrinterDrivers(xid, resources, interaction, message()));
 }
 
 void PkInterface::InstallPlasmaResources(uint xid, const QStringList &resources, const QString &interaction)
 {
-    increaseRunning();
-    kDebug() << xid << resources << interaction;
-    setDelayedReply(true);
-    PkInstallPlasmaResources *task;
-    task = new PkInstallPlasmaResources(xid, resources, interaction, message());
-    connect(task, SIGNAL(finished()), this, SLOT(decreaseRunning()));
-    show(task);
+    qCDebug(APPER_SESSION) << xid << resources << interaction;
+    show(new PkInstallPlasmaResources(xid, resources, interaction, message()));
 }
 
 void PkInterface::InstallResources(uint xid, const QString &type, const QStringList &resources, const QString &interaction)
 {
-    if (type == "codec")
+    if (type == QLatin1String("codec")) {
         InstallGStreamerResources(xid, resources, interaction);
-    else if (type == "mimetype")
+    } else if (type == QLatin1String("mimetype")) {
         InstallMimeTypes(xid, resources, interaction);
-    else if (type == "font")
+    } else if (type == QLatin1String("font")) {
         InstallFontconfigResources(xid, resources, interaction);
-    else if (type == "postscript-driver")
+    } else if (type == QLatin1String("postscript-driver")) {
         InstallPrinterDrivers(xid, resources, interaction);
-    else if (type == "plasma-service")
+    } else if (type == QLatin1String("plasma-service")) {
         InstallPlasmaResources(xid, resources, interaction);
-    else
-        sendErrorReply("org.freedesktop.PackageKit.Failed", "Unsupported resource type");
+    } else {
+        sendErrorReply(QStringLiteral("org.freedesktop.PackageKit.Failed"), QStringLiteral("Unsupported resource type"));
+    }
 }
 
 //Query
 bool PkInterface::IsInstalled(const QString &package_name, const QString &interaction)
 {
-    increaseRunning();
-    setDelayedReply(true);
-    PkIsInstalled *task = new PkIsInstalled(package_name, interaction, message());
-    connect(task, SIGNAL(finished()), this, SLOT(decreaseRunning()));
-    show(task);
+    show(new PkIsInstalled(package_name, interaction, message()));
     // This is discarted
     return false;
 }
@@ -218,17 +170,17 @@ bool PkInterface::IsInstalled(const QString &package_name, const QString &intera
 bool PkInterface::SearchFile(const QString &file_name, const QString &interaction, QString &package_name)
 {
     Q_UNUSED(package_name)
-    increaseRunning();
-    setDelayedReply(true);
-    PkSearchFile *task = new PkSearchFile(file_name, interaction, message());
-    connect(task, SIGNAL(finished()), this, SLOT(decreaseRunning()));
-    show(task);
+    show(new PkSearchFile(file_name, interaction, message()));
     // This is discarted
     return false;
 }
 
-void PkInterface::show(SessionTask *widget) const
+void PkInterface::show(SessionTask *widget)
 {
+    increaseRunning();
+    setDelayedReply(true);
+
+    connect(widget, &SessionTask::finished, this, &PkInterface::decreaseRunning);
     if (widget->parentWId()) {
         // Check before showing if the widget has
         // a parent, otherwise it should not be modal
@@ -236,6 +188,8 @@ void PkInterface::show(SessionTask *widget) const
         widget->setWindowModality(Qt::WindowModal);
     }
     widget->show();
-    KWindowSystem::forceActiveWindow(widget->winId());  
-    KWindowSystem::setMainWindow(widget, widget->parentWId());
+//    KWindowSystem::forceActiveWindow(widget->winId());
+//    KWindowSystem::setMainWindow(widget, widget->parentWId());
 }
+
+#include "moc_PkInterface.cpp"

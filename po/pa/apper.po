@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kpackagekit\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-11-29 03:04+0100\n"
+"POT-Creation-Date: 2018-01-29 03:18+0100\n"
 "PO-Revision-Date: 2015-01-20 08:58-0600\n"
 "Last-Translator: A S Alam <aalam@users.sf.net>\n"
 "Language-Team: Punjabi/Panjabi <punjabi-users@lists.sf.net>\n"
@@ -28,492 +28,119 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "aalam@users.sf.net"
 
-#: Apper/Apper.cpp:89
+#: Apper/Apper.cpp:91
 #, kde-format
 msgid "Show updates"
 msgstr "ਅੱਪਡੇਟ ਵੇਖੋ"
 
-#: Apper/Apper.cpp:90
+#: Apper/Apper.cpp:94
 #, kde-format
 msgid "Show settings"
 msgstr "ਸੈਟਿੰਗ ਵੇਖੋ"
 
-#: Apper/Apper.cpp:91
+#: Apper/Apper.cpp:97
 #, kde-format
 msgid "Show backend details"
 msgstr "ਬੈਕਐਂਡ ਵੇਰਵਾ ਵੇਖੋ"
 
-#: Apper/Apper.cpp:92
+#: Apper/Apper.cpp:100
 #, kde-format
 msgid "Mime type installer"
 msgstr "ਮਾਈਮ ਟਾਈਪ ਇੰਸਟਾਲਰ"
 
-#: Apper/Apper.cpp:93
+#: Apper/Apper.cpp:103
 #, kde-format
 msgid "Package name installer"
 msgstr "ਪੈਕੇਜ ਨਾਂ ਇੰਸਟਾਲਰ"
 
-#: Apper/Apper.cpp:94
+#: Apper/Apper.cpp:106
 #, kde-format
 msgid "Single file installer"
 msgstr "ਇੱਕਲੀ ਫਾਇਲ ਇੰਸਟਾਲਰ"
 
-#: Apper/Apper.cpp:95
+#: Apper/Apper.cpp:109
 #, kde-format
 msgid "Font resource installer"
 msgstr "ਫੋਂਟ ਸਰੋਤ ਇੰਸਟਾਲਰ"
 
-#: Apper/Apper.cpp:96
+#: Apper/Apper.cpp:112
 #, kde-format
 msgid "Catalog installer"
 msgstr "ਕੈਟਾਲਾਗ ਇੰਸਟਾਲਰ"
 
-#: Apper/Apper.cpp:97
+#: Apper/Apper.cpp:115
 #, kde-format
 msgid "Single package remover"
 msgstr "ਇੱਕ ਪੈਕੇਜ ਹਟਾਉਣ ਵਾਲਾ"
 
-#: Apper/Apper.cpp:98
+#: Apper/Apper.cpp:118
 #, kde-format
 msgid "Package file to install"
 msgstr "ਇੰਸਟਾਲ ਕਰਨ ਲਈ ਪੈਕੇਜ ਫਾਇਲ"
 
-#: Apper/BackendDetails.cpp:34
-#, kde-format
-msgid "Backend Details"
-msgstr "ਬੈਕਐਂਡ ਵੇਰਵਾ"
-
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: Apper/BackendDetails.ui:39
-#, kde-format
-msgid "About Backend"
-msgstr "ਬੈਕਐਂਡ ਬਾਰੇ"
-
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: Apper/BackendDetails.ui:45
-#, kde-format
-msgid "Backend name:"
-msgstr "ਬੈਕਐਂਡ ਨਾਂ:"
-
-#. i18n: ectx: property (text), widget (QLabel, label_3)
-#: Apper/BackendDetails.ui:59
-#, kde-format
-msgid "Backend description:"
-msgstr "ਬੈਕਐਂਡ ਵੇਰਵਾ:"
-
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: Apper/BackendDetails.ui:73
-#, kde-format
-msgid "Backend author:"
-msgstr "ਬੈਕਐਂਡ ਲੇਖਕ:"
-
-#. i18n: ectx: property (text), widget (QLabel, label_4)
-#: Apper/BackendDetails.ui:87
-#, kde-format
-msgid "Distribution ID:"
-msgstr "ਡਿਸਟਰੀਬਿਊਸ਼ਨ ID:"
-
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
-#: Apper/BackendDetails.ui:107
-#, kde-format
-msgid "Methods"
-msgstr "ਢੰਗ"
-
-#. i18n: ectx: property (text), widget (QCheckBox, getUpdatesCB)
-#: Apper/BackendDetails.ui:116
-#, kde-format
-msgid "Get Updates"
-msgstr "ਅੱਪਡੇਟ ਲਵੋ"
-
-#. i18n: ectx: property (text), widget (QCheckBox, refreshCacheCB)
-#: Apper/BackendDetails.ui:126 ApperKCM/Settings/Settings.cpp:58
-#, kde-format
-msgid "Refresh Cache"
-msgstr "ਕੈਸ਼ ਤਾਜ਼ਾ ਕਰੋ"
-
-#. i18n: ectx: property (text), widget (QCheckBox, searchNameCB)
-#: Apper/BackendDetails.ui:136
-#, kde-format
-msgid "Search Name"
-msgstr "ਖੋਜ ਨਾਂ"
-
-#. i18n: ectx: property (text), widget (QCheckBox, getDependsCB)
-#: Apper/BackendDetails.ui:146
-#, kde-format
-msgid "Get Package Depends"
-msgstr "ਪੈਕੇਜ ਨਿਰਭਰਤਾ ਲਵੋ"
-
-#. i18n: ectx: property (text), widget (QCheckBox, searchDetailsCB)
-#: Apper/BackendDetails.ui:156
-#, kde-format
-msgid "Search Details"
-msgstr "ਖੋਜ ਵੇਰਵਾ"
-
-#. i18n: ectx: property (text), widget (QCheckBox, getRequiresCB)
-#: Apper/BackendDetails.ui:166
-#, kde-format
-msgid "Get Package Requires"
-msgstr "ਪੈਕੇਜ ਵਲੋਂ ਲੋੜੀਦੇ ਲਵੋ"
-
-#. i18n: ectx: property (text), widget (QCheckBox, searchGroupCB)
-#: Apper/BackendDetails.ui:176
-#, kde-format
-msgid "Search Group"
-msgstr "ਗਰੁੱਪ ਖੋਜ"
-
-#. i18n: ectx: property (text), widget (QCheckBox, getUpdateDetailCB)
-#: Apper/BackendDetails.ui:186
-#, kde-format
-msgid "Get Update Detail"
-msgstr "ਅੱਪਡੇਟ ਵੇਰਵਾ ਲਵੋ"
-
-#. i18n: ectx: property (text), widget (QCheckBox, searchFileCB)
-#: Apper/BackendDetails.ui:196
-#, kde-format
-msgid "Search File"
-msgstr "ਫਾਇਲ ਖੋਜ"
-
-#. i18n: ectx: property (text), widget (QCheckBox, getDescriptionCB)
-#: Apper/BackendDetails.ui:206
-#, kde-format
-msgid "Get Package Description"
-msgstr "ਪੈਕੇਜ ਵੇਰਵਾ ਲਵੋ"
-
-#. i18n: ectx: property (text), widget (QCheckBox, getFilesCB)
-#: Apper/BackendDetails.ui:216
-#, kde-format
-msgid "Get Package Files"
-msgstr "ਪੈਕੇਜ ਫਾਇਲਾਂ ਲਵੋ"
-
-#. i18n: ectx: property (text), widget (QCheckBox, getDistroUpgradesCB)
-#: Apper/BackendDetails.ui:226
-#, kde-format
-msgid "Get Distro Upgrades"
-msgstr "ਡਿਸਟਰੀਬਿਊਸ਼ਨ ਅੱਪਗਰੇਡ ਲਵੋ"
-
-#. i18n: ectx: property (text), widget (QCheckBox, installPackageCB)
-#: Apper/BackendDetails.ui:236
-#, kde-format
-msgid "Install Packages"
-msgstr "ਇੰਸਟਾਲ ਪੈਕੇਜ"
-
-#. i18n: ectx: property (text), widget (QCheckBox, updatePackageCB)
-#: Apper/BackendDetails.ui:246
-#, kde-format
-msgid "Update Packages"
-msgstr "ਅੱਪਡੇਟ ਪੈਕੇਜ"
-
-#. i18n: ectx: property (text), widget (QCheckBox, removePackageCB)
-#: Apper/BackendDetails.ui:256
-#, kde-format
-msgid "Remove Packages"
-msgstr "ਪੈਕੇਜ ਹਟਾਓ"
-
-#. i18n: ectx: property (text), widget (QCheckBox, installFileCB)
-#: Apper/BackendDetails.ui:266
-#, kde-format
-msgid "Install Files"
-msgstr "ਫਾਇਲਾਂ ਇੰਸਟਾਲ ਕਰੋ"
-
-#. i18n: ectx: property (text), widget (QCheckBox, resolveCB)
-#: Apper/BackendDetails.ui:276
-#, kde-format
-msgid "Resolve"
-msgstr "ਹੱਲ਼"
-
-#. i18n: ectx: property (text), widget (QCheckBox, cancelCB)
-#: Apper/BackendDetails.ui:286
-#, kde-format
-msgid "Cancel"
-msgstr "ਰੱਦ ਕਰੋ"
-
-#. i18n: ectx: property (text), widget (QCheckBox, getPackagesCB)
-#: Apper/BackendDetails.ui:296
-#, kde-format
-msgid "Get Packages"
-msgstr "ਪੈਕੇਜ ਲਵੋ"
-
-#. i18n: ectx: property (text), widget (QCheckBox, whatProvidesCB)
-#: Apper/BackendDetails.ui:306
-#, kde-format
-msgid "What Provides"
-msgstr "ਕੌਣ ਦਿੰਦਾ ਹੈ"
-
-#. i18n: ectx: property (text), widget (QCheckBox, repositorySetEnableCB)
-#: Apper/BackendDetails.ui:316
-#, kde-format
-msgid "Set Repository Data"
-msgstr "ਰਿਪੋਜ਼ਟਰੀ ਡਾਟਾ ਸੈੱਟ ਕਰੋ"
-
-#. i18n: ectx: property (text), widget (QCheckBox, repositoryEnableCB)
-#: Apper/BackendDetails.ui:326
-#, kde-format
-msgid "Enable Repository"
-msgstr "ਰਿਪੋਜ਼ਟਰੀ ਚਾਲੂ ਕਰੋ"
-
-#. i18n: ectx: property (text), widget (QCheckBox, getRepositoryListCB)
-#: Apper/BackendDetails.ui:336
-#, kde-format
-msgid "Get Repository List"
-msgstr "ਰਿਪੋਜ਼ਟਰੀ ਲਿਸਟ ਲਵੋ"
-
-#. i18n: ectx: property (text), widget (QCheckBox, repairSystemCB)
-#: Apper/BackendDetails.ui:346
-#, kde-format
-msgid "Repair System"
-msgstr "ਸਿਸਟਮ ਰਿਪੇਅਰ ਕਰੋ"
-
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#. i18n: ectx: property (text), widget (QToolButton, filtersTB)
-#: Apper/BackendDetails.ui:356 ApperKCM/ApperKCM.ui:98
-#, kde-format
-msgid "Filters"
-msgstr "ਫਿਲਟਰ"
-
-#. i18n: ectx: property (text), widget (QCheckBox, installedCB)
-#: Apper/BackendDetails.ui:365 ApperKCM/FiltersMenu.cpp:59
-#: libapper/PkStrings.cpp:391
-#, kde-format
-msgid "Installed"
-msgstr "ਇੰਸਟਾਲ ਕੀਤਾ"
-
-#. i18n: ectx: property (text), widget (QCheckBox, developmentCB)
-#: Apper/BackendDetails.ui:375 ApperKCM/FiltersMenu.cpp:90
-#, kde-format
-msgid "Development"
-msgstr "ਡਿਵੈਲਪਮੈਂਟ"
-
-#. i18n: ectx: property (text), widget (QCheckBox, visibleCB)
-#: Apper/BackendDetails.ui:385
-#, kde-format
-msgid "Package is visible"
-msgstr "ਪੈਕੇਜ ਦਿੱਖ ਹੈ"
-
-#. i18n: ectx: property (text), widget (QCheckBox, newestCB)
-#: Apper/BackendDetails.ui:395
-#, kde-format
-msgid "Newest"
-msgstr "ਸਭ ਤੋਂ ਨਵਾਂ"
-
-#. i18n: ectx: property (text), widget (QCheckBox, guiCB)
-#: Apper/BackendDetails.ui:405
-#, kde-format
-msgid "GUI"
-msgstr "GUI"
-
-#. i18n: ectx: property (text), widget (QCheckBox, freeCB)
-#: Apper/BackendDetails.ui:415
-#, kde-format
-msgid "Free software"
-msgstr "ਮੁਕਤ ਸਾਫਟਵੇਅਰ"
-
-#. i18n: ectx: property (text), widget (QCheckBox, supportedCB)
-#: Apper/BackendDetails.ui:425
-#, kde-format
-msgid "Supported"
-msgstr "ਸਹਾਇਕ"
-
-#. i18n: ectx: property (text), widget (QCheckBox, archCB)
-#: Apper/BackendDetails.ui:435
-#, kde-format
-msgid "Only native"
-msgstr "ਕੇਵਲ ਨੇਟਿਵ"
-
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox_4)
-#: Apper/BackendDetails.ui:445
-#, kde-format
-msgid "PackageKit"
-msgstr "ਪੈਕੇਜ-ਕਿੱਟ"
-
-#. i18n: ectx: property (text), widget (QLabel, label_5)
-#: Apper/BackendDetails.ui:451
-#, kde-format
-msgid "Version:"
-msgstr "ਵਰਜਨ:"
-
-#: Apper/main.cpp:43
-#, fuzzy, kde-format
-#| msgid "Apper is an Application to Get and Manage Software"
-msgid "Apper is an application to get and manage software"
-msgstr "ਅੱਪਰ ਐਪਲੀਕੇਸ਼ਨ ਹੈ, ਜੋ ਸਾਫਟਵੇਅਰ ਲੈਣ ਤੇ ਉਨ੍ਹਾਂ ਦੇ ਪਰਬੰਧ ਲਈ ਹੈ"
-
-#: Apper/main.cpp:45 PkSession/main.cpp:40
-#, kde-format
-msgid "Daniel Nicoletti"
-msgstr "Daniel Nicoletti"
-
-#: Apper/main.cpp:46 PkSession/main.cpp:43
-#, kde-format
-msgid "Adrien Bustany"
-msgstr "Adrien Bustany"
-
-#: Apper/main.cpp:46 PkSession/main.cpp:43
-#, kde-format
-msgid "libpackagekit-qt and other stuff"
-msgstr "libpackagekit-qt ਅਤੇ ਹੋਰ ਕੰਮ"
-
-#: apperd/DistroUpgrade.cpp:89
-#, kde-format
-msgid "Distribution upgrade available"
-msgstr "ਡਿਸਟਰੀਬਿਊਸ਼ਨ ਅੱਪਗਰੇਡ ਉਪਲੱਬਧ"
-
-#: apperd/DistroUpgrade.cpp:93
-#, kde-format
-msgid "Start upgrade now"
-msgstr "ਹੁਣੇ ਅੱਪਗਰੇਡ ਸ਼ੁਰੂ ਕਰੋ"
-
-#: apperd/DistroUpgrade.cpp:144
-#, kde-format
-msgid "Distribution upgrade finished. "
-msgstr "ਡਿਸਟਰੀਬਿਊਸ਼ਨ ਅੱਪਗਰੇਡ ਮੁਕੰਮਲ ਹੋਇਆ। "
-
-#: apperd/DistroUpgrade.cpp:147 ApperKCM/Updater/DistroUpgrade.cpp:93
-#, kde-format
-msgid "Distribution upgrade process exited with code %1."
-msgstr "ਡਿਸਟਰੀਬਿਊਸ਼ਨ ਅੱਪਗਰੇਡ ਕਾਰਵਾਈ %1 ਕੋਡ ਨਾਲ ਬੰਦ ਹੋ ਗਈ।"
-
-#: apperd/DistroUpgrade.cpp:165 ApperKCM/Updater/DistroUpgrade.cpp:105
-#, kde-format
-msgid "The distribution upgrade process failed to start."
-msgstr "ਡਿਸਟਰੀਬਿਊਸ਼ਨ ਅੱਪਗਰੇਡ ਕਾਰਵਾਈ ਸ਼ੁਰੂ ਹੋਣ ਲਈ ਫੇਲ੍ਹ ਹੈ।"
-
-#: apperd/DistroUpgrade.cpp:168 ApperKCM/Updater/DistroUpgrade.cpp:109
-#, kde-format
-msgid ""
-"The distribution upgrade process crashed some time after starting "
-"successfully."
-msgstr "ਡਿਸਟਰੀਬਿਊਸ਼ਨ ਅੱਪਗਰੇਡ ਕਾਰਵਾਈ ਠੀਕ ਤਰ੍ਹਾਂ ਸ਼ੁਰੂ ਹੋਣ ਦੇ ਕੁਝ ਚਿਰ ਬਾਅਦ ਕਰੈਸ਼ ਹੋ ਗਈ।"
-
-#: apperd/DistroUpgrade.cpp:171 ApperKCM/Updater/DistroUpgrade.cpp:113
-#, kde-format
-msgid "The distribution upgrade process failed with an unknown error."
-msgstr "ਡਿਸਟਰੀਬਿਊਸ਼ਨ ਅੱਪਗਰੇਡ ਪਰੋਸੈਸ ਅਣਜਾਣ ਕਾਰਨਾਂ ਕਰਕੇ ਫੇਲ੍ਹ ਹੈ।"
-
-#: apperd/TransactionWatcher.cpp:140
-#, kde-format
-msgid "The system update has completed"
-msgstr "ਸਿਸਟਮ ਅੱਪਡੇਟ ਪੂਰਾ ਹੋਇਆ"
-
-#: apperd/TransactionWatcher.cpp:147 apperd/TransactionWatcher.cpp:189
-#, kde-format
-msgid "Restart"
-msgstr "ਮੁੜ-ਚਾਲੂ"
-
-#: apperd/TransactionWatcher.cpp:180
-#, kde-format
-msgid "Package: %2"
-msgid_plural "Packages: %2"
-msgstr[0] "ਪੈਕੇਜ: %2"
-msgstr[1] "ਪੈਕੇਜ: %2"
-
-#: apperd/TransactionWatcher.cpp:242 ApperKCM/TransactionModel.cpp:45
-#: AppSetup/SetupWizard.cpp:149
-#, kde-format
-msgid "Details"
-msgstr "ਵੇਰਵਾ"
-
-#: apperd/Updater.cpp:158
-#, kde-format
-msgid "Updates are being automatically installed."
-msgstr "ਅੱਪਡੇਟ ਆਟੋਮੈਟਿਕ ਹੀ ਇੰਸਟਾਲ ਕੀਤੇ ਜਾ ਰਹੇ ਹਨ।"
-
-#: apperd/Updater.cpp:168
-#, kde-format
-msgid "Security updates are being automatically installed."
-msgstr "ਸੁਰੱਖਿਆ ਅੱਪਡੇਟ ਆਟੋਮੈਟਿਕ ਹੀ ਇੰਸਟਾਲ ਕੀਤੇ ਜਾ ਰਹੇ ਹਨ।"
-
-#: apperd/Updater.cpp:178
-#, kde-format
-msgid "Updates are being automatically downloaded."
-msgstr "ਅੱਪਡੇਟ ਆਟੋਮੈਟਿਕ ਹੀ ਡਾਊਨਲੋਡ ਕੀਤੇ ਜਾ ਰਹੇ ਹਨ।"
-
-#: apperd/Updater.cpp:212
-#, kde-format
-msgid "System update was successful."
-msgstr "ਸਿਸਟਮ ਠੀਕ ਤਰ੍ਹਾਂ ਅੱਪਡੇਟ ਹੋ ਗਿਆ।"
-
-#: apperd/Updater.cpp:219
-#, kde-format
-msgid "The software update failed."
-msgstr "ਸਾਫਟਵੇਅਰ ਅੱਪਡੇਟ ਫੇਲ੍ਹ ਹੋਇਆ।"
-
-#: apperd/Updater.cpp:273
-#, kde-format
-msgid "There is one new update"
-msgid_plural "There are %1 new updates"
-msgstr[0] "ਇੱਕ ਨਵਾਂ ਅੱਪਡੇਟ ਉਪਲੱਬਧ ਹੈ"
-msgstr[1] "%1 ਨਵੇਂ ਅੱਪਡੇਟ ਉਪਲੱਬਧ ਹਨ"
-
-#: apperd/Updater.cpp:288
-#, kde-format
-msgid "Review"
-msgstr "ਪੜਤਾਲ"
-
-#: apperd/Updater.cpp:290 AppSetup/SetupWizard.cpp:260
-#: libapper/ApplicationsDelegate.cpp:41
-#, kde-format
-msgid "Install"
-msgstr "ਇੰਸਟਾਲ"
-
-#: ApperKCM/ApperKCM.cpp:89
-#, kde-format
-msgid "KDE interface for managing software"
-msgstr "ਸਾਫਟਵੇਅਰ ਪਰਬੰਧ ਲਈ ਕੇ ਡੀ ਈ ਇੰਟਰਫੇਸ"
-
-#: ApperKCM/ApperKCM.cpp:91
-#, kde-format
-msgid "(C) 2008-2013 Daniel Nicoletti"
-msgstr "(C) ੨੦੦੮-੨੦੧੩ Daniel Nicoletti"
-
-#: ApperKCM/ApperKCM.cpp:92
-#, fuzzy, kde-format
-#| msgctxt "@info:credit"
-#| msgid "Matthias Klumpp"
-msgid "Matthias Klumpp"
-msgstr "ਮੈਥਿਊਸ ਕਲੁੰਪ"
-
-#: ApperKCM/ApperKCM.cpp:118 ApperKCM/ApperKCM.cpp:306
+#: Apper/ApperKCM.cpp:93 Apper/ApperKCM.cpp:292
 #, kde-format
 msgid "Find"
 msgstr "ਲੱਭੋ"
 
-#: ApperKCM/ApperKCM.cpp:210 ApperKCM/ApperKCM.cpp:571
+#: Apper/ApperKCM.cpp:174
+#, fuzzy, kde-format
+#| msgid "Software Manager Messages"
+msgid "Some software changes were made"
+msgstr "ਸਾਫਟਵੇਅਰ ਮੈਨੇਜਰ ਸੁਨੇਹੇ"
+
+#: Apper/ApperKCM.cpp:175 apperd/Updater.cpp:287
+#, kde-format
+msgid "Review"
+msgstr "ਪੜਤਾਲ"
+
+#: Apper/ApperKCM.cpp:178
+#, kde-format
+msgid "Discard"
+msgstr ""
+
+#: Apper/ApperKCM.cpp:181
+#, fuzzy, kde-format
+#| msgid "Apply Now"
+msgid "Apply"
+msgstr "ਹੁਣ ਲਾਗੂ ਕਰੋ"
+
+#: Apper/ApperKCM.cpp:205 Apper/ApperKCM.cpp:562
 #, kde-format
 msgid "History"
 msgstr "ਅਤੀਤ"
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, Settings)
-#: ApperKCM/ApperKCM.cpp:216 ApperKCM/ApperKCM.cpp:527
-#: ApperKCM/Settings/Settings.ui:14
+#: Apper/ApperKCM.cpp:209 Apper/ApperKCM.cpp:519 Apper/Settings/Settings.ui:14
 #, kde-format
 msgid "Settings"
 msgstr "ਸੈਟਿੰਗ"
 
-#: ApperKCM/ApperKCM.cpp:283 ApperKCM/ApperKCM.cpp:284
-#: ApperKCM/ApperKCM.cpp:285 ApperKCM/ApperKCM.cpp:286
+#: Apper/ApperKCM.cpp:269 Apper/ApperKCM.cpp:270 Apper/ApperKCM.cpp:271
+#: Apper/ApperKCM.cpp:272
 #, kde-format
 msgid "&Cancel"
 msgstr "ਰੱਦ ਕਰੋ(&C)"
 
-#. i18n: ectx: property (text), widget (CategorizedView, changesView)
-#: ApperKCM/ApperKCM.cpp:293 ApperKCM/ApperKCM.ui:346
+#. i18n: ectx: property (text), widget (KMessageWidget, reviewMessage)
+#: Apper/ApperKCM.cpp:279 Apper/ApperKCM.ui:427
 #, kde-format
 msgid "Find by &name"
 msgstr "ਨਾਂ ਨਾਲ ਲੱਭੋ(&N)"
 
-#. i18n: ectx: property (text), widget (CategorizedView, changesView)
-#: ApperKCM/ApperKCM.cpp:294 ApperKCM/ApperKCM.ui:356
+#. i18n: ectx: property (text), widget (KMessageWidget, reviewMessage)
+#: Apper/ApperKCM.cpp:280 Apper/ApperKCM.ui:437
 #, kde-format
 msgid "Find by f&ile name"
 msgstr "ਫਾਇਲ ਨਾਂ ਨਾਲ ਲੱਭੋ(&i)"
 
-#. i18n: ectx: property (text), widget (CategorizedView, changesView)
-#: ApperKCM/ApperKCM.cpp:295 ApperKCM/ApperKCM.ui:351
+#. i18n: ectx: property (text), widget (KMessageWidget, reviewMessage)
+#: Apper/ApperKCM.cpp:281 Apper/ApperKCM.ui:432
 #, kde-format
 msgid "Find by &description"
 msgstr "ਵੇਰਵਾ ਨਾਲ ਲੱਭੋ(&d)"
 
-#: ApperKCM/ApperKCM.cpp:465
+#: Apper/ApperKCM.cpp:459
 #, kde-format
 msgid ""
 "The settings of the current module have changed.\n"
@@ -522,500 +149,811 @@ msgstr ""
 "ਮੌਜੂਦਾ ਮੋਡੀਊਲ ਦੀ ਸੈਟਿੰਗ ਬਦਲੀ ਗਈ ਹੈ।\n"
 "ਕੀ ਤੁਸੀਂ ਬਦਲਾਅ ਲਾਗੂ ਕਰਨੇ ਚਾਹੁੰਦੇ ਹੋ ਜਾਂ ਅਣਡਿੱਠੇ?"
 
-#: ApperKCM/ApperKCM.cpp:467
+#: Apper/ApperKCM.cpp:461
 #, kde-format
 msgid "Apply Settings"
 msgstr "ਸੈਟਿੰਗ ਲਾਗੂ ਕਰੋ"
 
-#: ApperKCM/ApperKCM.cpp:554 ApperKCM/CategoryModel.cpp:57
+#: Apper/ApperKCM.cpp:546 Apper/CategoryModel.cpp:59
 #, kde-format
 msgid "Updates"
 msgstr "ਅੱਪਡੇਟ"
 
-#. i18n: ectx: property (text), widget (QPushButton, changesPB)
-#: ApperKCM/ApperKCM.cpp:625 ApperKCM/ApperKCM.ui:127
+#: Apper/ApperKCM.cpp:615
 #, kde-format
 msgid "Pending Changes"
 msgstr "ਬਾਕੀ ਰਹਿੰਦੇ ਬਦਲਾਅ"
 
-#: ApperKCM/ApperKCM.cpp:695 ApperKCM/CategoryModel.cpp:49
+#: Apper/ApperKCM.cpp:678 Apper/CategoryModel.cpp:51
 #, kde-format
 msgid "Installed Software"
 msgstr "ਇੰਸਟਾਲ ਹੋਏ ਸਾਫਟਵੇਅਰ"
 
-#: ApperKCM/ApperKCM.cpp:707
+#: Apper/ApperKCM.cpp:690
 #, kde-format
 msgid "Could not find an application that matched this category"
 msgstr "ਕੋਈ ਐਪਲੀਕੇਸ਼ਨ ਨਹੀਂ ਲੱਭੀ, ਜੋ ਕਿ ਇਹ ਕੈਟਾਗਰੀ ਨਾਲ ਮਿਲਦੀ ਹੈ"
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, ApperKCM)
-#: ApperKCM/ApperKCM.ui:20
+#: Apper/ApperKCM.ui:20
 #, kde-format
 msgid "Add and Remove Software"
 msgstr "ਸਾਫਟਵੇਅਰ ਸ਼ਾਮਲ ਅਤੇ ਹਟਾਓ"
 
-#. i18n: ectx: property (clickMessage), widget (KLineEdit, searchKLE)
-#: ApperKCM/ApperKCM.ui:58
+#. i18n: ectx: property (text), widget (QToolButton, backTB)
+#: Apper/ApperKCM.ui:47 AppSetup/SetupWizard.cpp:87
+#, kde-format
+msgid "Back"
+msgstr "ਪਿੱਛੇ"
+
+#. i18n: ectx: property (clickMessage), widget (QLineEdit, searchKLE)
+#: Apper/ApperKCM.ui:188
 #, kde-format
 msgid "Search packages"
 msgstr "ਪੈਕੇਜ ਖੋਜ"
 
+#. i18n: ectx: property (text), widget (QToolButton, filtersTB)
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#: Apper/ApperKCM.ui:237 Apper/BackendDetails.ui:373
+#, kde-format
+msgid "Filters"
+msgstr "ਫਿਲਟਰ"
+
+#. i18n: ectx: property (text), widget (QPushButton, updatePB)
+#: Apper/ApperKCM.ui:299
+#, fuzzy, kde-format
+#| msgid "Updates"
+msgid "Update"
+msgstr "ਅੱਪਡੇਟ"
+
 #. i18n: ectx: property (text), widget (QPushButton, checkUpdatesPB)
-#: ApperKCM/ApperKCM.ui:161
+#: Apper/ApperKCM.ui:312
 #, kde-format
 msgid "Check for new Updates"
 msgstr "ਨਵੇਂ ਅੱਪਡੇਟ ਲਈ ਚੈੱਕ ਕਰੋ"
 
 #. i18n: ectx: property (text), widget (QPushButton, generalSettingsPB)
-#: ApperKCM/ApperKCM.ui:195
+#: Apper/ApperKCM.ui:346
 #, kde-format
 msgid "General Settings"
 msgstr "ਆਮ ਸੈਟਿੰਗ"
 
 #. i18n: ectx: property (text), widget (QPushButton, repoSettingsPB)
-#: ApperKCM/ApperKCM.ui:214
+#: Apper/ApperKCM.ui:365
 #, kde-format
 msgid "Software Origins"
 msgstr "ਸਾਫਟਵੇਅਰ ਮੁੱਢ"
 
-#. i18n: ectx: property (text), widget (QToolButton, backTB)
-#: ApperKCM/ApperKCM.ui:267 AppSetup/SetupWizard.cpp:87
+#: Apper/BackendDetails.cpp:36
 #, kde-format
-msgid "Back"
-msgstr "ਪਿੱਛੇ"
+msgid "Backend Details"
+msgstr "ਬੈਕਐਂਡ ਵੇਰਵਾ"
 
-#: ApperKCM/BrowseView.cpp:90 ApperKCM/Updater/Updater.cpp:106
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
+#: Apper/BackendDetails.ui:23
+#, kde-format
+msgid "Methods"
+msgstr "ਢੰਗ"
+
+#. i18n: ectx: property (text), widget (QCheckBox, getUpdatesCB)
+#: Apper/BackendDetails.ui:32
+#, kde-format
+msgid "Get Updates"
+msgstr "ਅੱਪਡੇਟ ਲਵੋ"
+
+#. i18n: ectx: property (text), widget (QCheckBox, refreshCacheCB)
+#: Apper/BackendDetails.ui:42 Apper/Settings/Settings.cpp:60
+#, kde-format
+msgid "Refresh Cache"
+msgstr "ਕੈਸ਼ ਤਾਜ਼ਾ ਕਰੋ"
+
+#. i18n: ectx: property (text), widget (QCheckBox, searchNameCB)
+#: Apper/BackendDetails.ui:52
+#, kde-format
+msgid "Search Name"
+msgstr "ਖੋਜ ਨਾਂ"
+
+#. i18n: ectx: property (text), widget (QCheckBox, getDependsCB)
+#: Apper/BackendDetails.ui:62
+#, kde-format
+msgid "Get Package Depends"
+msgstr "ਪੈਕੇਜ ਨਿਰਭਰਤਾ ਲਵੋ"
+
+#. i18n: ectx: property (text), widget (QCheckBox, searchDetailsCB)
+#: Apper/BackendDetails.ui:72
+#, kde-format
+msgid "Search Details"
+msgstr "ਖੋਜ ਵੇਰਵਾ"
+
+#. i18n: ectx: property (text), widget (QCheckBox, getRequiresCB)
+#: Apper/BackendDetails.ui:82
+#, kde-format
+msgid "Get Package Requires"
+msgstr "ਪੈਕੇਜ ਵਲੋਂ ਲੋੜੀਦੇ ਲਵੋ"
+
+#. i18n: ectx: property (text), widget (QCheckBox, searchGroupCB)
+#: Apper/BackendDetails.ui:92
+#, kde-format
+msgid "Search Group"
+msgstr "ਗਰੁੱਪ ਖੋਜ"
+
+#. i18n: ectx: property (text), widget (QCheckBox, getUpdateDetailCB)
+#: Apper/BackendDetails.ui:102
+#, kde-format
+msgid "Get Update Detail"
+msgstr "ਅੱਪਡੇਟ ਵੇਰਵਾ ਲਵੋ"
+
+#. i18n: ectx: property (text), widget (QCheckBox, searchFileCB)
+#: Apper/BackendDetails.ui:112
+#, kde-format
+msgid "Search File"
+msgstr "ਫਾਇਲ ਖੋਜ"
+
+#. i18n: ectx: property (text), widget (QCheckBox, getDescriptionCB)
+#: Apper/BackendDetails.ui:122
+#, kde-format
+msgid "Get Package Description"
+msgstr "ਪੈਕੇਜ ਵੇਰਵਾ ਲਵੋ"
+
+#. i18n: ectx: property (text), widget (QCheckBox, getFilesCB)
+#: Apper/BackendDetails.ui:132
+#, kde-format
+msgid "Get Package Files"
+msgstr "ਪੈਕੇਜ ਫਾਇਲਾਂ ਲਵੋ"
+
+#. i18n: ectx: property (text), widget (QCheckBox, getDistroUpgradesCB)
+#: Apper/BackendDetails.ui:142
+#, kde-format
+msgid "Get Distro Upgrades"
+msgstr "ਡਿਸਟਰੀਬਿਊਸ਼ਨ ਅੱਪਗਰੇਡ ਲਵੋ"
+
+#. i18n: ectx: property (text), widget (QCheckBox, installPackageCB)
+#: Apper/BackendDetails.ui:152
+#, kde-format
+msgid "Install Packages"
+msgstr "ਇੰਸਟਾਲ ਪੈਕੇਜ"
+
+#. i18n: ectx: property (text), widget (QCheckBox, updatePackageCB)
+#: Apper/BackendDetails.ui:162
+#, kde-format
+msgid "Update Packages"
+msgstr "ਅੱਪਡੇਟ ਪੈਕੇਜ"
+
+#. i18n: ectx: property (text), widget (QCheckBox, removePackageCB)
+#: Apper/BackendDetails.ui:172
+#, kde-format
+msgid "Remove Packages"
+msgstr "ਪੈਕੇਜ ਹਟਾਓ"
+
+#. i18n: ectx: property (text), widget (QCheckBox, installFileCB)
+#: Apper/BackendDetails.ui:182
+#, kde-format
+msgid "Install Files"
+msgstr "ਫਾਇਲਾਂ ਇੰਸਟਾਲ ਕਰੋ"
+
+#. i18n: ectx: property (text), widget (QCheckBox, resolveCB)
+#: Apper/BackendDetails.ui:192
+#, kde-format
+msgid "Resolve"
+msgstr "ਹੱਲ਼"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cancelCB)
+#: Apper/BackendDetails.ui:202
+#, kde-format
+msgid "Cancel"
+msgstr "ਰੱਦ ਕਰੋ"
+
+#. i18n: ectx: property (text), widget (QCheckBox, getPackagesCB)
+#: Apper/BackendDetails.ui:212
+#, kde-format
+msgid "Get Packages"
+msgstr "ਪੈਕੇਜ ਲਵੋ"
+
+#. i18n: ectx: property (text), widget (QCheckBox, whatProvidesCB)
+#: Apper/BackendDetails.ui:222
+#, kde-format
+msgid "What Provides"
+msgstr "ਕੌਣ ਦਿੰਦਾ ਹੈ"
+
+#. i18n: ectx: property (text), widget (QCheckBox, repositorySetEnableCB)
+#: Apper/BackendDetails.ui:232
+#, kde-format
+msgid "Set Repository Data"
+msgstr "ਰਿਪੋਜ਼ਟਰੀ ਡਾਟਾ ਸੈੱਟ ਕਰੋ"
+
+#. i18n: ectx: property (text), widget (QCheckBox, repositoryEnableCB)
+#: Apper/BackendDetails.ui:242
+#, kde-format
+msgid "Enable Repository"
+msgstr "ਰਿਪੋਜ਼ਟਰੀ ਚਾਲੂ ਕਰੋ"
+
+#. i18n: ectx: property (text), widget (QCheckBox, getRepositoryListCB)
+#: Apper/BackendDetails.ui:252
+#, kde-format
+msgid "Get Repository List"
+msgstr "ਰਿਪੋਜ਼ਟਰੀ ਲਿਸਟ ਲਵੋ"
+
+#. i18n: ectx: property (text), widget (QCheckBox, repairSystemCB)
+#: Apper/BackendDetails.ui:262
+#, kde-format
+msgid "Repair System"
+msgstr "ਸਿਸਟਮ ਰਿਪੇਅਰ ਕਰੋ"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: Apper/BackendDetails.ui:278
+#, kde-format
+msgid "About Backend"
+msgstr "ਬੈਕਐਂਡ ਬਾਰੇ"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: Apper/BackendDetails.ui:284
+#, kde-format
+msgid "Backend name:"
+msgstr "ਬੈਕਐਂਡ ਨਾਂ:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: Apper/BackendDetails.ui:298
+#, kde-format
+msgid "Backend description:"
+msgstr "ਬੈਕਐਂਡ ਵੇਰਵਾ:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: Apper/BackendDetails.ui:312
+#, kde-format
+msgid "Backend author:"
+msgstr "ਬੈਕਐਂਡ ਲੇਖਕ:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: Apper/BackendDetails.ui:326
+#, kde-format
+msgid "Distribution ID:"
+msgstr "ਡਿਸਟਰੀਬਿਊਸ਼ਨ ID:"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_4)
+#: Apper/BackendDetails.ui:343
+#, kde-format
+msgid "PackageKit"
+msgstr "ਪੈਕੇਜ-ਕਿੱਟ"
+
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: Apper/BackendDetails.ui:349
+#, kde-format
+msgid "Version:"
+msgstr "ਵਰਜਨ:"
+
+#. i18n: ectx: property (text), widget (QCheckBox, installedCB)
+#: Apper/BackendDetails.ui:382 Apper/FiltersMenu.cpp:60
+#: libapper/PkStrings.cpp:404
+#, kde-format
+msgid "Installed"
+msgstr "ਇੰਸਟਾਲ ਕੀਤਾ"
+
+#. i18n: ectx: property (text), widget (QCheckBox, developmentCB)
+#: Apper/BackendDetails.ui:392 Apper/FiltersMenu.cpp:89
+#, kde-format
+msgid "Development"
+msgstr "ਡਿਵੈਲਪਮੈਂਟ"
+
+#. i18n: ectx: property (text), widget (QCheckBox, visibleCB)
+#: Apper/BackendDetails.ui:402
+#, kde-format
+msgid "Package is visible"
+msgstr "ਪੈਕੇਜ ਦਿੱਖ ਹੈ"
+
+#. i18n: ectx: property (text), widget (QCheckBox, newestCB)
+#: Apper/BackendDetails.ui:412
+#, kde-format
+msgid "Newest"
+msgstr "ਸਭ ਤੋਂ ਨਵਾਂ"
+
+#. i18n: ectx: property (text), widget (QCheckBox, guiCB)
+#: Apper/BackendDetails.ui:422
+#, kde-format
+msgid "GUI"
+msgstr "GUI"
+
+#. i18n: ectx: property (text), widget (QCheckBox, freeCB)
+#: Apper/BackendDetails.ui:432
+#, kde-format
+msgid "Free software"
+msgstr "ਮੁਕਤ ਸਾਫਟਵੇਅਰ"
+
+#. i18n: ectx: property (text), widget (QCheckBox, supportedCB)
+#: Apper/BackendDetails.ui:442
+#, kde-format
+msgid "Supported"
+msgstr "ਸਹਾਇਕ"
+
+#. i18n: ectx: property (text), widget (QCheckBox, archCB)
+#: Apper/BackendDetails.ui:452
+#, kde-format
+msgid "Only native"
+msgstr "ਕੇਵਲ ਨੇਟਿਵ"
+
+#: Apper/BrowseView.cpp:89 Apper/Updater/Updater.cpp:105
 #, kde-format
 msgid "Show Versions"
 msgstr "ਵਰਜਨ ਵੇਖੋ"
 
-#: ApperKCM/BrowseView.cpp:97 ApperKCM/Updater/Updater.cpp:120
+#: Apper/BrowseView.cpp:96 Apper/Updater/Updater.cpp:119
 #, kde-format
 msgid "Show Architectures"
 msgstr "ਆਰਚੀਟੈਕਚਰ ਵੇਖੋ"
 
-#: ApperKCM/BrowseView.cpp:104 ApperKCM/Updater/Updater.cpp:127
+#: Apper/BrowseView.cpp:103 Apper/Updater/Updater.cpp:126
 #, kde-format
 msgid "Show Origins"
 msgstr "ਮੁੱਢ ਵੇਖੋ"
 
-#: ApperKCM/BrowseView.cpp:111 ApperKCM/Updater/Updater.cpp:134
+#: Apper/BrowseView.cpp:110 Apper/Updater/Updater.cpp:133
 #, kde-format
 msgid "Show Sizes"
 msgstr "ਆਕਾਰ ਵੇਖਾਓ"
 
+#: Apper/BrowseView.cpp:282
+#, fuzzy, kde-format
+#| msgid "Export Installed Package List..."
+msgid "Export installed packages"
+msgstr "ਇੰਸਟਾਲ ਹੋਏ ਪੈਕੇਜ ਦੀ ਲਿਸਟ ਐਕਸਪੋਰਟ..."
+
+#: Apper/BrowseView.cpp:306
+#, fuzzy, kde-format
+#| msgid "Install Packages Catalogs"
+msgid "Install packages from catalog"
+msgstr "ਪੈਕੇਜ ਕੈਟਾਲਾਗ ਇੰਸਟਾਲ ਕਰੋ"
+
 #. i18n: ectx: property (text), widget (QPushButton, exportInstalledPB)
-#: ApperKCM/BrowseView.ui:140
+#: Apper/BrowseView.ui:140
 #, kde-format
 msgid "Export Installed Package List..."
 msgstr "ਇੰਸਟਾਲ ਹੋਏ ਪੈਕੇਜ ਦੀ ਲਿਸਟ ਐਕਸਪੋਰਟ..."
 
 #. i18n: ectx: property (text), widget (QPushButton, importInstalledPB)
-#: ApperKCM/BrowseView.ui:150
+#: Apper/BrowseView.ui:150
 #, kde-format
 msgid "Install Packages from List..."
 msgstr "ਲਿਸਟ ਤੋਂ ਪੈਕੇਜ ਇੰਸਟਾਲ ਕਰੋ..."
 
-#: ApperKCM/CategoryModel.cpp:52 ApperKCM/CategoryModel.cpp:60
+#: Apper/CategoryModel.cpp:54 Apper/CategoryModel.cpp:62
 #, kde-format
 msgid "Lists"
 msgstr "ਲਿਸਟ"
 
-#: ApperKCM/CategoryModel.cpp:166 ApperKCM/CategoryModel.cpp:361
+#: Apper/CategoryModel.cpp:167 Apper/CategoryModel.cpp:362
 #, kde-format
 msgid "Categories"
 msgstr "ਕੈਟਾਗਰੀ"
 
-#: ApperKCM/CategoryModel.cpp:223
+#: Apper/CategoryModel.cpp:224
 #, kde-format
 msgid "Groups"
 msgstr "ਗਰੁੱਪ"
 
-#: ApperKCM/FiltersMenu.cpp:36
+#: Apper/FiltersMenu.cpp:36
 #, kde-format
 msgid "Collections"
 msgstr "ਭੰਡਾਰ"
 
-#: ApperKCM/FiltersMenu.cpp:44
+#: Apper/FiltersMenu.cpp:45
 #, kde-format
 msgid "Only collections"
 msgstr "ਕੇਵਲ ਭੰਡਾਰ"
 
-#: ApperKCM/FiltersMenu.cpp:51
+#: Apper/FiltersMenu.cpp:52
 #, kde-format
 msgid "Exclude collections"
 msgstr "ਭੰਡਾਰ ਤੋਂ ਬਗੈਰ"
 
-#: ApperKCM/FiltersMenu.cpp:68
+#: Apper/FiltersMenu.cpp:67
 #, kde-format
 msgid "Only installed"
 msgstr "ਕੇਵਲ ਇੰਸਟਾਲ ਹੋਏ ਹੀ"
 
-#: ApperKCM/FiltersMenu.cpp:75
+#: Apper/FiltersMenu.cpp:74
 #, kde-format
 msgid "Only available"
 msgstr "ਕੇਵਲ ਉਪਲੱਬਧ"
 
-#: ApperKCM/FiltersMenu.cpp:82 ApperKCM/FiltersMenu.cpp:113
-#: ApperKCM/FiltersMenu.cpp:144 ApperKCM/FiltersMenu.cpp:175
-#: ApperKCM/FiltersMenu.cpp:206 ApperKCM/FiltersMenu.cpp:237
+#: Apper/FiltersMenu.cpp:81 Apper/FiltersMenu.cpp:110 Apper/FiltersMenu.cpp:139
+#: Apper/FiltersMenu.cpp:168 Apper/FiltersMenu.cpp:197
+#: Apper/FiltersMenu.cpp:226
 #, kde-format
 msgid "No filter"
 msgstr "ਫਿਲਟਰ ਨਹੀਂ"
 
-#: ApperKCM/FiltersMenu.cpp:99
+#: Apper/FiltersMenu.cpp:96
 #, kde-format
 msgid "Only development"
 msgstr "ਕੇਵਲ ਡਿਵੈਲਪਮੈਂਟ"
 
-#: ApperKCM/FiltersMenu.cpp:106
+#: Apper/FiltersMenu.cpp:103
 #, kde-format
 msgid "Only end user files"
 msgstr "ਕੇਵਲ ਅੰਤ ਯੂਜ਼ਰ ਫਾਇਲਾਂ ਹੀ"
 
-#: ApperKCM/FiltersMenu.cpp:121
+#: Apper/FiltersMenu.cpp:118
 #, kde-format
 msgid "Graphical"
 msgstr "ਗਰਾਫਿਕਲ"
 
-#: ApperKCM/FiltersMenu.cpp:130
+#: Apper/FiltersMenu.cpp:125
 #, kde-format
 msgid "Only graphical"
 msgstr "ਕੇਵਲ ਗਰਾਫਿਕਲ"
 
-#: ApperKCM/FiltersMenu.cpp:137
+#: Apper/FiltersMenu.cpp:132
 #, kde-format
 msgid "Only text"
 msgstr "ਕੇਵਲ ਟੈਕਸਟ"
 
-#: ApperKCM/FiltersMenu.cpp:152
+#: Apper/FiltersMenu.cpp:147
 #, kde-format
 msgctxt "Filter for free packages"
 msgid "Free"
 msgstr "ਮੁਕਤ"
 
-#: ApperKCM/FiltersMenu.cpp:161
+#: Apper/FiltersMenu.cpp:154
 #, kde-format
 msgid "Only free software"
 msgstr "ਕੇਵਲ ਮੁਕਤ ਸਾਫਟਵੇਅਰ"
 
-#: ApperKCM/FiltersMenu.cpp:168
+#: Apper/FiltersMenu.cpp:161
 #, kde-format
 msgid "Only non-free software"
 msgstr "ਕੇਵਲ ਗ਼ੈਰ-ਮੁਕਤ ਸਾਫਟਵੇਅਰ"
 
-#: ApperKCM/FiltersMenu.cpp:183
+#: Apper/FiltersMenu.cpp:176
 #, kde-format
 msgctxt "Filter for supported packages"
 msgid "Supported"
 msgstr "ਸਹਾਇਤਾ ਪ੍ਰਾਪਤ"
 
-#: ApperKCM/FiltersMenu.cpp:192
+#: Apper/FiltersMenu.cpp:183
 #, kde-format
 msgid "Only supported software"
 msgstr "ਕੇਵਲ ਸਹਾਇਤਾ ਪ੍ਰਾਪਤ ਸਾਫਟਵੇਅਰ"
 
-#: ApperKCM/FiltersMenu.cpp:199
+#: Apper/FiltersMenu.cpp:190
 #, kde-format
 msgid "Only non-supported software"
 msgstr "ਕੇਵਲ ਗ਼ੈਰ-ਸਹਾਇਤਾ ਪ੍ਰਾਪਤ ਸਾਫਟਵੇਅਰ"
 
-#: ApperKCM/FiltersMenu.cpp:214
+#: Apper/FiltersMenu.cpp:205
 #, kde-format
 msgctxt "Filter for source packages"
 msgid "Source"
 msgstr "ਸਰੋਤ"
 
-#: ApperKCM/FiltersMenu.cpp:223
+#: Apper/FiltersMenu.cpp:212
 #, kde-format
 msgid "Only sourcecode"
 msgstr "ਕੇਵਲ ਸਰੋਤ-ਕੋਡ ਹੀ"
 
-#: ApperKCM/FiltersMenu.cpp:230
+#: Apper/FiltersMenu.cpp:219
 #, kde-format
 msgid "Only non-sourcecode"
 msgstr "ਕੇਵਲ ਗ਼ੈਰ-ਸਰੋਤ ਕੋਡ"
 
-#: ApperKCM/FiltersMenu.cpp:248
+#: Apper/FiltersMenu.cpp:236
 #, kde-format
 msgid "Hide Subpackages"
 msgstr "ਸਬ-ਪੈਕੇਜ ਓਹਲੇ"
 
-#: ApperKCM/FiltersMenu.cpp:254
+#: Apper/FiltersMenu.cpp:240
 #, kde-format
 msgid "Only show one package, not subpackages"
 msgstr "ਕੇਵਲ ਇੱਕ ਪੈਕੇਜ ਵੇਖੋ, ਸਬ-ਪੈਕੇਜ ਨਹੀਂ"
 
-#: ApperKCM/FiltersMenu.cpp:258
+#: Apper/FiltersMenu.cpp:244
 #, kde-format
 msgid "Only Newest Packages"
 msgstr "ਕੇਵਲ ਸਭ ਤੋਂ ਨਵੇਂ ਪੈਕੇਜ ਹੀ"
 
-#: ApperKCM/FiltersMenu.cpp:265
+#: Apper/FiltersMenu.cpp:249
 #, kde-format
 msgid "Only show the newest available package"
 msgstr "ਕੇਵਲ ਨਵੇਂ ਉਪਲੱਬਧ ਹੋਏ ਪੈਕੇਜ ਹੀ ਵੇਖੋ"
 
-#: ApperKCM/FiltersMenu.cpp:269
+#: Apper/FiltersMenu.cpp:253
 #, kde-format
 msgid "Only Native Packages"
 msgstr "ਕੇਵਲ ਨੇਟਿਵ ਪੈਕੇਜ ਹੀ"
 
-#: ApperKCM/FiltersMenu.cpp:276
+#: Apper/FiltersMenu.cpp:258
 #, kde-format
 msgid "Only show packages matching the machine architecture"
 msgstr "ਮਸ਼ੀਨ ਦੇ ਢਾਂਚੇ (ਆਰਚੀਟੈਕਚਰ) ਨਾਲ ਮਿਲਦੇ ਪੈਕੇਜ ਹੀ ਵੇਖਾਓ"
 
-#: ApperKCM/FiltersMenu.cpp:282
+#: Apper/FiltersMenu.cpp:264
 #, kde-format
 msgid "Only Show Applications"
 msgstr "ਕੇਵਲ ਐਪਲੀਕੇਸ਼ਨ ਵੇਖੋ"
 
-#: ApperKCM/FiltersMenu.cpp:285
+#: Apper/FiltersMenu.cpp:267
 #, kde-format
 msgid "Hide packages that are not applications"
 msgstr "ਪੈਕੇਜ ਓਹਲੇ ਕਰੋ, ਜੋ ਕਿ ਐਪਲੀਕੇਸ਼ਨ ਨਹੀਂ ਹਨ"
 
-#: ApperKCM/PackageDetails.cpp:84
+#: Apper/main.cpp:44 Apper/MainUi.cpp:41
+#, kde-format
+msgid "Apper"
+msgstr "ਅੱਪਰ"
+
+#: Apper/main.cpp:46
+#, fuzzy, kde-format
+#| msgid "Apper is an Application to Get and Manage Software"
+msgid "Apper is an application to get and manage software"
+msgstr "ਅੱਪਰ ਐਪਲੀਕੇਸ਼ਨ ਹੈ, ਜੋ ਸਾਫਟਵੇਅਰ ਲੈਣ ਤੇ ਉਨ੍ਹਾਂ ਦੇ ਪਰਬੰਧ ਲਈ ਹੈ"
+
+#: Apper/main.cpp:48
+#, fuzzy, kde-format
+#| msgid "(C) 2008-2013 Daniel Nicoletti"
+msgid "(C) 2008-2018 Daniel Nicoletti"
+msgstr "(C) ੨੦੦੮-੨੦੧੩ Daniel Nicoletti"
+
+#: Apper/main.cpp:49 PkSession/main.cpp:54
+#, kde-format
+msgid "Adrien Bustany"
+msgstr "Adrien Bustany"
+
+#: Apper/main.cpp:49 PkSession/main.cpp:54
+#, kde-format
+msgid "libpackagekit-qt and other stuff"
+msgstr "libpackagekit-qt ਅਤੇ ਹੋਰ ਕੰਮ"
+
+#: Apper/main.cpp:50
+#, fuzzy, kde-format
+#| msgctxt "@info:credit"
+#| msgid "Matthias Klumpp"
+msgid "Matthias Klumpp"
+msgstr "ਮੈਥਿਊਸ ਕਲੁੰਪ"
+
+#: Apper/PackageDetails.cpp:87
 #, kde-format
 msgid "Display"
 msgstr "ਵੇਖੋ"
 
-#: ApperKCM/PackageDetails.cpp:89 AppSetup/SetupWizard.cpp:186
+#: Apper/PackageDetails.cpp:92 AppSetup/SetupWizard.cpp:186
 #, kde-format
 msgid "Description"
 msgstr "ਵੇਰਵਾ"
 
-#: ApperKCM/PackageDetails.cpp:95
+#: Apper/PackageDetails.cpp:98
 #, kde-format
 msgid "Depends On"
 msgstr "ਨਿਰਭਰ ਹੈ"
 
-#: ApperKCM/PackageDetails.cpp:122
+#: Apper/PackageDetails.cpp:125
 #, kde-format
 msgid "Required By"
 msgstr "ਲੋੜੀਦਾ ਹੈ"
 
-#: ApperKCM/PackageDetails.cpp:149
+#: Apper/PackageDetails.cpp:152
 #, kde-format
 msgid "File List"
 msgstr "ਫਾਇਲ ਲਿਸਟ"
 
-#: ApperKCM/PackageDetails.cpp:522
+#: Apper/PackageDetails.cpp:522
 #, kde-format
 msgid "No files were found."
 msgstr "ਕੋਈ ਫਾਇਲ ਨਹੀਂ ਲੱਭੀ।"
 
-#: ApperKCM/PackageDetails.cpp:570
+#: Apper/PackageDetails.cpp:570
 #, kde-format
 msgid "Could not fetch software details"
 msgstr "ਸਾਫਟਵੇਅਰ ਵੇਰਵਾ ਨਹੀਂ ਲਿਆ ਜਾ ਸਕਿਆ"
 
-#: ApperKCM/PackageDetails.cpp:612
+#: Apper/PackageDetails.cpp:612
 #, kde-format
 msgid "Applications"
 msgstr "ਐਪਲੀਕੇਸ਼ਨ"
 
 #. i18n: ectx: property (text), widget (QLabel, licenseL)
-#: ApperKCM/PackageDetails.ui:164
+#: Apper/PackageDetails.ui:164
 #, kde-format
 msgid "License:"
 msgstr "ਲਾਈਸੈਂਸ:"
 
 #. i18n: ectx: property (text), widget (QPushButton, menuTB)
-#: ApperKCM/PackageDetails.ui:394
+#: Apper/PackageDetails.ui:394
 #, kde-format
 msgid "More..."
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QToolButton, hideTB)
-#: ApperKCM/PackageDetails.ui:404 ApperKCM/Updater/UpdateDetails.ui:20
+#: Apper/PackageDetails.ui:404 Apper/Updater/UpdateDetails.ui:29
 #, kde-format
 msgid "Hide"
 msgstr "ਓਹਲੇ"
 
-#: ApperKCM/ScreenShotViewer.cpp:91
+#: Apper/ScreenShotViewer.cpp:90
 #, kde-format
 msgid "Could not find screen shot."
 msgstr "ਸਕਰੀਨਸ਼ਾਟ ਲੱਭਿਆ ਨਹੀਂ ਜਾ ਸਕਿਆ।"
 
-#: ApperKCM/Settings/OriginModel.cpp:37
+#: Apper/Settings/OriginModel.cpp:37
 #, kde-format
 msgid "Origin of Packages"
 msgstr "ਪੈਕੇਜ ਦਾ ਸਰੋਤ"
 
-#: ApperKCM/Settings/Settings.cpp:62
+#: Apper/Settings/Settings.cpp:64
 #, kde-format
 msgid "A repository was changed, it's highly recommended to refresh the cache"
 msgstr "ਰਿਪੋਜ਼ਟਰੀ ਬਦਲੀ ਗਈ ਸੀ, ਕੈਸ਼ ਨੂੰ ਤਾਜ਼ਾ ਕਰਨ ਦੀ ਜ਼ੋਰਦਾਰ ਸਿਫਾਰਸ਼ ਕੀਤੀ ਜਾਂਦੀ ਹੈ"
 
-#: ApperKCM/Settings/Settings.cpp:94
+#: Apper/Settings/Settings.cpp:94
 #, kde-format
 msgctxt "Inform about distribution upgrades"
 msgid "Never"
 msgstr "ਕਦੇ ਵੀ ਨਹੀਂ"
 
-#: ApperKCM/Settings/Settings.cpp:97
+#: Apper/Settings/Settings.cpp:97
 #, kde-format
 msgctxt "Inform about distribution upgrades"
 msgid "Only stable"
 msgstr "ਕੇਵਲ ਸਟੇਬਲ"
 
-#: ApperKCM/Settings/Settings.cpp:102
+#: Apper/Settings/Settings.cpp:102
 #, kde-format
 msgctxt "Inform about distribution upgrades"
 msgid "Stable and development"
 msgstr "ਸਟੇਬਲ ਤੇ ਡਿਵੈਲਪਮੈਂਟ"
 
-#: ApperKCM/Settings/Settings.cpp:106
+#: Apper/Settings/Settings.cpp:106
 #, kde-format
 msgctxt "Hourly refresh the package cache"
 msgid "Hourly"
 msgstr "ਘੰਟੇਵਾਰ"
 
-#: ApperKCM/Settings/Settings.cpp:107
+#: Apper/Settings/Settings.cpp:107
 #, kde-format
 msgctxt "Daily refresh the package cache"
 msgid "Daily"
 msgstr "ਰੋਜ਼ਾਨਾ"
 
-#: ApperKCM/Settings/Settings.cpp:108
+#: Apper/Settings/Settings.cpp:108
 #, kde-format
 msgctxt "Weekly refresh the package cache"
 msgid "Weekly"
 msgstr "ਹਫ਼ਤੇਵਾਰ"
 
-#: ApperKCM/Settings/Settings.cpp:109
+#: Apper/Settings/Settings.cpp:109
 #, kde-format
 msgctxt "Monthly refresh the package cache"
 msgid "Monthly"
 msgstr "ਮਹੀਨੇਵਾਰ"
 
-#: ApperKCM/Settings/Settings.cpp:110
+#: Apper/Settings/Settings.cpp:110
 #, kde-format
 msgctxt "Never refresh package cache"
 msgid "Never"
 msgstr "ਕਦੇ ਵੀ ਨਹੀਂ"
 
-#: ApperKCM/Settings/Settings.cpp:112
+#: Apper/Settings/Settings.cpp:112
 #, kde-format
 msgctxt "No updates will be automatically installed"
 msgid "None"
 msgstr "ਕੋਈ ਨਹੀਂ"
 
-#: ApperKCM/Settings/Settings.cpp:113
+#: Apper/Settings/Settings.cpp:113
 #, kde-format
 msgid "Download only"
 msgstr "ਕੇਵਲ ਡਾਊਨਲੋਡ"
 
-#: ApperKCM/Settings/Settings.cpp:114
+#: Apper/Settings/Settings.cpp:114
 #, kde-format
 msgid "Security only"
 msgstr "ਕੇਵਲ ਸੁਰੱਖਿਆ"
 
-#: ApperKCM/Settings/Settings.cpp:115
+#: Apper/Settings/Settings.cpp:115
 #, kde-format
 msgid "All updates"
 msgstr "ਸਭ ਅੱਪਡੇਟ"
 
 #. i18n: ectx: property (text), widget (QLabel, intervalL)
-#: ApperKCM/Settings/Settings.ui:53
+#: Apper/Settings/Settings.ui:74
 #, kde-format
 msgid "Check for new updates:"
 msgstr "ਨਵੇਂ ਅੱਪਡੇਟ ਲਈ ਚੈੱਕ ਕਰੋ:"
 
 #. i18n: ectx: property (text), widget (QCheckBox, checkUpdatesMobileCB)
 #. i18n: ectx: property (text), widget (QCheckBox, installUpdatesMobileCB)
-#: ApperKCM/Settings/Settings.ui:94 ApperKCM/Settings/Settings.ui:162
+#: Apper/Settings/Settings.ui:115 Apper/Settings/Settings.ui:183
 #, kde-format
 msgid "when on a mobile broadband network connection"
 msgstr "ਜਦੋਂ ਮੋਬਾਇਲ ਬਰਾਡਬੈਂਡ ਨੈੱਟਵਰਕ ਕੁਨੈਕਸ਼ਨ ਉੱਤੇ ਹੋਵੇ"
 
 #. i18n: ectx: property (text), widget (QCheckBox, checkUpdatesBatteryCB)
 #. i18n: ectx: property (text), widget (QCheckBox, installUpdatesBatteryCB)
-#: ApperKCM/Settings/Settings.ui:101 ApperKCM/Settings/Settings.ui:155
+#: Apper/Settings/Settings.ui:122 Apper/Settings/Settings.ui:176
 #, kde-format
 msgid "when running on battery"
 msgstr "ਜਦੋਂ ਬੈਟਰੀ ਉੱਤੇ ਚੱਲਦਾ ਹੋਵੇ"
 
 #. i18n: ectx: property (text), widget (QLabel, autoInsL)
-#: ApperKCM/Settings/Settings.ui:120
+#: Apper/Settings/Settings.ui:141
 #, kde-format
 msgid "Automatically update:"
 msgstr "ਆਟੋਮੈਟਿਕ ਅੱਪਡੇਟ:"
 
 #. i18n: ectx: property (text), widget (QCheckBox, appLauncherCB)
-#: ApperKCM/Settings/Settings.ui:178
+#: Apper/Settings/Settings.ui:199
 #, kde-format
 msgid "Show application launcher after installing new applications"
 msgstr "ਨਵੇਂ ਐਪਲੀਕੇਸ਼ਨ ਇੰਸਟਾਲ ਕਰਨ ਦੇ ਬਾਅਦ ਐਪਲੀਕੇਸ਼ਨ ਲਾਂਚਰ ਵੇਖੋ"
 
 #. i18n: ectx: property (text), widget (QCheckBox, autoConfirmCB)
-#: ApperKCM/Settings/Settings.ui:185
+#: Apper/Settings/Settings.ui:206
 #, kde-format
 msgid "Show confirmation dialog when installing or updating packages"
 msgstr "ਜਦੋਂ ਪੈਕੇਜ ਇੰਸਟਾਲ ਕਰਨੇ ਜਾਂ ਅੱਪਡੇਟ ਕਰਨੇ ਹੋਣ ਤਾਂ ਪੁਸ਼ਟੀ ਡਾਈਲਾਗ ਵੇਖੋ"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: ApperKCM/Settings/Settings.ui:192
+#: Apper/Settings/Settings.ui:213
 #, kde-format
 msgid "Check for distribution upgrades:"
 msgstr "ਡਿਸਟਰੀਬਿਊਸ਼ਨ ਅੱਪਗਰੇਡ ਲਈ ਚੈਕ:"
 
 #. i18n: ectx: property (text), widget (QCheckBox, showOriginsCB)
-#: ApperKCM/Settings/Settings.ui:233
+#: Apper/Settings/Settings.ui:270
 #, kde-format
 msgid "&Show origins of debug and development packages"
 msgstr "ਡੀਬੱਗ ਅਤੇ ਡਿਵੈਲਪਮੈਂਟ ਪੈਕੇਜਾਂ ਦਾ ਸਰੋਤ ਵੇਖੋ(&S)"
 
 #. i18n: ectx: property (text), widget (QPushButton, editOriginsPB)
-#: ApperKCM/Settings/Settings.ui:253
+#: Apper/Settings/Settings.ui:290
 #, kde-format
 msgid "Edit Origins"
 msgstr "ਸਰੋਤ ਸੋਧ"
 
-#: ApperKCM/TransactionHistory.cpp:68
+#: Apper/TransactionHistory.cpp:67
 #, kde-format
 msgid "Refresh transactions list"
 msgstr "ਟਰਾਂਸੈਕਸ਼ਨ ਲਿਸਟ ਤਾਜ਼ਾ ਕਰੋ"
 
-#: ApperKCM/TransactionHistory.cpp:85
+#: Apper/TransactionHistory.cpp:83
 #, kde-format
 msgid "Time since last cache refresh: %1"
 msgstr "ਆਖਰੀ ਕੈਸ਼ ਤਾਜ਼ਾ ਤੋਂ ਹੁਣ ਸਮਾਂ: %1"
 
-#: ApperKCM/TransactionModel.cpp:43
+#: Apper/TransactionModel.cpp:43
 #, kde-format
 msgid "Date"
 msgstr "ਮਿਤੀ"
 
-#: ApperKCM/TransactionModel.cpp:44 libapper/PackageModel.cpp:231
+#: Apper/TransactionModel.cpp:44 libapper/PackageModel.cpp:220
 #, kde-format
 msgid "Action"
 msgstr "ਐਕਸ਼ਨ"
 
-#: ApperKCM/TransactionModel.cpp:46
+#: Apper/TransactionModel.cpp:45 apperd/TransactionWatcher.cpp:230
+#: AppSetup/SetupWizard.cpp:149
+#, kde-format
+msgid "Details"
+msgstr "ਵੇਰਵਾ"
+
+#: Apper/TransactionModel.cpp:46
 #, kde-format
 msgctxt "Machine user who issued the transaction"
 msgid "Username"
 msgstr "ਯੂਜ਼ਰ-ਨਾਂ"
 
-#: ApperKCM/TransactionModel.cpp:47
+#: Apper/TransactionModel.cpp:47
 #, kde-format
 msgid "Application"
 msgstr "ਐਪਲੀਕੇਸ਼ਨ"
 
-#: ApperKCM/Updater/DistroUpgrade.cpp:39
+#: Apper/Updater/DistroUpgrade.cpp:39
 #, kde-format
 msgid "Upgrade"
 msgstr "ਅੱਪਗਰੇਡ"
 
-#: ApperKCM/Updater/DistroUpgrade.cpp:50
+#: Apper/Updater/DistroUpgrade.cpp:50
 #, kde-format
 msgid "Distribution upgrade available: %1"
 msgstr "ਡਿਸਟਰੀਬਿਊਸ਼ਨ ਅੱਪਗਰੇਡ ਉਪਲੱਬਧ: %1"
 
-#: ApperKCM/Updater/DistroUpgrade.cpp:65
+#: Apper/Updater/DistroUpgrade.cpp:65
 #, kde-format
 msgid ""
 "You are about to upgrade your distribution to the latest version. This is "
@@ -1025,12 +963,12 @@ msgstr ""
 "ਤੁਸੀਂ ਆਪਣੀ ਡਿਸਟਰੀਬਿਊਸ਼ਨ ਨੂੰ ਅੱਪਗਰੇਡ ਕਰਨ ਵਾਲੇ ਹੈ। ਇਹ ਅਕਸਰ ਲੰਮੀ ਕਾਰਵਾਈ ਹੁੰਦੀ ਹੈ ਅਤੇ ਇਹ ਆਪਣੇ "
 "ਪੈਕੇਜ ਅੱਪਗਰੇਡ ਕਰਨ ਨਾਲੋਂ ਬਹੁਤ ਵੱਧ ਸਮਾਂ ਲੈਂਦੀ ਹੈ।"
 
-#: ApperKCM/Updater/DistroUpgrade.cpp:70
+#: Apper/Updater/DistroUpgrade.cpp:70
 #, kde-format
 msgid "It is recommended to plug in your computer before proceeding."
 msgstr "ਜਾਰੀ ਰੱਖਣ ਤੋਂ ਪਹਿਲਾਂ ਤੁਹਾਨੂੰ ਤੁਹਾਡੇ ਕੰਪਿਊਟਰ ਦਾ ਪਲੱਗ ਲਗਾਉਣ ਦੀ ਸਿਫਾਰਸ਼ ਕੀਤੀ ਜਾਂਦੀ ਹੈ।"
 
-#: ApperKCM/Updater/DistroUpgrade.cpp:72
+#: Apper/Updater/DistroUpgrade.cpp:72
 #, kde-format
 msgid ""
 "It is recommended that you keep your computer plugged in while the upgrade "
@@ -1038,48 +976,70 @@ msgid ""
 msgstr ""
 "ਅੱਪਗਰੇਡ ਕਰਨ ਦੇ ਦੌਰਾਨ ਤੁਹਾਨੂੰ ਆਪਣੇ ਕੰਪਿਊਟਰ ਦਾ ਪਲੱਗ ਲੱਗਾ ਰਹਿਣ ਦੇਣ ਦੀ ਸਿਫਾਰਸ਼ ਕੀਤੀ ਜਾਂਦੀ ਹੈ।"
 
-#: ApperKCM/Updater/DistroUpgrade.cpp:91
+#: Apper/Updater/DistroUpgrade.cpp:90
 #, kde-format
 msgid "Distribution upgrade complete."
 msgstr "ਡਿਸਟਰੀਬਿਊਸ਼ਨ ਅੱਪਗਰੇਡ  ਪੂਰਾ।"
 
-#: ApperKCM/Updater/UpdateDetails.cpp:187
+#: Apper/Updater/DistroUpgrade.cpp:92 apperd/DistroUpgrade.cpp:144
+#, kde-format
+msgid "Distribution upgrade process exited with code %1."
+msgstr "ਡਿਸਟਰੀਬਿਊਸ਼ਨ ਅੱਪਗਰੇਡ ਕਾਰਵਾਈ %1 ਕੋਡ ਨਾਲ ਬੰਦ ਹੋ ਗਈ।"
+
+#: Apper/Updater/DistroUpgrade.cpp:104 apperd/DistroUpgrade.cpp:162
+#, kde-format
+msgid "The distribution upgrade process failed to start."
+msgstr "ਡਿਸਟਰੀਬਿਊਸ਼ਨ ਅੱਪਗਰੇਡ ਕਾਰਵਾਈ ਸ਼ੁਰੂ ਹੋਣ ਲਈ ਫੇਲ੍ਹ ਹੈ।"
+
+#: Apper/Updater/DistroUpgrade.cpp:108 apperd/DistroUpgrade.cpp:165
+#, kde-format
+msgid ""
+"The distribution upgrade process crashed some time after starting "
+"successfully."
+msgstr "ਡਿਸਟਰੀਬਿਊਸ਼ਨ ਅੱਪਗਰੇਡ ਕਾਰਵਾਈ ਠੀਕ ਤਰ੍ਹਾਂ ਸ਼ੁਰੂ ਹੋਣ ਦੇ ਕੁਝ ਚਿਰ ਬਾਅਦ ਕਰੈਸ਼ ਹੋ ਗਈ।"
+
+#: Apper/Updater/DistroUpgrade.cpp:112 apperd/DistroUpgrade.cpp:168
+#, kde-format
+msgid "The distribution upgrade process failed with an unknown error."
+msgstr "ਡਿਸਟਰੀਬਿਊਸ਼ਨ ਅੱਪਗਰੇਡ ਪਰੋਸੈਸ ਅਣਜਾਣ ਕਾਰਨਾਂ ਕਰਕੇ ਫੇਲ੍ਹ ਹੈ।"
+
+#: Apper/Updater/UpdateDetails.cpp:183
 #, kde-format
 msgid "This update will add new features and expand functionality."
 msgstr "ਇਹ ਅੱਪਡੇਟ ਨਵੇਂ ਫੀਚਰ ਜੋੜੇਗਾ ਤੇ ਸਹੂਲਤਾਂ ਨੂੰ ਵਧਾਏਗਾ।"
 
-#: ApperKCM/Updater/UpdateDetails.cpp:191
+#: Apper/Updater/UpdateDetails.cpp:187
 #, kde-format
 msgid "This update will fix bugs and other non-critical problems."
 msgstr "ਇਹ ਅੱਪਡੇਟ ਬੱਗ ਅਤੇ ਹੋਰ ਗ਼ੈਰ-ਨਾਜ਼ੁਕ ਸਮੱਸਿਆ ਫਿਕਸ ਕਰੇਗਾ।"
 
-#: ApperKCM/Updater/UpdateDetails.cpp:195
+#: Apper/Updater/UpdateDetails.cpp:191
 #, kde-format
 msgid "This update is important as it may solve critical problems."
 msgstr "ਇਹ ਅੱਪਡੇਟ ਖਾਸ ਹੈ, ਕਿਉਂਕਿ ਇਹ ਕਈ ਘਾਤਕ ਸਮੱਸਿਆ ਠੀਕ ਕਰ ਸਕੇਗਾ।"
 
-#: ApperKCM/Updater/UpdateDetails.cpp:199
+#: Apper/Updater/UpdateDetails.cpp:195
 #, kde-format
 msgid ""
 "This update is needed to fix a security vulnerability with this package."
 msgstr "ਇਹ ਅੱਪਡੇਟ ਇਸ ਪੈਕੇਜ ਵਿੱਚ ਸੁਰੱਖਿਆ ਕਮਜ਼ੋਰੀ ਠੀਕ ਕਰਨ ਲਈ ਲੋੜੀਦਾ ਹੈ।"
 
-#: ApperKCM/Updater/UpdateDetails.cpp:203
+#: Apper/Updater/UpdateDetails.cpp:199
 #, kde-format
 msgid "This update is blocked."
 msgstr "ਇਹ ਅੱਪਡੇਟ ਉੱਤੇ ਪਾਬੰਦੀ ਲਾਈ ਹੈ।"
 
-#: ApperKCM/Updater/UpdateDetails.cpp:210
+#: Apper/Updater/UpdateDetails.cpp:206
 #, kde-format
 msgid "This notification was issued on %1 and last updated on %2."
 msgstr "ਇਹ ਸੂਚਨਾ %1 ਨੂੰ ਦਿੱਤੀ ਗਈ ਸੀ ਤੇ %2 ਨੂੰ ਆਖਰੀ ਅੱਪਡੇਟ ਕੀਤਾ ਗਿਆ ਸੀ।"
 
-#: ApperKCM/Updater/UpdateDetails.cpp:216
+#: Apper/Updater/UpdateDetails.cpp:212
 #, kde-format
 msgid "This notification was issued on %1."
 msgstr "ਇਹ ਸੂਚਨਾ %1 ਨੂੰ ਦਿੱਤੀ ਗਈ ਸੀ।"
 
-#: ApperKCM/Updater/UpdateDetails.cpp:235
+#: Apper/Updater/UpdateDetails.cpp:229
 #, kde-format
 msgid "For more information about this update please visit this website:"
 msgid_plural ""
@@ -1087,7 +1047,7 @@ msgid_plural ""
 msgstr[0] "ਇਹ ਅੱਪਡੇਟ ਬਾਰੇ ਹੋਰ ਜਾਣਕਾਰੀ ਲਈ ਇਹ ਵੈੱਬਸਾਈਟ ਵੇਖੋ:"
 msgstr[1] "ਇਹ ਅੱਪਡੇਟ ਬਾਰੇ ਹੋਰ ਜਾਣਕਾਰੀ ਲਈ ਇਹ ਵੈੱਬਸਾਈਟਾਂ ਵੇਖੋ:"
 
-#: ApperKCM/Updater/UpdateDetails.cpp:245
+#: Apper/Updater/UpdateDetails.cpp:239
 #, kde-format
 msgid ""
 "For more information about bugs fixed by this update please visit this "
@@ -1098,7 +1058,7 @@ msgid_plural ""
 msgstr[0] "ਇਸ ਅੱਪਡੇਟ ਵਲੋਂ ਠੀਕ ਕੀਤੇ ਬੱਗ ਬਾਰੇ ਹੋਰ ਜਾਣਕਾਰੀ ਲੈਣ ਵਾਸਤੇ ਇਹ ਵੈੱਬਸਾਈਟ ਵੇਖੋ:"
 msgstr[1] "ਇਸ ਅੱਪਡੇਟ ਵਲੋਂ ਠੀਕ ਕੀਤੇ ਬੱਗ ਬਾਰੇ ਹੋਰ ਜਾਣਕਾਰੀ ਲੈਣ ਵਾਸਤੇ ਇਹ ਵੈੱਬਸਾਈਟਾਂ ਵੇਖੋ:"
 
-#: ApperKCM/Updater/UpdateDetails.cpp:255
+#: Apper/Updater/UpdateDetails.cpp:249
 #, kde-format
 msgid ""
 "For more information about this security update please visit this website:"
@@ -1107,28 +1067,28 @@ msgid_plural ""
 msgstr[0] "ਇਸ ਸੁਰੱਖਿਆ ਅੱਪਡੇਟ ਬਾਰੇ ਹੋਰ ਜਾਣਕਾਰੀ ਲੈਣ ਵਾਸਤੇ ਇਹ ਵੈੱਬਸਾਈਟ ਵੇਖੋ:"
 msgstr[1] "ਇਹਨਾਂ ਸੁਰੱਖਿਆ ਅੱਪਡੇਟ ਬਾਰੇ ਹੋਰ ਜਾਣਕਾਰੀ ਲੈਣ ਵਾਸਤੇ ਇਹ ਵੈੱਬਸਾਈਟਾਂ ਵੇਖੋ:"
 
-#: ApperKCM/Updater/UpdateDetails.cpp:265
+#: Apper/Updater/UpdateDetails.cpp:259
 #, kde-format
 msgid ""
 "The computer will have to be restarted after the update for the changes to "
 "take effect."
 msgstr "ਬਦਲਾਅ ਨੂੰ ਲਾਗੂ ਕਰਨ ਵਾਸਤੇ ਕੰਪਿਊਟਰ ਨੂੰ ਅੱਪਡੇਟ ਦੇ ਬਾਅਦ ਮੁੜ-ਚਾਲੂ ਕਰਨ ਦੀ ਲੋੜ ਹੈ।"
 
-#: ApperKCM/Updater/UpdateDetails.cpp:269
+#: Apper/Updater/UpdateDetails.cpp:263
 #, kde-format
 msgid ""
 "You will need to log out and back in after the update for the changes to "
 "take effect."
 msgstr "ਬਦਲਾਅ ਨੂੰ ਲਾਗੂ ਕਰਨ ਵਾਸਤੇ ਤੁਹਾਨੂੰ ਅੱਪਡੇਟ ਦੇ ਬਾਅਦ ਲਾਗ ਆਫ਼ ਕਰਕੇ ਮੁੜ ਲਾਗਇਨ ਕਰਨਾ ਪਵੇਗਾ।"
 
-#: ApperKCM/Updater/UpdateDetails.cpp:276
+#: Apper/Updater/UpdateDetails.cpp:270
 #, kde-format
 msgid ""
 "The classification of this update is unstable which means it is not designed "
 "for production use."
 msgstr "ਇਹ ਅੱਪਡੇਟ ਅਸਥਿਰ (ਅਣ-ਸਟੇਬਲ) ਹੈ ਅਤੇ ਇਸ ਨੂੰ ਪਰੋਡੱਕਸ਼ਨ ਲਈ ਤਿਆਰ ਨਹੀਂ ਕੀਤਾ ਗਿਆ ਹੈ।"
 
-#: ApperKCM/Updater/UpdateDetails.cpp:280
+#: Apper/Updater/UpdateDetails.cpp:274
 #, kde-format
 msgid ""
 "This is a test update, and is not designed for normal use. Please report any "
@@ -1137,47 +1097,117 @@ msgstr ""
 "ਇਹ ਟੈਸਟ ਅੱਪਡੇਟ ਹੈ, ਅਤੇ ਇਸ ਨੂੰ ਆਮ ਵਰਤੋਂ ਲਈ ਤਿਆਰ ਨਹੀਂ ਕੀਤਾ ਗਿਆ ਹੈ। ਜੇ ਤੁਹਾਨੂੰ ਕੋਈ ਵੀ ਸਮੱਸਿਆ ਜਾਂ "
 "ਰੈਗਰੇਸ਼ਨ (regression) ਮਿਲਦੀ  ਹੈ ਤਾਂ ਰਿਪੋਰਟ ਦਿਓ ਜੀ।"
 
-#: ApperKCM/Updater/UpdateDetails.cpp:290
+#: Apper/Updater/UpdateDetails.cpp:284
 #, kde-format
 msgid ""
 "The developer logs will be shown as no description is available for this "
 "update:"
 msgstr "ਡਿਵੈਲਪਰ ਲਾਗ ਵੇਖਾਇਆ ਜਾਵੇਗਾ, ਕਿਉਂਕਿ ਇਸ ਅੱਪਡੇਟ ਲਈ ਕੋਈ ਵੀ ਜਾਣਕਾਰੀ ਉਪਲੱਬਧ ਨਹੀਂ ਹੈ:"
 
-#: ApperKCM/Updater/UpdateDetails.cpp:298
+#: Apper/Updater/UpdateDetails.cpp:292
 #, kde-format
 msgid "Updates:"
 msgstr "ਅੱਪਡੇਟ:"
 
-#: ApperKCM/Updater/UpdateDetails.cpp:308
+#: Apper/Updater/UpdateDetails.cpp:302
 #, kde-format
 msgid "Obsoletes:"
 msgstr "ਬਰਤਰਫ਼:"
 
-#: ApperKCM/Updater/UpdateDetails.cpp:318
+#: Apper/Updater/UpdateDetails.cpp:312
 #, kde-format
 msgid "Repository: %1"
 msgstr "ਰਿਪੋਜ਼ਟਰੀ: %1"
 
-#: ApperKCM/Updater/UpdateDetails.cpp:340
+#: Apper/Updater/UpdateDetails.cpp:334
 #, kde-format
 msgid "No update description was found."
 msgstr "ਕੋਈ ਅੱਪਡੇਟ ਵੇਰਵਾ ਨਹੀਂ ਲੱਭਿਆ।"
 
-#: ApperKCM/Updater/Updater.cpp:113
+#: Apper/Updater/Updater.cpp:112
 #, kde-format
 msgid "Show Current Versions"
 msgstr "ਮੌਜੂਦਾ ਵਰਜਨ ਵੇਖੋ"
 
-#: ApperKCM/Updater/Updater.cpp:241
+#: Apper/Updater/Updater.cpp:241
 #, kde-format
 msgid "Estimated download size: %1"
 msgstr "ਅੰਦਾਜ਼ਨ ਡਾਊਨਲੋਡ ਆਕਾਰ: %1"
 
-#: ApperKCM/Updater/Updater.cpp:342
+#: Apper/Updater/Updater.cpp:335
 #, kde-format
 msgid "Check for new updates"
 msgstr "ਨਵੇਂ ਅੱਪਡੇਟ ਲਈ ਚੈੱਕ ਕਰੋ"
+
+#: apperd/DistroUpgrade.cpp:88
+#, kde-format
+msgid "Distribution upgrade available"
+msgstr "ਡਿਸਟਰੀਬਿਊਸ਼ਨ ਅੱਪਗਰੇਡ ਉਪਲੱਬਧ"
+
+#: apperd/DistroUpgrade.cpp:92
+#, kde-format
+msgid "Start upgrade now"
+msgstr "ਹੁਣੇ ਅੱਪਗਰੇਡ ਸ਼ੁਰੂ ਕਰੋ"
+
+#: apperd/DistroUpgrade.cpp:141
+#, kde-format
+msgid "Distribution upgrade finished. "
+msgstr "ਡਿਸਟਰੀਬਿਊਸ਼ਨ ਅੱਪਗਰੇਡ ਮੁਕੰਮਲ ਹੋਇਆ। "
+
+#: apperd/TransactionWatcher.cpp:142
+#, kde-format
+msgid "The system update has completed"
+msgstr "ਸਿਸਟਮ ਅੱਪਡੇਟ ਪੂਰਾ ਹੋਇਆ"
+
+#: apperd/TransactionWatcher.cpp:149 apperd/TransactionWatcher.cpp:191
+#, kde-format
+msgid "Restart"
+msgstr "ਮੁੜ-ਚਾਲੂ"
+
+#: apperd/TransactionWatcher.cpp:182
+#, kde-format
+msgid "Package: %2"
+msgid_plural "Packages: %2"
+msgstr[0] "ਪੈਕੇਜ: %2"
+msgstr[1] "ਪੈਕੇਜ: %2"
+
+#: apperd/Updater.cpp:156
+#, kde-format
+msgid "Updates are being automatically installed."
+msgstr "ਅੱਪਡੇਟ ਆਟੋਮੈਟਿਕ ਹੀ ਇੰਸਟਾਲ ਕੀਤੇ ਜਾ ਰਹੇ ਹਨ।"
+
+#: apperd/Updater.cpp:166
+#, kde-format
+msgid "Security updates are being automatically installed."
+msgstr "ਸੁਰੱਖਿਆ ਅੱਪਡੇਟ ਆਟੋਮੈਟਿਕ ਹੀ ਇੰਸਟਾਲ ਕੀਤੇ ਜਾ ਰਹੇ ਹਨ।"
+
+#: apperd/Updater.cpp:176
+#, kde-format
+msgid "Updates are being automatically downloaded."
+msgstr "ਅੱਪਡੇਟ ਆਟੋਮੈਟਿਕ ਹੀ ਡਾਊਨਲੋਡ ਕੀਤੇ ਜਾ ਰਹੇ ਹਨ।"
+
+#: apperd/Updater.cpp:210
+#, kde-format
+msgid "System update was successful."
+msgstr "ਸਿਸਟਮ ਠੀਕ ਤਰ੍ਹਾਂ ਅੱਪਡੇਟ ਹੋ ਗਿਆ।"
+
+#: apperd/Updater.cpp:217
+#, kde-format
+msgid "The software update failed."
+msgstr "ਸਾਫਟਵੇਅਰ ਅੱਪਡੇਟ ਫੇਲ੍ਹ ਹੋਇਆ।"
+
+#: apperd/Updater.cpp:271
+#, kde-format
+msgid "There is one new update"
+msgid_plural "There are %1 new updates"
+msgstr[0] "ਇੱਕ ਨਵਾਂ ਅੱਪਡੇਟ ਉਪਲੱਬਧ ਹੈ"
+msgstr[1] "%1 ਨਵੇਂ ਅੱਪਡੇਟ ਉਪਲੱਬਧ ਹਨ"
+
+#: apperd/Updater.cpp:289 AppSetup/SetupWizard.cpp:260
+#: libapper/ApplicationsDelegate.cpp:44
+#, kde-format
+msgid "Install"
+msgstr "ਇੰਸਟਾਲ"
 
 #: AppSetup/main.cpp:43
 #, kde-format
@@ -1221,8 +1251,8 @@ msgstr ""
 msgid "Package not found!"
 msgstr "ਪੈਕੇਜ ਨਹੀਂ ਲੱਭਿਆ!"
 
-#: AppSetup/SetupWizard.cpp:85 libapper/Requirements.cpp:60
-#: PkSession/SessionTask.cpp:72
+#: AppSetup/SetupWizard.cpp:85 libapper/Requirements.cpp:57
+#: PkSession/SessionTask.cpp:73
 #, kde-format
 msgid "Continue"
 msgstr "ਜਾਰੀ ਰੱਖੋ"
@@ -1286,14 +1316,14 @@ msgstr "ਇੰਸਟਾਲੇਸ਼ਨ ਪੂਰੀ ਹੋਈ!"
 msgid "%1 has been installed successfully!"
 msgstr "%1 ਨੂੰ ਠੀਕ ਤਰ੍ਹਾਂ ਇੰਸਟਾਲ ਕੀਤਾ ਗਿਆ ਹੈ!"
 
-#: libapper/ApplicationLauncher.cpp:96
+#: libapper/ApplicationLauncher.cpp:97
 #, kde-format
 msgid "New application available"
 msgid_plural "New applications available"
 msgstr[0] "ਨਵੀਂ ਐਪਲੀਕੇਸ਼ਨ ਉਪਲੱਬਧ ਹੈ"
 msgstr[1] "ਨਵੀਆਂ ਐਪਲੀਕੇਸ਼ਨ ਉਪਲੱਬਧ ਹਨ"
 
-#: libapper/ApplicationLauncher.cpp:99
+#: libapper/ApplicationLauncher.cpp:100
 #, kde-format
 msgid "The following application was just installed. Click on it to launch:"
 msgid_plural ""
@@ -1303,27 +1333,27 @@ msgstr[1] ""
 "ਅੱਗੇ ਦਿੱਤੀਆਂ ਗਈਆਂ ਐਪਲੀਕੇਸ਼ਨ ਹੁਣੇ ਹੀ ਇੰਸਟਾਲ ਕੀਤੀਆਂ ਗਈਆਂ ਹਨ। ਉਨ੍ਹਾਂ ਨੂੰ ਚਲਾਉਣ ਲਈ ਕਲਿੱਕ ਕਰੋ:"
 
 #. i18n: ectx: property (text), widget (QCheckBox, showCB)
-#: libapper/ApplicationLauncher.ui:72
+#: libapper/ApplicationLauncher.ui:81
 #, kde-format
 msgid "Do not show this dialog again"
 msgstr "ਇਹ ਡਾਈਲਾਗ ਫੇਰ ਨਾ ਵੇਖਾਓ"
 
-#: libapper/ApplicationsDelegate.cpp:43
+#: libapper/ApplicationsDelegate.cpp:46
 #, kde-format
 msgid "Remove"
 msgstr "ਹਟਾਓ"
 
-#: libapper/ApplicationsDelegate.cpp:45 libapper/ChangesDelegate.cpp:55
+#: libapper/ApplicationsDelegate.cpp:48 libapper/ChangesDelegate.cpp:59
 #, kde-format
 msgid "Deselect"
 msgstr "ਚੋਣ ਹਟਾਓ"
 
-#: libapper/ChangesDelegate.cpp:51
+#: libapper/ChangesDelegate.cpp:55
 #, kde-format
 msgid "Do not Install"
 msgstr "ਨਾ ਇੰਸਟਾਲ ਕਰੋ"
 
-#: libapper/ChangesDelegate.cpp:53
+#: libapper/ChangesDelegate.cpp:57
 #, kde-format
 msgid "Do not Remove"
 msgstr "ਨਾ ਹਟਾਓ"
@@ -1333,18 +1363,18 @@ msgstr "ਨਾ ਹਟਾਓ"
 msgid "%1 remaining"
 msgstr "%1 ਬਾਕੀ"
 
-#: libapper/LicenseAgreement.cpp:40
-#, kde-format
-msgid "Accept Agreement"
-msgstr "ਇਕਰਾਰਨਾਮੇ ਨਾਲ ਸਹਿਮਤ"
-
-#. i18n: ectx: property (windowTitle), widget (QWidget, LicenseAgreement)
-#: libapper/LicenseAgreement.cpp:41 libapper/LicenseAgreement.ui:14
+#. i18n: ectx: property (windowTitle), widget (QDialog, LicenseAgreement)
+#: libapper/LicenseAgreement.cpp:40 libapper/LicenseAgreement.ui:14
 #, kde-format
 msgid "License Agreement Required"
 msgstr "ਲਾਈਸੈਂਸ ਇਕਰਾਰਨਾਮਾ ਲੋੜੀਦਾ ਹੈ"
 
-#: libapper/LicenseAgreement.cpp:42
+#: libapper/LicenseAgreement.cpp:43
+#, kde-format
+msgid "Accept Agreement"
+msgstr "ਇਕਰਾਰਨਾਮੇ ਨਾਲ ਸਹਿਮਤ"
+
+#: libapper/LicenseAgreement.cpp:45
 #, kde-format
 msgid "License required for %1 by %2"
 msgstr "%1 ਲਈ %2 ਵਲੋਂ ਲਾਈਸੈਂਸ ਚਾਹੀਦਾ ਹੈ"
@@ -1355,37 +1385,37 @@ msgstr "%1 ਲਈ %2 ਵਲੋਂ ਲਾਈਸੈਂਸ ਚਾਹੀਦਾ ਹ�
 msgid "Please read the following important information before continuing:"
 msgstr "ਜਾਰੀ ਰੱਖਣ ਤੋਂ ਪਹਿਲਾਂ ਅੱਗੇ ਦਿੱਤੀ ਖਾਸ ਜਾਣਕਾਰੀ ਧਿਆਨ ਨਾਲ ਪੜ੍ਹ ਲਵੋ ਜੀ:"
 
-#: libapper/PackageModel.cpp:212
+#: libapper/PackageModel.cpp:201
 #, kde-format
 msgid "Name"
 msgstr "ਨਾਂ"
 
-#: libapper/PackageModel.cpp:216
+#: libapper/PackageModel.cpp:205
 #, kde-format
 msgid "Version"
 msgstr "ਵਰਜਨ"
 
-#: libapper/PackageModel.cpp:219
+#: libapper/PackageModel.cpp:208
 #, kde-format
 msgid "Installed Version"
 msgstr "ਇੰਸਟਾਲ ਕੀਤਾ ਵਰਜਨ"
 
-#: libapper/PackageModel.cpp:222
+#: libapper/PackageModel.cpp:211
 #, kde-format
 msgid "Arch"
 msgstr "ਆਰਚ"
 
-#: libapper/PackageModel.cpp:225
+#: libapper/PackageModel.cpp:214
 #, kde-format
 msgid "Origin"
 msgstr "ਸਰੋਤ"
 
-#: libapper/PackageModel.cpp:228
+#: libapper/PackageModel.cpp:217
 #, kde-format
 msgid "Size"
 msgstr "ਸਾਈਜ਼"
 
-#: libapper/PackageModel.cpp:334
+#: libapper/PackageModel.cpp:332
 #, kde-format
 msgid ""
 "Version: %1\n"
@@ -1394,119 +1424,119 @@ msgstr ""
 "ਵਰਜਨ: %1\n"
 "ਆਰਚੀਟੈਕਚਰ: %2"
 
-#: libapper/PackageModel.cpp:380
+#: libapper/PackageModel.cpp:379
 #, kde-format
 msgid "To be Removed"
 msgstr "ਹਟਾਉਣ ਲਈ"
 
-#: libapper/PackageModel.cpp:382
+#: libapper/PackageModel.cpp:381
 #, kde-format
 msgid "To be Installed"
 msgstr "ਇੰਸਟਾਲ ਕਰਨ ਲਈ"
 
-#: libapper/PkStrings.cpp:35
+#: libapper/PkStrings.cpp:38
 #, kde-format
 msgctxt "This is when the transaction status is not known"
 msgid "Unknown state"
 msgstr "ਅਣਜਾਣ ਹਾਲਤ"
 
-#: libapper/PkStrings.cpp:38
+#: libapper/PkStrings.cpp:41
 #, kde-format
 msgctxt "transaction state, the daemon is in the process of starting"
 msgid "Waiting for service to start"
 msgstr "ਸਰਵਿਸ ਸ਼ੁਰੂ ਹੋਣ ਲਈ ਉਡੀਕ ਜਾਰੀ ਹੈ"
 
-#: libapper/PkStrings.cpp:41
+#: libapper/PkStrings.cpp:44
 #, kde-format
 msgctxt "transaction state, the transaction is waiting for another to complete"
 msgid "Waiting for other tasks"
 msgstr "ਹੋਰ ਕੰਮਾਂ ਲਈ ਉਡੀਕ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ"
 
-#: libapper/PkStrings.cpp:44
+#: libapper/PkStrings.cpp:47
 #, kde-format
 msgctxt "transaction state, just started"
 msgid "Running task"
 msgstr "ਕੰਮ ਚੱਲ ਰਿਹਾ ਹੈ"
 
-#: libapper/PkStrings.cpp:47
+#: libapper/PkStrings.cpp:50
 #, kde-format
 msgctxt "transaction state, is querying data"
 msgid "Querying"
 msgstr "ਕਿਊਰੀ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ"
 
-#: libapper/PkStrings.cpp:50
+#: libapper/PkStrings.cpp:53
 #, kde-format
 msgctxt "transaction state, getting data from a server"
 msgid "Getting information"
 msgstr "ਜਾਣਕਾਰੀ ਲਈ ਜਾ ਰਹੀ ਹੈ"
 
-#: libapper/PkStrings.cpp:53
+#: libapper/PkStrings.cpp:56
 #, kde-format
 msgctxt "transaction state, removing packages"
 msgid "Removing packages"
 msgstr "ਪੈਕੇਜ ਹਟਾਏ ਜਾ ਰਹੇ ਹਨ"
 
-#: libapper/PkStrings.cpp:57
+#: libapper/PkStrings.cpp:61
 #, kde-format
 msgctxt "transaction state, downloading package files"
 msgid "Downloading at %1/s, %2 remaining"
 msgstr "%1/s ਨਾਲ ਡਾਊਨਲੋਡ ਕੀਤੇ ਜਾ ਰਹੇ ਹਨ, %2 ਬਾਕੀ"
 
-#: libapper/PkStrings.cpp:62
+#: libapper/PkStrings.cpp:67
 #, kde-format
 msgctxt "transaction state, downloading package files"
 msgid "Downloading at %1/s"
 msgstr "%1/s ਨਾਲ ਡਾਊਨਲੋਡ ਕੀਤੇ ਜਾ ਰਹੇ ਹਨ"
 
-#: libapper/PkStrings.cpp:66
+#: libapper/PkStrings.cpp:72
 #, kde-format
 msgctxt "transaction state, downloading package files"
 msgid "Downloading, %1 remaining"
 msgstr "ਡਾਊਨਲੋਡ ਕੀਤੀਆਂ ਜਾ ਰਹੀਆਂ ਹਨ, %1 ਬਾਕੀ"
 
-#: libapper/PkStrings.cpp:70
+#: libapper/PkStrings.cpp:76
 #, kde-format
 msgctxt "transaction state, downloading package files"
 msgid "Downloading"
 msgstr "ਡਾਊਨਲੋਡ ਕੀਤੀਆਂ ਜਾ ਰਹੀਆਂ ਹਨ"
 
-#: libapper/PkStrings.cpp:74
+#: libapper/PkStrings.cpp:80
 #, kde-format
 msgctxt "transaction state, installing packages"
 msgid "Installing packages"
 msgstr "ਪੈਕੇਜ ਇੰਸਟਾਲ ਕੀਤੇ ਜਾ ਰਹੇ ਹਨ"
 
-#: libapper/PkStrings.cpp:77
+#: libapper/PkStrings.cpp:83
 #, kde-format
 msgctxt "transaction state, refreshing internal lists"
 msgid "Refreshing software list"
 msgstr "ਸਾਫਟਵੇਅਰ ਲਿਸਟ ਤਾਜ਼ਾ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ"
 
-#: libapper/PkStrings.cpp:80
+#: libapper/PkStrings.cpp:86
 #, kde-format
 msgctxt "transaction state, installing updates"
 msgid "Updating packages"
 msgstr "ਪੈਕੇਜ ਅੱਪਡੇਟ ਕੀਤੇ ਜਾ ਰਹੇ ਹਨ"
 
-#: libapper/PkStrings.cpp:83
+#: libapper/PkStrings.cpp:89
 #, kde-format
 msgctxt "transaction state, removing old packages, and cleaning config files"
 msgid "Cleaning up packages"
 msgstr "ਪੈਕੇਜ ਸਾਫ਼ ਕੀਤੇ ਜਾ ਰਹੇ ਹਨ"
 
-#: libapper/PkStrings.cpp:86
+#: libapper/PkStrings.cpp:92
 #, kde-format
 msgctxt "transaction state, obsoleting old packages"
 msgid "Obsoleting packages"
 msgstr "ਪੈਕੇਜ ਬਰਤਰਫ਼ ਕੀਤੇ ਜਾ ਰਹੇ ਹਨ"
 
-#: libapper/PkStrings.cpp:89
+#: libapper/PkStrings.cpp:95
 #, kde-format
 msgctxt "transaction state, checking the transaction before we do it"
 msgid "Resolving dependencies"
 msgstr "ਨਿਰਭਰਤਾ ਹੱਲ਼ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ"
 
-#: libapper/PkStrings.cpp:92
+#: libapper/PkStrings.cpp:98
 #, kde-format
 msgctxt ""
 "transaction state, checking if we have all the security keys for the "
@@ -1514,1004 +1544,1028 @@ msgctxt ""
 msgid "Checking signatures"
 msgstr "ਦਸਤਖਤ ਚੈੱਕ ਕੀਤੇ ਜਾ ਰਹੇ ਹਨ"
 
-#: libapper/PkStrings.cpp:95
+#: libapper/PkStrings.cpp:101
 #, kde-format
 msgctxt "transaction state, when we're doing a test transaction"
 msgid "Testing changes"
 msgstr "ਬਦਲਾਅ ਟੈਸਟ ਕੀਤੇ ਜਾ ਰਹੇ ਹਨ"
 
-#: libapper/PkStrings.cpp:98
+#: libapper/PkStrings.cpp:104
 #, kde-format
 msgctxt "transaction state, when we're writing to the system package database"
 msgid "Committing changes"
 msgstr "ਬਦਲਾਅ ਕਮਿਟ ਕੀਤੇ ਜਾ ਰਹੇ ਹਨ"
 
-#: libapper/PkStrings.cpp:101
+#: libapper/PkStrings.cpp:107
 #, kde-format
 msgctxt "transaction state, requesting data from a server"
 msgid "Requesting data"
 msgstr "ਡਾਟੇ ਲਈ ਮੰਗ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ"
 
-#: libapper/PkStrings.cpp:104
+#: libapper/PkStrings.cpp:110
 #, kde-format
 msgctxt "transaction state, all done!"
 msgid "Finished"
 msgstr "ਮੁਕੰਮਲ ਹੈ"
 
-#: libapper/PkStrings.cpp:107
+#: libapper/PkStrings.cpp:113
 #, kde-format
 msgctxt "transaction state, in the process of cancelling"
 msgid "Cancelling"
 msgstr "ਰੱਦ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ"
 
-#: libapper/PkStrings.cpp:110
+#: libapper/PkStrings.cpp:116
 #, kde-format
 msgctxt "transaction state, downloading metadata"
 msgid "Downloading repository information"
 msgstr "ਰਿਪੋਜ਼ਟਰੀ ਜਾਣਕਾਰੀ ਡਾਊਨਲੋਡ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ"
 
-#: libapper/PkStrings.cpp:113
+#: libapper/PkStrings.cpp:119
 #, kde-format
 msgctxt "transaction state, downloading metadata"
 msgid "Downloading list of packages"
 msgstr "ਪੈਕੇਜਾਂ ਦੀ ਲਿਸਟ ਡਾਊਨਲੋਡ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ"
 
-#: libapper/PkStrings.cpp:116
+#: libapper/PkStrings.cpp:122
 #, kde-format
 msgctxt "transaction state, downloading metadata"
 msgid "Downloading file lists"
 msgstr "ਫਾਇਲ ਲਿਸਟ ਡਾਊਨਲੋਡ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ"
 
-#: libapper/PkStrings.cpp:119
+#: libapper/PkStrings.cpp:125
 #, kde-format
 msgctxt "transaction state, downloading metadata"
 msgid "Downloading lists of changes"
 msgstr "ਬਦਲਾਅ ਦੀ ਲਿਸਟ ਡਾਊਨਲੋਡ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ"
 
-#: libapper/PkStrings.cpp:122
+#: libapper/PkStrings.cpp:128
 #, kde-format
 msgctxt "transaction state, downloading metadata"
 msgid "Downloading groups"
 msgstr "ਗਰੁੱਪ ਡਾਊਨਲੋਡ ਕੀਤੇ ਜਾ ਰਹੇ ਹਨ"
 
-#: libapper/PkStrings.cpp:125
+#: libapper/PkStrings.cpp:131
 #, kde-format
 msgctxt "transaction state, downloading metadata"
 msgid "Downloading update information"
 msgstr "ਅੱਪਡੇਟ ਜਾਣਕਾਰੀ ਡਾਊਨਲੋਡ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ"
 
-#: libapper/PkStrings.cpp:128
+#: libapper/PkStrings.cpp:134
 #, kde-format
 msgctxt "transaction state, repackaging delta files"
 msgid "Repackaging files"
 msgstr "ਫਾਇਲਾਂ ਮੁੜ-ਪੈਕ ਕੀਤੀਆਂ ਜਾ ਰਹੀਆਂ ਹਨ"
 
-#: libapper/PkStrings.cpp:131
+#: libapper/PkStrings.cpp:137
 #, kde-format
 msgctxt "transaction state, loading databases"
 msgid "Loading cache"
 msgstr "ਕੈਸ਼ ਲੋਡ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ"
 
-#: libapper/PkStrings.cpp:134
+#: libapper/PkStrings.cpp:140
 #, kde-format
 msgctxt "transaction state, scanning for running processes"
 msgid "Scanning installed applications"
 msgstr "ਇੰਸਟਾਲ ਐਪਲੀਕੇਸ਼ਨਾਂ ਸਕੈਨ ਕੀਤੀਆਂ ਜਾ ਰਹੀਆਂ ਹਨ"
 
-#: libapper/PkStrings.cpp:137
+#: libapper/PkStrings.cpp:143
 #, kde-format
 msgctxt ""
 "transaction state, generating a list of packages installed on the system"
 msgid "Generating package lists"
 msgstr "ਪੈਕੇਜ ਲਿਸਟਾਂ ਤਿਆਰ ਕੀਤੀਆਂ ਜਾ ਰਹੀਆਂ ਹਨ"
 
-#: libapper/PkStrings.cpp:140
+#: libapper/PkStrings.cpp:146
 #, kde-format
 msgctxt "transaction state, when we're waiting for the native tools to exit"
 msgid "Waiting for package manager lock"
 msgstr "ਪੈਕੇਜ ਮੈਨੇਜਰ ਲਾਕ ਲਈ ਉਡੀਕ ਜਾਰੀ"
 
-#: libapper/PkStrings.cpp:143
+#: libapper/PkStrings.cpp:149
 #, kde-format
 msgctxt "waiting for user to type in a password"
 msgid "Waiting for authentication"
 msgstr "ਪਰਮਾਣਕਿਤਾ ਲਈ ਉਡੀਕ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ"
 
-#: libapper/PkStrings.cpp:146
+#: libapper/PkStrings.cpp:152
 #, kde-format
 msgctxt "we are updating the list of processes"
 msgid "Updating the list of running applications"
 msgstr "ਚੱਲ ਰਹੀਆਂ ਐਪਲੀਕੇਸ਼ਨਾਂ ਦੀ ਲਿਸਟ ਅੱਪਡੇਟ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ"
 
-#: libapper/PkStrings.cpp:149
+#: libapper/PkStrings.cpp:155
 #, kde-format
 msgctxt "we are checking executable files in use"
 msgid "Checking for applications currently in use"
 msgstr "ਮੌਜੂਦਾ ਵਰਤੋਂ ਅਧੀਨ ਐਪਲੀਕੇਸ਼ਨ ਦੀ ਜਾਂਚ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ"
 
-#: libapper/PkStrings.cpp:152
+#: libapper/PkStrings.cpp:158
 #, kde-format
 msgctxt "we are checking for libraries in use"
 msgid "Checking for libraries currently in use"
 msgstr "ਇਸ ਸਮੇਂ ਵਰਤੀਆਂ ਜਾ ਰਹੀਆਂ ਲਾਇਬਰੇਰੀਆਂ ਚੈੱਕ ਕੀਤੀਆਂ ਜਾ ਰਹੀਆਂ ਹਨ"
 
-#: libapper/PkStrings.cpp:155
+#: libapper/PkStrings.cpp:161
 #, kde-format
 msgctxt "we are copying package files to prepare to install"
 msgid "Copying files"
 msgstr "ਫਾਇਲਾਂ ਕਾਪੀ ਕੀਤੀਆਂ ਜਾ ਰਹੀਆਂ ਹਨ"
 
-#: libapper/PkStrings.cpp:170
+#: libapper/PkStrings.cpp:164
+#, fuzzy, kde-format
+#| msgctxt "transaction state, just started"
+#| msgid "Running task"
+msgctxt "we are running hooks pre or post transaction"
+msgid "Running hooks"
+msgstr "ਕੰਮ ਚੱਲ ਰਿਹਾ ਹੈ"
+
+#: libapper/PkStrings.cpp:179
 #, kde-format
 msgctxt "The action of the package, in past tense"
 msgid "Downloaded"
 msgstr "ਡਾਊਨਲੋਡ ਕੀਤਾ"
 
-#: libapper/PkStrings.cpp:172
+#: libapper/PkStrings.cpp:181
 #, kde-format
 msgctxt "The action of the package, in past tense"
 msgid "Updated"
 msgstr "ਅੱਪਡੇਟ ਕੀਤੇ"
 
-#: libapper/PkStrings.cpp:174
+#: libapper/PkStrings.cpp:183
 #, kde-format
 msgctxt "The action of the package, in past tense"
 msgid "Installed"
 msgstr "ਇੰਸਟਾਲ ਕੀਤੇ"
 
-#: libapper/PkStrings.cpp:176
+#: libapper/PkStrings.cpp:185
 #, kde-format
 msgctxt "The action of the package, in past tense"
 msgid "Removed"
 msgstr "ਹਟਾਏ"
 
-#: libapper/PkStrings.cpp:178
+#: libapper/PkStrings.cpp:187
 #, kde-format
 msgctxt "The action of the package, in past tense"
 msgid "Cleaned Up"
 msgstr "ਸਾਫ਼ ਕੀਤੇ"
 
-#: libapper/PkStrings.cpp:180
+#: libapper/PkStrings.cpp:189
 #, kde-format
 msgctxt "The action of the package, in past tense"
 msgid "Obsoleted"
 msgstr "ਬਰਤਰਫ਼"
 
-#: libapper/PkStrings.cpp:191
+#: libapper/PkStrings.cpp:200
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Unknown role type"
 msgstr "ਅਣਜਾਣ ਰੋਲ ਕਿਸਮ"
 
-#: libapper/PkStrings.cpp:193
+#: libapper/PkStrings.cpp:202
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting dependencies"
 msgstr "ਨਿਰਭਰਤਾ ਲਈ ਜਾ ਰਹੀ ਹੈ"
 
-#: libapper/PkStrings.cpp:195
+#: libapper/PkStrings.cpp:204
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting update detail"
 msgstr "ਅੱਪਡੇਟ ਵੇਰਵਾ ਲਿਆ ਜਾ ਰਿਹਾ ਹੈ"
 
-#: libapper/PkStrings.cpp:198
+#: libapper/PkStrings.cpp:207
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting details"
 msgstr "ਵੇਰਵਾ ਲਿਆ ਜਾ ਰਿਹਾ ਹੈ"
 
-#: libapper/PkStrings.cpp:200
+#: libapper/PkStrings.cpp:209
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting requires"
 msgstr "ਨਿਰਭਰਤਾ ਲਈ ਜਾ ਰਹੀ ਹੈ"
 
-#: libapper/PkStrings.cpp:202
+#: libapper/PkStrings.cpp:211
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting updates"
 msgstr "ਅੱਪਡੇਟ ਲਏ ਜਾ ਰਹੇ ਹਨ"
 
-#: libapper/PkStrings.cpp:204
+#: libapper/PkStrings.cpp:213
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Searching details"
 msgstr "ਵੇਰਵਾ ਖੋਜਿਆ ਜਾ ਰਿਹਾ ਹੈ"
 
-#: libapper/PkStrings.cpp:206
+#: libapper/PkStrings.cpp:215
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Searching for file"
 msgstr "ਫਾਇਲ ਲਈ ਖੋਜ ਜਾਰੀ ਹੈ"
 
-#: libapper/PkStrings.cpp:208
+#: libapper/PkStrings.cpp:217
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Searching groups"
 msgstr "ਗਰੁੱਪ ਖੋਜ ਕੀਤੇ ਜਾ ਰਹੇ ਹਨ"
 
-#: libapper/PkStrings.cpp:210
+#: libapper/PkStrings.cpp:219
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Searching by package name"
 msgstr "ਪੈਕੇਜ ਨਾਂ ਨਾਲ ਖੋਜ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ"
 
-#: libapper/PkStrings.cpp:213
+#: libapper/PkStrings.cpp:222
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Simulating removal"
 msgstr "ਹਟਾਉਣ ਦੀ ਨਕਲ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ"
 
-#: libapper/PkStrings.cpp:215 libapper/PkStrings.cpp:222
-#: libapper/PkStrings.cpp:263
+#: libapper/PkStrings.cpp:224 libapper/PkStrings.cpp:231
+#: libapper/PkStrings.cpp:272
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Downloading packages"
 msgstr "ਪੈਕੇਜ ਡਾਊਨਲੋਡ ਕੀਤੇ ਜਾ ਰਹੇ ਹਨ"
 
-#: libapper/PkStrings.cpp:217
+#: libapper/PkStrings.cpp:226
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Removing"
 msgstr "ਹਟਾਇਆ ਜਾ ਰਿਹਾ ਹੈ"
 
-#: libapper/PkStrings.cpp:220
+#: libapper/PkStrings.cpp:229
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Simulating install"
 msgstr "ਇੰਸਟਾਲ ਕਰਨ ਦੀ ਨਕਲ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ"
 
-#: libapper/PkStrings.cpp:224
+#: libapper/PkStrings.cpp:233
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Installing"
 msgstr "ਇੰਸਟਾਲ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ"
 
-#: libapper/PkStrings.cpp:227
+#: libapper/PkStrings.cpp:236
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Simulating file install"
 msgstr "ਫਾਇਲ ਇੰਸਟਾਲ ਕਰਨ ਦੀ ਨਕਲ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ"
 
-#: libapper/PkStrings.cpp:229
+#: libapper/PkStrings.cpp:238
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Downloading required packages"
 msgstr "ਲੋੜੀਦੇ ਪੈਕੇਜ ਡਾਊਨਲੋਡ ਕੀਤੇ ਜਾ ਰਹੇ ਹਨ"
 
-#: libapper/PkStrings.cpp:231
+#: libapper/PkStrings.cpp:240
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Installing file"
 msgstr "ਫਾਇਲ ਇੰਸਟਾਲ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ"
 
-#: libapper/PkStrings.cpp:233
+#: libapper/PkStrings.cpp:242
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Refreshing package cache"
 msgstr "ਪੈਕੇਜ ਕੈਸ਼ ਤਾਜ਼ਾ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ"
 
-#: libapper/PkStrings.cpp:236
+#: libapper/PkStrings.cpp:245
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Simulating update"
 msgstr "ਅੱਪਡੇਟ ਦੀ ਨਕਲ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ"
 
-#: libapper/PkStrings.cpp:238
+#: libapper/PkStrings.cpp:247
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Downloading updates"
 msgstr "ਅੱਪਡੇਟ ਡਾਊਨਲੋਡ ਕੀਤੇ ਜਾ ਰਹੇ ਹਨ"
 
-#: libapper/PkStrings.cpp:240
+#: libapper/PkStrings.cpp:249
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Updating packages"
 msgstr "ਪੈਕੇਜ ਅੱਪਡੇਟ ਕੀਤੇ ਜਾ ਰਹੇ ਹਨ"
 
-#: libapper/PkStrings.cpp:242
+#: libapper/PkStrings.cpp:251
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Canceling"
 msgstr "ਰੱਦ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ"
 
-#: libapper/PkStrings.cpp:244
+#: libapper/PkStrings.cpp:253
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting list of repositories"
 msgstr "ਰਿਪੋਜ਼ਟਰੀਆਂ ਦੀ ਲਿਸਟ ਲਈ ਜਾ ਰਹੀ ਹੈ"
 
-#: libapper/PkStrings.cpp:246
+#: libapper/PkStrings.cpp:255
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Enabling repository"
 msgstr "ਰਿਪੋਜ਼ਟਰੀ ਯੋਗ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ"
 
-#: libapper/PkStrings.cpp:248
+#: libapper/PkStrings.cpp:257
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Setting repository data"
 msgstr "ਰਿਪੋਜ਼ਟਰੀ ਡਾਟਾ ਸੈੱਟ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ"
 
-#: libapper/PkStrings.cpp:250
+#: libapper/PkStrings.cpp:259
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Resolving"
 msgstr "ਹੱਲ਼ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ"
 
-#: libapper/PkStrings.cpp:253
+#: libapper/PkStrings.cpp:262
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting file list"
 msgstr "ਫਾਇਲ ਲਿਸਟ ਲਈ ਜਾ ਰਹੀ ਹੈ"
 
-#: libapper/PkStrings.cpp:255
+#: libapper/PkStrings.cpp:264
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting what provides"
 msgstr "ਲਏ ਜਾ ਰਹੇ ਹਨ, ਜੋ ਦਿੰਦੇ ਹਨ"
 
-#: libapper/PkStrings.cpp:257
+#: libapper/PkStrings.cpp:266
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Installing signature"
 msgstr "ਦਸਤਖਤ ਇੰਸਟਾਲ ਕੀਤੇ ਜਾ ਰਹੇ ਹਨ"
 
-#: libapper/PkStrings.cpp:259
+#: libapper/PkStrings.cpp:268
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting package lists"
 msgstr "ਪੈਕੇਜ ਲਿਸਟਾਂ ਲਈਆਂ ਜਾ ਰਹੀਆਂ ਹਨ"
 
-#: libapper/PkStrings.cpp:261
+#: libapper/PkStrings.cpp:270
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Accepting EULA"
 msgstr "EULA ਮਨਜ਼ੂਰ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ"
 
-#: libapper/PkStrings.cpp:265
+#: libapper/PkStrings.cpp:274
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting distribution upgrade information"
 msgstr "ਡਿਸਟਰੀਬਿਊਸ਼ਨ ਅੱਪਗਰੇਡ ਜਾਣਕਾਰੀ ਲਈ ਜਾ ਰਹੀ ਹੈ"
 
-#: libapper/PkStrings.cpp:267
+#: libapper/PkStrings.cpp:276
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting categories"
 msgstr "ਕੈਟਾਗਰੀਆਂ ਲਈਆਂ ਜਾ ਰਹੀਆਂ ਹਨ"
 
-#: libapper/PkStrings.cpp:269
+#: libapper/PkStrings.cpp:278
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting old transactions"
 msgstr "ਪੁਰਾਣੀ ਟਰਾਂਸੈਕਸ਼ਨ ਲਈ ਜਾ ਰਹੀ ਹੈ"
 
-#: libapper/PkStrings.cpp:271
+#: libapper/PkStrings.cpp:280
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Repairing system"
 msgstr "ਸਿਸਟਮ ਰਿਪੇਅਰ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ"
 
-#: libapper/PkStrings.cpp:273
+#: libapper/PkStrings.cpp:282
 #, kde-format
 msgctxt "The role of the transaction, in present tense"
 msgid "Removing repository"
 msgstr "ਰਿਪੋਜ਼ਟਰੀ ਹਟਾਈ ਜਾ ਰਹੀ ਹੈ"
 
-#: libapper/PkStrings.cpp:288
+#: libapper/PkStrings.cpp:284
+#, fuzzy, kde-format
+#| msgctxt "The role of the transaction, in present tense"
+#| msgid "Upgrading system"
+msgctxt "The role of the transaction, in present tense"
+msgid "Upgrading the system"
+msgstr "ਸਿਸਟਮ ਅੱਪਗਰੇਡ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ"
+
+#: libapper/PkStrings.cpp:299
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Unknown role type"
 msgstr "ਅਣਜਾਣ ਰੋਲ ਟਾਈਪ"
 
-#: libapper/PkStrings.cpp:290
+#: libapper/PkStrings.cpp:301
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Got dependencies"
 msgstr "ਨਿਰਭਰਤਾ ਲਈ ਗਈ"
 
-#: libapper/PkStrings.cpp:292
+#: libapper/PkStrings.cpp:303
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Got update detail"
 msgstr "ਅੱਪਡੇਟ ਵੇਰਵਾ ਲਿਆ"
 
-#: libapper/PkStrings.cpp:295
+#: libapper/PkStrings.cpp:306
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Got details"
 msgstr "ਵੇਰਵਾ ਲਿਆ"
 
-#: libapper/PkStrings.cpp:297
+#: libapper/PkStrings.cpp:308
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Got requires"
 msgstr "ਵੇਰਵਾ ਲਿਆ ਗਿਆ"
 
-#: libapper/PkStrings.cpp:299
+#: libapper/PkStrings.cpp:310
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Got updates"
 msgstr "ਅੱਪਡੇਟ ਲਏ"
 
-#: libapper/PkStrings.cpp:301
+#: libapper/PkStrings.cpp:312
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Searched for package details"
 msgstr "ਪੈਕੇਜ ਵੇਰਵੇ ਲਈ ਖੋਜ ਕੀਤੀ ਗਈ"
 
-#: libapper/PkStrings.cpp:303
+#: libapper/PkStrings.cpp:314
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Searched for file"
 msgstr "ਫਾਇਲ ਲਈ ਖੋਜ ਕੀਤੀ"
 
-#: libapper/PkStrings.cpp:305
+#: libapper/PkStrings.cpp:316
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Searched groups"
 msgstr "ਗਰੁੱਪ ਲਈ ਖੋਜ ਕੀਤੀ"
 
-#: libapper/PkStrings.cpp:307
+#: libapper/PkStrings.cpp:318
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Searched for package name"
 msgstr "ਪੈਕੇਜ ਨਾਂ ਲਈ ਖੋਜ ਕੀਤੀ"
 
-#: libapper/PkStrings.cpp:309
+#: libapper/PkStrings.cpp:320
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Removed packages"
 msgstr "ਪੈਕੇਜ ਹਟਾਏ"
 
-#: libapper/PkStrings.cpp:311
+#: libapper/PkStrings.cpp:322
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Installed packages"
 msgstr "ਪੈਕੇਜ ਇੰਸਟਾਲ ਕੀਤੇ"
 
-#: libapper/PkStrings.cpp:313
+#: libapper/PkStrings.cpp:324
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Installed local files"
 msgstr "ਲੋਕਲ ਫਾਇਲਾਂ ਇੰਸਟਾਲ ਕੀਤੀਆਂ"
 
-#: libapper/PkStrings.cpp:315
+#: libapper/PkStrings.cpp:326
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Refreshed package cache"
 msgstr "ਪੈਕੇਜ ਕੈਸ਼ ਤਾਜ਼ਾ ਕੀਤੀ ਗਈ"
 
-#: libapper/PkStrings.cpp:317
+#: libapper/PkStrings.cpp:328
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Updated packages"
 msgstr "ਪੈਕੇਜ ਅੱਪਡੇਟ ਕੀਤੇ ਗਏ"
 
-#: libapper/PkStrings.cpp:319
+#: libapper/PkStrings.cpp:330
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Canceled"
 msgstr "ਰੱਦ ਕੀਤਾ"
 
-#: libapper/PkStrings.cpp:321
+#: libapper/PkStrings.cpp:332
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Got list of repositories"
 msgstr "ਰਿਪੋਜ਼ਟਰੀਆਂ ਦੀ ਲਿਸਟ ਲਈ ਗਈ"
 
-#: libapper/PkStrings.cpp:323
+#: libapper/PkStrings.cpp:334
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Enabled repository"
 msgstr "ਰਿਪੋਜ਼ਟਰੀ ਯੋਗ ਕੀਤੀ ਗਈ"
 
-#: libapper/PkStrings.cpp:325
+#: libapper/PkStrings.cpp:336
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Set repository data"
 msgstr "ਰਿਪੋਜ਼ਟਰੀ ਡਾਟਾ ਸੈੱਟ ਕੀਤਾ"
 
-#: libapper/PkStrings.cpp:327
+#: libapper/PkStrings.cpp:338
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Resolved"
 msgstr "ਹੱਲ਼ ਕੀਤਾ"
 
-#: libapper/PkStrings.cpp:330
+#: libapper/PkStrings.cpp:341
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Got file list"
 msgstr "ਫਾਇਲ ਲਿਸਟ ਲਈ"
 
-#: libapper/PkStrings.cpp:332
+#: libapper/PkStrings.cpp:343
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Got what provides"
 msgstr "ਜੋ ਦਿੰਦੀ ਹੈ ਲਈ ਗਈ"
 
-#: libapper/PkStrings.cpp:334
+#: libapper/PkStrings.cpp:345
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Installed signature"
 msgstr "ਦਸਤਖਤ ਇੰਸਟਾਲ ਕੀਤੇ"
 
-#: libapper/PkStrings.cpp:336
+#: libapper/PkStrings.cpp:347
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Got package lists"
 msgstr "ਪੈਕੇਜ ਲਿਸਟ ਲਈ"
 
-#: libapper/PkStrings.cpp:338
+#: libapper/PkStrings.cpp:349
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Accepted EULA"
 msgstr "EULA ਮਨਜ਼ੂਰ ਕੀਤਾ"
 
-#: libapper/PkStrings.cpp:340
+#: libapper/PkStrings.cpp:351
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Downloaded packages"
 msgstr "ਪੈਕੇਜ ਡਾਊਨਲੋਡ ਕੀਤੇ"
 
-#: libapper/PkStrings.cpp:342
+#: libapper/PkStrings.cpp:353
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Got distribution upgrades"
 msgstr "ਡਿਸਟਰੀਬਿਊਸ਼ਨ ਅੱਪਗਰੇਡ ਲਏ"
 
-#: libapper/PkStrings.cpp:344
+#: libapper/PkStrings.cpp:355
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Got categories"
 msgstr "ਕੈਟਾਗਰੀ ਲਈਆਂ"
 
-#: libapper/PkStrings.cpp:346
+#: libapper/PkStrings.cpp:357
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Got old transactions"
 msgstr "ਪੁਰਾਣੀ ਟਰਾਂਸੈਕਸ਼ਨ ਲਈ"
 
-#: libapper/PkStrings.cpp:348
+#: libapper/PkStrings.cpp:359
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Repaired system"
 msgstr "ਸਿਸਟਮ ਰਿਪੇਅਰ ਕੀਤਾ"
 
-#: libapper/PkStrings.cpp:350
+#: libapper/PkStrings.cpp:361
 #, kde-format
 msgctxt "The role of the transaction, in past tense"
 msgid "Removed repository"
 msgstr "ਰਿਪੋਜ਼ਟਰੀ ਹਟਾਈ ਗਈ"
 
-#: libapper/PkStrings.cpp:360
+#: libapper/PkStrings.cpp:363
+#, fuzzy, kde-format
+#| msgctxt "The role of the transaction, in past tense"
+#| msgid "Upgraded system"
+msgctxt "The role of the transaction, in past tense"
+msgid "Upgraded the system"
+msgstr "ਸਿਸਟਮ ਅੱਪਗਰੇਡ ਕੀਤਾ ਗਿਆ"
+
+#: libapper/PkStrings.cpp:373
 #, kde-format
 msgid "Downloading"
 msgstr "ਡਾਊਨਲੋਡ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ"
 
-#: libapper/PkStrings.cpp:362
+#: libapper/PkStrings.cpp:375
 #, kde-format
 msgid "Updating"
 msgstr "ਅੱਪਡੇਟ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ"
 
-#: libapper/PkStrings.cpp:364
+#: libapper/PkStrings.cpp:377
 #, kde-format
 msgid "Installing"
 msgstr "ਇੰਸਟਾਲ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ"
 
-#: libapper/PkStrings.cpp:366
+#: libapper/PkStrings.cpp:379
 #, kde-format
 msgid "Removing"
 msgstr "ਹਟਾਇਆ ਜਾ ਰਿਹਾ ਹੈ"
 
-#: libapper/PkStrings.cpp:368
+#: libapper/PkStrings.cpp:381
 #, kde-format
 msgid "Cleaning up"
 msgstr "ਸਾਫ਼ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ"
 
-#: libapper/PkStrings.cpp:370
+#: libapper/PkStrings.cpp:383
 #, kde-format
 msgid "Obsoleting"
 msgstr "ਬਰਤਰਫ਼ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ"
 
-#: libapper/PkStrings.cpp:372
+#: libapper/PkStrings.cpp:385
 #, kde-format
 msgid "Reinstalling"
 msgstr "ਮੁੜ-ਇੰਸਟਾਲ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ"
 
-#: libapper/PkStrings.cpp:374
+#: libapper/PkStrings.cpp:387
 #, kde-format
 msgid "Preparing"
 msgstr "ਤਿਆਰ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ"
 
-#: libapper/PkStrings.cpp:376
+#: libapper/PkStrings.cpp:389
 #, kde-format
 msgid "Decompressing"
 msgstr "ਡੀ-ਕੰਪਰੈੱਸ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ"
 
-#: libapper/PkStrings.cpp:387
+#: libapper/PkStrings.cpp:400
 #, kde-format
 msgid "Downloaded"
 msgstr "ਡਾਊਨਲੋਡ ਕੀਤੇ"
 
-#: libapper/PkStrings.cpp:389
+#: libapper/PkStrings.cpp:402
 #, kde-format
 msgid "Updated"
 msgstr "ਅੱਪਡੇਟ ਕੀਤੇ"
 
-#: libapper/PkStrings.cpp:393
+#: libapper/PkStrings.cpp:406
 #, kde-format
 msgid "Removed"
 msgstr "ਹਟਾਏ"
 
-#: libapper/PkStrings.cpp:395
+#: libapper/PkStrings.cpp:408
 #, kde-format
 msgid "Cleaned up"
 msgstr "ਸਾਫ਼ ਕੀਤੇ"
 
-#: libapper/PkStrings.cpp:397
+#: libapper/PkStrings.cpp:410
 #, kde-format
 msgid "Obsoleted"
 msgstr "ਬਰਤਰਫ਼ ਕੀਤੇ"
 
-#: libapper/PkStrings.cpp:399
+#: libapper/PkStrings.cpp:412
 #, kde-format
 msgid "Reinstalled"
 msgstr "ਮੁੜ-ਇੰਸਟਾਲ ਕੀਤੇ"
 
-#: libapper/PkStrings.cpp:401
+#: libapper/PkStrings.cpp:414
 #, kde-format
 msgid "Prepared"
 msgstr "ਤਿਆਰ ਕੀਤੇ"
 
-#: libapper/PkStrings.cpp:403
+#: libapper/PkStrings.cpp:416
 #, kde-format
 msgid "Decompressed"
 msgstr "ਡੀ-ਕੰਪਰੈੱਸ ਕੀਤਾ"
 
-#: libapper/PkStrings.cpp:414
+#: libapper/PkStrings.cpp:427
 #, kde-format
 msgid "No network connection available"
 msgstr "ਕੋਈ ਨੈੱਟਵਰਕ ਕੁਨੈਕਸ਼ਨ ਉਪਲੱਬਧ ਨਹੀਂ ਹੈ"
 
-#: libapper/PkStrings.cpp:416
+#: libapper/PkStrings.cpp:429
 #, kde-format
 msgid "No package cache is available"
 msgstr "ਕੋਈ ਪੈਕੇਜ ਕੈਸ਼ ਉਪਲੱਬਧ ਨਹੀਂ ਹੈ"
 
-#: libapper/PkStrings.cpp:418
+#: libapper/PkStrings.cpp:431
 #, kde-format
 msgid "Out of memory"
 msgstr "ਮੈਮੋਰੀ ਖਤਮ ਹੋਈ"
 
-#: libapper/PkStrings.cpp:420
+#: libapper/PkStrings.cpp:433
 #, kde-format
 msgid "Failed to create a thread"
 msgstr "ਥਰਿੱਡ ਬਣਾਉਣ ਲਈ ਫੇਲ੍ਹ"
 
-#: libapper/PkStrings.cpp:422
+#: libapper/PkStrings.cpp:435
 #, kde-format
 msgid "Not supported by this backend"
 msgstr "ਇਹ ਬੈਕਐਂਡ ਵਲੋਂ ਹਾਲੇ ਸਹਾਇਕ ਨਹੀਂ ਹੈ"
 
-#: libapper/PkStrings.cpp:424
+#: libapper/PkStrings.cpp:437
 #, kde-format
 msgid "An internal system error has occurred"
 msgstr "ਇੱਕ ਅੰਦਰੂਨੀ ਸਿਸਟਮ ਗਲਤੀ ਆਈ ਹੈ"
 
-#: libapper/PkStrings.cpp:426
+#: libapper/PkStrings.cpp:439
 #, kde-format
 msgid "A security trust relationship is not present"
 msgstr "ਇੱਕ ਸੁਰੱਖਿਆ ਟਰੱਸਟ ਸਬੰਧ ਮੌਜੂਦ ਨਹੀਂ ਹੈ"
 
-#: libapper/PkStrings.cpp:428
+#: libapper/PkStrings.cpp:441
 #, kde-format
 msgid "The package is not installed"
 msgstr "ਪੈਕੇਜ ਇੰਸਟਾਲ ਨਹੀਂ ਹੈ"
 
-#: libapper/PkStrings.cpp:430
+#: libapper/PkStrings.cpp:443
 #, kde-format
 msgid "The package was not found"
 msgstr "ਪੈਕੇਜ ਨਹੀਂ ਲੱਭਿਆ"
 
-#: libapper/PkStrings.cpp:432
+#: libapper/PkStrings.cpp:445
 #, kde-format
 msgid "The package is already installed"
 msgstr "ਪੈਕੇਜ ਪਹਿਲਾਂ ਹੀ ਇੰਸਟਾਲ ਹੈ"
 
-#: libapper/PkStrings.cpp:434
+#: libapper/PkStrings.cpp:447
 #, kde-format
 msgid "The package download failed"
 msgstr "ਪੈਕੇਜ ਡਾਊਨਲੋਡ ਫੇਲ੍ਹ ਹੈ"
 
-#: libapper/PkStrings.cpp:436
+#: libapper/PkStrings.cpp:449
 #, kde-format
 msgid "The group was not found"
 msgstr "ਗਰੁੱਪ ਨਹੀਂ ਲੱਭਿਆ"
 
-#: libapper/PkStrings.cpp:438
+#: libapper/PkStrings.cpp:451
 #, kde-format
 msgid "The group list was invalid"
 msgstr "ਗਰੁੱਪ ਲਿਸਟ ਗਲਤ ਹੈ"
 
-#: libapper/PkStrings.cpp:440
+#: libapper/PkStrings.cpp:453
 #, kde-format
 msgid "Dependency resolution failed"
 msgstr "ਨਿਰਭਰਤਾ ਹੱਲ਼ ਫੇਲ੍ਹ ਹੈ"
 
-#: libapper/PkStrings.cpp:442
+#: libapper/PkStrings.cpp:455
 #, kde-format
 msgid "Search filter was invalid"
 msgstr "ਖੋਜ ਫਿਲਟਰ ਗਲਤ ਹੈ"
 
-#: libapper/PkStrings.cpp:444
+#: libapper/PkStrings.cpp:457
 #, kde-format
 msgid "The package identifier was not well formed"
 msgstr "ਪੈਕੇਜ ਪਛਾਣ ਕਰਤਾ ਠੀਕ ਢੰਗ ਨਾਲ ਤਿਆਰ ਨਹੀਂ"
 
-#: libapper/PkStrings.cpp:446
+#: libapper/PkStrings.cpp:459
 #, kde-format
 msgid "Transaction error"
 msgstr "ਟਰਾਂਸੈਕਸ਼ਨ ਗਲਤੀ"
 
-#: libapper/PkStrings.cpp:448
+#: libapper/PkStrings.cpp:461
 #, kde-format
 msgid "Repository name was not found"
 msgstr "ਰਿਪੋਜ਼ਟਰੀ ਨਾਂ ਨਹੀਂ ਲੱਭਿਆ"
 
-#: libapper/PkStrings.cpp:450
+#: libapper/PkStrings.cpp:463
 #, kde-format
 msgid "Could not remove a protected system package"
 msgstr "ਇੱਕ ਸੁਰੱਖਿਅਤ ਸਿਸਟਮ ਪੈਕੇਜ ਹਟਾਇਆ ਨਹੀਂ ਜਾ ਸਕਿਆ"
 
-#: libapper/PkStrings.cpp:452
+#: libapper/PkStrings.cpp:465
 #, kde-format
 msgid "The task was canceled"
 msgstr "ਟਾਸਕ ਰੱਦ ਕੀਤੀ ਗਈ ਸੀ"
 
-#: libapper/PkStrings.cpp:454
+#: libapper/PkStrings.cpp:467
 #, kde-format
 msgid "The task was forcibly canceled"
 msgstr "ਟਾਸਕ ਧੱਕੇ ਨਾਲ ਬੰਦ ਕੀਤੀ ਗਈ"
 
-#: libapper/PkStrings.cpp:456
+#: libapper/PkStrings.cpp:469
 #, kde-format
 msgid "Reading the config file failed"
 msgstr "ਸੰਰਚਨਾ ਫਾਇਲ ਪੜ੍ਹਨ ਲਈ ਫੇਲ੍ਹ"
 
-#: libapper/PkStrings.cpp:458
+#: libapper/PkStrings.cpp:471
 #, kde-format
 msgid "The task cannot be cancelled"
 msgstr "ਟਾਸਕ ਰੱਦ ਨਹੀਂ ਕੀਤੀ ਜਾ ਸਕਦੀ"
 
-#: libapper/PkStrings.cpp:460
+#: libapper/PkStrings.cpp:473
 #, kde-format
 msgid "Source packages cannot be installed"
 msgstr "ਸਰੋਤ ਪੈਕੇਜ ਇੰਸਟਾਲ ਨਹੀਂ ਕੀਤੇ ਜਾ ਸਕਦੇ"
 
-#: libapper/PkStrings.cpp:462
+#: libapper/PkStrings.cpp:475
 #, kde-format
 msgid "The license agreement failed"
 msgstr "ਲਾਈਸੈਂਸ ਇਕਰਾਰਨਾਮ ਫੇਲ੍ਹ ਹੈ"
 
-#: libapper/PkStrings.cpp:464
+#: libapper/PkStrings.cpp:477
 #, kde-format
 msgid "Local file conflict between packages"
 msgstr "ਪੈਕੇਜਾਂ ਵਿੱਚ ਲੋਕਲ ਫਾਇਲ ਲਈ ਅਪਵਾਦ ਹੈ"
 
-#: libapper/PkStrings.cpp:466
+#: libapper/PkStrings.cpp:479
 #, kde-format
 msgid "Packages are not compatible"
 msgstr "ਪੈਕੇਜ ਢੁੱਕਵੇਂ ਨਹੀਂ ਹਨ"
 
-#: libapper/PkStrings.cpp:468
+#: libapper/PkStrings.cpp:481
 #, kde-format
 msgid "Problem connecting to a software origin"
 msgstr "ਸਾਫਟਵੇਅਰ ਸਰੋਤ ਨਾਲ ਕੁਨੈਕਟ ਕਰਨ ਦੌਰਾਨ ਸਮੱਸਿਆ"
 
-#: libapper/PkStrings.cpp:470
+#: libapper/PkStrings.cpp:483
 #, kde-format
 msgid "Failed to initialize"
 msgstr "ਸ਼ੁਰੂ ਕਰਨ ਲਈ ਫੇਲ੍ਹ"
 
-#: libapper/PkStrings.cpp:472
+#: libapper/PkStrings.cpp:485
 #, kde-format
 msgid "Failed to finalize"
 msgstr "ਪੂਰਾ ਕਰਨ ਲਈ ਫੇਲ੍ਹ"
 
-#: libapper/PkStrings.cpp:474
+#: libapper/PkStrings.cpp:487
 #, kde-format
 msgid "Cannot get lock"
 msgstr "ਲਾਕ ਨਹੀਂ ਲਿਆ ਜਾ ਸਕਦਾ"
 
-#: libapper/PkStrings.cpp:476
+#: libapper/PkStrings.cpp:489
 #, kde-format
 msgid "No packages to update"
 msgstr "ਕੋਈ ਪੈਕੇਜ ਅੱਪਡੇਟ ਨਹੀਂ"
 
-#: libapper/PkStrings.cpp:478
+#: libapper/PkStrings.cpp:491
 #, kde-format
 msgid "Cannot write repository configuration"
 msgstr "ਰਿਪੋਜ਼ਟਰੀ ਸੰਰਚਨਾ ਲਿਖੀ ਨਹੀਂ ਜਾ ਸਕਦੀ"
 
-#: libapper/PkStrings.cpp:480
+#: libapper/PkStrings.cpp:493
 #, kde-format
 msgid "Local install failed"
 msgstr "ਲੋਕਲ ਇੰਸਟਾਲ ਫੇਲ੍ਹ ਹੈ"
 
-#: libapper/PkStrings.cpp:482
+#: libapper/PkStrings.cpp:495
 #, kde-format
 msgid "Bad GPG signature"
 msgstr "ਖ਼ਰਾਬ GPG ਦਸਤਖਤ"
 
-#: libapper/PkStrings.cpp:484
+#: libapper/PkStrings.cpp:497
 #, kde-format
 msgid "Missing GPG signature"
 msgstr "ਗੁੰਮ GPG ਦਸਤਖਤ"
 
-#: libapper/PkStrings.cpp:486
+#: libapper/PkStrings.cpp:499
 #, kde-format
 msgid "Repository configuration invalid"
 msgstr "ਰਿਪੋਜ਼ਟਰੀ ਸੰਰਚਨਾ ਗਲਤ ਹੈ"
 
-#: libapper/PkStrings.cpp:488
+#: libapper/PkStrings.cpp:501
 #, kde-format
 msgid "Invalid package file"
 msgstr "ਗਲਤ ਪੈਕੇਜ ਫਾਇਲ"
 
-#: libapper/PkStrings.cpp:490
+#: libapper/PkStrings.cpp:503
 #, kde-format
 msgid "Package install blocked"
 msgstr "ਪੈਕੇਜ ਇੰਸਟਾਲ ਬਲਾਕ ਹੈ"
 
-#: libapper/PkStrings.cpp:492
+#: libapper/PkStrings.cpp:505
 #, kde-format
 msgid "Package is corrupt"
 msgstr "ਪੈਕੇਜ ਨਿਕਾਰਾ ਹੈ"
 
-#: libapper/PkStrings.cpp:494
+#: libapper/PkStrings.cpp:507
 #, kde-format
 msgid "All packages are already installed"
 msgstr "ਸਭ ਪੈਕੇਜ ਪਹਿਲਾਂ ਹੀ ਇੰਸਟਾਲ ਹਨ"
 
-#: libapper/PkStrings.cpp:496
+#: libapper/PkStrings.cpp:509
 #, kde-format
 msgid "The specified file could not be found"
 msgstr "ਦਿੱਤੀ ਫਾਇਲ ਨਹੀਂ ਲੱਭੀ ਜਾ ਸਕੀ"
 
-#: libapper/PkStrings.cpp:498
+#: libapper/PkStrings.cpp:511
 #, kde-format
 msgid "No more mirrors are available"
 msgstr "ਕੋਈ ਹੋਰ ਮਿਰੱਰ ਉਪਲੱਬਧ ਨਹੀਂ ਹਨ"
 
-#: libapper/PkStrings.cpp:500
+#: libapper/PkStrings.cpp:513
 #, kde-format
 msgid "No distribution upgrade data is available"
 msgstr "ਡਿਸਟਰੀਬਿਊਸ਼ਨ ਅੱਪਗਰੇਡ ਡਾਟਾ ਉਪਲੱਬਧ ਨਹੀਂ ਹੈ"
 
-#: libapper/PkStrings.cpp:502
+#: libapper/PkStrings.cpp:515
 #, kde-format
 msgid "Package is incompatible with this system"
 msgstr "ਪੈਕੇਜ ਇਹ ਸਿਸਟਮ ਲਈ ਅਢੁੱਕਵਾਂ ਹੈ"
 
-#: libapper/PkStrings.cpp:504
+#: libapper/PkStrings.cpp:517
 #, kde-format
 msgid "No space is left on the disk"
 msgstr "ਡਿਸਕ ਉੱਤੇ ਕੋਈ ਥਾਂ ਨਹੀਂ ਬਚੀ ਹੈ"
 
-#: libapper/PkStrings.cpp:506 libapper/PkTransaction.cpp:341
+#: libapper/PkStrings.cpp:519 libapper/PkTransaction.cpp:341
 #, kde-format
 msgid "A media change is required"
 msgstr "ਮੀਡਿਆ ਬਦਲਣ ਦੀ ਲੋੜ ਹੈ"
 
-#: libapper/PkStrings.cpp:508
+#: libapper/PkStrings.cpp:521
 #, kde-format
 msgid "Authorization failed"
 msgstr "ਪਰਮਾਣਕਿਤਾ ਫੇਲ੍ਹ ਹੋਈ"
 
-#: libapper/PkStrings.cpp:510
+#: libapper/PkStrings.cpp:523
 #, kde-format
 msgid "Update not found"
 msgstr "ਅੱਪਡੇਟ ਨਹੀਂ ਲੱਭਿਆ"
 
-#: libapper/PkStrings.cpp:512
+#: libapper/PkStrings.cpp:525
 #, kde-format
 msgid "Cannot install from untrusted origin"
 msgstr "ਬੇਭਰੋਸੇ ਸਰੋਤ ਤੋਂ ਇੰਸਟਾਲ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਦਾ"
 
-#: libapper/PkStrings.cpp:514
+#: libapper/PkStrings.cpp:527
 #, kde-format
 msgid "Cannot update from untrusted origin"
 msgstr "ਬੇਭਰੋਸੇਯੋਗ ਖੇਤਰ ਤੋਂ ਅੱਪਡੇਟ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਦਾ"
 
-#: libapper/PkStrings.cpp:516
+#: libapper/PkStrings.cpp:529
 #, kde-format
 msgid "Cannot get the file list"
 msgstr "ਫਾਇਲ ਲਿਸਟ ਲਈ ਨਹੀਂ ਜਾ ਸਕਦਾ"
 
-#: libapper/PkStrings.cpp:518
+#: libapper/PkStrings.cpp:531
 #, kde-format
 msgid "Cannot get package requires"
 msgstr "ਲੋੜੀਦਾ ਪੈਕੇਜ ਲਿਆ ਨਹੀਂ ਜਾ ਸਕਦਾ"
 
-#: libapper/PkStrings.cpp:520
+#: libapper/PkStrings.cpp:533
 #, kde-format
 msgid "Cannot disable origin"
 msgstr "ਸਰੋਤ ਆਯੋਗ ਹੈ"
 
-#: libapper/PkStrings.cpp:522
+#: libapper/PkStrings.cpp:535
 #, kde-format
 msgid "The download failed"
 msgstr "ਡਾਊਨਲੋਡ ਫੇਲ੍ਹ ਹੈ"
 
-#: libapper/PkStrings.cpp:524
+#: libapper/PkStrings.cpp:537
 #, kde-format
 msgid "Package failed to configure"
 msgstr "ਸੰਰਚਨਾ ਲਈ ਪੈਕੇਜ ਫੇਲ੍ਹ ਹੈ"
 
-#: libapper/PkStrings.cpp:526
+#: libapper/PkStrings.cpp:539
 #, kde-format
 msgid "Package failed to build"
 msgstr "ਪੈਕੇਜ ਬਿਲਡ ਹੋਣ ਲਈ ਫੇਲ੍ਹ"
 
-#: libapper/PkStrings.cpp:528
+#: libapper/PkStrings.cpp:541
 #, kde-format
 msgid "Package failed to install"
 msgstr "ਪੈਕੇਜ ਇੰਸਟਾਲ ਹੋਣ ਲਈ ਫੇਲ੍ਹ ਹੈ"
 
-#: libapper/PkStrings.cpp:530
+#: libapper/PkStrings.cpp:543
 #, kde-format
 msgid "Package failed to be removed"
 msgstr "ਪੈਕੇਜ ਹਟਾਉਣ ਲਈ ਫੇਲ੍ਹ ਹੈ"
 
-#: libapper/PkStrings.cpp:532
+#: libapper/PkStrings.cpp:545
 #, kde-format
 msgid "Update failed due to running process"
 msgstr "ਕਾਰਵਾਈ ਚੱਲਣ ਦੇ ਦੌਰਾਨ ਅੱਪਡੇਟ ਫੇਲ੍ਹ ਹੋਇਆ"
 
-#: libapper/PkStrings.cpp:534
+#: libapper/PkStrings.cpp:547
 #, kde-format
 msgid "The package database was changed"
 msgstr "ਪੈਕੇਜ ਡਾਟਾਬੇਸ ਬਦਲਿਆ ਗਿਆ"
 
-#: libapper/PkStrings.cpp:536
+#: libapper/PkStrings.cpp:549
 #, kde-format
 msgid "Virtual provide type is not supported"
 msgstr "ਵੁਰਚੁਅਲ ਦਿੱਤੀ ਕਿਸਮ ਸਹਾਇਕ ਨਹੀਂ ਹੈ"
 
-#: libapper/PkStrings.cpp:538
+#: libapper/PkStrings.cpp:551
 #, kde-format
 msgid "Install root is invalid"
 msgstr "ਇੰਸਟਾਲ ਰੂਟ ਅਢੁੱਕਵਾਂ ਹੈ"
 
-#: libapper/PkStrings.cpp:540
+#: libapper/PkStrings.cpp:553
 #, kde-format
 msgid "Cannot fetch install sources"
 msgstr "ਇੰਸਟਾਲ ਸਰੋਤ ਲਏ ਨਹੀਂ ਜਾ ਸਕੇ"
 
-#: libapper/PkStrings.cpp:542
+#: libapper/PkStrings.cpp:555
 #, kde-format
 msgid "Rescheduled due to priority"
 msgstr "ਤਰਜੀਹ ਕਰਕੇ ਮੁੜ-ਸੈਡਿਊਲ ਕੀਤਾ ਗਿਆ ਹੈ"
 
-#: libapper/PkStrings.cpp:544
+#: libapper/PkStrings.cpp:557
 #, kde-format
 msgid "Unfinished transaction"
 msgstr "ਅਧੂਰੀ ਪਈ ਟਰਾਂਸੈਕਸ਼ਨ"
 
-#: libapper/PkStrings.cpp:546
+#: libapper/PkStrings.cpp:559
 #, kde-format
 msgid "Lock required"
 msgstr "ਲਾਕ ਚਾਹੀਦਾ ਹੈ"
 
-#: libapper/PkStrings.cpp:548
+#: libapper/PkStrings.cpp:561
 #, kde-format
 msgid "Unknown error"
 msgstr "ਅਣਜਾਣ ਗਲਤੀ"
 
-#: libapper/PkStrings.cpp:558
+#: libapper/PkStrings.cpp:571
 #, kde-format
 msgid ""
 "There is no network connection available.\n"
@@ -2520,7 +2574,7 @@ msgstr ""
 "ਕੋਈ ਨੈੱਟਵਰਕ ਕੁਨੈਕਸ਼ਨ ਉਪਲੱਬਧ ਨਹੀਂ ਹੈ।\n"
 "ਆਪਣੀ ਕੁਨੈਕਸ਼ਨ ਸੈਟਿੰਗ ਚੈੱਕ ਕਰਕੇ ਮੁੜ ਟਰਾਈ ਕਰੋ"
 
-#: libapper/PkStrings.cpp:561
+#: libapper/PkStrings.cpp:574
 #, kde-format
 msgid ""
 "The package list needs to be rebuilt.\n"
@@ -2529,7 +2583,7 @@ msgstr ""
 "ਪੈਕੇਜ ਲਿਸਟ ਨੂੰ ਮੁੜ-ਬਣਾਉਣ ਲਈ ਲੋੜ ਹੈ।\n"
 "ਇਹ ਬੈਕਐਂਡ ਵਲੋਂ ਆਟੋਮੈਟਿਕ ਹੀ ਕੀਤਾ ਜਾਵੇਗਾ।"
 
-#: libapper/PkStrings.cpp:564
+#: libapper/PkStrings.cpp:577
 #, kde-format
 msgid ""
 "The service that is responsible for handling user requests is out of "
@@ -2539,12 +2593,12 @@ msgstr ""
 "ਸਰਵਿਸ, ਜੋ ਕਿ ਯੂਜ਼ਰ ਮੰਗ ਨੂੰ ਹੈਂਡਲ ਕਰਨ ਲਈ ਜਵਾਬਦੇਹ ਹੈ, ਲਈ ਮੈਮੋਰੀ ਖਤਮ ਹੋ ਗਈ ਹੈ।\n"
 "ਕੁਝ ਪਰੋਗਰਾਮ ਬੰਦ ਕਰੋ ਜਾਂ ਕੰਪਿਊਟਰ ਨੂੰ ਮੁੜ-ਚਾਲੂ ਕਰੋ।"
 
-#: libapper/PkStrings.cpp:567
+#: libapper/PkStrings.cpp:580
 #, kde-format
 msgid "A thread could not be created to service the user request."
 msgstr "ਯੂਜ਼ਰ ਮੰਗ ਦੀ ਸਰਵਿਸ ਲਈ ਥਰਿੱਡ ਬਣਾਇਆ ਨਹੀਂ ਜਾ ਸਕਿਆ।"
 
-#: libapper/PkStrings.cpp:569
+#: libapper/PkStrings.cpp:582
 #, kde-format
 msgid ""
 "The action is not supported by this backend.\n"
@@ -2553,7 +2607,7 @@ msgstr ""
 "ਐਕਸ਼ਨ ਇਸ ਬੈਕਐਂਡ ਵਲੋਂ ਸਹਿਯੋਗੀ ਨਹੀਂ ਹੈ।\n"
 "ਇਹ ਹੋਣਾ ਨਹੀਂ ਸੀ ਚਾਹੀਦਾ, ਇਸਕਰਕੇ ਬੱਗ ਰਿਪੋਰਟ ਦਿਓ।"
 
-#: libapper/PkStrings.cpp:572
+#: libapper/PkStrings.cpp:585
 #, kde-format
 msgid ""
 "A problem that we were not expecting has occurred.\n"
@@ -2562,7 +2616,7 @@ msgstr ""
 "ਇੱਕ ਸਮੱਸਿਆ, ਜਿਸ ਦੀ ਸਾਨੂੰ ਉਮੀਦ ਨਹੀਂ ਸੀ, ਆਈ ਹੈ।\n"
 "ਗਲਤੀ ਵੇਰਵੇ ਸਮੇਤ ਇਹ ਬੱਗ ਰਿਪੋਰਟ ਦਿਓ ਜੀ।"
 
-#: libapper/PkStrings.cpp:575
+#: libapper/PkStrings.cpp:588
 #, kde-format
 msgid ""
 "A security trust relationship could not be made with the software origin.\n"
@@ -2571,26 +2625,26 @@ msgstr ""
 "ਸਾਫਟਵੇਅਰ ਸਰੋਤ ਨਾਲ ਇੱਕ ਸੁਰੱਖਿਆ ਟਰੱਸਟ ਸਬੰਧ ਬਣਾਇਆ ਨਹੀਂ ਜਾ ਸਕਿਆ।\n"
 "ਆਪਣੀ ਸਾਫਟਵੇਅਰ ਦਸਤਖਤ ਸੈਟਿੰਗ ਚੈੱਕ ਕਰੋ ਜੀ।"
 
-#: libapper/PkStrings.cpp:578
+#: libapper/PkStrings.cpp:591
 #, kde-format
 msgid ""
 "The package that is trying to be removed or updated is not already installed."
 msgstr ""
 "ਪੈਕੇਜ, ਜੋ ਕਿ ਹਟਾਉਣ ਜਾਂ ਅੱਪਡੇਟ ਕਰਨ ਦੀ ਕੋਸ਼ਿਸ਼ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ, ਪਹਿਲਾਂ ਇੰਸਟਾਲ ਹੀ ਨਹੀਂ ਹੈ।"
 
-#: libapper/PkStrings.cpp:580
+#: libapper/PkStrings.cpp:593
 #, kde-format
 msgid ""
 "The package that is being modified was not found on your system or in any "
 "software origin."
 msgstr "ਪੈਕੇਜ, ਜੋ ਕਿ ਸੋਧਿਆ ਜਾਣਾ ਸੀ, ਤੁਹਾਡੇ ਸਿਸਟਮ ਜਾਂ ਕਿਸੇ ਸਾਫਟਵੇਅਰ ਸਰੋਤ ਉੱਤੇ ਨਹੀਂ ਲੱਭਿਆ।"
 
-#: libapper/PkStrings.cpp:582
+#: libapper/PkStrings.cpp:595
 #, kde-format
 msgid "The package that is trying to be installed is already installed."
 msgstr "ਪੈਕੇਜ, ਜੋ ਕਿ ਇੰਸਟਾਲ ਕਰਨ ਦੀ ਕੋਸ਼ਿਸ਼ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ, ਪਹਿਲਾਂ ਹੀ ਇੰਸਟਾਲ ਹੈ।"
 
-#: libapper/PkStrings.cpp:584
+#: libapper/PkStrings.cpp:597
 #, kde-format
 msgid ""
 "The package download failed.\n"
@@ -2599,7 +2653,7 @@ msgstr ""
 "ਪੈਕੇਜ ਡਾਊਨਲੋਡ ਕਰਨ ਲਈ ਫੇਲ੍ਹ ਹੈ।\n"
 "ਆਪਣਾ ਨੈੱਟਵਰਕ ਕੁਨੈਕਸ਼ਨ ਚੈੱਕ ਕਰੋ ਜੀ।"
 
-#: libapper/PkStrings.cpp:587
+#: libapper/PkStrings.cpp:600
 #, kde-format
 msgid ""
 "The group type was not found.\n"
@@ -2608,7 +2662,7 @@ msgstr ""
 "ਗਰੁੱਪ ਟਾਈਪ ਨਹੀਂ ਲੱਭੀ ਜਾ ਸਕੀ।\n"
 "ਆਪਣੀ ਗਰੁੱਪ ਲਿਸਟ ਚੈੱਕ ਕਰਕੇ ਮੁੜ ਟਰਾਈ ਕਰੋ ਜੀ।"
 
-#: libapper/PkStrings.cpp:590
+#: libapper/PkStrings.cpp:603
 #, kde-format
 msgid ""
 "The group list could not be loaded.\n"
@@ -2618,7 +2672,7 @@ msgstr ""
 "ਗਰੁੱਪ ਲਿਸਟ ਲੋਡ ਨਹੀਂ ਕੀਤੀ ਜਾ ਸਕੀ।\n"
 "ਤੁਹਾਡੀ ਕੈਸ਼ ਤਾਜ਼ਾ ਕਰਨ ਨਾਲ ਮੱਦਦ ਹੋ ਸਕਦੀ ਹੈ, ਭਾਵੇਂ ਕਿ ਇਹ ਇੱਕ ਸਾਫਟਵੇਅਰ ਸਰੋਤ ਗਲਤੀ ਹੈ।"
 
-#: libapper/PkStrings.cpp:594
+#: libapper/PkStrings.cpp:607
 #, kde-format
 msgid ""
 "A package dependency could not be found.\n"
@@ -2627,12 +2681,12 @@ msgstr ""
 "ਇੱਕ ਪੈਕੇਜ ਨਿਰਭਰਤਾ ਨਹੀਂ ਲੱਭੀ ਹੈ।\n"
 "ਹੋਰ ਜਾਣਕਾਰੀ ਨੂੰ ਵੇਰਵਾ ਰਿਪੋਰਟ ਵਿੱਚ ਵੇਖਿਆ ਜਾ ਸਕਦਾ ਹੈ।"
 
-#: libapper/PkStrings.cpp:597
+#: libapper/PkStrings.cpp:610
 #, kde-format
 msgid "The search filter was not correctly formed."
 msgstr "ਖੋਜ ਫਿਲਟਰ ਠੀਕ ਤਰ੍ਹਾਂ ਨਹੀਂ ਬਣਾਇਆ ਗਿਆ।"
 
-#: libapper/PkStrings.cpp:599
+#: libapper/PkStrings.cpp:612
 #, kde-format
 msgid ""
 "The package identifier was not well formed when sent to the system daemon.\n"
@@ -2641,7 +2695,7 @@ msgstr ""
 "ਪੈਕੇਜ ਅਡੈਂਟਟੀਫਾਇਰ ਠੀਕ ਰੂਪ ਵਿੱਚ ਨਹੀਂ ਸੀ, ਜਦੋਂ ਸਿਸਟਮ ਡੈਮਨ ਨੂੰ ਭੇਜਿਆ ਗਿਆ।\n"
 "ਇਹ ਅਕਸਰ ਅੰਦਰੂਨੀ ਬੱਗ ਹੁੰਦਾ ਹੈ ਅਤੇ ਇਸ ਬਾਰੇ ਰਿਪੋਰਟ ਕਰਨੀ ਚਾਹੀਦੀ ਹੈ।"
 
-#: libapper/PkStrings.cpp:602
+#: libapper/PkStrings.cpp:615
 #, kde-format
 msgid ""
 "An error occurred while running the transaction.\n"
@@ -2650,7 +2704,7 @@ msgstr ""
 "ਕਾਰਵਾਈ (ਟਰਾਂਸਐਕਸ਼ਨ) ਚਲਾਉਣ ਦੌਰਾਨ ਇੱਕ ਗਲਤੀ ਆਈ ਹੈ।\n"
 "ਹੋਰ ਜਾਣਕਾਰੀ ਨੂੰ ਵੇਰਵਾ ਰਿਪੋਰਟ ਵਿੱਚ ਵੇਖਿਆ ਜਾ ਸਕਦਾ ਹੈ।"
 
-#: libapper/PkStrings.cpp:605
+#: libapper/PkStrings.cpp:618
 #, kde-format
 msgid ""
 "The remote software origin name was not found.\n"
@@ -2659,17 +2713,17 @@ msgstr ""
 "ਰਿਮੋਟ ਸਾਫਟਵੇਅਰ ਸਰੋਤ ਨਾਂ ਨਹੀਂ ਲੱਭਿਆ ਜਾ ਸਕਿਆ।\n"
 "ਤੁਹਾਨੂੰ ਸਾਫਟਵੇਅਰ ਸਰੋਤਾਂ ਵਿੱਚ ਇੱਕ ਆਈਟਮ ਯੋਗ ਕਰਨ ਦੀ ਲੋੜ ਸਕਦੀ ਹੈ।"
 
-#: libapper/PkStrings.cpp:608
+#: libapper/PkStrings.cpp:621
 #, kde-format
 msgid "Removing a protected system package is not allowed."
 msgstr "ਇੱਕ ਸੁਰੱਖਿਅਤ ਸਿਸਟਮ ਪੈਕੇਜ ਹਟਾਇਆ ਨਹੀਂ ਜਾ ਸਕਦਾ ਹੈ।"
 
-#: libapper/PkStrings.cpp:610
+#: libapper/PkStrings.cpp:623
 #, kde-format
 msgid "The task was canceled successfully and no packages were changed."
 msgstr "ਟਾਸਕ ਠੀਕ ਢੰਗ ਨਾਲ ਰੱਦ ਹੋ ਗਈ ਹੈ ਅਤੇ ਕੋਈ ਪੈਕੇਜ ਵਿੱਚ ਬਦਲਾਅ ਨਹੀਂ ਕੀਤਾ ਗਿਆ।"
 
-#: libapper/PkStrings.cpp:612
+#: libapper/PkStrings.cpp:625
 #, kde-format
 msgid ""
 "The task was canceled successfully and no packages were changed.\n"
@@ -2678,7 +2732,7 @@ msgstr ""
 "ਇਹ ਟਾਸਕ ਠੀਕ ਤਰ੍ਹਾਂ ਰੱਦ ਕੀਤੀ ਗਈ ਹੈ ਅਤੇ ਕੋਈ ਪੈਕੇਜ ਬਦਲਾਅ ਨਹੀਂ ਕੀਤਾ ਗਿਆ ਹੈ।\n"
 "ਬੈਕਐਂਡ ਠੀਕ ਢੰਗ ਨਾਲ ਬੰਦ ਨਹੀਂ ਹੋਇਆ।"
 
-#: libapper/PkStrings.cpp:615
+#: libapper/PkStrings.cpp:628
 #, kde-format
 msgid ""
 "The native package configuration file could not be opened.\n"
@@ -2687,12 +2741,12 @@ msgstr ""
 "ਨੇਟਿਵ ਪੈਕੇਜ ਸੰਰਚਨਾ ਫਾਇਲ ਖੋਲ੍ਹੀ ਨਹੀਂ ਜਾ ਸਕੀ ਹੈ।\n"
 "ਯਕੀਨੀ ਬਣਾਉ ਕਿ ਸਿਸਟਮ ਦੀ ਸੰਰਚਨਾ ਠੀਕ ਹੈ।"
 
-#: libapper/PkStrings.cpp:618
+#: libapper/PkStrings.cpp:631
 #, kde-format
 msgid "The task is not safe to be cancelled at this time."
 msgstr "ਟਾਸਕ ਨੂੰ ਇਸ ਸਮੇਂ ਰੱਦ ਕਰਨਾ ਸੁਰੱਖਿਅਤ ਨਹੀਂ ਹੈ।"
 
-#: libapper/PkStrings.cpp:620
+#: libapper/PkStrings.cpp:633
 #, kde-format
 msgid ""
 "Source packages are not normally installed this way.\n"
@@ -2701,7 +2755,7 @@ msgstr ""
 "ਸਰੋਤ ਪੈਕੇਜ ਅਕਸਰ ਇਸ ਢੰਗ ਨਾਲ ਇੰਸਟਾਲ ਨਹੀਂ ਕੀਤੇ ਜਾਂਦੇ ਹਨ।\n"
 "ਫਾਇਲ ਦੀ ਇਕਸਟੈਨਸ਼ਨ ਚੈੱਕ ਕਰੋ, ਜੋ ਕਿ ਤੁਸੀਂ ਇੰਸਟਾਲ ਕਰਨ ਦੀ ਕੋਸ਼ਿਸ਼ ਕਰ ਰਹੇ ਹੋ।"
 
-#: libapper/PkStrings.cpp:623
+#: libapper/PkStrings.cpp:636
 #, kde-format
 msgid ""
 "The license agreement was not agreed to.\n"
@@ -2710,7 +2764,7 @@ msgstr ""
 "ਲਾਈਸੈਂਸ ਇਕਰਾਰਨਾਮੇ ਨਾਲ ਸਹਿਮਤ ਨਹੀਂ ਸੀ।\n"
 "ਇਹ ਸਾਫਟਵੇਅਰ ਵਰਤਣ ਲਈ ਤੁਹਾਨੂੰ ਲਾਇਸੈਂਸ ਸ਼ਰਤਾਂ ਮੰਨਣੀਆਂ ਪੈਣਗੀਆਂ।"
 
-#: libapper/PkStrings.cpp:626
+#: libapper/PkStrings.cpp:639
 #, kde-format
 msgid ""
 "Two packages provide the same file.\n"
@@ -2719,7 +2773,7 @@ msgstr ""
 "ਦੋ ਪੈਕੇਜ ਇੱਕੋ ਹੀ ਫਾਇਲ ਦਿੰਦੇ ਹਨ।\n"
 "ਇਹ ਅਕਸਰ ਵੱਖ ਵੱਖ ਸਾਫਟਵੇਅਰ ਸਰੋਤਾਂ ਲਈ ਪੈਕੇਜ ਰਲਣ ਕਰਕੇ ਹੁੰਦਾ ਹੈ।"
 
-#: libapper/PkStrings.cpp:629
+#: libapper/PkStrings.cpp:642
 #, kde-format
 msgid ""
 "Multiple packages exist that are not compatible with each other.\n"
@@ -2728,7 +2782,7 @@ msgstr ""
 "ਕਈ ਪੈਕੇਜ ਮੌਜੂਦ ਹਨ, ਜੋ ਕਿ ਆਪਸ ਵਿੱਚ ਰਲਦੇ ਨਹੀਂ ਹਨ।\n"
 "ਇਹ ਅਕਸਰ ਵੱਖ ਵੱਖ ਸਾਫਟਵੇਅਰ ਸਰੋਤਾਂ ਤੋਂ ਪੈਕੇਜ ਮਿਲਾਉਣ ਕਰਕੇ ਹੁੰਦਾ ਹੈ।"
 
-#: libapper/PkStrings.cpp:632
+#: libapper/PkStrings.cpp:645
 #, kde-format
 msgid ""
 "There was a (possibly temporary) problem connecting to a software origins.\n"
@@ -2737,7 +2791,7 @@ msgstr ""
 "ਇਹ ਸਾਫਟਵੇਅਰ ਸਰੋਤ ਨਾਲ ਕੁਨੈਕਟ ਕਰਨ ਲਈ ਇੱਕ (ਸ਼ਾਇਦ ਆਰਜ਼ੀ) ਸਮੱਸਿਆ ਹੈ।\n"
 "ਹੋਰ ਜਾਣਕਾਰੀ ਲਈ ਵੇਰਵਾ ਗਲਤੀ ਚੈੱਕ ਕਰੋ ਜੀ।"
 
-#: libapper/PkStrings.cpp:635
+#: libapper/PkStrings.cpp:648
 #, kde-format
 msgid ""
 "Failed to initialize packaging backend.\n"
@@ -2746,7 +2800,7 @@ msgstr ""
 "ਪੈਕੇਜ ਬੈਕਐਂਡ ਸ਼ੁਰੂ ਕਰਨ ਲਈ ਫੇਲ੍ਹ ਹੈ।\n"
 "ਇਹ ਤਾਂ ਹੋ ਸਕਦਾ ਹੈ, ਜੇ ਹੋਰ ਪੈਕੇਜ ਟੂਲ ਵੀ ਇੱਕੋ ਸਮੇਂ ਵਰਤੇ ਜਾ ਰਹੇ ਹਨ।"
 
-#: libapper/PkStrings.cpp:638
+#: libapper/PkStrings.cpp:651
 #, kde-format
 msgid ""
 "Failed to close down the backend instance.\n"
@@ -2755,7 +2809,7 @@ msgstr ""
 "ਬੈਕਐਂਡ ਮੌਕੇ ਨੂੰ ਬੰਦ ਕਰਨ ਲਈ ਫੇਲ੍ਹ ਹੈ।\n"
 "ਇਹ ਗਲਤੀ ਅਕਸਰ ਅਣਡਿੱਠੀ ਕੀਤੀ ਜਾ ਸਕਦੀ ਹੈ।"
 
-#: libapper/PkStrings.cpp:641
+#: libapper/PkStrings.cpp:654
 #, kde-format
 msgid ""
 "Cannot get the exclusive lock on the packaging backend.\n"
@@ -2764,17 +2818,17 @@ msgstr ""
 "ਪੈਕੇਜ ਬੈਕਐਂਡ ਲਈ ਲਾਕ ਨਹੀਂ ਲੈ ਸਕਦਾ ਹੈ।\n"
 "ਹੋਰ ਪੁਰਾਤਨ ਪੈਕੇਜ ਟੂਲ ਬੰਦ ਕਰ ਦਿਓ ਜੀ, ਜੋ ਕਿ ਚਾਲੂ ਹੋ ਸਕਦੇ ਹਨ।"
 
-#: libapper/PkStrings.cpp:644
+#: libapper/PkStrings.cpp:657
 #, kde-format
 msgid "None of the selected packages could be updated."
 msgstr "ਕੋਈ ਵੀ ਚੁਣਿਆ ਪੈਕੇਜ ਅੱਪਡੇਟ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਿਆ।"
 
-#: libapper/PkStrings.cpp:646
+#: libapper/PkStrings.cpp:659
 #, kde-format
 msgid "The repository configuration could not be modified."
 msgstr "ਰਿਪੋਜ਼ਟਰੀ ਸੰਰਚਨਾ ਨੂੰ ਸੋਧਿਆ ਨਹੀਂ ਜਾ ਸਕਿਆ।"
 
-#: libapper/PkStrings.cpp:648
+#: libapper/PkStrings.cpp:661
 #, kde-format
 msgid ""
 "Installing the local file failed.\n"
@@ -2783,12 +2837,12 @@ msgstr ""
 "ਲੋਕਲ ਫਾਇਲ ਇੰਸਟਾਲੇਸ਼ਨ ਫੇਲ੍ਹ ਹੋਈ।\n"
 "ਹੋਰ ਜਾਣਕਾਰੀ ਨੂੰ ਵੇਰਵਾ ਰਿਪੋਰਟ ਵਿੱਚ ਵੇਖਿਆ ਜਾ ਸਕਦਾ ਹੈ।"
 
-#: libapper/PkStrings.cpp:651
+#: libapper/PkStrings.cpp:664
 #, kde-format
 msgid "The package signature could not be verified."
 msgstr "ਪੈਕੇਜ ਦਸਤਖਤ ਦੀ ਜਾਂਚ ਨਹੀਂ ਕੀਤੀ ਜਾ ਸਕੀ।"
 
-#: libapper/PkStrings.cpp:653
+#: libapper/PkStrings.cpp:666
 #, kde-format
 msgid ""
 "The package signature was missing and this package is untrusted.\n"
@@ -2797,12 +2851,12 @@ msgstr ""
 "ਪੈਕੇਜ ਦਸਤਖਤ ਗੁੰਮ ਹਨ ਅਤੇ ਇਹ ਪੈਕੇਜ ਅਣ-ਭਰੋਸੇਯੋਗ ਹੈ।\n"
 "ਇਹ ਪੈਕੇਜ GPG ਕੁੰਜੀ ਨਾਲ ਸਾਇਨ ਨਹੀਂ ਹੈ, ਜਦੋਂ ਇਹ ਬਣਾਇਆ ਗਿਆ ਸੀ।"
 
-#: libapper/PkStrings.cpp:656
+#: libapper/PkStrings.cpp:669
 #, kde-format
 msgid "Repository configuration was invalid and could not be read."
 msgstr "ਰਿਪੋਜ਼ਟਰੀ ਸੰਰਚਨਾ ਗਲਤ ਹੈ ਅਤੇ ਪੜ੍ਹੀ ਨਹੀਂ ਜਾ ਸਕੀ।"
 
-#: libapper/PkStrings.cpp:658
+#: libapper/PkStrings.cpp:671
 #, kde-format
 msgid ""
 "The package you are attempting to install is not valid.\n"
@@ -2811,26 +2865,26 @@ msgstr ""
 "ਪੈਕੇਜ, ਜੋ ਤੁਸੀਂ ਇੰਸਟਾਲ ਕਰਨ ਦੀ ਕੋਸ਼ਿਸ਼ ਕਰ ਰਹੇ ਹੋ, ਠੀਕ ਨਹੀਂ ਹੈ।\n"
 "ਜਾਂ ਤਾਂ ਪੈਕੇਜ ਫਾਇਲ ਨਿਕਾਰਾ ਹੈ, ਜਾਂ ਇਹ ਠੀਕ ਪੈਕੇਜ ਹੀ ਨਹੀਂ ਹੈ।"
 
-#: libapper/PkStrings.cpp:661
+#: libapper/PkStrings.cpp:674
 #, kde-format
 msgid ""
 "Installation of this package was prevented by your packaging system's "
 "configuration."
 msgstr "ਇਹ ਪੈਕੇਜ ਦੀ ਇੰਸਟਾਲ ਨੂੰ ਤੁਹਾਡੇ ਪੈਕੇਜ ਸਿਸਟਮ ਦੀ ਸੰਰਚਨਾ ਵਲੋਂ ਰੋਕਿਆ ਗਿਆ ਹੈ।"
 
-#: libapper/PkStrings.cpp:663
+#: libapper/PkStrings.cpp:676
 #, kde-format
 msgid ""
 "The package that was downloaded is corrupt and needs to be downloaded again."
 msgstr "ਪੈਕੇਜ, ਜੋ ਕਿ ਡਾਊਨਲੋਡ ਕੀਤਾ ਗਿਆ ਸੀ, ਨਿਕਾਰਾ ਹੋ ਗਿਆ ਹੈ ਅਤੇ ਫੇਰ ਡਾਊਨਲੋਡ ਕਰਨ ਦੀ ਲੋੜ ਹੈ।"
 
-#: libapper/PkStrings.cpp:665
+#: libapper/PkStrings.cpp:678
 #, kde-format
 msgid ""
 "All of the packages selected for install are already installed on the system."
 msgstr "ਚੁਣੇ ਗਏ ਪੈਕੇਜਾਂ ਵਿੱਚ ਸਭ ਪਹਿਲਾਂ ਹੀ ਸਿਸਟਮ ਉੱਤੇ ਇੰਸਟਾਲ ਹਨ।"
 
-#: libapper/PkStrings.cpp:667
+#: libapper/PkStrings.cpp:680
 #, kde-format
 msgid ""
 "The specified file could not be found on the system.\n"
@@ -2839,7 +2893,7 @@ msgstr ""
 "ਦਿੱਤੀ ਫਾਇਲ ਤੁਹਾਡੇ ਸਿਸਟਮ ਉੱਤੇ ਨਹੀਂ ਲੱਭੀ ਜਾ ਸਕੀ।\n"
 "ਚੈੱਕ ਕਰੋ ਕਿ ਫਾਇਲ ਹਾਲੇ ਵੀ ਮੌਜੂਦ ਹੈ ਅਤੇ ਹਟਾਈ ਨਹੀਂ ਗਈ ਹੈ।"
 
-#: libapper/PkStrings.cpp:670
+#: libapper/PkStrings.cpp:683
 #, kde-format
 msgid ""
 "Required data could not be found on any of the configured software origins.\n"
@@ -2848,7 +2902,7 @@ msgstr ""
 "ਲੋੜੀਦਾ ਡਾਟਾ ਕਿਸੇ ਵੀ ਸੰਰਚਿਤ ਸਾਫਟਵੇਅਰ ਸਰੋਤ ਉੱਤੇ ਨਹੀਂ ਲੱਭਿਆ।\n"
 "ਕੋਈ ਵੀ ਹੋਰ ਡਾਊਨਲੋਡ ਮਿੱਰਰ ਟਰਾਈ ਕਰਨ ਲਈ ਨਹੀਂ ਹਨ।"
 
-#: libapper/PkStrings.cpp:673
+#: libapper/PkStrings.cpp:686
 #, kde-format
 msgid ""
 "Required upgrade data could not be found in any of the configured software "
@@ -2858,13 +2912,13 @@ msgstr ""
 "ਲੋੜੀਂਦਾ ਅੱਪਗਰੇਡ ਡਾਟਾ ਕਿਸੇ ਵੀ ਸੰਰਚਿਤ ਸਾਫਟਵੇਅਰ ਸਰੋਤ ਉੱਤੇ ਨਹੀਂ ਲੱਭਿਆ।\n"
 "ਡਿਸਟਰੀਬਿਊਸ਼ਨ ਅੱਪਗਰੇਡ ਦੀ ਲਿਸਟ ਉਪਲੱਬਧ ਨਹੀਂ।"
 
-#: libapper/PkStrings.cpp:676
+#: libapper/PkStrings.cpp:689
 #, kde-format
 msgid ""
 "The package that is trying to be installed is incompatible with this system."
 msgstr "ਪੈਕੇਜ, ਜੋ ਕਿ ਇੰਸਟਾਲ ਕਰਨ ਦੀ ਕੋਸ਼ਿਸ਼ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ, ਇਸ ਸਿਸਟਮ ਨਾਲ ਅਨੁਕੂਲ ਨਹੀਂ ਹੈ।"
 
-#: libapper/PkStrings.cpp:678
+#: libapper/PkStrings.cpp:691
 #, kde-format
 msgid ""
 "There is insufficient space on the device.\n"
@@ -2873,12 +2927,12 @@ msgstr ""
 "ਜੰਤਰ ਉੱਤੇ ਅਢੁੱਕਵੀਂ ਥਾਂ ਨਹੀਂ ਹੈ।\n"
 "ਇਹ ਓਪਰੇਸ਼ਨ ਕਰਨ ਲਈ ਸਿਸਟਮ ਡਿਸਕ ਉੱਤੇ ਕੁਝ ਥਾਂ ਖਾਲੀ ਕਰੋ।"
 
-#: libapper/PkStrings.cpp:681
+#: libapper/PkStrings.cpp:694
 #, kde-format
 msgid "Additional media is required to complete the transaction."
 msgstr "ਟਰਾਂਸੈਕਸ਼ਨ ਪੂਰੀ ਕਰਨ ਲਈ ਹੋਰ ਮੀਡਿਆ ਦੀ ਲੋੜ ਹੈ।"
 
-#: libapper/PkStrings.cpp:683
+#: libapper/PkStrings.cpp:696
 #, kde-format
 msgid ""
 "You have failed to provide correct authentication.\n"
@@ -2887,7 +2941,7 @@ msgstr ""
 "ਤੁਸੀਂ ਠੀਕ ਪਰਮਾਣਕਿਤਾ ਦੇ ਸਕਣ ਲਈ ਫੇਲ੍ਹ ਹੋਏ ਹੋ।\n"
 "ਕੋਈ ਪਾਸਵਰਡ ਜਾਂ ਅਕਾਊਂਟ ਸੈਟਿੰਗ ਚੈੱਕ ਕਰੋ ਜੀ।"
 
-#: libapper/PkStrings.cpp:686
+#: libapper/PkStrings.cpp:699
 #, kde-format
 msgid ""
 "The specified update could not be found.\n"
@@ -2897,32 +2951,32 @@ msgstr ""
 "ਦਿੱਤਾ ਅੱਪਡੇਟ ਨਹੀਂ ਲੱਭਿਆ ਜਾ ਸਕਿਆ।\n"
 "ਜਾਂ ਤਾਂ ਇਹ ਪਹਿਲਾਂ ਹੀ ਇੰਸਟਾਲ ਕੀਤਾ ਜਾ ਚੁੱਕਿਆ ਹੈ ਜਾਂ ਰਿਮੋਟ ਸਰਵਰ ਉੱਤੇ ਹੁਣ ਉਪਲੱਬਧ ਹੀ ਨਹੀਂ ਰਿਹਾ।"
 
-#: libapper/PkStrings.cpp:689
+#: libapper/PkStrings.cpp:702
 #, kde-format
 msgid "The package could not be installed from untrusted origin."
 msgstr "ਪੈਕੇਜ ਬੇਭਰੋਸੇਯੋਗ ਸਰੋਤ ਤੋਂ ਇੰਸਟਾਲ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਿਆ।"
 
-#: libapper/PkStrings.cpp:691
+#: libapper/PkStrings.cpp:704
 #, kde-format
 msgid "The package could not be updated from untrusted origin."
 msgstr "ਪੈਕੇਜ ਬੇਭਰੋਸੇਯੋਗ ਸਰੋਤ ਤੋਂ ਅੱਪਡੇਟ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਿਆ।"
 
-#: libapper/PkStrings.cpp:693
+#: libapper/PkStrings.cpp:706
 #, kde-format
 msgid "The file list is not available for this package."
 msgstr "ਇਹ ਪੈਕੇਜ ਲਈ ਫਾਇਲ-ਲਿਸਟ ਉਪਲੱਬਧ ਨਹੀਂ ਹੈ।"
 
-#: libapper/PkStrings.cpp:695
+#: libapper/PkStrings.cpp:708
 #, kde-format
 msgid "The information about what requires this package could not be obtained."
 msgstr "ਜਾਣਕਾਰੀ, ਜੋ ਇਸ ਪੈਕੇਜ ਵਲੋਂ ਚਾਹੀਦੀ ਸੀ, ਲਈ ਨਹੀਂ ਜਾ ਸਕੀ।"
 
-#: libapper/PkStrings.cpp:697
+#: libapper/PkStrings.cpp:710
 #, kde-format
 msgid "The specified software origin could not be disabled."
 msgstr "ਦਿੱਤਾ ਸਾਫਟਵੇਅਰ ਸਰੋਤ ਆਯੋਗ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਿਆ"
 
-#: libapper/PkStrings.cpp:699
+#: libapper/PkStrings.cpp:712
 #, kde-format
 msgid ""
 "The download could not be done automatically and should be done manually.\n"
@@ -2931,7 +2985,7 @@ msgstr ""
 "ਡਾਊਨਲੋਡ ਨੂੰ ਆਟੋਮੈਟਿਕ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਿਆ ਅਤੇ ਖੁਦ ਕਰਨ ਦੀ ਲੋੜ ਹੈ।\n"
 "ਹੋਰ ਜਾਣਕਾਰੀ ਨੂੰ ਵੇਰਵਾ ਰਿਪੋਰਟ ਵਿੱਚ ਵੇਖਿਆ ਜਾ ਸਕਦਾ ਹੈ।"
 
-#: libapper/PkStrings.cpp:702
+#: libapper/PkStrings.cpp:715
 #, kde-format
 msgid ""
 "One of the selected packages failed to configure correctly.\n"
@@ -2940,7 +2994,7 @@ msgstr ""
 "ਚੁਣੇ ਪੈਕੇਜਾਂ ਵਿੱਚੋਂ ਇੱਕ ਠੀਕ ਤਰ੍ਹਾਂ ਸੰਰਚਿਤ ਹੋਣ ਲਈ ਫੇਲ੍ਹ ਹੈ।\n"
 "ਹੋਰ ਜਾਣਕਾਰੀ ਨੂੰ ਵੇਰਵਾ ਰਿਪੋਰਟ ਵਿੱਚ ਵੇਖਿਆ ਜਾ ਸਕਦਾ ਹੈ।"
 
-#: libapper/PkStrings.cpp:705
+#: libapper/PkStrings.cpp:718
 #, kde-format
 msgid ""
 "One of the selected packages failed to build correctly.\n"
@@ -2949,7 +3003,7 @@ msgstr ""
 "ਚੁਣੇ ਪੈਕੇਜਾਂ ਵਿੱਚੋਂ ਇੱਕ ਠੀਕ ਤਰ੍ਹਾਂ ਬਿਲਡ ਹੋਣ ਲਈ ਫੇਲ੍ਹ ਹੈ।\n"
 "ਹੋਰ ਜਾਣਕਾਰੀ ਨੂੰ ਵੇਰਵਾ ਰਿਪੋਰਟ ਵਿੱਚ ਵੇਖਿਆ ਜਾ ਸਕਦਾ ਹੈ।"
 
-#: libapper/PkStrings.cpp:708
+#: libapper/PkStrings.cpp:721
 #, kde-format
 msgid ""
 "One of the selected packages failed to install correctly.\n"
@@ -2958,7 +3012,7 @@ msgstr ""
 "ਚੁਣੇ ਪੈਕੇਜਾਂ ਵਿੱਚੋਂ ਕੋਈ ਠੀਕ ਤਰ੍ਹਾਂ ਇੰਸਟਾਲ ਹੋਣ ਲਈ ਫੇਲ੍ਹ ਹੈ।\n"
 "ਹੋਰ ਜਾਣਕਾਰੀ ਨੂੰ ਵੇਰਵਾ ਰਿਪੋਰਟ ਵਿੱਚ ਵੇਖਿਆ ਜਾ ਸਕਦਾ ਹੈ।"
 
-#: libapper/PkStrings.cpp:711
+#: libapper/PkStrings.cpp:724
 #, kde-format
 msgid ""
 "One of the selected packages failed to be removed correctly.\n"
@@ -2967,7 +3021,7 @@ msgstr ""
 "ਚੁਣੇ ਪੈਕੇਜਾਂ ਵਿੱਚੋਂ ਕਿਸੇ ਨੂੰ ਠੀਕ ਤਰ੍ਹਾਂ ਹਟਾਉਣ ਲਈ ਫੇਲ੍ਹ ਹੈ।\n"
 "ਹੋਰ ਜਾਣਕਾਰੀ ਨੂੰ ਵੇਰਵਾ ਰਿਪੋਰਟ ਵਿੱਚ ਵੇਖਿਆ ਜਾ ਸਕਦਾ ਹੈ।"
 
-#: libapper/PkStrings.cpp:714
+#: libapper/PkStrings.cpp:727
 #, kde-format
 msgid ""
 "A program is running that has to be closed before the update can proceed.\n"
@@ -2976,44 +3030,44 @@ msgstr ""
 "ਪਰੋਗਰਾਮ ਚੱਲ ਰਿਹਾ ਹੈ, ਜਿਸ ਨੂੰ ਅੱਪਡੇਟ ਜਾਰੀ ਰੱਖਣ ਤੋਂ ਪਹਿਲਾਂ ਬੰਧ ਕਰਨ ਦੀ ਲੋੜ ਹੈ।\n"
 "ਹੋਰ ਜਾਣਕਾਰੀ ਨੂੰ ਵੇਰਵਾ ਰਿਪੋਰਟ ਵਿੱਚ ਵੇਖਿਆ ਜਾ ਸਕਦਾ ਹੈ।"
 
-#: libapper/PkStrings.cpp:717
+#: libapper/PkStrings.cpp:730
 #, kde-format
 msgid "The package database was changed while the request was running."
 msgstr "ਚਲਾਉਣ ਦੀ ਬੇਨਤੀ ਦੇ ਦੌਰਾਨ ਪੈਕੇਜ ਡਾਟਾਬੇਸ ਬਦਲਿਆ ਗਿਆ।"
 
-#: libapper/PkStrings.cpp:719
+#: libapper/PkStrings.cpp:732
 #, kde-format
 msgid "The virtual provide type is not supported by this system."
 msgstr "ਇਸ ਸਿਸਟਮ ਵਲੋਂ ਵੁਰਚੁਅਲ ਦਿੱਤੀ ਕਿਸਮ ਸਹਾਇਕ ਨਹੀਂ ਹੈ"
 
-#: libapper/PkStrings.cpp:721
+#: libapper/PkStrings.cpp:734
 #, kde-format
 msgid "The install root is invalid. Please contact your administrator."
 msgstr "ਇੰਸਟਾਲ ਰੂਟ ਗਲਤ ਹੈ। ਆਪਣੇ ਸਿਸਟਮ ਐਡਮਿਨਸਟੇਟਰ ਨਾਲ ਸੰਪਰਕ ਕਰੋ।"
 
-#: libapper/PkStrings.cpp:723
+#: libapper/PkStrings.cpp:736
 #, kde-format
 msgid "The list of software could not be downloaded."
 msgstr "ਸਾਫਟਵੇਅਰ ਦੀ ਲਿਸਟ ਡਾਊਨਲੋਡ ਨਹੀਂ ਕੀਤੀ ਜਾ ਸਕੀ।"
 
-#: libapper/PkStrings.cpp:725
+#: libapper/PkStrings.cpp:738
 #, kde-format
 msgid ""
 "The transaction has been cancelled and will be retried when the system is "
 "idle."
 msgstr "ਟਰਾਂਸੈਕਸ਼ਨ ਨੂੰ ਰੱਦ ਕੀਤਾ ਗਿਆ ਹੈ ਅਤੇ ਸਿਸਟਮ ਵੇਹਲਾ ਹੋਣ ਸਮੇਂ ਮੁੜ-ਪ੍ਰਾਪਤ ਕੀਤਾ ਜਾਵੇਗਾ।"
 
-#: libapper/PkStrings.cpp:727
+#: libapper/PkStrings.cpp:740
 #, kde-format
 msgid "A previous package management transaction was interrupted."
 msgstr "ਪਿਛਲੀ ਪੈਕੇਜ ਮੈਨਜੇਮੈਂਟ ਟਰਾਂਸੈਕਸ਼ਨ ਨੂੰ ਅਧੂਰਾ ਛੱਡਿਆ ਗਿਆ ਸੀ।"
 
-#: libapper/PkStrings.cpp:729
+#: libapper/PkStrings.cpp:742
 #, kde-format
 msgid "A package manager lock is required."
 msgstr "ਪੈਕੇਜ ਮੈਨੇਜਰ ਲਾਕ ਚਾਹੀਦਾ ਹੈ।"
 
-#: libapper/PkStrings.cpp:731
+#: libapper/PkStrings.cpp:744
 #, kde-format
 msgid ""
 "Unknown error, please report a bug.\n"
@@ -3022,282 +3076,282 @@ msgstr ""
 "ਅਣਜਾਣੀ ਗਲਤੀ ਹੈ, ਬੱਗ ਦੀ ਰਿਪੋਰਟ ਦਿਓ ਜੀ।\n"
 "ਹੋਰ ਜਾਣਕਾਰੀ ਨੂੰ ਵੇਰਵਾ ਰਿਪੋਰਟ ਵਿੱਚ ਵੇਖਿਆ ਜਾ ਸਕਦਾ ਹੈ।"
 
-#: libapper/PkStrings.cpp:742
+#: libapper/PkStrings.cpp:755
 #, kde-format
 msgctxt "The group type"
 msgid "Accessibility"
 msgstr "ਅਸੈੱਸਬਿਲਟੀ"
 
-#: libapper/PkStrings.cpp:744
+#: libapper/PkStrings.cpp:757
 #, kde-format
 msgctxt "The group type"
 msgid "Accessories"
 msgstr "ਸਹੂਲਤਾਂ"
 
-#: libapper/PkStrings.cpp:746
+#: libapper/PkStrings.cpp:759
 #, kde-format
 msgctxt "The group type"
 msgid "Education"
 msgstr "ਸਿੱਖਿਆ"
 
-#: libapper/PkStrings.cpp:748
+#: libapper/PkStrings.cpp:761
 #, kde-format
 msgctxt "The group type"
 msgid "Games"
 msgstr "ਖੇਡਾਂ"
 
-#: libapper/PkStrings.cpp:750
+#: libapper/PkStrings.cpp:763
 #, kde-format
 msgctxt "The group type"
 msgid "Graphics"
 msgstr "ਗਰਾਫਿਕਸ"
 
-#: libapper/PkStrings.cpp:752
+#: libapper/PkStrings.cpp:765
 #, kde-format
 msgctxt "The group type"
 msgid "Internet"
 msgstr "ਇੰਟਰਨੈੱਟ"
 
-#: libapper/PkStrings.cpp:754
+#: libapper/PkStrings.cpp:767
 #, kde-format
 msgctxt "The group type"
 msgid "Office"
 msgstr "ਆਫਿਸ"
 
-#: libapper/PkStrings.cpp:756
+#: libapper/PkStrings.cpp:769
 #, kde-format
 msgctxt "The group type"
 msgid "Others"
 msgstr "ਹੋਰ"
 
-#: libapper/PkStrings.cpp:758
+#: libapper/PkStrings.cpp:771
 #, kde-format
 msgctxt "The group type"
 msgid "Development"
 msgstr "ਡਿਵੈਲਪਮੈਂਟ"
 
-#: libapper/PkStrings.cpp:760
+#: libapper/PkStrings.cpp:773
 #, kde-format
 msgctxt "The group type"
 msgid "Multimedia"
 msgstr "ਮਲਟੀਮੀਡਿਆ"
 
-#: libapper/PkStrings.cpp:762
+#: libapper/PkStrings.cpp:775
 #, kde-format
 msgctxt "The group type"
 msgid "System"
 msgstr "ਸਿਸਟਮ"
 
-#: libapper/PkStrings.cpp:764
+#: libapper/PkStrings.cpp:777
 #, kde-format
 msgctxt "The group type"
 msgid "GNOME desktop"
 msgstr "ਗਨੋਮ ਡੈਸਕਟਾਪ"
 
-#: libapper/PkStrings.cpp:766
+#: libapper/PkStrings.cpp:779
 #, kde-format
 msgctxt "The group type"
 msgid "KDE desktop"
 msgstr "KDE ਡੈਸਕਟਾਪ"
 
-#: libapper/PkStrings.cpp:768
+#: libapper/PkStrings.cpp:781
 #, kde-format
 msgctxt "The group type"
 msgid "XFCE desktop"
 msgstr "XFCE ਡੈਸਕਟਾਪ"
 
-#: libapper/PkStrings.cpp:770
+#: libapper/PkStrings.cpp:783
 #, kde-format
 msgctxt "The group type"
 msgid "Other desktops"
 msgstr "ਹੋਰ ਡੈਸਕਟਾਪ"
 
-#: libapper/PkStrings.cpp:772
+#: libapper/PkStrings.cpp:785
 #, kde-format
 msgctxt "The group type"
 msgid "Publishing"
 msgstr "ਪਬਲਿਸ਼ਿੰਗ"
 
-#: libapper/PkStrings.cpp:774
+#: libapper/PkStrings.cpp:787
 #, kde-format
 msgctxt "The group type"
 msgid "Servers"
 msgstr "ਸਰਵਰ"
 
-#: libapper/PkStrings.cpp:776
+#: libapper/PkStrings.cpp:789
 #, kde-format
 msgctxt "The group type"
 msgid "Fonts"
 msgstr "ਫੋਂਟ"
 
-#: libapper/PkStrings.cpp:778
+#: libapper/PkStrings.cpp:791
 #, kde-format
 msgctxt "The group type"
 msgid "Admin tools"
 msgstr "ਐਡਮਿਨ ਟੂਲ"
 
-#: libapper/PkStrings.cpp:780
+#: libapper/PkStrings.cpp:793
 #, kde-format
 msgctxt "The group type"
 msgid "Legacy"
 msgstr "ਪੁਰਾਣੇ"
 
-#: libapper/PkStrings.cpp:782
+#: libapper/PkStrings.cpp:795
 #, kde-format
 msgctxt "The group type"
 msgid "Localization"
 msgstr "ਲੋਕਾਈਜੇਸ਼ਨ"
 
-#: libapper/PkStrings.cpp:784
+#: libapper/PkStrings.cpp:797
 #, kde-format
 msgctxt "The group type"
 msgid "Virtualization"
 msgstr "ਵੁਰਚੁਲਾਈਜੇਸ਼ਨ"
 
-#: libapper/PkStrings.cpp:786
+#: libapper/PkStrings.cpp:799
 #, kde-format
 msgctxt "The group type"
 msgid "Security"
 msgstr "ਸੁਰੱਖਿਆ"
 
-#: libapper/PkStrings.cpp:788
+#: libapper/PkStrings.cpp:801
 #, kde-format
 msgctxt "The group type"
 msgid "Power management"
 msgstr "ਪਾਵਰ ਪਰਬੰਧ"
 
-#: libapper/PkStrings.cpp:790
+#: libapper/PkStrings.cpp:803
 #, kde-format
 msgctxt "The group type"
 msgid "Communication"
 msgstr "ਕਮਿਊਨੀਕੇਸ਼ਨ"
 
-#: libapper/PkStrings.cpp:792
+#: libapper/PkStrings.cpp:805
 #, kde-format
 msgctxt "The group type"
 msgid "Network"
 msgstr "ਨੈੱਟਵਰਕ"
 
-#: libapper/PkStrings.cpp:794
+#: libapper/PkStrings.cpp:807
 #, kde-format
 msgctxt "The group type"
 msgid "Maps"
 msgstr "ਨਕਸ਼ੇ"
 
-#: libapper/PkStrings.cpp:796
+#: libapper/PkStrings.cpp:809
 #, kde-format
 msgctxt "The group type"
 msgid "Software sources"
 msgstr "ਸਾਫਟਵੇਅਰ ਸਰੋਤ"
 
-#: libapper/PkStrings.cpp:798
+#: libapper/PkStrings.cpp:811
 #, kde-format
 msgctxt "The group type"
 msgid "Science"
 msgstr "ਵਿਗਿਆਨ"
 
-#: libapper/PkStrings.cpp:800
+#: libapper/PkStrings.cpp:813
 #, kde-format
 msgctxt "The group type"
 msgid "Documentation"
 msgstr "ਡੌਕੂਮੈਨਟੇਸ਼ਨ"
 
-#: libapper/PkStrings.cpp:802
+#: libapper/PkStrings.cpp:815
 #, kde-format
 msgctxt "The group type"
 msgid "Electronics"
 msgstr "ਇਲੈਕਟਰੋਨਿਕਸ"
 
-#: libapper/PkStrings.cpp:804
+#: libapper/PkStrings.cpp:817
 #, kde-format
 msgctxt "The group type"
 msgid "Package collections"
 msgstr "ਪੈਕੇਜ ਭੰਡਾਰ"
 
-#: libapper/PkStrings.cpp:806
+#: libapper/PkStrings.cpp:819
 #, kde-format
 msgctxt "The group type"
 msgid "Vendor"
 msgstr "ਵੇਂਡਰ"
 
-#: libapper/PkStrings.cpp:808
+#: libapper/PkStrings.cpp:821
 #, kde-format
 msgctxt "The group type"
 msgid "Newest packages"
 msgstr "ਸਭ ਤੋਂ ਨਵੇਂ ਪੈਕੇਜ"
 
-#: libapper/PkStrings.cpp:810
+#: libapper/PkStrings.cpp:823
 #, kde-format
 msgctxt "The group type"
 msgid "Unknown group"
 msgstr "ਅਣਜਾਣ ਗਰੁੱਪ"
 
-#: libapper/PkStrings.cpp:821
+#: libapper/PkStrings.cpp:834
 #, kde-format
 msgctxt "The type of update"
 msgid "Trivial update"
 msgstr "ਟਰੀਵੀਲ ਅੱਪਡੇਟ"
 
-#: libapper/PkStrings.cpp:823
+#: libapper/PkStrings.cpp:836
 #, kde-format
 msgctxt "The type of update"
 msgid "Normal update"
 msgstr "ਆਮ ਅੱਪਡੇਟ"
 
-#: libapper/PkStrings.cpp:825
+#: libapper/PkStrings.cpp:838
 #, kde-format
 msgctxt "The type of update"
 msgid "Important update"
 msgstr "ਖਾਸ ਅੱਪਡੇਟ"
 
-#: libapper/PkStrings.cpp:827
+#: libapper/PkStrings.cpp:840
 #, kde-format
 msgctxt "The type of update"
 msgid "Security update"
 msgstr "ਸੁਰੱਖਿਆ ਅੱਪਡੇਟ"
 
-#: libapper/PkStrings.cpp:829
+#: libapper/PkStrings.cpp:842
 #, kde-format
 msgctxt "The type of update"
 msgid "Bug fix update"
 msgstr "ਬੱਗ ਫਿਕਸ ਅੱਪਡੇਟ"
 
-#: libapper/PkStrings.cpp:831
+#: libapper/PkStrings.cpp:844
 #, kde-format
 msgctxt "The type of update"
 msgid "Enhancement update"
 msgstr "ਇੰਹਾਂਸਮੈਂਟ ਅੱਪਡੇਟ"
 
-#: libapper/PkStrings.cpp:833
+#: libapper/PkStrings.cpp:846
 #, kde-format
 msgctxt "The type of update"
 msgid "Blocked update"
 msgstr "ਬਲਾਕ ਕੀਤੇ ਅੱਪਡੇਟ"
 
-#: libapper/PkStrings.cpp:836
+#: libapper/PkStrings.cpp:849
 #, kde-format
 msgctxt "The type of update"
 msgid "Installed"
 msgstr "ਇੰਸਟਾਲ ਕੀਤੇ"
 
-#: libapper/PkStrings.cpp:839
+#: libapper/PkStrings.cpp:852
 #, kde-format
 msgctxt "The type of update"
 msgid "Available"
 msgstr "ਉਪਲੱਬਧ"
 
-#: libapper/PkStrings.cpp:841
+#: libapper/PkStrings.cpp:854
 #, kde-format
 msgctxt "The type of update"
 msgid "Unknown update"
 msgstr "ਅਣਜਾਣ ਅੱਪਡੇਟ"
 
-#: libapper/PkStrings.cpp:852
+#: libapper/PkStrings.cpp:865
 #, kde-format
 msgid "No Updates Available"
 msgstr "ਕੋਈ ਅੱਪਡੇਟ ਉਪਲੱਬਧ ਨਹੀਂ ਹੈ"
 
-#: libapper/PkStrings.cpp:855
+#: libapper/PkStrings.cpp:868
 #, kde-format
 msgctxt "Some updates were selected on the view"
 msgid "1 Update Selected"
@@ -3305,7 +3359,7 @@ msgid_plural "%1 Updates Selected"
 msgstr[0] "੧ ਅੱਪਡੇਟ ਚੁਣਿਆ"
 msgstr[1] "%1 ਅੱਪਡੇਟ ਚੁਣੇ"
 
-#: libapper/PkStrings.cpp:859
+#: libapper/PkStrings.cpp:872
 #, kde-format
 msgctxt "Some updates are being shown on the screen"
 msgid "1 Update"
@@ -3313,13 +3367,13 @@ msgid_plural "%1 Updates"
 msgstr[0] "੧ ਅੱਪਡੇਟ"
 msgstr[1] "%1 ਅੱਪਡੇਟ"
 
-#: libapper/PkStrings.cpp:862
+#: libapper/PkStrings.cpp:875
 #, kde-format
 msgctxt "Type of update, in the case it's just an update"
 msgid "%1, %2"
 msgstr "%1, %2"
 
-#: libapper/PkStrings.cpp:863
+#: libapper/PkStrings.cpp:876
 #, kde-format
 msgctxt "Part of: %1 Updates, %1 Selected"
 msgid "%1 Update"
@@ -3327,7 +3381,7 @@ msgid_plural "%1 Updates"
 msgstr[0] "%1 ਅੱਪਡੇਟ"
 msgstr[1] "%1 ਅੱਪਡੇਟ"
 
-#: libapper/PkStrings.cpp:864
+#: libapper/PkStrings.cpp:877
 #, kde-format
 msgctxt "Part of: %1 Updates, %1 Selected"
 msgid "%1 Selected"
@@ -3335,274 +3389,194 @@ msgid_plural "%1 Selected"
 msgstr[0] "%1 ਚੁਣਿਆ"
 msgstr[1] "%1 ਚੁਣੇ"
 
-#: libapper/PkStrings.cpp:868
+#: libapper/PkStrings.cpp:881
 #, kde-format
 msgid "No Packages"
 msgstr "ਕੋਈ ਪੈਕੇਜ ਨਹੀਂ"
 
-#: libapper/PkStrings.cpp:870
+#: libapper/PkStrings.cpp:883
 #, kde-format
 msgid "1 Package"
 msgid_plural "%1 Packages"
 msgstr[0] "੧ ਪੈਕੇਜ"
 msgstr[1] "%1 ਪੈਕੇਜ"
 
-#: libapper/PkStrings.cpp:878
+#: libapper/PkStrings.cpp:891
 #, kde-format
 msgid "No restart is necessary"
 msgstr "ਮੁੜ-ਚਾਲੂ ਕਰਨ ਦੀ ਲੋੜ ਨਹੀਂ ਹੈ"
 
-#: libapper/PkStrings.cpp:880
+#: libapper/PkStrings.cpp:893
 #, kde-format
 msgid "You will be required to restart this application"
 msgstr "ਤੁਹਾਨੂੰ ਇਹ ਐਪਲੀਕੇਸ਼ਨ ਮੁੜ-ਚਾਲੂ ਕਰਨੀ ਪਵੇਗੀ"
 
-#: libapper/PkStrings.cpp:882
+#: libapper/PkStrings.cpp:895
 #, kde-format
 msgid "You will be required to log out and back in"
 msgstr "ਤੁਹਾਨੂੰ ਲਾਗ ਆਉਟ ਕਰਕੇ ਲਾਗਇਨ ਕਰਨ ਦੀ ਲੋੜ ਪਵੇਗੀ"
 
-#: libapper/PkStrings.cpp:884
+#: libapper/PkStrings.cpp:897
 #, kde-format
 msgid "A restart will be required"
 msgstr "ਮੁੜ-ਚਾਲੂ ਕਰਨਾ ਪਵੇਗਾ"
 
-#: libapper/PkStrings.cpp:886
+#: libapper/PkStrings.cpp:899
 #, kde-format
 msgid "You will be required to log out and back in due to a security update."
 msgstr "ਸੁਰੱਖਿਆ ਅਅੱਪਡੇਟ ਕਰਕੇ ਤੁਹਾਨੂੰ ਲਾਗ ਆਫ਼ ਕਰਕੇ ਮੁੜ ਲਾਗ-ਇਨ ਕਰਨ ਪਵੇਗਾ।"
 
-#: libapper/PkStrings.cpp:888
+#: libapper/PkStrings.cpp:901
 #, kde-format
 msgid "A restart will be required due to a security update."
 msgstr "ਸੁਰੱਖਿਆ ਅੱਪਡੇਟ ਕਰਕੇ ਮੁੜ-ਚਾਲੂ ਕਰਨ ਦੀ ਲੋੜ ਪਵੇਗੀ।"
 
-#: libapper/PkStrings.cpp:901
+#: libapper/PkStrings.cpp:914
 #, kde-format
 msgid "No restart is required"
 msgstr "ਮੁੜ-ਚਾਲੂ ਕਰਨ ਦੀ ਲੋੜ ਨਹੀਂ ਹੈ"
 
-#: libapper/PkStrings.cpp:903
+#: libapper/PkStrings.cpp:916
 #, kde-format
 msgid "A restart is required"
 msgstr "ਮੁੜ-ਚਾਲੂ ਕਰਨ ਦੀ ਲੋੜ ਹੈ"
 
-#: libapper/PkStrings.cpp:905
+#: libapper/PkStrings.cpp:918
 #, kde-format
 msgid "You need to log out and log back in"
 msgstr "ਤੁਹਾਨੂੰ ਲਾਗਆਉਟ ਕਰਕੇ ਫੇਰ ਲਾਗਇਨ ਕਰਨ ਦੀ ਲੋੜ ਹੈ"
 
-#: libapper/PkStrings.cpp:907
+#: libapper/PkStrings.cpp:920
 #, kde-format
 msgid "You need to restart the application"
 msgstr "ਤੁਹਾਨੂੰ ਐਪਲੀਕੇਸ਼ਨ ਮੁੜ-ਚਾਲੂ ਕਰਨ ਦੀ ਲੋੜ ਹੈ"
 
-#: libapper/PkStrings.cpp:909
+#: libapper/PkStrings.cpp:922
 #, kde-format
 msgid "You need to log out and log back in to remain secure."
 msgstr "ਤੁਹਾਨੂੰ ਸੁਰੱਖਿਅਤ ਰਹਿਣ ਲਈ ਲਾਗ ਆਉਟ ਕਰਕੇ ਲਾਗਇਨ ਕਰਨ ਦੀ ਲੋੜ ਹੈ।"
 
-#: libapper/PkStrings.cpp:911
+#: libapper/PkStrings.cpp:924
 #, kde-format
 msgid "A restart is required to remain secure."
 msgstr "ਸੁਰੱਖਿਅਤ ਕਰਨ ਲਈ ਮੁੜ-ਚਾਲੂ ਕਰਨ ਦੀ ਲੋੜ ਹੈ।"
 
-#: libapper/PkStrings.cpp:924
+#: libapper/PkStrings.cpp:937
 #, kde-format
 msgid "Stable"
 msgstr "ਸਥਿਰ"
 
-#: libapper/PkStrings.cpp:926
+#: libapper/PkStrings.cpp:939
 #, kde-format
 msgid "Unstable"
 msgstr "ਅਸਥਿਰ"
 
-#: libapper/PkStrings.cpp:928
+#: libapper/PkStrings.cpp:941
 #, kde-format
 msgid "Testing"
 msgstr "ਟੈਸਟਿੰਗ"
 
-#: libapper/PkStrings.cpp:941
+#: libapper/PkStrings.cpp:954
 #, kde-format
 msgid "Please insert the CD labeled '%1', and press continue."
 msgstr "'%1' ਨਾਂ ਦੀ ਸੀਡੀ ਪਾਉ ਜੀ ਅਤੇ ਜਾਰੀ ਰੱਖੋ।"
 
-#: libapper/PkStrings.cpp:943
+#: libapper/PkStrings.cpp:956
 #, kde-format
 msgid "Please insert the DVD labeled '%1', and press continue."
 msgstr "'%1' ਨਾਂ ਦੀ ਡੀਵੀਡੀ ਪਾ ਕੇ ਜਾਰੀ ਰੱਖੋ ਜੀ।"
 
-#: libapper/PkStrings.cpp:945
+#: libapper/PkStrings.cpp:958
 #, kde-format
 msgid "Please insert the disc labeled '%1', and press continue."
 msgstr "'%1' ਨਾਂ ਦੀ ਡਿਸਕ ਪਾ ਕੇ ਜਾਰੀ ਰੱਖੋ।"
 
-#: libapper/PkStrings.cpp:947 libapper/PkStrings.cpp:950
+#: libapper/PkStrings.cpp:960 libapper/PkStrings.cpp:963
 #, kde-format
 msgid "Please insert the medium labeled '%1', and press continue."
 msgstr "'%1' ਨਾਂ ਦਾ ਮੀਡਿਅਮ ਪਾ ਕੇ ਜਾਰੀ ਰੱਖੋ।"
 
-#: libapper/PkStrings.cpp:957
-#, kde-format
-msgid "A mirror is possibly broken"
-msgstr "ਮਿੱਰਰ ਖਰਾਬ ਹੋ ਸਕਦਾ ਹੈ"
-
-#: libapper/PkStrings.cpp:959
-#, kde-format
-msgid "The connection was refused"
-msgstr "ਕੁਨੈਕਸ਼ਨ ਤੋਂ ਇਨਕਾਰ"
-
-#: libapper/PkStrings.cpp:961
-#, kde-format
-msgid "The parameter was invalid"
-msgstr "ਪੈਰਾਮੀਟਰ ਅਢੁੱਕਵਾਂ ਹੈ"
-
-#: libapper/PkStrings.cpp:963
-#, kde-format
-msgid "The priority was invalid"
-msgstr "ਤਰਜੀਹ ਅਢੁੱਕਵੀਂ ਹੈ"
-
-#: libapper/PkStrings.cpp:965
-#, kde-format
-msgid "Backend warning"
-msgstr "ਬੈਕਐਂਡ ਚੇਤਾਵਨੀ"
-
-#: libapper/PkStrings.cpp:967
-#, kde-format
-msgid "Daemon warning"
-msgstr "ਡੈਮੇਨ ਚੇਤਾਵਨੀ"
-
-#: libapper/PkStrings.cpp:969
-#, kde-format
-msgid "The package list cache is being rebuilt"
-msgstr "ਪੈਕੇਜ ਲਿਸਟ ਕੈਸ਼ ਮੁੜ-ਬਿਲਡ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ"
-
-#: libapper/PkStrings.cpp:971
-#, kde-format
-msgid "An untrusted package was installed"
-msgstr "ਬੇਭਰੋਸੇਯੋਗ ਪੈਕੇਜ ਇੰਸਟਾਲ ਕੀਤਾ"
-
-#: libapper/PkStrings.cpp:973
-#, kde-format
-msgid "A newer package exists"
-msgstr "ਨਵਾਂ ਪੈਕੇਜ ਮੌਜੂਦ ਹੈ"
-
-#: libapper/PkStrings.cpp:975
-#, kde-format
-msgid "Could not find package"
-msgstr "ਪੈਕੇਜ ਨਹੀਂ ਲੱਭਿਆ"
-
-#: libapper/PkStrings.cpp:977
-#, kde-format
-msgid "Configuration files were changed"
-msgstr "ਸੰਰਚਨਾ ਫਾਇਲਾਂ ਬਦਲੀਆਂ ਗਈਆਂ"
-
-#: libapper/PkStrings.cpp:979
-#, kde-format
-msgid "Package is already installed"
-msgstr "ਪੈਕੇਜ ਪਹਿਲਾਂ ਹੀ ਇੰਸਟਾਲ ਹੈ"
-
-#: libapper/PkStrings.cpp:981
-#, kde-format
-msgid "Automatic cleanup is being ignored"
-msgstr "ਆਟੋਮੈਟਿਕ ਸਾਫ਼ ਕਰਨ ਨੂੰ ਅਣਡਿੱਠਾ ਕੀਤਾ ਗਿਆ"
-
-#: libapper/PkStrings.cpp:983
-#, kde-format
-msgid "Software source download failed"
-msgstr "ਸਾਫਟਵੇਅਰ ਸਰੋਤ ਡਾਊਨਲੋਡ ਫੇਲ੍ਹ ਹੋਇਆ"
-
-#: libapper/PkStrings.cpp:985
-#, kde-format
-msgid "This software source is for developers only"
-msgstr "ਇਹ ਸਾਫਟਵੇਅਰ ਸਰੋਤ ਕੇਵਲ ਡਿਵੈਲਪਰਾਂ ਲਈ ਹੀ ਹੈ"
-
-#: libapper/PkStrings.cpp:987
-#, kde-format
-msgid "Other updates have been held back"
-msgstr "ਹੋਰ ਅੱਪਡੇਟ ਰੋਕ ਕੇ ਰੱਖੇ ਗਏ ਹਨ"
-
-#: libapper/PkStrings.cpp:1001
+#: libapper/PkStrings.cpp:1014
 #, kde-format
 msgid "You do not have the necessary privileges to perform this action."
 msgstr "ਤੁਹਾਨੂੰ ਇਹ ਕਾਰਵਾਈ ਕਰਨ ਲਈ ਲੋੜੀਦੇ ਅਧਿਕਾਰ ਨਹੀਂ ਹਨ।"
 
-#: libapper/PkStrings.cpp:1003
+#: libapper/PkStrings.cpp:1016
 #, kde-format
 msgid "Could not get a transaction id from packagekitd."
 msgstr "packagekitd ਤੋਂ ਟਰਾਂਸੈਕਸ਼ਨ id ਲਿਆ ਨਹੀਂ ਜਾ ਸਕਿਆ।"
 
-#: libapper/PkStrings.cpp:1005
+#: libapper/PkStrings.cpp:1018
 #, kde-format
 msgid "Cannot connect to this transaction id."
 msgstr "ਇਸ ਟਰਾਂਸੈਕਸ਼ਨ id ਨਾਲ ਕੁਨੈਕਟ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਦਾ।"
 
-#: libapper/PkStrings.cpp:1007
+#: libapper/PkStrings.cpp:1020
 #, kde-format
 msgid "This action is unknown."
 msgstr "ਇਹ ਕਾਰਵਾਈ ਅਣਜਾਣ ਹੈ।"
 
-#: libapper/PkStrings.cpp:1009
+#: libapper/PkStrings.cpp:1022
 #, kde-format
 msgid "The packagekitd service could not be started."
 msgstr "packagekitd ਸਰਵਿਸ ਸ਼ੁਰੂ ਨਹੀਂ ਕੀਤੀ ਜਾ ਸਕਦੀ।"
 
-#: libapper/PkStrings.cpp:1011
+#: libapper/PkStrings.cpp:1024
 #, kde-format
 msgid "The query is not valid."
 msgstr "ਕਿਊਰੀ ਅਢੁੱਕਵੀਂ ਹੈ।"
 
-#: libapper/PkStrings.cpp:1013
+#: libapper/PkStrings.cpp:1026
 #, kde-format
 msgid "The file is not valid."
 msgstr "ਫਾਇਲ ਅਢੁੱਕਵੀਂ ਨਹੀਂ ਹੈ।"
 
-#: libapper/PkStrings.cpp:1015
+#: libapper/PkStrings.cpp:1028
 #, kde-format
 msgid "This function is not yet supported."
 msgstr "ਇਹ ਫੰਕਸ਼ਨ ਸਹਾਇਕ ਨਹੀਂ ਹੈ।"
 
-#: libapper/PkStrings.cpp:1017
+#: libapper/PkStrings.cpp:1030
 #, kde-format
 msgid "Could not talk to packagekitd."
 msgstr "packagekitd ਨਾਲ ਗੱਲ ਨਹੀਂ ਕੀਤੀ ਜਾ ਸਕਦੀ।"
 
-#: libapper/PkStrings.cpp:1019
+#: libapper/PkStrings.cpp:1032
 #, kde-format
 msgid "Error talking to packagekitd."
 msgstr "packagekitd ਨਾਲ ਸੰਚਾਰ ਵਿੱਚ ਗਲਤੀ।"
 
-#: libapper/PkStrings.cpp:1022 libapper/PkStrings.cpp:1025
+#: libapper/PkStrings.cpp:1035 libapper/PkStrings.cpp:1038
 #, kde-format
 msgid "An unknown error happened."
 msgstr "ਅਣਜਾਣ ਗਲਤੀ ਆਈ ਹੈ।"
 
-#: libapper/PkStrings.cpp:1039
+#: libapper/PkStrings.cpp:1053
 #, kde-format
 msgid "Your system is up to date"
 msgstr "ਤੁਹਾਡਾ ਸਿਸਟਮ ਅੱਪ-ਟੂ-ਡੇਟ ਹੈ"
 
-#: libapper/PkStrings.cpp:1041
+#: libapper/PkStrings.cpp:1055
 #, kde-format
 msgid "You have no updates"
 msgstr "ਤੁਹਾਡੇ ਲਈ ਕੋਈ ਅੱਪਡੇਟ ਨਹੀਂ"
 
-#: libapper/PkStrings.cpp:1043
+#: libapper/PkStrings.cpp:1057
 #, kde-format
 msgid "Last check for updates was more than a month ago"
 msgstr "ਪਿਛਲਾ ਅੱਪਡੇਟ ਇੱਕ ਮਹੀਨੇ ਤੋਂ ਵੱਧ ਸਮੇਂ ਤੋਂ ਪਹਿਲਾਂ ਚੈੱਕ ਕੀਤਾ ਗਿਆ ਸੀ"
 
-#: libapper/PkStrings.cpp:1051
+#: libapper/PkStrings.cpp:1065
 #, kde-format
 msgid "Verified %1 ago"
 msgstr "%1 ਚਿਰ ਪਹਿਲਾਂ ਜਾਂਚਿਆ ਗਿਆ"
 
-#: libapper/PkStrings.cpp:1053
+#: libapper/PkStrings.cpp:1067
 #, kde-format
 msgid "It's strongly recommended that you check for new updates now"
 msgstr "ਇਹ ਜ਼ੋਰਦਾਰ ਸਿਫਾਰਸ਼ ਕੀਤੀ ਜਾਂਦੀ ਹੈ ਕਿ ਤੁਸੀਂ ਨਵੇਂ ਅੱਪਡੇਟ ਲਈ ਹੁਣੇ ਚੈੱਕ ਕਰੋ"
 
-#: libapper/PkTransaction.cpp:255
+#: libapper/PkTransaction.cpp:264
 #, kde-format
 msgid ""
 "You are about to install unsigned packages that can compromise your system, "
@@ -3615,39 +3589,33 @@ msgstr ""
 "\n"
 "ਕੀ ਤੁਸੀਂ ਇੰਸਟਾਲੇਸ਼ਨ ਜਾਰੀ ਰੱਖਣੀ ਚਾਹੁੰਦੇ ਹੋ?"
 
-#: libapper/PkTransaction.cpp:258
+#: libapper/PkTransaction.cpp:267
 #, kde-format
 msgid "Installing unsigned software"
 msgstr "ਅਣ-ਸਾਈਨ ਕੀਤਾ ਸਾਫਟਵੇਅਰ ਇੰਸਟਾਲ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ"
 
-#: libapper/PkTransactionWidget.cpp:250 libapper/PkTransactionWidget.cpp:263
+#: libapper/PkTransactionWidget.cpp:229 libapper/PkTransactionWidget.cpp:242
 #, kde-format
 msgid "%1 (%2%)"
 msgstr "%1 (%2%)"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: libapper/PkTransactionWidget.ui:38
+#: libapper/PkTransactionWidget.ui:47
 #, kde-format
 msgid "icon"
 msgstr "ਆਈਕਾਨ"
 
 #. i18n: ectx: property (text), widget (QLabel, currentL)
-#: libapper/PkTransactionWidget.ui:64
+#: libapper/PkTransactionWidget.ui:73
 #, kde-format
 msgid "Downloading Packages"
 msgstr "ਪੈਕੇਜ ਡਾਊਨਲੋਡ ਕੀਤੇ ਜਾ ਰਹੇ ਹਨ"
 
-#. i18n: ectx: property (windowTitle), widget (QWidget, RepoSig)
-#: libapper/RepoSig.cpp:52 libapper/RepoSig.ui:14
+#. i18n: ectx: property (windowTitle), widget (QDialog, RepoSig)
+#: libapper/RepoSig.ui:14
 #, kde-format
 msgid "Software signature is required"
 msgstr "ਸਾਫਟਵੇਅਰ ਦਸਤਖਤ ਲੋੜੀਦੇ ਹਨ"
-
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: libapper/RepoSig.ui:23
-#, kde-format
-msgid "Do you trust the origin of packages?"
-msgstr "ਕੀ ਤੁਸੀਂ ਪੈਕੇਜ ਦੇ ਸਰੋਤ ਉੱਤੇ ਭਰੋਸਾ ਕਰਦੇ ਹੋ?"
 
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: libapper/RepoSig.ui:47
@@ -3673,60 +3641,66 @@ msgstr "ਦਸਤਖਤ ਯੂਜ਼ਰ ਪਛਾਣ:"
 msgid "Signature identifier:"
 msgstr "ਦਸਤਖਤ ਪਛਾਣ:"
 
-#: libapper/Requirements.cpp:57
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: libapper/RepoSig.ui:147
+#, kde-format
+msgid "Do you trust the origin of packages?"
+msgstr "ਕੀ ਤੁਸੀਂ ਪੈਕੇਜ ਦੇ ਸਰੋਤ ਉੱਤੇ ਭਰੋਸਾ ਕਰਦੇ ਹੋ?"
+
+#: libapper/Requirements.cpp:55
 #, kde-format
 msgid "Additional changes"
 msgstr "ਹੋਰ ਬਦਲਾਅ"
 
-#: libapper/Requirements.cpp:83
+#: libapper/Requirements.cpp:82
 #, kde-format
 msgid "1 package to remove"
 msgid_plural "%1 packages to remove"
 msgstr[0] "ਹਟਾਉਣ ਈ ੧ ਪੈਕੇਜ "
 msgstr[1] "ਹਟਾਉਣ ਲਈ %1 ਪੈਕੇਜ"
 
-#: libapper/Requirements.cpp:98
+#: libapper/Requirements.cpp:97
 #, kde-format
 msgid "1 package to downgrade"
 msgid_plural "%1 packages to downgrade"
 msgstr[0] "ਡਾਊਨਗਰੇਡ ਕਰਨ ਲਈ ੧ ਪੈਕੇਜ"
 msgstr[1] "ਡਾਊਨਗਰੇਡ ਕਰਨ ਲਈ %1 ਪੈਕੇਜ"
 
-#: libapper/Requirements.cpp:113
+#: libapper/Requirements.cpp:112
 #, kde-format
 msgid "1 package to reinstall"
 msgid_plural "%1 packages to reinstall"
 msgstr[0] "ਮੁੜ-ਇੰਸਟਾਲ ਲਈ ੧ ਪੈਕੇਜ"
 msgstr[1] "ਮੁੜ-ਇੰਸਟਾਲ ਲਈ %1 ਪੈਕੇਜ"
 
-#: libapper/Requirements.cpp:126
+#: libapper/Requirements.cpp:125
 #, kde-format
 msgid "1 package to install"
 msgid_plural "%1 packages to install"
 msgstr[0] "ਇੰਸਟਾਲ ਕਰਨ ਲਈ ੧ ਪੈਕੇਜ"
 msgstr[1] "ਇੰਸਟਾਲ ਕਰਨ ਲਈ %1 ਪੈਕੇਜ"
 
-#: libapper/Requirements.cpp:139
+#: libapper/Requirements.cpp:138
 #, kde-format
 msgid "1 package to update"
 msgid_plural "%1 packages to update"
 msgstr[0] "ਅੱਪਡੇਟ ਕਰਨ ਲਈ ੧ ਪੈਕੇਜ"
 msgstr[1] "ਅੱਪਡੇਟ ਕਰਨ ਲਈ %1 ਪੈਕੇਜ"
 
-#: libapper/Requirements.cpp:152
+#: libapper/Requirements.cpp:151
 #, kde-format
 msgid "1 untrusted package"
 msgid_plural "%1 untrusted packages"
 msgstr[0] "੧ ਅਣ-ਟਰੱਸਟ ਪੈਕੇਜ"
 msgstr[1] "%1 ਅਣ-ਟਰੱਸਟ ਪੈਕੇਜ"
 
-#: libapper/Requirements.cpp:201
+#: libapper/Requirements.cpp:199
 #, kde-format
 msgctxt "how many bytes are required for download"
 msgid "Need to get %1 of archives"
 msgstr "%1 ਦੇ ਅਕਾਇਵ ਲੈਣ ਦੀ ਲੋੜ"
 
-#: libapper/Requirements.cpp:261
+#: libapper/Requirements.cpp:258
 #, kde-format
 msgid ""
 "You are about to install unsigned packages that can compromise your system, "
@@ -3736,13 +3710,13 @@ msgstr ""
 "ਕਰਨੀ ਅਸੰਭਵ ਹੋ ਜਾਂਦੀ ਹੈ ਕਿ ਕੀ ਸਾਫਟਵੇਅਰ ਕਿਸੇ ਭਰੋਸੇਯੋਗ ਸਰੋਤ ਤੋਂ ਆਇਆ ਹੈ।"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: libapper/Requirements.ui:31
+#: libapper/Requirements.ui:28
 #, kde-format
 msgid "Additional changes are required to complete the task"
 msgstr "ਟਾਸਕ ਪੂਰੀ ਕਰਨ ਲਈ ਹੋਰ ਬਦਲਾਅ ਚਾਹੀਦੇ ਹਨ"
 
 #. i18n: ectx: property (text), widget (QCheckBox, confirmCB)
-#: libapper/Requirements.ui:87
+#: libapper/Requirements.ui:101
 #, kde-format
 msgid "Do not confirm when installing or updating additional packages"
 msgstr "ਜਦੋਂ ਵਾਧੂ ਪੈਕੇਜ ਇੰਸਟਾਲ ਜਾਂ ਅੱਪਡੇਟ ਕਰਨੇ ਹੋਣ ਤਾਂ ਪੁੱਛੋ ਨਾ"
@@ -3753,22 +3727,27 @@ msgstr "ਜਦੋਂ ਵਾਧੂ ਪੈਕੇਜ ਇੰਸਟਾਲ ਜਾਂ �
 msgid "TextLabel"
 msgstr "TextLabel"
 
-#: PkSession/main.cpp:37
+#: PkSession/main.cpp:48
 #, kde-format
 msgid "Apper PackageKit Session helper"
 msgstr "ਅੱਪਰ ਪੈਕੇਜਕਿੱਟ ਸ਼ੈਸ਼ਨ ਸਹਾਇਕ"
 
-#: PkSession/main.cpp:41
+#: PkSession/main.cpp:51
+#, kde-format
+msgid "Daniel Nicoletti"
+msgstr "Daniel Nicoletti"
+
+#: PkSession/main.cpp:52
 #, kde-format
 msgid "Trever Fischer"
 msgstr "Trever Fischer"
 
-#: PkSession/PkInstallCatalogs.cpp:46
+#: PkSession/PkInstallCatalogs.cpp:47
 #, kde-format
 msgid "Install Packages Catalogs"
 msgstr "ਪੈਕੇਜ ਕੈਟਾਲਾਗ ਇੰਸਟਾਲ ਕਰੋ"
 
-#: PkSession/PkInstallCatalogs.cpp:65
+#: PkSession/PkInstallCatalogs.cpp:66
 #, kde-format
 msgid "You can drop more catalogs in here"
 msgstr "ਤੁਸੀਂ ਹੋਰ ਕੈਟਾਲਾਗ ਇੱਥੇ ਸੁੱਟ ਸਕਦੇ ਹੋ"
@@ -3810,54 +3789,54 @@ msgid ""
 "Your backend does not support any of the needed methods to install a catalog"
 msgstr "ਤੁਹਾਡਾ ਬੈਕਐਂਡ ਕੈਟਾਲਾਗ ਇੰਸਟਾਲ ਕਰਨ ਲਈ ਕਿਸੇ ਢੰਗ ਵਾਸਤੇ ਸਹਾਇਕ ਨਹੀਂ ਹੈ"
 
-#: PkSession/PkInstallCatalogs.cpp:177
+#: PkSession/PkInstallCatalogs.cpp:178
 #, kde-format
 msgid "Catalog not found"
 msgstr "ਕੈਟਾਲਾਗ ਨਹੀਂ ਲੱਭਿਆ"
 
-#: PkSession/PkInstallCatalogs.cpp:178
+#: PkSession/PkInstallCatalogs.cpp:179
 #, kde-format
 msgid "Could not find a catalog to install"
 msgstr "ਇੰਸਟਾਲ ਕਰਨ ਲਈ ਕੈਟਾਲਾਗ ਲੱਭਿਆ ਨਹੀਂ ਜਾ ਸਕਿਆ"
 
-#: PkSession/PkInstallCatalogs.cpp:185
+#: PkSession/PkInstallCatalogs.cpp:186
 #, kde-format
 msgid "Catalog %2 failed to open"
 msgid_plural "Catalogs %2 failed to open"
 msgstr[0] "ਕੈਟਾਲਾਗ %2 ਖੋਲ੍ਹਣ ਲਈ ਫੇਲ੍ਹ"
 msgstr[1] "ਕੈਟਾਲਾਗ %2 ਖੋਲ੍ਹਣ ਲਈ ਫੇਲ੍ਹ"
 
-#: PkSession/PkInstallCatalogs.cpp:189
+#: PkSession/PkInstallCatalogs.cpp:190
 #, kde-format
 msgid "Failed to open"
 msgstr "ਖੋਲ੍ਹਣ ਲਈ ਫੇਲ੍ਹ"
 
-#: PkSession/PkInstallCatalogs.cpp:195
+#: PkSession/PkInstallCatalogs.cpp:196
 #, kde-format
 msgid "Catalog is Empty"
 msgstr "ਕੈਟਾਲਾਗ ਖਾਲੀ ਹੈ"
 
-#: PkSession/PkInstallCatalogs.cpp:196
+#: PkSession/PkInstallCatalogs.cpp:197
 #, kde-format
 msgid "Could not find any package to install in this catalog"
 msgstr "ਇਸ ਕੈਟਾਲਾਗ ਵਿੱਚ ਇੰਸਟਾਲ ਕਰਨ ਲਈ ਕੋਈ ਪੈਕੇਜ ਨਹੀਂ ਲੱਭਿਆ ਜਾ ਸਕਿਆ"
 
-#: PkSession/PkInstallFontconfigResources.cpp:41
+#: PkSession/PkInstallFontconfigResources.cpp:43
 #, kde-format
 msgid "Installs new Fonts"
 msgstr "ਨਵੇਂ ਫੋਂਟ ਇੰਸਟਾਲ ਕਰੋ"
 
-#: PkSession/PkInstallFontconfigResources.cpp:73
+#: PkSession/PkInstallFontconfigResources.cpp:74
 #, kde-format
 msgid "Could interpret request"
 msgstr "ਮੰਗ ਨੂੰ ਵਿੱਚੇ ਨਹੀਂ ਰੋਕਿਆ ਜਾ ਸਕਿਆ"
 
-#: PkSession/PkInstallFontconfigResources.cpp:73
+#: PkSession/PkInstallFontconfigResources.cpp:74
 #, kde-format
 msgid "Please verify if the request was valid"
 msgstr "ਜਾਂਚ ਕਰੋ ਕਿ ਕੀ ਮੰਗ ਜਾਇਜ਼ ਹੈ"
 
-#: PkSession/PkInstallFontconfigResources.cpp:107
+#: PkSession/PkInstallFontconfigResources.cpp:108
 #, kde-format
 msgid ""
 "An additional font is required to view this document correctly.\n"
@@ -3872,32 +3851,32 @@ msgstr[1] ""
 "ਇਹ ਡੌਕੂਮੈਂਟ ਨੂੰ ਠੀਕ ਤਰ੍ਹਾਂ ਵੇਖਣ ਲਈ ਹੋਰ ਪੈਕੇਜ ਚਾਹੀਦੇ ਹਨ।\n"
 "ਕੀ ਤੁਸੀਂ ਢੁੱਕਵੇਂ ਪੈਕੇਜ ਹੁਣੇ ਲੱਭਣੇ ਚਾਹੁੰਦੇ ਹੋ?"
 
-#: PkSession/PkInstallFontconfigResources.cpp:117
+#: PkSession/PkInstallFontconfigResources.cpp:118
 #, kde-format
 msgid "A program wants to install a font"
 msgid_plural "A program wants to install fonts"
 msgstr[0] "ਪਰੋਗਰਾਮ ਫੋਂਟ ਇੰਸਟਾਲ ਕਰਨਾ ਚਾਹੁੰਦਾ ਹੈ"
 msgstr[1] "ਪਰੋਗਰਾਮ ਫੋਂਟ ਇੰਸਟਾਲ ਕਰਨੇ ਚਾਹੁੰਦਾ ਹੈ"
 
-#: PkSession/PkInstallFontconfigResources.cpp:121
+#: PkSession/PkInstallFontconfigResources.cpp:122
 #, kde-format
 msgid "The application %2 wants to install a font"
 msgid_plural "The application %2 wants to install fonts"
 msgstr[0] "%2 ਐਪਲੀਕੇਸ਼ਨ ਇੱਕ ਫੋਂਟ ਇੰਸਟਾਲ ਕਰਨਾ ਚਾਹੁੰਦੀ ਹੈ"
 msgstr[1] "%2 ਐਪਲੀਕੇਸ਼ਨ ਫੋਂਟ ਇੰਸਟਾਲ ਕਰਨੇ ਚਾਹੁੰਦੀ ਹੈ"
 
-#: PkSession/PkInstallFontconfigResources.cpp:149
-#: PkSession/PkInstallFontconfigResources.cpp:158
+#: PkSession/PkInstallFontconfigResources.cpp:148
+#: PkSession/PkInstallFontconfigResources.cpp:157
 #, kde-format
 msgid "Failed to find font"
 msgstr "ਫੋਂਟ ਲੱਭਣ ਲਈ ਫੇਲ੍ਹ ਹੈ"
 
-#: PkSession/PkInstallFontconfigResources.cpp:151
+#: PkSession/PkInstallFontconfigResources.cpp:150
 #, kde-format
 msgid "No new fonts could be found for this document"
 msgstr "ਇਹ ਡੌਕੂਮੈਂਟ ਲਈ ਨਵੇਂ ਫੋਂਟ ਨਹੀਂ ਲੱਭੇ ਜਾ ਸਕੇ"
 
-#: PkSession/PkInstallFontconfigResources.cpp:160
+#: PkSession/PkInstallFontconfigResources.cpp:159
 #, kde-format
 msgid "Failed to search for provides"
 msgstr "ਦੇਣ ਵਾਲੇ ਖੋਜਣ ਲਈ ਫੇਲ੍ਹ "
@@ -3907,7 +3886,7 @@ msgstr "ਦੇਣ ਵਾਲੇ ਖੋਜਣ ਲਈ ਫੇਲ੍ਹ "
 msgid "Install GStreamer Resources"
 msgstr "ਜੀਸਟਰੀਮਰ ਸਰੋਤ ਇੰਸਟਾਲ ਕਰੋ"
 
-#: PkSession/PkInstallGStreamerResources.cpp:69
+#: PkSession/PkInstallGStreamerResources.cpp:68
 #, kde-format
 msgid "The following plugin is required. Do you want to search for this now?"
 msgid_plural ""
@@ -3915,54 +3894,54 @@ msgid_plural ""
 msgstr[0] "ਅੱਗੇ ਦਿੱਤੀ ਪਲੱਗਇਨ ਚਾਹੀਦੀ ਹੈ। ਕੀ ਤੁਸੀਂ ਇਹ ਹੁਣੇ ਲੱਭਣੀ ਚਾਹੁੰਦੇ ਹੋ?"
 msgstr[1] "ਅੱਗੇ ਦਿੱਤੀਆਂ ਪਲੱਗਇਨ ਲੋੜੀਦੀਆਂ ਹਨ। ਕੀ ਤੁਸੀਂ ਇਹਨਾਂ ਨੂੰ ਹੁਣੇ ਲੱਭਣੀਆਂ ਚਾਹੁੰਦੇ ਹੋ?"
 
-#: PkSession/PkInstallGStreamerResources.cpp:81
+#: PkSession/PkInstallGStreamerResources.cpp:80
 #, kde-format
 msgid "A program requires an additional plugin to decode this file"
 msgid_plural "A program requires additional plugins to decode this file"
 msgstr[0] "ਪਰੋਗਰਾਮ ਨੂੰ ਇਹ ਫਾਇਲ ਡੀਕੋਡ ਕਰਨ ਲਈ ਹੋਰ ਪਲੱਗਇਨ ਦੀ ਲੋੜ ਹੈ"
 msgstr[1] "ਇਹ ਪਰੋਗਰਾਮ ਨੂੰ ਇਹ ਫਾਇਲ ਡੀਕੋਡ ਕਰਨ ਲਈ ਹੋਰ ਪਲੱਗਇਨ ਦੀ ਲੋੜ ਹੈ"
 
-#: PkSession/PkInstallGStreamerResources.cpp:86
+#: PkSession/PkInstallGStreamerResources.cpp:85
 #, kde-format
 msgid "A program requires an additional plugin to encode this file"
 msgid_plural "A program requires additional plugins to encode this file"
 msgstr[0] "ਪਰੋਗਰਾਮ ਨੂੰ ਇਹ ਫਾਇਲ ਇੰਕੋਡ ਕਰਨ ਲਈ ਹੋਰ ਪਲੱਗਇਨ ਦੀ ਲੋੜ ਹੈ"
 msgstr[1] "ਪਰੋਗਰਾਮ ਨੂੰ ਇਹ ਫਾਇਲਾਂ ਇੰਕੋਡ ਕਰਨ ਲਈ ਹੋਰ ਪਲੱਗਇਨ ਦੀ ਲੋੜ ਹੈ"
 
-#: PkSession/PkInstallGStreamerResources.cpp:91
+#: PkSession/PkInstallGStreamerResources.cpp:90
 #, kde-format
 msgid "A program requires an additional plugin for this operation"
 msgid_plural "A program requires additional plugins for this operation"
 msgstr[0] "ਪਰੋਗਰਾਮ ਨੂੰ ਇਹ ਓਪਰੇਸ਼ਨ ਲਈ ਹੋਰ ਪਲੱਗਇਨ ਦੀ ਲੋੜ ਹੈ"
 msgstr[1] "ਪਰੋਗਰਾਮ ਨੂੰ ਇਹ ਓਪਰੇਸ਼ਨ ਲਈ ਹੋਰ ਪਲੱਗਇਨਾਂ ਦੀ ਲੋੜ ਹੈ"
 
-#: PkSession/PkInstallGStreamerResources.cpp:98
+#: PkSession/PkInstallGStreamerResources.cpp:97
 #, kde-format
 msgid "%2 requires an additional plugin to decode this file"
 msgid_plural "%2 requires additional plugins to decode this file"
 msgstr[0] "%2 ਨੂੰ ਇਹ ਫਾਇਲ ਡੀਕੋਡ ਕਰਨ ਲਈ ਹੋਰ ਪਲੱਗਇਨ ਦੀ ਲੋੜ ਹੈ"
 msgstr[1] "%2 ਨੂੰ ਇਹ ਫਾਇਲ ਡੀਕੋਡ ਕਰਨ ਲਈ ਹੋਰ ਪਲੱਗਇਨ ਦੀ ਲੋੜ ਹੈ"
 
-#: PkSession/PkInstallGStreamerResources.cpp:104
+#: PkSession/PkInstallGStreamerResources.cpp:103
 #, kde-format
 msgid "%2 requires an additional plugin to encode this file"
 msgid_plural "%2 requires additional plugins to encode this file"
 msgstr[0] "%2 ਨੂੰ ਇਹ ਫਾਇਲ ਇੰਕੋਡ ਕਰਨ ਲਈ ਹੋਰ ਪਲੱਗਇਨ ਦੀ ਲੋੜ ਹੈ"
 msgstr[1] "%2 ਨੂੰ ਇਹ ਫਾਇਲ ਇੰਕੋਡ ਕਰਨ ਲਈ ਹੋਰ ਪਲੱਗਇਨ ਦੀ ਲੋੜ ਹੈ"
 
-#: PkSession/PkInstallGStreamerResources.cpp:110
+#: PkSession/PkInstallGStreamerResources.cpp:109
 #, kde-format
 msgid "%2 requires an additional plugin for this operation"
 msgid_plural "%2 requires additional plugins for this operation"
 msgstr[0] "%2 ਨੂੰ ਇਹ ਓਪਰੇਸ਼ਨ ਲਈ ਹੋਰ ਪਲੱਗਇਨ ਦੀ ਲੋੜ ਹੈ"
 msgstr[1] "%2 ਨੂੰ ਇਹ ਓਪਰੇਸ਼ਨ ਲਈ ਹੋਰ ਪਲੱਗਇਨਾਂ ਦੀ ਲੋੜ ਹੈ"
 
-#: PkSession/PkInstallGStreamerResources.cpp:142
+#: PkSession/PkInstallGStreamerResources.cpp:139
 #, kde-format
 msgid "No results found"
 msgstr "ਕੋਈ ਨਤੀਜਾ ਨਹੀਂ ਲੱਭਿਆ"
 
-#: PkSession/PkInstallGStreamerResources.cpp:144
+#: PkSession/PkInstallGStreamerResources.cpp:141
 #, kde-format
 msgid "Could not find plugin in any configured software source"
 msgstr "ਸੰਰਚਿਤ ਸਾਫਟਵੇਅਰ ਸਰੋਤ ਉੱਤੇ ਕੋਈ ਪਲੱਗਇਨ ਨਹੀਂ ਲੱਭੀ"
@@ -3972,7 +3951,7 @@ msgstr "ਸੰਰਚਿਤ ਸਾਫਟਵੇਅਰ ਸਰੋਤ ਉੱਤੇ �
 msgid "Install Support for File Types"
 msgstr "ਫਾਇਲ ਕਿਸਮਾਂ ਲਈ ਸਹਿਯੋਗ ਇੰਸਟਾਲ ਕਰੋ"
 
-#: PkSession/PkInstallMimeTypes.cpp:52
+#: PkSession/PkInstallMimeTypes.cpp:51
 #, kde-format
 msgid "Do you want to search for a program that can open this file type?"
 msgid_plural ""
@@ -3980,19 +3959,19 @@ msgid_plural ""
 msgstr[0] "ਕੀ ਤੁਸੀਂ ਇਹ ਫਾਇਲ ਕਿਸਮ ਖੋਲ੍ਹਣ ਵਾਲੇ ਪ੍ਰੋਗਰਾਮ ਨੂੰ ਲੱਭਣਾ ਚਾਹੁੰਦੇ ਹੋ?"
 msgstr[1] "ਕੀ ਤੁਸੀਂ ਇਹ ਫਾਇਲ ਕਿਸਮਾਂ ਖੋਲ੍ਹਣ ਵਾਲੇ ਪ੍ਰੋਗਰਾਮ ਨੂੰ ਲੱਭਣਾ ਚਾਹੁੰਦੇ ਹੋ?"
 
-#: PkSession/PkInstallMimeTypes.cpp:57
+#: PkSession/PkInstallMimeTypes.cpp:56
 #, kde-format
 msgid "No valid file types were provided"
 msgstr "ਕੋਈ ਢੁੱਕਵੀਂਆਂ ਫਾਇਲ ਕਿਸਮਾਂ ਨਹੀਂ ਦਿੱਤੀਆਂ ਗਈਆਂ"
 
-#: PkSession/PkInstallMimeTypes.cpp:64
+#: PkSession/PkInstallMimeTypes.cpp:63
 #, kde-format
 msgid "A program is requiring support to open this kind of files"
 msgid_plural "A program is requiring support to open these kinds of files"
 msgstr[0] "ਇਹ ਕਿਸਮ ਦੀਆਂ ਫਾਇਲਾਂ ਨੂੰ ਖੋਲ੍ਹਣ ਲਈ ਸਹਿਯੋਗੀ ਪ੍ਰੋਗਰਾਮ ਦੀ ਲੋੜ ਹੈ"
 msgstr[1] "ਇਹ ਕਿਸਮਾਂ ਦੀਆਂ ਫਾਇਲਾਂ ਨੂੰ ਖੋਲ੍ਹਣ ਲਈ ਸਹਿਯੋਗੀ ਪ੍ਰੋਗਰਾਮ ਦੀ ਲੋੜ ਹੈ"
 
-#: PkSession/PkInstallMimeTypes.cpp:68
+#: PkSession/PkInstallMimeTypes.cpp:67
 #, kde-format
 msgid "The application %2 is requiring support to open this kind of files"
 msgid_plural ""
@@ -4000,50 +3979,60 @@ msgid_plural ""
 msgstr[0] "%2 ਐਪਲੀਕੇਸ਼ਨ ਇਹ ਫਾਇਲਾਂ ਦੀ ਕਿਸਮ ਖੋਲ੍ਹਣ ਲਈ ਸਹਿਯੋਗ ਚਾਹੀਦਾ ਹੈ"
 msgstr[1] "%2 ਐਪਲੀਕੇਸ਼ਨ ਲਈ ਇਹ ਫਾਇਲਾਂ ਦੀ ਕਿਸਮਾਂ ਖੋਲ੍ਹਣ ਲਈ ਸਹਿਯੋਗ ਦੀ ਲੋੜ ਹੈ"
 
-#: PkSession/PkInstallMimeTypes.cpp:97
+#: PkSession/PkInstallMimeTypes.cpp:94
 #, kde-format
 msgid "Could not find software"
 msgstr "ਸਾਫਟਵੇਅਰ ਨਹੀਂ ਲੱਭਿਆ ਜਾ ਸਕਿਆ"
 
-#: PkSession/PkInstallMimeTypes.cpp:99
+#: PkSession/PkInstallMimeTypes.cpp:96
 #, kde-format
 msgid "No new applications can be found to handle this type of file"
 msgstr "ਇਸ ਕਿਸਮ ਦੀ ਫਾਇਲ ਨੂੰ ਹੈਂਡਲ ਕਰਨ ਲਈ ਕੋਈ ਨਵੀਂ ਐਪਲੀਕੇਸ਼ਨ ਨਹੀਂ ਲੱਭੀ ਜਾ ਸਕੀ"
 
-#: PkSession/PkInstallPackageFiles.cpp:38
+#: PkSession/PkInstallPackageFiles.cpp:40
 #, kde-format
 msgid "Install Packages Files"
 msgstr "ਪੈਕੇਜ ਫਾਇਲਾਂ ਇੰਸਟਾਲ ਕਰੋ"
 
-#: PkSession/PkInstallPackageFiles.cpp:42
+#: PkSession/PkInstallPackageFiles.cpp:44
 #: PkSession/PkRemovePackageByFiles.cpp:45
 #, kde-format
 msgid "You can drop more files in here"
 msgstr "ਤੁਸੀਂ ਹੋਰ ਫਾਇਲਾਂ ਇੱਥੇ ਸੁੱਟ ਸਕਦੇ ਹੋ"
 
-#: PkSession/PkInstallPackageFiles.cpp:68
-#: PkSession/PkRemovePackageByFiles.cpp:66
+#: PkSession/PkInstallPackageFiles.cpp:53
+#, kde-format
+msgid "Not Supported"
+msgstr "ਸਹਾਇਕ ਨਹੀਂ ਹੈ"
+
+#: PkSession/PkInstallPackageFiles.cpp:54
+#, kde-format
+msgid "Your current backend does not support installing files"
+msgstr "ਤੁਹਾਡਾ ਮੌਜੂਦਾ ਬੈਕਐਂਡ ਫਾਇਲਾਂ ਇੰਸਟਾਲ ਕਰਨ ਲਈ ਸਹਾਇਕ ਨਹੀਂ ਹੈ"
+
+#: PkSession/PkInstallPackageFiles.cpp:69
+#: PkSession/PkRemovePackageByFiles.cpp:65
 #, kde-format
 msgid "No supported files were provided"
 msgstr "ਕੋਈ ਸਹਾਇਕ ਫਾਇਲਾਂ ਨਹੀਂ ਦਿੱਤੀਆਂ ਗਈਆਂ ਹਨ"
 
-#: PkSession/PkInstallPackageFiles.cpp:70
+#: PkSession/PkInstallPackageFiles.cpp:71
 #, kde-format
 msgid "Press <i>Continue</i> if you want to install this file"
 msgid_plural "Press <i>Continue</i> if you want to install these files"
 msgstr[0] "ਕੀ ਤੁਸੀਂ ਇਹ ਫਾਇਲ ਇੰਸਟਾਲ ਕਰਨੀ ਚਾਹੁੰਦੇ ਹੋ ਤਾਂ <i>ਜਾਰੀ ਰੱਖੋ</i> ਦੱਬੋ"
 msgstr[1] "ਕੀ ਤੁਸੀਂ ਇਹ ਫਾਇਲਾਂ ਇੰਸਟਾਲ ਕਰਨੀਆਂ ਚਾਹੁੰਦੇ ਹੋ ਤਾਂ <i>ਜਾਰੀ ਰੱਖੋ</i> ਨੂੰ ਦੱਬੋ"
 
-#: PkSession/PkInstallPackageFiles.cpp:79
-#: PkSession/PkInstallPackageNames.cpp:73
+#: PkSession/PkInstallPackageFiles.cpp:80
+#: PkSession/PkInstallPackageNames.cpp:72
 #, kde-format
 msgid "An application wants to install a package"
 msgid_plural "An application wants to install packages"
 msgstr[0] "ਇੱਕ ਐਪਲੀਕੇਸ਼ਨ ਇੱਕ ਪੈਕੇਜ ਇੰਸਟਾਲ ਕਰਨੀ ਚਾਹੁੰਦੀ ਹੈ"
 msgstr[1] "ਇੱਕ ਐਪਲੀਕੇਸ਼ਨ ਪੈਕੇਜ ਇੰਸਟਾਲ ਕਰਨੇ ਚਾਹੁੰਦੀ ਹੈ"
 
-#: PkSession/PkInstallPackageFiles.cpp:83
-#: PkSession/PkInstallPackageNames.cpp:77
+#: PkSession/PkInstallPackageFiles.cpp:84
+#: PkSession/PkInstallPackageNames.cpp:76
 #, kde-format
 msgid "The application <i>%2</i> wants to install a package"
 msgid_plural "The application <i>%2</i> wants to install packages"
@@ -4078,37 +4067,37 @@ msgstr "ਫਾਇਲਾਂ ਇੰਸਟਾਲ ਨਹੀਂ ਕੀਤੀਆਂ �
 msgid "Install Packages by Name"
 msgstr "ਪੈਕੇਜ ਨਾਂ ਮੁਤਾਬਕ ਇੰਸਟਾਲ ਕਰੋ"
 
-#: PkSession/PkInstallPackageNames.cpp:60
+#: PkSession/PkInstallPackageNames.cpp:59
 #, kde-format
 msgid "No package names were provided"
 msgstr "ਕੋਈ ਪੈਕੇਜ ਨਾਂ ਨਹੀਂ ਦਿੱਤਾ ਗਿਆ"
 
-#: PkSession/PkInstallPackageNames.cpp:63
+#: PkSession/PkInstallPackageNames.cpp:62
 #, kde-format
 msgid "Do you want to search for and install this package now?"
 msgid_plural "Do you want to search for and install these packages now?"
 msgstr[0] "ਕੀ ਤੁਸੀਂ ਇਸ ਪੈਕੇਜ ਲਈ ਹੁਣੇ ਖੋਜ ਕਰਨੀ ਅਤੇ ਇੰਸਟਾਲ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ?"
 msgstr[1] "ਕੀ ਤੁਸੀਂ ਇਹ ਪੈਕੇਜ ਲਈ ਹੁਣੇ ਕਰਨੀ ਕਰਨ ਅਤੇ ਇੰਸਟਾਲ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ?"
 
-#: PkSession/PkInstallPackageNames.cpp:104
+#: PkSession/PkInstallPackageNames.cpp:101
 #, kde-format
 msgid "Failed to install packages"
 msgstr "ਪੈਕੇਜ ਇੰਸਟਾਲ ਕਰਨ ਲਈ ਫੇਲ੍ਹ"
 
-#: PkSession/PkInstallPackageNames.cpp:105
+#: PkSession/PkInstallPackageNames.cpp:102
 #, kde-format
 msgid "The package %2 is already installed"
 msgid_plural "The packages %2 are already installed"
 msgstr[0] "ਪੈਕੇਜ %2 ਪਹਿਲਾਂ ਹੀ ਇੰਸਟਾਲ ਹੈ"
 msgstr[1] "ਪੈਕੇਜ %2 ਪਹਿਲਾਂ ਹੀ ਇੰਸਟਾਲ ਹਨ"
 
-#: PkSession/PkInstallPackageNames.cpp:113
-#: PkSession/PkRemovePackageByFiles.cpp:143 PkSession/PkSearchFile.cpp:82
+#: PkSession/PkInstallPackageNames.cpp:110
+#: PkSession/PkRemovePackageByFiles.cpp:140 PkSession/PkSearchFile.cpp:82
 #, kde-format
 msgid "Could not find %1"
 msgstr "%1 ਨਹੀਂ ਲੱਭਿਆ"
 
-#: PkSession/PkInstallPackageNames.cpp:114
+#: PkSession/PkInstallPackageNames.cpp:111
 #, kde-format
 msgid "The package could not be found in any software source"
 msgid_plural "The packages could not be found in any software source"
@@ -4120,22 +4109,22 @@ msgstr[1] "ਪੈਕੇਜ ਕਿਸੇ ਸਾਫਟਵੇਅਰ ਸਰੋਤ �
 msgid "Install Plasma Resources"
 msgstr "ਪਲਾਜ਼ਮਾ ਸਰੋਤ ਇੰਸਟਾਲ ਕਰੋ"
 
-#: PkSession/PkInstallPlasmaResources.cpp:54
+#: PkSession/PkInstallPlasmaResources.cpp:53
 #, kde-format
 msgid "%1 data engine"
 msgstr "%1 ਡਾਟਾ ਇੰਜਣ"
 
-#: PkSession/PkInstallPlasmaResources.cpp:56
+#: PkSession/PkInstallPlasmaResources.cpp:55
 #, kde-format
 msgid "%1 script engine"
 msgstr "%1 ਸਕ੍ਰਿਪਟ ਇੰਜਣ"
 
-#: PkSession/PkInstallPlasmaResources.cpp:68
+#: PkSession/PkInstallPlasmaResources.cpp:67
 #, kde-format
 msgid "No supported resources were provided"
 msgstr "ਕੋਈ ਸਹਾਇਕ ਸਰੋਤ ਦਿੱਤਾ ਗਿਆ ਨਹੀਂ ਗਿਆ"
 
-#: PkSession/PkInstallPlasmaResources.cpp:70
+#: PkSession/PkInstallPlasmaResources.cpp:69
 #, kde-format
 msgid "The following service is required. Do you want to search for this now?"
 msgid_plural ""
@@ -4143,19 +4132,19 @@ msgid_plural ""
 msgstr[0] "ਸਾਫਟਵੇਅਰ ਸਰਵਿਸ ਲੋੜੀਦੀ ਹੈ। ਕੀ ਤੁਸੀਂ ਇਹ ਹੁਣ ਲੱਭਣੀ ਚਾਹੁੰਦੇ ਹੋ?"
 msgstr[1] "ਅੱਗੇ ਦਿੱਤੀਆਂ ਸਰਵਿਸਾਂ ਦੀ ਲੋੜ ਹੈ। ਕੀ ਤੁਸੀਂ ਇਹਨਾਂ ਦੀ ਹੁਣ ਖੋਜ ਕਰਨੀ ਚਾਹੁੰਦੇ ਹੋ?"
 
-#: PkSession/PkInstallPlasmaResources.cpp:79
+#: PkSession/PkInstallPlasmaResources.cpp:78
 #, kde-format
 msgid "Plasma requires an additional service for this operation"
 msgid_plural "Plasma requires additional services for this operation"
 msgstr[0] "ਇਹ ਕਾਰਵਾਈ ਲਈ ਪਲਾਜ਼ਮਾ ਨੂੰ ਹੋਰ ਸਰਵਿਸ ਚਾਹੀਦੀ ਹੈ"
 msgstr[1] "ਇਹ ਕਾਰਵਾਈ ਲਈ ਪਲਾਜ਼ਮਾ ਵਾਸਤੇ ਹੋਰ ਸਰਵਿਸਾਂ ਦੀ ਲੋੜ ਹੈ"
 
-#: PkSession/PkInstallPlasmaResources.cpp:106
+#: PkSession/PkInstallPlasmaResources.cpp:103
 #, kde-format
 msgid "Failed to search for Plasma service"
 msgstr "ਪਲਾਜ਼ਮਾ ਸਰਵਿਸ ਲਈ ਲੱਭਣ ਵਾਸਤੇ ਫੇਲ੍ਹ ਹੈ"
 
-#: PkSession/PkInstallPlasmaResources.cpp:109
+#: PkSession/PkInstallPlasmaResources.cpp:106
 #, kde-format
 msgid "Could not find service in any configured software source"
 msgstr "ਕਿਸੇ ਵੀ ਸੰਰਚਿਤ ਸਾਫਟਵੇਅਰ ਸਰੋਤ ਵਿੱਚ ਕੋਈ ਵੀ ਸਰਵਿਸ ਨਹੀਂ ਲੱਭੀ"
@@ -4165,12 +4154,12 @@ msgstr "ਕਿਸੇ ਵੀ ਸੰਰਚਿਤ ਸਾਫਟਵੇਅਰ ਸਰ�
 msgid "Install Printer Drivers"
 msgstr "ਪਰਿੰਟਰ ਡਰਾਇਵਰ ਇੰਸਟਾਲ ਕਰੋ"
 
-#: PkSession/PkInstallPrinterDrivers.cpp:84
+#: PkSession/PkInstallPrinterDrivers.cpp:82
 #, kde-format
 msgid "Failed to search for printer driver"
 msgstr "ਪਰਿੰਟਰ ਡਰਾਇਵਰ ਲੱਭਣ ਲਈ ਫੇਲ੍ਹ ਹੈ"
 
-#: PkSession/PkInstallPrinterDrivers.cpp:85
+#: PkSession/PkInstallPrinterDrivers.cpp:83
 #, kde-format
 msgid "Could not find printer driver in any configured software source"
 msgstr "ਸੰਰਚਿਤ ਸਾਫਟਵੇਅਰ ਸਰੋਤ ਤੋਂ ਕੋਈ ਪਰਿੰਟਰ ਡਰਾਇਵਰ ਨਹੀਂ ਲੱਭਿਆ ਜਾ ਸਕਿਆ"
@@ -4180,55 +4169,55 @@ msgstr "ਸੰਰਚਿਤ ਸਾਫਟਵੇਅਰ ਸਰੋਤ ਤੋਂ ਕ�
 msgid "Install Packages that Provides Files"
 msgstr "ਪੈਕੇਜ ਇੰਸਟਾਲ ਕਰੋ, ਜੋ ਫਾਇਲਾਂ ਦਿੰਦੇ ਹਨ"
 
-#: PkSession/PkInstallProvideFiles.cpp:51
+#: PkSession/PkInstallProvideFiles.cpp:50
 #, kde-format
 msgid "No files were provided"
 msgstr "ਕੋਈ ਫਾਇਲਾਂ ਨਹੀਂ ਦਿੱਤੀਆਂ ਗਈਆਂ"
 
-#: PkSession/PkInstallProvideFiles.cpp:54
+#: PkSession/PkInstallProvideFiles.cpp:53
 #, kde-format
 msgid "Do you want to search for this now?"
 msgid_plural "Do you want to search for these now?"
 msgstr[0] "ਕੀ ਤੁਸੀਂ ਇਸ ਲਈ ਖੋਜ ਕਰਨੀ ਚਾਹੁੰਦੇ ਹੋ?"
 msgstr[1] "ਕੀ ਤੁਸੀਂ ਇਹਨਾਂ ਲਈ ਹੁਣ ਖੋਜ ਕਰਨੀ ਚਾਹੁੰਦੇ ਹੋ?"
 
-#: PkSession/PkInstallProvideFiles.cpp:64
+#: PkSession/PkInstallProvideFiles.cpp:63
 #, kde-format
 msgid "A program wants to install a file"
 msgid_plural "A program wants to install files"
 msgstr[0] "ਪਰੋਗਰਾਮ ਫਾਇਲ ਇੰਸਟਾਲ ਕਰਨੀ ਚਾਹੁੰਦਾ ਹੈ"
 msgstr[1] "ਪਰੋਗਰਾਮ ਫਾਇਲਾਂ ਇੰਸਟਾਲ ਕਰਨੀਆਂ ਚਾਹੁੰਦਾ ਹੈ"
 
-#: PkSession/PkInstallProvideFiles.cpp:68
+#: PkSession/PkInstallProvideFiles.cpp:67
 #, kde-format
 msgid "The application %2 is asking to install a file"
 msgid_plural "The application %2 is asking to install files"
 msgstr[0] "%2 ਐਪਲੀਕੇਸ਼ਨ ਇੱਕ ਫਾਇਲ ਇੰਸਟਾਲ ਕਰਨ ਲਈ ਪੁੱਛ ਰਹੀ ਹੈ"
 msgstr[1] "%2 ਐਪਲੀਕੇਸ਼ਨ ਫਾਇਲਾਂ ਇੰਸਟਾਲ ਕਰਨ ਲਈ ਪੁੱਛ ਰਹੀ ਹੈ"
 
-#: PkSession/PkInstallProvideFiles.cpp:96
+#: PkSession/PkInstallProvideFiles.cpp:93
 #, kde-format
 msgid "Failed to install file"
 msgstr "ਫਾਇਲ ਇੰਸਟਾਲ ਕਰਨ ਲਈ ਫੇਲ੍ਹ"
 
-#: PkSession/PkInstallProvideFiles.cpp:97
+#: PkSession/PkInstallProvideFiles.cpp:94
 #, kde-format
 msgid "The %1 package already provides this file"
 msgstr "%1 ਪੈਕੇਜ ਪਹਿਲਾਂ ਹੀ ਇਹ ਫਾਇਲ ਦਿੰਦਾ ਹੈ"
 
-#: PkSession/PkInstallProvideFiles.cpp:103
+#: PkSession/PkInstallProvideFiles.cpp:100
 #, kde-format
 msgid "Failed to find package"
 msgstr "ਪੈਕੇਜ ਲੱਭਣ ਲਈ ਫੇਲ੍ਹ"
 
-#: PkSession/PkInstallProvideFiles.cpp:104
+#: PkSession/PkInstallProvideFiles.cpp:101
 #, kde-format
 msgid "The file could not be found in any packages"
 msgid_plural "The files could not be found in any packages"
 msgstr[0] "ਫਾਇਲ ਕਿਸੇ ਪੈਕੇਜ ਵਿੱਚ ਨਹੀਂ ਲੱਭੀ ਜਾ ਸਕੀ"
 msgstr[1] "ਫਾਇਲਾਂ ਕਿਸੇ ਪੈਕੇਜ ਵਿੱਚ ਲੱਭੀਆਂ ਜਾ ਸਕੀਆਂ"
 
-#: PkSession/PkIsInstalled.cpp:38
+#: PkSession/PkIsInstalled.cpp:40
 #, kde-format
 msgid "Querying if a Package is Installed"
 msgstr "ਕਿਊਰੀ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ, ਜੇ ਇੱਕ ਪੈਕੇਜ ਇੰਸਟਾਲ ਹੈ"
@@ -4248,61 +4237,61 @@ msgstr "ਅਣਜਾਣ ਗਲਤੀ ਆਈ"
 msgid "Remove Packages that Provides Files"
 msgstr "ਪੈਕੇਜ ਹਟਾਓ, ਜੋ ਫਾਇਲਾਂ ਦਿੰਦਾ ਹੈ"
 
-#: PkSession/PkRemovePackageByFiles.cpp:69
+#: PkSession/PkRemovePackageByFiles.cpp:68
 #, kde-format
 msgid "Do you want to remove the following application?"
 msgid_plural "Do you want to remove the following applications?"
 msgstr[0] "ਕੀ ਤੁਸੀਂ ਅੱਗੇ ਦਿੱਤੀ ਐਪਲੀਕੇਸ਼ਨ ਹਟਾਉਨਾ ਚਾਹੁੰਦੇ ਹੋ?"
 msgstr[1] "ਕੀ ਤੁਸੀਂ ਹੇਠ ਦਿੱਤੀਆਂ ਐਪਲੀਕੇਸ਼ਨ ਨੂੰ ਹਟਾਉਣਾ ਚਾਹੁੰਦੇ ਹੋ?"
 
-#: PkSession/PkRemovePackageByFiles.cpp:73
+#: PkSession/PkRemovePackageByFiles.cpp:72
 #, kde-format
 msgid "Do you want to search for a package providing this file?"
 msgid_plural "Do you want to search for a package providing these files?"
 msgstr[0] "ਕੀ ਤੁਸੀਂ ਇਹ ਫਾਇਲ ਦੇਣ ਵਾਲੇ ਪੈਕੇਜ ਨੂੰ ਲੱਭਣਾ ਚਾਹੁੰਦੇ ਹੋ?"
 msgstr[1] "ਕੀ ਤੁਸੀਂ ਇਹ ਫਾਇਲਾਂ ਦੇਣ ਵਾਲੇ ਪੈਕੇਜ ਨੂੰ ਲੱਭਣਾ ਚਾਹੁੰਦੇ ਹੋ?"
 
-#: PkSession/PkRemovePackageByFiles.cpp:84
+#: PkSession/PkRemovePackageByFiles.cpp:83
 #, kde-format
 msgid "An application is asking to remove an application"
 msgid_plural "An application is asking to remove applications"
 msgstr[0] "ਐਪਲੀਕੇਸ਼ਨ ਇੱਕ ਐਪਲੀਕੇਸ਼ਨ ਨੂੰ ਹਟਾਉਣ ਲਈ ਪੁੱਛ ਰਿਹਾ ਹੈ"
 msgstr[1] "ਐਪਲੀਕੇਸ਼ਨ ਹੋਰ ਐਪਲੀਕੇਸ਼ਨਾਂ ਨੂੰ ਹਟਾਉਣ ਲਈ ਪੁੱਛ ਰਿਹਾ ਹੈ"
 
-#: PkSession/PkRemovePackageByFiles.cpp:88
+#: PkSession/PkRemovePackageByFiles.cpp:87
 #, kde-format
 msgid "An application is asking to remove a file"
 msgid_plural "An application is asking to remove files"
 msgstr[0] "ਐਪਲੀਕੇਸ਼ਨ ਇੱਕ ਫਾਇਲ ਹਟਾਉਣ ਲਈ ਪੁੱਛ ਰਹੀ ਹੈ"
 msgstr[1] "ਐਪਲੀਕੇਸ਼ਨ ਫਾਇਲਾਂ ਹਟਾਉਣ ਲਈ ਪੁੱਛ ਰਹੀ ਹੈ"
 
-#: PkSession/PkRemovePackageByFiles.cpp:94
+#: PkSession/PkRemovePackageByFiles.cpp:93
 #, kde-format
 msgid "The application <i>%2</i> is asking to remove an application"
 msgid_plural "The application <i>%2</i> is asking to remove applications"
 msgstr[0] "<i>%2</i> ਐਪਲੀਕੇਸ਼ਨ ਇੱਕ ਐਪਲੀਕੇਸ਼ਨ ਨੂੰ ਹਟਾਉਣ ਲਈ ਪੁੱਛ ਰਹੀ ਹੈ"
 msgstr[1] "<i>%2</i> ਐਪਲੀਕੇਸ਼ਨ ਐਪਲੀਕੇਸ਼ਨਾਂ ਨੂੰ ਹਟਾਉਣ ਲਈ ਪੁੱਛ ਰਹੀ ਹੈ"
 
-#: PkSession/PkRemovePackageByFiles.cpp:99
+#: PkSession/PkRemovePackageByFiles.cpp:98
 #, kde-format
 msgid "The application <i>%2</i> is asking to remove a file"
 msgid_plural "The application <i>%2</i> is asking to remove files"
 msgstr[0] "<i>%2</i> ਐਪਲੀਕੇਸ਼ਨ ਇੱਕ ਫਾਇਲ ਹਟਾਉਣ ਲਈ ਪੁੱਛ ਰਹੀ ਹੈ"
 msgstr[1] "<i>%2</i> ਐਪਲੀਕੇਸ਼ਨ ਫਾਇਲਾਂ ਹਟਾਉਣ ਲਈ ਪੁੱਛ ਰਹੀ ਹੈ"
 
-#: PkSession/PkRemovePackageByFiles.cpp:105
+#: PkSession/PkRemovePackageByFiles.cpp:104
 #, kde-format
 msgid "No application was found"
 msgstr "ਕੋਈ ਐਪਲੀਕੇਸ਼ਨ ਨਹੀਂ ਲੱਭੀ"
 
-#: PkSession/PkRemovePackageByFiles.cpp:144
+#: PkSession/PkRemovePackageByFiles.cpp:141
 #, kde-format
 msgid "The file could not be found in any installed package"
 msgid_plural "The files could not be found in any installed package"
 msgstr[0] "ਫਾਇਲ ਕਿਸੇ ਇੰਸਟਾਲ ਪੈਕੇਜ ਵਿੱਚ ਨਹੀਂ ਲੱਭੀ"
 msgstr[1] "ਫਾਇਲ ਕਿਸੇ ਇੰਸਟਾਲ ਪੈਕੇਜ ਵਿੱਚ ਨਹੀਂ ਲੱਭੀ"
 
-#: PkSession/PkSearchFile.cpp:40
+#: PkSession/PkSearchFile.cpp:42
 #, kde-format
 msgid "Search Packages that Provides Files"
 msgstr "ਫਾਇਲਾਂ ਦੇਣ ਵਾਲੇ ਪੈਕੇਜ ਲੱਭੋ"
@@ -4319,44 +4308,44 @@ msgid_plural "The following packages were found"
 msgstr[0] "ਹੇਠ ਦਿੱਤਾ ਪੈਕੇਜ ਲੱਭਿਆ"
 msgstr[1] "ਹੇਠ ਦਿੱਤੇ ਪੈਕੇਜ ਲੱਭੇ"
 
-#: PkSession/SessionTask.cpp:368
+#: PkSession/SessionTask.cpp:374
 #, kde-format
 msgid "There are no packages to Install or Remove"
 msgstr "ਇੰਸਟਾਲ ਕਰਨ ਜਾਂ ਹਟਾਉਣ ਲਈ ਕੋਈ ਪੈਕੇਜ ਨਹੀਂ ਹੈ"
 
-#: PkSession/SessionTask.cpp:369
+#: PkSession/SessionTask.cpp:375
 #, kde-format
 msgid "This action should not happen"
 msgstr "ਇਹ ਕਾਰਵਾਈ ਨਹੀਂ ਹੋਣੀ ਚਾਹੀਦੀ ਸੀ"
 
-#: PkSession/SessionTask.cpp:400
+#: PkSession/SessionTask.cpp:404
 #, kde-format
 msgid "Could not find"
 msgstr "ਨਹੀਂ ਲੱਭਿਆ ਜਾ ਸਕਿਆ"
 
-#: PkSession/SessionTask.cpp:401 PkSession/SessionTask.cpp:410
+#: PkSession/SessionTask.cpp:405 PkSession/SessionTask.cpp:414
 #, kde-format
 msgid "No packages were found that meet the request"
 msgstr "ਕੋਈ ਪੈਕੇਜ ਨਹੀਂ ਮਿਲਿਆ, ਜੋ ਮੰਗ ਪੂਰੀ ਕਰ ਸਕੇ"
 
-#: PkSession/SessionTask.cpp:409
+#: PkSession/SessionTask.cpp:413
 #, kde-format
 msgid "Failed to find"
 msgstr "ਲੱਭਣ ਲਈ ਫੇਲ੍ਹ"
 
 #. i18n("Failed to commit transaction"),
-#. PkStrings::errorMessage(m_pkTransaction->error()));
-#: PkSession/SessionTask.cpp:431
+#. PkStrings::errsearchFailedorMessage(m_pkTransaction->error()));
+#: PkSession/SessionTask.cpp:434
 #, kde-format
 msgid "Transaction did not finish with success"
 msgstr "ਟਰਾਂਸੈਕਸ਼ਨ ਸਫ਼ਲਤਾ ਨਾਲ ਪੂਰੀ ਨਹੀਂ ਕੀਤੀ ਜਾ ਸਕੀ"
 
-#: PkSession/SessionTask.cpp:437
+#: PkSession/SessionTask.cpp:440
 #, kde-format
 msgid "Task completed"
 msgstr "ਕੰਮ ਪੂਰਾ ਹੋਇਆ"
 
-#: PkSession/SessionTask.cpp:437
+#: PkSession/SessionTask.cpp:440
 #, kde-format
 msgid "All operations were committed successfully"
 msgstr "ਸਭ ਕਾਰਵਾਈਆਂ ਠੀਕ ਤਰ੍ਹਾਂ ਪੂਰੀਆਂ ਕੀਤੀਆਂ ਗਈਆਂ ਹਨ"

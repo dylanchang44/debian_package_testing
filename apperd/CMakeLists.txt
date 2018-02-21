@@ -23,18 +23,16 @@ add_library(kded_apperd MODULE ${kded_apperd_SRCS})
 target_link_libraries(kded_apperd
     KF5::WidgetsAddons
     KF5::KIOFileWidgets
-    KF5::KDELibs4Support
-    KF5::IconThemes
     KF5::Notifications
     KF5::DBusAddons
-    ${PackageKitQt5_LIBRARIES}
     PW::KWorkspace
+    PK::packagekitqt5
     apper_private
 )
 
 if(DEBCONF_SUPPORT)
-target_link_libraries(kded_apperd DebconfKDE::Main)
-endif(DEBUCONF_SUPPORT)
+    target_link_libraries(kded_apperd DebconfKDE::Main)
+endif()
 
 set_target_properties(kded_apperd PROPERTIES INSTALL_RPATH ${CMAKE_INSTALL_FULL_LIBDIR}/apper)
 

@@ -36,8 +36,7 @@ set(libapper_SRCS
 )
 
 if(APPSTREAM)
-    pkg_check_modules(GLIB2 REQUIRED glib-2.0>=2.36)
-    pkg_check_modules(APPSTREAM REQUIRED appstream>=0.10.0)
+    find_package(AppStreamQt REQUIRED)
 
     set(libapper_SRCS ${libapper_SRCS} AppStream.cpp)
 endif()
@@ -53,21 +52,14 @@ ki18n_wrap_ui(libapper_SRCS
 
 add_library(apper_private SHARED ${libapper_SRCS})
 
-include_directories(${CMAKE_CURRENT_BINARY_DIR}
-    ${GLIB2_INCLUDE_DIR}
-    ${APPSTREAM_INCLUDE_DIRS}
-)
-
 target_link_libraries(apper_private
     KF5::WidgetsAddons
     KF5::KIOFileWidgets
-    KF5::KDELibs4Support
     KF5::IconThemes
-    ${QT_QTSQL_LIBRARY}
-    ${PackageKitQt5_LIBRARIES}
-    ${APPSTREAM_LIBRARIES}
+    KF5::I18n
+    Qt5::Core
+    PK::packagekitqt5
+    AppStreamQt
 )
-
-qt5_use_modules(apper_private Quick Core Sql)
 
 install(TARGETS apper_private DESTINATION ${CMAKE_INSTALL_LIBDIR}/apper)

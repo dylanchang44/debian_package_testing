@@ -21,7 +21,7 @@
 #include "CustomProgressBar.h"
 
 #include <KLocalizedString>
-#include <KGlobal>
+#include <KFormat>
 
 CustomProgressBar::CustomProgressBar(QWidget *parent)
  : QProgressBar(parent), m_remaining(0)
@@ -35,7 +35,7 @@ CustomProgressBar::~CustomProgressBar()
 QString CustomProgressBar::text() const
 {
     if (m_remaining) {
-        return i18n("%1 remaining", KGlobal::locale()->prettyFormatDuration(m_remaining * 1000));
+        return i18n("%1 remaining", KFormat().formatSpelloutDuration(m_remaining * 1000));
     } else {
         return QProgressBar::text();
     }
@@ -46,4 +46,4 @@ void CustomProgressBar::setRemaining(uint remaining)
     m_remaining = remaining;
 }
 
-#include "CustomProgressBar.moc"
+#include "moc_CustomProgressBar.cpp"

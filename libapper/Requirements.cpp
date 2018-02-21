@@ -1,5 +1,5 @@
 /***************************************************************************
- *   Copyright (C) 2008-2011 by Daniel Nicoletti                           *
+ *   Copyright (C) 2008-2018 by Daniel Nicoletti                           *
  *   dantti12@gmail.com                                                    *
  *                                                                         *
  *   This program is free software; you can redistribute it and/or modify  *
@@ -26,55 +26,54 @@
 #include "ApplicationSortFilterModel.h"
 
 #include <QToolButton>
-#include <KPushButton>
-#include <KDebug>
-#include <KGlobal>
+#include <QPushButton>
+#include <QLoggingCategory>
+#include <KFormat>
+#include <KConfig>
+#include <KConfigGroup>
 
 Requirements::Requirements(PackageModel *model, QWidget *parent) :
-    KDialog(parent),
-    m_embed(false),
-    m_shouldShow(true),
-    m_untrustedButton(0),
+    QDialog(parent),
     ui(new Ui::Requirements)
 {
+    ui->setupUi(this);
+
     setAttribute(Qt::WA_DeleteOnClose);
 
-    ui->setupUi(mainWidget());
-    connect(ui->confirmCB, SIGNAL(toggled(bool)), this, SLOT(on_confirmCB_Toggled(bool)));
+    connect(ui->confirmCB, &QCheckBox::toggled, this, &Requirements::confirmCBChanged);
 
     ApplicationSortFilterModel *proxy = new ApplicationSortFilterModel(this);
     proxy->setSourceModel(model);
     ui->packageView->setModel(proxy);
-    ui->packageView->header()->setResizeMode(PackageModel::NameCol, QHeaderView::ResizeToContents);
+    ui->packageView->header()->setSectionResizeMode(PackageModel::NameCol, QHeaderView::ResizeToContents);
     ui->packageView->header()->hideSection(PackageModel::ActionCol);
     ui->packageView->header()->hideSection(PackageModel::ArchCol);
     ui->packageView->header()->hideSection(PackageModel::CurrentVersionCol);
     ui->packageView->header()->hideSection(PackageModel::OriginCol);
     ui->packageView->header()->hideSection(PackageModel::SizeCol);
 
-    m_hideAutoConfirm = false;
+    setWindowTitle(i18n("Additional changes"));
+    setWindowIcon(QIcon::fromTheme(QLatin1String("dialog-warning")));
+    ui->buttonBox->button(QDialogButtonBox::Ok)->setText(i18n("Continue"));
 
-    setCaption(i18n("Additional changes"));
-    setWindowIcon(QIcon::fromTheme("dialog-warning"));
-    setButtons(KDialog::Ok | KDialog::Cancel | KDialog::Help);
-    setButtonText(KDialog::Ok, i18n("Continue"));
     // restore size
     setMinimumSize(QSize(600,480));
-    setInitialSize(QSize(600,600));
-    KConfig config("apper");
+//    setInitialSize(QSize(600,600));
+    KConfig config(QLatin1String("apper"));
     KConfigGroup requirementsDialog(&config, "requirementsDialog");
-    restoreDialogSize(requirementsDialog);
+//    restoreGeometry(requirementsDialog.readEntry("geometry").toByteArray());
+//    restoreDialogSize(requirementsDialog);
 
-    button(KDialog::Help)->setFlat(true);
-    button(KDialog::Help)->setEnabled(false);
-    button(KDialog::Help)->setIcon(QIcon::fromTheme("download"));
+    ui->downloadT->hide();
+    ui->downloadI->hide();
+    ui->downloadI->setPixmap(QIcon::fromTheme(QLatin1String("download")).pixmap(32, 32));
 
     m_buttonGroup = new QButtonGroup(this);
-    connect(m_buttonGroup, SIGNAL(buttonClicked(int)), this, SLOT(actionClicked(int)));
+    connect(m_buttonGroup, QOverload<int>::of(&QButtonGroup::buttonClicked), this, &Requirements::actionClicked);
 
     int count = 0;
     if (int c = model->countInfo(Transaction::InfoRemoving)) {
-        QToolButton *button = new QToolButton(this);
+        auto button = new QToolButton(this);
         button->setSizePolicy(QSizePolicy::Minimum, QSizePolicy::Fixed);
         button->setCheckable(true);
         button->setAutoRaise(true);
@@ -89,7 +88,7 @@ Requirements::Requirements(PackageModel *model, QWidget *parent) :
     }
 
     if (int c = model->countInfo(Transaction::InfoDowngrading)) {
-        QToolButton *button = new QToolButton(this);
+        auto button = new QToolButton(this);
         button->setSizePolicy(QSizePolicy::Minimum, QSizePolicy::Fixed);
         button->setCheckable(true);
         button->setAutoRaise(true);
@@ -104,7 +103,7 @@ Requirements::Requirements(PackageModel *model, QWidget *parent) :
     }
 
     if (int c = model->countInfo(Transaction::InfoReinstalling)) {
-        QToolButton *button = new QToolButton(this);
+        auto button = new QToolButton(this);
         button->setSizePolicy(QSizePolicy::Minimum, QSizePolicy::Fixed);
         button->setCheckable(true);
         button->setAutoRaise(true);
@@ -117,7 +116,7 @@ Requirements::Requirements(PackageModel *model, QWidget *parent) :
     }
 
     if (int c = model->countInfo(Transaction::InfoInstalling)) {
-        QToolButton *button = new QToolButton(this);
+        auto button = new QToolButton(this);
         button->setSizePolicy(QSizePolicy::Minimum, QSizePolicy::Fixed);
         button->setCheckable(true);
         button->setAutoRaise(true);
@@ -130,7 +129,7 @@ Requirements::Requirements(PackageModel *model, QWidget *parent) :
     }
 
     if (int c = model->countInfo(Transaction::InfoUpdating)) {
-        QToolButton *button = new QToolButton(this);
+        auto button = new QToolButton(this);
         button->setSizePolicy(QSizePolicy::Minimum, QSizePolicy::Fixed);
         button->setCheckable(true);
         button->setAutoRaise(true);
@@ -150,7 +149,7 @@ Requirements::Requirements(PackageModel *model, QWidget *parent) :
         m_untrustedButton->setIconSize(QSize(32, 32));
         m_untrustedButton->setToolButtonStyle(Qt::ToolButtonTextBesideIcon);
         m_untrustedButton->setText(i18np("1 untrusted package", "%1 untrusted packages", c));
-        m_untrustedButton->setIcon(QIcon::fromTheme("security-low"));
+        m_untrustedButton->setIcon(QIcon::fromTheme(QLatin1String("security-low")));
         m_untrustedButton->setVisible(false);
         ui->verticalLayout->insertWidget(count++, m_untrustedButton);
     }
@@ -175,9 +174,9 @@ Requirements::Requirements(PackageModel *model, QWidget *parent) :
 
 Requirements::~Requirements()
 {
-    KConfig config("apper");
+    KConfig config(QLatin1String("apper"));
     KConfigGroup requirementsDialog(&config, "requirementsDialog");
-    saveDialogSize(requirementsDialog);
+    requirementsDialog.writeEntry("geometry", saveGeometry());
 
     delete ui;
 }
@@ -196,15 +195,15 @@ void Requirements::setEmbedded(bool embedded)
 void Requirements::setDownloadSizeRemaining(qulonglong size)
 {
     if (size) {
-        QString text;
-        text = i18nc("how many bytes are required for download",
-                     "Need to get %1 of archives",
-                     KGlobal::locale()->formatByteSize(size));
-        button(KDialog::Help)->setText(text);
-        button(KDialog::Help)->setToolTip(text);
-        button(KDialog::Help)->show();
+        QString text = i18nc("how many bytes are required for download",
+                             "Need to get %1 of archives",
+                             KFormat().formatByteSize(size));
+        ui->downloadT->setText(text);
+        ui->downloadT->show();
+        ui->downloadI->show();
     } else {
-        button(KDialog::Help)->hide();
+        ui->downloadT->hide();
+        ui->downloadI->hide();
     }
 }
 
@@ -219,20 +218,21 @@ bool Requirements::shouldShow() const
     return (m_shouldShow && !ui->confirmCB->isChecked());
 }
 
-void Requirements::slotButtonClicked(int button)
+void Requirements::slotButtonClicked(int)
 {
-    if (button == KDialog::Ok &&
-            m_untrustedButton &&
-            !m_untrustedButton->isVisible()) {
-        showUntrustedButton();
-    } else {
-        KDialog::slotButtonClicked(button);
-    }
+    // FIXME
+//    if (button == KDialog::Ok &&
+//            m_untrustedButton &&
+//            !m_untrustedButton->isVisible()) {
+//        showUntrustedButton();
+//    } else {
+//        KDialog::slotButtonClicked(button);
+//    }
 }
 
-void Requirements::on_confirmCB_Toggled(bool checked)
+void Requirements::confirmCBChanged(bool checked)
 {
-    KConfig config("apper");
+    KConfig config(QLatin1String("apper"));
     KConfigGroup requirementsDialog(&config, "requirementsDialog");
 
     if (!m_hideAutoConfirm) {
@@ -243,17 +243,14 @@ void Requirements::on_confirmCB_Toggled(bool checked)
 
 void Requirements::actionClicked(int type)
 {
-    ApplicationSortFilterModel *proxy;
-    proxy = qobject_cast<ApplicationSortFilterModel*>(ui->packageView->model());
+    auto proxy = qobject_cast<ApplicationSortFilterModel*>(ui->packageView->model());
     proxy->setInfoFilter(static_cast<Transaction::Info>(type));
 }
 
 void Requirements::showUntrustedButton()
 {
     // Clear the other buttons
-    foreach (QAbstractButton *button, m_buttonGroup->buttons()) {
-        delete button;
-    }
+    qDeleteAll(m_buttonGroup->buttons());
 
     // Hide the auto confirm button since we will be showing this dialog anyway
     ui->confirmCB->setVisible(false);
@@ -265,4 +262,4 @@ void Requirements::showUntrustedButton()
     m_untrustedButton->click();
 }
 
-#include "Requirements.moc"
+#include "moc_Requirements.cpp"

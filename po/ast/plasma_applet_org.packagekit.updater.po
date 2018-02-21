@@ -1,13 +1,13 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
 #
-# enolp <enolp@softastur.org>, 2016.
+# enolp <enolp@softastur.org>, 2016, 2017.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2015-10-29 01:54+0000\n"
-"PO-Revision-Date: 2016-12-19 01:52+0100\n"
+"PO-Revision-Date: 2017-02-03 23:48+0100\n"
 "Last-Translator: enolp <enolp@softastur.org>\n"
 "Language-Team: Asturian <alministradores@softastur.org>\n"
 "Language: ast\n"
@@ -19,37 +19,37 @@ msgstr ""
 
 #: package/contents/ui/ChangelogView.qml:31
 msgid "Failed to get update details"
-msgstr ""
+msgstr "Fallu al consiguir los detalles d'anovamientos"
 
 #: package/contents/ui/ChangelogView.qml:94
 msgid "Version: %1"
-msgstr ""
+msgstr "Versión: %1"
 
 #: package/contents/ui/ChangelogView.qml:100
 msgid "Updates: %1"
-msgstr ""
+msgstr "Anovamientos: %1"
 
 #: package/contents/ui/main.qml:39
 msgid "Software Updates"
-msgstr ""
+msgstr "Anovamientos de software"
 
 #: package/contents/ui/main.qml:65 package/contents/ui/main.qml:218
 msgid "Check for new updates"
-msgstr ""
+msgstr "Comprobar anovamientos"
 
 #: package/contents/ui/main.qml:119
 msgid "Failed to get updates"
-msgstr ""
+msgstr "Fallu al consiguir los anovamientos"
 
 #: package/contents/ui/main.qml:164
 msgid "You have one update"
 msgid_plural "You have %1 updates"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Tienes un anovamientu"
+msgstr[1] "Tienes %1 anovamientos"
 
 #: package/contents/ui/main.qml:169
 msgid "Your system is up to date"
-msgstr ""
+msgstr "El to sistema ta anováu"
 
 #: package/contents/ui/Transaction.qml:76
 msgid "Cancel"
@@ -57,4 +57,4 @@ msgstr "Encaboxar"
 
 #: package/contents/ui/Updates.qml:79
 msgid "Install"
-msgstr ""
+msgstr "Instalar"

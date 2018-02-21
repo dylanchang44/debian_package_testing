@@ -25,7 +25,9 @@
 #include <PkStrings.h>
 
 #include <KLocalizedString>
-#include <KDebug>
+#include <QLoggingCategory>
+
+Q_DECLARE_LOGGING_CATEGORY(APPER_SESSION)
 
 PkIsInstalled::PkIsInstalled(const QString &package_name,
                              const QString &interaction,
@@ -37,13 +39,11 @@ PkIsInstalled::PkIsInstalled(const QString &package_name,
 {
     setWindowTitle(i18n("Querying if a Package is Installed"));
 
-    PkTransaction *transaction = new PkTransaction(this);
+    auto transaction = new PkTransaction(this);
     transaction->setupTransaction(Daemon::resolve(m_packageName, Transaction::FilterInstalled));
     setTransaction(Transaction::RoleResolve, transaction);
-    connect(transaction, SIGNAL(finished(PkTransaction::ExitStatus)),
-            this, SLOT(searchFinished(PkTransaction::ExitStatus)), Qt::UniqueConnection);
-    connect(transaction, SIGNAL(package(PackageKit::Transaction::Info,QString,QString)),
-            this, SLOT(addPackage(PackageKit::Transaction::Info,QString,QString)));
+    connect(transaction, &PkTransaction::finished, this, &PkIsInstalled::searchFinished, Qt::UniqueConnection);
+    connect(transaction, &PkTransaction::package, this, &PkIsInstalled::addPackage);
 }
 
 PkIsInstalled::~PkIsInstalled()
@@ -52,7 +52,7 @@ PkIsInstalled::~PkIsInstalled()
 
 void PkIsInstalled::searchFinished(PkTransaction::ExitStatus status)
 {
-    kDebug();
+    qCDebug(APPER_SESSION);
     if (status == PkTransaction::Success) {
         QDBusMessage reply = m_message.createReply();
         reply << (bool) foundPackagesSize();
@@ -64,4 +64,4 @@ void PkIsInstalled::searchFinished(PkTransaction::ExitStatus status)
     }
 }
 
-#include "PkIsInstalled.moc"
+#include "moc_PkIsInstalled.cpp"

@@ -1,9 +1,7 @@
-project(Apper)
 cmake_minimum_required(VERSION 3.0)
+cmake_policy(SET CMP0063 NEW)
 
-set(APPER_VERSION 0.9.3)
-
-set (QT_MIN_VERSION "5.2.0")
+project(Apper VERSION 1.0.0)
 
 find_package(ECM REQUIRED NO_MODULE)
 set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH})
@@ -19,7 +17,7 @@ include(KDECMakeSettings)
 include(FeatureSummary)
 include(ECMInstallIcons)
 
-find_package(Qt5 ${QT_MIN_VERSION} CONFIG REQUIRED Core DBus Widgets Quick Sql XmlPatterns)
+find_package(Qt5 5.7.0 CONFIG REQUIRED Core DBus Widgets Quick Sql XmlPatterns)
 
 # Load the frameworks we need
 find_package(KF5 REQUIRED COMPONENTS
@@ -31,16 +29,23 @@ find_package(KF5 REQUIRED COMPONENTS
   DBusAddons
   KIO
   Notifications
-  KDELibs4Support
+  IconThemes
 )
 find_package(LibKWorkspace REQUIRED)
 find_package(KDED REQUIRED)
-find_package(PackageKitQt5 0.9.0 REQUIRED)
-find_package(LibKWorkspace REQUIRED)
+find_package(PackageKitQt5 1.0.0 REQUIRED)
 
 #
 # Options
 #
+
+# The various parts of Apper that can be built, or not.
+option(BUILD_APPER "Build the Apper application" ON)
+option(BUILD_APPERD "Build the Apper daemon" ON)
+option(BUILD_DECLARATIVE "Build the Qt Quick plugins" ON)
+option(BUILD_PKSESSION "Build the PkSession helper application" ON)
+option(BUILD_PLASMOID "Build the update notifier plasmoid" ON)
+
 # Only for Debian based systems
 option(DEBCONF_SUPPORT "Build Apper with debconf support" OFF)
 
@@ -94,7 +99,6 @@ if(MAINTAINER)
 endif(MAINTAINER)
 add_definitions(${MAINTAINER_CFLAGS})
 
-add_definitions("-std=gnu++11")
 add_definitions(
   -DQT_USE_QSTRINGBUILDER
   -DQT_STRICT_ITERATORS
@@ -102,6 +106,10 @@ add_definitions(
   -DQT_NO_CAST_FROM_BYTEARRAY
   -DQT_NO_SIGNALS_SLOTS_KEYWORDS
   -DQT_USE_FAST_OPERATOR_PLUS
+  -DQT_NO_URL_CAST_FROM_STRING
+  -DQT_NO_CAST_TO_ASCII
+  -DQT_NO_CAST_FROM_ASCII
+  -DQT_DISABLE_DEPRECATED_BEFORE=0x050900
 )
 
 #
@@ -117,18 +125,32 @@ include_directories(${CMAKE_SOURCE_DIR}
 # Subcomponents
 #
 add_subdirectory(libapper)
-add_subdirectory(ApperKCM)
-add_subdirectory(Apper)
-add_subdirectory(PkSession)
-add_subdirectory(apperd)
-add_subdirectory(declarative-plugins)
-add_subdirectory(plasmoid)
-add_subdirectory(doc)
+if(BUILD_APPER)
+    add_subdirectory(Apper)
+endif(BUILD_APPER)
+if(BUILD_PKSESSION)
+    add_subdirectory(PkSession)
+endif(BUILD_PKSESSION)
+if(BUILD_APPERD)
+    add_subdirectory(apperd)
+endif(BUILD_APPERD)
+if(BUILD_DECLARATIVE)
+#    add_subdirectory(declarative-plugins)
+endif(BUILD_DECLARATIVE)
+if(BUILD_PLASMOID)
+#    add_subdirectory(plasmoid)
+endif(BUILD_PLASMOID)
 if(LIMBA)
     add_subdirectory(AppSetup)
 endif()
+add_subdirectory(doc)
 
 feature_summary(WHAT ALL FATAL_ON_MISSING_REQUIRED_PACKAGES)
 
 find_package(KF5I18n CONFIG REQUIRED)
 ki18n_install(po)
+
+  find_package(KF5DocTools CONFIG)
+  if(KF5DocTools_FOUND)
+    kdoctools_install(po)
+  endif()

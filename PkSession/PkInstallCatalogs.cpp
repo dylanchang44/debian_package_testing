@@ -27,11 +27,13 @@
 #include <KLocalizedString>
 #include <KMessageBox>
 
-#include <KDebug>
+#include <QLoggingCategory>
 
 #include <QFile>
 
 #include <Daemon>
+
+Q_DECLARE_LOGGING_CATEGORY(APPER_SESSION)
 
 PkInstallCatalogs::PkInstallCatalogs(uint xid,
                                      const QStringList &files,
@@ -40,14 +42,13 @@ PkInstallCatalogs::PkInstallCatalogs(uint xid,
                                      QWidget *parent)
  : SessionTask(xid, interaction, message, parent),
    m_interaction(interaction),
-   m_message(message),
-   m_maxResolve(100)
+   m_message(message)
 {
     setWindowTitle(i18n("Install Packages Catalogs"));
 
     // Find out how many packages PackageKit is able to resolve
-    QFile file("/etc/PackageKit/PackageKit.conf");
-    QRegExp rx("\\s*MaximumItemsToResolve=(\\d+)", Qt::CaseSensitive);
+    QFile file(QLatin1String("/etc/PackageKit/PackageKit.conf"));
+    QRegExp rx(QLatin1String("\\s*MaximumItemsToResolve=(\\d+)"), Qt::CaseSensitive);
     if (file.open(QIODevice::ReadOnly | QIODevice::Text)) {
         QTextStream in(&file);
         while (!in.atEnd()) {
@@ -58,14 +59,13 @@ PkInstallCatalogs::PkInstallCatalogs(uint xid,
         }
     }
 
-    QStringList mimes;
-    mimes << "application/x-catalog";
-    mimes << "text/plain";
+    const QStringList mimes{
+        QLatin1String("application/x-catalog"), QLatin1String("text/plain")
+    };
     m_introDialog = new IntroDialog(this);
     m_introDialog->acceptDrops(i18n("You can drop more catalogs in here"));
     m_model = new FilesModel(files, mimes, this);
-    connect(m_model, SIGNAL(rowsInserted(QModelIndex,int,int)),
-            this, SLOT(modelChanged()));
+    connect(m_model, &FilesModel::rowsInserted, this, &PkInstallCatalogs::modelChanged);
     m_introDialog->setModel(m_model);
     setMainWidget(m_introDialog);
 
@@ -78,7 +78,7 @@ PkInstallCatalogs::~PkInstallCatalogs()
 
 void PkInstallCatalogs::modelChanged()
 {
-    QStringList files = m_model->files();
+    const QStringList files = m_model->files();
     enableButtonOk(!files.isEmpty());
     QString description;
     if (files.isEmpty()) {
@@ -107,28 +107,28 @@ void PkInstallCatalogs::modelChanged()
 
 void PkInstallCatalogs::search()
 {
-    QString distroId = Daemon::global()->distroID();
-    QStringList parts = distroId.split(';');
+    const QString distroId = Daemon::global()->distroID();
+    const QStringList parts = distroId.split(QLatin1Char(';'));
     if (parts.size() != 3) {
-        sendErrorFinished(Failed, "invalid distribution id, please fill a bug against you distribution backend");
+        sendErrorFinished(Failed, QLatin1String("invalid distribution id, please fill a bug against you distribution backend"));
         return;
     }
-    QString distro = parts.at(0);
-    QString version = parts.at(1);
-    QString arch = parts.at(2);
+    const QString distro = parts.at(0);
+    const QString version = parts.at(1);
+    const QString arch = parts.at(2);
 
     QStringList rxActions;
     Transaction::Roles roles = Daemon::global()->roles();
     if (roles & Transaction::RoleResolve) {
-        rxActions << "InstallPackages";
+        rxActions << QLatin1String("InstallPackages");
     }
 
     if (roles & Transaction::RoleWhatProvides) {
-        rxActions << "InstallProvides";
+        rxActions << QLatin1String("InstallProvides");
     }
 
     if (roles & Transaction::RoleSearchFile) {
-        rxActions << "InstallFiles";
+        rxActions << QLatin1String("InstallFiles");
     }
 
     if (rxActions.isEmpty()) {
@@ -138,7 +138,7 @@ void PkInstallCatalogs::search()
                     i18n("Your backend does not support any of the needed "
                          "methods to install a catalog"));
         }
-        sendErrorFinished(Failed, "not supported by backend");
+        sendErrorFinished(Failed, QLatin1String("not supported by backend"));
         return;
     }
 
@@ -148,24 +148,25 @@ void PkInstallCatalogs::search()
     // matches after '=' but ';' at the end
     QString pattern;
     pattern = QString(
-                "^(%1)(?:\\((?:.*%2[^;]*(?:;(?:.*%3[^;]*(?:;(?:.*%4[^;]*)?)?)?)?)?\\))?=(.*[^;$])").arg(rxActions.join("|")).arg(distro).arg(version).arg(arch);
+                QLatin1String("^(%1)(?:\\((?:.*%2[^;]*(?:;(?:.*%3[^;]*(?:;(?:.*%4[^;]*)?)?)?)?)?\\))?=(.*[^;$])"))
+            .arg(rxActions.join(QLatin1Char('|')), distro, version, arch);
     QRegExp rx(pattern, Qt::CaseInsensitive);
 
     QStringList filesFailedToOpen;
-    QStringList files = m_model->files();
+    const QStringList files = m_model->files();
     if (!files.isEmpty()) {
-        foreach (const QString &file, files) {
+        for (const QString &file : files) {
             QFile catalog(file);
             if (catalog.open(QIODevice::ReadOnly | QIODevice::Text)) {
                 QTextStream in(&catalog);
                 while (!in.atEnd()) {
                     if (rx.indexIn(in.readLine()) != -1) {
-                        if (rx.cap(1).compare("InstallPackages", Qt::CaseInsensitive) == 0) {
-                            m_installPackages.append(rx.cap(2).split(';'));
-                        } else if (rx.cap(1).compare("InstallProvides", Qt::CaseInsensitive) == 0) {
-                            m_installProvides.append(rx.cap(2).split(';'));
-                        } else if (rx.cap(1).compare("InstallFiles", Qt::CaseInsensitive) == 0) {
-                            m_installFiles.append(rx.cap(2).split(';'));
+                        if (rx.cap(1).compare(QLatin1String("InstallPackages"), Qt::CaseInsensitive) == 0) {
+                            m_installPackages.append(rx.cap(2).split(QLatin1Char(';')));
+                        } else if (rx.cap(1).compare(QLatin1String("InstallProvides"), Qt::CaseInsensitive) == 0) {
+                            m_installProvides.append(rx.cap(2).split(QLatin1Char(';')));
+                        } else if (rx.cap(1).compare(QLatin1String("InstallFiles"), Qt::CaseInsensitive) == 0) {
+                            m_installFiles.append(rx.cap(2).split(QLatin1Char(';')));
                         }
                     }
                 }
@@ -185,7 +186,7 @@ void PkInstallCatalogs::search()
                            i18np("Catalog %2 failed to open",
                                  "Catalogs %2 failed to open",
                                  filesFailedToOpen.size(),
-                                 filesFailedToOpen.join(",")),
+                                 filesFailedToOpen.join(QLatin1Char(','))),
                            i18n("Failed to open"));
     }
 
@@ -212,18 +213,16 @@ void PkInstallCatalogs::searchFinished(PkTransaction::ExitStatus status)
                 resolve.append(m_installPackages.takeFirst());
                 ++count;
             }
-            kDebug() << "m_installPackages" << m_maxResolve << m_installPackages.size() << resolve.size();
+            qCDebug(APPER_SESSION) << "m_installPackages" << m_maxResolve << m_installPackages.size() << resolve.size();
 
-            PkTransaction *transaction = new PkTransaction(this);
+            auto transaction = new PkTransaction(this);
             Transaction *t;
             t = Daemon::resolve(resolve,
                                 Transaction::FilterNotInstalled | Transaction::FilterArch | Transaction::FilterNewest);
             transaction->setupTransaction(t);
             setTransaction(Transaction::RoleResolve, transaction);
-            connect(transaction, SIGNAL(finished(PkTransaction::ExitStatus)),
-                    this, SLOT(searchFinished(PkTransaction::ExitStatus)), Qt::UniqueConnection);
-            connect(transaction, SIGNAL(package(PackageKit::Transaction::Info,QString,QString)),
-                    this, SLOT(addPackage(PackageKit::Transaction::Info,QString,QString)));
+            connect(transaction, &PkTransaction::finished, this, &PkInstallCatalogs::searchFinished, Qt::UniqueConnection);
+            connect(transaction, &PkTransaction::package, this, &PkInstallCatalogs::addPackage);
         } else if (!m_installProvides.isEmpty()) {
             // Continue resolving Install Provides
             QStringList provides;
@@ -233,18 +232,16 @@ void PkInstallCatalogs::searchFinished(PkTransaction::ExitStatus status)
                 provides.append(m_installProvides.takeFirst());
                 ++count;
             }
-            kDebug() << "m_installProvides" <<  m_maxResolve << m_installProvides.size() << provides.size();
+            qCDebug(APPER_SESSION) << "m_installProvides" <<  m_maxResolve << m_installProvides.size() << provides.size();
 
-            PkTransaction *transaction = new PkTransaction(this);
+            auto transaction = new PkTransaction(this);
             Transaction *t;
             t = Daemon::whatProvides(provides,
                                      Transaction::FilterNotInstalled | Transaction::FilterArch | Transaction::FilterNewest);
             transaction->setupTransaction(t);
             setTransaction(Transaction::RoleWhatProvides, transaction);
-            connect(transaction, SIGNAL(finished(PkTransaction::ExitStatus)),
-                    this, SLOT(searchFinished(PkTransaction::ExitStatus)), Qt::UniqueConnection);
-            connect(transaction, SIGNAL(package(PackageKit::Transaction::Info,QString,QString)),
-                    this, SLOT(addPackage(PackageKit::Transaction::Info,QString,QString)));
+            connect(transaction, &PkTransaction::finished, this, &PkInstallCatalogs::searchFinished, Qt::UniqueConnection);
+            connect(transaction, &PkTransaction::package, this, &PkInstallCatalogs::addPackage);
         } else if (!m_installFiles.isEmpty()) {
             // Continue resolving Install Packages
             QStringList files;
@@ -254,18 +251,16 @@ void PkInstallCatalogs::searchFinished(PkTransaction::ExitStatus status)
                 files.append(m_installFiles.takeFirst());
                 ++count;
             }
-            kDebug() << "m_installFiles" << m_maxResolve << m_installFiles.size() << files.size();
+            qCDebug(APPER_SESSION) << "m_installFiles" << m_maxResolve << m_installFiles.size() << files.size();
 
-            PkTransaction *transaction = new PkTransaction(this);
+            auto transaction = new PkTransaction(this);
             Transaction *t;
             t = Daemon::searchFiles(files,
                                     Transaction::FilterNotInstalled | Transaction::FilterArch | Transaction::FilterNewest);
             transaction->setupTransaction(t);
             setTransaction(Transaction::RoleSearchFile, transaction);
-            connect(transaction, SIGNAL(finished(PkTransaction::ExitStatus)),
-                    this, SLOT(searchFinished(PkTransaction::ExitStatus)), Qt::UniqueConnection);
-            connect(transaction, SIGNAL(package(PackageKit::Transaction::Info,QString,QString)),
-                    this, SLOT(addPackage(PackageKit::Transaction::Info,QString,QString)));
+            connect(transaction, &PkTransaction::finished, this, &PkInstallCatalogs::searchFinished, Qt::UniqueConnection);
+            connect(transaction, &PkTransaction::package, this, &PkInstallCatalogs::addPackage);
         } else {
             // we are done resolving
             SessionTask::searchFinished(status);
@@ -276,4 +271,4 @@ void PkInstallCatalogs::searchFinished(PkTransaction::ExitStatus status)
     }
 }
 
-#include "PkInstallCatalogs.moc"
+#include "moc_PkInstallCatalogs.cpp"

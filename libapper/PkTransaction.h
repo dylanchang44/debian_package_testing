@@ -22,8 +22,8 @@
 #define PK_TRANSACTION_H
 
 #include <QObject>
-#include <kdemacros.h>
-#include <KDialog>
+//#include <kdemacros.h>
+#include <QDialog>
 
 #include <Transaction>
 
@@ -119,7 +119,7 @@ Q_SIGNALS:
     void titleChanged(const QString &title);
     void sorry(const QString &title, const QString &text, const QString &details);
     void errorMessage(const QString &title, const QString &text, const QString &details);
-    void dialog(KDialog *widget);
+    void dialog(QDialog *widget);
 
     void allowCancelChanged();
     void isCallerActiveChanged();
@@ -140,9 +140,6 @@ private Q_SLOTS:
     void removePackages();
     void updatePackages();
 
-    void installSignature();
-    void acceptEula();
-
     void slotChanged();
     void slotFinished(PackageKit::Transaction::Exit status);
     void slotErrorCode(PackageKit::Transaction::Error error, const QString &details);
@@ -157,11 +154,11 @@ private Q_SLOTS:
                            const QString &keyTimestamp,
                            PackageKit::Transaction::SigType type);
 
-    void setExitStatus(PkTransaction::ExitStatus status = PkTransaction::Success);
+    void setExitStatus(int status = PkTransaction::Success);
     void reject();
 
 private:
-    void showDialog(KDialog *dialog);
+    void showDialog(QDialog *dialog);
     void showError(const QString &title, const QString &description, const QString &details = QString());
     void showSorry(const QString &title, const QString &description, const QString &details = QString());
 

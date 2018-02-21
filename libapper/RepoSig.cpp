@@ -1,5 +1,5 @@
 /***************************************************************************
- *   Copyright (C) 2008-2012 by Daniel Nicoletti                           *
+ *   Copyright (C) 2008-2018 by Daniel Nicoletti                           *
  *   dantti12@gmail.com                                                    *
  *                                                                         *
  *   This program is free software; you can redistribute it and/or modify  *
@@ -23,7 +23,7 @@
 
 #include <KLocalizedString>
 
-#include <KDebug>
+#include <QLoggingCategory>
 
 #include "PkStrings.h"
 
@@ -38,7 +38,7 @@ RepoSig::RepoSig(const QString &packageID,
                  const QString &keyTimestamp,
                  PackageKit::Transaction::SigType type,
                  QWidget *parent) :
-    KDialog(parent),
+    QDialog(parent),
     m_sigType(type),
     m_keyID(keyId),
     m_packageID(packageID),
@@ -46,10 +46,7 @@ RepoSig::RepoSig(const QString &packageID,
 {
     Q_UNUSED(keyFingerprint)
     Q_UNUSED(keyTimestamp)
-    ui->setupUi(mainWidget());
-
-    setButtons(KDialog::Cancel | KDialog::Yes);
-    setPlainCaption(i18n("Software signature is required"));
+    ui->setupUi(this);
 
     ui->repoNameL->setText(repoName);
     ui->sigUrlL->setText(keyUrl);
@@ -76,3 +73,5 @@ QString RepoSig::packageID() const
 {
     return m_packageID;
 }
+
+#include "moc_RepoSig.cpp"

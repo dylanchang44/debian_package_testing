@@ -23,13 +23,13 @@
 #include "CategoryDrawer.h"
 
 #include <KFileItemDelegate>
-#include <KDebug>
+#include <QLoggingCategory>
 
 CategorizedView::CategorizedView(QWidget *parent)
     : KCategorizedView(parent)
 {
     setWordWrap(true);
-    CategoryDrawer *drawer = new CategoryDrawer(this);
+    auto drawer = new CategoryDrawer(this);
     setCategoryDrawer(drawer);
 }
 
@@ -56,3 +56,5 @@ void CategorizedView::setModel(QAbstractItemModel *model)
 // //     }
 #endif
 }
+
+#include "moc_CategorizedView.cpp"

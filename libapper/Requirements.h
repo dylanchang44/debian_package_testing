@@ -21,7 +21,7 @@
 #ifndef REQUIREMENTS_H
 #define REQUIREMENTS_H
 
-#include <KDialog>
+#include <QDialog>
 
 #include <QToolButton>
 
@@ -30,7 +30,7 @@ namespace Ui {
 }
 
 class PackageModel;
-class Requirements : public KDialog
+class Requirements : public QDialog
 {
     Q_OBJECT
     Q_PROPERTY(bool embedded READ embedded WRITE setEmbedded USER true)
@@ -50,16 +50,16 @@ protected Q_SLOTS:
      virtual void slotButtonClicked(int button);
 
 private Q_SLOTS:
-    void on_confirmCB_Toggled(bool checked);
     void actionClicked(int type);
 
 private:
+    void confirmCBChanged(bool checked);
     void showUntrustedButton();
 
-    bool m_embed;
-    bool m_shouldShow;
-    bool m_hideAutoConfirm;
-    QToolButton *m_untrustedButton;
+    bool m_embed = false;
+    bool m_shouldShow = true;
+    bool m_hideAutoConfirm = false;
+    QToolButton *m_untrustedButton = nullptr;
     QButtonGroup *m_buttonGroup;
     Ui::Requirements *ui;
 };

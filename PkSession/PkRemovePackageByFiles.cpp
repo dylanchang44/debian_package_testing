@@ -30,7 +30,7 @@
 #include <KLocalizedString>
 #include <KService>
 
-#include <KDebug>
+#include <QLoggingCategory>
 
 PkRemovePackageByFiles::PkRemovePackageByFiles(uint xid,
                                                const QStringList &files,
@@ -44,8 +44,7 @@ PkRemovePackageByFiles::PkRemovePackageByFiles(uint xid,
     m_introDialog = new IntroDialog(this);
     m_introDialog->acceptDrops(i18n("You can drop more files in here"));
     m_model = new FilesModel(files, QStringList(), this);
-    connect(m_model, SIGNAL(rowsInserted(QModelIndex,int,int)),
-            this, SLOT(modelChanged()));
+    connect(m_model, &FilesModel::rowsInserted, this, &PkRemovePackageByFiles::modelChanged);
     m_introDialog->setModel(m_model);
     setMainWidget(m_introDialog);
 
@@ -119,13 +118,11 @@ void PkRemovePackageByFiles::searchFinished(PkTransaction::ExitStatus status)
         if (!m_files.isEmpty()) {
             QString file = m_files.takeFirst();
 
-            PkTransaction *transaction = new PkTransaction(this);
+            auto transaction = new PkTransaction(this);
             transaction->setupTransaction(Daemon::searchFiles(file, Transaction::FilterInstalled));
             setTransaction(Transaction::RoleSearchFile, transaction);
-            connect(transaction, SIGNAL(finished(PkTransaction::ExitStatus)),
-                    this, SLOT(searchFinished(PkTransaction::ExitStatus)), Qt::UniqueConnection);
-            connect(transaction, SIGNAL(package(PackageKit::Transaction::Info,QString,QString)),
-                    this, SLOT(addPackage(PackageKit::Transaction::Info,QString,QString)));
+            connect(transaction, &PkTransaction::finished, this, &PkRemovePackageByFiles::searchFinished, Qt::UniqueConnection);
+            connect(transaction, &PkTransaction::package, this, &PkRemovePackageByFiles::addPackage);
         } else {
             // we are done resolving
             SessionTask::searchFinished(status);
@@ -140,12 +137,12 @@ void PkRemovePackageByFiles::notFound()
 {
     if (showWarning()) {
         QStringList files = m_model->files();
-        setInfo(i18n("Could not find %1", files.join(", ")),
+        setInfo(i18n("Could not find %1", files.join(QLatin1String(", "))),
                 i18np("The file could not be found in any installed package",
                       "The files could not be found in any installed package",
                       files.size()));
     }
-    sendErrorFinished(NoPackagesFound, "no package found");
+    sendErrorFinished(NoPackagesFound, QLatin1String("no package found"));
 }
 
-#include "PkRemovePackageByFiles.moc"
+#include "moc_PkRemovePackageByFiles.cpp"
