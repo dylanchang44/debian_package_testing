@@ -1,3 +1,4 @@
+#usr/share/plasma/plasmoids/*
 debian/extra/60apper /etc/apt/apt.conf.d/
 usr/bin/apper*
 usr/lib/*
@@ -7,4 +8,3 @@ usr/share/dbus-1/services/*
 usr/share/kservices5/*
 usr/share/man/man1/*
 usr/share/metainfo/*
-#usr/share/plasma/plasmoids/*
