@@ -14,7 +14,7 @@ DEB_HOST_MULTIARCH ?= $(shell dpkg-architecture -qDEB_HOST_MULTIARCH)
 INSTALLDIR = $(CURDIR)/debian/tmp
 
 %:
-	dh $@ --parallel --with kde
+	dh $@ --with kde
 
 override_dh_auto_configure:
 	dh_auto_configure -Skde -- $(APPER_CONFIG_FLAGS)
