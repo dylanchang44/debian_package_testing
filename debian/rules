@@ -32,11 +32,7 @@ override_dh_auto_install:
 override_dh_install:
 	# FIXME: Temporarily disable the update notifier applet
 	rm -f $(INSTALLDIR)/usr/share/kservices5/plasma-applet-org.packagekit.updater
-	dh_install --list-missing
+	dh_install
 
-fetch_translations:
-	mkdir -p po
-	cd po; svn export svn://anonsvn.kde.org/home/kde/trunk/l10n-kde4/subdirs
-	cd po; for asdf in `cat subdirs`; do mkdir -p $${asdf}; done
-	cd po; for asdf in `cat subdirs`; do echo $${asdf}; cd $${asdf}; svn export svn://anonsvn.kde.org/home/kde/trunk/l10n-kde4/$${asdf}/messages/extragear-sysadmin/apper.po; cd ..; done
-	cd po; rm subdirs; rmdir --ignore-fail-on-non-empty *
+override_dh_override:
+	dh_override --fail-missing
