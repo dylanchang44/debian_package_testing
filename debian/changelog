@@ -1,3 +1,11 @@
+apper (1.0.0-1.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Add upstream fix for FTBFS with Qt 5.11,
+    thanks to Reiner Herrmann. (Closes: #906971)
+
+ -- Adrian Bunk <bunk@debian.org>  Sat, 22 Sep 2018 22:39:11 +0300
+
 apper (1.0.0-1) unstable; urgency=medium
 
   * New upstream version: 1.0.0
