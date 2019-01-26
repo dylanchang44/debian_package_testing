@@ -22,12 +22,8 @@ override_dh_auto_configure:
 override_dh_auto_install:
 	dh_auto_install --destdir=$(INSTALLDIR)
 
-	# Fix file conflict between GS and Apper
+	# Fix file conflict between GNOME Software and Apper
 	mv $(INSTALLDIR)/usr/share/dbus-1/services/org.freedesktop.PackageKit.service $(INSTALLDIR)/usr/share/dbus-1/services/kde-org.freedesktop.PackageKit.service
-
-	# hack around rpath oddness
-	chrpath --list $(INSTALLDIR)/usr/bin/apper
-	chrpath --replace /usr/lib/$(DEB_HOST_MULTIARCH)/apper $(INSTALLDIR)/usr/bin/apper
 
 override_dh_missing:
 	dh_missing --fail-missing
