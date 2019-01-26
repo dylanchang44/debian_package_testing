@@ -39,6 +39,7 @@ Depends: apper-data (>= ${source:Version}),
 Replaces: apper-appsetup (<< 0.7.2)
 Breaks: apper-appsetup (<< 0.7.2)
 Recommends: appstream,
+            apt-config-icons,
             debconf-kde-helper
 Description: KDE package management tool using PackageKit
  PackageKit allows performing simple software management tasks over a DBus
