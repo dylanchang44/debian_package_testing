@@ -4,7 +4,7 @@ Priority: optional
 Maintainer: Matthias Klumpp <mak@debian.org>
 Build-Depends: chrpath,
                cmake (>= 3.0),
-               debhelper (>= 11),
+               debhelper-compat (= 12),
                docbook (>= 4.5),
                extra-cmake-modules (>= 5.14),
                kded5-dev,
