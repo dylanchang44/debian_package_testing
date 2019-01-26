@@ -1,0 +1,28 @@
+From d55b1677cbf99ab8a4a1fa072a648a991535651c Mon Sep 17 00:00:00 2001
+From: Daniel Nicoletti <dantti12@gmail.com>
+Date: Sun, 23 Sep 2018 15:35:05 -0300
+Subject: [PATCH 11/18] Fix apperd metadata
+
+Thanks to Jon Burgess
+
+BUG:398993
+---
+ apperd/apperd.desktop | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/apperd/apperd.desktop b/apperd/apperd.desktop
+index 8719a4d..4ca40b5 100644
+--- a/apperd/apperd.desktop
++++ b/apperd/apperd.desktop
+@@ -2,7 +2,7 @@
+ Type=Service
+ 
+ X-KDE-ServiceTypes=KDEDModule
+-X-KDE-Library=apperd
++X-KDE-Library=kded_apperd
+ X-KDE-Kded-autoload=true
+ X-KDE-Kded-phase=2
+ 
+-- 
+2.20.1
+

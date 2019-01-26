@@ -1,0 +1,26 @@
+From 8cc7436a41b195c3ad2b3c3fa376fdebe333161e Mon Sep 17 00:00:00 2001
+From: Aleix Pol <aleixpol@kde.org>
+Date: Thu, 20 Sep 2018 11:20:16 +0200
+Subject: [PATCH 10/18] Fix proxy file watching
+
+Was registering the file to the wrong watcher
+---
+ apperd/ApperdThread.cpp | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/apperd/ApperdThread.cpp b/apperd/ApperdThread.cpp
+index 3e77149..26a4d23 100644
+--- a/apperd/ApperdThread.cpp
++++ b/apperd/ApperdThread.cpp
+@@ -96,7 +96,7 @@ void ApperdThread::init()
+ 
+     // Watch for changes in the KDE proxy settings
+     auto proxyWatch = new KDirWatch(this);
+-    confWatch->addFile(QStandardPaths::writableLocation(QStandardPaths::ConfigLocation) + QLatin1String("/kioslaverc"));
++    proxyWatch->addFile(QStandardPaths::writableLocation(QStandardPaths::ConfigLocation) + QLatin1String("/kioslaverc"));
+     connect(proxyWatch, SIGNAL(dirty(QString)), this, SLOT(proxyChanged()));
+     connect(proxyWatch, SIGNAL(created(QString)), this, SLOT(proxyChanged()));
+     connect(proxyWatch, SIGNAL(deleted(QString)), this, SLOT(proxyChanged()));
+-- 
+2.20.1
+

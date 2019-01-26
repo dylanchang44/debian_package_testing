@@ -1,7 +1,7 @@
 From d8960ea9097e5a324acd04ce3f03f2d8bfe88df6 Mon Sep 17 00:00:00 2001
 From: Rex Dieter <rdieter@gmail.com>
 Date: Tue, 31 Jul 2018 09:45:37 -0500
-Subject: Fix build against Qt 5.11+
+Subject: [PATCH 09/18] Fix build against Qt 5.11+
 
 ---
  Apper/Settings/Settings.cpp | 1 +
@@ -33,5 +33,5 @@ index 730644b..8325326 100644
  
  namespace Ui {
 -- 
-2.11.0
+2.20.1
 
