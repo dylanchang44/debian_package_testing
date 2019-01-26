@@ -1,3 +1,22 @@
+apper (1.0.0-2) unstable; urgency=medium
+
+  * Acknowledge NMU
+  * Switch to dh compat level 12
+  * Recommend apt-config-icons instead of shipping our own config snippet
+  * Add Install-apper-binary-as-TARGET-instead-of-PROGRAM.patch from upstream:
+    - Install apper binary as TARGET instead of PROGRAM. This allows us to
+      drop an ugly chrpath hack from d/rules.
+  * Add Update-AppStream-metadata.patch from upstream:
+    - Remove AppStream generator complaints and make screenshots appear again.
+  * Add Fix-proxy-file-watching.patch from upstream
+  * Add Fix-apperd-metadata.patch from upstream:
+    - Removes journal warning
+  * Add Removed-background-gradient.patch from upstream:
+    - Fixes UX issues
+  * Bump standards version (no changes needed)
+
+ -- Matthias Klumpp <mak@debian.org>  Sat, 26 Jan 2019 20:08:52 +0100
+
 apper (1.0.0-1.1) unstable; urgency=medium
 
   * Non-maintainer upload.
