@@ -1,5 +1,9 @@
 apper (1.0.0-3) UNRELEASED; urgency=medium
 
+  [ John Scott ]
+  * Fix crash by iterating variable properly. Thanks to Alexander
+    Kernozhitsky for authoring the upstream patch. (Closes: #925252)
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 21 May 2020 13:28:55 -0400
 
 apper (1.0.0-2) unstable; urgency=medium
