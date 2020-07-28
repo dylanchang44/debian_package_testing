@@ -6,3 +6,4 @@
 06_Fix-apperd-metadata.patch
 07_Removed-background-gradient.patch
 08_Fix-postupdate-crash-iterator.patch
+09_Fix-FTBFS-Qt5_14.patch
