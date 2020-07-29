@@ -18,7 +18,7 @@ License: GPL-2+
  GNU General Public License for more details.
  .
  You should have received a copy of the GNU General Public License
- along with this program. If not, see <http://www.gnu.org/licenses/>
+ along with this program. If not, see <https://www.gnu.org/licenses/>
  .
  On Debian systems, the complete text of the GNU General
  Public License version 2 can be found in "/usr/share/common-licenses/GPL-2".
@@ -35,7 +35,7 @@ License: LGPL-2+
  Library/Lesser General Public License for more details.
  .
  You should have received a copy of the GNU Library/Lesser General Public
- License along with this library. If not, see <http://www.gnu.org/licenses/>
+ License along with this library. If not, see <https://www.gnu.org/licenses/>
  .
  On Debian systems, the complete text of the GNU Library General
  Public License version 2 can be found in "/usr/share/common-licenses/LGPL-2".
@@ -71,7 +71,7 @@ Files: po/*
 Copyright: (C) 2008-2011 The KDE Translation teams <kde-i18n-doc@kde.org>
  Every language file is made by the respective translation team. You can find
  a list of the translation teams and their contact email addresses at:
- http://i18n.kde.org/teams-list.php
+ https://l10n.kde.org/teams-list.php
 License: GPL-2+
 
 Files: debian/*
