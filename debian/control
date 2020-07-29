@@ -17,6 +17,7 @@ Build-Depends: cmake (>= 3.0),
                libkf5kcmutils-dev(>= 5.42),
                libkf5kio-dev (>= 5.42),
                libkf5notifications-dev (>= 5.42),
+               libkf5textwidgets-dev (>= 5.42),
                libpackagekitqt5-dev (>= 1.0.1),
                libqt5xmlpatterns5-dev,
                pkg-kde-tools (>= 0.15.28),
@@ -31,7 +32,7 @@ Package: apper
 Architecture: any
 Depends: apper-data (>= ${source:Version}),
          packagekit (>= 0.8.6),
-         polkit-kde-1 | policykit-1-gnome,
+         polkit-kde-agent-1 | policykit-1-gnome,
          software-properties-kde,
          ${misc:Depends},
          ${shlibs:Depends}

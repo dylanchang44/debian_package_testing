@@ -1,0 +1,24 @@
+Description: fix crash by iterating variable properly
+ "m_checkedPackages.erase() is called, but the iterator
+ is not increased, therefore on the next iteration we
+ use an invalid iterator."
+Author: Alexander Kernozhitsky <kernalex256@yandex.ru>
+Origin: https://phabricator.kde.org/D19951?download=true
+Bug: https://bugs.kde.org/show_bug.cgi?id=401461
+Bug-Debian: https://bugs.debian.org/925252
+Bug-Ubuntu: https://launchpad.net/bugs/<bugnumber>
+Applied-Upstream: commit:d54bb804feb7
+Reviewed-By: John Scott <jscott@posteo.net>
+Last-Update: 2020-05-21
+
+--- apper-1.0.0.orig/libapper/PackageModel.cpp
++++ apper-1.0.0/libapper/PackageModel.cpp
+@@ -491,7 +491,7 @@ void PackageModel::clearSelectedNotPrese
+
+         if (notFound) {
+             // Uncheck the package If it's not in the model
+-            m_checkedPackages.erase(it);
++            it = m_checkedPackages.erase(it);
+             uncheckPackageLogic(package.packageID);
+         } else {
+             ++it;
