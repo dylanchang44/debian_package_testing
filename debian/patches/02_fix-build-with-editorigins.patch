@@ -7,11 +7,9 @@ Subject: Fix compilation when EDIT_ORIGNS_DESKTOP_NAME is defined
  Apper/Settings/Settings.cpp | 2 +-
  1 file changed, 1 insertion(+), 1 deletion(-)
 
-diff --git a/Apper/Settings/Settings.cpp b/Apper/Settings/Settings.cpp
-index 2175ea7..e077b8e 100644
 --- a/Apper/Settings/Settings.cpp
 +++ b/Apper/Settings/Settings.cpp
-@@ -154,7 +154,7 @@ Settings::~Settings()
+@@ -154,7 +154,7 @@
  void Settings::on_editOriginsPB_clicked()
  {
  #ifdef EDIT_ORIGNS_DESKTOP_NAME
@@ -20,6 +18,3 @@ index 2175ea7..e077b8e 100644
  #endif //EDIT_ORIGNS_DESKTOP_NAME
  }
  
--- 
-cgit v0.11.2
-

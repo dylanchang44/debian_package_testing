@@ -10,8 +10,6 @@ BUG:398993
  apperd/apperd.desktop | 2 +-
  1 file changed, 1 insertion(+), 1 deletion(-)
 
-diff --git a/apperd/apperd.desktop b/apperd/apperd.desktop
-index 8719a4d..4ca40b5 100644
 --- a/apperd/apperd.desktop
 +++ b/apperd/apperd.desktop
 @@ -2,7 +2,7 @@
@@ -23,6 +21,3 @@ index 8719a4d..4ca40b5 100644
  X-KDE-Kded-autoload=true
  X-KDE-Kded-phase=2
  
--- 
-2.20.1
-

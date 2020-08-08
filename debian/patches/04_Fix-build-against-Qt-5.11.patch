@@ -8,8 +8,6 @@ Subject: [PATCH 09/18] Fix build against Qt 5.11+
  libapper/Requirements.h     | 1 +
  2 files changed, 2 insertions(+)
 
-diff --git a/Apper/Settings/Settings.cpp b/Apper/Settings/Settings.cpp
-index e077b8e..615d86d 100644
 --- a/Apper/Settings/Settings.cpp
 +++ b/Apper/Settings/Settings.cpp
 @@ -27,6 +27,7 @@
@@ -20,8 +18,6 @@ index e077b8e..615d86d 100644
  #include <QTimer>
  #include <QSortFilterProxyModel>
  
-diff --git a/libapper/Requirements.h b/libapper/Requirements.h
-index 730644b..8325326 100644
 --- a/libapper/Requirements.h
 +++ b/libapper/Requirements.h
 @@ -23,6 +23,7 @@
@@ -32,6 +28,3 @@ index 730644b..8325326 100644
  #include <QToolButton>
  
  namespace Ui {
--- 
-2.20.1
-

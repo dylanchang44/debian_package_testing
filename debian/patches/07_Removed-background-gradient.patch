@@ -18,11 +18,9 @@ Differential Revision: https://phabricator.kde.org/D17341
  libapper/CategoryDrawer.cpp | 29 -----------------------------
  1 file changed, 29 deletions(-)
 
-diff --git a/libapper/CategoryDrawer.cpp b/libapper/CategoryDrawer.cpp
-index 5e0a939..d12f265 100644
 --- a/libapper/CategoryDrawer.cpp
 +++ b/libapper/CategoryDrawer.cpp
-@@ -49,35 +49,6 @@ void CategoryDrawer::drawCategory(const QModelIndex &index,
+@@ -49,35 +49,6 @@
      const QFontMetrics fontMetrics = QFontMetrics(font);
      const int height = categoryHeight(index, option);
  
@@ -58,6 +56,3 @@ index 5e0a939..d12f265 100644
      {
          QRect newOptRect(optRect);
          newOptRect.setLeft(newOptRect.left() + 1);
--- 
-2.20.1
-

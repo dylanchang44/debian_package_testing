@@ -7,8 +7,6 @@ Subject: [PATCH 04/18] Update AppStream metadata
  Apper/org.kde.apper.appdata.xml | 19 ++++++++++++++-----
  1 file changed, 14 insertions(+), 5 deletions(-)
 
-diff --git a/Apper/org.kde.apper.appdata.xml b/Apper/org.kde.apper.appdata.xml
-index 68048a1..aeee039 100644
 --- a/Apper/org.kde.apper.appdata.xml
 +++ b/Apper/org.kde.apper.appdata.xml
 @@ -1,8 +1,9 @@
@@ -74,6 +72,3 @@ index 68048a1..aeee039 100644
    <provides>
      <binary>apper</binary>
    </provides>
--- 
-2.20.1
-

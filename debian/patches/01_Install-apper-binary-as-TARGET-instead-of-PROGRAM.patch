@@ -11,11 +11,9 @@ Differential Revision: https://phabricator.kde.org/D10706
  Apper/CMakeLists.txt | 2 +-
  1 file changed, 1 insertion(+), 1 deletion(-)
 
-diff --git a/Apper/CMakeLists.txt b/Apper/CMakeLists.txt
-index 2b71603..a9855a9 100644
 --- a/Apper/CMakeLists.txt
 +++ b/Apper/CMakeLists.txt
-@@ -49,7 +49,7 @@ target_link_libraries(apper
+@@ -49,7 +49,7 @@
  
  set_target_properties(apper PROPERTIES INSTALL_RPATH ${CMAKE_INSTALL_FULL_LIBDIR}/apper)
  
@@ -24,6 +22,3 @@ index 2b71603..a9855a9 100644
  install(FILES org.kde.apper.desktop DESTINATION ${CMAKE_INSTALL_APPDIR})
  install(FILES org.kde.apper_installer.desktop DESTINATION ${CMAKE_INSTALL_APPDIR})
  install(FILES org.kde.apper_settings.desktop DESTINATION ${CMAKE_INSTALL_APPDIR})
--- 
-2.20.1
-

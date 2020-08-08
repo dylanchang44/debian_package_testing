@@ -8,11 +8,9 @@ Was registering the file to the wrong watcher
  apperd/ApperdThread.cpp | 2 +-
  1 file changed, 1 insertion(+), 1 deletion(-)
 
-diff --git a/apperd/ApperdThread.cpp b/apperd/ApperdThread.cpp
-index 3e77149..26a4d23 100644
 --- a/apperd/ApperdThread.cpp
 +++ b/apperd/ApperdThread.cpp
-@@ -96,7 +96,7 @@ void ApperdThread::init()
+@@ -96,7 +96,7 @@
  
      // Watch for changes in the KDE proxy settings
      auto proxyWatch = new KDirWatch(this);
@@ -21,6 +19,3 @@ index 3e77149..26a4d23 100644
      connect(proxyWatch, SIGNAL(dirty(QString)), this, SLOT(proxyChanged()));
      connect(proxyWatch, SIGNAL(created(QString)), this, SLOT(proxyChanged()));
      connect(proxyWatch, SIGNAL(deleted(QString)), this, SLOT(proxyChanged()));
--- 
-2.20.1
-

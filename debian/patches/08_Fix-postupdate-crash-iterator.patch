@@ -11,10 +11,10 @@ Applied-Upstream: commit:d54bb804feb7
 Reviewed-By: John Scott <jscott@posteo.net>
 Last-Update: 2020-05-21
 
---- apper-1.0.0.orig/libapper/PackageModel.cpp
-+++ apper-1.0.0/libapper/PackageModel.cpp
-@@ -491,7 +491,7 @@ void PackageModel::clearSelectedNotPrese
-
+--- a/libapper/PackageModel.cpp
++++ b/libapper/PackageModel.cpp
+@@ -491,7 +491,7 @@
+ 
          if (notFound) {
              // Uncheck the package If it's not in the model
 -            m_checkedPackages.erase(it);
