@@ -1,4 +1,10 @@
-apper (1.0.0-3) UNRELEASED; urgency=medium
+apper (1.0.0-3) unstable; urgency=medium
+
+  [ Matthias Klumpp ]
+  * Update-AppStream-metainfo.patch: Sync metainfo data with upstream
+  * Refresh all patches
+  * Bump standards version (no changes needed)
+  * Set flag that d/rules doesn't require root
 
   [ John Scott ]
   * Fix crash by iterating variable properly. Thanks to Alexander
@@ -9,7 +15,7 @@ apper (1.0.0-3) UNRELEASED; urgency=medium
   * Cherrypick upstream patch to fix build with Qt 5.14.
   * debian/copyright: Update links and upgrade to HTTPS as suggested by duck.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 21 May 2020 13:28:55 -0400
+ -- Matthias Klumpp <mak@debian.org>  Sat, 08 Aug 2020 18:45:46 +0200
 
 apper (1.0.0-2) unstable; urgency=medium
 
