@@ -1,0 +1,20 @@
+From 443927dc27f194d1ad75e1112e8f6ba171acddbe Mon Sep 17 00:00:00 2001
+From: Carl Schwan <carl@carlschwan.eu>
+Date: Sat, 7 Dec 2019 00:07:15 +0100
+Subject: [PATCH] Use new cdn link for screenshot
+
+---
+ Apper/org.kde.apper.appdata.xml | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+--- a/Apper/org.kde.apper.appdata.xml
++++ b/Apper/org.kde.apper.appdata.xml
+@@ -329,7 +329,7 @@
+ 
+   <screenshots>
+     <screenshot type="default">
+-      <image>https://userbase.kde.org/images.userbase/0/06/Apper-window.png</image>
++      <image>https://cdn.kde.org/screenshots/apper/apper.png</image>
+     </screenshot>
+     <screenshot>
+       <caption>The main window showing a description of the selected package</caption>
