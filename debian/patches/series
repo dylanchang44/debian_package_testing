@@ -1,10 +1,9 @@
 01_Install-apper-binary-as-TARGET-instead-of-PROGRAM.patch
 02_fix-build-with-editorigins.patch
-03_Update-AppStream-metadata.patch
+03_Update-AppStream-metainfo.patch
 04_Fix-build-against-Qt-5.11.patch
 05_Fix-proxy-file-watching.patch
 06_Fix-apperd-metadata.patch
 07_Removed-background-gradient.patch
 08_Fix-postupdate-crash-iterator.patch
 09_Fix-FTBFS-Qt5_14.patch
-10_use-cdn-link-for-metainfo-screenshot.patch
