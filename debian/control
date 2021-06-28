@@ -2,10 +2,10 @@ Source: apper
 Section: kde
 Priority: optional
 Maintainer: Matthias Klumpp <mak@debian.org>
-Build-Depends: cmake (>= 3.0),
+Build-Depends: cmake,
                debhelper-compat (= 12),
-               docbook (>= 4.5),
-               extra-cmake-modules (>= 5.14),
+               docbook,
+               extra-cmake-modules,
                kded5-dev,
                libappstreamqt-dev (>= 0.11.8),
                libdebconf-kde-dev (>= 1.0.2),
@@ -14,13 +14,13 @@ Build-Depends: cmake (>= 3.0),
                libkf5doctools-dev (>= 5.42),
                libkf5guiaddons-dev (>= 5.42),
                libkf5i18n-dev (>= 5.42),
-               libkf5kcmutils-dev(>= 5.42),
+               libkf5kcmutils-dev (>= 5.42),
                libkf5kio-dev (>= 5.42),
                libkf5notifications-dev (>= 5.42),
                libkf5textwidgets-dev (>= 5.42),
                libpackagekitqt5-dev (>= 1.0.1),
                libqt5xmlpatterns5-dev,
-               pkg-kde-tools (>= 0.15.28),
+               pkg-kde-tools,
                plasma-workspace-dev,
                qtdeclarative5-dev (>= 5.9.2)
 Standards-Version: 4.5.0
@@ -32,7 +32,7 @@ Vcs-Browser: https://salsa.debian.org/pkgutopia-team/apper
 Package: apper
 Architecture: any
 Depends: apper-data (>= ${source:Version}),
-         packagekit (>= 0.8.6),
+         packagekit,
          polkit-kde-agent-1 | policykit-1-gnome,
          software-properties-kde,
          ${misc:Depends},
@@ -55,8 +55,6 @@ Description: KDE package management tool using PackageKit
 
 Package: apper-data
 Architecture: all
-Replaces: apper (<< 0.7.2)
-Breaks: apper (<< 0.7.2)
 Depends: ${misc:Depends}
 Description: KDE package management tool using PackageKit (data files)
  PackageKit allows performing simple software management tasks over a DBus
