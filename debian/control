@@ -34,7 +34,7 @@ Architecture: any
 Depends: apper-data (>= ${source:Version}),
          packagekit,
          polkit-kde-agent-1 | policykit-1-gnome,
-         software-properties-kde,
+         software-properties-qt,
          ${misc:Depends},
          ${shlibs:Depends}
 Replaces: apper-appsetup (<< 0.7.2)
