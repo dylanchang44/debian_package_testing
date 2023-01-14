@@ -1,0 +1,31 @@
+From ac8a258d239e36af413e216a06b436ce32ae6a8e Mon Sep 17 00:00:00 2001
+From: "Friedrich W. H. Kossebau" <kossebau@kde.org>
+Date: Thu, 11 Aug 2022 00:11:07 +0200
+Subject: [PATCH] Include KDECompilerSettings with NO_POLICY_SCOPE
+
+GIT_SILENT
+---
+ CMakeLists.txt | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index d16cc08..8890bf3 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -10,10 +10,11 @@ set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${CMAKE_CURRENT_SOURCE_DIR}/cmake/mod
+ set(CMAKE_AUTOMOC ON)
+ set(CMAKE_INCLUDE_CURRENT_DIR ON)
+ 
+-include(FindPkgConfig)
+ include(KDEInstallDirs)
+-include(KDECompilerSettings)
+ include(KDECMakeSettings)
++include(KDECompilerSettings NO_POLICY_SCOPE)
++
++include(FindPkgConfig)
+ include(FeatureSummary)
+ include(ECMInstallIcons)
+ 
+-- 
+GitLab
+

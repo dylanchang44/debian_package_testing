@@ -1,0 +1,136 @@
+From 3ec1754498ed305618d4dc9960f5452b18e38037 Mon Sep 17 00:00:00 2001
+From: "Friedrich W. H. Kossebau" <kossebau@kde.org>
+Date: Thu, 11 Aug 2022 00:06:57 +0200
+Subject: [PATCH] Port away from deprecated KMessageBox::sorry
+
+GIT_SILENT
+---
+ AppSetup/main.cpp               | 2 +-
+ Apper/ApperKCM.cpp              | 4 ++--
+ Apper/Settings/OriginModel.cpp  | 2 +-
+ Apper/Updater/DistroUpgrade.cpp | 8 ++++----
+ Apper/Updater/Updater.cpp       | 2 +-
+ PkSession/PkInstallCatalogs.cpp | 2 +-
+ apperd/TransactionWatcher.cpp   | 2 +-
+ libapper/PkTransaction.cpp      | 4 ++--
+ 8 files changed, 13 insertions(+), 13 deletions(-)
+
+--- a/AppSetup/main.cpp
++++ b/AppSetup/main.cpp
+@@ -76,7 +76,7 @@
+     
+     // Check if we have a package
+     if (fname.isEmpty()) {
+-        KMessageBox::sorry (0, i18n("We did not receive a path to an IPK package as parameter."),
++        KMessageBox::error (0, i18n("We did not receive a path to an IPK package as parameter."),
+                             i18n("Package not found!"));
+         return 1;
+     }
+--- a/Apper/ApperKCM.cpp
++++ b/Apper/ApperKCM.cpp
+@@ -327,7 +327,7 @@
+ void ApperKCM::errorCode(PackageKit::Transaction::Error error, const QString &details)
+ {
+     if (error != Transaction::ErrorTransactionCancelled) {
+-        KMessageBox::detailedSorry(this, PkStrings::errorMessage(error), details, PkStrings::error(error), KMessageBox::Notify);
++        KMessageBox::detailedError(this, PkStrings::errorMessage(error), details, PkStrings::error(error), KMessageBox::Notify);
+     }
+ }
+ 
+@@ -688,7 +688,7 @@
+             emit caption(m_searchParentCategory.data().toString());
+         } else {
+             ui->browseView->setParentCategory(m_searchParentCategory);
+-            KMessageBox::sorry(this, i18n("Could not find an application that matched this category"));
++            KMessageBox::error(this, i18n("Could not find an application that matched this category"));
+             emit caption();
+             disconnectTransaction();
+             m_searchTransaction = 0;
+--- a/Apper/Settings/OriginModel.cpp
++++ b/Apper/Settings/OriginModel.cpp
+@@ -90,7 +90,7 @@
+ void OriginModel::errorCode(PackageKit::Transaction::Error error, const QString &details)
+ {
+     if (error != Transaction::ErrorTransactionCancelled) {
+-        KMessageBox::detailedSorry(0, PkStrings::errorMessage(error), details, PkStrings::error(error), KMessageBox::Notify);
++        KMessageBox::detailedError(nullptr, PkStrings::errorMessage(error), details, PkStrings::error(error), KMessageBox::Notify);
+     }
+ }
+ 
+--- a/Apper/Updater/DistroUpgrade.cpp
++++ b/Apper/Updater/DistroUpgrade.cpp
+@@ -89,7 +89,7 @@
+     if (exitStatus == QProcess::NormalExit && exitCode == 0) {
+         KMessageBox::information(this, i18n("Distribution upgrade complete."));
+     } else if (exitStatus == QProcess::NormalExit) {
+-        KMessageBox::sorry(this, i18n("Distribution upgrade process exited with code %1.", exitCode));
++        KMessageBox::error(this, i18n("Distribution upgrade process exited with code %1.", exitCode));
+     }
+     m_distroUpgradeProcess->deleteLater();
+     m_distroUpgradeProcess = 0;
+@@ -100,15 +100,15 @@
+     QString text;
+     switch(error) {
+         case QProcess::FailedToStart:
+-            KMessageBox::sorry(this,
++            KMessageBox::error(this,
+                     i18n("The distribution upgrade process failed to start."));
+             break;
+         case QProcess::Crashed:
+-            KMessageBox::sorry(this,
++            KMessageBox::error(this,
+                     i18n("The distribution upgrade process crashed some time after starting successfully."));
+             break;
+         default:
+-            KMessageBox::sorry(this,
++            KMessageBox::error(this,
+                     i18n("The distribution upgrade process failed with an unknown error."));
+             break;
+     }
+--- a/Apper/Updater/Updater.cpp
++++ b/Apper/Updater/Updater.cpp
+@@ -341,7 +341,7 @@
+ 
+ void Updater::errorCode(PackageKit::Transaction::Error error, const QString &details)
+ {
+-    KMessageBox::detailedSorry(this,
++    KMessageBox::detailedError(this,
+                                PkStrings::errorMessage(error),
+                                details,
+                                PkStrings::error(error),
+--- a/PkSession/PkInstallCatalogs.cpp
++++ b/PkSession/PkInstallCatalogs.cpp
+@@ -182,7 +182,7 @@
+ 
+     if (showWarning() && filesFailedToOpen.size()) {
+         // TODO display a nicer message informing of already installed ones
+-        KMessageBox::sorry(this,
++        KMessageBox::error(this,
+                            i18np("Catalog %2 failed to open",
+                                  "Catalogs %2 failed to open",
+                                  filesFailedToOpen.size(),
+--- a/apperd/TransactionWatcher.cpp
++++ b/apperd/TransactionWatcher.cpp
+@@ -242,7 +242,7 @@
+     if (action == 1) {
+         Transaction::Error error = notify->property("ErrorType").value<Transaction::Error>();
+         QString details = notify->property("Details").toString();
+-        KMessageBox::detailedSorry(0,
++        KMessageBox::detailedError(nullptr,
+                                    PkStrings::errorMessage(error),
+                                    details.replace(QLatin1Char('\n'), QLatin1String("<br>")),
+                                    PkStrings::error(error),
+--- a/libapper/PkTransaction.cpp
++++ b/libapper/PkTransaction.cpp
+@@ -728,9 +728,9 @@
+     auto widget = qobject_cast<PkTransactionWidget *>(d->parentWindow);
+     if (!widget || widget->isCancelVisible()) {
+         if (details.isEmpty()) {
+-            KMessageBox::sorry(d->parentWindow, description, title);
++            KMessageBox::error(d->parentWindow, description, title);
+         } else {
+-            KMessageBox::detailedSorry(d->parentWindow, description, details, title);
++            KMessageBox::detailedError(d->parentWindow, description, details, title);
+         }
+     } else {
+         emit sorry(title, description, details);

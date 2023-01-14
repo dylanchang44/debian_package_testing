@@ -7,3 +7,6 @@
 07_Removed-background-gradient.patch
 08_Fix-postupdate-crash-iterator.patch
 09_Fix-FTBFS-Qt5_14.patch
+10_port-from-kmessagebox-sorry.patch
+11_non-deprecated-KDEInstallDirs-variables.patch
+12_KDECompilerSettings-NO_POLICY_SCOPE.patch

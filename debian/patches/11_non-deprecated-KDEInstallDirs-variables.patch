@@ -1,0 +1,127 @@
+From 2f47356ee16175e0f373bbffbd0b370467f69a53 Mon Sep 17 00:00:00 2001
+From: "Friedrich W. H. Kossebau" <kossebau@kde.org>
+Date: Thu, 11 Aug 2022 00:08:41 +0200
+Subject: [PATCH] Use non-deprecated KDEInstallDirs variables
+
+GIT_SILENT
+---
+ AppSetup/CMakeLists.txt            |  4 ++--
+ Apper/Animations/CMakeLists.txt    |  2 +-
+ Apper/CMakeLists.txt               | 12 ++++++------
+ Apper/Icons/CMakeLists.txt         |  2 +-
+ PkSession/CMakeLists.txt           |  2 +-
+ apperd/CMakeLists.txt              |  6 +++---
+ declarative-plugins/CMakeLists.txt |  4 ++--
+ doc/CMakeLists.txt                 |  4 ++--
+ libapper/CMakeLists.txt            |  2 +-
+ plasmoid/CMakeLists.txt            |  4 ++--
+ 10 files changed, 21 insertions(+), 21 deletions(-)
+
+--- a/AppSetup/CMakeLists.txt
++++ b/AppSetup/CMakeLists.txt
+@@ -32,5 +32,5 @@
+         apper_private
+ )
+ 
+-install(TARGETS apper-appsetup RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR})
+-install(FILES apper_appsetup.desktop DESTINATION ${CMAKE_INSTALL_APPDIR})
++install(TARGETS apper-appsetup RUNTIME DESTINATION ${KDE_INSTALL_BINDIR})
++install(FILES apper_appsetup.desktop DESTINATION ${KDE_INSTALL_APPDIR})
+--- a/Apper/Animations/CMakeLists.txt
++++ b/Apper/Animations/CMakeLists.txt
+@@ -2,4 +2,4 @@
+ 
+ file (GLOB _animations ${CMAKE_CURRENT_SOURCE_DIR}/*.png)
+ ecm_install_icons(ICONS ${_animations}
+-    DESTINATION ${DATA_INSTALL_DIR}/apper/icons)
++    DESTINATION ${KDE_INSTALL_DATADIR}/apper/icons)
+--- a/Apper/CMakeLists.txt
++++ b/Apper/CMakeLists.txt
+@@ -49,12 +49,12 @@
+ 
+ set_target_properties(apper PROPERTIES INSTALL_RPATH ${CMAKE_INSTALL_FULL_LIBDIR}/apper)
+ 
+-install(TARGETS apper DESTINATION ${CMAKE_INSTALL_BINDIR})
+-install(FILES org.kde.apper.desktop DESTINATION ${CMAKE_INSTALL_APPDIR})
+-install(FILES org.kde.apper_installer.desktop DESTINATION ${CMAKE_INSTALL_APPDIR})
+-install(FILES org.kde.apper_settings.desktop DESTINATION ${CMAKE_INSTALL_APPDIR})
+-install(FILES org.kde.apper_updates.desktop DESTINATION ${CMAKE_INSTALL_APPDIR})
+-install(FILES org.kde.apper.appdata.xml DESTINATION ${CMAKE_INSTALL_METAINFODIR})
++install(TARGETS apper DESTINATION ${KDE_INSTALL_BINDIR})
++install(FILES org.kde.apper.desktop DESTINATION ${KDE_INSTALL_APPDIR})
++install(FILES org.kde.apper_installer.desktop DESTINATION ${KDE_INSTALL_APPDIR})
++install(FILES org.kde.apper_settings.desktop DESTINATION ${KDE_INSTALL_APPDIR})
++install(FILES org.kde.apper_updates.desktop DESTINATION ${KDE_INSTALL_APPDIR})
++install(FILES org.kde.apper.appdata.xml DESTINATION ${KDE_INSTALL_METAINFODIR})
+ 
+ add_subdirectory(Icons)
+ add_subdirectory(Animations)
+--- a/Apper/Icons/CMakeLists.txt
++++ b/Apper/Icons/CMakeLists.txt
+@@ -2,4 +2,4 @@
+ 
+ file (GLOB _icons ${CMAKE_CURRENT_SOURCE_DIR}/*.png)
+ ecm_install_icons(ICONS ${_icons}
+-    DESTINATION ${CMAKE_INSTALL_DATADIR}/apper/icons)
++    DESTINATION ${KDE_INSTALL_DATADIR}/apper/icons)
+--- a/PkSession/CMakeLists.txt
++++ b/PkSession/CMakeLists.txt
+@@ -51,7 +51,7 @@
+ 
+ set_target_properties(apper-pk-session PROPERTIES INSTALL_RPATH ${CMAKE_INSTALL_FULL_LIBDIR}/apper)
+ 
+-install(TARGETS apper-pk-session DESTINATION ${CMAKE_INSTALL_LIBEXECDIR})
++install(TARGETS apper-pk-session DESTINATION ${KDE_INSTALL_LIBEXECDIR})
+ 
+ include(MacroDBusAddActivationService)
+ dbus_add_activation_service(org.freedesktop.PackageKit.service.in)
+--- a/apperd/CMakeLists.txt
++++ b/apperd/CMakeLists.txt
+@@ -36,6 +36,6 @@
+ 
+ set_target_properties(kded_apperd PROPERTIES INSTALL_RPATH ${CMAKE_INSTALL_FULL_LIBDIR}/apper)
+ 
+-install(TARGETS kded_apperd DESTINATION ${CMAKE_INSTALL_QTPLUGINDIR})
+-install(FILES apperd.notifyrc DESTINATION ${CMAKE_INSTALL_DATADIR}/apperd)
+-install(FILES apperd.desktop DESTINATION ${CMAKE_INSTALL_KSERVICES5DIR}/kded)
++install(TARGETS kded_apperd DESTINATION ${KDE_INSTALL_QTPLUGINDIR})
++install(FILES apperd.notifyrc DESTINATION ${KDE_INSTALL_DATADIR}/apperd)
++install(FILES apperd.desktop DESTINATION ${KDE_INSTALL_KSERVICES5DIR}/kded)
+--- a/declarative-plugins/CMakeLists.txt
++++ b/declarative-plugins/CMakeLists.txt
+@@ -24,5 +24,5 @@
+ 
+ set_target_properties(apperplugin PROPERTIES INSTALL_RPATH ${CMAKE_INSTALL_FULL_LIBDIR}/apper)
+ 
+-install(TARGETS apperplugin DESTINATION ${CMAKE_INSTALL_QTQUICKIMPORTSDIR}/org/kde/apper)
+-install(FILES qmldir DESTINATION ${CMAKE_INSTALL_QTQUICKIMPORTSDIR}/org/kde/apper)
++install(TARGETS apperplugin DESTINATION ${KDE_INSTALL_QTQUICKIMPORTSDIR}/org/kde/apper)
++install(FILES qmldir DESTINATION ${KDE_INSTALL_QTQUICKIMPORTSDIR}/org/kde/apper)
+--- a/doc/CMakeLists.txt
++++ b/doc/CMakeLists.txt
+@@ -1,6 +1,6 @@
+ # CMakeLists for Apper documentation
+ 
+-kdoctools_create_manpage(man-apper.1.docbook 1 INSTALL_DESTINATION ${CMAKE_INSTALL_MANDIR})
++kdoctools_create_manpage(man-apper.1.docbook 1 INSTALL_DESTINATION ${KDE_INSTALL_MANDIR})
+ if(LIMBA)
+-    kdoctools_create_manpage(man-apper-appsetup.1.docbook 1 INSTALL_DESTINATION ${CMAKE_INSTALL_MANDIR})
++    kdoctools_create_manpage(man-apper-appsetup.1.docbook 1 INSTALL_DESTINATION ${KDE_INSTALL_MANDIR})
+ endif()
+--- a/libapper/CMakeLists.txt
++++ b/libapper/CMakeLists.txt
+@@ -62,4 +62,4 @@
+     AppStreamQt
+ )
+ 
+-install(TARGETS apper_private DESTINATION ${CMAKE_INSTALL_LIBDIR}/apper)
++install(TARGETS apper_private DESTINATION ${KDE_INSTALL_LIBDIR}/apper)
+--- a/plasmoid/CMakeLists.txt
++++ b/plasmoid/CMakeLists.txt
+@@ -1,4 +1,4 @@
+ # CMakeLists for Apper plamoid
+ 
+-install(FILES package/metadata.desktop DESTINATION ${CMAKE_INSTALL_KSERVICES5DIR} RENAME plasma-applet-org.packagekit.updater.desktop)
+-install(DIRECTORY package/ DESTINATION ${CMAKE_INSTALL_DATADIR}/plasma/plasmoids/org.packagekit.updater)
++install(FILES package/metadata.desktop DESTINATION ${KDE_INSTALL_KSERVICES5DIR} RENAME plasma-applet-org.packagekit.updater.desktop)
++install(DIRECTORY package/ DESTINATION ${KDE_INSTALL_DATADIR}/plasma/plasmoids/org.packagekit.updater)
