@@ -40,6 +40,15 @@ License: LGPL-2+
  On Debian systems, the complete text of the GNU Library General
  Public License version 2 can be found in "/usr/share/common-licenses/LGPL-2".
 
+License: FSFAP
+ Copying and distribution of this file, with or without modification, are
+ permitted in any medium without royalty provided the copyright notice and
+ this notice are preserved. This file is offered as-is, without any warranty.
+
+Files: Apper/org.kde.apper.appdata.xml
+Copyright: Daniel Nicoletti <dantti12@gmail.com>
+License: FSFAP
+
 Files: libapper/CategorizedView.cpp
  libapper/CategorizedView.h
  libapper/CategoryDrawer.cpp
