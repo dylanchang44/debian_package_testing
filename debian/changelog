@@ -1,3 +1,14 @@
+apper (1.0.0-4) unstable; urgency=medium
+
+  [ Matthias Klumpp ]
+  * Use software-properties-qt instead of s-p-kde (Closes: #1028514)
+  * Bump standards & dh version: No changes needed
+
+  [ Debian Janitor ]
+  * Remove constraints unnecessary since stretch & buster
+
+ -- Matthias Klumpp <mak@debian.org>  Sat, 14 Jan 2023 17:02:06 +0100
+
 apper (1.0.0-3) unstable; urgency=medium
 
   [ Matthias Klumpp ]
