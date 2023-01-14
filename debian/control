@@ -3,7 +3,7 @@ Section: kde
 Priority: optional
 Maintainer: Matthias Klumpp <mak@debian.org>
 Build-Depends: cmake,
-               debhelper-compat (= 12),
+               debhelper-compat (= 13),
                docbook,
                extra-cmake-modules,
                kded5-dev,
@@ -23,7 +23,7 @@ Build-Depends: cmake,
                pkg-kde-tools,
                plasma-workspace-dev,
                qtdeclarative5-dev
-Standards-Version: 4.5.0
+Standards-Version: 4.6.1
 Rules-Requires-Root: no
 Homepage: https://www.kde.org/applications/system/apper/
 Vcs-Git: https://salsa.debian.org/pkgutopia-team/apper.git
