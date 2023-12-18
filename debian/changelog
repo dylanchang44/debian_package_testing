@@ -1,3 +1,10 @@
+apper (1.0.0-5) unstable; urgency=medium
+
+  * Add appstream-qt5.patch & appstream1.0.patch:
+    - Fix build with latest library versions
+
+ -- Matthias Klumpp <mak@debian.org>  Mon, 18 Dec 2023 14:48:30 +0100
+
 apper (1.0.0-4) unstable; urgency=medium
 
   [ Matthias Klumpp ]
