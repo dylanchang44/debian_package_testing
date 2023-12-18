@@ -1,0 +1,70 @@
+From ea9cd129f583ce495f6a119d7c8d33a1d8566523 Mon Sep 17 00:00:00 2001
+From: Matthias Klumpp <matthias@tenstral.net>
+Date: Mon, 18 Dec 2023 04:37:17 +0100
+Subject: [PATCH] Fix build with recent compilers & AppStream 1.0
+
+---
+ CMakeLists.txt         |  1 +
+ libapper/AppStream.cpp | 13 +++++++------
+ 2 files changed, 8 insertions(+), 6 deletions(-)
+
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 8890bf3..07050e6 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -9,6 +9,7 @@ set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${CMAKE_CURRENT_SOURCE_DIR}/cmake/mod
+ 
+ set(CMAKE_AUTOMOC ON)
+ set(CMAKE_INCLUDE_CURRENT_DIR ON)
++set(CMAKE_CXX_STANDARD 17)
+ 
+ include(KDEInstallDirs)
+ include(KDECMakeSettings)
+diff --git a/libapper/AppStream.cpp b/libapper/AppStream.cpp
+index 63d3bc8..06daecd 100644
+--- a/libapper/AppStream.cpp
++++ b/libapper/AppStream.cpp
+@@ -21,6 +21,7 @@
+ 
+ #include <config.h>
+ 
++#include <optional>
+ #include <AppStreamQt5/pool.h>
+ #include <AppStreamQt5/icon.h>
+ #include <AppStreamQt5/image.h>
+@@ -62,8 +63,8 @@ bool AppStreamHelper::open()
+ {
+ #ifdef HAVE_APPSTREAM    
+     QString error;
+-    if (!m_pool->load(&error)) {
+-        qCWarning(APPER_LIB) << "Unable to open AppStream metadata pool:" << error;
++    if (!m_pool->load()) {
++        qCWarning(APPER_LIB) << "Unable to open AppStream metadata pool:" << m_pool->lastError();
+         return false;
+     }
+ 
+@@ -202,8 +203,8 @@ QUrl AppStreamHelper::thumbnail(const QString &pkgName) const
+ #ifdef HAVE_APPSTREAM
+     if (m_appInfo.contains(pkgName)) {
+         AppStream::Image thumb;
+-        AppStream::Component app = m_appInfo.value(pkgName);
+-        const QList<AppStream::Screenshot> screenshots = app.screenshots();
++        AppStream::Component cpt = m_appInfo.value(pkgName);
++        const QList<AppStream::Screenshot> screenshots = cpt.screenshotsAll();
+         for (const AppStream::Screenshot &screenshot : screenshots) {
+             const QList<AppStream::Image> images = screenshot.images();
+             for (const AppStream::Image &image : images) {
+@@ -233,8 +234,8 @@ QUrl AppStreamHelper::screenshot(const QString &pkgName) const
+     QUrl url;
+ #ifdef HAVE_APPSTREAM
+     if (m_appInfo.contains(pkgName)) {
+-        AppStream::Component app = m_appInfo.value(pkgName);
+-        const QList<AppStream::Screenshot> screenshots = app.screenshots();
++        AppStream::Component cpt = m_appInfo.value(pkgName);
++        const QList<AppStream::Screenshot> screenshots = cpt.screenshotsAll();
+         for (const AppStream::Screenshot &screenshot : screenshots) {
+             const QList<AppStream::Image> images = screenshot.images();
+             for (const AppStream::Image &image : images) {
+-- 
+2.43.0
+

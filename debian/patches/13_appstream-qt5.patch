@@ -1,0 +1,80 @@
+From c47cc317b76fbc5c0cf19957a0b7a7f956ca0cd6 Mon Sep 17 00:00:00 2001
+From: Matthias Klumpp <matthias@tenstral.net>
+Date: Mon, 18 Dec 2023 04:28:32 +0100
+Subject: [PATCH] Explicitly depend on the Qt5 version of AppStream
+
+---
+ libapper/AppStream.cpp    | 10 +++++-----
+ libapper/AppStream.h      |  2 +-
+ libapper/CMakeLists.txt   |  4 ++--
+ libapper/PackageModel.cpp |  2 +-
+ 4 files changed, 9 insertions(+), 9 deletions(-)
+
+--- a/libapper/AppStream.cpp
++++ b/libapper/AppStream.cpp
+@@ -21,10 +21,10 @@
+ 
+ #include <config.h>
+ 
+-#include <AppStreamQt/pool.h>
+-#include <AppStreamQt/icon.h>
+-#include <AppStreamQt/image.h>
+-#include <AppStreamQt/screenshot.h>
++#include <AppStreamQt5/pool.h>
++#include <AppStreamQt5/icon.h>
++#include <AppStreamQt5/image.h>
++#include <AppStreamQt5/screenshot.h>
+ 
+ #include "AppStream.h"
+ 
+@@ -147,7 +147,7 @@
+ //        m_appInfo.insertMulti(pkgName, app);
+ //    }
+ 
+-    const QList<AppStream::Component> apps = m_pool->componentsByKind(AppStream::Component::KindDesktopApp);
++    auto apps = m_pool->componentsByKind(AppStream::Component::KindDesktopApp);
+     for (const AppStream::Component &app : apps) {
+         const QStringList pkgNames = app.packageNames();
+         for (const QString &pkgName : pkgNames) {
+--- a/libapper/AppStream.h
++++ b/libapper/AppStream.h
+@@ -24,7 +24,7 @@
+ 
+ #include "CategoryMatcher.h"
+ 
+-#include <AppStreamQt/component.h>
++#include <AppStreamQt5/component.h>
+ 
+ #include <QObject>
+ #include <QHash>
+--- a/libapper/CMakeLists.txt
++++ b/libapper/CMakeLists.txt
+@@ -36,7 +36,7 @@
+ )
+ 
+ if(APPSTREAM)
+-    find_package(AppStreamQt REQUIRED)
++    find_package(AppStreamQt5 REQUIRED)
+ 
+     set(libapper_SRCS ${libapper_SRCS} AppStream.cpp)
+ endif()
+@@ -59,7 +59,7 @@
+     KF5::I18n
+     Qt5::Core
+     PK::packagekitqt5
+-    AppStreamQt
++    AppStreamQt5
+ )
+ 
+ install(TARGETS apper_private DESTINATION ${KDE_INSTALL_LIBDIR}/apper)
+--- a/libapper/PackageModel.cpp
++++ b/libapper/PackageModel.cpp
+@@ -37,7 +37,7 @@
+ #include <KFormat>
+ 
+ #ifdef HAVE_APPSTREAM
+-#include <AppStreamQt/icon.h>
++#include <AppStreamQt5/icon.h>
+ #include <AppStream.h>
+ #endif
+ 

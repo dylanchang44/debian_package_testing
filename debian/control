@@ -7,7 +7,7 @@ Build-Depends: cmake,
                docbook,
                extra-cmake-modules,
                kded5-dev,
-               libappstreamqt-dev,
+               libappstreamqt5-dev,
                libdebconf-kde-dev,
                libkf5config-dev,
                libkf5dbusaddons-dev,
@@ -23,7 +23,7 @@ Build-Depends: cmake,
                pkg-kde-tools,
                plasma-workspace-dev,
                qtdeclarative5-dev
-Standards-Version: 4.6.1
+Standards-Version: 4.6.2
 Rules-Requires-Root: no
 Homepage: https://www.kde.org/applications/system/apper/
 Vcs-Git: https://salsa.debian.org/pkgutopia-team/apper.git
