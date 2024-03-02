@@ -1,0 +1,46 @@
+
+# Consider dependencies only in project.
+set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
+
+# The set of languages for which implicit dependencies are needed:
+set(CMAKE_DEPENDS_LANGUAGES
+  )
+
+# The set of dependency files which are needed:
+set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/dylan/canonical/apper/PkSession/AbstractIsRunning.cpp" "PkSession/CMakeFiles/apper-pk-session.dir/AbstractIsRunning.cpp.o" "gcc" "PkSession/CMakeFiles/apper-pk-session.dir/AbstractIsRunning.cpp.o.d"
+  "/home/dylan/canonical/apper/PkSession/FilesModel.cpp" "PkSession/CMakeFiles/apper-pk-session.dir/FilesModel.cpp.o" "gcc" "PkSession/CMakeFiles/apper-pk-session.dir/FilesModel.cpp.o.d"
+  "/home/dylan/canonical/apper/PkSession/IntroDialog.cpp" "PkSession/CMakeFiles/apper-pk-session.dir/IntroDialog.cpp.o" "gcc" "PkSession/CMakeFiles/apper-pk-session.dir/IntroDialog.cpp.o.d"
+  "/home/dylan/canonical/apper/PkSession/PkInstallCatalogs.cpp" "PkSession/CMakeFiles/apper-pk-session.dir/PkInstallCatalogs.cpp.o" "gcc" "PkSession/CMakeFiles/apper-pk-session.dir/PkInstallCatalogs.cpp.o.d"
+  "/home/dylan/canonical/apper/PkSession/PkInstallFontconfigResources.cpp" "PkSession/CMakeFiles/apper-pk-session.dir/PkInstallFontconfigResources.cpp.o" "gcc" "PkSession/CMakeFiles/apper-pk-session.dir/PkInstallFontconfigResources.cpp.o.d"
+  "/home/dylan/canonical/apper/PkSession/PkInstallGStreamerResources.cpp" "PkSession/CMakeFiles/apper-pk-session.dir/PkInstallGStreamerResources.cpp.o" "gcc" "PkSession/CMakeFiles/apper-pk-session.dir/PkInstallGStreamerResources.cpp.o.d"
+  "/home/dylan/canonical/apper/PkSession/PkInstallMimeTypes.cpp" "PkSession/CMakeFiles/apper-pk-session.dir/PkInstallMimeTypes.cpp.o" "gcc" "PkSession/CMakeFiles/apper-pk-session.dir/PkInstallMimeTypes.cpp.o.d"
+  "/home/dylan/canonical/apper/PkSession/PkInstallPackageFiles.cpp" "PkSession/CMakeFiles/apper-pk-session.dir/PkInstallPackageFiles.cpp.o" "gcc" "PkSession/CMakeFiles/apper-pk-session.dir/PkInstallPackageFiles.cpp.o.d"
+  "/home/dylan/canonical/apper/PkSession/PkInstallPackageNames.cpp" "PkSession/CMakeFiles/apper-pk-session.dir/PkInstallPackageNames.cpp.o" "gcc" "PkSession/CMakeFiles/apper-pk-session.dir/PkInstallPackageNames.cpp.o.d"
+  "/home/dylan/canonical/apper/PkSession/PkInstallPlasmaResources.cpp" "PkSession/CMakeFiles/apper-pk-session.dir/PkInstallPlasmaResources.cpp.o" "gcc" "PkSession/CMakeFiles/apper-pk-session.dir/PkInstallPlasmaResources.cpp.o.d"
+  "/home/dylan/canonical/apper/PkSession/PkInstallPrinterDrivers.cpp" "PkSession/CMakeFiles/apper-pk-session.dir/PkInstallPrinterDrivers.cpp.o" "gcc" "PkSession/CMakeFiles/apper-pk-session.dir/PkInstallPrinterDrivers.cpp.o.d"
+  "/home/dylan/canonical/apper/PkSession/PkInstallProvideFiles.cpp" "PkSession/CMakeFiles/apper-pk-session.dir/PkInstallProvideFiles.cpp.o" "gcc" "PkSession/CMakeFiles/apper-pk-session.dir/PkInstallProvideFiles.cpp.o.d"
+  "/home/dylan/canonical/apper/PkSession/PkInterface.cpp" "PkSession/CMakeFiles/apper-pk-session.dir/PkInterface.cpp.o" "gcc" "PkSession/CMakeFiles/apper-pk-session.dir/PkInterface.cpp.o.d"
+  "/home/dylan/canonical/apper/PkSession/PkIsInstalled.cpp" "PkSession/CMakeFiles/apper-pk-session.dir/PkIsInstalled.cpp.o" "gcc" "PkSession/CMakeFiles/apper-pk-session.dir/PkIsInstalled.cpp.o.d"
+  "/home/dylan/canonical/apper/PkSession/PkRemovePackageByFiles.cpp" "PkSession/CMakeFiles/apper-pk-session.dir/PkRemovePackageByFiles.cpp.o" "gcc" "PkSession/CMakeFiles/apper-pk-session.dir/PkRemovePackageByFiles.cpp.o.d"
+  "/home/dylan/canonical/apper/PkSession/PkSearchFile.cpp" "PkSession/CMakeFiles/apper-pk-session.dir/PkSearchFile.cpp.o" "gcc" "PkSession/CMakeFiles/apper-pk-session.dir/PkSearchFile.cpp.o.d"
+  "/home/dylan/canonical/apper/PkSession/PkSession.cpp" "PkSession/CMakeFiles/apper-pk-session.dir/PkSession.cpp.o" "gcc" "PkSession/CMakeFiles/apper-pk-session.dir/PkSession.cpp.o.d"
+  "/home/dylan/canonical/apper/PkSession/ReviewChanges.cpp" "PkSession/CMakeFiles/apper-pk-session.dir/ReviewChanges.cpp.o" "gcc" "PkSession/CMakeFiles/apper-pk-session.dir/ReviewChanges.cpp.o.d"
+  "/home/dylan/canonical/apper/PkSession/SessionTask.cpp" "PkSession/CMakeFiles/apper-pk-session.dir/SessionTask.cpp.o" "gcc" "PkSession/CMakeFiles/apper-pk-session.dir/SessionTask.cpp.o.d"
+  "/home/dylan/canonical/apper/obj-x86_64-linux-gnu/PkSession/apper-pk-session_autogen/mocs_compilation.cpp" "PkSession/CMakeFiles/apper-pk-session.dir/apper-pk-session_autogen/mocs_compilation.cpp.o" "gcc" "PkSession/CMakeFiles/apper-pk-session.dir/apper-pk-session_autogen/mocs_compilation.cpp.o.d"
+  "/home/dylan/canonical/apper/PkSession/main.cpp" "PkSession/CMakeFiles/apper-pk-session.dir/main.cpp.o" "gcc" "PkSession/CMakeFiles/apper-pk-session.dir/main.cpp.o.d"
+  "/home/dylan/canonical/apper/obj-x86_64-linux-gnu/PkSession/packagekitadaptor.cpp" "PkSession/CMakeFiles/apper-pk-session.dir/packagekitadaptor.cpp.o" "gcc" "PkSession/CMakeFiles/apper-pk-session.dir/packagekitadaptor.cpp.o.d"
+  )
+
+# Pairs of files generated by the same build rule.
+set(CMAKE_MULTIPLE_OUTPUT_PAIRS
+  "/home/dylan/canonical/apper/obj-x86_64-linux-gnu/PkSession/packagekitadaptor.h" "/home/dylan/canonical/apper/obj-x86_64-linux-gnu/PkSession/packagekitadaptor.cpp"
+  )
+
+
+# Targets to which this target links which contain Fortran sources.
+set(CMAKE_Fortran_TARGET_LINKED_INFO_FILES
+  )
+
+# Fortran module output directory.
+set(CMAKE_Fortran_TARGET_MODULE_DIR "")

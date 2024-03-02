@@ -1,0 +1,354 @@
+{
+	"BUILD_DIR" : "/home/dylan/canonical/apper/obj-x86_64-linux-gnu/libapper/apper_private_autogen",
+	"CMAKE_BINARY_DIR" : "/home/dylan/canonical/apper/obj-x86_64-linux-gnu",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/dylan/canonical/apper/obj-x86_64-linux-gnu/libapper",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/dylan/canonical/apper/libapper",
+	"CMAKE_EXECUTABLE" : "/usr/bin/cmake",
+	"CMAKE_LIST_FILES" : 
+	[
+		"/home/dylan/canonical/apper/libapper/CMakeLists.txt",
+		"/usr/lib/x86_64-linux-gnu/cmake/AppStreamQt5/AppStreamQt5ConfigVersion.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/AppStreamQt5/AppStreamQt5Config.cmake"
+	],
+	"CMAKE_SOURCE_DIR" : "/home/dylan/canonical/apper",
+	"DEP_FILE" : "",
+	"DEP_FILE_RULE_NAME" : "",
+	"HEADERS" : 
+	[
+		[
+			"/home/dylan/canonical/apper/libapper/AppStream.h",
+			"Mu",
+			"EWIEGA46WW/moc_AppStream.cpp",
+			null
+		],
+		[
+			"/home/dylan/canonical/apper/libapper/ApplicationLauncher.h",
+			"Mu",
+			"EWIEGA46WW/moc_ApplicationLauncher.cpp",
+			null
+		],
+		[
+			"/home/dylan/canonical/apper/libapper/ApplicationSortFilterModel.h",
+			"Mu",
+			"EWIEGA46WW/moc_ApplicationSortFilterModel.cpp",
+			null
+		],
+		[
+			"/home/dylan/canonical/apper/libapper/ApplicationsDelegate.h",
+			"Mu",
+			"EWIEGA46WW/moc_ApplicationsDelegate.cpp",
+			null
+		],
+		[
+			"/home/dylan/canonical/apper/libapper/CategorizedView.h",
+			"Mu",
+			"EWIEGA46WW/moc_CategorizedView.cpp",
+			null
+		],
+		[
+			"/home/dylan/canonical/apper/libapper/CategoryDrawer.h",
+			"Mu",
+			"EWIEGA46WW/moc_CategoryDrawer.cpp",
+			null
+		],
+		[
+			"/home/dylan/canonical/apper/libapper/CategoryMatcher.h",
+			"Mu",
+			"EWIEGA46WW/moc_CategoryMatcher.cpp",
+			null
+		],
+		[
+			"/home/dylan/canonical/apper/libapper/ChangesDelegate.h",
+			"Mu",
+			"EWIEGA46WW/moc_ChangesDelegate.cpp",
+			null
+		],
+		[
+			"/home/dylan/canonical/apper/libapper/CustomProgressBar.h",
+			"Mu",
+			"EWIEGA46WW/moc_CustomProgressBar.cpp",
+			null
+		],
+		[
+			"/home/dylan/canonical/apper/libapper/InfoWidget.h",
+			"Mu",
+			"EWIEGA46WW/moc_InfoWidget.cpp",
+			null
+		],
+		[
+			"/home/dylan/canonical/apper/libapper/LicenseAgreement.h",
+			"Mu",
+			"EWIEGA46WW/moc_LicenseAgreement.cpp",
+			null
+		],
+		[
+			"/home/dylan/canonical/apper/libapper/PackageImportance.h",
+			"Mu",
+			"EWIEGA46WW/moc_PackageImportance.cpp",
+			null
+		],
+		[
+			"/home/dylan/canonical/apper/libapper/PackageModel.h",
+			"Mu",
+			"EWIEGA46WW/moc_PackageModel.cpp",
+			null
+		],
+		[
+			"/home/dylan/canonical/apper/libapper/PkIcons.h",
+			"Mu",
+			"EWIEGA46WW/moc_PkIcons.cpp",
+			null
+		],
+		[
+			"/home/dylan/canonical/apper/libapper/PkStrings.h",
+			"Mu",
+			"EWIEGA46WW/moc_PkStrings.cpp",
+			null
+		],
+		[
+			"/home/dylan/canonical/apper/libapper/PkTransaction.h",
+			"Mu",
+			"EWIEGA46WW/moc_PkTransaction.cpp",
+			null
+		],
+		[
+			"/home/dylan/canonical/apper/libapper/PkTransactionProgressModel.h",
+			"Mu",
+			"EWIEGA46WW/moc_PkTransactionProgressModel.cpp",
+			null
+		],
+		[
+			"/home/dylan/canonical/apper/libapper/PkTransactionWidget.h",
+			"Mu",
+			"EWIEGA46WW/moc_PkTransactionWidget.cpp",
+			null
+		],
+		[
+			"/home/dylan/canonical/apper/libapper/RepoSig.h",
+			"Mu",
+			"EWIEGA46WW/moc_RepoSig.cpp",
+			null
+		],
+		[
+			"/home/dylan/canonical/apper/libapper/Requirements.h",
+			"Mu",
+			"EWIEGA46WW/moc_Requirements.cpp",
+			null
+		],
+		[
+			"/home/dylan/canonical/apper/libapper/TransactionDelegate.h",
+			"Mu",
+			"EWIEGA46WW/moc_TransactionDelegate.cpp",
+			null
+		]
+	],
+	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
+	"INCLUDE_DIR" : "/home/dylan/canonical/apper/obj-x86_64-linux-gnu/libapper/apper_private_autogen/include",
+	"MOC_COMPILATION_FILE" : "/home/dylan/canonical/apper/obj-x86_64-linux-gnu/libapper/apper_private_autogen/mocs_compilation.cpp",
+	"MOC_DEFINITIONS" : 
+	[
+		"KCOREADDONS_LIB",
+		"QT_CONCURRENT_LIB",
+		"QT_CORE_LIB",
+		"QT_DBUS_LIB",
+		"QT_DISABLE_DEPRECATED_BEFORE=0x050900",
+		"QT_GUI_LIB",
+		"QT_NETWORK_LIB",
+		"QT_NO_CAST_FROM_ASCII",
+		"QT_NO_CAST_FROM_BYTEARRAY",
+		"QT_NO_CAST_TO_ASCII",
+		"QT_NO_DEBUG",
+		"QT_NO_SIGNALS_SLOTS_KEYWORDS",
+		"QT_NO_URL_CAST_FROM_STRING",
+		"QT_STRICT_ITERATORS",
+		"QT_USE_FAST_OPERATOR_PLUS",
+		"QT_USE_QSTRINGBUILDER",
+		"QT_WIDGETS_LIB",
+		"QT_XML_LIB",
+		"TRANSLATION_DOMAIN=\"apper\"",
+		"_GNU_SOURCE",
+		"_LARGEFILE64_SOURCE",
+		"apper_private_EXPORTS"
+	],
+	"MOC_DEPEND_FILTERS" : 
+	[
+		[
+			"Q_PLUGIN_METADATA",
+			"[\n][ \t]*Q_PLUGIN_METADATA[ \t]*\\([^\\)]*FILE[ \t]*\"([^\"]+)\""
+		],
+		[
+			"K_PLUGIN_FACTORY_WITH_JSON",
+			"[\n^][ \t]*K_PLUGIN_FACTORY_WITH_JSON[ \t\n]*\\([^,]*,[ \t\n]*\"([^\"]+)\""
+		],
+		[
+			"K_PLUGIN_CLASS_WITH_JSON",
+			"[\n^][ \t]*K_PLUGIN_CLASS_WITH_JSON[ \t\n]*\\([^,]*,[ \t\n]*\"([^\"]+)\""
+		]
+	],
+	"MOC_INCLUDES" : 
+	[
+		"/home/dylan/canonical/apper/obj-x86_64-linux-gnu/libapper",
+		"/home/dylan/canonical/apper/libapper",
+		"/home/dylan/canonical/apper",
+		"/home/dylan/canonical/apper/obj-x86_64-linux-gnu",
+		"/usr/include/KF5/KWidgetsAddons",
+		"/usr/include/KF5",
+		"/usr/include/x86_64-linux-gnu/qt5",
+		"/usr/include/x86_64-linux-gnu/qt5/QtWidgets",
+		"/usr/include/x86_64-linux-gnu/qt5/QtGui",
+		"/usr/include/x86_64-linux-gnu/qt5/QtCore",
+		"/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++",
+		"/usr/include/KF5/KIOFileWidgets",
+		"/usr/include/KF5/KIOWidgets",
+		"/usr/include/KF5/KIOGui",
+		"/usr/include/KF5/KIOCore",
+		"/usr/include/KF5/KIO",
+		"/usr/include/KF5/KCoreAddons",
+		"/usr/include/KF5/KService",
+		"/usr/include/KF5/KConfig",
+		"/usr/include/KF5/KConfigCore",
+		"/usr/include/x86_64-linux-gnu/qt5/QtNetwork",
+		"/usr/include/x86_64-linux-gnu/qt5/QtDBus",
+		"/usr/include/x86_64-linux-gnu/qt5/QtConcurrent",
+		"/usr/include/KF5/KWindowSystem",
+		"/usr/include/KF5/KJobWidgets",
+		"/usr/include/KF5/Solid",
+		"/usr/include/KF5/KCompletion",
+		"/usr/include/KF5/KBookmarks",
+		"/usr/include/x86_64-linux-gnu/qt5/QtXml",
+		"/usr/include/KF5/KItemViews",
+		"/usr/include/KF5/KXmlGui",
+		"/usr/include/KF5/KConfigWidgets",
+		"/usr/include/KF5/KConfigGui",
+		"/usr/include/KF5/KCodecs",
+		"/usr/include/KF5/KAuthWidgets",
+		"/usr/include/KF5/KAuthCore",
+		"/usr/include/KF5/KAuth",
+		"/usr/include/KF5/KIconThemes",
+		"/usr/include/KF5/KI18n",
+		"/usr/include/packagekitqt5/PackageKit",
+		"/usr/include/packagekitqt5",
+		"/usr/include",
+		"/usr/include/c++/13",
+		"/usr/include/x86_64-linux-gnu/c++/13",
+		"/usr/include/c++/13/backward",
+		"/usr/lib/gcc/x86_64-linux-gnu/13/include",
+		"/usr/local/include",
+		"/usr/include/x86_64-linux-gnu"
+	],
+	"MOC_MACRO_NAMES" : 
+	[
+		"Q_OBJECT",
+		"Q_GADGET",
+		"Q_NAMESPACE",
+		"Q_NAMESPACE_EXPORT",
+		"K_PLUGIN_FACTORY",
+		"K_PLUGIN_CLASS",
+		"K_PLUGIN_FACTORY_WITH_JSON",
+		"K_PLUGIN_CLASS_WITH_JSON",
+		"KCMODULECONTAINER"
+	],
+	"MOC_OPTIONS" : [],
+	"MOC_PATH_PREFIX" : false,
+	"MOC_PREDEFS_CMD" : 
+	[
+		"/usr/bin/c++",
+		"-std=gnu++17",
+		"-dM",
+		"-E",
+		"-c",
+		"/usr/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp"
+	],
+	"MOC_PREDEFS_FILE" : "/home/dylan/canonical/apper/obj-x86_64-linux-gnu/libapper/apper_private_autogen/moc_predefs.h",
+	"MOC_RELAXED_MODE" : false,
+	"MOC_SKIP" : 
+	[
+		"/home/dylan/canonical/apper/obj-x86_64-linux-gnu/libapper/ui_ApplicationLauncher.h",
+		"/home/dylan/canonical/apper/obj-x86_64-linux-gnu/libapper/ui_InfoWidget.h",
+		"/home/dylan/canonical/apper/obj-x86_64-linux-gnu/libapper/ui_LicenseAgreement.h",
+		"/home/dylan/canonical/apper/obj-x86_64-linux-gnu/libapper/ui_PkTransactionWidget.h",
+		"/home/dylan/canonical/apper/obj-x86_64-linux-gnu/libapper/ui_RepoSig.h",
+		"/home/dylan/canonical/apper/obj-x86_64-linux-gnu/libapper/ui_Requirements.h"
+	],
+	"MULTI_CONFIG" : false,
+	"PARALLEL" : 3,
+	"PARSE_CACHE_FILE" : "/home/dylan/canonical/apper/obj-x86_64-linux-gnu/libapper/CMakeFiles/apper_private_autogen.dir/ParseCache.txt",
+	"QT_MOC_EXECUTABLE" : "/usr/lib/qt5/bin/moc",
+	"QT_UIC_EXECUTABLE" : "",
+	"QT_VERSION_MAJOR" : 5,
+	"QT_VERSION_MINOR" : 15,
+	"SETTINGS_FILE" : "/home/dylan/canonical/apper/obj-x86_64-linux-gnu/libapper/CMakeFiles/apper_private_autogen.dir/AutogenUsed.txt",
+	"SOURCES" : 
+	[
+		[ "/home/dylan/canonical/apper/libapper/AppStream.cpp", "Mu", null ],
+		[
+			"/home/dylan/canonical/apper/libapper/ApplicationLauncher.cpp",
+			"Mu",
+			null
+		],
+		[
+			"/home/dylan/canonical/apper/libapper/ApplicationSortFilterModel.cpp",
+			"Mu",
+			null
+		],
+		[
+			"/home/dylan/canonical/apper/libapper/ApplicationsDelegate.cpp",
+			"Mu",
+			null
+		],
+		[
+			"/home/dylan/canonical/apper/libapper/CategorizedView.cpp",
+			"Mu",
+			null
+		],
+		[ "/home/dylan/canonical/apper/libapper/CategoryDrawer.cpp", "Mu", null ],
+		[
+			"/home/dylan/canonical/apper/libapper/CategoryMatcher.cpp",
+			"Mu",
+			null
+		],
+		[
+			"/home/dylan/canonical/apper/libapper/ChangesDelegate.cpp",
+			"Mu",
+			null
+		],
+		[
+			"/home/dylan/canonical/apper/libapper/CustomProgressBar.cpp",
+			"Mu",
+			null
+		],
+		[ "/home/dylan/canonical/apper/libapper/InfoWidget.cpp", "Mu", null ],
+		[
+			"/home/dylan/canonical/apper/libapper/LicenseAgreement.cpp",
+			"Mu",
+			null
+		],
+		[
+			"/home/dylan/canonical/apper/libapper/PackageImportance.cpp",
+			"Mu",
+			null
+		],
+		[ "/home/dylan/canonical/apper/libapper/PackageModel.cpp", "Mu", null ],
+		[ "/home/dylan/canonical/apper/libapper/PkIcons.cpp", "Mu", null ],
+		[ "/home/dylan/canonical/apper/libapper/PkStrings.cpp", "Mu", null ],
+		[ "/home/dylan/canonical/apper/libapper/PkTransaction.cpp", "Mu", null ],
+		[
+			"/home/dylan/canonical/apper/libapper/PkTransactionProgressModel.cpp",
+			"Mu",
+			null
+		],
+		[
+			"/home/dylan/canonical/apper/libapper/PkTransactionWidget.cpp",
+			"Mu",
+			null
+		],
+		[ "/home/dylan/canonical/apper/libapper/RepoSig.cpp", "Mu", null ],
+		[ "/home/dylan/canonical/apper/libapper/Requirements.cpp", "Mu", null ],
+		[
+			"/home/dylan/canonical/apper/libapper/TransactionDelegate.cpp",
+			"Mu",
+			null
+		]
+	],
+	"VERBOSITY" : 0
+}

@@ -1,0 +1,351 @@
+/****************************************************************************
+** Meta object code from reading C++ file 'packagekitadaptor.h'
+**
+** Created by: The Qt Meta Object Compiler version 67 (Qt 5.15.10)
+**
+** WARNING! All changes made in this file will be lost!
+*****************************************************************************/
+
+#include <memory>
+#include "packagekitadaptor.h"
+#include <QtCore/qbytearray.h>
+#include <QtCore/qmetatype.h>
+#if !defined(Q_MOC_OUTPUT_REVISION)
+#error "The header file 'packagekitadaptor.h' doesn't include <QObject>."
+#elif Q_MOC_OUTPUT_REVISION != 67
+#error "This file was generated using the moc from 5.15.10. It"
+#error "cannot be used with the include files from this version of Qt."
+#error "(The moc has changed too much.)"
+#endif
+
+QT_BEGIN_MOC_NAMESPACE
+QT_WARNING_PUSH
+QT_WARNING_DISABLE_DEPRECATED
+struct qt_meta_stringdata_ModifyAdaptor_t {
+    QByteArrayData data[23];
+    char stringdata0[3579];
+};
+#define QT_MOC_LITERAL(idx, ofs, len) \
+    Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
+    qptrdiff(offsetof(qt_meta_stringdata_ModifyAdaptor_t, stringdata0) + ofs \
+        - idx * sizeof(QByteArrayData)) \
+    )
+static const qt_meta_stringdata_ModifyAdaptor_t qt_meta_stringdata_ModifyAdaptor = {
+    {
+QT_MOC_LITERAL(0, 0, 13), // "ModifyAdaptor"
+QT_MOC_LITERAL(1, 14, 15), // "D-Bus Interface"
+QT_MOC_LITERAL(2, 30, 33), // "org.freedesktop.PackageKit.Mo..."
+QT_MOC_LITERAL(3, 64, 19), // "D-Bus Introspection"
+QT_MOC_LITERAL(4, 84, 3230), // "  <interface name=\"org.freed..."
+QT_MOC_LITERAL(5, 3004, 15), // "InstallCatalogs"
+QT_MOC_LITERAL(6, 3020, 0), // ""
+QT_MOC_LITERAL(7, 3021, 3), // "xid"
+QT_MOC_LITERAL(8, 3025, 5), // "files"
+QT_MOC_LITERAL(9, 3031, 11), // "interaction"
+QT_MOC_LITERAL(10, 3043, 26), // "InstallFontconfigResources"
+QT_MOC_LITERAL(11, 3070, 9), // "resources"
+QT_MOC_LITERAL(12, 3080, 25), // "InstallGStreamerResources"
+QT_MOC_LITERAL(13, 3106, 16), // "InstallMimeTypes"
+QT_MOC_LITERAL(14, 3123, 10), // "mime_types"
+QT_MOC_LITERAL(15, 3134, 19), // "InstallPackageFiles"
+QT_MOC_LITERAL(16, 3154, 19), // "InstallPackageNames"
+QT_MOC_LITERAL(17, 3174, 8), // "packages"
+QT_MOC_LITERAL(18, 3183, 21), // "InstallPrinterDrivers"
+QT_MOC_LITERAL(19, 3205, 19), // "InstallProvideFiles"
+QT_MOC_LITERAL(20, 3225, 16), // "InstallResources"
+QT_MOC_LITERAL(21, 3242, 4), // "type"
+QT_MOC_LITERAL(22, 3247, 20) // "RemovePackageByFiles"
+
+    },
+    "ModifyAdaptor\0D-Bus Interface\0"
+    "org.freedesktop.PackageKit.Modify\0"
+    "D-Bus Introspection\0"
+    "  <interface name=\"org.freedesktop.PackageKit.Modify\">\n    <method "
+    "name=\"InstallPackageFiles\">\n      <annotation value=\"\" name=\"org"
+    ".freedesktop.DBus.GLib.Async\"/>\n      <arg direction=\"in\" type=\"u"
+    "\" name=\"xid\"/>\n      <arg direction=\"in\" type=\"as\" name=\"file"
+    "s\"/>\n      <arg direction=\"in\" type=\"s\" name=\"interaction\"/>\n"
+    "    </method>\n    <method name=\"InstallProvideFiles\">\n      <annot"
+    "ation value=\"\" name=\"org.freedesktop.DBus.GLib.Async\"/>\n      <ar"
+    "g direction=\"in\" type=\"u\" name=\"xid\"/>\n      <arg direction=\"i"
+    "n\" type=\"as\" name=\"files\"/>\n      <arg direction=\"in\" type=\"s"
+    "\" name=\"interaction\"/>\n    </method>\n    <method name=\"InstallCa"
+    "talogs\">\n      <annotation value=\"\" name=\"org.freedesktop.DBus.GL"
+    "ib.Async\"/>\n      <arg direction=\"in\" type=\"u\" name=\"xid\"/>\n "
+    "     <arg direction=\"in\" type=\"as\" name=\"files\"/>\n      <arg di"
+    "rection=\"in\" type=\"s\" name=\"interaction\"/>\n    </method>\n    <"
+    "method name=\"InstallPackageNames\">\n      <annotation value=\"\" nam"
+    "e=\"org.freedesktop.DBus.GLib.Async\"/>\n      <arg direction=\"in\" t"
+    "ype=\"u\" name=\"xid\"/>\n      <arg direction=\"in\" type=\"as\" name"
+    "=\"packages\"/>\n      <arg direction=\"in\" type=\"s\" name=\"interac"
+    "tion\"/>\n    </method>\n    <method name=\"InstallMimeTypes\">\n     "
+    " <annotation value=\"\" name=\"org.freedesktop.DBus.GLib.Async\"/>\n  "
+    "    <arg direction=\"in\" type=\"u\" name=\"xid\"/>\n      <arg direct"
+    "ion=\"in\" type=\"as\" name=\"mime_types\"/>\n      <arg direction=\"i"
+    "n\" type=\"s\" name=\"interaction\"/>\n    </method>\n    <method name"
+    "=\"InstallFontconfigResources\">\n      <annotation value=\"\" name=\""
+    "org.freedesktop.DBus.GLib.Async\"/>\n      <arg direction=\"in\" type="
+    "\"u\" name=\"xid\"/>\n      <arg direction=\"in\" type=\"as\" name=\"r"
+    "esources\"/>\n      <arg direction=\"in\" type=\"s\" name=\"interactio"
+    "n\"/>\n    </method>\n    <method name=\"InstallGStreamerResources\">\n"
+    "      <annotation value=\"\" name=\"org.freedesktop.DBus.GLib.Async\"/"
+    ">\n      <arg direction=\"in\" type=\"u\" name=\"xid\"/>\n      <arg d"
+    "irection=\"in\" type=\"as\" name=\"resources\"/>\n      <arg direction"
+    "=\"in\" type=\"s\" name=\"interaction\"/>\n    </method>\n    <method "
+    "name=\"InstallResources\">\n      <annotation value=\"\" name=\"org.fr"
+    "eedesktop.DBus.GLib.Async\"/>\n      <arg direction=\"in\" type=\"u\" "
+    "name=\"xid\"/>\n      <arg direction=\"in\" type=\"s\" name=\"type\"/>"
+    "\n      <arg direction=\"in\" type=\"as\" name=\"resources\"/>\n      "
+    "<arg direction=\"in\" type=\"s\" name=\"interaction\"/>\n    </method>"
+    "\n    <method name=\"RemovePackageByFiles\">\n      <annotation value="
+    "\"\" name=\"org.freedesktop.DBus.GLib.Async\"/>\n      <arg direction="
+    "\"in\" type=\"u\" name=\"xid\"/>\n      <arg direction=\"in\" type=\"a"
+    "s\" name=\"files\"/>\n      <arg direction=\"in\" type=\"s\" name=\"in"
+    "teraction\"/>\n    </method>\n    <method name=\"InstallPrinterDrivers"
+    "\">\n      <annotation value=\"\" name=\"org.freedesktop.DBus.GLib.Asy"
+    "nc\"/>\n      <arg direction=\"in\" type=\"u\" name=\"xid\"/>\n      <"
+    "arg direction=\"in\" type=\"as\" name=\"resources\"/>\n      <arg dire"
+    "ction=\"in\" type=\"s\" name=\"interaction\"/>\n    </method>\n  </int"
+    "erface>\n\0"
+    "InstallCatalogs\0\0xid\0files\0interaction\0"
+    "InstallFontconfigResources\0resources\0"
+    "InstallGStreamerResources\0InstallMimeTypes\0"
+    "mime_types\0InstallPackageFiles\0"
+    "InstallPackageNames\0packages\0"
+    "InstallPrinterDrivers\0InstallProvideFiles\0"
+    "InstallResources\0type\0RemovePackageByFiles"
+};
+#undef QT_MOC_LITERAL
+
+static const uint qt_meta_data_ModifyAdaptor[] = {
+
+ // content:
+       8,       // revision
+       0,       // classname
+       2,   14, // classinfo
+      10,   18, // methods
+       0,    0, // properties
+       0,    0, // enums/sets
+       0,    0, // constructors
+       0,       // flags
+       0,       // signalCount
+
+ // classinfo: key, value
+       1,    2,
+       3,    4,
+
+ // slots: name, argc, parameters, tag, flags
+       5,    3,   68,    6, 0x0a /* Public */,
+      10,    3,   75,    6, 0x0a /* Public */,
+      12,    3,   82,    6, 0x0a /* Public */,
+      13,    3,   89,    6, 0x0a /* Public */,
+      15,    3,   96,    6, 0x0a /* Public */,
+      16,    3,  103,    6, 0x0a /* Public */,
+      18,    3,  110,    6, 0x0a /* Public */,
+      19,    3,  117,    6, 0x0a /* Public */,
+      20,    4,  124,    6, 0x0a /* Public */,
+      22,    3,  133,    6, 0x0a /* Public */,
+
+ // slots: parameters
+    QMetaType::Void, QMetaType::UInt, QMetaType::QStringList, QMetaType::QString,    7,    8,    9,
+    QMetaType::Void, QMetaType::UInt, QMetaType::QStringList, QMetaType::QString,    7,   11,    9,
+    QMetaType::Void, QMetaType::UInt, QMetaType::QStringList, QMetaType::QString,    7,   11,    9,
+    QMetaType::Void, QMetaType::UInt, QMetaType::QStringList, QMetaType::QString,    7,   14,    9,
+    QMetaType::Void, QMetaType::UInt, QMetaType::QStringList, QMetaType::QString,    7,    8,    9,
+    QMetaType::Void, QMetaType::UInt, QMetaType::QStringList, QMetaType::QString,    7,   17,    9,
+    QMetaType::Void, QMetaType::UInt, QMetaType::QStringList, QMetaType::QString,    7,   11,    9,
+    QMetaType::Void, QMetaType::UInt, QMetaType::QStringList, QMetaType::QString,    7,    8,    9,
+    QMetaType::Void, QMetaType::UInt, QMetaType::QString, QMetaType::QStringList, QMetaType::QString,    7,   21,   11,    9,
+    QMetaType::Void, QMetaType::UInt, QMetaType::QStringList, QMetaType::QString,    7,    8,    9,
+
+       0        // eod
+};
+
+void ModifyAdaptor::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+{
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        auto *_t = static_cast<ModifyAdaptor *>(_o);
+        (void)_t;
+        switch (_id) {
+        case 0: _t->InstallCatalogs((*reinterpret_cast< uint(*)>(_a[1])),(*reinterpret_cast< const QStringList(*)>(_a[2])),(*reinterpret_cast< const QString(*)>(_a[3]))); break;
+        case 1: _t->InstallFontconfigResources((*reinterpret_cast< uint(*)>(_a[1])),(*reinterpret_cast< const QStringList(*)>(_a[2])),(*reinterpret_cast< const QString(*)>(_a[3]))); break;
+        case 2: _t->InstallGStreamerResources((*reinterpret_cast< uint(*)>(_a[1])),(*reinterpret_cast< const QStringList(*)>(_a[2])),(*reinterpret_cast< const QString(*)>(_a[3]))); break;
+        case 3: _t->InstallMimeTypes((*reinterpret_cast< uint(*)>(_a[1])),(*reinterpret_cast< const QStringList(*)>(_a[2])),(*reinterpret_cast< const QString(*)>(_a[3]))); break;
+        case 4: _t->InstallPackageFiles((*reinterpret_cast< uint(*)>(_a[1])),(*reinterpret_cast< const QStringList(*)>(_a[2])),(*reinterpret_cast< const QString(*)>(_a[3]))); break;
+        case 5: _t->InstallPackageNames((*reinterpret_cast< uint(*)>(_a[1])),(*reinterpret_cast< const QStringList(*)>(_a[2])),(*reinterpret_cast< const QString(*)>(_a[3]))); break;
+        case 6: _t->InstallPrinterDrivers((*reinterpret_cast< uint(*)>(_a[1])),(*reinterpret_cast< const QStringList(*)>(_a[2])),(*reinterpret_cast< const QString(*)>(_a[3]))); break;
+        case 7: _t->InstallProvideFiles((*reinterpret_cast< uint(*)>(_a[1])),(*reinterpret_cast< const QStringList(*)>(_a[2])),(*reinterpret_cast< const QString(*)>(_a[3]))); break;
+        case 8: _t->InstallResources((*reinterpret_cast< uint(*)>(_a[1])),(*reinterpret_cast< const QString(*)>(_a[2])),(*reinterpret_cast< const QStringList(*)>(_a[3])),(*reinterpret_cast< const QString(*)>(_a[4]))); break;
+        case 9: _t->RemovePackageByFiles((*reinterpret_cast< uint(*)>(_a[1])),(*reinterpret_cast< const QStringList(*)>(_a[2])),(*reinterpret_cast< const QString(*)>(_a[3]))); break;
+        default: ;
+        }
+    }
+}
+
+QT_INIT_METAOBJECT const QMetaObject ModifyAdaptor::staticMetaObject = { {
+    QMetaObject::SuperData::link<QDBusAbstractAdaptor::staticMetaObject>(),
+    qt_meta_stringdata_ModifyAdaptor.data,
+    qt_meta_data_ModifyAdaptor,
+    qt_static_metacall,
+    nullptr,
+    nullptr
+} };
+
+
+const QMetaObject *ModifyAdaptor::metaObject() const
+{
+    return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
+}
+
+void *ModifyAdaptor::qt_metacast(const char *_clname)
+{
+    if (!_clname) return nullptr;
+    if (!strcmp(_clname, qt_meta_stringdata_ModifyAdaptor.stringdata0))
+        return static_cast<void*>(this);
+    return QDBusAbstractAdaptor::qt_metacast(_clname);
+}
+
+int ModifyAdaptor::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+{
+    _id = QDBusAbstractAdaptor::qt_metacall(_c, _id, _a);
+    if (_id < 0)
+        return _id;
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        if (_id < 10)
+            qt_static_metacall(this, _c, _id, _a);
+        _id -= 10;
+    } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
+        if (_id < 10)
+            *reinterpret_cast<int*>(_a[0]) = -1;
+        _id -= 10;
+    }
+    return _id;
+}
+struct qt_meta_stringdata_QueryAdaptor_t {
+    QByteArrayData data[12];
+    char stringdata0[909];
+};
+#define QT_MOC_LITERAL(idx, ofs, len) \
+    Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
+    qptrdiff(offsetof(qt_meta_stringdata_QueryAdaptor_t, stringdata0) + ofs \
+        - idx * sizeof(QByteArrayData)) \
+    )
+static const qt_meta_stringdata_QueryAdaptor_t qt_meta_stringdata_QueryAdaptor = {
+    {
+QT_MOC_LITERAL(0, 0, 12), // "QueryAdaptor"
+QT_MOC_LITERAL(1, 13, 15), // "D-Bus Interface"
+QT_MOC_LITERAL(2, 29, 32), // "org.freedesktop.PackageKit.Query"
+QT_MOC_LITERAL(3, 62, 19), // "D-Bus Introspection"
+QT_MOC_LITERAL(4, 82, 758), // "  <interface name=\"org.freed..."
+QT_MOC_LITERAL(5, 770, 11), // "IsInstalled"
+QT_MOC_LITERAL(6, 782, 0), // ""
+QT_MOC_LITERAL(7, 783, 12), // "package_name"
+QT_MOC_LITERAL(8, 796, 11), // "interaction"
+QT_MOC_LITERAL(9, 808, 10), // "SearchFile"
+QT_MOC_LITERAL(10, 819, 9), // "file_name"
+QT_MOC_LITERAL(11, 829, 8) // "QString&"
+
+    },
+    "QueryAdaptor\0D-Bus Interface\0"
+    "org.freedesktop.PackageKit.Query\0"
+    "D-Bus Introspection\0"
+    "  <interface name=\"org.freedesktop.PackageKit.Query\">\n    <method n"
+    "ame=\"IsInstalled\">\n      <annotation value=\"\" name=\"org.freedesk"
+    "top.DBus.GLib.Async\"/>\n      <arg direction=\"in\" type=\"s\" name=\""
+    "package_name\"/>\n      <arg direction=\"in\" type=\"s\" name=\"intera"
+    "ction\"/>\n      <arg direction=\"out\" type=\"b\" name=\"installed\"/"
+    ">\n    </method>\n    <method name=\"SearchFile\">\n      <annotation "
+    "value=\"\" name=\"org.freedesktop.DBus.GLib.Async\"/>\n      <arg dire"
+    "ction=\"in\" type=\"s\" name=\"file_name\"/>\n      <arg direction=\"i"
+    "n\" type=\"s\" name=\"interaction\"/>\n      <arg direction=\"out\" ty"
+    "pe=\"b\" name=\"installed\"/>\n      <arg direction=\"out\" type=\"s\""
+    " name=\"package_name\"/>\n    </method>\n  </interface>\n\0"
+    "IsInstalled\0\0package_name\0interaction\0"
+    "SearchFile\0file_name\0QString&"
+};
+#undef QT_MOC_LITERAL
+
+static const uint qt_meta_data_QueryAdaptor[] = {
+
+ // content:
+       8,       // revision
+       0,       // classname
+       2,   14, // classinfo
+       2,   18, // methods
+       0,    0, // properties
+       0,    0, // enums/sets
+       0,    0, // constructors
+       0,       // flags
+       0,       // signalCount
+
+ // classinfo: key, value
+       1,    2,
+       3,    4,
+
+ // slots: name, argc, parameters, tag, flags
+       5,    2,   28,    6, 0x0a /* Public */,
+       9,    3,   33,    6, 0x0a /* Public */,
+
+ // slots: parameters
+    QMetaType::Bool, QMetaType::QString, QMetaType::QString,    7,    8,
+    QMetaType::Bool, QMetaType::QString, QMetaType::QString, 0x80000000 | 11,   10,    8,    7,
+
+       0        // eod
+};
+
+void QueryAdaptor::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+{
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        auto *_t = static_cast<QueryAdaptor *>(_o);
+        (void)_t;
+        switch (_id) {
+        case 0: { bool _r = _t->IsInstalled((*reinterpret_cast< const QString(*)>(_a[1])),(*reinterpret_cast< const QString(*)>(_a[2])));
+            if (_a[0]) *reinterpret_cast< bool*>(_a[0]) = std::move(_r); }  break;
+        case 1: { bool _r = _t->SearchFile((*reinterpret_cast< const QString(*)>(_a[1])),(*reinterpret_cast< const QString(*)>(_a[2])),(*reinterpret_cast< QString(*)>(_a[3])));
+            if (_a[0]) *reinterpret_cast< bool*>(_a[0]) = std::move(_r); }  break;
+        default: ;
+        }
+    }
+}
+
+QT_INIT_METAOBJECT const QMetaObject QueryAdaptor::staticMetaObject = { {
+    QMetaObject::SuperData::link<QDBusAbstractAdaptor::staticMetaObject>(),
+    qt_meta_stringdata_QueryAdaptor.data,
+    qt_meta_data_QueryAdaptor,
+    qt_static_metacall,
+    nullptr,
+    nullptr
+} };
+
+
+const QMetaObject *QueryAdaptor::metaObject() const
+{
+    return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
+}
+
+void *QueryAdaptor::qt_metacast(const char *_clname)
+{
+    if (!_clname) return nullptr;
+    if (!strcmp(_clname, qt_meta_stringdata_QueryAdaptor.stringdata0))
+        return static_cast<void*>(this);
+    return QDBusAbstractAdaptor::qt_metacast(_clname);
+}
+
+int QueryAdaptor::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+{
+    _id = QDBusAbstractAdaptor::qt_metacall(_c, _id, _a);
+    if (_id < 0)
+        return _id;
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        if (_id < 2)
+            qt_static_metacall(this, _c, _id, _a);
+        _id -= 2;
+    } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
+        if (_id < 2)
+            *reinterpret_cast<int*>(_a[0]) = -1;
+        _id -= 2;
+    }
+    return _id;
+}
+QT_WARNING_POP
+QT_END_MOC_NAMESPACE

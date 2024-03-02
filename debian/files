@@ -1,0 +1,4 @@
+apper-data_1.0.0-5_all.deb kde optional
+apper-dbgsym_1.0.0-5_amd64.ddeb debug optional automatic=yes
+apper_1.0.0-5_amd64.buildinfo kde optional
+apper_1.0.0-5_amd64.deb kde optional

@@ -24,3 +24,4 @@ override_dh_auto_install:
 
 	# Fix file conflict between GNOME Software and Apper
 	mv $(INSTALLDIR)/usr/share/dbus-1/services/org.freedesktop.PackageKit.service $(INSTALLDIR)/usr/share/dbus-1/services/kde-org.freedesktop.PackageKit.service
+	echo "this is a test from Dylan Chang"

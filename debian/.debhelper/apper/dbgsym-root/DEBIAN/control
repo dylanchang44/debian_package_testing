@@ -1,0 +1,13 @@
+Package: apper-dbgsym
+Package-Type: ddeb
+Source: apper
+Version: 1.0.0-5
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Matthias Klumpp <mak@debian.org>
+Installed-Size: 8817
+Depends: apper (= 1.0.0-5)
+Section: debug
+Priority: optional
+Description: debug symbols for apper
+Build-Ids: 2e2715daabe413e02ac762d32f371a8e29321092 2f6ceadf46fd98a77edf2a67621d66bf29915c84 52ac508026d9e4f78b1a47710e635185d78b7df9 ebd01d6d54e312d003377164bf7497a8d0be3269

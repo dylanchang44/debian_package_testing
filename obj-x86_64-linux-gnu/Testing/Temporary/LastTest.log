@@ -1,0 +1,19 @@
+Start testing: Mar 02 15:36 CST
+----------------------------------------------------------
+1/1 Testing: appstreamtest
+1/1 Test: appstreamtest
+Command: "/usr/bin/cmake" "-DAPPSTREAMCLI=/usr/bin/appstreamcli" "-DINSTALL_FILES=/home/dylan/canonical/apper/obj-x86_64-linux-gnu/install_manifest.txt" "-P" "/usr/share/ECM/kde-modules/appstreamtest.cmake"
+Directory: /home/dylan/canonical/apper/obj-x86_64-linux-gnu
+"appstreamtest" start time: Mar 02 15:36 CST
+Output:
+----------------------------------------------------------
+[0mNot installed yet, skipping[0m
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"appstreamtest" end time: Mar 02 15:36 CST
+"appstreamtest" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Mar 02 15:36 CST

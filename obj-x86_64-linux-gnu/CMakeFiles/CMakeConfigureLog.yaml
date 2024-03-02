@@ -1,0 +1,926 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.27/Modules/CMakeDetermineSystem.cmake:211 (message)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      The system is: Linux - 6.5.0-21-generic - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.27/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /usr/bin/cc 
+      Build flags: -g;-O2;-ffile-prefix-map=/home/dylan/canonical/apper=.;-flto=auto;-ffat-lto-objects;-fstack-protector-strong;-fstack-clash-protection;-Wformat;-Werror=format-security;-fcf-protection;-fdebug-prefix-map=/home/dylan/canonical/apper=/usr/src/apper-1.0.0-5;-Wdate-time;-D_FORTIFY_SOURCE=2
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /home/dylan/canonical/apper/obj-x86_64-linux-gnu/CMakeFiles/3.27.4/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.27/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /usr/bin/c++ 
+      Build flags: -g;-O2;-ffile-prefix-map=/home/dylan/canonical/apper=.;-flto=auto;-ffat-lto-objects;-fstack-protector-strong;-fstack-clash-protection;-Wformat;-Werror=format-security;-fcf-protection;-fdebug-prefix-map=/home/dylan/canonical/apper=/usr/src/apper-1.0.0-5;-Wdate-time;-D_FORTIFY_SOURCE=2
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /home/dylan/canonical/apper/obj-x86_64-linux-gnu/CMakeFiles/3.27.4/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/share/cmake-3.27/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/dylan/canonical/apper/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-9iD2uD"
+      binary: "/home/dylan/canonical/apper/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-9iD2uD"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-g -O2 -ffile-prefix-map=/home/dylan/canonical/apper=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wformat -fcf-protection -fdebug-prefix-map=/home/dylan/canonical/apper=/usr/src/apper-1.0.0-5 -Wdate-time -D_FORTIFY_SOURCE=2"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/dylan/canonical/apper/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-9iD2uD'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_2e731/fast
+        gmake[2]: Entering directory '/home/dylan/canonical/apper/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-9iD2uD'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_2e731.dir/build.make CMakeFiles/cmTC_2e731.dir/build
+        gmake[3]: Entering directory '/home/dylan/canonical/apper/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-9iD2uD'
+        Building C object CMakeFiles/cmTC_2e731.dir/CMakeCCompilerABI.c.o
+        /usr/bin/cc   -g -O2 -ffile-prefix-map=/home/dylan/canonical/apper=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wformat -fcf-protection -fdebug-prefix-map=/home/dylan/canonical/apper=/usr/src/apper-1.0.0-5 -Wdate-time -D_FORTIFY_SOURCE=2    -v -o CMakeFiles/cmTC_2e731.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.27/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.2.0-4ubuntu3' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-XYspKM/gcc-13-13.2.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-13-XYspKM/gcc-13-13.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.2.0 (Ubuntu 13.2.0-4ubuntu3) 
+        COLLECT_GCC_OPTIONS='-g' '-O2' '-ffile-prefix-map=/home/dylan/canonical/apper=.' '-flto=auto' '-ffat-lto-objects' '-fstack-protector-strong' '-fstack-clash-protection' '-Wformat=1' '-fcf-protection=full' '-fdebug-prefix-map=/home/dylan/canonical/apper=/usr/src/apper-1.0.0-5' '-Wdate-time' '-D' '_FORTIFY_SOURCE=2' '-v' '-o' 'CMakeFiles/cmTC_2e731.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_2e731.dir/'
+         /usr/libexec/gcc/x86_64-linux-gnu/13/cc1 -quiet -v -imultiarch x86_64-linux-gnu -D _FORTIFY_SOURCE=2 /usr/share/cmake-3.27/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_2e731.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -g -O2 -Wformat=1 -Wdate-time -version -ffile-prefix-map=/home/dylan/canonical/apper=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -fcf-protection=full -fdebug-prefix-map=/home/dylan/canonical/apper=/usr/src/apper-1.0.0-5 -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -o /tmp/cc4Vm16v.s
+        GNU C17 (Ubuntu 13.2.0-4ubuntu3) version 13.2.0 (x86_64-linux-gnu)
+        	compiled by GNU C version 13.2.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.26-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/gcc/x86_64-linux-gnu/13/include
+         /usr/local/include
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        Compiler executable checksum: edbc28f9c9bb85637ee0b8e5b79ac141
+        COLLECT_GCC_OPTIONS='-g' '-O2' '-ffile-prefix-map=/home/dylan/canonical/apper=.' '-flto=auto' '-ffat-lto-objects' '-fstack-protector-strong' '-fstack-clash-protection' '-Wformat=1' '-fcf-protection=full' '-fdebug-prefix-map=/home/dylan/canonical/apper=/usr/src/apper-1.0.0-5' '-Wdate-time' '-D' '_FORTIFY_SOURCE=2' '-v' '-o' 'CMakeFiles/cmTC_2e731.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_2e731.dir/'
+         as -v --gdwarf-5 --64 -o CMakeFiles/cmTC_2e731.dir/CMakeCCompilerABI.c.o /tmp/cc4Vm16v.s
+        GNU assembler version 2.41 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.41
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-g' '-O2' '-ffile-prefix-map=/home/dylan/canonical/apper=.' '-flto=auto' '-ffat-lto-objects' '-fstack-protector-strong' '-fstack-clash-protection' '-Wformat=1' '-fcf-protection=full' '-fdebug-prefix-map=/home/dylan/canonical/apper=/usr/src/apper-1.0.0-5' '-Wdate-time' '-D' '_FORTIFY_SOURCE=2' '-v' '-o' 'CMakeFiles/cmTC_2e731.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_2e731.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_2e731
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2e731.dir/link.txt --verbose=1
+        /usr/bin/cc -g -O2 -ffile-prefix-map=/home/dylan/canonical/apper=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wformat -fcf-protection -fdebug-prefix-map=/home/dylan/canonical/apper=/usr/src/apper-1.0.0-5 -Wdate-time -D_FORTIFY_SOURCE=2  -Wl,-Bsymbolic-functions -flto=auto -ffat-lto-objects -Wl,-z,relro -v -rdynamic CMakeFiles/cmTC_2e731.dir/CMakeCCompilerABI.c.o -o cmTC_2e731 
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.2.0-4ubuntu3' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-XYspKM/gcc-13-13.2.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-13-XYspKM/gcc-13-13.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.2.0 (Ubuntu 13.2.0-4ubuntu3) 
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-g' '-O2' '-ffile-prefix-map=/home/dylan/canonical/apper=.' '-flto=auto' '-fstack-protector-strong' '-fstack-clash-protection' '-Wformat=1' '-fcf-protection=full' '-fdebug-prefix-map=/home/dylan/canonical/apper=/usr/src/apper-1.0.0-5' '-Wdate-time' '-D' '_FORTIFY_SOURCE=2' '-flto=auto' '-ffat-lto-objects' '-v' '-rdynamic' '-o' 'cmTC_2e731' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_2e731.'
+         /usr/libexec/gcc/x86_64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/cckzai1t.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -flto=auto -flto=auto --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_2e731 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. -Bsymbolic-functions -z relro CMakeFiles/cmTC_2e731.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o
+        /usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -fresolution=/tmp/cckzai1t.res -flinker-output=pie CMakeFiles/cmTC_2e731.dir/CMakeCCompilerABI.c.o 
+        /usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -fresolution=/tmp/cckzai1t.res -flinker-output=pie CMakeFiles/cmTC_2e731.dir/CMakeCCompilerABI.c.o 
+        LTO parallelism level set to 3
+        /usr/bin/cc @/tmp/ccFu4VcB
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.2.0-4ubuntu3' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-XYspKM/gcc-13-13.2.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-13-XYspKM/gcc-13-13.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.2.0 (Ubuntu 13.2.0-4ubuntu3) 
+        COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fPIC' '-g' '-O2' '-fcf-protection=full' '-fasynchronous-unwind-tables' '-g' '-O2' '-ffile-prefix-map=/home/dylan/canonical/apper=.' '-fstack-protector-strong' '-fstack-clash-protection' '-fcf-protection=full' '-fdebug-prefix-map=/home/dylan/canonical/apper=/usr/src/apper-1.0.0-5' '-ffat-lto-objects' '-v' '-rdynamic' '-mtune=generic' '-march=x86-64'   '-fltrans-output-list=/tmp/ccRL8yMs.ltrans.out' '-fwpa=3' '-fresolution=/tmp/cckzai1t.res' '-flinker-output=pie'
+         /usr/libexec/gcc/x86_64-linux-gnu/13/lto1 -quiet -dumpbase ./cmTC_2e731.wpa -mtune=generic -march=x86-64 -g -g -O2 -O2 -version -fno-openmp -fno-openacc -fPIC -fcf-protection=full -fasynchronous-unwind-tables -ffile-prefix-map=/home/dylan/canonical/apper=. -fstack-protector-strong -fstack-clash-protection -fcf-protection=full -fdebug-prefix-map=/home/dylan/canonical/apper=/usr/src/apper-1.0.0-5 -ffat-lto-objects -fltrans-output-list=/tmp/ccRL8yMs.ltrans.out -fwpa=3 -fresolution=/tmp/cckzai1t.res -flinker-output=pie @/tmp/cce2bzCy
+        GNU GIMPLE (Ubuntu 13.2.0-4ubuntu3) version 13.2.0 (x86_64-linux-gnu)
+        	compiled by GNU C version 13.2.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.26-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/../lib/:/lib/../lib/x86_64-linux-gnu/:/lib/../lib/../lib/:/usr/lib/../lib/x86_64-linux-gnu/:/usr/lib/../lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fPIC' '-g' '-O2' '-fcf-protection=full' '-fasynchronous-unwind-tables' '-g' '-O2' '-ffile-prefix-map=/home/dylan/canonical/apper=.' '-fstack-protector-strong' '-fstack-clash-protection' '-fcf-protection=full' '-fdebug-prefix-map=/home/dylan/canonical/apper=/usr/src/apper-1.0.0-5' '-ffat-lto-objects' '-v' '-rdynamic' '-mtune=generic' '-march=x86-64'   '-fltrans-output-list=/tmp/ccRL8yMs.ltrans.out' '-fwpa=3' '-fresolution=/tmp/cckzai1t.res' '-flinker-output=pie' '-dumpdir' './cmTC_2e731.wpa.'
+        make -f /tmp/ccmE9bit.mk -j3 all
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.2.0-4ubuntu3' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-XYspKM/gcc-13-13.2.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-13-XYspKM/gcc-13-13.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.2.0 (Ubuntu 13.2.0-4ubuntu3) 
+        COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fPIC' '-g' '-O2' '-fcf-protection=full' '-fasynchronous-unwind-tables' '-g' '-O2' '-ffile-prefix-map=/home/dylan/canonical/apper=.' '-fstack-protector-strong' '-fstack-clash-protection' '-fcf-protection=full' '-fdebug-prefix-map=/home/dylan/canonical/apper=/usr/src/apper-1.0.0-5' '-ffat-lto-objects' '-v' '-rdynamic' '-mtune=generic' '-march=x86-64'   '-fltrans' '-o' '/tmp/ccRL8yMs.ltrans0.ltrans.o'
+         /usr/libexec/gcc/x86_64-linux-gnu/13/lto1 -quiet -dumpbase ./cmTC_2e731.ltrans0.ltrans -mtune=generic -march=x86-64 -g -g -O2 -O2 -version -fno-openmp -fno-openacc -fPIC -fcf-protection=full -fasynchronous-unwind-tables -ffile-prefix-map=/home/dylan/canonical/apper=. -fstack-protector-strong -fstack-clash-protection -fcf-protection=full -fdebug-prefix-map=/home/dylan/canonical/apper=/usr/src/apper-1.0.0-5 -ffat-lto-objects -fltrans /tmp/ccRL8yMs.ltrans0.o -o /tmp/ccdhBIBu.s
+        GNU GIMPLE (Ubuntu 13.2.0-4ubuntu3) version 13.2.0 (x86_64-linux-gnu)
+        	compiled by GNU C version 13.2.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.26-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fPIC' '-g' '-O2' '-fcf-protection=full' '-fasynchronous-unwind-tables' '-g' '-O2' '-ffile-prefix-map=/home/dylan/canonical/apper=.' '-fstack-protector-strong' '-fstack-clash-protection' '-fcf-protection=full' '-fdebug-prefix-map=/home/dylan/canonical/apper=/usr/src/apper-1.0.0-5' '-ffat-lto-objects' '-v' '-rdynamic' '-mtune=generic' '-march=x86-64'   '-fltrans' '-o' '/tmp/ccRL8yMs.ltrans0.ltrans.o'
+         as -v --gdwarf-5 --64 -o /tmp/ccRL8yMs.ltrans0.ltrans.o /tmp/ccdhBIBu.s
+        GNU assembler version 2.41 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.41
+        MAKEFLAGS=w -j3 
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/../lib/:/lib/../lib/x86_64-linux-gnu/:/lib/../lib/../lib/:/usr/lib/../lib/x86_64-linux-gnu/:/usr/lib/../lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fPIC' '-g' '-O2' '-fcf-protection=full' '-fasynchronous-unwind-tables' '-g' '-O2' '-ffile-prefix-map=/home/dylan/canonical/apper=.' '-fstack-protector-strong' '-fstack-clash-protection' '-fcf-protection=full' '-fdebug-prefix-map=/home/dylan/canonical/apper=/usr/src/apper-1.0.0-5' '-ffat-lto-objects' '-v' '-rdynamic' '-mtune=generic' '-march=x86-64'   '-fltrans' '-o' '/tmp/ccRL8yMs.ltrans0.ltrans.o' '-dumpdir' './cmTC_2e731.ltrans0.ltrans.'
+        COLLECT_GCC_OPTIONS='-g' '-O2' '-ffile-prefix-map=/home/dylan/canonical/apper=.' '-flto=auto' '-fstack-protector-strong' '-fstack-clash-protection' '-Wformat=1' '-fcf-protection=full' '-fdebug-prefix-map=/home/dylan/canonical/apper=/usr/src/apper-1.0.0-5' '-Wdate-time' '-D' '_FORTIFY_SOURCE=2' '-flto=auto' '-ffat-lto-objects' '-v' '-rdynamic' '-o' 'cmTC_2e731' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_2e731.'
+        gmake[3]: Leaving directory '/home/dylan/canonical/apper/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-9iD2uD'
+        gmake[2]: Leaving directory '/home/dylan/canonical/apper/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-9iD2uD'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/usr/share/cmake-3.27/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/gcc/x86_64-linux-gnu/13/include]
+          add: [/usr/local/include]
+          add: [/usr/include/x86_64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/13/include] ==> [/usr/lib/gcc/x86_64-linux-gnu/13/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/lib/gcc/x86_64-linux-gnu/13/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
+      - "/usr/share/cmake-3.27/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/home/dylan/canonical/apper/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-9iD2uD']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_2e731/fast]
+        ignore line: [gmake[2]: Entering directory '/home/dylan/canonical/apper/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-9iD2uD']
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_2e731.dir/build.make CMakeFiles/cmTC_2e731.dir/build]
+        ignore line: [gmake[3]: Entering directory '/home/dylan/canonical/apper/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-9iD2uD']
+        ignore line: [Building C object CMakeFiles/cmTC_2e731.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/cc   -g -O2 -ffile-prefix-map=/home/dylan/canonical/apper=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wformat -fcf-protection -fdebug-prefix-map=/home/dylan/canonical/apper=/usr/src/apper-1.0.0-5 -Wdate-time -D_FORTIFY_SOURCE=2    -v -o CMakeFiles/cmTC_2e731.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.27/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.2.0-4ubuntu3' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-XYspKM/gcc-13-13.2.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-13-XYspKM/gcc-13-13.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.2.0 (Ubuntu 13.2.0-4ubuntu3) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-g' '-O2' '-ffile-prefix-map=/home/dylan/canonical/apper=.' '-flto=auto' '-ffat-lto-objects' '-fstack-protector-strong' '-fstack-clash-protection' '-Wformat=1' '-fcf-protection=full' '-fdebug-prefix-map=/home/dylan/canonical/apper=/usr/src/apper-1.0.0-5' '-Wdate-time' '-D' '_FORTIFY_SOURCE=2' '-v' '-o' 'CMakeFiles/cmTC_2e731.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_2e731.dir/']
+        ignore line: [ /usr/libexec/gcc/x86_64-linux-gnu/13/cc1 -quiet -v -imultiarch x86_64-linux-gnu -D _FORTIFY_SOURCE=2 /usr/share/cmake-3.27/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_2e731.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -g -O2 -Wformat=1 -Wdate-time -version -ffile-prefix-map=/home/dylan/canonical/apper=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -fcf-protection=full -fdebug-prefix-map=/home/dylan/canonical/apper=/usr/src/apper-1.0.0-5 -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -o /tmp/cc4Vm16v.s]
+        ignore line: [GNU C17 (Ubuntu 13.2.0-4ubuntu3) version 13.2.0 (x86_64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 13.2.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.26-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/13/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: edbc28f9c9bb85637ee0b8e5b79ac141]
+        ignore line: [COLLECT_GCC_OPTIONS='-g' '-O2' '-ffile-prefix-map=/home/dylan/canonical/apper=.' '-flto=auto' '-ffat-lto-objects' '-fstack-protector-strong' '-fstack-clash-protection' '-Wformat=1' '-fcf-protection=full' '-fdebug-prefix-map=/home/dylan/canonical/apper=/usr/src/apper-1.0.0-5' '-Wdate-time' '-D' '_FORTIFY_SOURCE=2' '-v' '-o' 'CMakeFiles/cmTC_2e731.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_2e731.dir/']
+        ignore line: [ as -v --gdwarf-5 --64 -o CMakeFiles/cmTC_2e731.dir/CMakeCCompilerABI.c.o /tmp/cc4Vm16v.s]
+        ignore line: [GNU assembler version 2.41 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.41]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-g' '-O2' '-ffile-prefix-map=/home/dylan/canonical/apper=.' '-flto=auto' '-ffat-lto-objects' '-fstack-protector-strong' '-fstack-clash-protection' '-Wformat=1' '-fcf-protection=full' '-fdebug-prefix-map=/home/dylan/canonical/apper=/usr/src/apper-1.0.0-5' '-Wdate-time' '-D' '_FORTIFY_SOURCE=2' '-v' '-o' 'CMakeFiles/cmTC_2e731.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_2e731.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_2e731]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2e731.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/cc -g -O2 -ffile-prefix-map=/home/dylan/canonical/apper=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wformat -fcf-protection -fdebug-prefix-map=/home/dylan/canonical/apper=/usr/src/apper-1.0.0-5 -Wdate-time -D_FORTIFY_SOURCE=2  -Wl -Bsymbolic-functions -flto=auto -ffat-lto-objects -Wl -z relro -v -rdynamic CMakeFiles/cmTC_2e731.dir/CMakeCCompilerABI.c.o -o cmTC_2e731 ]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.2.0-4ubuntu3' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-XYspKM/gcc-13-13.2.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-13-XYspKM/gcc-13-13.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.2.0 (Ubuntu 13.2.0-4ubuntu3) ]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-g' '-O2' '-ffile-prefix-map=/home/dylan/canonical/apper=.' '-flto=auto' '-fstack-protector-strong' '-fstack-clash-protection' '-Wformat=1' '-fcf-protection=full' '-fdebug-prefix-map=/home/dylan/canonical/apper=/usr/src/apper-1.0.0-5' '-Wdate-time' '-D' '_FORTIFY_SOURCE=2' '-flto=auto' '-ffat-lto-objects' '-v' '-rdynamic' '-o' 'cmTC_2e731' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_2e731.']
+        link line: [ /usr/libexec/gcc/x86_64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/cckzai1t.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -flto=auto -flto=auto --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_2e731 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. -Bsymbolic-functions -z relro CMakeFiles/cmTC_2e731.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o]
+          arg [/usr/libexec/gcc/x86_64-linux-gnu/13/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/cckzai1t.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-flto=auto] ==> ignore
+          arg [-flto=auto] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-export-dynamic] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-znow] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_2e731] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../..]
+          arg [-Bsymbolic-functions] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [CMakeFiles/cmTC_2e731.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o] ==> [/usr/lib/x86_64-linux-gnu/Scrt1.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o] ==> [/usr/lib/x86_64-linux-gnu/crtn.o]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13] ==> [/usr/lib/gcc/x86_64-linux-gnu/13]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib] ==> [/usr/lib]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../..] ==> [/usr/lib]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/usr/lib/x86_64-linux-gnu/Scrt1.o;/usr/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o;/usr/lib/x86_64-linux-gnu/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/13;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/share/cmake-3.27/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/dylan/canonical/apper/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-0tBHSh"
+      binary: "/home/dylan/canonical/apper/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-0tBHSh"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-g -O2 -ffile-prefix-map=/home/dylan/canonical/apper=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wformat -fcf-protection -fdebug-prefix-map=/home/dylan/canonical/apper=/usr/src/apper-1.0.0-5 -Wdate-time -D_FORTIFY_SOURCE=2"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/dylan/canonical/apper/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-0tBHSh'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_2c901/fast
+        gmake[2]: Entering directory '/home/dylan/canonical/apper/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-0tBHSh'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_2c901.dir/build.make CMakeFiles/cmTC_2c901.dir/build
+        gmake[3]: Entering directory '/home/dylan/canonical/apper/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-0tBHSh'
+        Building CXX object CMakeFiles/cmTC_2c901.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/c++   -g -O2 -ffile-prefix-map=/home/dylan/canonical/apper=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wformat -fcf-protection -fdebug-prefix-map=/home/dylan/canonical/apper=/usr/src/apper-1.0.0-5 -Wdate-time -D_FORTIFY_SOURCE=2    -v -o CMakeFiles/cmTC_2c901.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.2.0-4ubuntu3' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-XYspKM/gcc-13-13.2.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-13-XYspKM/gcc-13-13.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.2.0 (Ubuntu 13.2.0-4ubuntu3) 
+        COLLECT_GCC_OPTIONS='-g' '-O2' '-ffile-prefix-map=/home/dylan/canonical/apper=.' '-flto=auto' '-ffat-lto-objects' '-fstack-protector-strong' '-fstack-clash-protection' '-Wformat=1' '-fcf-protection=full' '-fdebug-prefix-map=/home/dylan/canonical/apper=/usr/src/apper-1.0.0-5' '-Wdate-time' '-D' '_FORTIFY_SOURCE=2' '-v' '-o' 'CMakeFiles/cmTC_2c901.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_2c901.dir/'
+         /usr/libexec/gcc/x86_64-linux-gnu/13/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE -D _FORTIFY_SOURCE=2 /usr/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_2c901.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -g -O2 -Wformat=1 -Wdate-time -version -ffile-prefix-map=/home/dylan/canonical/apper=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -fcf-protection=full -fdebug-prefix-map=/home/dylan/canonical/apper=/usr/src/apper-1.0.0-5 -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -o /tmp/cc4PmA2n.s
+        GNU C++17 (Ubuntu 13.2.0-4ubuntu3) version 13.2.0 (x86_64-linux-gnu)
+        	compiled by GNU C version 13.2.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.26-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/13"
+        ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/include/c++/13
+         /usr/include/x86_64-linux-gnu/c++/13
+         /usr/include/c++/13/backward
+         /usr/lib/gcc/x86_64-linux-gnu/13/include
+         /usr/local/include
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        Compiler executable checksum: 2d107d43320bae9d835c0808be5fcba6
+        COLLECT_GCC_OPTIONS='-g' '-O2' '-ffile-prefix-map=/home/dylan/canonical/apper=.' '-flto=auto' '-ffat-lto-objects' '-fstack-protector-strong' '-fstack-clash-protection' '-Wformat=1' '-fcf-protection=full' '-fdebug-prefix-map=/home/dylan/canonical/apper=/usr/src/apper-1.0.0-5' '-Wdate-time' '-D' '_FORTIFY_SOURCE=2' '-v' '-o' 'CMakeFiles/cmTC_2c901.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_2c901.dir/'
+         as -v --gdwarf-5 --64 -o CMakeFiles/cmTC_2c901.dir/CMakeCXXCompilerABI.cpp.o /tmp/cc4PmA2n.s
+        GNU assembler version 2.41 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.41
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-g' '-O2' '-ffile-prefix-map=/home/dylan/canonical/apper=.' '-flto=auto' '-ffat-lto-objects' '-fstack-protector-strong' '-fstack-clash-protection' '-Wformat=1' '-fcf-protection=full' '-fdebug-prefix-map=/home/dylan/canonical/apper=/usr/src/apper-1.0.0-5' '-Wdate-time' '-D' '_FORTIFY_SOURCE=2' '-v' '-o' 'CMakeFiles/cmTC_2c901.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_2c901.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_2c901
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2c901.dir/link.txt --verbose=1
+        /usr/bin/c++ -g -O2 -ffile-prefix-map=/home/dylan/canonical/apper=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wformat -fcf-protection -fdebug-prefix-map=/home/dylan/canonical/apper=/usr/src/apper-1.0.0-5 -Wdate-time -D_FORTIFY_SOURCE=2  -Wl,-Bsymbolic-functions -flto=auto -ffat-lto-objects -Wl,-z,relro -v -rdynamic CMakeFiles/cmTC_2c901.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_2c901 
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.2.0-4ubuntu3' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-XYspKM/gcc-13-13.2.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-13-XYspKM/gcc-13-13.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.2.0 (Ubuntu 13.2.0-4ubuntu3) 
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-g' '-O2' '-ffile-prefix-map=/home/dylan/canonical/apper=.' '-flto=auto' '-fstack-protector-strong' '-fstack-clash-protection' '-Wformat=1' '-fcf-protection=full' '-fdebug-prefix-map=/home/dylan/canonical/apper=/usr/src/apper-1.0.0-5' '-Wdate-time' '-D' '_FORTIFY_SOURCE=2' '-flto=auto' '-ffat-lto-objects' '-v' '-rdynamic' '-o' 'cmTC_2c901' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_2c901.'
+         /usr/libexec/gcc/x86_64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/cc23oBtC.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -flto=auto -flto=auto --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_2c901 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. -Bsymbolic-functions -z relro CMakeFiles/cmTC_2c901.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o
+        /usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -fresolution=/tmp/cc23oBtC.res -flinker-output=pie CMakeFiles/cmTC_2c901.dir/CMakeCXXCompilerABI.cpp.o 
+        /usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -fresolution=/tmp/cc23oBtC.res -flinker-output=pie CMakeFiles/cmTC_2c901.dir/CMakeCXXCompilerABI.cpp.o 
+        LTO parallelism level set to 3
+        /usr/bin/c++ @/tmp/ccZ0h3yW
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.2.0-4ubuntu3' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-XYspKM/gcc-13-13.2.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-13-XYspKM/gcc-13-13.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.2.0 (Ubuntu 13.2.0-4ubuntu3) 
+        COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fPIC' '-g' '-O2' '-fcf-protection=full' '-fasynchronous-unwind-tables' '-g' '-O2' '-ffile-prefix-map=/home/dylan/canonical/apper=.' '-fstack-protector-strong' '-fstack-clash-protection' '-fcf-protection=full' '-fdebug-prefix-map=/home/dylan/canonical/apper=/usr/src/apper-1.0.0-5' '-ffat-lto-objects' '-v' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64'   '-fltrans-output-list=/tmp/ccyO3zEU.ltrans.out' '-fwpa=3' '-fresolution=/tmp/cc23oBtC.res' '-flinker-output=pie' '-shared-libgcc'
+         /usr/libexec/gcc/x86_64-linux-gnu/13/lto1 -quiet -dumpbase ./cmTC_2c901.wpa -mtune=generic -march=x86-64 -g -g -O2 -O2 -version -fno-openmp -fno-openacc -fPIC -fcf-protection=full -fasynchronous-unwind-tables -ffile-prefix-map=/home/dylan/canonical/apper=. -fstack-protector-strong -fstack-clash-protection -fcf-protection=full -fdebug-prefix-map=/home/dylan/canonical/apper=/usr/src/apper-1.0.0-5 -ffat-lto-objects -fltrans-output-list=/tmp/ccyO3zEU.ltrans.out -fwpa=3 -fresolution=/tmp/cc23oBtC.res -flinker-output=pie @/tmp/cc8Akibt
+        GNU GIMPLE (Ubuntu 13.2.0-4ubuntu3) version 13.2.0 (x86_64-linux-gnu)
+        	compiled by GNU C version 13.2.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.26-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/../lib/:/lib/../lib/x86_64-linux-gnu/:/lib/../lib/../lib/:/usr/lib/../lib/x86_64-linux-gnu/:/usr/lib/../lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fPIC' '-g' '-O2' '-fcf-protection=full' '-fasynchronous-unwind-tables' '-g' '-O2' '-ffile-prefix-map=/home/dylan/canonical/apper=.' '-fstack-protector-strong' '-fstack-clash-protection' '-fcf-protection=full' '-fdebug-prefix-map=/home/dylan/canonical/apper=/usr/src/apper-1.0.0-5' '-ffat-lto-objects' '-v' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64'   '-fltrans-output-list=/tmp/ccyO3zEU.ltrans.out' '-fwpa=3' '-fresolution=/tmp/cc23oBtC.res' '-flinker-output=pie' '-shared-libgcc' '-dumpdir' './cmTC_2c901.wpa.'
+        make -f /tmp/ccJwBk1V.mk -j3 all
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.2.0-4ubuntu3' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-XYspKM/gcc-13-13.2.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-13-XYspKM/gcc-13-13.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.2.0 (Ubuntu 13.2.0-4ubuntu3) 
+        COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fPIC' '-g' '-O2' '-fcf-protection=full' '-fasynchronous-unwind-tables' '-g' '-O2' '-ffile-prefix-map=/home/dylan/canonical/apper=.' '-fstack-protector-strong' '-fstack-clash-protection' '-fcf-protection=full' '-fdebug-prefix-map=/home/dylan/canonical/apper=/usr/src/apper-1.0.0-5' '-ffat-lto-objects' '-v' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64'   '-fltrans' '-o' '/tmp/ccyO3zEU.ltrans0.ltrans.o' '-shared-libgcc'
+         /usr/libexec/gcc/x86_64-linux-gnu/13/lto1 -quiet -dumpbase ./cmTC_2c901.ltrans0.ltrans -mtune=generic -march=x86-64 -g -g -O2 -O2 -version -fno-openmp -fno-openacc -fPIC -fcf-protection=full -fasynchronous-unwind-tables -ffile-prefix-map=/home/dylan/canonical/apper=. -fstack-protector-strong -fstack-clash-protection -fcf-protection=full -fdebug-prefix-map=/home/dylan/canonical/apper=/usr/src/apper-1.0.0-5 -ffat-lto-objects -fltrans /tmp/ccyO3zEU.ltrans0.o -o /tmp/ccoDyiKv.s
+        GNU GIMPLE (Ubuntu 13.2.0-4ubuntu3) version 13.2.0 (x86_64-linux-gnu)
+        	compiled by GNU C version 13.2.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.26-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fPIC' '-g' '-O2' '-fcf-protection=full' '-fasynchronous-unwind-tables' '-g' '-O2' '-ffile-prefix-map=/home/dylan/canonical/apper=.' '-fstack-protector-strong' '-fstack-clash-protection' '-fcf-protection=full' '-fdebug-prefix-map=/home/dylan/canonical/apper=/usr/src/apper-1.0.0-5' '-ffat-lto-objects' '-v' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64'   '-fltrans' '-o' '/tmp/ccyO3zEU.ltrans0.ltrans.o' '-shared-libgcc'
+         as -v --gdwarf-5 --64 -o /tmp/ccyO3zEU.ltrans0.ltrans.o /tmp/ccoDyiKv.s
+        GNU assembler version 2.41 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.41
+        MAKEFLAGS=w -j3 
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/../lib/:/lib/../lib/x86_64-linux-gnu/:/lib/../lib/../lib/:/usr/lib/../lib/x86_64-linux-gnu/:/usr/lib/../lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fPIC' '-g' '-O2' '-fcf-protection=full' '-fasynchronous-unwind-tables' '-g' '-O2' '-ffile-prefix-map=/home/dylan/canonical/apper=.' '-fstack-protector-strong' '-fstack-clash-protection' '-fcf-protection=full' '-fdebug-prefix-map=/home/dylan/canonical/apper=/usr/src/apper-1.0.0-5' '-ffat-lto-objects' '-v' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64'   '-fltrans' '-o' '/tmp/ccyO3zEU.ltrans0.ltrans.o' '-shared-libgcc' '-dumpdir' './cmTC_2c901.ltrans0.ltrans.'
+        COLLECT_GCC_OPTIONS='-g' '-O2' '-ffile-prefix-map=/home/dylan/canonical/apper=.' '-flto=auto' '-fstack-protector-strong' '-fstack-clash-protection' '-Wformat=1' '-fcf-protection=full' '-fdebug-prefix-map=/home/dylan/canonical/apper=/usr/src/apper-1.0.0-5' '-Wdate-time' '-D' '_FORTIFY_SOURCE=2' '-flto=auto' '-ffat-lto-objects' '-v' '-rdynamic' '-o' 'cmTC_2c901' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_2c901.'
+        gmake[3]: Leaving directory '/home/dylan/canonical/apper/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-0tBHSh'
+        gmake[2]: Leaving directory '/home/dylan/canonical/apper/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-0tBHSh'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/usr/share/cmake-3.27/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/include/c++/13]
+          add: [/usr/include/x86_64-linux-gnu/c++/13]
+          add: [/usr/include/c++/13/backward]
+          add: [/usr/lib/gcc/x86_64-linux-gnu/13/include]
+          add: [/usr/local/include]
+          add: [/usr/include/x86_64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/include/c++/13] ==> [/usr/include/c++/13]
+        collapse include dir [/usr/include/x86_64-linux-gnu/c++/13] ==> [/usr/include/x86_64-linux-gnu/c++/13]
+        collapse include dir [/usr/include/c++/13/backward] ==> [/usr/include/c++/13/backward]
+        collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/13/include] ==> [/usr/lib/gcc/x86_64-linux-gnu/13/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/include/c++/13;/usr/include/x86_64-linux-gnu/c++/13;/usr/include/c++/13/backward;/usr/lib/gcc/x86_64-linux-gnu/13/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
+      - "/usr/share/cmake-3.27/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/home/dylan/canonical/apper/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-0tBHSh']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_2c901/fast]
+        ignore line: [gmake[2]: Entering directory '/home/dylan/canonical/apper/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-0tBHSh']
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_2c901.dir/build.make CMakeFiles/cmTC_2c901.dir/build]
+        ignore line: [gmake[3]: Entering directory '/home/dylan/canonical/apper/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-0tBHSh']
+        ignore line: [Building CXX object CMakeFiles/cmTC_2c901.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/c++   -g -O2 -ffile-prefix-map=/home/dylan/canonical/apper=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wformat -fcf-protection -fdebug-prefix-map=/home/dylan/canonical/apper=/usr/src/apper-1.0.0-5 -Wdate-time -D_FORTIFY_SOURCE=2    -v -o CMakeFiles/cmTC_2c901.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.2.0-4ubuntu3' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-XYspKM/gcc-13-13.2.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-13-XYspKM/gcc-13-13.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.2.0 (Ubuntu 13.2.0-4ubuntu3) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-g' '-O2' '-ffile-prefix-map=/home/dylan/canonical/apper=.' '-flto=auto' '-ffat-lto-objects' '-fstack-protector-strong' '-fstack-clash-protection' '-Wformat=1' '-fcf-protection=full' '-fdebug-prefix-map=/home/dylan/canonical/apper=/usr/src/apper-1.0.0-5' '-Wdate-time' '-D' '_FORTIFY_SOURCE=2' '-v' '-o' 'CMakeFiles/cmTC_2c901.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_2c901.dir/']
+        ignore line: [ /usr/libexec/gcc/x86_64-linux-gnu/13/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE -D _FORTIFY_SOURCE=2 /usr/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_2c901.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -g -O2 -Wformat=1 -Wdate-time -version -ffile-prefix-map=/home/dylan/canonical/apper=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -fcf-protection=full -fdebug-prefix-map=/home/dylan/canonical/apper=/usr/src/apper-1.0.0-5 -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -o /tmp/cc4PmA2n.s]
+        ignore line: [GNU C++17 (Ubuntu 13.2.0-4ubuntu3) version 13.2.0 (x86_64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 13.2.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.26-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/13"]
+        ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/include/c++/13]
+        ignore line: [ /usr/include/x86_64-linux-gnu/c++/13]
+        ignore line: [ /usr/include/c++/13/backward]
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/13/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 2d107d43320bae9d835c0808be5fcba6]
+        ignore line: [COLLECT_GCC_OPTIONS='-g' '-O2' '-ffile-prefix-map=/home/dylan/canonical/apper=.' '-flto=auto' '-ffat-lto-objects' '-fstack-protector-strong' '-fstack-clash-protection' '-Wformat=1' '-fcf-protection=full' '-fdebug-prefix-map=/home/dylan/canonical/apper=/usr/src/apper-1.0.0-5' '-Wdate-time' '-D' '_FORTIFY_SOURCE=2' '-v' '-o' 'CMakeFiles/cmTC_2c901.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_2c901.dir/']
+        ignore line: [ as -v --gdwarf-5 --64 -o CMakeFiles/cmTC_2c901.dir/CMakeCXXCompilerABI.cpp.o /tmp/cc4PmA2n.s]
+        ignore line: [GNU assembler version 2.41 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.41]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-g' '-O2' '-ffile-prefix-map=/home/dylan/canonical/apper=.' '-flto=auto' '-ffat-lto-objects' '-fstack-protector-strong' '-fstack-clash-protection' '-Wformat=1' '-fcf-protection=full' '-fdebug-prefix-map=/home/dylan/canonical/apper=/usr/src/apper-1.0.0-5' '-Wdate-time' '-D' '_FORTIFY_SOURCE=2' '-v' '-o' 'CMakeFiles/cmTC_2c901.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_2c901.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_2c901]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2c901.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/c++ -g -O2 -ffile-prefix-map=/home/dylan/canonical/apper=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wformat -fcf-protection -fdebug-prefix-map=/home/dylan/canonical/apper=/usr/src/apper-1.0.0-5 -Wdate-time -D_FORTIFY_SOURCE=2  -Wl -Bsymbolic-functions -flto=auto -ffat-lto-objects -Wl -z relro -v -rdynamic CMakeFiles/cmTC_2c901.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_2c901 ]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.2.0-4ubuntu3' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-XYspKM/gcc-13-13.2.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-13-XYspKM/gcc-13-13.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.2.0 (Ubuntu 13.2.0-4ubuntu3) ]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-g' '-O2' '-ffile-prefix-map=/home/dylan/canonical/apper=.' '-flto=auto' '-fstack-protector-strong' '-fstack-clash-protection' '-Wformat=1' '-fcf-protection=full' '-fdebug-prefix-map=/home/dylan/canonical/apper=/usr/src/apper-1.0.0-5' '-Wdate-time' '-D' '_FORTIFY_SOURCE=2' '-flto=auto' '-ffat-lto-objects' '-v' '-rdynamic' '-o' 'cmTC_2c901' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_2c901.']
+        link line: [ /usr/libexec/gcc/x86_64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/cc23oBtC.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -flto=auto -flto=auto --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_2c901 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. -Bsymbolic-functions -z relro CMakeFiles/cmTC_2c901.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o]
+          arg [/usr/libexec/gcc/x86_64-linux-gnu/13/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/cc23oBtC.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-flto=auto] ==> ignore
+          arg [-flto=auto] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-export-dynamic] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-znow] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_2c901] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../..]
+          arg [-Bsymbolic-functions] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [CMakeFiles/cmTC_2c901.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o] ==> [/usr/lib/x86_64-linux-gnu/Scrt1.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o] ==> [/usr/lib/x86_64-linux-gnu/crtn.o]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13] ==> [/usr/lib/gcc/x86_64-linux-gnu/13]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib] ==> [/usr/lib]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../..] ==> [/usr/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/usr/lib/x86_64-linux-gnu/Scrt1.o;/usr/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o;/usr/lib/x86_64-linux-gnu/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/13;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.27/Modules/CheckSymbolExists.cmake:140 (try_compile)"
+      - "/usr/share/cmake-3.27/Modules/CheckSymbolExists.cmake:66 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "/usr/share/ECM/kde-modules/KDECompilerSettings.cmake:300 (check_symbol_exists)"
+      - "CMakeLists.txt:16 (include)"
+    checks:
+      - "Looking for __GLIBC__"
+    directories:
+      source: "/home/dylan/canonical/apper/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-diJWUT"
+      binary: "/home/dylan/canonical/apper/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-diJWUT"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-g -O2 -ffile-prefix-map=/home/dylan/canonical/apper=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wformat -fcf-protection -fdebug-prefix-map=/home/dylan/canonical/apper=/usr/src/apper-1.0.0-5 -Wdate-time -D_FORTIFY_SOURCE=2"
+      CMAKE_MODULE_PATH: "/usr/share/ECM/modules/;/usr/share/ECM/find-modules/;/usr/share/ECM/kde-modules/;/home/dylan/canonical/apper/cmake/modules/"
+    buildResult:
+      variable: "LIBC_IS_GLIBC"
+      cached: true
+      stdout: |
+        Change Dir: '/home/dylan/canonical/apper/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-diJWUT'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_5b8e0/fast
+        gmake[2]: Entering directory '/home/dylan/canonical/apper/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-diJWUT'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_5b8e0.dir/build.make CMakeFiles/cmTC_5b8e0.dir/build
+        gmake[3]: Entering directory '/home/dylan/canonical/apper/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-diJWUT'
+        Building C object CMakeFiles/cmTC_5b8e0.dir/CheckSymbolExists.c.o
+        /usr/bin/cc   -g -O2 -ffile-prefix-map=/home/dylan/canonical/apper=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wformat -fcf-protection -fdebug-prefix-map=/home/dylan/canonical/apper=/usr/src/apper-1.0.0-5 -Wdate-time -D_FORTIFY_SOURCE=2  -o CMakeFiles/cmTC_5b8e0.dir/CheckSymbolExists.c.o -c /home/dylan/canonical/apper/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-diJWUT/CheckSymbolExists.c
+        Linking C executable cmTC_5b8e0
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5b8e0.dir/link.txt --verbose=1
+        /usr/bin/cc -g -O2 -ffile-prefix-map=/home/dylan/canonical/apper=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wformat -fcf-protection -fdebug-prefix-map=/home/dylan/canonical/apper=/usr/src/apper-1.0.0-5 -Wdate-time -D_FORTIFY_SOURCE=2  -Wl,-Bsymbolic-functions -flto=auto -ffat-lto-objects -Wl,-z,relro  -rdynamic CMakeFiles/cmTC_5b8e0.dir/CheckSymbolExists.c.o -o cmTC_5b8e0 
+        gmake[3]: Leaving directory '/home/dylan/canonical/apper/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-diJWUT'
+        gmake[2]: Leaving directory '/home/dylan/canonical/apper/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-diJWUT'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.27/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.27/Modules/CheckCXXSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "/usr/share/ECM/kde-modules/KDECompilerSettings.cmake:324 (check_cxx_source_compiles)"
+      - "CMakeLists.txt:16 (include)"
+    checks:
+      - "Performing Test _OFFT_IS_64BIT"
+    directories:
+      source: "/home/dylan/canonical/apper/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-j1u4St"
+      binary: "/home/dylan/canonical/apper/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-j1u4St"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-g -O2 -ffile-prefix-map=/home/dylan/canonical/apper=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -fdebug-prefix-map=/home/dylan/canonical/apper=/usr/src/apper-1.0.0-5 -Wdate-time -D_FORTIFY_SOURCE=2"
+      CMAKE_MODULE_PATH: "/usr/share/ECM/modules/;/usr/share/ECM/find-modules/;/usr/share/ECM/kde-modules/;/home/dylan/canonical/apper/cmake/modules/"
+    buildResult:
+      variable: "_OFFT_IS_64BIT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/dylan/canonical/apper/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-j1u4St'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_0a9f6/fast
+        gmake[2]: Entering directory '/home/dylan/canonical/apper/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-j1u4St'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_0a9f6.dir/build.make CMakeFiles/cmTC_0a9f6.dir/build
+        gmake[3]: Entering directory '/home/dylan/canonical/apper/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-j1u4St'
+        Building CXX object CMakeFiles/cmTC_0a9f6.dir/src.cxx.o
+        /usr/bin/c++ -D_GNU_SOURCE -D_LARGEFILE64_SOURCE -D_OFFT_IS_64BIT  -g -O2 -ffile-prefix-map=/home/dylan/canonical/apper=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -fdebug-prefix-map=/home/dylan/canonical/apper=/usr/src/apper-1.0.0-5 -Wdate-time -D_FORTIFY_SOURCE=2  -o CMakeFiles/cmTC_0a9f6.dir/src.cxx.o -c /home/dylan/canonical/apper/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-j1u4St/src.cxx
+        Linking CXX executable cmTC_0a9f6
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0a9f6.dir/link.txt --verbose=1
+        /usr/bin/c++ -g -O2 -ffile-prefix-map=/home/dylan/canonical/apper=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -fdebug-prefix-map=/home/dylan/canonical/apper=/usr/src/apper-1.0.0-5 -Wdate-time -D_FORTIFY_SOURCE=2  -Wl,-Bsymbolic-functions -flto=auto -ffat-lto-objects -Wl,-z,relro  -rdynamic CMakeFiles/cmTC_0a9f6.dir/src.cxx.o -o cmTC_0a9f6 
+        gmake[3]: Leaving directory '/home/dylan/canonical/apper/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-j1u4St'
+        gmake[2]: Leaving directory '/home/dylan/canonical/apper/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-j1u4St'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.27/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.27/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.27/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "/usr/share/ECM/kde-modules/KDECompilerSettings.cmake:579 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:16 (include)"
+    checks:
+      - "Performing Test HAVE_DATE_TIME"
+    directories:
+      source: "/home/dylan/canonical/apper/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-eAGJ2L"
+      binary: "/home/dylan/canonical/apper/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-eAGJ2L"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-g -O2 -ffile-prefix-map=/home/dylan/canonical/apper=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -fdebug-prefix-map=/home/dylan/canonical/apper=/usr/src/apper-1.0.0-5 -Wdate-time -D_FORTIFY_SOURCE=2 -fno-operator-names -fno-exceptions -Wall -Wextra -Wcast-align -Wchar-subscripts -Wformat-security -Wno-long-long -Wpointer-arith -Wundef -Wnon-virtual-dtor -Woverloaded-virtual -Werror=return-type -Werror=init-self -Wvla"
+      CMAKE_MODULE_PATH: "/usr/share/ECM/modules/;/usr/share/ECM/find-modules/;/usr/share/ECM/kde-modules/;/home/dylan/canonical/apper/cmake/modules/"
+    buildResult:
+      variable: "HAVE_DATE_TIME"
+      cached: true
+      stdout: |
+        Change Dir: '/home/dylan/canonical/apper/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-eAGJ2L'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_6286f/fast
+        gmake[2]: Entering directory '/home/dylan/canonical/apper/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-eAGJ2L'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_6286f.dir/build.make CMakeFiles/cmTC_6286f.dir/build
+        gmake[3]: Entering directory '/home/dylan/canonical/apper/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-eAGJ2L'
+        Building CXX object CMakeFiles/cmTC_6286f.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_DATE_TIME  -g -O2 -ffile-prefix-map=/home/dylan/canonical/apper=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -fdebug-prefix-map=/home/dylan/canonical/apper=/usr/src/apper-1.0.0-5 -Wdate-time -D_FORTIFY_SOURCE=2 -fno-operator-names -fno-exceptions -Wall -Wextra -Wcast-align -Wchar-subscripts -Wformat-security -Wno-long-long -Wpointer-arith -Wundef -Wnon-virtual-dtor -Woverloaded-virtual -Werror=return-type -Werror=init-self -Wvla    -Wdate-time -o CMakeFiles/cmTC_6286f.dir/src.cxx.o -c /home/dylan/canonical/apper/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-eAGJ2L/src.cxx
+        Linking CXX executable cmTC_6286f
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6286f.dir/link.txt --verbose=1
+        /usr/bin/c++ -g -O2 -ffile-prefix-map=/home/dylan/canonical/apper=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -fdebug-prefix-map=/home/dylan/canonical/apper=/usr/src/apper-1.0.0-5 -Wdate-time -D_FORTIFY_SOURCE=2 -fno-operator-names -fno-exceptions -Wall -Wextra -Wcast-align -Wchar-subscripts -Wformat-security -Wno-long-long -Wpointer-arith -Wundef -Wnon-virtual-dtor -Woverloaded-virtual -Werror=return-type -Werror=init-self -Wvla  -Wl,-Bsymbolic-functions -flto=auto -ffat-lto-objects -Wl,-z,relro  -rdynamic CMakeFiles/cmTC_6286f.dir/src.cxx.o -o cmTC_6286f 
+        gmake[3]: Leaving directory '/home/dylan/canonical/apper/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-eAGJ2L'
+        gmake[2]: Leaving directory '/home/dylan/canonical/apper/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-eAGJ2L'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.27/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "/usr/share/cmake-3.27/Modules/FindX11.cmake:682 (check_library_exists)"
+      - "/usr/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/KF5WindowSystem/KF5WindowSystemConfig.cmake:45 (find_dependency)"
+      - "/usr/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/KF5KIO/KF5KIOConfig.cmake:55 (find_dependency)"
+      - "/usr/share/ECM/find-modules/FindKF5.cmake:52 (find_package)"
+      - "CMakeLists.txt:25 (find_package)"
+    checks:
+      - "Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so"
+    directories:
+      source: "/home/dylan/canonical/apper/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-8YBfkn"
+      binary: "/home/dylan/canonical/apper/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-8YBfkn"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-g -O2 -ffile-prefix-map=/home/dylan/canonical/apper=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -fdebug-prefix-map=/home/dylan/canonical/apper=/usr/src/apper-1.0.0-5 -Wdate-time -D_FORTIFY_SOURCE=2 -fno-common -Wall -Wextra -Wcast-align -Wchar-subscripts -Wformat-security -Wno-long-long -Wpointer-arith -Wundef -Wmissing-format-attribute -Wwrite-strings -Werror=implicit-function-declaration"
+      CMAKE_MODULE_PATH: "/usr/share/ECM/modules/;/usr/share/ECM/find-modules/;/usr/share/ECM/kde-modules/;/home/dylan/canonical/apper/cmake/modules/"
+    buildResult:
+      variable: "X11_LIB_X11_SOLO"
+      cached: true
+      stdout: |
+        Change Dir: '/home/dylan/canonical/apper/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-8YBfkn'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e1c1c/fast
+        gmake[2]: Entering directory '/home/dylan/canonical/apper/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-8YBfkn'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_e1c1c.dir/build.make CMakeFiles/cmTC_e1c1c.dir/build
+        gmake[3]: Entering directory '/home/dylan/canonical/apper/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-8YBfkn'
+        Building C object CMakeFiles/cmTC_e1c1c.dir/CheckFunctionExists.c.o
+        /usr/bin/cc -D_GNU_SOURCE -D_LARGEFILE64_SOURCE  -g -O2 -ffile-prefix-map=/home/dylan/canonical/apper=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -fdebug-prefix-map=/home/dylan/canonical/apper=/usr/src/apper-1.0.0-5 -Wdate-time -D_FORTIFY_SOURCE=2 -fno-common -Wall -Wextra -Wcast-align -Wchar-subscripts -Wformat-security -Wno-long-long -Wpointer-arith -Wundef -Wmissing-format-attribute -Wwrite-strings -Werror=implicit-function-declaration -DCHECK_FUNCTION_EXISTS=XOpenDisplay -o CMakeFiles/cmTC_e1c1c.dir/CheckFunctionExists.c.o -c /home/dylan/canonical/apper/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-8YBfkn/CheckFunctionExists.c
+        Linking C executable cmTC_e1c1c
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e1c1c.dir/link.txt --verbose=1
+        /usr/bin/cc -g -O2 -ffile-prefix-map=/home/dylan/canonical/apper=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -fdebug-prefix-map=/home/dylan/canonical/apper=/usr/src/apper-1.0.0-5 -Wdate-time -D_FORTIFY_SOURCE=2 -fno-common -Wall -Wextra -Wcast-align -Wchar-subscripts -Wformat-security -Wno-long-long -Wpointer-arith -Wundef -Wmissing-format-attribute -Wwrite-strings -Werror=implicit-function-declaration -DCHECK_FUNCTION_EXISTS=XOpenDisplay -Wl,-Bsymbolic-functions -flto=auto -ffat-lto-objects -Wl,-z,relro  -rdynamic CMakeFiles/cmTC_e1c1c.dir/CheckFunctionExists.c.o -o cmTC_e1c1c  /usr/lib/x86_64-linux-gnu/libX11.so /usr/lib/x86_64-linux-gnu/libXext.so 
+        gmake[3]: Leaving directory '/home/dylan/canonical/apper/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-8YBfkn'
+        gmake[2]: Leaving directory '/home/dylan/canonical/apper/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-8YBfkn'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.27/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "/usr/share/cmake-3.27/Modules/FindX11.cmake:697 (check_function_exists)"
+      - "/usr/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/KF5WindowSystem/KF5WindowSystemConfig.cmake:45 (find_dependency)"
+      - "/usr/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/KF5KIO/KF5KIOConfig.cmake:55 (find_dependency)"
+      - "/usr/share/ECM/find-modules/FindKF5.cmake:52 (find_package)"
+      - "CMakeLists.txt:25 (find_package)"
+    checks:
+      - "Looking for gethostbyname"
+    directories:
+      source: "/home/dylan/canonical/apper/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-NZwih6"
+      binary: "/home/dylan/canonical/apper/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-NZwih6"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-g -O2 -ffile-prefix-map=/home/dylan/canonical/apper=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -fdebug-prefix-map=/home/dylan/canonical/apper=/usr/src/apper-1.0.0-5 -Wdate-time -D_FORTIFY_SOURCE=2 -fno-common -Wall -Wextra -Wcast-align -Wchar-subscripts -Wformat-security -Wno-long-long -Wpointer-arith -Wundef -Wmissing-format-attribute -Wwrite-strings -Werror=implicit-function-declaration"
+      CMAKE_MODULE_PATH: "/usr/share/ECM/modules/;/usr/share/ECM/find-modules/;/usr/share/ECM/kde-modules/;/home/dylan/canonical/apper/cmake/modules/"
+    buildResult:
+      variable: "CMAKE_HAVE_GETHOSTBYNAME"
+      cached: true
+      stdout: |
+        Change Dir: '/home/dylan/canonical/apper/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-NZwih6'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b6b9b/fast
+        gmake[2]: Entering directory '/home/dylan/canonical/apper/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-NZwih6'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_b6b9b.dir/build.make CMakeFiles/cmTC_b6b9b.dir/build
+        gmake[3]: Entering directory '/home/dylan/canonical/apper/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-NZwih6'
+        Building C object CMakeFiles/cmTC_b6b9b.dir/CheckFunctionExists.c.o
+        /usr/bin/cc -D_GNU_SOURCE -D_LARGEFILE64_SOURCE  -g -O2 -ffile-prefix-map=/home/dylan/canonical/apper=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -fdebug-prefix-map=/home/dylan/canonical/apper=/usr/src/apper-1.0.0-5 -Wdate-time -D_FORTIFY_SOURCE=2 -fno-common -Wall -Wextra -Wcast-align -Wchar-subscripts -Wformat-security -Wno-long-long -Wpointer-arith -Wundef -Wmissing-format-attribute -Wwrite-strings -Werror=implicit-function-declaration -DCHECK_FUNCTION_EXISTS=gethostbyname -o CMakeFiles/cmTC_b6b9b.dir/CheckFunctionExists.c.o -c /home/dylan/canonical/apper/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-NZwih6/CheckFunctionExists.c
+        Linking C executable cmTC_b6b9b
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b6b9b.dir/link.txt --verbose=1
+        /usr/bin/cc -g -O2 -ffile-prefix-map=/home/dylan/canonical/apper=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -fdebug-prefix-map=/home/dylan/canonical/apper=/usr/src/apper-1.0.0-5 -Wdate-time -D_FORTIFY_SOURCE=2 -fno-common -Wall -Wextra -Wcast-align -Wchar-subscripts -Wformat-security -Wno-long-long -Wpointer-arith -Wundef -Wmissing-format-attribute -Wwrite-strings -Werror=implicit-function-declaration -DCHECK_FUNCTION_EXISTS=gethostbyname -Wl,-Bsymbolic-functions -flto=auto -ffat-lto-objects -Wl,-z,relro  -rdynamic CMakeFiles/cmTC_b6b9b.dir/CheckFunctionExists.c.o -o cmTC_b6b9b 
+        gmake[3]: Leaving directory '/home/dylan/canonical/apper/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-NZwih6'
+        gmake[2]: Leaving directory '/home/dylan/canonical/apper/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-NZwih6'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.27/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "/usr/share/cmake-3.27/Modules/FindX11.cmake:711 (check_function_exists)"
+      - "/usr/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/KF5WindowSystem/KF5WindowSystemConfig.cmake:45 (find_dependency)"
+      - "/usr/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/KF5KIO/KF5KIOConfig.cmake:55 (find_dependency)"
+      - "/usr/share/ECM/find-modules/FindKF5.cmake:52 (find_package)"
+      - "CMakeLists.txt:25 (find_package)"
+    checks:
+      - "Looking for connect"
+    directories:
+      source: "/home/dylan/canonical/apper/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-s9GOgh"
+      binary: "/home/dylan/canonical/apper/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-s9GOgh"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-g -O2 -ffile-prefix-map=/home/dylan/canonical/apper=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -fdebug-prefix-map=/home/dylan/canonical/apper=/usr/src/apper-1.0.0-5 -Wdate-time -D_FORTIFY_SOURCE=2 -fno-common -Wall -Wextra -Wcast-align -Wchar-subscripts -Wformat-security -Wno-long-long -Wpointer-arith -Wundef -Wmissing-format-attribute -Wwrite-strings -Werror=implicit-function-declaration"
+      CMAKE_MODULE_PATH: "/usr/share/ECM/modules/;/usr/share/ECM/find-modules/;/usr/share/ECM/kde-modules/;/home/dylan/canonical/apper/cmake/modules/"
+    buildResult:
+      variable: "CMAKE_HAVE_CONNECT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/dylan/canonical/apper/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-s9GOgh'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c8838/fast
+        gmake[2]: Entering directory '/home/dylan/canonical/apper/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-s9GOgh'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_c8838.dir/build.make CMakeFiles/cmTC_c8838.dir/build
+        gmake[3]: Entering directory '/home/dylan/canonical/apper/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-s9GOgh'
+        Building C object CMakeFiles/cmTC_c8838.dir/CheckFunctionExists.c.o
+        /usr/bin/cc -D_GNU_SOURCE -D_LARGEFILE64_SOURCE  -g -O2 -ffile-prefix-map=/home/dylan/canonical/apper=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -fdebug-prefix-map=/home/dylan/canonical/apper=/usr/src/apper-1.0.0-5 -Wdate-time -D_FORTIFY_SOURCE=2 -fno-common -Wall -Wextra -Wcast-align -Wchar-subscripts -Wformat-security -Wno-long-long -Wpointer-arith -Wundef -Wmissing-format-attribute -Wwrite-strings -Werror=implicit-function-declaration -DCHECK_FUNCTION_EXISTS=connect -o CMakeFiles/cmTC_c8838.dir/CheckFunctionExists.c.o -c /home/dylan/canonical/apper/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-s9GOgh/CheckFunctionExists.c
+        Linking C executable cmTC_c8838
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c8838.dir/link.txt --verbose=1
+        /usr/bin/cc -g -O2 -ffile-prefix-map=/home/dylan/canonical/apper=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -fdebug-prefix-map=/home/dylan/canonical/apper=/usr/src/apper-1.0.0-5 -Wdate-time -D_FORTIFY_SOURCE=2 -fno-common -Wall -Wextra -Wcast-align -Wchar-subscripts -Wformat-security -Wno-long-long -Wpointer-arith -Wundef -Wmissing-format-attribute -Wwrite-strings -Werror=implicit-function-declaration -DCHECK_FUNCTION_EXISTS=connect -Wl,-Bsymbolic-functions -flto=auto -ffat-lto-objects -Wl,-z,relro  -rdynamic CMakeFiles/cmTC_c8838.dir/CheckFunctionExists.c.o -o cmTC_c8838 
+        gmake[3]: Leaving directory '/home/dylan/canonical/apper/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-s9GOgh'
+        gmake[2]: Leaving directory '/home/dylan/canonical/apper/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-s9GOgh'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.27/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "/usr/share/cmake-3.27/Modules/FindX11.cmake:720 (check_function_exists)"
+      - "/usr/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/KF5WindowSystem/KF5WindowSystemConfig.cmake:45 (find_dependency)"
+      - "/usr/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/KF5KIO/KF5KIOConfig.cmake:55 (find_dependency)"
+      - "/usr/share/ECM/find-modules/FindKF5.cmake:52 (find_package)"
+      - "CMakeLists.txt:25 (find_package)"
+    checks:
+      - "Looking for remove"
+    directories:
+      source: "/home/dylan/canonical/apper/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-LgNQBD"
+      binary: "/home/dylan/canonical/apper/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-LgNQBD"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-g -O2 -ffile-prefix-map=/home/dylan/canonical/apper=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -fdebug-prefix-map=/home/dylan/canonical/apper=/usr/src/apper-1.0.0-5 -Wdate-time -D_FORTIFY_SOURCE=2 -fno-common -Wall -Wextra -Wcast-align -Wchar-subscripts -Wformat-security -Wno-long-long -Wpointer-arith -Wundef -Wmissing-format-attribute -Wwrite-strings -Werror=implicit-function-declaration"
+      CMAKE_MODULE_PATH: "/usr/share/ECM/modules/;/usr/share/ECM/find-modules/;/usr/share/ECM/kde-modules/;/home/dylan/canonical/apper/cmake/modules/"
+    buildResult:
+      variable: "CMAKE_HAVE_REMOVE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/dylan/canonical/apper/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-LgNQBD'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_44fc2/fast
+        gmake[2]: Entering directory '/home/dylan/canonical/apper/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-LgNQBD'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_44fc2.dir/build.make CMakeFiles/cmTC_44fc2.dir/build
+        gmake[3]: Entering directory '/home/dylan/canonical/apper/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-LgNQBD'
+        Building C object CMakeFiles/cmTC_44fc2.dir/CheckFunctionExists.c.o
+        /usr/bin/cc -D_GNU_SOURCE -D_LARGEFILE64_SOURCE  -g -O2 -ffile-prefix-map=/home/dylan/canonical/apper=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -fdebug-prefix-map=/home/dylan/canonical/apper=/usr/src/apper-1.0.0-5 -Wdate-time -D_FORTIFY_SOURCE=2 -fno-common -Wall -Wextra -Wcast-align -Wchar-subscripts -Wformat-security -Wno-long-long -Wpointer-arith -Wundef -Wmissing-format-attribute -Wwrite-strings -Werror=implicit-function-declaration -DCHECK_FUNCTION_EXISTS=remove -o CMakeFiles/cmTC_44fc2.dir/CheckFunctionExists.c.o -c /home/dylan/canonical/apper/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-LgNQBD/CheckFunctionExists.c
+        Linking C executable cmTC_44fc2
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_44fc2.dir/link.txt --verbose=1
+        /usr/bin/cc -g -O2 -ffile-prefix-map=/home/dylan/canonical/apper=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -fdebug-prefix-map=/home/dylan/canonical/apper=/usr/src/apper-1.0.0-5 -Wdate-time -D_FORTIFY_SOURCE=2 -fno-common -Wall -Wextra -Wcast-align -Wchar-subscripts -Wformat-security -Wno-long-long -Wpointer-arith -Wundef -Wmissing-format-attribute -Wwrite-strings -Werror=implicit-function-declaration -DCHECK_FUNCTION_EXISTS=remove -Wl,-Bsymbolic-functions -flto=auto -ffat-lto-objects -Wl,-z,relro  -rdynamic CMakeFiles/cmTC_44fc2.dir/CheckFunctionExists.c.o -o cmTC_44fc2 
+        gmake[3]: Leaving directory '/home/dylan/canonical/apper/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-LgNQBD'
+        gmake[2]: Leaving directory '/home/dylan/canonical/apper/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-LgNQBD'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.27/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "/usr/share/cmake-3.27/Modules/FindX11.cmake:729 (check_function_exists)"
+      - "/usr/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/KF5WindowSystem/KF5WindowSystemConfig.cmake:45 (find_dependency)"
+      - "/usr/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/KF5KIO/KF5KIOConfig.cmake:55 (find_dependency)"
+      - "/usr/share/ECM/find-modules/FindKF5.cmake:52 (find_package)"
+      - "CMakeLists.txt:25 (find_package)"
+    checks:
+      - "Looking for shmat"
+    directories:
+      source: "/home/dylan/canonical/apper/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-kxhUdI"
+      binary: "/home/dylan/canonical/apper/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-kxhUdI"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-g -O2 -ffile-prefix-map=/home/dylan/canonical/apper=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -fdebug-prefix-map=/home/dylan/canonical/apper=/usr/src/apper-1.0.0-5 -Wdate-time -D_FORTIFY_SOURCE=2 -fno-common -Wall -Wextra -Wcast-align -Wchar-subscripts -Wformat-security -Wno-long-long -Wpointer-arith -Wundef -Wmissing-format-attribute -Wwrite-strings -Werror=implicit-function-declaration"
+      CMAKE_MODULE_PATH: "/usr/share/ECM/modules/;/usr/share/ECM/find-modules/;/usr/share/ECM/kde-modules/;/home/dylan/canonical/apper/cmake/modules/"
+    buildResult:
+      variable: "CMAKE_HAVE_SHMAT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/dylan/canonical/apper/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-kxhUdI'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_859fc/fast
+        gmake[2]: Entering directory '/home/dylan/canonical/apper/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-kxhUdI'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_859fc.dir/build.make CMakeFiles/cmTC_859fc.dir/build
+        gmake[3]: Entering directory '/home/dylan/canonical/apper/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-kxhUdI'
+        Building C object CMakeFiles/cmTC_859fc.dir/CheckFunctionExists.c.o
+        /usr/bin/cc -D_GNU_SOURCE -D_LARGEFILE64_SOURCE  -g -O2 -ffile-prefix-map=/home/dylan/canonical/apper=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -fdebug-prefix-map=/home/dylan/canonical/apper=/usr/src/apper-1.0.0-5 -Wdate-time -D_FORTIFY_SOURCE=2 -fno-common -Wall -Wextra -Wcast-align -Wchar-subscripts -Wformat-security -Wno-long-long -Wpointer-arith -Wundef -Wmissing-format-attribute -Wwrite-strings -Werror=implicit-function-declaration -DCHECK_FUNCTION_EXISTS=shmat -o CMakeFiles/cmTC_859fc.dir/CheckFunctionExists.c.o -c /home/dylan/canonical/apper/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-kxhUdI/CheckFunctionExists.c
+        Linking C executable cmTC_859fc
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_859fc.dir/link.txt --verbose=1
+        /usr/bin/cc -g -O2 -ffile-prefix-map=/home/dylan/canonical/apper=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -fdebug-prefix-map=/home/dylan/canonical/apper=/usr/src/apper-1.0.0-5 -Wdate-time -D_FORTIFY_SOURCE=2 -fno-common -Wall -Wextra -Wcast-align -Wchar-subscripts -Wformat-security -Wno-long-long -Wpointer-arith -Wundef -Wmissing-format-attribute -Wwrite-strings -Werror=implicit-function-declaration -DCHECK_FUNCTION_EXISTS=shmat -Wl,-Bsymbolic-functions -flto=auto -ffat-lto-objects -Wl,-z,relro  -rdynamic CMakeFiles/cmTC_859fc.dir/CheckFunctionExists.c.o -o cmTC_859fc 
+        gmake[3]: Leaving directory '/home/dylan/canonical/apper/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-kxhUdI'
+        gmake[2]: Leaving directory '/home/dylan/canonical/apper/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-kxhUdI'
+        
+      exitCode: 0
+...

@@ -1,0 +1,338 @@
+{
+	"BUILD_DIR" : "/home/dylan/canonical/apper/obj-x86_64-linux-gnu/PkSession/apper-pk-session_autogen",
+	"CMAKE_BINARY_DIR" : "/home/dylan/canonical/apper/obj-x86_64-linux-gnu",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/dylan/canonical/apper/obj-x86_64-linux-gnu/PkSession",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/dylan/canonical/apper/PkSession",
+	"CMAKE_EXECUTABLE" : "/usr/bin/cmake",
+	"CMAKE_LIST_FILES" : 
+	[
+		"/home/dylan/canonical/apper/PkSession/CMakeLists.txt",
+		"/home/dylan/canonical/apper/cmake/modules/MacroDBusAddActivationService.cmake",
+		"/home/dylan/canonical/apper/PkSession/org.freedesktop.PackageKit.service.in"
+	],
+	"CMAKE_SOURCE_DIR" : "/home/dylan/canonical/apper",
+	"DEP_FILE" : "",
+	"DEP_FILE_RULE_NAME" : "",
+	"HEADERS" : 
+	[
+		[
+			"/home/dylan/canonical/apper/PkSession/AbstractIsRunning.h",
+			"Mu",
+			"EWIEGA46WW/moc_AbstractIsRunning.cpp",
+			null
+		],
+		[
+			"/home/dylan/canonical/apper/PkSession/FilesModel.h",
+			"Mu",
+			"EWIEGA46WW/moc_FilesModel.cpp",
+			null
+		],
+		[
+			"/home/dylan/canonical/apper/PkSession/IntroDialog.h",
+			"Mu",
+			"EWIEGA46WW/moc_IntroDialog.cpp",
+			null
+		],
+		[
+			"/home/dylan/canonical/apper/PkSession/PkInstallCatalogs.h",
+			"Mu",
+			"EWIEGA46WW/moc_PkInstallCatalogs.cpp",
+			null
+		],
+		[
+			"/home/dylan/canonical/apper/PkSession/PkInstallFontconfigResources.h",
+			"Mu",
+			"EWIEGA46WW/moc_PkInstallFontconfigResources.cpp",
+			null
+		],
+		[
+			"/home/dylan/canonical/apper/PkSession/PkInstallGStreamerResources.h",
+			"Mu",
+			"EWIEGA46WW/moc_PkInstallGStreamerResources.cpp",
+			null
+		],
+		[
+			"/home/dylan/canonical/apper/PkSession/PkInstallMimeTypes.h",
+			"Mu",
+			"EWIEGA46WW/moc_PkInstallMimeTypes.cpp",
+			null
+		],
+		[
+			"/home/dylan/canonical/apper/PkSession/PkInstallPackageFiles.h",
+			"Mu",
+			"EWIEGA46WW/moc_PkInstallPackageFiles.cpp",
+			null
+		],
+		[
+			"/home/dylan/canonical/apper/PkSession/PkInstallPackageNames.h",
+			"Mu",
+			"EWIEGA46WW/moc_PkInstallPackageNames.cpp",
+			null
+		],
+		[
+			"/home/dylan/canonical/apper/PkSession/PkInstallPlasmaResources.h",
+			"Mu",
+			"EWIEGA46WW/moc_PkInstallPlasmaResources.cpp",
+			null
+		],
+		[
+			"/home/dylan/canonical/apper/PkSession/PkInstallPrinterDrivers.h",
+			"Mu",
+			"EWIEGA46WW/moc_PkInstallPrinterDrivers.cpp",
+			null
+		],
+		[
+			"/home/dylan/canonical/apper/PkSession/PkInstallProvideFiles.h",
+			"Mu",
+			"EWIEGA46WW/moc_PkInstallProvideFiles.cpp",
+			null
+		],
+		[
+			"/home/dylan/canonical/apper/PkSession/PkInterface.h",
+			"Mu",
+			"EWIEGA46WW/moc_PkInterface.cpp",
+			null
+		],
+		[
+			"/home/dylan/canonical/apper/PkSession/PkIsInstalled.h",
+			"Mu",
+			"EWIEGA46WW/moc_PkIsInstalled.cpp",
+			null
+		],
+		[
+			"/home/dylan/canonical/apper/PkSession/PkRemovePackageByFiles.h",
+			"Mu",
+			"EWIEGA46WW/moc_PkRemovePackageByFiles.cpp",
+			null
+		],
+		[
+			"/home/dylan/canonical/apper/PkSession/PkSearchFile.h",
+			"Mu",
+			"EWIEGA46WW/moc_PkSearchFile.cpp",
+			null
+		],
+		[
+			"/home/dylan/canonical/apper/PkSession/PkSession.h",
+			"Mu",
+			"EWIEGA46WW/moc_PkSession.cpp",
+			null
+		],
+		[
+			"/home/dylan/canonical/apper/PkSession/ReviewChanges.h",
+			"Mu",
+			"EWIEGA46WW/moc_ReviewChanges.cpp",
+			null
+		],
+		[
+			"/home/dylan/canonical/apper/PkSession/SessionTask.h",
+			"Mu",
+			"EWIEGA46WW/moc_SessionTask.cpp",
+			null
+		]
+	],
+	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
+	"INCLUDE_DIR" : "/home/dylan/canonical/apper/obj-x86_64-linux-gnu/PkSession/apper-pk-session_autogen/include",
+	"MOC_COMPILATION_FILE" : "/home/dylan/canonical/apper/obj-x86_64-linux-gnu/PkSession/apper-pk-session_autogen/mocs_compilation.cpp",
+	"MOC_DEFINITIONS" : 
+	[
+		"KCOREADDONS_LIB",
+		"QT_CONCURRENT_LIB",
+		"QT_CORE_LIB",
+		"QT_DBUS_LIB",
+		"QT_DISABLE_DEPRECATED_BEFORE=0x050900",
+		"QT_GUI_LIB",
+		"QT_NETWORK_LIB",
+		"QT_NO_CAST_FROM_ASCII",
+		"QT_NO_CAST_FROM_BYTEARRAY",
+		"QT_NO_CAST_TO_ASCII",
+		"QT_NO_DEBUG",
+		"QT_NO_SIGNALS_SLOTS_KEYWORDS",
+		"QT_NO_URL_CAST_FROM_STRING",
+		"QT_STRICT_ITERATORS",
+		"QT_USE_FAST_OPERATOR_PLUS",
+		"QT_USE_QSTRINGBUILDER",
+		"QT_WIDGETS_LIB",
+		"QT_XMLPATTERNS_LIB",
+		"QT_XML_LIB",
+		"_GNU_SOURCE",
+		"_LARGEFILE64_SOURCE"
+	],
+	"MOC_DEPEND_FILTERS" : 
+	[
+		[
+			"Q_PLUGIN_METADATA",
+			"[\n][ \t]*Q_PLUGIN_METADATA[ \t]*\\([^\\)]*FILE[ \t]*\"([^\"]+)\""
+		],
+		[
+			"K_PLUGIN_FACTORY_WITH_JSON",
+			"[\n^][ \t]*K_PLUGIN_FACTORY_WITH_JSON[ \t\n]*\\([^,]*,[ \t\n]*\"([^\"]+)\""
+		],
+		[
+			"K_PLUGIN_CLASS_WITH_JSON",
+			"[\n^][ \t]*K_PLUGIN_CLASS_WITH_JSON[ \t\n]*\\([^,]*,[ \t\n]*\"([^\"]+)\""
+		]
+	],
+	"MOC_INCLUDES" : 
+	[
+		"/home/dylan/canonical/apper/obj-x86_64-linux-gnu/PkSession",
+		"/home/dylan/canonical/apper/PkSession",
+		"/home/dylan/canonical/apper",
+		"/home/dylan/canonical/apper/obj-x86_64-linux-gnu",
+		"/home/dylan/canonical/apper/libapper",
+		"/home/dylan/canonical/apper/obj-x86_64-linux-gnu/libapper",
+		"/usr/include/x86_64-linux-gnu/qt5",
+		"/usr/include/x86_64-linux-gnu/qt5/QtXmlPatterns",
+		"/usr/include/x86_64-linux-gnu/qt5/QtNetwork",
+		"/usr/include/x86_64-linux-gnu/qt5/QtCore",
+		"/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++",
+		"/usr/include/KF5/KWidgetsAddons",
+		"/usr/include/KF5",
+		"/usr/include/x86_64-linux-gnu/qt5/QtWidgets",
+		"/usr/include/x86_64-linux-gnu/qt5/QtGui",
+		"/usr/include/KF5/KIOFileWidgets",
+		"/usr/include/KF5/KIOWidgets",
+		"/usr/include/KF5/KIOGui",
+		"/usr/include/KF5/KIOCore",
+		"/usr/include/KF5/KIO",
+		"/usr/include/KF5/KCoreAddons",
+		"/usr/include/KF5/KService",
+		"/usr/include/KF5/KConfig",
+		"/usr/include/KF5/KConfigCore",
+		"/usr/include/x86_64-linux-gnu/qt5/QtDBus",
+		"/usr/include/x86_64-linux-gnu/qt5/QtConcurrent",
+		"/usr/include/KF5/KWindowSystem",
+		"/usr/include/KF5/KJobWidgets",
+		"/usr/include/KF5/Solid",
+		"/usr/include/KF5/KCompletion",
+		"/usr/include/KF5/KBookmarks",
+		"/usr/include/x86_64-linux-gnu/qt5/QtXml",
+		"/usr/include/KF5/KItemViews",
+		"/usr/include/KF5/KXmlGui",
+		"/usr/include/KF5/KConfigWidgets",
+		"/usr/include/KF5/KConfigGui",
+		"/usr/include/KF5/KCodecs",
+		"/usr/include/KF5/KAuthWidgets",
+		"/usr/include/KF5/KAuthCore",
+		"/usr/include/KF5/KAuth",
+		"/usr/include/KF5/KIconThemes",
+		"/usr/include/KF5/KDBusAddons",
+		"/usr/include/packagekitqt5/PackageKit",
+		"/usr/include/packagekitqt5",
+		"/usr/include/KF5/KI18n",
+		"/usr/include",
+		"/usr/include/c++/13",
+		"/usr/include/x86_64-linux-gnu/c++/13",
+		"/usr/include/c++/13/backward",
+		"/usr/lib/gcc/x86_64-linux-gnu/13/include",
+		"/usr/local/include",
+		"/usr/include/x86_64-linux-gnu"
+	],
+	"MOC_MACRO_NAMES" : 
+	[
+		"Q_OBJECT",
+		"Q_GADGET",
+		"Q_NAMESPACE",
+		"Q_NAMESPACE_EXPORT",
+		"K_PLUGIN_FACTORY",
+		"K_PLUGIN_CLASS",
+		"K_PLUGIN_FACTORY_WITH_JSON",
+		"K_PLUGIN_CLASS_WITH_JSON",
+		"KCMODULECONTAINER"
+	],
+	"MOC_OPTIONS" : [],
+	"MOC_PATH_PREFIX" : false,
+	"MOC_PREDEFS_CMD" : 
+	[
+		"/usr/bin/c++",
+		"-std=gnu++17",
+		"-dM",
+		"-E",
+		"-c",
+		"/usr/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp"
+	],
+	"MOC_PREDEFS_FILE" : "/home/dylan/canonical/apper/obj-x86_64-linux-gnu/PkSession/apper-pk-session_autogen/moc_predefs.h",
+	"MOC_RELAXED_MODE" : false,
+	"MOC_SKIP" : 
+	[
+		"/home/dylan/canonical/apper/obj-x86_64-linux-gnu/PkSession/packagekitadaptor.h",
+		"/home/dylan/canonical/apper/obj-x86_64-linux-gnu/PkSession/ui_IntroDialog.h",
+		"/home/dylan/canonical/apper/obj-x86_64-linux-gnu/PkSession/ui_ReviewChanges.h",
+		"/home/dylan/canonical/apper/obj-x86_64-linux-gnu/PkSession/ui_SessionTask.h"
+	],
+	"MULTI_CONFIG" : false,
+	"PARALLEL" : 3,
+	"PARSE_CACHE_FILE" : "/home/dylan/canonical/apper/obj-x86_64-linux-gnu/PkSession/CMakeFiles/apper-pk-session_autogen.dir/ParseCache.txt",
+	"QT_MOC_EXECUTABLE" : "/usr/lib/qt5/bin/moc",
+	"QT_UIC_EXECUTABLE" : "",
+	"QT_VERSION_MAJOR" : 5,
+	"QT_VERSION_MINOR" : 15,
+	"SETTINGS_FILE" : "/home/dylan/canonical/apper/obj-x86_64-linux-gnu/PkSession/CMakeFiles/apper-pk-session_autogen.dir/AutogenUsed.txt",
+	"SOURCES" : 
+	[
+		[
+			"/home/dylan/canonical/apper/PkSession/AbstractIsRunning.cpp",
+			"Mu",
+			null
+		],
+		[ "/home/dylan/canonical/apper/PkSession/FilesModel.cpp", "Mu", null ],
+		[ "/home/dylan/canonical/apper/PkSession/IntroDialog.cpp", "Mu", null ],
+		[
+			"/home/dylan/canonical/apper/PkSession/PkInstallCatalogs.cpp",
+			"Mu",
+			null
+		],
+		[
+			"/home/dylan/canonical/apper/PkSession/PkInstallFontconfigResources.cpp",
+			"Mu",
+			null
+		],
+		[
+			"/home/dylan/canonical/apper/PkSession/PkInstallGStreamerResources.cpp",
+			"Mu",
+			null
+		],
+		[
+			"/home/dylan/canonical/apper/PkSession/PkInstallMimeTypes.cpp",
+			"Mu",
+			null
+		],
+		[
+			"/home/dylan/canonical/apper/PkSession/PkInstallPackageFiles.cpp",
+			"Mu",
+			null
+		],
+		[
+			"/home/dylan/canonical/apper/PkSession/PkInstallPackageNames.cpp",
+			"Mu",
+			null
+		],
+		[
+			"/home/dylan/canonical/apper/PkSession/PkInstallPlasmaResources.cpp",
+			"Mu",
+			null
+		],
+		[
+			"/home/dylan/canonical/apper/PkSession/PkInstallPrinterDrivers.cpp",
+			"Mu",
+			null
+		],
+		[
+			"/home/dylan/canonical/apper/PkSession/PkInstallProvideFiles.cpp",
+			"Mu",
+			null
+		],
+		[ "/home/dylan/canonical/apper/PkSession/PkInterface.cpp", "Mu", null ],
+		[ "/home/dylan/canonical/apper/PkSession/PkIsInstalled.cpp", "Mu", null ],
+		[
+			"/home/dylan/canonical/apper/PkSession/PkRemovePackageByFiles.cpp",
+			"Mu",
+			null
+		],
+		[ "/home/dylan/canonical/apper/PkSession/PkSearchFile.cpp", "Mu", null ],
+		[ "/home/dylan/canonical/apper/PkSession/PkSession.cpp", "Mu", null ],
+		[ "/home/dylan/canonical/apper/PkSession/ReviewChanges.cpp", "Mu", null ],
+		[ "/home/dylan/canonical/apper/PkSession/SessionTask.cpp", "Mu", null ],
+		[ "/home/dylan/canonical/apper/PkSession/main.cpp", "Mu", null ]
+	],
+	"VERBOSITY" : 0
+}

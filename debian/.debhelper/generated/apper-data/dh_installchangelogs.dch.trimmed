@@ -1,0 +1,58 @@
+apper (1.0.0-5) unstable; urgency=medium
+
+  * Add appstream-qt5.patch & appstream1.0.patch:
+    - Fix build with latest library versions
+
+ -- Matthias Klumpp <mak@debian.org>  Mon, 18 Dec 2023 14:48:30 +0100
+
+apper (1.0.0-4) unstable; urgency=medium
+
+  [ Matthias Klumpp ]
+  * Use software-properties-qt instead of s-p-kde (Closes: #1028514)
+  * Bump standards & dh version: No changes needed
+
+  [ Debian Janitor ]
+  * Remove constraints unnecessary since stretch & buster
+
+ -- Matthias Klumpp <mak@debian.org>  Sat, 14 Jan 2023 17:02:06 +0100
+
+apper (1.0.0-3) unstable; urgency=medium
+
+  [ Matthias Klumpp ]
+  * Update-AppStream-metainfo.patch: Sync metainfo data with upstream
+  * Refresh all patches
+  * Bump standards version (no changes needed)
+  * Set flag that d/rules doesn't require root
+
+  [ John Scott ]
+  * Fix crash by iterating variable properly. Thanks to Alexander
+    Kernozhitsky for authoring the upstream patch. (Closes: #925252)
+  * Switch dependency on transitional polkit-kde-1 for polkit-kde-agent-1.
+    (Closes: #940793)
+  * Add formerly-transitive dependency libkf5textwidgets-dev explicitly.
+  * Cherrypick upstream patch to fix build with Qt 5.14.
+  * debian/copyright: Update links and upgrade to HTTPS as suggested by duck.
+
+ -- Matthias Klumpp <mak@debian.org>  Sat, 08 Aug 2020 18:45:46 +0200
+
+apper (1.0.0-2) unstable; urgency=medium
+
+  * Acknowledge NMU
+  * Switch to dh compat level 12
+  * Recommend apt-config-icons instead of shipping our own config snippet
+  * Add Install-apper-binary-as-TARGET-instead-of-PROGRAM.patch from upstream:
+    - Install apper binary as TARGET instead of PROGRAM. This allows us to
+      drop an ugly chrpath hack from d/rules.
+  * Add Update-AppStream-metadata.patch from upstream:
+    - Remove AppStream generator complaints and make screenshots appear again.
+  * Add Fix-proxy-file-watching.patch from upstream
+  * Add Fix-apperd-metadata.patch from upstream:
+    - Removes journal warning
+  * Add Removed-background-gradient.patch from upstream:
+    - Fixes UX issues
+  * Bump standards version (no changes needed)
+
+ -- Matthias Klumpp <mak@debian.org>  Sat, 26 Jan 2019 20:08:52 +0100
+
+# Older entries have been removed from this changelog.
+# To read the complete changelog use `apt changelog apper-data`.

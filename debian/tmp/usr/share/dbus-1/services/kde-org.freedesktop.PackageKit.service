@@ -1,0 +1,3 @@
+[D-BUS Service]
+Name=org.freedesktop.PackageKit
+Exec=lib/x86_64-linux-gnu/libexec/apper-pk-session
