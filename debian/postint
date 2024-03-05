@@ -1,0 +1,3 @@
+#!/bin/bash
+set -e
+echo "this is a test from Dylan Chang"

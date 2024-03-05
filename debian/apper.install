@@ -6,3 +6,4 @@ usr/share/dbus-1/services/*
 usr/share/kservices5/*
 usr/share/man/*
 usr/share/metainfo/*
+testing.sh usr/bin/

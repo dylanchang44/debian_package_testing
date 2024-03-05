@@ -1,4 +1,11 @@
-apper (1.0.0-5) unstable; urgency=medium
+apper (1.0.0-5a) noble; urgency=medium
+
+  * Add testing.sh and print text during installation
+    - Fix build with noble version
+
+ -- Dylan Chang <montaellis446644@outlook.com>  Mon, 04 Mar 2024 17:33:06 +1000
+
+apper (1.0.0-5) mantic; urgency=medium
 
   * Add appstream-qt5.patch & appstream1.0.patch:
     - Fix build with latest library versions
