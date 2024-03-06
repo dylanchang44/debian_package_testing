@@ -1,9 +1,28 @@
+apper (1.0.0-5d) noble; urgency=medium
+
+  * fix postinst file name
+
+ -- Dylan Chang <montaellis446644@outlook.com>  Wed, 06 Mar 2024 20:59:48 +0800
+
+apper (1.0.0-5c) noble; urgency=medium
+
+  * fix apper.install to include correct path
+
+ -- Dylan Chang <montaellis446644@outlook.com>  Tue, 05 Mar 2024 23:32:18 +0800
+
+apper (1.0.0-5b) noble; urgency=medium
+
+  * Change testing.sh to diff location
+  * Actually print text post-installation
+
+ -- Dylan Chang <montaellis446644@outlook.com>  Tue, 05 Mar 2024 22:38:28 +0800
+
 apper (1.0.0-5a) noble; urgency=medium
 
   * Add testing.sh and print text during installation
     - Fix build with noble version
 
- -- Dylan Chang <montaellis446644@outlook.com>  Mon, 04 Mar 2024 17:33:06 +1000
+ -- Dylan Chang <montaellis446644@outlook.com>  Mon, 04 Mar 2024 17:33:06 +0800
 
 apper (1.0.0-5) mantic; urgency=medium
 
